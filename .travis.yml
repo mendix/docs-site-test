@@ -8,7 +8,7 @@ dist: xenial          # or bionic | xenial | trusty | precise with xenial as def
 addons:
   snaps:              # Installs hugo if dist: xenial or bionic see https://gohugo.io/getting-started/installing/#snap-package and https://docs.travis-ci.com/user/installing-dependencies/#installing-snap-packages-with-the-snaps-addon
     - name: hugo
-      channel: extended # needs extended to compile SCSS etc.
+      channel: extended/stable # needs extended to compile SCSS etc.
 
 git:
   depth: 20000 # We're cloning a max of xxx commits, so the author date is correct
