@@ -32,32 +32,18 @@ install:
 
 before_script:
   - eval "$(pyenv init --path)" # Instructions from Travis support
-  - pyenv versions
-  - pyenv global 3.6.7
-  - pyenv version
+  - pyenv versions # list python versions supported by pyenv in case version in next command is removed
+  - pyenv global 3.6.7 # this version needs to be already installed in the travis build
   - python -V
 
 script:
-  - echo $HOME
-  - echo $TRAVIS_NODE_VERSION
   - echo $TRAVIS_BRANCH
-  - echo $TRAVIS_BUILD_DIR
-  - echo $TRAVIS_BUILD_ID
-  - echo $TRAVIS_BUILD_NUMBER
-  - echo $TRAVIS_BUILD_WEB_URL
   - echo $TRAVIS_COMMIT
   - echo $TRAVIS_COMMIT_MESSAGE
-  - echo $TRAVIS_COMMIT_RANGE
-  - echo $TRAVIS_COMPILER
-  - echo $TRAVIS_DEBUG_MODE
-  - echo $TRAVIS_DIST
-  - echo $TRAVIS_EVENT_TYPE
   - echo $TRAVIS_JOB_ID
   - echo $TRAVIS_JOB_NAME
   - echo $TRAVIS_JOB_NUMBER
   - echo $TRAVIS_JOB_WEB_URL
-  - echo $TRAVIS_OS_NAME
-  - echo $TRAVIS_CPU_ARCH
   - echo $TRAVIS_PULL_REQUEST
   - echo $TRAVIS_PULL_REQUEST_BRANCH
   - pwd
@@ -69,12 +55,7 @@ before_deploy:
   - sudo ./aws/install # install AWS command line
   - aws --version
   - chmod +x $TRAVIS_BUILD_DIR/_scripts/deploy.sh
-  - echo $path
-  - pyenv versions # list python versions supported by pyenv in case version in next command is removed
-  - pyenv global 3.6.7 # this version needs to be already installed in the travis build
-  - pyenv version
   - python --version
-  - python3 --version
   - pip install --upgrade 'algoliasearch>=2.0,<3.0' # install Algolia Python API Client version 2
 
 deploy:
