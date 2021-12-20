@@ -5,10 +5,10 @@ arch: amd64         # optional, this is default, routes to a full VM
 # arch: arm64           # this is the recommended LXD container - faster spin up but some limitations Not used as it seems very unstable.
 os: linux             # optional, this is default
 dist: xenial          # or bionic | xenial | trusty | precise with xenial as default - Recommended here: https://docs.travis-ci.com/user/reference/overview/#deprecated-virtualization-environments
-addons:
-  snaps:              # Installs hugo if dist: xenial or bionic see https://gohugo.io/getting-started/installing/#snap-package and https://docs.travis-ci.com/user/installing-dependencies/#installing-snap-packages-with-the-snaps-addon
-    - name: hugo
-      channel: extended/stable # needs extended to compile SCSS etc.
+# addons:
+#   snaps:              # Installs hugo if dist: xenial or bionic see https://gohugo.io/getting-started/installing/#snap-package and https://docs.travis-ci.com/user/installing-dependencies/#installing-snap-packages-with-the-snaps-addon
+#     - name: hugo
+#       channel: extended/stable # needs extended to compile SCSS etc. Issue if snap is not updated correctly
 
 git:
   depth: 20000 # We're cloning a max of xxx commits, so the author date is correct
@@ -26,12 +26,20 @@ branches:
 
 before_install:
   - npm install # use npm rather than yarn - HUGO doesn't have that many dependencies
+  - echo $PATH
+  - echo $TRAVIS_BUILD_DIR
+  - pwd
+  - ls 
+  - travis_retry curl -L https://github.com/gohugoio/hugo/releases/download/v0.90.1/hugo_extended_0.90.1_Linux-64bit.tar.gz | tar xz
+  - chmod +x ./hugo
+#   - mv ./hugo $HOME/bin/hugo
+  - ls
 
 install:
   # ------------------------
   - mkdir public  # This because <Maybe> the process of syncing to public is probably deadlocked behind waiting for the public folder to be made, and is never signalled that the folder is created, which ends up stalling the build on Travis CI.
   # ------------------------
-  - hugo # which flags do we need?
+  - ./hugo # which flags do we need?
 
 before_script:
   - eval "$(pyenv init --path)" # Instructions from Travis support
