@@ -1,0 +1,25 @@
+# ==========================
+# Configuration for HTMLTEST
+# ========================== 
+# See documentation in repo: https://github.com/wjdp/htmltest
+
+DirectoryPath: "./public"
+EnforceHTTPS: false
+FileExtension: .html
+IgnoreURLs:
+- "example.com"
+IgnoreInternalURLs:
+- "/misc/js/script.js"
+- "/js/"
+IgnoreDirs:
+- "lib"
+- "/js"
+CacheExpires: "20d"
+CheckExternal: false
+CheckMailto: false
+CheckTel: false
+IgnoreAltMissing: true
+IgnoreDirectoryMissingTrailingSlash: true
+DirectoryIndex: "index.html"
+IgnoreInternalEmptyHash: true
+IgnoreEmptyHref: true
