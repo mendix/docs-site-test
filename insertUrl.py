@@ -51,13 +51,13 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
                             if name == 'index.md':
                                 insert = matched.string + 'url: /' + '\n'
                             else:
-                                insert = matched.string + 'url: /' + name[:-(len(exten))] + '\n'
+                                insert = matched.string + 'url: /' + name[:-(len(exten))] + '/' + '\n'
                         # anything deeper
                         else:
                             if name == 'index.md':
-                                insert = matched.string + 'url: /' + altPath[2:] + '\n'
+                                insert = matched.string + 'url: /' + altPath[2:] + '/' + '\n'
                             else:
-                                insert = matched.string + 'url: /' + altPath[2:] + '/' + name[:-(len(exten))] + '\n'
+                                insert = matched.string + 'url: /' + altPath[2:] + '/' + name[:-(len(exten))] + '/' + '\n'
                         line = re.sub(r''+start,insert,line.rstrip())
                     print(line, end='')
 
