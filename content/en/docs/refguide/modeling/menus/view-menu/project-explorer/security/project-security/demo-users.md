@@ -1,6 +1,6 @@
 ---
 title: "Demo Users"
-url: /refguide/demo-users
+url: /refguide/demo-users/
 parent: "project-security"
 weight: 30
 tags: ["studio pro", "demo users", "demo-users", "app security"]

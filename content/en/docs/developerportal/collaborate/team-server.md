@@ -1,6 +1,6 @@
 ---
 title: "Team Server"
-url: /developerportal/collaborate/team-server
+url: /developerportal/collaborate/team-server/
 category: "Collaboration"
 weight: 7
 description: "Describes the overview of Team Server revisions and commits."

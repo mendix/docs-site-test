@@ -1,6 +1,6 @@
 ---
 title: "Variable Activities"
-url: /refguide/variable-activities
+url: /refguide/variable-activities/
 parent: "activities"
 weight: 40
 tags: ["studio pro", "variable activities", "variable", "variables"]

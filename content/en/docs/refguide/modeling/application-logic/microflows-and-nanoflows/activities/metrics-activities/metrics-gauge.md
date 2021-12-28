@@ -1,6 +1,6 @@
 ---
 title: "Gauge"
-url: /refguide/metrics-gauge
+url: /refguide/metrics-gauge/
 parent: "metrics-activities"
 weight: 20
 tags: ["studio pro", "metrics", "micrometer"]

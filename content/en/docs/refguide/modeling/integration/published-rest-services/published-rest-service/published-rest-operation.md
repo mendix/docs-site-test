@@ -1,6 +1,6 @@
 ---
 title: "Published REST Operation"
-url: /refguide/published-rest-operation
+url: /refguide/published-rest-operation/
 parent: "published-rest-service"
 weight: 10
 description: "Options to configure a published REST operation."

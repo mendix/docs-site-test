@@ -1,6 +1,6 @@
 ---
 title: "Images & Files"
-url: /studio/page-editor-widgets-images-and-files
+url: /studio/page-editor-widgets-images-and-files/
 parent: "page-editor-widgets"
 description: "Describes image and file widgets in Mendix Studio."
 weight: 30

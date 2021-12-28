@@ -1,6 +1,6 @@
 ---
 title: "Send Push Notifications"
-url: /howto/mobile/sending-push-notifications
+url: /howto/mobile/sending-push-notifications/
 parent: "notifications"
 weight: 95
 tags: ["mobile", "push notification", "mobile", "microflow"]

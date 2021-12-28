@@ -1,6 +1,6 @@
 ---
 title: "Managing App Signing Keys"
-url: /refguide/managing-app-signing-keys
+url: /refguide/managing-app-signing-keys/
 category: "Mobile"
 weight: 21
 tags: ["studio pro"]

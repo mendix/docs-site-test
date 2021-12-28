@@ -1,6 +1,6 @@
 ---
 title: "Sidebar Toggle"
-url: /refguide/sidebar-toggle-button
+url: /refguide/sidebar-toggle-button/
 parent: "layout"
 weight: 30
 tags: ["studio pro"]

@@ -1,6 +1,6 @@
 ---
 title: "Language Menu"
-url: /refguide/translatable-texts
+url: /refguide/translatable-texts/
 parent: "menus"
 weight: 50
 tags: ["studio pro", "translation", "languages", "translatable text"]

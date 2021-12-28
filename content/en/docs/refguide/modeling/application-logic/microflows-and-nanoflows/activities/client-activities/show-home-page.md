@@ -1,6 +1,6 @@
 ---
 title: "Show Home Page"
-url: /refguide/show-home-page
+url: /refguide/show-home-page/
 parent: "client-activities"
 weight: 30
 tags: ["studio pro", "show home page", "home page", "client activities"]

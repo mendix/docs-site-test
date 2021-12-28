@@ -1,6 +1,6 @@
 ---
 title: "Preview Appearance APIs for Pluggable Widgets"
-url: /apidocs-mxsdk/apidocs/studio-apis-for-pluggable-widgets-8
+url: /apidocs-mxsdk/apidocs/studio-apis-for-pluggable-widgets-8/
 parent: "pluggable-parent-8"
 weight: 30
 description: A guide for understanding the APIs which influence pluggable widget preview appearances.

@@ -1,6 +1,6 @@
 ---
 title: "Use the Java API"
-url: /howto/logic-business-rules/java-api-tutorial
+url: /howto/logic-business-rules/java-api-tutorial/
 category: "Logic & Business Rules"
 weight: 130
 tags: ["microflow", "logic", "java", "API"]

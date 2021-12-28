@@ -1,6 +1,6 @@
 ---
 title: "Creating Content"
-url: /appstore/creating-content
+url: /appstore/creating-content/
 description: "How to create content for the Mendix Marketplace."
 tags: ["marketplace", "marketplace component", "app service", "solution"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Mendix Profile"
-url: /developerportal/community-tools/mendix-profile
+url: /developerportal/community-tools/mendix-profile/
 category: "Community Tools"
 weight: 1
 description: "Describes the personal profile page of the Mendix Developer Portal."

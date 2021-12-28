@@ -1,6 +1,6 @@
 ---
 title: "Two-Factor Authentication"
-url: /developerportal/deploy/two-factor-authentication
+url: /developerportal/deploy/two-factor-authentication/
 parent: "general"
 weight: 20
 description: "What is Two-Factor Authentication and how to set up and change it."

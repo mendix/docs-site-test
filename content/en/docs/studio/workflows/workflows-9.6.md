@@ -1,6 +1,6 @@
 ---
 title: "Using Workflows in Apps with Mendix Version 9.6"
-url: /studio/workflows-9.6
+url: /studio/workflows-9.6/
 category: "Workflows"
 weight: 05
 tags: ["workflow", "workflows", "9.6", "beta"]

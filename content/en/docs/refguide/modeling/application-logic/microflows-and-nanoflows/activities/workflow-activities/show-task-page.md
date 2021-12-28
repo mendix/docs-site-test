@@ -1,6 +1,6 @@
 ---
 title: "Show User Task Page"
-url: /refguide/show-task-page
+url: /refguide/show-task-page/
 parent: "workflow-activities"
 weight: 20
 tags: ["studio pro", "user task", "workflow"]

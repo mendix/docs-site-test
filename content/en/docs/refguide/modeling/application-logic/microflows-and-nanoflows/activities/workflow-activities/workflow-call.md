@@ -1,6 +1,6 @@
 ---
 title: "Workflow Call"
-url: /refguide/workflow-call
+url: /refguide/workflow-call/
 parent: "workflow-activities"
 weight: 40
 tags: ["studio pro", "call workflow", "workflow call"]

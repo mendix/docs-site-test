@@ -1,6 +1,6 @@
 ---
 title: "Jump"
-url: /refguide/jump-activity
+url: /refguide/jump-activity/
 parent: "workflows"
 weight: 35
 tags: ["workflow", "workflows", "jump", "Studio Pro"]

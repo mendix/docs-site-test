@@ -1,6 +1,6 @@
 ---
 title: "App Services"
-url: /developerportal/deploy/app-services
+url: /developerportal/deploy/app-services/
 category: "Deployment"
 weight: 100
 description: "Describes the App Services page in the Developer Portal."

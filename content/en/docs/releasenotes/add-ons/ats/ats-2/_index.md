@@ -1,6 +1,6 @@
 ---
 title: "2"
-url: /releasenotes/add-ons/ats-2
+url: /releasenotes/add-ons/ats-2/
 parent: "ats"
 weight: 10
 ---

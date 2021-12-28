@@ -1,6 +1,6 @@
 ---
 title: "View Menu"
-url: /refguide/view-menu
+url: /refguide/view-menu/
 parent: "menus"
 description: "Describes the View Menu in Studio Pro."
 weight: 20

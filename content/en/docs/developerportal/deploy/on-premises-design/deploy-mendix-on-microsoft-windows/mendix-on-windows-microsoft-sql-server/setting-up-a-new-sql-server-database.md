@@ -1,6 +1,6 @@
 ---
 title: "New Database Setup on SQL Server"
-url: /developerportal/deploy/setting-up-a-new-sql-server-database
+url: /developerportal/deploy/setting-up-a-new-sql-server-database/
 parent: "mendix-on-windows-microsoft-sql-server"
 weight: 10
 tags: ["SQL Server", "Snapshot Isolation", "Transaction Isolation", "Database", "Extensions", "Role"]

@@ -1,6 +1,6 @@
 ---
 title: "Java Action Call"
-url: /refguide/java-action-call
+url: /refguide/java-action-call/
 parent: "action-call-activities"
 weight: 10
 tags: ["studio pro", "Java", "java action call", "action call"]

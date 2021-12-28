@@ -1,6 +1,6 @@
 ---
 title: "Page"
-url: /refguide/page
+url: /refguide/page/
 parent: "pages"
 weight: 10
 tags: ["studio pro", "page", "properties"]

@@ -1,6 +1,6 @@
 ---
 title: "Widget Overview"
-url: /studio/settings-widget-overview
+url: /studio/settings-widget-overview/
 category: "Settings"
 description: "Describes the Widget Overview tab in Mendix Studio."
 weight: 20

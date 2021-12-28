@@ -1,6 +1,6 @@
 ---
 title: "SAP Single Sign-On"
-url: /partners/sap/sap-single-sign-on
+url: /partners/sap/sap-single-sign-on/
 category: "SAP"
 weight: 50
 description: "Reference information on SAP Single Sign-On"

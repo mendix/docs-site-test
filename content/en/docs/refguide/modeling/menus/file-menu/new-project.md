@@ -1,6 +1,6 @@
 ---
 title: "New App"
-url: /refguide/new-project
+url: /refguide/new-project/
 parent: "file-menu"
 weight: 10
 description: "This document describes the New App flow and the App Settings dialog box."

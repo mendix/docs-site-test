@@ -1,6 +1,6 @@
 ---
 title: "Mobile"
-url: /releasenotes/mobile
+url: /releasenotes/mobile/
 frontpage_featured: true
 weight: 15
 ---

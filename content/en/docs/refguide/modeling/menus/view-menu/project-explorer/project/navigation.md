@@ -1,6 +1,6 @@
 ---
 title: "Navigation"
-url: /refguide/navigation
+url: /refguide/navigation/
 parent: "project"
 weight: 20
 description: "Describes the concept of navigation in apps and the properties of a profile."

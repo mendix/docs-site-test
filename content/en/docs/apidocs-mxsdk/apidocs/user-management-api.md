@@ -1,6 +1,6 @@
 ---
 title: "User Management API"
-url: /apidocs-mxsdk/apidocs/user-management-api
+url: /apidocs-mxsdk/apidocs/user-management-api/
 category: "API Documentation"
 weight: 70
 ---

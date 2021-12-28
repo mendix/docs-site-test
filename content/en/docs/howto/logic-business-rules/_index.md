@@ -1,6 +1,6 @@
 ---
 title: "Logic & Business Rules"
-url: /howto/logic-business-rules
+url: /howto/logic-business-rules/
 tags: ["studio pro", "how-to"]
 ---
 

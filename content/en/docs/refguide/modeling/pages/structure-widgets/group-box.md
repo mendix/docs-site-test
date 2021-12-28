@@ -1,6 +1,6 @@
 ---
 title: "Group Box"
-url: /refguide/group-box
+url: /refguide/group-box/
 parent: "structure-widgets"
 weight: 30
 tags: ["studio pro", "group box", "container widget", "widget"]

@@ -1,6 +1,6 @@
 ---
 title: "Loop"
-url: /studio/microflows-loop
+url: /studio/microflows-loop/
 category: "Microflows"
 weight: 30
 description: "Describes a loop in Mendix Studio."

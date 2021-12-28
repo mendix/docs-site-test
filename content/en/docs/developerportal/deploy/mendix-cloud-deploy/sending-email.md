@@ -1,6 +1,6 @@
 ---
 title: "Sending Email"
-url: /developerportal/deploy/sending-email
+url: /developerportal/deploy/sending-email/
 parent: "mendix-cloud-deploy"
 weight: 40
 description: "How to use external email providers in Mendix, and how to configure Mendix mail on Cloud v3"

@@ -1,6 +1,6 @@
 ---
 title: "Mendix Cloud"
-url: /developerportal/deploy/mendix-cloud-deploy
+url: /developerportal/deploy/mendix-cloud-deploy/
 category: "Deployment"
 weight: 20
 description: "Describes how to deploy to the Mendix Cloud."

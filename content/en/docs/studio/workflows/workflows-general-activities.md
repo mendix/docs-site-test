@@ -1,6 +1,6 @@
 ---
 title: "General Activities"
-url: /studio/workflows-general-activities
+url: /studio/workflows-general-activities/
 category: "Workflows"
 weight: 30
 tags: ["workflow", "workflows", "decision", "parallel split", "end activity"]

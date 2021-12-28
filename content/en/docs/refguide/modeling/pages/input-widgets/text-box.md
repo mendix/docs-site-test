@@ -1,6 +1,6 @@
 ---
 title: "Text Box"
-url: /refguide/text-box
+url: /refguide/text-box/
 parent: "input-widgets"
 weight: 10
 tags: ["studio pro", "data"]

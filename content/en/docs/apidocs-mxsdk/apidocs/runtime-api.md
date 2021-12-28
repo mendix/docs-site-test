@@ -1,6 +1,6 @@
 ---
 title: "Runtime API"
-url: /apidocs-mxsdk/apidocs/runtime-api
+url: /apidocs-mxsdk/apidocs/runtime-api/
 category: "API Documentation"
 weight: 55
 tags: ["Runtime API", "API"]

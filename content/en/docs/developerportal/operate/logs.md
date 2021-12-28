@@ -1,6 +1,6 @@
 ---
 title: "Logs"
-url: /developerportal/operate/logs
+url: /developerportal/operate/logs/
 category: "Operations"
 weight: 30
 description: "This page describes the Logs page of the Developer Portal."

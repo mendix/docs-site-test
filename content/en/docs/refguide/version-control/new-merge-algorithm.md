@@ -1,6 +1,6 @@
 ---
 title: "New Merge Algorithm with Fine-Grained Conflict Resolution"
-url: /refguide/new-merge-algorithm
+url: /refguide/new-merge-algorithm/
 category: "Version Control"
 weight: 30
 tags: ["merge", "algorithm", "conflict", "resolution"]

@@ -1,6 +1,6 @@
 ---
 title: "Progressive Web Apps"
-url: /refguide/progressive-web-app
+url: /refguide/progressive-web-app/
 category: "Mobile"
 weight: 2
 tags: ["mobile", "progressive web app", "PWA", "studio pro"]

@@ -1,6 +1,6 @@
 ---
 title: "XPath Operators"
-url: /refguide/xpath-operators
+url: /refguide/xpath-operators/
 parent: "xpath-constraints"
 tags: ["studio pro"]
 ---

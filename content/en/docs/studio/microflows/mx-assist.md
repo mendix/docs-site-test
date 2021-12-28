@@ -1,6 +1,6 @@
 ---
 title: "Mendix Assist"
-url: /studio/mx-assist
+url: /studio/mx-assist/
 category: "Microflows"
 weight: 10
 description: "Describes Mendix Assist in Mendix Studio."

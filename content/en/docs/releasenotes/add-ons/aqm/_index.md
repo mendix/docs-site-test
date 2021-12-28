@@ -1,6 +1,6 @@
 ---
 title: "AQM"
-url: /releasenotes/add-ons/aqm
+url: /releasenotes/add-ons/aqm/
 category: "Quality Add-ons"
 weight: 30
 ---

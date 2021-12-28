@@ -1,6 +1,6 @@
 ---
 title: "Augmented Reality Widgets"
-url: /refguide/ar-widgets
+url: /refguide/ar-widgets/
 category: "Mobile"
 weight: 55
 tags: ["mobile", "augmented reality", "studio pro", "AR", "VR"]

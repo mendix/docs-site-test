@@ -1,6 +1,6 @@
 ---
 title: "Table (Document Template)"
-url: /refguide/table-document-template
+url: /refguide/table-document-template/
 parent: "document-templates"
 aliases:
     - /refguide/table-(document-template).html

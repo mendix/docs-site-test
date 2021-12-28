@@ -1,6 +1,6 @@
 ---
 title: "Datasets"
-url: /refguide/data-sets
+url: /refguide/data-sets/
 parent: "resources"
 weight: 50
 tags: ["studio pro", "data set", "dataset"]

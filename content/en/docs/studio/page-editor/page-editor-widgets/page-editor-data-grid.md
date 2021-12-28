@@ -1,6 +1,6 @@
 ---
 title: "Data Grid"
-url: /studio/page-editor-data-grid
+url: /studio/page-editor-data-grid/
 parent: "page-editor-widgets"
 description: "Describes a data grid in the page editor of Mendix Studio."
 weight: 15

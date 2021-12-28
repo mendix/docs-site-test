@@ -1,6 +1,6 @@
 ---
 title: "Reference Selector"
-url: /refguide/reference-selector
+url: /refguide/reference-selector/
 parent: "input-widgets"
 weight: 70
 tags: ["studio pro"]

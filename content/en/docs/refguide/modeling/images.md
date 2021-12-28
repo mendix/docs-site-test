@@ -1,6 +1,6 @@
 ---
 title: "Images"
-url: /refguide/images
+url: /refguide/images/
 category: "App Modeling"
 weight: 70
 tags: ["Images", "Image Collections", "png", "Studio Pro"]

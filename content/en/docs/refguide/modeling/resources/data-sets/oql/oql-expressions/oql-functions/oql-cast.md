@@ -1,6 +1,6 @@
 ---
 title: "OQL CAST"
-url: /refguide/oql-cast
+url: /refguide/oql-cast/
 parent: "oql-functions"
 tags: ["studio pro"]
 ---

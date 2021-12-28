@@ -1,6 +1,6 @@
 ---
 title: "End Event"
-url: /refguide/end-event
+url: /refguide/end-event/
 parent: "events"
 weight: 2
 tags: ["studio pro", "end event", "event"]

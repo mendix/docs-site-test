@@ -1,6 +1,6 @@
 ---
 title: "Webhooks"
-url: /apidocs-mxsdk/apidocs/webhooks-sprints
+url: /apidocs-mxsdk/apidocs/webhooks-sprints/
 category: "API Documentation"
 weight: 75
 ---

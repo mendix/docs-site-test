@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot OData Connector for SAP Solutions"
-url: /partners/sap/sap-troubleshoot-odata-connector
+url: /partners/sap/sap-troubleshoot-odata-connector/
 category: "SAP"
 weight: 16
 description: "Describes issues you may face using the OData Connector for SAP solutions, and offers areas to investigate."

@@ -1,6 +1,6 @@
 ---
 title: "Implement Best Practices for Native Mobile App UI"
-url: /howto/mobile/ui-best-practices
+url: /howto/mobile/ui-best-practices/
 parent: "get-started"
 weight: 50
 description: "This document will teach you how to build a native mobile app's UI."

@@ -1,6 +1,6 @@
 ---
 title: "SDK How-to's"
-url: /apidocs-mxsdk/mxsdk/sdk-howtos
+url: /apidocs-mxsdk/mxsdk/sdk-howtos/
 category: "Mendix Platform SDK"
 weight: 4
 ---

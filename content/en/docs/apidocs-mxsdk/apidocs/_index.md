@@ -1,6 +1,6 @@
 ---
 title: "API Documentation"
-url: /apidocs-mxsdk/apidocs
+url: /apidocs-mxsdk/apidocs/
 description: "The Mendix Platform API documentation is divided into sections such as Runtime, Client, Feedback, and Deploy."
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---

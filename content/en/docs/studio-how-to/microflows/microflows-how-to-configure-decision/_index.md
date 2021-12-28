@@ -1,6 +1,6 @@
 ---
 title: "Configure a Decision"
-url: /studio-how-to/microflows-how-to-configure-decision
+url: /studio-how-to/microflows-how-to-configure-decision/
 category: "Microflows"
 weight: 60
 description: "This how-to describes the process of configuring a decision in Mendix Studio."

@@ -1,6 +1,6 @@
 ---
 title: "Consumed Web Services"
-url: /refguide/consumed-web-services
+url: /refguide/consumed-web-services/
 parent: "integration"
 weight: 25
 tags: ["studio pro"]

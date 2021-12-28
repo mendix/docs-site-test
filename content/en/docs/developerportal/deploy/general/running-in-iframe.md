@@ -1,6 +1,6 @@
 ---
 title: "Iframes and Running Apps"
-url: /developerportal/deploy/running-in-iframe
+url: /developerportal/deploy/running-in-iframe/
 parent: "general"
 weight: 40
 description: "Issues to take into consideration when running apps in an iframe"

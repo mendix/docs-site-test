@@ -1,6 +1,6 @@
 ---
 title: "Native Template"
-url: /refguide/native-template
+url: /refguide/native-template/
 parent: "native-mobile"
 weight: 12
 tags: ["mobile", "template", "native", "iOS", "Android", "reference guide"]

@@ -1,6 +1,6 @@
 ---
 title: "Buzz"
-url: /developerportal/collaborate/buzz
+url: /developerportal/collaborate/buzz/
 category: "Collaboration"
 weight: 1
 description: "Describes the Mendix Buzz, which is the landing page for working on a Mendix app."

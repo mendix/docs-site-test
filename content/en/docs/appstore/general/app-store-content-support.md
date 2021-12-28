@@ -1,6 +1,6 @@
 ---
 title: "Marketplace Content Support"
-url: /appstore/general/app-store-content-support
+url: /appstore/general/app-store-content-support/
 category: "General Info"
 weight: 50
 tags: ["marketplace", "support", "platform support", "community support", "deprecated"]

@@ -1,6 +1,6 @@
 ---
 title: "UI Design"
-url: /howto/front-end/atlas-ui
+url: /howto/front-end/atlas-ui/
 category: "Front End"
 weight: 5
 tags: ["Atlas", "UI", "UX", "user experience", "design"]

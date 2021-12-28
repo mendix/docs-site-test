@@ -1,6 +1,6 @@
 ---
 title: "Text"
-url: /refguide/text
+url: /refguide/text/
 parent: "text-widgets"
 weight: 10
 tags: ["studio pro", "text", "text widget", "common widget"]

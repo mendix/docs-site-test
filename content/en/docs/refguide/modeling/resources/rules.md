@@ -1,6 +1,6 @@
 ---
 title: "Rules"
-url: /refguide/rules
+url: /refguide/rules/
 parent: "resources"
 weight: 30
 tags: ["Microflow", "Nanoflow", "Decision", "Logic"]

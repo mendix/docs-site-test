@@ -1,6 +1,6 @@
 ---
 title: "Optimize Microflow Aggregates"
-url: /howto/logic-business-rules/optimizing-microflow-aggregates
+url: /howto/logic-business-rules/optimizing-microflow-aggregates/
 category: "Logic & Business Rules"
 weight: 70
 tags: ["microflow", "aggregate"]

@@ -1,6 +1,6 @@
 ---
 title: "Solve Load & Import Errors"
-url: /howto/monitoring-troubleshooting/solving-load-and-import-errors
+url: /howto/monitoring-troubleshooting/solving-load-and-import-errors/
 category: "Monitoring & Troubleshooting"
 weight: 11
 tags: ["monitoring", "troubleshooting", "load", "import", "error"]

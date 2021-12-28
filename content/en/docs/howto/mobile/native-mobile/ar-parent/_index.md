@@ -1,6 +1,6 @@
 ---
 title: "Use Augmented Reality"
-url: /howto/mobile/ar-parent
+url: /howto/mobile/ar-parent/
 parent: "native-mobile"
 weight: 90
 description: Tutorials for setting up and using AR in Mendix Studio Pro.

@@ -1,6 +1,6 @@
 ---
 title: "Object Activities"
-url: /refguide/object-activities
+url: /refguide/object-activities/
 parent: "activities"
 weight: 10
 tags: ["studio pro", "microflow", "object"]

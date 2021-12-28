@@ -1,6 +1,6 @@
 ---
 title: "Check Box"
-url: /refguide/check-box
+url: /refguide/check-box/
 parent: "input-widgets"
 weight: 40
 tags: ["studio pro"]

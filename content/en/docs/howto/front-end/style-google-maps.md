@@ -1,6 +1,6 @@
 ---
 title: "Style Google Maps"
-url: /howto/front-end/style-google-maps
+url: /howto/front-end/style-google-maps/
 category: "Front End"
 weight: 60
 tags: ["studio pro"]

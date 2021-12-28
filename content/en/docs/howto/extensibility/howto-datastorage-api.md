@@ -1,6 +1,6 @@
 ---
 title: "Use Mendix Data Storage APIs to Build Reusable Microflow Actions"
-url: /howto/extensibility/howto-datastorage-api
+url: /howto/extensibility/howto-datastorage-api/
 category: "Extensibility"
 weight: 90
 description: "Describes creating custom microflow actions using Data Storage APIs."

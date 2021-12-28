@@ -1,6 +1,6 @@
 ---
 title: "Show Workflow Admin Page"
-url: /refguide/show-workflow-page
+url: /refguide/show-workflow-page/
 parent: "workflow-activities"
 weight: 30
 tags: ["studio pro", "workflow page", "workflow"]

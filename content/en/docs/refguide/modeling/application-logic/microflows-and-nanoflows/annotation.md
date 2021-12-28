@@ -1,6 +1,6 @@
 ---
 title: "Annotation"
-url: /refguide/annotation
+url: /refguide/annotation/
 parent: "microflows-and-nanoflows"
 weight: 60
 tags: ["studio pro", "annotation", annotation flow]

@@ -1,6 +1,6 @@
 ---
 title: "Validation Rules"
-url: /refguide/validation-rules
+url: /refguide/validation-rules/
 parent: "entities"
 weight: 40
 tags: ["domain model", "entity", "validation rule"]

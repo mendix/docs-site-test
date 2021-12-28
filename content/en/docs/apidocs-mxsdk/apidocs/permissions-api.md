@@ -1,6 +1,6 @@
 ---
 title: "Permissions API"
-url: /apidocs-mxsdk/apidocs/permissions-api
+url: /apidocs-mxsdk/apidocs/permissions-api/
 category: "API Documentation"
 weight: 40
 ---

@@ -1,6 +1,6 @@
 ---
 title: "User Task"
-url: /studio/workflows-user-task
+url: /studio/workflows-user-task/
 category: "Workflows"
 weight: 20
 tags: ["workflow", "workflows", "user task", "task"]

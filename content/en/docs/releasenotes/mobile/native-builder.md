@@ -1,6 +1,6 @@
 ---
 title: "Native Builder"
-url: /releasenotes/mobile/native-builder
+url: /releasenotes/mobile/native-builder/
 category: "Mobile"
 weight: 11
 toc-level: 1

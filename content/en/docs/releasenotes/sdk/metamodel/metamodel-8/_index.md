@@ -1,6 +1,6 @@
 ---
 title: "8"
-url: /releasenotes/sdk/metamodel-8
+url: /releasenotes/sdk/metamodel-8/
 weight: 2
 parent: "metamodel" 
 ---

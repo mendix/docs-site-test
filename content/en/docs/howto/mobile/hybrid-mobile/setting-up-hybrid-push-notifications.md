@@ -1,6 +1,6 @@
 ---
 title: "Set Up Hybrid Push Notifications"
-url: /howto/mobile/setting-up-hybrid-push-notifications
+url: /howto/mobile/setting-up-hybrid-push-notifications/
 parent: "hybrid-mobile"
 weight: 9
 description: "Learn how to set up hybrid push notifications with PhoneGap Build."

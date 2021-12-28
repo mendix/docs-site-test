@@ -1,6 +1,6 @@
 ---
 title: "Run Mendix on Kubernetes"
-url: /developerportal/deploy/run-mendix-on-kubernetes
+url: /developerportal/deploy/run-mendix-on-kubernetes/
 parent: "docker-deploy"
 weight: 20
 tags: ["Kubernetes", "cloud", "deployment"]

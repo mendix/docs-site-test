@@ -1,6 +1,6 @@
 ---
 title: "Integrate a Legacy System into a Mendix App"
-url: /howto/integration/integrating-a-legacy-system-into-a-mendix-app
+url: /howto/integration/integrating-a-legacy-system-into-a-mendix-app/
 category: "Integration"
 weight: 1
 tags: ["legacy", "legacy system", "integration"]

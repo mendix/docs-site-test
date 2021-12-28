@@ -1,6 +1,6 @@
 ---
 title: "Scheduled Events"
-url: /refguide/scheduled-events
+url: /refguide/scheduled-events/
 parent: "resources"
 weight: 80
 description: "Options for configuring scheduled events"

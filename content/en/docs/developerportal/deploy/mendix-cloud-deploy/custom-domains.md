@@ -1,6 +1,6 @@
 ---
 title: "Custom Domains"
-url: /developerportal/deploy/custom-domains
+url: /developerportal/deploy/custom-domains/
 parent: "mendix-cloud-deploy"
 weight: 27
 description: "How to configure custom domains as well as generate, upload, and renew certificates in Mendix."

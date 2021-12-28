@@ -1,6 +1,6 @@
 ---
 title: "Create An AR Business Card"
-url: /howto/mobile/how-to-ar-business-card
+url: /howto/mobile/how-to-ar-business-card/
 parent: "ar-parent"
 weight: 10
 description: "In this how-to you will make an augmented reality business card app."

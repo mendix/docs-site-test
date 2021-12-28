@@ -1,6 +1,6 @@
 ---
 title: "MVP Program"
-url: /developerportal/community-tools/mendix-mvp-program
+url: /developerportal/community-tools/mendix-mvp-program/
 category: "Community Tools"
 weight: 6
 description: "Describes how the Mendix Community MVP program works."

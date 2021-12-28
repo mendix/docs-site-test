@@ -1,6 +1,6 @@
 ---
 title: "Decisions"
-url: /refguide/decisions
+url: /refguide/decisions/
 parent: "microflows-and-nanoflows"
 weight: 50
 tags: ["studio pro", "decision", "decisions"]

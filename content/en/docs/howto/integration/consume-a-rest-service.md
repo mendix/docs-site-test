@@ -1,6 +1,6 @@
 ---
 title: "Consume a REST Service"
-url: /howto/integration/consume-a-rest-service
+url: /howto/integration/consume-a-rest-service/
 category: "Integration"
 weight: 9
 tags: ["integration", "rest service", "data model", "consume"]

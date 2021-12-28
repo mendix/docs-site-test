@@ -1,6 +1,6 @@
 ---
 title: "Build Hybrid Apps "
-url: /howto/mobile/build-hybrid-apps
+url: /howto/mobile/build-hybrid-apps/
 parent: "hybrid-mobile"
 weight: 2
 tags: ["mobile", "hybrid"]

@@ -1,6 +1,6 @@
 ---
 title: "Set Log Levels"
-url: /howto/monitoring-troubleshooting/log-levels
+url: /howto/monitoring-troubleshooting/log-levels/
 category: "Monitoring & Troubleshooting"
 weight: 9
 tags: ["monitoring", "troubleshooting", "log level", "logging", "log"]

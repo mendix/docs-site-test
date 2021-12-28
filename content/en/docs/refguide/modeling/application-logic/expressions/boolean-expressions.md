@@ -1,6 +1,6 @@
 ---
 title: "Boolean Expressions"
-url: /refguide/boolean-expressions
+url: /refguide/boolean-expressions/
 parent: "expressions"
 weight: 50
 tags: ["studio pro", "expression", "expressions", "Boolean"]

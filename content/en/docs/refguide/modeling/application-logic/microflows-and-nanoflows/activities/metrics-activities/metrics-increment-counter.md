@@ -1,6 +1,6 @@
 ---
 title: "Increment Counter"
-url: /refguide/metrics-increment-counter
+url: /refguide/metrics-increment-counter/
 parent: "metrics-activities"
 weight: 30
 tags: ["studio pro", "metrics", "micrometer"]

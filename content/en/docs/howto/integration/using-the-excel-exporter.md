@@ -1,6 +1,6 @@
 ---
 title: "Export to Excel"
-url: /howto/integration/using-the-excel-exporter
+url: /howto/integration/using-the-excel-exporter/
 category: "Integration"
 weight: 6
 tags: ["excel", "excel export", "excel exporter", "integration"]

@@ -1,6 +1,6 @@
 ---
 title: "Curate Registered Assets"
-url: /data-hub/data-hub-catalog/curate
+url: /data-hub/data-hub-catalog/curate/
 category: "Data Hub Catalog"
 weight: 45
 description: "Curating and enhancing findability of data assets in Data Hub"

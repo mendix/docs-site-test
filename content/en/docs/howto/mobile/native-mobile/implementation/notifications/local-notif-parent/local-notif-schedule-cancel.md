@@ -1,6 +1,6 @@
 ---
 title: "Part 5: Scheduling"
-url: /howto/mobile/local-notif-schedule-cancel
+url: /howto/mobile/local-notif-schedule-cancel/
 parent: "local-notif-parent"
 weight: 50
 description: A tutorial for scheduling and cancelling push notifications.

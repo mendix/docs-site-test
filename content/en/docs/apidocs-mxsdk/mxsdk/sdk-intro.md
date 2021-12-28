@@ -1,6 +1,6 @@
 ---
 title: "SDK Introduction"
-url: /apidocs-mxsdk/mxsdk/sdk-intro
+url: /apidocs-mxsdk/mxsdk/sdk-intro/
 category: "Mendix Platform SDK"
 weight: 1
 tags: ["SDK", "Mendix SDK", "Platform SDK", "Model SDK", "metadata"]

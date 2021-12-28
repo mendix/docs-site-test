@@ -1,6 +1,6 @@
 ---
 title: "App Settings"
-url: /refguide/project-settings
+url: /refguide/project-settings/
 parent: "project"
 weight: 10
 description: "Settings which apply to the app as a whole."

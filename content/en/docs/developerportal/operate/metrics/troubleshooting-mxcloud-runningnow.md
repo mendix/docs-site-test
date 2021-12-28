@@ -1,6 +1,6 @@
 ---
 title: "Running Now Metrics"
-url: /developerportal/operate/troubleshooting-mxcloud-runningnow
+url: /developerportal/operate/troubleshooting-mxcloud-runningnow/
 parent: "metrics"
 weight: 30
 description: "How to troubleshoot the running now in your node."

@@ -1,6 +1,6 @@
 ---
 title: "Mobile App"
-url: /developerportal/deploy/mobileapp
+url: /developerportal/deploy/mobileapp/
 category: "Deployment"
 weight: 90
 description: "Describes the Mobile App page in the Mendix Developer Portal."

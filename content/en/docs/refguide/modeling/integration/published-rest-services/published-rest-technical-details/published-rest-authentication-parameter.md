@@ -1,6 +1,6 @@
 ---
 title: "Custom Authentication Microflow Parameters"
-url: /refguide/published-rest-authentication-parameter
+url: /refguide/published-rest-authentication-parameter/
 parent: "published-rest-technical-details"
 weight: 40
 description: "The parameters which are passed to the custom authentication microflow for a published REST service"

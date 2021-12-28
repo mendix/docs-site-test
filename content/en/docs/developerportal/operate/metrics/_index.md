@@ -1,6 +1,6 @@
 ---
 title: "Metrics"
-url: /developerportal/operate/metrics
+url: /developerportal/operate/metrics/
 category: "Operations"
 weight: 10
 description: "This page describes the Metrics page of the Developer Portal."

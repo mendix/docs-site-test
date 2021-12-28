@@ -1,6 +1,6 @@
 ---
 title: "Container"
-url: /refguide/container
+url: /refguide/container/
 parent: "structure-widgets"
 weight: 20
 tags: ["studio pro", "container", "structure", "widget"]

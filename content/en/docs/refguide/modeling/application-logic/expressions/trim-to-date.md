@@ -1,6 +1,6 @@
 ---
 title: "Trim to Date"
-url: /refguide/trim-to-date
+url: /refguide/trim-to-date/
 parent: "expressions"
 weight: 120
 tags: ["studio pro", "trim to date", "expression", "expressions"]

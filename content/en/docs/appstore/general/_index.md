@@ -1,6 +1,6 @@
 ---
 title: "General Info"
-url: /appstore/general
+url: /appstore/general/
 description: "Presents details on using, sharing, and getting support on Mendix Marketplace content."
 aliases:
     - /community/app-store/index.html

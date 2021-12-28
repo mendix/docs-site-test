@@ -1,6 +1,6 @@
 ---
 title: "Set Up Maps in Native Mobile Apps"
-url: /howto/mobile/how-to-maps
+url: /howto/mobile/how-to-maps/
 parent: "implementation"
 weight: 40
 description: This guide will teach you to set up native mobile maps capabilities for Android and Apple devices.

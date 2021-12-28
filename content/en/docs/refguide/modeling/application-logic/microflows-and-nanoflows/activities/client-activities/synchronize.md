@@ -1,6 +1,6 @@
 ---
 title: "Synchronize"
-url: /refguide/synchronize
+url: /refguide/synchronize/
 parent: "client-activities"
 weight: 70
 tags: ["studio pro", "synchronize", "offline", "client activity"]

@@ -1,6 +1,6 @@
 ---
 title: "App Security"
-url: /refguide/project-security
+url: /refguide/project-security/
 parent: "security"
 weight: 10
 tags: ["studio pro", "security", "app security"]

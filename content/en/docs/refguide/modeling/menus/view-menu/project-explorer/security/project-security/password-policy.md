@@ -1,6 +1,6 @@
 ---
 title: "Password Policy"
-url: /refguide/password-policy
+url: /refguide/password-policy/
 parent: "project-security"
 weight: 50
 tags: ["studio pro", "password policy", "app security", "security"]

@@ -1,6 +1,6 @@
 ---
 title: "App"
-url: /refguide/project
+url: /refguide/project/
 parent: "project-explorer"
 weight: 10
 tags: ["studio pro", "app"]

@@ -1,6 +1,6 @@
 ---
 title: "List View"
-url: /refguide/list-view
+url: /refguide/list-view/
 parent: "data-widgets"
 weight: 40
 tags: ["studio pro"]

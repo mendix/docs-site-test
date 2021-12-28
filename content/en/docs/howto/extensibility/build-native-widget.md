@@ -1,6 +1,6 @@
 ---
 title: "Build a Pluggable Native Widget"
-url: /howto/extensibility/build-native-widget
+url: /howto/extensibility/build-native-widget/
 category: "Extensibility"
 description: "Describes building a native widget, configuring it, and styling it in a Mendix app."
 weight: 10

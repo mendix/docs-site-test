@@ -1,6 +1,6 @@
 ---
 title: "Attributes"
-url: /refguide/attributes
+url: /refguide/attributes/
 parent: "entities"
 weight: 30
 tags: ["domain model", "entity", "attribute", "studio pro"]

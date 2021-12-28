@@ -1,6 +1,6 @@
 ---
 title: "Message Definitions"
-url: /refguide/message-definitions
+url: /refguide/message-definitions/
 parent: "integration"
 weight: 50
 tags: ["studio pro"]

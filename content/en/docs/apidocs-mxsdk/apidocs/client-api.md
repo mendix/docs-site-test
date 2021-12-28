@@ -1,6 +1,6 @@
 ---
 title: "Client API"
-url: /apidocs-mxsdk/apidocs/client-api
+url: /apidocs-mxsdk/apidocs/client-api/
 category: "API Documentation"
 weight: 15
 tags: ["Client API", "API"]

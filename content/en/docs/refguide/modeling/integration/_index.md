@@ -1,6 +1,6 @@
 ---
 title: "Integration"
-url: /refguide/integration
+url: /refguide/integration/
 category: "App Modeling"
 weight: 110
 tags: ["studio pro"]

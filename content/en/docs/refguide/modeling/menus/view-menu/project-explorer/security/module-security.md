@@ -1,6 +1,6 @@
 ---
 title: "Module Security"
-url: /refguide/module-security
+url: /refguide/module-security/
 parent: "security"
 weight: 20
 tags: ["studio pro", "module security", "security", "module"]

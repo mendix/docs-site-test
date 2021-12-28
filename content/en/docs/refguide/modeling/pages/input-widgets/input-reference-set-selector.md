@@ -1,6 +1,6 @@
 ---
 title: "Input Reference Set Selector"
-url: /refguide/input-reference-set-selector
+url: /refguide/input-reference-set-selector/
 parent: "input-widgets"
 weight: 90
 tags: ["studio pro"]

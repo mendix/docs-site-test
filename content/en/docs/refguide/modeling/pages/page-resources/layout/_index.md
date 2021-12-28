@@ -1,6 +1,6 @@
 ---
 title: "Layout"
-url: /refguide/layout
+url: /refguide/layout/
 parent: "page-resources"
 weight: 10
 tags: ["studio pro", "layout widgets", "layout", "page template", "pages"]

@@ -1,6 +1,6 @@
 ---
 title: "Log Message"
-url: /refguide/log-message
+url: /refguide/log-message/
 parent: "activities"
 weight: 70
 tags: ["studio pro", "logging activity", "logging activities", "log message"]

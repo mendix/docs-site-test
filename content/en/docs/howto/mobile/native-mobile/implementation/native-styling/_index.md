@@ -1,6 +1,6 @@
 ---
 title: "Implement Native Mobile Styling"
-url: /howto/mobile/native-styling
+url: /howto/mobile/native-styling/
 parent: "implementation"
 weight: 25
 description: General information for native styling in Mendix.

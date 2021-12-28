@@ -1,6 +1,6 @@
 ---
 title: "Snippet"
-url: /refguide/snippet
+url: /refguide/snippet/
 parent: "page-resources"
 weight: 30
 tags: ["studio pro", "snippet", "page resources"]

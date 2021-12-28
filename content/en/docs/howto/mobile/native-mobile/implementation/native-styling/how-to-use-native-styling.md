@@ -1,6 +1,6 @@
 ---
 title: "Style Your Mendix Native Mobile App"
-url: /howto/mobile/how-to-use-native-styling
+url: /howto/mobile/how-to-use-native-styling/
 parent: "native-styling"
 weight: 30
 description: A how-to for styling your first Mendix Native App.

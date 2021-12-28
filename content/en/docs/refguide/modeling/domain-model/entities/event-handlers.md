@@ -1,6 +1,6 @@
 ---
 title: "Event Handlers"
-url: /refguide/event-handlers
+url: /refguide/event-handlers/
 parent: "entities"
 weight: 50
 tags: ["domain model", "entity", "event handler", "studio pro"]

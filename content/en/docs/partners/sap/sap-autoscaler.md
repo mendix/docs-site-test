@@ -1,6 +1,6 @@
 ---
 title: "Application Autoscaler for SAP Business Technology Platform"
-url: /partners/sap/sap-autoscaler
+url: /partners/sap/sap-autoscaler/
 category: "SAP"
 weight: 47
 description: "How to set up the SAP Autoscaler"

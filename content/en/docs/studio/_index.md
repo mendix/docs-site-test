@@ -1,6 +1,6 @@
 ---
 title: "Studio 9 Guide"
-url: /studio
+url: /studio/
 tags: ["studio", "web modeler"]
 weight: 20
 cascade:

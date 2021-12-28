@@ -1,6 +1,6 @@
 ---
 title: "Microflows"
-url: /studio-how-to/microflows
+url: /studio-how-to/microflows/
 description: "A landing page for Studio how-to's on microflows."
 tags: ["studio", "microflow", "how-to"]
 ---

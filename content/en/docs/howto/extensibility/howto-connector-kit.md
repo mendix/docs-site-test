@@ -1,6 +1,6 @@
 ---
 title: "Build Microflow Actions Using the Mendix Connector Kit"
-url: /howto/extensibility/howto-connector-kit
+url: /howto/extensibility/howto-connector-kit/
 category: "Extensibility"
 description: "Describes creating custom Microflow actions using advanced Connector Kit options."
 weight: 80

@@ -1,6 +1,6 @@
 ---
 title: "Constants"
-url: /refguide/constants
+url: /refguide/constants/
 parent: "resources"
 weight: 60
 tags: ["studio pro", "constant", "constants"]

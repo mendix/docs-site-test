@@ -1,6 +1,6 @@
 ---
 title: "Tencent Cloud (腾讯云)"
-url: /developerportal/deploy/tencent-deploy
+url: /developerportal/deploy/tencent-deploy/
 category: "Deployment"
 description: "Describes the processes for deploying a Mendix app to the Tencent Cloud"
 weight: 45

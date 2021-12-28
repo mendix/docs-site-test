@@ -1,6 +1,6 @@
 ---
 title: "Merge"
-url: /refguide/merge
+url: /refguide/merge/
 parent: "decisions"
 weight: 1
 tags: ["studio pro", "merge", "decisions"]

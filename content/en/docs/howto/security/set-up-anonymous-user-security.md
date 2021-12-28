@@ -1,6 +1,6 @@
 ---
 title: "Set Up Anonymous User Security"
-url: /howto/security/set-up-anonymous-user-security
+url: /howto/security/set-up-anonymous-user-security/
 category: "Security"
 weight: 30
 tags: ["anonymous", "security"]

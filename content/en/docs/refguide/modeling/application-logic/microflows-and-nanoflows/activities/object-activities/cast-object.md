@@ -1,6 +1,6 @@
 ---
 title: "Cast Object"
-url: /refguide/cast-object
+url: /refguide/cast-object/
 parent: "object-activities"
 weight: 10
 tags: ["studio pro"]

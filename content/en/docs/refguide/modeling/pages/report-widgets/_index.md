@@ -1,6 +1,6 @@
 ---
 title: "Reports"
-url: /refguide/report-widgets
+url: /refguide/report-widgets/
 parent: "pages"
 weight: 50
 tags: ["studio pro", "report widgets", "report", "widgets", "data set"]

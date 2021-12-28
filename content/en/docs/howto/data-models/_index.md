@@ -1,6 +1,6 @@
 ---
 title: "Data Models"
-url: /howto/data-models
+url: /howto/data-models/
 tags: ["studio pro"]
 ---
 

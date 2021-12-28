@@ -1,6 +1,6 @@
 ---
 title: "File Menu"
-url: /refguide/file-menu
+url: /refguide/file-menu/
 parent: "menus"
 description: "Describes the File Menu in Studio Pro."
 weight: 5

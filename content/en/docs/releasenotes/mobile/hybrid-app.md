@@ -1,6 +1,6 @@
 ---
 title: "Hybrid App Base & Template"
-url: /releasenotes/mobile/hybrid-app
+url: /releasenotes/mobile/hybrid-app/
 category: "Mobile"
 weight: 30
 toc-level: 1

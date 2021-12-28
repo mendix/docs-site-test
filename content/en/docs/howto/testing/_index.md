@@ -1,6 +1,6 @@
 ---
 title: "Testing"
-url: /howto/testing
+url: /howto/testing/
 tags: ["test", "testing"]
 ---
 

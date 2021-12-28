@@ -1,6 +1,6 @@
 ---
 title: "Version Control"
-url: /refguide/version-control
+url: /refguide/version-control/
 description: "This document gives definitions and explains the version control  process"
 tags: ["Version Control", "Application Lifecycle Management", "Commit", "Collaborate"]
 weight: 30

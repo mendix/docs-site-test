@@ -1,6 +1,6 @@
 ---
 title: "Data Hub in Studio"
-url: /studio/data-hub-in-studio
+url: /studio/data-hub-in-studio/
 category: "Working with Data"
 weight: 30
 description: "Describes the Data Hub Catalog usage in Mendix Studio."

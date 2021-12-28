@@ -1,6 +1,6 @@
 ---
 title: "Association Properties"
-url: /refguide/association-properties
+url: /refguide/association-properties/
 parent: "associations"
 weight: 10
 tags: ["domain model", "association", "studio pro"]

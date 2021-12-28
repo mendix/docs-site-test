@@ -1,6 +1,6 @@
 ---
 title: "Create Automated Tests with TestNG"
-url: /howto/testing/create-automated-tests-with-testng
+url: /howto/testing/create-automated-tests-with-testng/
 category: "Testing"
 weight: 50
 tags: ["test", "testing", "testng"]

@@ -1,6 +1,6 @@
 ---
 title: "Consume Registered Assets"
-url: /data-hub/data-hub-catalog/consume
+url: /data-hub/data-hub-catalog/consume/
 category: "Data Hub Catalog"
 weight: 20
 description: "Using shared data sources and datasets through Medix Data Hub."

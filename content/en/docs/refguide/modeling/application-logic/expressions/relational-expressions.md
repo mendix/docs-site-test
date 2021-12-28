@@ -1,6 +1,6 @@
 ---
 title: "Relational Expressions"
-url: /refguide/relational-expressions
+url: /refguide/relational-expressions/
 parent: "expressions"
 weight: 30
 description: "Describes relational expressions in Mendix."

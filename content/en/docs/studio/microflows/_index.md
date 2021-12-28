@@ -1,6 +1,6 @@
 ---
 title: "Microflows"
-url: /studio/microflows
+url: /studio/microflows/
 description: "Describes the microflows in Mendix Studio."
 weight: 50
 tags: ["studio", "microflow"]

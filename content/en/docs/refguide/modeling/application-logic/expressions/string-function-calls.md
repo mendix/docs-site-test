@@ -1,6 +1,6 @@
 ---
 title: "String Function Calls"
-url: /refguide/string-function-calls
+url: /refguide/string-function-calls/
 parent: "expressions"
 weight: 80
 description: "Describes the functions for converting and inspecting strings in Mendix."

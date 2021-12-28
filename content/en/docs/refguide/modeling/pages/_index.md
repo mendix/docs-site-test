@@ -1,6 +1,6 @@
 ---
 title: "Pages"
-url: /refguide/pages
+url: /refguide/pages/
 category: "App Modeling"
 weight: 30
 tags: ["Pages", "Widgets", "Studio Pro", "page structure"]

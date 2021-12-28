@@ -1,6 +1,6 @@
 ---
 title: "Menus & Navigation"
-url: /refguide/menu-widgets
+url: /refguide/menu-widgets/
 parent: "pages"
 weight: 45
 tags: ["studio pro", "menu widgets", "navigation", "widget"]

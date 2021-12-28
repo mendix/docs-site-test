@@ -1,6 +1,6 @@
 ---
 title: "Trends in Mendix Cloud v4"
-url: /developerportal/operate/trends-v4
+url: /developerportal/operate/trends-v4/
 parent: "metrics"
 weight: 20
 description: "Describes how to interpret various graphs and trends in the Mendix Cloud v4."

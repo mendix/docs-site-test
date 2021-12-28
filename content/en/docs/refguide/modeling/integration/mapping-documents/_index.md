@@ -1,6 +1,6 @@
 ---
 title: "Mapping Documents"
-url: /refguide/mapping-documents
+url: /refguide/mapping-documents/
 parent: "integration"
 weight: 35
 tags: ["studio pro"]

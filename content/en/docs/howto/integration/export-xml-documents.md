@@ -1,6 +1,6 @@
 ---
 title: "Export XML Documents"
-url: /howto/integration/export-xml-documents
+url: /howto/integration/export-xml-documents/
 category: "Integration"
 weight: 4
 tags: ["export", "xml", "integration"]

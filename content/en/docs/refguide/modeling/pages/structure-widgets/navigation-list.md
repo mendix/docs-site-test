@@ -1,6 +1,6 @@
 ---
 title: "Navigation List"
-url: /refguide/navigation-list
+url: /refguide/navigation-list/
 parent: "structure-widgets"
 weight: 70
 tags: ["studio pro", "navigation list", "container widget", "widget"]

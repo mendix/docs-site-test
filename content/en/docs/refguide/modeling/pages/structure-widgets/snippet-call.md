@@ -1,6 +1,6 @@
 ---
 title: "Snippet Call"
-url: /refguide/snippet-call
+url: /refguide/snippet-call/
 parent: "structure-widgets"
 weight: 40
 tags: ["studio pro", snippet call", "common widget"]

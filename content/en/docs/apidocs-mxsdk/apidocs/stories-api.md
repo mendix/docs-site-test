@@ -1,6 +1,6 @@
 ---
 title: "Stories API"
-url: /apidocs-mxsdk/apidocs/stories-api
+url: /apidocs-mxsdk/apidocs/stories-api/
 category: "API Documentation"
 weight: 60
 ---

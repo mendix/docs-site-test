@@ -1,6 +1,6 @@
 ---
 title: "Edit Menu"
-url: /refguide/edit-menu
+url: /refguide/edit-menu/
 parent: "menus"
 description: "Describes the Edit Menu in Studio Pro."
 weight: 10

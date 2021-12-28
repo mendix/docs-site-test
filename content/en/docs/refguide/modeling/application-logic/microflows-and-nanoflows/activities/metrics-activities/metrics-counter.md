@@ -1,6 +1,6 @@
 ---
 title: "Counter"
-url: /refguide/metrics-counter
+url: /refguide/metrics-counter/
 parent: "metrics-activities"
 weight: 10
 tags: ["studio pro", "metrics", "micrometer"]

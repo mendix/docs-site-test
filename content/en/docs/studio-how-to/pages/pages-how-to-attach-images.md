@@ -1,6 +1,6 @@
 ---
 title: "Enable End-Users to Attach Images"
-url: /studio-how-to/pages-how-to-attach-images
+url: /studio-how-to/pages-how-to-attach-images/
 category: "Pages"
 description: "Describes how to configure image uploader in Mendix Studio."
 weight: 60

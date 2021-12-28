@@ -1,6 +1,6 @@
 ---
 title: "Working with Vector Graphics"
-url: /refguide/native-svg
+url: /refguide/native-svg/
 parent: "native-mobile"
 weight: 80
 description: "Learn how to integrate SVGs into your native mobile apps."

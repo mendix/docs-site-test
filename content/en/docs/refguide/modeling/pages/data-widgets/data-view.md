@@ -1,6 +1,6 @@
 ---
 title: "Data View"
-url: /refguide/data-view
+url: /refguide/data-view/
 parent: "data-widgets"
 weight: 10
 tags: ["page", "data view", "widget", "studio pro"]

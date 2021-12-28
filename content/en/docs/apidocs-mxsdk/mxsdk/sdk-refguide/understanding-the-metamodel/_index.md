@@ -1,6 +1,6 @@
 ---
 title: "Understanding the Mendix Metamodel"
-url: /apidocs-mxsdk/mxsdk/understanding-the-metamodel
+url: /apidocs-mxsdk/mxsdk/understanding-the-metamodel/
 parent: "sdk-refguide"
 weight: 1
 ---

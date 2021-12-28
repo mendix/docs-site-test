@@ -1,6 +1,6 @@
 ---
 title: "Native Template"
-url: /releasenotes/mobile/native-template
+url: /releasenotes/mobile/native-template/
 category: "Mobile"
 weight: 12
 toc-level: 1

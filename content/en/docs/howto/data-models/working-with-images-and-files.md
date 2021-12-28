@@ -1,6 +1,6 @@
 ---
 title: "Work with Images & Files"
-url: /howto/data-models/working-with-images-and-files
+url: /howto/data-models/working-with-images-and-files/
 category: "Data Models"
 weight: 4
 tags: ["studio pro"]

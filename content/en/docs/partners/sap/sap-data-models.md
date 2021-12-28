@@ -1,6 +1,6 @@
 ---
 title: "SAP Data Models"
-url: /partners/sap/sap-data-models
+url: /partners/sap/sap-data-models/
 category: "SAP"
 weight: 30
 description: "Presents reference information on the use of SAP data models."

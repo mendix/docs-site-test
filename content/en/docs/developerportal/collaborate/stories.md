@@ -1,6 +1,6 @@
 ---
 title: "Stories"
-url: /developerportal/collaborate/stories
+url: /developerportal/collaborate/stories/
 category: "Collaboration"
 weight: 2
 description: "Describes how to manage the Sprints and stories for your apps."

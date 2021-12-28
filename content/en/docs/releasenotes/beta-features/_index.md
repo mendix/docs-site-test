@@ -1,6 +1,6 @@
 ---
 title: "Beta Versions"
-url: /releasenotes/beta-features
+url: /releasenotes/beta-features/
 tags: ["Beta", "Studio Pro", "Features", "Feature Flags", "products", "features and products"]
 #notoc: true
 #layout: wide

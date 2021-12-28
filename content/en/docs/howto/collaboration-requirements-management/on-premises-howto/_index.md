@@ -1,6 +1,6 @@
 ---
 title: "Work with On-Premises Version Control Server"
-url: /howto/collaboration-requirements-management/on-premises-howto
+url: /howto/collaboration-requirements-management/on-premises-howto/
 category: "Collaboration"
 weight: 60
 tags: ["on-premises", "studio pro", "svn", "git", "version control"]

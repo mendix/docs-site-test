@@ -1,6 +1,6 @@
 ---
 title: "Configure Your Theme"
-url: /howto/front-end/configuring-your-theme
+url: /howto/front-end/configuring-your-theme/
 category: "Front End"
 weight: 15
 tags: ["theming", "UX", "front end"]

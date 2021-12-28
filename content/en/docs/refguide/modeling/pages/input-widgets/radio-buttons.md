@@ -1,6 +1,6 @@
 ---
 title: "Radio Buttons"
-url: /refguide/radio-buttons
+url: /refguide/radio-buttons/
 parent: "input-widgets"
 weight: 50
 tags: ["studio pro"]

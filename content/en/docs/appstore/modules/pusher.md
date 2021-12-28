@@ -1,6 +1,6 @@
 ---
 title: "Pusher"
-url: /appstore/modules/pusher
+url: /appstore/modules/pusher/
 category: "Modules"
 description: " "
 tags: ["marketplace", "marketplace component", "pusher", "platform support"]

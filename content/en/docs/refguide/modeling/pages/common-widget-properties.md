@@ -1,6 +1,6 @@
 ---
 title: "Properties Common in the Page Editor"
-url: /refguide/common-widget-properties
+url: /refguide/common-widget-properties/
 parent: "pages"
 weight: 120
 tags: ["studio pro", "widget properties", "properties", "common", "widget", "classes"]

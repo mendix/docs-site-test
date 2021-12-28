@@ -1,6 +1,6 @@
 ---
 title: "Suppression Rules"
-url: /refguide/suppression-rules
+url: /refguide/suppression-rules/
 parent: "errors-pane"
 weight: 10
 description: "Describes suppression rules for warnings in Studio Pro."

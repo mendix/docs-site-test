@@ -1,6 +1,6 @@
 ---
 title: "XPath Length"
-url: /refguide/xpath-length
+url: /refguide/xpath-length/
 parent: "xpath-constraint-functions"
 tags: ["studio pro"]
 ---

@@ -1,6 +1,6 @@
 ---
 title: "JavaScript Action Call"
-url: /refguide/javascript-action-call
+url: /refguide/javascript-action-call/
 parent: "action-call-activities"
 weight: 20
 description: "This reference explains the properties of the JavaScript action call activity."

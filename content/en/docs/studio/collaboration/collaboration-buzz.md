@@ -1,6 +1,6 @@
 ---
 title: "Buzz"
-url: /studio/collaboration-buzz
+url: /studio/collaboration-buzz/
 category: "Collaboration"
 weight: 20
 description: "Describes Studio Buzz."

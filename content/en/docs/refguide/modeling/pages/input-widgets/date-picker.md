@@ -1,6 +1,6 @@
 ---
 title: "Date Picker"
-url: /refguide/date-picker
+url: /refguide/date-picker/
 parent: "input-widgets"
 weight: 60
 tags: ["studio pro"]

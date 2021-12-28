@@ -1,6 +1,6 @@
 ---
 title: "WebSockets"
-url: /refguide/websockets-in-runtime
+url: /refguide/websockets-in-runtime/
 category: "Mendix Runtime"
 description: "A description of how to use websockets in the Mendix Runtime"
 # weight: 99

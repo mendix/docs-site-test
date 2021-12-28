@@ -1,6 +1,6 @@
 ---
 title: "Grids"
-url: /refguide/grids
+url: /refguide/grids/
 parent: "data-widgets"
 weight: 20
 tags: ["studio pro", "grid", "data grid", "template grid"]

@@ -1,6 +1,6 @@
 ---
 title: "Decision in Workflows"
-url: /refguide/decision-in-workflows
+url: /refguide/decision-in-workflows/
 parent: "workflows"
 weight: 20
 tags: ["workflow", "workflows", "decision", "Studio Pro"]

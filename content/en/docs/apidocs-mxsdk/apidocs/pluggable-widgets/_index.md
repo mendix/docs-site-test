@@ -1,6 +1,6 @@
 ---
 title: "Pluggable Widgets API"
-url: /apidocs-mxsdk/apidocs/pluggable-widgets
+url: /apidocs-mxsdk/apidocs/pluggable-widgets/
 category: "API Documentation"
 description: A guide for understanding pluggable widgets.
 weight: 45

@@ -1,6 +1,6 @@
 ---
 title: "Menu"
-url: /refguide/menu
+url: /refguide/menu/
 parent: "page-resources"
 weight: 50
 tags: ["studio pro", "menu", "menu item", "page resource"]

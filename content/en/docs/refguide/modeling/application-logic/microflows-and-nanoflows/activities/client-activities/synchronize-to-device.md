@@ -1,6 +1,6 @@
 ---
 title: "Synchronize to Device"
-url: /refguide/synchronize-to-device
+url: /refguide/synchronize-to-device/
 parent: "client-activities"
 tags: ["studio pro", "synchronize to device", "client activities"]
 weight: 60

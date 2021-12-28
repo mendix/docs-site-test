@@ -1,6 +1,6 @@
 ---
 title: "Published REST Request Routing"
-url: /refguide/published-rest-routing
+url: /refguide/published-rest-routing/
 parent: "published-rest-technical-details"
 weight: 10
 description: "A flow chart which shows how an example request is processed, what security is applied, and what is returned by the service."

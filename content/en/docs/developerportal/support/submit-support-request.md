@@ -1,6 +1,6 @@
 ---
 title: "Submit a Support Request"
-url: /developerportal/support/submit-support-request
+url: /developerportal/support/submit-support-request/
 category: "Mendix Support"
 weight: 2
 description: "Describes submitting a request with Mendix Support."

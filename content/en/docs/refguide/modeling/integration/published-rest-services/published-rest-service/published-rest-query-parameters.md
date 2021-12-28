@@ -1,6 +1,6 @@
 ---
 title: "Published REST Query Parameters"
-url: /refguide/published-rest-query-parameters
+url: /refguide/published-rest-query-parameters/
 parent: "published-rest-service"
 weight: 40
 description: "Parameters for a published REST query"

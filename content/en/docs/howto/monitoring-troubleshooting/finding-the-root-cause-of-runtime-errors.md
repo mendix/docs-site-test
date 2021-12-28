@@ -1,6 +1,6 @@
 ---
 title: "Find the Root Cause of Runtime Errors"
-url: /howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors
+url: /howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/
 category: "Monitoring & Troubleshooting"
 weight: 8
 tags: ["monitoring", "troubleshooting", "runtime error", "runtime", "error"]

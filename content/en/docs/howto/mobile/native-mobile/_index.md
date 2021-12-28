@@ -1,6 +1,6 @@
 ---
 title: "Native Mobile"
-url: /howto/mobile/native-mobile
+url: /howto/mobile/native-mobile/
 category: "Mobile"
 weight: 1
 tags: ["mobile", "native", "iOS", "Android"]

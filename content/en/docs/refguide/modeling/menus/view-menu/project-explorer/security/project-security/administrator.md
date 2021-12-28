@@ -1,6 +1,6 @@
 ---
 title: "Administrator"
-url: /refguide/administrator
+url: /refguide/administrator/
 parent: "project-security"
 weight: 20
 tags: ["studio pro", "administrator", "app security", "security"]

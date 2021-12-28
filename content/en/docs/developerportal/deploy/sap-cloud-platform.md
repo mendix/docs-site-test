@@ -1,6 +1,6 @@
 ---
 title: "SAP Business Technology Platform"
-url: /developerportal/deploy/sap-cloud-platform
+url: /developerportal/deploy/sap-cloud-platform/
 category: "Deployment"
 weight: 40
 description: "Reference documentation on deploying to SAP Business Technology Platform"

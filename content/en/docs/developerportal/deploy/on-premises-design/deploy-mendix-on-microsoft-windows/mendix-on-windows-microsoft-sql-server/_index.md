@@ -1,6 +1,6 @@
 ---
 title: "Microsoft SQL Server"
-url: /developerportal/deploy/mendix-on-windows-microsoft-sql-server
+url: /developerportal/deploy/mendix-on-windows-microsoft-sql-server/
 parent: "deploy-mendix-on-microsoft-windows"
 weight: 30
 ---

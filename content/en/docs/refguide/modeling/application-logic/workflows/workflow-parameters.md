@@ -1,6 +1,6 @@
 ---
 title: "Workflow Parameters"
-url: /refguide/workflow-parameters
+url: /refguide/workflow-parameters/
 parent: "workflows"
 weight: 05
 tags: ["workflow", "workflows", "parameters", "workflow parameters"]

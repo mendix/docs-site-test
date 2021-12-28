@@ -1,6 +1,6 @@
 ---
 title: "Domain Model"
-url: /refguide/domain-model
+url: /refguide/domain-model/
 category: "App Modeling"
 weight: 30
 tags: ["domain model", "entity", "association", "annotation", "studio pro"]

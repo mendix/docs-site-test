@@ -1,6 +1,6 @@
 ---
 title: "Parameter"
-url: /refguide/parameter
+url: /refguide/parameter/
 parent: "microflows-and-nanoflows"
 weight: 70
 tags: ["studio pro", "parameter", "microflow"]

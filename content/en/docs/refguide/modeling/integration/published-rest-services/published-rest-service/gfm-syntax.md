@@ -1,6 +1,6 @@
 ---
 title: "GitHub-Flavored Markdown"
-url: /refguide/gfm-syntax
+url: /refguide/gfm-syntax/
 parent: "published-rest-service"
 weight: 70
 description: "Link to GitHub Guide to Mastering Markdown"

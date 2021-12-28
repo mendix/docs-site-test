@@ -1,6 +1,6 @@
 ---
 title: "Fine-Tune a Chart with Advanced Settings"
-url: /howto/front-end/charts-advanced-tuning
+url: /howto/front-end/charts-advanced-tuning/
 parent: "charts-tutorials"
 weight: 30
 description: "Describes the settings you can use to change chart layouts and types"

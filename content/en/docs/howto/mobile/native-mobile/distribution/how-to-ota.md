@@ -1,6 +1,6 @@
 ---
 title: "Release Over the Air Updates with Mendix"
-url: /howto/mobile/how-to-ota
+url: /howto/mobile/how-to-ota/
 parent: "distribution"
 weight: 20
 description: Describes enabling over the air updates using built-in functionality.

@@ -1,6 +1,6 @@
 ---
 title: "Buttons"
-url: /studio/page-editor-widgets-buttons
+url: /studio/page-editor-widgets-buttons/
 parent: "page-editor-widgets"
 description: "Describes button widgets in Mendix Studio."
 weight: 50

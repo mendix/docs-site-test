@@ -1,6 +1,6 @@
 ---
 title: "Execute an SQL Statement on an External Database"
-url: /howto/integration/execute-an-sql-statement-on-an-external-database
+url: /howto/integration/execute-an-sql-statement-on-an-external-database/
 category: "Integration"
 weight: 17
 tags: ["database connector", SQL", "database", "external database", "integration"]

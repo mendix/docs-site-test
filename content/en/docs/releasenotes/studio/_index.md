@@ -1,6 +1,6 @@
 ---
 title: "Studio"
-url: /releasenotes/studio
+url: /releasenotes/studio/
 frontpage_featured: true
 weight: 10
 ---

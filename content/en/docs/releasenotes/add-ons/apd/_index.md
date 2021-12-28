@@ -1,6 +1,6 @@
 ---
 title: "APD"
-url: /releasenotes/add-ons/apd
+url: /releasenotes/add-ons/apd/
 category: "Quality Add-ons"
 weight: 20 
 ---

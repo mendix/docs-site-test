@@ -1,6 +1,6 @@
 ---
 title: "Microflow Consistency Errors"
-url: /studio/consistency-errors-microflows
+url: /studio/consistency-errors-microflows/
 parent: "consistency-errors"
 weight: 30
 description: "Describes microflow consistency errors in Mendix Studio and the way to fix them."

@@ -1,6 +1,6 @@
 ---
 title: "Mendix Native Mobile Builder"
-url: /releasenotes/mobile/mendix-native-mobile-builder
+url: /releasenotes/mobile/mendix-native-mobile-builder/
 category: "Mobile"
 weight: 11
 toc-level: 1

@@ -1,6 +1,6 @@
 ---
 title: "Mendix Basic Package"
-url: /developerportal/deploy/basic-package
+url: /developerportal/deploy/basic-package/
 parent: "licensing-apps"
 weight: 20
 description: "Obtaining a Mendix Basic Package Node"

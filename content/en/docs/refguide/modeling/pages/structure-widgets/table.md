@@ -1,6 +1,6 @@
 ---
 title: "Table"
-url: /refguide/table
+url: /refguide/table/
 parent: "structure-widgets"
 weight: 60
 tags: ["studio pro", "table", "container widget", "widget"]

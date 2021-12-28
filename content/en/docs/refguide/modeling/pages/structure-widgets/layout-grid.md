@@ -1,6 +1,6 @@
 ---
 title: "Layout Grid"
-url: /refguide/layout-grid
+url: /refguide/layout-grid/
 parent: "structure-widgets"
 weight: 10
 tags: ["studio pro", "layout grid", "container widget", "column", "row", "grid", "layout"]

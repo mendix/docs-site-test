@@ -1,6 +1,6 @@
 ---
 title: "Indexes"
-url: /refguide/indexes
+url: /refguide/indexes/
 parent: "entities"
 weight: 60
 tags: ["domain model", "entity", "attribute", "index", "studio pro"]

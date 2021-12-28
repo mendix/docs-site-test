@@ -1,6 +1,6 @@
 ---
 title: "Search Bar"
-url: /refguide/search-bar
+url: /refguide/search-bar/
 parent: "grids"
 weight: 40
 tags: ["studio pro", "search bar", "comparison search field", "drop down search field", "range search field", "grid"]

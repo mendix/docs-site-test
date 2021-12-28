@@ -1,6 +1,6 @@
 ---
 title: "Debug Microflows Remotely"
-url: /howto/monitoring-troubleshooting/debug-microflows-remotely
+url: /howto/monitoring-troubleshooting/debug-microflows-remotely/
 parent: "debug-microflows-and-nanoflows"
 tags: ["monitoring", "troubleshooting", "debug", "microflow", "remote"]
 ---

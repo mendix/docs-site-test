@@ -1,6 +1,6 @@
 ---
 title: "Troubleshoot Common Native Mobile Issues"
-url: /howto/mobile/common-issues
+url: /howto/mobile/common-issues/
 parent: "get-started"
 weight: 40
 description: Troubleshoot common issues associated with building and running native mobile apps.

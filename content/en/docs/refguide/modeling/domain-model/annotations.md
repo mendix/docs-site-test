@@ -1,6 +1,6 @@
 ---
 title: "Annotations"
-url: /refguide/annotations
+url: /refguide/annotations/
 parent: "domain-model"
 weight: 30
 tags: ["domain model", "annotation", "studio pro"]

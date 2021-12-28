@@ -1,6 +1,6 @@
 ---
 title: "Header"
-url: /refguide/header
+url: /refguide/header/
 parent: "layout"
 weight: 20
 tags: ["studio pro"]

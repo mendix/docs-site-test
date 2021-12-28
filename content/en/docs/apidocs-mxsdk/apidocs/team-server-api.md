@@ -1,6 +1,6 @@
 ---
 title: "Team Server API"
-url: /apidocs-mxsdk/apidocs/team-server-api
+url: /apidocs-mxsdk/apidocs/team-server-api/
 category: "API Documentation"
 weight: 65
 ---

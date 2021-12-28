@@ -1,6 +1,6 @@
 ---
 title: "Use the XSUAA Connector for SAP Business Technology Platform"
-url: /partners/sap/use-sap-xsuaa-connector
+url: /partners/sap/use-sap-xsuaa-connector/
 category: "SAP"
 weight: 45
 description: "Describes how to set up the XSUAA Connector for SAP Business Technology Platform."

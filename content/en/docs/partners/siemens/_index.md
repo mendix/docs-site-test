@@ -1,6 +1,6 @@
 ---
 title: "Siemens"
-url: /partners/siemens
+url: /partners/siemens/
 description: "Reference content for Siemens integrations."
 tags: ["Siemens", "MindSphere"]
 notoc: true

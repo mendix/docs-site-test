@@ -1,6 +1,6 @@
 ---
 title: "History"
-url: /refguide/history-dialog
+url: /refguide/history-dialog/
 parent: "version-control-menu"
 weight: 50
 tags: ["studio pro"]

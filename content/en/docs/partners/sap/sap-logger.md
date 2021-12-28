@@ -1,6 +1,6 @@
 ---
 title: "SAP Logging Connector"
-url: /partners/sap/sap-logger
+url: /partners/sap/sap-logger/
 category: "SAP"
 weight: 49
 description: "The connector which formats logs for the Kibana dashboard"

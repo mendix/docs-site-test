@@ -1,6 +1,6 @@
 ---
 title: "Front End"
-url: /howto/front-end
+url: /howto/front-end/
 tags: ["studio pro"]
 ---
 

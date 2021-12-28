@@ -1,6 +1,6 @@
 ---
 title: "Workflows"
-url: /refguide/workflows
+url: /refguide/workflows/
 parent: "application-logic"
 weight: 20
 tags: ["workflow", "workflows", "Studio Pro"]

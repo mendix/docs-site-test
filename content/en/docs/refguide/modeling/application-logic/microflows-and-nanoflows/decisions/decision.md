@@ -1,6 +1,6 @@
 ---
 title: "Decision"
-url: /refguide/decision
+url: /refguide/decision/
 parent: "decisions"
 weight: 3
 tags: ["studio pro", "decision", "exclusive split"]

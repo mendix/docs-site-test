@@ -1,6 +1,6 @@
 ---
 title: "Documents"
-url: /developerportal/collaborate/documents
+url: /developerportal/collaborate/documents/
 category: "Collaboration"
 weight: 6
 description: "Describes how to manage the documents in your app."

@@ -1,6 +1,6 @@
 ---
 title: "Run Menu"
-url: /refguide/run-menu
+url: /refguide/run-menu/
 parent: "menus"
 description: "Describes the Run menu in Mendix Studio Pro."
 weight: 35

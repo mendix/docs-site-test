@@ -1,6 +1,6 @@
 ---
 title: "Projects in the Mendix Metamodel"
-url: /apidocs-mxsdk/mxsdk/projects-metamodel
+url: /apidocs-mxsdk/mxsdk/projects-metamodel/
 parent: "understanding-the-metamodel"
 weight: 1
 ---

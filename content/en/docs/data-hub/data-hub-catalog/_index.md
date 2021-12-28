@@ -1,6 +1,6 @@
 ---
 title: "Data Hub Catalog"
-url: /data-hub/data-hub-catalog
+url: /data-hub/data-hub-catalog/
 description: "Introduces the processes and properties of Mendix Data Hub."
 tags: ["data hub", "data hub catalog"]
 ---

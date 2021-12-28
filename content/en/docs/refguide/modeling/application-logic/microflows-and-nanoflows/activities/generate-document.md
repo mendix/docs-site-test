@@ -1,6 +1,6 @@
 ---
 title: "Generate Document"
-url: /refguide/generate-document
+url: /refguide/generate-document/
 parent: "activities"
 weight: 80
 description: "Describes generating documents from a microflow. "

@@ -1,6 +1,6 @@
 ---
 title: "General"
-url: /developerportal/deploy/general
+url: /developerportal/deploy/general/
 category: "Deployment"
 weight: 10
 description: "An overview of the DEPLOY section of the Developer Portal"

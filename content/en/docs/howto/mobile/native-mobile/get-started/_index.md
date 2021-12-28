@@ -1,6 +1,6 @@
 ---
 title: "Getting Started"
-url: /howto/mobile/get-started
+url: /howto/mobile/get-started/
 parent: "native-mobile"
 weight: 20
 description: Get started with native mobile in Mendix Studio Pro.

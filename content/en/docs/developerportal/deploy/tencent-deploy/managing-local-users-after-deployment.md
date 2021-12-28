@@ -1,6 +1,6 @@
 ---
 title: "Manage Local Users in Studio"
-url: /developerportal/deploy/managing-local-users-after-deployment
+url: /developerportal/deploy/managing-local-users-after-deployment/
 parent: "tencent-deploy"
 weight: 60
 description: ""

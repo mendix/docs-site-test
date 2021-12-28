@@ -1,6 +1,6 @@
 ---
 title: "Migrate Workflow Apps to Mendix 9.6 and Above"
-url: /refguide/workflow-beta-migration
+url: /refguide/workflow-beta-migration/
 category: "General Info"
 weight: 25
 description: "Describes how to migrate existing Workflow applications to the new feedback-improved Beta."

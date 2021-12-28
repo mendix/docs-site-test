@@ -1,6 +1,6 @@
 ---
 title: "Change List"
-url: /refguide/change-list
+url: /refguide/change-list/
 parent: "list-activities"
 weight: 2
 tags: ["studio pro", "List"]

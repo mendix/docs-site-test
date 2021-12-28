@@ -1,6 +1,6 @@
 ---
 title: "Hybrid Mobile"
-url: /refguide/hybrid-mobile
+url: /refguide/hybrid-mobile/
 category: "Mobile"
 weight: 3
 tags: ["mobile", "hybrid", "studio pro"]

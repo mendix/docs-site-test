@@ -1,6 +1,6 @@
 ---
 title: "Working with when.js and Promises in TypeScript"
-url: /apidocs-mxsdk/mxsdk/working-with-when-js-and-promises-in-typescript
+url: /apidocs-mxsdk/mxsdk/working-with-when-js-and-promises-in-typescript/
 parent: "sdk-refguide"
 weight: 3
 ---

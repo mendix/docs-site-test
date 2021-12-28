@@ -1,6 +1,6 @@
 ---
 title: "Native Navigation"
-url: /refguide/native-navigation
+url: /refguide/native-navigation/
 parent: "native-mobile"
 weight: 11
 tags: ["mobile", "navigation", "native", "iOS", "Android"]

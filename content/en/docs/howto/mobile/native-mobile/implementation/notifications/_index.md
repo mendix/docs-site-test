@@ -1,6 +1,6 @@
 ---
 title: "Use Notifications"
-url: /howto/mobile/notifications
+url: /howto/mobile/notifications/
 parent: "implementation"
 weight: 50
 description: Tutorials for configuring push and local notifications.

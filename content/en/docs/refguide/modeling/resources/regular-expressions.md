@@ -1,6 +1,6 @@
 ---
 title: "Regular Expressions"
-url: /refguide/regular-expressions
+url: /refguide/regular-expressions/
 parent: "resources"
 weight: 70
 tags: ["studio pro", "regular expressions", "regular expression"]

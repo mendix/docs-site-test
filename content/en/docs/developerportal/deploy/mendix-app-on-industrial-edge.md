@@ -1,6 +1,6 @@
 ---
 title: "Mendix Applications on Industrial Edge"
-url: /developerportal/deploy/mendix-app-on-industrial-edge
+url: /developerportal/deploy/mendix-app-on-industrial-edge/
 category: "Deployment"
 weight: 49
 description: "Describes how to bring a Mendix app to the Industrial Edge"

@@ -1,6 +1,6 @@
 ---
 title: "Generate Report Button"
-url: /refguide/report-button
+url: /refguide/report-button/
 parent: "report-widgets"
 weight: 40
 tags: ["studio pro"]

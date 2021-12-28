@@ -1,6 +1,6 @@
 ---
 title: "Set Up Error Handling"
-url: /howto/logic-business-rules/set-up-error-handling
+url: /howto/logic-business-rules/set-up-error-handling/
 category: "Logic & Business Rules"
 weight: 80
 tags: ["error", "error handling", "rollback", "microflow", "logic"]

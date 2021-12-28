@@ -1,6 +1,6 @@
 ---
 title: "OQL RANGEEND"
-url: /refguide/oql-rangeend
+url: /refguide/oql-rangeend/
 parent: "oql-functions"
 tags: ["studio pro"]
 ---

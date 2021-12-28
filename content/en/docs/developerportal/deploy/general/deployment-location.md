@@ -1,6 +1,6 @@
 ---
 title: "Deployment Location"
-url: /developerportal/deploy/deployment-location
+url: /developerportal/deploy/deployment-location/
 parent: "general"
 weight: 45
 description: "URL considerations for deploying Mendix"

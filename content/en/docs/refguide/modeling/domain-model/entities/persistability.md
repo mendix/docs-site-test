@@ -1,6 +1,6 @@
 ---
 title: "Persistability"
-url: /refguide/persistability
+url: /refguide/persistability/
 parent: "entities"
 weight: 20
 tags: ["domain model", "entity", "persistability", "persistable", "non-persistable"]

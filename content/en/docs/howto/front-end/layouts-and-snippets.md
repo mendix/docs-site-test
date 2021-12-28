@@ -1,6 +1,6 @@
 ---
 title: "Use Layouts & Snippets"
-url: /howto/front-end/layouts-and-snippets
+url: /howto/front-end/layouts-and-snippets/
 category: "Front End"
 weight: 30
 tags: ["front end"]

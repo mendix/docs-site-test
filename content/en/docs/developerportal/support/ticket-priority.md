@@ -1,6 +1,6 @@
 ---
 title: "Support Ticket Priority"
-url: /developerportal/support/ticket-priority
+url: /developerportal/support/ticket-priority/
 category: "Mendix Support"
 weight: 4
 description: "Presents details on how Mendix Support prioritizes tickets."

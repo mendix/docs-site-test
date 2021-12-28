@@ -1,6 +1,6 @@
 ---
 title: "Call Web Service"
-url: /refguide/call-web-service-action
+url: /refguide/call-web-service-action/
 parent: "integration-activities"
 tags: ["studio pro", "integration activity", "call web service"]
 weight: 20

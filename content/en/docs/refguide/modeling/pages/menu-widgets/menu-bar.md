@@ -1,6 +1,6 @@
 ---
 title: "Menu Bar"
-url: /refguide/menu-bar
+url: /refguide/menu-bar/
 parent: "menu-widgets"
 weight: 1
 tags: ["studio pro"]

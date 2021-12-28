@@ -1,6 +1,6 @@
 ---
 title: "System Actions"
-url: /studio/workflow-system-actions
+url: /studio/workflow-system-actions/
 category: "Workflows"
 weight: 40
 tags: ["workflow", "workflows", "call microflow"]

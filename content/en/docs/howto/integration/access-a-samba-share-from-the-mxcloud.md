@@ -1,6 +1,6 @@
 ---
 title: "Access a Samba Share"
-url: /howto/integration/access-a-samba-share-from-the-mxcloud
+url: /howto/integration/access-a-samba-share-from-the-mxcloud/
 category: "Integration"
 weight: 11
 tags: ["Samba", "share"]

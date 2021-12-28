@@ -1,6 +1,6 @@
 ---
 title: "Connectors"
-url: /appstore/connectors
+url: /appstore/connectors/
 description: "Presents details on the connectors available in the Mendix Marketplace."
 tags: ["marketplace",  "marketplace component", "connector"]
 ---

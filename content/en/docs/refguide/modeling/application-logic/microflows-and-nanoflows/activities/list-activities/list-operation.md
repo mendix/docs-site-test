@@ -1,6 +1,6 @@
 ---
 title: "List Operation"
-url: /refguide/list-operation
+url: /refguide/list-operation/
 parent: "list-activities"
 weight: 4
 tags: ["studio pro"]

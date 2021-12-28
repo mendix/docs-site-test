@@ -1,6 +1,6 @@
 ---
 title: "Application Logic"
-url: /refguide/application-logic
+url: /refguide/application-logic/
 category: "App Modeling"
 weight: 40
 description: "Presents an overview of documentation on microflows and nanoflows."

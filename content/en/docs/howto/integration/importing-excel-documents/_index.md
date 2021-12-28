@@ -1,6 +1,6 @@
 ---
 title: "Import Excel Documents"
-url: /howto/integration/importing-excel-documents
+url: /howto/integration/importing-excel-documents/
 category: "Integration"
 weight: 5
 description: "Describes how to set up import templates and import data into your app using the Excel Importer module."

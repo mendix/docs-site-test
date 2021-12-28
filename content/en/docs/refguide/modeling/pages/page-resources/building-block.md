@@ -1,6 +1,6 @@
 ---
 title: "Building Block"
-url: /refguide/building-block
+url: /refguide/building-block/
 parent: "page-resources"
 weight: 40
 tags: ["studio pro", "building block", "page resource"]

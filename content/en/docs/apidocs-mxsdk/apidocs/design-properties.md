@@ -1,6 +1,6 @@
 ---
 title: "Design Properties API"
-url: /apidocs-mxsdk/apidocs/design-properties
+url: /apidocs-mxsdk/apidocs/design-properties/
 category: "API Documentation"
 description: "This guide outlines how design properties work and can help you create custom design properties."
 weight: 30

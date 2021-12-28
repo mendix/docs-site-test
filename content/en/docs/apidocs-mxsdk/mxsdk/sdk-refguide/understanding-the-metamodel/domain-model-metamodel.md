@@ -1,6 +1,6 @@
 ---
 title: "Domain Model in the Mendix Metamodel"
-url: /apidocs-mxsdk/mxsdk/domain-model-metamodel
+url: /apidocs-mxsdk/mxsdk/domain-model-metamodel/
 parent: "understanding-the-metamodel"
 weight: 2
 ---

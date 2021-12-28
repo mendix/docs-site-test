@@ -1,6 +1,6 @@
 ---
 title: "XML Schemas"
-url: /refguide/xml-schemas
+url: /refguide/xml-schemas/
 parent: "integration"
 weight: 55
 tags: ["studio pro"]

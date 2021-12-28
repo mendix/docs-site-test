@@ -1,6 +1,6 @@
 ---
 title: "1"
-url: /releasenotes/add-ons/apm-1
+url: /releasenotes/add-ons/apm-1/
 parent: "apd"
 weight: 3
 ---

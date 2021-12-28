@@ -1,6 +1,6 @@
 ---
 title: "Entities"
-url: /refguide/entities
+url: /refguide/entities/
 parent: "domain-model"
 weight: 10
 tags: ["domain model", "entity", "entities", "attribute", "validation rule", "even handler", "access rule", "studio pro"]

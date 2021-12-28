@@ -1,6 +1,6 @@
 ---
 title: "Leave & Delete an App"
-url: /developerportal/collaborate/leave-delete-app
+url: /developerportal/collaborate/leave-delete-app/
 parent: "general-settings"
 weight: 1
 description: "Describes how to leave, delete, and deactivate an app in the Developer Portal."

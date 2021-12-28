@@ -1,6 +1,6 @@
 ---
 title: "Filter and Sort Items in a List"
-url: /studio-how-to/pages-how-to-filter-and-sort
+url: /studio-how-to/pages-how-to-filter-and-sort/
 category: "Pages"
 description: "Describes how to filter and sort items in a list in Mendix Studio."
 weight: 50

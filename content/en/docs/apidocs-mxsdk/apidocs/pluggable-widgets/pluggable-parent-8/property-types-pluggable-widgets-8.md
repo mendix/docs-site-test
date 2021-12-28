@@ -1,6 +1,6 @@
 ---
 title: "Pluggable Widget Property Types"
-url: /apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8
+url: /apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8/
 parent: "pluggable-parent-8"
 weight: 20
 description: A guide for understanding pluggable widgets' property types.

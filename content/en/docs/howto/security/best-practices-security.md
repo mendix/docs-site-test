@@ -1,6 +1,6 @@
 ---
 title: "Implement Best Practices for App Security"
-url: /howto/security/best-practices-security
+url: /howto/security/best-practices-security/
 category: "Security"
 weight: 20
 description: "A set of security aspects and checks to use when developing your Mendix application."

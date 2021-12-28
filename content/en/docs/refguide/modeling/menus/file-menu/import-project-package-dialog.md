@@ -1,6 +1,6 @@
 ---
 title: "Import App Package"
-url: /refguide/import-project-package-dialog
+url: /refguide/import-project-package-dialog/
 parent: "file-menu"
 weight: 40
 description: "Describes the Import App Package process and Import App Package dialog box."

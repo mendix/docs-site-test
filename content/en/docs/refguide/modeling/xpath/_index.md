@@ -1,6 +1,6 @@
 ---
 title: "XPath"
-url: /refguide/xpath
+url: /refguide/xpath/
 category: "App Modeling"
 weight: 90
 description: "Describes how the XPath query language is used in Mendix by presenting functions and examples."

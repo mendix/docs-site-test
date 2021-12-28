@@ -1,6 +1,6 @@
 ---
 title: "Work with Load Units & Elements"
-url: /apidocs-mxsdk/mxsdk/loading-units-and-elements
+url: /apidocs-mxsdk/mxsdk/loading-units-and-elements/
 parent: "manipulating-existing-models"
 ---
 

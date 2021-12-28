@@ -1,6 +1,6 @@
 ---
 title: "Team"
-url: /developerportal/collaborate/team
+url: /developerportal/collaborate/team/
 category: "Collaboration"
 weight: 4
 description: "Describes the Team page of the Developer Portal."

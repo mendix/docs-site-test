@@ -1,6 +1,6 @@
 ---
 title: "Navigation Layout"
-url: /appstore/modules/navigation-layout
+url: /appstore/modules/navigation-layout/
 category: "Modules"
 description: "Describes the configuration and usage of the Navigation Layout module, which is available in the Mendix Marketplace."
 tags: ["marketplace", "marketplace component", "navigation layout", "platform support"]

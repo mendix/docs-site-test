@@ -1,6 +1,6 @@
 ---
 title: "Alerts"
-url: /developerportal/operate/monitoring-application-health
+url: /developerportal/operate/monitoring-application-health/
 category: "Operations"
 weight: 20
 description: "This page describes how to monitor the application health."

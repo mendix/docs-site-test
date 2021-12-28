@@ -1,6 +1,6 @@
 ---
 title: "Explore Connectors & Adapters"
-url: /howto/extensibility/explore-connectors-and-adapters
+url: /howto/extensibility/explore-connectors-and-adapters/
 category: "Extensibility"
 weight: 70
 tags: ["extensibility", "connector", "adapter", "extensibility"]

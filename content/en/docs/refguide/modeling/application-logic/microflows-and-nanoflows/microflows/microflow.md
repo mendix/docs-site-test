@@ -1,6 +1,6 @@
 ---
 title: "Microflow Properties"
-url: /refguide/microflow
+url: /refguide/microflow/
 parent: "microflows"
 tags: ["microflow", "entity access"]
 ---

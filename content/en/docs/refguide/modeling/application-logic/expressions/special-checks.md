@@ -1,6 +1,6 @@
 ---
 title: "Special Checks"
-url: /refguide/special-checks
+url: /refguide/special-checks/
 parent: "expressions"
 weight: 40
 description: "Describes special checks in expressions in Mendix."

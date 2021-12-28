@@ -1,6 +1,6 @@
 ---
 title: "Distribution"
-url: /howto/mobile/distribution
+url: /howto/mobile/distribution/
 parent: "native-mobile"
 weight: 40
 description: Distribute native mobile apps.

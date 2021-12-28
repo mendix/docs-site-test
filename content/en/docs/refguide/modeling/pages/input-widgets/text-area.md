@@ -1,6 +1,6 @@
 ---
 title: "Text Area"
-url: /refguide/text-area
+url: /refguide/text-area/
 parent: "input-widgets"
 weight: 20
 tags: ["studio pro"]

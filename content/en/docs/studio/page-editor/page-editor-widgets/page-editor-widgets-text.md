@@ -1,6 +1,6 @@
 ---
 title: "Text"
-url: /studio/page-editor-widgets-text
+url: /studio/page-editor-widgets-text/
 parent: "page-editor-widgets"
 description: "Describes typography widgets in Mendix Studio."
 weight: 40

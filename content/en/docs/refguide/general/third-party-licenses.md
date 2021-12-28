@@ -1,6 +1,6 @@
 ---
 title: "Third-Party Licenses"
-url: /refguide/third-party-licenses
+url: /refguide/third-party-licenses/
 category: "General Info"
 weight: 70
 tags: ["studio pro", "license", "library"]

@@ -1,6 +1,6 @@
 ---
 title: "Consume a Complex Web Service"
-url: /howto/integration/consume-a-complex-web-service
+url: /howto/integration/consume-a-complex-web-service/
 category: "Integration"
 weight: 8
 tags: ["web service", "integration", "consume"]

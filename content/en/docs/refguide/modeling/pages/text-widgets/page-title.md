@@ -1,6 +1,6 @@
 ---
 title: "Page Title"
-url: /refguide/page-title
+url: /refguide/page-title/
 parent: "text-widgets"
 weight: 50
 tags: ["studio pro", "page title", "text widgets"]

@@ -1,6 +1,6 @@
 ---
 title: "Modules"
-url: /refguide/modules
+url: /refguide/modules/
 parent: "project-explorer"
 weight: 20
 tags: ["studio pro", "module", "modules"]

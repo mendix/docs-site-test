@@ -1,6 +1,6 @@
 ---
 title: "MySQL/MariaDB"
-url: /refguide/mysql
+url: /refguide/mysql/
 parent: "data-storage"
 weight: 50
 tags: ["studio pro"]

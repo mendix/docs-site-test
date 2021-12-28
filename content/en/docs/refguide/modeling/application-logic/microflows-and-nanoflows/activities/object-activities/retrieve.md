@@ -1,6 +1,6 @@
 ---
 title: "Retrieve"
-url: /refguide/retrieve
+url: /refguide/retrieve/
 parent: "object-activities"
 weight: 60
 tags: ["studio pro"]

@@ -1,6 +1,6 @@
 ---
 title: "Document Templates"
-url: /refguide/document-templates
+url: /refguide/document-templates/
 parent: "resources"
 weight: 90
 tags: ["studio pro", "document template"]

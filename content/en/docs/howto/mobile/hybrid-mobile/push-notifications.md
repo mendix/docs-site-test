@@ -1,6 +1,6 @@
 ---
 title: "Include Push Notifications"
-url: /howto/mobile/push-notifications
+url: /howto/mobile/push-notifications/
 parent: "hybrid-mobile"
 weight: 10
 tags: ["mobile", "push notification"]

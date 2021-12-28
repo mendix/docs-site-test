@@ -1,6 +1,6 @@
 ---
 title: "General Info"
-url: /studio/general
+url: /studio/general/
 description: "Describes various features of Mendix Studio."
 weight: 10
 tags: ["studio", "studio pro"]

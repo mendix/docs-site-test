@@ -1,6 +1,6 @@
 ---
 title: "Domain Model"
-url: /studio/domain-models
+url: /studio/domain-models/
 description: "Describes the domain models in Mendix Studio."
 category: "Working with Data"
 weight: 10

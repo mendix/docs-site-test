@@ -1,6 +1,6 @@
 ---
 title: "JSON Structures"
-url: /refguide/json-structures
+url: /refguide/json-structures/
 parent: "integration"
 weight: 40
 tags: ["studio pro"]

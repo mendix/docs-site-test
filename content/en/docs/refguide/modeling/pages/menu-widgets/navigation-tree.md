@@ -1,6 +1,6 @@
 ---
 title: "Navigation Tree"
-url: /refguide/navigation-tree
+url: /refguide/navigation-tree/
 parent: "menu-widgets"
 weight: 3
 tags: ["studio pro"]

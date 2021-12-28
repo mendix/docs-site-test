@@ -1,6 +1,6 @@
 ---
 title: "Build Native Apps"
-url: /howto/mobile/build-native-apps
+url: /howto/mobile/build-native-apps/
 parent: "distribution"
 weight: 10
 description: Tutorials for building native mobile apps.

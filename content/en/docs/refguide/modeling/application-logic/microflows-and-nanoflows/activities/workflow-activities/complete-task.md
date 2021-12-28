@@ -1,6 +1,6 @@
 ---
 title: "Complete Task"
-url: /refguide/complete-task
+url: /refguide/complete-task/
 parent: "workflow-activities"
 weight: 10
 tags: ["studio pro", "user task", "workflow", "task outcome", "complete task"]

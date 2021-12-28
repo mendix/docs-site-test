@@ -1,6 +1,6 @@
 ---
 title: "General Info"
-url: /refguide/general
+url: /refguide/general/
 tags: ["studio pro"]
 weight: 10
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Hybrid Mobile"
-url: /howto/mobile/hybrid-mobile
+url: /howto/mobile/hybrid-mobile/
 category: "Mobile"
 weight: 2
 tags: ["mobile", "hybrid"]

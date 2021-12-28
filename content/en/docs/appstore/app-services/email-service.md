@@ -1,6 +1,6 @@
 ---
 title: "Email Service"
-url: /appstore/app-services/email-service
+url: /appstore/app-services/email-service/
 category: "App Services"
 description: " "
 tags: ["marketplace", "marketplace component", "app service", "email"]

@@ -1,6 +1,6 @@
 ---
 title: "Offline-First"
-url: /refguide/offline-first
+url: /refguide/offline-first/
 category: "Mobile"
 weight: 30
 tags: ["offline", "native", "mobile", "studio pro"]

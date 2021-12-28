@@ -1,6 +1,6 @@
 ---
 title: "Conditional Visibility Section"
-url: /studio/page-editor-widgets-visibility-section
+url: /studio/page-editor-widgets-visibility-section/
 parent: "page-editor-widgets"
 description: "Describes the Conditional Visibility section in widgets properties in Mendix Studio."
 weight: 30

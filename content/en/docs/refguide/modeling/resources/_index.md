@@ -1,6 +1,6 @@
 ---
 title: "Resources"
-url: /refguide/resources
+url: /refguide/resources/
 category: "App Modeling"
 weight: 50
 tags: ["studio pro", "resources"]

@@ -1,6 +1,6 @@
 ---
 title: "Report Date Parameter"
-url: /refguide/report-date-parameter
+url: /refguide/report-date-parameter/
 parent: "report-widgets"
 weight: 30
 tags: ["studio pro"]

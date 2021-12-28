@@ -1,6 +1,6 @@
 ---
 title: "Creating Solutions"
-url: /appstore/creating-content/sol-solutions-guide
+url: /appstore/creating-content/sol-solutions-guide/
 linktitle: "Creating Solutions"
 category: "Creating Content"
 weight: 1

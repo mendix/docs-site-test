@@ -1,6 +1,6 @@
 ---
 title: "Published REST Service"
-url: /refguide/published-rest-service
+url: /refguide/published-rest-service/
 parent: "published-rest-services"
 weight: 10
 description: "Configuration options for a published REST service"

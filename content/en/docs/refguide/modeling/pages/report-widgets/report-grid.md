@@ -1,6 +1,6 @@
 ---
 title: "Report Grid"
-url: /refguide/report-grid
+url: /refguide/report-grid/
 parent: "report-widgets"
 weight: 10
 tags: ["studio pro"]

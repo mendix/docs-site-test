@@ -1,6 +1,6 @@
 ---
 title: "Part 4: Data"
-url: /howto/mobile/local-notif-data
+url: /howto/mobile/local-notif-data/
 parent: "local-notif-parent"
 weight: 40
 description: A tutorial for integrating data into your push notifications.

@@ -1,6 +1,6 @@
 ---
 title: "Unix Deployment"
-url: /developerportal/deploy/unix-like
+url: /developerportal/deploy/unix-like/
 parent: "on-premises-design"
 description: "How to install and configure Mendix on a Unix-like system"
 weight: 99

@@ -1,6 +1,6 @@
 ---
 title: "Report Parameter"
-url: /refguide/report-parameter
+url: /refguide/report-parameter/
 parent: "report-widgets"
 weight: 20
 tags: ["studio pro"]

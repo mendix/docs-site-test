@@ -1,6 +1,6 @@
 ---
 title: "Decision"
-url: /studio/microflows-decision
+url: /studio/microflows-decision/
 category: "Microflows"
 weight: 20
 description: "Describes a decision in Mendix Studio."

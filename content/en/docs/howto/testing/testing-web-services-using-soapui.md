@@ -1,6 +1,6 @@
 ---
 title: "Test Web Services Using SoapUI"
-url: /howto/testing/testing-web-services-using-soapui
+url: /howto/testing/testing-web-services-using-soapui/
 category: "Testing"
 weight: 30
 tags: ["test", "testing", "web service", "soapui"]

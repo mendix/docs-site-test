@@ -1,6 +1,6 @@
 ---
 title: "Security"
-url: /refguide/security
+url: /refguide/security/
 parent: "project-explorer"
 tags: ["studio pro", "security"]
 ---

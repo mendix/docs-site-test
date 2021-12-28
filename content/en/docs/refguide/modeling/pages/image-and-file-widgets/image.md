@@ -1,6 +1,6 @@
 ---
 title: "Static Image"
-url: /refguide/image
+url: /refguide/image/
 parent: "image-and-file-widgets"
 weight: 20
 tags: ["studio pro", "image", "image widget"]

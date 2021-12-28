@@ -1,6 +1,6 @@
 ---
 title: "Secure Outgoing Connections from Your App"
-url: /developerportal/deploy/securing-outgoing-connections-from-your-application
+url: /developerportal/deploy/securing-outgoing-connections-from-your-application/
 parent: "general"
 weight: 10
 description: "Describes which methods are available for securing connections from your app to the outside world."

@@ -1,6 +1,6 @@
 ---
 title: "Run a Mendix Docker Image"
-url: /developerportal/deploy/run-mendix-docker-image
+url: /developerportal/deploy/run-mendix-docker-image/
 parent: "docker-deploy"
 weight: 10
 description: "Describes running a Mendix Docker image."

@@ -1,6 +1,6 @@
 ---
 title: "Create a Custom Developer App"
-url: /howto/mobile/how-to-devapps
+url: /howto/mobile/how-to-devapps/
 parent: "build-native-apps"
 weight: 50
 description: A tutorial for creating custom developer apps.

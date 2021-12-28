@@ -1,6 +1,6 @@
 ---
 title: "Build JavaScript Actions for Native Mobile"
-url: /howto/extensibility/create-native-javascript-action
+url: /howto/extensibility/create-native-javascript-action/
 parent: "build-javascript-actions"
 weight: 30
 description: "This tutorial will teach you to build a JavaScript action for native mobile apps."

@@ -1,6 +1,6 @@
 ---
 title: "Backups"
-url: /developerportal/operate/backups
+url: /developerportal/operate/backups/
 category: "Operations"
 weight: 40
 description: "The Backups page of the Developer Portal described."

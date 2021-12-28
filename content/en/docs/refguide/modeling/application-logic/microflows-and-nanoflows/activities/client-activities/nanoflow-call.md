@@ -1,6 +1,6 @@
 ---
 title: "Call Nanoflow"
-url: /refguide/nanoflow-call
+url: /refguide/nanoflow-call/
 parent: "client-activities"
 weight: 2
 tags: ["studio pro", "nanoflow call", "call nanoflow"]

@@ -1,6 +1,6 @@
 ---
 title: "Associations"
-url: /refguide/associations
+url: /refguide/associations/
 parent: "domain-model"
 weight: 20
 tags: ["domain model", "association", "studio pro"]

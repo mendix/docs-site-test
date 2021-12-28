@@ -1,6 +1,6 @@
 ---
 title: "3D Viewer"
-url: /appstore/app-services/3d-viewer
+url: /appstore/app-services/3d-viewer/
 category: "App Services"
 weight: 1
 tags: ["3d visualization", "cad", "app store", "marketplace", "component", "platform support"]

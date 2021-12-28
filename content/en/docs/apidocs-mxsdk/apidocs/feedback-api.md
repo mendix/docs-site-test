@@ -1,6 +1,6 @@
 ---
 title: "Feedback API"
-url: /apidocs-mxsdk/apidocs/feedback-api
+url: /apidocs-mxsdk/apidocs/feedback-api/
 category: "API Documentation"
 description: "API to access Mendix app feedback from within the app"
 weight: 35

@@ -1,6 +1,6 @@
 ---
 title: "Native Mobile"
-url: /refguide/native-mobile
+url: /refguide/native-mobile/
 category: "Mobile"
 weight: 1
 tags: ["mobile", "native", "studio pro"]

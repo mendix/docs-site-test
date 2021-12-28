@@ -1,6 +1,6 @@
 ---
 title: "Projects API"
-url: /apidocs-mxsdk/apidocs/projects-api
+url: /apidocs-mxsdk/apidocs/projects-api/
 category: "API Documentation"
 weight: 50
 ---
