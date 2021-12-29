@@ -14,3 +14,5 @@ hugo.exe
 /node_modules/
 # MvM - Put HUGO and NODE (and dependencies) into /bin folder
 /bin/
+# Temporary directory
+/tmp/
