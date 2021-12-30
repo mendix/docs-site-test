@@ -39,6 +39,25 @@ First subsection of Mark's Portal
 
 [Cascading banner](mark-portal-section-3) and [Shortcodes](mark-portal-section-3)
 
+Natasa's test:
+
+[Ref to mark-portal-section-3]({{< ref "mark-portal-section-3" >}})
+
+[Relref to mark-portal-section-3]({{< relref "mark-portal-section-3" >}})
+
+[Normal link to mark-portal-section-3 anchor 3](mark-portal-section-3/#anchor3)
+
+[relref to anchor 3]({{< relref "#anchor3" >}})
+
+[relref to mark-portal-section-3 anchor 3]({{< relref "mark-portal-section-3#anchor3" >}})
+
+
+[Ref to java-programming]({{< ref "java-programming" >}})
+
+[Relref to java-programming]({{< relref "java-programming" >}})
+
+[Normal link to java-programming](/refguide/troubleshooting/)
+
 ### Attachment from attachments in this bundle
 
 Insert with Markdown

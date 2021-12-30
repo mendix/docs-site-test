@@ -25,7 +25,7 @@ This page uses all the existing shortcodes from Mendix Docs to see what Docsy pr
 
 Uses linktitle: – menu is sorted by linktitle:, not by title:
 
-### Dead Link Triggers a Warning
+### Dead Link Triggers a Warning {#anchor3}
 
 
 [Dead Link]({{< ref "dead-link" >}})
