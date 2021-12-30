@@ -4,6 +4,7 @@ url: /partners/
 description: "Documentation for IBM, SAP, and Siemens widgets written and maintained by Mendix"
 tags: ["strategic partners", "ibm", "sap", "siemens"]
 weight: 45
+no_list: false
 cascade:
     - space: "Strategic Partners Guide"
     - mendix_version: ""
