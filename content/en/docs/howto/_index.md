@@ -4,6 +4,7 @@ url: /howto/
 description: "Step-by-step guides on various Mendix topics that will teach you how to build and customize apps."
 tags: ["studio pro"]
 weight: 15
+no_list: false
 cascade:
     - space: "Studio Pro 9 How-to's"
     - mendix_version: "9"
