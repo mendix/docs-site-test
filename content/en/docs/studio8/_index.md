@@ -2,6 +2,7 @@
 title: "Studio 8 Guide"
 url: /studio8
 tags: ["studio", "web modeler"]
+weight: 70
 cascade:
     - space: "Studio 8 Guide"
     - mendix_version: "8"
