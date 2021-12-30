@@ -13,15 +13,15 @@ In Mendix Studio, you can filter data in pages and microflows.
 
 *In a microflow*, you can filter the retrieved data by creating filters for the **Retrieve** activity. To add a filter objects should be retrieved from the database:
 
-{{% image_container width="300" %}}
+{{/* % image_container width="300" % */}}
 ![](/attachments/studio8/work-with-data/data-filters/retrieve-from-database.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 *In a page*, you can add a filter to a list view or a data grid. Mind that the data source of the list view or the data grid should be **Database**: 
 
-{{% image_container width="300" %}}
+{{/* % image_container width="300" % */}}
 ![](/attachments/studio8/work-with-data/data-filters/page-database.jpg)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ## 2 Conditions and Groups
 
@@ -83,8 +83,8 @@ To create a new filter, do the following:
 
 2. Click the **Filter** field.
 
-    {{% image_container width="300" %}}![](/attachments/studio8/work-with-data/data-filters/filter-field.png){{% /image_container %}}
-{{% /image_container %}}
+    {{/* % image_container width="300" % */}}![](/attachments/studio8/work-with-data/data-filters/filter-field.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 3. In the **Add Filter** dialog box, specify the attribute/association on the left first, as operators depend on the type of attribute that you have chosen. For example, if you choose *Date and Time* attribute type, you will be able to select the **in same quarter as** operator, while this operator is unavailable for other attribute types. 
 
     ![](/attachments/studio8/work-with-data/data-filters/in-same-quarter-as-operator-example.png)

@@ -25,9 +25,9 @@ This action is ignored and does not work when a microflow is called from an offl
 
 The **Download file** activity can be used to enable the browser to download a specific file. The end-user either sees a download pop-up window or the file is shown directly in the browser.
 
-{{% image_container width="300" %}}
+{{/* % image_container width="300" % */}}
 ![Download File Example](/attachments/refguide8/modeling/application-logic/activities/client-activities/download-file/download-file.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ## 2 Properties
 
@@ -71,4 +71,4 @@ Many browsers implement pop-up window blockers preventing them from being opened
 
 ## 4 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}

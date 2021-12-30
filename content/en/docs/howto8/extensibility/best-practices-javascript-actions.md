@@ -460,8 +460,8 @@ Initially, JavaScript actions' source code is not loaded. Their source code will
 
 After the file is loaded, breakpoints can be set in the code by clicking the inline number (**A**, in the screenshot below). Alternatively, select **Pause on caught exceptions**  could be used to find issues (**B**). As a last resort, you could alter the source code by adding the line `debugger;` (**C**). This statement will start the debugging tools the first time the action is executed, and will apply a breakpoint:
 
-{{% image_container width="500" %}}![debugging](/attachments/howto8/extensibility/best-practices-javascript-actions/debugging.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="500" % */}}![debugging](/attachments/howto8/extensibility/best-practices-javascript-actions/debugging.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ## 6 Understanding Bad Practices {#badpractice}
 
 Not all capabilities are recommended for use. Consider the side effects that an action could have on the Mendix Client, DOM, or other widgets:

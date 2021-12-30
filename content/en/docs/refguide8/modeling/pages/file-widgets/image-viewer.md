@@ -22,8 +22,8 @@ An image viewer must be placed in a data view or a template grid.
 
 An example of image viewer properties is represented in the image below:
 
-{{% image_container width="250" %}}![Image Viewer Properties](/attachments/refguide8/modeling/pages/file-widgets/image-viewer/image-viewer-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Image Viewer Properties](/attachments/refguide8/modeling/pages/file-widgets/image-viewer/image-viewer-properties.png)
+{{/* % /image_container % */}}
 
 Image viewer properties consist of the following sections:
 
@@ -36,11 +36,11 @@ Image viewer properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 2.3 Data Source Section {#data-source}
 
@@ -50,7 +50,7 @@ The **Entity (path)** property specifies which object will be shown in the image
 
 ### 2.4  Events Section {#events}
 
-{{% snippet file="refguide8/events-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/events-section-link.md" %}}
 
 ### 2.5 General Section{#general}
 
@@ -110,7 +110,7 @@ Default: *Thumbnail*
 
 ### 2.6 Visibility Properties{#visibility}
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
 
 ## 3 Read More
 

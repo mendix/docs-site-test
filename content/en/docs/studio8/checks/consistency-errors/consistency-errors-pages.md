@@ -40,8 +40,8 @@ The table below describes the most common errors you can come across when config
 
 If you do not configure a data source for a [data view](page-editor-data-view-list-view#data-view-properties) properly, you will get a consistency error. For example, you selected a list widget as the data source, but you have not selected the specific list you would like the data view to listen to.
 
-{{% image_container width="350" %}}![Data View Properties Not Configured](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/data-view-error.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![Data View Properties Not Configured](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/data-view-error.png)
+{{/* % /image_container % */}}
 
 The table below describes the most common errors you can come across when configuring a data view,  causes of these errors, and ways to fix them. 
 
@@ -73,8 +73,8 @@ For example, the **Customers** page contains a list view with a list of all cust
 
 However, the **Customer Details** page has a data view that expects an object *Customer* to be passed to it. In other words, this page needs to get data first to be able to display it. 
 
-{{% image_container width="350" %}}![Data View Expects the Customer Object](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/data-view-customer.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/data-view-customer.png)
+{{/* % /image_container % */}}
 
 As this object is not passed to it from the **Customers** page, you get a consistency error.
 
@@ -93,8 +93,8 @@ If you want the **Customer Details** page to open the details of a specific cust
 
 2.  Drag the **Details** button inside the list view.
 
-    {{% image_container width="350" %}}![List View Example](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/list-view-content.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![List View Example](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/list-view-content.png)
+    {{/* % /image_container % */}}
 
 
 Now the button gets the object of type *Customer* from the list view on the **Customers** page, and it will be passed to the **Customer Details** page. As a result, the details of a particular customer is displayed on the **Customer Details** page. 
@@ -107,8 +107,8 @@ If you want to create a new customer and fill in the customer's details on the *
 
 2. Open properties for the **Details** button > the **Events** section and enable the **Create Object** option.
 
-     {{% image_container width="350" %}}![Create Object Option Enabled](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/create-object-option-enabled.png)
-     {{% /image_container %}}
+     {{/* % image_container width="350" % */}}![Create Object Option Enabled](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/create-object-option-enabled.png)
+     {{/* % /image_container % */}}
 
 3. Set **Customer** as **Entity**.
 
@@ -122,8 +122,8 @@ If a widget opens a page and this widget is inside a data container of entity X,
 
 For example, you have a **New** button on the **Engineers** page that opens the **Tasks** page. 
 
-{{% image_container width="350" %}}![A Button on Engineers Page](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/engineers-page.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![A Button on Engineers Page](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/engineers-page.png)
+{{/* % /image_container % */}}
 
 The button is placed inside a list view; the list view's data source is set to entity *Engineer* in **Properties** > **Data Source**.
 
@@ -131,8 +131,8 @@ The Tasks page has a data view on it, but the data view's data source is set to 
 
 This means that data view expects the object of type *SmartTask* passed to it, but the **Engineers** page is passing the object of type *Engineer*. As a result you get a consistency error.
 
-{{% image_container width="350" %}}![List View on the Tasks Page](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/tasks-page-list-view.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![List View on the Tasks Page](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/tasks-page-list-view.png)
+{{/* % /image_container % */}}
 
 To fix this error do one of the following:
 
@@ -214,8 +214,8 @@ The most common consistency errors for [static image widgets](page-editor-widget
 
 [Dynamic images](page-editor-widgets-images-and-files) need to be placed inside a data container (a data view or a list view) and an entity should be selected for them. 
 
-{{% image_container width="350" %}}![Dynamic Image Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/dynamic-image-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![Dynamic Image Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/dynamic-image-properties.png)
+{{/* % /image_container % */}}
 
 Errors for static and dynamic images are described in the table below. 
 

@@ -18,8 +18,8 @@ This document describes page properties. For details on what pages are for and w
 
 An example of page properties is represented in the image below:
 
-{{% image_container width="250" %}}![Page Properties](/attachments/refguide8/modeling/pages/page/page-properties/page-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Page Properties](/attachments/refguide8/modeling/pages/page/page-properties/page-properties.png)
+{{/* % /image_container % */}}
 
 Page properties consist of the following sections:
 
@@ -32,11 +32,11 @@ Page properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Designer Section {#designer}
 
-{{% snippet file="refguide8/designer-properties.md" %}}
+{{% snippet file="/static/_includes/refguide8/designer-properties.md" %}}
 
 ### 2.3 General Section {#general}
 

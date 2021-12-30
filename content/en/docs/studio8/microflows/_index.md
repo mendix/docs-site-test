@@ -27,8 +27,8 @@ Examples of using microflows can be the following:
 
 To view the microflows of your app in Studio, click the **Microflows** icon in the left menu bar:
 
-{{% image_container width="250" %}}![Microflow Icon](/attachments/studio8/microflows/micflows-icon.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Microflow Icon](/attachments/studio8/microflows/micflows-icon.png)
+{{/* % /image_container % */}}
 
 ## 2 Concepts and Definitions 
 
@@ -55,8 +55,8 @@ To create a new microflow and to start building custom logic, do the following:
 1. Click the **Microflow** icon in the left menu bar. 
 2.  Click **New** on the **Microflows** side panel.
 
-    {{% image_container width="300" %}}![Adding New Microflow](/attachments/studio8/microflows/new-microflow.png)
-    {{% /image_container %}}
+    {{/* % image_container width="300" % */}}![Adding New Microflow](/attachments/studio8/microflows/new-microflow.png)
+    {{/* % /image_container % */}}
 
 3.  Fill in the name of the microflow in the pop-up dialog and click **Create**.
 
@@ -72,8 +72,8 @@ To duplicate a microflow, do the following:
 
 2.  In the side panel, click the ellipsis icon and select **Duplicate** in the drop-down menu:
 
-    {{% image_container width="350" %}}![Duplication a Microflow](/attachments/studio8/microflows/duplicate-microflow.png){{% /image_container %}}
-{{% /image_container %}}
+    {{/* % image_container width="350" % */}}![Duplication a Microflow](/attachments/studio8/microflows/duplicate-microflow.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 The microflow is duplicated.
 
 ## 5 Copying and Pasting a Microflow
@@ -84,9 +84,9 @@ To copy and paste a microflow, do the following:
 
 2.  In the side panel, click the ellipsis icon and select **Copy to clipboard** in the drop-down menu:
 
-    {{% image_container width="350" %}}
+    {{/* % image_container width="350" % */}}
 ![Copying a Microflow](/attachments/studio8/microflows/copy-microflow.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 3. Open the Studio app where you want to paste the microflow and press <kbd>Ctrl</kbd> +<kbd>V</kbd> or <kbd>Cmd</kbd> +<kbd>V</kbd>. 
 
@@ -106,9 +106,9 @@ To delete a microflow in Studio, do one of the following:
 
     1. In the side panel, click the ellipsis icon and select **Delete** in the drop-down menu:
     
-        {{% image_container width="350" %}}
+        {{/* % image_container width="350" % */}}
 ![Delete Microflow](/attachments/studio8/microflows/delete-microflow.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ## 7 Adding a New Event or Activity {#adding-activity-to-microflow}
 
@@ -131,8 +131,8 @@ The **Toolbox** tab contains the following sections:
 
 The **General** section contains various elements, such as a parameter and an end event: 
 
-{{% image_container width="300" %}}![Microflow General Properties](/attachments/studio8/microflows/microflows-general-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Microflow General Properties](/attachments/studio8/microflows/microflows-general-properties.png)
+{{/* % /image_container % */}}
 
 Elements available in the **General** section are described in the table below.
 
@@ -151,8 +151,8 @@ Elements available in the **General** section are described in the table below.
 
 The **Object Activities** section contains activities that interact with an object or objects (for more information on what an object is, see [Domain Model](domain-models)): 
 
-{{% image_container width="350" %}}![Microflow Object Activities](/attachments/studio8/microflows/object-activities.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![Microflow Object Activities](/attachments/studio8/microflows/object-activities.png)
+{{/* % /image_container % */}}
 
 
 
@@ -197,8 +197,8 @@ The **Variable Activities** are described in the table below:
 
 For example, you can first create a variable named *Discount* to a microflow, and then change the variable Discount depending on the type of the customer's grade. You can give a discount for customers with Gold and Silver grades. 
 
-{{% image_container width="400" %}}![Example a Microflow](/attachments/studio8/microflows/example-of-using-var-activities.png)
-{{% /image_container %}}
+{{/* % image_container width="400" % */}}![Example a Microflow](/attachments/studio8/microflows/example-of-using-var-activities.png)
+{{/* % /image_container % */}}
 
 ## 9 Flows {#flows} 
 

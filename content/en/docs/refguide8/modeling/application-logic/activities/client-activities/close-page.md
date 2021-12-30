@@ -26,9 +26,9 @@ This action is ignored and does not work when a microflow is called from an offl
 
 The **Close page** activity closes the currently open page. For example, it can be used to close a pop-up page:
 
-{{% image_container width="200" %}}
+{{/* % image_container width="200" % */}}
 ![](/attachments/refguide8/modeling/application-logic/activities/client-activities/close-page/close-page.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ## 2 Properties
 
@@ -38,9 +38,9 @@ The **Close page** activity properties consists of the following sections:
 
 * [Common](#common)  
 
-    {{% image_container width="300" %}}
+    {{/* % image_container width="300" % */}}
 ![Close Page Properties](/attachments/refguide8/modeling/application-logic/activities/client-activities/close-page/close-page-properties.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ## 3 Action Section {#action}
 
@@ -61,7 +61,7 @@ This property allows you to control how many pages should be closed.
 
 ## 4 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 

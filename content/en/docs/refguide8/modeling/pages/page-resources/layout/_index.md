@@ -31,8 +31,8 @@ Mendix will intelligently detect if pages share a layout, so no user input is re
 
 An example of layout properties is represented in the image below:
 
-{{% image_container width="250" %}}![Example of the layout properties pane](/attachments/refguide8/modeling/pages/page-resources/layout/layout-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Example of the layout properties pane](/attachments/refguide8/modeling/pages/page-resources/layout/layout-properties.png)
+{{/* % /image_container % */}}
 
 Layout properties consist of the following sections:
 
@@ -42,7 +42,7 @@ Layout properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Designer Section{#designer}
 

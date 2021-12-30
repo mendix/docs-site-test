@@ -13,8 +13,8 @@ The **Events** section is a section in the **Properties** tab that is common for
 
 In the **Events** section, you can set the **On Click Action** for widgets and specify what action will be performed when users click the widget. For example, you can specify that when a user clicks a profile image, the page with the user's personal account will open. 
 
-{{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/events-section.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/events-section.png)
+{{/* % /image_container % */}}
 
 ## 2 On Click Action {#on-click-action}  
 
@@ -44,8 +44,8 @@ When you set the **On Click Action** to **Open Page**, you can enable the **Crea
 
 For example, you want to create a new customer by clicking the **New** button. This button will open a page where you can fill in a new customer's details and save them. However, the *Customer Details* page needs to get data first, in other words, it expects the object *Customer* to be passed to it. 
 
-{{% image_container width="350" %}}![Data View Expects the Customer Object](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/data-view-customer.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/data-view-customer.png)
+{{/* % /image_container % */}}
 
 Thus, when setting the on-click action of the **New** button to **Page**, you need to enable the **Create Object** option and select the **Customer** entity.
 
@@ -60,8 +60,8 @@ If you enable **Create Object** option, you need to set the following:
 
 When you set the **On Click Action** to **Open Link**, several properties are available. 
 
-{{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/open-link-action.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/open-link-action.png)
+{{/* % /image_container % */}}
 
 See the description in the table below:
 
@@ -80,16 +80,16 @@ If you place the **Delete Object** in a list view, the corresponding list view i
 
 For example, you have a page with a list view showing customer names. A **Delete** button is placed inside the list next to each name. Thus, if you click **Delete** in a line that says "Peter", this customer and all customer's details will be deleted. 
 
-{{% image_container width="350" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/list-view-delete.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/list-view-delete.png)
+{{/* % /image_container % */}}
 
 
 #### 2.3.2 Delete Object Action in a Data View
 
 When placed on a data view, **Delete Object** will delete the connected object. For example, you opened a page with customer's details. The details are placed in a data view. You have **Save** and **Delete** buttons at the bottom of the page. When you press **Delete**, the customer "John" and customer's details will be deleted and the page will be closed. 
 
-{{% image_container width="350" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/data-view-delete.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-events-section/data-view-delete.png)
+{{/* % /image_container % */}}
 
 ## 3 Read More
 

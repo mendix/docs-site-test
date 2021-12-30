@@ -21,8 +21,8 @@ The **Snippet call** widget allows you to use a [snippet](snippet) on a [page](p
 
 An example of snippet call properties is represented in the image below:
 
-{{% image_container width="300" %}}![Snippet Call Properties](/attachments/refguide8/modeling/pages/common-widgets/snippet-call/snippet-call-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Snippet Call Properties](/attachments/refguide8/modeling/pages/common-widgets/snippet-call/snippet-call-properties.png)
+{{/* % /image_container % */}}
 
 Snippet call properties consist of the following sections:
 
@@ -32,11 +32,11 @@ Snippet call properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 2.3 General Section {#general}
 

@@ -25,9 +25,9 @@ You can open Mendix Studio via [Developer Portal](#opening-studio-via-dev-portal
 
 You can edit an app in Mendix Studio by opening your app in [Developer Portal](https://home.mendix.com) and clicking **Edit in Studio**:
 
-{{% image_container width="350" %}}
+{{/* % image_container width="350" % */}}
 ![Edit in Studio](/attachments/studio8/general/edit-app.jpg)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 If you do not see **Edit in Studio**, go to [General Settings](/developerportal/collaborate/general-settings) in the Developer Portal and [enable Studio](/developerportal/collaborate/general-settings#web).
 
@@ -46,8 +46,8 @@ The app opens in Studio.
 
 After clicking **Edit in Studio** you may need to upgrade your app to the latest version.
 
-{{% image_container width="350" %}}![Upgrade](/attachments/studio8/general/upgrade.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![Upgrade](/attachments/studio8/general/upgrade.png)
+{{/* % /image_container % */}}
 
 You may also see an orange top bar suggesting an upgrade to the next Mendix version. For more information on Studio upgrades and Mendix versions, see [Studio Ranges & Mendix Versions](general-versions).
 
@@ -68,16 +68,16 @@ You can change the view of your page to different views by clicking the correspo
 * Tablet
 * Responsive (Desktop) 
 
-    {{% image_container width="350" %}}![Device Modes](/attachments/studio8/general/view.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![Device Modes](/attachments/studio8/general/view.png)
+    {{/* % /image_container % */}}
 
 ## 5 Left Menu Bar
 
 The left menu bar allows you to go back to the Developer Portal, access pages, the domain model, microflows, and the navigation document in Studio, search for different elements in your app, open settings, and customize the look of your app:
 
-{{% image_container width="250" %}}
+{{/* % image_container width="250" % */}}
 ![Left Menu Bar](/attachments/studio8/general/left-menu-bar.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 All items of the left menu bar are described in the table below:
 

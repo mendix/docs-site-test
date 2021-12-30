@@ -29,12 +29,12 @@ Depending on your device settings and network characteristics, the Make it Nativ
 
 *  **Unable to load script**:
 
-	{{% image_container width="250" %}}![unable to load script](/attachments/howto8/mobile/native-mobile/common-issues/unabletoloadscript.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="250" % */}}![unable to load script](/attachments/howto8/mobile/native-mobile/common-issues/unabletoloadscript.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 *  **Cannot detect your runtime**:
 
-	{{% image_container width="250" %}}![cannot detect runtime](/attachments/howto8/mobile/native-mobile/common-issues/min-error-firewall.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="250" % */}}![cannot detect runtime](/attachments/howto8/mobile/native-mobile/common-issues/min-error-firewall.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 These failures are often caused by the Windows Defender firewall. In such cases, attempts to open the runtime URL from the mobile browser will also fail. To mitigate these issues, please do the following:
 
 1. Make sure that your computer and the mobile device are connected to the same network.
@@ -45,8 +45,8 @@ These failures are often caused by the Windows Defender firewall. In such cases,
     d. For each Node.js entry, note their values in the **Program** column. They should all have a green check mark in front of them.<br /> 
     e. If the **Program** column shows a Mendix installation directory, then there should be a green icon in front of the entry. If this is not the case, double-click the entry and select **Allow the connection**:
     
-    {{% image_container width="350" %}}![inbound rules](/attachments/howto8/mobile/native-mobile/common-issues/inboundrules.png){{% /image_container %}}
-{{% /image_container %}}
+    {{/* % image_container width="350" % */}}![inbound rules](/attachments/howto8/mobile/native-mobile/common-issues/inboundrules.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1. Windows distinguishes between two types of networks: private and public. Windows Defender Firewall applies stricter regulations for public networks. If, and only if, you are connected to a trusted network, configure the network as **Private** on your computer.
 
 ## 3 Read More

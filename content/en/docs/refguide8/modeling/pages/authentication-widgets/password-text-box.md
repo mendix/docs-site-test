@@ -24,8 +24,8 @@ The **Password text box** should be placed on a page together with  with a [Logi
 
 An example of password text box properties is represented in the image below:
 
-{{% image_container width="250" %}}![](/attachments/refguide8/modeling/pages/authentication-widgets/password-text-box/password-text-box-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![](/attachments/refguide8/modeling/pages/authentication-widgets/password-text-box/password-text-box-properties.png)
+{{/* % /image_container % */}}
 
 Password text box properties consist of the following sections:
 
@@ -36,11 +36,11 @@ Password text box properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}}
 
 ### 2.3 General Section {#general}
 
@@ -50,7 +50,7 @@ A **Placeholder** shows a text when an end-user has not entered any text yet. It
 
 ### 2.4 Label Section {#label}
 
-{{% snippet file="refguide8/label-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/label-section-link.md" %}}
 
 ## 3 Read More
 

@@ -31,8 +31,8 @@ If you want to dynamically show different images based on data, you need to add 
 
 An example of image properties is represented in the image below:
 
-{{% image_container width="300" %}}![Image Properties](/attachments/refguide8/modeling/pages/common-widgets/image/image-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Image Properties](/attachments/refguide8/modeling/pages/common-widgets/image/image-properties.png)
+{{/* % /image_container % */}}
 
 Image properties consist of the following sections:
 
@@ -44,11 +44,11 @@ Image properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 2.3 Events Section {#events}
 
@@ -106,7 +106,7 @@ Default: *Yes*
 
 ### 2.5 Visibility Section {#visibility}
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
 
 ## 3 Converting to an Image Viewer
 

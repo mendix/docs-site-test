@@ -31,9 +31,9 @@ The object type decision properties consists of the following sections:
 
 * [Input](#input)
 
-    {{% image_container width="250" %}}
+    {{/* % image_container width="250" % */}}
 ![](/attachments/refguide8/modeling/application-logic/decisions/object-type-decision/object-type-decision-properties.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ### 2.1 Common Section {#common} 
 

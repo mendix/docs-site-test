@@ -10,8 +10,8 @@ tags: ["studio", "page editor", "pages", "widgets"]
 
 Widgets are single user-interface elements that can be configured. Examples of widgets can be a container, a drop-down menu, or different kinds of buttons.
 
-{{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/widgets-examples.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/widgets-examples.png)
+{{/* % /image_container % */}}
 
 Widgets in Studio are grouped by category and can be classified by their origin.
 
@@ -45,8 +45,8 @@ The pop-up window disappears once you start interacting with the page or the men
 
 Widgets of Studio are divided into categories that you can see when you open the **Widgets** tab.
 
-{{% image_container width="350" %}}![](/attachments/studio8/page-editor/page-editor-widgets/widgets-categories.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/widgets-categories.png)
+{{/* % /image_container % */}}
 
 Widget categories are described in the table below:
 
@@ -86,8 +86,8 @@ To add an Marketplace widget, do the following:
 
     a. Find a category with the **View App Store widgets** option and click it.  <br />
 
-    {{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/view-app-store-widgets.png)
-    {{% /image_container %}}<br />
+    {{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/view-app-store-widgets.png)
+    {{/* % /image_container % */}}<br />
 
     b.  Start typing the name of the category or of a specific widget in the **Search** field. <br />
 

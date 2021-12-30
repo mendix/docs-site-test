@@ -24,8 +24,8 @@ Whether security is enabled for your app by default, depends on app's type and v
 2. If your app has been created in the Developer Portal with Mendix version below 7.23.3, or has been labelled as private content, or has been customized by your team specifically for your company, the security state depends on Studio Pro:<br/>
     a.  If security is off in Studio Pro, then you can enable security in Studio. In this case, when you try to [publish the app](publishing-app), you will be prompted to enable security. <br/>
 
-	{{% image_container width="400" %}}![Secure Your App Pop-up Window](/attachments/studio8/settings/settings-security/security-pop-up.png)
-	{{% /image_container %}}<br/>
+	{{/* % image_container width="400" % */}}![Secure Your App Pop-up Window](/attachments/studio8/settings/settings-security/security-pop-up.png)
+	{{/* % /image_container % */}}<br/>
 
     b. If security is set to the **Production** level in Studio Pro and settings are compatible with Studio, you can view and edit **Roles and Permissions** in Studio. (For more information on what security settings are compatible with Studio, see the [Studio Compatibility](/refguide8/studio-security-enabled#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
 
@@ -199,9 +199,9 @@ If you have created a new user role on the **Roles and Permissions** page, you n
 
 When you try to publish your app, you may be notified that upgrade of the service that secures your app is required first:
 
-{{% image_container width="300" %}}
+{{/* % image_container width="300" % */}}
 ![Upgrade Required](/attachments/studio8/settings/settings-security/upgrade.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 A special service makes it possible to manage your app users. The upgrade to the latest version of this service will be done automatically for you when you click **Auto-Upgrade**. 
 

@@ -25,9 +25,9 @@ This action is ignored and does not work when a microflow is called from an offl
 
 The **Validation feedback** activity does a validation check, and if this check fails, it shows a red message to the end-user below the widget that displays the attribute or association which failed the validation. For example, if the customer did not verify their email, a message will be displayed that the customer should verify it before they can log in:
 
-{{% image_container width="200" %}}
+{{/* % image_container width="200" % */}}
 ![Validation Feedback](/attachments/refguide8/modeling/application-logic/activities/client-activities/validation-feedback/validation-feedback.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ## 2 Properties
 
@@ -72,7 +72,7 @@ Parameters are attributes the value of which will be displayed. Parameters need 
 
 ## 4 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 

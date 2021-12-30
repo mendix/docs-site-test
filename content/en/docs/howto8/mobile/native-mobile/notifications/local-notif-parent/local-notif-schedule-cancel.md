@@ -26,8 +26,8 @@ To schedule a notification for a specific time, do the following:
 1. Navigate to your **ACT_CreateAndSendNotification** nanoflow. 
 2.  Replace your **Display notification** JavaScript action with a new **Schedule notification** action:
 
-	{{% image_container width="500" %}}![schedule action replace](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/new-schedule-action.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="500" % */}}![schedule action replace](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/new-schedule-action.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 3. Double-click your new **Schedule notification activity**.
 4. Set the **Date** to **EndOfCurrentMinute**.
 5. Change the **body**, **title**, and **subtitle** to the variables that you created.
@@ -50,8 +50,8 @@ If your app is open, it will not show the notification due to iOS and Android us
 6. Click **Actions** > **New**.
 7.  Create a **New Action** named *TriggerOnReceive*, set **On receive** to **Call a nanoflow**, and select **ON_ReceiveNotification**:
 
-	{{% image_container width="500" %}}![on receive settings](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/on-receive-action.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="500" % */}}![on receive settings](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/on-receive-action.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 8. Click **OK** then **OK** again.
 8. In **ACT_CreateAndSendNotification**, double-click your schedule notification activity.
 10. Click **Action name** > **Edit**.
@@ -74,15 +74,15 @@ To cancel all scheduled notifications, do the following:
 1. Create a nanoflow named  *ACT_CancelAllScheduledNotifications*.
 2.  Drag and drop a JavaScript action named **Cancel all scheduled notifications** onto your nanoflow: 
 
-	{{% image_container width="500" %}}![cancel scheduled action](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/cancel-all-action.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="500" % */}}![cancel scheduled action](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/cancel-all-action.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 3. Double-click your new cancel notification action.
 4. Select  **Use return value** > **No**.
 5. Click **OK**.
 6.  Drag and drop this nanoflow to your home screen and name its button *Cancel all*.
 
-	{{% image_container width="300" %}}![cancel button](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/cancel-button.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![cancel button](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/cancel-button.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 To test your new cancel button, do the following:
 
 1. Start and load the app on your mobile device.
@@ -115,8 +115,8 @@ To cancel a specific scheduled notification, you will need to supply a notificat
 11. Click **OK** again to close the dialog box.
 12. Drag and drop this nanoflow onto your home screen and name its button *Cancel a specific notification*:
 
-	{{% image_container width="300" %}}![cancel one button](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/cancel-specific-button.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![cancel one button](/attachments/howto8/mobile/native-mobile/notifications/local-notif-parent/local-notif-schedule-cancel/cancel-specific-button.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 To test your new cancel button, do the following:
 
 1. Start and load the app on your mobile device.

@@ -103,8 +103,8 @@ To merge cells to the right, left, up, or down, you can also click the correspon
 
 An example of table properties is represented in the image below:
 
-{{% image_container width="250" %}}![Table Properties](/attachments/refguide8/modeling/pages/container-widgets/table/table-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Table Properties](/attachments/refguide8/modeling/pages/container-widgets/table/table-properties.png)
+{{/* % /image_container % */}}
 
 Table properties consist of the following sections:
 
@@ -115,11 +115,11 @@ Table properties consist of the following sections:
 
 ### 3.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 3.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 3.3 General Section {#general}
 
@@ -147,7 +147,7 @@ For example, you can you can have three columns of which the first is 200 pixels
 
 ### 3.4 Visibility Section {#visibility}
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
 
 ## 4 Read More
 

@@ -51,8 +51,8 @@ To use MxAssist Logic Bot, do the following:
 
 1. Click the bow-tie to see the next best action recommendations:
 
-    {{% image_container width="350" %}}![Logic Bot Recommendations](/attachments/refguide8/modeling/application-logic/microflows/mx-assist-studio-pro/mx-assist-recommendations.png){{% /image_container %}}
-{{% /image_container %}}
+    {{/* % image_container width="350" % */}}![Logic Bot Recommendations](/attachments/refguide8/modeling/application-logic/microflows/mx-assist-studio-pro/mx-assist-recommendations.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 2. Click one of the recommended activities to insert it into a microflow.
 
 3. In the **Properties** dialog box, configure the selected activity/event.

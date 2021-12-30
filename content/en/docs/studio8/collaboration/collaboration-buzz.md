@@ -59,20 +59,20 @@ To create a feedback item, do the following:
 
 2.  Click the ellipsis icon and select **Create Feedback Item**:
 
-	{{% image_container width="350" %}}![Creating Feedback Item](/attachments/studio8/collaboration/collaboration-buzz/creating-feedback-item.png)
-	{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![Creating Feedback Item](/attachments/studio8/collaboration/collaboration-buzz/creating-feedback-item.png)
+	{{/* % /image_container % */}}
 	
 3.  In the **Create feedback item** dialog box, fill in the type of feedback, its title, and additional information if necessary.
 
-    {{% image_container width="450" %}}![Create Feedback Item Dialog Box](/attachments/studio8/collaboration/collaboration-buzz/feedback-item-info.png)
-    {{% /image_container %}}
+    {{/* % image_container width="450" % */}}![Create Feedback Item Dialog Box](/attachments/studio8/collaboration/collaboration-buzz/feedback-item-info.png)
+    {{/* % /image_container % */}}
 
 4. Click **Create**.
 
 The feedback item is submitted and a corresponding comment is posted in the **Buzz** tab with a link to the Developer Portal:
 
-{{% image_container width="350" %}}![Created Feedback Item](/attachments/studio8/collaboration/collaboration-buzz/feedback-item-created.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![Created Feedback Item](/attachments/studio8/collaboration/collaboration-buzz/feedback-item-created.png)
+{{/* % /image_container % */}}
 
 ## 4 Read More
 

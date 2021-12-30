@@ -19,9 +19,9 @@ This activity can only be used in **Nanoflows**.
 
 The **Call nanoflow** activity can be used to call another [nanoflow](nanoflows). 
 
-{{% image_container width="200" %}}
+{{/* % image_container width="200" % */}}
 ![Nanoflow Call](/attachments/refguide8/modeling/application-logic/activities/client-activities/nanoflow-call/nanoflow-call.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 Arguments can be passed to the nanoflow and the result can be stored in a variable.
 
@@ -78,4 +78,4 @@ The name of the variable, list, or object returned by the activity.
 
 ## 4 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}

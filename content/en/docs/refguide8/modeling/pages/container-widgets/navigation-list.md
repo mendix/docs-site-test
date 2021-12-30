@@ -27,8 +27,8 @@ For example, clicking one row can open a page, clicking another one can execute 
 
 An example of navigation list properties is represented in the image below:
 
-{{% image_container width="250" %}}![Navigation List Properties](/attachments/refguide8/modeling/pages/container-widgets/navigation-list/navigation-list-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Navigation List Properties](/attachments/refguide8/modeling/pages/container-widgets/navigation-list/navigation-list-properties.png)
+{{/* % /image_container % */}}
 
 Navigation list properties consist of the following sections:
 
@@ -38,15 +38,15 @@ Navigation list properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 2.3 Visibility Section {#visibility}
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
 
 ## 3 Navigation List Item
 
@@ -56,7 +56,7 @@ A row in a navigation list is a navigation list item. You can set a separate **O
 
 #### 3.1.1 Common Section
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 #### 3.1.2 General Section
 
@@ -70,7 +70,7 @@ Microflows set as an on click event for a navigation list item have no **Executi
 
 #### 3.1.3 Visibility Section
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
 
 ## 4 Read More
 

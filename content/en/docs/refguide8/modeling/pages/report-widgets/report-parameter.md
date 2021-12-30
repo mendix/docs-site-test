@@ -31,8 +31,8 @@ If you add a report parameter widget on the page, you must also add a [Report Bu
 
 An example of report parameter properties is represented in the image below:
 
-{{% image_container width="300" %}}![Report parameter in structure mode](/attachments/refguide8/modeling/pages/report-widgets/report-parameter/report-parameter-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Report parameter in structure mode](/attachments/refguide8/modeling/pages/report-widgets/report-parameter/report-parameter-properties.png)
+{{/* % /image_container % */}}
 
 Report parameter properties consist of the following sections:
 
@@ -42,11 +42,11 @@ Report parameter properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section{#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}}
 
 ### 2.3 General Section{#general}
 

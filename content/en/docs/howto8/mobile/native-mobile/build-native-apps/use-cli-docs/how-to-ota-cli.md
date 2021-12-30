@@ -71,16 +71,16 @@ If you have made any changes directly to your iOS or Android project, you will h
 
 Over the air updates let you correct mistakes in your published apps without issuing a new release. For example, imagine you issued a new release and later found a spelling mistake on your welcome screen:
 
-{{% image_container width="300" %}}![Typo in welcome screen](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-error-text.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Typo in welcome screen](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-error-text.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 Before OTA updates, you would have to make a new release and configure it in the app stores. But OTA updates make fixing such a mistake easy.
 
 To release a new version OTA, follow these steps:
 
 1.  Correct the title and message as follows:
 
-	{{% image_container width="300" %}}![Make some changes](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/modeller-correct.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![Make some changes](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/modeller-correct.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 2. Save your changes.
 3. Note the version and build number of the app build you want to update. This how-to assumes an app version of 1.0.0 and a build number of 1.
 4. Open a command line interface (CLI) such as Command Prompt.
@@ -108,13 +108,13 @@ This command does the following:<br />
 1. Wait for the Native Builder to complete.
 2. Restart the app on your testing device. You should be greeted with the following message:
 
-	{{% image_container width="300" %}}![Update available prompt](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-update-prompt.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![Update available prompt](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-update-prompt.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 3.  Tap **Confirm** to update your app.
 4.  The app should reload and greet you with the following dialog box:
 
-	{{% image_container width="300" %}}![Update success prompt](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-success-prompt.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![Update success prompt](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-success-prompt.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ## 5 Rolling Back Updates
 
 Sometimes an update might not perform as expected. Out of the box, when an update fails, the automatic update mechanism will try to recover by switching back to the bundle packaged with your app's binary. In cases such as these, you should update your bundle by either fixing the issue and pushing a new update or by rolling back to the previous version.
@@ -135,8 +135,8 @@ Imagine you want to rollback an update. Maybe you released it too early or somet
 	native-builder.exe release rollback-update --project-name "CoolApp" --label "v1"
 	```
 
-	{{% image_container width="300" %}}![Output of rollback command](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/rollback-result.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![Output of rollback command](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/rollback-result.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 3. Next time you open your app, you should be greeted with the **Update available** dialog box. Tap **Confirm** to roll your app back on your device.
 
 ## 6 Initiating a Partial Initial Rollout

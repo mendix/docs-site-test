@@ -27,8 +27,8 @@ It is possible to add activities in a regular way without using Mendix Assist.
 
 Click the bow-tie to view Mendix Assist recommendations. 
 
-{{% image_container width="350" %}}![](/attachments/studio8/microflows/mx-assist/mx-assist-recommendations.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/studio8/microflows/mx-assist/mx-assist-recommendations.png)
+{{/* % /image_container % */}}
 
 Mendix Assist lists the top five recommendations from the most probable to less probable ones for the particular microflow. Click the suggestion to proceed with it and insert it into a microflow. For more information, see the [Adding Activities and Elements with Mendix Assist](#add-activities) section.
 
@@ -64,8 +64,8 @@ Settings available for Mendix Assist are described in the table below:
 
 You can also enable/disable Mendix Assist by clicking the information icon in the top menu bar of Mendix Studio: 
 
-{{% image_container width="300" %}}![](/attachments/studio8/microflows/mx-assist/info-icon-setting.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![](/attachments/studio8/microflows/mx-assist/info-icon-setting.png)
+{{/* % /image_container % */}}
 
 {{% alert type="info" %}}
 If you disable Mendix Assist, the information dialog will be disabled as well. Once you re-enable Mendix Assist, the information dialog is also re-enabled. 
@@ -85,8 +85,8 @@ To add an activity (such as **Change Object**, **Show Page**, **Create Object**,
 
 3.  Click the selected activity to add it to the flow.
 
-    {{% image_container width="350" %}}![](/attachments/studio8/microflows/mx-assist/mx-assist-list.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![](/attachments/studio8/microflows/mx-assist/mx-assist-list.png)
+    {{/* % /image_container % */}}
 
 The activity is added to the flow.
 
@@ -94,8 +94,8 @@ The activity is added to the flow.
 
 Adding a check means that you will add a **Decision** with Boolean attribute type: your flow will be split into one flow labeled *true* and another one labeled *false*. For more information, see [Decision](microflows-decision).   
 
-{{% image_container width="300" %}}![](/attachments/studio8/microflows/mx-assist/check-added.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![](/attachments/studio8/microflows/mx-assist/check-added.png)
+{{/* % /image_container % */}}
 
 {{% alert type="info" %}}
 
@@ -110,8 +110,8 @@ To add the check, do the following:
 
 2.  Find **Add a check** in the suggestions.
 
-    {{% image_container width="350" %}}![](/attachments/studio8/microflows/mx-assist/adding-check.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![](/attachments/studio8/microflows/mx-assist/adding-check.png)
+    {{/* % /image_container % */}}
 
 3. The number of options for the check will be opened, select the check that you want to add and click it. 
 
@@ -133,8 +133,8 @@ To add the decision, do the following:
 
 2. Find **Add a decision** in the suggestions and select it.
 
-    {{% image_container width="350" %}}![](/attachments/studio8/microflows/mx-assist/adding-decision.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![](/attachments/studio8/microflows/mx-assist/adding-decision.png)
+    {{/* % /image_container % */}}
 
 The decision is added to the microflow.
 

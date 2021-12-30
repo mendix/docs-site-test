@@ -11,8 +11,8 @@ tags: ["studio", "page editor", "image", "image widgets", "widgets", "file", "fi
 
 **Images & Files** are widgets that allow end-users to view, download, and upload images or files. For example, with an image uploader end-users will be able to upload a profile image:
 
-{{% image_container width="350" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/image-uploader-example.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/image-uploader-example.png)
+{{/* % /image_container % */}}
 
 There are the following image and file widgets in Mendix Studio:
 
@@ -24,8 +24,8 @@ There are the following image and file widgets in Mendix Studio:
 
 *   **File Manager** – allows end-users to upload or/and download a file (in the **Toolbox**, you see  preconfigured file managers: **File Uploader** and **File Downloader**)
   
-	{{% image_container width="350" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/images-and-files.png)
-    {{% /image_container %}}
+	{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/images-and-files.png)
+    {{/* % /image_container % */}}
 
 ## 2 Image and Dynamic Image 
 
@@ -43,8 +43,8 @@ In the **General** section, you can switch between static and dynamic image, sel
 
 Before configuring settings in the **General** section for the **Dynamic Image**, keep in mind that it can only function inside a data container (a list view or a data view). You can either place widget in an existing data container; or click **Wrap with a new data view** in **Properties** to create a data view automatically and place an input element inside it. 
 
-{{% image_container width="350" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/dynamic-image-data-view.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/dynamic-image-data-view.png)
+{{/* % /image_container % */}}
 
 Settings available for **Static Image** and **Dynamic Image** are described in the table below:
 
@@ -75,7 +75,7 @@ The dynamic image has a specific on-click action **Enlarge on Click**. The full-
 
 #### 2.1.3 Conditional Visibility Section
 
-{{% snippet file="studio/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/studio/visibility-section-link.md" %}}
 
 #### 2.1.4 Design Section
 
@@ -151,9 +151,9 @@ This property is shown only when an attribute in the [Attribute-Based](#attribut
 
 For example, you would like to allow users upload images only when their *email is verified*. So, you need to select *EmailVerified* in the **Attribute-Based** property and *true* in the **Attribute Value** property:
 
-{{% image_container width="250" %}}
+{{/* % image_container width="250" % */}}
 ![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/conditional-editability.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 #### 3.1.3 Controls Section
 
@@ -171,7 +171,7 @@ The **Show Buttons For** option specifies whether end-users are able to upload a
 
 #### 3.1.4 Conditional Visibility Section
 
-{{% snippet file="studio/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/studio/visibility-section-link.md" %}}
 
 #### 3.1.5 Design Section
 

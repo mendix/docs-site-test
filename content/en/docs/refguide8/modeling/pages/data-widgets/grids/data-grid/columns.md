@@ -18,8 +18,8 @@ Grid columns allow you to set properties for a [data grid](data-grid) or [refere
 
  An example of grid column properties is represented in the image below: 
 
-{{% image_container width="250" %}}![](/attachments/refguide8/modeling/pages/data-widgets/grids/data-grid/columns/column-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![](/attachments/refguide8/modeling/pages/data-widgets/grids/data-grid/columns/column-properties.png)
+{{/* % /image_container % */}}
 
 Grid column properties consist of the following sections:
 
@@ -30,7 +30,7 @@ Grid column properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Data Source Section {#data-source}
 
@@ -74,7 +74,7 @@ These are the possible values:
 
 If you choose **Custom** as the date format (see above), this property determines how the attribute value is formatted. The custom date format is a string that allows for any combination of symbols found in the table below. Any punctuation will be rendered literally.
 
-{{% snippet file="refguide8/custom-date-format-tokens.md" %}}
+{{% snippet file="/static/_includes/refguide8/custom-date-format-tokens.md" %}}
 
 ### 2.4 General Section {#general}
 

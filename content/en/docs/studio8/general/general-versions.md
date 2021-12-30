@@ -16,8 +16,8 @@ The **Mendix version** is the version of the app you are editing. **Mendix versi
 
 The **Mendix Studio version** and the **Mendix version** can be viewed by clicking the info icon > **About** in the top-right corner of Studio.
 
-{{% image_container width="500" %}}![](/attachments/studio8/general/general-versions/about-dialog.png)
-{{% /image_container %}}
+{{/* % image_container width="500" % */}}![](/attachments/studio8/general/general-versions/about-dialog.png)
+{{/* % /image_container % */}}
 
 ## 2 Relation Between Studio Ranges and Mendix Versions 
 

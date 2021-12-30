@@ -27,8 +27,8 @@ The report grid is displayed in structure mode with the data set source shown be
 
 An example of report grid properties is represented in the image below:
 
-{{% image_container width="300" %}}![Report grid in structure mode](/attachments/refguide8/modeling/pages/report-widgets/report-grid/report-grid-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Report grid in structure mode](/attachments/refguide8/modeling/pages/report-widgets/report-grid/report-grid-properties.png)
+{{/* % /image_container % */}}
 
 Report grid properties consist of the following sections:
 
@@ -41,7 +41,7 @@ Each column in a report grid also has properties: see [Report Grid Column Proper
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Data Source Section{#data-source}
 
@@ -51,7 +51,7 @@ Each column in a report grid also has properties: see [Report Grid Column Proper
 
 ### 2.3 Design Properties Section{#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 2.4 General Section{#general}
 
@@ -103,8 +103,8 @@ If **Generate on page load** is set to **No**, the report grid will not show any
 
 An example of report grid properties is represented in the image below:
 
-{{% image_container width="250" %}}![Report grid column properties](/attachments/refguide8/modeling/pages/report-widgets/report-grid/report-grid-column-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Report grid column properties](/attachments/refguide8/modeling/pages/report-widgets/report-grid/report-grid-column-properties.png)
+{{/* % /image_container % */}}
 
 Report grid properties consist of a single section, [General](#column-general).
 

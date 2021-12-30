@@ -75,64 +75,64 @@ Next you must build new binaries with this capability toggled on, and then relea
 1. Click **Project** > **Build Native Mobile App**.
 1.  Navigate to **App Capabilities**: 
 
-	{{% image_container width="350" %}}![Start Mendix Native Mobile Builder](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-capabilities.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![Start Mendix Native Mobile Builder](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-capabilities.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1.  Toggle **App Center CodePush OTA Support** on: 
 
-	{{% image_container width="350" %}}![OTA capability enabled](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-capabilities-ota.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![OTA capability enabled](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-capabilities-ota.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1. Click **Save**.
 1.  Now build an application for distribution and make a note of the version number used: 
 
-	{{% image_container width="350" %}}![Build release app page](/attachments/howto8/mobile/native-mobile/how-to-ota/build-release-app-for-ota.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![Build release app page](/attachments/howto8/mobile/native-mobile/how-to-ota/build-release-app-for-ota.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1. To make the OTA update functionality available to your users, please release the new binaries via the appropriate app stores. If you are testing the functionality you can now install the apps on your test devices.
 
 ## 5 Deploying An Over the Air Update
 
 Over the air updates let you correct mistakes in your published apps without issuing a new release. For example, imagine you issued a new release and later found a spelling mistake on your welcome screen:
 
-{{% image_container width="300" %}}![Typo in welcome screen](/attachments/howto8/mobile/native-mobile/how-to-ota/phone-error-text.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Typo in welcome screen](/attachments/howto8/mobile/native-mobile/how-to-ota/phone-error-text.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 Before OTA updates, you would have to make a new release and configure it in the app stores. But OTA updates make fixing such a mistake easy.
 
 To release a new version OTA, follow these steps:
 
 1.  Correct the title and message as follows:
 
-	{{% image_container width="300" %}}![Make some changes](/attachments/howto8/mobile/native-mobile/how-to-ota/modeller-correct.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![Make some changes](/attachments/howto8/mobile/native-mobile/how-to-ota/modeller-correct.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1. Save your changes.
 1. Note the version and build number of the app build you want to update. This how to assumes an app version of 1.0.0 and a build number of 1.
 1. Click **Project** > **Build Native Mobile App**.
 1.  Under **Build app for distribution**, select **Deploy OTA update via CodePush**:
 
-	{{% image_container width="350" %}}![Menu entry Deploy OTA update via CodePush](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-menu.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![Menu entry Deploy OTA update via CodePush](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-menu.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1.  Type in the target app version you wish to release the OTA update for. This version needs to match exactly with the app version used for building the app binaries in the previous step, or the one released on the app stores:
 
-	{{% image_container width="350" %}}![OTA configuration screen](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-configuration.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![OTA configuration screen](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-configuration.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1. Click **Release an OTA update via CodePush**.
 1.  The Mendix Native Mobile Builder will compile your app and resources and release the OTA updates:
 
-	{{% image_container width="350" %}}![OTA build step](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-building.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![OTA build step](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-building.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1.  On compilation you will receive links to the CodePush OTA update administration pages for your Android and iOS apps:
 
-	{{% image_container width="350" %}}![OTA build step success](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-success.png){{% /image_container %}}
-{{% /image_container %}}
-	{{% image_container width="350" %}}![OTA App Center page](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-appcenter-page.png){{% /image_container %}}
-{{% /image_container %}}1. Wait for the Native Mobile Builder to complete.
+	{{/* % image_container width="350" % */}}![OTA build step success](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-success.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![OTA App Center page](/attachments/howto8/mobile/native-mobile/how-to-ota/advanced-ota-appcenter-page.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}1. Wait for the Native Mobile Builder to complete.
 2. Restart the app on your testing device. You should be greeted with the following message:
 
-	{{% image_container width="300" %}}![Update available prompt](/attachments/howto8/mobile/native-mobile/how-to-ota/phone-update-prompt.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![Update available prompt](/attachments/howto8/mobile/native-mobile/how-to-ota/phone-update-prompt.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 3.  Tap **Confirm** to update your app.
 4.  The app should reload and greet you with the following dialog box:
 
-	{{% image_container width="300" %}}![Update success prompt](/attachments/howto8/mobile/native-mobile/how-to-ota/phone-success-prompt.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![Update success prompt](/attachments/howto8/mobile/native-mobile/how-to-ota/phone-success-prompt.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ## 6 Preserving your Model's Integrity
 
 Before issuing OTA updates or releasing new versions, please read and understand the [Offline First](/refguide/offline-first) reference guide. It is important to understand the implications of offline first.

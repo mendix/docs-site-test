@@ -21,9 +21,9 @@ The **Synchronize** activity can be used to synchronize your data between your d
 
 ### 1.1 Synchronize All Objects
 
-{{% image_container width="200" %}}
+{{/* % image_container width="200" % */}}
 ![Synchronize](/attachments/refguide8/modeling/application-logic/activities/client-activities/synchronize/synchronize.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 This mode synchronizes the entire local database. The server database is updated with the changes from the local database. The local database is updated with the latest data from the server, including the file contents.
 
@@ -31,15 +31,15 @@ The behavior of this mode can be configured through [**Synchronization configura
 
 ### 1.2 Synchronize Selected Object(s)
 
-{{% image_container width="200" %}}
+{{/* % image_container width="200" % */}}
 ![Synchronize](/attachments/refguide8/modeling/application-logic/activities/client-activities/synchronize/synchronize-objects.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 This mode synchronizes objects partially, based on a selection:
 
-{{% image_container width="600" %}}
+{{/* % image_container width="600" % */}}
 ![Synchronize](/attachments/refguide8/modeling/application-logic/activities/client-activities/synchronize/synchronize-objects-selection.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 With this mode, only the selected objects or lists are synchronized. The synchronization is bi-directional,
 meaning both the server database and the local database is updated for the selected objects.
@@ -63,15 +63,15 @@ The **Synchronize** activity properties consists of the following sections:
 
 * [Common](#common)
 
-	{{% image_container width="300" %}}![Synchronize Action Properties](/attachments/refguide8/modeling/application-logic/activities/client-activities/synchronize/synchronize-properties.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![Synchronize Action Properties](/attachments/refguide8/modeling/application-logic/activities/client-activities/synchronize/synchronize-properties.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ## 3 Action Section {#action}
 
 The **Action** section of the properties pane shows the action associated with this activity.
 
 ## 4 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Limitations {#limitations}
 

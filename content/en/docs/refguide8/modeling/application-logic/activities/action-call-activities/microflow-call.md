@@ -18,9 +18,9 @@ This activity can be used in both **Microflows** and **Nanoflows**.
 
 The **Microflow call** activity can be used to call a [microflow](microflows). 
 
-{{% image_container width="200" %}}
+{{/* % image_container width="200" % */}}
 ![Call Microflow](/attachments/refguide8/modeling/application-logic/activities/action-call-activities/microflow-call/microflow-call.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 Arguments can be passed to the microflow and the result can be stored.
 
@@ -88,4 +88,4 @@ It is possible to perform a microflow call from an offline-first app. However, i
 
 ## 5 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}

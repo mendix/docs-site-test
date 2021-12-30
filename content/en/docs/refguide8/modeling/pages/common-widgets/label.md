@@ -29,8 +29,8 @@ A label shows static text, which describes the purpose of a specific widget to a
 
 An example of label properties is represented in the image below:
 
-{{% image_container width="300" %}}![Label Properties](/attachments/refguide8/modeling/pages/common-widgets/label/label-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Label Properties](/attachments/refguide8/modeling/pages/common-widgets/label/label-properties.png)
+{{/* % /image_container % */}}
 
 Label properties consist of the following sections:
 
@@ -41,11 +41,11 @@ Label properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 2.3 General Section {#general}
 
@@ -53,7 +53,7 @@ The **General** section contains the **Caption** property. **Caption** defines t
 
 ### 2.4 Visibility Section {#visibility}
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
 
 ## 3 Read More
 

@@ -20,9 +20,9 @@ This activity can only be used in **Nanoflows**.
 
 The JavaScript action call activity can be used to call a [JavaScript action](javascript-actions). Arguments can be passed to the action, and the result can be stored.
 
-{{% image_container width="200" %}}
+{{/* % image_container width="200" % */}}
 ![javascript action call properties](/attachments/refguide8/modeling/application-logic/activities/action-call-activities/javascript-action-call/javascript-call.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ## 2 Properties
 
@@ -75,7 +75,7 @@ The name of the variable, list, or object returned by the activity. If it is an 
 
 ## 4 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 

@@ -51,8 +51,8 @@ To fix the error, you can create an object and pass it to the page. Do the follo
 
     b. Set **ProgramItem** as **Entity**.<br />
 
-    {{% image_container width="350" %}}![Menu Item Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/menu-item-properties.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![Menu Item Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/menu-item-properties.png)
+    {{/* % /image_container % */}}
 
 Now when a user clicks the navigation item, a new object of type *ProgramItem* will be created and passed to the **Program** page.
 
@@ -66,8 +66,8 @@ For example, you have set **Customer Details** page as the home page in your **N
 
 You have the **Customer Details** page with a data view that expects an object *Customer* to be passed to it. In other words, this page needs to get data first to be able to display it. 
 
-{{% image_container width="350" %}}![Data View Expects the Customer Object](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/data-view-customer.png)
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/data-view-customer.png)
+{{/* % /image_container % */}}
 
 However, the home page is the first page to be opened in your app by default, and the **Customer Details** page cannot function as a home page, as it needs to get data first. 
 
@@ -79,8 +79,8 @@ However, you can also solve this error by creating a microflow that will create 
 
 2.  Change the **On Click Action** from **Page** to **Microflow**. 
 
-    {{% image_container width="350" %}}![Menu Item Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/menu-item-on-click-action.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![Menu Item Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/menu-item-on-click-action.png)
+    {{/* % /image_container % */}}
 
 3. Click **Select Microflow** and click **New Microflow** in the pop-up window.
 
@@ -90,8 +90,8 @@ However, you can also solve this error by creating a microflow that will create 
 
 6.  Open the **Create object** activity properties, and set **Entity** to **Customer**.
 
-    {{% image_container width="350" %}}![Create Object Activity Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/create-object-properties.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![Create Object Activity Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/create-object-properties.png)
+    {{/* % /image_container % */}}
 
 7. In the **Toolbox** > **Client Activities**, select **Show Page** activity, drag and drop it to the microflow.
 
@@ -101,8 +101,8 @@ However, you can also solve this error by creating a microflow that will create 
 
     b. Set **Object to pass** to **NewCustomer**.<br />
 
-    {{% image_container width="350" %}}![Show Page Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/show-page-properties.png)
-    {{% /image_container %}}
+    {{/* % image_container width="350" % */}}![Show Page Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/show-page-properties.png)
+    {{/* % /image_container % */}}
 
 Now the new object of type *Customer* will be created and passed to the home page.
 

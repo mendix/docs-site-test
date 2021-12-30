@@ -31,8 +31,8 @@ A scroll container can consist of several scroll container regions. For more inf
 
 An example of scroll container properties is represented in the image below:
 
-{{% image_container width="250" %}}![Scroll Container Properties](/attachments/refguide8/modeling/pages/container-widgets/scroll-container/scroll-container-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Scroll Container Properties](/attachments/refguide8/modeling/pages/container-widgets/scroll-container/scroll-container-properties.png)
+{{/* % /image_container % */}}
 
 Scroll container properties consist of the following sections:
 
@@ -43,11 +43,11 @@ Scroll container properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 2.3 General Section {#general}
 
@@ -133,7 +133,7 @@ You can add and remove all the regions listed above except the center one.
 
 #### 3.1.1 Common Section
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 #### 3.1.2 General Section
 

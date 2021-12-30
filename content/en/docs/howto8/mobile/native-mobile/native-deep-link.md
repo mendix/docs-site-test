@@ -44,16 +44,16 @@ Set up a native template with the **Native Mobile App Builder** by following the
 
 1.  Launch the Native Mobile App Builder from the **Project** menu. Walk through the wizard and configure the project's details and tokens (for more information, see [How to Deploy Your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app)):
 
-    {{% image_container width="400" %}}![launch native mobile builder](/attachments/howto8/mobile/native-mobile/native-deep-link/launch-native-mobile-app-builder.png){{% /image_container %}}
-{{% /image_container %}}
+    {{/* % image_container width="400" % */}}![launch native mobile builder](/attachments/howto8/mobile/native-mobile/native-deep-link/launch-native-mobile-app-builder.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 2.  Once done with the wizard you will enable deep linking capabilities. First, select the **Capabilities** menu item:
 
-    {{% image_container width="400" %}}![capability menu option](/attachments/howto8/mobile/native-mobile/native-deep-link/capability-menu-option.png){{% /image_container %}}
-{{% /image_container %}}    
+    {{/* % image_container width="400" % */}}![capability menu option](/attachments/howto8/mobile/native-mobile/native-deep-link/capability-menu-option.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}    
 3.  Enter the `schema` name without the appending `://`:
 
-    {{% image_container width="400" %}}![deep link input field](/attachments/howto8/mobile/native-mobile/native-deep-link/deep-link-input-field.png){{% /image_container %}}
-{{% /image_container %}}    
+    {{/* % image_container width="400" % */}}![deep link input field](/attachments/howto8/mobile/native-mobile/native-deep-link/deep-link-input-field.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}    
 4. Click the **Save** button. 
 
 5. Navigate to the build page and click **Build**.

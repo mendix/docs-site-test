@@ -29,8 +29,8 @@ For example, the image below shows for an example layout that uses the sidebar t
 
 An example of sidebar toggle properties is represented in the image below:
 
-{{% image_container width="250" %}}![](/attachments/refguide8/modeling/pages/page-resources/layout/sidebar-toggle-button/sidebar-toggle-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![](/attachments/refguide8/modeling/pages/page-resources/layout/sidebar-toggle-button/sidebar-toggle-properties.png)
+{{/* % /image_container % */}}
 
 Sidebar toggle properties consist of the following sections:
 
@@ -41,11 +41,11 @@ Sidebar toggle properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section{#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}}
 
 ### 2.3 General Section {#general}
 
@@ -90,4 +90,4 @@ The **Button style** property applies a predefined styling to the sidebar toggle
 
 ### 2.4 Visibility Section{#visibility}
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}

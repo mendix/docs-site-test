@@ -27,8 +27,8 @@ The **Validation message** widget displays an authentication failure message on 
 
 An example of validation message properties is represented in the image below:
 
-{{% image_container width="300" %}}![Validation Message Properties](/attachments/refguide8/modeling/pages/authentication-widgets/validation-message/validation-message-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Validation Message Properties](/attachments/refguide8/modeling/pages/authentication-widgets/validation-message/validation-message-properties.png)
+{{/* % /image_container % */}}
 
 Validation message properties consist of the following sections:
 
@@ -37,11 +37,11 @@ Validation message properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}}
 
 ## 3 Read More
 

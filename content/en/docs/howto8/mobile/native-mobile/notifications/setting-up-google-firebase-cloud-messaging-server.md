@@ -35,8 +35,8 @@ To import your project, do the following:
 1. In the Firebase console, select **Import Google Project**. 
 1.  Select your GCM project from the list of existing projects, select a region, and click **Add Firebase**:
 
-	{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/Add_Firebase_to_a_Google_Project.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/Add_Firebase_to_a_Google_Project.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 With that done, continue with [Configuring APNs Credentials](#configuring) below.
 
 ### 3.2 Creating a New FCM Project
@@ -53,8 +53,8 @@ To create a project, do the following:
 1. Fill in your application's project name and region. 
 1.  Click **Create**"
 
-	{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/Create_Firebase_Project.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/Create_Firebase_Project.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ## 4 Adding an Android or iOS App {#native-apps}
 
 Before you add an app to FCM, you must retrieve your app's bundle ID. Its location depends on your type of your mobile app.
@@ -66,22 +66,22 @@ For a native mobile app, your bundle ID will be what you specify for the **App i
 
 Click **Deploy**, then **Mobile App**. Your ID is listed as **App Identifier**:
 
-{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/hybrid_app_identifier.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/hybrid_app_identifier.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 Do the following to add your app to FCM:
 
 1.  Click the **Project Overview** cogwheel and select **Project settings**:
 
-	{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/project_settings.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/project_settings.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1.  Go to the **General** tab and click **Add app**:
 
-	{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/add_app.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/add_app.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1.  Select Android and, fill in the bundle_id, and skip the rest of the steps: 
 
-	{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/android_setup.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/android_setup.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 Bundle ID must be matching with your package ID. Make sure to repeat this step for iOS as well.
 
 ## 5 Configuring APNs Credentials (Optional) {#configuring}
@@ -91,16 +91,16 @@ If you wish to send push notifications to iOS devices through FCM, you will need
 1. Click in the top-left corner of the screen and select **Project settings**.
 1.  Navigate to the **Cloud messaging** tab:
 
-	{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/push_notifications_cloud_messaging.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/push_notifications_cloud_messaging.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1. On this tab, upload either your APNs key or your APNs certificate(s) as configured in your [Apple Developer account](https://developer.apple.com).
 
 ## 6 Setting Up a Service Account {#setting-up-a-service-account}
 
 In the top-left corner of the screen, click the cogwheel and select **Project settings**. Then navigate to the **Service accounts** tab.
 
-{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/push_notifications_service_accounts.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/push_notifications_service_accounts.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 On this page, press **Generate new private key**. Store the resulting file in a secure location. You will use this file when configuring FCM in the back-end of your Mendix application.
 
 The file you just created gives API access to all available Firebase services for your app. If you want a more restrictive service account, click **Manage all service accounts** in the top-right of the screen, then create a service account that is restricted to using the Cloud Messaging functionality.
@@ -109,8 +109,8 @@ The file you just created gives API access to all available Firebase services fo
 
 In addition to the back-end configuration set up in the previous steps, you will need additional files that will be bundled as part of your mobile application. To obtain these, again click the cogwheel in the top-left of the screen and select **Project settings**. Then navigate to the **General** tab:
 
-{{% image_container width="350" %}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/push_notifications_platforms.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="350" % */}}![](/attachments/howto8/mobile/native-mobile/notifications/setting-up-google-firebase-cloud-messaging-server/push_notifications_platforms.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 The list at the bottom shows the Android and iOS applications that you have configured for your Firebase project. Select the Android application and click *google-services.json*. Then click the iOS application and click *GoogleService-Info.plist*. Store both files in a secure location. You will need these when building your mobile application.
 
 {{% alert type="warning" %}}

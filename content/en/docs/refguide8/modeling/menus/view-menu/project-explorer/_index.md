@@ -14,8 +14,8 @@ tags: ["studio pro", "project explorer"]
 
 The **Project Explorer** shows the complete structure of your project including all documents inside the modules:
 
-{{% image_container width="250" %}}![](/attachments/refguide8/modeling/menus/view-menu/project-explorer/project-explorer.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![](/attachments/refguide8/modeling/menus/view-menu/project-explorer/project-explorer.png)
+{{/* % /image_container % */}}
 
 The **Project Explorer** consists of the following:
 

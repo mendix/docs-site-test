@@ -50,8 +50,8 @@ If there is no text in the default language, the end-user will see `[no translat
 
 The **Language** menu allows you to manage additional languages and translations for your app. This includes features to help you to translate a text in all places where it appears with a single change instead of having to change each occurrence individually:
 
-{{% image_container width="300" %}}![Language Menu](/attachments/refguide8/modeling/menus/translatable-texts/language-menu.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Language Menu](/attachments/refguide8/modeling/menus/translatable-texts/language-menu.png)
+{{/* % /image_container % */}}
 
 ### 3.1 Menu Items Overview
 

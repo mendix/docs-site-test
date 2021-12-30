@@ -33,13 +33,13 @@ What if you want to send messages to all your users' devices with a single butto
 
 Create a microflow *ACT_SendProductToAllDevices* with the following elements:
 
-{{% image_container width="300" %}}![SendProductToAll](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/SendProductToAll.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![SendProductToAll](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/SendProductToAll.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 1. Add a *Product* data parameter to your microflow.
 2. Retrieve the *PushNotifications.Device* entity list from a database:
 
-	{{% image_container width="300" %}}![retrieveDevices](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/retrieveDevices.png){{% /image_container %}}
-{{% /image_container %}}    
+	{{/* % image_container width="300" % */}}![retrieveDevices](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/retrieveDevices.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}    
 3. Drag and drop the **PrepareMessageData** microflow from *PushNotifications/_USE ME/API* onto **ACT_SendProductToAllDevices** and configure the following:<br />
 	a. Title: *myTitle*.<br />
 	b. Body: *myBody*.<br />
@@ -48,8 +48,8 @@ Create a microflow *ACT_SendProductToAllDevices* with the following elements:
 	e. ActionName: *sendProduct*.<br />
 	f. ContextObjectGuid: *empty*:
 	
-	{{% image_container width="300" %}}![prepareMessageData](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/prepareMessageData.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![prepareMessageData](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/prepareMessageData.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 	**ContextObjectGuid** is set to empty since you will pass the object itself to the **SendMessageToDevices** Java action where it will be retrieved automatically. 
 
 4. Drag and drop the **SendMessageToDevices** Java action from *PushNotifications/_USE ME/API* onto **ACT_SendProductToAllDevices** and configure the following:<br />
@@ -57,12 +57,12 @@ Create a microflow *ACT_SendProductToAllDevices* with the following elements:
 	b. **Device param**: **$Devices**.<br />
 	c. **Context object**: **$Product**:
 	
-	{{% image_container width="300" %}}![sendMessagesJava](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/sendMessagesJava.png){{% /image_container %}}
-{{% /image_container %}}  
+	{{/* % image_container width="300" % */}}![sendMessagesJava](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/sendMessagesJava.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}  
 5. Go to **Product_NewEdit** and drag and drop **ACT_SendProductToAllDevices** inside of that page's data view:
 
-	{{% image_container width="300" %}}![sendProductToAllButton](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/sendProductToAllButton.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="300" % */}}![sendProductToAllButton](/attachments/howto8/mobile/native-mobile/notifications/notif-mult-devices/sendProductToAllButton.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ### 3.2 Testing the Implementation
 
 Test your new push notification capabilities by doing the following:

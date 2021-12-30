@@ -23,8 +23,8 @@ If you start typing in any empty container, Studio Pro will automatically genera
 
 An example of text properties is represented in the image below:
 
-{{% image_container width="300" %}}![Text Properties](/attachments/refguide8/modeling/pages/common-widgets/text/text-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Text Properties](/attachments/refguide8/modeling/pages/common-widgets/text/text-properties.png)
+{{/* % /image_container % */}}
 
 Text properties consist of the following sections:
 
@@ -35,11 +35,11 @@ Text properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}} 
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
 
 ### 2.3 General Section {#general}
 
@@ -113,7 +113,7 @@ The render mode determines how the text will be displayed.
 
 ### 2.4 Visibility Section {#visibility}
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
 
 ## 3 Read More
 

@@ -27,16 +27,16 @@ In the Data Hub Catalog, registered published services are referred to as *data 
 
 To display the **Data Hub** pane, click **View** > **Data Hub**:
 
-{{% image_container width="300" %}}![data-hub-pane](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/data-hub-pane-empty.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![data-hub-pane](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/data-hub-pane-empty.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ## 2 Data Hub Pane in the Domain Model
 
 The Data Hub pane is used to search the Data Hub Catalog for entities that can be dragged and used in your app and also display the external entities and the associated services that are consumed in your current model
 
 ### 2.1 Data Hub Search
 
-{{% image_container width="300" %}}![](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/data-hub-pane.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/data-hub-pane.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 The following functionality is available in the pane:
 
 * [Search](#search) – Enter a search string of alphanumeric characters to search in the Data Hub Catalog. The search will be performed on services, entities, attributes, associations, and descriptions in the Catalog.
@@ -53,8 +53,8 @@ The following functionality is available in the pane:
 
 When no search string has been specified in the **Data Hub** pane, the **Project** pane is displayed. This shows the consumed services and the external entities used in the current project. The list of entities, associations and attributes for the consumed services are shown as for the search results:
 
-{{% image_container width="300" %}}![Project Section](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/project-section.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Project Section](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/project-section.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 To add entities to your project model, see [Adding an External Entity to a Project](external-entities#adding-external-entities).
 
 ## 3 Searching the Data Hub Catalog {#search}
@@ -71,8 +71,8 @@ The search strings must be a minimum of 3 alphanumeric characters. Punctuation c
 ### 3.2 Service Environments
 By default, the search will be performed on assets in the **Production** environment. To include all other environments such as **Test**, **Acceptance**, and the Mendix Free App environment, **Sandbox** in the search, click the **Filter** icon and check **Show development environments**:
 
-{{% image_container width="300" %}}![Filter Icon](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/filter-icon.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![Filter Icon](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/filter-icon.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 {{% alert type="info" %}}
 When the **Show development environments** is checked, all subsequent searches results will also include those in non-production environments.
 {{% /alert %}}
@@ -97,8 +97,8 @@ The search results and Project pane will show the following at a service level:
 
 * **Green check-mark** if the service or entity is consumed in the project. If you right-click a consumed service, you can do the following:
 
-  {{% image_container width="250" %}}![info on a Service](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/data-hub-pane-menu.png){{% /image_container %}}
-{{% /image_container %}}
+  {{/* % image_container width="250" % */}}![info on a Service](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/data-hub-pane-menu.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
   * **View in Data Hub Catalog** – click this to go to the **Data Source Details** page in the Data Hub Catalog
   * **Go to connection settings** – click this to open the [consumed OData service](consumed-odata-service) document
 
@@ -112,8 +112,8 @@ The search results and Project pane will show the following at a service level:
 
 * **Information icon** to view further details for the service and a link to go directly to the [Service Details](/data-hub/data-hub-catalog/search#search-details) screen in the Data Hub Catalog:
 
-  {{% image_container width="250" %}}![Data Hub Pane Information](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/data-hub-pane-info.png){{% /image_container %}}
-{{% /image_container %}}
+  {{/* % image_container width="250" % */}}![Data Hub Pane Information](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/data-hub-pane-info.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ### 4.2 Entities, Attributes, and Associations {#association-attributes}
 
 Entities, attributes and associations that satisfy the search string are listed in the search results.
@@ -122,8 +122,8 @@ For any service in the list, you can click **:Show details** to see the full lis
 
 {{% alert type="info" %}}The associations and attributes that are not supported in your Mendix model are shown as non-selectable (gray) and will not be included when you drag them into the domain model.{{% /alert %}}
 
-{{% image_container width="250" %}}![Data Hub Pane Information](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/expand-service-list.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Data Hub Pane Information](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/expand-service-list.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ### 4.2.1 Entity
 If you right-click an entity and select **View in Data Hub Catalog**, it will take you to the entity details page in the [Data Hub Catalog](/data-hub/data-hub-catalog/).
 
@@ -137,16 +137,16 @@ The associations that are exposed in the services are listed before attributes i
 
 In the following example the entity **Customer** has multiple associations with the entity **Order** however, these associations are not supported and cannot be used in your model"
 
-{{% image_container width="250" %}}![multiple associations](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/multiple-assocs.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![multiple associations](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/multiple-assocs.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ### 4.2.3 Attributes
 
 Attributes for a service are listed in alphabetical order. If you right-click an attribute of a consumed entity and **Go to attribute**, it will take you to the attribute in the domain model.
 
 In the above example, there are two attributes, **Addresses** and **FavoriteColors** which are not supported and therefore will not be included in your model:
 
-{{% image_container width="300" %}}![multiple associations](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/unsupported-attributes.png){{% /image_container %}}
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![multiple associations](/attachments/refguide8/modeling/menus/view-menu/data-hub-pane/unsupported-attributes.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 ##  5 Read More
 
 * [Data Hub Catalog](/data-hub/data-hub-catalog)

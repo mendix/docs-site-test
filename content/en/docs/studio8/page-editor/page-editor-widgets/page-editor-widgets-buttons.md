@@ -11,8 +11,8 @@ tags: ["studio", "page editor", "button", "widgets"]
 
 Button [widgets](page-editor-widgets) allow end-users to perform various actions, for example, saving changes or closing the current page: 
 
-{{% image_container width="400" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-buttons/button-example.png)
-{{% /image_container %}}
+{{/* % image_container width="400" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-buttons/button-example.png)
+{{/* % /image_container % */}}
 
 The following **Buttons** are available in Mendix Studio as default widgets:
 
@@ -36,8 +36,8 @@ Apart from the default button widgets, you can also [download widgets from the M
 
 Properties in the **Events** section are partially preset for buttons listed above. They depend on the action a button performs. For example, if the button is supposed to open a page, the **On Click Action** in the **Events** section will be **Page**. However, you need to specify what page exactly the button will open. 
 
-{{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-buttons/events-section-page-button.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-buttons/events-section-page-button.png)
+{{/* % /image_container % */}}
 
 For more information, see the [Default Properties in the Events Section](#default-properties) section. 
 
@@ -53,8 +53,8 @@ For more information on the **Events** section and on click actions, see [Events
 
 **On Click Action** in the **Events** section determines the action of the button. 
 
-{{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-buttons/events-section.png)
-{{% /image_container %}}
+{{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-buttons/events-section.png)
+{{/* % /image_container % */}}
 
 You can find the list of default actions and properties that need to be configured in the table below. 
 
@@ -83,7 +83,7 @@ Properties available in the **General** section are described in the table below
 
 ## 4 Conditional Visibility
 
-{{% snippet file="studio/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/studio/visibility-section-link.md" %}}
 
 ## 5 Design Section
 

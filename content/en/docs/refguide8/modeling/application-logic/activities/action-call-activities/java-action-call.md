@@ -19,11 +19,11 @@ This activity can only be used in **Microflows**.
 
 The **Java action call** activity can be used to call a [Java action](java-actions). 
 
-{{% image_container width="200" %}}
+{{/* % image_container width="200" % */}}
 
 ![Java Action](/attachments/refguide8/modeling/application-logic/activities/action-call-activities/java-action-call/java-action-call.png)
 
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 Arguments can be passed to the action and the result can be stored.
 
@@ -74,4 +74,4 @@ The result of the Java action will be given this name. The label indicates wheth
 
 ## 4 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}

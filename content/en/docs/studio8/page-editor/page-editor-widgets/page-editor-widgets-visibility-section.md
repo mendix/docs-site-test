@@ -49,9 +49,9 @@ This property is shown only when an attribute in the [Attribute-Based](#attribut
 
 For example, you would like to show a special offer price only for customers with the **Gold** grade. Select *Grade* in the **Attribute-Based** property and *Gold* in as the **Attribute Value**:
 
-{{% image_container width="300" %}}
+{{/* % image_container width="300" % */}}
 ![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/attribute-based-visibility.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ### 2.3 Role-Based {#role-based}
 
@@ -67,9 +67,9 @@ You can only configure role-based conditional visibility when security is enable
 
 The **Roles** property is only shown when the [Role-Based](#role-based) property is enabled and shows a list of roles available in your app. Select the roles that you would like to make a widget visible for. For example, in a taxi booking app, you would like to show a taxi driver rating to customers and administrators, but hide it from taxi drivers:
 
-{{% image_container width="300" %}}
+{{/* % image_container width="300" % */}}
 ![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/role-based-visbility.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ## 3 Performing Basic Functions
 
@@ -81,14 +81,14 @@ To configure attribute-based visibility, do the following:
 
 2. In **Conditional Visibility** section, click the **Attribute-Based** property:
 
-    {{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/attribute-based-property.png){{% /image_container %}}
-{{% /image_container %}}
+    {{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/attribute-based-property.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 3. In the **Select Attribute** dialog box, select an attribute of the Boolean or enumeration type and click **Select**.
 
 4. The **Attribute Values** property is now displayed in properties. Untick the values that does not meet the conditions you would like to set:
 
-    {{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/attribute-values.png){{% /image_container %}} 
-{{% /image_container %}}
+    {{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/attribute-values.png){{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 Attribute-based conditional visibility is set for the widget.
 
 ### 3.2 Disabling Attribute-Based Conditional Visibility
@@ -101,8 +101,8 @@ To disable attribute-based visibility, follow the steps below:
 
 3. In the **Select Attribute** dialog box, click **Clear**:
 
-    {{% image_container width="400" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/clear-attribute-based-visibility.png){{% /image_container %}}
-{{% /image_container %}}
+    {{/* % image_container width="400" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/clear-attribute-based-visibility.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 The attribute-based conditional visibility is cleared for the widget. 
 
 ### 3.3 Configuring Role-Based Conditional Visibility
@@ -115,8 +115,8 @@ To configure role-based conditional visibility, do the following:
 
 3. A list of roles available in your app is displayed in the **Roles** property. Untick the roles who would like to hide the widget from:
 
-    {{% image_container width="300" %}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/role-based-example.png){{% /image_container %}} 
-{{% /image_container %}}    
+    {{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/role-based-example.png){{/* % /image_container % */}} 
+{{/* % /image_container % */}}    
 
 Role-based conditional visibility is set for the widget.
 

@@ -73,9 +73,9 @@ Follow these instructions to set up your NFC project:
 
 Your Mendix project should looks something like this:
 
-{{% image_container width="550" %}}
+{{/* % image_container width="550" % */}}
 ![native nfc app home](/attachments/howto8/extensibility/build-javascript-actions/create-native-javascript-action/native-nfc-app-home-studio-pro.png)
-{{% /image_container %}}
+{{/* % /image_container % */}}
 
 ### 3.2 Building a Native Custom Developer App {#custom-developer-app}
 
@@ -94,8 +94,8 @@ Now you will build a native custom developer app and install it on your phone:
 
 	As a result of the `prepare` command your app is created in [App Center](https://appcenter.ms/apps):
 
-	{{% image_container width="550" %}}![App Center apps](/attachments/howto8/extensibility/build-javascript-actions/create-native-javascript-action/app-center-apps.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="550" % */}}![App Center apps](/attachments/howto8/extensibility/build-javascript-actions/create-native-javascript-action/app-center-apps.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 	A new repository is created in your GitHub account:
 
 	![Github template repo](/attachments/howto8/extensibility/build-javascript-actions/create-native-javascript-action/github-template-repo.png)
@@ -347,8 +347,8 @@ To write your own NFC tag, do the following:
 1. Tap **Write / 30 Bytes**.
 1. Scan your tag. You will see a **Write complete** dialog box:
 
-	{{% image_container width="250" %}}![write nfc tag](/attachments/howto8/extensibility/build-javascript-actions/create-native-javascript-action/nfc-tools-write-tag.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="250" % */}}![write nfc tag](/attachments/howto8/extensibility/build-javascript-actions/create-native-javascript-action/nfc-tools-write-tag.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 {{% alert type="info" %}}
 
 This dialog box is your phone's operating system recognizing the NFC tag. On Android devices, you will see a success message anytime you touch an NFC tag to your device. What you truly need to test is your app's NFC scanning after tapping its button. You will be able to do this on all platforms: on iOS things work as expected, and on Android an app scanning NFC takes priority over the operating systems' scanning.
@@ -378,8 +378,8 @@ Making software is an iterative process. If you integrate your own module or bui
 1. Install the app on your device. For more information on installing an app on your device, see the [Distributing](/howto8/mobile/deploying-native-app#distributing) section of *Deploy Your First Mendix Native Mobile App*.
 1. Open the app, tap **Scan tag**, and scan your NFC tag. You should see a dialog box with the text you assigned to your tag:
 
-	{{% image_container width="250" %}}![read NFC successfully](/attachments/howto8/extensibility/build-javascript-actions/create-native-javascript-action/native-nfc-app-success-android.png){{% /image_container %}}
-{{% /image_container %}}
+	{{/* % image_container width="250" % */}}![read NFC successfully](/attachments/howto8/extensibility/build-javascript-actions/create-native-javascript-action/native-nfc-app-success-android.png){{/* % /image_container % */}}
+{{/* % /image_container % */}}
 Congratulations for completing this NFC tutorial! To go beyond the lessons you have learned, see the sections below. 
 
 ### 3.9 Hardening the Code {#hardening-nfc-action-code}

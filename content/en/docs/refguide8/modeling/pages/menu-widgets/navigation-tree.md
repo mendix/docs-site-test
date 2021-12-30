@@ -25,8 +25,8 @@ The menu structure of a navigation tree can have three levels, that means that m
 
 An example of navigation tree properties is represented in the image below:
 
-{{% image_container width="250" %}}![Navigation Tree Properties](/attachments/refguide8/modeling/pages/menu-widgets/navigation-tree/navigation-tree-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Navigation Tree Properties](/attachments/refguide8/modeling/pages/menu-widgets/navigation-tree/navigation-tree-properties.png)
+{{/* % /image_container % */}}
 
 Navigation tree properties consist of the following sections:
 
@@ -36,11 +36,11 @@ Navigation tree properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design}
 
-{{% snippet file="refguide8/design-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}}
 
 ### 2.3 General Section {#general}
 

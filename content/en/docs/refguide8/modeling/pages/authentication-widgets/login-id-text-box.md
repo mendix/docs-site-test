@@ -24,8 +24,8 @@ The **Login ID text box** should be placed on a page together with a [Password t
 
 An example of login ID text box properties is represented in the image below:
 
-{{% image_container width="250" %}}![Login ID Text Box Properties](/attachments/refguide8/modeling/pages/authentication-widgets/login-id-text-box/logid-id-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Login ID Text Box Properties](/attachments/refguide8/modeling/pages/authentication-widgets/login-id-text-box/logid-id-properties.png)
+{{/* % /image_container % */}}
 
 Login ID text box properties consist of the following sections:
 
@@ -36,11 +36,11 @@ Login ID text box properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}}
 
 ### 2.3 General Section {#general}
 
@@ -50,7 +50,7 @@ A **Placeholder** shows a text when an end-user has not entered any text yet. It
 
 ### 2.4 Label Section {#label}
 
-{{% snippet file="refguide8/label-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/label-section-link.md" %}}
 
 ## 3 Read More
 

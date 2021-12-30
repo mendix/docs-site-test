@@ -26,8 +26,8 @@ The **Sign-in button** should be placed on a page together with a [Login ID text
 
 An example of sign-in button properties is represented in the image below:
 
-{{% image_container width="250" %}}![Sign-In Button Properties](/attachments/refguide8/modeling/pages/authentication-widgets/sign-in-button/sign-in-button-properties.png)
-{{% /image_container %}}
+{{/* % image_container width="250" % */}}![Sign-In Button Properties](/attachments/refguide8/modeling/pages/authentication-widgets/sign-in-button/sign-in-button-properties.png)
+{{/* % /image_container % */}}
 
 Sign-in button properties consist of the following sections:
 
@@ -38,11 +38,11 @@ Sign-in button properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="refguide8/common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="refguide8/design-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}}
 
 ### 2.3 General Section {#general}
 
@@ -57,7 +57,7 @@ Default: *None*
 
 ### 2.4 Visibility Section {#visibility}
 
-{{% snippet file="refguide8/visibility-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
 
 ## 3 Read More
 
