@@ -21,6 +21,7 @@ exten = '.md'
 results = str()
 categories = str()
 myList = []
+urlList = []
 baseParent = []
 childrenOfCategories = []
 childrenOfParents = []
@@ -30,6 +31,13 @@ catList = []
 attLeftover = []
 attList = []
 attItems = str()
+
+# returns dictionary item from a list of dictionaries if value is part of item
+# used to return item from urlList, to feed proper link to replace old one
+def itemIn(key, value, list_dicts):
+    for item in list_dicts:
+        if item[key].endswith(value+'/') or item[key].endswith(value):
+            return item
 
 # returns dictionary item from a list of dictionaries
 def nextItem(key, value, list_dicts):
@@ -70,6 +78,7 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
                 matched = strictSearch
                 entry = {"file": name, "path": dirpath, "line No.": fileinput.filelineno(), "match": matched.group()}
                 lastIndex = matched.end()
+                insert = ''
                 #should give back the old attachment path reference
                 oldAttDir = matched.group().strip('()')
                 #gives back the name of the attachment
@@ -95,7 +104,35 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
                         os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + name[:-(len(exten))] + '\\' + attName)
                         attList.append((newAttDir + name[:-(len(exten))] + '\\' + attName).replace(os.sep, '/'))
                         logName += 'OK %s\n' % entry
-                line = re.sub(r''+attNameSearch,insert,line.rstrip())
+                line = re.sub(r''+attNameSearch,repr(insert),line.rstrip())
+            print(line, end='')
+    return logName
+
+# moves attachment files to new locations and changes references to them in files
+#only works for clean references, nothing above dir where the md file is
+def linkReformat(itemList, name):
+    #pattern to find any link between () in a line, will capture the last ) in line
+    linkRefSearch = '(?<!!)\[(.+?)\]\((?!http)([-./\+\w]*)(#?)(.*?)\)'
+    logName = str()
+    #go through .md file line by line
+    with fileinput.input(os.path.join(dirpath, name), inplace=True, backup='', encoding="utf-8") as file:
+        for line in file:
+            strictSearch = re.search(linkRefSearch,line)
+            #if there's a match to the strict pattern
+            if strictSearch != None:
+                matched = strictSearch
+                insert = ''
+                lastIndex = matched.end()
+                #gives back the name of the attachment
+                linkToReplace = matched.group(2)
+                if len(linkToReplace) > 0:
+                    findUrl = itemIn("url", linkToReplace, itemList)
+                    if findUrl != None:
+                        insert = ('[' + matched.group(1) + ']' + '(' + findUrl["url"] + matched.group(3) + matched.group(4) + ')' + line[lastIndex:]).replace('//', '/')
+                else:
+                    insert = matched.group()
+                line = re.sub(r''+linkRefSearch,repr(insert),line.rstrip())
+                #line.replace('\\\\')
             print(line, end='')
     return logName
 
@@ -216,6 +253,13 @@ with open(jsonToParse, "r") as read_file:
 dirBaseParent = '.' + baseParent["u"].replace('/', os.sep)
 dirBaseParentClean = dirBaseParent[:-1]
 
+
+
+with open("urlLog.json", "r") as urlLog:
+    urlList = json.load(urlLog)
+    # for line in urlLog:
+    #     urlList.append(line)
+
 #for all files in dir path
 for dirpath, dirnames, allfiles in os.walk(topdir):
     for name in allfiles:
@@ -235,6 +279,7 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
                 newDir = startDir + 'en\\docs' + altPath
                 #make all levels of directories between supplied path of itemGrab and starting directory
                 os.makedirs(newDir, exist_ok=True)
+                linkReformat(urlList, name)
                 #if file has indexFlag
                 if "indexFlag" in itemGrab:
                     #move file and rename to _index.md
@@ -259,7 +304,7 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
             os.makedirs(startDir.replace('content\\', '') + 'static\\attachments' + dirpath.replace('attachments', ''), exist_ok=True)
             os.replace(startDir + dirpath + '\\' + name, startDir.replace('content\\', '') + 'static\\attachments' + dirpath.replace('attachments', '') + '\\' + name)
 
-#last run throuh for attachments, to go through leftover list, for attachments outside of .md directory
+#last run through for attachments, to go through leftover list, for attachments outside of .md directory
 for entry in attLeftover:
     with fileinput.input(os.path.join(entry["path"], entry["file"]), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
