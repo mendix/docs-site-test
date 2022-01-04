@@ -14,6 +14,7 @@ as the url is in part made up of the file name.
 import os    # Using os.chdir(), os.listdir(), os.path.isfile(), os.rename()
 import re    # Using re.sub()
 import fileinput
+import json
 
 # grab working directory
 startDir = input('Specify FULL PATH to local content directory: ')
@@ -28,9 +29,9 @@ topdir = '.'
 #let's hardcode .md
 exten = '.md'#input('\nPlease specify file extension to search: ')
 
-#logname = 'findfiletype.log'
-# What will be logged
-#results = str()
+# name of url log for later
+logname = 'urlLog.json'
+urlList = []
 # What are we searching for
 #let's hardcode
 start = 'title: ".*"'#input('\nPlease type in Regex to match:\n(hint: to match an entire title type in title: ".*") ')
@@ -46,27 +47,34 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
                 for line in file:
                     if re.match(start,line) != None:
                         matched = re.match(start,line)
+                        urlString = ''
                         # for toplevel directory
                         if dirpath == '.':
                             if name == 'index.md':
-                                insert = matched.string + 'url: /' + '\n'
+                                urlString = '/'
                             else:
-                                insert = matched.string + 'url: /' + name[:-(len(exten))] + '/' + '\n'
+                                urlString = '/' + name[:-(len(exten))] + '/'
                         # anything deeper
                         else:
                             if name == 'index.md':
-                                insert = matched.string + 'url: /' + altPath[2:] + '/' + '\n'
+                                urlString = '/' + altPath[2:] + '/'
                             else:
-                                insert = matched.string + 'url: /' + altPath[2:] + '/' + name[:-(len(exten))] + '/' + '\n'
+                                urlString = '/' + altPath[2:] + '/' + name[:-(len(exten))] + '/'
+                        insert = matched.string + 'url: ' + urlString + '\n'
                         line = re.sub(r''+start,insert,line.rstrip())
+                        # creates a dictionary for every entry, loggin the directory and url
+                        itemDict = {"Dir": os.path.join(dirpath, name), "url": urlString}
+                        # appends each dictionary to urlList
+                        urlList.append(itemDict)
                     print(line, end='')
 
-            # Save to results string instead of printing
-            #results += '%s\n' % os.path.join(dirpath, name)
+
  
-# Write results to logfile
-# with open(logname, 'w') as logfile:
-#     logfile.write(results)
+# Write grabbed urls to logfile
+with open(logname, 'w') as logfile:
+    # writes all of urlList as a json file (list of dicts)
+    json.dump(urlList, logfile)
+
 
 
 
