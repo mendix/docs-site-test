@@ -8,6 +8,8 @@ no_list: false
 cascade:
     - space: "Studio Pro 9 Guide"
     - mendix_version: "9"
+    - sitemap:
+        priority: 0.8
 ---
 
 ## 1 Introduction
