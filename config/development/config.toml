@@ -9,21 +9,3 @@ title = "Mendix Docs Test Site (Development)"
 buildDrafts=true
 buildExpired=true
 buildFuture=true
-
-[languages]
-# overwrite defaults
-_merge = 'deep'
-    [languages.en]
-        title = "Mendix Docs Test Site (Development)"
-        description = "Mendix Docs Test Site built from the development branch"
-        languageName ="English"
-        # Weight used for sorting.
-        weight = 1
-    [languages.es]
-        title = "Mendix Docs Test Site (Development) - Spanish"
-        description = "Sitio de prueba de Mendix Docs en español construido a partir de la branch de development"
-        languageName ="Espanol"
-        contentDir = "content/es"
-        time_format_default = "02.01.2006"
-        time_format_blog = "02.01.2006"
-

@@ -5,23 +5,6 @@
 baseURL = "http://mendix-new-docs-site.s3-website.eu-central-1.amazonaws.com/"
 title = "Mendix Docs Test Site"
 
-[languages]
-# overwrite defaults
-    _merge = 'deep'
-    [languages.en]
-        title = "Mendix Docs Test Site"
-        description = "Mendix Docs Test Site built from the master branch"
-        languageName ="English"
-        # Weight used for sorting.
-        weight = 1
-    [languages.es]
-        title = "Mendix Docs Test Site - Spanish"
-        description = "Sitio de prueba de Mendix Docs en español construido a partir de la branch de master"
-        languageName ="Espanol"
-        contentDir = "content/es"
-        time_format_default = "02.01.2006"
-        time_format_blog = "02.01.2006"
-
 # MvM - add line below to output MxDocsAlgolia at root of /public (master only)
 [outputs]
     _merge = 'shallow'

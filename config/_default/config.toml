@@ -1,5 +1,4 @@
 baseURL = "http://mendix-new-docs-site.s3-website.eu-central-1.amazonaws.com/"
-languageCode = "en-us"
 title = "Mendix Docs Test Site"
 
 enableRobotsTXT = true
@@ -8,6 +7,7 @@ enableRobotsTXT = true
 theme = ["docsy"]
 
 # NK - Changes default ERROR message when unable to resolve ref/relref links to WARNING
+# Are we going to use this?
 refLinksErrorLevel = "WARNING"
 
 # Will give values to .Lastmod etc.
@@ -19,32 +19,11 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 # Useful when translating.
 enableMissingTranslationPlaceholders = true
+languageCode = "en-us"
 
-disableKinds = ["taxonomy","taxonomyTerm"]
+disableKinds = ["taxonomy","taxonomyTerm","term"]
 
-# Highlighting config
-# NK - commented out all regarding Chroma and Pygments, as we use Prism
-#pygmentsCodeFences = false
-#pygmentsUseClasses = false
-# Use the new Chroma Go highlighter in Hugo.
-#pygmentsUseClassic = false
-#pygmentsOptions = "linenos=table"
-# See https://help.farbox.com/pygments.html
-#pygmentsStyle = "tango"
-
-# Configure how URLs look like per section.
-[permalinks]
-    blog = "/:section/:year/:month/:day/:slug/"
-
-## Configuration for BlackFriday markdown parser: https://github.com/russross/blackfriday
-# NK - commented out everything related to BlackFriday, as we use Goldmark
-#[blackfriday]
-    #plainIDAnchors = true
-    #hrefTargetBlank = true
-    #angledQuotes = false
-    #latexDashes = true
-
-# Image processing configuration.
+# Image processing configuration. (Do we use this - probably not?)
 [imaging]
     resampleFilter = "CatmullRom"
     quality = 75
@@ -52,21 +31,16 @@ disableKinds = ["taxonomy","taxonomyTerm"]
 
 [services]
     [services.googleAnalytics]
-        # Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-        #id = "UA-00000000-0"
+        # Do we put this here, or use something provided by marketing?
 
 # Language configuration
 
 [languages]
     [languages.en]
-        title = "Mendix Docs Test Site (Default)"
-        description = "Mendix Docs Test Site built from the default branch"
         languageName ="English"
         # Weight used for sorting.
         weight = 1
     [languages.es]
-        title = "Mendix Docs Test Site (Default) - Spanish"
-        description = "Sitio de prueba de Mendix Docs en español construido a partir de la branch de default"
         languageName ="Espanol"
         contentDir = "content/es"
         time_format_default = "02.01.2006"
@@ -79,8 +53,7 @@ disableKinds = ["taxonomy","taxonomyTerm"]
     [markup.highlight]
         # See a complete list of available styles at https://xyproto.github.io/splash/docs/all.html
         style = "tango"
-        # Uncomment if you want your chosen highlight style used for code blocks without a specified language
-        # guessSyntax = "true"
+        lineNos = true
     # NK - set up table of contents to support correct depth for our document structure
     [markup.tableOfContents]
         endLevel = 6
@@ -100,6 +73,8 @@ disableKinds = ["taxonomy","taxonomyTerm"]
         baseName = "rss"
 
 # Everything below this are Site Params
+# ======================================
+# These are mainly (all?) Docsy settings
 
 [params]
     copyright = "© Mendix Technology BV 2021. All rights reserved."
