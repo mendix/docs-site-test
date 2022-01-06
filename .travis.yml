@@ -41,7 +41,8 @@ install:
   # ------------------------
   - mkdir public  # This because <Maybe> the process of syncing to public is probably deadlocked behind waiting for the public folder to be made, and is never signalled that the folder is created, which ends up stalling the build on Travis CI.
   # ------------------------
-  - ./hugo # which flags do we need?
+  - ./hugo config --environment $TRAVIS_BRANCH # report the config we are using
+  - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
 
 before_script:
   - eval "$(pyenv init --path)" # Instructions from Travis support
