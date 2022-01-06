@@ -2,7 +2,7 @@
 
 ## Branches
 
-* **main** – default branch
 * **development** – development branch for testing Travis integration
-* **master** – master branch for testing Travis integration
+* **production** – production branch for testing Travis integration (replaces `master` branch on current site)
 
+* **main-original** – old default branch, formerly `main`

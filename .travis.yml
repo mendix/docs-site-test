@@ -24,12 +24,11 @@ env: # Do we need any environment variables?
 # =============================================
     - HUGO_VERSION=0.91.0 # Choose Hugo version explicitly, in case there is an issue with published version.
 
-# build only development and master
-# Should we use Stages to separate master and development builds?
-# see https://config.travis-ci.com/ref/stages
+# build only development and production
+
 branches:
   only:
-  - master
+  - production
   - development
 
 before_install:
@@ -81,7 +80,7 @@ deploy:
     skip_cleanup: true
     on:
       branch:
-        - master
+        - production
         - development
 
 after_deploy:
