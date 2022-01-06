@@ -36,6 +36,8 @@ attItems = str()
 # used to return item from urlList, to feed proper link to replace old one
 def itemIn(key, value, list_dicts):
     for item in list_dicts:
+        if value[0] != '/':
+            value = '/'+value
         if item[key].endswith(value+'/') or item[key].endswith(value):
             return item
 
@@ -58,8 +60,7 @@ def nextItemWithDirCheck(key, value, directory, list_dicts):
 def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
     #pattern to find any 'attachment' between () in a line, will capture the last ) in line
     fullAttachmentRefSearch = '(?<=\])\(.*?attachments/(.*)?\)'
-    #pattern to search against, does not capture + or extra . in names, still can get a false positive with 
-    #multiple '![something](something)' in a single line
+    #pattern to search against
     attNameSearch = '(?<=\])\(.*?attachments([-./\+\w]*?)([-.\+\w= ]*)\)'
     logName = str()
     #define new dir for attachment
@@ -68,45 +69,83 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
     with fileinput.input(os.path.join(dirpath, name), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
             oldAttDir = ''
-            fullSearch = re.search(fullAttachmentRefSearch,line)
-            strictSearch = re.search(attNameSearch,line)
-            if fullSearch != None and strictSearch == None:
-                entry = {"file": name, "path": dirpath, "line No.": fileinput.filelineno(), "match": fullSearch.group()}
-                logName += 'FS %s\n' % entry
-            #if there's a match to the strict pattern
-            if strictSearch != None:
-                matched = strictSearch
-                entry = {"file": name, "path": dirpath, "line No.": fileinput.filelineno(), "match": matched.group()}
-                lastIndex = matched.end()
-                insert = ''
-                #should give back the old attachment path reference
-                oldAttDir = matched.group().strip('()')
-                #gives back the name of the attachment
-                attName = matched.group(2)
-                #check to make sure there still is a file in path, otherwise os.replace errors
-                fileInOldDir = os.path.exists(oldPath + '\\' + oldAttDir.replace('/', os.sep))
-                #excludes any results with more than './' preceding 'attachments'
-                if oldAttDir.find('attachments') > 2:
-                    insert = matched.group()
-                    #saves the excluded to a list to run through later
-                    attLeftover.append(entry)
-                elif name == "_index.md":
-                    insert = ('(/attachments' + newDirAtt + attName + ')' + line[lastIndex:]).replace('//', '/')
-                    os.makedirs(newAttDir, exist_ok=True)
-                    if fileInOldDir is True:
-                        os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + attName)
-                        attList.append((newAttDir + attName).replace(os.sep, '/'))
-                        logName += 'OK %s\n' % entry
+            stringToSearch = line
+            lineReplacement = ''
+            while len(stringToSearch) > 0:
+                fullSearch = re.search(fullAttachmentRefSearch,stringToSearch)
+                strictSearch = re.search(attNameSearch,stringToSearch)
+                if fullSearch != None and strictSearch == None:
+                    entry = {"file": name, "path": dirpath, "line No.": fileinput.filelineno(), "match": fullSearch.group()}
+                    logName += 'FS %s\n' % entry
+                #if there's a match to the strict pattern
+                if strictSearch != None:
+                    matched = strictSearch
+                    entry = {"file": name, "path": dirpath, "line No.": fileinput.filelineno(), "match": matched.group()}
+                    firstIndex = matched.start()
+                    lastIndex = matched.end()
+                    insert = ''
+                    #should give back the old attachment path reference
+                    oldAttDir = matched.group().strip('()')
+                    #gives back the name of the attachment
+                    attName = matched.group(2)
+                    #check to make sure there still is a file in path, otherwise os.replace errors
+                    fileInOldDir = os.path.exists(oldPath + '\\' + oldAttDir.replace('/', os.sep))
+                    #excludes any results with more than './' preceding 'attachments'
+                    if oldAttDir.find('attachments') > 2:
+                        insert = matched.group()
+                        #saves the excluded to a list to run through later
+                        attLeftover.append(entry)
+                    elif name == "_index.md":
+                        insert = '(/attachments' + newDirAtt + attName + ')'
+                        os.makedirs(newAttDir, exist_ok=True)
+                        if fileInOldDir is True:
+                            os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + attName)
+                            attList.append((newAttDir + attName).replace(os.sep, '/'))
+                            logName += 'OK %s\n' % entry
+                    else:
+                        insert = '(/attachments' + newDirAtt + name[:-(len(exten))] + '/' + attName + ')'
+                        os.makedirs((newAttDir+name[:-(len(exten))]), exist_ok=True)
+                        if fileInOldDir is True:
+                            os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + name[:-(len(exten))] + '\\' + attName)
+                            attList.append((newAttDir + name[:-(len(exten))] + '\\' + attName).replace(os.sep, '/'))
+                            logName += 'OK %s\n' % entry
+                    lineReplacement += stringToSearch[:firstIndex] + insert
+                    stringToSearch = stringToSearch[lastIndex:].replace('//', '/')
                 else:
-                    insert = ('(/attachments' + newDirAtt + name[:-(len(exten))] + '/' + attName + ')' + line[lastIndex:]).replace('//', '/')
-                    os.makedirs((newAttDir+name[:-(len(exten))]), exist_ok=True)
-                    if fileInOldDir is True:
-                        os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + name[:-(len(exten))] + '\\' + attName)
-                        attList.append((newAttDir + name[:-(len(exten))] + '\\' + attName).replace(os.sep, '/'))
-                        logName += 'OK %s\n' % entry
-                line = re.sub(r''+attNameSearch,repr(insert),line.rstrip())
-            print(line, end='')
+                    lineReplacement += stringToSearch
+                    stringToSearch = ''
+
+            print(lineReplacement, end='')
     return logName
+
+# searches a line as many times as needed for an internal link
+# uses itemIn to find the replacement link
+def linkSearch(searchParam,line,itemList):
+    stringToSearch = line
+    lineReplacement = ''
+    while len(stringToSearch) > 0:
+        searchRes = re.search(searchParam,stringToSearch)
+        #if there's a match to the strict pattern
+        if searchRes != None:
+            matched = searchRes
+            insert = ''
+            firstIndex = matched.start()
+            lastIndex = matched.end()
+            #gives back the name of the attachment
+            linkToReplace = matched.group(2)
+            if len(linkToReplace) > 0:
+                findUrl = itemIn("url", linkToReplace, itemList)
+                if findUrl != None:
+                    insert = '[' + matched.group(1) + ']' + '(' + findUrl["url"] + matched.group(3) + matched.group(4) + ')'
+            else:
+                insert = matched.group()
+            lineReplacement += stringToSearch[:firstIndex] + insert
+            stringToSearch = stringToSearch[lastIndex:].replace('//', '/')
+        else:
+            lineReplacement += stringToSearch
+            stringToSearch = ''
+
+    return lineReplacement
 
 # moves attachment files to new locations and changes references to them in files
 #only works for clean references, nothing above dir where the md file is
@@ -117,23 +156,8 @@ def linkReformat(itemList, name):
     #go through .md file line by line
     with fileinput.input(os.path.join(dirpath, name), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
-            strictSearch = re.search(linkRefSearch,line)
-            #if there's a match to the strict pattern
-            if strictSearch != None:
-                matched = strictSearch
-                insert = ''
-                lastIndex = matched.end()
-                #gives back the name of the attachment
-                linkToReplace = matched.group(2)
-                if len(linkToReplace) > 0:
-                    findUrl = itemIn("url", linkToReplace, itemList)
-                    if findUrl != None:
-                        insert = ('[' + matched.group(1) + ']' + '(' + findUrl["url"] + matched.group(3) + matched.group(4) + ')' + line[lastIndex:]).replace('//', '/')
-                else:
-                    insert = matched.group()
-                line = re.sub(r''+linkRefSearch,repr(insert),line.rstrip())
-                #line.replace('\\\\')
-            print(line, end='')
+            result = linkSearch(linkRefSearch,line,itemList)
+            print(result, end='')
     return logName
 
 # JSON parsing
@@ -257,8 +281,6 @@ dirBaseParentClean = dirBaseParent[:-1]
 
 with open("urlLog.json", "r") as urlLog:
     urlList = json.load(urlLog)
-    # for line in urlLog:
-    #     urlList.append(line)
 
 #for all files in dir path
 for dirpath, dirnames, allfiles in os.walk(topdir):
@@ -300,7 +322,7 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
     for name in allfiles:
         #moves any '.pptx','.xls','.xlsm','.xlsx','.jar' or '.json' attachment to static\attachments
         #separated into another full walk through dirs, to rule out moving files before a reference for them gets picked up in the first walk
-        if (name.lower().endswith(('.pptx','.xls','.xlsm','.xlsx','.jar','.json')) and (dirpath[:len(dirBaseParentClean)] == dirBaseParentClean)):
+        if (name.lower().endswith(('.pptx','.xls','.xlsm','.xlsx','.jar','.json','.msd')) and (dirpath[:len(dirBaseParentClean)] == dirBaseParentClean)):
             os.makedirs(startDir.replace('content\\', '') + 'static\\attachments' + dirpath.replace('attachments', ''), exist_ok=True)
             os.replace(startDir + dirpath + '\\' + name, startDir.replace('content\\', '') + 'static\\attachments' + dirpath.replace('attachments', '') + '\\' + name)
 
