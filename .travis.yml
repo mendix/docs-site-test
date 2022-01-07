@@ -9,16 +9,15 @@ dist: xenial          # or bionic | xenial | trusty | precise with xenial as def
 git:
   depth: 20000 # We're cloning a max of xxx commits, so the author date is correct
 
-env: # Do we need any environment variables?
+env:
   global:
 # =============================================
 # UPDATE VERSION MANUALLY AND TEST BEFORE MERGE
 # =============================================
     - HUGO_VERSION=0.91.0 # Choose Hugo version explicitly, in case there is an issue with published version.
 
-# build only development and production
-
 branches:
+# build only development and production
   only:
   - production
   - development
@@ -108,7 +107,8 @@ deploy:
   - provider: script
     script:
       - $TRAVIS_BUILD_DIR/_scripts/deploy.sh
-    skip_cleanup: true
+# skip_cleanup is deprecated - new default is not to cleanup.
+#    skip_cleanup: true
     on:
       branch:
         - production

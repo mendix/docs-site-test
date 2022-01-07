@@ -14,8 +14,6 @@ cascade:
 
 ## 1 Introduction
 
-{{% todo %}}[Test if To Do disappears for "production" build]{{% /todo %}}
-
 The *Mendix Studio Pro 9 Guide* covers important topics concerning [Studio Pro](modeling), the [Mendix Runtime](runtime), and other components of the Mendix Platform.
 
 Before installing Studio Pro 9, please read [System Requirements](system-requirements). For information on how to install Studio Pro, see [How to Install Mendix Studio Pro](/howto/general/install).
