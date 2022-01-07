@@ -4,7 +4,7 @@
   {{ $gh_url := ($.Param "github_url") }}
   {{ $gh_subdir := ($.Param "github_subdir") }}
   {{ $gh_project_repo := ($.Param "github_project_repo") }}
-  {{ $gh_branch := (default "master" ($.Param "github_branch")) }}
+  {{ $gh_branch := (default "development" ($.Param "github_branch")) }}
   <!-- NK - added layout elements to menu icons above ToC -->
   <div class="container" style="padding-top: 0.5rem">
       <div class="row">

@@ -15,9 +15,9 @@ then
   TARGETAWSBUCKET="mendix-new-docs-site"
 fi
 
-if ([ "${TRAVIS_BRANCH}" == "master" ])
+if ([ "${TRAVIS_BRANCH}" == "production" ])
 then
-  echo 'Deploying master to AWS'
+  echo 'Deploying production to AWS'
   TARGETAWSBUCKET="mendix-new-docs-site"
 fi
 
@@ -49,7 +49,7 @@ echo "Upload to AWS took $((SECONDS - start)) seconds"
 cd $TRAVIS_BUILD_DIR
 pwd
 
-if ([ "${TRAVIS_BRANCH}" == "master" ])
+if ([ "${TRAVIS_BRANCH}" == "production" ])
 then
   python --version
   python _scripts/pushmxdocsalgolia.py

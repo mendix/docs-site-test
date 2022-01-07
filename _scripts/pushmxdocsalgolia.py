@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 """
 Pushes the JSON file created with the algolia index (public/mxdocsalgolia.json) to Algolia
-1. Checks that this is a merge to master, otherwise ends
+1. Checks that this is a merge to production, otherwise ends
 2. Checks that the file exists, otherwise errors
 3. Uses algolia 
 
@@ -18,10 +18,10 @@ mxDocsAlgoliaFileName = "public/mxdocsalgolia.json" # the algolia index generate
 algoliaApplicationID = os.environ['ALGOLIA_APPLICATION_ID']
 algoliaAdminAPIKey = os.environ['ALGOLIA_ADMIN_API_KEY']
 algoliaIndexName = os.environ['ALGOLIA_INDEX_NAME']
-pushIfBranch = "master" # push to Algolia if we are merging to this branch
+pushIfBranch = "production" # push to Algolia if we are merging to this branch
 targetBranch = os.environ['TRAVIS_BRANCH'] # which branch are we merging to
 
-if targetBranch == pushIfBranch: # Only process if this is the correct branch (e.g. master)
+if targetBranch == pushIfBranch: # Only process if this is the correct branch (e.g. production)
     print ("Pushing index to Algolia index", algoliaIndexName, ", target branch is", targetBranch)
     if os.path.exists (mxDocsAlgoliaFileName): # Only process if file exists
         print ("Found file", mxDocsAlgoliaFileName)
