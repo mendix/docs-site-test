@@ -72,6 +72,15 @@ disableKinds = ["taxonomy","taxonomyTerm","term"]
         mediatype = "application/rss"
         baseName = "rss"
 
+# MvM - Set default priority for sitemap = 0.5
+# Can override in front matter for each section using
+# cascade:
+#     - sitemap:
+#         priority = 0.0
+# 
+[sitemap]
+    priority = 0.5
+
 # Everything below this are Site Params
 # ======================================
 # These are mainly (all?) Docsy settings
