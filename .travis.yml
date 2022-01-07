@@ -6,14 +6,6 @@ arch: amd64           # optional, this is default, routes to a full VM
 os: linux             # optional, this is default
 dist: xenial          # or bionic | xenial | trusty | precise with xenial as default - Recommended here: https://docs.travis-ci.com/user/reference/overview/#deprecated-virtualization-environments
 
-# addons:
-#   snaps:              # Installs hugo if dist: xenial or bionic see https://gohugo.io/getting-started/installing/#snap-package and https://docs.travis-ci.com/user/installing-dependencies/#installing-snap-packages-with-the-snaps-addon
-# ===================================================================================================
-# TOO RISKY TO USE SNAP - IF WRONG VERSION IS UPLOADED THEN DIFFICULT TO GO BACK TO DIFFERENT VERSION
-# ===================================================================================================
-#     - name: hugo
-#       channel: extended/stable # needs extended to compile SCSS etc. Issue if snap is not updated correctly
-
 git:
   depth: 20000 # We're cloning a max of xxx commits, so the author date is correct
 
@@ -31,12 +23,37 @@ branches:
   - production
   - development
 
+# Start of Travis Job Lifecycle: https://docs.travis-ci.com/user/job-lifecycle/
+
+# addons:
+######### Skipped
+#
+#   snaps:              # Installs hugo if dist: xenial or bionic see https://gohugo.io/getting-started/installing/#snap-package and https://docs.travis-ci.com/user/installing-dependencies/#installing-snap-packages-with-the-snaps-addon
+# ===================================================================================================
+# TOO RISKY TO USE SNAP - IF WRONG VERSION IS UPLOADED THEN DIFFICULT TO GO BACK TO DIFFERENT VERSION
+# ===================================================================================================
+#     - name: hugo
+#       channel: extended/stable # needs extended to compile SCSS etc. Issue if snap is not updated correctly
+
+# cache:
+######## Skipped
+#
+# Is there anything worth cacheing that isn't currently cached?
+# see https://docs.travis-ci.com/user/caching/#how-does-caching-work
+# Probably NOT /static
+# Docsy theme?
+# Custom layouts?
+# SASS/CSS
+#
+
 before_install:
+###############
   - npm install # use npm rather than yarn - HUGO doesn't have that many dependencies
   - travis_retry curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz | tar xz # Install Hugo manually - Snap is too fragile
   - chmod +x ./hugo # installed into $TRAVIS_BUILD_DIR/hugo
 
 install:
+########
   # ------------------------
   - mkdir public  # This because <Maybe> the process of syncing to public is probably deadlocked behind waiting for the public folder to be made, and is never signalled that the folder is created, which ends up stalling the build on Travis CI.
   # ------------------------
@@ -44,12 +61,14 @@ install:
   - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
 
 before_script:
+##############
   - eval "$(pyenv init --path)" # Instructions from Travis support
   - pyenv versions # list python versions supported by pyenv in case version in next command is removed
   - pyenv global 3.6.7 # this version needs to be already installed in the travis build
   - python -V
 
 script:
+#######
   - echo $TRAVIS_BRANCH
   - echo $TRAVIS_COMMIT
   - echo $TRAVIS_COMMIT_MESSAGE
@@ -61,7 +80,17 @@ script:
   - echo $TRAVIS_PULL_REQUEST_BRANCH
   - pwd
 
+# before_cache
+############## Skipped
+
+# after_success
+############### Skipped
+
+# after_failure
+############### Skipped
+
 before_deploy:
+##############
 #  - curl "https://awscli.amazonaws.com/awscli-exe-linux-aarch64.zip" -o "awscliv2.zip" # arm version
   - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip" # amd version
   - unzip -q awscliv2.zip
@@ -72,6 +101,8 @@ before_deploy:
   - pip install --upgrade 'algoliasearch>=2.0,<3.0' # install Algolia Python API Client version 2
 
 deploy:
+#######
+#
 # Need to decide where to deploy to, so need to do the actual deployment in a script https://docs.travis-ci.com/user/job-lifecycle#complex-build-commands
 #  - aws s3 sync . s3://$TARGETAWSBUCKET --delete --only-show-errors
   - provider: script
@@ -84,6 +115,8 @@ deploy:
         - development
 
 after_deploy:
+############# Skipped
 # Cannot get python push to Travis to work here. Added it to deploy.sh.
 
 after_script:
+############# Skipped
