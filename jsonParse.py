@@ -34,12 +34,19 @@ attItems = str()
 
 # returns dictionary item from a list of dictionaries if value is part of item
 # used to return item from urlList, to feed proper link to replace old one
-def itemIn(key, value, list_dicts):
+def itemIn(key, value, list_dicts, jsonToParse):
+    if value[0] != '/':
+        value = '/'+value
+    if value[len(value)-1] != '/':
+        value = value+'/'
+    strippedList = jsonToParse.rsplit('\\')
+    strippedName = strippedList[len(strippedList)-1].rstrip('.json')
     for item in list_dicts:
-        if value[0] != '/':
-            value = '/'+value
-        if item[key].endswith(value+'/') or item[key].endswith(value):
-            return item
+        if item[key].endswith(value):
+            if value.count('/') == 2 and item[key].startswith('/'+strippedName+'/'):
+                return item
+            elif value.count('/') >= 3:
+                return item
 
 # returns dictionary item from a list of dictionaries
 def nextItem(key, value, list_dicts):
@@ -120,13 +127,13 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
 
 # searches a line as many times as needed for an internal link
 # uses itemIn to find the replacement link
-def linkSearch(line,itemList):
+def linkSearch(line, itemList, jsonToParse):
     stringToSearch = line
     lineReplacement = ''
     while len(stringToSearch) > 0:
-        linkRefSearch1 = '(?<!!)\[(!\[[-./\+\w ]+\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
+        linkRefSearch1 = '(?<!!)\[(!\[.+\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
         linkRefSearch2 = '(?<!!)\[(!\[\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
-        linkRefSearch3 = '(?<!!)\[([-./\+\w ]+?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
+        linkRefSearch3 = '(?<!!)\[(.+?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
         searchRes1 = re.search(linkRefSearch1,stringToSearch)
         searchRes2 = re.search(linkRefSearch2,stringToSearch)
         searchRes3 = re.search(linkRefSearch3,stringToSearch)
@@ -146,7 +153,7 @@ def linkSearch(line,itemList):
             lastIndex = matched.end()
             linkToReplace = matched.group(2)
             if len(linkToReplace) > 0:
-                findUrl = itemIn("url", linkToReplace, itemList)
+                findUrl = itemIn("url", linkToReplace, itemList, jsonToParse)
                 if findUrl != None:
                     insert = '[' + matched.group(1) + ']' + '(' + findUrl["url"] + matched.group(3) + matched.group(4) + ')'
             else:
@@ -162,12 +169,12 @@ def linkSearch(line,itemList):
 
 # moves attachment files to new locations and changes references to them in files
 #only works for clean references, nothing above dir where the md file is
-def linkReformat(itemList, name):
+def linkReformat(itemList, name, jsonToParse):
     logName = str()
     #go through .md file line by line
     with fileinput.input(os.path.join(dirpath, name), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
-            result = linkSearch(line,itemList)
+            result = linkSearch(line,itemList,jsonToParse)
             print(result, end='')
     return logName
 
@@ -312,7 +319,7 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
                 newDir = startDir + 'en\\docs' + altPath
                 #make all levels of directories between supplied path of itemGrab and starting directory
                 os.makedirs(newDir, exist_ok=True)
-                linkReformat(urlList, name)
+                linkReformat(urlList, name, jsonToParse)
                 #if file has indexFlag
                 if "indexFlag" in itemGrab:
                     #move file and rename to _index.md
@@ -333,7 +340,7 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
     for name in allfiles:
         #moves any '.pptx','.xls','.xlsm','.xlsx','.jar' or '.json' attachment to static\attachments
         #separated into another full walk through dirs, to rule out moving files before a reference for them gets picked up in the first walk
-        if (name.lower().endswith(('.pptx','.xls','.xlsm','.xlsx','.jar','.json','.msd','.xml','.xsd','.mpk','.docx','.doc','.txt','.mp4')) and (dirpath[:len(dirBaseParentClean)] == dirBaseParentClean)):
+        if (name.lower().endswith(('.pptx','.xls','.xlsm','.xlsx','.jar','.json','.msd','.xml','.xsd','.mpk','.docx','.doc','.txt','.mp4','.pdf')) and (dirpath[:len(dirBaseParentClean)] == dirBaseParentClean)):
             os.makedirs(startDir.replace('content\\', '') + 'static\\attachments' + dirpath.replace('attachments', ''), exist_ok=True)
             os.replace(startDir + dirpath + '\\' + name, startDir.replace('content\\', '') + 'static\\attachments' + dirpath.replace('attachments', '') + '\\' + name)
 
