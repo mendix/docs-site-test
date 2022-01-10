@@ -105,21 +105,21 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
                         #saves the excluded to a list to run through later
                         attLeftover.append(entry)
                     elif name == "_index.md":
-                        insert = '/attachments' + newDirAtt + attName + ')'
+                        insert = ('/attachments' + newDirAtt + attName + ')').replace('//', '/')
                         os.makedirs(newAttDir, exist_ok=True)
                         if fileInOldDir is True:
                             os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + attName)
                             attList.append((newAttDir + attName).replace(os.sep, '/'))
                             logName += 'OK %s\n' % entry
                     else:
-                        insert = '/attachments' + newDirAtt + name[:-(len(exten))] + '/' + attName + ')'
+                        insert = ('/attachments' + newDirAtt + name[:-(len(exten))] + '/' + attName + ')').replace('//', '/')
                         os.makedirs((newAttDir+name[:-(len(exten))]), exist_ok=True)
                         if fileInOldDir is True:
                             os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + name[:-(len(exten))] + '\\' + attName)
                             attList.append((newAttDir + name[:-(len(exten))] + '\\' + attName).replace(os.sep, '/'))
                             logName += 'OK %s\n' % entry
                     lineReplacement += stringToSearch[:firstIndex] + insert
-                    stringToSearch = stringToSearch[lastIndex:].replace('//', '/')
+                    stringToSearch = stringToSearch[lastIndex:]
                 else:
                     lineReplacement += stringToSearch
                     stringToSearch = ''
@@ -157,12 +157,12 @@ def linkSearch(line, itemList, jsonToParse):
             if len(linkToReplace) > 0:
                 findUrl = itemIn("url", linkToReplace, itemList, jsonToParse)
                 if findUrl != None:
-                    insert = '[' + matched.group(1) + ']' + '(' + findUrl["url"] + matched.group(3) + matched.group(4) + ')'
+                    insert = ('[' + matched.group(1) + ']' + '(' + findUrl["url"] + matched.group(3) + matched.group(4) + ')').replace('//', '/')
             else:
                 insert = matched.group()
 
             lineReplacement += stringToSearch[:firstIndex] + insert
-            stringToSearch = stringToSearch[lastIndex:].replace('//', '/')
+            stringToSearch = stringToSearch[lastIndex:]
         else:
             lineReplacement += stringToSearch
             stringToSearch = ''
@@ -342,7 +342,7 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
     for name in allfiles:
         #moves any '.pptx','.xls','.xlsm','.xlsx','.jar' or '.json' attachment to static\attachments
         #separated into another full walk through dirs, to rule out moving files before a reference for them gets picked up in the first walk
-        if (name.lower().endswith(('.pptx','.xls','.xlsm','.xlsx','.jar','.json','.msd','.xml','.xsd','.mpk','.docx','.doc','.txt','.mp4','.pdf')) and (dirpath[:len(dirBaseParentClean)] == dirBaseParentClean)):
+        if (name.lower().endswith(('.pptx','.xls','.xlsm','.xlsx','.jar','.json','.msd','.xml','.xsd','.mpk','.docx','.doc','.txt','.mp4','.pdf','.wsdl')) and (dirpath[:len(dirBaseParentClean)] == dirBaseParentClean)):
             os.makedirs(startDir.replace('content\\', '') + 'static\\attachments' + dirpath.replace('attachments', ''), exist_ok=True)
             os.replace(startDir + dirpath + '\\' + name, startDir.replace('content\\', '') + 'static\\attachments' + dirpath.replace('attachments', '') + '\\' + name)
 
@@ -365,12 +365,14 @@ for entry in attLeftover:
                         attItems += 'NO %s\n' % entry
                         insert = ''
                         for attItem in attList:
-                            if attItem.endswith(matched.group(3)):
+                            if attItem.endswith(matched.group(2)):
                                 newRef = attItem.split('attachments/', maxsplit=1)
-                                insert = '/attachments/' + newRef[1] + ')'
+                                insert = ('/attachments/' + newRef[1] + ')').replace('//', '/')
                                 attItems += 'OK %s\n' % entry
+                            else:
+                                insert = matched.group()
                         lineReplacement += stringToSearch[:firstIndex] + insert
-                        stringToSearch = stringToSearch[lastIndex:].replace('//', '/')
+                        stringToSearch = stringToSearch[lastIndex:]
                     #otherwise add to json-att.log list
                     else:
                         attItems += 'NO %s\n' % entry
