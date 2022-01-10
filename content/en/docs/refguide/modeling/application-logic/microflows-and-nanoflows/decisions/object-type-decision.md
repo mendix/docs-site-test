@@ -15,9 +15,9 @@ This activity can only be used in microflows, not in nanoflows.
 
 ## 1 Introduction
 
-An object type decision is an element that makes a choice based on the type of an object of a generalized entity. The output of the object type decision are the specialized entities that inherit from the generalized entity. For more information on specialization and generalization, see [Entities](entities).
+An object type decision is an element that makes a choice based on the type of an object of a generalized entity. The output of the object type decision are the specialized entities that inherit from the generalized entity. For more information on specialization and generalization, see [Entities](/refguide/entities/).
 
-If you want to use the specialized type in the rest of the microflow you can use a [Cast](cast-object) activity.
+If you want to use the specialized type in the rest of the microflow you can use a [Cast](/refguide/cast-object/) activity.
 
 ## 2 Properties
 
@@ -35,7 +35,7 @@ The object type decision properties consists of the following sections:
 
 #### 2.1.1 Caption
 
-For more information, see the [Caption](microflow-element-common-properties#caption) section in *Common Properties*.
+For more information, see the [Caption](/refguide/microflow-element-common-properties/#caption) section in *Common Properties*.
 
 ### 2.2 Input Section {#input}
 

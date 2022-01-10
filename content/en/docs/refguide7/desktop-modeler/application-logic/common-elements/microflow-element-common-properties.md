@@ -1,6 +1,6 @@
 ---
 title: "Microflow Element Common Properties"
-url: /refguide7/microflow-element-common-properties
+url: /refguide7/microflow-element-common-properties/
 parent: "common-elements"
 ---
 
@@ -8,7 +8,7 @@ parent: "common-elements"
 
 Here we discuss properties that are shared by many elements in the microflow editor.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Not every element in a microflow has all of these properties.
 

@@ -1,8 +1,8 @@
 ---
 title: "Configure String Concatenation"
-url: /howto7/logic-business-rules/string-concatenation
+url: /howto7/logic-business-rules/string-concatenation/
 category: "Logic & Business Rules"
-menu_order: 11
+weight: 11
 tags: ["microflow", "logic", "string", "concatenation"]
 ---
 

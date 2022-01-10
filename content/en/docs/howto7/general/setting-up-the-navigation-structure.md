@@ -1,8 +1,8 @@
 ---
 title: "Set Up the Navigation Structure"
-url: /howto7/general/setting-up-the-navigation-structure
+url: /howto7/general/setting-up-the-navigation-structure/
 category: "General"
-menu_order: 30
+weight: 30
 tags: []
 ---
 Once you've created some pages you want to give users the ability to access them. The easiest way to do this is by using a navigation menu. The navigation editor of the Desktop Modeler allows you define navigation menus for desktop, tablet and phone interfaces. It also allows you to define which page is shown as a default home page depending on the user role.
@@ -11,8 +11,8 @@ Once you've created some pages you want to give users the ability to access them
 
 Before starting this how-to make sure you have completed the following prerequisites:
 
-*   [Creating a basic data layer](/howto7/data-models/create-a-basic-data-layer)
-*   [Creating your first two Overview and Detail pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages)
+*   [Creating a basic data layer](/howto7/data-models/create-a-basic-data-layer/)
+*   [Creating your first two Overview and Detail pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages/)
 
 ## 2 Setting a Default Home Page
 
@@ -32,7 +32,7 @@ This section will explain how to set the default home page. Please note that thi
 
 5.  Click **Select**.
 
-    {{% alert type="info" %}}You can also select a microflow as default home page. Make sure that the microflow contains a 'Show Form' activity, otherwise the user won't see anything.{{% /alert %}}
+    {{% alert color="info" %}}You can also select a microflow as default home page. Make sure that the microflow contains a 'Show Form' activity, otherwise the user won't see anything.{{% /alert %}}
 
     Now every time a user signs in to the application, the selected page/microflow is shown/triggered.
 
@@ -94,11 +94,11 @@ Now that you've created a menu structure it's time to start using it on pages.
 6.  Select **Desktop**, **Tablet**, or **Phone** as menu, depending on the device interface you're working on.
 7.  Click **OK** to save the properties. The menu widget is now showing the navigation items created in the navigation editor.
 
-    To prevent repeating the previous steps for every page in your app, Studio Pro supports something called layouts. With layouts you can define a base structure for pages in your app. In a layout you can define where the menu should be rendered and you can simply reuse that layout for the desired pages. You can find out how to use layouts in the following document: [How to Use Layouts and Snippets](/howto7/front-end/layouts-and-snippets).
+    To prevent repeating the previous steps for every page in your app, Studio Pro supports something called layouts. With layouts you can define a base structure for pages in your app. In a layout you can define where the menu should be rendered and you can simply reuse that layout for the desired pages. You can find out how to use layouts in the following document: [How to Use Layouts and Snippets](/howto7/front-end/layouts-and-snippets/).
 
 ## 6 Read More
 
-* [Atlas UI](/howto7/front-end/atlas-ui)
-* [How to Create Your First Two Overview & Detail Pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages)
-* [How to Use Layouts and Snippets](/howto7/front-end/layouts-and-snippets)
-* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
+* [Atlas UI](/howto7/front-end/atlas-ui/)
+* [How to Create Your First Two Overview & Detail Pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages/)
+* [How to Use Layouts and Snippets](/howto7/front-end/layouts-and-snippets/)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)

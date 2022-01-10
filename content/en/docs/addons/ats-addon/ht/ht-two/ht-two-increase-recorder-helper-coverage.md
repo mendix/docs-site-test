@@ -19,7 +19,7 @@ ATS provides two different tools to help build test scripts: the ATS Helper and 
 
 Before starting this how-to, make sure you have the following prerequisites in place:
 
-*  Read and Installed the ATS Helper and Recorder, see [How to Install the ATS Helper and ATS Recorder](ht-two-install-ats-helper-recorder)
+*  Read and Installed the ATS Helper and Recorder, see [How to Install the ATS Helper and ATS Recorder](/addons/ats-addon/ht-two-install-ats-helper-recorder/)
 *  Completed the Rapid Application Developer course
 
 ## 3 Increasing ATS Recorder Coverage of Your AUT
@@ -30,7 +30,7 @@ Using the ATS Recorder is the easiest and least time-consuming way to create tes
 * Give widgets a unique name
 * Reduce the use of custom widgets
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 To perform the steps in this chapter you must have access to your app in Mendix Studio Pro.
 {{% /alert %}}
 
@@ -122,4 +122,4 @@ For this reason, recording this widget is still not possible.
 
 ## 5 Next Up
 
-With these tips you increase the ATS Recorder and ATS Helper coverage of your AUT. The next how-to is [How to Create Custom Actions](ht-two-create-custom-actions). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+With these tips you increase the ATS Recorder and ATS Helper coverage of your AUT. The next how-to is [How to Create Custom Actions](/addons/ats-addon/ht-two-create-custom-actions/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

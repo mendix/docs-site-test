@@ -10,15 +10,15 @@ weight: 5
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-These are the [Mendix Studio Pro](/refguide/) major version release notes:
+These are the  major version release notes:
 
-* [9](9)
-* [8](8)
-* [7](7)
+* [9](/releasenotes/studio-pro/9/)
+* [8](/releasenotes/studio-pro/8/)
+* [7](/releasenotes/studio-pro/7/)
 
-For details on title long-term support, medium-term support, and monthly release versions, see [LTS, MTS & Monthly Release Versions](lts-mts).
+For details on title long-term support, medium-term support, and monthly release versions, see [LTS, MTS & Monthly Release Versions](/releasenotes/studio-pro/lts-mts/).
 
-The Windows Service release notes can be found in [Windows Service](windows-service).
+The Windows Service release notes can be found in [Windows Service](/releasenotes/studio-pro/windows-service/).
 
 For updates on the status of Team Server as well as deployment options and other Mendix services, see [Mendix Status](https://status.mendix.com/).
 

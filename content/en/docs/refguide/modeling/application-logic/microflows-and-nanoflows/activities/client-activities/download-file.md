@@ -14,7 +14,7 @@ This activity can only be used in **Microflows**.
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-This action is ignored and does not work when a microflow is called from an offline, native, or hybrid app. For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+This action is ignored and does not work when a microflow is called from an offline, native, or hybrid app. For more information, see the [Microflows](/refguide/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 {{% /alert %}}
 
 ## 1 Introduction
@@ -67,4 +67,4 @@ Many browsers implement pop-up window blockers preventing them from being opened
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}

@@ -1,8 +1,8 @@
 ---
 title: "Troubleshoot Network Issues for Connecting to Team Server"
-url: /howto8/collaboration-requirements-management/troubleshoot-network-issues-for-team-server
+url: /howto8/collaboration-requirements-management/troubleshoot-network-issues-for-team-server/
 category: "Collaboration"
-menu_order: 14
+weight: 14
 description: "Describes troubleshooting connection issues as well as the permissions and settings required to connect to Team Server."
 tags: ["Team Server", "network", "troubleshoot", "firewall"]
 ---
@@ -31,11 +31,11 @@ Mendix Studio Pro connects to `https://teamserver.sprintr.com/` and with the dom
 
 You can look up the IP address of `https://teamserver.sprintr.com/`.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Mendix reserves the right to change the IP address at any time and without notification to the customer. This could happen if Mendix moves to a different infrastructure, for example.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Contact your network administrator and give them this information to allow them to configure your network (for example, firewall and proxy settings) correctly.
 {{% /alert %}}
 

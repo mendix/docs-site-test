@@ -97,8 +97,8 @@ For more information on New Relic, see the [New Relic documentation](https://doc
 
 ## 7 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
+* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto/monitoring-troubleshooting/clear-warning-messages/)
+* [Monitor Mendix Using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely/)
 * [Monitoring Tools](https://github.com/mendix/cf-mendix-buildpack#monitoring-tools) in the *cf-mendix-buildpack* repo on GitHub

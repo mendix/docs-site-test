@@ -1,13 +1,13 @@
 ---
 title: "Image Viewer"
-url: /refguide8/image-viewer
+url: /refguide8/image-viewer/
 parent: "file-widgets"
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/image-viewer.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/image-viewer.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -36,11 +36,11 @@ Image viewer properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
+{{% snippet file="refguide8/design-section-link.md" %}} 
 
 ### 2.3 Data Source Section {#data-source}
 
@@ -50,7 +50,7 @@ The **Entity (path)** property specifies which object will be shown in the image
 
 ### 2.4  Events Section {#events}
 
-{{% snippet file="/static/_includes/refguide8/events-section-link.md" %}}
+{{% snippet file="refguide8/events-section-link.md" %}}
 
 ### 2.5 General Section{#general}
 
@@ -68,7 +68,7 @@ The table below describes possible ways to specify the width of an image:
 | Percentage  *(default)* | The width is specified in a percentage of the original width. It can be larger than its original width in which case the image is stretched. |
 | Auto | The width of the given image is used. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Not supported on native mobile pages.
 {{% /alert %}}
 
@@ -88,7 +88,7 @@ The table below describes possible ways to specify the height of an image:
 | Percentage | The height is specified in a percentage of the original height. It can be larger than its original height in which case the image is stretched. |
 | Auto  *(default)*       | The height of the given image is used.                       |
 
-{{% alert type="info" %}}This property is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="info" %}}This property is not supported on native mobile pages.{{% /alert %}}
 
 #### 2.5.5 Height
 
@@ -110,10 +110,10 @@ Default: *Thumbnail*
 
 ### 2.6 Visibility Properties{#visibility}
 
-{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
+{{% snippet file="refguide8/visibility-section-link.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [File Widgets](file-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [File Widgets](/refguide8/file-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)

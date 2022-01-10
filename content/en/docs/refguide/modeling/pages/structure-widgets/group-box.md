@@ -31,11 +31,11 @@ Group box properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.3 General Section {#general}
 
@@ -63,12 +63,12 @@ Possible values of this property are the following:
 
 ### 2.4 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [Structure](structure-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Structure](/refguide/structure-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)
 
 

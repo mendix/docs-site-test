@@ -1,6 +1,6 @@
 ---
 title: "Password Policy"
-url: /refguide7/password-policy
+url: /refguide7/password-policy/
 parent: "project-security"
 ---
 

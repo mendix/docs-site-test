@@ -1,8 +1,8 @@
 ---
 title: "Drag Microflows & Pages into a Microflow"
-url: /howto7/logic-business-rules/drag-microflows-and-pages-into-a-microflow
+url: /howto7/logic-business-rules/drag-microflows-and-pages-into-a-microflow/
 category: "Logic & Business Rules"
-menu_order: 4
+weight: 4
 tags: ["microflow", "logic", "page"]
 ---
 
@@ -39,11 +39,11 @@ Instead of creating a new submicroflow action, it can be easier to drag an exist
 
 ## 6 Read More
 
-* [How to Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [How to Trigger Logic Using Microflows](triggering-logic-using-microflows)
-* [How to Create a Custom Save Button](create-a-custom-save-button)
-* [How to Work With Lists in a Microflow](working-with-lists-in-a-microflow)
-* [How to Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [How to Set Up Error Handling](set-up-error-handling)
-* [How to Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [How to Extract and Use Submicroflows](extract-and-use-sub-microflows)
+* [How to Define Access Rules Using XPath](/howto7/logic-business-rules/define-access-rules-using-xpath/)
+* [How to Trigger Logic Using Microflows](/howto7/logic-business-rules/triggering-logic-using-microflows/)
+* [How to Create a Custom Save Button](/howto7/logic-business-rules/create-a-custom-save-button/)
+* [How to Work With Lists in a Microflow](/howto7/logic-business-rules/working-with-lists-in-a-microflow/)
+* [How to Optimize Retrieve Activities](/howto7/logic-business-rules/optimizing-retrieve-activities/)
+* [How to Set Up Error Handling](/howto7/logic-business-rules/set-up-error-handling/)
+* [How to Optimize Microflow Aggregates](/howto7/logic-business-rules/optimizing-microflow-aggregates/)
+* [How to Extract and Use Submicroflows](/howto7/logic-business-rules/extract-and-use-sub-microflows/)

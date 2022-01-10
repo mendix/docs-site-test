@@ -18,7 +18,7 @@ aliases:
 
 Mendix apps can be deployed to a variety of different environments, for example Mendix Cloud, On-premises, or Kubernetes.
 
-Mendix apps can also be deployed to any cloud platform which supports a version of Cloud Foundry, database, and cloud storage at or above the minimum required version which supports Mendix. For specific version numbers see [Mendix System Requirements](/refguide/system-requirements). 
+Mendix apps can also be deployed to any cloud platform which supports a version of Cloud Foundry, database, and cloud storage at or above the minimum required version which supports Mendix. For specific version numbers see [Mendix System Requirements](/refguide/system-requirements/). 
 
 The advantages of Cloud Foundry are:
 
@@ -44,8 +44,8 @@ For more information on running Mendix apps on Cloud Foundry, see the [Mendix Cl
 
 Cloud Foundry providers like SAP and IBM are made available within the Mendix Developer Portal. It is recommended that you use the Developer Portal for deploying your application to these clouds. See the detailed documentation for the following targets:  
 
-* [SAP Business Technology Platform](sap-cloud-platform)
-* [IBM Cloud](ibm-cloud)
+* [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform/)
+* [IBM Cloud](/developerportal/deploy/ibm-cloud/)
 
 Only use the instructions in this document if you have specific requirements which the recommended method does not support.
 
@@ -149,7 +149,7 @@ Once you have configured the database, you can deploy your app, provided there a
 
 FileDocuments in your application (for example, binary objects such as images) are not stored in the database. If you use them in your app, and want them to persist between sessions, they need to be stored in persistent file storage.
 
-This is a service which you need to attach to your application in the same way as the database, above. For supported cloud file storage services see the [Mendix System Requirements](/refguide/system-requirements).
+This is a service which you need to attach to your application in the same way as the database, above. For supported cloud file storage services see the [Mendix System Requirements](/refguide/system-requirements/).
 
 {{% alert color="info" %}}
 Some trial accounts may not include object storage. 

@@ -61,7 +61,7 @@ Open your native app in iOS Simulator or Android emulator and then do the follow
 3.  React Developer Tools will launch and connect to Simulator. You can now inspect and modify the React Native elements the same way you could modify HTML elements in Chrome:
 
 	{{/* % image_container width="350" % */}}![debug simulator](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/native-debug/simulator-rn-dev.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}	
+	
 4. In the Make It Native App, use a three-finger tap to **Toggle Element Inspector** and enable enhanced inspection capabilities.
 
 #### 2.1.2 Debugging with the Make It Native App
@@ -76,7 +76,7 @@ To use the Make It Native app with React Developer Tools, do the following:
 6. React Developer Tools will launch and connect to your device. You can now inspect and modify the React Native elements the same way you could modify HTML elements in Chrome:
 
 	{{/* % image_container width="350" % */}}![debug min app](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/native-debug/min-app-rn-devtools.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 3 Debugging Your Styling
 
 With the Make It Native app, you can examine your styling and the structure of your pages. This makes it easier to debug, test, and inspect styling. Inspect and debug your styling by doing the following:
@@ -98,7 +98,7 @@ After running `react-devtools` you will see the React developer tools GUI. To us
 
 When your Mendix app is crashing or the logging in Mendix Studio Pro is incomplete, you might want to dive into your operating system's log files for information. There are 2 options:
 
-1. You could start the app in [XCode or Android Studio](/howto/mobile/native-build-locally#building-app-project), either of which will give you more information and allow you to set breakpoint and inspect variable values. This approach is a bit more cumbersome. 
+1. You could start the app in [XCode or Android Studio](/howto/mobile/native-build-locally/#building-app-project), either of which will give you more information and allow you to set breakpoint and inspect variable values. This approach is a bit more cumbersome. 
 1. Get the log files directly from your device.
 
 The first approach is self-explanatory. For information on getting log files directly from your device, however, see below.
@@ -126,5 +126,5 @@ For more detailed steps how to set up ADB, see [Install ADB](https://www.xda-dev
 
 ## 5 Read More
 
-* [Get Started with Native Mobile](getting-started-with-native-mobile)
-* [Configure Parallels](/howto/general/using-mendix-studio-pro-on-a-mac)
+* [Get Started with Native Mobile](/howto/mobile/getting-started-with-native-mobile/)
+* [Configure Parallels](/howto/general/using-mendix-studio-pro-on-a-mac/)

@@ -1,10 +1,10 @@
 ---
 
 title: "Structure Widgets"
-url: /studio7/page-editor-widgets-structure
+url: /studio7/page-editor-widgets-structure/
 parent: "page-editor-widgets"
 description: "Describes Structure widgets in Mendix Studio."
-menu_order: 60
+weight: 60
 tags: ["studio", "page editor", "layout", "layout widgets", "structure widgets"]
 ---
 
@@ -45,12 +45,12 @@ Use a column to align items in a row.  For more information on rows and columns,
 
 ### 2.1 Layout Grid Properties {#layout-grid-properties}
 
-You can access the **Layout Grid** properties through the breadcrumb trail (for more information, see the **[Breadcrumb Trail](page-editor#breadcrumb)** section in *Pages*). 
+You can access the **Layout Grid** properties through the breadcrumb trail (for more information, see the **[Breadcrumb Trail](/studio7/page-editor/#breadcrumb)** section in *Pages*). 
 Layout grid properties consist of the following sections:
 
 * [Expand](#expand-section) 
 * [General](#general-section)
-* [Design](page-editor-widgets-design-section)
+* [Design](/studio7/page-editor-widgets-design-section/)
 
 #### 2.1.1 Expand Section {#expand-section}
 
@@ -61,7 +61,7 @@ The **Expand** section > **Add Row** allows you to add a row above or below the 
 
 To add a row, select a row in the layout grid and click one of the buttons in **Add Row**. A row identical to the selected one will be inserted.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 **Row** and **Column** also have the **Expand** section with the same properties.  
 
@@ -73,7 +73,7 @@ The **General** section of the layout grid contains the **Full Width** property.
 
 #### 2.1.3 Design Section
 
-For information on the **Design** section and its properties, see [Design Section in Widgets](page-editor-widgets-design-section).
+For information on the **Design** section and its properties, see [Design Section in Widgets](/studio7/page-editor-widgets-design-section/).
 
 ### 2.2 Row and Column Properties {#columns-and-rows}
 
@@ -110,7 +110,7 @@ A **Container** is used as a layout element where you can place a widget or a gr
 {{/* % image_container width="400" % */}}![Container Example](/attachments/studio7/page-editor/page-editor-widgets/page-editor-widgets-structure/container.png)
 {{/* % /image_container % */}}
 
-Container properties consist of the **Design** section. For information, see [Design Section in Widgets](page-editor-widgets-design-section).
+Container properties consist of the **Design** section. For information, see [Design Section in Widgets](/studio7/page-editor-widgets-design-section/).
 
 ## 5 Group Box Overview {#group-box-overview}
 
@@ -121,7 +121,7 @@ A group box is used to group widgets together. The group box can be configured t
 
 ### 5.1 Group Box Properties
 
-Group box properties consist of the **General** section and the **Design** section. For information on the **Design** section and its properties, see [Design Section in Widgets](page-editor-widgets-design-section).
+Group box properties consist of the **General** section and the **Design** section. For information on the **Design** section and its properties, see [Design Section in Widgets](/studio7/page-editor-widgets-design-section/).
 
 Properties available in the **General** section are described in the table below.
 
@@ -156,7 +156,7 @@ In the **General** section, you can configure the following properties:
 
 ### 6.2 Tab Container Design Properties
 
-For information on the **Design** section and its properties, see [Design Section in Widgets](page-editor-widgets-design-section).
+For information on the **Design** section and its properties, see [Design Section in Widgets](/studio7/page-editor-widgets-design-section/).
 
 ### 6.3 Tab Properties {#tab-properties}
 
@@ -171,5 +171,5 @@ Each tab has the following properties:
 
 ## 7 Read More
 
-* [Pages](page-editor) 
-* [Widgets](page-editor-widgets)
+* [Pages](/studio7/page-editor/) 
+* [Widgets](/studio7/page-editor-widgets/)

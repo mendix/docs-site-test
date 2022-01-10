@@ -1,6 +1,6 @@
 ---
 title: "Common Widget Properties"
-url: /refguide7/common-widget-properties
+url: /refguide7/common-widget-properties/
 parent: "common-widgets"
 ---
 
@@ -16,9 +16,9 @@ _Default value:_ False
 
 ### Required message (only in web forms)
 
-This property determines the message that is shown to the end user if the widget is empty and the 'Required' property is set to true. This is a translatable text. See [Translatable Texts](translatable-texts).
+This property determines the message that is shown to the end user if the widget is empty and the 'Required' property is set to true. This is a translatable text. See [Translatable Texts](/refguide7/translatable-texts/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 For example, if an address field is required, the required message for the text box of the address could be something like "The address is required."
 
@@ -32,25 +32,25 @@ The tab index influences the order in which the end user navigates through the f
 
 _Default value:_ 0
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Class+Property.md" %}}
+{{% snippet file="refguide7/Class+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Style+Property.md" %}}
+{{% snippet file="refguide7/Style+Property.md" %}}
 
 ## Data Source Properties
 
-{{% snippet file="/static/_includes/refguide7/Attribute+Path+Property.md" %}}
+{{% snippet file="refguide7/Attribute+Path+Property.md" %}}
 
 ## Visibility Properties
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property.md" %}}
+{{% snippet file="refguide7/Visibility+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}
+{{% snippet file="refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}
 
 ## Editability Properties
 
-{{% snippet file="/static/_includes/refguide7/Editable+Property.md" %}}
+{{% snippet file="refguide7/Editable+Property.md" %}}
 
 ### Condition
 

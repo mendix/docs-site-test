@@ -9,13 +9,13 @@ tags: ["studio pro", "page title", "text widgets"]
 
 ## 1 Introduction
 
-This widget displays a page title of the current page that is set in [page properties](page-properties#title).
+This widget displays a page title of the current page that is set in [page properties](/refguide/page-properties/#title).
 
 ![Page Title Example](/attachments/refguide/modeling/pages/text-widgets/page-title/page-title-example.png)
 
 {{% alert color="info" %}}
 
-The page title widget makes it possible to embed the page title in a [layout](layout), as it will show the title of the page that uses the layout.
+The page title widget makes it possible to embed the page title in a [layout](/refguide/layout/), as it will show the title of the page that uses the layout.
 
 {{% /alert %}}
 
@@ -34,18 +34,18 @@ Page title properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.3 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [Text Widgets](text-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Text Widgets](/refguide/text-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

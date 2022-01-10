@@ -1,13 +1,13 @@
 ---
 title: "Context Source"
-url: /refguide8/context-source
+url: /refguide8/context-source/
 parent: "data-sources"
 tags: ["studio pro", "context", "data source"]
-menu_order: 30
+weight: 30
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/context-source.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/context-source.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -23,12 +23,12 @@ The **Context** source is a data source of a data view. Data views with this dat
 
 The **Entity (path)** property specifies the entity that will be shown in the data view. If you have a top-level data view, **Entity (path)** is an entity and the page will expect the object or objects of this entity to be passed to it when opened. 
 
-If you have a nested data view, you can select an entity that has associations with the entity of a surrounding data container, and the entity of the surrounding data container should be a parent of this association. For more information on associations, see [Associations](associations). 
+If you have a nested data view, you can select an entity that has associations with the entity of a surrounding data container, and the entity of the surrounding data container should be a parent of this association. For more information on associations, see [Associations](/refguide8/associations/). 
 
 {{/* % image_container width="400" % */}}![Context Source](/attachments/refguide8/modeling/pages/data-widgets/data-sources/context-source/context-source-example.png)
 {{/* % /image_container % */}}
 
 ## 3 Read More
 
-* [Data Widgets](data-widgets)
-* [Associations](associations)
+* [Data Widgets](/refguide8/data-widgets/)
+* [Associations](/refguide8/associations/)

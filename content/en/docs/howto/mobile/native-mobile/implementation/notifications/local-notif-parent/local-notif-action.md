@@ -12,7 +12,7 @@ tags: ["mobile", "push notification", "local", "push", "notification"]
 Several apps which use push notifications will also need actions to trigger after a user taps a notification. This step-by-step guide will teach you to make a tapped notification show a specific page.
 
 {{% alert color="warning" %}}
-The Make It Native app is currently experiencing limitations which interfere with notifications. We are currently fixing those limitations. To test your local notification actions, please use a native release app installed on a mobile testing device instead of the Make It Native app. To build a native release app, please complete [How to Deploy a Native App](/howto/mobile/deploying-native-app) and use that app to test local notification actions.
+The Make It Native app is currently experiencing limitations which interfere with notifications. We are currently fixing those limitations. To test your local notification actions, please use a native release app installed on a mobile testing device instead of the Make It Native app. To build a native release app, please complete [How to Deploy a Native App](/howto/mobile/deploying-native-app/) and use that app to test local notification actions.
 {{% /alert %}}
 
 ## 2 Prerequisites
@@ -20,8 +20,8 @@ The Make It Native app is currently experiencing limitations which interfere wit
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Review the [basic differences](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/) between local notifications and push notifications
-* Install the [Make It Native](/refguide/getting-the-make-it-native-app) app on your mobile device
-* Complete the preceding tutorials in this [Use Local Notifications](local-notif-parent) series
+* Install the [Make It Native](/refguide/getting-the-make-it-native-app/) app on your mobile device
+* Complete the preceding tutorials in this [Use Local Notifications](/howto/mobile/local-notif-parent/) series
 
 ## 3 Setting an Action for When a Notification is Tapped
 
@@ -36,7 +36,7 @@ To get started, do the following:
 1.  Drag and drop a **Notifications** widget onto your native home page. 
 
 	{{/* % image_container width="400" % */}}![notifications widget](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/notif-widget.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 2. Double-click the widget.
 3. Click **Actions** > **New**. 
 4. Name your action *show_page*.
@@ -49,7 +49,7 @@ To get started, do the following:
 11. When prompted, click your **Home_Native** page:
 
 	{{/* % image_container width="400" % */}}![click home page](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/home-native-select.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 12. Click **Select**. Now you have a button which will bring you back to your home screen when you are testing:
 
 	![click home page](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/nav-button.png)
@@ -65,11 +65,11 @@ In **ACT_CreateAndSendNotification** you will set up the logic for tapping a not
 2. Click **Action Name** > **Edit** 
 
 	{{/* % image_container width="500" % */}}![edit action name](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/add-action-name.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 3.  Type `'show_page'` into the expression field:
 
 	{{/* % image_container width="400" % */}}![show page expression](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/show-page-exp.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 4. Click the **OK** buttons until you are back at your nanoflow.
 
 Great job setting up your notification. Now you can test it:
@@ -80,8 +80,8 @@ Great job setting up your notification. Now you can test it:
 4. Tap the notification to navigate to the page you selected.
 5. Tap the **Return to home page** button to navigate back to your home page.
 
-Now you can show pages after notifications are tapped. Next, in [How to Use Local Notifications Part 4: Data](local-notif-data), you will learn to pass data to such pages.
+Now you can show pages after notifications are tapped. Next, in [How to Use Local Notifications Part 4: Data](/howto/mobile/local-notif-data/), you will learn to pass data to such pages.
 
 ## 4 Read More
 
-* [Build JavaScript Actions](/howto/extensibility/build-javascript-actions)
+* [Build JavaScript Actions](/howto/extensibility/build-javascript-actions/)

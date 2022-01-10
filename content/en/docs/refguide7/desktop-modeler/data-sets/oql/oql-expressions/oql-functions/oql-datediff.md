@@ -1,6 +1,6 @@
 ---
 title: "OQL DATEDIFF"
-url: /refguide7/oql-datediff
+url: /refguide7/oql-datediff/
 parent: "oql-functions"
 ---
 

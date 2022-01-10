@@ -14,7 +14,7 @@ Licensed apps in the Mendix Cloud can be scaled in various ways.
 
 Memory can be added to the application container. This is called *vertical scaling*.
 
-Apps can be run in multiple runtime containers (instances) simultaneously. Incoming traffic for your app is distributed over the running instances. [Scheduled events](/refguide/scheduled-events) will always be run on the first instance. This is called *horizontal scaling*.
+Apps can be run in multiple runtime containers (instances) simultaneously. Incoming traffic for your app is distributed over the running instances. [Scheduled events](/refguide/scheduled-events/) will always be run on the first instance. This is called *horizontal scaling*.
 
 The scaling options on possible cloud versions are the following:
 
@@ -36,7 +36,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 * Have a plan which provides more than 1GiB of memory
 
 {{% alert color="info" %}}
-You can find the cloud version on which your app is hosted in the environment details: see [Cloud Version and Region in the Mendix Cloud](cloud-version-region).
+You can find the cloud version on which your app is hosted in the environment details: see [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region/).
 
 Details of your plan are also displayed on the environment details page.
 {{% /alert %}}
@@ -81,11 +81,11 @@ For example, you can use one instance with 4GiB RAM. The remaining 12GiB in your
 
 ## 5 Read More
 
-* [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4)
-* [Deployment](index)
-* [Environment Details](environments-details)
-* [Mendix Cloud](mendix-cloud-deploy)
-* [Mendix Cloud v4](mxcloudv4)
-* [Migrate to Mendix Cloud v4](migrating-to-v4)
-* [App Roles](/developerportal/collaborate/app-roles)
-* [Node Permissions](/developerportal/deploy/node-permissions)
+* [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/)
+* 
+* [Environment Details](/developerportal/deploy/environments-details/)
+* [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/)
+* [Mendix Cloud v4](/developerportal/deploy/mxcloudv4/)
+* [Migrate to Mendix Cloud v4](/developerportal/deploy/migrating-to-v4/)
+* [App Roles](/developerportal/collaborate/app-roles/)
+* [Node Permissions](/developerportal/deploy/node-permissions/)

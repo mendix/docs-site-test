@@ -273,7 +273,7 @@ It is possible to specify annotations for all Mendix app environments in the nam
 
 ### 3.1 Enable Scraping for Entire Namespace
 
-To enable scraping annotations for all environments in a namespace, add the following `runtimeDeploymentPodAnnotations` in the [Mendix App Deployment settings](private-cloud-cluster#advanced-deployment-settings):
+To enable scraping annotations for all environments in a namespace, add the following `runtimeDeploymentPodAnnotations` in the [Mendix App Deployment settings](/developerportal/deploy/private-cloud-cluster/#advanced-deployment-settings):
 
 ```yaml
 apiVersion: privatecloud.mendix.com/v1alpha1
@@ -328,7 +328,7 @@ If you would like to enable Prometheus scraping only for a specific environment,
 
 {{% alert color="warning" %}}Do not use this approach in Connected mode - any annotations you set this way will be overridden by annotations set in the Private Cloud section of the Developer Portal.{{% /alert %}}
 
-Open an environment's `MendixApp` CR [for editing](private-cloud-operator#edit-cr) and add the following pod annotations:
+Open an environment's `MendixApp` CR [for editing](/developerportal/deploy/private-cloud-operator/#edit-cr) and add the following pod annotations:
 
 ```yaml
 apiVersion: privatecloud.mendix.com/v1alpha1
@@ -351,15 +351,15 @@ Save and apply the changes.
 
 ## 4 Setting up a Grafana Dashboard
 
-Mendix for Private Cloud offers a reference dashboard that looks similar to [Mendix Cloud V4 metrics](/developerportal/operate/trends-v4).
+Mendix for Private Cloud offers a reference dashboard that looks similar to [Mendix Cloud V4 metrics](/developerportal/operate/trends-v4/).
 
 In addition, this dashboard will display Mendix app and Runtime logs.
 
 {{% alert color="warning" %}}
-Mendix for Private Cloud uses a `m2ee-metrics` sidecar that collects metrics from the [admin port](/refguide/monitoring-mendix-runtime) and translates them into a format supported by Prometheus.
+Mendix for Private Cloud uses a `m2ee-metrics` sidecar that collects metrics from the [admin port](/refguide/monitoring-mendix-runtime/) and translates them into a format supported by Prometheus.
 This approach works with all Mendix versions, starting from Mendix 7.23.
 
-Mendix 9.6 introduces native [Prometheus metrics](/refguide/metrics).
+Mendix 9.6 introduces native [Prometheus metrics](/refguide/metrics/).
 The Mendix Runtime Prometheus metrics are not yet supported by Mendix for Private Cloud.
 The reference dashboard provided in this document will not be compatible with the native Mendix 9.6 metrics.
 {{% /alert %}}

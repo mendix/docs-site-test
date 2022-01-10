@@ -24,7 +24,7 @@ The purpose of Workflow Commons is to provide you with useful pages, page templa
 
 ### 2.1 Pages
 
-There are three pages provided with the Workflow Commons module to get you and your users started with workflows. The functionality contained in these pages works out-of-the-box. Simply add these pages to the [navigation](navigation) of your app to start using them. 
+There are three pages provided with the Workflow Commons module to get you and your users started with workflows. The functionality contained in these pages works out-of-the-box. Simply add these pages to the [navigation](/refguide/navigation/) of your app to start using them. 
 You can find the following pages in Workflow Commons:
 
 *   **DefaultWorkflowAdmin** – The default workflow admin page that a workflow administrator can use to view and manage a workflow instance. This page can be used in the **Show workflow admin page** microflow activity and button action.
@@ -70,7 +70,7 @@ Depending on the required user roles for your application, you may have the need
 2.   Link the user role to the **Administrator** module role in Workflow Commons.
 3.   Link the user role to both the **User** and **WorkflowAdministrator** module roles in the System module.
 
-Finally, go to the Workflows tab in your [app settings](project-settings#workflows) and select the same user entity as the one you are using in Workflow Commons. You can then use the properties of this entity to filter the users that can pick up a task in the task's user assignment property. For more information on user task properties, see [User Task](user-task).
+Finally, go to the Workflows tab in your [app settings](/refguide/project-settings/#workflows) and select the same user entity as the one you are using in Workflow Commons. You can then use the properties of this entity to filter the users that can pick up a task in the task's user assignment property. For more information on user task properties, see [User Task](/refguide/user-task/).
 
 ## 4 Customizing Workflow Commons
 
@@ -86,5 +86,5 @@ We recommend the following best practices when working with workflows:
 
 ## 6 Read More
 
-*   [Workflows](workflows)
+*   [Workflows](/refguide/workflows/)
 

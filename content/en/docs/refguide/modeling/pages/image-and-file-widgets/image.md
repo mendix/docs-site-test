@@ -19,7 +19,7 @@ For example, you can configure an image clicking which a page with customer deta
 
 {{% alert color="info" %}}
 
-If you want to dynamically show different images based on data, you need to add [dynamic image](image-viewer) on your page.
+If you want to dynamically show different images based on data, you need to add [dynamic image](/refguide/image-viewer/) on your page.
 
 {{% /alert %}}
 
@@ -34,27 +34,27 @@ Static image properties consist of the following sections:
 
 * [Common](#common)
 * [Design Properties](#design-properties)
-* [Events](events)
+* [Events](/refguide/events/)
 * [General](#general)
 * [Visibility](#visibility)
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.3 Events Section {#events}
 
-For information on the Events section and its properties, see [On Click Event & Events Section](on-click-event). 
+For information on the Events section and its properties, see [On Click Event & Events Section](/refguide/on-click-event/). 
 
 ### 2.4 General Section {#general}
 
 #### 2.4.1 Image
 
-The file name that this widget shows. For more information on when to use images and supported formats, see [Images](images).
+The file name that this widget shows. For more information on when to use images and supported formats, see [Images](/refguide/images/).
 
 #### 2.4.2 Width Unit
 
@@ -102,11 +102,11 @@ Default: *Yes*
 
 ### 2.5 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 3 Converting to a Dynamic Image
 
-You can convert a static image to a dynamic image that allows you to display dynamic data. For more information on dynamic image and its properties, see [Dynamic Image](image-viewer). 
+You can convert a static image to a dynamic image that allows you to display dynamic data. For more information on dynamic image and its properties, see [Dynamic Image](/refguide/image-viewer/). 
 
 To convert an image widget into a dynamic image, do the following:
 
@@ -117,7 +117,7 @@ The **Static image** widget is converted to the dynamic image and you can config
 
 ## 4 Read More
 
-* [Page](page)
-* [Images, Videos & Files](image-and-file-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Images, Videos & Files](/refguide/image-and-file-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)
 

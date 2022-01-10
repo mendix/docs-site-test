@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Image (Document Template)"
-url: /refguide7/dynamic-image-document-template
+url: /refguide7/dynamic-image-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Dynamic+Image+(document+template).html
@@ -11,7 +11,7 @@ aliases:
 
 A dynamic image can be used to show a System.Image. If the image is not available (for example: the image was never saved) it will show the preset default image. It can be put inside a data view or templategrid.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/document-templates/dynamic-image-document-template/918132.png)
 A dynamic image inside a table cell, showing the preset default image.
@@ -38,4 +38,4 @@ The height defines the height of the image in the document. This is set in pixel
 
 ## Common Properties
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}

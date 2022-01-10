@@ -83,7 +83,7 @@ On the **Triggers** tab, you can define message triggers that fire on messages o
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-trap-tool/Options_Triggers.png)
 
-See the description of [Triggers](rg-one-triggers) for how to configure triggers.
+See the description of [Triggers](/addons/apd-addon/rg-one-triggers/) for how to configure triggers.
 
 ### 4.4 Save & Apply
 

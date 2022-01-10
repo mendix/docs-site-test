@@ -1,6 +1,6 @@
 ---
 title: "Conditions"
-url: /refguide7/conditions
+url: /refguide7/conditions/
 parent: "page-concepts"
 ---
 
@@ -11,12 +11,12 @@ In pages, certain elements can be shown, hidden, made editable, or made read-onl
 The following elements support conditional visibility:
 
 * All the widgets
-* [Grid control bar buttons](control-bar)
-* [Table rows](table-row), [tab pages](tab-page), and [layout grid rows](layout-grid)
+* [Grid control bar buttons](/refguide7/control-bar/)
+* [Table rows](/refguide7/table-row/), [tab pages](/refguide7/tab-page/), and [layout grid rows](/refguide7/layout-grid/)
 
 The following elements support conditional editability:
 
-* Input widgets ([text box](text-box), [reference selector](reference-selector), etc.)
+* Input widgets ([text box](/refguide7/text-box/), [reference selector](/refguide7/reference-selector/), etc.)
 
 There are four kinds of conditions:
 
@@ -24,7 +24,7 @@ There are four kinds of conditions:
   * The attribute must be of type Boolean or enumeration
   * For each value, you specify whether the element is visible/editable
   * Upon entering the page and changing the condition attribute, the conditions will be applied
-* A condition based on an [expression](expressions)
+* A condition based on an [expression](/refguide7/expressions/)
  * The expression must evaluate to a value of the Boolean type
   * The element is visible/editable when the expression evaluates to `true`
 * Module roles
@@ -53,13 +53,13 @@ For each value of the attribute, you can specify whether the element is editable
 
 ### 2.2 Show/Enable Element Based on Expression
 
-By selecting this option, visibility or editability becomes conditional based on whether the entered [microflow expression](expressions) evaluates to `true` or `false`.
+By selecting this option, visibility or editability becomes conditional based on whether the entered [microflow expression](/refguide7/expressions/) evaluates to `true` or `false`.
 
 The expression result must be of the Boolean type. The expression can use the obejct of the enclosing data container available as a `$currentObject` variable.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-The expression is evaluated in the browser, so we advise against using "secret" values (like access keys) in it. In particular, we disallow usages of [constants](constants). Also, client-side expressions currently do not support all the functions that are available in the microflows. Please refer to an autocomplete list to know what functions are supported in your version.
+The expression is evaluated in the browser, so we advise against using "secret" values (like access keys) in it. In particular, we disallow usages of [constants](/refguide7/constants/). Also, client-side expressions currently do not support all the functions that are available in the microflows. Please refer to an autocomplete list to know what functions are supported in your version.
 
 {{% /alert %}}
 
@@ -75,7 +75,7 @@ For example, if you have a page that has a tab page containing the current order
 
 For each module role, you can specify whether the table row or tab page is visible or not.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Do not rely on hiding tab pages and table rows for security! Also, use domain model security to give roles the appropriate access to data.
 

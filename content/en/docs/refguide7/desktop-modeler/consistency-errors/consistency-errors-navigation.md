@@ -1,6 +1,6 @@
 ---
 title: "Navigation Consistency Errors"
-url: /refguide7/consistency-errors-navigation
+url: /refguide7/consistency-errors-navigation/
 parent: "consistency-errors"
 description: "Describes consistency errors in the Mendix Desktop Modeler and the way to fix them."
 tags: ["desktop modeler", "consistency errors", "checks", "errors", "navigation"]
@@ -25,7 +25,7 @@ The most common errors you can come across when configuring a navigation item ar
 
 When you set a page with a data view as a menu item, you get a consistency error, because the page expects an object to be passed to it. 
 
-For example, you have created a menu item called **Program** for a **Responsive** [profile](navigation-profile). This menu item opens the **Program** page. However, the **Program** page has a data view on it and expects a *ProgramItem* object to be passed to it, so that it can show the program details of a specific *ProgramItem* on the page. As a result, you get a consistency error, as no object is passed to this page from the navigation.
+For example, you have created a menu item called **Program** for a **Responsive** [profile](/refguide7/navigation-profile/). This menu item opens the **Program** page. However, the **Program** page has a data view on it and expects a *ProgramItem* object to be passed to it, so that it can show the program details of a specific *ProgramItem* on the page. As a result, you get a consistency error, as no object is passed to this page from the navigation.
 
 ![Scheme Showing the Menu Item Error](/attachments/refguide7/desktop-modeler/consistency-errors/consistency-errors-navigation/dm-page-expects-an-object-error.png)
 
@@ -42,12 +42,12 @@ To fix the error, you can create an object and pass it to the page. Do the follo
     c. Set **Program** as **On click page**. <br/>
 
     ![Menu Item Properties](/attachments/refguide7/desktop-modeler/consistency-errors/consistency-errors-navigation/dm-menu-item-properties.png)<br/>
-<br/>
+
 Now when a user clicks the menu item, a new *ProgramItem* object will be created and passed to the page.
 
 ### 2.2. Error Fix When the Selected Home Page Expects an Object {#home-page-expects-an-object}
 
-If you set a page that expects an object to be passed to it as a home page for a [navigation profile](navigation-profile), you will get a consistency error.
+If you set a page that expects an object to be passed to it as a home page for a [navigation profile](/refguide7/navigation-profile/), you will get a consistency error.
 
 Let us study an example: you have added a data view that expects an object of type *Customer* to the home page of the responsive profile, and you get a consistency error. 
 
@@ -84,6 +84,6 @@ Now the new object of type *Customer* will be created and passed to the home pag
 
 ## 3 Read More
 
-* [Navigation Profile](navigation-profile)
-* [Microflows](microflows)
-* [Microflow Properties](microflow)
+* [Navigation Profile](/refguide7/navigation-profile/)
+* [Microflows](/refguide7/microflows/)
+* [Microflow Properties](/refguide7/microflow/)

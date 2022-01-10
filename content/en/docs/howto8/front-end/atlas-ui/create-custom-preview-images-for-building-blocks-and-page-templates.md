@@ -1,8 +1,8 @@
 ---
 title: "Create Custom Preview Images for Building Blocks & Page Templates"
-url: /howto8/front-end/create-custom-preview-images-for-building-blocks-and-page-templates
+url: /howto8/front-end/create-custom-preview-images-for-building-blocks-and-page-templates/
 parent: "atlas-ui"
-menu_order: 50
+weight: 50
 tags: ["Atlas", "UI", "UX", "user experience"]
 ---
 
@@ -126,8 +126,8 @@ You can also create your page template preview image in a different image editor
 
 ## 4 Read More
 
-* [Get Started with Atlas UI](get-started-with-atlasui)
-* [Create Company Atlas UI Resources](create-company-atlas-ui-resources)
-* [Extend Design Properties to Customize Your Studio Experience](extend-design-properties-to-customize)
-* [Migrate Existing Apps to Atlas UI](migrate-existing-projects-to-atlasui)
-* [Share Company Atlas UI Resources](share-company-atlas-ui-resources)
+* [Get Started with Atlas UI](/howto8/front-end/get-started-with-atlasui/)
+* [Create Company Atlas UI Resources](/howto8/front-end/create-company-atlas-ui-resources/)
+* [Extend Design Properties to Customize Your Studio Experience](/howto8/front-end/extend-design-properties-to-customize/)
+* [Migrate Existing Apps to Atlas UI](/howto8/front-end/migrate-existing-projects-to-atlasui/)
+* [Share Company Atlas UI Resources](/howto8/front-end/share-company-atlas-ui-resources/)

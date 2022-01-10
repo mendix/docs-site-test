@@ -1,26 +1,26 @@
 ---
 title: "Import Excel Documents"
-url: /howto8/integration/importing-excel-documents
+url: /howto8/integration/importing-excel-documents/
 category: "Integration"
-menu_order: 5
+weight: 5
 description: "Describes how to set up import templates and import data into your app using the Excel Importer module."
 tags: ["import", "excel", "integration"]
 ---
 
 ## 1 Introduction
 
-Adding large amounts of data to your application (for example, reference data or data from an external application) can be very time-consuming. In order to save time and effort, this process can be automated using the [Excel Importer](/appstore/modules/excel-importer) from the Mendix Marketplace. In this how-to, you will set up import templates and import data into your app using this module.
+Adding large amounts of data to your application (for example, reference data or data from an external application) can be very time-consuming. In order to save time and effort, this process can be automated using the [Excel Importer](/appstore/modules/excel-importer/) from the Mendix Marketplace. In this how-to, you will set up import templates and import data into your app using this module.
 
 ## 2 Prerequisites
 
 Before starting this how-to, make sure you know how to do the following:
 
-* Create domain models (see [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer))
-* Create overview and detail pages (see [How to Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages))
-* Create menu items (see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure))
-* Create microflows (see [How to Trigger a Microflow From a Menu Item](/howto8/logic-business-rules/trigger-microflow-from-menu-item)
-* Add Marketplace content to your app (see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content))
-* Secure your applications (see [How to Create a Secure App](/howto8/security/create-a-secure-app))
+* Create domain models (see [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer/))
+* Create overview and detail pages (see [How to Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages/))
+* Create menu items (see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure/))
+* Create microflows (see [How to Trigger a Microflow From a Menu Item](/howto8/logic-business-rules/trigger-microflow-from-menu-item/)
+* Add Marketplace content to your app (see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/))
+* Secure your applications (see [How to Create a Secure App](/howto8/security/create-a-secure-app/))
 
 ## 3 Preparing the Data Structure, GUI & Modules
 
@@ -32,7 +32,7 @@ Before you can start importing data into your application, you first need to set
 
 	Create an enumeration for the **OrderStatus** attribute with the values of **Open**, **Processing**, and **Complete**.
   
-	Configure the **XLSFile** object to inherit from the **FileDocument** object (for more information, see [How to Work with Images & Files](/howto8/data-models/working-with-images-and-files)).
+	Configure the **XLSFile** object to inherit from the **FileDocument** object (for more information, see [How to Work with Images & Files](/howto8/data-models/working-with-images-and-files/)).
 2. Create **Overview** and **Detail** pages to manage objects of the **Customer** and **Order** types.
 3.  Create menu items to access the **Order** and the **Customer** overview pages.
 4.  Download the **Excel Importer** and **Mx Model Reflection** modules from the Mendix Marketplace (available by clicking the shopping-cart icon in the upper-right side of Studio Pro).
@@ -60,7 +60,7 @@ Because an enumeration is used for the **OrderStatus** attribute, you need to cr
 
 ## 5 Using Application Model Metadata in the Client
 
-In order to set up import templates for importing data, your application model metadata should be reflected in the client. This can be achieved by using the [Mx Model Reflection](/appstore/modules/model-reflection) module. In this section, you will learn how to do this by following these steps:
+In order to set up import templates for importing data, your application model metadata should be reflected in the client. This can be achieved by using the [Mx Model Reflection](/appstore/modules/model-reflection/) module. In this section, you will learn how to do this by following these steps:
 
 1.  Click **Run Locally** to start your application.
 2.  Click **View** to open your application in the browser.
@@ -78,8 +78,7 @@ Before you can import data from an Excel File into your application, you have to
 
 In this section, you will import data from a simple Excel file example, which can be downloaded here:
 
-[![](/attachments/howto8/integration/importing-excel-documents/18581938.png)](attachments/18448735/18581949.xlsx)
-](/attachments/howto8/integration/importing-excel-documents/18581938.png)](attachments/18448735/18581949.xlsx)
+
 
 Based on the structure of the file you want to import, you need to manually set up your template by following these steps:
 
@@ -100,12 +99,12 @@ Based on the structure of the file you want to import, you need to manually set 
 
 	![](/attachments/howto8/integration/importing-excel-documents/18581965.png)
 
-	{{% alert type="info" %}}For this example you will be using a simple Excel file that has just one sheet and column headers on the first row. If a more comprehensive Excel file is used, you can change these values via the **Sheet nr**, **Header row nr**, and **Import from row nr** fields.{{% /alert %}}
+	{{% alert color="info" %}}For this example you will be using a simple Excel file that has just one sheet and column headers on the first row. If a more comprehensive Excel file is used, you can change these values via the **Sheet nr**, **Header row nr**, and **Import from row nr** fields.{{% /alert %}}
 
 9.  In the **Connect columns to attributes** section, click **New** to create a mapping from the Excel sheet column to the proper Mendix attribute.
 10. Add the column number that corresponds to the column number from the Excel file you want to map.
 
-	{{% alert type="info" %}}The number of the first column in Excel is 0, the second is 1, etc.{{% /alert %}}
+	{{% alert color="info" %}}The number of the first column in Excel is 0, the second is 1, etc.{{% /alert %}}
 
 11. Define the Excel column header as the **Caption** value.
 12. Select **Attribute** for the **Type**.
@@ -123,7 +122,7 @@ Based on the structure of the file you want to import, you need to manually set 
 
 	![](/attachments/howto8/integration/importing-excel-documents/18581961.png)
 	
-	{{% alert type="info" %}}If the mapping is set up right, a green check appears in front of the row.{{% /alert %}}
+	{{% alert color="info" %}}If the mapping is set up right, a green check appears in front of the row.{{% /alert %}}
 
 16. You now need to create mappings for the **Order** object attributes. However, because the **Order** object is associated to the **Customer** object, the mapping setup will be slightly different. Follow these steps for each attribute of the **Order** object:<br/>
 	a. Add the column number that corresponds to the column number from the Excel file you want to map.<br/>
@@ -169,8 +168,7 @@ Follow these steps to import the Excel file:
 
 In the previous steps, you manually added all the columns to your import template. In this section, you will create the same Excel template in an automated way, which you can do this via the specific **New template by excelfile** button. You can use this same Excel file example:
 
-[![](/attachments/howto8/integration/importing-excel-documents/18581938.png)](attachments/18448735/18581949.xlsx)
-](/attachments/howto8/integration/importing-excel-documents/18581938.png)](attachments/18448735/18581949.xlsx)
+
 
 Follow these steps to create the import template via the Excel file:
 
@@ -200,7 +198,7 @@ Follow these steps to create the import template via the Excel file:
 
 11.  Complete the template as you did in the [Creating the Import Template](#creating) section above.
 
-	{{% alert type="info" %}}Remember that you have to set a key attribute for the **Customer** object as well as the **Order** object.{{% /alert %}}
+	{{% alert color="info" %}}Remember that you have to set a key attribute for the **Customer** object as well as the **Order** object.{{% /alert %}}
 
 ## 8 Exporting & Importing a Template
 
@@ -219,10 +217,10 @@ Follow these steps to export and import your template:
 
 You have now imported a complete import template.
 
-{{% alert type="info" %}}You will have a duplicate import template in your app, but in a working scenario, you would import this template in a different environment/database where the template had not already been created.{{% /alert %}}
+{{% alert color="info" %}}You will have a duplicate import template in your app, but in a working scenario, you would import this template in a different environment/database where the template had not already been created.{{% /alert %}}
 
 ## 9 Read More
 
-* [Export XML Documents](export-xml-documents)
-* [Import XML Documents](importing-xml-documents)
-* [Expose a Web Service](expose-a-web-service)
+* [Export XML Documents](/howto8/integration/export-xml-documents/)
+* [Import XML Documents](/howto8/integration/importing-xml-documents/)
+* [Expose a Web Service](/howto8/integration/expose-a-web-service/)

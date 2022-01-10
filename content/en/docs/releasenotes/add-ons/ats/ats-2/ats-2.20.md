@@ -31,7 +31,7 @@ The main goal of ATS is to test your Mendix application. Therefore, with this re
 
 #### Fetch Environment Information from the Developer Portal
 
-ATS now fetches information such as the name and URL of existing app environments for an app from the [Developer Portal](/developerportal/).
+ATS now fetches information such as the name and URL of existing app environments for an app from the .
 
 To distinguish these environments from ones that are manually managed, the name is suffixed with `(Sprintr)` and an additional flag is added.
 
@@ -62,4 +62,4 @@ To make this process even faster and skip one click, we added the option to run 
 
 ### Other Changes
 
-* We upgraded to the latest [Mendix SSO](/appstore/modules/mendix-sso) version, which includes some security patches.
+* We upgraded to the latest [Mendix SSO](/appstore/modules/mendix-sso/) version, which includes some security patches.

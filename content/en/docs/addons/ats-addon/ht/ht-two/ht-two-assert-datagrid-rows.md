@@ -10,7 +10,7 @@ tags: ["ATS", "testing"]
 
 Asserting a row of a data grid is very useful in automated testing, as you should check an added, edited or deleted row in your test case. 
 
-In ATS you can assert rows in a data grid With the [Find/Assert DataGrid Row](rg-one-findassert-datagrid-row) action. As the action has many input parameters this how to explains how-to use the action. 
+In ATS you can assert rows in a data grid With the [Find/Assert DataGrid Row](/addons/ats-addon/rg-one-findassert-datagrid-row/) action. As the action has many input parameters this how to explains how-to use the action. 
 
 **This how-to will teach you how to do the following**
 
@@ -20,7 +20,7 @@ In ATS you can assert rows in a data grid With the [Find/Assert DataGrid Row](rg
 
 Before starting this how-to, make sure you have completed the following prerequisite:
 
-* Read [How to Create a Test Case](ht-two-create-a-test-case)
+* Read [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 
 ## 3 Asserting Data Grid Columns
 
@@ -88,4 +88,4 @@ When asserting for the absence of that row after deleting it, you can use the sa
 
 ## 4 Next Up
 
-You now learned how to assert datagrid rows with ATS. The next how-to is [How to Increase Recorder and Helper Coverage](ht-two-increase-recorder-helper-coverage). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+You now learned how to assert datagrid rows with ATS. The next how-to is [How to Increase Recorder and Helper Coverage](/addons/ats-addon/ht-two-increase-recorder-helper-coverage/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

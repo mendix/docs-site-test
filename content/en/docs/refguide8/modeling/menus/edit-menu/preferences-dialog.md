@@ -1,13 +1,13 @@
 ---
 title: "Preferences"
-url: /refguide8/preferences-dialog
+url: /refguide8/preferences-dialog/
 parent: "edit-menu"
-menu_order: 50
+weight: 50
 tags: ["studio pro", "preferences", "settings", "edit menu"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/preferences-dialog.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/preferences-dialog.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -26,7 +26,7 @@ When enabled, **Project Explorer** automatically highlights the document that is
 
 #### 2.2.1 Enable MxAssist Logic Bot
 
-If **Enable MxAssist Logic Bot** is checked, then [Mx Assist Logic Bot](mx-assist-studio-pro) is activated and can offer suggestions for activities in your microflows.
+If **Enable MxAssist Logic Bot** is checked, then [Mx Assist Logic Bot](/refguide8/mx-assist-studio-pro/) is activated and can offer suggestions for activities in your microflows.
 
 #### 2.2.2 Show Suggestions for System Variables
 
@@ -66,7 +66,7 @@ This setting defines the default response to the question whether to automatical
 
 #### 4.1.1 Executable
 
-This is the path and name of the program that is used to view the details of file changes in the [Commit dialog box](commit-dialog).
+This is the path and name of the program that is used to view the details of file changes in the [Commit dialog box](/refguide8/commit-dialog/).
 
 #### 4.1.2 Argument Pattern
 
@@ -79,7 +79,7 @@ This is the pattern from which the arguments are derived that are passed to the 
 
 #### 4.2.1 Enable Private Version Control {#enable}
 
-Select this option when you want to work on an app that is not stored in [Mendix Team Server](/developerportal/collaborate/team-server), but in another Subversion server to which you have access. This will allow you to specify the location of the app on the Subversion server when opening, downloading, or uploading the app.
+Select this option when you want to work on an app that is not stored in [Mendix Team Server](/developerportal/collaborate/team-server/), but in another Subversion server to which you have access. This will allow you to specify the location of the app on the Subversion server when opening, downloading, or uploading the app.
 
 ## 5 Advanced Tab
 
@@ -91,35 +91,35 @@ Sometimes the computer running Studio Pro cannot access the internet directly, b
 
 The **New features** tab allows you to turn new features on and off. These are features which are being worked on but are either not yet developed sufficiently to remove the previous version, or which are currently optional.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 You need to restart Studio Pro for changes to these settings to take effect.
 {{% /alert %}}
 
 ### 6.1 New Version of the Changes Pane {#new-changes}
 
-With this option, you can enable the new version of the [Changes](changes-pane) pane. Should you find any issues in the new version, you can switch back to the old version by clearing this check box.
+With this option, you can enable the new version of the [Changes](/refguide8/changes-pane/) pane. Should you find any issues in the new version, you can switch back to the old version by clearing this check box.
 
 Default: *enabled*
 
 ### 6.2 New Version of the Connector {#new-connector}
 
-With this option, you can enable the new version of the [Connector](view-menu#connector). Should you find any issues in the new version, you can switch back to the old version by clearing this check box.
+With this option, you can enable the new version of the [Connector](/refguide8/view-menu/#connector). Should you find any issues in the new version, you can switch back to the old version by clearing this check box.
 
 Default: *disabled*
 
 ### 6.3 New Version of the Project Explorer {#new-project-explorer}
 
-With this option, you can enable the new version of the [Project Explorer](project-explorer). Should you find any issues in the new version, you can switch back to the old version by clearing this check box.
+With this option, you can enable the new version of the [Project Explorer](/refguide8/project-explorer/). Should you find any issues in the new version, you can switch back to the old version by clearing this check box.
 
 Default: *enabled*
 
 ### 6.4 New Version of the Toolbox {#new-toolbox}
 
-With this option, you can enable the new version of the [Toolbox](/refguide8/view-menu#toolbox). Should you find any issues in the new version, you can switch back to the old version by clearing this check box.
+With this option, you can enable the new version of the [Toolbox](/refguide8/view-menu/#toolbox). Should you find any issues in the new version, you can switch back to the old version by clearing this check box.
 
 Default: *enabled*
 
 ## 7 Read More
 
-* [Upload to Version Control Server](upload-to-version-control-dialog)
-* [How to Work with an On-Premises Version Control Server](/howto8/collaboration-requirements-management/on-premises-svn-howto)
+* [Upload to Version Control Server](/refguide8/upload-to-version-control-dialog/)
+* [How to Work with an On-Premises Version Control Server](/howto8/collaboration-requirements-management/on-premises-svn-howto/)

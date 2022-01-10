@@ -1,6 +1,6 @@
 ---
 title: "Consistency Errors"
-url: /refguide7/consistency-errors
+url: /refguide7/consistency-errors/
 category: "Desktop Modeler"
 description: "Describes consistency errors in the Mendix Desktop Modeler and the way to fix them."
 tags: ["desktop modeler", "consistency errors", "checks", "errors"]
@@ -23,8 +23,8 @@ Errors need to be solved before your app can be published. A consistency error c
 
 ##  2 Read More
 
-* [Page Editor Consistency Errors](consistency-errors-pages)
-* [Navigation Consistency Errors](consistency-errors-navigation)
-* [Pages](pages)
-* [Microflows](microflows) 
-* [Navigation in Mendix 7.4 & Above](navigation)
+* [Page Editor Consistency Errors](/refguide7/consistency-errors-pages/)
+* [Navigation Consistency Errors](/refguide7/consistency-errors-navigation/)
+* [Pages](/refguide7/pages/)
+* [Microflows](/refguide7/microflows/) 
+* [Navigation in Mendix 7.4 & Above](/refguide7/navigation/)

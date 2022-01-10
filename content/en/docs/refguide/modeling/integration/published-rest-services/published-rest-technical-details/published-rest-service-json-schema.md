@@ -9,9 +9,9 @@ tags: ["published REST", "JSON", "Schema", "operation", "request body", "result"
 
 ## 1 Introduction
 
-When you [publish a rest service](published-rest-services), an [OpenApi (Swagger) documentation page](published-rest-services#interactive-documentation) is generated for it. It includes a description of the structure of the messages that the service can receive and return. This structure is described using JSON Schema.
+When you [publish a rest service](/refguide/published-rest-services/), an [OpenApi (Swagger) documentation page](/refguide/published-rest-services/#interactive-documentation) is generated for it. It includes a description of the structure of the messages that the service can receive and return. This structure is described using JSON Schema.
 
-Operations that have an import or export mapping defined on it will generate such a schema, but only for mappings that are based on [message definitions](message-definitions).
+Operations that have an import or export mapping defined on it will generate such a schema, but only for mappings that are based on [message definitions](/refguide/message-definitions/).
 
 The JSON schema is generated based on the rules documented here.
 

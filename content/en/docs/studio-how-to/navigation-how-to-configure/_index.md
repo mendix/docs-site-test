@@ -44,9 +44,9 @@ You have several pages that you would like to add to the navigation:
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio/page-editor). 
-* Familiarize yourself with navigation document terms. For more information, see [Navigation Document](/studio/navigation). 
-* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio/domain-models).
+* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio/page-editor/). 
+* Familiarize yourself with navigation document terms. For more information, see [Navigation Document](/studio/navigation/). 
+* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio/domain-models/).
 
 ## 3 Creating Menu Items and Sub-Items
 
@@ -112,7 +112,7 @@ Good job! You have added a menu item for the **New Employee** page to your navig
 
 ![New Menu Item Created](/attachments/studio-how-to/navigation-how-to-configure/new-menu-item-created.png)
 
-Click **Preview** in the top-right corner to [preview your app](/studio/publishing-app) and test how the navigation menu looks like:
+Click **Preview** in the top-right corner to [preview your app](/studio/publishing-app/) and test how the navigation menu looks like:
 ![Previewed Menu Items](/attachments/studio-how-to/navigation-how-to-configure/previewed-menu-items.png)
 
 ### 3.3 Create a Menu Item for the Employee_Details Page and Configuring Its Sub-Items
@@ -157,7 +157,7 @@ Congratulations! You created and configured navigation for your app:
 
 ![Configured Navigation](/attachments/studio-how-to/navigation-how-to-configure/configured-navigation.png)
 
-[Preview your app](/studio/publishing-app) to see how the navigation menu is displayed:
+[Preview your app](/studio/publishing-app/) to see how the navigation menu is displayed:
 
 ![Previewed Navigation](/attachments/studio-how-to/navigation-how-to-configure/navigation-previewed.png)
 

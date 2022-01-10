@@ -11,6 +11,6 @@ How-to's in this section will help you begin using the power of native apps.
 
 The following how-to’s are available here:
 
-* [Get Started with Native Mobile](getting-started-with-native-mobile)
-* [Troubleshoot Common Native Mobile Issues](common-issues)
-* [Implement Best Practices for Native Mobile App UI](ui-best-practices)
+* [Get Started with Native Mobile](/howto/mobile/getting-started-with-native-mobile/)
+* [Troubleshoot Common Native Mobile Issues](/howto/mobile/common-issues/)
+* [Implement Best Practices for Native Mobile App UI](/howto/mobile/ui-best-practices/)

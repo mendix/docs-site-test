@@ -24,8 +24,8 @@ You would like to customize your app design: upload company's logo, change color
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with the Theme Customizer. For more information, see [Theme Customizer](/studio/theme-customizer). 
-* Familiarize yourself with page terms. For more information, see [Pages](/studio/page-editor). 
+* Familiarize yourself with the Theme Customizer. For more information, see [Theme Customizer](/studio/theme-customizer/). 
+* Familiarize yourself with page terms. For more information, see [Pages](/studio/page-editor/). 
 
 ## 3 Uploading Your Company Logo 
 
@@ -140,4 +140,4 @@ The **Typography** section of the **Theme Customizer** allows you to manage text
 
 6. Click **Save** in the top-right corner to implement your changes.
 
-Congratulations! You have customized the style of your app. You can now [preview your app](/studio/publishing-app) to test now the changes look like.  
+Congratulations! You have customized the style of your app. You can now [preview your app](/studio/publishing-app/) to test now the changes look like.  

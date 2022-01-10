@@ -132,11 +132,11 @@ Make sure that the user account used to run the service has enough rights to the
 
 ## 5 Read More
 
-*   [Finding the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-*   [Clearing Warning Messages in Mendix](/howto/monitoring-troubleshooting/clear-warning-messages)
-*   [Testing web services using SoapUI](/howto/testing/testing-web-services-using-soapui)
-*   [Monitoring Mendix using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx)
-*   [Debugging Java actions remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely)
-*   [Log Levels](/howto/monitoring-troubleshooting/log-levels)
-*   [Debugging Java Actions](/howto/monitoring-troubleshooting/debug-java-actions)
-*   [Debugging Microflows and Nanoflows](/howto/monitoring-troubleshooting/debug-microflows-and-nanoflows)
+*   [Finding the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+*   [Clearing Warning Messages in Mendix](/howto/monitoring-troubleshooting/clear-warning-messages/)
+*   [Testing web services using SoapUI](/howto/testing/testing-web-services-using-soapui/)
+*   [Monitoring Mendix using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+*   [Debugging Java actions remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely/)
+*   [Log Levels](/howto/monitoring-troubleshooting/log-levels/)
+*   [Debugging Java Actions](/howto/monitoring-troubleshooting/debug-java-actions/)
+*   [Debugging Microflows and Nanoflows](/howto/monitoring-troubleshooting/debug-microflows-and-nanoflows/)

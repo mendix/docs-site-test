@@ -23,7 +23,7 @@ In addition, the Connector supports multiline log messages.
 
 ## 2 Getting the SAP Logging Connector
 
-To use the [SAP Logging](https://marketplace.mendix.com/link/component/110219/) connector, you need to import it into your app from the Marketplace. For more information on importing modules from the Marketplace, see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content).
+To use the [SAP Logging](https:/marketplace.mendix.com/link/component/110219/) connector, you need to import it into your app from the Marketplace. For more information on importing modules from the Marketplace, see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/).
 
 ## 3 Using the Connector
 
@@ -38,8 +38,9 @@ To initialize the connector, do the following:
     ![Runtime show After startup microflow](/attachments/partners/sap/sap-logger/logger_project_runtime_show_startup.png)
 
     {{% alert color="info" %}}If there's no existing microflow (as indicated by the text `(none)`, instead of a microflow name), click **Select…** and create a new microflow by clicking **New**:<br/>   
-    ![Runtime no After Startup](/attachments/partners/sap/sap-logger/logger_project_runtime_nostartup.png){{% /alert %}}
-    
+    ![Runtime no After Startup](/attachments/partners/sap/sap-logger/logger_project_runtime_nostartup.png)
+    {{% /alert %}}
+
 4. In the **App Explorer**, drag and drop the **RegisterSubscriber** action from the **SapApplicationLogs** > **USE_ME** folder at the end of the *After startup* microflow:
 
     ![Drag logging subscriber into After startup microflow](/attachments/partners/sap/sap-logger/logger_drag_component.png)

@@ -1,14 +1,14 @@
 ---
 title: "Changes Pane"
-url: /refguide8/changes-pane
+url: /refguide8/changes-pane/
 parent: view-menu
-menu_order: 10
+weight: 10
 description: "Describes the Changes pane in Mendix Studio Pro."
 tags: ["Studio Pro", "changes", "changes pane"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/changes-pane.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/changes-pane.pdf).
 {{% /alert %}}
 
 ## 1 Introduction 
@@ -32,9 +32,9 @@ Buttons allow you to perform the following actions:
 * **Back** – goes back up one level; at the top level, this button is disabled
 * **Go to** – opens a zoomed-in level and opens up the selected document 
 * **Tasks** – allows you to perform specific actions such as reverting the change to the latest commit, or solving conflicts
-* **Update** – retrieves latest changes from the repository (for more information on the update concept, see the [Update](version-control#update) section in *Version Control*) 
-* **Commit** – commits your changes to the repository and starts a new revision (for more information on the commit concept, see the [Commit](version-control#commit) section in *Version Control*)
-* **History** – opens the **History** dialog box that shows the changes made on the current development line of the project (for more information on history, see [History](history-dialog))
+* **Update** – retrieves latest changes from the repository (for more information on the update concept, see the [Update](/refguide8/version-control/#update) section in *Version Control*) 
+* **Commit** – commits your changes to the repository and starts a new revision (for more information on the commit concept, see the [Commit](/refguide8/version-control/#commit) section in *Version Control*)
+* **History** – opens the **History** dialog box that shows the changes made on the current development line of the project (for more information on history, see [History](/refguide8/history-dialog/))
 
 The **Back** and **Go to** buttons are common throughout all the levels, while other buttons will only apply to a specific one.
 
@@ -105,10 +105,10 @@ The toolbar at this level contains the following buttons:
 * **Go to** – takes you directly to the selected element 
 * **Show purely visual changes** – shows visual changes, such as dragging an entity to a new location in the domain model
 * **Show Conflicts** – it shows details of a conflict. It will be selected by default when first zooming into this level.
-* **Show Changes in mine** – it shows changes to a document on a current development line (for more information on how to solve conflicts, see the [Dealing With Conflicts](using-version-control-in-studio-pro#conflicts) section in *Using Version Control in Studio Pro*)
-* **Show Changes in theirs** – it shows incoming changes to a document from another development line (for more information on how to solve conflicts, see the [Dealing With Conflicts](using-version-control-in-studio-pro#conflicts) section in *Using Version Control in Studio Pro*)
+* **Show Changes in mine** – it shows changes to a document on a current development line (for more information on how to solve conflicts, see the [Dealing With Conflicts](/refguide8/using-version-control-in-studio-pro/#conflicts) section in *Using Version Control in Studio Pro*)
+* **Show Changes in theirs** – it shows incoming changes to a document from another development line (for more information on how to solve conflicts, see the [Dealing With Conflicts](/refguide8/using-version-control-in-studio-pro/#conflicts) section in *Using Version Control in Studio Pro*)
 
-	{{% alert type="info" %}}**Show Conflicts**, **Show Changes in mine**, and **Show Changes in theirs** described above are toggles, and each selection de-selects the other two.
+	{{% alert color="info" %}}**Show Conflicts**, **Show Changes in mine**, and **Show Changes in theirs** described above are toggles, and each selection de-selects the other two.
 	{{% /alert %}}
 
 The columns on the left side of the grid will vary based on what toggle button is pressed on the toolbar.
@@ -153,5 +153,5 @@ If the selected item on the left side is a conflict that resulted in one side ch
 
 ##  5 Read More
 
-* [Studio Pro Overview](studio-pro-overview)
-* [Version Control](version-control) 
+* [Studio Pro Overview](/refguide8/studio-pro-overview/)
+* [Version Control](/refguide8/version-control/) 

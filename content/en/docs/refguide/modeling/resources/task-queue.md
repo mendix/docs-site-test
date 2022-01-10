@@ -13,7 +13,7 @@ Using a **Task Queue** allows you to run microflows or Java actions asynchronous
 
 ### 1.1 Replacing the Process Queue module
 
-This way of executing tasks in the background supersedes the earlier [Process Queue](/appstore/modules/process-queue) Marketplace module.
+This way of executing tasks in the background supersedes the earlier [Process Queue](/appstore/modules/process-queue/) Marketplace module.
 
 See the section [Replacing Process Queue](#process-queue), below, for more information on the differences between the two mechanisms.
 
@@ -29,7 +29,7 @@ Scheduling a microflow or Java action to be executed returns immediately. The ta
 
 Because the task is executed in the background, there is no return value. You can only find out if the task ran successfully. For information on how to do that, see [Interfacing the Queue](#interfacing-queue), below.
 
-#### 2.1.2 Where do the Tasks Run?
+#### 2.1.2 Where Do the Tasks Run?
 
 In a single node scenario, the tasks in a task queue will simply be executed on the single node.
 
@@ -45,7 +45,7 @@ For microflows and Java actions which are running in a task queue, the condition
 * The task is not executed immediately. The task is added only to a task queue when (and if) the transaction from which it has been scheduled ends successfully. At that point any cluster node may pick it up.
 * If the execution fails with an exception, the failure is logged in the `System.ProcessedQueueTask` table.
 
-### 2.2 Creating Task Queues{#create-queue}
+### 2.2 Creating Task Queues {#create-queue}
 
 Background execution is done in so called **Task Queues**. They can be created in Studio Pro as follows:
 
@@ -55,19 +55,29 @@ Background execution is done in so called **Task Queues**. They can be created i
 
 3. Click **Task Queue**.
 
-4. Enter the value for **Threads** for each cluster node (maximum 40).
+4. Enter the value for **Threads** for each cluster node.
 
-    Task Queues have a number threads. Each of these threads can process one task at a time. That is, a queue will pick up as many concurrent tasks as it has threads. Whenever a task is finished, the next one will be picked up.
+Task Queues have a number threads. Each of these threads can process one task at a time. That is, a queue will pick up as many concurrent tasks as it has threads. Whenever a task is finished, the next one will be picked up.
     
-    In general, one or two threads should be enough, unless there is a large number of tasks or tasks take a long time and need to execute in parallel. Having many threads will put additional load on the database and should not be done if not needed.
-    
-    The total number of worker threads is limited to 40 (per cluster node). There is no hard limit on cluster nodes.
+#### 2.2.1 Thread Count Recommendation 
 
+{{% alert color="info" %}}
+In versions of Mendix below 9.9.0, there is a limit of 40 threads per cluster node.
+{{% /alert %}}
+
+In general, one or two threads should be enough, unless there is a large number of tasks or tasks take a long time and need to execute in parallel. Having many threads will put additional load on the database and should not be done if not needed. Remember that, in a horizontally-scaled app, this is the number of threads for each *node*, not the total number of threads.
+
+When choosing the number of threads for a task queue, use the following guidelines:
+* If there are only a few tasks use a single thread.
+* If the tasks perform only calculations and perform no blocking calls, use no more threads than the available number of cores.
+* Only use more threads than the available number of cores if there are a lot of tasks and they perform blocking calls.
+* Keep in mind that using more threads than the number of cores will require additional scheduling and will not necessarily improve the queued task throughput.
+    
 ### 2.3 Queueing Microflow Executions
 
 #### 2.3.1 In Studio Pro
 
-In Studio Pro, a [Call Microflow](microflow-call) activity can start a microflow in a Task Queue.
+In Studio Pro, a [Call Microflow](/refguide/microflow-call/) activity can start a microflow in a Task Queue.
 
 1. Edit the **Call Microflow** activity.
 2. Check the box **Execute this Microflow in a Task Queue**.
@@ -90,7 +100,7 @@ The method `executeInBackground` takes two parameters: a context and a queue nam
 
 #### 2.4.1 In Studio Pro
 
-In Studio Pro, a [Call Java action](microflow-call) activity can start a Java action in a Task Queue.
+In Studio Pro, a [Call Java action](/refguide/microflow-call/) activity can start a Java action in a Task Queue.
 
 1. Edit the **Call Java Action** activity.
 2. Check the box **Execute this Java action in a Task Queue**.
@@ -108,19 +118,40 @@ Core.userActionCall("AModule.SomeJavaAction")
 
 The method `executeInBackground` takes two parameters: a context and a queue name. The context is only used for creating the task; executing the task will be done with a [new, but equivalent context](#context). See the [API documentation](https://apidocs.rnd.mendix.com/9/runtime/com/mendix/core/Core.html#userActionCall(java.lang.String)) for more information.
 
-### 2.5 Configuration options{#configuration}
+#### 2.4.3 Retry on Failure {#retry}
 
-The period for a graceful shutdown of queues can be configured as a [custom runtime](custom-settings) setting in Studio Pro. 
+In Mendix version 9.9.0 and above, it is possible to automatically retry a task when it fails. The following options are available:
 
-| Configuration option          | Example value | Explanation                                              |
-|-------------------------------|---------------|----------------------------------------------------------|
-| `TaskQueue.ShutdownGracePeriod` |          10000| Time in ms to wait for task to finish when shutting down.|
+1. Retry with a fixed delay – specify the maximum number of attempts and the wait time between each attempt.
+2. Retry with an exponentially increasing delay – specify the maximum number of attempts and the wait time before the first retry. The wait time will double after each failed retry up to a maximum. You can specify this maximum, if you don't specify a maximum the default is 1 day.
+
+Each attempt will produce its own `System.ProcessedQueueTask` entry. These entries will all have the same sequence number because they refer to the same task.
+
+The retry mechanism can be activated through the API, for instance:
+
+```java
+Core.microflowCall("AModule.SomeMicroflow")
+  .withRetry(10, Duration.ofSeconds(3))
+  .executeInBackground(context, "AModule.SomeQueueName");
+Core.userActionCall("AModule.SomeJavaAction")
+  .withExponentialRetry(8, Duration.ofSeconds(3), Duration.ofMinutes(1))
+  .executeInBackground(context, "AModule.SomeQueueName");
+```
+
+### 2.5 Configuration Options {#configuration}
+
+The period for a graceful shutdown of queues can be configured as a [custom runtime](/refguide/custom-settings/) setting in Studio Pro. 
+
+| Configuration option                       | Example value | Explanation                                                                             |
+|--------------------------------------------|---------------|-----------------------------------------------------------------------------------------|
+| `TaskQueue.ShutdownGracePeriod`            |          10000| Time in ms to wait for task to finish when shutting down.                               |
+| `com.mendix.core.ProcessedTasksCleanupAge` |       86400000| Time in ms after which `ProcessedQueueTask` are deleted automatically (no tasks are automatically deleted if this setting is not specified). <b/>*This setting was introduced in Mendix version 9.9.0* |   
 
 {{% alert color="info" %}}
 This grace period is applied twice during the [shutdown](#shutdown) (described below) so the maximum time that the runtime will wait for tasks to end is twice this value.
 {{% /alert %}}
 
-### 2.6 Interfacing the Queue{#interfacing-queue}
+### 2.6 Interfacing the Queue {#interfacing-queue}
 
 Besides scheduling and executing tasks, the Mendix platform keeps track of tasks that have been executed in the background: for example, which completed and which failed.
 
@@ -132,11 +163,12 @@ Tasks that have been processed, that is have completed or failed, are saved as o
 2. Verify that tasks have run successfully, or
 3. Debug the application in case of errors.
 
-`System.ProcessedQueueTasks` objects are never deleted. The user is free to delete them when desired.
+`System.ProcessedQueueTasks` objects are by default never deleted. The user is free to delete them when desired.
+If you are using Mendix version 9.9.0 or above, you can use the `com.mendix.core.ProcessedTasksCleanupAge` runtime setting if automatic cleanup is desired.
 
-### 2.7 Execution Context{#context}
+### 2.7 Execution Context {#context}
 
-Prior to Mendix 9.6 tasks were always executed in a *sudo* context, even if the scheduling microflow had **Apply entity access** set to *true* (see [Microflow Properties](microflow) for more information). As of Mendix 9.6 this behavior has been deprecated and tasks now run in an equivalent context to the one in which they were scheduled. This has the following effect:
+Prior to Mendix 9.6 tasks were always executed in a *sudo* context, even if the scheduling microflow had **Apply entity access** set to *true* (see [Microflow Properties](/refguide/microflow/) for more information). As of Mendix 9.6 this behavior has been deprecated and tasks now run in an equivalent context to the one in which they were scheduled. This has the following effect:
 
 * When a user is logged in, the task will be executed in a new context for the same named user. This context will be the same as if the user is logged in.
 * When no user is logged in, the task will be executed in a new anonymous context. This context will be for a new anonymous user with the same language and timezone as the original user.
@@ -149,7 +181,7 @@ You can remove this warning in the **Runtime** tab of the app **Settings** in St
 You will be asked to confirm this change as, after choosing *no*, you cannot switch back to *yes* because executing tasks in system contexts (unless scheduled from a system session) is deprecated.
 {{% /alert %}}
 
-### 2.8 Task status
+### 2.8 Task Status
 
 The **Status** attribute of `System.QueuedTask` and `System.ProcessedQueueTask` reflects the state that a background task is in. The values are:
 
@@ -160,7 +192,7 @@ The **Status** attribute of `System.QueuedTask` and `System.ProcessedQueueTask` 
 * `Aborted`: The task is no longer executing, because the cluster node that was executing it went down. A `System.ProcessedQueueTask` is added to reflect this. The task will be retried on another cluster node.
 * `Incompatible`: The task never executed, because the model changed in such a way that it cannot be executed anymore. This could be because the microflow was removed/renamed, the arguments were changed or the Task Queue was removed.
 
-### 2.9 Model changes
+### 2.9 Model Changes
 
 During the startup of the Mendix runtime, there is a check to ensure that scheduled tasks in the database fit the current model. The following conditions are checked:
 
@@ -168,9 +200,9 @@ During the startup of the Mendix runtime, there is a check to ensure that schedu
 * that the parameters match
 * that the queue exists 
 
-If any of these condition checks fail, tasks are moved to `System.ProcessedQueueTasks` with **Status** `Incompatible`. The Runtime will only start after all scheduled tasks have been checked. This should in general not take very long, even if there are thousands of tasks.
+If any of these condition checks fail, tasks are moved to `System.ProcessedQueueTask` with **Status** `Incompatible`. The Runtime will only start after all scheduled tasks have been checked. This should in general not take very long, even if there are thousands of tasks.
 
-### 2.10 Shutdown{#shutdown}
+### 2.10 Shutdown {#shutdown}
 
 During shutdown, the `TaskQueueExecutors` will stop accepting new tasks. Running tasks are allowed a [grace period](#configuration) to finish. After this period, the runtime will send an interrupt to all task threads that are still running and again allow a grace period for them to finish. After the second grace period the runtime just continues shutting down, eventually aborting the execution of the tasks. The aborted tasks will be reset, so that they are re-executed later or on another cluster node. In development mode, the first grace period is shortened to 1 second.
 
@@ -178,11 +210,25 @@ During shutdown, the `TaskQueueExecutors` will stop accepting new tasks. Running
 Interrupting task threads may cause them to fail. These tasks will be marked as `Aborted` and retried at a later time.
 {{% /alert %}}
 
+### 2.11 Cleaning up old processed tasks {#cleanup}
+
+The execution of a task produces a `System.ProcessedQueueTask` row in the database. Over time these accumulate and the table can grow large.
+
+In Mendix versions 9.9.0 and above, the `System.ProcessedQueueTask` can be cleaned up automatically by specifying the `com.mendix.core.ProcessedTaskCleanupAge` runtime setting. This setting specifies (in milliseconds) how old rows in the table have to be before they are automatically cleaned up. Only rows with the "Completed" status are cleaned up.
+
+When this setting is not specified, no cleanup is performed.
+
+{{% alert color="info" %}}
+When turning on the automatic cleanup after having used tasks for a long time, there might be many rows to clean up, which will be initiated when the runtime starts. This may cause additional load on the database, but will nog block the startup. It is recommended not to do this during a busy period.
+{{% /alert %}}
+
+In versions of Mendix below 9.9.0, you can clean up old tasks by creating a microflow for administrators to use if the table gets too large.
+
 ## 3 Monitoring
 
 ### 3.1 Logging
 
-A [Log Node](logging#mendix-nodes) named `Queue` exists specifically for all actions related to Task Queues.
+A [Log Node](/refguide/logging/#mendix-nodes) named `Queue` exists specifically for all actions related to Task Queues.
 
 ## 4 Other
 
@@ -206,10 +252,10 @@ Task queues have the following limitations:
 * Microflows or Java actions that are executed in the background execute as soon as possible in the order they were created, but possibly in parallel. They are consumed in FIFO order, but then executed in parallel in case of multiple threads. There is no way to execute only a single microflow or Java action at any point in time (meaning, ensure tasks are run sequentially), unless the number of threads is set to 1 and there's only a single runtime node.
 * Microflows or Java actions that are executed in the background can *only* use the following types of parameters: Boolean, Integer/Long, Decimal, String, Date and time, Enumeration, committed Persistent Entity.
 * Background microflows or Java actions will start execution as soon as the transaction in which they are created is completed. This ensures that any data that is needed by the background microflow or Java action is committed as well. It is not possible to start a background microflow or Java action immediately, halfway during a transaction. Note that if the transaction is rolled back, the task is not executed at all.
-* The total amount of parallelism per node is limited to 40. This means that at most 40 queues with parallelism 1 can be defined, or a single queue with parallelism 40, or somewhere in between, as long as the total does not exceed 40.
-* Queued actions that have failed can't be rescheduled out-of-the-box currently. You can set up a scheduled microflow to re-attempt failed tasks. They can be queried from `System.ProcessedQueueTask` table.
+* In versions of Mendix below 9.9.0, the total amount of parallelism per node is limited to 40. This means that at most 40 queues with parallelism 1 can be defined, or a single queue with parallelism 40, or somewhere in between, as long as the total does not exceed 40.
+* Queued actions that have failed can't be rescheduled out-of-the-box in Mendix versions below 9.9.0. You can set up a scheduled microflow to re-attempt failed tasks. They can be queried from `System.ProcessedQueueTask` table.
 
-### 4.3 High level implementation overview
+### 4.3 High-Level Implementation Overview
 
 Tasks are stored in the database in a `System.QueuedTask` table. For each background task a new object is inserted with a `Sequence` number, `Status = Idle`, `QueueName`, `QueueId`, `MicroflowName` or `UserActionName`, `Arguments`, `ContextType`, `ContextData`, and `System.owner` of the task. This happens as part of the transaction which calls the microflow or Java action and places it in the task queue, which means that the task will not be visible in the database until that transaction completes successfully.
 
@@ -217,7 +263,7 @@ The tasks are then consumed by executors that perform a `SELECT FOR UPDATE SKIP 
 
 After the task has been executed, it is moved to be an object of the `System.ProcessedQueueTask` entity with `Status` `Completed` or `Failed`. If the task failed with an exception, this is included in the `ErrorMessage` attribute.
 
-Arguments are stored in the `Arguments` attribute as JSON values. Arguments can be any primitive type ([variable](variable-activities))or a committed persistent object, which is included in the `Arguments` field by its Mendix identifier. Upon execution of the task, the corresponding object is retrieved from the database using the Mendix identifier. For this reason the persistent object must be committed before the task executes, because otherwise a runtime exception will occur.
+Arguments are stored in the `Arguments` attribute as JSON values. Arguments can be any primitive type ([variable](/refguide/variable-activities/))or a committed persistent object, which is included in the `Arguments` field by its Mendix identifier. Upon execution of the task, the corresponding object is retrieved from the database using the Mendix identifier. For this reason the persistent object must be committed before the task executes, because otherwise a runtime exception will occur.
 
 When a node crashes, this is eventually detected by another cluster node, because it no longer updates its heartbeat timestamp. At this point the other node will reset all tasks that were running on the crashed node. The reset performs the following actions:
 
@@ -232,9 +278,9 @@ The task will then automatically be consumed again by one of the remaining nodes
 Under normal circumstances, a task is executed exactly once, but in the face of node failures a task may be (partially) executed multiple times. This is the best guarantee that a distributed system can provide.
 {{% /alert %}}
 
-### 4.4 Replacing Process Queue{#process-queue}
+### 4.4 Replacing Process Queue {#process-queue}
 
-The **Task Queue** supersedes the earlier [Process Queue](/appstore/modules/process-queue) Marketplace module, which has been deprecated with the release of Mendix 9. There are several differences between the Process Queue module and the **Task Queue**:
+The **Task Queue** supersedes the earlier [Process Queue](/appstore/modules/process-queue/) Marketplace module, which has been deprecated with the release of Mendix 9. There are several differences between the Process Queue module and the **Task Queue**:
 
 * The **Task Queue** supports a multi-node cluster setup and can therefore be used in a horizontally scaled environment.
 * The **Task Queue** does not require additional entities to be created, since Microflows or Java actions can simply be marked to execute in the background.

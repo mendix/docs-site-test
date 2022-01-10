@@ -21,7 +21,7 @@ Use this setting to select the location where you want to store your app. There 
 
 ### 2.1 New Mendix Team Server
 
-You can create a new app on [Mendix Team Server](/developerportal/collaborate/team-server).
+You can create a new app on [Mendix Team Server](/developerportal/collaborate/team-server/).
 
 * Select **New Mendix Team Server**
 * Enter the name for the new Team Server app and repository in the **App name** field
@@ -41,7 +41,7 @@ You can only upload to an existing repository if the repository is currently emp
 
 ### 2.3 Private Server
 
-This option is only available when support for other servers is enabled in **Edit** > **Preferences** > **Advanced** > [Enable private version control](preferences-dialog#enable)).
+This option is only available when support for other servers is enabled in **Edit** > **Preferences** > **Advanced** > [Enable private version control](/refguide/preferences-dialog/#enable)).
 
 ![Enable private version control in advanced preferences](/attachments/refguide/modeling/menus/version-control-menu/upload-to-version-control-dialog/enable-private-version-control.png)
 
@@ -51,5 +51,5 @@ If you select **Private server**, enter the address of the repository to which y
 
 ## 3 Read More
 
-* [How to Work with an On-Premises SVN Version Control Server](/howto/collaboration-requirements-management/on-premises-svn-howto)
-* [How to Work with an On-Premises Git Version Control Server](/howto/collaboration-requirements-management/on-premises-git-howto)
+* [How to Work with an On-Premises SVN Version Control Server](/howto/collaboration-requirements-management/on-premises-svn-howto/)
+* [How to Work with an On-Premises Git Version Control Server](/howto/collaboration-requirements-management/on-premises-git-howto/)

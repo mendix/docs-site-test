@@ -31,15 +31,15 @@ Tab container properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.3 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 3 Tab Page {#tab-page}
 
@@ -65,6 +65,6 @@ This property is not supported on native mobile pages.
 
 ## 4 Read More
 
-* [Page](page)
-* [Structure](structure-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Structure](/refguide/structure-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

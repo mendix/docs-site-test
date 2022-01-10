@@ -9,7 +9,7 @@ tags: ["studio pro", "workflow", "migration", "beta"]
 
 ## 1 Introduction
 
-[Workflows](workflows) were introduced as a Beta feature in Mendix 9. Since then we have received a great feedback from our community with valuable ideas on how to further improve the functionality, these ideas are implemented in Mendix 9.6. However, due to [changes in the domain model of the System Module](#system-module), you need to manually migrate your apps that have workflows.
+[Workflows](/refguide/workflows/) were introduced as a Beta feature in Mendix 9. Since then we have received a great feedback from our community with valuable ideas on how to further improve the functionality, these ideas are implemented in Mendix 9.6. However, due to [changes in the domain model of the System Module](#system-module), you need to manually migrate your apps that have workflows.
 
 This document explains how to migrate your existing workflow apps to the improved workflow experience. It is meant for advanced Mendix developers, so proceed with caution.
 
@@ -41,7 +41,7 @@ Upgrade your app to Mendix version 9.6 and above.
 
 To upgrade to Mendix 9.6 or above, follow these steps:
 
-1. Download Studio Pro [9.6](/releasenotes/studio-pro/9.6) or above.
+1. Download Studio Pro [9.6](/releasenotes/studio-pro/9.6/) or above.
 1. Open your app in Studio Pro.
 1. Allow it to upgrade the app, if necessary.
 
@@ -67,4 +67,4 @@ If you did not implement custom UI in your workflow pages, we highly recommend j
 
 ### 3.8 Secure Your User Tasks
 
-Securing user tasks now happens through the domain model by setting [entity accesses](module-security#entity-access), and you no longer need to select which module roles are allowed to execute a task. Setting target users remains unchanged.
+Securing user tasks now happens through the domain model by setting [entity accesses](/refguide/module-security/#entity-access), and you no longer need to select which module roles are allowed to execute a task. Setting target users remains unchanged.

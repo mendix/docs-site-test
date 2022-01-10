@@ -1,14 +1,14 @@
 ---
 title: "Variable Activities"
-url: /refguide7/variable-activities
+url: /refguide7/variable-activities/
 parent: "activities"
 ---
 
 
 ## Create Variable
 
-See [Create Variable](create-variable).
+See [Create Variable](/refguide7/create-variable/).
 
 ## Change Variable
 
-See [Change Variable](change-variable).
+See [Change Variable](/refguide7/change-variable/).

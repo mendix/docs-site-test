@@ -9,7 +9,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-In Studio Pro, entities can be exposed as [OData resources](published-odata-resource) by adding a new published OData service. You can expose any number of related resources in a published OData service. By default, the plural of the non-qualified names of entities are used in the URI to uniquely identify them, but you can override the name of the resource as well.
+In Studio Pro, entities can be exposed as [OData resources](/refguide/published-odata-resource/) by adding a new published OData service. You can expose any number of related resources in a published OData service. By default, the plural of the non-qualified names of entities are used in the URI to uniquely identify them, but you can override the name of the resource as well.
 
 The standards used for OData in Mendix are:
 
@@ -17,7 +17,7 @@ The standards used for OData in Mendix are:
 * [OData version 4](http://www.odata.org/documentation), which returns data in JSON format.
 
 {{% alert color="info" %}}
-The OData version 4 feature was introduced in Studio Pro [9.4.0](/releasenotes/studio-pro/9.4).
+The OData version 4 feature was introduced in Studio Pro [9.4.0](/releasenotes/studio-pro/9.4/).
 {{% /alert %}}
 
 Not all parts of the standard are implemented. If something is not documented here, it is has not yet been added.
@@ -46,7 +46,7 @@ In OData, the namespace is used to refer to data types. On the **Settings** tab,
 
 ### 2.4 Resources
 
-A [resource](published-odata-resource) is a network-accessible data object represented by an entity and identified by a URI.
+A [resource](/refguide/published-odata-resource/) is a network-accessible data object represented by an entity and identified by a URI.
 
 ## 3 Settings
 
@@ -55,22 +55,22 @@ A [resource](published-odata-resource) is a network-accessible data object repre
 You can choose between OData 4 (recommended) and OData 3. One of the main differences is that OData 4 services return results in JSON, and OData 3 services return results in XML.
 
 {{% alert color="info" %}}
-This setting was introduced in Studio Pro [9.4.0](/releasenotes/studio-pro/9.4). In earlier versions, all published OData services were OData 3.
+This setting was introduced in Studio Pro [9.4.0](/releasenotes/studio-pro/9.4/). In earlier versions, all published OData services were OData 3.
 {{% /alert %}}
 
 ### 3.2 Associations
 
-You can select how you want to represent associations. For more information, see the [Associations](odata-representation#associations) section of *OData Representation*.
+You can select how you want to represent associations. For more information, see the [Associations](/refguide/odata-representation/#associations) section of *OData Representation*.
 
 ### 3.3 Security {#security}
 
-You can configure security for the OData service when [App Security](project-security) is enabled.
+You can configure security for the OData service when [App Security](/refguide/project-security/) is enabled.
 
 #### 3.3.1 Requires Authentication {#authentication}
 
 Select whether clients need to authenticate or not. Choose _No_ to allow access to the resources without restrictions. Choose _Yes_ to be able to select which authentication methods to support.
 
-Even when you choose _Yes_, you can still expose OData resources to anonymous users. For detailed information on allowing anonymous users, refer to [Anonymous User Role](anonymous-users).
+Even when you choose _Yes_, you can still expose OData resources to anonymous users. For detailed information on allowing anonymous users, refer to [Anonymous User Role](/refguide/anonymous-users/).
 
 #### 3.3.2 Authentication Methods
 
@@ -123,7 +123,7 @@ There are three possible outcomes of the authentication microflow:
 
 #### 3.3.3 Allowed Roles
 
-The allowed roles define which [module role](module-security#module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
+The allowed roles define which [module role](/refguide/module-security/#module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
 
 {{% alert color="warning" %}}
 Web service users cannot access OData services.
@@ -166,9 +166,9 @@ Once your app is published, the published OData services will be is available on
 While the API documentation for OData resources is enabled by default, access to it may be restricted by the administrator for apps running in production.
 {{% /alert %}}
 
-For details on how to filter the OData response, refer to [OData Query Options](odata-query-options).
+For details on how to filter the OData response, refer to [OData Query Options](/refguide/odata-query-options/).
 
-For details on how Mendix attributes are represented in OData, refer to [OData Representation](odata-representation).
+For details on how Mendix attributes are represented in OData, refer to [OData Representation](/refguide/odata-representation/).
 
 When exposing entities through OData, the entities are retrieved from the Mendix database in a streaming fashion, to avoid out-of-memory errors in the Mendix Runtime.
 
@@ -176,4 +176,4 @@ When exposing entities through OData, the entities are retrieved from the Mendix
 
 Some on-premises servers, in particular those using Microsoft IIS, will strip the host header from requests. This means that your OData service and documentation will be published on an unexpected URL.
 
-To resolve this issue, you will need to ensure your server preserves host headers. See the section [Preserving the Host Header](/developerportal/deploy/deploy-mendix-on-microsoft-windows#preserve-header) in the *Microsoft Windows* deployment documentation.
+To resolve this issue, you will need to ensure your server preserves host headers. See the section [Preserving the Host Header](/developerportal/deploy/deploy-mendix-on-microsoft-windows/#preserve-header) in the *Microsoft Windows* deployment documentation.

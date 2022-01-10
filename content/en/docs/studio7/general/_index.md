@@ -1,14 +1,14 @@
 ---
 title: "General Info"
-url: /studio7/general
+url: /studio7/general/
 description: "Describes various features of Mendix Studio."
-menu_order: 10
+weight: 10
 tags: ["studio", "studio pro"]
 ---
 
 ## 1 Introduction {#studio-overview}
 
-Mendix Studio is the place where you can create, view and edit your Mendix applications without going into technical details. For this purpose you can use the [Studio Pro](/refguide/modeling) and [develop apps together with Studio Pro users](general-collaborative-development) anytime. 
+Mendix Studio is the place where you can create, view and edit your Mendix applications without going into technical details. For this purpose you can use the [Studio Pro](/refguide/modeling/) and [develop apps together with Studio Pro users](/studio7/general-collaborative-development/) anytime. 
 
 With Studio you can create and edit applications in your browser without installing software on your PC.   
 
@@ -26,7 +26,7 @@ You can edit an app in Mendix Studio by opening your app in [Developer Portal](h
 
 ![](/attachments/studio7/general/edit-app.jpg)
 
-If you do not see **Edit in Studio**, go to [General Settings](/developerportal/collaborate/general-settings) in the Developer Portal and [enable Studio](/developerportal/collaborate/general-settings#web).
+If you do not see **Edit in Studio**, go to [General Settings](/developerportal/collaborate/general-settings/) in the Developer Portal and [enable Studio](/developerportal/collaborate/general-settings/#web).
 
 ### 2.2 Opening Studio via Studio Pro {#opening-via-studio-pro}
 
@@ -47,7 +47,7 @@ After clicking **Edit in Studio** you may need to upgrade your app to the latest
 {{/* % image_container width="350" % */}}![](/attachments/studio7/general/upgrade.png)
 {{/* % /image_container % */}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 When you upgrade your app in Studio to the latest  Mendix version, you will need to upgrade your app in the Studio Pro to the same version as well. 
 
 If you are working in a team with others, it is wise to check with your team members if everyone is OK to upgrade the app to the latest Mendix version. The reason for this is that once you update Studio, you need to update Studio Pro as well.
@@ -77,13 +77,13 @@ The left menu bar provides the following options:
 | Menu item                            | Shortcut     | Description                                                  |
 | ------------------------------------ | ------------ | ------------------------------------------------------------ |
 | Mx Logo                              | None         | The Mx logo is the return button to return to the [Developer Portal](https://home.mendix.com) of the app. |
-| [Pages](page-editor)                 | 1            | Shows a list of all pages in the app. After you select a page, it opens in Studio. |
-| [Domain Models](domain-models)       | 2            | Shows the domain models of the app.                          |
-| [Microflows](microflows)             | 3            | Shows a list of all microflows in the app.  After clicking a microflow, it will open in Studio. |
-| [Navigation Document](navigation)    | 4            | Shows a configured menu in the form of a navigation tree. You can expand the menu structure of the navigation tree up to two levels with an unlimited amount of pages. |
+| [Pages](/studio7/page-editor/)                 | 1            | Shows a list of all pages in the app. After you select a page, it opens in Studio. |
+| [Domain Models](/studio7/domain-models/)       | 2            | Shows the domain models of the app.                          |
+| [Microflows](/studio7/microflows/)             | 3            | Shows a list of all microflows in the app.  After clicking a microflow, it will open in Studio. |
+| [Navigation Document](/studio7/navigation/)    | 4            | Shows a configured menu in the form of a navigation tree. You can expand the menu structure of the navigation tree up to two levels with an unlimited amount of pages. |
 | Search (magnifying glass) icon       | <kbd>/</kbd> | Helps you search through microflows, entities, and pages. Start typing the name of the item you are looking for and the search feature will return any matches it finds, using exact matches as well as fuzzy matches based on the characters entered. <br />You can also use "/" shortcut to search through your app. |
-| [Settings](settings)                 | None         | **Settings** consists of **Roles and Permissions** and **Widget Overview**. <br />Via **[Roles and Permissions](settings-security)** you can manage access to your app for different type of users.  <br />The [**Widget Overview**](settings-widget-overview) gives you an overview of all widgets and their status. Widgets are user interface elements (alerts, buttons, charts, etc.) that are used to build pages. |
-| [Theme Customizer](theme-customizer) | None         | Here you can style your app with custom branding, colors, and typography. |
+| [Settings](/studio7/settings/)                 | None         | **Settings** consists of **Roles and Permissions** and **Widget Overview**. <br />Via **[Roles and Permissions](/studio7/settings-security/)** you can manage access to your app for different type of users.  <br />The [**Widget Overview**](/studio7/settings-widget-overview/) gives you an overview of all widgets and their status. Widgets are user interface elements (alerts, buttons, charts, etc.) that are used to build pages. |
+| [Theme Customizer](/studio7/theme-customizer/) | None         | Here you can style your app with custom branding, colors, and typography. |
 
 ## 6 Toolbox, Properties, and Buzz
 
@@ -108,9 +108,9 @@ The top bar provides the following options:
 | Status icon | Shows the internet connection status of Studio. If  status is green, Studio is connected. When grey, Studio is offline. |
 | Undo/Redo actions | Undo or redo the last action. You can also use Ctrl+Z and Ctrl+Y shortcuts correspondingly. |
 | Recent documents drop-down menu | A document that you are currently viewing is displayed in this option. When you click the drop-down menu, documents that you have recently viewed are displayed in the list. You can click the document to open it. |
-| [Publish button](publishing-app) | Deploy and run the app. Update your app to deploy the latest changes you made in Studio. Once deployed, click **View** to view your app in action. For more information, see [Publishing Your App](publishing-app) |
-| [Checks button](checks) | Shows the errors and warnings currently in your app. If there are any errors in the app, you will not be able to publish your app, until you have solved them. For more information on errors, see [Consistency Errors](consistency-errors).<br />You can also use C shortcut to view the **Checks** panel. |
-| Information icon | Here you can find following information:<ul><li>**About** – shows the information on the [Studio version and Mendix version](general-versions) </li><li>**Keyboard Shortcuts** – opens the list of shortcuts in Studio</li><li>**Take a Product Tour** – starts a  the guided product introduction tour and shows you around Studio</li><li>**Ask the Community** – a link to the [Mendix Forum](https://forum.mendixcloud.com/index4.html) where you can ask questions and explore the knowledge offered by the entire Mendix community<li>**Check the  Documentation** – a link to the [Studio 7 Guide](index)</li><li>**Contact Mendix Support** – a link to the [Mendix Support Portal](https://support.mendix.com/hc/en-us)<li>**Mendix Academy** – a link to the [Mendix Academy](https://academy.mendix.com)</li><li>**Mendix Assist Is ON** – a setting that enables/disables [Mendix Assist](mx-assist)</li><li>**Edit in Studio Pro** – opens your app in Studio Pro</li></ul> |
+| [Publish button](/studio7/publishing-app/) | Deploy and run the app. Update your app to deploy the latest changes you made in Studio. Once deployed, click **View** to view your app in action. For more information, see [Publishing Your App](/studio7/publishing-app/) |
+| [Checks button](/studio7/checks/) | Shows the errors and warnings currently in your app. If there are any errors in the app, you will not be able to publish your app, until you have solved them. For more information on errors, see [Consistency Errors](/studio7/consistency-errors/).<br />You can also use C shortcut to view the **Checks** panel. |
+| Information icon | Here you can find following information:<ul><li>**About** – shows the information on the [Studio version and Mendix version](/studio7/general-versions/) </li><li>**Keyboard Shortcuts** – opens the list of shortcuts in Studio</li><li>**Take a Product Tour** – starts a  the guided product introduction tour and shows you around Studio</li><li>**Ask the Community** – a link to the </li><li>**Contact Mendix Support** – a link to the [Mendix Support Portal](https:/support.mendix.com/hc/en-us)<li>**Mendix Academy** – a link to the [Mendix Academy](https:/academy.mendix.com)</li><li>**Mendix Assist Is ON** – a setting that enables/disables [Mendix Assist](/studio7/mx-assist/)</li><li>**Edit in Studio Pro** – opens your app in Studio Pro</li></ul> |
 
 ## 8 Cut/Copy/Paste Function 
 
@@ -125,6 +125,6 @@ Mind the following characteristics when using cut/copy/paste:
 
 ## 9 Read More
 
-* [Domain Model](domain-models)
-* [Microflows](microflows)
-* [Pages](page-editor)
+* [Domain Model](/studio7/domain-models/)
+* [Microflows](/studio7/microflows/)
+* [Pages](/studio7/page-editor/)

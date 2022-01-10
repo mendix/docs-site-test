@@ -1,6 +1,6 @@
 ---
 title: "Administrator"
-url: /refguide7/administrator
+url: /refguide7/administrator/
 parent: "project-security"
 ---
 

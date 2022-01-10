@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting Collaborative Development"
-url: /refguide7/collaborative-development-troubleshooting
+url: /refguide7/collaborative-development-troubleshooting/
 parent: "collaborative-development"
 description: "Describes troubleshooting for collaborative development between the Mendix Desktop Modeler and the Mendix Web Modeler"
 tags: ["desktop modeler", "collaborative development", "troubleshooting", "troubleshoot"]
@@ -9,7 +9,7 @@ tags: ["desktop modeler", "collaborative development", "troubleshooting", "troub
 
 ## 1 Introduction 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Collaborative development is only available if your project has Mendix version 7.23.3 or above. You cannot sync your changes with the Web Modeler if your project has Mendix version 7.23.2 or below. 
 
@@ -21,7 +21,7 @@ Collaborative development allows users to share model changes with each other. T
 
 ## 2 Concepts
 
-For concepts and definitions, see section [2 Concepts](version-control#concepts) in *Version Control*. 
+For concepts and definitions, see section [2 Concepts](/refguide7/version-control/#concepts) in *Version Control*. 
 
 ## 3 The Web Modeler Is Out of Sync {#out-of-sync}
 
@@ -54,7 +54,7 @@ You can choose one of the following:
 	b.  The warning described in section [3 The Desktop Modeler & the Web Modeler Are Out of Sync](#out-of-sync) will be displayed.<br/>
 
 	![](/attachments/refguide7/version-control/collaborative-development/collaborative-development-troubleshooting/changes-are-out-of-sync.png)<br/>
-<br/>
+
 	c. Click **Merge** to synchronize the changes with the Web Modeler.<br/>
 
 	d. Open the previous branch and do the merge again. 
@@ -90,5 +90,5 @@ You can do one of the following:
 
 ## 7 Read More
 
-* [Version Control](version-control) 
-* [Collaborative Development in the Web Modeler](/studio7/general-collaborative-development)
+* [Version Control](/refguide7/version-control/) 
+* [Collaborative Development in the Web Modeler](/studio7/general-collaborative-development/)

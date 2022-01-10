@@ -6,9 +6,9 @@ parent: "rg-one-selenium-actions"
 
 This section contains these documents:
 
-* [Get Property Value](rg-one-get-property-value)
-* [Get Selected Option Index](rg-one-get-selected-option-index)
-* [Get Selected Option Text](rg-one-get-selected-option-text)
-* [Get Selected Option Value](rg-one-get-selected-option-value)
-* [Get Text](rg-one-get-text)
+* [Get Property Value](/addons/ats-addon/rg-one-get-property-value/)
+* [Get Selected Option Index](/addons/ats-addon/rg-one-get-selected-option-index/)
+* [Get Selected Option Text](/addons/ats-addon/rg-one-get-selected-option-text/)
+* [Get Selected Option Value](/addons/ats-addon/rg-one-get-selected-option-value/)
+* [Get Text](/addons/ats-addon/rg-one-get-text/)
 

@@ -44,7 +44,7 @@ The name of the gauge for which you want to set a value.
 
 ### 3.2 Value
 
-The value used to set the gauge to. Values are specified with [expressions](expressions) and should be of type Decimal.
+The value used to set the gauge to. Values are specified with [expressions](/refguide/expressions/) and should be of type Decimal.
 
 ### 3.3 Tags
 
@@ -52,10 +52,10 @@ You can specify a list of tags to enrich the gauge name with key/value pairs. Se
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 
-* [Metric Configuration](metrics)
-* [Metrics Activities](metrics-activities)
+* [Metric Configuration](/refguide/metrics/)
+* [Metrics Activities](/refguide/metrics-activities/)
 * [Meter Concepts](https://micrometer.io/docs/concepts)

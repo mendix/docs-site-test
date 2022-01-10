@@ -107,4 +107,4 @@ All the parts of a _deleted_ element are also _deleted_ and cannot be accessed. 
 
 ## 4 Next Step
 
-Continue with [How to Close the Server Connection](closing-the-server-connection).
+Continue with [How to Close the Server Connection](/apidocs-mxsdk/mxsdk/closing-the-server-connection/).

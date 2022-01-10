@@ -10,6 +10,52 @@ description: "Mendix Native Mobile Builder release notes."
 
 The Mendix Native Mobile Builder is a UI-based tool, complimentary to Mendix Studio Pro, which helps you build your Mendix native mobile app. After the Mendix Native Mobile Builder simplifies your build process, you can do what you want most: test and publish your app. The Mendix Native Mobile Builder uses MxBuild, GitHub, and App Center to simplify the app building process and is directly accessible via Mendix Studio Pro. 
 
+### Release 1.0.111
+
+**Release date: December 21st, 2021**
+
+#### Improvements
+
+##### More Default Permissions for New Projects
+
+To further simplify app permissions, new projects now have the following permissions enabled by default:
+
+* Camera
+* Location
+
+These permissions are not required and can be removed from the permission page if not needed.
+
+{{% alert color="info" %}}
+Already configured projects should not be affected.
+{{% /alert %}}
+
+##### Support for the iOS NSUserTrackingUsageDescription Permission
+
+We added support for the `NSUserTrackingUsageDescription` permission on iOS. If your app calls the App Tracking Transparency API, you must provide custom text (known as a usage-description string), which displays as a system-permission alert request. The usage-description string tells the end-user why the app is requesting permission to use
+data for tracking the end-user or the device. The end-user has the option to grant or deny the authorization request. If you do not include a usage-description string, your app may crash when an end-user first launches it. 
+
+For more details, see [NSUserTrackingUsageDescription](https://developer.apple.com/documentation/bundleresources/information_property_list/nsusertrackingusagedescription) on Apple's App Tracking Transparency page.
+
+#### Fixes
+
+* We fixed an issue in native apps with push notifications being triggered twice for apps built with earlier versions of Native Mobile Builder. You will need to rebuild your app with this version to fix the issue.
+
+### Release 1.0.109
+
+**Release date: October 25th, 2021**
+
+#### Improvements
+
+##### Support for new Mendix over the air updates
+
+Added support for the new Mendix over the air updates (OTA) feature released with Mendix Studio Pro 9.7.
+The UI is able to identify when both App Center OTA and Mendix OTA are enabled and prompt the user to disable App Center OTA updates.
+If the dialog is accepted the App Center option will then be disabled as it is considered deprecated.
+
+#### Fixes
+
+* We fixed various bugs and performance issues.
+
 ### Release 1.0.107
 
 **Release date: July 26th, 2021**
@@ -64,7 +110,7 @@ App Center's CodePush OTA page improvements:
 This feature becomes available only for projects using Native Template 5.1.9 or later. For older projects, please update your Native Template.* 
 {{% /alert %}}
 
-Until now, the Native Mobile Builder required at least GitHub to function correctly. With this release, it now possible to use the Mendix Native Mobile Builder to configure your project locally too. For more information on using this feature, see [How to Build a Mendix Native App Locally](/howto/mobile/native-build-locally).
+Until now, the Native Mobile Builder required at least GitHub to function correctly. With this release, it now possible to use the Mendix Native Mobile Builder to configure your project locally too. For more information on using this feature, see [How to Build a Mendix Native App Locally](/howto/mobile/native-build-locally/).
 
 In the wizard, new projects can be configured to use one of 2 build types:  
 
@@ -123,7 +169,7 @@ Research has shown that animal sounds can relieve stress. As we work to simplify
 
 ##### OTA based on App Center CodePush
 
-We added OTA support based on App Center CodePush. Look for it under the Capabilities pages. For more information, see [How to Release Over the Air Updates with App Center's CodePush](/howto/mobile/how-to-ota-appcenter).
+We added OTA support based on App Center CodePush. Look for it under the Capabilities pages. For more information, see [How to Release Over the Air Updates with App Center's CodePush](/howto/mobile/how-to-ota-appcenter/).
 
 #### Improvements 
 
@@ -228,7 +274,7 @@ We were made aware of a change in App Center resulting in signed iOS builds fail
 
 #### Multiple Configurations 
 
-While you are developing your app you may want to test new features, reconfigure your app, or test against different [environments](/developerportal/deploy/environments) while keeping your default configuration in place. Configurations help achieve those goals. Initially, any change is saved under the default configuration.   
+While you are developing your app you may want to test new features, reconfigure your app, or test against different [environments](/developerportal/deploy/environments/) while keeping your default configuration in place. Configurations help achieve those goals. Initially, any change is saved under the default configuration.   
 
 Imagine you would like a new configuration to target your staging environment. You can now simply create a new configuration (based on any previously created configuration), change the runtime URL, save, and build.
 
@@ -279,7 +325,7 @@ This release focuses mainly on quality of life bug fixes and features.
 
 **Release date: October 27th, 2020**
 
-This marks the initial release of the Mendix Native Mobile Builder UI tool. It is included in [Mendix Studio Pro v8.15](/releasenotes/studio-pro/8.15) and higher.
+This marks the initial release of the Mendix Native Mobile Builder UI tool. It is included in [Mendix Studio Pro v8.15](/releasenotes/studio-pro/8.15/) and higher.
 
 #### Features
 

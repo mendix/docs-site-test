@@ -13,9 +13,9 @@ The [Any Chart](https://marketplace.mendix.com/link/component/106517/) module co
 
 Further documentation on usage can be found in the following pages locations:
 
-* [How to Use Any Chart](/howto/front-end/charts-any-usage)
-* [Any Chart Cheat Sheet](/refguide/charts-any-cheat-sheet)
-* [Any Chart Building Blocks](/refguide/charts-any-building-blocks)
+* [How to Use Any Chart](/howto/front-end/charts-any-usage/)
+* [Any Chart Cheat Sheet](/refguide/charts-any-cheat-sheet/)
+* [Any Chart Building Blocks](/refguide/charts-any-building-blocks/)
 
 For more details on configuration, see [Advanced Configuration Settings](https://github.com/mendixlabs/charts/blob/master/AdvancedCheatSheet.md).
 

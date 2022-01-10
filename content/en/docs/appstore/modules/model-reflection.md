@@ -25,7 +25,7 @@ If you have a large app, the synchronization will take much longer.
 
 ### 2.1 Token Configuration
 
-The token configuration used in the [Email with Templates](/appstore/modules/email-with-templates) module now also allows you to specify the display pattern. This allows you to configure how the attributes are shown rather than relying on the defaults of the module.
+The token configuration used in the [Email with Templates](/appstore/modules/email-with-templates/) module now also allows you to specify the display pattern. This allows you to configure how the attributes are shown rather than relying on the defaults of the module.
 
 The display pattern in the token is optional. If you do not specify a value, the module will use the original behavior. 
 
@@ -54,5 +54,5 @@ All the patterns use the locale from the context. Based on the user's language, 
 
 ## 3 Read More
 
-* [How to Export to Excel](/howto/integration/using-the-excel-exporter)
-* [How to Import Excel Documents](/howto/integration/importing-excel-documents)
+* [How to Export to Excel](/howto/integration/using-the-excel-exporter/)
+* [How to Import Excel Documents](/howto/integration/importing-excel-documents/)

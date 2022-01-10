@@ -28,7 +28,7 @@ The basic package has the following features.
 * Has a limited amount of resources and a single cloud environment on Mendix Cloud V4, together with the ability to preview and test in Studio Pro and Studio. The cloud environment has the following features:
     * 1GB App RAM
     * 0.25 vCPU
-    * 1GB database schema as a part of a shared database — your schema is private to your app and some database monitoring graphs are not available (see [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4) for more information)
+    * 1GB database schema as a part of a shared database — your schema is private to your app and some database monitoring graphs are not available (see [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/) for more information)
     * 1GB file storage for `FileDocument` and `Image` entities
 * The regular Mendix [Service Level Agreement](https://www.mendix.com/wp-content/uploads/Mx_ServiceLevelAgreement_v2018-01.pdf) applies, but please note the following:
     * You cannot get telephone support: access to support is via the [Mendix support website](https://support.mendix.com) only.
@@ -85,7 +85,7 @@ To order your Mendix Basic package, do the following:
 
 After 48 hours, your Mendix Basic package will be provisioned as a new licensed node. You will receive an email at the address entered in your order informing you that this has happened and linking you to the documentation on how to use the node.
 
-Linking your app to your licensed node is done in the same way as for any other sort of license. See [How To Migrate a Free App to Mendix Basic](migrate-free-app-to-basic) for instructions, and see [Linking Your App to a Licensed Node](licensing-apps#licensed-node) in *Licensing Mendix Cloud Apps* for full details.
+Linking your app to your licensed node is done in the same way as for any other sort of license. See [How To Migrate a Free App to Mendix Basic](/developerportal/deploy/migrate-free-app-to-basic/) for instructions, and see [Linking Your App to a Licensed Node](/developerportal/deploy/licensing-apps/#licensed-node) in *Licensing Mendix Cloud Apps* for full details.
 
 ## 5 Invoicing for your Basic Package
 

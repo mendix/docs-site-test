@@ -1,17 +1,17 @@
 ---
 title: "XPath Constraints"
-url: /refguide8/xpath-constraints
+url: /refguide8/xpath-constraints/
 parent: "xpath"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-constraints.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-constraints.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-A constraint can be added to any Xpath query to filter the data retrieved. It should always take the form of a valid [expression](xpath-expressions). This should consist of one or more variables combined with [operators](xpath-operators), [functions](xpath-constraint-functions), [keywords or system variables](xpath-keywords-and-system-variables).
+A constraint can be added to any Xpath query to filter the data retrieved. It should always take the form of a valid [expression](/refguide8/xpath-expressions/). This should consist of one or more variables combined with [operators](/refguide8/xpath-operators/), [functions](/refguide8/xpath-constraint-functions/), [keywords or system variables](/refguide8/xpath-keywords-and-system-variables/).
 
 For example, this query retrieves all customers whose name is equal to Jansen:
 
@@ -23,7 +23,7 @@ The first half of the query is responsible for defining the entity to retrieve a
 
 Multiple constraints can be added to a single query, this is true for all queries with the exception of the `id` query. This is most commonly done by the simple expedient of opening a new set of brackets after closing the first.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 In Studio Pro, you do not write complete queries, only the constraints. The entity is implicitly determined by the context. So, instead of `//Sales.Customer[Name='Jansen']`, you only need to write `[Name='Jansen']` in the context of a customer. In Java, you do need to write the whole queries, including the double slashes (`//`) and the entity name.
 {{% /alert %}}
 
@@ -35,7 +35,7 @@ This query retrieves all customers whose name is equal to Jansen and who live in
 //Sales.Customer[Name = 'Jansen'][Sales.Customer_Address/Sales.Address/City = 'Rotterdam']
 ```
 
-It is also possible to combine constraints with an `and` or `or` [operator](xpath-operators). This query retrieves all customers whose names equal to Jansen *and* who live in Rotterdam:
+It is also possible to combine constraints with an `and` or `or` [operator](/refguide8/xpath-operators/). This query retrieves all customers whose names equal to Jansen *and* who live in Rotterdam:
 
 ```java
 //Sales.Customer[Name = 'Jansen' and Sales.Customer_Address/Sales.Address/City = 'Rotterdam']

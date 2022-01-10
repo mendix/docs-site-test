@@ -18,7 +18,7 @@ Representational state transfer (REST) is an approach to consuming or exposing r
 
 Lack of contracts and schemas give you an easy start to using REST. However, many REST endpoints return complex data.
 
-The [JSON Structure](json-structures) document helps with giving structure to JSON data: from an example JSON snippet, a lightweight schema is extracted that is used in [Mapping Documents](mapping-documents). The [Import Mapping](import-mappings) document converts JSON (or XML) to Mendix objects, and the [Export Mapping](export-mappings) document serializes Mendix objects to JSON (or XML).
+The [JSON Structure](/refguide/json-structures/) document helps with giving structure to JSON data: from an example JSON snippet, a lightweight schema is extracted that is used in [Mapping Documents](/refguide/mapping-documents/). The [Import Mapping](/refguide/import-mappings/) document converts JSON (or XML) to Mendix objects, and the [Export Mapping](/refguide/export-mappings/) document serializes Mendix objects to JSON (or XML).
 
 ## 2 JSON
 

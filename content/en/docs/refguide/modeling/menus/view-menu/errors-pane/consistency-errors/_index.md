@@ -11,7 +11,7 @@ tags: ["Studio Pro", "consistency errors", "checks", "errors"]
 
 To make sure that your app is always consistent and properly built, Studio Pro does consistency checks when you build your app. 
 
-When a consistency check is not met, Studio Pro will notify you about this via consistency errors on the [Errors pane](errors-pane). The errors in pages, microflows, domain models, and document templates will be highlighted:
+When a consistency check is not met, Studio Pro will notify you about this via consistency errors on the [Errors pane](/refguide/errors-pane/). The errors in pages, microflows, domain models, and document templates will be highlighted:
 
 ![Errors Pane](/attachments/refguide/modeling/menus/view-menu/errors-pane/consistency-errors/errors-pane.png)
 
@@ -29,20 +29,20 @@ Double-clicking on the error will take you directly to the element causing the e
 
 Errors need to be solved before your app can be deployed. A consistency error can occur in the following editors or functionalities of Studio Pro:
 
-* [Pages](consistency-errors-pages) 
-* [Navigation](consistency-errors-navigation) 
-* [Microflows](microflows)
-* [Workflows](workflows)
-* [Domain Model](domain-model)
-* [Integration](integration)
-* [Security](security)
+* [Pages](/refguide/consistency-errors-pages/) 
+* [Navigation](/refguide/consistency-errors-navigation/) 
+* [Microflows](/refguide/microflows/)
+* [Workflows](/refguide/workflows/)
+* [Domain Model](/refguide/domain-model/)
+* [Integration](/refguide/integration/)
+* [Security](/refguide/security/)
 
 ##  2 Read More
 
-* [Page Editor Consistency Errors](consistency-errors-pages)
-* [Navigation Consistency Errors](consistency-errors-navigation)
-* [Errors Pane](errors-pane)
-* [Pages](pages)
-* [Microflows](microflows) 
-* [Workflows](workflows)
-* [Navigation in Mendix](navigation)
+* [Page Editor Consistency Errors](/refguide/consistency-errors-pages/)
+* [Navigation Consistency Errors](/refguide/consistency-errors-navigation/)
+* [Errors Pane](/refguide/errors-pane/)
+* [Pages](/refguide/pages/)
+* [Microflows](/refguide/microflows/) 
+* [Workflows](/refguide/workflows/)
+* [Navigation in Mendix](/refguide/navigation/)

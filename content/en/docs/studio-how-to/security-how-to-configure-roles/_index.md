@@ -46,9 +46,9 @@ There are the following pages in this app:
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio/page-editor). 
-* Familiarize yourself with information about security, roles, and permissions in Studio. For more information, see [Security, Roles & Permissions](/studio/settings-security).
-* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio/domain-models).
+* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio/page-editor/). 
+* Familiarize yourself with information about security, roles, and permissions in Studio. For more information, see [Security, Roles & Permissions](/studio/settings-security/).
+* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio/domain-models/).
 
 ## 3 Enabling Security
 
@@ -58,8 +58,8 @@ Depending on your app type and version, you might need to enable security first.
 
 2. In the **Roles and Permissions** screen, click **Enable Security**:
 
-	{{/* % image_container width="550" % */}}![Enable Security](/attachments/studio-how-to/security-how-to-configure-roles/enable-security.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 	
+	{{/* % image_container width="550" % */}}![Enable Security](/attachments/studio-how-to/security-how-to-configure-roles/enable-security.png){{/* % /image_container % */}}
+	
 3. After security is enabled, you can see a table with three tabs: **Roles,** **Pages**, **Microflows**. Two roles are created by default: **Administrator** and **User**. The **Administrator** role is read-only, meaning you cannot delete or rename it. As it is already configured and has access to all functionality, you can use this role for your app administrators in the future. 
 
     To rename the **User** role, click the ellipsis icon next to the **User** role and select **Edit** in the drop-down menu:
@@ -72,8 +72,8 @@ Depending on your app type and version, you might need to enable security first.
 
 6. In the **Create Role** dialog box, fill in the role name as **Front_Desk** and click **Save**:
 
-    {{/* % image_container width="450" % */}}![Create Role](/attachments/studio-how-to/security-how-to-configure-roles/create-role.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{/* % image_container width="450" % */}}![Create Role](/attachments/studio-how-to/security-how-to-configure-roles/create-role.png){{/* % /image_container % */}}
+
 You now have three user roles: Administrator, Customer, and Front_Desk.
 
 ![Create Roles](/attachments/studio-how-to/security-how-to-configure-roles/roles-created.png)
@@ -96,11 +96,11 @@ When you restrict access to a certain page or a microflow, widgets that open thi
 
 After you have set access for pages and microflows, you can test what each user role would see. 
 
-You can test the roles that you set with [demo users](/studio/settings-security#demo-users) when you preview your app. Do the following:
+You can test the roles that you set with [demo users](/studio/settings-security/#demo-users) when you preview your app. Do the following:
 
 1. Click the **pages** icon to exit the **Roles and Permissions** screen.
 
-2. Click the **Preview** button in the top-right corner to [preview your app](/studio/publishing-app).
+2. Click the **Preview** button in the top-right corner to [preview your app](/studio/publishing-app/).
 
 3. When your app is previewed, click a user icon in the right side of the screen: 
 
@@ -108,8 +108,8 @@ You can test the roles that you set with [demo users](/studio/settings-security#
 
 4. In the displayed menu bar, select a demo user and the app will be viewed from the perspective of the corresponding role. Click the **demo_customer** to test which functionality can the **Customer** role view and access.
 
-    {{/* % image_container width="350" % */}}![Select Demo User](/attachments/studio-how-to/security-how-to-configure-roles/select-user.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{/* % image_container width="350" % */}}![Select Demo User](/attachments/studio-how-to/security-how-to-configure-roles/select-user.png){{/* % /image_container % */}}
+
 5. Repeat steps 3-4 to test the **Front_Desk** role:
 
     ![Testing Roles](/attachments/studio-how-to/security-how-to-configure-roles/testing-roles.png)
@@ -118,7 +118,7 @@ You can test the roles that you set with [demo users](/studio/settings-security#
 
 Congratulations! You have configured access for different user roles in your app. 
 
-You can see that the button is hidden from the **Front_Desk** role, but the container is not. You can use conditional visibility to hide it entirely. For more information, see [Conditional Visibility Section](/studio/page-editor-widgets-visibility-section).
+You can see that the button is hidden from the **Front_Desk** role, but the container is not. You can use conditional visibility to hide it entirely. For more information, see [Conditional Visibility Section](/studio/page-editor-widgets-visibility-section/).
 
-When you preview your app, you can test different user role, while after you publish it, you can manage the end-users and assign user roles to them. For more information, see the [Managing App Users](/studio/settings-security#managing-app-users) section in *Security, Roles & Permissions*.
+When you preview your app, you can test different user role, while after you publish it, you can manage the end-users and assign user roles to them. For more information, see the [Managing App Users](/studio/settings-security/#managing-app-users) section in *Security, Roles & Permissions*.
 

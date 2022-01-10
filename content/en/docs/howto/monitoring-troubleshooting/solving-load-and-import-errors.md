@@ -37,13 +37,13 @@ Before trying to solve the problems, it is useful to discover the origin of the 
 
 ### 3.1 Is This a Team Server App?
 
-If your app is a [Team Server](/developerportal/collaborate/team-server) app, and you just did a [download or update](/refguide/using-version-control-in-studio-pro) from the server, the problem may have been added in a revision that was recently committed to the Team Server. You can check who made the most recent commit via the [Team Server](/developerportal/collaborate/team-server) menu item in the [Developer Portal](https://sprintr.home.mendix.com).
+If your app is a [Team Server](/developerportal/collaborate/team-server/) app, and you just did a [download or update](/refguide/using-version-control-in-studio-pro/) from the server, the problem may have been added in a revision that was recently committed to the Team Server. You can check who made the most recent commit via the [Team Server](/developerportal/collaborate/team-server/) menu item in the [Developer Portal](https://sprintr.home.mendix.com).
 
 If the latest change on your branch line was committed by someone other than yourself, please inform the person about the problem.
 
 ### 3.2 Did You Obtain the Model from Someone Else?
 
-If you received the model from someone else, for example as a [app package](/howto/integration/importing-and-exporting-objects) (.mpk) file, then it's possible they created the model with the Mendix Model SDK. Please inform the person about the problem and ask them for a solution.
+If you received the model from someone else, for example as a [app package](/howto/integration/importing-and-exporting-objects/) (.mpk) file, then it's possible they created the model with the Mendix Model SDK. Please inform the person about the problem and ask them for a solution.
 
 ### 3.3 Did You Create the App Yourself?
 
@@ -57,12 +57,12 @@ The most likely cause for these kinds of errors is a faulty script that was run 
 
 ## 5 Read More
 
-*   [Clearing Warning Messages in Mendix](clear-warning-messages)
-*   [Debug a Hybrid Mobile Application](debug-a-hybrid-mobile-application)
-*   [Debugging Java Actions](debug-java-actions)
-*   [Debugging Java actions remotely](debug-java-actions-remotely)
-*   [Debugging Microflows and Nanoflows](debug-microflows-and-nanoflows)
-*   [Debugging Microflows Remotely](debug-microflows-remotely)
-*   [Finding the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-*   [Log Levels](log-levels)
-*   [Monitoring Mendix using JMX](monitoring-mendix-using-jmx)
+*   [Clearing Warning Messages in Mendix](/howto/monitoring-troubleshooting/clear-warning-messages/)
+*   [Debug a Hybrid Mobile Application](/howto/monitoring-troubleshooting/debug-a-hybrid-mobile-application/)
+*   [Debugging Java Actions](/howto/monitoring-troubleshooting/debug-java-actions/)
+*   [Debugging Java actions remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely/)
+*   [Debugging Microflows and Nanoflows](/howto/monitoring-troubleshooting/debug-microflows-and-nanoflows/)
+*   [Debugging Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely/)
+*   [Finding the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+*   [Log Levels](/howto/monitoring-troubleshooting/log-levels/)
+*   [Monitoring Mendix using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx/)

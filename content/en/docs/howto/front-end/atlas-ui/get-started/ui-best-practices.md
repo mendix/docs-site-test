@@ -67,11 +67,11 @@ By default Mendix has a default set of design properties which enable developers
 
 For example, Mendix offers a set of button variants (default, secondary, warning, success, and danger). However, during your design process you can choose to just have a default and a secondary variant. Choices like this are a part of UI design. It is up to people in UI and front-end design roles to determine how much freedom a Mendix developer should have.
 
-The design properties are located in *theme/settings-native.json*, and more information be found in the [Design Properties API Documentation](/apidocs-mxsdk/apidocs/design-properties).
+The design properties are located in *theme/settings-native.json*, and more information be found in the [Design Properties API Documentation](/apidocs-mxsdk/apidocs/design-properties/).
 
 #### 3.2.3 Create the App Layouts
 
-The default Atlas theme comes pre-bundled with a set of layouts. If these do not fit your app’s design, you can create or customize the layouts and name them accordingly. Do not change the supplied layouts. Either create a separate module with the custom layouts, page templates, and building blocks or [create your own](/howto/front-end/create-a-company-design-system).
+The default Atlas theme comes pre-bundled with a set of layouts. If these do not fit your app’s design, you can create or customize the layouts and name them accordingly. Do not change the supplied layouts. Either create a separate module with the custom layouts, page templates, and building blocks or [create your own](/howto/front-end/create-a-company-design-system/).
 
 #### 3.2.4 Create Building Blocks for Common UI Structures
 
@@ -109,7 +109,7 @@ Try to avoid very specific class names. Very specific class names are often only
 
 By changing styling in the **core** folder you risk incurring errors the next time you update Atlas. Updating Atlas might also be more difficult. 
 
-A large part of your app's overall styling can be changed in *theme/native/custom-variables.js*. However, if more changes are needed you could extend a widget’s default styling or define the default styling yourself. For more information, see [How to Extend Design Properties](/howto/front-end/extend-design-properties).
+A large part of your app's overall styling can be changed in *theme/native/custom-variables.js*. However, if more changes are needed you could extend a widget’s default styling or define the default styling yourself. For more information, see [How to Extend Design Properties](/howto/front-end/extend-design-properties/).
 
 ### 4.4 Favor Design Properties Over Including Properties
 
@@ -135,5 +135,5 @@ It is a common pitfall to keep adding classes to a single file. However, this wi
 
 ## 5 Read More
 
-* [Native Mobile Styling Reference Guide](/refguide/native-styling-refguide)
-* [How to Style Your Mendix Native Mobile App](/howto/mobile/how-to-use-native-styling)
+* [Native Mobile Styling Reference Guide](/refguide/native-styling-refguide/)
+* [How to Style Your Mendix Native Mobile App](/howto/mobile/how-to-use-native-styling/)

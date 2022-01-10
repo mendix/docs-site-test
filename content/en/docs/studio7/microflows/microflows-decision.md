@@ -1,8 +1,8 @@
 ---
 title: "Decision"
-url: /studio7/microflows-decision
+url: /studio7/microflows-decision/
 category: "Microflows"
-menu_order: 20
+weight: 20
 description: "Describes a decision in Mendix Studio."
 tags: ["studio", "microflow", "exclusive split", "decision"]
 ---
@@ -31,7 +31,7 @@ The following elements can be used as a decision condition in the **Variable/Att
 * Attribute  of Boolean type
 * Attribute of enumeration type
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The parameters and entities which you would like to use in configuring the condition of the decision should be present in the microflow, either as input parameter or as a result of an activity. 
 
@@ -39,7 +39,7 @@ The parameters and entities which you would like to use in configuring the condi
 
 ### 2.2 Configuring the Condition with an Expression {#expression-tab}
 
-You can also configure the condition by writing the expression. For more information, see [Microflow Expressions](microflows-expressions).
+You can also configure the condition by writing the expression. For more information, see [Microflow Expressions](/studio7/microflows-expressions/).
 
 ## 3 Cases
 
@@ -59,7 +59,7 @@ The caption describes what happens in this element.
 
 ## 5 Read More
 
-* [Microflows](microflows)
-* [Microflow Expressions](microflows-expressions)
-* [Configure a  Decision](microflows-how-to-configure-decision) 
+* [Microflows](/studio7/microflows/)
+* [Microflow Expressions](/studio7/microflows-expressions/)
+* [Configure a  Decision](/studio7/microflows-how-to-configure-decision/) 
 

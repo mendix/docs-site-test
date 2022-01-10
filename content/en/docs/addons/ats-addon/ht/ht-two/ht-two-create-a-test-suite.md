@@ -10,7 +10,7 @@ tags: ["ATS", "testing"]
 
 A test suite enables the user to execute test cases and test suites in a specific order. You can add test steps to your test suite and link a test case or another test suite to that test step. ATS executes the test steps in the same way as a test case.
 
-This how-to uses the Company Expenses app as an example. You will create a test suite and add the test cases you created in [How to Create a Test Case](ht-two-create-a-test-case). If you do not have them anymore, create two new test cases without any test steps to walk through this how-to.
+This how-to uses the Company Expenses app as an example. You will create a test suite and add the test cases you created in [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/). If you do not have them anymore, create two new test cases without any test steps to walk through this how-to.
 
 **This how-to will teach you how to do the following:**
 
@@ -21,8 +21,8 @@ This how-to uses the Company Expenses app as an example. You will create a test 
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Read [How to Get Started](ht-two-getting-started)
-* Read [How to Create a Test Case](ht-two-create-a-test-case)
+* Read [How to Get Started](/addons/ats-addon/ht-two-getting-started/)
+* Read [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 
 ## 3 Creating a Test Suite
 
@@ -71,10 +71,10 @@ Repeat this process for the Recorder test case to complete your test suite.
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-suite/test-suite-page-complete.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 You can add as many test cases and test suites as you want. 
 {{% /alert %}}
 
 ## 5 Next Up
 
-You now learned how to create a test suite. The next how-to is [How to Create a Data-Driven Test Case](ht-two-create-datadriven-test-case). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+You now learned how to create a test suite. The next how-to is [How to Create a Data-Driven Test Case](/addons/ats-addon/ht-two-create-datadriven-test-case/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

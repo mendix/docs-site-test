@@ -9,13 +9,13 @@ tags: ["studio", "microflow", "loop", "loops"]
 
 ## 1 Introduction 
 
-A loop is used to iterate over a list of object and perform actions on each item of the list when building [microflows](microflows). For example, you can retrieve a list of orders from your database, then loop over this list and mark orders as processed. For more details on use cases, see the [Configuring a Loop](#loop-example) section.
+A loop is used to iterate over a list of object and perform actions on each item of the list when building [microflows](/studio/microflows/). For example, you can retrieve a list of orders from your database, then loop over this list and mark orders as processed. For more details on use cases, see the [Configuring a Loop](#loop-example) section.
 
 The loop is visualized as a frame. The flow inside the loop is executed for each object. That means, if you add more than one activity to the loop, the full flow gets executed on each item. For example, you can add a loop that will prevent orders from processing if the order is not paid:
 
 ![](/attachments/studio/microflows/microflows-loop/loop.png)
 
-The loop can contain all types of elements used in microflows, except for start and end events. Additionally, only a loop can contain [break events](/refguide/break-event) and [continue events](/refguide/continue-event). A break event is used in loops only to stop iterating over a list of objects and continue with the rest of the flow in a microflow. A continue event is used in loops only to stop the current iteration and start the iteration of the next object.
+The loop can contain all types of elements used in microflows, except for start and end events. Additionally, only a loop can contain [break events](/refguide/break-event/) and [continue events](/refguide/continue-event/). A break event is used in loops only to stop iterating over a list of objects and continue with the rest of the flow in a microflow. A continue event is used in loops only to stop the current iteration and start the iteration of the next object.
 
 ## 2 Loop Properties
 
@@ -36,9 +36,9 @@ A straightforward use-case is where you retrieve a list of orders from your data
 
 Make sure you have the following prerequisites:
 
-1. [Create an entity](domain-models#adding-new-entities) in your domain model and name it *Order*.
-2. [Create an attribute](domain-models#adding-new-attributes) of the Boolean type for this entity to indicate the status of an order and name this attribute *Processed*.
-3. [Create a microflow](microflows#create).
+1. [Create an entity](/studio/domain-models/#adding-new-entities) in your domain model and name it *Order*.
+2. [Create an attribute](/studio/domain-models/#adding-new-attributes) of the Boolean type for this entity to indicate the status of an order and name this attribute *Processed*.
+3. [Create a microflow](/studio/microflows/#create).
 
 To start the use-case, do the following:
 
@@ -58,7 +58,7 @@ To start the use-case, do the following:
     a. In the **Toolbox**, select **Loop**, drag and drop it to the microflow. <br />
 
     ![Loop is Added](/attachments/studio/microflows/microflows-loop/loop-added.png)<br />
-<br />
+
     b. In **Properties**, set **OrderList** as **Loop Over** (**Loop Variable Name** is set automatically). So, you have selected the list of objects to loop over. <br />
 
     {{/* % image_container width="350" % */}}![Loop Properties in an Example](/attachments/studio/microflows/microflows-loop/loop-properties-in-example.png)
@@ -91,4 +91,4 @@ As a result, you have a list of orders retrieved to your microflow, and a loop t
 
 ## 4 Read More
 
-* [Microflows](microflows)
+* [Microflows](/studio/microflows/)

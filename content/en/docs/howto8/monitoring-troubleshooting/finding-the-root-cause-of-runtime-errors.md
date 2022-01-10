@@ -1,8 +1,8 @@
 ---
 title: "Find the Root Cause of Runtime Errors"
-url: /howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors
+url: /howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/
 category: "Monitoring & Troubleshooting"
-menu_order: 8
+weight: 8
 tags: ["monitoring", "troubleshooting", "runtime error", "runtime", "error"]
 ---
 
@@ -36,7 +36,7 @@ With these three pieces of information, you should be able to find the cause of 
 
 If the application is deployed from the service console or in the cloud, the information is available in the application logs. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 You need to have the timestamp of when the error occurred. The logs can contain a lot of information, and this timestamp will make searching through them much easier. Once you navigate to the log file, you can search for the error.
 
@@ -54,12 +54,12 @@ With these three pieces of information, you should be able to find the cause of 
 
 ## 4 Read More
 
-* [Clear Warning Messages](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Log Levels](log-levels)
-* [Debug Microflows](debug-microflows)
-* [Debug Microflows Remotely](debug-microflows-remotely)
-* [Debug Java Actions](debug-java-actions)
+* [Clear Warning Messages](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Log Levels](/howto8/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+* [Debug Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely/)
+* [Debug Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)
 * [The Root Cause of Runtime Errors and Resolving the 2 Most Common Issues](http://www.mendix.com/blog/the-root-cause-of-runtime-errors-and-resolving-the-2-most-common-issues/)

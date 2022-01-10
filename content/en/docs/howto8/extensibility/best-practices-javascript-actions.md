@@ -1,8 +1,8 @@
 ---
 title: "Implement Best Practices for JavaScript Actions"
-url: /howto8/extensibility/best-practices-javascript-actions
+url: /howto8/extensibility/best-practices-javascript-actions/
 category: "Extensibility"
-menu_order: 60
+weight: 60
 description: "This set of best practices will help you get the most out of your JavaScript actions."
 tags: ["JavaScript", "API", "nanoflow"]
 ---
@@ -149,7 +149,7 @@ function CameraStart(targetSize, pictureSource, correctOrientation, waterMark) {
 }
 ```
 
-For more detail on input types, see [JavaScript Actions](/refguide8/javascript-actions). For more information on choosing correct input types, see the [Better APIs](#betterapis) section below.
+For more detail on input types, see [JavaScript Actions](/refguide8/javascript-actions/). For more information on choosing correct input types, see the [Better APIs](#betterapis) section below.
 
 ### 2.2 Coding the Actions
 
@@ -254,15 +254,15 @@ Below is an example of using an external dependency based on [pdf-lib](https://g
 
 #### 2.2.7 Understanding Hybrid App External Dependencies
 
-The Mendix hybrid app ships with a large set of plugins by default. For more details on default plugins, see the [November 20th, 2018 Version Upgrades](/releasenotes/mobile/hybrid-app#upgrades-20) section of the *Hybrid App Base & Template* release notes.
+The Mendix hybrid app ships with a large set of plugins by default. For more details on default plugins, see the [November 20th, 2018 Version Upgrades](/releasenotes/mobile/hybrid-app/#upgrades-20) section of the *Hybrid App Base & Template* release notes.
 
-It is also possible to add new plugins during a mobile build. For more information on adding new plugins, see [Publish a Mendix Hybrid Mobile App in Mobile App Stores](/howto8/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores).
+It is also possible to add new plugins during a mobile build. For more information on adding new plugins, see [Publish a Mendix Hybrid Mobile App in Mobile App Stores](/howto8/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores/).
 
 The actual list of plugins use can be found in *config.xml* inside your deployment package.
 
 ### 2.3 Understanding Returns
 
-The JavaScript action can specify a return type such as Integer, DateTime, Object, List of object, and Generics. For more information on returns, see [JavaScript Actions](/refguide8/javascript-actions).
+The JavaScript action can specify a return type such as Integer, DateTime, Object, List of object, and Generics. For more information on returns, see [JavaScript Actions](/refguide8/javascript-actions/).
 
 Actions can be synchronous or asynchronous. Synchronous actions will directly return the value and finish executing. An asynchronous action will return a promise, and will continue to execute and finish at a later time. The nanoflow will continue to execute when the promise is resolved.
 
@@ -357,7 +357,7 @@ Explaining the Promise API code:
 
 * As this is a part of a promise already, it does not need to call a `resolve` function or return a promise itself — this makes error handling on promises easier, as a single error function can be used to catch errors at all three steps: fetch, parse JSON, and accessing the data (for a more detailed explanation, see the [MDN promise documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise))
 
-* For more information on building a JavaScript action rest consume function, see [Build JavaScript Actions: Part 2 (Advanced)](write-javascript-github).
+* For more information on building a JavaScript action rest consume function, see [Build JavaScript Actions: Part 2 (Advanced)](/howto8/extensibility/write-javascript-github/).
 
 #### 2.3.3 Understanding Common Promise Functions
 
@@ -424,7 +424,7 @@ You can export a single action by right-clicking a JavaScript action in the Proj
 
 You can import a single action by right-clicking your module in the Project Explorer, and then selecting **Import document from file**. Next, select your JavaScript action file.
 
-A single nanoflow action cannot be published in the Mendix Marketplace. You may publish one as a module, but it is recommended to publish related nanoflow actions as a group within a module. For a module containing multiple nanoflow actions, group actions with a relevant data model like "entities" and provide relevant documentation for external dependencies. Export the module as a whole and upload it to the Mendix Marketplace. For further instructions, see [How to Share Marketplace Content](/appstore/general/share-app-store-content).
+A single nanoflow action cannot be published in the Mendix Marketplace. You may publish one as a module, but it is recommended to publish related nanoflow actions as a group within a module. For a module containing multiple nanoflow actions, group actions with a relevant data model like "entities" and provide relevant documentation for external dependencies. Export the module as a whole and upload it to the Mendix Marketplace. For further instructions, see [How to Share Marketplace Content](/appstore/general/share-app-store-content/).
 
 ### 3.4 Documenting JavaScript Actions{#document}
 
@@ -448,7 +448,7 @@ Well-documented actions are easier to reuse. Consider the following when documen
 
 An extensive test app can help make a JavaScript action more robust. Within a test app, try to create all possible variations of the input, accounting for empty inputs and error cases that should be handled.
 
-When testing, make sure you to check all compatible platforms (web, hybrid, and native). The web should handle the Mendix browser compatibility. For further information about compatibility, see the [Browsers](/refguide8/system-requirements#browsers) section of *System Requirements*. 
+When testing, make sure you to check all compatible platforms (web, hybrid, and native). The web should handle the Mendix browser compatibility. For further information about compatibility, see the [Browsers](/refguide8/system-requirements/#browsers) section of *System Requirements*. 
 
 When an action is not compatible with the platform, make sure it can be checked with an additional action before running into an error. For example, employ a `CheckCameraSupport` action before starting a camera. When an action is called but not compatible, it should fail gracefully or display a clear error message. 
 
@@ -461,7 +461,7 @@ Initially, JavaScript actions' source code is not loaded. Their source code will
 After the file is loaded, breakpoints can be set in the code by clicking the inline number (**A**, in the screenshot below). Alternatively, select **Pause on caught exceptions**  could be used to find issues (**B**). As a last resort, you could alter the source code by adding the line `debugger;` (**C**). This statement will start the debugging tools the first time the action is executed, and will apply a breakpoint:
 
 {{/* % image_container width="500" % */}}![debugging](/attachments/howto8/extensibility/best-practices-javascript-actions/debugging.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 6 Understanding Bad Practices {#badpractice}
 
 Not all capabilities are recommended for use. Consider the side effects that an action could have on the Mendix Client, DOM, or other widgets:
@@ -474,8 +474,8 @@ Not all capabilities are recommended for use. Consider the side effects that an 
 
 ## 7 Read More
 
-* [Build JavaScript Actions](/howto8/extensibility/build-javascript-actions)
-* [JavaScript Actions](/refguide8/javascript-actions)
+* [Build JavaScript Actions](/howto8/extensibility/build-javascript-actions/)
+* [JavaScript Actions](/refguide8/javascript-actions/)
 * [Mendix Client API](https://apidocs.rnd.mendix.com/7/client/index.html)
 * JavaScript basics:
 	* [Mozilla JavaScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)

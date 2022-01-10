@@ -19,10 +19,10 @@ In enterprise software, it is not likely that you work in a [greenfield](https:/
 
 Before you can start exporting XML documents, you need data in your application that is used during the export. You first need to set up the data structure and GUI to maintain the customer data. Then you'll create the actual export logic and the corresponding export mapping. So, you need to know how to do the following:
 
-* Create a domain model (for more information, see [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer))
-* Create a custom file document (for more information, see [How to Work with Images & Files](/howto/data-models/working-with-images-and-files))
-* Create overview and detail pages (for more information, see [How to Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages))
-* Create menu items, (for more information, see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure))
+* Create a domain model (for more information, see [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer/))
+* Create a custom file document (for more information, see [How to Work with Images & Files](/howto/data-models/working-with-images-and-files/))
+* Create overview and detail pages (for more information, see [How to Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages/))
+* Create menu items, (for more information, see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure/))
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
@@ -42,8 +42,8 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 ## 3 Adding an XML Schema (XSD)
 
-Whether you plan to import documents or export documents, working with XML means that your application must contain an XML schema (also called XSD). An XSD describes the possible contents of an XML file. Based on this XSD, your application knows how to read or write an XML file. If you don't have an XSD file, there are a couple of online XSD generators that accept an XML document as input. For this how-to, you can use [Customers.xsd](/attachments/howto/integration/export-xml-documents/18581813.xsd).
-.
+Whether you plan to import documents or export documents, working with XML means that your application must contain an XML schema (also called XSD). An XSD describes the possible contents of an XML file. Based on this XSD, your application knows how to read or write an XML file. If you don't have an XSD file, there are a couple of online XSD generators that accept an XML document as input. For this how-to, you can use .
+
 1.  Right-click your module in the **App Explorer** and select **Add other** > **XML schema**.
 2.  Enter *CustomersXSD* for the **Name** and click **OK**:
 
@@ -183,11 +183,11 @@ To create the export logic, follow these steps:
 
 ## 6 Read More
 
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Consume a Simple Web Service](consume-a-simple-web-service)
-* [Import Excel Documents](importing-excel-documents)
-* [Expose a Web Service](expose-a-web-service)
-* [Enable Selenium Support](selenium-support)
-* [Import XML Documents](importing-xml-documents)
-* [Consume a REST Service](consume-a-rest-service)
-* [Expose Data to BI Tools Using OData](exposing-data-to-bi-tools-using-odata)
+* [Consume a Complex Web Service](/howto/integration/consume-a-complex-web-service/)
+* [Consume a Simple Web Service](/howto/integration/consume-a-simple-web-service/)
+* [Import Excel Documents](/howto/integration/importing-excel-documents/)
+* [Expose a Web Service](/howto/integration/expose-a-web-service/)
+* [Enable Selenium Support](/howto/integration/selenium-support/)
+* [Import XML Documents](/howto/integration/importing-xml-documents/)
+* [Consume a REST Service](/howto/integration/consume-a-rest-service/)
+* [Expose Data to BI Tools Using OData](/howto/integration/exposing-data-to-bi-tools-using-odata/)

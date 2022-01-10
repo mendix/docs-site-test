@@ -21,10 +21,10 @@ You will start with the configuration of user and module roles for access to pag
 
 Before starting with this how-to, make sure you have completed the following prerequisites:
 
-* Know how to create a domain model (for details, see [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer))
-* Know how to create overview and detail pages (for details, see [How to Create Your First Two Overview and Details Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages))
-* Know how to create menu items (for details, see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure))
-* Know how to add action buttons (for details, see [Buttons](/refguide/button-widgets))
+* Know how to create a domain model (for details, see [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer/))
+* Know how to create overview and detail pages (for details, see [How to Create Your First Two Overview and Details Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages/))
+* Know how to create menu items (for details, see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure/))
+* Know how to add action buttons (for details, see [Buttons](/refguide/button-widgets/))
 
 ## 3 Preparing the Data Structure, GUI, and Example Data
 
@@ -235,7 +235,7 @@ To create access roles for the User module role, follow these steps:
 
 In the previous section you set some access rules on your domain model. In this section you you will define the access rules on the Order entity so that orders can only be viewed by a user if the payment status of the order is set to open. You will do this by adding an XPath constraint to the Order entity for the User module role. 
 
-An XPath constraint can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all the objects of the entity. For more information, see [XPath Constraints](/refguide/xpath-constraints) in the *Studio Pro Guide*.
+An XPath constraint can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all the objects of the entity. For more information, see [XPath Constraints](/refguide/xpath-constraints/) in the *Studio Pro Guide*.
 
 ### 6.1 Adding an Account with the User User Role
 
@@ -282,4 +282,4 @@ An XPath constraint can be used to constrain the set of objects to which the acc
 
 ## 7 Read More
 
-* [Set Up Anonymous User Security](set-up-anonymous-user-security)
+* [Set Up Anonymous User Security](/howto/security/set-up-anonymous-user-security/)

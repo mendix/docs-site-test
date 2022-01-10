@@ -21,9 +21,9 @@ Custom certificates cannot be configured for Free Apps.
 
 ### 1.1 Incoming Connections
 
-To connect *to* your Mendix Cloud application *from* the internet, Mendix provides a *.mendixcloud.com* or *.mxapps.io* domain. The certificate for this is managed by Mendix. If you want to set up your own domain name for a licensed app, you can configure [custom domains](custom-domains).
+To connect *to* your Mendix Cloud application *from* the internet, Mendix provides a *.mendixcloud.com* or *.mxapps.io* domain. The certificate for this is managed by Mendix. If you want to set up your own domain name for a licensed app, you can configure [custom domains](/developerportal/deploy/custom-domains/).
 
-In addition, you can restrict incoming traffic by requiring client certificates signed by a certificate authority of your choice. For more details on how to set this up, see [How to Restrict Access for Incoming Requests](access-restrictions).
+In addition, you can restrict incoming traffic by requiring client certificates signed by a certificate authority of your choice. For more details on how to set this up, see [How to Restrict Access for Incoming Requests](/developerportal/deploy/access-restrictions/).
 
 ### 1.2 Outgoing Connections
 
@@ -75,7 +75,7 @@ You can upload a PKCS12 file by following these steps:
 
 5. Enter the password to unlock the certificate container.
 
-6. If you are using a specific custom certificate when setting your Client certificate in your [Call REST Service](/refguide/call-rest-action#client-certificate) or [Call Web Service](/refguide/call-web-service-action#client-certificate) action, set a **WEB SERVICE CALL NAME** which you can use to pin the certificate by setting the call's **Client certificate identifier** to the **WEB SERVICE CALL NAME**.
+6. If you are using a specific custom certificate when setting your Client certificate in your [Call REST Service](/refguide/call-rest-action/#client-certificate) or [Call Web Service](/refguide/call-web-service-action/#client-certificate) action, set a **WEB SERVICE CALL NAME** which you can use to pin the certificate by setting the call's **Client certificate identifier** to the **WEB SERVICE CALL NAME**.
 
     ![](/attachments/developerportal/deploy/mendix-cloud-deploy/certificates/certificate-details.png)
 

@@ -10,7 +10,7 @@ tags: ["ATS", "testing", "Selenium hub"]
 
 This how-to shows you an example of a simple setup of a Docker Selenium hub with a Chrome and a Firefox node on a Linux machine. The Docker works on a Windows machine as well, but the commands and configuration could be different. For the official project go to: [https://github.com/SeleniumHQ/docker-selenium](https://github.com/SeleniumHQ/docker-selenium)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Mendix does not deliver support for the local Selenium solutions. 
 {{% /alert %}}
 
@@ -113,7 +113,7 @@ Each node has one browser, so if you need more nodes of a certain browser, you c
    docker_hub_1       /opt/bin/entry_point.sh   Up      0.0.0.0:4444->4444/tcp
    ```
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 By default the hub only accepts a maximum of 5 sessions to run in parallel at a time, even if you configure more, see the official documentation.
 {{% /alert %}}
 
@@ -163,4 +163,4 @@ Some side notes in case you follow this step:
 * You cannot scale using this configuration
 * Be aware that VNC is not a secure protocol, you might not want to open this port for the world
 
-Congratulations you have finished setting up a local docker Selenium hub. The next how-to is [How to setup a Local Selenoid hub](ht-two-setup-local-selenoid-hub). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+Congratulations you have finished setting up a local docker Selenium hub. The next how-to is [How to setup a Local Selenoid hub](/addons/ats-addon/ht-two-setup-local-selenoid-hub/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

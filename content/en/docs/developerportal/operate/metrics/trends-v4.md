@@ -15,9 +15,9 @@ tags: ["Trends","v4","Mendix Cloud","Developer Portal"]
 To track the usage growth of your app, and to debug performance problems, the Mendix Cloud includes detailed graphs of both your app and its environment. These graphs show performance trends of your apps in the paid editions of the Mendix Cloud. If you experience issues with your app, always check the **Alerts** and **Trends** in the **Developer Portal**.
 
 {{% alert color="info" %}}
-This document describes the trends graphs available in Mendix Cloud v4. If your app is deployed to the deprecated Mendix Cloud v3, please refer to [Trends in Mendix Cloud v3](trends).
+This document describes the trends graphs available in Mendix Cloud v4. If your app is deployed to the deprecated Mendix Cloud v3, please refer to [Trends in Mendix Cloud v3](/developerportal/operate/trends/).
 
-If you don't know which Mendix Cloud version you are using, you can find out by following the instructions in [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region).
+If you don't know which Mendix Cloud version you are using, you can find out by following the instructions in [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region/).
 {{% /alert %}}
 
 ## 2 Access to Monitoring Trends
@@ -26,7 +26,7 @@ To view the **Trends**, you must have permission to **Access the Monitoring**.
 
 {{% alert color="info" %}}
 
-Only the [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) is allowed to grant node permissions.
+Only the [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) is allowed to grant node permissions.
 
 {{% /alert %}}
 
@@ -103,14 +103,14 @@ Request Type | Explanation
 **ws/** | SOAP webservice call request handler.
 **xas/** | Request handler used by the Mendix Runtime itself.
 
-Additional information about request handlers is available in the *Requests* section of [Monitoring Mendix Runtime](/refguide/monitoring-mendix-runtime#request-handlers) and the *Applying Access Restrictions to Unnecessary Request Handlers* section of [How To Implement Best Practices for App Security](/howto/security/best-practices-security#request-handlers).
+Additional information about request handlers is available in the *Requests* section of [Monitoring Mendix Runtime](/refguide/monitoring-mendix-runtime/#request-handlers) and the *Applying Access Restrictions to Unnecessary Request Handlers* section of [How To Implement Best Practices for App Security](/howto/security/best-practices-security/#request-handlers).
 
 ### <a name="Trends-appmxruntimecache"></a>4.2 Object Cache
 
 In the **Object cache** graph you can monitor the number of Mendix Objects that live in memory.
 
 {{% alert color="info" %}}
-This metric is only available for apps built with Mendix versions 6 and below. Mendix versions 7 and above use a stateless runtime and so have no object cache. See the [Mendix 7.0 Release Notes](/releasenotes/studio-pro/7.0) for more information.
+This metric is only available for apps built with Mendix versions 6 and below. Mendix versions 7 and above use a stateless runtime and so have no object cache. See the [Mendix 7.0 Release Notes](/releasenotes/studio-pro/7.0/) for more information.
 {{% /alert %}}
 
 Non-persistable entities live in the JVM memory and are garbage-collected regularly. If you have a memory leak, the number of objects in memory will grow over time. This might be a problem.
@@ -240,7 +240,7 @@ The disk usage graph shows only the disk usage inside the container. This is usu
 In this section you will find the statistics about the database that the application uses.
 
 {{% alert color="warning" %}}
-If you are using the [Basic License](/developerportal/deploy/basic-package) you will only see the first three graphs as these are the ones which show information specific to your app.
+If you are using the [Basic License](/developerportal/deploy/basic-package/) you will only see the first three graphs as these are the ones which show information specific to your app.
 {{% /alert %}}
 
 ### <a name="Trends-dbmxruntimeconnectionbus"></a>5.1 Number of Database Queries Being Executed
@@ -303,7 +303,7 @@ Rollbacks appearing during normal operation indicate a problem and should be inv
 The **Number of database connections** graph shows the number of connections to the PostgreSQL server.
 
 {{% alert color="info" %}}
-You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package) as you are using a private schema on a shared database server.
+You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package/) as you are using a private schema on a shared database server.
 {{% /alert %}}
 
 ![](/attachments/developerportal/operate/metrics/trends-v4/no-db-connections.png)
@@ -317,7 +317,7 @@ The standard configuration sets a maximum of 50 connections per instance. The gr
 The **Database node operating system memory** graph shows the distribution of operating system memory that is available for this server.
 
 {{% alert color="info" %}}
-You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package) as you are using a private schema on a shared database server.
+You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package/) as you are using a private schema on a shared database server.
 {{% /alert %}}
 
 ![](/attachments/developerportal/operate/metrics/trends-v4/db-os-memory.png)
@@ -337,7 +337,7 @@ Type | Explanation
 The **Database node CPU usage** graph shows the amount of CPU usage over time, as a percentage.
 
 {{% alert color="info" %}}
-You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package) as you are using a private schema on a shared database server.
+You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package/) as you are using a private schema on a shared database server.
 {{% /alert %}}
 
 ![](/attachments/developerportal/operate/metrics/trends-v4/db-cpu-usage.png)
@@ -347,7 +347,7 @@ You will not see this if you are using the [Basic License](/developerportal/depl
 The **Database node disk throughput** graph shows the amount of data that is being read from and written to disk.
 
 {{% alert color="info" %}}
-You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package) as you are using a private schema on a shared database server.
+You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package/) as you are using a private schema on a shared database server.
 {{% /alert %}}
 
 ![](/attachments/developerportal/operate/metrics/trends-v4/db-disk-throughput.png)
@@ -359,7 +359,7 @@ If you see large values here which do not immediately drop back again, it may in
 The **Database node disk usage (in bytes)** graph displays both used storage (the absolute amount of data that is stored on disk), and free space (the remaining space on the database node). When hovering over the graph, you will also see the total size of your database.
 
 {{% alert color="info" %}}
-You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package) as you are using a private schema on a shared database server.
+You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package/) as you are using a private schema on a shared database server.
 {{% /alert %}}
 
 {{% alert color="info" %}}
@@ -377,7 +377,7 @@ The used storage metric was added in September 2020. The used storage metric wil
 The **Database node disk IO/s** graph shows the *number* of disk read and write operations that are done from and to the disk storage. It does not show the amount of data that was transferred.
 
 {{% alert color="info" %}}
-You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package) as you are using a private schema on a shared database server.
+You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package/) as you are using a private schema on a shared database server.
 {{% /alert %}}
 
 ![](/attachments/developerportal/operate/metrics/trends-v4/db-disk-ios.png)
@@ -394,7 +394,7 @@ Value | Explanation
 The **Database node disk latency** graph shows the average waiting times for disk operations to complete.
 
 {{% alert color="info" %}}
-You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package) as you are using a private schema on a shared database server.
+You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package/) as you are using a private schema on a shared database server.
 {{% /alert %}}
 
 ![](/attachments/developerportal/operate/metrics/trends-v4/db-disk-latency.png)
@@ -411,7 +411,11 @@ Value | Explanation
 ### 5.11 Database IOPS Burst Balance {#Trends-dbmxdatabaseburstbalance}
 
 {{% alert color="info" %}}
-You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package) as you are using a private schema on a shared database server.
+You will not see this if you are using the [Basic License](/developerportal/deploy/basic-package/) as you are using a private schema on a shared database server.
+{{% /alert %}}
+
+{{% alert color="info" %}}
+Databases larger than 1,000 GiB have a base performance that is equal to or greater than the maximum burst performance. This means depleting the Database IOPS Burst Balance will not affect their performance.
 {{% /alert %}}
 
 The **Database IOPS burst balance** graph shows the number of IOPS credits accrued to support burstable performance. The metric is expressed as percentage; 100% means that the volume has accumulated the maximum number of credits.
@@ -430,9 +434,9 @@ For more information, see the *AWS Database blog* [Understanding Burst vs. Basel
 
 ## 6 Read More
 
-* [Alerts](monitoring-application-health)
-* [Maintenance Windows: Configuration](/developerportal/deploy/maintenance-windows)
-* [Migrate to Mendix Cloud v4](/developerportal/deploy/migrating-to-v4)
-* [How to Receive Environment Status Alerts](receive-alerts)
-* [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region)
-* [Mendix Cloud v4 - FAQ](/developerportal/deploy/mxcloudv4)
+* [Alerts](/developerportal/operate/monitoring-application-health/)
+* [Maintenance Windows: Configuration](/developerportal/deploy/maintenance-windows/)
+* [Migrate to Mendix Cloud v4](/developerportal/deploy/migrating-to-v4/)
+* [How to Receive Environment Status Alerts](/developerportal/operate/receive-alerts/)
+* [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region/)
+* [Mendix Cloud v4 - FAQ](/developerportal/deploy/mxcloudv4/)

@@ -16,7 +16,7 @@ You can write Mendix apps which analyze data held in MindSphere, the open, cloud
 
 This documentation provides more explanation of the MindSphere example app. Please note that this app is not production-ready. It is designed as an example of how you might begin to build a Mendix/MindSphere app.
 
-You can get more detailed information on how to deploy your app to the MindSphere Platform in [Siemens MindSphere – deployment](/developerportal/deploy/deploying-to-mindsphere). If your are interested in how to develop a MindSphere app with Mendix we recommend a visit to our learning path [Build a MindSphere app with Mendix](https://academy.mendix.com/link/path/80/Build-a-MindSphere-app-with-Mendix).
+You can get more detailed information on how to deploy your app to the MindSphere Platform in [Siemens MindSphere – deployment](/developerportal/deploy/deploying-to-mindsphere/). If your are interested in how to develop a MindSphere app with Mendix we recommend a visit to our learning path [Build a MindSphere app with Mendix](https://academy.mendix.com/link/path/80/Build-a-MindSphere-app-with-Mendix).
 
 ## 2 Prerequisites
 
@@ -57,7 +57,7 @@ Open Studio Pro without opening an app and follow these steps:
 ## 4 Deploy and Run the Example App
 
 A Mendix-based application for MindSphere can be deployed to Mendix or to MindSphere. Deploying to Mendix is quite easy and is the preferred option as you can then  use the Auto Registration process.
-For more information about the deployment options see [Deploying to MindSphere](/developerportal/deploy/deploying-to-mindsphere#5-deploying-your-app).
+For more information about the deployment options see [Deploying to MindSphere](/developerportal/deploy/deploying-to-mindsphere/#5-deploying-your-app).
 
 To start the Auto Registration process just click the **Publish** button.
 
@@ -157,9 +157,9 @@ For more information see the MindSphere documentation [Roles & Scopes for Applic
 
 ## 5 Run the app locally
 
-To run and test your app locally follow the steps described in [Local Testing](/partners/siemens/mindsphere-development-considerations#localtesting).
+To run and test your app locally follow the steps described in [Local Testing](/partners/siemens/mindsphere-development-considerations/#localtesting).
 
 ## 6 Read More
 
-* [MindSphere Development Considerations](/partners/siemens/mindsphere-development-considerations)
-* [MindSphere Module Details](/partners/siemens/mindsphere-module-details)
+* [MindSphere Development Considerations](/partners/siemens/mindsphere-development-considerations/)
+* [MindSphere Module Details](/partners/siemens/mindsphere-module-details/)

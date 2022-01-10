@@ -23,11 +23,11 @@ Before starting with this how-to, make sure you have the following prerequisites
 * ATS account
 * Your ATS instance
 * An application under test (AUT)
-* Selenium hub (for more information on the Selenium options, see [ATS Deployment](ov-deployment))
+* Selenium hub (for more information on the Selenium options, see [ATS Deployment](/addons/ats-addon/ov-deployment/))
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-You add users to ATS by inviting them to your Mendix app. For more information on the user roles, see [Different User Roles](ov-introduction#roles).
+You add users to ATS by inviting them to your Mendix app. For more information on the user roles, see [Different User Roles](/addons/ats-addon/ov-introduction/#roles).
 {{% /alert %}}
 
 ## 3 Configuring Your App
@@ -48,7 +48,7 @@ You are now on the **Settings** page. Here you add environments and selenium hub
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-getting-started/settings-page.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Only the App admin and Scrum Master have the rights to edit the settings. You set the roles in the Developer Portal.
 
@@ -101,7 +101,7 @@ To add a new Selenium hub, follow these steps:
 
 	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-getting-started/browserstack-selenium-hub-wizard.png)
 
-For further documentation on how-to install the ATS Helper and the Recorder see [How-to configure a Selenium hub](ht-two-configure-a-selenium-hub).
+For further documentation on how-to install the ATS Helper and the Recorder see [How-to configure a Selenium hub](/addons/ats-addon/ht-two-configure-a-selenium-hub/).
 
 ## 4 Test Cases
 
@@ -145,8 +145,8 @@ To create a test case, follow these steps:
 Now that you have created a test case, the next step is to configure your test case and start adding test steps. ATS provides two different tools to help add test steps: ATS Helper (Setup step manually) and ATS Recorder (Record step). We advise you to use the recorder as much as possible to add test steps. But, the ATS Recorder might not be able to record certain manual test steps. So, we advise to add steps in the following order:
 
 * Record your manual test steps using the ATS Recorder
-* Adding test steps using the ATS Helper, see [Finding the action you need](bp-two-finding-the-action-you-need).
-* Create a custom action, see [Create custom action](ht-two-create-custom-actions).
+* Adding test steps using the ATS Helper, see [Finding the action you need](/addons/ats-addon/bp-two-finding-the-action-you-need/).
+* Create a custom action, see [Create custom action](/addons/ats-addon/ht-two-create-custom-actions/).
 
 Before you start adding test steps, add the ATS Helper and ATS Recorder tools:
 
@@ -157,7 +157,7 @@ Before you start adding test steps, add the ATS Helper and ATS Recorder tools:
 
 	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-getting-started/information-dialog.png)
 
-For further documentation on how-to install the ATS Helper and the Recorder see [How-to install the ATS Helper and Recorder](ht-two-install-ats-helper-recorder).
+For further documentation on how-to install the ATS Helper and the Recorder see [How-to install the ATS Helper and Recorder](/addons/ats-addon/ht-two-install-ats-helper-recorder/).
 
 #### 4.2.1 Record – Using the Recorder Function
 
@@ -179,11 +179,11 @@ To use the recorder function, follow these steps:
 | **Recorded event** | All the registered clicks/entering text will show up here in the sequence where they were done. Select an event to open the **Action mapping** menu of that particular event. The ATS Recorder selects the actions for you. |
 | **Action mapping** | This shows all the available actions for this event. Click **Select** if you want to choose a different action.|
 
-All the test steps are numbered for easy identification. To change the sequence of the test steps click the left of the test step while dragging the test step up or down. You can **delete**, **copy** or **paste** a selected test step. With the **Extract action**, you can combine actions of multiple steps into one step. Select the steps you want to combine and click **Extract action**. For more information on extracting an action, see [Custom Actions](rg-one-custom-actions).
+All the test steps are numbered for easy identification. To change the sequence of the test steps click the left of the test step while dragging the test step up or down. You can **delete**, **copy** or **paste** a selected test step. With the **Extract action**, you can combine actions of multiple steps into one step. Select the steps you want to combine and click **Extract action**. For more information on extracting an action, see [Custom Actions](/addons/ats-addon/rg-one-custom-actions/).
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-getting-started/recorded-test-case.png)
 
-For further documentation on how-to create a test case see [How-to create a test case](ht-two-create-a-test-case).
+For further documentation on how-to create a test case see [How-to create a test case](/addons/ats-addon/ht-two-create-a-test-case/).
 
 #### 4.2.2 Test Data Tab
 
@@ -191,13 +191,13 @@ In this tab, you can connect your datasets to a test case. Use the arrow to sele
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-getting-started/test-data-tab.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you do not use the dataset, make sure to disconnect it. ATS will remember where you selected the dataset fields as input, so if you reconnect the dataset, ATS will automatically set the correct input.
 
 {{% /alert %}}
 
-For further documentation on how-to create a datadriven test case see [How-to create a datadriven test case](ht-two-create-datadriven-test-case).
+For further documentation on how-to create a datadriven test case see [How-to create a datadriven test case](/addons/ats-addon/ht-two-create-datadriven-test-case/).
 
 #### 4.2.3 Show Usages Tab
 
@@ -211,7 +211,7 @@ This tab displays the user stories that are connected to your test case, the tes
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-getting-started/stories-tab.png)
 
-For further documentation on how-to link stories to test cases see [How-to link Test Cases/Test Suites to User Stories](ht-two-connect-stories-to-testcases).
+For further documentation on how-to link stories to test cases see [How-to link Test Cases/Test Suites to User Stories](/addons/ats-addon/ht-two-connect-stories-to-testcases/).
 
 ### 4.3 Creating a Test Suite
 
@@ -244,7 +244,7 @@ You add a test case to your test suite by clicking the **Select and add test cas
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-getting-started/add-test-case.png)
 
-For further documentation on how-to create a test suite see [How-to create a test suite](ht-two-create-a-test-suite).
+For further documentation on how-to create a test suite see [How-to create a test suite](/addons/ats-addon/ht-two-create-a-test-suite/).
 
 #### 4.3.2 Show Usages Tab
 
@@ -258,7 +258,7 @@ This tab displays the user stories that are connected to your test suite, the te
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-getting-started/stories-tab-test-suite.png)
 
-For further documentation on how-to link stories to test suites see [How-to link Test Cases/Test Suites to User Stories](ht-two-connect-stories-to-testcases).
+For further documentation on how-to link stories to test suites see [How-to link Test Cases/Test Suites to User Stories](/addons/ats-addon/ht-two-connect-stories-to-testcases/).
 
 ## 5 Run Configuration
 
@@ -291,10 +291,10 @@ When you click **Run**, the **Test Runs** page will open.
 
 Once your test case/suite is executed, the result is shown here.
 
-You have now finished the getting started guide for ATS. We advice to read next [How-to Install the ATS Helper and Recorder](ht-two-install-ats-helper-recorder).
+You have now finished the getting started guide for ATS. We advice to read next [How-to Install the ATS Helper and Recorder](/addons/ats-addon/ht-two-install-ats-helper-recorder/).
 
 Good luck testing your Mendix app with ATS!
 
 ## 7 Next Up
 
-You now learned a few basics of working with ATS. The next how-to is [How to Install the ATS Helper and ATS Recorder](ht-two-install-ats-helper-recorder). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+You now learned a few basics of working with ATS. The next how-to is [How to Install the ATS Helper and ATS Recorder](/addons/ats-addon/ht-two-install-ats-helper-recorder/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

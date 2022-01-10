@@ -1,19 +1,19 @@
 ---
 title: "Text"
-url: /refguide8/text
+url: /refguide8/text/
 parent: "common-widgets"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "text", "text widget", "common widget"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/text.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/text.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-The text widget displays a text which can contain parameters if necessary. Every attribute is replaced with the value of this attribute. For example, you can show a greeting message to a user by placing a text widget in a [data view](data-view) and adding parameters to it.
+The text widget displays a text which can contain parameters if necessary. Every attribute is replaced with the value of this attribute. For example, you can show a greeting message to a user by placing a text widget in a [data view](/refguide8/data-view/) and adding parameters to it.
 
 ![Text Widget](/attachments/refguide8/modeling/pages/common-widgets/text/text.png)
 
@@ -35,11 +35,11 @@ Text properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
+{{% snippet file="refguide8/design-section-link.md" %}} 
 
 ### 2.3 General Section {#general}
 
@@ -73,7 +73,7 @@ Parameters have the following settings:
 
 To use parameters, do the following:
 
-1. Place the **Text** widget must be placed in a context of an entity, as in, inside a [data widget](data-widgets).
+1. Place the **Text** widget must be placed in a context of an entity, as in, inside a [data widget](/refguide8/data-widgets/).
 
 2. Double-click the **Caption** setting in the text widget properties.
 
@@ -113,10 +113,10 @@ The render mode determines how the text will be displayed.
 
 ### 2.4 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
+{{% snippet file="refguide8/visibility-section-link.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [Common Widgets](common-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [Common Widgets](/refguide8/common-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)

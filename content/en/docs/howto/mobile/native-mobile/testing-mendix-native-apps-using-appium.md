@@ -35,7 +35,7 @@ However, the default Appium Android driver (UIAutomator2) is unable to read the 
 
 ## 4 Set Up Appium Desktop to Spy on a Mendix Native iOS App
 
-1. Build a native iOS app for your Mendix app (see [How to Build Native Apps](/howto/mobile/build-native-apps) for more information).
+1. Build a native iOS app for your Mendix app (see [How to Build Native Apps](/howto/mobile/build-native-apps/) for more information).
 1. Build the WebDriverAgent project that is shipped with your Appium Desktop installation as described [here](http://appium.io/docs/en/advanced-concepts/wda-custom-server/).For Appium Desktop, the WDA project can be found in */Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent*.
 1. Start Appium Desktop
 1. Click **Start Server**.
@@ -59,7 +59,7 @@ However, the default Appium Android driver (UIAutomator2) is unable to read the 
 
 1. Add the Espresso dependencies by following the setup instructions [here](https://developer.android.com/training/testing/espresso/setup).
 
-1. Build a native Android app for your Mendix app (See [How to Build Native Apps](/howto/mobile/build-native-apps) for more information).
+1. Build a native Android app for your Mendix app (See [How to Build Native Apps](/howto/mobile/build-native-apps/) for more information).
 
 1. Start Appium Desktop.
 
@@ -117,6 +117,6 @@ Once you have the capabilities you want that work with Appium Desktop, you can a
 
 ## 7 Read More
 
-* [How To Debug Native Mobile Apps (Advanced)](/howto/mobile/native-debug)
+* [How To Debug Native Mobile Apps (Advanced)](/howto/mobile/native-debug/)
 * [How To Troubleshoot Common Native Mobile Issues
 ](/howto/mobile/common-issues)

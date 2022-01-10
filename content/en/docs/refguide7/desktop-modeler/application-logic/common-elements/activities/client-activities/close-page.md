@@ -1,6 +1,6 @@
 ---
 title: "Close Page"
-url: /refguide7/close-page
+url: /refguide7/close-page/
 parent: "client-activities"
 aliases:
     - /refguide7/Close+Form.html
@@ -10,8 +10,8 @@ aliases:
 
 Close page closes the currently open page.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-See [Microflow Element Common Properties](microflow-element-common-properties) for properties that all microflow activities share (for example, caption). This page only describes the properties specific to the action.
+See [Microflow Element Common Properties](/refguide7/microflow-element-common-properties/) for properties that all microflow activities share (for example, caption). This page only describes the properties specific to the action.
 
 {{% /alert %}}

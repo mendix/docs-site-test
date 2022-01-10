@@ -166,7 +166,7 @@ the output is:
 
 Adds two numbers.
 
-For the use of the addition symbol for string concatenation, see [String function calls](string-function-calls).
+For the use of the addition symbol for string concatenation, see [String function calls](/refguide/string-function-calls/).
 
 ### 5.1 Input Parameters
 

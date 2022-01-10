@@ -1,14 +1,14 @@
 ---
 title: "Application Logic"
-url: /refguide8/application-logic
+url: /refguide8/application-logic/
 category: "App Modeling"
-menu_order: 40
+weight: 40
 description: "Presents an overview of documentation on microflows and nanoflows."
 tags: ["studio pro", "logic", "microflow", "nanoflow"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/application-logic.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/application-logic.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -19,14 +19,14 @@ Application logic in Mendix can be implemented via microflows, running on the ru
 
 Explore the documentation for details on microflow and nanoflow definitions, properties, and usages.
 
-* [Microflows](microflows)
-* [Nanoflows](nanoflows)
-* [Sequence Flow](sequence-flow)
-* [Activities](activities)
-* [Decisions](decisions)
-* [Annotation](annotation)
-* [Parameter](parameter)
-* [Loop](loop)
-* [Events](events)
-* [Expressions](expressions)
-* [Common Properties](microflow-element-common-properties)
+* [Microflows](/refguide8/microflows/)
+* [Nanoflows](/refguide8/nanoflows/)
+* [Sequence Flow](/refguide8/sequence-flow/)
+* [Activities](/refguide8/activities/)
+* [Decisions](/refguide8/decisions/)
+* [Annotation](/refguide8/annotation/)
+* [Parameter](/refguide8/parameter/)
+* [Loop](/refguide8/loop/)
+* [Events](/refguide8/events/)
+* [Expressions](/refguide8/expressions/)
+* [Common Properties](/refguide8/microflow-element-common-properties/)

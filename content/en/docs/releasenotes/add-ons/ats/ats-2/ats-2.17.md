@@ -22,7 +22,7 @@ parent: "ats-2"
 
 ### Mendix 8.9 Compatibility
 
-Apps built with [Mendix 8.9](/releasenotes/studio-pro/8.9) can now be tested and recorded using ATS.
+Apps built with [Mendix 8.9](/releasenotes/studio-pro/8.9/) can now be tested and recorded using ATS.
 
 ### Improvements
 

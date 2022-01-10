@@ -15,7 +15,7 @@ The report grid widget is not supported on native mobile pages.
 
 ## 1 Introduction
 
-A **Report grid** shows data retrieved from the database using a [Data set](data-sets) in a grid format. Each row in the grid displays a single result from the data set. Each time a report is created, the data is retrieved from the database.
+A **Report grid** shows data retrieved from the database using a [Data set](/refguide/data-sets/) in a grid format. Each row in the grid displays a single result from the data set. Each time a report is created, the data is retrieved from the database.
 
 The difference between a data grid and a report grid is that you can use a data grid to edit the data shown. A report grid will only display data. However, in a report grid, you can create additional information by merging and processing attributes when you define the data set which retrieves the data.
 
@@ -41,17 +41,17 @@ Each column in a report grid also has properties: see [Report Grid Column Proper
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Data Source Section{#data-source}
 
 #### 2.2.1 Data Set
 
-**Data set** specifies the [Data set](data-sets) which defines the data that will be shown in the report grid. Any of the selected attributes or aggregations (for example totals or averages) from the data set can be dragged into a data grid column from the **Connector** pane: see [Report Grid Column Data Source](#column-data-source), below.
+**Data set** specifies the [Data set](/refguide/data-sets/) which defines the data that will be shown in the report grid. Any of the selected attributes or aggregations (for example totals or averages) from the data set can be dragged into a data grid column from the **Connector** pane: see [Report Grid Column Data Source](#column-data-source), below.
 
 ### 2.3 Design Properties Section{#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.4 General Section{#general}
 
@@ -97,7 +97,7 @@ When the end-user clicks this button, the report is exported as a `Microsoft Exc
 
 #### 2.4.6 Generate on Page Load
 
-If **Generate on page load** is set to **No**, the report grid will not show any data until the end-user presses the [Generate report button](report-button). This is especially useful if the report uses parameters that should first be specified by the end-user. 
+If **Generate on page load** is set to **No**, the report grid will not show any data until the end-user presses the [Generate report button](/refguide/report-button/). This is especially useful if the report uses parameters that should first be specified by the end-user. 
 
 ## 3 Report Grid Column Properties{#column-properties}
 

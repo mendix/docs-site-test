@@ -1,8 +1,8 @@
 ---
 title: "Monitor Mendix Using JMX"
-url: /howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx
+url: /howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/
 category: "Monitoring & Troubleshooting"
-menu_order: 10
+weight: 10
 tags: ["monitoring", "troubleshooting", "jmx"]
 ---
 
@@ -152,13 +152,13 @@ The idea is that you will have a Java Action that you can call in a microflow wh
 
 ## 6 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Log Levels](log-levels)
-* [Debug Java Actions](debug-java-actions)
-* [Debug Microflows](debug-microflows)
-* [Debug Microflows Remotely](debug-microflows-remotely)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Log Levels](/howto8/monitoring-troubleshooting/log-levels/)
+* [Debug Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)
+* [Debug Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+* [Debug Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely/)
+* [Debug Java Actions Remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)

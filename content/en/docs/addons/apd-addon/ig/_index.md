@@ -11,6 +11,6 @@ The *APD Installation Guides* are organized according to the APD version.
 
 ## 2 Main Documents in This Section
 
-* [APD 3 Installation Guide](ig-three)
-* [APM 2 Installation Guide](ig-two)
-* [APM 1 Installation Guide](ig-one)
+* [APD 3 Installation Guide](/addons/apd-addon/ig-three/)
+* [APM 2 Installation Guide](/addons/apd-addon/ig-two/)
+* [APM 1 Installation Guide](/addons/apd-addon/ig-one/)

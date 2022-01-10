@@ -16,7 +16,7 @@ Your organization may have a requirement to use a private cloud, perhaps as part
 
 You can use Mendix for Private Cloud with the *connected* option to keep the simplicity of one-click deployments from the Developer Portal, or utilize the *standalone* Mendix Operator to deploy Mendix apps through your own DevOps process, which is particularly useful for private clouds with an *air-gap* isolating them from the internet. See [Connected and Standalone Clusters](#connected-standalone), below, for more information.
 
-Please see [Supported Providers](private-cloud-supported-environments) for a list of platforms supported by Mendix for Private Cloud.
+Please see [Supported Providers](/developerportal/deploy/private-cloud-supported-environments/) for a list of platforms supported by Mendix for Private Cloud.
 
 There are two steps required to achieve this, listed below.
 
@@ -26,7 +26,7 @@ Mendix for Private Cloud is a premium offering from Mendix, and there are additi
 
 ### 1.1 Registering Your Cluster
 
-The first step is to register your private cloud cluster in the Developer Portal. For more information see [Creating a Private Cloud Cluster](private-cloud-cluster).
+The first step is to register your private cloud cluster in the Developer Portal. For more information see [Creating a Private Cloud Cluster](/developerportal/deploy/private-cloud-cluster/).
 
 This activity needs to be done by a systems administrator who has administration rights to the platform where the cluster is being created.
 
@@ -34,8 +34,8 @@ This activity needs to be done by a systems administrator who has administration
 
 To deploy your app, you have two options:
 
-1. You can deploy the app from within the Developer Portal. For more information see [Deploying a Mendix App to a Private Cloud Cluster from Developer Portal](private-cloud-deploy).
-2. You can create a CI/CD pipeline and deploy your app from within the cluster. For more information see [Using Command Line to Deploy a Mendix App to a Private Cloud Cluster](private-cloud-operator).
+1. You can deploy the app from within the Developer Portal. For more information see [Deploying a Mendix App to a Private Cloud Cluster from Developer Portal](/developerportal/deploy/private-cloud-deploy/).
+2. You can create a CI/CD pipeline and deploy your app from within the cluster. For more information see [Using Command Line to Deploy a Mendix App to a Private Cloud Cluster](/developerportal/deploy/private-cloud-operator/).
 
 When you deploy through the Developer Portal, this can be done by any Mendix user who has been given the appropriate rights to the cluster which has been registered.
 
@@ -126,10 +126,10 @@ You will receive your Runtime license(s) from Mendix Support. See [Online Privat
 
 If your app is able to connect to the internet to contact the Mendix license server, you will receive a **Subscription Secret** from Mendix Support.
 
-If your app is **Connected** to the Developer Portal, you can enter the subscription secret [in the Developer Portal](private-cloud-deploy#change-subscription-secret)
+If your app is **Connected** to the Developer Portal, you can enter the subscription secret [in the Developer Portal](/developerportal/deploy/private-cloud-deploy/#change-subscription-secret)
 
-If your app is **Standalone**, then you will have to provide the subscription secret by [editing the CR](private-cloud-operator#edit-cr) in the cluster.
+If your app is **Standalone**, then you will have to provide the subscription secret by [editing the CR](/developerportal/deploy/private-cloud-operator/#edit-cr) in the cluster.
 
 #### 4.2.2 Offline Private Cloud Apps{#activate-offline}
 
-If your app is unable to contact the Mendix license server, you will receive a **LicenseId** and a **LicenseKey**. You will have to provide these by [editing the CR](private-cloud-operator#edit-cr) in the cluster.
+If your app is unable to contact the Mendix license server, you will receive a **LicenseId** and a **LicenseKey**. You will have to provide these by [editing the CR](/developerportal/deploy/private-cloud-operator/#edit-cr) in the cluster.

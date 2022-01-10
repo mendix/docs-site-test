@@ -10,7 +10,7 @@ tags: ["Version Control", "Conflicts", "Resolve", "Merge", "Patch", "Branch", "D
 
 ## 1 Introduction
 
-This reference guide describes how to use version control in Mendix Studio Pro. The theory behind how version control works in Mendix, and a definition of the concepts can be found in [Version Contol](version-control).
+This reference guide describes how to use version control in Mendix Studio Pro. The theory behind how version control works in Mendix, and a definition of the concepts can be found in [Version Contol](/refguide/version-control/).
 
 ## 2 Starting an App with Version Control
 
@@ -28,7 +28,7 @@ The app is created on the Team Server, and a working copy is created in the **Ap
 
 ## 3 Joining an App
 
-If there is already a Team Server-enabled app, you can be invited to join it (see [Team](/developerportal/collaborate/team)).
+If there is already a Team Server-enabled app, you can be invited to join it (see [Team](/developerportal/collaborate/team/)).
 
 Once you are a team member, providing you have been given a role with sufficient rights, you can work on the app by doing the following:
 
@@ -57,12 +57,12 @@ The **App Explorer** shows an icon in front of items (documents, folders, and mo
 | Icon | Meaning |
 | --- | --- |
 | ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688173.png) | Nothing happened to this item. It is unchanged with the respect to the original. |
- | Nothing happened to this item. It is unchanged with the respect to the original. || ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688172.png) | You modified this item (as in, document, folder or module). |
- | You modified this item (as in, document, folder or module). || ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688175.png) | You added this item. |
- | You added this item. || ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688174.png) | You moved this item to another position in the app tree. |
- | You moved this item to another position in the app tree. || ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688164.png) | You deleted this item. |
- | You deleted this item. || ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688165.png) | You and somebody else made conflicting changes to this item. For more information, see the [Dealing With Conflicts](#conflicts) section below. |
- | You and somebody else made conflicting changes to this item. For more information, see the [Dealing With Conflicts](#conflicts) section below. |
+| ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688172.png) | You modified this item (as in, document, folder or module). |
+| ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688175.png) | You added this item. |
+| ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688174.png) | You moved this item to another position in the app tree. |
+| ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688164.png) | You deleted this item. |
+| ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688165.png) | You and somebody else made conflicting changes to this item. For more information, see the [Dealing With Conflicts](#conflicts) section below. |
+
 {{% alert color="info" %}}
 There is only room for one icon and if a document is both modified and moved it is shown as modified.
 {{% /alert %}}
@@ -174,7 +174,7 @@ There are two different sorts of conflict:
 
 Two changes in the same *document* that are really close to each other can cause a document conflict. For example, two people both change the properties of the same element on the page. The document will be marked as conflicted in the **Changes** pane. Conflicts have to be resolved before you can commit again.
 
-For more information on resolving document conflicts see [New Merge Algorithm with Fine-Grained Conflict Resolution](new-merge-algorithm) and [Changes Pane](changes-pane).
+For more information on resolving document conflicts see [New Merge Algorithm with Fine-Grained Conflict Resolution](/refguide/new-merge-algorithm/) and [Changes Pane](/refguide/changes-pane/).
 
 ### 6.2 Resolving an App Conflict
 
@@ -199,7 +199,7 @@ A repository can contain a number of development lines. Each development line of
 
 ![](/attachments/refguide/version-control/using-version-control-in-studio-pro/688156.png)
 
-It is often convenient to have more than one development line. For example, one development line for fixing bugs in the currently deployed version of your app and another line where you develop new functionality. If you then find a bug in the deployed version you can fix it in the corresponding development line irrespective of the state of the development line where new functionality is developed. See [Version Control](version-control) for more information about branches.
+It is often convenient to have more than one development line. For example, one development line for fixing bugs in the currently deployed version of your app and another line where you develop new functionality. If you then find a bug in the deployed version you can fix it in the corresponding development line irrespective of the state of the development line where new functionality is developed. See [Version Control](/refguide/version-control/) for more information about branches.
 
 ### 7.1 When to Use a Branch
 
@@ -277,7 +277,7 @@ Select **Version Control > Merge Changes Here**, do the following depending on t
 1. **For SVN**, select the appropriate type of merge (**Port fix**, **Merge feature branch**, and **Advanced merge** options are available)
 2. **For Git,** select the branch line to merge to the current branch. 
 
-For more information on merge settings, see [Merge Dialog](merge-dialog).
+For more information on merge settings, see [Merge Dialog](/refguide/merge-dialog/).
 
 #### 7.2.3 Reverse Merging
 
@@ -319,7 +319,7 @@ While developing you can deploy and run your app on your local machine by clicki
 
 ### 8.2 Deploying Your Working Copy
 
-When you deploy to the cloud, you can choose to use the version of the app stored on your local machine, the *working copy* and deploy that to the default environment. If you are using the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy), or other partner cloud (SAP BTP, for example), click **Publish** to commit the version of the app stored on your local machine and deploy that to the default environment.
+When you deploy to the cloud, you can choose to use the version of the app stored on your local machine, the *working copy* and deploy that to the default environment. If you are using the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/), or other partner cloud (SAP BTP, for example), click **Publish** to commit the version of the app stored on your local machine and deploy that to the default environment.
 
 ### 8.3 Choosing a Specific Development Line and Revision
 

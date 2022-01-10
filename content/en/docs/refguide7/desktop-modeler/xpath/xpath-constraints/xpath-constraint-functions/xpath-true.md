@@ -1,6 +1,6 @@
 ---
 title: "XPath true"
-url: /refguide7/xpath-true
+url: /refguide7/xpath-true/
 parent: "xpath-constraint-functions"
 ---
 

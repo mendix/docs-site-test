@@ -10,7 +10,7 @@ weight: 60
 
 With Java actions, you can extend the functionality of your application in situations where it would be hard to implement this functionality in microflows.
 
-For information about Java actions in Studio Pro, see [Java Actions](java-actions).
+For information about Java actions in Studio Pro, see [Java Actions](/refguide/java-actions/).
 
 ## 2 Writing Code in .java Files of Your Java Actions
 
@@ -67,12 +67,12 @@ public class JavaAction_1 extends CustomJavaAction<java.lang.Void>
 You can use the Mendix Java library in the Java code that you write for your Java actions.
 
 {{% alert color="info" %}}
-You can find the Javadoc at [Runtime API](/apidocs-mxsdk/apidocs/runtime-api) or in the directory Studio Pro is installed in (for example, *C:\Program Files\Mendix\9.0.0\runtime\javadoc*).
+You can find the Javadoc at [Runtime API](/apidocs-mxsdk/apidocs/runtime-api/) or in the directory Studio Pro is installed in (for example, *C:\Program Files\Mendix\9.0.0\runtime\javadoc*).
 {{% /alert %}}
 
 This library is automatically added to your libraries when you import your app into Eclipse, it is called *mxruntime.jar*.
 
-For details on usage and examples, see [How to Use the Java API](/howto/logic-business-rules/java-api-tutorial).
+For details on usage and examples, see [How to Use the Java API](/howto/logic-business-rules/java-api-tutorial/).
 
 ## 4 Opening HTTP Connections
 
@@ -82,9 +82,9 @@ You should therefore ensure that you always set a timeout for any connections yo
 
 ## 5 Using Eclipse as an Environment to Write Your Mendix Java Actions
 
-For details on this topic, see [Using Eclipse](using-eclipse).
+For details on this topic, see [Using Eclipse](/refguide/using-eclipse/).
 
 ## 6 Main Documents in This Category
 
-* [Troubleshooting](troubleshooting) – presents problematic JAR files and workarounds
-* [Using Eclipse](using-eclipse) – describes how to use Eclipse to write and debug the Java actions in your Mendix app
+* [Troubleshooting](/refguide/troubleshooting/) – presents problematic JAR files and workarounds
+* [Using Eclipse](/refguide/using-eclipse/) – describes how to use Eclipse to write and debug the Java actions in your Mendix app

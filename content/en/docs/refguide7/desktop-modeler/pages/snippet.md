@@ -1,14 +1,14 @@
 ---
 title: "Snippet"
-url: /refguide7/snippet
+url: /refguide7/snippet/
 parent: "pages"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 
-Snippets define reusable interface parts. They can be used on both [pages](page) and [layouts](layout). By using snippets you can make changes in fewer places when you modify the interface. For example, you can have a snippet that is used both in the contents area of a template grid and in a data view. If you change something in the snippet, that change will show up in both places.
+Snippets define reusable interface parts. They can be used on both [pages](/refguide7/page/) and [layouts](/refguide7/layout/). By using snippets you can make changes in fewer places when you modify the interface. For example, you can have a snippet that is used both in the contents area of a template grid and in a data view. If you change something in the snippet, that change will show up in both places.
 
-A snippet can, optionally, define an [entity](entities) that serves as a context for the widgets placed on it. For example, if you wanted to use an attribute of a Customer entity in a snippet, you could place a text box that shows the customer's name in the snippet without having to define a data view first.
+A snippet can, optionally, define an [entity](/refguide7/entities/) that serves as a context for the widgets placed on it. For example, if you wanted to use an attribute of a Customer entity in a snippet, you could place a text box that shows the customer's name in the snippet without having to define a data view first.
 
 When an entity is defined on a snippet, any usages of the snippet need to be placed inside a context for that entity or a specialization: a data view, for example.
 
@@ -18,7 +18,7 @@ When an entity is defined on a snippet, any usages of the snippet need to be pla
 
 The name of the snippet. You can change the name via the project explorer.
 
-{{% snippet file="/static/_includes/refguide7/Documentation+Property.md" %}}
+{{% snippet file="refguide7/Documentation+Property.md" %}}
 
 ## Designer Properties
 

@@ -1,11 +1,11 @@
 ---
 title: "Select app service"
-url: /refguide7/select-app-service
+url: /refguide7/select-app-service/
 parent: "consumed-app-services"
 ---
 
-{{% alert type="info" %}}
-App services have been deprecated in version 7.23.4 and are marked for removal. Use a [consumed web service](consumed-web-services) to consume existing app services.
+{{% alert color="info" %}}
+App services have been deprecated in version 7.23.4 and are marked for removal. Use a [consumed web service](/refguide7/consumed-web-services/) to consume existing app services.
 {{% /alert %}}
 
 ## Source
@@ -24,4 +24,4 @@ In the rightmost corner of the 'Most recent app services overview', you can sele
 
 ### Tile
 
-Selecting a tile and then selecting the OK button will import the app service for you in the modeler. See [Consumed App Services](consumed-app-services) for information about the use of imported app services.
+Selecting a tile and then selecting the OK button will import the app service for you in the modeler. See [Consumed App Services](/refguide7/consumed-app-services/) for information about the use of imported app services.

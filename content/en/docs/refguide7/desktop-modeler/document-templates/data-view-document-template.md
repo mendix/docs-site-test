@@ -1,6 +1,6 @@
 ---
 title: "Data View (Document Template)"
-url: /refguide7/data-view-document-template
+url: /refguide7/data-view-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Data+View+(document+template).html
@@ -16,7 +16,7 @@ A data view showing orderline information
 
 ## Common Properties
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}
 
 ## Data Source Properties
 

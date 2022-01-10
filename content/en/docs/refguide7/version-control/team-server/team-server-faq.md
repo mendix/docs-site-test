@@ -1,6 +1,6 @@
 ---
 title: "Team Server FAQ"
-url: /refguide7/team-server-faq
+url: /refguide7/team-server-faq/
 parent: "team-server"
 ---
 
@@ -39,12 +39,12 @@ The team server runs in the trusted Mendix cloud environment and on a trusted in
 
 ### How do I merge changes from one development line to another?
 
-The modeler automates most of this process; you can simply merge development lines by selecting model revisions on the team server. The Mendix Desktop Modeler will do the merging and will keep track of consistency. [Read more](version-control)
+The modeler automates most of this process; you can simply merge development lines by selecting model revisions on the team server. The Mendix Desktop Modeler will do the merging and will keep track of consistency. [Read more](/refguide7/version-control/)
 
 ### How do I resolve a conflict when two changes cannot be combined?
 
-Resolving a conflict can be done in by using the 'Use mine' and 'Use theirs' button in the version control dock. [Read more](using-version-control-in-the-dm)
+Resolving a conflict can be done in by using the 'Use mine' and 'Use theirs' button in the version control dock. [Read more](/refguide7/using-version-control-in-the-dm/)
 
 ### How can I access the history of my project?
 
-The history of the project is a list of all revisions that have been committed in reverse chronological order. The history form quickly shows you revision number, date, time, author and message of each revision; it can be accessed from within the Mendix Desktop Modeler as well as the Developer Portal. [Read more](using-version-control-in-the-dm)
+The history of the project is a list of all revisions that have been committed in reverse chronological order. The history form quickly shows you revision number, date, time, author and message of each revision; it can be accessed from within the Mendix Desktop Modeler as well as the Developer Portal. [Read more](/refguide7/using-version-control-in-the-dm/)

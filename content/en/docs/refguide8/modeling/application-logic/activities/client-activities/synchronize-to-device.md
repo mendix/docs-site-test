@@ -1,17 +1,17 @@
 ---
 title: "Synchronize to Device"
-url: /refguide8/synchronize-to-device
+url: /refguide8/synchronize-to-device/
 parent: "client-activities"
 tags: ["studio pro", "synchronize to device", "client activities"]
-menu_order: 60
+weight: 60
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/synchronize-to-device.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/synchronize-to-device.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Microflows**.
 {{% /alert %}}
 
@@ -48,7 +48,7 @@ A variable that refers to an object or a list to be synchronized.
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Limitations
 
@@ -67,7 +67,7 @@ they will not be synchronized to a device. If the offline database already conta
 
 When adding **Synchronize to device** to a microflow consider the following:
 
-* This action should be used in combination with the [Nothing (preserve data)](offline-first#customizable-synchronization) option to make sure your data is not cleared during a synchronize action.
+* This action should be used in combination with the [Nothing (preserve data)](/refguide8/offline-first/#customizable-synchronization) option to make sure your data is not cleared during a synchronize action.
 * **Synchronize to device** action works in an append mode, it does not replace all data in the database.
 Any existing data is kept and only objects that are sent to the client are affected.
 * synchronizing the same object or list multiple times will synchronize it only once. The latest commited state will be synchronized.

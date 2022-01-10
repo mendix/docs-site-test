@@ -38,4 +38,4 @@ The **Paths** property allows you to add as many paths as there are parallel pro
 
 ## 3 Read More
 
-* [Workflow Properties](workflow-properties)
+* [Workflow Properties](/refguide/workflow-properties/)

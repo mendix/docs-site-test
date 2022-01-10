@@ -26,7 +26,7 @@ Sections [6 Adding Logic to Make Your Action "Smarter"](#AddingLogic) and [7 Fin
 
 Before starting this how-to, make sure you have completed the following prerequisite:
 
-* Read [Custom Action General Section](ht-one-custom-action-general)
+* Read [Custom Action General Section](/addons/ats-addon/ht-one-custom-action-general/)
 
 ## 3 Defining the User Approach
 
@@ -58,9 +58,9 @@ In the previous section, you wrote down the user approach for the Mendix Switch 
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-02-switch/highlighted-switch-mxname.png)
 
-    When selecting which element to find, also remember that ATS clicks in the middle of an element. In this case, ATS does not click the actual switch. This means you must use the [Find Widget Child Node](rg-one-find-widget-child-node) action. This action is a combination of the [Find/Assert Widget](rg-one-findassert-widget) and [Find Element by Sizzle](rg-one-find-element-by-sizzle) actions, combining the best of both. It’s an official Mendix action, it has all the internal processes, and it uses a CSS/jQuery selector to find the child, which makes it flexible.
+    When selecting which element to find, also remember that ATS clicks in the middle of an element. In this case, ATS does not click the actual switch. This means you must use the [Find Widget Child Node](/addons/ats-addon/rg-one-find-widget-child-node/) action. This action is a combination of the [Find/Assert Widget](/addons/ats-addon/rg-one-findassert-widget/) and [Find Element by Sizzle](/addons/ats-addon/rg-one-find-element-by-sizzle/) actions, combining the best of both. It’s an official Mendix action, it has all the internal processes, and it uses a CSS/jQuery selector to find the child, which makes it flexible.
 
-2.  Check the different child nodes to find the one you need. While doing this, keep the [guidelines for creating a custom action](ht-one-guidelines-custom-action) in mind! It must be generic, so pick an element or element class that’s always present, because you "hard-code" it into your action. Also, make sure the element is visible for the end-user so that ATS can click it.
+2.  Check the different child nodes to find the one you need. While doing this, keep the [guidelines for creating a custom action](/addons/ats-addon/ht-one-guidelines-custom-action/) in mind! It must be generic, so pick an element or element class that’s always present, because you "hard-code" it into your action. Also, make sure the element is visible for the end-user so that ATS can click it.
 
     After looking through the child nodes, you will find a child element that covers the switch and also looks generic. This is the element in the debugger, and the rectangle shows which class name we are going to use:
 
@@ -109,7 +109,7 @@ In the previous section, you wrote down the user approach for the Mendix Switch 
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-02-switch/mendix-switch-findwidgetchild-description-output.png)
 
-9.  Click the Mendix switch to change its state. Add the [Click/Doubleclick](rg-one-clickdoubleclick) action, because this action is a Mendix action:
+9.  Click the Mendix switch to change its state. Add the [Click/Doubleclick](/addons/ats-addon/rg-one-clickdoubleclick/) action, because this action is a Mendix action:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-02-switch/mendix-switch-click-doubleclick-add.png)
 
@@ -170,7 +170,7 @@ You have an action that clicks the Switch widget to alter its state, and now you
 
     The logic you use is as follows: **Only click the switch if the value of the switch is NOT the same as the value entered by the user.**
 
-    There is a precondition on the Click/Doubleclick action performing the logic: use the [Assert Not Equals](rg-one-assert-not-equals) action as the precondition.
+    There is a precondition on the Click/Doubleclick action performing the logic: use the [Assert Not Equals](/addons/ats-addon/rg-one-assert-not-equals/) action as the precondition.
 
     For example, if you want to set the switch to unchecked, you enter the value false. If the switch is already false, then the values are equal and the precondition fails, which results in ATS *not* executing the Click/Doubleclick action, and vice versa. 
 

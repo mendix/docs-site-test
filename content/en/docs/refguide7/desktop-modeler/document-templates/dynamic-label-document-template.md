@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Label (Document Template)"
-url: /refguide7/dynamic-label-document-template
+url: /refguide7/dynamic-label-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Dynamic+label+(document+template).html
@@ -11,7 +11,7 @@ aliases:
 
 A dynamic label would be used for the same kind of attributes as a text box from the form builder. It can be used to display a text value.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/document-templates/dynamic-label-document-template/918131.png)
 A dynamic label linking to a customer name.
@@ -22,7 +22,7 @@ A dynamic label linking to a customer name.
 
 ### Style
 
-See [Style](style)
+See [Style](/refguide7/style/)
 
 ### Render XHTML
 
@@ -57,7 +57,7 @@ _Default value:_ Date
 If you choose 'Custom' as the date format (see above) the custom date format determines the way date and/or time are formatted. The custom date format is a string that follows the rules described in
 [http://download.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html](http://download.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The custom date format
 `EEE, MMM d, yy`
@@ -68,7 +68,7 @@ results in the following text
 
 ## Common Properties
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}
 
 ## Data Source Properties
 

@@ -1,6 +1,6 @@
 ---
 title: "Unary expressions"
-url: /refguide7/unary-expressions
+url: /refguide7/unary-expressions/
 parent: "expressions"
 ---
 

@@ -20,7 +20,7 @@ The categories described below are available.
 
 A configuration is a group of settings. You can define any number of configurations. The active configuration (meaning, the one that will be used when running your application) is determined by the drop-down menu in the toolbar of Studio Pro.
 
-For more information on settings in a configuration, see [Configuration](configuration).
+For more information on settings in a configuration, see [Configuration](/refguide/configuration/).
 
 ## 3 Runtime Tab
 
@@ -56,13 +56,13 @@ Here you can select a microflow that is automatically executed when a shutdown c
 
 Here you can select a microflow which performs the checks on a running app that you think are required to assess the app's health.
 
-The result of each check is returned as a string, which is displayed in the [Developer Portal](/developerportal/deploy/environments). When the microflow returns an empty string, the application is healthy; otherwise, the string presents an explanation of why the application is not healthy.
+The result of each check is returned as a string, which is displayed in the [Developer Portal](/developerportal/deploy/environments/). When the microflow returns an empty string, the application is healthy; otherwise, the string presents an explanation of why the application is not healthy.
 
-This microflow gets called every 10 seconds to check if the app is still healthy. This is done by executing it using m2ee on the admin port of your app. For more information, see the section [Health Check](monitoring-mendix-runtime#check-health) in *Monitoring Mendix Runtime*.
+This microflow gets called every 10 seconds to check if the app is still healthy. This is done by executing it using m2ee on the admin port of your app. For more information, see the section [Health Check](/refguide/monitoring-mendix-runtime/#check-health) in *Monitoring Mendix Runtime*.
 
 {{% alert color="info" %}}
 
-The health check microflow is specific to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy). For other clouds, the admin port can be called, or the health check microflow can be exposed through a REST API.
+The health check microflow is specific to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/). For other clouds, the admin port can be called, or the health check microflow can be exposed through a REST API.
 
 {{% /alert %}}
 
@@ -170,7 +170,7 @@ Default: *Yes*
 
 ## 4 Languages Tab {#languages-tab}
 
-For more information about using different languages in your app, see [Language Menu](translatable-texts).
+For more information about using different languages in your app, see [Language Menu](/refguide/translatable-texts/).
 
 ### 4.1 Default Language
 
@@ -191,7 +191,7 @@ Certificates are used to connect to web services over HTTPS when the following r
 
 These certificates can be imported into Studio Pro using the **Import** button. Certificate authority files usually have a *.crt* extension, and client certificates usually have a *.p12* or *.pfx* extension. After importing, use **View details** to acquire more information concerning the certificate.
 
-Client certificates added here will be used whenever a server accepts a client certificate. If you upload more than one client certificate, one of them will be chosen based on the requirements of the server. If you need more control over client certificates, you should not upload the certificates here, but use the [Runtime customization](custom-settings) *ClientCertificates*, *ClientCertificatePasswords*, and *ClientCertificateUsages* settings.
+Client certificates added here will be used whenever a server accepts a client certificate. If you upload more than one client certificate, one of them will be chosen based on the requirements of the server. If you need more control over client certificates, you should not upload the certificates here, but use the [Runtime customization](/refguide/custom-settings/) *ClientCertificates*, *ClientCertificatePasswords*, and *ClientCertificateUsages* settings.
 
 {{% alert color="warning" %}}
 
@@ -228,13 +228,13 @@ For background information, see [Transport Layer Security (TLS) Renegotiation Is
 
 ### 6.1 UI Resources Package
 
-The look and feel of a Mendix application is governed by the [UI resources package](ui-resources-package). This package supplies the app with all the required theme information accompanied by matching page templates and building blocks. The module which is designated as the UI resources package is governed by the **UI resources package** setting. Generally, this is automatically updated when a new UI resources package is imported. However, with this setting, the desired module can also be set manually.
+The look and feel of a Mendix application is governed by the [UI resources package](/refguide/ui-resources-package/). This package supplies the app with all the required theme information accompanied by matching page templates and building blocks. The module which is designated as the UI resources package is governed by the **UI resources package** setting. Generally, this is automatically updated when a new UI resources package is imported. However, with this setting, the desired module can also be set manually.
 
 ### 6.2 Theme ZIP File
 
 {{% alert color="warning" %}}
 
-[Deprecated] The use of a ZIP file to configure an app's theme is deprecated. A [UI resources package](ui-resources-package) is the preferred method of sharing themes.
+[Deprecated] The use of a ZIP file to configure an app's theme is deprecated. A [UI resources package](/refguide/ui-resources-package/) is the preferred method of sharing themes.
 
 {{% /alert %}}
 
@@ -266,17 +266,17 @@ You can set an explicit order in the theme settings (**App Settings** > **Theme*
 
 ### 7.1 User Entity
 
-**User entity** defines the entity which is used in [assigning a user task](user-task#user-assignment). If you assign a user task using an XPath, you can use attributes of this entity. If you are using a microflow, the entity defines the return type the microflows expects. For more information, see the [User Task Assignment](user-task#user-assignment) section in *User Task*.
+**User entity** defines the entity which is used in [assigning a user task](/refguide/user-task/#user-assignment). If you assign a user task using an XPath, you can use attributes of this entity. If you are using a microflow, the entity defines the return type the microflows expects. For more information, see the [User Task Assignment](/refguide/user-task/#user-assignment) section in *User Task*.
 
-## 7.2 Execution
+### 7.2 Execution
 
 Allows you to set a maximum number of workflow and user task transactions that can be executed simultaneously by the runtime. This is an advanced setting that gives developers control over app performance.
 
-### 7.2.1 Parallel Workflow Executions
+#### 7.2.1 Parallel Workflow Executions
 
 Defines the maximum number of workflow transactions that the runtime will execute simultaneously. The limit is 10. 
 
-### 7.2.2 Parallel Task Executions
+#### 7.2.2 Parallel Task Executions
 
 Defines the maximum number of user task transactions that the runtime will execute simultaneously. The limit is 10.
 

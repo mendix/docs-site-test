@@ -1,6 +1,6 @@
 ---
 title: "Template Grid"
-url: /refguide7/template-grid
+url: /refguide7/template-grid/
 parent: "data-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -9,7 +9,7 @@ The template grid shows a list of objects in a tile view. For example, a templat
 
 Like data grid rows, single tiles do not have their content updated. For example, a data view inside a tile is not updated via the **Refresh in client** setting in a microflow action. Refreshing the template grid entity refreshes the whole grid.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/data-widgets/template-grid/template-grid.png)
 
@@ -19,27 +19,27 @@ A template grid showing employees with their profile picture.
 
 ## Common properties
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Class+Property.md" %}}
+{{% snippet file="refguide7/Class+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Style+Property.md" %}}
+{{% snippet file="refguide7/Style+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Tab+index+Property.md" %}}
+{{% snippet file="refguide7/Tab+index+Property.md" %}}
 
 ## Components
 
 ### Control bar
 
-See [Control Bar](control-bar).
+See [Control Bar](/refguide7/control-bar/).
 
 ### Search bar (for data source type 'Database' and 'XPath')
 
-See [Search Bar](search-bar).
+See [Search Bar](/refguide7/search-bar/).
 
 ### Sort bar (for data source type 'Database' and 'XPath')
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide7/sort-bar/).
 
 ## General properties
 
@@ -47,9 +47,9 @@ See [Sort Bar](sort-bar).
 
 This property indicates whether the control bar will be visible in the end user interface. The control bar also includes the paging buttons.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-Even if the control bar is invisible there can still be a default button that is triggered by (double) clicking a row. See the property 'Default button trigger' and [grid buttons](control-bar) for more information.
+Even if the control bar is invisible there can still be a default button that is triggered by (double) clicking a row. See the property 'Default button trigger' and [grid buttons](/refguide7/control-bar/) for more information.
 
 {{% /alert %}}
 
@@ -116,7 +116,7 @@ _Default value:_ 0
 
 ## Data source properties
 
-The data source determines which objects will be shown in the template grid. For general information about data sources, see [Data Sources](data-sources).
+The data source determines which objects will be shown in the template grid. For general information about data sources, see [Data Sources](/refguide7/data-sources/).
 
 ### Type
 
@@ -126,13 +126,13 @@ The template grid supports the following types of data sources: Database Source,
 
 See the corresponding data source for its properties:
 
-*   [Database source](database-source)
-*   [XPath source](xpath-source)
-*   [Microflow source](microflow-source)
-*   [Association source](association-source)
+*   [Database source](/refguide7/database-source/)
+*   [XPath source](/refguide7/xpath-source/)
+*   [Microflow source](/refguide7/microflow-source/)
+*   [Association source](/refguide7/association-source/)
 
 ## Visibility properties
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property.md" %}}
+{{% snippet file="refguide7/Visibility+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}
+{{% snippet file="refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}

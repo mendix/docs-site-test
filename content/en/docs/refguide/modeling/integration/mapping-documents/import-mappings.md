@@ -6,7 +6,7 @@ tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-Please refer to [Mapping Documents](mapping-documents) for an introduction.
+Please refer to [Mapping Documents](/refguide/mapping-documents/) for an introduction.
 
 ## 1 Obtaining Objects in Import Mappings
 
@@ -28,11 +28,11 @@ For each XML or JSON object, a Mendix object needs to be obtained. You can creat
 
 #### 1.2.1 Obtain Mendix Object Methods{#obtain-object}
 
-This is what will happen when you use an [Import with Mapping](import-mapping-action) action in your microflow.
+This is what will happen when you use an [Import with Mapping](/refguide/import-mapping-action/) action in your microflow.
 
 | Property | Description |
 | --- | --- |
-| **Create an object** | Creates a new object.<br/>An error can be thrown if there are any [before create](event-handlers#when) microflows that fail. |
+| **Create an object** | Creates a new object.<br/>An error can be thrown if there are any [before create](/refguide/event-handlers/#when) microflows that fail. |
 | **Find an object (by key)** | Searches for an object, using keys defined in the attributes list. The runtime searches for the object by taking all attributes marked as **Key** (in the **Value element to attribute mapping** section below) and converting them to an XPath query.<br/>If more than one object is returned by the XPath query, an error will be thrown. |
 | **Call a microflow** | Calls a microflow to obtain an object and return it. If the microflow expects any parameters, these need to be specified in the **Select...** window. Possible parameters are the input parameter (see above), any parent entity in the mapping and any attributes in the current XML element. The microflow must return an object of the correct entity type. If it returns a null object, the selected **If no object was found** action will be performed. ||
 
@@ -52,7 +52,7 @@ This is the action that the runtime will perform when an error occurred in the s
 | **Ignore** | Don't map this element and continue parsing the rest of the XML. |
 | **Error** | Explicitly stop parsing the XML and throw an error. This error needs to be handled in the calling microflow. |
 
-If this is the top level of the mapping, you can check **Decide this at the place where the mapping gets used**. If this is checked the option **if no object was found** can be set whenever you use the mapping, for instance in an [import mapping action](import-mapping-action) or a [call REST service action](call-rest-action).
+If this is the top level of the mapping, you can check **Decide this at the place where the mapping gets used**. If this is checked the option **if no object was found** can be set whenever you use the mapping, for instance in an [import mapping action](/refguide/import-mapping-action/) or a [call REST service action](/refguide/call-rest-action/).
 
 ### 1.3 Setting Associations
 
@@ -91,7 +91,7 @@ Having defined the mappings for the attributes, these mappings are also shown in
 
 ## 3 Mapping Parameter
 
-Import mappings have the additional option to receive an incoming parameter. The parameter can be passed by the calling microflow when the microflow uses the [import from mapping](import-mapping-action) action.
+Import mappings have the additional option to receive an incoming parameter. The parameter can be passed by the calling microflow when the microflow uses the [import from mapping](/refguide/import-mapping-action/) action.
 
 To define a parameter for your mapping, click the parameter box and select the data type. You can also drag an entity to the parameter box. 
 

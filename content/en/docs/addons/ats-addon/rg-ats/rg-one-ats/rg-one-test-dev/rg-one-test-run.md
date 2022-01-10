@@ -35,4 +35,4 @@ Enable the taking of screenshots during the test run.
 
 Set the depth of the error logging.
 
-As soon as you have finished setting the run configuration, you can execute the test case by clicking _Run_ or you can schedule the test case by clicking _Schedule_. If you want to know more about scheduling test cases in ATS, visit the [Scheduling section](rg-one-scheduling).
+As soon as you have finished setting the run configuration, you can execute the test case by clicking _Run_ or you can schedule the test case by clicking _Schedule_. If you want to know more about scheduling test cases in ATS, visit the [Scheduling section](/addons/ats-addon/rg-one-scheduling/).

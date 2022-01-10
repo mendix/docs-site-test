@@ -1,8 +1,8 @@
 ---
 title: "Find Your Way in an App"
-url: /howto7/general/find-your-way
+url: /howto7/general/find-your-way/
 category: "General"
-menu_order: 6
+weight: 6
 tags: ["project", "navigation", "usage"]
 ---
 

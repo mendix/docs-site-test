@@ -10,7 +10,7 @@ tags: ["studio", "data hub", "data hub catalog", "external entities"]
 
 ## 1 Introduction
 
-Every organization has apps containing valuable data that can be used in other applications too. [Mendix Data Hub](/data-hub/) enables you to use data from other apps without having to deal with complex far-from-ideal solutions, such as exporting data, duplicating it, or building complex technical integrations. With Data Hub, all you need to do is just search for the data, select it, and use it. 
+Every organization has apps containing valuable data that can be used in other applications too.  enables you to use data from other apps without having to deal with complex far-from-ideal solutions, such as exporting data, duplicating it, or building complex technical integrations. With Data Hub, all you need to do is just search for the data, select it, and use it. 
 
 Mendix Data Hub is the central hub in the organization that enables you to discover, connect to, and use shared data from different apps in your organization. It also ensures that data is used consistently throughout your organization. 
 
@@ -36,19 +36,19 @@ You can select external entities as a data source for data containers (a data vi
     1. **Search for a specific service or entity name** – enter a search term in the search field to find an entity you would like to add:
 
         {{/* % image_container width="400" % */}}![Searching for an Entity](/attachments/studio/work-with-data/data-hub-in-studio/searching-for-entity.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}        
+        
     2. **Browse through available data** – click the **Data Hub** section and browse through available services and entities:
     
         {{/* % image_container width="400" % */}}![Selecting an Entity](/attachments/studio/work-with-data/data-hub-in-studio/selecting-entity.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 3. Click **Select**.
 
 The selected external entity will be added to your domain model automatically together with all integration and security settings. 
 ![Domain Model](/attachments/studio/work-with-data/data-hub-in-studio/domain-model-example.png)
 
-When you [publish your app](publishing-app), you can see that the data from the external entity is shown in your app. 
+When you [publish your app](/studio/publishing-app/), you can see that the data from the external entity is shown in your app. 
 
-When you [preview your app](publishing-app), you will see data from the external entities, except for external entities from services that require authentication credentials. In this case you have to publish your app to see the data. 
+When you [preview your app](/studio/publishing-app/), you will see data from the external entities, except for external entities from services that require authentication credentials. In this case you have to publish your app to see the data. 
 
 ### 2.1 The Data Hub Tab
 
@@ -72,7 +72,7 @@ In the **Data Hub** tab, you can do the following:
 * **Update services** – when a new version of the service is available, you can update it. However, it is best to check out the changes made to the service in the Data Hub Catalog first. 
 
     {{/* % image_container width="500" % */}}![Update Available](/attachments/studio/work-with-data/data-hub-in-studio/service-update.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
     Click the drop-down menu to choose the following options:
 
     * **Update Now** – allows you to update the service to a new version.
@@ -97,7 +97,7 @@ In the **Data Hub** tab, you can do the following:
     * **View in Data Hub Catalog** – a link to the Data Hub Catalog of your organization.
     
         {{/* % image_container width="300" % */}}![Service Information](/attachments/studio/work-with-data/data-hub-in-studio/service-information.jpg){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 
 ## 3 External Entity Properties
 
@@ -118,7 +118,7 @@ You can rename external entity attributes to better fit your app structure. It w
 External attributes may have limitations that you can see in their properties. Limitation are added by the external service owner to indicate the features that are not supported. For example, if there are limitations on an attribute, you will not be able to use it in filters and/or sort on it on pages and in microflows.
 
 {{/* % image_container width="250" % */}}![Attribute with Limitations](/attachments/studio/work-with-data/data-hub-in-studio/attribute-with-limitations.jpg){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 {{% alert color="info" %}}
 
 You cannot delete attributes of external entities.
@@ -139,5 +139,5 @@ You cannot change or delete this association. It is also not possible to create 
 
 ## 4 Read More
 
-* [Data Hub](/data-hub/)
+* 
 * [Data Hub Catalog](/data-hub/data-hub-catalog/)

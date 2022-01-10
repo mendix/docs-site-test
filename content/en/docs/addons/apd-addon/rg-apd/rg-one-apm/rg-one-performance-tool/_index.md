@@ -97,4 +97,4 @@ You can [View] and drill down into microflows. However, you cannot see SQL state
 
 ## 6 Advanced Usage {#advanced}
 
-To insert context information in the performance tool recording you can use a special action. This is described in the following article: [Inserting context information](rg-one-inserting-context-information)
+To insert context information in the performance tool recording you can use a special action. This is described in the following article: [Inserting context information](/addons/apd-addon/rg-one-inserting-context-information/)

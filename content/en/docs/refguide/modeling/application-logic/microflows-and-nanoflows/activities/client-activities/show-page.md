@@ -14,7 +14,7 @@ This activity can be used in both **Microflows** and **Nanoflows**.
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-This action is ignored and does not work when a microflow is called from an offline native or hybrid app. For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+This action is ignored and does not work when a microflow is called from an offline native or hybrid app. For more information, see the [Microflows](/refguide/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 {{% /alert %}}
 
 ## 1 Introduction
@@ -46,11 +46,11 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.1 Object to Pass {#object-to-pass}
 
-An object that will be passed to the page that is opened. This object will be used by [data views](data-view) with a page parameter data source.
+An object that will be passed to the page that is opened. This object will be used by [data views](/refguide/data-view/) with a page parameter data source.
 
 ### 3.2 Page
 
-The [page](page) that is displayed to an end-user. If the [Object to pass](#object-to-pass) property is specified, the page must contain a data view connected to the same entity as the passed object (or its generalization).
+The [page](/refguide/page/) that is displayed to an end-user. If the [Object to pass](#object-to-pass) property is specified, the page must contain a data view connected to the same entity as the passed object (or its generalization).
 
 To create a new page that **Show page** activity will show, click the **Select** button > **New**. If you have selected an **Object to pass**, Studio Pro will automatically create a data view to edit that object.
 
@@ -58,7 +58,7 @@ To create a new page that **Show page** activity will show, click the **Select**
 
 By default the title of the page is determined by the page title property of the page. You can replace this title with a custom title if necessary.
 
-This feature allows you to re-use the same page for the **New** and **Edit** buttons of a [data grid](data-grid). By simply setting the titles to, for example, *New Customer* and *Edit Customer*, you can save yourself the trouble of duplicating pages.
+This feature allows you to re-use the same page for the **New** and **Edit** buttons of a [data grid](/refguide/data-grid/). By simply setting the titles to, for example, *New Customer* and *Edit Customer*, you can save yourself the trouble of duplicating pages.
 
 ### 3.4 Close Pages {#close-pages}
 
@@ -81,9 +81,9 @@ Often you need to have control of page history, for example to show the correct 
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 
-* [Activities](activities)
-* [Native Navigation](native-navigation)
+* [Activities](/refguide/activities/)
+* [Native Navigation](/refguide/native-navigation/)

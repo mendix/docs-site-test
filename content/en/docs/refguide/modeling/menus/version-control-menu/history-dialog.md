@@ -42,5 +42,5 @@ This tab page shows a list of the files that were changed on disk. You see wheth
 
 ## 7 Read More
 
-* [Version Control](version-control)
-* [Stories Pane](stories-pane)
+* [Version Control](/refguide/version-control/)
+* [Stories Pane](/refguide/stories-pane/)

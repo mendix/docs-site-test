@@ -1,8 +1,8 @@
 ---
 title: "Atlas UI"
-url: /howto7/front-end/atlas-ui
+url: /howto7/front-end/atlas-ui/
 category: "Front End"
-menu_order: 5
+weight: 5
 tags: ["Atlas", "UI", "UX", "user experience"]
 ---
 
@@ -12,7 +12,7 @@ Mendix Atlas UI is the design framework that makes building elegant user experie
 
 ### 1.1 The Web Modeler
 
-The [Mendix Web Modeler](/studio) brings the collaborative Mendix Platform to the browser, making it easier than ever to share and collaborate on application models. Every app built in the Web Modeler is styled with the Atlas UI framework. For more information, see [Get Started with Atlas UI](get-started-with-atlasui). 
+The  brings the collaborative Mendix Platform to the browser, making it easier than ever to share and collaborate on application models. Every app built in the Web Modeler is styled with the Atlas UI framework. For more information, see [Get Started with Atlas UI](/howto7/front-end/get-started-with-atlasui/). 
 
 ### 1.2 Design Principles
 
@@ -60,9 +60,9 @@ You can further customize widgets by changing their design properties. Colors, t
 
 ## 3 Read More
 
-* [Get Started with Atlas UI](get-started-with-atlasui)
-* [Migrate Existing Apps to Atlas UI](migrate-existing-projects-to-atlasui)
-* [Create Company Atlas UI Resources](create-company-atlas-ui-resources)
-* [Share Company Atlas UI Resources](share-company-atlas-ui-resources)
-* [Create Custom Preview Images for Building Blocks & Page Templates](create-custom-preview-images-for-building-blocks-and-page-templates)
-* [Extend Design Properties to Customize the Web Modeler Experience](extend-design-properties-to-customize-the-web-modeler-experience)
+* [Get Started with Atlas UI](/howto7/front-end/get-started-with-atlasui/)
+* [Migrate Existing Apps to Atlas UI](/howto7/front-end/migrate-existing-projects-to-atlasui/)
+* [Create Company Atlas UI Resources](/howto7/front-end/create-company-atlas-ui-resources/)
+* [Share Company Atlas UI Resources](/howto7/front-end/share-company-atlas-ui-resources/)
+* [Create Custom Preview Images for Building Blocks & Page Templates](/howto7/front-end/create-custom-preview-images-for-building-blocks-and-page-templates/)
+* [Extend Design Properties to Customize the Web Modeler Experience](/howto7/front-end/extend-design-properties-to-customize-the-web-modeler-experience/)

@@ -1,6 +1,6 @@
 ---
 title: "XPath Source"
-url: /refguide7/xpath-source
+url: /refguide7/xpath-source/
 parent: "data-sources"
 ---
 
@@ -12,7 +12,7 @@ If database is selected as the data source for a widget then the object or objec
 2. The XPath constraint supplied in the widgets settings.
 3. An association, if the widget is nested in another data widget and the data path described runs over an association.
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 Use access rules whenever possible to limit data in data grids. This way you know that the objects will always be constrained by these rules (as opposed to an XPath constraint on a single data grid). The access rules will also be applied when executing microflows which saves you from repeating XPath constraints.
 {{% /alert %}}
 
@@ -20,11 +20,11 @@ Use access rules whenever possible to limit data in data grids. This way you kno
 
 ### 2.1 Search Bar
 
-For more information, see [Search Bar](search-bar).
+For more information, see [Search Bar](/refguide7/search-bar/).
 
 ### 2.2 Sort Bar
 
-For more information, see [Sort Bar](sort-bar).
+For more information, see [Sort Bar](/refguide7/sort-bar/).
 
 ## 3 Properties
 
@@ -34,11 +34,11 @@ The entity (path) property specifies the target of the database query. A top-lev
 
 A nested data grid can either be connected to an entity or to an entity path starting in the entity of the containing data view. The entity path follows one association of type reference in the opposite direction in which the association's arrow is pointing (from * to 1).
 
-{{% alert type="alert" %}}
-This differs from the [association data source](association-source) in that the objects are not retrieved from the client cache but directly from the database. The association is simply parsed as an extra constraint in the database query.
+{{% alert color="alert" %}}
+This differs from the [association data source](/refguide7/association-source/) in that the objects are not retrieved from the client cache but directly from the database. The association is simply parsed as an extra constraint in the database query.
 {{% /alert %}}
 
-This [domain model](domain-model) describes a database in which an indeterminate number of users can be linked to a single country:
+This [domain model](/refguide7/domain-model/) describes a database in which an indeterminate number of users can be linked to a single country:
 
 ![](/attachments/refguide7/desktop-modeler/pages/page-concepts/data-sources/xpath-source/16843965.jpg)
 
@@ -67,8 +67,8 @@ _Default value:_ false
 
 ### 3.4 XPath Constraint
 
-The [XPath constraint](xpath-constraints) allows for custom, hard-coded limitations on the data displayed. This constraint will be appended to the constraints (if any) already applied through security and context.
+The [XPath constraint](/refguide7/xpath-constraints/) allows for custom, hard-coded limitations on the data displayed. This constraint will be appended to the constraints (if any) already applied through security and context.
 
-{{% alert type="warning" %}}
-XPath constraints are applied equally to all users and only apply to the data displayed in a single data widget. If the goal is to shield a particular subset of the data from users then [entity access rules](access-rules) are superior in that they can be tailored to each individual user role and that they apply system-wide.
+{{% alert color="warning" %}}
+XPath constraints are applied equally to all users and only apply to the data displayed in a single data widget. If the goal is to shield a particular subset of the data from users then [entity access rules](/refguide7/access-rules/) are superior in that they can be tailored to each individual user role and that they apply system-wide.
 {{% /alert %}}

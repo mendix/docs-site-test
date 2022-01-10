@@ -1,20 +1,20 @@
 ---
 title: "Nanoflow Source"
-url: /refguide8/nanoflow-source
+url: /refguide8/nanoflow-source/
 parent: "data-sources"
 tags: ["studio pro", "nanoflow source", "data source"]
-menu_order: 50
+weight: 50
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/nanoflow-source.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/nanoflow-source.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-The **Nanoflow** data source is available for [data views](data-view) and [list views](list-view). 
+The **Nanoflow** data source is available for [data views](/refguide8/data-view/) and [list views](/refguide8/list-view/). 
 
-In most cases, you use the *database*, *association* or *XPath* data sources to fill a [data widget](data-widgets). However, sometimes the target objects need to adhere to very specific criteria, or different objects are shown under different circumstances that cannot be handled by an [XPath](xpath-constraints). In these situations a *nanoflow data source* may be required. For more information on nanoflows and their advantages, see [Nanoflows](nanoflows).
+In most cases, you use the *database*, *association* or *XPath* data sources to fill a [data widget](/refguide8/data-widgets/). However, sometimes the target objects need to adhere to very specific criteria, or different objects are shown under different circumstances that cannot be handled by an [XPath](/refguide8/xpath-constraints/). In these situations a *nanoflow data source* may be required. For more information on nanoflows and their advantages, see [Nanoflows](/refguide8/nanoflows/).
 
 When a data widget with a nanoflow data source is displayed in the browser or refreshed, it runs the designated nanoflow and displays the return value. The manner in which the objects are acquired in the nanoflow is entirely up to you, which allows for unlimited control over what objects to return.
 
@@ -41,7 +41,7 @@ This nanoflow does the following:
 
 3. The nanoflow returns a list of products and each end event is configured to return a list. 
 
-    {{% alert type="info" %}}The *empty* path also requires a value, where `empty` is also a value.
+    {{% alert color="info" %}}The *empty* path also requires a value, where `empty` is also a value.
     {{% /alert %}}
 
 ## 3 Properties
@@ -52,5 +52,5 @@ Defines the nanoflow used to populate the widget. This nanoflow will be run when
 
 ## 4 Read More
 
-* [Nanoflows](nanoflows)
-* [Data Widgets](data-widgets)
+* [Nanoflows](/refguide8/nanoflows/)
+* [Data Widgets](/refguide8/data-widgets/)

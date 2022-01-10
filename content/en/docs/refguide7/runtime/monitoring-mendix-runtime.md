@@ -1,6 +1,6 @@
 ---
 title: "Monitoring Mendix Runtime"
-url: /refguide7/monitoring-mendix-runtime
+url: /refguide7/monitoring-mendix-runtime/
 category: "Mendix Runtime"
 description: "Describes the supported Mendix Runtime monitoring actions."
 tags: ["runtime, json"]
@@ -218,11 +218,11 @@ Number of database requests. Distinguishes between "select", "update", "insert",
 
 <u>Memory</u>
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Memory statistics should only be interpreted by experts, lack of detailed knowledge of the Java memory model can lead to false conclusions.
 
-{{% /alert %}}{{% alert type="warning" %}}
+{{% /alert %}}{{% alert color="warning" %}}
 
 For backwards compatibility reasons the fields "code", "eden", "tenured", "survivor" and "permanent" are still present but they should not be relied on anymore. They will be removed from Mendix 7 onwards.
 
@@ -235,7 +235,7 @@ Represents the number of bytes allocated to the specified memory sections. For a
 *   "name": the description of the memory pool as received by the JVM. These names can be different depending on for example JDK,memory manager or  garbage collection options.
 *   "index": the index in the JSON Array. This field is not strictly needed as the pools are returned in a list so you can, and should, rely on the order of the list in case you are processing them in a program.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you are automatically processing the "memorypools" section to for example display in a graph, you should ideally not make any assumptions about the kind of memory pool based on its order in the list or its name as these may change depending on for example garbage collector settings or Java version.
 
@@ -443,13 +443,13 @@ Returns the current Mendix Runtime status. Possible status values are: "created"
 }
 ```
 
-In the Mendix Desktop Modeler, a [health check microflow](project-settings) can be configured. This microflow can report on the functional status of the application: does the general functionality of the application work, and are the necessary remote services available?
+In the Mendix Desktop Modeler, a [health check microflow](/refguide7/project-settings/) can be configured. This microflow can report on the functional status of the application: does the general functionality of the application work, and are the necessary remote services available?
 
 If a health check microflow has been configured, this request will report on the current health status. The "health" value can be either "healthy," "sick," or "unknown" (when no health microflow was configured). For the value "sick," the "diagnosis" value will give the reason the application is not healthy. This reason is the return value of the health check microflow.
 
 The health check microflow gets invoked multiple times per minute. Therefore, it is recommended to make it light-weight and run quickly. Heavy operations may have a significant impact on your application's performance.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 This request can only be executed when the Mendix Runtime status is "running" (see [Runtime Status](#runtime-status) above).
 

@@ -1,17 +1,17 @@
 ---
 title: "Nanoflow Properties"
-url: /refguide8/nanoflow
+url: /refguide8/nanoflow/
 parent: "nanoflows"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/nanoflow.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/nanoflow.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-This page describes the properties of nanoflows. For details on using nanoflows and nanoflow elements, see [Nanoflows](nanoflows).
+This page describes the properties of nanoflows. For details on using nanoflows and nanoflow elements, see [Nanoflows](/refguide8/nanoflows/).
 
 ## 2 Properties
 
@@ -41,15 +41,15 @@ Nanoflow properties consist of the following sections:
 
 #### 2.2.1 Return Type
 
-The return type defines what information the nanoflow returns. The caller of the nanoflow will get a result of this type. For possible return types, see [Data Types](data-types).
+The return type defines what information the nanoflow returns. The caller of the nanoflow will get a result of this type. For possible return types, see [Data Types](/refguide8/data-types/).
 
 ### 2.3 Security Section{#security}
 
 #### 2.3.1 Allowed Roles
 
-These are the [module roles](module-security#module-role) the user must have to be able to execute the nanoflow.
+These are the [module roles](/refguide8/module-security/#module-role) the user must have to be able to execute the nanoflow.
 
-For more information, see [Module Security](module-security).
+For more information, see [Module Security](/refguide8/module-security/).
 
 ### 2.4 Usage Section {#usage}
 

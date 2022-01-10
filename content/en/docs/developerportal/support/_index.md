@@ -47,7 +47,7 @@ We expect that many questions and issues can be solved by reading the [Mendix Do
 
 We would like to invite you to an important channel where you can provide feature requests to Mendix: the [Mendix Idea Forum](https://forum.mendix.com/link/ideas/). Any customer can post a feature request that can be reviewed, expanded on, and voted on by other members of the Mendix community. Based on this feedback, every quarter we will determine which features have the most value according to our customers, and we will implement them.
 
-For more details, see [Forum](/developerportal/community-tools/mendix-forum).
+For more details, see [Forum](/developerportal/community-tools/mendix-forum/).
 
 ## 4 Accessing Mendix Support
 
@@ -74,8 +74,8 @@ Please read more about this in [Control Center](/developerportal/control-center/
 
 ### 5.2 Technical Contacts
 
-You need to appoint a [technical contact](/developerportal/collaborate/app-roles#technical-contact) for each of your applications running in the Mendix Public Cloud and Cloud Dedicated. The technical contact checks the performance of the applications in the Developer Portal and receives alerts from the Mendix Developer Portal based on errors and warnings in the application. It is possible to have other team members receive these alerts as well.
-Reading these alerts carefully and acting upon them is important, as they can affect the performance of your app. For more information on alerts, see [Alerts](/developerportal/operate/monitoring-application-health).
+You need to appoint a [technical contact](/developerportal/collaborate/app-roles/#technical-contact) for each of your applications running in the Mendix Public Cloud and Cloud Dedicated. The technical contact checks the performance of the applications in the Developer Portal and receives alerts from the Mendix Developer Portal based on errors and warnings in the application. It is possible to have other team members receive these alerts as well.
+Reading these alerts carefully and acting upon them is important, as they can affect the performance of your app. For more information on alerts, see [Alerts](/developerportal/operate/monitoring-application-health/).
 
 ### 5.3 Training
 
@@ -95,7 +95,7 @@ Mendix supports the current major release and the two prior major releases (and 
 
 ## 9 Support for Different Deployment Strategies {#support-by-strategy}
 
-With our Multi-Cloud strategy, Mendix allows the apps that you build to be deployed in any Cloud. This can be in the [Mendix Public Cloud](/developerportal/deploy/mendix-cloud-deploy), Mendix Dedicated Cloud, [Mendix Private Cloud](/developerportal/deploy/private-cloud), [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform), or in other on-premises and Cloud architectures.
+With our Multi-Cloud strategy, Mendix allows the apps that you build to be deployed in any Cloud. This can be in the [Mendix Public Cloud](/developerportal/deploy/mendix-cloud-deploy/), Mendix Dedicated Cloud, [Mendix Private Cloud](/developerportal/deploy/private-cloud/), [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform/), or in other on-premises and Cloud architectures.
 
 The full stack is depicted in the table below. This indicates which components are **Mendix** supported, or supported by a **Mendix Partner** or 3rd party. If no support is indicated, then you will need to arrange support of this component yourself. Each of the components is described in more detail in [Components of the Mendix Stack](#components), below.
 
@@ -258,36 +258,36 @@ The full stack is depicted in the table below. This indicates which components a
 
 In the diagrams below, the following colors are used:
 
-{{/* % image_container width="50%" % */}}
+{{% image_container width="50%" %}}
 ![](/attachments/developerportal/support/legend.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 9.1 Mendix Public & Dedicated Cloud
 
 The Mendix Public and Dedicated Clouds are an integrated part of the Mendix Platform and are therefore fully supported as described in the SLA.
 Mendix Support has access to app health, logs, graphs and monitoring.
 
-{{/* % image_container width="75%" % */}}
+{{% image_container width="75%" %}}
 ![](/attachments/developerportal/support/mendix-cloud.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 9.2 Mendix for Private Cloud
 
-Mendix for Private Cloud is based on the Kubernetes-Native Operator Framework. You can check the supported Kubernetes platforms in our [Private Cloud](/developerportal/deploy/private-cloud) documentation. Check our [System Requirements](/refguide/system-requirements) for other supported components like database and storage. The Mendix Gateway Agent and Mendix Operator are supported by Mendix.
+Mendix for Private Cloud is based on the Kubernetes-Native Operator Framework. You can check the supported Kubernetes platforms in our [Private Cloud](/developerportal/deploy/private-cloud/) documentation. Check our [System Requirements](/refguide/system-requirements/) for other supported components like database and storage. The Mendix Gateway Agent and Mendix Operator are supported by Mendix.
 Mendix Support does not have access to app health, logs, graphs and monitoring. If you run into issues or want to ask a question on these supported components, please always provide relevant logs, data, and your own analysis that explains why you suspect the issue is caused by one of our supported components.
 
-{{/* % image_container width="75%" % */}}
+{{% image_container width="75%" %}}
 ![](/attachments/developerportal/support/private-cloud.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 9.3 SAP Business Technology Platform
 
-Mendix provides an integration with the SAP Cloud Foundry environment of SAP Business Technology Platform (SAP BTP). Mendix applications are built to run on SAP BTP using the Mendix Cloud Foundry buildpack. Please check out the supported components in [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform).
+Mendix provides an integration with the SAP Cloud Foundry environment of SAP Business Technology Platform (SAP BTP). Mendix applications are built to run on SAP BTP using the Mendix Cloud Foundry buildpack. Please check out the supported components in [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform/).
 Mendix Support does not have access to app health, logs, graphs and monitoring – for support on these components, please contact [SAP Support](https://launchpad.support.sap.com/#/incident/create/prefilled/comp_name=XX-PART-MDX-RAD). If you run into issues or want to ask a question on the supported components, please always provide relevant logs, data, and your own analysis that explains why you suspect the issue is caused by one of our supported components
 
-{{/* % image_container width="40%" % */}}
+{{% image_container width="40%" %}}
 ![](/attachments/developerportal/support/sap-cloud-platform.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 9.4 Tencent
 
@@ -295,21 +295,21 @@ Mendix provides an integration with Tencent for customers in China.
 
 Mendix Support does not have access to app health, logs, graphs and monitoring – for support on these components, please contact **Tencent Support**. If you run into issues or want to ask a question on the supported components, please always provide relevant logs, data, and your own analysis that explains why you suspect the issue is caused by one of our supported components
 
-{{/* % image_container width="40%" % */}}
+{{% image_container width="40%" %}}
 ![](/attachments/developerportal/support/tencent.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 9.5 Cloud Foundry / Docker & Kubernetes / Traditional Architectures
 
 Mendix is compatible with all the well-known cloud providers: IBM Cloud, Microsoft Azure, Amazon Web Services (AWS), Red Hat OpenShift, and Google Cloud Platform.
 Depending on the Cloud architecture a Mendix application is built using the [Mendix Cloud Foundry buildpack](https://github.com/mendix/cf-mendix-buildpack), the [Mendix Docker Buildpack](https://github.com/mendix/docker-mendix-buildpack) or to a Unix-like or Windows server.
-Check our [System Requirements](/refguide/system-requirements) for the supported components of any Cloud Foundry / Docker & Kubernetes / traditional architecture.
+Check our [System Requirements](/refguide/system-requirements/) for the supported components of any Cloud Foundry / Docker & Kubernetes / traditional architecture.
 
 Mendix Support does not have access to app health, logs, graphs and monitoring. If you run into issues or want to ask a question on these supported components, please always provide relevant logs, data and your own analysis that explains why you suspect the issue is caused by one of our supported components.
 
-{{/* % image_container width="75%" % */}}
+{{% image_container width="75%" %}}
 ![](/attachments/developerportal/support/on-premises.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ## 10 Components of the Mendix Stack {#components}
 
@@ -339,13 +339,13 @@ Only when running on the Mendix Public Cloud or Cloud Dedicated, can Mendix Supp
 
 The Mendix buildpacks for [Cloud Foundry](https://github.com/mendix/cf-mendix-buildpack) and [Docker](https://github.com/mendix/docker-mendix-buildpack) are available in GitHub repositories. The documentation for the buildpacks and m2ee tools is contained within these GitHub repositories and, because they are released under an Open Source license, the code can be inspected and the functionality and options can be understood by customers who wish to use these buildpacks.
 
-If you want to run Mendix apps on a Unix-like server you will need the [m2ee tools](https://github.com/mendix/m2ee-tools), available on GitHub. Read more about installing on systems running Unix-like operating systems in [Unix Deployment](/developerportal/deploy/unix-like).
+If you want to run Mendix apps on a Unix-like server you will need the [m2ee tools](https:/github.com/mendix/m2ee-tools), available on GitHub. Read more about installing on systems running Unix-like operating systems in [Unix Deployment](/developerportal/deploy/unix-like/).
 
 Only when running on the Mendix Public Cloud or Cloud Dedicated, can Mendix Support diagnose these components. Because Mendix has no control over the context in which the buildpack or m2ee tools are run outside of the Mendix Public Cloud and Cloud Dedicated, you will have to demonstrate that the bug is in the supported component by showing the behavior independently from the context in which you are using it.
 
 If you want additional features or some other change in a buildpack or m2ee tools, you can make a Pull Request , create an Issue in the GitHub repository, or contact [Mendix Support](https://support.mendix.com/hc/en-us).
 
-If you wan to run Mendix apps on Windows server you will need the [Windows Service](/releasenotes/studio-pro/windows-service). The release notes and installation manual can be found in the [Windows Service](/releasenotes/studio-pro/windows-service) release notes. Read more about installing on systems running Windows operating systems in [Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows).
+If you wan to run Mendix apps on Windows server you will need the [Windows Service](/releasenotes/studio-pro/windows-service/). The release notes and installation manual can be found in the [Windows Service](/releasenotes/studio-pro/windows-service/) release notes. Read more about installing on systems running Windows operating systems in [Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/).
 
 If you want additional features or some other change in the Windows Service, you can contact [Mendix Support](https://support.mendix.com/hc/en-us).
 
@@ -372,7 +372,7 @@ Only when running on the Mendix Public Cloud, Cloud Dedicated, Private Cloud Con
 ### 10.8 Runtime
 
 The runtime component includes the Mendix Runtime, and all of its supported features.
-Please read all about the Mendix Runtime in [Mendix Runtime](/refguide/runtime).
+Please read all about the Mendix Runtime in [Mendix Runtime](/refguide/runtime/).
 
 Mendix Support needs application logs to diagnose this component. Because Mendix has no control over the context in which the runtime is run, outside of the Mendix Public Cloud and Cloud Dedicated, you will have to demonstrate that the bug is in the supported component by showing the behavior independently from the context in which you are using it.
 
@@ -380,7 +380,7 @@ Mendix Support needs application logs to diagnose this component. Because Mendix
 
 Platform-supported Marketplace content refers to all Marketplace content marked as platform-supported in the Mendix Marketplace. Community-supported Marketplace content includes all Marketplace content not marked as platform-supported in the Mendix Marketplace
 
-Read more about the levels of Support for Marketplace components in [Marketplace Content Support](/appstore/general/app-store-content-support).
+Read more about the levels of Support for Marketplace components in [Marketplace Content Support](/appstore/general/app-store-content-support/).
 
 Mendix Support needs application logs to diagnose these component. Because Mendix has no control over the context in which the Marketplace content is run outside of the Mendix Public Cloud and Cloud Dedicated, you will have to demonstrate that the bug is in the supported component by showing the behavior independently from the context in which you are using it.
 
@@ -391,8 +391,8 @@ These components are not accessible for Mendix Support and issues in the applica
 
 ## 11 Main Documents in This Category
 
-* [Prepare Your App for Support](prepare-your-project) – shows you how to configure project authorization to select the affected app(s) in the Mendix Support Portal
-* [Submit a Support Request](submit-support-request) – presents the details necessary for Mendix Support to process your request
-* [Make a New App Node Request](new-app-node-request-template) – describes how to deploy a new licensed node in the Mendix Cloud or on-premises/virtual private cloud
-* [Support Ticket Priority](ticket-priority) – describes how priority levels are determined for Mendix Support
-* [Support Escalation Process](escalation-management-process) – describes how a support request can be escalated to bring your issue to closure
+* [Prepare Your App for Support](/developerportal/support/prepare-your-project/) – shows you how to configure project authorization to select the affected app(s) in the Mendix Support Portal
+* [Submit a Support Request](/developerportal/support/submit-support-request/) – presents the details necessary for Mendix Support to process your request
+* [Make a New App Node Request](/developerportal/support/new-app-node-request-template/) – describes how to deploy a new licensed node in the Mendix Cloud or on-premises/virtual private cloud
+* [Support Ticket Priority](/developerportal/support/ticket-priority/) – describes how priority levels are determined for Mendix Support
+* [Support Escalation Process](/developerportal/support/escalation-management-process/) – describes how a support request can be escalated to bring your issue to closure

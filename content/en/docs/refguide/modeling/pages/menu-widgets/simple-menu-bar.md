@@ -11,9 +11,9 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-A simple menu bar shows menu items of a [navigation profile](navigation#profiles) or in a [menu](menu) document in the form of a horizontal or vertical bar. These items are determined by the [Menu source](#menu-source) and are either configured in the [Navigation](navigation) or a [Menu](menu).
+A simple menu bar shows menu items of a [navigation profile](/refguide/navigation/#profiles) or in a [menu](/refguide/menu/) document in the form of a horizontal or vertical bar. These items are determined by the [Menu source](#menu-source) and are either configured in the [Navigation](/refguide/navigation/) or a [Menu](/refguide/menu/).
 
-Sub-items of menu items are not displayed by this widgets, that means the menu structure can only have one level. For more information on menu items and their properties, see [Menu](menu).
+Sub-items of menu items are not displayed by this widgets, that means the menu structure can only have one level. For more information on menu items and their properties, see [Menu](/refguide/menu/).
 
 ![Simple Menu Bar](/attachments/refguide/modeling/pages/menu-widgets/simple-menu-bar/simple-menu-bar.png)
 
@@ -32,11 +32,11 @@ Menu bar properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}}
+{{% snippet file="refguide/design-section-link.md" %}}
 
 ### 2.3 General Section {#general}
 
@@ -46,18 +46,18 @@ The items that are shown in the menu widget are determined by the **Menu source*
 
 | Value              | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
-| Project navigation  *(default)* | The menu items are taken from one of the profiles defined in the [Navigation](navigation). |
-| Menu document      | The menu items are taken from a [menu](menu) document.       |
+| Project navigation  *(default)* | The menu items are taken from one of the profiles defined in the [Navigation](/refguide/navigation/). |
+| Menu document      | The menu items are taken from a [menu](/refguide/menu/) document.       |
 
 #### 2.3.2 Profile 
 
-Only available when the [Menu source](#menu-source) is set to **Project navigation**. The **Profile** property specifies what [Navigation profile](navigation#profiles) is used for the widget. 
+Only available when the [Menu source](#menu-source) is set to **Project navigation**. The **Profile** property specifies what [Navigation profile](/refguide/navigation/#profiles) is used for the widget. 
 
 Default: *Responsive*
 
 #### 2.3.3 Menu 
 
-Only available when the [Menu source](#menu-source) is set to **Menu document**. The **Menu** property specifies what [Menu](menu) document is used for the widget.
+Only available when the [Menu source](#menu-source) is set to **Menu document**. The **Menu** property specifies what [Menu](/refguide/menu/) document is used for the widget.
 
 #### 2.3.4 Orientation
 
@@ -70,6 +70,6 @@ This property determines how the simple menu bar is laid out.
 
 ## 3 Read More
 
-* [Page](page)
-* [Menus & Navigation](menu-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Menus & Navigation](/refguide/menu-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

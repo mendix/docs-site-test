@@ -1,8 +1,8 @@
 ---
 title: "Manage App Performance with AppDynamics"
-url: /howto8/monitoring-troubleshooting/manage-app-performance-with-appdynamics
+url: /howto8/monitoring-troubleshooting/manage-app-performance-with-appdynamics/
 parent: "manage-app-performance"
-menu_order: 1
+weight: 1
 tags: ["monitoring", "troubleshooting", "performance", "appdynamics"]
 ---
 
@@ -19,7 +19,7 @@ AppDynamics is a flexible application performance management tool that provides 
 
 * Set up application performance management for your Mendix application on AppDynamics
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 AppDynamics is currently in private beta, and thus not supported. We plan to offer full support for AppDynamics during 2022.
 {{% /alert %}}
 
@@ -170,12 +170,12 @@ For more information on AppDynamics, see the AppDynamics documentation here: [ht
 
 ## 9 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages](clear-warning-messages)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Set Log Levels](log-levels)
-* [Debug Microflows](debug-microflows)
-* [Debug Java Actions](debug-java-actions)
-* [Solve Load & Import Errors](solving-load-and-import-errors)
-* [Debug Microflows Remotely](debug-microflows-remotely)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Set Log Levels](/howto8/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+* [Debug Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)
+* [Solve Load & Import Errors](/howto8/monitoring-troubleshooting/solving-load-and-import-errors/)
+* [Debug Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely/)

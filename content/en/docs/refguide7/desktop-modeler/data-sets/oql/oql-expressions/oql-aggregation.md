@@ -1,6 +1,6 @@
 ---
 title: "OQL Aggregation"
-url: /refguide7/oql-aggregation
+url: /refguide7/oql-aggregation/
 parent: "oql-expressions"
 ---
 

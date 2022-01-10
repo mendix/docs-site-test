@@ -12,7 +12,7 @@ This activity can be used in both **Microflows** and **Nanoflows**.
 
 ## 1 Introduction
 
-The **Commit** activity works on one or more objects. For persistable entities, committing an object stores it in the database. Committing non-persistable entities stores the current attribute values and association values in memory, this allows a rollback to revert to those values. See also [Persistability](persistability). External objects can't be committed. To store changed values of external objects, use the [Send External Object](send-external-object) activity.
+The **Commit** activity works on one or more objects. For persistable entities, committing an object stores it in the database. Committing non-persistable entities stores the current attribute values and association values in memory, this allows a rollback to revert to those values. See also [Persistability](/refguide/persistability/). External objects can't be committed. To store changed values of external objects, use the [Send External Object](/refguide/send-external-object/) activity.
 
 {{% alert color="info" %}}
 A Mendix commit does not always behave like a database commit. See [How Commits Work](#how-commits-work), below, for more information.
@@ -70,7 +70,7 @@ Default: *No*
 {{% alert color="info" %}}
 To make pages of a Mendix app efficient, many widgets display values from an attribute of an object which is cached on the page. Attributes in widgets which use cached data are *always* reflected in the client when they are updated or deleted irrespective of the value of **Refresh in client**.
 
-If a widget is only updated when a [data source](data-sources) is loaded, then changes will only be seen when **Refresh in client** is set to *Yes*.
+If a widget is only updated when a [data source](/refguide/data-sources/) is loaded, then changes will only be seen when **Refresh in client** is set to *Yes*.
 
 When testing your app, ensure that the desired data is being displayed by the widgets you have chosen.
 {{% /alert %}}
@@ -83,21 +83,21 @@ When committing a large number of objects, we recommend that you do not enable '
 
 If **Refresh in client** is set to *No*, the change is not reflected in the client.
 
-If set to *Yes*, the object is refreshed across the client, which includes reloading the relevant [data sources](data-sources).
+If set to *Yes*, the object is refreshed across the client, which includes reloading the relevant [data sources](/refguide/data-sources/).
 
 #### 3.3.2 Microflow is Called in an Offline, Native, or Hybrid App
 
 When inside a microflow that is called from an offline, native, or hybrid app, the **Refresh in client** option is ignored and functions as if it was set to **No**.
 
-For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+For more information, see the [Microflows](/refguide/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 
 #### 3.3.3 Action is in a Nanoflow
 
-When inside a [nanoflow](nanoflows), the object is refreshed across the client as if **Refresh in client** was set to *Yes*.
+When inside a [nanoflow](/refguide/nanoflows/), the object is refreshed across the client as if **Refresh in client** was set to *Yes*.
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}
 
 ## 5 How Commits Work{#how-commits-work}
 
@@ -105,7 +105,7 @@ When inside a [nanoflow](nanoflows), the object is refreshed across the client a
 
 When you commit an object, the current value is saved. This means that you cannot rollback to the previous values of the object using the **Rollback** action of a microflow.
 
-However, a Mendix **Commit** is not the same as a database **Commit**. For an object of a persistable entity, the saved value is not committed to the database until the microflow and any microflows from which it is called, completes. This means that errors in a microflow *can* initiate a rollback. If a microflow action errors and has **Error handling** set to *Rollback* or *Custom with rollback*, the value of the object *will* be rolled back to the value it had at the start of the microflow. See [Error Event](error-event#errors-in-microflows) for more information.
+However, a Mendix **Commit** is not the same as a database **Commit**. For an object of a persistable entity, the saved value is not committed to the database until the microflow and any microflows from which it is called, completes. This means that errors in a microflow *can* initiate a rollback. If a microflow action errors and has **Error handling** set to *Rollback* or *Custom with rollback*, the value of the object *will* be rolled back to the value it had at the start of the microflow. See [Error Event](/refguide/error-event/#errors-in-microflows) for more information.
 
 Mendix mimics this behavior for *non-persistable* entities. Committing a non persistable entity means you cannot use a **Rollback** action to go back to the previous values, although rollback error handling in a microflow *will* roll back to the original values.
 
@@ -118,7 +118,7 @@ An autocommit is an automatic commit from the platform, which is done to keep th
 {{% alert color="warning" %}}
 An autocommit is not the same as an explicit commit!
 
-If a rollback is triggered for any reason (for example, if the user session is terminated by the user closing the browser), then autocommitted objects will be deleted from the database. See [Persistability](/refguide/persistability) for more information about how Mendix handles persistable objects.
+If a rollback is triggered for any reason (for example, if the user session is terminated by the user closing the browser), then autocommitted objects will be deleted from the database. See [Persistability](/refguide/persistability/) for more information about how Mendix handles persistable objects.
 {{% /alert %}}
 
 If you end up with autocommitted objects, it is always because of a modeling error. At some point in time, an association was set to a new object, the associated object was committed, and all of its associations were committed as well to keep all the data consistent.

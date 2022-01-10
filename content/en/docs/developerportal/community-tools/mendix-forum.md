@@ -11,7 +11,7 @@ description: "Describes the Mendix Forum, where the Mendix community can ask and
 
 The [Mendix Forum](https://forum.mendixcloud.com) is where the Mendix community comes together to help each other with questions and answers and to propose ideas for improving the Mendix Platform.
 
-The Mendix Forum is closely integrated with the [Mendix Profile](/developerportal/community-tools/mendix-profile) so that Mendix community members can see all the interesting and useful information about who is participating in the Mendix Forum. If someone clicks your name anywhere on the Mendix Forum, your Mendix Profile will open, so make sure you [set your profile to public](/developerportal/community-tools/mendix-profile#public) so everyone can see your details and progress!
+The Mendix Forum is closely integrated with the [Mendix Profile](/developerportal/community-tools/mendix-profile/) so that Mendix community members can see all the interesting and useful information about who is participating in the Mendix Forum. If someone clicks your name anywhere on the Mendix Forum, your Mendix Profile will open, so make sure you [set your profile to public](/developerportal/community-tools/mendix-profile/#public) so everyone can see your details and progress!
 
 There are two tabs available in the Mendix Forum: **Questions** and **Ideas**. On each tab, you can see the **Top contributors**, which lists the five Mendix community developers who have the most Mendix Forum points in the last 30 days.
 
@@ -43,7 +43,7 @@ Hovering over the developer name brings up the profile card:
 
 {{/* % image_container width="200" % */}}
 ![](/attachments/developerportal/community-tools/mendix-forum/questions_profile_card.jpg)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 The profile card presents the Mendix points for the developer. Clicking the developer name on the card will bring you to their Mendix Profile.
 
@@ -53,7 +53,7 @@ The **Sort by** drop-down menu at the top of the screen has three options for so
 
 {{/* % image_container width="200" % */}}
 ![](/attachments/developerportal/community-tools/mendix-forum/questions_sort_by.jpg)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 #### 2.1.2 Searching {#searching}
 
@@ -83,7 +83,7 @@ Clicking the title of a question will bring you to the details page for that que
 
 {{/* % image_container width="400" % */}}
 ![](/attachments/developerportal/community-tools/mendix-forum/questions_specific_page.jpg)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 On this page, you can read the full descriptive text of the question and do the following:
 
@@ -136,7 +136,7 @@ To ask your own question on the Mendix Forum, follow these steps:
 2.  On the **Ask your question** page, fill in the following details in the editor:
 
 	{{/* % image_container width="500" % */}}![](/attachments/developerportal/community-tools/mendix-forum/questions_ask_screen.jpg)
-	{{/* % /image_container % */}} 
+	{{/* % /image_container % */}}
 
 	* The **Title** of your question (which is how Mendix Forum users will first see your question, so make the title descriptive and interesting)
 	* The text of your question (add all the details about your question to make it searchable and so other users can answer it; consider including steps to reproduce the issue)
@@ -179,7 +179,7 @@ The **Sort by** drop-down menu at the top of the screen has three options for so
 
 {{/* % image_container width="200" % */}}
 ![](/attachments/developerportal/community-tools/mendix-forum/ideas_sort_by.jpg)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 #### 3.1.2 Searching
 
@@ -238,7 +238,7 @@ To submit your own idea to the idea forum, follow these steps:
 2.  On the **Submit your idea** page, fill in the following details in the editor:
 
 	{{/* % image_container width="500" % */}}![](/attachments/developerportal/community-tools/mendix-forum/ideas_submit_screen.jpg)
-	{{/* % /image_container % */}} 
+	{{/* % /image_container % */}}
 
 	* The **Title** of your idea (which is how Mendix Forum users will first see your idea, so make the title descriptive and interesting)
 	* The text of your idea (add all the details about your idea to make it searchable and so other users can vote and comment on it)
@@ -251,4 +251,4 @@ Mendix looks forward to hearing all of your ideas!
 
 ## 4 Read More
 
-* [How to Contribute to the Documentation](contribute-to-the-mendix-documentation)
+* [How to Contribute to the Documentation](/developerportal/community-tools/contribute-to-the-mendix-documentation/)

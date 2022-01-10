@@ -14,7 +14,7 @@ To support automation namespace installation and configuration we provide a non-
 
 {{% alert color="info" %}} To use non-interactive mode, you need Mendix Operator version 2.1.0 or above.{{% /alert %}}
 
-Please see [Download the Configuration Tool](private-cloud-cluster#download-configuration-tool) for information on how to download the configuration tool.
+Please see [Download the Configuration Tool](/developerportal/deploy/private-cloud-cluster/#download-configuration-tool) for information on how to download the configuration tool.
 
 {{% alert color="info" %}} Use "./mxpc-cli <command> --help" for more information about a given command. {{% /alert %}}
 
@@ -33,7 +33,7 @@ When using connected mode, you need to put cluster id and cluster secret as argu
 
 ## 2 Base Installation
 
-To perform the [base installation](private-cloud-cluster#base-installation), use the following command:
+To perform the [base installation](/developerportal/deploy/private-cloud-cluster/#base-installation), use the following command:
 
 ```shell
 ./mxpc-cli base-install --namespace <namespace> -i <cluster-id> -s <cluster-secret> --clusterMode <cluster-mode> --clusterType <cluster-type>
@@ -42,14 +42,14 @@ The cluster-id and cluster-secret are only required when using Mendix for Privat
 
 ## 3 Apply Configuration
 
-To [configure the namespace](private-cloud-cluster#configure-namespace) with a configuration file, use the following command:
+To [configure the namespace](/developerportal/deploy/private-cloud-cluster/#configure-namespace) with a configuration file, use the following command:
 
 ```shell
 ./mxpc-cli apply-config -i <cluster-id> -s <cluster-secret> --file <config-file>
 ```
 The cluster-id and cluster-secret are only required when using Mendix for Private Cloud in connected mode.
 
-The config file is the **mx_config_cli.yaml** file that you generate when you click the **Write YAML** in the [Review and Apply](private-cloud-cluster#review-apply) phase of configuring your namespace interactively.
+The config file is the **mx_config_cli.yaml** file that you generate when you click the **Write YAML** in the [Review and Apply](/developerportal/deploy/private-cloud-cluster/#review-apply) phase of configuring your namespace interactively.
 
 Below is an example of a config file:
 
@@ -80,7 +80,7 @@ registry:
 
 ## 4 Upgrade Mendix Operator and Mendix Gateway Agent
 
-To [upgrade the versions of Mendix components in your namespace](private-cloud-upgrade-guide#upgrade-cluster), use the following command:
+To [upgrade the versions of Mendix components in your namespace](/developerportal/deploy/private-cloud-upgrade-guide/#upgrade-cluster), use the following command:
 
 ```shell
 ./mxpc-cli upgrade-namespace --clusterType <cluster-type>

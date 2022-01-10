@@ -6,9 +6,9 @@ parent: "rg-two-ats"
 
 ## 1 Introduction
 
-Test steps are the heart and soul of a test case. They describe a sequence of [actions](rg-two-action) that ATS performs during the execution of a test case.
+Test steps are the heart and soul of a test case. They describe a sequence of [actions](/addons/ats-addon/rg-two-action/) that ATS performs during the execution of a test case.
 
-When you create a new test case, it is empty by default. You must add test steps to it. For more information on how to add a test step to a test case, see [Test Case](rg-two-test-case).
+When you create a new test case, it is empty by default. You must add test steps to it. For more information on how to add a test step to a test case, see [Test Case](/addons/ats-addon/rg-two-test-case/).
 
 To see the details of a test step, click the name of the test step. The details will open below the test step.
 
@@ -20,7 +20,7 @@ Every test step has a description box, where you give your test step a clear des
 
 By default, the name of the test step is the name of the action used in it. But if you set a description, it replaces the test step name. With this, you describe your test scenario step by step. Now you don't have to write an extra description.
 
-If you record your test steps, ATS enters a description automatically. For more information about recording test steps, see [Recorder](rg-two-recorder).
+If you record your test steps, ATS enters a description automatically. For more information about recording test steps, see [Recorder](/addons/apd-addon/rg-two-recorder/).
 
 ## 3 Call Types
 
@@ -54,7 +54,7 @@ ATS provides you with suggestions for the parameter value.
 
 For primitive parameter types like Text or Number, you set the input value by typing the desired value in the input box.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Parameters of the Number type only allow digits as inputs.
 

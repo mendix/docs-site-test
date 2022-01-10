@@ -22,7 +22,7 @@ Some errors have error codes and if these errors are described in documentation,
 
 ## 2 List View Consistency Errors 
 
-If you do not configure a [data source](data-sources) for a [list view](list-view) properly, you will get consistency errors. 
+If you do not configure a [data source](/refguide/data-sources/) for a [list view](/refguide/list-view/) properly, you will get consistency errors. 
 
 The scheme below shows that the data source of the list view has been set to **Database**, but the entity that needs to be retrieved from the database has not been specified. This results in a consistency error. 
 
@@ -39,7 +39,7 @@ The table below describes the most common errors which can occur when configurin
 
 ## 3 Data View Consistency Errors 
 
-If you do not configure a [data source](data-sources) for a [data view](data-view) properly, you will get consistency errors.
+If you do not configure a [data source](/refguide/data-sources/) for a [data view](/refguide/data-view/) properly, you will get consistency errors.
 
 For example, you have selected **Listen to widget** as the data source, but you have not selected the specific **List widget** you are listening to.
 
@@ -68,7 +68,7 @@ The errors that you can get when a page is expecting a context that is unavailab
 
 When a page expects a context that is not passed to it from a calling page or a microflow, you will get consistency errors. 
 
-For example, the **Customers** page contains a list view with a list of all customer names (**Customer** is set as **Entity** in the **Data Source** properties), and a **Details** button outside of the list view (placed in a [container](container) only). The **Details** button opens a **Customer Details** page when a user clicks it (the **On Click Action** for the button is set to **Page**). 
+For example, the **Customers** page contains a list view with a list of all customer names (**Customer** is set as **Entity** in the **Data Source** properties), and a **Details** button outside of the list view (placed in a [container](/refguide/container/) only). The **Details** button opens a **Customer Details** page when a user clicks it (the **On Click Action** for the button is set to **Page**). 
 
 ![Button Properties on the Customers Page](/attachments/refguide/modeling/menus/view-menu/errors-pane/consistency-errors/consistency-errors-pages/customers-page.png)
 
@@ -157,7 +157,7 @@ Some of the most common errors of this type are described in the table below:
 
 When you set a microflow or a nanoflow as an on-click event for a widget, and this microflow expects an argument (for example, an object) that is not available, this will result in an error. 
 
-For example, on a page named *Customers* you have a button that calls a microflow (that is an [On click event](on-click-event) of the button is set to *Microflow*).
+For example, on a page named *Customers* you have a button that calls a microflow (that is an [On click event](/refguide/on-click-event/) of the button is set to *Microflow*).
 
 However, the microflow contains a parameter *Customer*:
 
@@ -181,7 +181,7 @@ Now the *Customer* object is available on the page and it matches the microflow 
 
 When you set a microflow or nanoflow as an on-click event for a widget, and this microflow/nanoflow expects a certain argument, but a different argument is available to the widget, this will result in an error. 
 
-For example, on a page named *Customers* you have a button that calls a microflow (that is an [On click event](on-click-event) of the button is set to *Microflow*).
+For example, on a page named *Customers* you have a button that calls a microflow (that is an [On click event](/refguide/on-click-event/) of the button is set to *Microflow*).
 
 The microflow contains a parameter *Customer*:
 
@@ -197,11 +197,11 @@ The best way to fix this error is to either change the microflow to accept *Phot
 
 ## 6 Input Widget Consistency Errors
 
-The most common errors for input elements, their causes, and ways to fix them are described in the table below. For more information on input elements, see [Input Elements](input-widgets). 
+The most common errors for input elements, their causes, and ways to fix them are described in the table below. For more information on input elements, see [Input Elements](/refguide/input-widgets/). 
 
 | Error Code | Message in the Error Pane                                    | Cause of the Error                                           | Way to Fix                                                   |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| CE0544     | This widget can only function inside a data container. Move it into a data view, list view or template grid. | You have added an input widget to a page, but it is not inside a data container. Input elements need to refer to an attribute of a specific entity type. And entities are only available via data containers. For more information about input elements, see [Input Elements](input-widgets). | Place this widget into a data container: a data view, list view, or template grid. |
+| CE0544     | This widget can only function inside a data container. Move it into a data view, list view or template grid. | You have added an input widget to a page, but it is not inside a data container. Input elements need to refer to an attribute of a specific entity type. And entities are only available via data containers. For more information about input elements, see [Input Elements](/refguide/input-widgets/). | Place this widget into a data container: a data view, list view, or template grid. |
 | CE0545     | Select an attribute for this {widget name}.                  | You have added an input widget, and it is inside a data container, but an attribute is not selected for it. | Right-click the widget, click **Select Attribute** in the drop-down list, and set an attribute; or open widget's properties > the **Data source** section and set an attribute in the **Attribute (path)** field. |
 |            | Association {Name} must be a reference (not a reference set) | You have added a reference selector, and then you changed the association from reference type to reference set (from one-to-many or one-to-one to many-to-many). | Open your domain model, find the association you have selected for the reference selector, and change it to a one-to-many association. Note that changing the domain model can result in other errors. To avoid changing the domain model, you might want to use another widget instead of the reference selector.<br />For more information on how to fix this error for the reference selector, see the [Incorrect Multiplicity for a Reference Selector](#incorrect-multiplicity-reference) section |
 |            | Association {Name} must be a reference set (not a reference) | You have added an input reference set selector, and then you changed the association from reference set type to reference (from many-to-many to one-to-many or one-to-one). | Open your domain model, find the association you have selected for the input reference set selector, and change it to a many-to-many association. Note that changing the domain model can result in other errors. To avoid changing the domain model, you might want to use another widget instead of the reference set selector. <br />For more information on how to fix the consistency error for the reference set selector and input reference set selector, see the [Incorrect Multiplicity for a Reference Set Selector and an Input Reference Set Selector](#incorrect-multiplicity-reference-set) section. |
@@ -209,9 +209,9 @@ The most common errors for input elements, their causes, and ways to fix them ar
 
 ### 6.1 Incorrect Multiplicity for a Reference Selector {#incorrect-multiplicity-reference}
 
-A reference selector is a widget that is used to display and edit one-to-many or one-to-one associations. For more information on the widget, see [Reference Selector](reference-selector).  
+A reference selector is a widget that is used to display and edit one-to-many or one-to-one associations. For more information on the widget, see [Reference Selector](/refguide/reference-selector/).  
 
-For example, you have several employees who are associated with one city where they work. This is a one-to-many association: multiple *Employees* objects are associated with one *City* object.  Associations that refer to a single object in this manner are *references*, as opposed to *reference sets*, in which multiple objects can refer to multiple other objects. In a reference, the "single object" side of the association is always the association's owner. For more information on associations and their types, see [Associations](associations).
+For example, you have several employees who are associated with one city where they work. This is a one-to-many association: multiple *Employees* objects are associated with one *City* object.  Associations that refer to a single object in this manner are *references*, as opposed to *reference sets*, in which multiple objects can refer to multiple other objects. In a reference, the "single object" side of the association is always the association's owner. For more information on associations and their types, see [Associations](/refguide/associations/).
 
 ![One-to-many Association](/attachments/refguide/modeling/menus/view-menu/errors-pane/consistency-errors/consistency-errors-pages/many-to-one-association.png)
 
@@ -237,9 +237,9 @@ You have changed the association multiplicity and fixed the error.
 
 ### 6.2 Incorrect Multiplicity for a Reference Set Selector and an Input Reference Set Selector {#incorrect-multiplicity-reference-set}
 
-Reference set selector and input set selector are widgets that are used to display and edit many-to-many associations. For more information on these widgets, see [Reference Set Selector](reference-set-selector) and [Input Reference Set Selector](input-reference-set-selector). 
+Reference set selector and input set selector are widgets that are used to display and edit many-to-many associations. For more information on these widgets, see [Reference Set Selector](/refguide/reference-set-selector/) and [Input Reference Set Selector](/refguide/input-reference-set-selector/). 
 
-For example, you have several employees who can visit customers in different cities during the week. Thus, many employees are associated with many cities, this is a many-to-many association between an *Employee* entity and a *City* entity (multiple employees are associated with multiple cities). Associations that refer to multiple objects in this manner are *reference set*. For more information on associations and their types, see [Associations](associations). 
+For example, you have several employees who can visit customers in different cities during the week. Thus, many employees are associated with many cities, this is a many-to-many association between an *Employee* entity and a *City* entity (multiple employees are associated with multiple cities). Associations that refer to multiple objects in this manner are *reference set*. For more information on associations and their types, see [Associations](/refguide/associations/). 
 
 ![Many-to-many Association](/attachments/refguide/modeling/menus/view-menu/errors-pane/consistency-errors/consistency-errors-pages/many-to-many-association.png)
 
@@ -268,25 +268,25 @@ You have changed the association multiplicity and fixed the error.
 
 ## 7 Images, Videos & Files Consistency Errors
 
-Images, videos & files should be placed in a data container, otherwise you will get consistency errors. Another way to fix consistency errors is to place these widgets in a snippet and configure the snippet. For more information on images, videos and files , see [Images, Videos & Files](image-and-file-widgets). 
+Images, videos & files should be placed in a data container, otherwise you will get consistency errors. Another way to fix consistency errors is to place these widgets in a snippet and configure the snippet. For more information on images, videos and files , see [Images, Videos & Files](/refguide/image-and-file-widgets/). 
 
 | Error code | Message in the Error Pane                                    | Cause of the Error                                           | Way to Fix                                                   |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|            | A [file manager](file-manager) must be placed in a data view or  snippet that is connected to the entity ‘System.FileDocument’ or a specialization. | You have added a file manager to a page, but it is not inside a data view or a snippet that is configured properly. | Place this widget into a data container. If you want to place it into a snippet, mind that you need to configure it properly: either set System.FileDocument (or its specialization) as an entity for this snippet or place the snippet in a data container. |
-|            | An [image uploader](image-uploader) must be placed in a data view or snippet that is connected to the entity ‘System.Image’ or a specialization. | You have added an image uploader to a page, but it is not inside a data view or a snippet that is configured properly. | Place this widget into a data container. If you want to place it into a snippet, mind that you need to configure it properly: set System.Image (or its specialization) as an entity for this snippet or place the snippet in a data container. |
-|            | Move this widget into a data container, for example a data view or list view. | You have added a [dynamic image](image-viewer) to your page, but it is not inside a data view or a list view. | Place this widget inside a data view or a list view.         |
-| CE0489     | Select an entity for the data source of this [dynamic image](image-viewer). | You have added a dynamic image to a page, it is placed inside a data view or a list view, but an entity for the dynamic image is not specified. | Open dynamic image properties > the **Data source** section and select an entity in the **Entity (path)** field. |
+|            | A [file manager](/refguide/file-manager/) must be placed in a data view or  snippet that is connected to the entity ‘System.FileDocument’ or a specialization. | You have added a file manager to a page, but it is not inside a data view or a snippet that is configured properly. | Place this widget into a data container. If you want to place it into a snippet, mind that you need to configure it properly: either set System.FileDocument (or its specialization) as an entity for this snippet or place the snippet in a data container. |
+|            | An [image uploader](/refguide/image-uploader/) must be placed in a data view or snippet that is connected to the entity ‘System.Image’ or a specialization. | You have added an image uploader to a page, but it is not inside a data view or a snippet that is configured properly. | Place this widget into a data container. If you want to place it into a snippet, mind that you need to configure it properly: set System.Image (or its specialization) as an entity for this snippet or place the snippet in a data container. |
+|            | Move this widget into a data container, for example a data view or list view. | You have added a [dynamic image](/refguide/image-viewer/) to your page, but it is not inside a data view or a list view. | Place this widget inside a data view or a list view.         |
+| CE0489     | Select an entity for the data source of this [dynamic image](/refguide/image-viewer/). | You have added a dynamic image to a page, it is placed inside a data view or a list view, but an entity for the dynamic image is not specified. | Open dynamic image properties > the **Data source** section and select an entity in the **Entity (path)** field. |
 ## 8 Image Widget Consistency Errors
 
 A consistency error for an image widget is described in the table below:
 
 | Error code | Message in the Error Pane | Cause of the Error                                           | Way to Fix                                                   |
 | ---------- | ------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-|            | No image selected         | You have added an image widget to a page, but do not select an image itself. | Open the image properties >**General** > **Image** and select an image. For more information on an image widget, see [Image](image). |
+|            | No image selected         | You have added an image widget to a page, but do not select an image itself. | Open the image properties >**General** > **Image** and select an image. For more information on an image widget, see [Image](/refguide/image/). |
 
 ## 9 On Click Event Consistency Errors 
 
-You can specify an [On click event](on-click-event) for different widgets, for example, for buttons or images. 
+You can specify an [On click event](/refguide/on-click-event/) for different widgets, for example, for buttons or images. 
 
 The most common consistency errors are connected with not configuring the on click event. 
 
@@ -294,4 +294,4 @@ To fix the consistency errors, finish configuring the on click event (for exampl
 
 ##  10 Read More
 
-* [Pages](pages) 
+* [Pages](/refguide/pages/) 

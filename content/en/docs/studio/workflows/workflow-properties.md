@@ -8,7 +8,7 @@ tags: ["workflow", "workflows", "workflow properties", "Studio"]
 
 ## 1 Introduction
 
-This document describes workflow properties. For details on what workflows are for and what kind of elements you can use there, see [Workflows](workflows).
+This document describes workflow properties. For details on what workflows are for and what kind of elements you can use there, see [Workflows](/studio/workflows/).
 
 ## 2 Workflow Properties
 
@@ -42,7 +42,7 @@ The **Data** section contains information on what data context the workflow is u
 
 **Workflow entity** is an entity that is used as a workflow context. This entity serves as input for the workflow and can hold the data added during the execution of the workflow. For example, for an expense approval process, it holds the amount to approve and the purpose.
 
-This entity should be of a workflow entity type. For more information, see the [Entities and Their Types](domain-models#entity-types) section in the *Domain Model*.
+This entity should be of a workflow entity type. For more information, see the [Entities and Their Types](/studio/domain-models/#entity-types) section in the *Domain Model*.
 
 ### 2.3 Display Information Section {#display-info}
 
@@ -59,12 +59,12 @@ The **Display Information** section properties are described in the table below:
 
 ### 2.4 Permissions Section {#permissions}
 
-**Allowed roles** defines the [user role](settings-security#roles-and-permissions) that can trigger the workflow.
+**Allowed roles** defines the [user role](/studio/settings-security/#roles-and-permissions) that can trigger the workflow.
 
 ![Permissions Section](/attachments/studio/workflows/workflow-properties/permissions.jpg)
 
 {{% alert color="info" %}}
-This section is only displayed when the security is on. For more information, see [Security](settings-security).
+This section is only displayed when the security is on. For more information, see [Security](/studio/settings-security/).
 {{% /alert %}}
 
 ### 2.4 Due Date Section {#due-date}
@@ -79,14 +79,14 @@ The **Due Date** section properties are described in the table below:
 | ---------- | ------------------------------------------------------------ |
 | None       | No due date is set.                                          |
 | Duration   | You can set the deadline for the workflow with the **Due In** option, which indicates the number of hours, days, or weeks the workflow is due in. Possible values of the property are the following ones:<br /><ul><li>Hour(s)</li><li>Day(s)</li><li>Week(s)</li> </ul> |
-| Expression | You can set a due date for the workflow writing an expression. For example, to set a due date to tomorrow, you can use `addDays([%CurrentDateTime%], 1)`. For more information on expressions, see [Expressions](expressions). |
+| Expression | You can set a due date for the workflow writing an expression. For example, to set a due date to tomorrow, you can use `addDays([%CurrentDateTime%], 1)`. For more information on expressions, see [Expressions](/studio/expressions/). |
 
 ### 2.5 Admin Page Section {#admin-page}
 
-**Override Admin Page** is an optional page used for displaying all running workflows to the workflow admin. This overrides a generic page used to display any running workflow in the app, for example, when you have a **Show Workflow Page** set as an [on-click action](page-editor-widgets-events-section#show-workflow-page) or as a [microflow activity](microflows#microflow-workflow-activities) and would like to override the page selected for this event/activity. 
+**Override Admin Page** is an optional page used for displaying all running workflows to the workflow admin. This overrides a generic page used to display any running workflow in the app, for example, when you have a **Show Workflow Page** set as an [on-click action](/studio/page-editor-widgets-events-section/#show-workflow-page) or as a [microflow activity](/studio/microflows/#microflow-workflow-activities) and would like to override the page selected for this event/activity. 
 
 ![Workflow Page Section](/attachments/studio/workflows/workflow-properties/workflow-page.jpg)
 
 ## 3 Read More
 
-* [Workflows](workflows)
+* [Workflows](/studio/workflows/)

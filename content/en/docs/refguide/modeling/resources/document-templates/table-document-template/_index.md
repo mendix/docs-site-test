@@ -30,7 +30,7 @@ A column in a table.
 
 ### 2.2 Row
 
-A row in a table. See [Row (document template)](row-document-template).
+A row in a table. See [Row (document template)](/refguide/row-document-template/).
 
 ## 3 Appearance Properties
 
@@ -54,8 +54,8 @@ Cell padding specifies the space between the content of the cell and the cell wa
 
 ### 3.4 Style
 
-For details, see [Style](style).
+For details, see [Style](/refguide/style/).
 
 ## 4 Common Properties
 
-{{% snippet file="/static/_includes/refguide/name-property.md" %}}
+{{% snippet file="refguide/name-property.md" %}}

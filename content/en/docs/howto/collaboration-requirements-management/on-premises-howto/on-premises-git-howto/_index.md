@@ -7,14 +7,14 @@ tags: ["on-premises", "git", "version control"]
 ---
 
 {{% alert color="warning" %}}
-This functionality is in Beta. For more information on Beta products, see [Beta Versions](/releasenotes/beta-features/).
+This functionality is in Beta. For more information on Beta products, see [Beta Releases](/releasenotes/beta-features/).
 {{% /alert %}}
 
 ## 1 Introduction
 
-When developing Mendix applications, changes to these applications are stored in a version control system. This system is called [Team Server](/developerportal/collaborate/team-server) and is part of the Mendix Platform. This means that the application's files are stored in the Mendix online environment. For more information, see the [Version Control Reference Guide](/refguide/version-control).	
+When developing Mendix applications, changes to these applications are stored in a version control system. This system is called [Team Server](/developerportal/collaborate/team-server/) and is part of the Mendix Platform. This means that the application's files are stored in the Mendix online environment. For more information, see the [Version Control Reference Guide](/refguide/version-control/).	
 
-While using Team Server is the recommended for most Mendix developers, you may prefer to store your application's files in a system controlled by your own organization. For version control, Mendix uses the [Subversion](https://subversion.apache.org) system (also known as SVN) and [Git](on-premises-git-howto). This how-to describes how to work with Git version control system.	
+While using Team Server is the recommended for most Mendix developers, you may prefer to store your application's files in a system controlled by your own organization. For version control, Mendix uses the [Subversion](https:/subversion.apache.org) system (also known as SVN) and [Git](/howto/collaboration-requirements-management/on-premises-git-howto/). This how-to describes how to work with Git version control system.	
 
 {{% alert color="info" %}}	
 This how-to will not describe how to set up a Git server from scratch; typically, this will be taken care of by the IT department of your organization.	
@@ -181,7 +181,7 @@ If you already have an existing versioned app (with Subversion) that you would l
 4.  Now you can import the package again, and from there you can choose to upload it to your Git private server. Go to **File** > **Import App Package**:
 
     {{/* % image_container width="250" % */}}![Import App Package menu](/attachments/howto/collaboration-requirements-management/on-premises-howto/on-premises-git-howto/import-project-package-menu.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 5. Once the file browser dialog box is open, navigate to the location you save the *.mpk* file during the export process.
 6. In the **Import App Package** dialog box, select **Private server** option in the **Where should we store your App?** section. 
 7. In the **Private Server Type** option, select **Git** (if you have both **Subversion** and **Git** enabled in the **Preferences** form). 
@@ -199,7 +199,7 @@ Note that your previous app still exists, **Studio Pro** will simply make an unv
 
 ## 5 Read More
 
-* [Version Control Reference Guide](/refguide/version-control)
-* [Team Server](/developerportal/collaborate/team-server)
-* [Upload to Version Control Server Reference Guide](/refguide/upload-to-version-control-dialog)
+* [Version Control Reference Guide](/refguide/version-control/)
+* [Team Server](/developerportal/collaborate/team-server/)
+* [Upload to Version Control Server Reference Guide](/refguide/upload-to-version-control-dialog/)
 

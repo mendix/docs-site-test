@@ -1,15 +1,15 @@
 ---
 title: "Work with Lists in a Microflow"
-url: /howto8/logic-business-rules/working-with-lists-in-a-microflow
+url: /howto8/logic-business-rules/working-with-lists-in-a-microflow/
 category: "Logic & Business Rules"
-menu_order: 6
+weight: 6
 description: "Teaches you how to work with a list of objects in a microflow as well retrieve a filtered list of objects from the database."
 tags: ["microflow", "logic", "list"]
 ---
 
 ## 1 Introduction
 
-In this how-to, you will learn how to work with a list of objects in a microflow. To manage this list you will first retrieve a filtered list of objects from the database. Mendix utilizes XPath constraints to apply filters. To learn more about XPath, see [XPath Contains](/refguide8/xpath-contains) in the *Studio Pro Guide*. Secondly, you will iterate over the retrieved list of objects and calculate the total price of all the orders in a [Loop](/refguide8/loop). You will end this how-to with an alternative to calculating aggregated values over a list of objects.
+In this how-to, you will learn how to work with a list of objects in a microflow. To manage this list you will first retrieve a filtered list of objects from the database. Mendix utilizes XPath constraints to apply filters. To learn more about XPath, see [XPath Contains](/refguide8/xpath-contains/) in the *Studio Pro Guide*. Secondly, you will iterate over the retrieved list of objects and calculate the total price of all the orders in a [Loop](/refguide8/loop/). You will end this how-to with an alternative to calculating aggregated values over a list of objects.
 
 ## 2 Preparing the Data Structure, GUI and Example Data
 
@@ -17,10 +17,10 @@ To see the results of this how-to it is necessary that you setup a test project 
 
 Before you continue, make sure that you know how to create the following:
 
-* Domain models – if you need more information, see [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer)
+* Domain models – if you need more information, see [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer/)
 * Overview and detail pages – if you need more information, see [How to 
 Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages)
-*  Menu items – if you need more information, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure)
+*  Menu items – if you need more information, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure/)
 
 1.  Create the following domain model:
 
@@ -73,7 +73,7 @@ In the previous section you have set up a basic data structure and created some 
     a. For **Entity**, select **Order**_<br>
     b. For **List**, enter **OrderList**<br>
 
-	{{% alert type="info" %}}With the currents settings your retrieve action gets every order in the database, using the XPath expression in the following steps you will filter the results that come back from the database.
+	{{% alert color="info" %}}With the currents settings your retrieve action gets every order in the database, using the XPath expression in the following steps you will filter the results that come back from the database.
 	{{% /alert %}}
 
 13.  Add the following XPath expression in the XPath constraint field: `[OrderStatus = 'Processing']`. This expression will filter the list to only orders with the status **Processing**.
@@ -81,7 +81,7 @@ In the previous section you have set up a basic data structure and created some 
 
 	![](/attachments/howto8/logic-business-rules/working-with-lists-in-a-microflow/18581088.png)
 
-	{{% alert type="info" %}}With the currents settings your retrieve action gets all the 'Processing' orders in the database. In the next section you will edit this list of orders.
+	{{% alert color="info" %}}With the currents settings your retrieve action gets all the 'Processing' orders in the database. In the next section you will edit this list of orders.
 	{{% /alert %}}
 
 You should see a microflow like this:
@@ -100,7 +100,7 @@ In the previous section you retrieved a list of orders with the status 'Processi
 
 	![](/attachments/howto8/logic-business-rules/working-with-lists-in-a-microflow/18581086.png)
 
-	{{% alert type="info" %}}A loop is used to iterate over a list of objects. For each object the flow inside the loop is executed. For each object the flow inside the loop is executed. The flow starts at the element that has no incoming sequence flows. A loop can contain all elements used in microflows, with the exception of start and stop events. Additionally, a loop (and only a loop) can contain break events and continue events. The iterator, which looks the same as a parameter, represents the current object in the list for each iteration. Beneath it the name of the object is shown in black and the entity type of the object in blue. For more information, see [Loop](/refguide8/loop).
+	{{% alert color="info" %}}A loop is used to iterate over a list of objects. For each object the flow inside the loop is executed. For each object the flow inside the loop is executed. The flow starts at the element that has no incoming sequence flows. A loop can contain all elements used in microflows, with the exception of start and stop events. Additionally, a loop (and only a loop) can contain break events and continue events. The iterator, which looks the same as a parameter, represents the current object in the list for each iteration. Beneath it the name of the object is shown in black and the entity type of the object in blue. For more information, see [Loop](/refguide8/loop/).
 	{{% /alert %}}
 
 3.  Double click the loop activity and select the **OrderList** to iterate over.
@@ -166,7 +166,7 @@ In the previous section you iterated over a filtered list of objects using a 'Lo
     a. For **Variable** select **CalculatedTotalPrice**.<br>
     b. For **Value** enter `$CalculatedTotalPrice + $IteratorOrder/TotalPrice`.<br>
 
-	{{% alert type="info" %}}By iterating over the list, the price of every order will be added one by one to the 'CalculatedTotalPrice' variable
+	{{% alert color="info" %}}By iterating over the list, the price of every order will be added one by one to the 'CalculatedTotalPrice' variable
 	{{% /alert %}}
 
     ![](/attachments/howto8/logic-business-rules/working-with-lists-in-a-microflow/18581067.png)
@@ -198,7 +198,7 @@ In the previous section you iterated over a list to add the value of single obje
 
 3.  Double click the aggregate list activity to open its properties and set the following properties:</br>
     a. For **List** select **OrderList**.</br>
-    b. For **Function** select **Sum** (see the [documentation](/refguide8/aggregate-list) for the description of the other functions).</br>
+    b. For **Function** select **Sum** (see the [documentation](/refguide8/aggregate-list/) for the description of the other functions).</br>
     c. For **Attribute** select **TotalPrice**.</br>
     d. For **Variable** enter a descriptive name like _SumTotalPrice_.<br>
 
@@ -237,8 +237,8 @@ In the previous sections you filtered the list of orders from database on attrib
 
 ## 8 Read More
 
-*   [Defining access rules using XPath](define-access-rules-using-xpath)
-*   [Extending Your Application with Custom Java](extending-your-application-with-custom-java)
-*   [Working With Lists in a Microflow](working-with-lists-in-a-microflow)
-*   [Creating a Custom Save Button](create-a-custom-save-button)
-*   [Optimizing Retrieve Activities](optimizing-retrieve-activities)
+*   [Defining access rules using XPath](/howto8/logic-business-rules/define-access-rules-using-xpath/)
+*   [Extending Your Application with Custom Java](/howto8/logic-business-rules/extending-your-application-with-custom-java/)
+*   [Working With Lists in a Microflow](/howto8/logic-business-rules/working-with-lists-in-a-microflow/)
+*   [Creating a Custom Save Button](/howto8/logic-business-rules/create-a-custom-save-button/)
+*   [Optimizing Retrieve Activities](/howto8/logic-business-rules/optimizing-retrieve-activities/)

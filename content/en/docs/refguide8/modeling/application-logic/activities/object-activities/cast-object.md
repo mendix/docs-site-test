@@ -1,24 +1,24 @@
 ---
 title: "Cast Object"
-url: /refguide8/cast-object
+url: /refguide8/cast-object/
 parent: "object-activities"
-menu_order: 10
+weight: 10
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/cast-object.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/cast-object.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Microflows**.
 {{% /alert %}}
 
 ## 1 Introduction
 
-The cast object activity is used in a microflow after an [object type decision](object-type-decision) to change the type of object from the generalized object type to the specialized object type of the path out of the object type decision.
+The cast object activity is used in a microflow after an [object type decision](/refguide8/object-type-decision/) to change the type of object from the generalized object type to the specialized object type of the path out of the object type decision.
 
-To read more about specialization and generalization, see [Entities](entities).
+To read more about specialization and generalization, see [Entities](/refguide8/entities/).
 
 ## 2 Properties
 
@@ -47,7 +47,7 @@ This is the name for the result of the cast. It can be used by all activities th
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Example
 

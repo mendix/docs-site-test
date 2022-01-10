@@ -9,9 +9,9 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-A **text area** is used to display and, optionally, allow the end-user to edit the value of an attribute of [data type](data-types) *String*. It differs from a [text box](text-box) In that the value can be displayed over several lines.
+A **text area** is used to display and, optionally, allow the end-user to edit the value of an attribute of [data type](/refguide/data-types/) *String*. It differs from a [text box](/refguide/text-box/) In that the value can be displayed over several lines.
 
-A text area must be placed in a [data widget](data-widgets) and displays an attribute of the object(s) retrieved by that widget. The name of the attribute to be displayed is shown inside the text area, between square brackets, and colored blue.
+A text area must be placed in a [data widget](/refguide/data-widgets/) and displays an attribute of the object(s) retrieved by that widget. The name of the attribute to be displayed is shown inside the text area, between square brackets, and colored blue.
 
 For example, the following text area allows the end-user to see, and set, the **Notes** about a contact.
 
@@ -38,19 +38,19 @@ Text area properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Data Source Section{#data-source}
 
-{{% snippet file="/static/_includes/refguide/data-source-section-link.md" %}}
+{{% snippet file="refguide/data-source-section-link.md" %}}
 
 ### 2.3 Design Properties Section{#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.4 Editability Section{#editability}
 
-{{% snippet file="/static/_includes/refguide/editability-section-link.md" %}}
+{{% snippet file="refguide/editability-section-link.md" %}}
 
 ### 2.5 Events Section{#events}
 
@@ -58,13 +58,13 @@ Text area properties consist of the following sections:
 
 The on-change property specifies an action that will be executed when leaving the widget, either by using the <kbd>Tab</kbd> key or by clicking another widget, after the value has been changed.
 
-{{% snippet file="/static/_includes/refguide/events-section-link.md" %}}
+{{% snippet file="refguide/events-section-link.md" %}}
 
 #### 2.5.2 On Enter
 
 The on-enter property specifies an action that will be executed when the widget is entered, either by using the <kbd>Tab</kbd> key or by clicking it with the mouse.
 
-{{% snippet file="/static/_includes/refguide/events-section-link.md" %}}
+{{% snippet file="refguide/events-section-link.md" %}}
 
 #### 2.5.3 On Leave
 
@@ -72,7 +72,7 @@ The on-leave property specifies an action that will be executed when leaving the
 
 This differs from the [On change](#on-change) property in that the event will always be triggered, even if the value has not been changed.
 
-{{% snippet file="/static/_includes/refguide/events-section-link.md" %}}
+{{% snippet file="refguide/events-section-link.md" %}}
 
 ### 2.6 General Section{#general}
 
@@ -95,7 +95,7 @@ Default: *5*
 
 {{% alert color="info" %}}Counter message is not supported on native mobile pages.{{% /alert %}}
 
-This is the text displayed when typing in the text area. This text has two [parameters](text#parameters). The first parameter contains the number of characters already typed and the second parameter contains the maximum number of characters.
+This is the text displayed when typing in the text area. This text has two [parameters](/refguide/text/#parameters). The first parameter contains the number of characters already typed and the second parameter contains the maximum number of characters.
 
 For example, if you use the counter message `You've used {1} characters of the {2} characters that are allowed.` for your text area, the end-user will see this message displayed below the text area widget:
 
@@ -132,17 +132,17 @@ The autocomplete property specifies if a text area should have autocomplete enab
 
 ### 2.7 Label Section{#label}
 
-{{% snippet file="/static/_includes/refguide/label-section-link.md" %}}
+{{% snippet file="refguide/label-section-link.md" %}}
 
 ### 2.8 Validation Section{#validation}
 
-{{% snippet file="/static/_includes/refguide/widget-validation-link.md" %}}
+{{% snippet file="refguide/widget-validation-link.md" %}}
 
 ### 2.9 Visibility Section{#visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 3 Read More
 
-*   [Data view](data-view)
-*   [Attributes](attributes)
+*   [Data view](/refguide/data-view/)
+*   [Attributes](/refguide/attributes/)

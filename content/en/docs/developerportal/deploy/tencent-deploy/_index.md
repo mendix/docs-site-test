@@ -580,7 +580,7 @@ If the environment cannot be deleted, you will receive a warning, but can go ahe
 
 This enables you to change the purpose of your app environment. You can label an environment as one used for development of the app, for example acceptance testing. In this case choose **Development** and the app will be deployed as an unlicensed App.
 
-For production deployment, select **Production**. If you select **Production**, then you will be asked for the Subscription Secret which ensures that your app runs as a licensed app. For the differences between unlicensed/test apps and licensed apps, see the [Free App](mendix-cloud-deploy#free-app) section in *Mendix Cloud*.
+For production deployment, select **Production**. If you select **Production**, then you will be asked for the Subscription Secret which ensures that your app runs as a licensed app. For the differences between unlicensed/test apps and licensed apps, see the [Free App](/developerportal/deploy/mendix-cloud-deploy/#free-app) section in *Mendix Cloud*.
 
 {{% alert color="warning" %}}
 Your app can only be deployed to a production environment if security is set on. You will not receive an error if security is set off, but the deployment will appear to hang with a spinner being displayed.
@@ -610,13 +610,13 @@ On the **Network** tab, you add client certificates (in the PKCS12 format) or ce
 
 ### 6.4 Runtime Tab
 
-On the **Runtime** tab, you can change various runtime settings for your app environment. For more details of these, see the [Runtime Tab](environments-details#runtime-tab) section of *Environment Details*.
+On the **Runtime** tab, you can change various runtime settings for your app environment. For more details of these, see the [Runtime Tab](/developerportal/deploy/environments-details/#runtime-tab) section of *Environment Details*.
 
 ![](/attachments/developerportal/deploy/tencent-deploy/runtime-tab.png)
 
 ### 6.5 Log Levels Tab
 
-On the **Log Levels** tab, you can change the log levels which are used for the log nodes in your app. For more details of these, see the [Log Levels Tab](environments-details#log-levels) section of *Environment Details*.
+On the **Log Levels** tab, you can change the log levels which are used for the log nodes in your app. For more details of these, see the [Log Levels Tab](/developerportal/deploy/environments-details/#log-levels) section of *Environment Details*.
 
 ![](/attachments/developerportal/deploy/tencent-deploy/log-levels-tab.png)
 
@@ -674,7 +674,7 @@ If you attempt to deploy an app with security not set to production into a produ
 
 In some cases, your Mendix app will need to know its own URL - for example when using SSO or sending emails.
 
-For this to work properly, you need to set the [ApplicationRootUrl](/refguide/custom-settings#general) **Custom Runtime Setting** in the **Runtime** tab to the app's URL.
+For this to work properly, you need to set the [ApplicationRootUrl](/refguide/custom-settings/#general) **Custom Runtime Setting** in the **Runtime** tab to the app's URL.
 
 To add this setting:
 

@@ -2,7 +2,7 @@
 title: "Introduction to ATS"
 url: /addons/ats-addon/ov-introduction/
 parent: "ov"
-menu_order: 1
+weight: 1
 ---
 
 ## 1 ATS Start Page
@@ -79,4 +79,4 @@ The Scrum Master of your app can access the **App Settings** from the profile me
 
 All other roles in your app have access to ATS. The only difference is that the Scrum Master can access the **App Settings** of your app.
 
-For more information, see the [ATS 2 Reference Guide](rg-two-ats).
+For more information, see the [ATS 2 Reference Guide](/addons/ats-addon/rg-two-ats/).

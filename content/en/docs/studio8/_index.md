@@ -1,6 +1,6 @@
 ---
 title: "Studio 8 Guide"
-url: /studio8
+url: /studio8/
 tags: ["studio", "web modeler"]
 weight: 70
 cascade:
@@ -10,7 +10,7 @@ cascade:
 #This document is mapped to the landing page, update the link there if renaming or moving the doc file.
 ---
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 The **Studio 8 Guide** describes Mendix Studio functionality that corresponds to Mendix 8 version. It describes the latest Studio functionality and features.
 
@@ -18,7 +18,7 @@ The **Studio 8 Guide** describes Mendix Studio functionality that corresponds to
 
 ## 1 Introduction 
 
-The Mendix Platform includes [Mendix Studio](general) in addition to [Mendix Studio Pro](/refguide8/modeling). Studio is a collaborative, no-code, web-based application development environment. It enables business developers and users with minimal coding or software development experience to create web and mobile applications without having to know how to code.
+The Mendix Platform includes [Mendix Studio](/studio8/general/) in addition to [Mendix Studio Pro](/refguide8/modeling/). Studio is a collaborative, no-code, web-based application development environment. It enables business developers and users with minimal coding or software development experience to create web and mobile applications without having to know how to code.
 
 Studio enables you to do the following: 
 
@@ -31,14 +31,14 @@ Studio enables you to do the following:
 
 The *Studio 8 Guide* is divided into the following categories:
 
-* [General Info](general) 
-* [Pages](page-editor)
-* [Domain Model](domain-models)
-* [Navigation Document](navigation)
-* [Microflows](microflows)
-* [Previewing & Publishing Your App](publishing-app)
-* [Checks](checks)
-* [Theme Customizer](theme-customizer)
-* [Settings](settings)
-* [Working with Data](work-with-data)
-* [Collaboration](collaboration)
+* [General Info](/studio8/general/) 
+* [Pages](/studio8/page-editor/)
+* [Domain Model](/studio8/domain-models/)
+* [Navigation Document](/studio8/navigation/)
+* [Microflows](/studio8/microflows/)
+* [Previewing & Publishing Your App](/studio8/publishing-app/)
+* [Checks](/studio8/checks/)
+* [Theme Customizer](/studio8/theme-customizer/)
+* [Settings](/studio8/settings/)
+* [Working with Data](/studio8/work-with-data/)
+* [Collaboration](/studio8/collaboration/)

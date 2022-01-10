@@ -2,26 +2,26 @@
 title: "APD 3 Reference Guide"
 url: /addons/apd-addon/rg-three-apd/
 parent: "rg-apd"
-menu_order: 1
+weight: 1
 ---
 
 ## 1 Introduction
 
 The Application Performance Diagnostics (APD) tool is a solution that helps you to analyze performance issues and runtime behavior.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In earlier releases, this tool was called Application Performance Monitor (APM).
 {{% /alert %}}
 
 This is the reference guide for CLEVR's APD 3 for Mendix. It has the following chapters:
 
-* [Apps](rg-three-apps)
-* [Environments](rg-three-environments)
-* [Dashboard](rg-three-dashboard)
-* [Logs](rg-three-logs)
-* [Performance Statistics](rg-three-statistics)
-* [Performance Recorder](rg-three-recorder)
-* [Settings](rg-three-settings)
+* [Apps](/addons/apd-addon/rg-three-apps/)
+* [Environments](/addons/apd-addon/rg-three-environments/)
+* [Dashboard](/addons/apd-addon/rg-three-dashboard/)
+* [Logs](/addons/apd-addon/rg-three-logs/)
+* [Performance Statistics](/addons/apd-addon/rg-three-statistics/)
+* [Performance Recorder](/addons/apd-addon/rg-three-recorder/)
+* [Settings](/addons/apd-addon/rg-three-settings/)
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/APD_Powered_logo.png)
 
@@ -49,7 +49,7 @@ In development, adding a check of APD to the generic definition of done is advis
 
 ## 4 Performance Recorder for Collecting Individual Traces
 
-When Support or DevOps wants to investigate a performance issue, they can use the APD [Performance Recorder](rg-three-recorder). This shows individual actions, loop iterations, and exactly where the obstacles are.
+When Support or DevOps wants to investigate a performance issue, they can use the APD [Performance Recorder](/addons/apd-addon/rg-three-recorder/). This shows individual actions, loop iterations, and exactly where the obstacles are.
 
 ## 5 Your Flight Data Recorder
 

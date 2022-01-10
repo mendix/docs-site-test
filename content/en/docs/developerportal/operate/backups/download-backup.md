@@ -23,7 +23,7 @@ This how-to describes downloading a back up from a Free App environment or a lic
 Before starting this how-to, make sure you have completed the following prerequisite:
 
 * Have a Free App or licensed cloud node with backups
-* In case of an licensed node, you have the correct [Node Permissions](/developerportal/deploy/node-permissions)
+* In case of an licensed node, you have the correct [Node Permissions](/developerportal/deploy/node-permissions/)
 
 ## 3 Downloading a Free App Backup
 
@@ -66,6 +66,6 @@ To download a backup of a licensed app, follow these steps:
 
 ## 5 Read More
 
-* [How to Create a Backup](create-backup)
-* [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps)
-* [How to Restore a Backup](restore-backup)
+* [How to Create a Backup](/developerportal/operate/create-backup/)
+* [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps/)
+* [How to Restore a Backup](/developerportal/operate/restore-backup/)

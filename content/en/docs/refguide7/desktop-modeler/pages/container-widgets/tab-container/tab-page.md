@@ -1,6 +1,6 @@
 ---
 title: "Tab page"
-url: /refguide7/tab-page
+url: /refguide7/tab-page/
 parent: "tab-container"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -8,7 +8,7 @@ parent: "tab-container"
 
 ## General Properties
 
-{{% snippet file="/static/_includes/refguide7/Caption+Property.md" %}}
+{{% snippet file="refguide7/Caption+Property.md" %}}
 
 ### Default tab page
 
@@ -24,4 +24,4 @@ _Default value:_ True
 
 ## Visibility Properties
 
-{{% snippet file="/static/_includes/refguide7/Visible+Property.md" %}}
+{{% snippet file="refguide7/Visible+Property.md" %}}

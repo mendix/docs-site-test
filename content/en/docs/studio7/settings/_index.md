@@ -1,8 +1,8 @@
 ---
 title: "Settings"
-url: /studio7/settings
+url: /studio7/settings/
 description: "Describes the Settings menu in Mendix Studio."
-menu_order: 90
+weight: 90
 tags: ["studio", "settings", "widgets"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -13,8 +13,8 @@ tags: ["studio", "settings", "widgets"]
 
 **Settings** consist of the following:
 
-* [Roles and Permissions](settings-security) – you can manage access to your app and its documents via **Roles and Permissions**
-* [Widget Overview](settings-widget-overview) – contains information on Mendix Marketplace widgets and local widgets in your app
+* [Roles and Permissions](/studio7/settings-security/) – you can manage access to your app and its documents via **Roles and Permissions**
+* [Widget Overview](/studio7/settings-widget-overview/) – contains information on Mendix Marketplace widgets and local widgets in your app
 
 To open the **Settings**, click the gear icon at the left menu bar.
 
@@ -22,4 +22,4 @@ To open the **Settings**, click the gear icon at the left menu bar.
 
 ## 2 Read More
 
-* [General Info](general)
+* [General Info](/studio7/general/)

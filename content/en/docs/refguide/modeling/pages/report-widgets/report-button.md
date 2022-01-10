@@ -9,7 +9,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-You can set a [report grid](report-grid) to automatically generate the report when the page is loaded. However, if a report page has parameter widgets, you must also add a **Generate report button** widget so that the end-user can regenerate the report after specifying the parameter(s).
+You can set a [report grid](/refguide/report-grid/) to automatically generate the report when the page is loaded. However, if a report page has parameter widgets, you must also add a **Generate report button** widget so that the end-user can regenerate the report after specifying the parameter(s).
 
 The reports are generated when the end-user clicks the generate report button.
 
@@ -28,11 +28,11 @@ Generate report button properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section{#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}}
+{{% snippet file="refguide/design-section-link.md" %}}
 
 ### 2.3 General Section{#general}
 

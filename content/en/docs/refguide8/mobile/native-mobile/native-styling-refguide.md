@@ -1,17 +1,17 @@
 ---
 title: "Native Mobile Styling"
-url: /refguide8/native-styling-refguide
+url: /refguide8/native-styling-refguide/
 parent: "native-mobile"
-menu_order: 20
+weight: 20
 description: "This reference guide will contextualize the style elements Mendix uses in native mobile apps, as well as explain the classes and style properties of Mendix’s widgets."
 tags: ["Native", "Class", "Design", "Property", "Style", "Widget", "studio pro"]
 ---
 
 ## 1 Introduction
 
-This reference guide will contextualize the style elements Mendix uses in native mobile apps, as well as explain the classes and style properties of Mendix’s widgets. To learn the basics of native styling, you can consult [How to Implement Native Mobile Styling](/howto8/mobile/native-styling) and then follow [How to Style Your Mendix Native Mobile App](/howto8/mobile/how-to-use-native-styling).
+This reference guide will contextualize the style elements Mendix uses in native mobile apps, as well as explain the classes and style properties of Mendix’s widgets. To learn the basics of native styling, you can consult [How to Implement Native Mobile Styling](/howto8/mobile/native-styling/) and then follow [How to Style Your Mendix Native Mobile App](/howto8/mobile/how-to-use-native-styling/).
 
-Mendix apps use layouts to dictate how pages can look and function. For native mobile apps specifically, you can use a native layout to easily integrate navigation and settings optimized for native functionality. For more information on layouts, see [Layout](layout).
+Mendix apps use layouts to dictate how pages can look and function. For native mobile apps specifically, you can use a native layout to easily integrate navigation and settings optimized for native functionality. For more information on layouts, see [Layout](/refguide8/layout/).
 
 To keep widgets responsive, Mendix apps use Flexbox. Using Flexbox, a component can set the layout of its child components. This allows your app to retain a consistent layout across multiple form factors. For more information on layout, see React Native’s [Flexbox documentation](https://reactnative.dev/docs/flexbox).
 
@@ -47,7 +47,7 @@ export const customClassName = {
 That custom class can be easily accessed in Mendix Studio Pro:
 
 {{/* % image_container width="400" % */}}![custom class](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/custom-class.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 When you want to apply styling to one instance of a widget, you can extend that widget’s default class. Each widget's default class is named in the [Data Widgets](#understanding-data-widgets) section below. The example below shows how to extend a default class:
 
 ```javascript
@@ -74,7 +74,7 @@ export const com_mendix_widget_native_badge_Badge = (Badge = {
 });
 ```
 
-For more information on creating your own classes, see the [Creating Your Own Classes](/howto8/mobile/how-to-use-native-styling#creating-your-own-classes) section in *Style Your Mendix Native Mobile App*. That document also shows how to use custom classes as design properties.
+For more information on creating your own classes, see the [Creating Your Own Classes](/howto8/mobile/how-to-use-native-styling/#creating-your-own-classes) section in *Style Your Mendix Native Mobile App*. That document also shows how to use custom classes as design properties.
 
 ## 3  Data Widgets {#understanding-data-widgets}
 
@@ -82,14 +82,14 @@ Data widgets are essential to many Mendix apps. These widgets will allow your us
 
 ### 3.1 Data View Widget
 
-The data view widget shows the contents of one data object. For more information about this widget, see [Data View](data-view).This widget has no user interface, so it does not support any styling.
+The data view widget shows the contents of one data object. For more information about this widget, see [Data View](/refguide8/data-view/).This widget has no user interface, so it does not support any styling.
 
 ### 3.2 List View Widget {#list-view}
 
-The list view shows a list of objects arranged vertically or horizontally. For more information about this widget, see [List View](list-view). This is not the default list view, but how a list view widget could look in an app:
+The list view shows a list of objects arranged vertically or horizontally. For more information about this widget, see [List View](/refguide8/list-view/). This is not the default list view, but how a list view widget could look in an app:
 
 {{/* % image_container width="350" % */}}![list view](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/list-view.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 This is how the widget’s code is structured:
 
 ```xml
@@ -118,7 +118,7 @@ Common widgets are used in almost all app pages. Because of their ubiquity, lear
 
 ### 4.1 Text
 
-The text widget shows text which can optionally contain parameters. For more information on these widgets, see [Text Widgets](text). The widget’s style properties are as follows:
+The text widget shows text which can optionally contain parameters. For more information on these widgets, see [Text Widgets](/refguide8/text/). The widget’s style properties are as follows:
 
 ```xml
 <container>
@@ -135,7 +135,7 @@ The default class to style all texts is named `Text`.
 
 ### 4.2 Image {#image}
 
-The image widget can be used to show a predefined image on a page, layout, or snippet. For more information on these widgets, see [Image Widgets](image). The widget’s style properties are as follows:
+The image widget can be used to show a predefined image on a page, layout, or snippet. For more information on these widgets, see [Image Widgets](/refguide8/image/). The widget’s style properties are as follows:
 
 ```xml
 <container>
@@ -156,7 +156,7 @@ The default class to style all static image styles is named `Image`. Please note
 
 ### 4.3 Page Title 
 
-The page title widget shows the title of the page on which it is used. This can be the title defined on the page itself, or the override title defined when showing a page. For more information on this widget, consult [Page Title](page-title). The widget’s style properties are as follows:
+The page title widget shows the title of the page on which it is used. This can be the title defined on the page itself, or the override title defined when showing a page. For more information on this widget, consult [Page Title](/refguide8/page-title/). The widget’s style properties are as follows:
 
 ```xml
 <container>
@@ -215,7 +215,7 @@ The resulting DOM looks like this:
 
 ## 5 Container Widgets
 
-Container widgets are a set of tools that allow you to provide structure for your page’s content. There is also a specific widget called container widget detailed below. For more information on these widgets, see [Container Widgets](container-widgets).
+Container widgets are a set of tools that allow you to provide structure for your page’s content. There is also a specific widget called container widget detailed below. For more information on these widgets, see [Container Widgets](/refguide8/container-widgets/).
 
 ### 5.1 Container 
 
@@ -241,7 +241,7 @@ The default class to style all page titles is named `Container`.
 Tab containers are used to show information categorized into multiple tab pages. Tab containers can help display information which exceeds a device’s screen space. This is how a default tab container widget could look in an app:
 
 {{/* % image_container width="350" % */}}![tab container](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/tab-container.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 This is how the widget’s code is structured:
 
 ```xml
@@ -298,14 +298,14 @@ The default class to style all scroll containers is named `ScrollContainer`.
 
 ## 6 Input Widgets
 
-Input widgets are typically used to show data to the user and allow them to edit data. For more information on these widgets, see [Input Widgets](input-widgets).
+Input widgets are typically used to show data to the user and allow them to edit data. For more information on these widgets, see [Input Widgets](/refguide8/input-widgets/).
 
 ### 6.1 Text Box {#text-box}
 
 A text box can be used to display or edit a textual value. This is how a text box widget with validation feedback and a plain text box widget could look in an app:
 
 {{/* % image_container width="350" % */}}![text box](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/text-box.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are structured as follows:
 
 ```xml
@@ -344,7 +344,7 @@ The default class to style all text boxes is named `TextBox`.
 A text box can be used to display or edit a textual value with multiple lines. This widget supports the same style properties and structure as the [Text Box](#text-box) widget above. This is how a text area widget with validation feedback and a plain text area widget could look in an app:
 
 {{/* % image_container width="350" % */}}![text area](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/text-area.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The default class to style all text areas is named `TextArea`.
 
 ### 6.3 Drop-Down {#drop-down}
@@ -425,7 +425,7 @@ The widget’s render hierarchy is as follows for uniform:
 A check box input widget can be used to display and edit Boolean attributes and is rendered as a switch. This is how a check box widget could look in an app:
 
 {{/* % image_container width="350" % */}}![check box](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/check-box.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties structure is as follows:
 
 ```xml
@@ -469,7 +469,7 @@ The default class to style all check box inputs is named `Checkbox`.
 A date picker is an input widget that can be used to display and edit date or time attributes. This is how a date picker widget could look in an app:
 
 {{/* % image_container width="300" % */}}![date picker](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/date-picker.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -508,13 +508,13 @@ The default class to style all date picker inputs is named `DatePicker`.
 
 ### 6.6 Reference selector
 
-The reference selector is an input widget that can be used to display and edit associations. For more information on this widget, see [Reference Selector](reference-selector). This widget supports the same style properties and structure as the [drop-down](#drop-down) widget above.
+The reference selector is an input widget that can be used to display and edit associations. For more information on this widget, see [Reference Selector](/refguide8/reference-selector/). This widget supports the same style properties and structure as the [drop-down](#drop-down) widget above.
 
 The default class to style all reference selector inputs is named `ReferenceSelector`.
 
 ## 7 File Widgets
 
-File widgets help your user app manage images and other files. For more information on these widgets, see [File Widgets](file-widgets).
+File widgets help your user app manage images and other files. For more information on these widgets, see [File Widgets](/refguide8/file-widgets/).
 
 ### 7.1 Image Viewer {#image-viewer}
 
@@ -524,14 +524,14 @@ The default class to style all image viewers is named  `ImageViewer`.
 
 ## 8 Button Widgets
 
-Button widgets help your user perform actions. For more information about these widgets, see [Button Widgets](button-widgets).
+Button widgets help your user perform actions. For more information about these widgets, see [Button Widgets](/refguide8/button-widgets/).
 
 ### 8.1 Action Button
 
 An action button can perform various actions such as calling a nanoflow, opening a page. 
 
 {{/* % image_container width="350" % */}}![action button](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/action-button.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -586,7 +586,7 @@ The default classes for layouts and pages are `Layout` and `Page`.
 The navigation consists of the bottom bar (which allows users to navigate within your app) and the progress overlay (which can be used to show a loading indicator while waiting for something to load). This is how navigation could look like in an app:
 
 {{/* % image_container width="300" % */}}![navigation widget](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/nav-widget.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The navigation style properties are as follows:
 
 ```xml
@@ -620,14 +620,14 @@ The default class to style the navigation is named  `navigationStyle`. There is 
 
 ## 11 Add-On Widgets
 
-Add-on widgets are distributed through the [Native Mobile Resources](/appstore/modules/native-mobile-resources) module, and are not shipped with Mendix Studio Pro. Other add-on widgets might also be distributed through app templates, as well as modules importing pages from other projects. 
+Add-on widgets are distributed through the [Native Mobile Resources](/appstore/modules/native-mobile-resources/) module, and are not shipped with Mendix Studio Pro. Other add-on widgets might also be distributed through app templates, as well as modules importing pages from other projects. 
 
 ### 11.1 Activity Indicator {#activity-indicator}
 
 The activity indicator widget displays a circular loading indicator. This is how an activity indicator widget could look in an app:
 
 {{/* % image_container width="350" % */}}![activity indicator](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/activity-indicator.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```javascript
@@ -673,7 +673,7 @@ The default class to style all background images is named `com_mendix_widget_nat
 The badge widget displays text or values as a badge. This is how a badge widget could look in an app:
 
 {{/* % image_container width="350" % */}}![badge](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/badge.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows: 
 
 ```xml
@@ -717,7 +717,7 @@ The default class to style all barcode scanner widgets is named `com_mendix_widg
 The feedback widget allows users to give direct feedback. This is how a feedback widget could look in an app:
 
 {{/* % image_container width="350" % */}}![feedback](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/feedback-two.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 | Element | Style Properties    | Description |
@@ -768,7 +768,7 @@ The default class to style all floating actions buttons is named `com_mendix_wid
 The maps widget supports various digital map providers. This is how a maps widget could look in an app:
 
 {{/* % image_container width="350" % */}}![maps](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/maps.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 | Element | Style Properties    | Description |
@@ -790,7 +790,7 @@ The notifications widget lets you display a custom message in your app. This wid
 The progress bar widget shows percentage of progress. This is how a progress bar widget could look in an app:
 
 {{/* % image_container width="300" % */}}![progress bar](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/progress-bar.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -814,7 +814,7 @@ The default class to style all progress bars is named `com_mendix_widget_native_
 The progress circle widget displays progress in a circle using positive or negative values. This is how a progress circle widget could look in an app:
 
 {{/* % image_container width="300" % */}}![progress circle](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/progress-circle.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -843,7 +843,7 @@ The default class to style all progress circles is named `com_mendix_widget_nati
 The QR code widget generates a QR code based on a value, which a user can then scan. This is how a QR code widget could look in an app:
 
 {{/* % image_container width="350" % */}}![qr code](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/qr-code.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -866,7 +866,7 @@ The default class to style all QR codes is named `com_mendix_widget_native_qrcod
 The range slider widget allows you to change a range of values using a slider with maximum and minimum bound values. This is how a range slider widget could look in an app:
 
 {{/* % image_container width="300" % */}}![range slider](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/range-slider.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -916,7 +916,7 @@ The default class to style all safe area views is named `com_mendix_widget_nativ
 The slider widget simply allows you to change a number value using a slider. This is how a slider widget could look in an app:
 
 {{/* % image_container width="300" % */}}![slider](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/slider.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 This widget supports the same style properties as the [range slider] (#range-slider) widget above.
 
 The default class to style all slider inputs is named `com_mendix_widget_native_slider_Slider`.
@@ -926,7 +926,7 @@ The default class to style all slider inputs is named `com_mendix_widget_native_
 The ratings widget allows users to rate an object from 0 to 5. This is how a ratings widget could look in an app:
 
 {{/* % image_container width="350" % */}}![ratings](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/ratings.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -955,7 +955,7 @@ The default class to style all rating inputs is named `com_mendix_widget_native_
 The toggle buttons widget allows you to set an enumeration attribute. This is how a toggle buttons widget could look in an app:
 
 {{/* % image_container width="350" % */}}![toggle buttons](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/toggle-buttons.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -991,7 +991,7 @@ The default class to style all toggle buttons is named `com_mendix_widget_native
 The video player widget allows you to play video based on a URL, and is limited to MP4 only. This is how a video player widget could look in an app:
 
 {{/* % image_container width="300" % */}}![video player](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/video-player.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 | Element | Style Properties    | Description |
@@ -1038,7 +1038,7 @@ The default class to style all animation widgets is named `com_mendix_widget_nat
 This introduction screen widget displays paginated contents you can swipe through, and offers buttons on each page to proceed or go back:
 
 {{/* % image_container width="350" % */}}![intro screen](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/intro-screen.gif){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -1106,7 +1106,7 @@ The default class to style all into screen widgets is named `com_mendix_widget_n
 The list view swipe widget can make a list view interactive by adding swipe gestures and extra buttons in the background behind a list item:
 
 {{/* % image_container width="350" % */}}![list view swipe](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/list-view-swipe-buttons.gif){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -1140,11 +1140,11 @@ The bottom sheet widget creates a set of options while blocking interaction with
 * Modal bottom sheet:
 
 	{{/* % image_container width="350" % */}}![modal bottom sheet](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/modal-bottom-sheet.gif){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 * Expanding bottom sheet:
 
 	{{/* % image_container width="350" % */}}![expanding bottom sheet](/attachments/refguide8/mobile/native-mobile/native-styling-refguide/expanding-bottom-sheet.gif){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The widget’s style properties are as follows:
 
 ```xml
@@ -1478,6 +1478,6 @@ The default class to style all bar chart widgets is named `com_mendix_widget_nat
 
 ## 12 Read More
 
-* [How to Style Your Mendix Native Mobile App](/howto8/mobile/how-to-use-native-styling)
-* [How to Implement Native Mobile Styling](/howto8/mobile/native-styling)
-* [Design Properties Documentation](/apidocs-mxsdk/apidocs/design-properties)
+* [How to Style Your Mendix Native Mobile App](/howto8/mobile/how-to-use-native-styling/)
+* [How to Implement Native Mobile Styling](/howto8/mobile/native-styling/)
+* [Design Properties Documentation](/apidocs-mxsdk/apidocs/design-properties/)

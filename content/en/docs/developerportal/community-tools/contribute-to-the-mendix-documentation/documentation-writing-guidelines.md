@@ -34,7 +34,7 @@ This section presents detailed guidelines for writing a how-to. Read this sectio
 
 {{% /alert %}}
 
-The [Studio Pro How-to's](/howto/) are contextual and version-specific guides on Mendix topics that take you through the necessary steps to achieve a goal, whether it is adding a widget to your app's UI, importing Excel files, or consuming a web service. The *Studio Pro How-to's* use relevant information on Mendix components to create realistic scenarios with specific contexts and they should deliver functionality.
+The  are contextual and version-specific guides on Mendix topics that take you through the necessary steps to achieve a goal, whether it is adding a widget to your app's UI, importing Excel files, or consuming a web service. The *Studio Pro How-to's* use relevant information on Mendix components to create realistic scenarios with specific contexts and they should deliver functionality.
 
 Here are some important details on the *Studio Pro How-to's*:
 
@@ -65,13 +65,13 @@ Add images that clearly show the specific functionality of the related step (so 
 
 {{/* % image_container width="500" % */}}
 ![](/attachments/developerportal/community-tools/contribute-to-the-mendix-documentation/documentation-writing-guidelines/image_examples.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 Add boxes, indicators, arrows, and other information to an image only if it makes the image more understandable:
 
 {{/* % image_container width="400" % */}}
 ![](/attachments/developerportal/community-tools/contribute-to-the-mendix-documentation/documentation-writing-guidelines/image_examples2.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 Keep the images as simple as possible, because having too many arrows on an image can make it confusing!
 
@@ -99,4 +99,4 @@ When writing for the *Studio Pro Guide*, consider these guidelines:
 
 ## 5 Read More
 
-* [How to Contribute to the Mendix Documentation](contribute-to-the-mendix-documentation)
+* [How to Contribute to the Mendix Documentation](/developerportal/community-tools/contribute-to-the-mendix-documentation/)

@@ -1,8 +1,8 @@
 ---
 title: "Start Your Own Repository"
-url: /howto7/collaboration-requirements-management/starting-your-own-repository
+url: /howto7/collaboration-requirements-management/starting-your-own-repository/
 category: "Collaboration & Requirements Management"
-menu_order: 30
+weight: 30
 tags: []
 ---
 
@@ -38,8 +38,8 @@ If you want to make a new release for the Marketplace, we advise you start off w
 
 ## 6 Read More
 
-*   [Stories](/developerportal/collaborate/stories)
-*   [Contributing to a GitHub repository](contribute-to-a-github-repository)
-*   [Version Control](/refguide7/version-control)
-*   [Sharing the Development Database](sharing-the-development-database)
+*   [Stories](/developerportal/collaborate/stories/)
+*   [Contributing to a GitHub repository](/howto7/collaboration-requirements-management/contribute-to-a-github-repository/)
+*   [Version Control](/refguide7/version-control/)
+*   [Sharing the Development Database](/howto7/collaboration-requirements-management/sharing-the-development-database/)
 

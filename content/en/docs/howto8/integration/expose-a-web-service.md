@@ -1,8 +1,8 @@
 ---
 title: "Expose a Web Service"
-url: /howto8/integration/expose-a-web-service
+url: /howto8/integration/expose-a-web-service/
 category: "Integration"
-menu_order: 12
+weight: 12
 description: "Describes how Mendix supports exposing the functionality and data of your app using web services."
 tags: ["web service", "expose", "integration"]
 ---
@@ -22,7 +22,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Download the latest version of [Mendix Studio Pro](https://marketplace.mendix.com/)
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 This how-to was written based on Studio Pro version 5.20. All the images, names, and steps in this how-to are based on this version. When using other versions, the images and/or names on your screen may be different than the images and names used in this how-to.
 
@@ -30,12 +30,12 @@ This how-to was written based on Studio Pro version 5.20. All the images, names,
 
 ## 3 Data Structure and GUI
 
-1. Create the following **Customer** entity in your domain model (for details on how to create an entity, see [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer)):
+1. Create the following **Customer** entity in your domain model (for details on how to create an entity, see [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer/)):
 
     ![](/attachments/howto8/integration/expose-a-web-service/8945665.png)
 
-2. Create overview and detail pages to manage objects of the **Customer** type (for details on how to create overview and detail pages, see [How to Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages).
-3. Create a menu item to access the customer overview page (for details on how to create menu items, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure).
+2. Create overview and detail pages to manage objects of the **Customer** type (for details on how to create overview and detail pages, see [How to Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages/).
+3. Create a menu item to access the customer overview page (for details on how to create menu items, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure/).
 4. Run the application and add some data to expose in the web service.
 
 ## <a name="4"></a>4 Creating a Published Web Service
@@ -55,7 +55,7 @@ To create a published web service, follow these steps:
 
         ![](/attachments/howto8/integration/expose-a-web-service/18581713.png)
 
-    * On the **Settings** tab, you can configure the other settings. Do change them before publishing your web service, especially the **Target namespace** (for details on these settings, see [Published Web Service](/refguide8/published-web-service) in the *Studio Pro Guide*):
+    * On the **Settings** tab, you can configure the other settings. Do change them before publishing your web service, especially the **Target namespace** (for details on these settings, see [Published Web Service](/refguide8/published-web-service/) in the *Studio Pro Guide*):
 
         ![](/attachments/howto8/integration/expose-a-web-service/18581712.png)
 
@@ -69,7 +69,7 @@ To create a published web service, follow these steps:
 
 To create the functionality to expose, follow these steps:
 
-1. Create a microflow that retrieves and returns a list of customers from the database (for details on how to create a microflow, see [How to Trigger a Microflow From a Menu Item](/howto8/logic-business-rules/trigger-microflow-from-menu-item)).
+1. Create a microflow that retrieves and returns a list of customers from the database (for details on how to create a microflow, see [How to Trigger a Microflow From a Menu Item](/howto8/logic-business-rules/trigger-microflow-from-menu-item/)).
 2. To make the microflow more exciting, add two input parameters to dynamically set the range settings of the retrieve action. Configure the range options of the retrieve action like this:
 
     ![](/attachments/howto8/integration/expose-a-web-service/18581709.png)
@@ -155,11 +155,11 @@ When exposing a web service, consider the following things:
 
 ## 10 Read More
 
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Consume a Simple Web Service](consume-a-simple-web-service)
-* [Export XML Documents](export-xml-documents)
-* [Import Excel Documents](importing-excel-documents)
-* [Enable Selenium Support](selenium-support)
-* [Import XML Documents](importing-xml-documents)
-* [Consume a REST Service](consume-a-rest-service)
-* [Expose Data to BI Tools Using OData](exposing-data-to-bi-tools-using-odata)
+* [Consume a Complex Web Service](/howto8/integration/consume-a-complex-web-service/)
+* [Consume a Simple Web Service](/howto8/integration/consume-a-simple-web-service/)
+* [Export XML Documents](/howto8/integration/export-xml-documents/)
+* [Import Excel Documents](/howto8/integration/importing-excel-documents/)
+* [Enable Selenium Support](/howto8/integration/selenium-support/)
+* [Import XML Documents](/howto8/integration/importing-xml-documents/)
+* [Consume a REST Service](/howto8/integration/consume-a-rest-service/)
+* [Expose Data to BI Tools Using OData](/howto8/integration/exposing-data-to-bi-tools-using-odata/)

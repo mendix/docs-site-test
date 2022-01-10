@@ -28,7 +28,7 @@ The following properties must be configured:
 
 ## 3 Usage
 
-The slider enables setting a value between two bounds (minimum value and maximum value). However, if there are two values that need to be set between two bounds, using the [Range Slider](range-slider) widget is recommended..
+The slider enables setting a value between two bounds (minimum value and maximum value). However, if there are two values that need to be set between two bounds, using the [Range Slider](/appstore/widgets/range-slider/) widget is recommended..
 
 ![](/attachments/appstore/widgets/slider/slider1.png)
 
@@ -40,4 +40,4 @@ When choosing the step value, the difference between the maximum value and the m
 
 ## 4 Read More
 
-* [Native Mobile Styling Reference Guide](/refguide/native-styling-refguide)
+* [Native Mobile Styling Reference Guide](/refguide/native-styling-refguide/)

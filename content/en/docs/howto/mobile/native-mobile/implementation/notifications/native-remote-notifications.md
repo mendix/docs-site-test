@@ -19,7 +19,7 @@ Push notifications only work with apps created through the Mendix Native Mobile 
 
 If you want to use push notifications with custom apps which were created with Mendix Native Mobile Builder, make sure you have completed the following prerequisite:
 
-* Complete [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app) through the end of the *Making Your First Build* section
+* Complete [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app/) through the end of the *Making Your First Build* section
 
 ## 3 Setting Up Your Mendix App
 
@@ -33,8 +33,8 @@ Create a Mendix app using the Blank Native Mobile App:
 
 To install your module, do the following:
 
-1. Add the [Community Commons Function Library](/appstore/modules/community-commons-function-library) module to your app.
-1. Add the [Encryption](/appstore/modules/encryption) module to your app.
+1. Add the [Community Commons Function Library](/appstore/modules/community-commons-function-library/) module to your app.
+1. Add the [Encryption](/appstore/modules/encryption/) module to your app.
 1. Set the encryption private key by doing the following:<br />
 	a. Double-click **Settings**.<br />
 	b. Click **Edit**.<br />
@@ -43,8 +43,8 @@ To install your module, do the following:
 	e. Type *encryptionkey*, select it, and add a 16 character **Value**:
 
 	{{/* % image_container width="300" % */}}![Capabilities](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/setEncryption.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
-1. Add the [Push Notifications Connector](/appstore/modules/push-notifications) module to your app.
+
+1. Add the [Push Notifications Connector](/appstore/modules/push-notifications/) module to your app.
 
 ### 3.2 Setting Up a Notification Widget
 
@@ -55,39 +55,39 @@ To set up a notification widget, do the following:
     b. Set **App resume** > **On resume** to **Call a nanoflow**, then specify **PushNotifications.OnPageLoad_RegisterPushNotifications**:<br />
     
     {{/* % image_container width="300" % */}}![AppEvents](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/AppEvents.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
     This configured app events widget will allow for user devices to register with your notification interface so that you can choose who to send push notifications to. Specifically, it will register devices when they open the app or resume the app.
 
 1. Create an entity called *NativeNotification* in your domain model with one `objectGUID` field:
 
     {{/* % image_container width="300" % */}}![NotificationEntity](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/NotificationEntity.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}   
+   
 	For `Production` and `Demo` security levels, please make sure to grant the **Create** access rule to all users for this entity since it will be used for triggering actions correctly. 
 
 1. Create a new *DS_Notification* nanoflow which creates a **NativeNotification** entity object and then returns it:
 
     {{/* % image_container width="300" % */}}![DS_Notification](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/DS_Notification.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Drag and drop a data view widget onto your home page and set its **Data source** > **Nanoflow** to **DS_Notification**:
 
     {{/* % image_container width="300" % */}}![Dataview](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/Dataview.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}   
+   
 	Make sure to leave the data view **editable**. Disabling the editability will break the notification functionality.
 
 1. Drag and drop a notifications widget inside of this data view.
 1. Set the notifications widget's GUID to **NativeNotification.objectGUID**:
 
     {{/* % image_container width="300" % */}}![NotificationsGUID](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/NotificationsGUID.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
     This will allow you to pass objects with notifications.
 
 1.  Open **Navigation**, in the **Responsive** pane click **New Item**, then add a new **Show page** item **PushNotifications/_USE ME/Administration**: 
 
     {{/* % image_container width="300" % */}}![ProfileHomePage](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/ProfileHomePage.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}    
+    
 ### 3.3 Synchronizing Unused Entities
 
-Studio Pro uses smart data syncing, meaning if an entity has not been retrieved on the native side, it will not be available in the native mobile app. This situation will not occur often, since most Mendix native mobile apps do retrieve entities which you want to show. For more information, see the [Synchronization](/refguide/offline-first#synchronization) section of the *Offline-First Reference Guide*.
+Studio Pro uses smart data syncing, meaning if an entity has not been retrieved on the native side, it will not be available in the native mobile app. This situation will not occur often, since most Mendix native mobile apps do retrieve entities which you want to show. For more information, see the [Synchronization](/refguide/offline-first/#synchronization) section of the *Offline-First Reference Guide*.
 
 Currently your app does not retrieve any notifications in any of its pages. Fix this by doing the following:
 
@@ -101,14 +101,14 @@ To set up actions which will occur after tapping or receiving a notification, do
 1. Create two nanoflows (*ACT_OnReceive* and *ACT_OnOpen*) which will create two different logs (**onReceive triggered** and **onOpen triggered**):
 
     {{/* % image_container width="300" % */}}![ACT_OnReceive](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/ACT_OnReceive.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Double-click your notifications widget and do the following:<br />
     a. Add an action called *logIt*.<br />
     b. For **On receive** select **ACT_OnReceive**.<br />
     c. For **On open** select **ACT_OnOpen**:
 
     {{/* % image_container width="300" % */}}![LogitAction](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/logitAction.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ### 3.5 Adding Firebase Configurations
 
 Deploy your app and open your administration page in a web browser. Then, do the following:
@@ -120,16 +120,16 @@ Deploy your app and open your administration page in a web browser. Then, do the
 1. Set **Project id** to the **Project ID** listed on the Firebase console website:
 
     {{/* % image_container width="300" % */}}![Firebase Project ID](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/firebase-project-id.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
-1.  Upload your private key (which you got in the [Setting up Firebase Cloud Messaging Service](setting-up-native-push-notifications#firebase-setup) section of *How to Set Up Push Notifications*:
+
+1.  Upload your private key (which you got in the [Setting up Firebase Cloud Messaging Service](/howto/mobile/setting-up-native-push-notifications/#firebase-setup) section of *How to Set Up Push Notifications*:
 
     {{/* % image_container width="300" % */}}![FCMConfig](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/FCMConfig.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. For both your Android and iOS **Messaging service settings**, select your FCM configuration.
 1.  For both your Android and iOS **Messaging service types**, select FCM:
 
     {{/* % image_container width="300" % */}}![FCMConfig2](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/FCMConfig2.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 Next you will test the implementation of your configurations.
 
 ### 3.6 Sending a Push Notification to a Single Device {#sending-single}
@@ -146,13 +146,13 @@ Now you should be able to see registered devices (which is probably only one: yo
 1.  Type some text into **Title** and **Body** fields, and in **Action name** type *logIt*:
 
     {{/* % image_container width="300" % */}}![SimpleMessage](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/SimpleMessage.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Send**.
 
 You will see your notification with the text you configured:
 
 {{/* % image_container width="300" % */}}![PushReceived](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/PushReceived.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Tap the notification. You will see a log message in your Studio Pro console: **onOpen triggered**.
 1. Now send and tap a notification while keeping the app open. You will see a different log in your modeler console: **onReceive triggered**. 
 
@@ -176,14 +176,14 @@ To set up an example entity, do the following:
 1. Make sure your **Navigation layouts** are Atlas layouts. Click **OK**, which will make the pages **Product_NewEdit** and **Product_Overview**:
 
     {{/* % image_container width="300" % */}}![GeneratePages](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/GeneratePages.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
     {{/* % image_container width="300" % */}}![GeneratePages](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/GeneratePages2.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Drag and drop **Product_Overview** onto your app's home page to make a button which navigates to your new page.
 1. Create a native page *NativeProductOverview* that has a data view with the **Data source** set to **Context** and **Entity** set to **Product**. Click **Ok** and then click **Accept**. Now when you tap a notification, a page will be opened using the proper product object:
 
 	{{/* % image_container width="300" % */}}![NativeProductOverview](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/NativeProductOverview.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 #### 4.1.2 Synchronizing Unused Entities
 
 While you did set up notification retrieval earlier, your app does not currently retrieve any products in any of its pages. Fix this by doing the following:
@@ -192,7 +192,7 @@ While you did set up notification retrieval earlier, your app does not currently
 1. Change the **Product** entity to download **All objects**:
 
     {{/* % image_container width="300" % */}}![SyncConfig](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/SyncConfig.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 #### 4.1.3 Determining GUIDs {#guid-objects}
 
 In order to send a particular object to a page, first an object's GUID must be determined and sent using a push notification. To begin this process, you will log the object GUID to your Mendix Studio Pro's console (which you will use later in the [Testing the Implementation](#testing-guid) section below):
@@ -203,11 +203,11 @@ In order to send a particular object to a page, first an object's GUID must be d
     c. Logs the returned value:
     
     {{/* % image_container width="300" % */}}![ACT_GetGUIDAndLog](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/ACT_GetGUIDAndLog.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 2.  Drag and drop this nanoflow inside **Product_NewEdit**'s data view:
 
     {{/* % image_container width="300" % */}}![getGUIdAndLogButton](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/getGUIDAndLogButton.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 #### 4.1.4 Creating a Data-Passing Nanoflow
 
 To create a data-passing nanoflow, do the following:
@@ -216,19 +216,19 @@ To create a data-passing nanoflow, do the following:
     a. Accepts a **Notification** object as a parameter:<br />
     
     {{/* % image_container width="300" % */}}![getGUIdAndLogButton](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/ACT_GetProductAndShowPage.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}    
+    
     b. Uses a JavaScript action **Get object by guid**, which sets **Entity** as **Product**, the **Object guid** as **parameter/objectGUID**, and the **Object Name** to *ProductObject*:<br />
     
     {{/* % image_container width="300" % */}}![GetProductAndShowPage2](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/ACT_GetProductAndShowPage2.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}    
+    
     c. Shows the **NativeProductOverview** page using the passed object **ProductObject**:
     
     {{/* % image_container width="300" % */}}![GetProductAndShowPage3](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/ACT_GetProductAndShowPage3.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 2.  In the notification widget on **Home_Native**, create a new action named *sendProduct* which **On open** triggers **ACT_GetProductAndShowPage**:
 
     {{/* % image_container width="300" % */}}![pushSendProduct](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/pushSendProduct.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 #### 4.1.5 Testing the Implementation {#testing-guid}
 
 To test the implementation, do the following:
@@ -239,7 +239,7 @@ To test the implementation, do the following:
     b. Set **Context object guid** to the GUID you just logged:
 
     {{/* % image_container width="300" % */}}![openProductPage](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/openProductPage.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. With your app running in the background, send a notification, and tap it. This will navigate to the **NativeProductOverview** page with the proper object.
 
 ### 4.2 Push Notifications for an App in the Foreground
@@ -249,7 +249,7 @@ To enable push notifications for an app in the foreground, do the following:
 1.  Add one more **boolean** field named *showNotification* to the **NativeNotification** entity:
 
 	{{/* % image_container width="300" % */}}![showNotification](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/showNotification.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. In your **Home_Native** page inside of the **NativeNotification** data view, do the following:<br />
 	a. Add a container.<br />
 	b. Set its visibility to **NativeNotification/showNotification**.<br />
@@ -257,7 +257,7 @@ To enable push notifications for an app in the foreground, do the following:
  	d. Drag and drop your **ACT_GetProductAndShowPage** nanoflow next to it:
 
 	{{/* % image_container width="300" % */}}![ContainerVisibility](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/ContainerVisibility.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Create a nanoflow called *ACT_ShowNotificationOnReceive* which will be responsible for toggling the **NativeNotification/showNotification** attribute:<br />
 	a. Set **NativeNotification** as a parameter.<br />
  	b. Change **NativeNotification/showNotification** to **true** without committing.<br />
@@ -265,17 +265,17 @@ To enable push notifications for an app in the foreground, do the following:
  	d. Change the **NativeNotification/showNotification** to **false** without committing:
    
 	{{/* % image_container width="300" % */}}![ACT_ShowNotificationOnReceive](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/ACT_ShowNotificationOnReceive.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Navigate to your **Home_Native** page and do the following:<br />
 	a. Double-click your notification widget<br />
 	b. Change **sendProduct** so that on receive it triggers **ACT_ShowNotificationOnReceive**:
 
 	{{/* % image_container width="300" % */}}![sendProductOnReceive](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/sendProductOnReceive.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 Now repeat the steps in [Testing the Implementation](#testing-guid), but this time put your app in the foreground. You will see a notification with your text and a button for five seconds:
 
 {{/* % image_container width="300" % */}}![onReceiveShowDV](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/onReceiveShowDV.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 5 Sending Notifications to Multiple Devices
 
 What if you want to send messages to all your users' devices with a single button push, but you do not want to handle the GUID retrieval? The section below will illustrate this. Specifically, you will send a push notification containing a data object to your users' devices via the Push Notifications API.
@@ -285,12 +285,12 @@ What if you want to send messages to all your users' devices with a single butto
 Create a microflow *ACT_SendProductToAllDevices* with the following elements:
 
 {{/* % image_container width="300" % */}}![SendProductToAll](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/SendProductToAll.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Add a *Product* data parameter to your microflow.
 2. Retrieve the *PushNotifications.Device* entity list from a database:
 
     {{/* % image_container width="300" % */}}![retrieveDevices](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/retrieveDevices.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}    
+    
 3. Drag and drop the **PrepareMessageData** microflow from *PushNotifications/_USE ME/API* onto **ACT_SendProductToAllDevices** and configure the following:<br />
 	a. Title: *myTitle*.<br />
 	b. Body: *myBody*.<br />
@@ -300,7 +300,7 @@ Create a microflow *ACT_SendProductToAllDevices* with the following elements:
 	f. ContextObjectGuid: *empty*:
 	
 	{{/* % image_container width="300" % */}}![prepareMessageData](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/prepareMessageData.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 	**ContextObjectGuid** is set to empty since you will pass the object itself to the **SendMessageToDevices** Java action where it will be retrieved automatically. 
 
 4. Drag and drop the **SendMessageToDevices** Java action from `PushNotifications/_USE ME/API` onto **ACT_SendProductToAllDevices** and configure the following:<br />
@@ -309,11 +309,11 @@ Create a microflow *ACT_SendProductToAllDevices* with the following elements:
 	c. **Context object**: **$Product**:
 	
 	{{/* % image_container width="300" % */}}![sendMessagesJava](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/sendMessagesJava.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}  
+  
 5. Go to **Product_NewEdit** and drag and drop **ACT_SendProductToAllDevices** inside of that page's data view:
 
 	{{/* % image_container width="300" % */}}![sendProductToAllButton](/attachments/howto/mobile/native-mobile/implementation/notifications/native-remote-notifications/sendProductToAllButton.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ### 5.2 Testing the Implementation
 
 Test your new push notification capabilities by doing the following:
@@ -349,14 +349,14 @@ To send a push notification to all users, use the **SendMessageToUsers** Java ac
 
 | Issue | Cause | Solution |
 |-----|----|-----|
-| Sending a message causes a **SenderId mismatch** error or **403: Forbidden**. | Your native mobile app registered the device within your Mendix applications, but not with Firebase. | Follow the [Implementing Push Changes With the Native Mobile Builder](setting-up-native-push-notifications#auto-changes) section in *How To Set Up Push Notifications* and make sure you add the *google-services.json* file. |
-| Sending a message causes a **Request contains an invalid argument** error or **400: Bad Request**. | Your **Project ID** does not match the **project_id** in your private key *json* file. | Upload the correct file or [generate a new private key](setting-up-google-firebase-cloud-messaging-server#setting-up-a-service-account) in Firebase and upload it. |
+| Sending a message causes a **SenderId mismatch** error or **403: Forbidden**. | Your native mobile app registered the device within your Mendix applications, but not with Firebase. | Follow the [Implementing Push Changes With the Native Mobile Builder](/howto/mobile/setting-up-native-push-notifications/#auto-changes) section in *How To Set Up Push Notifications* and make sure you add the *google-services.json* file. |
+| Sending a message causes a **Request contains an invalid argument** error or **400: Bad Request**. | Your **Project ID** does not match the **project_id** in your private key *json* file. | Upload the correct file or [generate a new private key](/howto/mobile/setting-up-google-firebase-cloud-messaging-server/#setting-up-a-service-account) in Firebase and upload it. |
 | Mendix Runtime exception on JavaAction 'DecryptString': **Key should not be empty**. | This module depends on the **Encryption** module, which requires a key. | [Set the constant](#installing-your-module) **EncryptionKey** in the **Encryption** module with a key of exactly 16 characters. |
-| Building the Teamcenter app throws an error: **Execution failed for task ':app:processDevDebugGoogleServices'. > No matching client found for package name 'com.mendix.myapp.testlocal.developerapp'**. | The *google-services.json* file contains a **package_name** which should match the Native Mobile Builder package identifier. Please note the Native Mobile Builder adds **.devleoperapp** at the end of the package name for dev apps. | [Add an app](setting-up-google-firebase-cloud-messaging-server#native-apps) with the correct package identifier to Firebase and update the *google-services.json* in your GitHub repository. |
-| Error sending message: **Error reading credentials from stream, 'type' field not specified. at PushNotifications.SendFCMMessages (JavaAction : 'GetFCMAccessToken')**. | The wrong private key file was uploaded. | Upload the correct file or [generate a new private key](setting-up-google-firebase-cloud-messaging-server#setting-up-a-service-account) in Firebase and upload it. |
+| Building the Teamcenter app throws an error: **Execution failed for task ':app:processDevDebugGoogleServices'. > No matching client found for package name 'com.mendix.myapp.testlocal.developerapp'**. | The *google-services.json* file contains a **package_name** which should match the Native Mobile Builder package identifier. Please note the Native Mobile Builder adds **.devleoperapp** at the end of the package name for dev apps. | [Add an app](/howto/mobile/setting-up-google-firebase-cloud-messaging-server/#native-apps) with the correct package identifier to Firebase and update the *google-services.json* in your GitHub repository. |
+| Error sending message: **Error reading credentials from stream, 'type' field not specified. at PushNotifications.SendFCMMessages (JavaAction : 'GetFCMAccessToken')**. | The wrong private key file was uploaded. | Upload the correct file or [generate a new private key](/howto/mobile/setting-up-google-firebase-cloud-messaging-server/#setting-up-a-service-account) in Firebase and upload it. |
 
 ## 8 Read More
 
-* [Use Local Notifications](local-notif-parent)
-* [Set Up the Google Firebase Cloud Messaging Server](setting-up-google-firebase-cloud-messaging-server)
-* [Set Up Hybrid Push Notifications](setting-up-hybrid-push-notifications)
+* [Use Local Notifications](/howto/mobile/local-notif-parent/)
+* [Set Up the Google Firebase Cloud Messaging Server](/howto/mobile/setting-up-google-firebase-cloud-messaging-server/)
+* [Set Up Hybrid Push Notifications](/howto/mobile/setting-up-hybrid-push-notifications/)

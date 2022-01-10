@@ -1,14 +1,14 @@
 ---
 title: "Columns"
-url: /refguide7/columns
+url: /refguide7/columns/
 parent: "data-grid"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 ## Common Properties
 
-{{% snippet file="/static/_includes/refguide7/Class+Property.md" %}}
+{{% snippet file="refguide7/Class+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Style+Property.md" %}}
+{{% snippet file="refguide7/Style+Property.md" %}}
 
 ## Data Source Properties
 
@@ -70,7 +70,7 @@ If you choose **Custom** as the date format, the custom date format determines t
 | m | 1–2 | m | 59 | Minute |
 | s | 1–2 | ss | 06 | Second |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 These are some examples:
 
@@ -86,7 +86,7 @@ These are some examples:
 
 ### Caption
 
-The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Translatable Texts](translatable-texts).
+The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Translatable Texts](/refguide7/translatable-texts/).
 
 ### Editable
 
@@ -105,7 +105,7 @@ The values in a column can be aggregated in several ways. The aggregate function
 | Sum | Show the sum of the values. |
 | Count | Show the count of the values. |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Note that all objects will be taken into account, and not just the ones on the current page.
 
@@ -113,9 +113,9 @@ Note that all objects will be taken into account, and not just the ones on the c
 
 ### Aggregate Caption
 
-The aggregate caption is the text that appears in front of the computed value. This is a translatable text. See [Translatable Texts](translatable-texts).
+The aggregate caption is the text that appears in front of the computed value. This is a translatable text. See [Translatable Texts](/refguide7/translatable-texts/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 'Total' could be an aggregate caption for a column that shows the sum of the values.
 
@@ -123,6 +123,6 @@ The aggregate caption is the text that appears in front of the computed value. T
 
 ### Show Tooltip
 
-This property determines whether the tooltip page is shown as the mouse is hovered over this column. The tooltip page can be configured on the [Data grid](data-grid).
+This property determines whether the tooltip page is shown as the mouse is hovered over this column. The tooltip page can be configured on the [Data grid](/refguide7/data-grid/).
 
 _Default value:_ False

@@ -1,8 +1,8 @@
 ---
 title: "Project Settings"
-url: /refguide7/project-settings
+url: /refguide7/project-settings/
 parent: "project"
-#menu_order:
+#weight:
 description: "Settings which apply to the project app as a whole."
 tags: ["project", "app", "configuration", "runtime", "desktop modeler", "languages", "certificate", "theme", "hashing", "hashing algorithm"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -18,7 +18,7 @@ The categories described below are available.
 
 A configuration is a group of settings with a name. You can define any number of configurations. The active configuration (meaning, the one that will be used when running your application) is determined by the drop-down menu in the toolbar of the Modeler.
 
-For the settings in a configuration, see [Configuration](configuration).
+For the settings in a configuration, see [Configuration](/refguide7/configuration/).
 
 ## 3 Runtime
 
@@ -40,7 +40,7 @@ If you experience an issue while running your app in which objects seem to be lo
 
 Here you can select a microflow that is automatically executed immediately after the application has been started up.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 There is a timeout of *11 minutes* on the after startup microflow. If your after startup microflow takes longer than 11 minutes your whole app will fail to start.
 {{% /alert %}}
 
@@ -52,13 +52,13 @@ Here you can select a microflow that is automatically executed when a shutdown c
 
 Here you can select a microflow which performs the checks on a running app that you think are required to assess the app's health.
 
-The result of each check is returned as a string, which is displayed in the [Developer Portal](/developerportal/deploy/environments). When the microflow returns an empty string, the application is healthy; otherwise, the string presents an explanation of why the application is not healthy.
+The result of each check is returned as a string, which is displayed in the [Developer Portal](/developerportal/deploy/environments/). When the microflow returns an empty string, the application is healthy; otherwise, the string presents an explanation of why the application is not healthy.
 
-This microflow gets called every 10 seconds to check if the app is still healthy. This is done by executing it using m2ee on the admin port of your app. For more information, see the section [Health Check](monitoring-mendix-runtime#check-health) in *Monitoring Mendix Runtime*.
+This microflow gets called every 10 seconds to check if the app is still healthy. This is done by executing it using m2ee on the admin port of your app. For more information, see the section [Health Check](/refguide7/monitoring-mendix-runtime/#check-health) in *Monitoring Mendix Runtime*.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-The health check microflow is specific to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy). For other clouds, the admin port can be called, or the health check microflow can be exposed through a REST API.
+The health check microflow is specific to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/). For other clouds, the admin port can be called, or the health check microflow can be exposed through a REST API.
 
 {{% /alert %}}
 
@@ -129,7 +129,7 @@ So 80 milliseconds per operation is not that much, right? Well, that depends on 
 
 The difference is noticeable when the operation takes less time. So if you expect a very high amount of concurrency in operations where hashing takes place (most commonly any place where login operations are involved), you might want to consider changing your hashing algorithm.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 It is important to remember when changing hashing algorithms is that any hashed attribute (like the System$User password attribute) has its algorithm set on hashing. In other words, for the hashing type to take effect, any existing hashed attribute will have to be reset using the new hashing type.
 {{% /alert %}}
 
@@ -160,7 +160,7 @@ This table presents the results of rounding the input to one digit with the give
 
 If this option is enabled, users can sign in multiple times through different clients (for example, desktop browser and tablet). Otherwise, an existing session for a user is signed out when the user signs in somewhere else.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 In production, this only works with licenses based on concurrent users.
 
@@ -192,7 +192,7 @@ Moving from **Runtime** to **Database** means that the unique constraints will b
 
 Before switching to the Database option, the **DataStorage.EnableDiagnostics** custom runtime setting can be used to generate a uniqueness violation report. The unique constraint migration will need to be done if the generated report shows violations.
 
-For more details on migration, see [Uniqueness Constraint Migration](uniqueness-constraint-migration).
+For more details on migration, see [Uniqueness Constraint Migration](/refguide7/uniqueness-constraint-migration/).
 
 ##### 3.12.3.2 Switching from Database to Runtime
 
@@ -200,7 +200,7 @@ Falling back to the **Runtime** option will remove the unique constraints from t
 
 ### 3.13 Web Service Calls {#web-service-calls}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This setting was added in version 7.15 to introduce an optimized implementation.
 
@@ -243,24 +243,24 @@ Certificates are used to connect to web services over HTTPS when the following r
 
 These certificates can be imported into the Modeler using the **Import** button. Certificate authority files usually have a *.crt* extension, and client certificates usually have a *.p12* or *.pfx* extension. After importing, use **View details** to acquire more information concerning the certificate.
 
-Client certificates added here will be used whenever a server accepts a client certificate. If you upload more than one client certificate, one of them will be chosen based on the requirements of the server. If you need more control over client certificates, you should not upload the certificates here, but use [custom settings](custom-settings) *ClientCertificates*, *ClientCertificatePasswords*, and *ClientCertificateUsages*.
+Client certificates added here will be used whenever a server accepts a client certificate. If you upload more than one client certificate, one of them will be chosen based on the requirements of the server. If you need more control over client certificates, you should not upload the certificates here, but use [custom settings](/refguide7/custom-settings/) *ClientCertificates*, *ClientCertificatePasswords*, and *ClientCertificateUsages*.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 When running from the Modeler or from Eclipse, the certificates will be used automatically to connect over *HTTPS*. When running on a server, the location of the certificate files has to be specified in the configuration file.
 
 {{% /alert %}}
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Be aware that during local deployment, the certificate files will be located in the **deployment** folder, under **model/certificates**. Therefore, do not use production certificates during development.
 
 {{% /alert %}}
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Certificates can be installed in the Windows Certificate Store using the **Install Certificate** wizard in the **View details** form. This can be useful when trying to access a WSDL-file using an *HTTPS* connection which requires a client certificate.
 
 {{% /alert %}}
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 When an SSLException occurs at runtime with the message `HelloRequest followed by an unexpected handshake message` or when a web service does not respond (Java 6 update 21 and above) when using the imported certificates, this is caused by either the client or server not being [RFC-5746](http://www.ietf.org/rfc/rfc5746.txt)-compatible.
 
@@ -280,19 +280,19 @@ For background information, see [Transport Layer Security (TLS) Renegotiation Is
 
 ### 7.1 UI Resources Package
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The option to designate a custom UI resources package was added in Mendix 7.9.0.
 
 {{% /alert %}}
 
-The look and feel of a Mendix application is governed by the [UI resources package](ui-resources-package). This package supplies the project with all the required theme information accompanied by matching page templates and building blocks. The module which is designated as the UI resources package is governed by the **UI resources package** setting. Generally, this is automatically updated when a new UI resources package is imported. However, with this setting, the desired module can also be set manually.
+The look and feel of a Mendix application is governed by the [UI resources package](/refguide7/ui-resources-package/). This package supplies the project with all the required theme information accompanied by matching page templates and building blocks. The module which is designated as the UI resources package is governed by the **UI resources package** setting. Generally, this is automatically updated when a new UI resources package is imported. However, with this setting, the desired module can also be set manually.
 
 ### 7.2 Theme ZIP File
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-[Deprecated] The use of a ZIP file to configure a project's theme is deprecated. As of 7.9.0, a [UI resources package](ui-resources-package) is the preferred method of sharing themes.
+[Deprecated] The use of a ZIP file to configure a project's theme is deprecated. As of 7.9.0, a [UI resources package](/refguide7/ui-resources-package/) is the preferred method of sharing themes.
 
 {{% /alert %}}
 

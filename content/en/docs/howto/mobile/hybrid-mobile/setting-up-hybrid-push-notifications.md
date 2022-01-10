@@ -19,7 +19,7 @@ In this how to we will set up hybrid push notifications.
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Complete [How to Set Up the Google Firebase Cloud Messaging Server](setting-up-google-firebase-cloud-messaging-server)
+* Complete [How to Set Up the Google Firebase Cloud Messaging Server](/howto/mobile/setting-up-google-firebase-cloud-messaging-server/)
 
 ## 3 Building Your Mobile Application
 

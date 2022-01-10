@@ -1,8 +1,8 @@
 ---
 title: "Managing App Signing Keys"
-url: /refguide8/managing-app-signing-keys
+url: /refguide8/managing-app-signing-keys/
 category: "Mobile"
-menu_order: 21
+weight: 21
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -13,7 +13,7 @@ To create a mobile app, you need platform-specific app signing keys. A mobile ap
 
 Depending on which platforms you want to target, you will need to create the required signing keys. The following sections describe (per platform) how to create those keys.
 
-{{% alert type="warning" %}} Building hybrid apps in the cloud uses the PhoneGap Build service from Adobe. Because Adobe no longer maintains this service, building hybrid apps in the cloud and publishing them to app stores is no longer possible.
+{{% alert color="warning" %}} Building hybrid apps in the cloud uses the PhoneGap Build service from Adobe. Because Adobe no longer maintains this service, building hybrid apps in the cloud and publishing them to app stores is no longer possible.
 
 The parts of this document mentioning PhoneGap Build will be updated with instructions soon. {{% /alert %}}
 
@@ -25,7 +25,7 @@ It is convenient to have an Apple Mac available, but it is not a requirement. Yo
 
 ### 2.1 On Apple Macs
 
-If you have an Apple Mac available, see the Apple developer documentation on [certificate management](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) for information on how to obtain an iOS signing certificate and distribution profile. Next, see the Apple documentation on [how to create the required distribution profile](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html). Finally, check the end of this section for information on how to [upload the signing key files to Adobe PhoneGap Build](managing-app-signing-keys#uploading-keys).
+If you have an Apple Mac available, see the Apple developer documentation on [certificate management](https:/developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) for information on how to obtain an iOS signing certificate and distribution profile. Next, see the Apple documentation on [how to create the required distribution profile](https:/developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html). Finally, check the end of this section for information on how to [upload the signing key files to Adobe PhoneGap Build](/refguide8/managing-app-signing-keys/#uploading-keys).
 
 ### 2.2 On Other Platforms
 

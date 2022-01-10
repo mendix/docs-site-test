@@ -1,8 +1,8 @@
 ---
 title: "Optimize Retrieve Activities"
-url: /howto7/logic-business-rules/optimizing-retrieve-activities
+url: /howto7/logic-business-rules/optimizing-retrieve-activities/
 category: "Logic & Business Rules"
-menu_order: 9
+weight: 9
 tags: ["microflow", "retrieve", "optimize"]
 #To update screenshots of these microflows in the Desktop Modeler, use the Microflow Screenshots app.
 ---
@@ -44,11 +44,11 @@ However, there is the risk of creating an infinite loop if the retrieve applies 
 
 ## 4 Read More
 
-* [How to Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [How to Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [How to Trigger Logic Using Microflows](triggering-logic-using-microflows)
-* [How to Create a Custom Save Button](create-a-custom-save-button)
-* [How to Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [How to Configure Error Handling](set-up-error-handling)
-* [How to Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [How to Extract & Use Sub-Microflows](extract-and-use-sub-microflows)
+* [How to Define Access Rules Using XPath](/howto7/logic-business-rules/define-access-rules-using-xpath/)
+* [How to Work with Lists in a Microflow](/howto7/logic-business-rules/working-with-lists-in-a-microflow/)
+* [How to Trigger Logic Using Microflows](/howto7/logic-business-rules/triggering-logic-using-microflows/)
+* [How to Create a Custom Save Button](/howto7/logic-business-rules/create-a-custom-save-button/)
+* [How to Optimize Retrieve Activities](/howto7/logic-business-rules/optimizing-retrieve-activities/)
+* [How to Configure Error Handling](/howto7/logic-business-rules/set-up-error-handling/)
+* [How to Optimize Microflow Aggregates](/howto7/logic-business-rules/optimizing-microflow-aggregates/)
+* [How to Extract & Use Sub-Microflows](/howto7/logic-business-rules/extract-and-use-sub-microflows/)

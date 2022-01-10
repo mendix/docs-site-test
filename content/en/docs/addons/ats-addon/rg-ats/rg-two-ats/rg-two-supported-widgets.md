@@ -8,7 +8,7 @@ parent: "rg-two-ats"
 
 The following table shows an overview of all the supported widgets in ATS.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 ATS does not support customized versions of Mendix Marketplace widgets. Also, ATS does not support using JavaScript that changes the behavior or apperance of standard or Marketplace widgets.
 {{% /alert %}}
 
@@ -18,91 +18,50 @@ We support all the widgets that are included in Mendix Studio Pro:
 
 | Name | Supported in Execution | Supported in Recording |
 | ---- | :--------------------: | :--------------------: |
-| Authentication | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || Button |![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || CheckBox | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || Confirmation Dialog | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || DataGrid | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |  ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes |  ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |  ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes|| DatePicker | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || DialogMessage | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || DropDown | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || FileManager | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || GroupBox | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || Input Reference Set Selector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || Label | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes|| ListView | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || MenuBar | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || NavigationTree | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || RadioButton | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || ReferenceSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || TabContainer | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || SearchInput DropDown | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || SearchInput Text | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || StaticImage | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || TemplateGrid | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || TextArea | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || TextBox | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || Window | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes |
+| Authentication | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| Button |![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| CheckBox | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| Confirmation Dialog | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| DataGrid | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |  ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes|
+| DatePicker | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| DialogMessage | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| DropDown | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| FileManager | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| GroupBox | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| Input Reference Set Selector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| Label | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes|
+| ListView | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| MenuBar | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| NavigationTree | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| RadioButton | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| ReferenceSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| TabContainer | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| SearchInput DropDown | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| SearchInput Text | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| StaticImage | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| TemplateGrid | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| TextArea | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| TextBox | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| Window | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+
 ## 3 Marketplace Widgets
 
 Besides the default widgets, ATS supports the most commonly used widgets from the Mendix Marketplace:
 
 | Name | Supported in Execution | Supported in Recording |
 | ---- | :--------------------: | :--------------------: |
-| AutoComplete |  ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes|| BooleanSlider |  ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes|| BootStrapRTE | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/red.png) No |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/red.png) No |
- No || CheckboxSetSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || CKEditor | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/red.png) No |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/red.png) No |
- No || CustomString | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || DropdownDivConverter | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes|
- Yes|| FormatString | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || GridSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || InputReferenceSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/red.png) No |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/red.png) No |
- No || OnChangeInputbox | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || Radiobutton List | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || SimpleCheckboxSetSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || SimpleMenuBar | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes || Switch | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](attachments/rg-two-supported-widgets/green.png) Yes |
- Yes |
+| AutoComplete |  ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes|
+| BooleanSlider |  ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes|
+| BootStrapRTE | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/red.png) No |
+| CheckboxSetSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| CKEditor | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/red.png) No |
+| CustomString | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| DropdownDivConverter | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes|
+| FormatString | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| GridSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| InputReferenceSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/red.png) No |
+| OnChangeInputbox | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| Radiobutton List | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| SimpleCheckboxSetSelector | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| SimpleMenuBar | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |
+| Switch | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes | ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-supported-widgets/green.png) Yes |

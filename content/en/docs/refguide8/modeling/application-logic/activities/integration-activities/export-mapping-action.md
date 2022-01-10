@@ -1,23 +1,23 @@
 ---
 title: "Export With Mapping"
-url: /refguide8/export-mapping-action
+url: /refguide8/export-mapping-action/
 parent: "integration-activities"
 tags: ["studio pro", "integration activity", "export mapping action", "export to xml"]
-menu_order: 40
+weight: 40
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/export-mapping-action.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/export-mapping-action.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Microflows**.
 {{% /alert %}}
 
 ## 1 Introduction
 
-The **Export with mapping** activity allows you to export the data stored in [domain model](domain-model) entities into an XML document, JSON document, or string variable.
+The **Export with mapping** activity allows you to export the data stored in [domain model](/refguide8/domain-model/) entities into an XML document, JSON document, or string variable.
 
 ## 2 Properties
 
@@ -42,23 +42,23 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.1 Export Mapping
 
-The [Export Mapping](export-mappings) action defines in which way the data in the [domain model](domain-model) corresponds with the XML schema or JSON structure.
+The [Export Mapping](/refguide8/export-mappings/) action defines in which way the data in the [domain model](/refguide8/domain-model/) corresponds with the XML schema or JSON structure.
 
 ### 3.2 Parameter Type
 
-If the [export mapping](export-mappings) requires an input, this field shows the type of the input.
+If the [export mapping](/refguide8/export-mappings/) requires an input, this field shows the type of the input.
 
 ### 3.3 Parameter
 
-If the [export mapping](export-mappings) requires an input, you can select a parameter of the correct type.
+If the [export mapping](/refguide8/export-mappings/) requires an input, you can select a parameter of the correct type.
 
 ### 3.4 Content Type
 
-If the [export mapping](export-mappings) is based on a message definition, it can export both XML and JSON. Choose which type of output you want.
+If the [export mapping](/refguide8/export-mappings/) is based on a message definition, it can export both XML and JSON. Choose which type of output you want.
 
 ### 3.5 Validate Against Schema
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Validation against schema is only applicable if an export mapping is selected that maps to XML.
 
@@ -84,4 +84,4 @@ The name of the object or string which is the result of the activity.
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}

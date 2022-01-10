@@ -7,17 +7,23 @@ description: "Release notes for deployment to SAP Business Technology Platform"
 tags: ["release notes", "deployment", "cloud environment", "SAP", "SAP Cloud"]
 ---
 
-These release notes cover changes to deployment to [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform) (SAP BTP — formerly SAP Cloud Platform). There are separate release notes for other deployment targets, see [Deployment](deployment) release notes page for further information.
+These release notes cover changes to deployment to [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform/) (SAP BTP — formerly SAP Cloud Platform). There are separate release notes for other deployment targets, see [Deployment](/releasenotes/developer-portal/deployment/) release notes page for further information.
 
 For information on the current status of deployment to SAP BTP and any planned releases see [Mendix Status](https://status.mendix.com/).
 
 ## 2021
 
+### December 9th, 2021
+
+#### Improvements
+
+* We added a configurator to help you create a custom *xs-security-json* file to configure an XSUAA service. For more information, see [XSUAA Connector for SAP Business Technology Platform](/partners/sap/sap-xsuaa-connector/).
+
 ### October 14th, 2021
 
 #### Improvements
 
-* We added the ability to provide a custom *xs-security.json* file to configure an XSUAA service. This allows you to apply the configuration every time your app is deployed. You can add your configuration by unbinding and rebinding the XSUAA service in the [Services](/developerportal/deploy/sap-cloud-platform#binding-services) tab.
+* We added the ability to provide a custom *xs-security.json* file to configure an XSUAA service. This allows you to apply the configuration every time your app is deployed. You can add your configuration by unbinding and rebinding the XSUAA service in the [Services](/developerportal/deploy/sap-cloud-platform/#binding-services) tab.
 
 ### August 30th, 2021
 
@@ -28,16 +34,16 @@ For information on the current status of deployment to SAP BTP and any planned r
 
 #### Improvements – OData Connector for SAP Solutions
 
-* We improved the error handling for expired access tokens when using [Get Destination](/partners/sap/sap-destination-service). Users will now be signed out so that they can retrieve a new access token.
+* We improved the error handling for expired access tokens when using [Get Destination](/partners/sap/sap-destination-service/). Users will now be signed out so that they can retrieve a new access token.
 * We added the ability to fetch the SAP Destination even if the application is not XSUAA enabled or not using XSUAA.
 
 ### July 26th, 2021
 
 #### Improvements
 
-* We released version 2.1.1 of the [XSUAA Connector for SAP Business Technology Platform](/partners/sap/sap-xsuaa-connector).
+* We released version 2.1.1 of the [XSUAA Connector for SAP Business Technology Platform](/partners/sap/sap-xsuaa-connector/).
 
-    {{% alert color="info" %}}This version uses a new user administration module called **SapAuthentication** and customers using *XSUAA Connector for SAP Business Technology Platform* version 2.0.0 or below will need to migrate their existing users from **Administration.Account** to **SapAuthentication.SapUser** using the [User Migration](/appstore/modules/user-migration-module) Marketplace module.{{% /alert %}}
+    {{% alert color="info" %}}This version uses a new user administration module called **SapAuthentication** and customers using *XSUAA Connector for SAP Business Technology Platform* version 2.0.0 or below will need to migrate their existing users from **Administration.Account** to **SapAuthentication.SapUser** using the [User Migration](/appstore/modules/user-migration-module/) Marketplace module.{{% /alert %}}
     
 ### July 14th, 2021
 
@@ -49,7 +55,7 @@ For information on the current status of deployment to SAP BTP and any planned r
 
 #### Improvements
 
-* We released a new version of the [OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator) and [OData Connector for SAP Solutions](/partners/sap/sap-odata-connector) which support read-only access to SAP OData Gateway Services which use OData version 4. This is in addition to the existing support for OData versions 2 and 3.
+* We released a new version of the [OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/) and [OData Connector for SAP Solutions](/partners/sap/sap-odata-connector/) which support read-only access to SAP OData Gateway Services which use OData version 4. This is in addition to the existing support for OData versions 2 and 3.
 
 #### Fix
 
@@ -65,7 +71,7 @@ For information on the current status of deployment to SAP BTP and any planned r
 
 #### Improvements
 
-* We have added support for the [Deep Link](/appstore/modules/deep-link) module for apps using the SAP XSUAA Connector. When you set up the module, you need to set the **LoginLocation** constant to `/xsauaalogin/` to ensure your end users are logged in.
+* We have added support for the [Deep Link](/appstore/modules/deep-link/) module for apps using the SAP XSUAA Connector. When you set up the module, you need to set the **LoginLocation** constant to `/xsauaalogin/` to ensure your end users are logged in.
 
 ### March 28th, 2021
 
@@ -84,7 +90,7 @@ For information on the current status of deployment to SAP BTP and any planned r
 * We added the ability to enable *Dynatrace* for your app deployed to SAP BTP by selecting variables from the supported custom environment variables list.
 * SAP Cloud Platform was renamed SAP Business Technology Platform (SAP BTP) and changes were made to the documentation to reflect this.
 
-For more information see [SAP Business Technology Platform - deploy](/developerportal/deploy/sap-cloud-platform).
+For more information see [SAP Business Technology Platform - deploy](/developerportal/deploy/sap-cloud-platform/).
 
 ## 2020
 
@@ -92,7 +98,7 @@ For more information see [SAP Business Technology Platform - deploy](/developerp
 
 #### Improvements
 
-* We released the [SAP Fiori 3 UI Resource](https://marketplace.mendix.com/link/component/116359) module in the Mendix Marketplace. This allows you to create the SAP Fiori 3 user experience in your Mendix apps. SAP Fiori 3 is the new target design system for all SAP products in the *Intelligent Suite*. For more information, see [SAP Fiori 3.0 Styling](/partners/sap/sap-fiori-3-0).
+* We released the [SAP Fiori 3 UI Resource](https:/marketplace.mendix.com/link/component/116359) module in the Mendix Marketplace. This allows you to create the SAP Fiori 3 user experience in your Mendix apps. SAP Fiori 3 is the new target design system for all SAP products in the *Intelligent Suite*. For more information, see [SAP Fiori 3.0 Styling](/partners/sap/sap-fiori-3-0/).
 
 ### December 9th, 2020
 
@@ -100,7 +106,7 @@ For more information see [SAP Business Technology Platform - deploy](/developerp
 
 * We have added support for PostgreSQL on SAP Cloud Platform, Hyperscaler Option for Mendix apps deployed to SAP Cloud Platform.
     * this comes with a configurator to help you create the correct configuration.
-    * see [Running Mendix on PostgreSQL on SAP Cloud Platform](/developerportal/deploy/sap-cloud-platform#sap-hyperscaler) for more information.
+    * see [Running Mendix on PostgreSQL on SAP Cloud Platform](/developerportal/deploy/sap-cloud-platform/#sap-hyperscaler) for more information.
 * As part of a Developer Portal clean up, we removed the *Model* option from the *DEVELOP* section of the Developer Portal menu when you are looking at environments on SAP Cloud Platform. The functions of this page are still available via the **Edit in Studio** and **Edit in Studio Pro** buttons on the environments page. 
 
 ### October 21st, 2020
@@ -114,7 +120,7 @@ For more information see [SAP Business Technology Platform - deploy](/developerp
 
 #### Improvements
 
-* We have added an easy-to-use autoscaler configurator to allow you to easily create JSON configuration files for the **Application Autoscaler** on SAP Cloud Platform. See [Application Autoscaler for SAP Business Technology Platform](/partners/sap/sap-autoscaler) for more information.
+* We have added an easy-to-use autoscaler configurator to allow you to easily create JSON configuration files for the **Application Autoscaler** on SAP Cloud Platform. See [Application Autoscaler for SAP Business Technology Platform](/partners/sap/sap-autoscaler/) for more information.
     * There is currently an issue with how the JSON is uploaded. We are working on a fix for this but, in the meantime, please check the workaround in the documentation to ensure that the JSON is uploaded.
 
 ### March 26th, 2020
@@ -130,7 +136,7 @@ For more information see [SAP Business Technology Platform - deploy](/developerp
 
 #### Improvements
 
-* We added support for using the HANA trial database available in new SAP Cloud Platform trial accounts. See the [Running Mendix on SAP HANA](/developerportal/deploy/sap-cloud-platform#sap-hana) section of the *SAP Cloud Platform* deployment document for more details.
+* We added support for using the HANA trial database available in new SAP Cloud Platform trial accounts. See the [Running Mendix on SAP HANA](/developerportal/deploy/sap-cloud-platform/#sap-hana) section of the *SAP Cloud Platform* deployment document for more details.
 
 ## 2019
 
@@ -175,7 +181,7 @@ For more information see [SAP Business Technology Platform - deploy](/developerp
 #### Improvements
 
 * Apps deployed to SAP Cloud Platform can be edited in the Web Modeler or Desktop Modeler by choosing the appropriate option on the **Edit App** button in the Developer Portal. Older apps can have this functionality enabled using the **Enable Web Modeler** button on the **General** settings page.
-* Logs for apps deployed to SAP Cloud Platform can be viewed with Kibana from the **Logs** page of the Developer Portal. See [Logs](/developerportal/operate/logs) for more information.
+* Logs for apps deployed to SAP Cloud Platform can be viewed with Kibana from the **Logs** page of the Developer Portal. See [Logs](/developerportal/operate/logs/) for more information.
 
 ### October 1st, 2018
 

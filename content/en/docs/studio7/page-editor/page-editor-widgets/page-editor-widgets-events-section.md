@@ -1,6 +1,6 @@
 ---
 title: "Events Section in Widgets"
-url: /studio7/page-editor-widgets-events-section
+url: /studio7/page-editor-widgets-events-section/
 parent: "page-editor-widgets"
 description: "Describes the Events section in widgets properties in Mendix Studio."
 tags: ["studio", "page editor", "widgets", "on click action", "events"]
@@ -31,7 +31,7 @@ You can find the description of possible on click actions below:
   * **Open Link** – triggers an action based on the link type (for more information, see section [2.2 Open Link Action](#open-link-action)
   * **Delete Object** – deletes an object (for more information, see section [2.3 Delete Object Action](#delete-object-action))
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The list of available on click actions may differ depending on the widget. For example, **Delete Object** on-click action is unavailable for the list view. 
 
@@ -67,11 +67,11 @@ See the description in the table below:
 | Action Property | Description                                                  |
 | --------------- | ------------------------------------------------------------ |
 | Link Type       | Possible values for **Link Type** are the following: <ul><li>**Web** – navigates to a website</li><li>**Email** – composes an email</li><li>**Phone Call** – starts a phone call</li><li>**Text Message** – sends a text message</li></ul> |
-| Source          | Possible values for **Source** are the following: <ul><li>**Use literal value** – you can fill a value out (Specify **Url** for **Web**, **Recipient** for **Email**, and **Phone Number** for **Phone Cal**l and **Message**) </li><li>**Use attribute** – if you select **Database**>**Entity** as a data source for the list view,  you can choose the attribute of a string type that belongs to the entity or create a new one (when the **Use attribute** option is configured, you do not need to fill out any information manually, it will be updated dynamically)</li></ul>{{%alert type="info" %}}When you configure **Email**, **Phone Call** or **Message** options, the corresponding default app will be opened on the device when the action is triggered, for example, the default email client will be opened to compose a message.<br />{{%/alert %}} |
+| Source          | Possible values for **Source** are the following: <ul><li>**Use literal value** – you can fill a value out (Specify **Url** for **Web**, **Recipient** for **Email**, and **Phone Number** for **Phone Cal**l and **Message**) </li><li>**Use attribute** – if you select **Database**>**Entity** as a data source for the list view,  you can choose the attribute of a string type that belongs to the entity or create a new one (when the **Use attribute** option is configured, you do not need to fill out any information manually, it will be updated dynamically)</li></ul>{{%alert color="info" %}}When you configure **Email**, **Phone Call** or **Message** options, the corresponding default app will be opened on the device when the action is triggered, for example, the default email client will be opened to compose a message.<br />{{%/alert %}} |
 
 ### 2.3 Delete Object Action {#delete-object-action}
 
-Behavior of the **Delete Object** action depends on a data container it is placed in: a [list view](page-editor-data-view-list-view#list-view-properties) or a [data view](page-editor-data-view-list-view#data-view-properties). 
+Behavior of the **Delete Object** action depends on a data container it is placed in: a [list view](/studio7/page-editor-data-view-list-view/#list-view-properties) or a [data view](/studio7/page-editor-data-view-list-view/#data-view-properties). 
 
 #### 2.3.1 Delete Object Action in a List View
 
@@ -92,4 +92,4 @@ When placed on a data view, **Delete Object** will delete the connected object. 
 
 ## 3 Read More
 
-* [Widgets](page-editor-widgets)
+* [Widgets](/studio7/page-editor-widgets/)

@@ -7,7 +7,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-Currently, parameters are only supported within OQL queries defined in [datasets](data-sets). To use a defined parameter in a query, use the `$` sign.
+Currently, parameters are only supported within OQL queries defined in [datasets](/refguide/data-sets/). To use a defined parameter in a query, use the `$` sign.
 
 ## 2 Examples
 

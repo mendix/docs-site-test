@@ -1,16 +1,16 @@
 ---
 title: "Create Object"
-url: /refguide8/create-object
+url: /refguide8/create-object/
 parent: "object-activities"
-menu_order: 40
+weight: 40
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/create-object.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/create-object.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can be used in both **Microflows** and **Nanoflows**.
 {{% /alert %}}
 
@@ -45,12 +45,12 @@ The entity of which you want to create an object.
 
 ### 3.2 Commit
 
-**Commit** defines the way the object is committed. See the section [How Commits Work](committing-objects#how-commits-work) in *Commit Object(s)* for more information on committing.
+**Commit** defines the way the object is committed. See the section [How Commits Work](/refguide8/committing-objects/#how-commits-work) in *Commit Object(s)* for more information on committing.
 
 | Option | Description |
 | --- | --- |
-| Yes with event handlers | The object is saved in the database and the [event handlers](event-handlers) are triggered. |
-| Yes without event handlers | The object is saved in the database, but the [event handlers](event-handlers) are not triggered. |
+| Yes with event handlers | The object is saved in the database and the [event handlers](/refguide8/event-handlers/) are triggered. |
+| Yes without event handlers | The object is saved in the database, but the [event handlers](/refguide8/event-handlers/) are not triggered. |
 | No *(default)*  | The object is changed without being saved in the database. |
 
 #### 3.2.1 Commits in Nanoflows
@@ -67,21 +67,21 @@ Default: *No*
 
 If **Refresh in client** is set to *No*, the change is not reflected in any widgets in the client.
 
-If **Commit** and **Refresh in client** are both set to *Yes*, [data sources](data-sources) are reloaded and the new object's values are displayed in relevant widgets.
+If **Commit** and **Refresh in client** are both set to *Yes*, [data sources](/refguide8/data-sources/) are reloaded and the new object's values are displayed in relevant widgets.
 
 #### 3.3.2  Microflow Is Called in an Offline, Native, or Hybrid App
 
 When inside a microflow that is called from an offline, native, or hybrid app, the **Refresh in client** option is ignored and functions as if it was set to **No**.
 
-For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+For more information, see the [Microflows](/refguide8/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 
 #### 3.3.4  Action Is in a Nanoflow
 
-In a nanoflow, the create object action reloads [data sources](data-sources) as if Refresh in client was set to *Yes*.
+In a nanoflow, the create object action reloads [data sources](/refguide8/data-sources/) as if Refresh in client was set to *Yes*.
 
 ### 3.4 Change Members
 
-You can set the values of members (attributes and associations) of the newly created object to be different from the default value set in the [entity](entities). Values for members are specified with an [expression](expressions) and must be of the same type as the member.
+You can set the values of members (attributes and associations) of the newly created object to be different from the default value set in the [entity](/refguide8/entities/). Values for members are specified with an [expression](/refguide8/expressions/) and must be of the same type as the member.
 
 ### 3.5 Object Name
 
@@ -89,7 +89,7 @@ This is the name of the resulting object which can be used by all activities tha
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}
 
 ## 5 What Happens During a Create?
 

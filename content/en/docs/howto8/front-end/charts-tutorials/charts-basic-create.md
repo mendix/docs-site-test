@@ -1,8 +1,8 @@
 ---
 title: "Create a Basic Chart"
-url: /howto8/front-end/charts-basic-create
+url: /howto8/front-end/charts-basic-create/
 parent: "charts-tutorials"
-menu_order: 10
+weight: 10
 description: "How to create a basic chart and configure the display options"
 tags: ["Charts", "Widgets", "Basic Chart", "Area Chart"]
 ---
@@ -21,7 +21,7 @@ The charts widget provides a basic implementation of different types of chart (f
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Download the latest [Charts Widget](/appstore/widgets/charts) from the Mendix Marketplace
+* Download the latest [Charts Widget](/appstore/widgets/charts/) from the Mendix Marketplace
 
 ## 3 Implementing the Charts Widget in an Existing App
 
@@ -117,6 +117,6 @@ To view the chart, follow these steps:
 
 ## 4 Read More
 
-* [Use a Chart With a REST Data Source](charts-basic-rest)
-* [Use Any Chart](charts-any-usage)
-* [Use Charts Themes](charts-theme)
+* [Use a Chart With a REST Data Source](/howto8/front-end/charts-basic-rest/)
+* [Use Any Chart](/howto8/front-end/charts-any-usage/)
+* [Use Charts Themes](/howto8/front-end/charts-theme/)

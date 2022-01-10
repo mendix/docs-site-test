@@ -40,7 +40,7 @@ The first profile card below the header presents your **Stats**, which are your 
 
 {{/* % image_container width="350" % */}}
 ![](/attachments/developerportal/community-tools/mendix-profile/stats.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 {{% alert color="warning" %}}
 Don't get bummed out about a low number of points, because everyone in the Mendix community started like that, even our Expert developers! There are plenty of opportunities to gain more points and climb the [Leaderboard](#leaderboard).
@@ -60,7 +60,7 @@ The percentage on the card of the **Badges in progress** shows how far you have 
 
 {{/* % image_container width="350" % */}}
 ![](/attachments/developerportal/community-tools/mendix-profile/badges.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ## 5 Challenges {#challenges}
 
@@ -68,13 +68,13 @@ The **Challenge** card presents a featured challenge you can complete to gain cr
 
 {{/* % image_container width="350" % */}}
 ![](/attachments/developerportal/community-tools/mendix-profile/challenges.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 Click **View All** to go to the **Challenges** tab of your profile. This tab presents more details on the challenge steps, the time left, and how many credits you can earn with them. You can complete these activities in any order you like.
 
 {{/* % image_container width="350" % */}}
 ![](/attachments/developerportal/community-tools/mendix-profile/credits.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 When you complete a challenge, click **Claim Credits** to claim the Mendix credits. You can then spend your credits on cool items in the Mendix Shop.
 
@@ -86,7 +86,7 @@ You can also see a list of people you may know so that you can add further conne
 
 {{/* % image_container width="350" % */}}
 ![](/attachments/developerportal/community-tools/mendix-profile/connections.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 Clicking **View All** on the card will bring you to the **Connections** tab of your profile. On this tab, you can invite friends and colleagues to Mendix in two ways:
 
@@ -95,7 +95,7 @@ Clicking **View All** on the card will bring you to the **Connections** tab of y
 
 {{/* % image_container width="500" % */}}
 ![](/attachments/developerportal/community-tools/mendix-profile/referral.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ## 7 Leaderboard {#leaderboard}
 
@@ -236,7 +236,7 @@ There is also a link to [Mendix Support](https://support.mendix.com/hc/en-us) if
 Here you can tell the Mendix community about yourself and your work experience. Let everyone know your area of expertise by filling in your **Industry Experience** and **Skills**. You can also let the community know if you are looking for a job or an app to contribute to. 
 
 {{/* % image_container width="500" % */}}![](/attachments/developerportal/community-tools/mendix-profile/work-experience.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 10.3 Social {#social}
 
@@ -244,7 +244,7 @@ Here you can connect your social accounts for **Meetup**, **Twitter**, and **Lin
 
 ### 10.4 Security {#security}
 
-You can change your password in this section. By default, you are requested to change your password every 90 days. Only a [Mendix Admin](/developerportal/control-center#security) can change this.
+You can change your password in this section. By default, you are requested to change your password every 90 days. Only a [Mendix Admin](/developerportal/control-center/#security) can change this.
 
 ### 10.5 API Keys {#api-key}
 
@@ -266,16 +266,16 @@ We may cache your API key. This means that when you revoke an API key, it may ta
 
 For more information, see the following:
 
-* [Authentication](/apidocs-mxsdk/apidocs/authentication)
+* [Authentication](/apidocs-mxsdk/apidocs/authentication/)
 * [APIs](/apidocs-mxsdk/apidocs/)
-* [Mendix Platform SDK](/apidocs-mxsdk/mxsdk)
-* [How to Manage App API Keys](/developerportal/settings/api-key)
+* [Mendix Platform SDK](/apidocs-mxsdk/mxsdk/)
+* 
 
 ### 10.6 My Activity Overview {#my-activity-overview}
 
 ### 10.6.1 Latest Messages
 
-In this section, you can see all the notifications of the [Buzz](/developerportal/collaborate/buzz) instances you participate in (for example, when a colleague has created an app or added a new story).
+In this section, you can see all the notifications of the [Buzz](/developerportal/collaborate/buzz/) instances you participate in (for example, when a colleague has created an app or added a new story).
 
 ### 10.6.2 Documents
 
@@ -284,28 +284,28 @@ This section presents all the documents you have shared within different apps.
 ### 10.6.3 Feedback {#feedback}
 
 {{/* % image_container width="500" % */}}![](/attachments/developerportal/community-tools/mendix-profile/feedback.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 In this section, you can view feedback submitted on the following:
 
-* Apps of which you are a [team](/developerportal/collaborate/team) member
+* Apps of which you are a [team](/developerportal/collaborate/team/) member
 * Your company’s apps of which you are not a team member
 
-When you click **Details** for a feedback item on an app of which you are a team member, you can manage that feedback. For more information, see [Feedback](/developerportal/collaborate/feedback).
+When you click **Details** for a feedback item on an app of which you are a team member, you can manage that feedback. For more information, see [Feedback](/developerportal/collaborate/feedback/).
 
 ### 10.6.4 Team Server
 
-Changes made through Studio Pro are stored in the Mendix [Team Server](/developerportal/collaborate/team-server). This section provides an overview of the revisions you have committed for all your apps.
+Changes made through Studio Pro are stored in the Mendix [Team Server](/developerportal/collaborate/team-server/). This section provides an overview of the revisions you have committed for all your apps.
 
 {{/* % image_container width="500" % */}}![](/attachments/developerportal/community-tools/mendix-profile/team-server.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 10.6.5 Pending Invites
 
 In this section, you can view the invitations you have sent and received. There are two types of invitations:
 
-* Project invitation – an invitation to join a [team](/developerportal/collaborate/team) to work on an app
-* App invitation – an invitation to join an app as an an [App User](/developerportal/collaborate/general-settings#managing-app-users)
+* Project invitation – an invitation to join a [team](/developerportal/collaborate/team/) to work on an app
+* App invitation – an invitation to join an app as an an [App User](/developerportal/collaborate/general-settings/#managing-app-users)
 
 ### 10.7 Advanced
 
@@ -361,4 +361,4 @@ Abusing the Mendix Forum, point system, or other community tools is not allowed.
 
 ## 12 Main Document in This Category
 
-* [OAuth & Scopes](oauth-scopes) – provides introductory information on how OAuth and scopes work, as well as details on scopes generated in the Developer Portal
+* [OAuth & Scopes](/developerportal/community-tools/oauth-scopes/) – provides introductory information on how OAuth and scopes work, as well as details on scopes generated in the Developer Portal

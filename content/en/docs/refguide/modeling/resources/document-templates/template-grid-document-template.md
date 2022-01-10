@@ -25,7 +25,7 @@ A template grid showing products with name, description, and image.
 
 ### 2.1 Sort Bar
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide/sort-bar/).
 
 ## 3 Appearance Properties
 
@@ -39,7 +39,7 @@ This defines the amount of columns the template grid will contain.
 
 ## 4 Common Properties
 
-{{% snippet file="/static/_includes/refguide/name-property.md" %}}
+{{% snippet file="refguide/name-property.md" %}}
 
 ## 5 Data Source Properties
 

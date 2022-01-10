@@ -1,17 +1,17 @@
 ---
 title: "Synchronize"
-url: /refguide8/synchronize
+url: /refguide8/synchronize/
 parent: "client-activities"
-menu_order: 70
+weight: 70
 tags: ["studio pro", "synchronize", "offline", "client activity"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/synchronize.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/synchronize.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Nanoflows**.
 {{% /alert %}}
 
@@ -27,7 +27,7 @@ The **Synchronize** activity can be used to synchronize your data between your d
 
 This mode synchronizes the entire local database. The server database is updated with the changes from the local database. The local database is updated with the latest data from the server, including the file contents.
 
-The behavior of this mode can be configured through [**Synchronization configuration**](offline-first#customizable-synchronization).
+The behavior of this mode can be configured through [**Synchronization configuration**](/refguide8/offline-first/#customizable-synchronization).
 
 ### 1.2 Synchronize Selected Object(s)
 
@@ -64,14 +64,14 @@ The **Synchronize** activity properties consists of the following sections:
 * [Common](#common)
 
 	{{/* % image_container width="300" % */}}![Synchronize Action Properties](/attachments/refguide8/modeling/application-logic/activities/client-activities/synchronize/synchronize-properties.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 3 Action Section {#action}
 
 The **Action** section of the properties pane shows the action associated with this activity.
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Limitations {#limitations}
 
@@ -81,9 +81,9 @@ If you try to trigger another synchronization process while the synchronization 
 
 **Performing simultaneous synchronizations is not supported. Please try again after the current synchronization is completed.**
 
-Such an error can be handled in the nanoflow from which the synchronization attempt was triggered using [error handlers](/refguide8/error-event#errorhandlers).
+Such an error can be handled in the nanoflow from which the synchronization attempt was triggered using [error handlers](/refguide8/error-event/#errorhandlers).
 
 ## 6 Read More
 
-* [Activities](activities)
-* [Offline-first](offline-first)
+* [Activities](/refguide8/activities/)
+* [Offline-first](/refguide8/offline-first/)

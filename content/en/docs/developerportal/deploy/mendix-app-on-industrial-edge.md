@@ -38,7 +38,7 @@ To convert your Mendix app into an Industrial Edge App, follow the instructions 
 
 ### 3.1 Create a deployment package of your Mendix app
 
-[Create a deployment package(.mda)](/refguide/create-deployment-package-dialog) for your Mendix app.
+[Create a deployment package(.mda)](/refguide/create-deployment-package-dialog/) for your Mendix app.
 
 ### 3.2 Create a Docker Image of Your Mendix App  
 

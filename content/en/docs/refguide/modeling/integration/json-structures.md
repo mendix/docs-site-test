@@ -9,7 +9,7 @@ tags: ["studio pro"]
 
 ## 1 General
 
-A JSON structure document stores a JSON snippet, and converts it into a schema structure that can be used in [Import Mappings](import-mappings) and [Export Mappings](export-mappings) to convert JSON content to Mendix objects and vice versa. 
+A JSON structure document stores a JSON snippet, and converts it into a schema structure that can be used in [Import Mappings](/refguide/import-mappings/) and [Export Mappings](/refguide/export-mappings/) to convert JSON content to Mendix objects and vice versa. 
 
 ![](/attachments/refguide/modeling/integration/json-structures/19398772.png)
 

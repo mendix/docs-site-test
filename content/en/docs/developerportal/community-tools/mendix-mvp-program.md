@@ -29,7 +29,7 @@ There are a few simple guidelines for the selection process:
 
 ## 3 Profile
 
-The Mendix MVPs represent the spirit of the Mendix community. They are highly engaged (with the Mendix [Forum](mendix-forum), [Marketplace](/appstore/general/app-store-overview), [Meetups](https://community.mendix.com/p/community), etc.), help other developers, and actively share their results. 
+The Mendix MVPs represent the spirit of the Mendix community. They are highly engaged (with the Mendix [Forum](/developerportal/community-tools/mendix-forum/), [Marketplace](/appstore/general/app-store-overview/), [Meetups](https://community.mendix.com/p/community), etc.), help other developers, and actively share their results. 
 
 These are the labels we use to describe our MVP recognition requirements:
 
@@ -72,4 +72,4 @@ By participating in the MVP program, each MVP agrees to release, indemnify, defe
 
 ## 6 Read More
 
-* [Mendix Profile](/developerportal/community-tools/mendix-profile)
+* [Mendix Profile](/developerportal/community-tools/mendix-profile/)

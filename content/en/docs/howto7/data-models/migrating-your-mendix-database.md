@@ -1,8 +1,8 @@
 ---
 title: "Migrate Your Mendix Database"
-url: /howto7/data-models/migrating-your-mendix-database
+url: /howto7/data-models/migrating-your-mendix-database/
 category: "Data Models"
-menu_order: 7
+weight: 7
 tags: ["database", "migrate", "postgresql", "export", "import"]
 ---
 
@@ -33,7 +33,7 @@ The most commonly used custom settings for database migration are:
 *   SourceDatabaseUserName
 *   SourceDatabasePassword
 
-See [Custom Settings](/refguide7/custom-settings) for more information on the full list of available settings. These settings can be configured as follows:
+See [Custom Settings](/refguide7/custom-settings/) for more information on the full list of available settings. These settings can be configured as follows:
 
 * Modeler: in **Project Explorer**, expand **Project**, double-click **Settings**, edit a configuration, go to the right-most tab called **Custom**:
 
@@ -47,13 +47,13 @@ See [Custom Settings](/refguide7/custom-settings) for more information on the fu
 
 You can migrate databases using either the Modeler, the Service Console or m2ee-tools. The Service Console gives you the advantage of seeing a progress bar during the copy process, which is handy if you copy a lot of data which takes a long time to execute.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Database migration is handled by Mendix as a normal database synchronization phase during the start-up process of an app. As a consequence, it is possible that during the start-up process you will get to see messages like ‘The database has to be synchronized’ or you will see an empty message. In the future, tools like the Service Console and m2ee-tools will recognize this phase better and give more appropriate messages. However, these tools already correctly handle the database migration.
 
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Before the data copy process starts, the source database will also be synchronized with the model, just like the main database. This is necessary to ensure that all data is copyied without problems.
 

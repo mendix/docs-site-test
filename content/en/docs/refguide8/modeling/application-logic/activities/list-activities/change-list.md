@@ -1,17 +1,17 @@
 ---
 title: "Change List"
-url: /refguide8/change-list
+url: /refguide8/change-list/
 parent: "list-activities"
-menu_order: 2
+weight: 2
 tags: ["studio pro", "List"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/change-list.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/change-list.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can be used in both **Microflows** and **Nanoflows**.
 
 Note that there are minor differences between the way this function works in microflows, and the way it works in nanoflows.
@@ -19,7 +19,7 @@ Note that there are minor differences between the way this function works in mic
 
 ## 1 Introduction
 
-The **Change list** activity allows you to change a list by adding objects to, and removing objects from, it. The activity works directly on the list provided, in contrast to the [List operation](list-operation) activity.
+The **Change list** activity allows you to change a list by adding objects to, and removing objects from, it. The activity works directly on the list provided, in contrast to the [List operation](/refguide8/list-operation/) activity.
 
 ## 2 Properties
 
@@ -59,16 +59,16 @@ Defines the type of change that is applied to the list.
 
 #### 3.2.1 Notes When Using the Add Type{#notes}
 
-If you do not want duplicates in your (microflow) list, you can either remove the object(s) first, or use the **Contains** [list operation](list-operation) to examine the list before adding the object(s).
+If you do not want duplicates in your (microflow) list, you can either remove the object(s) first, or use the **Contains** [list operation](/refguide8/list-operation/) to examine the list before adding the object(s).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Currently, this works differently in **nanoflows** and **microflows**. In a **nanoflow** objects will *not* be added if they are already in the list whereas, in a **microflow**, the same object can be added multiple times.
 {{% /alert %}}
 
 ### 3.3 Value
 
-Value defines the objects that are used to change the list. The value is entered using an [expression](expressions). The expression must result in an object or list of objects of the same type of [entity](entities) as the input list.
+Value defines the objects that are used to change the list. The value is entered using an [expression](/refguide8/expressions/). The expression must result in an object or list of objects of the same type of [entity](/refguide8/entities/) as the input list.
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}

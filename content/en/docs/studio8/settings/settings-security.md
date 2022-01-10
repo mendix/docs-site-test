@@ -1,9 +1,9 @@
 ---
 title: "Security, Roles & Permissions"
-url: /studio8/settings-security
+url: /studio8/settings-security/
 category: "Settings"
 description: "Describes security and roles and permissions in Mendix Studio."
-menu_order: 10
+weight: 10
 tags: ["studio", "security", "roles and permissions"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 #The anchor <upgrade> below is mapped, so it should not be removed or changed.
@@ -19,19 +19,19 @@ Security is a way of controlling access to your app. For example, you can decide
 
 Whether security is enabled for your app by default, depends on app's type and version. You can come across the following cases:
 
-1. If your app has been created in the Developer Portal with Mendix version 7.23.3 or above, you can enable security in Studio and view and edit [roles and permissions](#roles-and-permissions). For more information on versions, see [Studio Ranges & Mendix Versions](general-versions)
+1. If your app has been created in the Developer Portal with Mendix version 7.23.3 or above, you can enable security in Studio and view and edit [roles and permissions](#roles-and-permissions). For more information on versions, see [Studio Ranges & Mendix Versions](/studio8/general-versions/)
 
 2. If your app has been created in the Developer Portal with Mendix version below 7.23.3, or has been labelled as private content, or has been customized by your team specifically for your company, the security state depends on Studio Pro:<br/>
-    a.  If security is off in Studio Pro, then you can enable security in Studio. In this case, when you try to [publish the app](publishing-app), you will be prompted to enable security. <br/>
+    a.  If security is off in Studio Pro, then you can enable security in Studio. In this case, when you try to [publish the app](/studio8/publishing-app/), you will be prompted to enable security. <br/>
 
 	{{/* % image_container width="400" % */}}![Secure Your App Pop-up Window](/attachments/studio8/settings/settings-security/security-pop-up.png)
 	{{/* % /image_container % */}}<br/>
 
-    b. If security is set to the **Production** level in Studio Pro and settings are compatible with Studio, you can view and edit **Roles and Permissions** in Studio. (For more information on what security settings are compatible with Studio, see the [Studio Compatibility](/refguide8/studio-security-enabled#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
+    b. If security is set to the **Production** level in Studio Pro and settings are compatible with Studio, you can view and edit **Roles and Permissions** in Studio. (For more information on what security settings are compatible with Studio, see the [Studio Compatibility](/refguide8/studio-security-enabled/#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
 
     ![](/attachments/studio8/settings/settings-security/roles-and-permissions-screen.png)
 
-    c. If security is set to the **Prototype/demo** or **Production** level in Studio Pro and settings are not compatible with Studio, you can view (not edit) **Roles and Permissions** in Studio. (For more information on security settings compatible with Studio, see the [Studio Compatibility](/refguide8/studio-security-enabled#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
+    c. If security is set to the **Prototype/demo** or **Production** level in Studio Pro and settings are not compatible with Studio, you can view (not edit) **Roles and Permissions** in Studio. (For more information on security settings compatible with Studio, see the [Studio Compatibility](/refguide8/studio-security-enabled/#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
 
     ![](/attachments/studio8/settings/settings-security/security-read-only.png)
 
@@ -44,13 +44,13 @@ If you need to enable security, do one of the following:
 
 	![The Roles and Permissions Screen](/attachments/studio8/settings/settings-security/enabling-security.png)
 
-{{% alert type="info" %}}
-When you enable security, it is enabled for the whole app, and there are checks and changes applied to the model that are visible in Studio Pro. For more technical information on these checks and changes, see [Model Changes When Security Is Enabled in Studio](/refguide8/studio-security-enabled).
+{{% alert color="info" %}}
+When you enable security, it is enabled for the whole app, and there are checks and changes applied to the model that are visible in Studio Pro. For more technical information on these checks and changes, see [Model Changes When Security Is Enabled in Studio](/refguide8/studio-security-enabled/).
 {{% /alert %}}
 
 ## 3 Roles and Permissions {#roles-and-permissions}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In Studio Pro, advanced security settings can be applied. In this case, you will not be able to edit roles and permissions in Studio.
 {{% /alert %}}
 
@@ -61,7 +61,7 @@ In apps created via the Developer Portal, there are two app roles:
 * Administrator
 * User
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 When security is enabled, these two app roles will have full access to your app. We recommend you to review permissions for the User role. 
 {{% /alert %}}
 
@@ -133,7 +133,7 @@ To delete an existing role, do the following:
 
 The role has been deleted.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 You cannot delete or edit the Administrator role.
 
@@ -157,13 +157,13 @@ There are two ways to set access for specific pages/microflows in your app:
 
 ## 4 Demo Users {#demo-users}
 
-Demo users are a demonstration of each user role existing in your app. You can use demo users to review how your app looks like for each user role. For more technical information, see [Demo Users](/refguide8/demo-users). 
+Demo users are a demonstration of each user role existing in your app. You can use demo users to review how your app looks like for each user role. For more technical information, see [Demo Users](/refguide8/demo-users/). 
 
 ### 4.1 Testing Your Roles {#testing-your-roles}
 
 You can test how your app looks like for different roles the following way:
 
-1. [Preview your app](publishing-app).
+1. [Preview your app](/studio8/publishing-app/).
 
 2. Click a user icon in the right side of the screen:
 
@@ -177,7 +177,7 @@ You can test how your app looks like for different roles the following way:
 
 You can assign the default or customized user roles for your app to app end-users with Mendix accounts. These are called **App Users** and once authorized, they can access your published app to use it, test it, and provide feedback.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 You can manage App Users only after you publish your app.
 {{% /alert %}}
 
@@ -185,13 +185,13 @@ To manage App Users, open **Roles and Permissions** and click **Manage Users** i
 
 ![](/attachments/studio8/settings/settings-security/manage-users-button.png)
 
-You will be taken to the [App User Management](/developerportal/collaborate/general-settings#managing-app-users) page in the Developer Portal, where you can invite people to your app and manage their user roles. 
+You will be taken to the [App User Management](/developerportal/collaborate/general-settings/#managing-app-users) page in the Developer Portal, where you can invite people to your app and manage their user roles. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 People invited to join your team in the Developer Portal are not added as App Users automatically, so you will need to invite your team members if necessary.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If you have created a new user role on the **Roles and Permissions** page, you need to publish the app first to be able to see and assign this role in the Developer Portal.
 {{% /alert %}}
 
@@ -211,5 +211,5 @@ If the auto-upgrade detects that the service was customized in Studio Pro by a t
 
 ## 7 Read More
 
-* [Security](/refguide8/security)
-* [Model Changes When Security Is Enabled in Studio](/refguide8/studio-security-enabled)
+* [Security](/refguide8/security/)
+* [Model Changes When Security Is Enabled in Studio](/refguide8/studio-security-enabled/)

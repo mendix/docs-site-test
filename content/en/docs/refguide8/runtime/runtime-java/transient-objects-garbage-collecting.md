@@ -1,8 +1,8 @@
 ---
 title: "Non-Persistable Objects & Garbage Collecting"
-url: /refguide8/transient-objects-garbage-collecting
+url: /refguide8/transient-objects-garbage-collecting/
 parent: "runtime-java"
-menu_order: 1
+weight: 1
 description: "This page will explain the life cycle of both persistable and non-persistable objects, and how they flow through the platform memory."
 tags: ["persistable", "non-persistable", "objects", "garbage", "collecting"]
 ---
@@ -17,7 +17,7 @@ This page explains the life cycle of both persistable and non-persistable object
 
 ## 2 Behavior
 
-Non-persistable objects in Mendix are not kept in the [Runtime Server](runtime-server), but maintained in the [Mendix Client](mendix-client). This means there is no server-side garbage collection. This simplifies the handling of objects on the server side because an object will not be garbage collected while it exists on the server.
+Non-persistable objects in Mendix are not kept in the [Runtime Server](/refguide8/runtime-server/), but maintained in the [Mendix Client](/refguide8/mendix-client/). This means there is no server-side garbage collection. This simplifies the handling of objects on the server side because an object will not be garbage collected while it exists on the server.
 
 Objects will be returned to the client together with the response to a request. Objects created outside the context of a request (like Scheduled Event execution) will automatically be discarded when the scheduled event has finished.
 
@@ -39,7 +39,7 @@ When non-persistable objects are associated with the current user or the current
 
 Objects which are the parameter of a page which is closed in a web browser are only garbage collected after five new pages have been opened. This means that the end-user can use the back button in their browser (a limited number of times) and still see the same page they saw before, even if the parameter is non-persistable.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This is not relevant in mobile apps as pages are not closed in the same way, and always remain alive.
 {{% /alert %}}
 
@@ -95,4 +95,4 @@ For every request to the Mendix Runtime — be it from the client or via web ser
 ## 6 Read More
 
 * Mendix blog [The art of state, Part 1: Introduction to the client state ](https://www.mendix.com/blog/the-art-of-state-part-1-introduction-to-the-client-state/)
-* [Java Memory Usage](java-memory-usage)
+* [Java Memory Usage](/refguide8/java-memory-usage/)

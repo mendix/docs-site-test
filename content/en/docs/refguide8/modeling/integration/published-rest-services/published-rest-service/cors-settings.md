@@ -1,23 +1,23 @@
 ---
 title: "CORS Settings for Published REST Services"
-url: /refguide8/cors-settings
+url: /refguide8/cors-settings/
 parent: "published-rest-service"
-menu_order: 60
+weight: 60
 description: "Additional options for controlling access to a published REST service"
 tags: ["CORS", "security", "origin", "domain", "access", "studio pro"]
 # If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 # linked from DM: published rest > Enable CORS > Settings > Help (integration)
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/cors-settings.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/cors-settings.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 Cross-Origin Resource Sharing (CORS) uses additional HTTP headers to tell a browser to give access to selected resources from a server in a different origin (domain).
 
-When you enable CORS in a [published REST service](published-rest-service), by default all websites on all servers are allowed to access your service. The **CORS Settings** dialog box allows you to configure this type of access on a more detailed level.
+When you enable CORS in a [published REST service](/refguide8/published-rest-service/), by default all websites on all servers are allowed to access your service. The **CORS Settings** dialog box allows you to configure this type of access on a more detailed level.
 
 ## 2 Allowed Origins
 

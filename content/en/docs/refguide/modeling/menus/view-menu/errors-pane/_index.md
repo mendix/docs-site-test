@@ -31,9 +31,9 @@ The table below provides the details on each type of the message:
 | Type         | Icon                                              | Function                                                     |
 | ------------ | ------------------------------------------------- | ------------------------------------------------------------ |
 | Errors       | ![](/attachments/refguide/modeling/menus/view-menu/errors-pane/error-icon.png)       | Consistency errors that prevent your app from functioning in a correct way and being deployed (for example, if you do not specify an entity for the data view, your app cannot function correctly). |
-       | Consistency errors that prevent your app from functioning in a correct way and being deployed (for example, if you do not specify an entity for the data view, your app cannot function correctly). || Deprecations | ![](/attachments/refguide/modeling/menus/view-menu/errors-pane/deprecation-icon.png) | This type shows information on features that are deprecated and can be entirely removed in the future versions. This does not affect the app now, but may cause problems when upgrading to the next version. |
- | This type shows information on features that are deprecated and can be entirely removed in the future versions. This does not affect the app now, but may cause problems when upgrading to the next version. || Warnings     | ![](/attachments/refguide/modeling/menus/view-menu/errors-pane/warning-icon.png)     | Errors that are not critical, so you can publish your app having warnings. However, it is highly recommended to take action based on the warnings, because your app has logical gaps (for example, clicking a button does nothing). |
-     | Errors that are not critical, so you can publish your app having warnings. However, it is highly recommended to take action based on the warnings, because your app has logical gaps (for example, clicking a button does nothing). |
+| Deprecations | ![](/attachments/refguide/modeling/menus/view-menu/errors-pane/deprecation-icon.png) | This type shows information on features that are deprecated and can be entirely removed in the future versions. This does not affect the app now, but may cause problems when upgrading to the next version. |
+| Warnings     | ![](/attachments/refguide/modeling/menus/view-menu/errors-pane/warning-icon.png)     | Errors that are not critical, so you can publish your app having warnings. However, it is highly recommended to take action based on the warnings, because your app has logical gaps (for example, clicking a button does nothing). |
+
 ## 3 Interacting with the Errors Pane
 
 ### 3.1 Displaying Different Types of Messages
@@ -78,5 +78,5 @@ The following actions are available in the drop-down menu:
 
 ##  4 Read More
 
-* [Consistency Errors](consistency-errors)
-* [Studio Pro Overview](studio-pro-overview)
+* [Consistency Errors](/refguide/consistency-errors/)
+* [Studio Pro Overview](/refguide/studio-pro-overview/)

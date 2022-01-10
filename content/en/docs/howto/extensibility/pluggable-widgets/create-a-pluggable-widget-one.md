@@ -25,7 +25,7 @@ Clone this [code sample](https://github.com/mendix/text-box-sample) from GitHub 
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Install the LTS version of [Node.js](https://nodejs.org).
+* Install the LTS version of [Node.js](https://nodejs.org) (we recommend using Node 14).
 	* For Windows, install using this [official installer](https://nodejs.org/en/download/package-manager/#windows)
 	* For Mac, install using [Homebrew](https://docs.brew.sh/Installation) and
 	  these [official tools](https://nodejs.org/en/download/package-manager/#macos)
@@ -132,10 +132,10 @@ Open the **(YourMendixApp)/CustomWidgets/TextBox** folder in your IDE of choice 
 
 	Explaining the code:
 	
-	* *TextBox.xml* is the [widget definition file](/apidocs-mxsdk/apidocs/pluggable-widgets#widget-definition) used in Studio Pro which reads the widget's capabilities
+	* *TextBox.xml* is the [widget definition file](/apidocs-mxsdk/apidocs/pluggable-widgets/#widget-definition) used in Studio Pro which reads the widget's capabilities
 	* The property `pluginWidget=true` will make the widget work with the new widget API
 	* The property `needsEntityContext=true` is set up to allow the attribute to be taken from context
-	* The property of the [type attribute](/apidocs-mxsdk/apidocs/pluggable-widgets-property-types#attribute) only allows the selection of string attributes from the domain model
+	* The property of the [type attribute](/apidocs-mxsdk/apidocs/pluggable-widgets-property-types/#attribute) only allows the selection of string attributes from the domain model
   
 3. The typescript typing based on the XML will be generated automatically. Start the development process with the following command: `npm start`.
 
@@ -234,7 +234,7 @@ Open the **(YourMendixApp)/CustomWidgets/TextBox** folder in your IDE of choice 
 
 ### 3.4 Adding Style
 
-The input works, but the styling could be improved. In the next code snippets, you will add the default styling to make your TextBox widget look like a Mendix widget. Also, you need to pass the `Class`, `Style` and `Tab index` [standard properties](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis#standard-properties) from the `Common` tab which originate from the **Edit Custom Widget** dialog box:
+The input works, but the styling could be improved. In the next code snippets, you will add the default styling to make your TextBox widget look like a Mendix widget. Also, you need to pass the `Class`, `Style` and `Tab index` [standard properties](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/#standard-properties) from the `Common` tab which originate from the **Edit Custom Widget** dialog box:
 
 ![custom widget](/attachments/howto/extensibility/pluggable-widgets/create-a-pluggable-widget-one/customwidgetedit.png)
 
@@ -290,7 +290,7 @@ The input works, but the styling could be improved. In the next code snippets, y
 
 ### 3.5 Labeling the Input{#label-input}
 
-While the Mendix input elements come with labels, you will need to add one to TextBox manually. With the new API it is easy to [add a label](/apidocs-mxsdk/apidocs/pluggable-widgets-property-types#label) to any widget.
+While the Mendix input elements come with labels, you will need to add one to TextBox manually. With the new API it is easy to [add a label](/apidocs-mxsdk/apidocs/pluggable-widgets-property-types/#label) to any widget.
 
 1. In the *TextBox.xml* file, add an element `<propertyGroup caption="Label">` with a child element `<systemProperty />` above the existing `<propertyGroup caption="Data source">` element:
 
@@ -381,7 +381,7 @@ The value from the attribute can be displayed and updated using the other input,
 	* The input's `value` is set by the `this.props.value`, and this property is not changed directly; the update function will use the `setValue` to trigger a re-render with the updated property
 	* There are two ways of handling input changes in React: [controlled components](https://reactjs.org/docs/forms.html#controlled-components) or [uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html)
 	* The `onUpdate` function is optional and it should be checked for availability before executing it
-	* The custom widget TextBox will still not pass text to the Text box widget after this step — it will gain this functionality in [Build a Text Box Pluggable Widget: Part 2 (Advanced)](create-a-pluggable-widget-two).
+	* The custom widget TextBox will still not pass text to the Text box widget after this step — it will gain this functionality in [Build a Text Box Pluggable Widget: Part 2 (Advanced)](/howto/extensibility/create-a-pluggable-widget-two/).
 
 Congratulations, you have now made a fully functional input widget!
 
@@ -390,7 +390,7 @@ Continue with the next tutorial to learn how to add validation feedback, custom 
 ## 4 Read More
 
 
-* [Build a Pluggable Web Widget: Part 2 (Advanced)](create-a-pluggable-widget-two)
-* [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets)
-* [Client APIs Available to Pluggable Widgets](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis)
-* [Pluggable Widget Property Types](/apidocs-mxsdk/apidocs/pluggable-widgets-property-types)
+* [Build a Pluggable Web Widget: Part 2 (Advanced)](/howto/extensibility/create-a-pluggable-widget-two/)
+* [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets/)
+* [Client APIs Available to Pluggable Widgets](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/)
+* [Pluggable Widget Property Types](/apidocs-mxsdk/apidocs/pluggable-widgets-property-types/)

@@ -1,6 +1,6 @@
 ---
 title: "Debug Java Actions Remotely"
-url: /howto8/monitoring-troubleshooting/debug-java-actions-remotely
+url: /howto8/monitoring-troubleshooting/debug-java-actions-remotely/
 parent: "debug-java-actions"
 tags: ["monitoring", "troubleshooting", "java action", "debug"]
 ---
@@ -16,11 +16,11 @@ To debug the Java actions used in a Mendix microflow, you need to make some conf
 
 ## 2 Editing the Server Configuration with Extra JVM Parameters
 
-In this section, you will learn how to configure the security at the [Prototype / demo](/howto8/security/create-a-secure-app#prototype) level. Be aware that this level of security is only applicable for development/demo purposes. This level is available for the quick development of demo applications. It simulates security without the more complex configuration of data access. When deploying to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy), setting [Production](/howto8/security/create-a-secure-app#production) security is mandatory.
+In this section, you will learn how to configure the security at the [Prototype / demo](/howto8/security/create-a-secure-app/#prototype) level. Be aware that this level of security is only applicable for development/demo purposes. This level is available for the quick development of demo applications. It simulates security without the more complex configuration of data access. When deploying to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/), setting [Production](/howto8/security/create-a-secure-app/#production) security is mandatory.
 
 To edit the server configuration with extra JVM parameters, follow these steps:
 
-1. Open the [Project Settings](/refguide8/project-settings).
+1. Open the [Project Settings](/refguide8/project-settings/).
 2. Edit the configuration on the **Configurations** tab.
 3.  Go to the **Server** tab of the configuration, add the following line to the **Extra JVM parameters** field: `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005`
 
@@ -52,8 +52,8 @@ To configure Eclipse, follow these steps:
 
 ## 4 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions](debug-java-actions)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)

@@ -15,8 +15,8 @@ The Developer Portal supports collaboration with your team and the tracking of S
 
 ## 2 Main Documents in This Category
 
-* [Stories](stories) – presents the page that lets you add, edit, and delete stories and Sprints
-* [Team](team) – details the page that presents an overview of your team members where you can also invite new members to your apps
-* [Feedback](feedback) – describes where you can manage feedback on your app
-* [Team Server](team-server) – presents the integration of Team Server with the Mendix Studios for managing requirements, implementation, and feedback
-* [General Settings](general-settings) – describes the diverse and powerful settings available for your app
+* [Stories](/developerportal/collaborate/stories/) – presents the page that lets you add, edit, and delete stories and Sprints
+* [Team](/developerportal/collaborate/team/) – details the page that presents an overview of your team members where you can also invite new members to your apps
+* [Feedback](/developerportal/collaborate/feedback/) – describes where you can manage feedback on your app
+* [Team Server](/developerportal/collaborate/team-server/) – presents the integration of Team Server with the Mendix Studios for managing requirements, implementation, and feedback
+* [General Settings](/developerportal/collaborate/general-settings/) – describes the diverse and powerful settings available for your app

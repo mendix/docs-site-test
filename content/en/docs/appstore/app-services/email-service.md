@@ -11,7 +11,7 @@ tags: ["marketplace", "marketplace component", "app service", "email"]
 
 The [Email Service](https://marketplace.mendix.com/link/component/118393) app service enables including an email component in your Mendix application. Just add the minimum required configuration and you are good to go.
 
-The app service works with [Mendix SSO](/appstore/modules/mendix-sso), so no additional authentication changes are required.
+The app service works with [Mendix SSO](/appstore/modules/mendix-sso/), so no additional authentication changes are required.
 
 ### 1.1 Typical Use Cases
 
@@ -35,7 +35,7 @@ This app service enables doing the following:
 
 ### 1.4 Prerequisites
 
-This app service can only be used with Studio Pro 9 versions starting with [9.4](/releasenotes/studio-pro/9.4).
+This app service can only be used with Studio Pro 9 versions starting with [9.4](/releasenotes/studio-pro/9.4/).
 
 ## 2 Installation
 
@@ -67,9 +67,9 @@ Email Service is a premium Mendix product that is subject to a purchase and subs
 
     For the trial, you do not need to fill in this information.
 
-3. Click the link in the order confirmation email to go to the Marketplace [Subscriptions](/appstore/general/app-store-overview#subscriptions) page and log in there. The **Subscriptions** page gives an overview of all the subscriptions of your organization.
+3. Click the link in the order confirmation email to go to the Marketplace [Subscriptions](/appstore/general/app-store-overview/#subscriptions) page and log in there. The **Subscriptions** page gives an overview of all the subscriptions of your organization.
 
-4. Click **Email Service** to open the [service management dashboard](/appstore/general/app-store-overview#service-management-dashboard).
+4. Click **Email Service** to open the [service management dashboard](/appstore/general/app-store-overview/#service-management-dashboard).
 
 5. Click **Create Binding Keys**.
 
@@ -106,7 +106,7 @@ You can use the Email Service in a microflow to send HTML or plain text messages
 
 ![emailattr-and-sendemailresponse-entities](/attachments/appstore/app-services/email-service/inbuilt-domain-entities.png)
 
-You can create a list using the **EmailAttr** entity to specify the **To**, **CC**, **BCC** recipients. For more information, see [Working with Lists in a Microflow](/howto/logic-business-rules/working-with-lists-in-a-microflow).
+You can create a list using the **EmailAttr** entity to specify the **To**, **CC**, **BCC** recipients. For more information, see [Working with Lists in a Microflow](/howto/logic-business-rules/working-with-lists-in-a-microflow/).
 
 {{% alert color="info" %}}Every email address to whom this message is sent is counted as utilization towards the allocated app service quota. If the email addresses are incorrect, the email will bounce back.{{% /alert %}}
 
@@ -177,8 +177,8 @@ The following file types are not supported as attachments:
 The **Usage** dashboard shows the real-time statistics about the usage of an app service. For the Email Service, perform the following steps to check the number of emails sent and data transfer usage:
 
 1. Log into the Marketplace.
-2. Go to **My Marketplace** and click [Subscriptions](/appstore/general/app-store-overview#subscriptions) on the left navigation menu. The **Subscriptions** page gives an overview of all the subscriptions of your organization.
-3. Click **Email Service** to open the [service management dashboard](/appstore/general/app-store-overview#service-management-dashboard). On the **Overview** tab, the **Usage** dashboard shows the following statistics:
+2. Go to **My Marketplace** and click [Subscriptions](/appstore/general/app-store-overview/#subscriptions) on the left navigation menu. The **Subscriptions** page gives an overview of all the subscriptions of your organization.
+3. Click **Email Service** to open the [service management dashboard](/appstore/general/app-store-overview/#service-management-dashboard). On the **Overview** tab, the **Usage** dashboard shows the following statistics:
    * **Current Month** – Shows statistics for current month usage
    * **Last Month** – Shows usage statistics for last month
    * **Till date** – Shows usage statistics from the start of the subscription date to today

@@ -1,8 +1,8 @@
 ---
 title: "Create a Secure App"
-url: /howto7/security/create-a-secure-app
+url: /howto7/security/create-a-secure-app/
 category: "Security"
-menu_order: 10
+weight: 10
 tags: ["security", "secure app"]
 ---
 
@@ -21,9 +21,9 @@ You will start with the configuration of user and module roles for access to pag
 
 Before starting with this how-to, make sure you have completed the following prerequisites:
 
-* Know how to create a domain model (for more information, see [How to Create a Basic Data Layer](/howto7/data-models/create-a-basic-data-layer))
-* Know how to create overview and detail pages (for more information, see [How to Create Your First Two Overview and Details Pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages))
-* Know how to create menu items (for more information, see [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure))
+* Know how to create a domain model (for more information, see [How to Create a Basic Data Layer](/howto7/data-models/create-a-basic-data-layer/))
+* Know how to create overview and detail pages (for more information, see [How to Create Your First Two Overview and Details Pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages/))
+* Know how to create menu items (for more information, see [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure/))
 
 ## 3 Preparing the Data Structure, GUI, and Example Data
 
@@ -196,7 +196,7 @@ To create access roles for the Administrator module role, follow these steps:
 
 3. Click **OK**.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 A separate access rule will be created for all entities when the module role is set to Administrator. It is possible to adjust each rule individually later.
 {{% /alert %}}
 
@@ -240,7 +240,7 @@ To create access roles for the User module role, follow these steps:
 
 In the previous section you set some access rules on your domain model. In this section you you will define the access rules on the Order entity so that orders can only be viewed by a user if the payment status of the order is set to open. You will do this by adding an XPath constraint to the Order entity for the User module role. 
 
-An XPath constraint can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all the objects of the entity. For more information, see [XPath Constraints](/refguide7/xpath-constraints) in the Mendix Reference Guide.
+An XPath constraint can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all the objects of the entity. For more information, see [XPath Constraints](/refguide7/xpath-constraints/) in the Mendix Reference Guide.
 
 ### 6.1 Adding an Account with the User User Role
 
@@ -287,4 +287,4 @@ An XPath constraint can be used to constrain the set of objects to which the acc
 
 ## 7 Read More
 
-* [Set Up Anonymous User Security](set-up-anonymous-user-security)
+* [Set Up Anonymous User Security](/howto7/security/set-up-anonymous-user-security/)

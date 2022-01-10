@@ -1,15 +1,15 @@
 ---
 title: "Project Settings"
-url: /refguide8/project-settings
+url: /refguide8/project-settings/
 parent: "project"
-menu_order: 10
+weight: 10
 description: "Settings which apply to the project app as a whole."
 tags: ["project", "app", "configuration", "runtime", "Studio Pro", "languages", "certificate", "theme", "hashing", "hashing algorithm"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/project-settings.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/project-settings.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -24,7 +24,7 @@ The categories described below are available.
 
 A configuration is a group of settings. You can define any number of configurations. The active configuration (meaning, the one that will be used when running your application) is determined by the drop-down menu in the toolbar of Studio Pro.
 
-For more information on settings in a configuration, see [Configuration](configuration).
+For more information on settings in a configuration, see [Configuration](/refguide8/configuration/).
 
 ## 3 Runtime Tab
 
@@ -46,7 +46,7 @@ If you experience an issue while running your app in which objects seem to be lo
 
 Here you can select a microflow that is automatically executed immediately after the application has been started up.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 There is a timeout of *11 minutes* on the after startup microflow. If your after startup microflow takes longer than 11 minutes your whole app will fail to start.
 
 After startup is designed to initialize the app and therefore runs *before* the app is able to respond to incoming service requests (for example, published REST services).
@@ -60,13 +60,13 @@ Here you can select a microflow that is automatically executed when a shutdown c
 
 Here you can select a microflow which performs the checks on a running app that you think are required to assess the app's health.
 
-The result of each check is returned as a string, which is displayed in the [Developer Portal](/developerportal/deploy/environments). When the microflow returns an empty string, the application is healthy; otherwise, the string presents an explanation of why the application is not healthy.
+The result of each check is returned as a string, which is displayed in the [Developer Portal](/developerportal/deploy/environments/). When the microflow returns an empty string, the application is healthy; otherwise, the string presents an explanation of why the application is not healthy.
 
-This microflow gets called every 10 seconds to check if the app is still healthy. This is done by executing it using m2ee on the admin port of your app. For more information, see the section [Health Check](monitoring-mendix-runtime#check-health) in *Monitoring Mendix Runtime*.
+This microflow gets called every 10 seconds to check if the app is still healthy. This is done by executing it using m2ee on the admin port of your app. For more information, see the section [Health Check](/refguide8/monitoring-mendix-runtime/#check-health) in *Monitoring Mendix Runtime*.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-The health check microflow is specific to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy). For other clouds, the admin port can be called, or the health check microflow can be exposed through a REST API.
+The health check microflow is specific to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/). For other clouds, the admin port can be called, or the health check microflow can be exposed through a REST API.
 
 {{% /alert %}}
 
@@ -135,7 +135,7 @@ So 80 milliseconds per operation is not that much, right? Well, that depends on 
 
 The difference is noticeable when the operation takes less time. So if you expect a very high amount of concurrency in operations where hashing takes place (most commonly any place where login operations are involved), you might want to consider changing your hashing algorithm.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 It is important to remember when changing hashing algorithms is that any hashed attribute (like the System$User password attribute) has its algorithm set on hashing. In other words, for the hashing type to take effect, any existing hashed attribute will have to be reset using the new hashing type.
 {{% /alert %}}
 
@@ -164,7 +164,7 @@ This table presents the results of rounding the input to one digit with the give
 
 If this option is enabled, users can sign in multiple times through different clients (for example, desktop browser and tablet). Otherwise, an existing session for a user is signed out when the user signs in somewhere else.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 In production, this only works with licenses based on concurrent users.
 
@@ -196,19 +196,15 @@ Moving from **Runtime** to **Database** means that the unique constraints will b
 
 Before switching to the Database option, the **DataStorage.EnableDiagnostics** custom runtime setting can be used to generate a uniqueness violation report. The unique constraint migration will need to be done if the generated report shows violations.
 
-For more details on migration, see [Uniqueness Constraint Migration](uniqueness-constraint-migration).
+For more details on migration, see [Uniqueness Constraint Migration](/refguide8/uniqueness-constraint-migration/).
 
 ##### 3.12.3.2 Switching from Database to Runtime
 
 Falling back to the **Runtime** option will remove the unique constraints from the database, and uniqueness rules will not be checked at the database level anymore. Hence, data accuracy cannot be guaranteed at the highest level, especially in the case of high concurrency transactions.
 
-### 3.13 Web Service Calls {#web-service-calls}
-
-The way web services are called has been optimized, which means you can use custom proxy settings for each web service call. However, this implementation does not support complex schemas that use a policy reference with an algorithm suite. This configuration option allows you to use the old implementation, in case you need this feature.
-
 ## 4 Languages Tab
 
-For more information about using different languages in your app, see [Language Menu](translatable-texts).
+For more information about using different languages in your app, see [Language Menu](/refguide8/translatable-texts/).
 
 ### 4.1 Default Language
 
@@ -229,24 +225,24 @@ Certificates are used to connect to web services over HTTPS when the following r
 
 These certificates can be imported into Studio Pro using the **Import** button. Certificate authority files usually have a *.crt* extension, and client certificates usually have a *.p12* or *.pfx* extension. After importing, use **View details** to acquire more information concerning the certificate.
 
-Client certificates added here will be used whenever a server accepts a client certificate. If you upload more than one client certificate, one of them will be chosen based on the requirements of the server. If you need more control over client certificates, you should not upload the certificates here, but use the [Runtime customization](custom-settings) *ClientCertificates*, *ClientCertificatePasswords*, and *ClientCertificateUsages* settings.
+Client certificates added here will be used whenever a server accepts a client certificate. If you upload more than one client certificate, one of them will be chosen based on the requirements of the server. If you need more control over client certificates, you should not upload the certificates here, but use the [Runtime customization](/refguide8/custom-settings/) *ClientCertificates*, *ClientCertificatePasswords*, and *ClientCertificateUsages* settings.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 When running from Studio Pro or from Eclipse, the certificates will be used automatically to connect over *HTTPS*. When running on a server, the location of the certificate files has to be specified in the configuration file.
 
 {{% /alert %}}
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Be aware that during local deployment, the certificate files will be located in the **deployment** folder, under **model/certificates**. Therefore, do not use production certificates during development.
 
 {{% /alert %}}
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Certificates can be installed in the Windows Certificate Store using the **Install Certificate** wizard in the **View details** form. This can be useful when trying to access a WSDL-file using an *HTTPS* connection which requires a client certificate.
 
 {{% /alert %}}
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 When an SSLException occurs at runtime with the message `HelloRequest followed by an unexpected handshake message` or when a web service does not respond (Java 6 update 21 and above) when using the imported certificates, this is caused by either the client or server not being [RFC-5746](http://www.ietf.org/rfc/rfc5746.txt)-compatible.
 
@@ -266,13 +262,13 @@ For background information, see [Transport Layer Security (TLS) Renegotiation Is
 
 ### 6.1 UI Resources Package
 
-The look and feel of a Mendix application is governed by the [UI resources package](ui-resources-package). This package supplies the project with all the required theme information accompanied by matching page templates and building blocks. The module which is designated as the UI resources package is governed by the **UI resources package** setting. Generally, this is automatically updated when a new UI resources package is imported. However, with this setting, the desired module can also be set manually.
+The look and feel of a Mendix application is governed by the [UI resources package](/refguide8/ui-resources-package/). This package supplies the project with all the required theme information accompanied by matching page templates and building blocks. The module which is designated as the UI resources package is governed by the **UI resources package** setting. Generally, this is automatically updated when a new UI resources package is imported. However, with this setting, the desired module can also be set manually.
 
 ### 6.2 Theme ZIP File
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-[Deprecated] The use of a ZIP file to configure a project's theme is deprecated. A [UI resources package](ui-resources-package) is the preferred method of sharing themes.
+[Deprecated] The use of a ZIP file to configure a project's theme is deprecated. A [UI resources package](/refguide8/ui-resources-package/) is the preferred method of sharing themes.
 
 {{% /alert %}}
 

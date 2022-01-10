@@ -11,7 +11,7 @@ tags: ["integration", "web service", "client certificate"]
 
 Some services require you to authenticate using a client certificate. This how-to describes how to configure your app to do this.
 
-Let's assume that you already have an app that calls a service. For details on how to configure this, have a look at [How to Consume a REST Service](consume-a-rest-service) or [How to Consume a Simple Web Service](consume-a-simple-web-service).
+Let's assume that you already have an app that calls a service. For details on how to configure this, have a look at [How to Consume a REST Service](/howto/integration/consume-a-rest-service/) or [How to Consume a Simple Web Service](/howto/integration/consume-a-simple-web-service/).
 
 This how-to will teach you how to do the following:
 

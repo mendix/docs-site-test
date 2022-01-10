@@ -1,11 +1,11 @@
 ---
 title: "Actions"
-url: /refguide7/actions
+url: /refguide7/actions/
 parent: "published-app-services"
 ---
 
-{{% alert type="info" %}}
-App services have been deprecated in version 7.23.4 and are marked for removal. Use a [published web service](published-web-services) or a [published REST service](published-rest-services) instead.
+{{% alert color="info" %}}
+App services have been deprecated in version 7.23.4 and are marked for removal. Use a [published web service](/refguide7/published-web-services/) or a [published REST service](/refguide7/published-rest-services/) instead.
 {{% /alert %}}
 
 Provides the actual microflow actions of the app service. Note that once an app service version is set to Consumable, its parameters and return type are no longer editable as they are part of the app service contract.
@@ -68,7 +68,7 @@ Defines what kind of object will be returned by the action. This can be a simple
 
 Defines whether the return value can be **empty**.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/integration/published-app-services/actions/16843921.png)
 

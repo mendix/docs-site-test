@@ -1,16 +1,16 @@
 ---
 title: "Annotation"
-url: /refguide8/annotation
+url: /refguide8/annotation/
 parent: "application-logic"
-menu_order: 60
+weight: 60
 tags: ["studio pro", "annotation", annotation flow]
 aliases:
     - /refguide8/annotation-flow.html
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/annotation.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/annotation.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -25,7 +25,7 @@ In the example below, you use a **Show message** activity to warn end-users abou
 
 ### 2.1 Caption
 
-For details, see [Common Properties](microflow-element-common-properties).
+For details, see [Common Properties](/refguide8/microflow-element-common-properties/).
 
 ## 3 Annotation Flow {#annotation-flow}
 

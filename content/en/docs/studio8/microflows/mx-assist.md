@@ -1,8 +1,8 @@
 ---
 title: "Mendix Assist"
-url: /studio8/mx-assist
+url: /studio8/mx-assist/
 category: "Microflows"
-menu_order: 10
+weight: 10
 description: "Describes Mendix Assist in Mendix Studio."
 tags: ["studio", "mendix assist", "AI", "assistant"]
 ---
@@ -15,11 +15,11 @@ Mendix Assist was built using machine learning analysis of over twelve million a
 
 ## 2 Mendix Assist Overview
 
-Mendix Assist is enabled by default and is displayed as a blue dot in a flow of a [microflow](microflows). A bow-tie appears on the dot when you hover over it. 
+Mendix Assist is enabled by default and is displayed as a blue dot in a flow of a [microflow](/studio8/microflows/). A bow-tie appears on the dot when you hover over it. 
 
 ![](/attachments/studio8/microflows/mx-assist/mendix-assist-icon.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 It is possible to add activities in a regular way without using Mendix Assist. 
 
@@ -32,7 +32,7 @@ Click the bow-tie to view Mendix Assist recommendations.
 
 Mendix Assist lists the top five recommendations from the most probable to less probable ones for the particular microflow. Click the suggestion to proceed with it and insert it into a microflow. For more information, see the [Adding Activities and Elements with Mendix Assist](#add-activities) section.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Some activities still need to be configured in **Properties** to function correctly. This concerns activities such as **Create Object**, when you need to set entity and attribute values manually.  
 
@@ -67,7 +67,7 @@ You can also enable/disable Mendix Assist by clicking the information icon in th
 {{/* % image_container width="300" % */}}![](/attachments/studio8/microflows/mx-assist/info-icon-setting.png)
 {{/* % /image_container % */}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If you disable Mendix Assist, the information dialog will be disabled as well. Once you re-enable Mendix Assist, the information dialog is also re-enabled. 
 {{% /alert %}}    
 
@@ -92,12 +92,12 @@ The activity is added to the flow.
 
 ### 4.2 Adding a Check {#add-check}
 
-Adding a check means that you will add a **Decision** with Boolean attribute type: your flow will be split into one flow labeled *true* and another one labeled *false*. For more information, see [Decision](microflows-decision).   
+Adding a check means that you will add a **Decision** with Boolean attribute type: your flow will be split into one flow labeled *true* and another one labeled *false*. For more information, see [Decision](/studio8/microflows-decision/).   
 
 {{/* % image_container width="300" % */}}![](/attachments/studio8/microflows/mx-assist/check-added.png)
 {{/* % /image_container % */}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you do not have a variable or/and the attributes of the Boolean type, this option will not be
 listed in the suggestions.
@@ -117,15 +117,15 @@ To add the check, do the following:
 
 The decision is added to the microflow. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-The number of options for the check depend on the number of variables of Boolean type in your microflow and on the number of attributes of Boolean type in your domain model. For more information, see [Domain Model](domain-models) and [Attributes](domain-models-attributes). You can also add a check if an object exists microflow.
+The number of options for the check depend on the number of variables of Boolean type in your microflow and on the number of attributes of Boolean type in your domain model. For more information, see [Domain Model](/studio8/domain-models/) and [Attributes](/studio8/domain-models-attributes/). You can also add a check if an object exists microflow.
 
 {{% /alert %}}
 
 ### 4.3 Adding a Decision
 
-When you add a decision via Mendix Assist that means you add a decision with attribute of enumeration type to your microflow. For more information, see [Decision](microflows-decision) and [Attributes](domain-models-attributes). This means, if you do not have parameters with enumeration data type, **Add decision** will not appear in the suggestions.
+When you add a decision via Mendix Assist that means you add a decision with attribute of enumeration type to your microflow. For more information, see [Decision](/studio8/microflows-decision/) and [Attributes](/studio8/domain-models-attributes/). This means, if you do not have parameters with enumeration data type, **Add decision** will not appear in the suggestions.
 
 To add the decision, do the following:
 
@@ -138,14 +138,14 @@ To add the decision, do the following:
 
 The decision is added to the microflow.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-The number of options for **Add a decision** depend on the number of parameters with enumeration data type in your microflow. For more information, see [Domain Model in Studio](domain-models) and [Attributes](domain-models-attributes).
+The number of options for **Add a decision** depend on the number of parameters with enumeration data type in your microflow. For more information, see [Domain Model in Studio](/studio8/domain-models/) and [Attributes](/studio8/domain-models-attributes/).
 
 {{% /alert %}}
 
 ## 5 Read More
 
-* [General Info](general)
-* [Microflows](microflows)
-* [Decision](microflows-decision)
+* [General Info](/studio8/general/)
+* [Microflows](/studio8/microflows/)
+* [Decision](/studio8/microflows-decision/)

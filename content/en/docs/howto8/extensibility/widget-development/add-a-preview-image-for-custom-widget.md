@@ -1,6 +1,6 @@
 ---
 title: "Build a Preview Image for a Custom Widget"
-url: /howto8/extensibility/add-a-preview-image-for-custom-widget
+url: /howto8/extensibility/add-a-preview-image-for-custom-widget/
 parent: "widget-development"
 tags: ["image", "preview", "widget", "custom"]
 ---
@@ -18,7 +18,7 @@ This how-to will show you how to specify a preview image that will be rendered i
 Before starting with this how-to, make sure you have completed the following prerequisites:
 
 * Download and install [Mendix Studio Pro](https://marketplace.mendix.com/link/studiopro/)
-* Read [Custom Widgets](index)
+* Read 
 
 ## 3 Adding a Preview Image to Your Custom Widget Package
 

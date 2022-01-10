@@ -37,11 +37,11 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.1 Data Type
 
-**Data type** defines what type of data is stored in the variable. A variable can have one of the following [data types](data-types): Boolean, Enumeration, Decimal, Integer/Long, or String.
+**Data type** defines what type of data is stored in the variable. A variable can have one of the following [data types](/refguide/data-types/): Boolean, Enumeration, Decimal, Integer/Long, or String.
 
 ### 3.2 Initial Value
 
-Defines the initial value of the variable. The value is entered using an [expression](expressions) (the result of the microflow expression must match the data type of the variable).
+Defines the initial value of the variable. The value is entered using an [expression](/refguide/expressions/) (the result of the microflow expression must match the data type of the variable).
 
 ### 3.3 Variable Name
 
@@ -49,8 +49,8 @@ Variable defines the name of the resulting variable. The variable can be used by
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 
-* [Activities](activities)
+* [Activities](/refguide/activities/)

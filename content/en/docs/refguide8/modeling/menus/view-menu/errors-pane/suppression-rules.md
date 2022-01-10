@@ -1,14 +1,14 @@
 ---
 title: "Suppression Rules"
-url: /refguide8/suppression-rules
+url: /refguide8/suppression-rules/
 parent: "errors-pane"
-menu_order: 10
+weight: 10
 description: "Describes suppression rules for warnings in Studio Pro."
 tags: ["Studio Pro", "consistency errors", "checks", "warnings"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/suppression-rules.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/suppression-rules.pdf).
 {{% /alert %}}
 
 ## 1 Introduction  {#intro}
@@ -79,7 +79,7 @@ For more information on how to edit or delete a suppression rule, see the [Manag
 
 You can add, edit, delete, export, or import suppression rules. You can also suppress warnings from the Marketplace. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 After modifying suppression rules, click **OK** to close the **Manage Suppression Rules** dialog box and apply changes. 
 {{% /alert %}}
 
@@ -215,5 +215,5 @@ The table below describes the available settings:
 
 ## 6 Read More {#read-more}
 
-* [Errors Pane](errors-pane)
-* [Consistency Errors](consistency-errors)
+* [Errors Pane](/refguide8/errors-pane/)
+* [Consistency Errors](/refguide8/consistency-errors/)

@@ -15,28 +15,28 @@ With reports widgets, you can create reports from the database data. Reporting i
 
 The **Report widgets** category contains the following widgets:
 
-* [Report grid](report-grid) – displays data in a form of a table; the data for the reports is provided by a [Data set](data-sets)
+* [Report grid](/refguide/report-grid/) – displays data in a form of a table; the data for the reports is provided by a [Data set](/refguide/data-sets/)
 
     ![Example report grid](/attachments/refguide/modeling/pages/report-widgets/report-grid-example.png)
 
-* [Report parameter](report-parameter) – allows the end-user to specify a parameter of a [Data set](data-sets) that is then used for filtering the data displayed in a report
+* [Report parameter](/refguide/report-parameter/) – allows the end-user to specify a parameter of a [Data set](/refguide/data-sets/) that is then used for filtering the data displayed in a report
 
     ![Example report parameter](/attachments/refguide/modeling/pages/report-widgets/report-parameter-example.png)
 
-* [Report date parameter](report-date-parameter) – allows the end-user to specify the DateTime parameter of a [data set](data-sets), which is then used for filtering the data displayed in a report
+* [Report date parameter](/refguide/report-date-parameter/) – allows the end-user to specify the DateTime parameter of a [data set](/refguide/data-sets/), which is then used for filtering the data displayed in a report
 
     ![Example report date parameter](/attachments/refguide/modeling/pages/report-widgets/report-date-parameter-example.png)
 
-* [Generate report button](report-button) – generates a report when the end-user clicks the button
+* [Generate report button](/refguide/report-button/) – generates a report when the end-user clicks the button
 
     ![Example generate report button](/attachments/refguide/modeling/pages/report-widgets/generate-report-button-example.png)
 
 
 ## 2 Performing Basic Functions
 
-{{% snippet file="/static/_includes/refguide/performing-basic-functions-widgets.md" %}}
+{{% snippet file="refguide/performing-basic-functions-widgets.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [Pages](pages)
+* [Page](/refguide/page/)
+* [Pages](/refguide/pages/)

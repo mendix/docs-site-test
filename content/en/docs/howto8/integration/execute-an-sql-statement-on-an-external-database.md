@@ -1,14 +1,14 @@
 ---
 title: "Execute an SQL Statement on an External Database"
-url: /howto8/integration/execute-an-sql-statement-on-an-external-database
+url: /howto8/integration/execute-an-sql-statement-on-an-external-database/
 category: "Integration"
-menu_order: 17
+weight: 17
 tags: ["database connector", SQL", "database", "external database", "integration"]
 ---
 
 ## 1 Introduction
 
-The Mendix Platform offers many ways to integrate with external data, but integrating with external databases has not been a seamless experience until now. The [Database Connector](/appstore/connectors/database-connector) can be used to seamlessly connect to external databases without limiting you in your choice of database or SQL dialect, thus enabling you to incorporate external data directly in your Mendix application. Two actions are available via the connector: [Execute statement](#statement) and **Execute query**.
+The Mendix Platform offers many ways to integrate with external data, but integrating with external databases has not been a seamless experience until now. The [Database Connector](/appstore/connectors/database-connector/) can be used to seamlessly connect to external databases without limiting you in your choice of database or SQL dialect, thus enabling you to incorporate external data directly in your Mendix application. Two actions are available via the connector: [Execute statement](#statement) and **Execute query**.
 
 The **Execute statement** action provides a consistent environment for Mendix apps to perform an arbitrary SQL statement on relational external databases. A Java database connectivity (JDBC) API is used when this Java action attempts to connect with a relational database for which a JDBC driver exists.
 
@@ -22,7 +22,7 @@ The Database Connector can be used for the following SQL statements:
 * `DDL`
 * `SELECT` (only with the **Execute query** action, not with **Execute statement**)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Automatic mapping is currently not possible.
 {{% /alert %}}
 
@@ -72,6 +72,6 @@ To use an ExecuteStatement action in a microflow, follow these steps:
 
 	The statement action's result is either an **Integer** or a **Long** value, which usually represents the amount of affected rows.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 It is your responsibility to apply the proper security, as this action can allow for SQL injection into your Mendix application. Among others things, do not use user-supplied or environment-supplied variables in your SQL statement; if possible, you should prefer them to be static.
 {{% /alert %}}

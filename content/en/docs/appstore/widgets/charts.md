@@ -196,9 +196,9 @@ Use this with caution, as the configs set up here shall be applied to every inst
 
 ## 4 Read More
 
-* [Charts Configuration](/refguide/charts-configuration)
-* [How to Fine-Tune a Chart with Advanced Settings](/howto/front-end/charts-advanced-tuning)
-* [How to Create a Basic Chart](/howto/front-end/charts-basic-create)
-* [How to Use a Chart with a REST Data Source](/howto/front-end/charts-basic-rest)
-* [How to Create a Dynamic Series Chart](/howto/front-end/charts-dynamic-series)
-* [How to Use the Charts Theme](/howto/front-end/charts-theme)
+* [Charts Configuration](/refguide/charts-configuration/)
+* [How to Fine-Tune a Chart with Advanced Settings](/howto/front-end/charts-advanced-tuning/)
+* [How to Create a Basic Chart](/howto/front-end/charts-basic-create/)
+* [How to Use a Chart with a REST Data Source](/howto/front-end/charts-basic-rest/)
+* [How to Create a Dynamic Series Chart](/howto/front-end/charts-dynamic-series/)
+* [How to Use the Charts Theme](/howto/front-end/charts-theme/)

@@ -9,7 +9,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-This document describes published web services. If you're looking for specific information on the published web services screen, you can check the [Published web service](published-web-service) documentation.
+This document describes published web services. If you're looking for specific information on the published web services screen, you can check the [Published web service](/refguide/published-web-service/) documentation.
 
 You can publish your own web services in a Mendix application. These webservices are made up of operations. Other applications can then call operations of this webservice and you can return a result. This result is based on a microflow that will be executed when the webservice is called.
 

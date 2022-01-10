@@ -9,11 +9,11 @@ tags: ["Microflow", "Nanoflow", "Decision", "Logic"]
 
 ## 1 Introduction
 
-A rule is a special kind of microflow. Its result should be an enumeration or a Boolean and it can be used in a [decision](decision) to make a decision based on that result. The idea is that complicated decisions can be consolidated in rules and reused in various places.
+A rule is a special kind of microflow. Its result should be an enumeration or a Boolean and it can be used in a [decision](/refguide/decision/) to make a decision based on that result. The idea is that complicated decisions can be consolidated in rules and reused in various places.
 
 ## 2 Differences from Microflows
 
-Rules are very similar to microflows; see the documentation on [Microflows](microflows) for more information on how to build a rule. There are only a few differences between rules and microflows:
+Rules are very similar to microflows; see the documentation on [Microflows](/refguide/microflows/) for more information on how to build a rule. There are only a few differences between rules and microflows:
 
 *   A rule can only be used in a decision
 *   The return type has to be Boolean or enumeration
@@ -23,5 +23,5 @@ Rules are very similar to microflows; see the documentation on [Microflows](micr
 
 ## 3 Read More
 
-* [Microflows](microflows)
-* [Decision](decision)
+* [Microflows](/refguide/microflows/)
+* [Decision](/refguide/decision/)

@@ -40,4 +40,4 @@ To physically reclaim currently unused space that was created by deleting record
 
 ## 4 Read More
 
-* [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy)
+* [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/)

@@ -46,4 +46,4 @@ entity1Interface.load((entity1) => {
 
 {{% /alert %}}
 
-Continue with [How to Generate Code from the Model](generating-code-from-the-model).
+Continue with [How to Generate Code from the Model](/apidocs-mxsdk/mxsdk/generating-code-from-the-model/).

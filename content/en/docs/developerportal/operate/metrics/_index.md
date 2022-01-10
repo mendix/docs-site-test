@@ -24,10 +24,10 @@ In this tab you can view graphs which display the following information about th
 
 The information displayed in **Trends** depends on which **Mendix Cloud version** the app is running. The following documents describe the different trends information available:
 
-*   [Trends in Mendix Cloud v3](trends)
-*   [Trends in Mendix Cloud v4](trends-v4)
+*   [Trends in Mendix Cloud v3](/developerportal/operate/trends/)
+*   [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/)
 
-You can find the Mendix Cloud version of your App in the **Environment details**. For more information, see [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region).
+You can find the Mendix Cloud version of your App in the **Environment details**. For more information, see [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region/).
 
 ## 3 Running Now
 
@@ -66,10 +66,10 @@ If you select a user session you can click **Details** to see which entities are
 
 {{% alert color="info" %}}
 
-Runtime versions 7 and above are stateless and do not cache Mendix objects on the server. See the [Mendix Desktop Modeler Release Notes 7.0](/releasenotes/studio-pro/7.0) for more information.
+Runtime versions 7 and above are stateless and do not cache Mendix objects on the server. See the [Mendix Desktop Modeler Release Notes 7.0](/releasenotes/studio-pro/7.0/) for more information.
 
 {{% /alert %}}
 
 ## 5 Read More
 
-* [Environment Details](/developerportal/deploy/environments-details)
+* [Environment Details](/developerportal/deploy/environments-details/)

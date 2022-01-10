@@ -20,8 +20,8 @@ You often reuse some of the same test steps in your test cases. For example, to 
 
 Before starting with this how-to, make sure you have completed the following prerequisites:
 
-* Read [How to Get Started](ht-two-getting-started)
-* Read [How to Create a Test Case](ht-two-create-a-test-case)
+* Read [How to Get Started](/addons/ats-addon/ht-two-getting-started/)
+* Read [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 
 ## 3 Extract actions
 
@@ -119,7 +119,7 @@ The actions to delete an expense are always the same, but the value of the descr
 
 	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-extracted-actions/edit-input-parameter-dialog.png)
 
-11. Enter **Column Value** in the **Name** field. When defining action parameter names, always use the ATS [naming conventions](rg-one-best-practices).
+11. Enter **Column Value** in the **Name** field. When defining action parameter names, always use the ATS [naming conventions](/addons/ats-addon/rg-one-best-practices/).
 12. Enter a description in the **Description** field. (for example, *Enter the value of the description of the expense to be deleted.*). Giving each input parameter a description of what to enter in the input parameter is advised.
 13. Click **Save**.
 
@@ -145,4 +145,4 @@ Congratulations, you created a reusable extracted action to delete a new expense
 
 ## 4 Next Up
 
-The next how-to is [How to Schedule Test Cases/Test Suites](ht-two-schedule-testcase-testsuite). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+The next how-to is [How to Schedule Test Cases/Test Suites](/addons/ats-addon/ht-two-schedule-testcase-testsuite/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

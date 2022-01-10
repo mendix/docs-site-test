@@ -1,15 +1,15 @@
 ---
 title: "Step 2: Embed the Microflow in Your App"
-url: /studio-how-to8/microflows-how-to-configure-decision-p2
+url: /studio-how-to8/microflows-how-to-configure-decision-p2/
 parent: "microflows-how-to-configure-decision"
 description: "This how to describes the process of configuring a decision in in Mendix Studio."
-menu_order: 20
+weight: 20
 tags: ["studio", "microflows", "decision", "pages"]
 ---
 
 ## 1 Introduction 
 
-In the [previous step](microflows-how-to-configure-decision-p1), you have configured microflows and decisions with enumeration attribute type and Boolean attribute type, now you can validate the microflows by adding them to pages. This how-to explains how you can add microflows with decisions to pages in Mendix Studio. 
+In the [previous step](/studio-how-to8/microflows-how-to-configure-decision-p1/), you have configured microflows and decisions with enumeration attribute type and Boolean attribute type, now you can validate the microflows by adding them to pages. This how-to explains how you can add microflows with decisions to pages in Mendix Studio. 
 
 **This how-to will teach you how to do the following:**
 
@@ -19,7 +19,7 @@ In the [previous step](microflows-how-to-configure-decision-p1), you have config
 
 To start this tutorial, make sure you have completed the following prerequisites:
 
-* [Step 1: Build the Domain Model & Configure a Microflow](microflows-how-to-configure-decision-p1)
+* [Step 1: Build the Domain Model & Configure a Microflow](/studio-how-to8/microflows-how-to-configure-decision-p1/)
 
 ## 3 Embedding the Microflow to Pages   
 
@@ -29,7 +29,7 @@ After microflows are created, you can add them to pages to run them in your app.
 
 To embed the microflow with a decision (the attribute of the enumeration type) to pages, do the following:
 
-1. Create a page for the existing customers details and name it *Customer_details*. For more information on creating pages, see the [Creating a New Page](/studio8/page-editor) section in *Pages*.
+1. Create a page for the existing customers details and name it *Customer_details*. For more information on creating pages, see the [Creating a New Page](/studio8/page-editor/) section in *Pages*.
 2.  In **Toolbox** > **Widgets** > **Data Containers**, find **Data View**.
 
     ![](/attachments/studio-how-to8/microflows/microflows-how-to-configure-decision/microflows-how-to-configure-decision-p2/data-view.png)
@@ -47,7 +47,7 @@ To embed the microflow with a decision (the attribute of the enumeration type) t
     b. Click **Select Page**.<br/>
 
     ![](/attachments/studio-how-to8/microflows/microflows-how-to-configure-decision/microflows-how-to-configure-decision-p2/create-button-properties.png) <br/>
- <br/>
+
     c. In the **Select Page** dialog box, click **New** page.<br/>
     d. In the **Create new page** dialog box, fill out the title of the page, for example, *New_customer*. <br/>
     e. Tick **Pre-fill page contents based on the Customer entity** and click **Create**.
@@ -72,7 +72,7 @@ To embed the microflow with a decision (the attribute of the enumeration type) t
 
 Congratulations! Now when the end-user clicks **Details**, the form for the corresponding customer grade will be opened. 
 
-You can now [preview your app](/studio8/publishing-app) or publish it.
+You can now [preview your app](/studio8/publishing-app/) or publish it.
 
 ### 3.2 Embedding the Microflow Having a Decision with the Attribute of the Boolean Type 
 
@@ -114,4 +114,4 @@ To embed the microflow with a decision (the attribute of the Boolean type), do t
 
 Congratulations! Now when the end-user clicks **Place order**, only customers who are not blocked will be able to proceed. If a customer is blocked, they will get an error message. 
 
-You can preview and/or publish your app. For more information on how to preview and publish an app, see [Previewing & Publishing Your App](/studio8/publishing-app).
+You can preview and/or publish your app. For more information on how to preview and publish an app, see [Previewing & Publishing Your App](/studio8/publishing-app/).

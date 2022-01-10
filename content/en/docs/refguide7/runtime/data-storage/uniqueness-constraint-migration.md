@@ -1,8 +1,8 @@
 ---
 title: "Uniqueness Constraint Migration"
-url: /refguide7/uniqueness-constraint-migration
+url: /refguide7/uniqueness-constraint-migration/
 parent: "data-storage"
-menu_order: 30
+weight: 30
 ---
 
 ## 1 Introduction
@@ -72,7 +72,7 @@ We enforce this new stricter association on existing data in order to avoid easi
 
 To help with migrating your old data, Mendix has developed a migration toolkit for Mendix 6 and Mendix 7.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 The MigrationToolkit is designed for applications using PostgreSQL databases only.
 {{% /alert %}}
 

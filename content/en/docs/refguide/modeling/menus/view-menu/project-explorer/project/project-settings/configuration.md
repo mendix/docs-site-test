@@ -16,7 +16,7 @@ You can use configurations to have different database settings for different peo
 
 {{% alert color="warning" %}}
 
-When you are deploying your application to a server or the Mendix cloud you will have to configure settings  there. For more information, see [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy).
+When you are deploying your application to a server or the Mendix cloud you will have to configure settings  there. For more information, see [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/).
 
 {{% /alert %}}
 
@@ -72,8 +72,8 @@ Only use this functionality if you know exactly what you are doing. Wrong values
 
 Each custom setting consists of a name and a value. For example, to enable persistent sessions you add a custom setting with name `PersistentSessions` and value `true`.
 
-For settings overview, see [Runtime Customization](custom-settings).
+For settings overview, see [Runtime Customization](/refguide/custom-settings/).
 
 ## 3 Read More
 
-* [App Settings](project-settings)
+* [App Settings](/refguide/project-settings/)

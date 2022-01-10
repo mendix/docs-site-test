@@ -1,6 +1,6 @@
 ---
 title: "Studio Ranges & Mendix Versions"
-url: /studio8/general-versions
+url: /studio8/general-versions/
 category: "General Info"
 description: "Describes how Studio ranges relate to Mendix versions."
 tags: ["studio", "studio pro", "versions", "version", "range"]
@@ -31,7 +31,7 @@ The *Studio version* is updated continuously (even daily), which will provide yo
 
 ![](/attachments/studio8/general/general-versions/top-bar-upgrade.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Automatic upgrade will not be offered in Studio when moving from Mendix 7 to Mendix 8, as Mendix 8 contains changes that cannot be upgraded automatically using the regular Studio upgrade mechanism. For more information, see the [Upgrading to Mendix Version 8](#upgrade-to-8) section below.
 
@@ -41,7 +41,7 @@ This means that when you upgrade, you upgrade your whole app to a new Mendix ver
 
 When you see the upgrade notification, you can either stay on the current version and continue working (although you might not have the newest Mendix Platform features and improvements), or you can upgrade to the newest version. When you upgrade, you will automatically be upgraded to the latest version possible, even if it is in a new Studio range. 
 
-{{% alert type="info" %}} 
+{{% alert color="info" %}} 
 
 Studio has a minimum supported Mendix Studio version. This means that if the Mendix version of your app is lower than the minimum supported version, the upgrade is obligatory; otherwise, you will not be able to work on your app in Studio.  
 
@@ -59,7 +59,7 @@ The table below gives examples of how Mendix versions relate to Studio ranges, a
 | 8.0.0                  | 8.0–8.6      | 8.6.4                                                        |
 | 8.7.0                  | 8.7 & Above  | Latest available version of Mendix 8.                        |
 
-{{% alert type="warning" %}} 
+{{% alert color="warning" %}} 
 
 Once you have upgraded to the newest version, you cannot revert the upgrade. Also, anyone working on the app using Studio Pro must use the new version of Studio Pro from that moment on.
 
@@ -74,7 +74,7 @@ This means the following:
 * Existing apps built in Studio will remain on the latest release of Mendix version 7.23 
 * Newly created apps in Studio will have Mendix version 8 from the start
 
-Automatic upgrade will not be offered in Studio when moving from Mendix 7 to Mendix 8. So, developers wanting to upgrade their Studio apps to Mendix version 8 can only do so in Studio Pro or by involving developers familiar with Studio Pro. For more information on upgrading apps using Studio Pro, see [Moving from Desktop Modeler Version 7 to Studio Pro 8](/refguide8/moving-from-7-to-8). 
+Automatic upgrade will not be offered in Studio when moving from Mendix 7 to Mendix 8. So, developers wanting to upgrade their Studio apps to Mendix version 8 can only do so in Studio Pro or by involving developers familiar with Studio Pro. For more information on upgrading apps using Studio Pro, see [Moving from Desktop Modeler Version 7 to Studio Pro 8](/refguide8/moving-from-7-to-8/). 
 
 ### 3.2 Postponing the Immediate Upgrade to the Next Version 
 
@@ -84,5 +84,5 @@ While we encourage users to upgrade to a new Mendix Studio Pro version as soon a
 
 ## 4 Read More
 
-* [Studio Release Notes](/releasenotes/studio)
-* [Studio Pro Release Notes](/releasenotes/studio-pro)
+* [Studio Release Notes](/releasenotes/studio/)
+* [Studio Pro Release Notes](/releasenotes/studio-pro/)

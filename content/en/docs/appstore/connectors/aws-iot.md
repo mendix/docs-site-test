@@ -34,7 +34,7 @@ in the **resources** folder of your Mendix app:
 
 {{/* % image_container width="400" % */}}
 ![](/attachments/appstore/connectors/aws-iot/certificates.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 2.1 Things
 

@@ -1,17 +1,17 @@
 ---
 title: "HttpRequest & HttpResponse System Entities"
-url: /refguide8/http-request-and-response-entities
+url: /refguide8/http-request-and-response-entities/
 parent: "integration"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/http-request-and-response-entities.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/http-request-and-response-entities.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-`HttpRequest` is a system entity that represents a request to a server. `HttpResponse` represents the response from the server. Use these entities when [publishing](published-rest-services) or [consuming](consumed-rest-services) REST services.
+`HttpRequest` is a system entity that represents a request to a server. `HttpResponse` represents the response from the server. Use these entities when [publishing](/refguide8/published-rest-services/) or [consuming](/refguide8/consumed-rest-services/) REST services.
 
 ![](/attachments/refguide8/modeling/integration/http-request-and-response-entities/http-request-and-response-domain-model.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "XPath count"
-url: /refguide7/xpath-count
+url: /refguide7/xpath-count/
 parent: "xpath-query-functions"
 ---
 

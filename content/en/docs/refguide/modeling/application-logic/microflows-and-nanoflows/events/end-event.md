@@ -17,7 +17,7 @@ In the example below, a *Buyer* variable of the *Customer* entity is returned by
 
 ![](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/events/end-event/end-event.png)
 
-The number of end events depends on the number of possible outcomes of the microflow or a nanoflow. That means there can be more than one end event, for example when a [decision](decision) is used:
+The number of end events depends on the number of possible outcomes of the microflow or a nanoflow. That means there can be more than one end event, for example when a [decision](/refguide/decision/) is used:
 
 ![](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/events/end-event/end-events.png)
 
@@ -35,7 +35,7 @@ You can choose to return nothing, or to return, for example, a list, enumeration
 
 ![](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/events/end-event/end-event-type.png)
 
-The return value can be entered as an [expression](expressions).
+The return value can be entered as an [expression](/refguide/expressions/).
 
 {{% alert color="info" %}}
 
@@ -45,6 +45,6 @@ If you are calling a microflow from another microflow, note that a *calling* mic
 
 ## 3 Read More
 
-* [Start Event](start-event)
+* [Start Event](/refguide/start-event/)
 
-* [Microflow Call](microflow-call)
+* [Microflow Call](/refguide/microflow-call/)

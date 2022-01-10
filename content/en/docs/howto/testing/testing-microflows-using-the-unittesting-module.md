@@ -24,9 +24,9 @@ Before you can start with this how-to, make sure you have completed the followin
 
     | Component | Version Used in This How-to |
     | --- | --- |
-    | [Unit Testing](/appstore/modules/unit-testing) | 8.0.0 |
-    | [Community Commons Function Library](/appstore/modules/community-commons-function-library) | 8.1.0 |
-    | [Object Handling](/appstore/modules/object-handling) | 3.0.0 |
+    | [Unit Testing](/appstore/modules/unit-testing/) | 8.0.0 |
+    | [Community Commons Function Library](/appstore/modules/community-commons-function-library/) | 8.1.0 |
+    | [Object Handling](/appstore/modules/object-handling/) | 3.0.0 |
 
 	{{% alert color="warning" %}}All the images, names, and steps in this how-to are based on the Marketplace component versions listed above. When using later versions of this content, images and/or names on your screen may be different than what is used in this how-to.
 	{{% /alert %}}
@@ -36,9 +36,9 @@ Before you can start with this how-to, make sure you have completed the followin
 In this chapter you will set up the unit testing module and run the example tests.
 
 1. Create a new app.
-2. Download the [Unit Testing](/appstore/modules/unit-testing) module.
-3. Download the [Community Commons Function Library](/appstore/modules/community-commons-function-library) module.
-4. Download the [Object Handling](/appstore/modules/object-handling) module.
+2. Download the [Unit Testing](/appstore/modules/unit-testing/) module.
+3. Download the [Community Commons Function Library](/appstore/modules/community-commons-function-library/) module.
+4. Download the [Object Handling](/appstore/modules/object-handling/) module.
 5.  Open the **Settings** of the app.
 6. Click the **Runtime** tab.
 7. Click the **Select** button to select an **After startup** microflow:
@@ -163,4 +163,4 @@ Do not test everything, focus on the most used and complex microflows!
 
 ## 5 Read More
 
-* [How to Create Automated Tests with TestNG](create-automated-tests-with-testng)
+* [How to Create Automated Tests with TestNG](/howto/testing/create-automated-tests-with-testng/)

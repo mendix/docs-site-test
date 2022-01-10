@@ -52,20 +52,20 @@ To set up the necessary Pusher app, follow these steps:
 	* `cluster` – `Pusher_Cluster`
 
 {{% alert color="info" %}}
-Make sure you have different apps (keys) created for each app and environment (development, acceptance, and production). When the credentials are shared, messages could go across environments and have unwanted side effects. The configuration can also be set per developer via **App Settings** > **Edit** configuration > [Constants](/refguide/configuration#constants).
+Make sure you have different apps (keys) created for each app and environment (development, acceptance, and production). When the credentials are shared, messages could go across environments and have unwanted side effects. The configuration can also be set per developer via **App Settings** > **Edit** configuration > [Constants](/refguide/configuration/#constants).
 {{% /alert %}}
 
 ## 3 Configuration
 
 To use this module after importing it from the Marketplace, follow these steps:
 
-1. Add the **Pusher User** [module role](/refguide/module-security#module-role) to the relevant app security [user role](/refguide/security#user-role).
+1. Add the **Pusher User** [module role](/refguide/module-security/#module-role) to the relevant app security [user role](/refguide/security/#user-role).
 2. Update the constants in the **Configuration** folder with the keys of the app.
 3.  Create a microflow to execute the **Notify** action with the following input parameters:
 	* Key settings
 	* **Action name** same as configured in the widget
 	* The context object of the widget
-4. Place the widget in a page within a [data view](/refguide/data-view), where the context should match the parameter object.
+4. Place the widget in a page within a [data view](/refguide/data-view/), where the context should match the parameter object.
 5.  In the **Action list**, add an action in which the **Action name** matches the action name parameter provided in the **Notify** action.
 6.  Select a microflow or nanoflow the execute the action.
 

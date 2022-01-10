@@ -12,14 +12,14 @@ aliases:
 ## 1 Introduction
 
 {{% alert color="info" %}}
-For more general information on security, see [Security](security).
+For more general information on security, see [Security](/refguide/security/).
 {{% /alert %}}
 
 Within a module you can define module roles and specify security settings for pages, microflows, entities, and datasets.
 
 ## 2 Module Role {#module-role}
 
-A module role is a specific role you create within the module to define a set of access permissions. The permissions are contained within the module. You can assign multiple module roles to a user role under the **App Security** > **User roles** tab. For more information on module roles, [user roles](user-roles), and their relation, see [Security](security).
+A module role is a specific role you create within the module to define a set of access permissions. The permissions are contained within the module. You can assign multiple module roles to a user role under the **App Security** > **User roles** tab. For more information on module roles, [user roles](/refguide/user-roles/), and their relation, see [Security](/refguide/security/).
 
 A module role has the following properties:
 
@@ -38,7 +38,7 @@ For each combination you can indicate whether or not the page is visible for the
 
 A page that is not visible for a specific role will not show up in navigation structures, and **Open Page** buttons leading to that page will not be rendered by default.
 
-Page access settings do not restrict users from navigating to a page through other means, for example through a deeplink or through a button that is forced to be visible (for more information, see [Common Widget Properties](common-widget-properties)). If you want to ensure that specific roles cannot access parts of your data or logic, than this must be expressed through **entity access** and **microflow access** constraints.
+Page access settings do not restrict users from navigating to a page through other means, for example through a deeplink or through a button that is forced to be visible (for more information, see [Common Widget Properties](/refguide/common-widget-properties/)). If you want to ensure that specific roles cannot access parts of your data or logic, than this must be expressed through **entity access** and **microflow access** constraints.
 
 ## 3 Microflow Access
 
@@ -48,7 +48,7 @@ The **Microflow access** tab is displayed as a matrix showing microflows and mod
 
 ![](/attachments/refguide/modeling/menus/view-menu/project-explorer/security/module-security/microflow-access-tab.png)
 
-For each combination you can indicate whether or not the module role has access to the microflow. You can also edit this information in a [microflow](microflow) using the **Allowed roles** property.
+For each combination you can indicate whether or not the module role has access to the microflow. You can also edit this information in a [microflow](/refguide/microflow/) using the **Allowed roles** property.
 
 {{% alert color="info" %}}
 Note that these roles are only checked when the microflow is executed from the client. A microflow is always allowed to call another microflow and these roles are not checked then.
@@ -62,7 +62,7 @@ The **Nanoflow access** tab is displayed as a matrix showing nanoflows and modul
 
 ![](/attachments/refguide/modeling/menus/view-menu/project-explorer/security/module-security/nanoflow-access-tab.png)
 
-For each combination you can indicate whether or not the module role has access to the nanoflow. You can also edit this information in the [nanoflow](nanoflow) using the **Allowed roles** property.
+For each combination you can indicate whether or not the module role has access to the nanoflow. You can also edit this information in the [nanoflow](/refguide/nanoflow/) using the **Allowed roles** property.
 
 ## 5 Entity Access {#entity-access}
 
@@ -72,7 +72,7 @@ The **Entity Access** tab is displayed as a matrix showing access rules that app
 
 ![](/attachments/refguide/modeling/menus/view-menu/project-explorer/security/module-security/entity-access-tab.png)
 
-Each access rule in turn applies to a set of module roles. For more information, see [Access Rules](access-rules).
+Each access rule in turn applies to a set of module roles. For more information, see [Access Rules](/refguide/access-rules/).
 
 ## 6 OData Access 
 
@@ -82,7 +82,7 @@ The **OData Access** tab is displayed as a matrix showing published OData servic
 
 ![](/attachments/refguide/modeling/menus/view-menu/project-explorer/security/module-security/odata-access-tab.png)
 
-For each combination, you can indicate whether the module role has access to the published OData service. You can also edit this information in [published OData services](published-odata-services) using the **Allowed roles** property in the **Settings** tab.
+For each combination, you can indicate whether the module role has access to the published OData service. You can also edit this information in [published OData services](/refguide/published-odata-services/) using the **Allowed roles** property in the **Settings** tab.
 
 ## 7 REST Access
 
@@ -94,11 +94,11 @@ The **REST Access** tab is displayed as a matrix showing published REST services
 
 For each REST service, you can indicate whether or not the module role has access to the published REST service.
 
-The **REST Access** tab is visible only when the service has the security set to require authentication. For more information, see [published REST services](published-rest-services).
+The **REST Access** tab is visible only when the service has the security set to require authentication. For more information, see [published REST services](/refguide/published-rest-services/).
 
 ## 8 Data Set Access
 
-**Data Set Access** shows the access which the module role has to each [dataset](data-sets).
+**Data Set Access** shows the access which the module role has to each [dataset](/refguide/data-sets/).
 
 | Value | Description |
 | --- | --- |
@@ -113,5 +113,5 @@ The ranges are defined in the parameters of the data set. Whether values in thes
 
 ## 9 Read More
 
-* [Security](security)
-* [User roles](user-roles)
+* [Security](/refguide/security/)
+* [User roles](/refguide/user-roles/)

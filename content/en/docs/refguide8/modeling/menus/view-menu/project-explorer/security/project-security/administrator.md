@@ -1,13 +1,13 @@
 ---
 title: "Administrator"
-url: /refguide8/administrator
+url: /refguide8/administrator/
 parent: "project-security"
-menu_order: 20
+weight: 20
 tags: ["studio pro", "administrator", "project security", "security"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/administrator.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/administrator.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -30,7 +30,7 @@ The user name is used to sign into the application as the Administrator.
 
 Default: *MxAdmin* 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Since this is general knowledge, it is safer to change this to a custom user name.
 {{% /alert %}}
 
@@ -40,21 +40,21 @@ The password is used to sign into the application as the Administrator. Click **
 
 Default: *1*
 
-{{% alert type="info" %}}
-This password is only used when Mendix is running locally. You can change the password for your other [environments](/developerportal/deploy/environments-details) in the Developer Portal.
+{{% alert color="info" %}}
+This password is only used when Mendix is running locally. You can change the password for your other [environments](/developerportal/deploy/environments-details/) in the Developer Portal.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Since this is general knowledge, it is safer to change this to a custom password.
 {{% /alert %}}
 
 ### 2.3 User Role {#user-role}
 
-The user role assigned to the Administrator. For more information, see [User Roles](user-roles). 
+The user role assigned to the Administrator. For more information, see [User Roles](/refguide8/user-roles/). 
 
 Default: *Administrator*
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The administrator is always created and has the System.Administrator role by default. The System.Administrator role allows users of your application to be managed. 
 
 For Free Apps, the user that created the application automatically has this role by default as well so you can use it to manage your users in that environment.
@@ -62,14 +62,14 @@ For Free Apps, the user that created the application automatically has this role
 This role may be helpful in case you have exceeded your user license restriction in which case you can use any user that has this System.Administrator role to sign in to manage your users.
 {{% /alert %}}
 
-{{% alert type="warning" %}}
-When your app is not deployed locally, for example to the Mendix Cloud, changes to the user role of the administrator account will not be applied until the administrator password is changed. See the [actions](/developerportal/deploy/environments-details#actions) section of *Environment Detail* for instructions on changing the admin password.
+{{% alert color="warning" %}}
+When your app is not deployed locally, for example to the Mendix Cloud, changes to the user role of the administrator account will not be applied until the administrator password is changed. See the [actions](/developerportal/deploy/environments-details/#actions) section of *Environment Detail* for instructions on changing the admin password.
 {{% /alert %}}
 
 ## 3 Read More
 
-* [Project Security](project-security)
-* [User Roles](user-roles)
-* [Demo Users](demo-users)
-* [Anonymous Users](anonymous-users)
-* [Password Policy](password-policy)
+* [Project Security](/refguide8/project-security/)
+* [User Roles](/refguide8/user-roles/)
+* [Demo Users](/refguide8/demo-users/)
+* [Anonymous Users](/refguide8/anonymous-users/)
+* [Password Policy](/refguide8/password-policy/)

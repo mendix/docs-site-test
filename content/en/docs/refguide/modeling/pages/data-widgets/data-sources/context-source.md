@@ -19,12 +19,12 @@ The **Context** source is a data source of a data view. Data views with this dat
 
 The **Entity (path)** property specifies the entity that will be shown in the data view. If you have a top-level data view, **Entity (path)** is an entity and the page will expect the object or objects of this entity to be passed to it when opened. 
 
-If you have a nested data view, you can select an entity that has associations with the entity of a surrounding data container, and the entity of the surrounding data container should be a parent of this association. For more information on associations, see [Associations](associations). 
+If you have a nested data view, you can select an entity that has associations with the entity of a surrounding data container, and the entity of the surrounding data container should be a parent of this association. For more information on associations, see [Associations](/refguide/associations/). 
 
 {{/* % image_container width="400" % */}}![Context Source](/attachments/refguide/modeling/pages/data-widgets/data-sources/context-source/context-source-example.png)
 {{/* % /image_container % */}}
 
 ## 3 Read More
 
-* [Data Containers](data-widgets)
-* [Associations](associations)
+* [Data Containers](/refguide/data-widgets/)
+* [Associations](/refguide/associations/)

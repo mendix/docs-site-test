@@ -15,10 +15,10 @@ With this module, the end-user can enter their email address, and an email will 
 
 ### 1.1 Dependencies {#dependencies}
 
-* [Email with Templates](email-with-templates)
-* [Deep Link](deep-link)
-* [Encryption](encryption)
-* [Model Reflection](model-reflection)
+* [Email with Templates](/appstore/modules/email-with-templates/)
+* [Deep Link](/appstore/modules/deep-link/)
+* [Encryption](/appstore/modules/encryption/)
+* [Model Reflection](/appstore/modules/model-reflection/)
 
 ## 2 Configuration
 

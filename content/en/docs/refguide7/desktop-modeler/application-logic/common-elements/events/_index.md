@@ -1,13 +1,13 @@
 ---
 title: "Events"
-url: /refguide7/events
+url: /refguide7/events/
 parent: "common-elements"
 ---
 
 This section describes the events for microflows and nanoflows:
 
-* [Break Event](break-event)
-* [Continue Event](continue-event)
-* [End Event](end-event)
-* [Error Event](error-event)
-* [Start Event](start-event)
+* [Break Event](/refguide7/break-event/)
+* [Continue Event](/refguide7/continue-event/)
+* [End Event](/refguide7/end-event/)
+* [Error Event](/refguide7/error-event/)
+* [Start Event](/refguide7/start-event/)

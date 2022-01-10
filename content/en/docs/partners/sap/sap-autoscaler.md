@@ -15,7 +15,7 @@ For more information on the Application AutoScaler see [Application Autoscaler S
 
 ## 2 Binding the Application Autoscaler{#binding}
 
-The autoscaler service can be found on the [services tab](/developerportal/deploy/sap-cloud-platform#binding-services) of the environment details page of your app's environment.
+The autoscaler service can be found on the [services tab](/developerportal/deploy/sap-cloud-platform/#binding-services) of the environment details page of your app's environment.
 
 Selecting the autoscaler service will expand the entry to allow you to enter more details about the service you wish to bind, namely the **Plan** and the **File** which contains the configuration.
 
@@ -34,10 +34,10 @@ Click **Configurator** to start the **Autoscaler Configurator**.
 
 ## 3 Using the Autoscaler Configurator
 
-The **autoscaler configurator** provide a user friendly interface to create the JSON required to configure the application autoscaler.
+The **autoscaler configurator** provides a user friendly interface to create the JSON required to configure the application autoscaler.
 
 {{% alert color="info" %}}
-The configurator will only create a JSON file from scratch. It does not have access to your existing autoscaler settings on SAP BTP, and you cannot import any existing JSON files.
+The configurator will only create a JSON file from scratch. It does not have access to your existing autoscaler settings on SAP BTP, and you cannot import an existing JSON files.
 {{% /alert %}}
 
 There three options available:

@@ -1,6 +1,6 @@
 ---
 title: "Filter Data on an Overview Page Using XPath"
-url: /howto8/logic-business-rules/filtering-data-on-an-overview-page
+url: /howto8/logic-business-rules/filtering-data-on-an-overview-page/
 category: "Logic & Business Rules"
 tags: ["filter", "xpath"]
 ---
@@ -27,9 +27,9 @@ To see the results of this how-to, it is necessary that you set up a test projec
 
 Before you continue, make sure that you know how to create the following:
 
-* Domain models (for more information, see [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer))
-* Overview and detail pages (for more information, see [How to Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages))
-* Menu items (for more information, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure))
+* Domain models (for more information, see [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer/))
+* Overview and detail pages (for more information, see [How to Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages/))
+* Menu items (for more information, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure/))
 
 1.  Create the following domain model:
 
@@ -51,7 +51,7 @@ In the previous section you set up a basic data structure and created some sampl
 
 1.  Open your **orders overview** and right click the (empty) section above the **Search** button.
 
-    {{% alert type="warning" %}} The search bar section might be already populated if you automatically filled the contents of your data grid. {{% /alert %}}
+    {{% alert color="warning" %}} The search bar section might be already populated if you automatically filled the contents of your data grid. {{% /alert %}}
 
     ![](/attachments/howto8/logic-business-rules/filtering-data-on-an-overview-page/18581359.png)
 
@@ -79,7 +79,7 @@ In the previous section you set up a basic data structure and created some sampl
 
 ## 5 Filtering a List of Orders with the "Open" Status Using XPath 
 
-In the previous section you used the search bar to filter data on your overview page. Now you will add an XPath constraint on the Orders data grid. With an XPath constraint on a data grid you can (hard coded) filter the objects shown in the list. Mendix XPath is one of the Mendix query languages designed to retrieve data. XPath uses path expressions to select data of Mendix objects and their attributes or associations. To learn more about XPath, see [XPath Constraints](/refguide8/xpath-constraints). In this section you will constrain the data grid so it will only display orders with status 'Open'.
+In the previous section you used the search bar to filter data on your overview page. Now you will add an XPath constraint on the Orders data grid. With an XPath constraint on a data grid you can (hard coded) filter the objects shown in the list. Mendix XPath is one of the Mendix query languages designed to retrieve data. XPath uses path expressions to select data of Mendix objects and their attributes or associations. To learn more about XPath, see [XPath Constraints](/refguide8/xpath-constraints/). In this section you will constrain the data grid so it will only display orders with status 'Open'.
 
 1.  Select the **Order** data grid and in the **Properties** pane on the right, change **Data source** > **Type** to **XPath**, and then click the **XPath Constraint** field:
 
@@ -139,4 +139,4 @@ In the previous section you have constrained the data grid on attributes of the 
 
 ## 9 Read More
 
-*   [XPath Constraints](/refguide8/xpath-constraints)
+*   [XPath Constraints](/refguide8/xpath-constraints/)

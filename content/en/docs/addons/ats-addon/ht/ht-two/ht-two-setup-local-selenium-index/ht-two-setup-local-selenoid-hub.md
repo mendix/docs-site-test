@@ -12,7 +12,7 @@ This how-to shows you an example of a simple setup of a Selenoid hub with a Chro
 
 It is possible to run Selenoid without Docker, but that is outside of the scope of this how-to. Please check out the official documentation if you would like to achieve this.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
  Mendix does not deliver support for local Selenium solutions. 
 {{% /alert %}}
 
@@ -231,4 +231,4 @@ To install a hub with a Portal for "Live-View" you need a different *browsers.js
 
 	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-setup-local-selenium-index/ht-two-setup-local-selenoid-hub/selenoidui2.png)
 
-Congratulations you have finished setting up a local Selenoid hub. The next how-to is  [Use ATS in Combination with CI/CD](ht-two-ats-and-ci-cd). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+Congratulations you have finished setting up a local Selenoid hub. The next how-to is  [Use ATS in Combination with CI/CD](/addons/ats-addon/ht-two-ats-and-ci-cd/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

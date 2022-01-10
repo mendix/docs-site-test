@@ -1,22 +1,22 @@
 ---
 title: "Native Builder (CLI)"
-url: /refguide8/native-builder
+url: /refguide8/native-builder/
 parent: "native-mobile"
-menu_order: 70
+weight: 70
 tags: ["native", "mobile", "deploy", "native-builder", "builder", "appcenter", "deprecated"]
 ---
 
-{{% alert type="warning" %}}
-The Native Builder CLI has been deprecated in favor of the Mendix Native Mobile Builder, a UI tool, that integrates with Studio Pro. Read more on how to deploy your app [here](/howto/mobile/deploying-native-app).
+{{% alert color="warning" %}}
+The Native Builder CLI has been deprecated in favor of the Mendix Native Mobile Builder, a UI tool, that integrates with Studio Pro. Read more on how to deploy your app [here](/howto/mobile/deploying-native-app/).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Please update to Native Builder v3.2.1 or higher. Native Builder v3.2.1 includes the fixes required to addresses GitHub's transition from using **master** to using **main** as its default repository branch name. 
 {{% /alert %}}
 
 ## 1 Introduction
 
-The Native Builder takes your Mendix project containing a native profile and packages a native mobile app for iOS and Android. To learn more about using the Native Builder, see [How to Deploy your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app).
+The Native Builder takes your Mendix project containing a native profile and packages a native mobile app for iOS and Android. To learn more about using the Native Builder, see [How to Deploy your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app/).
 
 The Native Builder uses MxBuild, GitHub, and App Center to build your applications. The tool automates the configuration of these processes to streamline your app building experience. The Native builder allows you to create as many apps on GitHub as possible, as long as they are given unique app names using the `--project-name` parameter (for more information, see the [Commands](#commands) section below). Using the `prepare` and `build` command combination, the Native Builder packages your apps by doing the following:
 
@@ -121,7 +121,7 @@ native-builder.exe build dev-app --project-name "CoolApp" --output-path "C:\bund
 
 The `regenerate` command recreates the project on GitHub with the latest version of `Native Template`, renames the previous app with a new name to preserve changes (if any), and then updates the build configuration of the App Center apps. Running `regenerate` also expects that `prepare` has been run at least once for the `--project-name`.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 There is no automated way to preserve changes you made to a previous template. If you have some, you must apply them manually in the new GitHub repository. In addition, when changing your app's Mendix version, please also update the `mxbuild-path` using the `prepare` command.
 {{% /alert %}}
 
@@ -345,7 +345,7 @@ In App Center you can configure your builds at the branch level. If no configura
 
 ### 4.3 Custom Developer App
 
-As your Mendix app matures, you may want to expand its functionality (such as by introducing custom widgets or logic that will require new native dependencies). A custom developer app fills this role by serving as a replacement for the Make It Native app, and should be used when you have custom widgets and logic which are not supported by the Make It Native app. Custom developer apps are apps you can generate yourself using your current project structure, your custom modules, and any other requirements to test your evolving app. For more information, see [How to Create a Custom Developer App](/howto8/mobile/how-to-devapps)
+As your Mendix app matures, you may want to expand its functionality (such as by introducing custom widgets or logic that will require new native dependencies). A custom developer app fills this role by serving as a replacement for the Make It Native app, and should be used when you have custom widgets and logic which are not supported by the Make It Native app. Custom developer apps are apps you can generate yourself using your current project structure, your custom modules, and any other requirements to test your evolving app. For more information, see [How to Create a Custom Developer App](/howto8/mobile/how-to-devapps/)
 
 ## 5 When to Regenerate Your Native Template {#sync-your-repository}
 
@@ -362,9 +362,9 @@ The Native Template is tightly tied to the version of Studio Pro you are running
 
 ### 6.1 GitHub Errors
 
-**Invalid Access Token** — Your access token is invalid. Consult the [GitHub Token](/howto8/mobile/deploying-native-app#github-token) section in *How to Deploy Your First Mendix Native Mobile App* and provide the access token to Native Builder.
+**Invalid Access Token** — Your access token is invalid. Consult the [GitHub Token](/howto8/mobile/deploying-native-app/#github-token) section in *How to Deploy Your First Mendix Native Mobile App* and provide the access token to Native Builder.
 
-**Unable to Create the Repository: the Access Token Needs Access to the Repo Scope** — Your access token is valid, but has too few permissions for Native Builder to work. Native Builder clones a template GitHub repository, creates a branch, and commits files. Consult the [GitHub Token](/howto8/mobile/deploying-native-app#github-token) section in *How to Deploy Your First Mendix Native Mobile App* and provide the new access token to Native Builder.
+**Unable to Create the Repository: the Access Token Needs Access to the Repo Scope** — Your access token is valid, but has too few permissions for Native Builder to work. Native Builder clones a template GitHub repository, creates a branch, and commits files. Consult the [GitHub Token](/howto8/mobile/deploying-native-app/#github-token) section in *How to Deploy Your First Mendix Native Mobile App* and provide the new access token to Native Builder.
 
 **Unable to Delete Branch Build/{build number}** — Something went wrong while communicating with GitHub. Verify your connection, check that GitHub is available, and try running Native Builder again.
 
@@ -374,7 +374,7 @@ The Native Template is tightly tied to the version of Studio Pro you are running
 
 ### 6.2 App Center Errors
 
-**Invalid API Token** — Your API token is invalid. Follow the [App Center Token](/howto8/mobile/deploying-native-app#appcenter-token) section in *How to Deploy Your First Mendix Native Mobile App* and provide the API token to Native Builder.
+**Invalid API Token** — Your API token is invalid. Follow the [App Center Token](/howto8/mobile/deploying-native-app/#appcenter-token) section in *How to Deploy Your First Mendix Native Mobile App* and provide the API token to Native Builder.
 
 **Unable to Configure Build:{explanation}** — Something went wrong while communicating with App Center. Verify your connection, check that App Center is available, and try running Native Builder again.
 
@@ -390,6 +390,6 @@ If the Native Builder fails to complete a run and no error is provided, consider
 
 ## 7 Read More
 
-* [How to Deploy your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app)
-* [How to Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile)
-* [How to Style Your Mendix Native Mobile App](/howto8/mobile/how-to-use-native-styling)
+* [How to Deploy your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app/)
+* [How to Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile/)
+* [How to Style Your Mendix Native Mobile App](/howto8/mobile/how-to-use-native-styling/)

@@ -1,8 +1,8 @@
 ---
 title: "Associations"
-url: /refguide7/associations
+url: /refguide7/associations/
 parent: "entities"
-menu_order: 30
+weight: 30
 tags: ["domain model", "association"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -18,7 +18,7 @@ The **Associations** tab is a tab in the entity properties and has the following
 
 ![](/attachments/refguide7/desktop-modeler/domain-model/entities/associations/dm-entity-properties-associations-tab.png)
 
-For more information on associations, see [Association and Their Properties](association-properties). 
+For more information on associations, see [Association and Their Properties](/refguide7/association-properties/). 
 
 ## 2 Name {#name}
 
@@ -35,7 +35,7 @@ This property defines whether an association is a reference (single) or a refere
 
 * *Default value*: Reference
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The examples for this property are combined with the example of the owner property below.
 
@@ -54,7 +54,7 @@ This property defines whether an association has one or two owners. If there is 
 
 ## 5 Type and Owner Relation to Multiplicity and Navigability
 
-**Type** and **Owner** properties of an entity are related to **[Multiplicity](association-properties#multiplicity)** and **[Navigability](association-properties#navigability)** properties of an association. When you change **Type** or **Owner**, you change **Multiplicity** and **Navigability** as well. 
+**Type** and **Owner** properties of an entity are related to **[Multiplicity](/refguide7/association-properties/#multiplicity)** and **[Navigability](/refguide7/association-properties/#navigability)** properties of an association. When you change **Type** or **Owner**, you change **Multiplicity** and **Navigability** as well. 
 
 You can find correspondence between **Type**/**Owner** and **Multiplicity**/**Navigability** in the table below.
 
@@ -65,7 +65,7 @@ You can find correspondence between **Type**/**Owner** and **Multiplicity**/**Na
 | **Multiplicity**: many-to-many <br />**Navigability**: X objects refer to Y objects | Reference set | Default |
 | **Multiplicity**: many-to-many <br />**Navigability**: X and Y objects refer to each other | Reference set | Both    |
 
-For more information on multiplicity and navigability, see section [2.3 Multiplicity](association-properties#multiplicity) and section [2.4 Navigability](association-properties#navigability) in *Associations and Their Properties*.
+For more information on multiplicity and navigability, see section [2.3 Multiplicity](/refguide7/association-properties/#multiplicity) and section [2.4 Navigability](/refguide7/association-properties/#navigability) in *Associations and Their Properties*.
 
 ## 6 Parent/Child {#parent-child}
 
@@ -185,5 +185,5 @@ In XML, instances of these entities and their association look as follows (note 
 
 ## 8 Read More
 
-* [Associations and Their Properties](association-properties)
-* [Entities](entities)
+* [Associations and Their Properties](/refguide7/association-properties/)
+* [Entities](/refguide7/entities/)

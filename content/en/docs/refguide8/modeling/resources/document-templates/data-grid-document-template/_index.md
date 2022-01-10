@@ -1,6 +1,6 @@
 ---
 title: "Data Grid (Document Template)"
-url: /refguide8/data-grid-document-template
+url: /refguide8/data-grid-document-template/
 parent: "document-templates"
 tags: ["studio pro"]
 aliases:
@@ -9,15 +9,15 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/data-grid-document-template.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/data-grid-document-template.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 The data grid shows a list of objects in a grid. For example, a data grid can show all the orders a customer has placed.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide8/modeling/resources/document-templates/data-grid-document-template/918138.png)
 
@@ -29,11 +29,11 @@ A data grid showing a list of orders with a description and the referenced custo
 
 ### 2.1 Columns
 
-See [Columns (document template)](columns-document-template).
+See [Columns (document template)](/refguide8/columns-document-template/).
 
 ### 2.2 Sort Bar
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide8/sort-bar/).
 
 ## 3 Appearance Properties
 
@@ -41,7 +41,7 @@ See [Sort Bar](sort-bar).
 
 The column weights are percentages separated by semi-colons that determine the widths of the columns. The weights have to add up to 100\. An alternative way of changing the widths of columns is by dragging the separating line between columns.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In the screenshot above the column weights are 50;25;25.
 {{% /alert %}}
 
@@ -59,13 +59,13 @@ With striping enabled you can set the properties of even and uneven data grid ro
 
 ### 3.5 Style
 
-See [Style](style)
+See [Style](/refguide8/style/)
 
 ## 4 Common Properties
 
 ### 4.1 Name
 
-The internal name of the widget. You can use this to give sensible names to widgets. The name property also appears in the generated HTML: the widget DOM element automatically includes the class '`mx-name-{NAME}`', which can be useful for [Selenium testing](/howto8/integration/selenium-support).
+The internal name of the widget. You can use this to give sensible names to widgets. The name property also appears in the generated HTML: the widget DOM element automatically includes the class '`mx-name-{NAME}`', which can be useful for [Selenium testing](/howto8/integration/selenium-support/).
 
 ## 5 Data Source Properties
 

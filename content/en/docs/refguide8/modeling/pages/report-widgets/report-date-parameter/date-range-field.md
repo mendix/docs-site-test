@@ -1,18 +1,18 @@
 ---
 title: "Date Range Field"
-url: /refguide8/date-range-field
+url: /refguide8/date-range-field/
 parent: "report-date-parameter"
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/date-range-field.pdf)
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/date-range-field.pdf)
 {{% /alert %}}
 
 ## 1 Introduction
 
-A **Date range field** can be placed inside a [Report date parameter](report-date-parameter) to make it easier for an end-user to select a date range, rather than having to specify a from and to date. The report date parameter is then updated with the from and to dates of the selected period.
+A **Date range field** can be placed inside a [Report date parameter](/refguide8/report-date-parameter/) to make it easier for an end-user to select a date range, rather than having to specify a from and to date. The report date parameter is then updated with the from and to dates of the selected period.
 
 To add a date range field, right-click the widget and choose **Add field** from the pop-up menu.
 
@@ -47,5 +47,5 @@ The **Label** property specifies the text that is displayed beside the date rang
 
 | **Notes** |
 | --- |
-| <sup><small>[1]</small></sup> The year will be between the **Min. year** and **Max. year** (inclusive) specified in the [report date parameter](report-date-parameter) widget. |
+| <sup><small>[1]</small></sup> The year will be between the **Min. year** and **Max. year** (inclusive) specified in the [report date parameter](/refguide8/report-date-parameter/) widget. |
 | <sup><small>[2]</small></sup> You also need to add a **Year** date range field if you use a date range field of this type.<br />– The end-user will need to choose the year before they can choose a date range field of this type.<br />– The end-user can only choose one of these types, plus the year. |

@@ -25,7 +25,7 @@ The new algorithm is enabled by default in Studio Pro 9. If you encounter issues
 2. In the **New features** section, disable the **New merge algorithm with fine-grained conflict resolution** option.
 3. Restart Studio Pro.
 
-For more information, see [Preferences](preferences-dialog).
+For more information, see [Preferences](/refguide/preferences-dialog/).
 
 ## 3 Resolving Conflict Example
 

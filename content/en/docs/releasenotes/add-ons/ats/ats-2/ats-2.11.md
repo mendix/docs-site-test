@@ -21,7 +21,7 @@ On the information side, we added options to retrieve the following data for a j
 * Breakdown per test case (meaning, the number of passed, failed, and not-executed test cases)
 * Details per test case with name, result, duration, and error message
 
-For more details, see the [ATS 2 Reference Guide](/addons/ats-addon/rg-two-cicd-api).
+For more details, see the [ATS 2 Reference Guide](/addons/ats-addon/rg-two-cicd-api/).
 
 ### Known Issues
 
@@ -48,8 +48,8 @@ For more details, see the [ATS 2 Reference Guide](/addons/ats-addon/rg-two-cicd-
 We are constantly on the lookout for popular widgets that we can support with ATS. With this release, we are happy to announce support for recording and testing the following widgets:
 
 * [AutoComplete Widget](https://marketplace.mendix.com/link/component/2695/)
-* [Switch](/appstore/widgets/switch)
-* [Format String](/appstore/widgets/format-string)
+* [Switch](/appstore/widgets/switch/)
+* [Format String](/appstore/widgets/format-string/)
 * [CustomString](https://marketplace.mendix.com/link/component/1426/)
 
 ### Improvements

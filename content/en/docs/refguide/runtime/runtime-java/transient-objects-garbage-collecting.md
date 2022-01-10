@@ -17,7 +17,7 @@ This page explains the life cycle of both persistable and non-persistable object
 
 ## 2 Behavior
 
-Non-persistable objects in Mendix are not kept in the [Runtime Server](runtime-server), but maintained in the [Mendix Client](mendix-client). This means there is no server-side garbage collection. This simplifies the handling of objects on the server side because an object will not be garbage collected while it exists on the server.
+Non-persistable objects in Mendix are not kept in the [Runtime Server](/refguide/runtime-server/), but maintained in the [Mendix Client](/refguide/mendix-client/). This means there is no server-side garbage collection. This simplifies the handling of objects on the server side because an object will not be garbage collected while it exists on the server.
 
 Objects will be returned to the client together with the response to a request. Objects created outside the context of a request (like Scheduled Event execution) will automatically be discarded when the scheduled event has finished.
 
@@ -95,4 +95,4 @@ For every request to the Mendix Runtime — be it from the client or via web ser
 ## 6 Read More
 
 * Mendix blog [The art of state, Part 1: Introduction to the client state ](https://www.mendix.com/blog/the-art-of-state-part-1-introduction-to-the-client-state/)
-* [Java Memory Usage](java-memory-usage)
+* [Java Memory Usage](/refguide/java-memory-usage/)

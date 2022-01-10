@@ -1,8 +1,8 @@
 ---
 title: "Use Layouts and Snippets"
-url: /howto7/front-end/layouts-and-snippets
+url: /howto7/front-end/layouts-and-snippets/
 category: "Front End"
-menu_order: 25
+weight: 25
 tags: ["front end"]
 ---
 
@@ -100,7 +100,7 @@ These are some layout examples:
 
 	![](/attachments/howto7/front-end/layouts-and-snippets/master.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 By adjusting the canvas width, you can emulate the end-user's view of the page in the Modeler. For example, the desktop layout has a canvas width of 800, and the default phone layouts have a width of 500. The property canvas width only applies to the view in the Modeler, and the actual width of the page depends on the opened browser or the optional pop-up window size.
 
@@ -166,10 +166,10 @@ When a user visits a Mendix application, she is automatically redirected to the 
 
 For more information on navigation profiles, see the following for reference:
 
-* [Navigation in Mendix 7.4 & Above](/refguide7/navigation)
-* [Navigation in Mendix Versions 7.2 & 7.3](/refguide7/navigation-in-72-and-73)
-* [Navigation Before Mendix Version 7.2](/refguide7/navigation-before-72)
-* [Solving Issues with Navigation Profile Conversion to 7.4](/refguide7/navigation-conversion-to-74)
+* [Navigation in Mendix 7.4 & Above](/refguide7/navigation/)
+* [Navigation in Mendix Versions 7.2 & 7.3](/refguide7/navigation-in-72-and-73/)
+* [Navigation Before Mendix Version 7.2](/refguide7/navigation-before-72/)
+* [Solving Issues with Navigation Profile Conversion to 7.4](/refguide7/navigation-conversion-to-74/)
 
 ### 5.7 Menu Document
 
@@ -209,8 +209,8 @@ In addition, a snippet can define an entity that serves as a context for the wid
 
 ## 7 Read More
 
-* [Atlas UI](atlas-ui)
-* [How to Use Layouts and Snippets](layouts-and-snippets)
-* [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure)
-* [How to Create Your First Two Overview & Detail Pages](create-your-first-two-overview-and-detail-pages)
-* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
+* [Atlas UI](/howto7/front-end/atlas-ui/)
+* [How to Use Layouts and Snippets](/howto7/front-end/layouts-and-snippets/)
+* [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure/)
+* [How to Create Your First Two Overview & Detail Pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages/)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)

@@ -12,12 +12,12 @@ The app services available in the Mendix Marketplace are packages of preconfigur
 When you download an app service, it will go into the **App** > **Marketplace modules** folder.
 
 {{% alert color="warning" %}}
-App services like [3D Viewer](3d-viewer) start with a free trial for development and testing. After the trial ends, a subscription is required to continue using the app service.
+App services like [3D Viewer](/appstore/app-services/3d-viewer/) start with a free trial for development and testing. After the trial ends, a subscription is required to continue using the app service.
 {{% /alert %}}
 
-For details on participating in the Mendix Vendor program, see [How to Sell Your App Service in the Marketplace](/appstore/general/sell).
+For details on participating in the Mendix Vendor program, see .
 
 ## 2 Main Documents in This Category
 
-* [3D Viewer](3d-viewer) – enables uploading, visualizing, and operating on 3D JT files in your web apps 
-* [Email Service](email-service) – enables sending HTML and plain text emails with attachments in your web apps
+* [3D Viewer](/appstore/app-services/3d-viewer/) – enables uploading, visualizing, and operating on 3D JT files in your web apps 
+* [Email Service](/appstore/app-services/email-service/) – enables sending HTML and plain text emails with attachments in your web apps

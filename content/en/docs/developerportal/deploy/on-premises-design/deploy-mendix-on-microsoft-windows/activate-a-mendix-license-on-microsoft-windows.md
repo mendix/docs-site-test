@@ -13,7 +13,7 @@ tags: ["license", "Windows", "on-premises", "Mendix Service Console"]
 
 ## 1 Introduction
 
-After you have installed the Mendix software on your on-premises server and have deployed your first app (for details, see [Deploying Mendix on Microsoft Windows](deploy-mendix-on-microsoft-windows)), it is time to activate your license. This how-to will guide you through this process.  
+After you have installed the Mendix software on your on-premises server and have deployed your first app (for details, see [Deploying Mendix on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/)), it is time to activate your license. This how-to will guide you through this process.  
 
 **This how-to will teach you how to do the following:**
 
@@ -24,7 +24,7 @@ After you have installed the Mendix software on your on-premises server and have
 Before starting with this how-to, make sure you have completed the following prerequisites:
 
 * To activate a Mendix instance on-premises you need an on-premises license (call your Customer Success Manager for more information)
-* Install Mendix on your Microsoft Windows server (for more information, see [Deploying Mendix on Microsoft Windows](deploy-mendix-on-microsoft-windows))
+* Install Mendix on your Microsoft Windows server (for more information, see [Deploying Mendix on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/))
 * Be registered as the technical contact for the license
     * This is usually done in the license request process
     * If you are not the technical contact, ask him or her to follow this how-to to activate the license
@@ -50,7 +50,7 @@ In this section, you will submit your server ID in the Mendix Support Portal to 
 
 1. Open your browser and navigate to [https://support.mendix.com](https://support.mendix.com).
 2. Do one of the following:
-    * For a new app, use the [Request New App Node](https://newnode.mendix.com/) app – see [Licensing Apps](licensing-apps-outside-mxcloud) for more information
+    * For a new app, use the [Request New App Node](https:/newnode.mendix.com/) app – see [Licensing Apps](/developerportal/deploy/licensing-apps-outside-mxcloud/) for more information
     * For an existing app, create a ticket using the **Standard change: Change On-Prem Licensed Node** template
 3. Mendix support will use the supplied server ID to generate a license key for your server.
 
@@ -68,10 +68,10 @@ In this section, you will enter the license key into the Mendix server, thus com
 
 ## 6 Read More
 
-*   [Setting up the Database User](setting-up-the-database-user)
-*   [Troubleshooting](troubleshooting-iis)
-*   [Restoring a SQL Server Database](restoring-a-sql-server-database)
-*   [Troubleshooting SQL Server](troubleshooting-sql-server)
-*   [Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
-*   [Setting Up a New SQL Server Database](setting-up-a-new-sql-server-database)
-*   [Setting Up a SQL Server User](setting-up-a-sql-server-user)
+*   [Setting up the Database User](/developerportal/deploy/setting-up-the-database-user/)
+*   [Troubleshooting](/developerportal/deploy/troubleshooting-iis/)
+*   [Restoring a SQL Server Database](/developerportal/deploy/restoring-a-sql-server-database/)
+*   [Troubleshooting SQL Server](/developerportal/deploy/troubleshooting-sql-server/)
+*   [Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
+*   [Setting Up a New SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/)
+*   [Setting Up a SQL Server User](/developerportal/deploy/setting-up-a-sql-server-user/)

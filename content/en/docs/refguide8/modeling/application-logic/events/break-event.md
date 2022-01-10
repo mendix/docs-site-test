@@ -1,19 +1,19 @@
 ---
 title: "Break Event"
-url: /refguide8/break-event
+url: /refguide8/break-event/
 parent: "events"
-menu_order: 5
+weight: 5
 tags: ["studio pro", "break event", "event", "loop"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/break-event.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/break-event.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-{{% alert type="warning" %}}
-Break events can only be used inside [loops](loop).
+{{% alert color="warning" %}}
+Break events can only be used inside [loops](/refguide8/loop/).
 {{% /alert %}}
 
 A break event is used to stop iterating over the list of objects and continue with the rest of the flow. Without a break event, the loop will continue with the iteration of the next object.
@@ -24,5 +24,5 @@ For example, if you want to notify the user of any unpaid order lines you can us
 
 ## 2 Read More
 
-* [Loop](loop)
-* [Continue Event](continue-event)
+* [Loop](/refguide8/loop/)
+* [Continue Event](/refguide8/continue-event/)

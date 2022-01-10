@@ -6,7 +6,7 @@ parent: "ht-two-create-custom-actions"
 
 ## 1 Introduction
 
-This how-to explains the basics of creating a custom action. You must complete this how-to before proceeding with [How to Create Custom Actions](ht-two-create-custom-actions).
+This how-to explains the basics of creating a custom action. You must complete this how-to before proceeding with [How to Create Custom Actions](/addons/ats-addon/ht-two-create-custom-actions/).
 
 **This how-to will teach you how to do the following:**
 
@@ -19,9 +19,9 @@ This how-to explains the basics of creating a custom action. You must complete t
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Have a general knowledge of ATS
-* Read [How to Get Started](ht-two-getting-started)
-* Read [How to Create a Test Case](ht-two-create-a-test-case)
-* Read [Guidelines for Creating a Custom Action](ht-two-guidelines-custom-action)
+* Read [How to Get Started](/addons/ats-addon/ht-two-getting-started/)
+* Read [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
+* Read [Guidelines for Creating a Custom Action](/addons/ats-addon/ht-two-guidelines-custom-action/)
 
 ## 3 Creating a Custom Action
 
@@ -126,7 +126,7 @@ To add an output parameter, follow these steps:
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-custom-action-basics/new-action-output-parameter-complete.png)
 
 6. The **Output Parameter** requires additional steps. Go to the **Test Steps** tab and click **Add**.
-7.  Add the [Find/Assert Widget](rg-one-findassert-widget) action and the [Set Return Value](rg-one-set-return-value) action.
+7.  Add the [Find/Assert Widget](/addons/ats-addon/rg-one-findassert-widget/) action and the [Set Return Value](/addons/ats-addon/rg-one-set-return-value/) action.
     
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-custom-action-basics/output-parameter-actions.png)
 

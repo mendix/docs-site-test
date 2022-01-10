@@ -18,7 +18,7 @@ aliases:
 This information is for apps which are deployed to MindSphere. It does not apply to MindSphere IIoT for Makers.
 {{% /alert %}}
 
-This page contains detailed information about the content of MindSphere modules for Mendix apps and what they are used for. If you want to deploy a Mendix app to MindSphere, the instructions are in [Deployment on Siemens MindSphere](/developerportal/deploy/deploying-to-mindsphere).
+This page contains detailed information about the content of MindSphere modules for Mendix apps and what they are used for. If you want to deploy a Mendix app to MindSphere, the instructions are in [Deployment on Siemens MindSphere](/developerportal/deploy/deploying-to-mindsphere/).
 
 This page can be used for troubleshooting issues with your deployment, or for assistance in additional customization you may wish to carry out.
 
@@ -40,11 +40,11 @@ Please ensure that you also download the *latest version* of the Siemens MindSph
 
 #### 2.1.1 LocalDevelopment
 
-These constants are only needed for local development and testing. For details of what needs to be put into the constants in the *LocalDevelopment* folder, please see [Local Testing](/partners/siemens/mindsphere-development-considerations#localtesting) in *MindSphere Development Considerations*.
+These constants are only needed for local development and testing. For details of what needs to be put into the constants in the *LocalDevelopment* folder, please see [Local Testing](/partners/siemens/mindsphere-development-considerations/#localtesting) in *MindSphere Development Considerations*.
 
 #### 2.1.2 Native Mobile
 
-The constants in *Native Mobile* are only needed when developing native mobile apps with Mendix for MindSphere, please see [MindSphere Mobile Native](/partners/siemens/mindsphere-mobile-native) for details.
+The constants in *Native Mobile* are only needed when developing native mobile apps with Mendix for MindSphere, please see [MindSphere Mobile Native](/partners/siemens/mindsphere-mobile-native/) for details.
 
 #### 2.1.3 CockpitApplicationName
 
@@ -106,13 +106,13 @@ In addition, MindSphere SSO will identify whether the current user is a subtenan
 If the same user logs in using a different tenant, Mendix will treat this as a different user and a User ID will be used within Mendix instead of a user name.
 {{% /alert %}}
 
-For advice on how to make your apps multi-tenant, see [Multi-Tenancy](/partners/siemens/mindsphere-development-considerations#multitenancy) in *MindSphere Development Considerations*.
+For advice on how to make your apps multi-tenant, see [Multi-Tenancy](/partners/siemens/mindsphere-development-considerations/#multitenancy) in *MindSphere Development Considerations*.
 
 ### 2.3 Roles & Scopes{#rolesscopes}
 
 Using SSO, the Mendix app needs to know which roles to allocate to the user. This enables the app to know whether the user should have, for example, administrator access.
 
-MindSphere apps have up to five application roles. Each MindSphere user is given one or more of these roles. As well as defining access to MindSphere core roles, these roles are also mapped to MindSphere application scopes. For information on how to set up scopes in MindSphere, see the [Setting Application Scopes in Developer Cockpit](/developerportal/deploy/deploying-to-mindsphere#scopes) section in *Siemens MindSphere – deploy*.
+MindSphere apps have up to five application roles. Each MindSphere user is given one or more of these roles. As well as defining access to MindSphere core roles, these roles are also mapped to MindSphere application scopes. For information on how to set up scopes in MindSphere, see the [Setting Application Scopes in Developer Cockpit](/developerportal/deploy/deploying-to-mindsphere/#scopes) section in *Siemens MindSphere – deploy*.
 
 During the login process, MindSphere application scopes are mapped to Mendix roles automatically. The comparison ignores upper- and lower-case differences. If the roles match, then that Mendix role is assigned to the user.
 
@@ -144,7 +144,7 @@ The MindSphereOSBarConfig module provides a constant **OSBarURL** for specifying
 The MindSphereOSBarConfig module creates an endpoint which is used by the MindSphere OS Bar to provide tenant context and information about the application. The MindSphereOSBarConfig module is included in the MindSphere app template, or can be downloaded from the Mendix Marketplace here: [MindSphere OS Bar Connector](https://marketplace.mendix.com/link/component/108804/).
 
 {{% alert color="info" %}}
-The MindSphere OS Bar Connector also needs the Siemens MindSphere Web Content module, or manual configuration of the index.html file, in order to work. See [Customizing an Existing App](/developerportal/deploy/deploying-to-mindsphere#existingapp) in *Siemens MindSphere – deploy* and [index.html Changes](#indexhtmlchanges), below, for more information.
+The MindSphere OS Bar Connector also needs the Siemens MindSphere Web Content module, or manual configuration of the index.html file, in order to work. See [Customizing an Existing App](/developerportal/deploy/deploying-to-mindsphere/#existingapp) in *Siemens MindSphere – deploy* and [index.html Changes](#indexhtmlchanges), below, for more information.
 {{% /alert %}}
 
 ### 3.1 Configuring the OS Bar
@@ -182,7 +182,7 @@ The **Siemens_MindSphere_Web_Content** module is an *Atlas UI Resource* based on
 
 ### 4.1 MindSphere Icons
 
-See also the [MindSphere Icons](/partners/siemens/mindsphere-development-considerations#atlasui) section of *MindSphere Development Considerations* for a discussion about adding icons from Siemens MindSphere Web Content.
+See also the [MindSphere Icons](/partners/siemens/mindsphere-development-considerations/#atlasui) section of *MindSphere Development Considerations* for a discussion about adding icons from Siemens MindSphere Web Content.
 
 ### 4.2 index.html Changes{#indexhtmlchanges}
 
@@ -411,5 +411,5 @@ You will only have to create a `mindspherelogin.html` file in the folder /theme/
 
 ## 6 Read More
 
-* [Siemens MindSphere – deploy](/developerportal/deploy/deploying-to-mindsphere)
-* [MindSphere Development Considerations](mindsphere-development-considerations)
+* [Siemens MindSphere – deploy](/developerportal/deploy/deploying-to-mindsphere/)
+* [MindSphere Development Considerations](/partners/siemens/mindsphere-development-considerations/)

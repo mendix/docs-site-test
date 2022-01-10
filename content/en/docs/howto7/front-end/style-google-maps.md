@@ -1,8 +1,8 @@
 ---
 title: "Style Google Maps"
-url: /howto7/front-end/style-google-maps
+url: /howto7/front-end/style-google-maps/
 category: "Front End"
-menu_order: 60
+weight: 60
 tags: []
 ---
 
@@ -20,9 +20,9 @@ Google Maps is a very powerful addition to your applications. You can use it to 
 
 Before you start this how-to, please make sure you have completed the following prerequisites.
 
-*   Have the latest version of the Google Maps widget in your application: [Google Maps](/appstore/widgets/google-maps)
+*   Have the latest version of the Google Maps widget in your application: [Google Maps](/appstore/widgets/google-maps/)
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 These instructions are for the Google Maps widget which you can download from the Marketplace. The Google Maps widget within the Atlas UI template has different options.
 {{% /alert %}}
 
@@ -77,14 +77,14 @@ Supporting communities is cool. Therefore I will also show you how to upload you
 
 1.  Go-to Snazzymaps and click **Create.**
     **![](/attachments/howto7/front-end/style-google-maps/19398964.png)** 
-**2.  Now you will see a handy quick style method for altering your map appearance:
+2.  Now you will see a handy quick style method for altering your map appearance:
     ![](/attachments/howto7/front-end/style-google-maps/19398965.png) 
 
     Happy modeling!
 
 ## 4. Read More
 
-* [Atlas UI](atlas-ui)
-*   [Layouts and Snippets](layouts-and-snippets)
-*   [Setting Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure)
-*   [Creating your first two Overview and Detail pages](create-your-first-two-overview-and-detail-pages)
+* [Atlas UI](/howto7/front-end/atlas-ui/)
+*   [Layouts and Snippets](/howto7/front-end/layouts-and-snippets/)
+*   [Setting Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure/)
+*   [Creating your first two Overview and Detail pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages/)

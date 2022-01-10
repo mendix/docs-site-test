@@ -20,17 +20,17 @@ Data **snapshots** consist of a PostgreSQL database dump and all the file object
 
 Database **archives** are a zip file which contains all the data in the snapshot, or the database and files separately if you prefer. 
 
-You cannot currently upload an archive through this API. This function is currently only supported via the [Developer Portal](/developerportal/operate/backups). However, you can use this API to restore data from an existing environment snapshot.
+You cannot currently upload an archive through this API. This function is currently only supported via the [Developer Portal](/developerportal/operate/backups/). However, you can use this API to restore data from an existing environment snapshot.
 
-V2 of this API is focused on working with snapshots and archives asynchronously, as these can be very long-running tasks for large quantities of data. The [older V1 API](backups-api-v1), in contrast, works synchronously. 
+V2 of this API is focused on working with snapshots and archives asynchronously, as these can be very long-running tasks for large quantities of data. The [older V1 API](/apidocs-mxsdk/apidocs/backups-api-v1/), in contrast, works synchronously. 
 
 {{% alert color="info" %}}
-This article is only applicable to applications deployed in **Mendix Cloud V4**. You can check which version of the Mendix Cloud you are using in the [Developer Portal](/developerportal/deploy/environments-details).
+This article is only applicable to applications deployed in **Mendix Cloud V4**. You can check which version of the Mendix Cloud you are using in the [Developer Portal](/developerportal/deploy/environments-details/).
 {{% /alert %}}
 
 ## 2 Authentication
 
-The Backups API requires authentication via API keys that are bound to your Mendix account (for more information, see [Deploy Authentication](deploy-api#authentication)). In addition to the **API Access** permission, the **Backups** permission is also required to manage backups.
+The Backups API requires authentication via API keys that are bound to your Mendix account (for more information, see [Deploy Authentication](/apidocs-mxsdk/apidocs/deploy-api/#authentication)). In addition to the **API Access** permission, the **Backups** permission is also required to manage backups.
 
 ## 3 API Calls
 
@@ -49,8 +49,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 
 **Query Parameters**
 
@@ -136,8 +136,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 
 **Request Body**
 
@@ -219,8 +219,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 *   _SnapshotId_ (String): Identifier of the snapshot being created.
 
 **Example Request**
@@ -289,8 +289,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 *   _SnapshotId_ (String): Identifier of the snapshot for which you want to create an archive.
 
 **Query Parameters**
@@ -367,8 +367,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 *   _SnapshotId_ (String): Identifier of the backup.
 *   _ArchiveId_ (String): Identifier of the archive being created.
 
@@ -441,8 +441,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 *   _SnapshotId_ (String): Identifier of the backup.
 *   _Comment_ (String): Optional comment for this snapshot.
 
@@ -523,8 +523,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 *   _SnapshotId_ (String): Identifier of the backup.
 *   _Comment_ (String): Optional comment for this snapshot.
 
@@ -572,8 +572,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 
 **Query Parameters**
 
@@ -664,8 +664,8 @@ URL: https://deploy.mendix.com/api/v2/apps/<ProjectId>/environments/<Environment
 
 **Request Parameters**
 
-*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [apps API](deploy-api#list-apps).
-*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details) or [environments API](deploy-api#list-environments).
+*   _ProjectId_ (String): Unique project identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [apps API](/apidocs-mxsdk/apidocs/deploy-api/#list-apps).
+*   _EnvironmentId_ (String): Unique environment identifier. Can be looked up via the [developer portal](/developerportal/deploy/environments-details/) or [environments API](/apidocs-mxsdk/apidocs/deploy-api/#list-environments).
 *   _RestoreId_ (String): Identifier of the request to restore the data.
 
 **Example Request**

@@ -2,7 +2,7 @@
 title: "Deployment Options"
 url: /addons/ats-addon/ov-deployment/
 parent: "ov"
-menu_order: 3
+weight: 3
 ---
 
 ## 1 Introduction
@@ -65,7 +65,7 @@ This option is meant for customers who run their app on premises and who don't w
 
 This option is meant for customers who run their app on premises and who also want to run their own Selenium Runner. The challenging part of this option is that the customer needs to set up, maintain, and operate its own Selenium Runner. Because of the large effort this requires, this option should only be a last resort if no other option fits your use case.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Selenium is an open-source third-party component and there is no active support from Mendix.
 {{% /alert %}}
 
@@ -73,7 +73,7 @@ Selenium is an open-source third-party component and there is no active support 
 
 Since the Selenium Runner offers fewer features compared to Selenium SaaS Providers, it is not possible to make use of the full ATS feature set.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 The feature set in this option is limited.
 {{% /alert %}}
 
@@ -124,29 +124,21 @@ ATS does not support the uploading of files in every situation. This table prese
 
 | Selenium Setup | Uploading Your Own File | Uploading a File | Uploading Possible? |
 | :-------------- | :---------------------- | :--------------- | :------------------ |
-| Local Selenium Server (Docker) | ![](/attachments/addons/ats-addon/ov/ov-deployment/grey.png) Limited<sup>1</sup> | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- Limited<sup>1</sup> | ![](/attachments/addons/ats-addon/ov/ov-deployment/grey.png) Limited<sup>1</sup> | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/ov/ov-deployment/grey.png) Limited<sup>1</sup> | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- Yes || BrowserStack (SaaS) | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- No | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- Yes || SauceLabs (SaaS) | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](attachments/ov-deployment/red.png) No | ![](attachments/ov-deployment/red.png) No |
- No | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](attachments/ov-deployment/red.png) No | ![](attachments/ov-deployment/red.png) No |
- No | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](attachments/ov-deployment/red.png) No | ![](attachments/ov-deployment/red.png) No |
- No || Selenium SaaS Agent | ![](/attachments/addons/ats-addon/ov/ov-deployment/grey.png) Limited<sup>2</sup> | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- Limited<sup>2</sup> | ![](/attachments/addons/ats-addon/ov/ov-deployment/grey.png) Limited<sup>2</sup> | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/ov/ov-deployment/grey.png) Limited<sup>2</sup> | ![](attachments/ov-deployment/green.png) Yes | ![](attachments/ov-deployment/green.png) Yes |
- Yes |
+| Local Selenium Server (Docker) | ![](/attachments/addons/ats-addon/ov/ov-deployment/grey.png) Limited<sup>1</sup> | ![](/attachments/addons/ats-addon/ov/ov-deployment/green.png) Yes | ![](/attachments/addons/ats-addon/ov/ov-deployment/green.png) Yes |
+| BrowserStack (SaaS) | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](/attachments/addons/ats-addon/ov/ov-deployment/green.png) Yes | ![](/attachments/addons/ats-addon/ov/ov-deployment/green.png) Yes |
+| SauceLabs (SaaS) | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No | ![](/attachments/addons/ats-addon/ov/ov-deployment/red.png) No |
+| Selenium SaaS Agent | ![](/attachments/addons/ats-addon/ov/ov-deployment/grey.png) Limited<sup>2</sup> | ![](/attachments/addons/ats-addon/ov/ov-deployment/green.png) Yes | ![](/attachments/addons/ats-addon/ov/ov-deployment/green.png) Yes |
+
 <small><sup>1</sup> This is only possible when you prepare your own files on that server.<br />
 <sup>2</sup> This depends on where the agent is installed.</small>
 
-For more information, see [How to Upload a File in Your App Using ATS](ht-two-upload-file-using-ats).
+For more information, see [How to Upload a File in Your App Using ATS](/addons/ats-addon/ht-two-upload-file-using-ats/).
 
 ## 5 Selenium SaaS Subscription
 
 ### 5.1 General Solutions
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This section presents generic advice on which subscription type you need when using a Selenium SaaS provider. Always look at what fits best for your situation!
 {{% /alert %}}
 
@@ -158,11 +150,11 @@ Selenium SaaS providers in general provide the following three solutions:
 
 To test your application for desktops and mobile, you need **automated browser testing**.
 
-ATS has two supported Selenium providers (for details, see [Supported Selenium Providers](rg-two-supported-selenium-hub-provider)). The solutions of these providers are discussed in the next sections.
+ATS has two supported Selenium providers (for details, see [Supported Selenium Providers](/addons/ats-addon/rg-two-supported-selenium-hub-provider/)). The solutions of these providers are discussed in the next sections.
 
 ### 5.2 Browserstack Solutions/Products
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Browserstack is a third party, so the information displayed here may be out of date! This section is purely to help you understand the different solutions.
 {{% /alert %}}
 
@@ -180,7 +172,7 @@ For more information on pricing, see [Browserstack Pricing](https://www.browsers
 
 ### 5.3 SauceLabs Solutions/Products
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 SauceLabs is a third party, so the information displayed here may be out of date! This section is purely to help you understand the different solutions.
 {{% /alert %}}
 
@@ -194,7 +186,7 @@ These SauceLabs solutions are compatible with ATS:
     * For more information, see [SauceLabs Automated](https://saucelabs.com/products/web-testing)
 * **Enterprise** – personalized pricing
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 There is also a difference between virtual machines and real devices, which does not matter for ATS.
 {{% /alert %}}
 
@@ -231,11 +223,11 @@ SauceLabs        | Sauce Connect Proxy | [Here](https://wiki.saucelabs.com/displ
 
 This option requires you to set up your own Selenium Server on-premises.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Selenium is an open-source third-party component and there is no active support from Mendix.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Selenium standalone support has been dropped with ATS 2.0. Only Selenium Grid is supported. By following the instructions below, you will set up a Selenium Grid.
 {{% /alert %}}
 
@@ -243,7 +235,7 @@ Selenium standalone support has been dropped with ATS 2.0. Only Selenium Grid is
 
 We provide basic installation instructions for the Selenium Runner based on Docker containers. For details, see [Get Started with Docker](https://docs.docker.com/engine/getstarted/), [Selenium Documentation](http://www.seleniumhq.org/docs/), and [Docker-Selenium](https://github.com/SeleniumHQ/docker-selenium).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The current ATS version requires Selenium version 3.141.59. If ATS upgrades to a newer Selenium version, the customer is obligated to upgrade its Selenium Runner to the new version as well.
 {{% /alert %}}
 

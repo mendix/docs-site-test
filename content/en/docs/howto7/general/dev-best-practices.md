@@ -1,8 +1,8 @@
 ---
 title: "Implement Best Practices for Development"
-url: /howto7/general/dev-best-practices
+url: /howto7/general/dev-best-practices/
 category: "General"
-menu_order: 3
+weight: 3
 tags: ["best practice", "development", "develop", "reusable", "prefix"]
 ---
 
@@ -24,7 +24,7 @@ The language that will be used to develop the application should be determined u
 
 There are some reasons why certain parts of an application may use another language. The main reason to make an exception would be within the domain model of an integration module. For example, when the source data model is in another language already.
 
-For more information, see [How to Translate Your App Content](/howto7/collaboration-requirements-management/translate-your-app-content).
+For more information, see [How to Translate Your App Content](/howto7/collaboration-requirements-management/translate-your-app-content/).
 
 ### 2.2 App Name
 
@@ -36,7 +36,7 @@ Every app has at least one configuration, but it may have many. Every app starts
 
 ### 2.4 User Roles
 
-The [user roles](/refguide7/user-roles) should have logical names that reflect the different types of users that will use the application. The user roles are singular and use a UpperCamelCase notation, like **FunctionalAdministrator**. User roles are mostly defined in English, but there is an option to name these in a different language, since the user role is visible in the front end.
+The [user roles](/refguide7/user-roles/) should have logical names that reflect the different types of users that will use the application. The user roles are singular and use a UpperCamelCase notation, like **FunctionalAdministrator**. User roles are mostly defined in English, but there is an option to name these in a different language, since the user role is visible in the front end.
 
 Each user role should correspond to only one module role per module. In other words, a user role should not map to multiple module roles within the same module. This helps to keep the number of applicable module roles for a user to a minimum, which reduces complexity in understanding the security model and reduces the performance impact of complex security rules.
 
@@ -50,21 +50,21 @@ Modules should be treated like standalone replaceable services; for example, the
 
 #### 3.1.2 Module Roles
 
-The [module roles](/refguide7/module-role) should have logical names that reflect the access they should have within a module. In contrast to the user role, the module role should always be in English, for instance **Administrator** or **Employee**.
+The [module roles](/refguide7/module-role/) should have logical names that reflect the access they should have within a module. In contrast to the user role, the module role should always be in English, for instance **Administrator** or **Employee**.
 
 ### 3.2 Domain Model
 
 #### 3.2.1 Entity Names
 
-Most of the time, an [entity](/refguide7/entities) reflects a real-world object that people can relate to. Therefore, the entity name should also reflect that object and identify its purpose. There are sometimes app-specific exceptions that lead to creating other types of entity, but that is up to you. The name of an entity is singular since an object is a single instance of the entity. A good example is using **Customer** and not **Customers**. Furthermore, we advise avoiding abbreviations, underscores, mathematical characters or any other special characters in the names of entities. Entity names also use UpperCamelCase, for example, **HousekeepingRecord** or **LogEntry**.
+Most of the time, an [entity](/refguide7/entities/) reflects a real-world object that people can relate to. Therefore, the entity name should also reflect that object and identify its purpose. There are sometimes app-specific exceptions that lead to creating other types of entity, but that is up to you. The name of an entity is singular since an object is a single instance of the entity. A good example is using **Customer** and not **Customers**. Furthermore, we advise avoiding abbreviations, underscores, mathematical characters or any other special characters in the names of entities. Entity names also use UpperCamelCase, for example, **HousekeepingRecord** or **LogEntry**.
 
 #### 3.2.2 Entity Attributes
 
-The entity [attribute](/refguide7/attributes) should reflect a property of a real-world object that people can relate to and fits the purpose of that property. We advise avoiding abbreviations, underscores (except in the case described in the next paragraph), mathematical characters or any other special characters in the names. Entity attributes should use UpperCamelCase, for example, **FirstName** or **TelephoneNumber**.
+The entity [attribute](/refguide7/attributes/) should reflect a property of a real-world object that people can relate to and fits the purpose of that property. We advise avoiding abbreviations, underscores (except in the case described in the next paragraph), mathematical characters or any other special characters in the names. Entity attributes should use UpperCamelCase, for example, **FirstName** or **TelephoneNumber**.
 
 Attributes that do not reflect business-related data, but are only necessary for technical reasons, should start with an underscore (`_`).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 A strong indicator for determining whether or not an attribute is business-related is whether you would still capture it if you were using a paper-only process. If you would, it is likely that the attribute will deliver business value.
 {{% /alert %}}
 
@@ -72,7 +72,7 @@ A strong indicator for determining whether or not an attribute is business-relat
 
 **Naming multiple associations between entities**
 
-[Association](/refguide7/associations) names in the domain model are automatically generated by Mendix. The auto-generated names follow the best practice and should be used by default.
+[Association](/refguide7/associations/) names in the domain model are automatically generated by Mendix. The auto-generated names follow the best practice and should be used by default.
 
 If you have multiple associations between the same entities we recommend extending the association name. Extending this name with a recognizable purpose clarifies where you should use the association. For example, you can have a relationship between **Person** and **Address**. A person can have multiple addresses but you want to specify what their postal address is and what their delivery address is. An implementation choice could be that you create two associations for that purpose and adjust the names of the associations accordingly. For example, **Person_Address_Delivery**.
 
@@ -80,7 +80,7 @@ If you have multiple associations between the same entities we recommend extendi
 
 A second recommendation is that when an association already exists between entities, and you change the name on one or both of the entities, that you rename the association.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Starting with version 7.19, Mendix will rename the association automatically. 
 {{% /alert %}}
 
@@ -102,7 +102,7 @@ Every app has documents that are needed for specific entities. Think of overview
 
 ### 3.4 Microflows
 
-Generally, [microflow](/refguide7/microflows) names should include the type of event which triggers them, the name of the main entity being processed, and the operation being performed: **{Prefix}\_{Entity}\_{Operation}**. For example,  **Act_Vendor_StartWorkflow**.
+Generally, [microflow](/refguide7/microflows/) names should include the type of event which triggers them, the name of the main entity being processed, and the operation being performed: **{Prefix}\_{Entity}\_{Operation}**. For example,  **Act_Vendor_StartWorkflow**.
 
 There are exceptions, such as where there is no main entity, or there is another reason to use a different name to improve understandability. The important thing is to make sure the name of the microflow clearly indicates its purpose.
 
@@ -110,7 +110,7 @@ To easily find and recognize the purpose of a microflow, you can use standard pr
 
 #### 3.4.1 Entity Event Microflows
 
-For some entities you use entity [events](/refguide7/events) that are always triggered when a specific operation is executed on the entity.
+For some entities you use entity [events](/refguide7/events/) that are always triggered when a specific operation is executed on the entity.
 
 For example, an attribute **TotalOrderAmount** is automatically filled based on the amount values of the order-related order lines. You can define an after-commit event that ensures that **TotalOrderAmount** is updated when a related order line is saved: *ACo_Order_CalculateTotalOrderAmount*.
 
@@ -137,7 +137,7 @@ For attributes, you can choose to store the value in the database or to calculat
 
 #### 3.4.4 Page-based Microflows
 
-[Pages](/refguide7/pages) have a number of events that can trigger a microflow. See the following list for the examples and prefixes:
+[Pages](/refguide7/pages/) have a number of events that can trigger a microflow. See the following list for the examples and prefixes:
 
 | Event Type                | Prefix             | Used In |
 |---------------------------|--------------------|--------------------------------|
@@ -149,7 +149,7 @@ For attributes, you can choose to store the value in the database or to calculat
 
 ### 3.4.5 Validation Microflows
 
-Microflows that are used for [data validation](/howto7/data-models/setting-up-data-validation) use the prefix **Val_**.
+Microflows that are used for [data validation](/howto7/data-models/setting-up-data-validation/) use the prefix **Val_**.
 
 | Event Type      | Prefix               |
 |-----------------|----------------------|
@@ -157,7 +157,7 @@ Microflows that are used for [data validation](/howto7/data-models/setting-up-da
 
 ### 3.4.6 Scheduled Event Microflows
 
-For the microflow that you use in your [scheduled events](/refguide7/scheduled-events), use the prefix **ScE_**. The event itself should have a descriptive name since it will be shown in the cloud configuration portal. The scheduled event and the microflow should have the same name.
+For the microflow that you use in your [scheduled events](/refguide7/scheduled-events/), use the prefix **ScE_**. The event itself should have a descriptive name since it will be shown in the cloud configuration portal. The scheduled event and the microflow should have the same name.
 
 | Event Type      | Prefix               |
 |-----------------|----------------------|
@@ -165,7 +165,7 @@ For the microflow that you use in your [scheduled events](/refguide7/scheduled-e
 
 #### 3.4.7 Project Microflows
 
-Your [project settings](/refguide7/project-settings) provide three events that can trigger a microflow. In these cases we advise writing out the purpose as a microflow name. These microflows are defined only once per app and should preferably call sub-microflows to do the actual processing. These sub-microflows should have a prefix indicated below:
+Your [project settings](/refguide7/project-settings/) provide three events that can trigger a microflow. In these cases we advise writing out the purpose as a microflow name. These microflows are defined only once per app and should preferably call sub-microflows to do the actual processing. These sub-microflows should have a prefix indicated below:
 
 | Event Type      | Microflow Name | Sub-microflow Prefix |
 |-----------------|----------------|----------------------|
@@ -175,7 +175,7 @@ Your [project settings](/refguide7/project-settings) provide three events that c
 
 #### 3.4.8 Unit Test Microflows
 
-Microflows containing [unit tests](/howto7/testing/testing-microflows-using-the-unittesting-module) should have the prefix **Test_**.
+Microflows containing [unit tests](/howto7/testing/testing-microflows-using-the-unittesting-module/) should have the prefix **Test_**.
 
 | Event Type      | Prefix               |
 |-----------------|----------------------|
@@ -196,7 +196,7 @@ For integrations, you have the following types of microflow:
 
 #### 3.5.1 Layouts & Snippets
 
-[Layouts](/refguide7/layout) and [snippets](/refguide7/snippet) should be identified with prefixes.
+[Layouts](/refguide7/layout/) and [snippets](/refguide7/snippet/) should be identified with prefixes.
 
 | Document Type                             | Prefix    |
 |-------------------------------------------|-----------|
@@ -207,7 +207,7 @@ For integrations, you have the following types of microflow:
 
 Pages use a **suffix** to indicate their use.
 
-Pages that show an [overview](/howto7/front-end/create-your-first-two-overview-and-detail-pages) of a single entity should have a suffix of **_Overview**.
+Pages that show an [overview](/howto7/front-end/create-your-first-two-overview-and-detail-pages/) of a single entity should have a suffix of **_Overview**.
 
 Pages that are to create, edit, or view entity data, and that are not part of a process, should have the suffix **_New**, **_Edit**, **_NewEdit**, or **_View**.
 
@@ -240,7 +240,7 @@ Documents used to support integration should have the prefixes listed below.
 
 ### 3.6 Home Pages
 
-You can define the [home pages](/refguide7/show-home-page) per device and role in your navigation. The recommended page names are listed below:
+You can define the [home pages](/refguide7/show-home-page/) per device and role in your navigation. The recommended page names are listed below:
 
 | Event Type           | Device  | Page Name                   |
 |----------------------|---------|-----------------------------|
@@ -265,11 +265,11 @@ When using inheritance (specialization/generalization), it is recommended to use
 
 #### 4.1.3 Delete Behavior
 
-[Delete behavior](/howto7/data-models/create-a-basic-data-layer#delete-behavior) must be specified where possible. Delete behavior must, however, never be relied upon when deleting large amounts of data. For performance reasons it is better to explicitly delete dependent objects when doing batch deletes.
+[Delete behavior](/howto7/data-models/create-a-basic-data-layer/#delete-behavior) must be specified where possible. Delete behavior must, however, never be relied upon when deleting large amounts of data. For performance reasons it is better to explicitly delete dependent objects when doing batch deletes.
 
 #### 4.1.4 Event Handlers
 
-[Event handlers](/refguide7/event-handlers) on domain entities must be used with a lot of caution. They can quickly result in complex and possibly unexpected behavior when several of them are applied to a single entity. It is often best to make the execution of microflows more explicit by using sub-microflows that are called manually, for example, just before committing an object.
+[Event handlers](/refguide7/event-handlers/) on domain entities must be used with a lot of caution. They can quickly result in complex and possibly unexpected behavior when several of them are applied to a single entity. It is often best to make the execution of microflows more explicit by using sub-microflows that are called manually, for example, just before committing an object.
 
 ### 4.2 Microflows
 
@@ -283,7 +283,7 @@ Certain cases (such as validation checks) may require this rule to be ignored to
 
 #### 4.2.2 Documentation & Annotations {#documentation-and-annotations}
 
-All complex microflows (more than ten activities or more than two splits) should have an [annotation](/refguide7/annotations) describing the purpose of the microflow, expected parameters, and return values. This annotation should be placed at the start, so it is visible when the microflow is opened. This will assist other developers in quickly understanding the general purpose of a microflow, without having to read through it entirely.
+All complex microflows (more than ten activities or more than two splits) should have an [annotation](/refguide7/annotations/) describing the purpose of the microflow, expected parameters, and return values. This annotation should be placed at the start, so it is visible when the microflow is opened. This will assist other developers in quickly understanding the general purpose of a microflow, without having to read through it entirely.
 
 Complex, non-standard or integration-related sections in microflows should also have an accompanying annotation. Examples of these are web service calls, custom loops, and Java calls.
 
@@ -305,9 +305,9 @@ The number of parameters for a microflow should be kept to a minimum to facilita
 
 #### 4.2.5 Error Handling & Logging
 
-Use microflow [error handling](/howto7/logic-business-rules/set-up-error-handling) for all integration and Java calls. Make sure to determine the correct rollback behavior. Always log the error that occurred, even if the process can continue, this is essential for later analysis of the error.
+Use microflow [error handling](/howto7/logic-business-rules/set-up-error-handling/) for all integration and Java calls. Make sure to determine the correct rollback behavior. Always log the error that occurred, even if the process can continue, this is essential for later analysis of the error.
 
-Complex processes and important business logic (like workflow processing or validations) must include debug and trace [logging](/refguide7/logging). Logging actions must write the current state and progress of the process and must include a request ID or other identifying information. The log node should be the name of the module. This will greatly assist error analysis.
+Complex processes and important business logic (like workflow processing or validations) must include debug and trace [logging](/refguide7/logging/). Logging actions must write the current state and progress of the process and must include a request ID or other identifying information. The log node should be the name of the module. This will greatly assist error analysis.
 
 ### 4.3 Warnings & Modeler Feedback
 
@@ -317,7 +317,7 @@ Unused and excluded items should be removed from the model when they are no long
 
 ### 4.4 XPath
 
-[XPath](/refguide7/xpath) constraints in any part of the model should be kept as simple as possible. As a general rule, XPaths must not appear when the **Find advanced > XPath** option in the Modeler is used with all options enabled.
+[XPath](/refguide7/xpath/) constraints in any part of the model should be kept as simple as possible. As a general rule, XPaths must not appear when the **Find advanced > XPath** option in the Modeler is used with all options enabled.
 
 ### 4.5 Security
 

@@ -19,13 +19,22 @@ Developers have several options to change an app's look and feel. Depending on w
 
 When tailoring your app's look, a simple first step is to change the theme settings. This quickly adjusts the theme to a company's brand by changing the colors.
 
-For Studio users, use the [Theme Customizer](/studio/theme-customizer) to change the basic look and feel of your app. The differences will become visible immediately.
+For Studio users, use the [Theme Customizer](/studio/theme-customizer/) to change the basic look and feel of your app. The differences will become visible immediately.
 
-For Studio Pro users there are more options to change the default theme settings. In the theme folder there is a *custom-variables* file (for both web apps and native mobile apps) which can be used to simply change many of the theme settings for the app. For more information on this topic, see the [File and Folder Structure](#file-and-folder) section below.
+For Studio Pro users there are more options to change the default theme settings. To customize the default theme settings, you can open and edit the *custom-variables* file from the App Explorer (**App** > **Styling** > **web** > **custom-variables.scss** for web apps, and **App** > **Styling** > **native** > **custom-variables.js** for native apps).
 
 For more information on how changes can be quickly previewed, see the [Preview a Styling Change](#previewing-styling) section below.
 
-### 2.2 Adding Custom Styling
+### 2.2 Using the Styling Editor {#styling-editor}
+
+The styling editor is based on the editor that powers Visual Studio Code and is also used for JavaScript actions. You can find the styling files (JS, SCSS) and theme settings (JSON) inside the App Explorer, and edit them using this editor.
+By default, Studio Pro shows styling files on the app level and from UI resources modules, such as **Atlas_Core**. This can be changed in [preferences](/refguide/preferences-dialog/) (Edit > **Preferences** > **General** > **Interface**) or by simply right-clicking **Styling** in the App Explorer:
+
+![styling editor settings](/attachments/howto/front-end/atlas-ui/customize-styling-new/styling-editor-settings.png)
+
+To learn more about the file and folder structure, see the [File and Folder Structure](#file-and-folder) section below.
+
+### 2.3 Adding Custom Styling
 
 Developers can add custom styling for apps in the `theme/web` or `theme/native` folder.
 
@@ -35,7 +44,7 @@ While custom styling can be added directly in the *main.scss* or *main.js* it is
 
 Within custom styling, the theme settings (colors, spacings, etc.) as configured in *custom-variables.scss* or *custom-variables.js*, can be re-used. This is also recommended to provide a consistent user experience.
 
-#### 2.2.1. Web Environment Example
+#### 2.3.1. Web Environment Example
 
 In the following example a custom style is added to change any matching element's font-size upon use.
 
@@ -61,7 +70,7 @@ Steps:
 
 This ensures the SCSS is included in CSS compilation.
 
-#### 2.2.2 Native Environment Example
+#### 2.3.2 Native Environment Example
 
 In this example we will be creating a custom style which will change the font size of text upon use:
 
@@ -85,7 +94,7 @@ In this example we will be creating a custom style which will change the font si
 	module.exports = {companyHeader};
 	```
 
-### 2.3 Importing CSS (Web Only)
+### 2.4 Importing CSS (Web Only)
 
 An app's theme is based on SASS (`.scss` files), but it can be the case you require CSS files from third-party libraries. This can be done by adding the third-party library file to the `cssFiles` property in *theme/web/settings.json*.
 
@@ -99,17 +108,17 @@ See the following fragment as an example of how additional CSS can be added to y
 
 ## 3 Creating Re-Usable Styling
 
-The previous section describes how developers can customize the styling of an app. Next to that it is possible to place styling inside modules, which then can be re-used in other apps. This can be used to [create a theme module](#create-theme-mod) or a [company design system](create-a-company-design-system).
+The previous section describes how developers can customize the styling of an app. Next to that it is possible to place styling inside modules, which then can be re-used in other apps. This can be used to [create a theme module](#create-theme-mod) or a [company design system](/howto/front-end/create-a-company-design-system/).
 
 Adding styling to a module is similar to adding styling to an app, except that styling resources are placed in the **themesource** folder as explained in the [File and Folder Structure](#file-and-folder) section below.
 
-For classes that are generic or that should be easily discovered, a developer can consider creating design properties for this. For more information see [How to Extend design properties](extend-design-properties)
+For classes that are generic or that should be easily discovered, a developer can consider creating design properties for this. For more information see [How to Extend design properties](/howto/front-end/extend-design-properties/)
 
 ## 4 Creating a Theme Module {#create-theme-mod}
 
 A theme module is useful for styling which can be easily re-used through modules across apps. By default, the theme settings like color, font, spacing, and more are in the **theme** folder, which is specific per app. However, often these settings should be re-used to create a consistent look and feel across apps.
 
-This can be done by creating a theme module and making the *custom-variables* file in the **theme** folder point to the custom variables file in your theme module. For creating a full design system see [How to Create a Company Design System](create-a-company-design-system).
+This can be done by creating a theme module and making the *custom-variables* file in the **theme** folder point to the custom variables file in your theme module. For creating a full design system see [How to Create a Company Design System](/howto/front-end/create-a-company-design-system/).
 
 See the examples below for more information on creating a re-usable theme module.
 
@@ -179,7 +188,7 @@ $brand-danger: #e33f4e;
 
 You can now export the **mytheme** module from Studio Pro to re-use in your apps. Note that you need to add the `@import …` line to *theme/web/custom-variables.scss* for every app that imports the module. Therefore, we recommend you create a company starter app containing this change.
 
-To test the theme for all the widgets, page templates, and building blocks it can be helpful to use the Atlas Design System app as discussed in [Create a Company Design System](create-a-company-design-system).
+To test the theme for all the widgets, page templates, and building blocks it can be helpful to use the Atlas Design System app as discussed in [Create a Company Design System](/howto/front-end/create-a-company-design-system/).
 
 {{% alert color="info" %}}
 Note: if this is done, the Theme customizer in Studio will not work any more as it depends on the custom variables in the **theme** folder.
@@ -267,7 +276,7 @@ Mendix monitors the file system in the **theme** and **themesource** folders for
 
 If **Enable developer mode** is enabled, and changes are made in the JavaScript styling files, the app automatically reloads with the new styling. 
 
-For more information, see the Getting the [Make It Native App Reference Guide](/refguide/getting-the-make-it-native-app).
+For more information, see the Getting the [Make It Native App Reference Guide](/refguide/getting-the-make-it-native-app/).
 
 ## 6 File and Folder Structure {#file-and-folder}
 
@@ -344,7 +353,7 @@ For native mobile apps the React Native framework is used to combine all the Jav
 
 If there are errors during the bundling, these will be shown in Studio Pro and the Make it Native app. For details on the error, it can be helpful to look at the native packager logs in *{Mendix app directory}/deployment/log/native_packager_log.txt*.
 
-For more details on styling native mobile apps see the [Native Mobile Styling](/refguide/native-styling-refguide) Reference Guide.
+For more details on styling native mobile apps see the [Native Mobile Styling](/refguide/native-styling-refguide/) Reference Guide.
 
 ## 8 Disabling default styling from Atlas Core {#disable-default}
 

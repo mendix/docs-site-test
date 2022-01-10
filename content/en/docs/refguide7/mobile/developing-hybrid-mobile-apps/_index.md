@@ -1,6 +1,6 @@
 ---
 title: "Developing Hybrid Mobile Apps"
-url: /refguide7/developing-hybrid-mobile-apps
+url: /refguide7/developing-hybrid-mobile-apps/
 category: "Mobile Development"
 aliases:
     - /refguide7/Developing+Hybrid+Mobile+Apps.html
@@ -20,9 +20,9 @@ However, when you use native widgets on your hybrid pages, some of these widgets
 
 ![](/attachments/refguide7/mobile/developing-hybrid-mobile-apps/View_Hybrid_Mobile_App_Popup.png)
 
-For more information about how to download the Mendix Mobile app, see [Getting the Mendix Mobile App](getting-the-mendix-app).
+For more information about how to download the Mendix Mobile app, see [Getting the Mendix Mobile App](/refguide7/getting-the-mendix-app/).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Your mobile device has to be on the same network as your development machine for the Mendix Mobile app to work. If this is the case and the connection still fails, make sure that communication between devices is allowed in the Wi-Fi access point.
 
@@ -30,8 +30,8 @@ Your mobile device has to be on the same network as your development machine for
 
 ## 3 Read More
 
-* [Mobile](mobile)
-* [Getting the Mendix Mobile App](getting-the-mendix-app)
-* [Customizing Hybrid Mobile Apps](customizing-hybrid-mobile-apps)
-* [Packaging Hybrid Mobile Apps](packaging-hybrid-mobile-apps)
+* [Mobile](/refguide7/mobile/)
+* [Getting the Mendix Mobile App](/refguide7/getting-the-mendix-app/)
+* [Customizing Hybrid Mobile Apps](/refguide7/customizing-hybrid-mobile-apps/)
+* [Packaging Hybrid Mobile Apps](/refguide7/packaging-hybrid-mobile-apps/)
 

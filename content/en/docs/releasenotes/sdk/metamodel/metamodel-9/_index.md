@@ -7,12 +7,13 @@ parent: "metamodel"
 
 These are the release notes for the Mendix Metamodel version 9:
 
-* [9.8](metamodel-9.8)
-* [9.7](metamodel-9.7)
-* [9.6](metamodel-9.6)
-* [9.5](metamodel-9.5)
-* [9.4](metamodel-9.4)
-* [9.3](metamodel-9.3)
-* [9.2](metamodel-9.2)
-* [9.1](metamodel-9.1)
-* [9.0](metamodel-9.0)
+* [9.9](/releasenotes/sdk/metamodel-9.9/)
+* [9.8](/releasenotes/sdk/metamodel-9.8/)
+* [9.7](/releasenotes/sdk/metamodel-9.7/)
+* [9.6](/releasenotes/sdk/metamodel-9.6/)
+* [9.5](/releasenotes/sdk/metamodel-9.5/)
+* [9.4](/releasenotes/sdk/metamodel-9.4/)
+* [9.3](/releasenotes/sdk/metamodel-9.3/)
+* [9.2](/releasenotes/sdk/metamodel-9.2/)
+* [9.1](/releasenotes/sdk/metamodel-9.1/)
+* [9.0](/releasenotes/sdk/metamodel-9.0/)

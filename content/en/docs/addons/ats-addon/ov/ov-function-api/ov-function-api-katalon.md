@@ -2,14 +2,14 @@
 title: "Function API with Katalon"
 url: /addons/ats-addon/ov-function-api-katalon/
 parent: "ov-function-api"
-menu_order: 3
+weight: 3
 ---
 
 ## 1 Introduction
 
 Katalon is a popular graphical testing tool, which is why CLEVR decided to build an integration between ATS and Katalon. This integration allows testers to leverage the power of Katalon and combine it with the ease-of-use and Mendix-focus of ATS. With this integration, executing an ATS function is as simple as calling a custom keyword in Katalon.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Before you start writing tests, you need to import the ATS keywords library via *ats.jar*:<br />
 
 ![](/attachments/addons/ats-addon/ov/ov-function-api/ov-function-api-katalon/library.png)
@@ -82,7 +82,7 @@ CucumberKW.verifyEqual(value, 'foo')
 
 ## 5 Read More
 
-* [Function API](rg-two-function-api)
-* [Function API Reference](rg-two-function-api-reference)
-* [Function API with REST](ov-function-api-rest)
-* [Function API with Java](ov-function-api-java)
+* [Function API](/addons/ats-addon/rg-two-function-api/)
+* [Function API Reference](/addons/ats-addon/rg-two-function-api-reference/)
+* [Function API with REST](/addons/ats-addon/ov-function-api-rest/)
+* [Function API with Java](/addons/ats-addon/ov-function-api-java/)

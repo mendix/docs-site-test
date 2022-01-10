@@ -42,9 +42,9 @@ This is the Mendix **environment**.
 
 In a **node** in the Mendix Cloud, you may have one, or more, of these environments.
 
-For a **Free App**, your app has a single environment which allows you to test your app. However, this comes with restrictions on how long it will run. In addition, you cannot scale the app, and the operational capabilities are limited. For more details on the restrictions of a Free App, see [Mendix Cloud](mendix-cloud-deploy#free-app).
+For a **Free App**, your app has a single environment which allows you to test your app. However, this comes with restrictions on how long it will run. In addition, you cannot scale the app, and the operational capabilities are limited. For more details on the restrictions of a Free App, see [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/#free-app).
 
-In a **licensed node** you have everything you need to stage and deploy your app. You can have several different environments to support development: test, acceptance, and production, for example. With [Flexible Environments](mendix-cloud-deploy#flexible-environments) in Mendix Cloud v4, you can even specify the number and names of your environments. You can scale licensed environments by providing more memory or multiple instances, and you can configure and monitor them using the tools in the Developer Portal.
+In a **licensed node** you have everything you need to stage and deploy your app. You can have several different environments to support development: test, acceptance, and production, for example. With [Flexible Environments](/developerportal/deploy/mendix-cloud-deploy/#flexible-environments) in Mendix Cloud v4, you can even specify the number and names of your environments. You can scale licensed environments by providing more memory or multiple instances, and you can configure and monitor them using the tools in the Developer Portal.
 
 ## 3 Prerequisites
 
@@ -52,9 +52,9 @@ In a **licensed node** you have everything you need to stage and deploy your app
 
 To license an app, you need to have a licensed cloud node available:
 
-If you want to license a single app for between five and a hundred users, you can order the Mendix Basic package online. See [Mendix Basic Package](basic-package) for more details.
+If you want to license a single app for between five and a hundred users, you can order the Mendix Basic package online. See [Mendix Basic Package](/developerportal/deploy/basic-package/) for more details.
 
-If you have an existing contract which allows for more licensed nodes, use the [Request New App Node](https://newnode.mendix.com) app to request a new node from Mendix Support. For more information, see [Licensing Apps](licensing-apps-outside-mxcloud).
+If you have an existing contract which allows for more licensed nodes, use the [Request New App Node](https:/newnode.mendix.com) app to request a new node from Mendix Support. For more information, see [Licensing Apps](/developerportal/deploy/licensing-apps-outside-mxcloud/).
 
 {{% alert color="info" %}}
 If your contract does not allow for more licensed nodes, please contact your Customer Success Manager (CSM).
@@ -64,9 +64,9 @@ If you do not fall into any of the categories above, please contact [Mendix Supp
 
 ### 3.2 Authorization
 
-You need to be the [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) of the node, otherwise you will not have the rights to link an app to the node.
+You need to be the [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) of the node, otherwise you will not have the rights to link an app to the node.
 
-You need to have enabled two-factor authentication. See [Two-Factor Authentication](two-factor-authentication).
+You need to have enabled two-factor authentication. See [Two-Factor Authentication](/developerportal/deploy/two-factor-authentication/).
 
 ## 4 Linking Your App to a Licensed Node {#licensed-node}
 
@@ -85,7 +85,7 @@ For the specific case of swapping two apps between licensed nodes, see the guida
 
 When you remove an app from its environment you may want to take the data (database and file store) with it. It is a good idea, in any case, to take backups before performing major activities.
 
-For more information on downloading a backup, see [Download a Backup](/developerportal/operate/download-backup). 
+For more information on downloading a backup, see [Download a Backup](/developerportal/operate/download-backup/). 
 
 {{% alert color="warning" %}}
 When you unlink your Free App from its environment, the environment will be permanently deleted. This means that you will not be able to recover any data once the app is unlinked.
@@ -121,7 +121,7 @@ To unlink a Free App, do the following:
 
     {{% alert color="warning" %}}Your Data will be deleted.{{% /alert %}}
 
-6.  Validate with your [Two-Factor Authentication](two-factor-authentication).
+6.  Validate with your [Two-Factor Authentication](/developerportal/deploy/two-factor-authentication/).
 
 Your app has now been unlinked from the Free App environment.
 
@@ -167,7 +167,7 @@ To connect your app to a licensed node, do the following:
 
     ![](/attachments/developerportal/deploy/mendix-cloud-deploy/licensing-apps/confirm-replace.png)
 
-6.  Validate with your [Two-Factor Authentication](two-factor-authentication).
+6.  Validate with your [Two-Factor Authentication](/developerportal/deploy/two-factor-authentication/).
 
 Your app is now connected to this node.
 
@@ -175,7 +175,7 @@ Your app is now connected to this node.
 
 After you have linked your app to a licensed node, it will be using the resources currently in that node. For example, the data in the existing database, if there was an app previously deployed to the node.
 
-If you want to use the data which was originally in your app, you will need to restore the backup from your old node. For more information on restoring a backup, see [Restore a Backup](/developerportal/operate/restore-backup).
+If you want to use the data which was originally in your app, you will need to restore the backup from your old node. For more information on restoring a backup, see [Restore a Backup](/developerportal/operate/restore-backup/).
 
 {{% alert color="warning" %}}
 You can only restore data to an existing database. This means that there must have been an app deployed to the licensed node before you attempt to restore data.
@@ -209,4 +209,4 @@ You have now swapped **App A** and **App B** between nodes.
 
 ## 6 Read More
 
-*   [Mendix Cloud](mendix-cloud-deploy)
+*   [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/)

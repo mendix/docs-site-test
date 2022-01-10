@@ -1,28 +1,28 @@
 ---
 title: "Header"
-url: /refguide8/header
+url: /refguide8/header/
 parent: "layout"
-menu_order: 20
+weight: 20
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/header.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/header.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 
-A **header** combines the functionality of a page title and a control bar for your page. Due to its compact design and versatility it is often used in mobile pages. A header can only be used in a [layout](layout).
+A **header** combines the functionality of a page title and a control bar for your page. Due to its compact design and versatility it is often used in mobile pages. A header can only be used in a [layout](/refguide8/layout/).
 
-Headers consist of three distinct elements: a page title and a left and right [drop-zone](page#add-elements). The page title is indicated by the text `[Page title]`. The drop-zones cannot be seen by default, but they can be selected and also become visible when they have elements dropped into them.
+Headers consist of three distinct elements: a page title and a left and right [drop-zone](/refguide8/page/#add-elements). The page title is indicated by the text `[Page title]`. The drop-zones cannot be seen by default, but they can be selected and also become visible when they have elements dropped into them.
 
 For example, the following header has the right drop-zone selected and the user is dropping a button into the left drop-zone.
 
 ![](/attachments/refguide8/modeling/pages/page-resources/layout/header/header-layout.png)
 
-The drop-zones are intended for confirmation buttons, such as an [action button](button-widgets) for creating a new object, but can easily be appropriated for any number of alternate implementations.
+The drop-zones are intended for confirmation buttons, such as an [action button](/refguide8/button-widgets/) for creating a new object, but can easily be appropriated for any number of alternate implementations.
 
 The page title placeholder is replaced by the page title setting of the page being displayed.
 
@@ -46,8 +46,8 @@ Header properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section{#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
+{{% snippet file="refguide8/design-section-link.md" %}} 

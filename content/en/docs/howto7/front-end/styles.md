@@ -1,9 +1,9 @@
 ---
 title: "Implement Styles"
-url: /howto7/front-end/styles
+url: /howto7/front-end/styles/
 category: "Front End"
 description: "Presents details on using class names for text colors, buttons, and other style elements."
-menu_order: 40
+weight: 40
 tags: ["style", "class name", "user interface", "front end"]
 ---
 
@@ -116,7 +116,7 @@ You can change the appearance of a layout grid:
 * `v-center`: vertically aligns elements in a Bootstrap row; add this class on a row in a layout grid
 * `no-gutter`: removes padding for Bootstrap columns; add this class on a row in a layout grid
 
-{{% alert type="info" %}}**Phones:**
+{{% alert color="info" %}}**Phones:**
 
 For phones, also add `col-xs-N` (where `N` is the size of the column) to the layout grids to make the columns appear next to each other. 
 

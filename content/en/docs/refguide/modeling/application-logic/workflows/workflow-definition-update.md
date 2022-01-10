@@ -68,8 +68,8 @@ The Runtime will add or change data for the following system entities on startup
 
  The **WorkflowVersion** instance also refers to all **WorkflowTaskDefinition** instances present in that version of the model.
 
-For more information, see the the [Workflow Entities in the System Module](workflows#workflow-entities) section in *Workflows*. 
+For more information, see the the [Workflow Entities in the System Module](/refguide/workflows/#workflow-entities) section in *Workflows*. 
 
 ## 3 Read More
 
-* [Workflows](workflows)
+* [Workflows](/refguide/workflows/)

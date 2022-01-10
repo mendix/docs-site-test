@@ -11,7 +11,7 @@ tags: ["studio pro", "building block", "page resource"]
 
 Building blocks are components that can be re-used to streamline the page creation process. By pre-configuring and styling building blocks, users can easily click together interfaces without having to worry about the details of styling guidelines or user experience. 
 
-Building blocks are stored in the app's [UI resources package](ui-resources-package). This keeps them in sync with the app theme, and provides a handy place to consolidate all design-related data. 
+Building blocks are stored in the app's [UI resources package](/refguide/ui-resources-package/). This keeps them in sync with the app theme, and provides a handy place to consolidate all design-related data. 
 
 To create a building block, simply right-click a widget anywhere in your app in Studio Pro and select **Create building block**. The widget along with its contents will be added as a new building block. The building block will now automatically appear in the **Building blocks** tab of the **Toolbox**. 
 
@@ -19,11 +19,11 @@ As the purpose of building blocks is to facilitate design rather than functional
 
 ## 2 Common Properties
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ## 3 Designer Properties
 
-{{% snippet file="/static/_includes/refguide/designer-properties.md" %}}
+{{% snippet file="refguide/designer-properties.md" %}}
 
 ## 4 General Properties
 

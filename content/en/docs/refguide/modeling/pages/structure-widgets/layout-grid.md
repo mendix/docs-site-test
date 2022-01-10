@@ -11,12 +11,14 @@ tags: ["studio pro", "layout grid", "container widget", "column", "row", "grid",
 
 The layout grid is a widget that gives structure to your pages.  
 
-A layout grid consists of [rows](#rows) and [columns](#columns): ![Layout Grid Example](/attachments/refguide/modeling/pages/structure-widgets/layout-grid/layout-grid.png)
+A layout grid consists of [rows](#rows) and [columns](#columns): 
+![Layout Grid Example](/attachments/refguide/modeling/pages/structure-widgets/layout-grid/layout-grid.png)
+
 In a browser, the layout grid is based on the Bootstrap grid system. For more information on the Bootstrap grid system, see the [official Bootstrap documentation](http://getbootstrap.com/css/#grid).
 
 {{% alert color="info" %}}
 
-Row and column properties described below are available if your app has [Atlas UI Resources](/appstore/modules/atlas-ui-resources) version 2.4.0 or above. 
+Row and column properties described below are available if your app has [Atlas UI Resources](/appstore/modules/atlas-ui-resources/) version 2.4.0 or above. 
 
 For more information on row and column properties, see the [Rows and Their Properties](#rows) and [Columns and Their Properties](#columns) sections. 
 
@@ -38,11 +40,11 @@ Layout grid properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section{#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}}
+{{% snippet file="refguide/design-section-link.md" %}}
 
 ### 2.3 General Section {#general}
 
@@ -63,7 +65,7 @@ As the layout grid responds to the viewport width, and not to the width of its c
 
 ### 2.4 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 3 Rows and Their Properties {#rows}
 
@@ -82,7 +84,7 @@ Row properties consist of the following sections:
 
 ### 3.1 Common Section {#row-common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 3.2 General Section {#row-general}
 
@@ -107,7 +109,7 @@ The **General** section of a row contains the following properties:
 
 ### 3.3 Visibility Section {#row-visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 4 Columns and Their Properties {#columns}
 
@@ -126,7 +128,7 @@ Layout grid column properties consist of the following sections:
 
 ### 4.1 Common Section {#column-common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 4.2 General Section {#column-general}
 
@@ -212,6 +214,6 @@ In adding to inserting a new column, you can perform the following actions when 
 
 ## 6 Read More
 
-* [Page](page)
-* [Structure](structure-widgets)
-* [Properties Common for Widgets](common-widget-properties)
+* [Page](/refguide/page/)
+* [Structure](/refguide/structure-widgets/)
+* [Properties Common for Widgets](/refguide/common-widget-properties/)

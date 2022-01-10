@@ -1,8 +1,8 @@
 ---
 title: "Set Log Levels"
-url: /howto7/monitoring-troubleshooting/log-levels
+url: /howto7/monitoring-troubleshooting/log-levels/
 category: "Monitoring & Troubleshooting"
-menu_order: 9
+weight: 9
 tags: ["monitoring", "troubleshooting", "log level", "logging", "log"]
 ---
 
@@ -58,9 +58,9 @@ These are the log levels used by Mendix:
 | Debug | | | Detailed information, typically of interest only when diagnosing problems. |
 | Info  | | | Confirmation that things are working as expected. |
 | Warning | ![](/attachments/howto7/monitoring-troubleshooting/log-levels/18580038.png) | Orange | Indicates that something unexpected happened or that there is some problem in the near future (for example, "disk space low"). The application is still working as expected. |
- | Orange | Indicates that something unexpected happened or that there is some problem in the near future (for example, "disk space low"). The application is still working as expected. || Error | ![](/attachments/howto7/monitoring-troubleshooting/log-levels/18580037.png) | Red | Due to a more serious problem, the application has not been able to perform some function. |
- | Red | Due to a more serious problem, the application has not been able to perform some function. || Critical | ![](/attachments/howto7/monitoring-troubleshooting/log-levels/18580036.png) | White (text), red (background) | A serious error has occurred, indicating that the application itself may be unable to continue running. |
- | White (text), red (background) | A serious error has occurred, indicating that the application itself may be unable to continue running. |
+| Error | ![](/attachments/howto7/monitoring-troubleshooting/log-levels/18580037.png) | Red | Due to a more serious problem, the application has not been able to perform some function. |
+| Critical | ![](/attachments/howto7/monitoring-troubleshooting/log-levels/18580036.png) | White (text), red (background) | A serious error has occurred, indicating that the application itself may be unable to continue running. |
+
 ## 3 Setting the Log Levels
 
 In this section of the how-to, you will learn how to configure the log levels of the logging messages produced by the system. The different levels highlighted in [3.2 Level](#Level) can be applied to custom logging and to the predefined logging produced by the Mendix Modeler. 
@@ -99,13 +99,13 @@ To set the level of custom log messages that you have created via a microflow, f
 
 ## 4 Read More
 
-* [How to Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [How to Clear Warning Messages in Mendix](clear-warning-messages)
-* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui)
-* [How to Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [How to Log Levels](log-levels)
-* [How to Debug Microflows](debug-microflows)
-* [How to Debug Microflows Remotely](debug-microflows-remotely)
-* [How to Debug Java Actions](debug-java-actions)
-* [How to Debug Java Actions Remotely](debug-java-actions-remotely)
-* [How to Handle Common Mendix SSO Errors](handle-common-mendix-sso-errors)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [How to Clear Warning Messages in Mendix](/howto7/monitoring-troubleshooting/clear-warning-messages/)
+* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui/)
+* [How to Monitor Mendix Using JMX](/howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [How to Log Levels](/howto7/monitoring-troubleshooting/log-levels/)
+* [How to Debug Microflows](/howto7/monitoring-troubleshooting/debug-microflows/)
+* [How to Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely/)
+* [How to Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions/)
+* [How to Debug Java Actions Remotely](/howto7/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [How to Handle Common Mendix SSO Errors](/howto7/monitoring-troubleshooting/handle-common-mendix-sso-errors/)

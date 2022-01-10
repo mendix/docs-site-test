@@ -13,7 +13,7 @@ tags: ["SSO", "Single Sign-on", "Mendix credentials", "Mendix SSO"]
 
 ## 1 Introduction
 
-The [Mendix SSO module](/appstore/modules/mendix-sso) enables your app end-users to sign in with their Mendix account when your app is deployed to the Mendix Cloud.
+The [Mendix SSO module](/appstore/modules/mendix-sso/) enables your app end-users to sign in with their Mendix account when your app is deployed to the Mendix Cloud.
 
 {{% alert color="warning" %}}
 Mendix Single Sign-On is only activated when your app is deployed to the Mendix Cloud. When you run your app locally, or on another cloud, you will need to use local credentials.
@@ -32,7 +32,7 @@ You can see if your app has the Mendix SSO module, and which version it has, by 
 
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/mendix-sso/mxsso-app-store-module.png)
 
-If your app does not have the Mendix SSO module, it is available from the Mendix Marketplace [here](https://marketplace.mendix.com/link/component/111349/). Follow the instructions in [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content) to import it into your app and then follow the instructions in [Setting Up Mendix Single Sign-On](#setting-up), below.
+If your app does not have the Mendix SSO module, it is available from the Mendix Marketplace [here](https:/marketplace.mendix.com/link/component/111349/). Follow the instructions in [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/) to import it into your app and then follow the instructions in [Setting Up Mendix Single Sign-On](#setting-up), below.
 
 If you need a newer version of the Mendix SSO module (for example, to use a new feature), then it is also available from the Marketplace via the same link.
 
@@ -56,7 +56,7 @@ Click **Authorize** to continue using Mendix SSO with this app. After authorizin
 
 ### 2.2 Assigning End-user Roles
 
-Give end-users access to your app through the [Manage App Users](/developerportal/collaborate/general-settings#managing-app-users) page of the Developer Portal. You can get to this page in the Developer Portal from the **General Settings** page of your app.
+Give end-users access to your app through the [Manage App Users](/developerportal/collaborate/general-settings/#managing-app-users) page of the Developer Portal. You can get to this page in the Developer Portal from the **General Settings** page of your app.
 
 ![General page for the app in Developer Portal](/attachments/developerportal/deploy/mendix-cloud-deploy/mendix-sso/manage-app-users.png)
 
@@ -136,19 +136,9 @@ To enable Mendix SSO in your app, follow these steps:
 
     {{% alert color="info" %}}If there is already an After startup microflow, you should not replace it, but rather add the MendixSSO_AfterStartup microflow as an action in the existing microflow{{% /alert %}}
 
-3. To use the *default* user administration pages, add the pages **MyAccountViewEdit** and **UserOverview** to the app navigation by performing the following steps:
-    1. Open **Navigation** from the **App Explorer**.
-    2. Click **New item** to add a new navigation item.
-    3. Enter the following values and click **OK**.
-        * **Caption** – *My Account*
-        * **Icon** – *Glyphicon 'user'* (click **Select…** and search for `user`)
-        * **On click** – *Show a page* **Marketplace modules** > **MendixSSO** > **Default Implementation** > **Pages** > **User** > **MyAccountViewEdit**
-    4. Repeat the above to add another **New item** with the values.
-        * **Caption** – *User Overview*
-        * **Icon** – *Glyphicon 'lock'*
-        * **On click** – *Show a page* **Marketplace modules** > **MendixSSO** > **Default Implementation** > **Pages** > **Admin** > **UserOverview**
+3.  Add your own administration pages to monitor usage, if required.
 
-    {{% alert color="info" %}}If you want to implement your own administration pages, see [Customizing Mendix SSO](#customizing), below, for more information.{{% /alert %}}
+    {{% alert color="info" %}}If you are using Mendix SSO version 2, you can use the *default* user administration pages, see [Customizing Mendix SSO](#customizing), below, for more information.{{% /alert %}}
 
 4. Turn on **Production** security level and configure **User roles** *User* and *Administrator* to have access to the appropriate **MendixSSO** module roles by performing the following steps:
     1. Open **Project Security** from the **App Explorer**.
@@ -181,7 +171,7 @@ This section only applies to version 2 of Mendix SSO. The administration functio
 {{% /alert %}}
 
 {{% alert color="info" %}}
-In version 2 of the [Mendix SSO module](/appstore/modules/mendix-sso) there was a default implementation of end-user administration. This had dependencies on specific versions of Atlas UI and was removed so that Mendix SSO v3.0 and above retains compatibility with all Mendix apps, whichever UI they are using.
+In version 2 of the [Mendix SSO module](/appstore/modules/mendix-sso/) there was a default implementation of end-user administration. This had dependencies on specific versions of Atlas UI and was removed so that Mendix SSO v3.0 and above retains compatibility with all Mendix apps, whichever UI they are using.
 {{% /alert %}}
 
 This section explains how to use this in your apps, and how to base your own administration module on this section if you want to do things in a different way.

@@ -11,6 +11,6 @@ This category of how-to's presents details on how to secure your data and make s
 
 ## 2 Main Documents in This Category
 
-* [Create a Secure App](create-a-secure-app) –  teaches you how to turn the security on for your app and configure it to secure the data
-* [Implement Best Practices for App Security](best-practices-security) – describes the common aspects you should consider when delivering an application within the Mendix Cloud
-* [Set Up Anonymous User Security](set-up-anonymous-user-security) – shows you how to set access to a non-persistable object and give anonymous users read and write access
+* [Create a Secure App](/howto/security/create-a-secure-app/) –  teaches you how to turn the security on for your app and configure it to secure the data
+* [Implement Best Practices for App Security](/howto/security/best-practices-security/) – describes the common aspects you should consider when delivering an application within the Mendix Cloud
+* [Set Up Anonymous User Security](/howto/security/set-up-anonymous-user-security/) – shows you how to set access to a non-persistable object and give anonymous users read and write access

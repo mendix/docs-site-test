@@ -1,6 +1,6 @@
 ---
 title: "OQL Order by Clause"
-url: /refguide7/oql-order-by-clause
+url: /refguide7/oql-order-by-clause/
 parent: "oql"
 ---
 
@@ -39,6 +39,6 @@ SELECT FirstName + ' ' + LastName FROM Sales.Customer
 ORDER BY LastName DESC
 ```
 
-{{% alert type="info" %}}
-For details on the default ordering behavior of NULL values, see the [NULL Values Order Behavior](ordering-behavior#null-ordering-behavior) section of *Order By Behavior*.
+{{% alert color="info" %}}
+For details on the default ordering behavior of NULL values, see the [NULL Values Order Behavior](/refguide7/ordering-behavior/#null-ordering-behavior) section of *Order By Behavior*.
 {{% /alert %}}

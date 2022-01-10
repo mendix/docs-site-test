@@ -8,7 +8,7 @@ tags: ["workflow", "workflows", "call microflow"]
 
 ## 1 Introduction
 
-System actions in workflows consist of a **Call microflow** action that is used to call a selected [microflow](microflows). 
+System actions in workflows consist of a **Call microflow** action that is used to call a selected [microflow](/studio/microflows/). 
 
 ![](/attachments/studio/workflows/workflow-system-actions/call-microflow-example.jpg)
 
@@ -37,7 +37,7 @@ The section properties are described in the table below:
 
 ### 2.3 Parameters Section {#parameters}
 
-Parameters pass data to the element. Currently the parameters can only be selected and configured in Studio Pro. For more information, see [Call Microflow](/refguide/call-microflow).
+Parameters pass data to the element. Currently the parameters can only be selected and configured in Studio Pro. For more information, see [Call Microflow](/refguide/call-microflow/).
 
 ### 2.2 Outcomes Section {#outcomes}
 
@@ -45,4 +45,4 @@ Parameters pass data to the element. Currently the parameters can only be select
 
 ## 3 Read More
 
-* [General Activities](workflows-general-activities)
+* [General Activities](/studio/workflows-general-activities/)

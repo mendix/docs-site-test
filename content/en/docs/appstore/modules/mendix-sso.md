@@ -21,7 +21,7 @@ You can use this module when you want your application's end-users to sign in wi
 
 * Simple steps for adding the module to your app, no more configuration required
 * Single sign-on with your Mendix account for any application that implements this module
-* App end-user access management that is handled in the [Mendix Developer Portal](/developerportal/)
+* App end-user access management that is handled in the 
 
 {{% alert color="info" %}}
 [Mendix Admins](/developerportal/control-center/#company) can manage [groups](/developerportal/control-center/#groups) that grant app permissions to groups of users.
@@ -30,7 +30,7 @@ You can use this module when you want your application's end-users to sign in wi
 ### 1.3 Limitations
 
 * Due to the large number of app creations, synchronizing newly created apps might take some time. When an app is not yet synchronized, the deployment will not work when you attempt to deploy your app to the Mendix Developer Portal, as it will not recognize your app. In these cases, please be patient and try again later or contact [Mendix Support](https://support.mendix.com/hc/en-us) if the problem persists. Mendix is working on resolving the volume throughput issues.
-* This module does not work for [native mobile](/refguide/native-mobile) apps.
+* This module does not work for [native mobile](/refguide/native-mobile/) apps.
 * The default app `Logout` action resolves to the origin location found in a session cookie, which (re)triggers the `/openid/login/` endpoint, which logs the end-user in again. 
 
 ### 1.4 Dependencies
@@ -39,9 +39,9 @@ Your app has to be deployed on the Mendix Cloud in order to use this module.
 
 ## 2 Installation & Configuration
 
-For instructions, see [Mendix Single Sign-On](/developerportal/deploy/mendix-sso) in the *Developer Portal Guide*.
+For instructions, see [Mendix Single Sign-On](/developerportal/deploy/mendix-sso/) in the *Developer Portal Guide*.
 
 ## 3 Read More
 
-* [Mendix Single Sign-On](/developerportal/deploy/mendix-sso)
+* [Mendix Single Sign-On](/developerportal/deploy/mendix-sso/)
 

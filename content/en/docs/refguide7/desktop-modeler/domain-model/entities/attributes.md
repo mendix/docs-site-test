@@ -1,8 +1,8 @@
 ---
 title: "Attributes"
-url: /refguide7/attributes
+url: /refguide7/attributes/
 parent: "entities"
-menu_order: 20
+weight: 20
 tags: ["domain model", "entity", "attribute"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -15,15 +15,15 @@ The domain model editor uses the following symbols for visualization of attribut
 | Symbol | Description |
 | --- | --- |
 | ![](/attachments/refguide7/desktop-modeler/domain-model/entities/attributes/917593.png) | This attribute has one or more validation rules. |
- | This attribute has one or more validation rules. || ![](/attachments/refguide7/desktop-modeler/domain-model/entities/attributes/917592.png) | This attribute has a microflow that calculates the value of the attribute. |
- | This attribute has a microflow that calculates the value of the attribute. |
+| ![](/attachments/refguide7/desktop-modeler/domain-model/entities/attributes/917592.png) | This attribute has a microflow that calculates the value of the attribute. |
+
 ## Common
 
 ### Name
 
 The name property defines the name of the attribute. This name is used to refer to the attribute from forms, microflows, queries, constraints etcetera.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 If you delete an attribute in your entity and then create a new attribute with the same name, Mendix will consider it a new and different attribute. This means that upon deployment the old column will be dropped, including its data. Then a new, empty, column with the same name will be created.
 {{% /alert %}}
 
@@ -41,9 +41,9 @@ Boolean | True or false.
 Currency | The Currency type is deprecated. Use the high-precision Decimal type instead. The currency type is a synonym for the Float type, as in, it represents a positive or negative number that can have digits after the decimal point. It was introduced in Mendix to make it clear what type should be used when representing amounts of money. However, given the finite precision of the Float type, performing calculations with very large numbers may yield incorrect results due to rounding errors. Because of this, it is recommended to use the high-precision Decimal type for these (financial) calculations.
 Date and time | A point in time consisting of a date and a time component accurate up to milliseconds. |
 Decimal | A positive or negative number that can have digits after the decimal point. The Decimal type can be used for high-precision calculations. Use this type to represent amounts of money for example. When a Decimal type attribute is persisted in the database its value is validated against 2 conditions. In case the number of digits of the integral part (before the decimal separator) is more than 20, an exception is thrown. In case the number of digits of the fractional part (after the decimal separator) is more than 8, the fractional value is automatically rounded according to [the round half to even rule (also known as bankers' rounding)](https://en.wikipedia.org/wiki/Rounding#Round_half_to_even). Therefore the the maximum allowable value for the Decimal type is 99999999999999999999.99999999.
-Enumeration | One of the values of the given [enumeration](enumerations).
+Enumeration | One of the values of the given [enumeration](/refguide7/enumerations/).
 Float | The Float type is deprecated. Use the high-precision Decimal type instead. A positive or negative number. The number can have digits after the decimal point.
-Hashed string | The hash value of a String or set of characters. It can among others contain letters, spaces and/or numbers. This type can for example be used to store a password. Hash values are generated using the hash algorithm that is chosen in the [Project Settings](project-settings).
+Hashed string | The hash value of a String or set of characters. It can among others contain letters, spaces and/or numbers. This type can for example be used to store a password. Hash values are generated using the hash algorithm that is chosen in the [Project Settings](/refguide7/project-settings/).
 Integer | A whole number that can be positive (maximum 2<sup>31</sup>-1, thus 2147483647), negative (minimum -2<sup>31</sup>, thus -2147483648), or zero.
 Long | A whole number that can be positive (maximum 2<sup>63</sup>-1), negative (minimum -2<sup>63</sup>), or zero.
 String | A text containing letters, spaces, numbers and other characters.
@@ -136,4 +136,4 @@ The **Default value** property defines the value of this attribute when an objec
 
 ## Effects of Data Type Changes on Existing Attributes
 
-For more information, see [Attributes Type Migration](attributes-type-migration).
+For more information, see [Attributes Type Migration](/refguide7/attributes-type-migration/).

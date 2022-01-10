@@ -22,7 +22,7 @@ This how-to describes creating a backup of a licensed cloud node. This option is
 Before starting this how-to, make sure you have completed the following prerequisite:
 
 *   You have a licensed cloud node
-*   You have the correct [Node Permissions](/developerportal/deploy/node-permissions)
+*   You have the correct [Node Permissions](/developerportal/deploy/node-permissions/)
 
 ## 3 Create a Backup
 
@@ -40,12 +40,12 @@ Follow these steps to create a backup archive of a licensed app:
 
     ![](/attachments/developerportal/operate/backups/create-backup/backupoptions.jpg)
 
-You can now download a backup archive by clicking [Download Backup](download-backup).
+You can now download a backup archive by clicking [Download Backup](/developerportal/operate/download-backup/).
 
 
 ## 4 Read More
 
-* [How to Deploy to the Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy)
-* [How to Download a Backup](download-backup)
-* [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps)
-* [How to Restore a Backup](restore-backup)
+* [How to Deploy to the Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/)
+* [How to Download a Backup](/developerportal/operate/download-backup/)
+* [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps/)
+* [How to Restore a Backup](/developerportal/operate/restore-backup/)

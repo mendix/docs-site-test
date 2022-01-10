@@ -1,6 +1,6 @@
 ---
 title: "Layout grid"
-url: /refguide7/layout-grid
+url: /refguide7/layout-grid/
 parent: "container-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -51,11 +51,11 @@ There is rarely a use case for more than four columns in a row.
 
 ## Common Properties
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Class+Property.md" %}} 
+{{% snippet file="refguide7/Class+Property.md" %}} 
 
-{{% snippet file="/static/_includes/refguide7/Style+Property.md" %}}
+{{% snippet file="refguide7/Style+Property.md" %}}
 
 ## General Properties
 
@@ -68,7 +68,7 @@ This property determines the width of the layout grid.
 | Full width | The layout grid spans the full width of the available space and will stretch and shrink. |
 | Fixed width | The layout grid has a fixed width but it is still responsive to viewport changes. Note that the width is not configurable in the modeler but is determined by Bootstrap. |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 As the layout grid responds to the viewport width, and not to the width of its container, a fixed width layout grid should only be used on top-level.
 
@@ -76,4 +76,4 @@ As the layout grid responds to the viewport width, and not to the width of its c
 
 ## Visibility Properties
 
-{{% snippet file="/static/_includes/refguide7/Visible+Property.md" %}}
+{{% snippet file="refguide7/Visible+Property.md" %}}

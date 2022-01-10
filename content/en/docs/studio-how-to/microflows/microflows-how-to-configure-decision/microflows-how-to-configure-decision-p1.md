@@ -11,7 +11,7 @@ tags: ["studio", "microflows", "decision", "domain model"]
 
 This how-to explains how you can configure a decision in the microflow editor of Mendix Studio. 
 
-A decision is an activity which is used to model conditions in your app logic. For more information on what Decision is and how to configure it, see [Decision](/studio/microflows-decision). 
+A decision is an activity which is used to model conditions in your app logic. For more information on what Decision is and how to configure it, see [Decision](/studio/microflows-decision/). 
 
 **This how-to will teach you how to do the following:**
 
@@ -31,20 +31,20 @@ Customers can make an order from this page. However, if a blocked customer tries
 
 In this example you will create a microflow and configure a decision that opens different order forms depending on the customer grade. 
 
-This use case will require the decision with attribute of the enumeration type (list of predefined values). For more information on types of attributes, see [Attributes](/studio/domain-models-attributes). 
+This use case will require the decision with attribute of the enumeration type (list of predefined values). For more information on types of attributes, see [Attributes](/studio/domain-models-attributes/). 
 
 ### 2.1 Adding an Entity and an Attribute to the Domain Model 
 
 The app will open the corresponding page depending on the grade of a customer, for this you need to create a new entity and a new attribute first. To create the new entity and attribute, do the following:
 
-1. Open your [domain model](/studio/domain-models).
+1. Open your [domain model](/studio/domain-models/).
 
-2. Create entity *Customer*. For more information on how to create a new entity, see the [Adding New Entities](/studio/domain-models) section in *Domain Models Overview*.
+2. Create entity *Customer*. For more information on how to create a new entity, see the [Adding New Entities](/studio/domain-models/) section in *Domain Models Overview*.
 
-3.  For the **Customer** entity, create an attribute (for more information on how to create the attribute, see the [Adding New Attributes](/studio/domain-models) section) and do the following:
+3.  For the **Customer** entity, create an attribute (for more information on how to create the attribute, see the [Adding New Attributes](/studio/domain-models/) section) and do the following:
     
     1. Set the attribute **Name** to *Grade*.
-    2. Set the [Type](/studio/domain-models-attributes) to **Enumeration**.
+    2. Set the [Type](/studio/domain-models-attributes/) to **Enumeration**.
     3. Click **Select enumeration**.
     4. In the **Select enumeration** dialog box, click the plus icon in the top right corner to create an enumeration.
     5. In the **Create new enumeration** dialog box, click **Add Item** (*Grade* is filled out automatically for the **Name**).
@@ -69,7 +69,7 @@ The attribute is created.
 
 To configure the decision with the attribute or parameter of the enumeration type, follow these steps:
 
-1. [Create a new microflow](/studio/microflows) and name it, for example, *Show_grade_specific_page*.
+1. [Create a new microflow](/studio/microflows/) and name it, for example, *Show_grade_specific_page*.
 
 2. In the **Toolbox** tab, select **Decision**, drag and drop it to the microflow.
 
@@ -113,7 +113,7 @@ To configure the decision with the attribute or parameter of the enumeration typ
 9. Open the properties for the **Show Page** activity and do the following:
 
     1. Click the **Select a page** field.
-    2. In the **Select Page** dialog box, click the plus icon in the top right corner, and [create a page](/studio/page-editor) for customer grade **Bronze**. 
+    2. In the **Select Page** dialog box, click the plus icon in the top right corner, and [create a page](/studio/page-editor/) for customer grade **Bronze**. 
         Note that after you create a page, it will be added to the **Select field** automatically.
 
         ![](/attachments/studio-how-to/microflows/microflows-how-to-configure-decision/microflows-how-to-configure-decision-p1/show-page-select-page.png) 
@@ -136,24 +136,24 @@ To configure the decision with the attribute or parameter of the enumeration typ
 
 Congratulations! You have now created the microflow that will open different order forms for customers with different grades, or show an error message when the customer has no grade.
 
-If you want to test your microflow by adding it to pages, see [Configure an decision Step 2: Embed the Microflow in Your App](microflows-how-to-configure-decision-p2).
+If you want to test your microflow by adding it to pages, see [Configure an decision Step 2: Embed the Microflow in Your App](/studio-how-to/microflows-how-to-configure-decision-p2/).
 
 ## 3 Configuring the Decision with Attribute of the Boolean Type  
 
 In this example, you will create a microflow and configure a decision to prevent a blocked customer from making an order. The reasons for blocking the customer can be that customer's credit score is too low, or password has expired. 
 
-This use case will require a decision with an attribute of the Boolean type (true or false). For more information on the types of attributes, see [Attributes](/studio/domain-models-attributes).
+This use case will require a decision with an attribute of the Boolean type (true or false). For more information on the types of attributes, see [Attributes](/studio/domain-models-attributes/).
 
 ### 3.1 Adding an Entity and an Attribute to the Domain Model 
 
 As you will verify customers by their statuses, you need to create a corresponding attribute for the entity first. For this, do the following:
 
-1. Open your [domain model](/studio/domain-models).
+1. Open your [domain model](/studio/domain-models/).
 
-2.  For the Customer entity, create an attribute (for more information on how to create attributes, see the [Adding New Attributes](/studio/domain-models) section),  and do the following: 
+2.  For the Customer entity, create an attribute (for more information on how to create attributes, see the [Adding New Attributes](/studio/domain-models/) section),  and do the following: 
     
     1. Set name to *Blocked*. 
-    2. Set the [Type](/studio/domain-models-attributes) to **Boolean**. 
+    2. Set the [Type](/studio/domain-models-attributes/) to **Boolean**. 
     3. Click **Create**. 
     
         ![](/attachments/studio-how-to/microflows/microflows-how-to-configure-decision/microflows-how-to-configure-decision-p1/new-attribute-create-dialog.png)
@@ -166,7 +166,7 @@ The attribute for the **Customer** entity is created.
 
 To configure the decision with the attribute of the Boolean type, follow these steps:
 
-1. [Create a new microflow](/studio/microflows) and name it, for example *Customer_status_check*.
+1. [Create a new microflow](/studio/microflows/) and name it, for example *Customer_status_check*.
 
 2. In the **Toolbox** tab, select the decision, drag and drop it to the microflow. 
 
@@ -207,4 +207,4 @@ To configure the decision with the attribute of the Boolean type, follow these s
 
 Congratulations! You have now created the microflow that will show the error message and close the current page if the customer is blocked.
 
-If you want to embed your microflow to pages, see [Step 2: Embed the Microflow in Your App](microflows-how-to-configure-decision-p2).
+If you want to embed your microflow to pages, see [Step 2: Embed the Microflow in Your App](/studio-how-to/microflows-how-to-configure-decision-p2/).

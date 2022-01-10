@@ -35,27 +35,27 @@ The Studio Pro top bar contains the following items:
 
 ### 2.1 Menus {#menus}
 
-In the Studio Pro top bar, you can see several menus, such as **Switch-to** menu, [Edit](edit-menu), [View](view-menu), and [Version Control](version-control-menu). Each menu contains menu items that allow you to perform various actions, for example, to [create a deployment package](create-deployment-package-dialog), set [preferences](preferences-dialog), or view the [Errors](errors-pane) pane. 
+In the Studio Pro top bar, you can see several menus, such as **Switch-to** menu, [Edit](/refguide/edit-menu/), [View](/refguide/view-menu/), and [Version Control](/refguide/version-control-menu/). Each menu contains menu items that allow you to perform various actions, for example, to [create a deployment package](/refguide/create-deployment-package-dialog/), set [preferences](/refguide/preferences-dialog/), or view the [Errors](/refguide/errors-pane/) pane. 
 
-For more information on menus, see [Menus](menus). 
+For more information on menus, see [Menus](/refguide/menus/). 
 
 ### 2.2 Run & View App {#run-and-view}
 
 You can deploy your app by clicking the **Publish** or play (**Run locally**) buttons. To view your deployed app, click **View App**. 
 
-For more information on deployment in Mendix, see [Deployment](/developerportal/deploy).
+For more information on deployment in Mendix, see [Deployment](/developerportal/deploy/).
 
-For more information on deploying your app and versioning it, see  the [Versioning an App Deployed to the Cloud](using-version-control-in-studio-pro#versioning-project) section in *Using Version Control in Studio Pro*. 
+For more information on deploying your app and versioning it, see  the [Versioning an App Deployed to the Cloud](/refguide/using-version-control-in-studio-pro/#versioning-project) section in *Using Version Control in Studio Pro*. 
 
 ### 2.3 Links and User Profile Menu {#links}
 
-You can find links to the [Mendix Studio](/studio) (if enabled), [Developer Portal](/developerportal), and [Marketplace](/appstore) in the top-right corner of Studio Pro.
+You can find links to the  (if enabled), , and  in the top-right corner of Studio Pro.
 
 Your profile picture is displayed next to them if you are signed in. When you click the profile picture, the drop-down menu is displayed with your full name and email, as well as links to your user profile, My Apps screen, and signing out option.  
 
 ## 3 App Structure
 
-An app consists of individual files (*documents*) and settings that are grouped in folders and [modules](modules). The complete structure of your app can be viewed in the [App Explorer](project-explorer). 
+An app consists of individual files (*documents*) and settings that are grouped in folders and [modules](/refguide/modules/). The complete structure of your app can be viewed in the [App Explorer](/refguide/project-explorer/). 
 
 ## 4 Working Area
 
@@ -67,7 +67,7 @@ The documents you view and edit are shown in tabs.
 
 {{% alert color="info" %}}
 
-This section describes documents in the working area, not panes that you can open and position around the working area. For more information on behavior of panes, see the [Layout of Panes](view-menu#layout-of-panes) section in *View Menu*.
+This section describes documents in the working area, not panes that you can open and position around the working area. For more information on behavior of panes, see the [Layout of Panes](/refguide/view-menu/#layout-of-panes) section in *View Menu*.
 
 {{% /alert %}}
 
@@ -77,7 +77,7 @@ Each document has its own save state, history, and future, so undo and redo acti
 
 ## 5 Dockable Panes
 
-Dockable panes can be positioned around the working area and contain various elements and settings. For example, you can view list of errors, configure properties of a specific document or an element, view toolbox. Panes are opened via [Menus](menus).
+Dockable panes can be positioned around the working area and contain various elements and settings. For example, you can view list of errors, configure properties of a specific document or an element, view toolbox. Panes are opened via [Menus](/refguide/menus/).
 
 ## 6 Status Bar
 
@@ -85,13 +85,13 @@ At the bottom of the Studio Pro main window pane is a status bar.
 
 On the left is the current status of Studio Pro.
 
-On the right is the currently selected language. If you have set up multiple languages in your app you can change the currently selected language by clicking here. For more information see [Language Menu](translatable-texts).
+On the right is the currently selected language. If you have set up multiple languages in your app you can change the currently selected language by clicking here. For more information see [Language Menu](/refguide/translatable-texts/).
 
 ## 7 Shortcut Keys
 
 ### 7.1 General Shortcut Keys
 
-In the main window pane, <kbd>Ctrl</kbd> + <kbd>Tab</kbd> can be used to navigate between all open documents. Other shortcut keys that can be used in the main window pane can be found next to their relevant menu item in  [Menus](menus).
+In the main window pane, <kbd>Ctrl</kbd> + <kbd>Tab</kbd> can be used to navigate between all open documents. Other shortcut keys that can be used in the main window pane can be found next to their relevant menu item in  [Menus](/refguide/menus/).
 
 In most dialog boxes for editing properties, the following shortcut keys can be used:
 
@@ -168,7 +168,7 @@ The following shortcut keys control the currently selected language:
 
 ## 8 Read More
 
-* [App Explorer](project-explorer)
-* [Menus](menus)
+* [App Explorer](/refguide/project-explorer/)
+* [Menus](/refguide/menus/)
 
   

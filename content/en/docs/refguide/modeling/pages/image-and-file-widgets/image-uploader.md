@@ -34,15 +34,15 @@ Image uploader properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.3 Editability Section {#editability}
 
-{{% snippet file="/static/_includes/refguide/editability-section-link.md" %}}
+{{% snippet file="refguide/editability-section-link.md" %}}
 
 ### 2.4 General Section {#general}
 
@@ -56,7 +56,7 @@ Default: *5*
 
 You can specify file extensions that users are allowed to upload. If no extension is specified, all file extensions are allowed. Separate multiple extensions by a semi-colon (for example, `txt;doc`).
 
-If a file with an extension that is not allowed is selected, a [system text](system-texts) for **File manager/dynamic image** > **Error: incorrect file extension** will be shown below the file manager.
+If a file with an extension that is not allowed is selected, a [system text](/refguide/system-texts/) for **File manager/dynamic image** > **Error: incorrect file extension** will be shown below the file manager.
 
 #### 2.4.3 Thumbnail Width
 
@@ -68,14 +68,14 @@ If a file with an extension that is not allowed is selected, a [system text](sys
 
 ### 2.5 Label Section {#label}
 
-{{% snippet file="/static/_includes/refguide/label-section-link.md" %}}
+{{% snippet file="refguide/label-section-link.md" %}}
 
 ### 2.6 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [Images, Videos & Files](image-and-file-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Images, Videos & Files](/refguide/image-and-file-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

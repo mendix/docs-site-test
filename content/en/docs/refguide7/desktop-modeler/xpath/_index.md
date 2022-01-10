@@ -1,6 +1,6 @@
 ---
 title: "XPath"
-url: /refguide7/xpath
+url: /refguide7/xpath/
 category: "Desktop Modeler"
 description: "Describes how the XPath query langauge is used in Mendix by presenting functions and examples."
 ---
@@ -20,7 +20,7 @@ Examples of XPath queries are:
 *   `avg(//Sales.Order[IsPaid = true()]/TotalPrice)`
     Retrieve the average of the total prices of all paid orders.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 In the Modeler you do not write complete queries but only the constraints. The entity is implicitly determined by the context. So, instead of `//Sales.Customer[Name='Jansen']` you only write `[Name='Jansen']` in the context of a customer. In Java you do write whole queries including the double slashes and the entity name.
 
@@ -44,36 +44,36 @@ Consider the following query:
 `//Sales.Customer[Name='Jansen']`
 
 The constraint is clearly visible between brackets and restricts the objects retrieved to those for which the attribute 'Name' equals 'Jansen'. Objects with any other name than Jansen are excluded from the list.
-The number of possible constraints on a single query is unlimited. For more information on how to add and manipulate these constraints, see [XPath Constraints](xpath-constraints).
+The number of possible constraints on a single query is unlimited. For more information on how to add and manipulate these constraints, see [XPath Constraints](/refguide7/xpath-constraints/).
 
 Element D of a query is optional and specifies an attribute of the retrieved entity. This option is rarely used in the modeler itself as all data is stored in objects, making it cumbersome and needlessly complicated to deal with a list of single attribute. However, various Java actions have use of such lists. Also, this functionality can be used in conjunction with Part A to create aggregates of certain variables easily.
 
-Element A of a query is optional and specifies an aggregation. Element A can be one of the following functions: [avg](xpath-avg), [count](xpath-count), [max](xpath-max), [min](xpath-min) and [sum](xpath-sum). With the exception of 'count', each of these functions require that a particular attribute is specified in element D.
+Element A of a query is optional and specifies an aggregation. Element A can be one of the following functions: [avg](/refguide7/xpath-avg/), [count](/refguide7/xpath-count/), [max](/refguide7/xpath-max/), [min](/refguide7/xpath-min/) and [sum](/refguide7/xpath-sum/). With the exception of 'count', each of these functions require that a particular attribute is specified in element D.
 
-The exception to these basic guidelines is the ID query. See [XPath id](xpath-id) for more information.
+The exception to these basic guidelines is the ID query. See [XPath id](/refguide7/xpath-id/) for more information.
 
 ## 3 Tokens
 
-For details, see [XPath Tokens](xpath-tokens).
+For details, see [XPath Tokens](/refguide7/xpath-tokens/).
 
 ## 4 Operators
 
-For details, see [XPath Operators](xpath-operators).
+For details, see [XPath Operators](/refguide7/xpath-operators/).
 
 ## 5 Functions
 
 The following XPath functions are available:
 
-* [XPath functions](xpath-query-functions):
-	* [avg](xpath-avg)
-	* [count](xpath-count)
-	* [max](xpath-max)
-	* [min](xpath-min)
-	* [sum](xpath-sum)
-* [Constraint functions](xpath-constraint-functions):
-	* [contains](xpath-contains)
-	* [starts-with](xpath-starts-with)
-	* [ends-with](xpath-ends-with)
-	* [not](xpath-not)
-	* [true](xpath-true)
-	* [false](xpath-false)
+* [XPath functions](/refguide7/xpath-query-functions/):
+	* [avg](/refguide7/xpath-avg/)
+	* [count](/refguide7/xpath-count/)
+	* [max](/refguide7/xpath-max/)
+	* [min](/refguide7/xpath-min/)
+	* [sum](/refguide7/xpath-sum/)
+* [Constraint functions](/refguide7/xpath-constraint-functions/):
+	* [contains](/refguide7/xpath-contains/)
+	* [starts-with](/refguide7/xpath-starts-with/)
+	* [ends-with](/refguide7/xpath-ends-with/)
+	* [not](/refguide7/xpath-not/)
+	* [true](/refguide7/xpath-true/)
+	* [false](/refguide7/xpath-false/)

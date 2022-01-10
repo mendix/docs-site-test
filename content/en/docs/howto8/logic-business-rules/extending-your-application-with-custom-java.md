@@ -1,8 +1,8 @@
 ---
 title: "Extend Your Application with Custom Java"
-url: /howto8/logic-business-rules/extending-your-application-with-custom-java
+url: /howto8/logic-business-rules/extending-your-application-with-custom-java/
 category: "Logic & Business Rules"
-menu_order: 12
+weight: 12
 tags: ["microflow", "logic", "java", "extend", "jdk", "custom", "UnsupportedClassVersionError"]
 ---
 
@@ -19,7 +19,7 @@ Most application logic can be developed using microflows. Microflows are very po
 Before starting this how-to, make sure you have completed the following prerequisite:
 
 *  Have Eclipse installed (download it [here](https://eclipse.org/))
-	{{% alert type="info" %}}You can use any text editor to create custom Java actions, but we highly recommend using Eclipse. Studio Pro contains a **Deploy for Eclipse** feature verifying that everything that needs to be configured in Eclipse is done automatically. All you have to do is import the app into your Eclipse working environment.
+	{{% alert color="info" %}}You can use any text editor to create custom Java actions, but we highly recommend using Eclipse. Studio Pro contains a **Deploy for Eclipse** feature verifying that everything that needs to be configured in Eclipse is done automatically. All you have to do is import the app into your Eclipse working environment.
 	{{% /alert %}}
 * Have an app ready using the [Asset Management](https://marketplace.mendix.com/link/component/107652) template.
 
@@ -57,7 +57,7 @@ To edit the Java action in Eclipse, follow these steps:
 	{{/* % image_container width="400" % */}}![](/attachments/howto8/logic-business-rules/extending-your-application-with-custom-java/import3.png)
 	{{/* % /image_container % */}}
 
-	{{% alert type="info" %}}If you don't know what the app directory is, select **App** > **Show App Directory in Explorer** in Studio Pro.
+	{{% alert color="info" %}}If you don't know what the app directory is, select **App** > **Show App Directory in Explorer** in Studio Pro.
 	{{% /alert %}}
 
 4.  Double-click **ReverseAssetName.java** in the **Package Explorer** of Eclipse.
@@ -187,14 +187,14 @@ If you get an `UnsupportedClassVersionError` when running your app, follow these
 
 1. Clean your app's **deployment** folder by selecting **App** > **Clean Deployment Directory**.
 
-2. Add the same JDK version to Eclipse as that which you are using in Studio Pro (this is the recommended version correlation). For details on JDK requirements, see the [Mendix Studio Pro](/refguide/system-requirements#sp) section of *System Requirements*.
+2. Add the same JDK version to Eclipse as that which you are using in Studio Pro (this is the recommended version correlation). For details on JDK requirements, see the [Mendix Studio Pro](/refguide/system-requirements/#sp) section of *System Requirements*.
 
 ## 8 Read More
 
-* [Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [Create a Custom Save Button](create-a-custom-save-button)
-* [Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [Set Up Error Handling](set-up-error-handling)
-* [Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Extract & Use Sub-Microflows](extract-and-use-sub-microflows)
+* [Define Access Rules Using XPath](/howto8/logic-business-rules/define-access-rules-using-xpath/)
+* [Create a Custom Save Button](/howto8/logic-business-rules/create-a-custom-save-button/)
+* [Work with Lists in a Microflow](/howto8/logic-business-rules/working-with-lists-in-a-microflow/)
+* [Optimize Retrieve Activities](/howto8/logic-business-rules/optimizing-retrieve-activities/)
+* [Set Up Error Handling](/howto8/logic-business-rules/set-up-error-handling/)
+* [Optimize Microflow Aggregates](/howto8/logic-business-rules/optimizing-microflow-aggregates/)
+* [Extract & Use Sub-Microflows](/howto8/logic-business-rules/extract-and-use-sub-microflows/)

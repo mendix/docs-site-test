@@ -1,8 +1,8 @@
 ---
 title: "Consume a REST Service"
-url: /howto8/integration/consume-a-rest-service
+url: /howto8/integration/consume-a-rest-service/
 category: "Integration"
-menu_order: 9
+weight: 9
 tags: ["integration", "rest service", "data model", "consume", "legacy system", "legacy"]
 description: "Describes how to get information from a REST service."
 ---
@@ -11,14 +11,14 @@ description: "Describes how to get information from a REST service."
 
 Mendix applications frequently need to communicate with existing systems. Whether you are creating an app to replace an older platform or a legacy system or want to integrate an existing database, the ability to integrate with existing systems is a necessary feature. In your Mendix app, you can use published REST services for this integration. 
 
-This how-to shows you how to do this using an example in which you create an app that retrieves Wikipedia pages from a REST service. The resulting app is [available for download](/attachments/howto8/integration/consume-a-rest-service/WikipediaApi.mpk).
-.
+This how-to shows you how to do this using an example in which you create an app that retrieves Wikipedia pages from a REST service. The resulting app is .
+
 **This how-to will teach you how to do the following:**
 
 * Integrate with an existing system using a REST service
 * Call the REST service in a microflow
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Creating a published REST service on top of the system you want to integrate with is outside the scope of this how-to; for instructions on how to do this, refer to the configuration of your non-Mendix Platform.
 {{% /alert %}}
 
@@ -37,7 +37,7 @@ We will start by providing to Studio Pro an example of what the REST service ret
     ![Screenshot of the result of the rest call](/attachments/howto8/integration/consume-a-rest-service/get-call-result.png)
 
 3. Copy the whole JSON snippet. Make sure that you select the **Raw Data** tab to copy the whole code structure.
-4. Create a module and name it *RESTconsume*. To add a new [JSON structure](/refguide8/json-structures) to your module with the sample JSON that you can use in the app, right-click the module in the **Project Explorer** and select **Add other** > **JSON structure**.
+4. Create a module and name it *RESTconsume*. To add a new [JSON structure](/refguide8/json-structures/) to your module with the sample JSON that you can use in the app, right-click the module in the **Project Explorer** and select **Add other** > **JSON structure**.
 5. Enter a **Name** for the structure: *JSON_structure* and click **OK**.
 6. In the **JSON Structure** dialog box, paste the JSON snippet in the **General** tab and click **Refresh**. This analyzes the structure of the JSON snippet that we can use later.
 
@@ -47,7 +47,7 @@ We will start by providing to Studio Pro an example of what the REST service ret
 
 ## 3 Creating an Import Mapping
 
-An [import mapping](/refguide8/import-mappings) specifies how the JSON relates to [entities](/refguide8/entities). You can map the the JSON to any entity you like. The following steps describe how to generate the entities and create an import mapping:
+An [import mapping](/refguide8/import-mappings/) specifies how the JSON relates to [entities](/refguide8/entities/). You can map the the JSON to any entity you like. The following steps describe how to generate the entities and create an import mapping:
 
 1. Right-click the module in the **Project Explorer** and select **Add other** > **Import Mapping**.
 2. Enter a **Name** for the import mapping: *Import_mapping* and click **OK**.
@@ -100,7 +100,7 @@ To add an input entity to the domain model, follow these steps:
 
 ## 5 Calling the REST Service in a Microflow
 
-You will now call the REST service in a [microflow](/refguide8/microflows) to build the integration with Wikipedia. The microflow takes **Input** as the input parameter and sets the associated **Summary**.
+You will now call the REST service in a [microflow](/refguide8/microflows/) to build the integration with Wikipedia. The microflow takes **Input** as the input parameter and sets the associated **Summary**.
 
 To call the REST service in a microflow, follow these steps:
 
@@ -181,7 +181,7 @@ Congratulations! You can now start your app and get summaries from Wikipedia.
 
 **How to consume REST with Mendix Studio Pro 8**
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 For Studio Pro v 8.15 and above, the **Call REST** dialog box has changed from what is shown in the video. You have to ensure that for **Output** you select **Yes** for **Store in variable** and then specify the **Variable name**.
 {{% /alert %}}
 
@@ -191,10 +191,10 @@ For Studio Pro v 8.15 and above, the **Call REST** dialog box has changed from w
 
 ## 9 Read More
 
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Consume a Simple Web Service](consume-a-simple-web-service)
-* [Export XML Documents](export-xml-documents)
-* [Import XML Documents](importing-xml-documents)
-* [Import Excel Documents](importing-excel-documents)
-* [Expose a Web Service](expose-a-web-service)
-* [Expose Data to BI Tools Using OData](exposing-data-to-bi-tools-using-odata)
+* [Consume a Complex Web Service](/howto8/integration/consume-a-complex-web-service/)
+* [Consume a Simple Web Service](/howto8/integration/consume-a-simple-web-service/)
+* [Export XML Documents](/howto8/integration/export-xml-documents/)
+* [Import XML Documents](/howto8/integration/importing-xml-documents/)
+* [Import Excel Documents](/howto8/integration/importing-excel-documents/)
+* [Expose a Web Service](/howto8/integration/expose-a-web-service/)
+* [Expose Data to BI Tools Using OData](/howto8/integration/exposing-data-to-bi-tools-using-odata/)

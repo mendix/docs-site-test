@@ -171,5 +171,5 @@ The table below describes the available settings:
 
 ## 6 Read More {#read-more}
 
-* [Errors Pane](errors-pane)
-* [Consistency Errors](consistency-errors)
+* [Errors Pane](/refguide/errors-pane/)
+* [Consistency Errors](/refguide/consistency-errors/)

@@ -1,6 +1,6 @@
 ---
 title: "Export to excel button"
-url: /refguide7/export-to-excel-button
+url: /refguide7/export-to-excel-button/
 parent: "control-bar"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -12,21 +12,21 @@ The excel export function relies on a specific data retrieval method. As such, i
 
 ## Common properties
 
-{{% snippet file="/static/_includes/refguide7/Class+Property.md" %}}
+{{% snippet file="refguide7/Class+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Style+Property.md" %}}
+{{% snippet file="refguide7/Style+Property.md" %}}
 
 ## General properties
 
-{{% snippet file="/static/_includes/refguide7/Caption+Property.md" %}}
+{{% snippet file="refguide7/Caption+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Tooltip+Property.md" %}}
+{{% snippet file="refguide7/Tooltip+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Image+Property.md" %}}
+{{% snippet file="refguide7/Image+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Button+Style+Property.md" %}}
+{{% snippet file="refguide7/Button+Style+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Is+default+button+Property.md" %}}
+{{% snippet file="refguide7/Is+default+button+Property.md" %}}
 
 ### Maximum number of rows
 
@@ -38,7 +38,7 @@ Defines how dates will be exported. When _Date value_ is selected, date values w
 
 _Default value:_ Date value
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 When choosing _Date value_, dates will be shown only in the time zone of your Windows account, because Excel does not support defining specific time zones.
 
@@ -46,6 +46,6 @@ When choosing _Date value_, dates will be shown only in the time zone of your Wi
 
 ## Visibility properties
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property.md" %}}
+{{% snippet file="refguide7/Visibility+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}
+{{% snippet file="refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}

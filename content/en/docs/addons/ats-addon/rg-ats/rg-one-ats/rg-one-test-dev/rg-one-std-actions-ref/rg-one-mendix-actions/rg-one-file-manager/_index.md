@@ -6,4 +6,4 @@ parent: "rg-one-mendix-actions"
 
 This section contains this document:
 
-* [Set File Manager](rg-one-set-file-manager)
+* [Set File Manager](/addons/ats-addon/rg-one-set-file-manager/)

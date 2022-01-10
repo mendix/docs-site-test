@@ -1,14 +1,14 @@
 ---
 title: "Container"
-url: /refguide8/container
+url: /refguide8/container/
 parent: "container-widgets"
-menu_order: 20
+weight: 20
 tags: ["studio pro", "container", "container widgets", "widget"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/container.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/container.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -41,16 +41,16 @@ Container properties consist of the following sections:
 
 This property specifies whether to hide the container from screen readers or not.
 
-{{% alert type="info" %}} The container should not have any focusable elements inside such as input widgets, links, or buttons. These elements will cause the container to be announced by screen readers.
+{{% alert color="info" %}} The container should not have any focusable elements inside such as input widgets, links, or buttons. These elements will cause the container to be announced by screen readers.
 {{% /alert %}}
 
 ### 2.2 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.3 Design Properties Section{#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
+{{% snippet file="refguide8/design-section-link.md" %}} 
 
 ### 2.4 General Section {#general}
 
@@ -71,7 +71,7 @@ The **Render mode** determines which HTML5 tag will be used to show the containe
 | Hgroup    | `hgroup`    |
 | Address   | `address`   |
 
-{{% alert type="info" %}}Render mode is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="info" %}}Render mode is not supported on native mobile pages.{{% /alert %}}
 
 ### 2.5 Events Section {#events}	
 
@@ -79,14 +79,14 @@ The **Render mode** determines which HTML5 tag will be used to show the containe
 
 The **On-click** property specifies the action that will be executed when the user clicks the container (either with their mouse pointer or by pressing the <kbd>Enter</kbd> or <kbd>Space</kbd> keys when the container is in focus).
 
-{{% snippet file="/static/_includes/refguide8/events-section-link.md" %}}
+{{% snippet file="refguide8/events-section-link.md" %}}
 
 ### 2.6 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
+{{% snippet file="refguide8/visibility-section-link.md" %}}
 
 ## 4 Read More
 
-* [Page](page)
-* [Container Widgets](container-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [Container Widgets](/refguide8/container-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)

@@ -21,7 +21,7 @@ The charts widget provides a basic implementation of different types of chart (f
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Download the latest [Charts Widget](/appstore/widgets/charts) from the Mendix Marketplace
+* Download the latest [Charts Widget](/appstore/widgets/charts/) from the Mendix Marketplace
 
 ## 3 Implementing the Charts Widget in an Existing App
 
@@ -105,6 +105,6 @@ To view the chart, follow these steps:
 
 ## 4 Read More
 
-* [Use a Chart With a REST Data Source](charts-basic-rest)
-* [Use Any Chart](charts-any-usage)
-* [Use Charts Themes](charts-theme)
+* [Use a Chart With a REST Data Source](/howto/front-end/charts-basic-rest/)
+* [Use Any Chart](/howto/front-end/charts-any-usage/)
+* [Use Charts Themes](/howto/front-end/charts-theme/)

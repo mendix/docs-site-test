@@ -1,8 +1,8 @@
 ---
 title: "Create a Custom Developer App with the Native Builder CLI"
-url: /howto8/mobile/how-to-devapps-cli
+url: /howto8/mobile/how-to-devapps-cli/
 parent: "use-cli-docs"
-menu_order: 30
+weight: 30
 description: A tutorial for creating custom developer apps.
 tags: ["native", "mobile", "developer", "native-builder", "developer app", "make it native"]
 ---
@@ -15,7 +15,7 @@ A custom developer app helps you by serving as a replacement for the Make It Nat
 
 ## 2 Prerequisites
 
-* Complete [How to Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile)
+* Complete [How to Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile/)
 
 ## 3 Build Your Developer App
 
@@ -43,7 +43,7 @@ As with a release build, when the Native Builder is done building you should hav
 
 ### 4.1 Android
 
-By default your custom developer app will be unsigned. To get a signed *IPA*, follow the steps in the [Signing Your Build](deploying-native-app#signing-a-build) section of *How to Deploy Your First Mendix Native Mobile App*. Your Custom developer app branch is named **developer**.
+By default your custom developer app will be unsigned. To get a signed *IPA*, follow the steps in the [Signing Your Build](/howto8/mobile/deploying-native-app/#signing-a-build) section of *How to Deploy Your First Mendix Native Mobile App*. Your Custom developer app branch is named **developer**.
 
 For Android the output of the build is an *APK* file. *APK* files can be directly installed on devices or emulators.
 
@@ -72,7 +72,7 @@ There are various ways install an app on a device. Installing using a USB is det
 
 ### 4.2 iOS
 
-By default your custom developer app will be unsigned. To get a signed *IPA*, follow the steps in the [Signing Your Build](deploying-native-app#signing-a-build) section of *How to Deploy Your First Mendix Native Mobile App*. Your custom developer app branch is named **developer**.
+By default your custom developer app will be unsigned. To get a signed *IPA*, follow the steps in the [Signing Your Build](/howto8/mobile/deploying-native-app/#signing-a-build) section of *How to Deploy Your First Mendix Native Mobile App*. Your custom developer app branch is named **developer**.
 
 The unsigned output of an iOS build is an *XCArchive* file. *XCArchive* files require manual signing before they are ready to be installed on a device.
 
@@ -121,11 +121,11 @@ Builds with the Native Builder are stripped of simulator artifacts. Therefore, t
 
 To run your custom developer app on a device which is not a test device, you will have to sign the developer app with your certificates. 
 
-For local builds, follow the [Signing a Build](deploying-native-app-cli#signing-a-build) section of *How to Deploy Your First Mendix Native Mobile App with the Native Builder CLI* to sign the *.xarchive* file. 
+For local builds, follow the [Signing a Build](/howto8/mobile/deploying-native-app-cli/#signing-a-build) section of *How to Deploy Your First Mendix Native Mobile App with the Native Builder CLI* to sign the *.xarchive* file. 
 
-If you want Native Builder to sign your custom developer app, follow the steps in the [Signing a Build](deploying-native-app-cli#signing-a-build) section of *How to Deploy Your First Mendix Native Mobile App with the Native Builder CLI*.
+If you want Native Builder to sign your custom developer app, follow the steps in the [Signing a Build](/howto8/mobile/deploying-native-app-cli/#signing-a-build) section of *How to Deploy Your First Mendix Native Mobile App with the Native Builder CLI*.
 
 ## 5 Read More
 
-* [How to Deploy Your First Mendix Native Mobile App](deploying-native-app)
-* [How to Use Over the Air Updates](how-to-ota)
+* [How to Deploy Your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app/)
+* [How to Use Over the Air Updates](/howto8/mobile/how-to-ota/)

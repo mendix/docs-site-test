@@ -1,20 +1,20 @@
 ---
 title: "Placeholder"
-url: /refguide8/placeholder
+url: /refguide8/placeholder/
 parent: "layout"
-menu_order: 10
+weight: 10
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/placeholder.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/placeholder.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 A **placeholder** can be used in two ways:
 
-* In a [layout](layout) to define a "gap" that can be filled in a [page](page) based on that layout
+* In a [layout](/refguide8/layout/) to define a "gap" that can be filled in a [page](/refguide8/page/) based on that layout
 * In a layout that defines the layout as a master layout
 
 Each placeholder is colored blue with its name displayed in the middle of it. The placeholder named **Main** is always shown in a darker shade of blue. 
@@ -42,4 +42,4 @@ When a user switches a page from one layout to another, the placeholder names wi
 
 Because of this, user experience can be improved significantly if all of a project's layouts adhere to the same or a similar naming scheme. This will ensure layouts can be alternated freely without having to consider the effect on the content of each individual placeholder. 
 
-The placeholder naming scheme also has an impact on [page templates](page-templates). When creating a new page, the template will map its content based on the names of the placeholders in its preview layout. Consequently, a template might describe the content for a placeholder that is not available in the selected layout. To prevent this, a compatible layout is automatically pre-selected when clicking a page template in the create new page dialog. If an incompatible layout is then selected manually, all the content for the missing placeholders will be discarded. 
+The placeholder naming scheme also has an impact on [page templates](/refguide8/page-templates/). When creating a new page, the template will map its content based on the names of the placeholders in its preview layout. Consequently, a template might describe the content for a placeholder that is not available in the selected layout. To prevent this, a compatible layout is automatically pre-selected when clicking a page template in the create new page dialog. If an incompatible layout is then selected manually, all the content for the missing placeholders will be discarded. 

@@ -339,7 +339,7 @@ A small pop-up box that appears when the user moves the mouse pointer over a cha
 ```
 
 ![Tooltip configurations](/attachments/refguide/modeling/pages/chart-widgets/charts-advanced-cheat-sheet/tooltip.gif).
-.
+
 More options can be found here: [Tooltip configurations](https://plot.ly/javascript/reference/#layout-hovermode).
 
 ### 2.10 Fonts
@@ -536,7 +536,7 @@ More options can be found here: [Area chart data properties](https://plot.ly/jav
 The example below shows how you can set up filter buttons to filter a chart by time.
 
 ![Line chart data properties](/attachments/refguide/modeling/pages/chart-widgets/charts-advanced-cheat-sheet/time-series-filters.png).
-.
+
 ``` json
 {
   "xaxis": {
@@ -621,7 +621,7 @@ Displays two different X axes with different scales.
 ```
 
 ![Multiple X axes properties](/attachments/refguide/modeling/pages/chart-widgets/charts-advanced-cheat-sheet/data-multiple-x.png).
-.
+
 ## 4 Configurations Options (All Charts) {#config-options}
 
 The following configuration options are available in all charts (presented here as an example with formatting for the `nl` `locale`):

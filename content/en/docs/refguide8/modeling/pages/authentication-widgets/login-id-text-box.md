@@ -1,16 +1,16 @@
 ---
 title: "Login ID Text Box"
-url: /refguide8/login-id-text-box
+url: /refguide8/login-id-text-box/
 parent: "authentication-widgets"
 tags: ["studio pro", "login id", "authentication widget", "authentication"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/login-id-text-box.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/login-id-text-box.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}The **Login ID text box** widget is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="warning" %}}The **Login ID text box** widget is not supported on native mobile pages.{{% /alert %}}
 
 ## 1 Introduction
 
@@ -18,7 +18,7 @@ The **Login ID text box** is a widget that can be used to provide a login id for
 
 ![Login ID Text Box](/attachments/refguide8/modeling/pages/authentication-widgets/login-id-text-box/login-id.png)
 
-The **Login ID text box** should be placed on a page together with a [Password text box](password-text-box) and a [Sign-in button](sign-in-button).
+The **Login ID text box** should be placed on a page together with a [Password text box](/refguide8/password-text-box/) and a [Sign-in button](/refguide8/sign-in-button/).
 
 ## 2 Properties
 
@@ -36,11 +36,11 @@ Login ID text box properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}}
+{{% snippet file="refguide8/design-section-link.md" %}}
 
 ### 2.3 General Section {#general}
 
@@ -50,10 +50,10 @@ A **Placeholder** shows a text when an end-user has not entered any text yet. It
 
 ### 2.4 Label Section {#label}
 
-{{% snippet file="/static/_includes/refguide8/label-section-link.md" %}}
+{{% snippet file="refguide8/label-section-link.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [Password Text Box](password-text-box)
-* [Sign-In Button](sign-in-button)
+* [Page](/refguide8/page/)
+* [Password Text Box](/refguide8/password-text-box/)
+* [Sign-In Button](/refguide8/sign-in-button/)

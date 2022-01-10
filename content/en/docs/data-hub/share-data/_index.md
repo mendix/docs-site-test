@@ -21,7 +21,7 @@ This how-to will demonstrate how easy it is to build apps using data from differ
 * See the network of shared data in the Data Hub Landscape
 
 {{% alert color="info" %}}
-To use the Mendix Data Hub a license is required. The license enables you to discover all the shared assets that are registered in your organization and also use the Data Hub integration in Studio Pro to consume the shared datasets for building apps. For more information, see the [Data Hub License Limitations](/refguide/consumed-odata-service-requirements#license-limitations) section of *Consumed OData Service Requirements*.
+To use the Mendix Data Hub a license is required. The license enables you to discover all the shared assets that are registered in your organization and also use the Data Hub integration in Studio Pro to consume the shared datasets for building apps. For more information, see the [Data Hub License Limitations](/refguide/consumed-odata-service-requirements/#license-limitations) section of *Consumed OData Service Requirements*.
 {{% /alert %}}
 
 ## 2 Prerequisites
@@ -139,7 +139,7 @@ Do the following:
 
 	{{% alert color="info" %}}For more information about roles in Data Hub, see [Roles in Data Hub](/data-hub/#data-hub-roles).{{% /alert %}}
 
-For more details on searching in the Data Hub Catalog and the **Search Details** screen, see [How to Search in the Data Hub Catalog](../data-hub-catalog/search). You can also explore registered services in the Data Hub Landscape. For more information, see [How to Use the Data Hub Landscape](/data-hub/data-hub-landscape/).
+For more details on searching in the Data Hub Catalog and the **Search Details** screen, see . You can also explore registered services in the Data Hub Landscape. For more information, see [How to Use the Data Hub Landscape](/data-hub/data-hub-landscape/).
 
 ## 6 Using the Customer Dataset in Another App
 
@@ -156,7 +156,7 @@ To do this, follow the steps below:
 	If you do not see the **Data Hub** pane, click **View** > **Data Hub** to display it:
 	![](/attachments/data-hub/share-data/view-data-hub.png)
 	
-3. In the [Data Hub](/refguide/data-hub-pane) pane, enter the search string *{yourname}*.
+3. In the [Data Hub](/refguide/data-hub-pane/) pane, enter the search string *{yourname}*.
 
 4. By default, search in the **Data Hub** pane only shows services in **Production** environments. Your app was deployed as a **Sandbox** app. Click the **Filter** icon next to the search and check **Show development environments**.
 
@@ -170,7 +170,7 @@ To do this, follow the steps below:
 
     ![external entities](/attachments/data-hub/share-data/external-entities-in-domain-model.png)
 
-    {{% alert color="info" %}}For further information on external entities, see [External Entities](/refguide/external-entities) in the *Studio Pro Guide*.  {{% /alert %}}
+    {{% alert color="info" %}}For further information on external entities, see [External Entities](/refguide/external-entities/) in the *Studio Pro Guide*.  {{% /alert %}}
 
     Click the information icon for the consumed service in the **Data Hub** pane to see further information about the service, and follow the link to **View in Data Hub Catalog**.
 

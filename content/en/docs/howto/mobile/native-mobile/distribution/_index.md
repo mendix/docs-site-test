@@ -11,6 +11,6 @@ How-to's in this section will help you distribute native apps to app stores, as 
 
 The following how-to’s are available here:
 
-* [Build Native Apps](build-native-apps)
-* [Release Over the Air Updates with Mendix](how-to-ota)
-* [Release Over the Air Updates with App Center's CodePush (Deprecated)](how-to-ota-appcenter)
+* [Build Native Apps](/howto/mobile/build-native-apps/)
+* [Release Over the Air Updates with Mendix](/howto/mobile/how-to-ota/)
+* [Release Over the Air Updates with App Center's CodePush (Deprecated)](/howto/mobile/how-to-ota-appcenter/)

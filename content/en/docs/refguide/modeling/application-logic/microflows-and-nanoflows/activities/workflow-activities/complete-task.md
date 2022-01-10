@@ -13,7 +13,7 @@ This activity can only be used in **Microflows**.
 
 ## 1 Introduction
 
-The **Complete task** activity can be used to define which outcome the [user task](user-task) should follow. 
+The **Complete task** activity can be used to define which outcome the [user task](/refguide/user-task/) should follow. 
 
 ![Complete Task](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/complete-task/complete-task.jpg)
 
@@ -52,4 +52,4 @@ Gives you a list of available outcomes for the selected user task. The user task
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}

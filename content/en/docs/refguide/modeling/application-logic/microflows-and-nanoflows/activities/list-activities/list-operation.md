@@ -13,7 +13,7 @@ This activity can be used in both **Microflows** and **Nanoflows**.
 
 ## 1 Introduction
 
-The **List operation** activity can perform various actions on a list. The result of the action is returned as a new list in contrast to the [Change list](change-list) activity.
+The **List operation** activity can perform various actions on a list. The result of the action is returned as a new list in contrast to the [Change list](/refguide/change-list/) activity.
 
 The actions which can be performed are:
 
@@ -108,4 +108,4 @@ This is the name of the resulting List, Object, or Boolean variable. The result 
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}

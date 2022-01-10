@@ -1,8 +1,8 @@
 ---
 title: "Pages"
-url: /studio8/page-editor
+url: /studio8/page-editor/
 description: "Describes the page editor in Mendix Studio."
-menu_order: 20
+weight: 20
 tags: ["studio", "page editor", "pages"]
 ---
 
@@ -15,9 +15,9 @@ To view the **Pages** of your app in Mendix Studio, click the **Pages** icon in 
 {{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/pages-icon.png)
 {{/* % /image_container % */}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-Studio supports apps based on the Atlas UI framework only. For details on Atlas UI, see [Atlas UI](/howto8/front-end/atlas-ui).
+Studio supports apps based on the Atlas UI framework only. For details on Atlas UI, see [Atlas UI](/howto8/front-end/atlas-ui/).
 
 {{% /alert %}}
 
@@ -28,14 +28,14 @@ Every page is *based on* a layout and a template:
 
 *Look and structure* of a page is defined by the following elements:
 
-* **Widgets** – single user-interface elements. For more information, see the [Widgets](#widgets) section and [Widgets](page-editor-widgets).
+* **Widgets** – single user-interface elements. For more information, see the [Widgets](#widgets) section and [Widgets](/studio8/page-editor-widgets/).
 * **Building blocks** – pre-configured set of *widgets* that speeds up the process of building your page and styling it. For more information, see the [Building Blocks](#building-blocks) section. 
 
 The diagram below explains function of layouts, templates, and widgets:
 
 ![](/attachments/studio8/page-editor/page-structure.png)
 
-All elements described above (layouts, templates, widgets, and building blocks) are powered by Atlas UI. For more information on what Atlas UI is, see [Atlas UI](/howto8/front-end/atlas-ui). 
+All elements described above (layouts, templates, widgets, and building blocks) are powered by Atlas UI. For more information on what Atlas UI is, see [Atlas UI](/howto8/front-end/atlas-ui/). 
 
 ## 2 Performing Basic Functions {#page-editor-basic-functions}
 
@@ -101,7 +101,7 @@ To copy and paste a page, do the following:
 
 3. Open the Studio app where you want to paste the page and press <kbd>Ctrl</kbd> +<kbd>V</kbd> or <kbd>Cmd</kbd> +<kbd>V</kbd>. 
 
-Your page is pasted. For more information on copy/paste function in Studio, see the [Copy/Paste Pages, Microflows, and Enumerations](general#copy-paste-documents) section in *General Info*.
+Your page is pasted. For more information on copy/paste function in Studio, see the [Copy/Paste Pages, Microflows, and Enumerations](/studio8/general/#copy-paste-documents) section in *General Info*.
 
 ### 2.5 Deleting a Page
 
@@ -151,7 +151,7 @@ To delete an element from a page, do one of the following:
 
 ## 3 The Show Option
 
-Located in the top-left corner of a page, the **Show** option highlights items that have [conditional visibility](page-editor-widgets-visibility-section) configured for them. Click the eye icon to enable this option. For more information on conditional visibility and how it works, see [Conditional Visibility Section](page-editor-widgets-visibility-section).  
+Located in the top-left corner of a page, the **Show** option highlights items that have [conditional visibility](/studio8/page-editor-widgets-visibility-section/) configured for them. Click the eye icon to enable this option. For more information on conditional visibility and how it works, see [Conditional Visibility Section](/studio8/page-editor-widgets-visibility-section/).  
 
 ## 4 Breadcrumb {#breadcrumb}
 
@@ -178,9 +178,9 @@ This tab consists of the following:
 
 Widgets are single user-interface elements that can be configured. 
 
-You can [quickly configure](page-editor-widgets#quick-config) most of the non-custom widgets when adding them on a page. For more information on how to configure widgets, see [Widgets](page-editor-widgets). 
+You can [quickly configure](/studio8/page-editor-widgets/#quick-config) most of the non-custom widgets when adding them on a page. For more information on how to configure widgets, see [Widgets](/studio8/page-editor-widgets/). 
 
-You can update widgets in the [Widget Overview](settings-widget-overview). 
+You can update widgets in the [Widget Overview](/studio8/settings-widget-overview/). 
 
 ### 5.2 Building Blocks {#building-blocks}
 
@@ -209,7 +209,7 @@ If you want to read documentation on a particular building block and to know mor
 
 ![](/attachments/studio8/page-editor/info-icon-building-blocks.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Building blocks categories may differ because Atlas UI can be customized using Studio Pro.
 
@@ -229,4 +229,4 @@ For example, if you click **Layout**—which is the layout that you choose when 
 
 ## 7 Main Documents in This Category
 
-* [Widgets](page-editor-widgets) – describes different type of widgets
+* [Widgets](/studio8/page-editor-widgets/) – describes different type of widgets

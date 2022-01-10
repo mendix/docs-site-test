@@ -13,7 +13,7 @@ This activity can only be used in **Microflows**.
 
 ## 1 Introduction
 
-The **Workflow call** activity can be used to call and trigger a [workflow](workflows). 
+The **Workflow call** activity can be used to call and trigger a [workflow](/refguide/workflows/). 
 
 ![](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/workflow-call/workflow-call.jpg)
 
@@ -52,4 +52,4 @@ The name of the variable, list, or object returned by the activity.
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}

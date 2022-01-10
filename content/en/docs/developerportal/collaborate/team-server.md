@@ -45,7 +45,7 @@ For each revision, you can see the following information:
 * The Mendix Studio Pro version used
 * The revision number
 
-You can also access the revision history in Studio Pro. For more information, see the [History](/refguide/using-version-control-in-studio-pro#history) section in *Using Version Control in Studio Pro*.
+You can also access the revision history in Studio Pro. For more information, see the [History](/refguide/using-version-control-in-studio-pro/#history) section in *Using Version Control in Studio Pro*.
 
 ## 4 Revision Details
 
@@ -69,5 +69,5 @@ Mendix adheres to strict security standards and considers you the sole owner of 
 
 ## 6 Read More
 
-* [Stories](/developerportal/collaborate/stories)
-* [App Roles](/developerportal/collaborate/app-roles)
+* [Stories](/developerportal/collaborate/stories/)
+* [App Roles](/developerportal/collaborate/app-roles/)

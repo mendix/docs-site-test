@@ -91,13 +91,13 @@ Drill down deeper into the log by clicking the name of the test step. You can al
 The following results can be assigned to a test step:
 
 ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/passed-icon.png)  Passed – the test has passed
-  Passed – the test has passed
+
 ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/failed-icon.png)  Failed – the test has failed
-  Failed – the test has failed
+
 ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/not-executed-icon.png)  Not Executed – the test was not executed; this happens if a test step has not met the set precondition
-  Not Executed – the test was not executed; this happens if a test step has not met the set precondition
+
 ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/mixed-icon.png)  Different Results - some of the containing tests passed, some failed and some where not executed
-  Different Results - some of the containing tests passed, some failed and some where not executed
+
 ### 2.3 Actions
 
 On the top-right of the screen, you will find the **Edit** and **Run** buttons:

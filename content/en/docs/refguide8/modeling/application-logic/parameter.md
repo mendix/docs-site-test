@@ -1,14 +1,14 @@
 ---
 title: "Parameter"
-url: /refguide8/parameter
+url: /refguide8/parameter/
 parent: "application-logic"
-menu_order: 70
+weight: 70
 tags: ["studio pro", "parameter", "microflow"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/parameter.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/parameter.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -27,6 +27,6 @@ If you want to use an object of the *Customer* entity in a microflow, use the pa
 
 ### 2.2 Data Type
 
-The data type of a parameter defines the type of the value that it expects. See [Data Types](data-types) for the possible data types.
+The data type of a parameter defines the type of the value that it expects. See [Data Types](/refguide8/data-types/) for the possible data types.
 
 Default: *Object*

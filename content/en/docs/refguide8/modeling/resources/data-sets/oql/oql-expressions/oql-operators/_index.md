@@ -1,12 +1,12 @@
 ---
 title: "OQL Operators"
-url: /refguide8/oql-operators
+url: /refguide8/oql-operators/
 parent: "oql-expressions"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/oql-operators.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/oql-operators.pdf).
 {{% /alert %}}
 
 The following operators can be used in OQL expressions:
@@ -28,6 +28,6 @@ The following operators can be used in OQL expressions:
 | `IN` | Matches any value in a subquery or a list of expression values. | `City IN (SELECT Name FROM City WHERE Country = 'Gelre')` `City IN ('Losdun', 'Die Haghe', 'Haagambacht')` |
 | `EXISTS` | Test for the existance of any rows when executing the subquery. | `EXISTS (SELECT ID FROM City WHERE City = 'Losdun')` Returns true if object exists |
 | `NOT` | Reverses the value of the expression following this keyword. | `NOT City = 'Rotterdam'` returns all objects not in Rotterdam. |
-| `CASE` | Evaluates one or more conditions and returns a possible expression. | See [this page](oql-case-expression). |
+| `CASE` | Evaluates one or more conditions and returns a possible expression. | See [this page](/refguide8/oql-case-expression/). |
 | `OR` | Returns true if one or both expressions around this operator return true.  | `price = 9.80 OR price = 9.70` returns true if price is 9.80, false if price is 9.60. |
 | `AND` | Returns true if expressions on both sides return true.  | `price = 9.80 AND amount = 1` returns true if price is 9.80 and amount is 1, false if price is 9.70 and amount is 1, false if price is 9.80 and amount is 2. |

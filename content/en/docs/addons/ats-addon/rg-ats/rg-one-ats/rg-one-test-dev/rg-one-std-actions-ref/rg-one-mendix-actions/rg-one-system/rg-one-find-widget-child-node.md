@@ -15,7 +15,7 @@ Also matches the widget node itself.
 
 ## 3 Usage
 
-Pass the name of the parent widget and the selector for the child node you want to find. You can use [CSS Selectors](rg-one-selectors#css-selectors) and [JQuery Selectors](rg-one-selectors#jquery-selectors) to define the path to the child node.
+Pass the name of the parent widget and the selector for the child node you want to find. You can use [CSS Selectors](/addons/ats-addon/rg-one-selectors/#css-selectors) and [JQuery Selectors](/addons/ats-addon/rg-one-selectors/#jquery-selectors) to define the path to the child node.
 Optionally you can provide a WebElement as search context, to narrow down the search for the node, if there are two or more nodes with the same name.
 
 ## 4 Input Parameters

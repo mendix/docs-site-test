@@ -1,8 +1,8 @@
 ---
 title: "Deploy Your First Mendix Native Mobile App"
-url: /howto8/mobile/deploying-native-app
+url: /howto8/mobile/deploying-native-app/
 parent: "build-native-apps"
-menu_order: 10
+weight: 10
 description: Describes how to deploy your first Mendix native mobile app with the Mendix Native Mobile Builder.
 tags: ["native", "mobile", "deploy", "mendix native mobile builder", "builder", "appcenter"]
 ---
@@ -18,7 +18,7 @@ The Mendix Native Mobile Builder is the UI tool to set up and build your Mendix 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Mendix Studio Pro v8.15 and above installed using the online installer. The offline installer does not include the Mendix Native Mobile Builder dependency.
-* Read [How to Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile) to see how to create, style and debug an application with Mendix Studio Pro
+* Read [How to Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile/) to see how to create, style and debug an application with Mendix Studio Pro
 * Deploy your native mobile app to the cloud via Studio Pro and have the cloud address of your deployed application available
 * A [GitHub](https://github.com/) account.
 * An [App Center](https://appcenter.ms/) account. We recommend a paid account if you will be building and deploying regularly.
@@ -59,7 +59,7 @@ To use the Mendix Native Mobile Builder, you will first need to get tokens to au
 
 ## 4 Build Your Native App {#building}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The Mendix Native Mobile Builder needs to communicate with GitHub and App Center. Therefore, make sure your firewall permissions do not restrict the tool.
 {{% /alert %}}
 
@@ -68,42 +68,42 @@ From Studio Pro:
 1.  Click **Project** > **Build Native Mobile App**:
 
 	{{/* % image_container width="350" % */}}![Start Mendix Native Mobiler Builder](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/start-nbui.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  When Mendix Native Mobile Builder launches you will see the home screen:
 
 	{{/* % image_container width="350" % */}}![Mendix Natve Mobile Builder Home Screen](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/home-screen.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Select **Build app for distribution**.
 1.  Fill in your app's name and the app identifier. The wizard provides defaults, but you might want to align the app identifier to use your company's reversed URL, or change the app name to something besides the project name:
 
 	{{/* % image_container width="350" % */}}![Wizard App Details](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/wizard-app-details.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Next Step** when ready.
 1.  In the **Tokens** screen fill in your GitHub and App Center API tokens. The tool will verify the tokens grant sufficient access to valid accounts and will notify you if they do not:
 
 	{{/* % image_container width="350" % */}}![Wizard Tokens](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/wizard-tokens.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Next Step** when ready.
 1.  Select **Choose your icon** if you already have an image you would like to use as an icon. If you continue without adding a custom image, your app will use the default images displayed below. You can change app icon later if you wish:
 
 	{{/* % image_container width="350" % */}}![Wizard Icons](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/wizard-icons.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Next Step** when ready.
 1.  Select **Choose your splash screen** if you already have an image you would like to use as a splash screen, or just continue if you are satisfied using the default image. You can change the splash screen later if you wish:
 
 	{{/* % image_container width="350" % */}}![Wizard Splash screen](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/wizard-splashscreens.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Next Step** when ready.
 1.  Drag and drop your custom fonts onto the field if you already have a selection of fonts you would like to use, or continue if you do not need to add custom fonts. You can add custom fonts later if you wish:
 
 	{{/* % image_container width="350" % */}}![Wizard Fonts](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/wizard-fonts.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Next Step** when ready.
 
 You have completed the mandatory basic app configuration required to build your project. Now you see the **Build app for distribution** screen: 
 
 {{/* % image_container width="350" % */}}![Build release app](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/build-release-app.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 Next, do the following:
 
 1. Fill in an intentional version number. For defaults, we reccomend you use these numbering guidelines:
@@ -117,15 +117,15 @@ Next, do the following:
 1.  The tool will set up your GitHub repository, commit your changes, configure App Center with two new projects (one for iOS and one for Android), and continue building your apps:
 
 	{{/* % image_container width="350" % */}}![Setting up build prerequisites](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/build-release-app-build-step1.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}	{{/* % image_container width="350" % */}}![Building release app](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/build-release-app-build-step2.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Building release app](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/build-release-app-build-step2.png){{/* % /image_container % */}}
+
 1.  After the build completes you can scan the QR code provided to install the app on your device. Currently the QR code service is only supported for Android devices:
 
 	{{/* % image_container width="350" % */}}![Build completed](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/build-release-app-build-done-both.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 5 Signing Your Apps {#signing-a-build}
 
-By default, App Center builds are unsigned and cannot be released on the Google Play Store or the Apple App Store. To release your apps, you must provide your signature keys to Mendix Native Mobile Builder. Signature keys prove the authenticity of your app and prevent forgeries. For more information to how to acquire these keys, see the [Managing App Signing Keys Reference Guide](/refguide8/managing-app-signing-keys).
+By default, App Center builds are unsigned and cannot be released on the Google Play Store or the Apple App Store. To release your apps, you must provide your signature keys to Mendix Native Mobile Builder. Signature keys prove the authenticity of your app and prevent forgeries. For more information to how to acquire these keys, see the [Managing App Signing Keys Reference Guide](/refguide8/managing-app-signing-keys/).
 
 ### 5.1 Set Up Signing for iOS {#signing-for-ios}
 
@@ -134,7 +134,7 @@ iOS supports two types of signing configurations: **Development** and **Release*
 1. From within Mendix Native Mobile Builder, select **iOS** under **Certificates**:
 
 	{{/* % image_container width="350" % */}}![Build release app](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/build-release-app.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  Upload your provisioning file and P12 certificate, and then type in your password. The tool will verify that:
 
 	* The app identifier of the app is included in the Provisioning file
@@ -144,7 +144,7 @@ iOS supports two types of signing configurations: **Development** and **Release*
 	If the tool errors, please correct the issue and try again:
    
 	{{/* % image_container width="350" % */}}![Signing iOS](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/signing-ios.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Save**.
 
 With that you have completed setting up signing for iOS. Your next build will use the provided configuration to sign your iOS app.
@@ -154,7 +154,7 @@ With that you have completed setting up signing for iOS. Your next build will us
 1.  From within Mendix Native Mobile Builder, choose **Android** under **Certificates**:
 
 	{{/* % image_container width="350" % */}}![Build release app](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/build-release-app.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  Upload your keystore file and provide the keystore password, the key alias and the key password as defined when setting up the keystore. The tool will verify that:
 
 	* The keystore password is valid
@@ -163,7 +163,7 @@ With that you have completed setting up signing for iOS. Your next build will us
 	If it errors, please correct the issue and try again:
    
 	{{/* % image_container width="350" % */}}![Signing iOS](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/signing-android.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Save**.
 
 With that you have completed setting up signing for Android. The next build will use the provided configuration to sign your Android app.
@@ -206,35 +206,35 @@ In order to deploy the *nativeTemplate.xcarchive* on a device or on the Apple Ap
 1.  Click the *Distribute App* button to start the local signing flow:
 
 	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-1.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  Select **Development**:
 
 	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-2.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  Choose a **Development Team**:
 
 	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-3.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  Configure your **Development distribution options**:
 
 	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-4.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  Select a re-signing option:
 
 	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-5.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  Review your *.ipa* content and click **Export**:
 
 	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-6.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 Congratulations. You now have a signed *.ipa* file:
 
 {{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-7.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ### 6.2 Distribute the Android app to Google Play {#android-distributing}
 
 A signed Android APK can be uploaded to Google Play store directly. For more info on setting up a new app and uploading your binaries follow Google's guide on [Uploading an app](https://support.google.com/googleplay/android-developer/answer/113469?hl=en).
 
 ## 7 Read More
 
-* [How To Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile)
+* [How To Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile/)

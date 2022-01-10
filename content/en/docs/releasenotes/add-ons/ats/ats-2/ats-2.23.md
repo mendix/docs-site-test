@@ -16,7 +16,7 @@ You can change your theme by clicking your profile image and selecting one of th
 
 * **System** (default) – match the theme to your operating system preference
 * **Dark** – use a dark theme (NEW!)
-* **Light** – use a light theme (this is the standard theme that we have used since ATS [2.0](ats-2.0))
+* **Light** – use a light theme (this is the standard theme that we have used since ATS [2.0](/releasenotes/add-ons/ats-2.0/))
 
 ### Item Locking
 

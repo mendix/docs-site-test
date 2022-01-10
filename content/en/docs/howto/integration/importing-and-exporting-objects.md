@@ -149,7 +149,7 @@ To import widgets, follow these steps:
 
 ### 2.5 Importing Content from the Marketplace
 
-To learn more about importing content from the Marketplace, see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content).
+To learn more about importing content from the Marketplace, see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/).
 
 ## 3 Exporting Objects
 
@@ -204,14 +204,14 @@ Mendix module documents can be exported as a Mendix package (*.mpk*) file.
 
 ## 4 Read More
 
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Consume a Simple Web Service](consume-a-simple-web-service)
-* [Export XML Documents](export-xml-documents)
-* [Import Excel Documents](importing-excel-documents)
-* [Expose a Web Service](expose-a-web-service)
-* [Configure Selenium Support](selenium-support)
-* [Import XML Documents](importing-xml-documents)
-* [Consume a REST Service](consume-a-rest-service)
-* [Expose Data to BI Tools Using OData](exposing-data-to-bi-tools-using-odata)
-* [Modules](/refguide/modules)
-* [App](/refguide/project)
+* [Consume a Complex Web Service](/howto/integration/consume-a-complex-web-service/)
+* [Consume a Simple Web Service](/howto/integration/consume-a-simple-web-service/)
+* [Export XML Documents](/howto/integration/export-xml-documents/)
+* [Import Excel Documents](/howto/integration/importing-excel-documents/)
+* [Expose a Web Service](/howto/integration/expose-a-web-service/)
+* [Configure Selenium Support](/howto/integration/selenium-support/)
+* [Import XML Documents](/howto/integration/importing-xml-documents/)
+* [Consume a REST Service](/howto/integration/consume-a-rest-service/)
+* [Expose Data to BI Tools Using OData](/howto/integration/exposing-data-to-bi-tools-using-odata/)
+* [Modules](/refguide/modules/)
+* [App](/refguide/project/)

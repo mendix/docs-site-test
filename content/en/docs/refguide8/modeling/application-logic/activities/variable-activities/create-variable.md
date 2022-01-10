@@ -1,16 +1,16 @@
 ---
 title: "Create Variable"
-url: /refguide8/create-variable
+url: /refguide8/create-variable/
 parent: "variable-activities"
 tags: ["studio pro", "create variable", "variable", "variable activities"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/create-variable.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/create-variable.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can be used in both **Microflows** and **Nanoflows**.
 {{% /alert %}}
 
@@ -41,11 +41,11 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.1 Data Type
 
-**Data type** defines what type of data is stored in the variable. A variable can have one of the following [data types](data-types): Boolean, Enumeration, Decimal, Integer/Long, or String.
+**Data type** defines what type of data is stored in the variable. A variable can have one of the following [data types](/refguide8/data-types/): Boolean, Enumeration, Decimal, Integer/Long, or String.
 
 ### 3.2 Initial Value
 
-Defines the initial value of the variable. The value is entered using an [expression](expressions) (the result of the microflow expression must match the data type of the variable).
+Defines the initial value of the variable. The value is entered using an [expression](/refguide8/expressions/) (the result of the microflow expression must match the data type of the variable).
 
 ### 3.3 Variable Name
 
@@ -53,8 +53,8 @@ Variable defines the name of the resulting variable. The variable can be used by
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 
-* [Activities](activities)
+* [Activities](/refguide8/activities/)

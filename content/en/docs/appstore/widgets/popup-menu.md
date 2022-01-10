@@ -50,4 +50,4 @@ Other main properties of the widget are as follows:
 	* Default: **No**
 	* Note that the on click action should still be configured on the menu items and not internal widgets
 
-If you want to use dynamic content, make sure to wrap the widget in a [data view](/refguide/data-view) and set **Custom visualization** to **Yes**.
+If you want to use dynamic content, make sure to wrap the widget in a [data view](/refguide/data-view/) and set **Custom visualization** to **Yes**.

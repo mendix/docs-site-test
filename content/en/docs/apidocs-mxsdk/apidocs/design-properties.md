@@ -19,7 +19,7 @@ Design properties are a special set of settings shipped together with a Mendix t
 
 In Studio Pro, you can see which design properties are available for a widget either in the **Properties** pane or in the widget's settings dialog box under the **Appearance** tab. 
 
-In Studio, you can see design properties in the **Design** section of a widget's properties pane (for more information, see the [Design Section Reference Guide](/studio/page-editor-widgets-design-section)).
+In Studio, you can see design properties in the **Design** section of a widget's properties pane (for more information, see the [Design Section Reference Guide](/studio/page-editor-widgets-design-section/)).
 
 ## 2 Using Design Properties
 
@@ -41,7 +41,7 @@ A design property of type **Dropdown** defines a set of options with separate cl
 
 ## 4 Design Properties Definitions {#design-properties-definitions}
 
-Design properties are defined on a module level in **JSON** format. They are located in the module specific *themesource* folders (for more information, see the [File and Folder Structure](/howto/front-end/customize-styling-new#file-and-folder) section of *How to Customize Styling*). Since styling works differently for web and native platforms, each platform's design properties are different and defined in two separate folders. Web styling is defined in *web/design-properties.json* file. Native styling is defined in the *native/design-properties.json* file.
+Design properties are defined on a module level in **JSON** format. They are located in the module specific *themesource* folders (for more information, see the [File and Folder Structure](/howto/front-end/customize-styling-new/#file-and-folder) section of *How to Customize Styling*). Since styling works differently for web and native platforms, each platform's design properties are different and defined in two separate folders. Web styling is defined in *web/design-properties.json* file. Native styling is defined in the *native/design-properties.json* file.
 
 Here is a simplified example of a design properties file:
 
@@ -189,7 +189,7 @@ Widget types are types defined in the [Model SDK](https://apidocs.rnd.mendix.com
 
 ### 5.1 Widget Types for Pluggable Widgets
 
-When creating design properties for [Pluggable Widgets](/apidocs-mxsdk/apidocs/pluggable-widgets), their widget type is determined by [widget id](/apidocs-mxsdk/apidocs/pluggable-widgets#widget-id).
+When creating design properties for [Pluggable Widgets](/apidocs-mxsdk/apidocs/pluggable-widgets/), their widget type is determined by [widget id](/apidocs-mxsdk/apidocs/pluggable-widgets/#widget-id).
 
 ## 6 Renaming Design Properties{#old-names}
 
@@ -245,6 +245,6 @@ The design property above is a replacement for the removed option **Styling opti
 
 ## 7 Read More
 
-* [How to Style Your Mendix App](/howto/mobile/how-to-use-native-styling)
-* [Native Mobile Styling Reference Guide](/refguide/native-styling-refguide)
-* [How to Extend Design Properties](/howto/front-end/extend-design-properties)
+* [How to Style Your Mendix App](/howto/mobile/how-to-use-native-styling/)
+* [Native Mobile Styling Reference Guide](/refguide/native-styling-refguide/)
+* [How to Extend Design Properties](/howto/front-end/extend-design-properties/)

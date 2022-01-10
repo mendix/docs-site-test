@@ -69,7 +69,7 @@ This property specifies the range that determines how many objects are retrieved
 
 #### 3.3.3 XPath Constraint
 
-The [XPath](xpath) constraint defines the condition the objects need to fulfill to be retrieved. If there is no XPath constraint, all objects of the entity are retrieved.
+The [XPath](/refguide/xpath/) constraint defines the condition the objects need to fulfill to be retrieved. If there is no XPath constraint, all objects of the entity are retrieved.
 
 {{% alert color="info" %}}
 Date functions, user-role tokens, computations based on tokens, and following associations are not supported in XPath constraints when the retrieve activity is in a nanoflow.
@@ -89,4 +89,4 @@ This is the name of the list or object returned by the activity. It can be used 
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}

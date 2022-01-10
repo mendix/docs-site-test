@@ -1,13 +1,13 @@
 ---
 title: "Offline"
-url: /refguide7/offline
+url: /refguide7/offline/
 category: "General"
-menu_order: 40
+weight: 40
 ---
 
 ## 1 Introduction
 
-We define an offline application as the portion of a Mendix app that is accessible through the [Hybrid Tablet profile](hybrid-tablet-profile) and/or the [Hybrid Phone profile](hybrid-phone-profile). Offline support must be enabled. Pages available in these profiles can be viewed without an Internet connection. Consequently, they are subject to a number of restrictions which are explained below.
+We define an offline application as the portion of a Mendix app that is accessible through the [Hybrid Tablet profile](/refguide7/hybrid-tablet-profile/) and/or the [Hybrid Phone profile](/refguide7/hybrid-phone-profile/). Offline support must be enabled. Pages available in these profiles can be viewed without an Internet connection. Consequently, they are subject to a number of restrictions which are explained below.
 
 ## 2 Availability
 
@@ -15,9 +15,9 @@ To access the offline application, you need to have a mobile device that runs a 
 
 ## 3 Synchronization {#synchronization}
 
-The first time an [offline-enabled](configuring-hybrid-mobile-apps-to-run-offline) mobile application is run, it will retrieve all the data it requires to run offline from the server. After that, it will remain in offline mode until a synchronization event is triggered. Remaining in offline mode will significantly improve the performance of your application. Synchronization can be triggered by either the server or the user. The server will automatically resynchronize the app if it is opened after a new model is uploaded, in order to prevent inconsistencies. The user can trigger a synchronization by triggering a sync action, for example from an [action button](action-button). 
+The first time an [offline-enabled](/refguide7/configuring-hybrid-mobile-apps-to-run-offline/) mobile application is run, it will retrieve all the data it requires to run offline from the server. After that, it will remain in offline mode until a synchronization event is triggered. Remaining in offline mode will significantly improve the performance of your application. Synchronization can be triggered by either the server or the user. The server will automatically resynchronize the app if it is opened after a new model is uploaded, in order to prevent inconsistencies. The user can trigger a synchronization by triggering a sync action, for example from an [action button](/refguide7/action-button/). 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 As of Mendix 7.6, the startup performance of offline apps skips data and file synchronizations on subsequent application startups. Mendix still does them, but only if your app has been redeployed in the meantime. In that case, synchronization consists of two steps: Uploading new and changed objects, and then recreating the database by downloading all necessary objects from the runtime.
 
@@ -31,7 +31,7 @@ Because synchronization depends on the regular runtime APIs, the models of the a
 
 Synchronization of files is only triggered by modifications to the attributes of the object, not by modifying the contents of the file itself.
 
-{{% alert type="warning" %}}When a synchronization error occurs because of one the reasons above, an object's commit is skipped, its changes are ignored, and references from other objects to it become invalid. Objects referencing such a skipped object (which are not triggering errors) will be synchronized normally. Such a situation is likely to be a modeling error and is logged on the server.{{% /alert %}}
+{{% alert color="warning" %}}When a synchronization error occurs because of one the reasons above, an object's commit is skipped, its changes are ignored, and references from other objects to it become invalid. Objects referencing such a skipped object (which are not triggering errors) will be synchronized normally. Such a situation is likely to be a modeling error and is logged on the server.{{% /alert %}}
 
 ## 4 Restrictions {#restrictions}
 
@@ -91,13 +91,13 @@ Spreadsheets are generated through direct database interaction, which is not ava
 
 Offline-enabled apps are only supported on the iOS and Android platforms.
 
-For more information on offline apps, see [Configuring Hybrid Mobile Apps to Run Offline](configuring-hybrid-mobile-apps-to-run-offline).
+For more information on offline apps, see [Configuring Hybrid Mobile Apps to Run Offline](/refguide7/configuring-hybrid-mobile-apps-to-run-offline/).
 
 ### 4.14 Synchronization
 
 Mendix does not have a recommended maximum app size for the synchronization process. This process depends on the amount of data as well as the connection quality and speed of the mobile device. 
 
-The timeout is set to 30 seconds per entity downloaded per the [July 3rd, 2018 Hybrid App Base & Template](/releasenotes/mobile/hybrid-app#7318) release.
+The timeout is set to 30 seconds per entity downloaded per the [July 3rd, 2018 Hybrid App Base & Template](/releasenotes/mobile/hybrid-app/#7318) release.
 
 In addition, Mendix recommends limiting the amount of data and syncing as much as possible by configuring security access so that users do not sync entities they do not need.
 
@@ -109,4 +109,4 @@ Please note that this does not apply to changing existing objects.
 
 ### 4.16 Hashed String Attributes {#hashed-strings}
 
-Attributes with the hashed string [attribute type](attributes#type) will not be synchronized.
+Attributes with the hashed string [attribute type](/refguide7/attributes/#type) will not be synchronized.

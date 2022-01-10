@@ -1,6 +1,6 @@
 ---
 title: "Managing App Signing Keys"
-url: /refguide7/managing-app-signing-keys
+url: /refguide7/managing-app-signing-keys/
 category: "Mobile Development"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -19,7 +19,7 @@ It is convenient to have an Apple Mac available, but it is not a requirement. Yo
 
 ### 2.1 On Apple Macs
 
-If you have an Apple Mac available, see the Apple developer documentation on [certificate management](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) for information on how to obtain an iOS signing certificate and distribution profile. Next, see the Apple documentation on [how to create the required distribution profile](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html). Finally, check the end of this section for information on how to [upload the signing key files to Adobe PhoneGap Build](managing-app-signing-keys).
+If you have an Apple Mac available, see the Apple developer documentation on [certificate management](https:/developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) for information on how to obtain an iOS signing certificate and distribution profile. Next, see the Apple documentation on [how to create the required distribution profile](https:/developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html). Finally, check the end of this section for information on how to [upload the signing key files to Adobe PhoneGap Build](/refguide7/managing-app-signing-keys/).
 
 ### 2.2 On Other Platforms
 

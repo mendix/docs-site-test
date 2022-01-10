@@ -10,7 +10,7 @@ weight: 50
 The Projects API allows you to programmatically create a project in your company space and move working copies between the Team Server and the Model Server.
 
 {{% alert color="warning" %}}
-As of June 20th, 2021, you can no longer create apps using app templates created in Desktop Modeler version [7.23.14](/releasenotes/studio-pro/7.23#72314) or below. Please update your templates to [7.23.15](/releasenotes/studio-pro/7.23#72315) or above before creating apps based on those templates.
+As of June 20th, 2021, you can no longer create apps using app templates created in Desktop Modeler version [7.23.14](/releasenotes/studio-pro/7.23/#72314) or below. Please update your templates to [7.23.15](/releasenotes/studio-pro/7.23/#72315) or above before creating apps based on those templates.
 {{% /alert %}}
 
 ## 2 Error Handling
@@ -29,7 +29,7 @@ The following operations are available in the Projects API.
 
 ### 3.1 CreateNewApp {#createnewapp}
 
-The CreateNewApp operation will create a new app and corresponding project. As parameters it requires a project name, a user name that is linked to a Mendix account, an [API Key](authentication) corresponding to that user account, and a project summary. The project summary may contain a brief description of the project.
+The CreateNewApp operation will create a new app and corresponding project. As parameters it requires a project name, a user name that is linked to a Mendix account, an [API Key](/apidocs-mxsdk/apidocs/authentication/) corresponding to that user account, and a project summary. The project summary may contain a brief description of the project.
 
 ![](/attachments/apidocs-mxsdk/apidocs/projects-api/CreateNewAppCall.PNG)
 
@@ -40,8 +40,8 @@ The CreateNewApp operation will create a new app and corresponding project. As p
 | ProjectName | String | Name of the project. May not be blank or contain any of the following characters: `<>:/\|?*` |
 | ProjectSummary | String | A brief description of the project. May be set to `empty`. |
 | User | String | The <u>email address</u> you use to log into your Mendix account. |
-| ApiKey | String | An [API Key](authentication) associated to the user account of _User_. |
-| TemplateUUID (can be `empty`) | String | The [UUID](/appstore/general/app-store-overview#usage) that identifies the template with which the project will be created. If left empty, a default blank template will be used. |
+| ApiKey | String | An [API Key](/apidocs-mxsdk/apidocs/authentication/) associated to the user account of _User_. |
+| TemplateUUID (can be `empty`) | String | The [UUID](/appstore/general/app-store-overview/#usage) that identifies the template with which the project will be created. If left empty, a default blank template will be used. |
 
 #### 3.1.2 Output
 
@@ -151,6 +151,6 @@ Reference this microflow:
 
 Download the Projects API app service below, so you can import it in your model:
 
-[ProjectsAPI_11.msd](/attachments/apidocs-mxsdk/apidocs/projects-api/ProjectsAPI_11.msd)
+
 
 In the consumed Projects API app service settings, you will have to use a constant with the value `https://sprintr.home.mendix.com/ws/ProjectsAPI/11/soap1` as Location.

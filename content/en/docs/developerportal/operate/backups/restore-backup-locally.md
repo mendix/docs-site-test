@@ -25,7 +25,7 @@ Restoring a backup locally can be useful if you want to test your cloud environm
 
 **Before starting this how-to, make sure you have completed the following prerequisites:**
 
-* [Download a backup](download-backup) that you want to restore locally
+* [Download a backup](/developerportal/operate/download-backup/) that you want to restore locally
 * Install PostgreSQL on your local machine by downloading and running the [PostgreSQL Installer](https://www.postgresql.org/download/windows/); use the program defaults and choose a password:
 
     ![](/attachments/developerportal/operate/backups/restore-backup-locally/postgres-password.png)
@@ -117,4 +117,4 @@ If you also want to restore the **FileDocuments**, you need to follow the follow
 
 ## 6 Read More
 
-* [Backups](backups)
+* [Backups](/developerportal/operate/backups/)

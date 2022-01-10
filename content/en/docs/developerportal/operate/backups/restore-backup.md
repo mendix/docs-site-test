@@ -12,16 +12,16 @@ tags: ["Backup", "Restore", "Mendix Cloud", "Developer Portal", "backup file for
 
 This page describes how to restore a backup to the Mendix Cloud.
 
-The backup can be stored in the cloud, associated with the environment from which it was made. Alternatively, for licensed nodes it can be a backup which has been stored locally, for example by downloading a backup from the Mendix Cloud (see [Download a Backup](download-backup)) for more information.
+The backup can be stored in the cloud, associated with the environment from which it was made. Alternatively, for licensed nodes it can be a backup which has been stored locally, for example by downloading a backup from the Mendix Cloud (see [Download a Backup](/developerportal/operate/download-backup/)) for more information.
 
 {{% alert color="info" %}}
-You can only restore a backup if you have sufficient rights to the target node. See [Node Permissions](/developerportal/deploy/node-permissions) for more information.
+You can only restore a backup if you have sufficient rights to the target node. See [Node Permissions](/developerportal/deploy/node-permissions/) for more information.
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-You cannot transfer data from one app to another by restoring a backup from one app to a different app. This is because each app labels the entities uniquely, even if the name in the domain model is the same. See [Data Storage](/refguide/data-storage) for more information.
+You cannot transfer data from one app to another by restoring a backup from one app to a different app. This is because each app labels the entities uniquely, even if the name in the domain model is the same. See [Data Storage](/refguide/data-storage/) for more information.
 
-If you want to copy data to another app, we recommend using the [Database Replication](/appstore/modules/database-replication) module.
+If you want to copy data to another app, we recommend using the [Database Replication](/appstore/modules/database-replication/) module.
 {{% /alert %}}
 
 ## 2 Restoring a Backup for the Same Licensed Cloud Node{#restore-cloud-backup}
@@ -187,6 +187,6 @@ So, for example, the first file in the example file above (0d3e301f-5551-46f8-ad
 
 ## 6 Read More
 
-* [Backups](backups)
-* [How to Create a Backup](create-backup)
-* [How to Download a Backup](download-backup)
+* [Backups](/developerportal/operate/backups/)
+* [How to Create a Backup](/developerportal/operate/create-backup/)
+* [How to Download a Backup](/developerportal/operate/download-backup/)

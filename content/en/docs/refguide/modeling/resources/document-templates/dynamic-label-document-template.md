@@ -25,7 +25,7 @@ A dynamic label linking to a customer name.
 
 ### 2.1 Style
 
-For details, see [Style](style).
+For details, see [Style](/refguide/style/).
 
 ### 2.2 Render XHTML
 
@@ -62,11 +62,11 @@ These are the possible values:
 
 If you choose **Custom** as the date format (see above), this property determines how the attribute value is formatted. The custom date format is a string that allows for any combination of symbols found in the table below. Any punctuation will be rendered literally.
 
-{{% snippet file="/static/_includes/refguide/custom-date-format-tokens.md" %}}
+{{% snippet file="refguide/custom-date-format-tokens.md" %}}
 
 ## 3 Common Properties
 
-{{% snippet file="/static/_includes/refguide/name-property.md" %}}
+{{% snippet file="refguide/name-property.md" %}}
 
 ## 4 Data Source Properties
 

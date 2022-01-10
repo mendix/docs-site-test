@@ -1,23 +1,23 @@
 ---
 title: "Call Nanoflow"
-url: /refguide8/nanoflow-call
+url: /refguide8/nanoflow-call/
 parent: "client-activities"
-menu_order: 2
+weight: 2
 tags: ["studio pro", "nanoflow call", "call nanoflow"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/nanoflow-call.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/nanoflow-call.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Nanoflows**.
 {{% /alert %}}
 
-The **Call nanoflow** activity can be used to call another [nanoflow](nanoflows). 
+The **Call nanoflow** activity can be used to call another [nanoflow](/refguide8/nanoflows/). 
 
 {{/* % image_container width="200" % */}}
 ![Nanoflow Call](/attachments/refguide8/modeling/application-logic/activities/client-activities/nanoflow-call/nanoflow-call.png)
@@ -58,11 +58,11 @@ The name of the parameter that is read-only.
 
 #### 3.2.2 Type
 
-The type of the parameter that is read-only. For more information on possible types of parameters, see [Data Types](data-types).
+The type of the parameter that is read-only. For more information on possible types of parameters, see [Data Types](/refguide8/data-types/).
 
 #### 3.2.3 Argument {#argument}
 
-The **Edit parameter value** button allows you to edit the argument value. For each parameter of the nanoflow, you have to supply an argument of the same type. The values of the arguments are expressed using [expressions](expressions).
+The **Edit parameter value** button allows you to edit the argument value. For each parameter of the nanoflow, you have to supply an argument of the same type. The values of the arguments are expressed using [expressions](/refguide8/expressions/).
 
 ### 3.3 Return Type
 
@@ -78,4 +78,4 @@ The name of the variable, list, or object returned by the activity.
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}

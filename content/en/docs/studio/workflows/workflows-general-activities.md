@@ -38,7 +38,7 @@ The **General** section properties are described in the table below:
 | Property  | Description                                                  |
 | --------- | ------------------------------------------------------------ |
 | Caption   | Describes what happens in this element. It is displayed in the workflow editor to make the workflow easier to read and understand. |
-| Condition | **Condition** is configured based on an [expression](/refguide/expressions). The expression should result in a Boolean or an enumeration.<br />For the expression resulting in a Boolean, two paths are possible: **true** and **false**. For example, you can use the expression resulting in a Boolean to follow different processes whether a new employee is working from home or from the office (and either send their devices to the home address or set up a workstation in the office).<br /> |
+| Condition | **Condition** is configured based on an [expression](/refguide/expressions/). The expression should result in a Boolean or an enumeration.<br />For the expression resulting in a Boolean, two paths are possible: **true** and **false**. For example, you can use the expression resulting in a Boolean to follow different processes whether a new employee is working from home or from the office (and either send their devices to the home address or set up a workstation in the office).<br /> |
 
 #### 2.1.2 Outcomes Section {#outcome}
 
@@ -113,4 +113,4 @@ You cannot use the **End** event in a Parallel split or in a path where it would
 
 ## 6 Read More
 
-* [User Task](workflows-user-task)
+* [User Task](/studio/workflows-user-task/)

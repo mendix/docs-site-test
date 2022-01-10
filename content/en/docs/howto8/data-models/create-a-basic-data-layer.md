@@ -1,8 +1,8 @@
 ---
 title: "Create a Basic Data Layer"
-url: /howto8/data-models/create-a-basic-data-layer
+url: /howto8/data-models/create-a-basic-data-layer/
 category: "Data Models"
-menu_order: 1
+weight: 1
 tags: ["data layer", "domain model", "entities", "enumerations", "associations"]
 ---
 
@@ -130,13 +130,13 @@ To configure the delete behavior, double-click the **Order_Customer** associatio
 
 	![](/attachments/howto8/data-models/create-a-basic-data-layer/18582208.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Delete behavior includes objects which are in memory. This means that delete cascades and delete prevention will apply, even if the associated object has not been committed.
 {{% /alert %}}
 
 
 ## 8 Read More
 
-* [Work with Images & Files](working-with-images-and-files)
-* [Denormalize Data to Improve Performance](denormalize-data-to-improve-performance)
-* [Set Up Data Validation](setting-up-data-validation)
+* [Work with Images & Files](/howto8/data-models/working-with-images-and-files/)
+* [Denormalize Data to Improve Performance](/howto8/data-models/denormalize-data-to-improve-performance/)
+* [Set Up Data Validation](/howto8/data-models/setting-up-data-validation/)

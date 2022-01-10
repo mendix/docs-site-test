@@ -16,15 +16,15 @@ The OData Connector for SAP solutions is an OData connector written specifically
 
 ![](/attachments/partners/sap/sap-odata-connector/appstore-sapodata.png)
 
-You can use the [OData Model Creator for SAP solutions](https://sapodatamodelcreator.mendixcloud.com/) to generate a data model from the metadata of your OData service, exposed from your SAP back-end system, or from APIs in the SAP API Business Hub or the SAP Catalog Service. For more details see [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator).
+You can use the [OData Model Creator for SAP solutions](https:/sapodatamodelcreator.mendixcloud.com/) to generate a data model from the metadata of your OData service, exposed from your SAP back-end system, or from APIs in the SAP API Business Hub or the SAP Catalog Service. For more details see [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/).
 
 {{% alert color="info" %}}
 Version 5.3.0 of the OData Connector for SAP solutions adds support for services using OData version 4. Currently, only **Get List** and **Get Entry** are supported for services using OData version 4.
 {{% /alert %}}
 
-If you are new to the OData Connector for SAP solutions, you can try it out by following our how-to: [How to Use the OData Connector](/partners/sap/use-sap-odata-connector). This reference assumes that you know the details of the SAP OData service you want to use.
+If you are new to the OData Connector for SAP solutions, you can try it out by following our how-to: [How to Use the OData Connector](/partners/sap/use-sap-odata-connector/). This reference assumes that you know the details of the SAP OData service you want to use.
 
-When running the Mendix application on SAP Business Technology Platform (SAP BTP), you can choose to use the SAP Destination Service to gain access to your on-premises SAP instance. The SAP Destination Service can be configured to invoke the SAP Connectivity Service in SAP BTP to find a route to your OData service residing on-premises. This route is configured from the SAP Cloud Connector running as an agent in your on-premises SAP back-end. If no route is configured, the OData Connector for SAP solutions will route requests to the public OData service. For more information, see the [SAP Destination Service](sap-destination-service) documentation and the [OData Connector for SAP Solutions](https://marketplace.mendix.com/link/component/74525/Mendix/SAP-OData-Connector).
+When running the Mendix application on SAP Business Technology Platform (SAP BTP), you can choose to use the SAP Destination Service to gain access to your on-premises SAP instance. The SAP Destination Service can be configured to invoke the SAP Connectivity Service in SAP BTP to find a route to your OData service residing on-premises. This route is configured from the SAP Cloud Connector running as an agent in your on-premises SAP back-end. If no route is configured, the OData Connector for SAP solutions will route requests to the public OData service. For more information, see the [SAP Destination Service](/partners/sap/sap-destination-service/) documentation and the [OData Connector for SAP Solutions](https://marketplace.mendix.com/link/component/74525/Mendix/SAP-OData-Connector).
 
 {{% alert color="info" %}}
 The SAP Destination Service replaces the SAP Cloud Connector flag which was used in previous version of the OData Connector for SAP solutions
@@ -58,13 +58,13 @@ This documentation describes two different domain models.
 
 2. The OData Connector for SAP solutions Domain Model – this contains entities which are used by the OData Connector for SAP solutions itself: for example, to construct the request which needs to be sent to the OData service. A description of this domain model is included for completeness in the section [OData Connector for SAP Solutions Domain Model](#ConnectorDM)
 
-For more information on domain models, see [Domain Model](/refguide/domain-model).
+For more information on domain models, see [Domain Model](/refguide/domain-model/).
 
 #### 2.3.1 SAP Service Domain Model
 
 Most of the actions of the OData Connector for SAP solutions make use of a domain model representing the SAP service data model. These models contain non-persistable Mendix entities which represent entities in the OData service which is exposed by an SAP back-end system. The entities contain attributes which correspond to the entity properties plus additional attributes which support the OData Connector for SAP solutions.
 
-You can create a data model by inspecting the service metadata. The response from the service can be used in the [OData Model Creator for SAP solutions](https://sapodatamodelcreator.mendixcloud.com/) to generate a domain model which can be imported into your app. Instructions for doing this are in [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator).
+You can create a data model by inspecting the service metadata. The response from the service can be used in the [OData Model Creator for SAP solutions](https:/sapodatamodelcreator.mendixcloud.com/) to generate a domain model which can be imported into your app. Instructions for doing this are in [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/).
 
 {{% alert color="info" %}}
 In addition to the domain model, the OData Model Creator will also create three other items:
@@ -90,7 +90,7 @@ This data model for the GWSAMPLE_BASIC service can be obtained from the [OData M
     * Search for the GWSAMPLE_BASIC API
     * Use the GWSAMPLE_BASIC Schema
 
-In both cases, save the file you download from the **OData Model Creator for SAP solutions** and then, using the instructions in [How to Use OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator), import it into your app. Make sure that you review the value of the constant containing the URL of the SAP service you are using after you have imported the data model into your app.
+In both cases, save the file you download from the **OData Model Creator for SAP solutions** and then, using the instructions in [How to Use OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/), import it into your app. Make sure that you review the value of the constant containing the URL of the SAP service you are using after you have imported the data model into your app.
 
 Part of the data model for this sample data is:
 
@@ -109,7 +109,7 @@ Here is the domain model of the OData Connector for SAP solutions:
 
 ![](/attachments/partners/sap/sap-odata-connector/domainmodel-sapodataconnector.png)
 
-This domain model is part of the OData Connector for SAP solutions module and can be found in **App** > **Marketplace modules** > **SAPODataConnector**. Each [entity](/refguide/entities) contains one or more [attributes](/refguide/attributes):
+This domain model is part of the OData Connector for SAP solutions module and can be found in **App** > **Marketplace modules** > **SAPODataConnector**. Each [entity](/refguide/entities/) contains one or more [attributes](/refguide/attributes/):
 
 * **ODataObject** – represents the generic OData object; all entities which can be manipulated directly in the SAP OData service domain model are specializations of this
   * **meta objectURI** – the address given by the OData service to the OData object
@@ -136,7 +136,7 @@ This domain model is part of the OData Connector for SAP solutions module and ca
 * **CSRFToken** – the Cross-Site Request Forgery (CSRF) token is maintained internally and is used to prevent CSRF attacks; a CSRF token is obtained when a **Get** or **Get list** OData action is performed and is maintained for a Mendix session (or transaction context) which means that:
   * where an asynchronous or background microflow is executed (for example, using *executeMicroflowInBackground* from Community Commons) a new CSRF token must be obtained before any other actions are performed
   * where a startup microflow or scheduled event is run, the context also supports CSRF but, again, the token must be obtained before performing any other actions
-* **Destination** – Information which defines the destination when using the *SAP Destination Service*. See [SAP Destination Service](sap-destination-service) for more information.<br />
+* **Destination** – Information which defines the destination when using the *SAP Destination Service*. See [SAP Destination Service](/partners/sap/sap-destination-service/) for more information.<br />
     There are also some entities which are used to construct the *Destination* entity. Attribute values should always be taken from the Destination entity, rather than these entities:
     * DestinationConfiguration
     * ConnectivityInfo
@@ -388,7 +388,7 @@ For example, you could catch an exception on **Get List** and display an error m
 #### 3.2.5 Get cloud connector info
 
 {{% alert color="info" %}}
-This action is included for backward compatibility. The information about your cloud connector connection is available in the **Destination** entity after you have performed a **Get Destination** action. See [SAP Destination Service](sap-destination-service) for more information.
+This action is included for backward compatibility. The information about your cloud connector connection is available in the **Destination** entity after you have performed a **Get Destination** action. See [SAP Destination Service](/partners/sap/sap-destination-service/) for more information.
 {{% /alert %}}
 
 This creates a **CloudConnectorInfo** object and fills the values for **ProxyHost**, **ProxyPort**, and **ProxyBearerToken** from the SAP environment, when the app is running on SAP BTP.
@@ -430,7 +430,7 @@ When an object is returned from an OData service, your app needs to know to whic
 
 #### 4.1.3 Destination
 
-Destination is the name of the object of type SAPODataConnector.Destination where the details of a destination have been stored by a *Get Destination* action. An SAP Destination Service enables your Mendix app to use services defined in the SAP BTP cockpit without needing to know all the technical details of the endpoint. You can find more information about the SAP Destination Service in [SAP Destination Service](sap-destination-service).
+Destination is the name of the object of type SAPODataConnector.Destination where the details of a destination have been stored by a *Get Destination* action. An SAP Destination Service enables your Mendix app to use services defined in the SAP BTP cockpit without needing to know all the technical details of the endpoint. You can find more information about the SAP Destination Service in [SAP Destination Service](/partners/sap/sap-destination-service/).
 
 {{% alert color="info" %}}
 The SAP Destination Service will only provide the correct information when run on SAP BTP. To test your app on your local machine you will have to use a URL to connect directly to an OData service which is available to you.
@@ -478,7 +478,7 @@ SELECT * FROM SalesOrderSet WHERE Category='Notepads'
 
 The `$inlinecount=allpages` clause asks OData to return a count of the number of objects returned in the list. This will be stored in SAPODataConnector.ResultInfo.totalCount.
 
-You can find more information about OData queries in [OData Query Options](/refguide/odata-query-options).
+You can find more information about OData queries in [OData Query Options](/refguide/odata-query-options/).
 
 #### 4.1.5 Url
 
@@ -614,19 +614,19 @@ This is the name that you give the result of your Activity. This can be used lat
 
 ## 5 Troubleshooting
 
-If you have issues using the OData Connector for SAP Solutions, there is a troubleshooting guide, [Troubleshoot OData Connector for SAP Solutions](sap-troubleshoot-odata-connector).
+If you have issues using the OData Connector for SAP Solutions, there is a troubleshooting guide, [Troubleshoot OData Connector for SAP Solutions](/partners/sap/sap-troubleshoot-odata-connector/).
 
 ## 6 Read More
 
-* [Attributes](/refguide/attributes)
-* [Data Types](/refguide/data-types)
-* [Domain Model](/refguide/domain-model)
-* [Entities](/refguide/entities)
-* [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content)
-* [How to Use the OData Connector for SAP Solutions](/partners/sap/use-sap-odata-connector)
-* [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator)
-* [SAP Cloud Connector](sap-cloud-connector)
+* [Attributes](/refguide/attributes/)
+* [Data Types](/refguide/data-types/)
+* [Domain Model](/refguide/domain-model/)
+* [Entities](/refguide/entities/)
+* [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/)
+* [How to Use the OData Connector for SAP Solutions](/partners/sap/use-sap-odata-connector/)
+* [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/)
+* [SAP Cloud Connector](/partners/sap/sap-cloud-connector/)
 * [SAP Help Portal](https://help.sap.com)
 * [OData Model Creator for SAP Solutions](https://sapodatamodelcreator.mendixcloud.com/)
-* [SAP Data Models](sap-data-models)
-* [OData Query Options](/refguide/odata-query-options)
+* [SAP Data Models](/partners/sap/sap-data-models/)
+* [OData Query Options](/refguide/odata-query-options/)

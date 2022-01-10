@@ -1,13 +1,13 @@
 ---
 title: "Map Automatically"
-url: /refguide8/map-automatically
+url: /refguide8/map-automatically/
 parent: "mapping-documents"
 tags: ["studio pro"]
 ---
 
 NOTE
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/map-automatically.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/map-automatically.pdf).
 {{% /alert %}}
 
 ## 1 Creating Entities, Attributes & Associations from Import or Export Mappings

@@ -1,27 +1,27 @@
 ---
 title: "Object Type Decision"
-url: /refguide8/object-type-decision
+url: /refguide8/object-type-decision/
 parent: "decisions"
-menu_order: 2
+weight: 2
 tags: ["studio pro", "object type decision", "decisions"]
 aliases:
     - /refguide8/inheritance-split.html
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/object-type-decision.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/object-type-decision.pdf).
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This activity can only be used in microflows, not in nanoflows.
 {{% /alert %}}
 
 ## 1 Introduction
 
-An object type decision is an element that makes a choice based on the type of an object of a generalized entity. The output of the object type decision are the specialized entities that inherit from the generalized entity. For more information on specialization and generalization, see [Entities](entities).
+An object type decision is an element that makes a choice based on the type of an object of a generalized entity. The output of the object type decision are the specialized entities that inherit from the generalized entity. For more information on specialization and generalization, see [Entities](/refguide8/entities/).
 
-If you want to use the specialized type in the rest of the microflow you can use a [Cast](cast-object) activity.
+If you want to use the specialized type in the rest of the microflow you can use a [Cast](/refguide8/cast-object/) activity.
 
 ## 2 Properties
 
@@ -39,7 +39,7 @@ The object type decision properties consists of the following sections:
 
 #### 2.1.1 Caption
 
-For more information, see the [Caption](microflow-element-common-properties#caption) section in *Common Properties*.
+For more information, see the [Caption](/refguide8/microflow-element-common-properties/#caption) section in *Common Properties*.
 
 ### 2.2 Input Section {#input}
 

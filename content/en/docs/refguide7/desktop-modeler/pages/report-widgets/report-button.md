@@ -1,6 +1,6 @@
 ---
 title: "Report Button"
-url: /refguide7/report-button
+url: /refguide7/report-button/
 parent: "report-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -18,4 +18,4 @@ Here you type the caption that the end user sees for the button that generates r
 
 ## Common Properties
 
-For details on name, class, and style, see [Common Widget Properties](common-widget-properties).
+For details on name, class, and style, see [Common Widget Properties](/refguide7/common-widget-properties/).

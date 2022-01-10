@@ -17,7 +17,7 @@ This how-to explains how to do the following:
 
 ## 2 Downloading the Required Marketplace Modules
 
-In this section, you will learn how to download the necessary modules from the Mendix Marketplace. The modules required for this process are [Mx Model Reflection](/appstore/modules/model-reflection) and [Excel Exporter](/appstore/modules/excel-exporter).
+In this section, you will learn how to download the necessary modules from the Mendix Marketplace. The modules required for this process are [Mx Model Reflection](/appstore/modules/model-reflection/) and [Excel Exporter](/appstore/modules/excel-exporter/).
 
 {{% alert color="info" %}}
 The Mx Model Reflection module enables your app to obtain information about its domain model (entities and attributes) and microflow definitions at runtime.
@@ -223,4 +223,4 @@ If you create a **PolicyDoc** with *no* associations to **Policy** objects, you 
 
 ## 9 Read More
 
-* [Import Excel Documents](importing-excel-documents)
+* [Import Excel Documents](/howto/integration/importing-excel-documents/)

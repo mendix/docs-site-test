@@ -37,11 +37,11 @@ However, because we provide full read-write access, you can also break the model
 *   Custom widgets
 *   Rest services: PublishedRestService is an unsupported, experimental feature.
 
-When changing these components, make sure to use the [reverse engineering tool](generating-code-from-the-model) to increase your chances of successfully building a script that creates valid models.
+When changing these components, make sure to use the [reverse engineering tool](/apidocs-mxsdk/mxsdk/generating-code-from-the-model/) to increase your chances of successfully building a script that creates valid models.
 
 ### 1.6 What Are "Promises"?
 
-Glad you asked. We put together a page on [Working with when.js and Promises in TypeScript](working-with-when-js-and-promises-in-typescript). We're happy to tell you all about it!
+Glad you asked. We put together a page on [Working with when.js and Promises in TypeScript](/apidocs-mxsdk/mxsdk/working-with-when-js-and-promises-in-typescript/). We're happy to tell you all about it!
 
 ## 2 Common Error Messages
 

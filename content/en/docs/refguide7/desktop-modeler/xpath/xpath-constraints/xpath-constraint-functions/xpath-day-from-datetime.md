@@ -1,6 +1,6 @@
 ---
 title: "XPath day-from-dateTime"
-url: /refguide7/xpath-day-from-datetime
+url: /refguide7/xpath-day-from-datetime/
 parent: "xpath-constraint-functions"
 ---
 

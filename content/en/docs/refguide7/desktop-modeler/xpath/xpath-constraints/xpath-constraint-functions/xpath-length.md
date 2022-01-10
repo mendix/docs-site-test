@@ -1,6 +1,6 @@
 ---
 title: "XPath length"
-url: /refguide7/xpath-length
+url: /refguide7/xpath-length/
 parent: "xpath-constraint-functions"
 ---
 

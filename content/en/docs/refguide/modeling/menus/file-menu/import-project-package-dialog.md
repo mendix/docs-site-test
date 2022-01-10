@@ -20,7 +20,7 @@ To import an app package, do the following:
 
     ![Import App Package Dialog Window](/attachments/refguide/modeling/menus/file-menu/import-project-package-dialog/import-project-package.png)
 
-App packages can be created using [Export App Package](export-project-package-dialog).
+App packages can be created using [Export App Package](/refguide/export-project-package-dialog/).
 
 ## 2 Where Should We Store Your App?
 
@@ -38,7 +38,7 @@ If you select to store your app in a new Mendix Team Server, a new Team Server a
 
 If you want to use an existing repository, select the app in the **Team Server App** option. Note that this works only when the existing repository is empty.
 
-For more information about the Mendix Team Server, see [Team Server](/developerportal/collaborate/team-server).
+For more information about the Mendix Team Server, see [Team Server](/developerportal/collaborate/team-server/).
 
 ### 2.2 Private Server {#private-server}
 
@@ -60,5 +60,5 @@ Use this field to choose the directory where the app files of the app will be st
 
 ## 4 Read More
 
-* [Team Server](/developerportal/collaborate/team-server)
-* [Export App Package](export-project-package-dialog)
+* [Team Server](/developerportal/collaborate/team-server/)
+* [Export App Package](/refguide/export-project-package-dialog/)

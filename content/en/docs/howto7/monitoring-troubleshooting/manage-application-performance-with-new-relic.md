@@ -1,8 +1,8 @@
 ---
 title: "Manage Application Performance with New Relic"
-url: /howto7/monitoring-troubleshooting/manage-application-performance-with-new-relic
+url: /howto7/monitoring-troubleshooting/manage-application-performance-with-new-relic/
 category: "Monitoring & Troubleshooting"
-menu_order: 13
+weight: 13
 tags: ["monitoring", "troubleshooting", "performance", "new relic"]
 ---
 
@@ -93,13 +93,13 @@ For more information on New Relic, see the New Relic documentation here: [https:
 
 ## 7 Read More
 
-* [How to Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [How to Clear Warning Messages in Mendix](clear-warning-messages)
-* [How to Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [How to Debug Java Actions Remotely](debug-java-actions-remotely)
-* [How to Set Log Levels](log-levels)
-* [How to Debug Microflows](debug-microflows)
-* [How to Debug Java Actions](debug-java-actions)
-* [How to Handle Common Mendix SSO Errors](handle-common-mendix-sso-errors)
-* [How to Solve Load & Import Errors](solving-load-and-import-errors)
-* [How to Debug Microflows Remotely](debug-microflows-remotely)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [How to Clear Warning Messages in Mendix](/howto7/monitoring-troubleshooting/clear-warning-messages/)
+* [How to Monitor Mendix Using JMX](/howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [How to Debug Java Actions Remotely](/howto7/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [How to Set Log Levels](/howto7/monitoring-troubleshooting/log-levels/)
+* [How to Debug Microflows](/howto7/monitoring-troubleshooting/debug-microflows/)
+* [How to Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions/)
+* [How to Handle Common Mendix SSO Errors](/howto7/monitoring-troubleshooting/handle-common-mendix-sso-errors/)
+* [How to Solve Load & Import Errors](/howto7/monitoring-troubleshooting/solving-load-and-import-errors/)
+* [How to Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely/)

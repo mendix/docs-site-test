@@ -1,21 +1,21 @@
 ---
 title: "Layout"
-url: /refguide8/layout
+url: /refguide8/layout/
 parent: "page-resources"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "layout widgets", "layout", "page template", "pages"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/layout.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/layout.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-Layouts specify what comes where. Each [page](page) is based on a layout. The layout contains widgets and structures that return on every page based on that layout. For example, it is common to put a menu bar widget in a layout so that the menu is visible on all pages.
+Layouts specify what comes where. Each [page](/refguide8/page/) is based on a layout. The layout contains widgets and structures that return on every page based on that layout. For example, it is common to put a menu bar widget in a layout so that the menu is visible on all pages.
 
-A layout consists of content and [placeholders](placeholder). The content is everything that should be present in every page that uses the layout, from navigation bars to sign-out buttons. Placeholders are empty areas that later form the canvas for any pages that make use of the layout. The layout content remains the same in every page, but the placeholders cover what is unique to every individual page. 
+A layout consists of content and [placeholders](/refguide8/placeholder/). The content is everything that should be present in every page that uses the layout, from navigation bars to sign-out buttons. Placeholders are empty areas that later form the canvas for any pages that make use of the layout. The layout content remains the same in every page, but the placeholders cover what is unique to every individual page. 
 
 Layouts can be based on other layouts, in which case the generic layout is referred to as the master layout. If a layout has a master layout, it can use the placeholders defined in the master to create a more specialized configuration. If a page is based on this specialized layout, it makes use of the placeholders defined in the new layout, ignoring those of the master layout. 
 
@@ -42,7 +42,7 @@ Layout properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.2 Designer Section{#designer}
 
@@ -75,7 +75,7 @@ For existing layouts, the value is read-only.
 
 #### 2.3.2 Master Layout
 
-**Master layout** specifies a layout on which this layout is based. If no master layout is specified, the layout contains a single widget (for example, a [scroll container](scroll-container)) that defines the structure of pages based on this layout. If a master layout is specified, this layout fills the gaps defined by the master layout. You can introduce new gaps in this layout by using [placeholders](placeholder).
+**Master layout** specifies a layout on which this layout is based. If no master layout is specified, the layout contains a single widget (for example, a [scroll container](/refguide8/scroll-container/)) that defines the structure of pages based on this layout. If a master layout is specified, this layout fills the gaps defined by the master layout. You can introduce new gaps in this layout by using [placeholders](/refguide8/placeholder/).
 
 #### 2.3.3 Layout Type<a name="layout-type"></a>
 
@@ -102,10 +102,10 @@ The **layout type**, determines the purpose of the layout and how a page using t
 
 Layouts can contain the following widgets:
 
-*   [Layout grid](layout-grid)
-*   [Scroll container](scroll-container)
-*   [Placeholder](placeholder)
-*   [Header](header)
-*   [Sidebar toggle](sidebar-toggle-button)
+*   [Layout grid](/refguide8/layout-grid/)
+*   [Scroll container](/refguide8/scroll-container/)
+*   [Placeholder](/refguide8/placeholder/)
+*   [Header](/refguide8/header/)
+*   [Sidebar toggle](/refguide8/sidebar-toggle-button/)
 
 Placeholder, header, and sidebar toggle are unique to layouts, whilst Layout grids and scroll containers can also be used on pages.

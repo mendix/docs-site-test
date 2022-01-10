@@ -30,8 +30,8 @@ The typical usage scenario is sending emails with a template system and using to
 
 #### 1.2.1 Mendix Modules
 
-* [Mx Model Reflection](/appstore/modules/model-reflection)
-* [Encryption](/appstore/modules/encryption)
+* [Mx Model Reflection](/appstore/modules/model-reflection/)
+* [Encryption](/appstore/modules/encryption/)
 
 #### 1.2.2 Java Libraries
 
@@ -43,17 +43,17 @@ The typical usage scenario is sending emails with a template system and using to
 
 To configure this module, follow these steps:
 
-1. Download the [Mx Model Reflection](/appstore/modules/model-reflection) module from the Mendix Marketplace.
-2. Download and configure the [Encryption](/appstore/modules/encryption) module from the Mendix Marketplace.
+1. Download the [Mx Model Reflection](/appstore/modules/model-reflection/) module from the Mendix Marketplace.
+2. Download and configure the [Encryption](/appstore/modules/encryption/) module from the Mendix Marketplace.
 3. Add the **Administration** snippet to a custom page in a different module.
 4. View the example in the **USE_ME** > **Examples** folder.
 5. Create a duplicate of this example in your own module and customize it to make it fit your needs:
 	* `Sub_CreateAndQueueEmail` – this is preferred for normal environments and will send the email in the background using a scheduled event
-	* `Sub_CreateAndSendEmail`  – this is preferred for [Free App](/developerportal/deploy/mendix-cloud-deploy) environments and sends an email directly; this approach will block the user's flow and does not include a retry when the sending fails
+	* `Sub_CreateAndSendEmail`  – this is preferred for [Free App](/developerportal/deploy/mendix-cloud-deploy/) environments and sends an email directly; this approach will block the user's flow and does not include a retry when the sending fails
 	* `Post-deployment` – after deploying, you have to set up your email settings and insert your own email templates using the newly created navigation items under **Administrator**
 6. Go to `MxObjects_Overview` and synchronize the objects. Make sure you do this every time you have added new objects.
 
 ## 3 Read More
 
-* [Sending Email](/developerportal/deploy/sending-email)
+* [Sending Email](/developerportal/deploy/sending-email/)
 

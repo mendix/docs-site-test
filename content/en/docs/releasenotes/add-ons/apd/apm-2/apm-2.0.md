@@ -7,7 +7,7 @@ parent: "apm-2"
 ## 2.0.22 {#2022}
 
 * We added a check on start-up to detect if the proper agent *.jar* file has been loaded.
-* We fixed an issue with [Client API](/apidocs-mxsdk/apidocs/client-api) requests, as `retrieve_by_microflow` and `retrieve_by_path` were not specifying their target.
+* We fixed an issue with [Client API](/apidocs-mxsdk/apidocs/client-api/) requests, as `retrieve_by_microflow` and `retrieve_by_path` were not specifying their target.
 
 ## 2.0.21
 
@@ -46,7 +46,7 @@ parent: "apm-2"
 We made the following improvements to the browser agent:
 
 * We merged the statistics and recording collecting in order to reduce overhead and resource usage.
-* We improved support for [Mendix 7.6](/releasenotes/studio-pro/7.6) and above.
+* We improved support for [Mendix 7.6](/releasenotes/studio-pro/7.6/) and above.
 
 We made the following improvements to the runtime agent:
 
@@ -62,7 +62,7 @@ We made the following improvements to the runtime agent:
 
 ## 2.0.10 {#2010}
 
-This is the first release for [Mendix 8](/releasenotes/studio-pro/8.0).
+This is the first release for [Mendix 8](/releasenotes/studio-pro/8.0/).
 
 We made the following improvements to the browser agent:
 
@@ -102,7 +102,7 @@ We made the following improvements to the browser agent:
 * There is now  a maximum message length in `MendixMessage` via an advanced setting.
 * `excludenodes=<node:level,node:level,...>` can now be used to not subscribe to certain nodes above the specified level. This feature can be used exclude log nodes (for example, as a workaround for a Mendix 6 web service and Mendix 7 bugs).
 * There is now a load tool bug fix for recording and processing query IDs.
-* The load tool loads XML pages on need, since the [create object](/refguide/create-object) button action has no `open_form` in the Client API.
+* The load tool loads XML pages on need, since the [create object](/refguide/create-object/) button action has no `open_form` in the Client API.
 * We fixed APM statistics that were counting some microflows multiple times depending on the amount of call sources.
 * The performance recording of SQL statements is now functioning again.
 * There is now an hourly purge of performance tool memory structures (together with statistic snapshot uploads) to prevent out-of-memory issues if, for example, many microflows end in error.

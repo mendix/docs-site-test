@@ -1,8 +1,8 @@
 ---
 title: "Set Up Error Handling"
-url: /howto7/logic-business-rules/set-up-error-handling
+url: /howto7/logic-business-rules/set-up-error-handling/
 category: "Logic & Business Rules"
-menu_order: 8
+weight: 8
 tags: ["error", "error handling", "rollback", "microflow", "logic"]
 #To update screenshots of these microflows in the Desktop Modeler, use the Microflow Screenshots app.
 ---
@@ -38,11 +38,11 @@ Please note that this isn't the same as preventing two users from editing the sa
 | Type | Image | Description |
 | --- | --- | --- |
 | **Error Handling – Custom With Rollback** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580964.png) | Everything that happened up to the error will be rolled back, and a new transaction will be initiated. Only the changes executed in the error handler flow will be executed. 
- | Everything that happened up to the error will be rolled back, and a new transaction will be initiated. Only the changes executed in the error handler flow will be executed.| **Error Handling – Custom Without Rollback** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580965.png) | Any action taken inside the microflow can be reverted, but everything that happened before the error will be kept.The microflow will continue over the custom error handler flow.
- | Any action taken inside the microflow can be reverted, but everything that happened before the error will be kept.The microflow will continue over the custom error handler flow.| **Continue** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580952.png) | Any action taken inside the microflow can be reverted, but everything that happened before the error will be kept. The microflow will continue as if nothing happened. Avoid using this option – you should only use this in the more complicated combinations of multiple error handlers. You want to make sure that you at least log the error message. If it breaks, you need to know about it.
- | Any action taken inside the microflow can be reverted, but everything that happened before the error will be kept. The microflow will continue as if nothing happened. Avoid using this option – you should only use this in the more complicated combinations of multiple error handlers. You want to make sure that you at least log the error message. If it breaks, you need to know about it.| **End Event** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580962.png) | This is the end of the microflow transaction and all actions are executed at the end of the main microflow.|
- | This is the end of the microflow transaction and all actions are executed at the end of the main microflow.|| **Error End Event** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580963.png) | This re-throws the error to all parent microflows after executing the custom activities. For more details, see [Error Event](/refguide7/error-event) in the Mendix Reference Guide.
- | This re-throws the error to all parent microflows after executing the custom activities. For more details, see [Error Event](/refguide7/error-event) in the Mendix Reference Guide.
+| **Error Handling – Custom Without Rollback** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580965.png) | Any action taken inside the microflow can be reverted, but everything that happened before the error will be kept.The microflow will continue over the custom error handler flow.
+| **Continue** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580952.png) | Any action taken inside the microflow can be reverted, but everything that happened before the error will be kept. The microflow will continue as if nothing happened. Avoid using this option – you should only use this in the more complicated combinations of multiple error handlers. You want to make sure that you at least log the error message. If it breaks, you need to know about it.
+| **End Event** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580962.png) | This is the end of the microflow transaction and all actions are executed at the end of the main microflow.|
+| **Error End Event** | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580963.png) | This re-throws the error to all parent microflows after executing the custom activities. For more details, see [Error Event](/refguide7/error-event/) in the Mendix Reference Guide.
+
 ## 4 Error Handling Transactions
 
 There are many different combinations of error handling and transactions that you can configure, and below you will find the descriptions of several combinations. These sections should present some of the possibilities and help you understand how the different configurations behave.
@@ -166,8 +166,8 @@ Especially when interacting with other systems, you need to think about how you 
 | Color | Description |
 | --- | --- |
 | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/orange.png) | *Initial transaction* – this transaction is initiated when the microflow started. Custom error handling with rollback does not initiate any transactions. Therefore, the microflow is executed, but all the actions in both the parent and the subflow will be reverted. None of the changes made anywhere in this transaction will be applied. |
- | *Initial transaction* – this transaction is initiated when the microflow started. Custom error handling with rollback does not initiate any transactions. Therefore, the microflow is executed, but all the actions in both the parent and the subflow will be reverted. None of the changes made anywhere in this transaction will be applied. || ![](/attachments/howto7/logic-business-rules/set-up-error-handling/blue.png) | *Transaction initiated by custom with rollback activity* – after catching the exception, a new transaction is initiated to execute the remainder of the microflow activities. |
- | *Transaction initiated by custom with rollback activity* – after catching the exception, a new transaction is initiated to execute the remainder of the microflow activities. |
+| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/blue.png) | *Transaction initiated by custom with rollback activity* – after catching the exception, a new transaction is initiated to execute the remainder of the microflow activities. |
+
 ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580948.png)
 
 ### 5.2 Rollback in the Parent Flow, Continuing in the Subflow
@@ -175,9 +175,9 @@ Especially when interacting with other systems, you need to think about how you 
 | Color | Description |
 | --- | --- |
 | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/orange.png) | *Initial transaction* – this transaction is initiated when the microflow starts. This transaction will be completely reverted, because the subflow re-throws the exception. None of the changes made during this transaction will be persisted. (If the subflow wasn't rethrowing the exception, all changes except 'SendEmail' would have been persisted in the database.) |
- | *Initial transaction* – this transaction is initiated when the microflow starts. This transaction will be completely reverted, because the subflow re-throws the exception. None of the changes made during this transaction will be persisted. (If the subflow wasn't rethrowing the exception, all changes except 'SendEmail' would have been persisted in the database.) || ![](/attachments/howto7/logic-business-rules/set-up-error-handling/blue.png) | *Transaction initiated by custom with rollback activity* – after catching the exception, a new transaction is initiated to execute the remainder of the microflow activities. |
- | *Transaction initiated by custom with rollback activity* – after catching the exception, a new transaction is initiated to execute the remainder of the microflow activities. || ![](/attachments/howto7/logic-business-rules/set-up-error-handling/green.png) | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. Any changes made in this transaction will be reverted because the activities in the 'SendEmail' subflow use default error handling. |
- | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. Any changes made in this transaction will be reverted because the activities in the 'SendEmail' subflow use default error handling. |
+| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/blue.png) | *Transaction initiated by custom with rollback activity* – after catching the exception, a new transaction is initiated to execute the remainder of the microflow activities. |
+| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/green.png) | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. Any changes made in this transaction will be reverted because the activities in the 'SendEmail' subflow use default error handling. |
+
  ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580945.png)
 
 ### 5.3 Continuing in the Parent Flow, Rollback in the Subflow
@@ -185,9 +185,9 @@ Especially when interacting with other systems, you need to think about how you 
 | Color | Description |
 | --- | --- |
 | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/orange.png) | *Initial transaction* – this transaction is initiated when the microflow starts. This transaction will complete successfully and any changes made during this transaction will be persisted. |
- | *Initial transaction* – this transaction is initiated when the microflow starts. This transaction will complete successfully and any changes made during this transaction will be persisted. || ![](/attachments/howto7/logic-business-rules/set-up-error-handling/blue.png) | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. All changes in this transaction will be reverted because of the custom error handler "with rollback." As a result, the change on the customer will not be applied. |
- | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. All changes in this transaction will be reverted because of the custom error handler "with rollback." As a result, the change on the customer will not be applied. || ![](/attachments/howto7/logic-business-rules/set-up-error-handling/green.png) | *Transaction initiated after the exception was caught by the error handler* – when this transaction is initiated, after executing some actions, it will re-throw the original exception. These changes will be persisted because of the error handling on the initial sub-microflow call. |
- | *Transaction initiated after the exception was caught by the error handler* – when this transaction is initiated, after executing some actions, it will re-throw the original exception. These changes will be persisted because of the error handling on the initial sub-microflow call. |
+| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/blue.png) | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. All changes in this transaction will be reverted because of the custom error handler "with rollback." As a result, the change on the customer will not be applied. |
+| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/green.png) | *Transaction initiated after the exception was caught by the error handler* – when this transaction is initiated, after executing some actions, it will re-throw the original exception. These changes will be persisted because of the error handling on the initial sub-microflow call. |
+
  ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580947.png)
 
 ### 5.4 Continuing in the Parent Flow, Continuing in the Subflow
@@ -195,9 +195,9 @@ Especially when interacting with other systems, you need to think about how you 
 | Color | Description |
 | --- | --- |
 | ![](/attachments/howto7/logic-business-rules/set-up-error-handling/orange.png) | *Initial transaction* – nothing will be reverted. The only difference compared to successful execution is that no e-mail will be sent, and the process will finish using the error flow instead of the normal process flow.
- | *Initial transaction* – nothing will be reverted. The only difference compared to successful execution is that no e-mail will be sent, and the process will finish using the error flow instead of the normal process flow.| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/blue.png)  | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. All the changes in this transaction will be kept, because the 'SendEmail' subflow is configured to continue without rollback. Even though the exception is re-thrown, the initial microflow call is configured for custom without rollback; therefore, none of the changes will be reverted. The process will just take the error flow instead of the default flow.
-  | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. All the changes in this transaction will be kept, because the 'SendEmail' subflow is configured to continue without rollback. Even though the exception is re-thrown, the initial microflow call is configured for custom without rollback; therefore, none of the changes will be reverted. The process will just take the error flow instead of the default flow.| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/green.png) | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. Any changes made in this transaction will be reverted, because the activities in the 'SendEmail' subflow use default error handling.
- | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. Any changes made in this transaction will be reverted, because the activities in the 'SendEmail' subflow use default error handling.
+| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/blue.png)  | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. All the changes in this transaction will be kept, because the 'SendEmail' subflow is configured to continue without rollback. Even though the exception is re-thrown, the initial microflow call is configured for custom without rollback; therefore, none of the changes will be reverted. The process will just take the error flow instead of the default flow.
+| ![](/attachments/howto7/logic-business-rules/set-up-error-handling/green.png) | *Transaction initiated by subflow* – at the start of the subflow, a new transaction is initiated. Any changes made in this transaction will be reverted, because the activities in the 'SendEmail' subflow use default error handling.
+
 ![](/attachments/howto7/logic-business-rules/set-up-error-handling/18580946.png)
 
 ## 6 Best Practices
@@ -211,10 +211,10 @@ Consider the following best practices for error handling:
 
 ## 7 Read More
 
-* [Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [Trigger Logic Using Microflows](triggering-logic-using-microflows)
-* [Create a Custom Save Button](create-a-custom-save-button)
-* [Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Extract and Use Submicroflows](extract-and-use-sub-microflows)
+* [Define Access Rules Using XPath](/howto7/logic-business-rules/define-access-rules-using-xpath/)
+* [Trigger Logic Using Microflows](/howto7/logic-business-rules/triggering-logic-using-microflows/)
+* [Create a Custom Save Button](/howto7/logic-business-rules/create-a-custom-save-button/)
+* [Work with Lists in a Microflow](/howto7/logic-business-rules/working-with-lists-in-a-microflow/)
+* [Optimize Retrieve Activities](/howto7/logic-business-rules/optimizing-retrieve-activities/)
+* [Optimize Microflow Aggregates](/howto7/logic-business-rules/optimizing-microflow-aggregates/)
+* [Extract and Use Submicroflows](/howto7/logic-business-rules/extract-and-use-sub-microflows/)

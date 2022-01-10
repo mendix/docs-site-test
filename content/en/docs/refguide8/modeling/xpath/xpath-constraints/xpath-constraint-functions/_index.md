@@ -1,32 +1,32 @@
 ---
 title: "XPath Constraint Functions"
-url: /refguide8/xpath-constraint-functions
+url: /refguide8/xpath-constraint-functions/
 parent: "xpath-constraints"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-constraint-functions.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-constraint-functions.pdf).
 {{% /alert %}}
 
 The following pages describe the functions that can be executed within constraints:
 
-* [contains](xpath-contains)
-* [day-from-dateTime](xpath-day-from-datetime)
-* [day-of-year-from-dateTime](xpath-day-of-year-from-datetime)
-* [ends-with](xpath-ends-with)
-* [false](xpath-false)
-* [hours-from-dateTime](xpath-hours-from-datetime)
-* [length](xpath-length)
-* [minutes-from-dateTime](xpath-minutes-from-datetime)
-* [month-from-dateTime](xpath-month-from-datetime)
-* [not](xpath-not)
-* [quarter-from-dateTime](xpath-quarter-from-datetime)
-* [seconds-from-dateTime](xpath-seconds-from-datetime)
-* [starts-with](xpath-starts-with)
-* [string-length](xpath-string-length)
-* [true](xpath-true)
-* [week-from-dateTime](xpath-week-from-datetime)
-* [weekday-from-dateTime](xpath-weekday-from-datetime)
-* [year-from-dateTime](xpath-year-from-datetime)
+* [contains](/refguide8/xpath-contains/)
+* [day-from-dateTime](/refguide8/xpath-day-from-datetime/)
+* [day-of-year-from-dateTime](/refguide8/xpath-day-of-year-from-datetime/)
+* [ends-with](/refguide8/xpath-ends-with/)
+* [false](/refguide8/xpath-false/)
+* [hours-from-dateTime](/refguide8/xpath-hours-from-datetime/)
+* [length](/refguide8/xpath-length/)
+* [minutes-from-dateTime](/refguide8/xpath-minutes-from-datetime/)
+* [month-from-dateTime](/refguide8/xpath-month-from-datetime/)
+* [not](/refguide8/xpath-not/)
+* [quarter-from-dateTime](/refguide8/xpath-quarter-from-datetime/)
+* [seconds-from-dateTime](/refguide8/xpath-seconds-from-datetime/)
+* [starts-with](/refguide8/xpath-starts-with/)
+* [string-length](/refguide8/xpath-string-length/)
+* [true](/refguide8/xpath-true/)
+* [week-from-dateTime](/refguide8/xpath-week-from-datetime/)
+* [weekday-from-dateTime](/refguide8/xpath-weekday-from-datetime/)
+* [year-from-dateTime](/refguide8/xpath-year-from-datetime/)
 

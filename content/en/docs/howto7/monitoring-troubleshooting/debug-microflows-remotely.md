@@ -1,8 +1,8 @@
 ---
 title: "Debug Microflows Remotely"
-url: /howto7/monitoring-troubleshooting/debug-microflows-remotely
+url: /howto7/monitoring-troubleshooting/debug-microflows-remotely/
 category: "Monitoring & Troubleshooting"
-menu_order: 3
+weight: 3
 tags: ["monitoring", "troubleshooting", "debug", "microflow", "remote"]
 ---
 
@@ -24,13 +24,13 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 To enable the cloud debugging, you need to get a URL and a password from the cloud and add that information to the Modeler. The steps below will explain where you can gather all the necessary information. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The debugger supports only debugging of single-instance environments. Multi-instance environents need to be scaled down to one instance before the debugger can be used.
 
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Debugging in production is not recommended. However, if you are debugging in the cloud, be aware of other system end-users. The debugger will stop processes from moving on for other users.
 
@@ -63,7 +63,7 @@ Debugging in production is not recommended. However, if you are debugging in the
 
 Once you have the unique URL and password, there are two methods for connecting the modeler to the cloud environment. 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 If you do not see an overview similar to the one below, then you do not have sufficient cloud permissions to deploy packages into the cloud or to debug in the cloud. Contact the technical contact or the project Scrum Master in your project to get sufficient permissions.
 
@@ -86,14 +86,14 @@ If you do not see an overview similar to the one below, then you do not have suf
 
 ## 4 Read More
 
-* [How to Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [How to Clear Warning Messages](clear-warning-messages)
-* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui)
-* [How to Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [How to Debug Java Actions Remotely](debug-java-actions-remotely)
-* [How to Log Levels](log-levels)
-* [How to Debug Microflows](debug-microflows)
-* [How to Debug Java Actions](debug-java-actions)
-* [How to Handle Common Mendix SSO Errors](handle-common-mendix-sso-errors)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [How to Clear Warning Messages](/howto7/monitoring-troubleshooting/clear-warning-messages/)
+* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui/)
+* [How to Monitor Mendix Using JMX](/howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [How to Debug Java Actions Remotely](/howto7/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [How to Log Levels](/howto7/monitoring-troubleshooting/log-levels/)
+* [How to Debug Microflows](/howto7/monitoring-troubleshooting/debug-microflows/)
+* [How to Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions/)
+* [How to Handle Common Mendix SSO Errors](/howto7/monitoring-troubleshooting/handle-common-mendix-sso-errors/)
 * [The Ultimate Debugger](http://www.mendix.com/tech-blog/the-ultimate-debugger/) 
 * [Debug Live Apps in the Cloud](http://www.mendix.com/tech-blog/new-goodies-for-mendix-app-platform-users-mendix-business-modeler-4-3-release-today/)

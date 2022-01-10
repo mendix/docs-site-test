@@ -9,7 +9,7 @@ tags: ["studio pro", snippet call", "common widget"]
 
 ## 1 Introduction
 
-The **Snippet call** widget allows you to use a [snippet](snippet) on a [page](page), a [layout](layout), or another snippet:
+The **Snippet call** widget allows you to use a [snippet](/refguide/snippet/) on a [page](/refguide/page/), a [layout](/refguide/layout/), or another snippet:
 
 ![Snippet Call Example](/attachments/refguide/modeling/pages/structure-widgets/snippet-call/snippet-call-example.png)
 
@@ -28,11 +28,11 @@ Snippet call properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.3 General Section {#general}
 
@@ -47,6 +47,6 @@ To perform actions on a snippet call, select it on a page and right-click it. Th
 
 ## 4 Read More
 
-* [Page](page)
-* [Structure Widgets](structure-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Structure Widgets](/refguide/structure-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

@@ -1,6 +1,6 @@
 ---
 title: "Image uploader"
-url: /refguide7/image-uploader
+url: /refguide7/image-uploader/
 parent: "file-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -8,7 +8,7 @@ parent: "file-widgets"
 
 An image uploader is used to upload images to the server. It also generates a thumbnail of the uploaded image. The uploaded image or its thumbnail can be shown by use of the image viewer.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/file-widgets/image-uploader/image-uploader.png)
 The image uploader is placed in a nested data view here. The Profile entity is a specialization of System.Image.
@@ -39,32 +39,32 @@ This property determines the width of the generated thumbnail in pixels. However
 
 This property determines the height of the generated thumbnail in pixels. However, the aspect ratio of the image will remain the same during thumbnail generation.
 
-{{% snippet file="/static/_includes/refguide7/Label+Property.md" %}}
+{{% snippet file="refguide7/Label+Property.md" %}}
 
 ## Editability properties
 
-{{% snippet file="/static/_includes/refguide7/Editable+Property.md" %}}
+{{% snippet file="refguide7/Editable+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Condition+Property.md" %}}
+{{% snippet file="refguide7/Condition+Property.md" %}}
 
 ## Visibility properties
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property.md" %}}
+{{% snippet file="refguide7/Visibility+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}
+{{% snippet file="refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}
 
 ## Common properties
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Class+Property.md" %}}
+{{% snippet file="refguide7/Class+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Style+Property.md" %}}
+{{% snippet file="refguide7/Style+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Tab+index+Property.md" %}}
+{{% snippet file="refguide7/Tab+index+Property.md" %}}
 
 ## Related articles
 
-*   [Data view](data-view)
-*   [Entities](entities)
-*   [Associations](associations)
+*   [Data view](/refguide7/data-view/)
+*   [Entities](/refguide7/entities/)
+*   [Associations](/refguide7/associations/)

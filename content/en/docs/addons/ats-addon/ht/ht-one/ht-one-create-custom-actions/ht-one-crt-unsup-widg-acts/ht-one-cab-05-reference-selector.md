@@ -23,7 +23,7 @@ This how-to applies to all widgets like the reference selector widget, if the wi
 
 Before starting this how-to, make sure you have completed the following prerequisite:
  
-* Read [Custom Action General Section](ht-one-custom-action-general)
+* Read [Custom Action General Section](/addons/ats-addon/ht-one-custom-action-general/)
 
 ## 3 Defining the User Approach
 
@@ -59,7 +59,7 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-05-reference-selector/ref-selector-childelement-select.png)
 
-    When you create a custom action for an unsupported widget action, you must use the [Find Widget Child Node](rg-one-find-widget-child-node) action. This action is a combination of the [Find/Assert Widget](rg-one-findassert-widget) and [Find Element by Sizzle](rg-one-find-element-by-sizzle) actions, combining the best of both. It’s an official Mendix action, it has all the internal processes, and it uses a CSS/jQuery selector to find the child, which makes it flexible. The selector for finding the select element is `select`. You use this selector in the Find Widget Child Node action to find a selected element inside the reference selector widget.
+    When you create a custom action for an unsupported widget action, you must use the [Find Widget Child Node](/addons/ats-addon/rg-one-find-widget-child-node/) action. This action is a combination of the [Find/Assert Widget](/addons/ats-addon/rg-one-findassert-widget/) and [Find Element by Sizzle](/addons/ats-addon/rg-one-find-element-by-sizzle/) actions, combining the best of both. It’s an official Mendix action, it has all the internal processes, and it uses a CSS/jQuery selector to find the child, which makes it flexible. The selector for finding the select element is `select`. You use this selector in the Find Widget Child Node action to find a selected element inside the reference selector widget.
 
 3.  Before you start creating the action, you need to know if ATS can find the select element within the reference selector widget. You use the debugger to simulate what ATS does. Since the Find Widget Child Node action uses `mx-name` to find the parent, you also must use `mx-name` in your code. Use jQuery to find out if ATS can find the element. Enter the following code in the console of the debugger:
   * `$( ‘.mx-name-referenceSelector1 select’ )`
@@ -76,7 +76,7 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-05-reference-selector/ref-selector-selectoptionbytext-action.png)
 
-6.  The Select Option by Text action is a core action that triggers an event. Finish your custom action with a [Mendix Wait](rg-one-mendix-wait) action:
+6.  The Select Option by Text action is a core action that triggers an event. Finish your custom action with a [Mendix Wait](/addons/ats-addon/rg-one-mendix-wait/) action:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-05-reference-selector/ref-selector-mendixwait-action.png)
 
@@ -88,8 +88,8 @@ Next, you need to add the action input parameters:
 * Value
 * Search Context
 
-{{% alert type="info" %}}
-Keep the [guidelines for creating a custom action](ht-one-guidelines-custom-action) in mind while creating action parameters. 
+{{% alert color="info" %}}
+Keep the [guidelines for creating a custom action](/addons/ats-addon/ht-one-guidelines-custom-action/) in mind while creating action parameters. 
 {{% /alert %}}
 
 To add the action parameters, follow these steps:

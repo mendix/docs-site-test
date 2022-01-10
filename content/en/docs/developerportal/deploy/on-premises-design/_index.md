@@ -56,12 +56,12 @@ When updating the application, it is best to stop every instance. If the databas
 
 ## 4 Read More
 
-* [How to Use a Security Checklist for Your On-Premises Installation](security-checklist-for-your-on-premises-installation)
-* [How to Update a Mendix Application](updating-a-mendix-application)
-* [How to Set Up a Microsoft SQL Server for Mendix on Windows](mendix-on-windows-microsoft-sql-server)
-* [How to Set Up a New SQL Server Database](setting-up-a-new-sql-server-database)
-* [How to Configure Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
-* [How to Restore a SQL Server Database](restoring-a-sql-server-database)
-* [How to Set Up a SQL Server User](setting-up-a-sql-server-user)
-* [How to Set Up the Database User](setting-up-the-database-user)
-* [How to Troubleshoot SQL Server](troubleshooting-sql-server)
+* [How to Use a Security Checklist for Your On-Premises Installation](/developerportal/deploy/security-checklist-for-your-on-premises-installation/)
+* [How to Update a Mendix Application](/developerportal/deploy/updating-a-mendix-application/)
+* [How to Set Up a Microsoft SQL Server for Mendix on Windows](/developerportal/deploy/mendix-on-windows-microsoft-sql-server/)
+* [How to Set Up a New SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/)
+* [How to Configure Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
+* [How to Restore a SQL Server Database](/developerportal/deploy/restoring-a-sql-server-database/)
+* [How to Set Up a SQL Server User](/developerportal/deploy/setting-up-a-sql-server-user/)
+* [How to Set Up the Database User](/developerportal/deploy/setting-up-the-database-user/)
+* [How to Troubleshoot SQL Server](/developerportal/deploy/troubleshooting-sql-server/)

@@ -1,6 +1,6 @@
 ---
 title: "Footer (Document Template)"
-url: /refguide7/footer-document-template
+url: /refguide7/footer-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Footer+(document+template).html
@@ -11,9 +11,9 @@ aliases:
 
 When enabled, the footer will be inserted at the bottom of every page. Other widgets can be put in the footer.
 
-For inserting page numbers, see [Static Label](static-label-document-template).
+For inserting page numbers, see [Static Label](/refguide7/static-label-document-template/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/document-templates/footer-document-template/918235.png)
 A footer

@@ -1,8 +1,8 @@
 ---
 title: "Consume a Complex Web Service"
-url: /howto7/integration/consume-a-complex-web-service
+url: /howto7/integration/consume-a-complex-web-service/
 category: "Integration"
-menu_order: 8
+weight: 8
 tags: ["web service", "integration", "consume"]
 ---
 
@@ -73,7 +73,7 @@ When finished the wizard will add to your model based on the options selected:
 
 ## 3 Importing a Web Service Directly
 
-An alternative to using the wizard described above is to import a web service document directly into your project. For more information, see [Consumed Web Services](/refguide7/consumed-web-services) in the Mendix Reference Guide.
+An alternative to using the wizard described above is to import a web service document directly into your project. For more information, see [Consumed Web Services](/refguide7/consumed-web-services/) in the Mendix Reference Guide.
 
 To import a web service directly, follow these steps:
 
@@ -99,13 +99,13 @@ To configure the web service call, follow these steps:
 
     ![](/attachments/howto7/integration/consume-a-complex-web-service/18581778.png)
 
-    {{% alert type="info" %}}
+    {{% alert color="info" %}}
 
     Make sure the microflow either creates the variables required as arguments for the web service call or has those passed to it.
 
     {{% /alert %}}
 
-2. If you are creating your own microflow, add the Call Web Service activity to the microflow. For details on how to add activities to microflows, see [Activities](/refguide7/activities) in the Mendix Reference Guide.
+2. If you are creating your own microflow, add the Call Web Service activity to the microflow. For details on how to add activities to microflows, see [Activities](/refguide7/activities/) in the Mendix Reference Guide.
 3. Double-click the activity to open the **Call Web Service** wizard and in the **Operation** section, click **Select...** for **Operation**.
 4. This opens the **Select Web Service Operation** dialog box, where you can choose the operation for this web service call:
 
@@ -139,10 +139,10 @@ To configure the web service call, follow these steps:
 
 ## 5 Read More
 
-* [How to Consume a Simple Web Service](consume-a-simple-web-service)
-* [How to Export XML Documents](export-xml-documents)
-* [How to Import Excel Documents](importing-excel-documents)
-* [How to Expose a Web Service](expose-a-web-service)
-* [How to Use Selenium Support](selenium-support)
-* [How to Import XML Documents](importing-xml-documents)
-* [How to Consume a REST Service](consume-a-rest-service)
+* [How to Consume a Simple Web Service](/howto7/integration/consume-a-simple-web-service/)
+* [How to Export XML Documents](/howto7/integration/export-xml-documents/)
+* [How to Import Excel Documents](/howto7/integration/importing-excel-documents/)
+* [How to Expose a Web Service](/howto7/integration/expose-a-web-service/)
+* [How to Use Selenium Support](/howto7/integration/selenium-support/)
+* [How to Import XML Documents](/howto7/integration/importing-xml-documents/)
+* [How to Consume a REST Service](/howto7/integration/consume-a-rest-service/)

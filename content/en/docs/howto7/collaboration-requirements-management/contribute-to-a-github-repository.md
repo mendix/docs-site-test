@@ -1,8 +1,8 @@
 ---
 title: "Contribute to a GitHub Repository"
-url: /howto7/collaboration-requirements-management/contribute-to-a-github-repository
+url: /howto7/collaboration-requirements-management/contribute-to-a-github-repository/
 category: "Collaboration & Requirements Management"
-menu_order: 20
+weight: 20
 tags: ["github"]
 ---
 ## 1 Introduction
@@ -45,7 +45,7 @@ To submit changes, follow these guidelines:
 
 ## 5 Read More
 
-* [Stories](/developerportal/collaborate/stories)
-* [How to Start Your Own Repository](starting-your-own-repository)
-* [Version Control](/refguide7/version-control)
-* [How to Share the Development Database](sharing-the-development-database)
+* [Stories](/developerportal/collaborate/stories/)
+* [How to Start Your Own Repository](/howto7/collaboration-requirements-management/starting-your-own-repository/)
+* [Version Control](/refguide7/version-control/)
+* [How to Share the Development Database](/howto7/collaboration-requirements-management/sharing-the-development-database/)

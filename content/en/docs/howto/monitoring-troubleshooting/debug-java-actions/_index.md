@@ -21,7 +21,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Install [Eclipse](https://eclipse.org/)
 * Add a Java action and open the app in Eclipse
-* Read [How to Extend Your Application with Custom Java](../logic-business-rules/extending-your-application-with-custom-java)
+* Read 
 * Deploy the application for Eclipse by selecting **Deploy for Eclipse** from the app menu in Studio Pro (you should redo this every time you make changes in Studio Pro):
     ![](/attachments/howto/monitoring-troubleshooting/debug-java-actions/18581045.png)
 
@@ -63,12 +63,12 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 ## 5 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Test Web Services Using SoapUI](../testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Log Levels](log-levels)
-* [Debug Microflows and Nanoflows](debug-microflows-and-nanoflows)
-* [Debug Microflows Remotely](debug-microflows-remotely)
-* [Java Actions](/refguide/java-actions)
+* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto/monitoring-troubleshooting/clear-warning-messages/)
+* 
+* [Monitor Mendix Using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Log Levels](/howto/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows and Nanoflows](/howto/monitoring-troubleshooting/debug-microflows-and-nanoflows/)
+* [Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely/)
+* [Java Actions](/refguide/java-actions/)

@@ -8,7 +8,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-This how-to explains how you can set up data validation with Mendix. Before you can start with this how-to you need to setup a basic data structure, otherwise there won't be any data to validate. If you don't know how to setup a basic data structure, you can take a look at [How to Create a Basic Data Layer](create-a-basic-data-layer).
+This how-to explains how you can set up data validation with Mendix. Before you can start with this how-to you need to setup a basic data structure, otherwise there won't be any data to validate. If you don't know how to setup a basic data structure, you can take a look at [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer/).
 
 ## 2 Data Validation on Entity Level
 
@@ -31,7 +31,7 @@ This section will explain how you can add validation rules to the domain model o
 
 ## 3 Required Validation on Inputs, Reference Selectors and Drop-downs
 
-The page builder of Studio Pro allows you to configure which inputs are mandatory and what message is shown to the user if the input is empty. If you don't have a detail page yet, take a look at [this](/howto/front-end/create-your-first-two-overview-and-detail-pages) how-to.
+The page builder of Studio Pro allows you to configure which inputs are mandatory and what message is shown to the user if the input is empty. If you don't have a detail page yet, take a look at [this](/howto/front-end/create-your-first-two-overview-and-detail-pages/) how-to.
 
 1.  Open a **detail page** and double click an input to open its properties.
 2.  Enter a message for **Placeholder text**. This message is shown below the input if a user clicks the save button without filling in a value.
@@ -63,7 +63,7 @@ As long as this Microflow returns a Boolean value, you are free to add any logic
 
 ## 5 Advanced Validation with a Custom 'Save' Button
 
-Validating user input can also be achieved by overriding the default save button on a detail page. Start by creating an overview and detail page. If you don't know how to create overview and detail pages, take a look at [How to Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages). Your detail page should look similar to this:
+Validating user input can also be achieved by overriding the default save button on a detail page. Start by creating an overview and detail page. If you don't know how to create overview and detail pages, take a look at [How to Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages/). Your detail page should look similar to this:
 
 ![](/attachments/howto/data-models/setting-up-data-validation/18582143.png)
 
@@ -116,13 +116,13 @@ If you want to validate multiple attributes, it is best to do this in a sub-micr
 2. Create your validations as described above.
 3. Configure the sub-microflow to change the Boolean variable to `false` after the validation feedback or error message. Connect this flow back to the main sequence flow using a merge, and continue with the next validation.
 4. At the end of the sub-microflow, the variable should be `true` if it succesfully passed all validations, and `false` when one or more validations have failed. 
-5. Add a [decision](/refguide/decision) that checks the return value and only allows the microflow to continue to the **Commit** event if all validations are passed. This way, you can keep the logic while performing all necessary validations at once.
+5. Add a [decision](/refguide/decision/) that checks the return value and only allows the microflow to continue to the **Commit** event if all validations are passed. This way, you can keep the logic while performing all necessary validations at once.
 
 ## 7 Read More
 
-* [Work with Images & Files](working-with-images-and-files)
-* [Create a Basic Data Layer](create-a-basic-data-layer)
-* [Denormalize Data to Improve Performance](denormalize-data-to-improve-performance)
-* [Set Up Data Validation](setting-up-data-validation)
-* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-* [Stories](/developerportal/collaborate/stories)
+* [Work with Images & Files](/howto/data-models/working-with-images-and-files/)
+* [Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer/)
+* [Denormalize Data to Improve Performance](/howto/data-models/denormalize-data-to-improve-performance/)
+* [Set Up Data Validation](/howto/data-models/setting-up-data-validation/)
+* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Stories](/developerportal/collaborate/stories/)

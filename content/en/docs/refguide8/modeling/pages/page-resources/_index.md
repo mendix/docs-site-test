@@ -1,13 +1,13 @@
 ---
 title: "Page Resources"
-url: /refguide8/page-resources
+url: /refguide8/page-resources/
 parent: "pages"
-menu_order: 12
+weight: 12
 tags: ["studio pro", "page resources"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/page-resources.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/page-resources.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -16,18 +16,18 @@ The main difference between a page and page resources is that page is an indepen
 
 You can add the following page resources:
 
-* [Image collection](image-collection)
-* [Layout](layout)
-* [Page template](page-templates)
-* [Snippet](snippet)
-* [Building block](building-block) 
-* [Menu](menu)
+* [Image collection](/refguide8/image-collection/)
+* [Layout](/refguide8/layout/)
+* [Page template](/refguide8/page-templates/)
+* [Snippet](/refguide8/snippet/)
+* [Building block](/refguide8/building-block/) 
+* [Menu](/refguide8/menu/)
 
 ## 2 Adding Page Resources
 
 To add a resource document, do the following:
 
-1.  In the [Project Explorer](project-explorer), right-click the module or a folder you want to add a resource to and select **Add other**:
+1.  In the [Project Explorer](/refguide8/project-explorer/), right-click the module or a folder you want to add a resource to and select **Add other**:
 
     ![](/attachments/refguide8/modeling/pages/page-resources/project-explorer-page-resources.png)
 
@@ -35,4 +35,4 @@ To add a resource document, do the following:
 
 ## 3 Read More
 
-* [Pages](pages)
+* [Pages](/refguide8/pages/)

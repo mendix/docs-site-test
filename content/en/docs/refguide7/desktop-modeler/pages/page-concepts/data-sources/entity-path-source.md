@@ -1,6 +1,6 @@
 ---
 title: "Context Source"
-url: /refguide7/entity-path-source
+url: /refguide7/entity-path-source/
 parent: "data-sources"
 ---
 

@@ -11,25 +11,25 @@ aliases:
 
 ## 1 Introduction
 
-Use the **Download from Version Control Server** menu item to download an app from a version control server (for example, [Team Server](/developerportal/collaborate/team-server)). If you are currently editing an app, the app will be closed (after prompting to save any changes) and the newly downloaded app will be opened using the current version of Studio Pro.
+Use the **Download from Version Control Server** menu item to download an app from a version control server (for example, [Team Server](/developerportal/collaborate/team-server/)). If you are currently editing an app, the app will be closed (after prompting to save any changes) and the newly downloaded app will be opened using the current version of Studio Pro.
 
 {{% alert color="info" %}}
 If the downloaded app was created with a different version of Mendix, you will be asked if it can be converted to the current version.
 
-You can also use the [Open App Dialog](open-app-dialog) to download and open an app from Team Server. However, you will need to use this option if you want to download a second copy of an app (and development line) you already have on disk.
+You can also use the [Open App Dialog](/refguide/open-app-dialog/) to download and open an app from Team Server. However, you will need to use this option if you want to download a second copy of an app (and development line) you already have on disk.
 {{% /alert %}}
 
 ![Download from Version Control Server dialog box](/attachments/refguide/modeling/menus/version-control-menu/download-from-version-control-dialog/download-from-version-control-server.png)
 
 ## 2 Where Is Your App Stored?
 
-If **Enable private version control** (either for SVN or Git or for both) is set in the app [Preferences](preferences-dialog#enable), you can choose between the **Mendix Team Server** or a **Private server**. If it is not enabled, you will only be able to choose an app from the Mendix Team Server.
+If **Enable private version control** (either for SVN or Git or for both) is set in the app [Preferences](/refguide/preferences-dialog/#enable), you can choose between the **Mendix Team Server** or a **Private server**. If it is not enabled, you will only be able to choose an app from the Mendix Team Server.
 
 ### 2.1 Mendix Team Server
 
 Use the **Team Server App** dropdown to choose the app you want to download.
 
-For more information about the Mendix Team Server, see [Team Server](/developerportal/collaborate/team-server).
+For more information about the Mendix Team Server, see [Team Server](/developerportal/collaborate/team-server/).
 
 ### 2.2 Private Server
 
@@ -41,7 +41,7 @@ Enter the URL of your private SVN server in **App repository address** and click
 
 Choose the **Development line** you want to download.
 
-For more information about development lines, see [Version Control](version-control).
+For more information about development lines, see [Version Control](/refguide/version-control/).
 
 ## 4 App Directory
 

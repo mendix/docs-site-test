@@ -1,12 +1,12 @@
 ---
 title: "Date Creation"
-url: /refguide7/date-creation
+url: /refguide7/date-creation/
 parent: "expressions"
 ---
 
-Date-type variables for a certain date can be created by using [parseDateTime](parse-and-format-date-function-calls). This takes a date string and a format string as parameters and returns a date-type variable. For more details, see [parseDateTime](parse-and-format-date-function-calls).
+Date-type variables for a certain date can be created by using [parseDateTime](/refguide7/parse-and-format-date-function-calls/). This takes a date string and a format string as parameters and returns a date-type variable. For more details, see [parseDateTime](/refguide7/parse-and-format-date-function-calls/).
 
-String variables representing a date can be created with the `dateTime` and `dateTimeUTC` functions. The difference between these two functions is that `dateTime` uses the calendar of the session used in the function call, and `dateTimeUTC` uses the UTC calendar. The system session runs as UTC by default, but this can be configured in the [Project Settings](project-settings).
+String variables representing a date can be created with the `dateTime` and `dateTimeUTC` functions. The difference between these two functions is that `dateTime` uses the calendar of the session used in the function call, and `dateTimeUTC` uses the UTC calendar. The system session runs as UTC by default, but this can be configured in the [Project Settings](/refguide7/project-settings/).
 
 These functions take between 1 and 6 input parameters and return a string. These represent, in order:
 

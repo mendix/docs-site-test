@@ -1,8 +1,8 @@
 ---
 title: "Debug Java Actions"
-url: /howto7/monitoring-troubleshooting/debug-java-actions
+url: /howto7/monitoring-troubleshooting/debug-java-actions/
 category: "Monitoring & Troubleshooting"
-menu_order: 6
+weight: 6
 tags: ["monitoring", "troubleshooting", "debug", "java action"]
 ---
 
@@ -32,7 +32,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 3. Place the cursor on the line that needs debugging, hold down **Ctrl+Shift**, and press **B** to enable a breakpoint. A blue dot in front of the line will appear: 
     ![](/attachments/howto7/monitoring-troubleshooting/debug-java-actions/18580059.png)
 
-    {{% alert type="info" %}}
+    {{% alert color="info" %}}
 
     You can also use Ctrl+Shift+B to disable a breakpoint.
 
@@ -52,7 +52,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 4. Click **Step into** (or press F5) or **Step over** (or press F6) to move on the next step in the microflow:
     ![](/attachments/howto7/monitoring-troubleshooting/debug-java-actions/18580056.png)
 
-    {{% alert type="warning" %}}
+    {{% alert color="warning" %}}
 
     With debugger options, the difference between "Step into" and "Step over" is only noticeable if you run into a function call. "Step into" means that the debugger steps into the function, and "Step over" just moves the debugger to the next line in the same Java action. With "Step Return" (pressing F7), you can instruct the debugger to leave the function; this is basically the opposite of "Step Into." Clicking "Resume" (pressing F8) instructs the debugger to continue until it reaches another breakpoint.
 
@@ -62,13 +62,13 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 ## 5 Read More
 
-* [How to Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [How to Clear Warning Messages in Mendix](clear-warning-messages)
-* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui)
-* [How to Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [How to Debug Java Actions Remotely](debug-java-actions-remotely)
-* [How to Log Levels](log-levels)
-* [How to Debug Microflows](debug-microflows)
-* [How to Common Mendix SSO Errors](handle-common-mendix-sso-errors)
-* [How to Debug Microflows Remotely](debug-microflows-remotely)
-* [Java Actions](/refguide7/java-actions)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [How to Clear Warning Messages in Mendix](/howto7/monitoring-troubleshooting/clear-warning-messages/)
+* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui/)
+* [How to Monitor Mendix Using JMX](/howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [How to Debug Java Actions Remotely](/howto7/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [How to Log Levels](/howto7/monitoring-troubleshooting/log-levels/)
+* [How to Debug Microflows](/howto7/monitoring-troubleshooting/debug-microflows/)
+* [How to Common Mendix SSO Errors](/howto7/monitoring-troubleshooting/handle-common-mendix-sso-errors/)
+* [How to Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely/)
+* [Java Actions](/refguide7/java-actions/)

@@ -1,16 +1,16 @@
 ---
 title: "Export Mappings"
-url: /refguide7/export-mappings
+url: /refguide7/export-mappings/
 parent: "mapping-documents"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 
-Please refer to [Mapping Documents](mapping-documents) for an introduction.
+Please refer to [Mapping Documents](/refguide7/mapping-documents/) for an introduction.
 
 ## Obtaining Objects in Export Mappings
 
-Figure 1 shows an example of an Export Mapping document in which two elements from a schema have been selected using the [Select Elements](select--elements) dialog. The entity Cheesecake (on the left) was dragged into the mapping to map to the Cheesecake element (on the right) and the entity Topping was mapped to the Topping element.
+Figure 1 shows an example of an Export Mapping document in which two elements from a schema have been selected using the [Select Elements](/refguide7/select--elements/) dialog. The entity Cheesecake (on the left) was dragged into the mapping to map to the Cheesecake element (on the right) and the entity Topping was mapped to the Topping element.
 
 ![](/attachments/refguide7/desktop-modeler/integration/mapping-documents/export-mappings/16843939.png)
 
@@ -66,7 +66,7 @@ For each value element that the complex schema element encompasses, an attribute
 | Convert Using (optional) | A Microflow to convert the value before performing export. |
 | Map attributes by name | When this button is clicked, an effort is made to match attributes by name. A dialog appears reporting what has been changed. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 It is possible to implicitly convert Mendix Decimal data type to xs:float type. In this case, it is possible that resulting value will lose precision.
 

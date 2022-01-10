@@ -1,8 +1,8 @@
 ---
 title: "Manage App Performance with New Relic"
-url: /howto8/monitoring-troubleshooting/manage-app-performance-with-new-relic
+url: /howto8/monitoring-troubleshooting/manage-app-performance-with-new-relic/
 parent: "manage-app-performance"
-menu_order: 2
+weight: 2
 tags: ["monitoring", "troubleshooting", "performance", "new relic"]
 ---
 
@@ -93,12 +93,12 @@ For more information on New Relic, see the New Relic documentation here: [https:
 
 ## 7 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Set Log Levels](log-levels)
-* [Debug Microflows](debug-microflows)
-* [Debug Java Actions](debug-java-actions)
-* [Solve Load & Import Errors](solving-load-and-import-errors)
-* [Debug Microflows Remotely](debug-microflows-remotely)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Set Log Levels](/howto8/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+* [Debug Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)
+* [Solve Load & Import Errors](/howto8/monitoring-troubleshooting/solving-load-and-import-errors/)
+* [Debug Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely/)

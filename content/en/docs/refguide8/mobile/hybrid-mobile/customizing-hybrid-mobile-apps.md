@@ -1,6 +1,6 @@
 ---
 title: "Customizing Hybrid Mobile Apps"
-url: /refguide8/customizing-hybrid-mobile-apps
+url: /refguide8/customizing-hybrid-mobile-apps/
 parent: "hybrid-mobile"
 tags: ["studio pro"]
 ---

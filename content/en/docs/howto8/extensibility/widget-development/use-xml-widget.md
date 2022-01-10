@@ -1,6 +1,6 @@
 ---
 title: "Build Widgets with XML"
-url: /howto8/extensibility/use-xml-widget
+url: /howto8/extensibility/use-xml-widget/
 parent: "widget-development"
 tags: ["xml", "widget"]
 ---
@@ -21,7 +21,7 @@ An XML file always starts with the XML version and encoding declaration. These a
 | --- | --- |
 | id | The id is where your widget is located. The path to the js file, starting at the root folder, separated by dots. Note that this is case-sensitive. |
 | needsEntityContext | This Boolean determines whether your widget requires an object to be passed as the EntityContext and is required. If this is set to "true", the widget can only be used within a dataview or a templategrid. If set to "false", the widget can be used anywhere, but won't have an object passed to it automatically. |
-| offlineCapable | This Boolean determines whether your widget can be used on pages that are accessible through the offline profile. If this attribute is not set, or set to "false", the widget cannot be used offline. If set to "true", the widget can be used offline. Keep in mind that there are a number of restrictions when working offline. Calling a microflows or fetching data using XPath are examples of features that are not supported offline. For more information, see the [Ensuring Your App Is Offline-First](/refguide8/offline-first#limitations) section of *Offline First*. |
+| offlineCapable | This Boolean determines whether your widget can be used on pages that are accessible through the offline profile. If this attribute is not set, or set to "false", the widget cannot be used offline. If set to "true", the widget can be used offline. Keep in mind that there are a number of restrictions when working offline. Calling a microflows or fetching data using XPath are examples of features that are not supported offline. For more information, see the [Ensuring Your App Is Offline-First](/refguide8/offline-first/#limitations) section of *Offline First*. |
 | xmlns | The XML namespace used by the widget. The value of this attribute is the same for every widget. `<widget id="HelloWorld.widget.helloworld" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">` |
 
 ### 3.2 Child elements {#Widgets-XMLreferenceguide-id}
@@ -87,7 +87,7 @@ Every property requires the  **key** and **type** attribute.
 
 Any property can have the  **isDefault**  or  **required**  attribute.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The **required** attribute defaults to "true".
 {{% /alert %}}
 
@@ -195,7 +195,7 @@ The form property lets you pass a form to the widget. If needsEntityContext is s
  <description>Form to open</description>
 </property>
 ```
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 For forms containing a data view, remember that calling a form  with a dataview, if needsEntityContext is set to "false" in your widget, still requires an object to work.
 {{% /alert %}}
 
@@ -340,6 +340,6 @@ What it looks like in Mendix Studio Pro:
 
 ![](/attachments/howto8/extensibility/widget-development/use-xml-widget/16844045.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Remember to use the correct language notation according to the [Java supported locales](http://java.sun.com/javase/6/docs/technotes/guides/intl/locale.doc.html).
 {{% /alert %}}

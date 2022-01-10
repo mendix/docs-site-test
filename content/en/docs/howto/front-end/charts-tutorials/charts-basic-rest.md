@@ -20,7 +20,7 @@ With the Charts widgets, you can use data from a REST Service to plot graphs.
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Create an app
-* Import the latest [Charts Widgets](/appstore/widgets/charts) from the Mendix Marketplace
+* Import the latest [Charts Widgets](/appstore/widgets/charts/) from the Mendix Marketplace
 
 ## 3 Setting up Data to be Exposed by a REST Endpoint
 
@@ -30,7 +30,7 @@ To create an Area Chart with data from a REST service, follow these steps:
 
 {{% alert color="info" %}}
 
-For more information on publishing a REST API refer to this Mendix document: [Published REST Operation](/refguide/published-rest-operation)
+For more information on publishing a REST API refer to this Mendix document: [Published REST Operation](/refguide/published-rest-operation/)
 
 {{% /alert %}}
 
@@ -102,6 +102,6 @@ To use the REST Data source endpoint in your chart, follow these steps:
 
 ## 6 Read More
 
-* [Use Chart Data Source REST](charts-basic-create)
-* [Use Any Chart](charts-any-usage)
-* [Use Theme Charts](charts-theme)
+* [Use Chart Data Source REST](/howto/front-end/charts-basic-create/)
+* [Use Any Chart](/howto/front-end/charts-any-usage/)
+* [Use Theme Charts](/howto/front-end/charts-theme/)

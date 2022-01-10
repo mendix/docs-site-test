@@ -1,16 +1,16 @@
 ---
 title: "Loop"
-url: /refguide7/loop
+url: /refguide7/loop/
 parent: "common-elements"
 ---
 
 ## 1 Introduction
 
-A loop is used to iterate over a list of objects. For each object the flow inside the loop is executed. The flow starts at the element that has no incoming sequence flows. A loop can contain all elements used in flows, with the exception of start and stop events. Additionally, a loop (and only a loop) can contain [break events](break-event) and [continue events](continue-event).
+A loop is used to iterate over a list of objects. For each object the flow inside the loop is executed. The flow starts at the element that has no incoming sequence flows. A loop can contain all elements used in flows, with the exception of start and stop events. Additionally, a loop (and only a loop) can contain [break events](/refguide7/break-event/) and [continue events](/refguide7/continue-event/).
 
 The iterator which looks the same as an input object represents the variable that holds one element of the list for each iteration. Beneath it the name of the variable is shown in black and the type of the variable in blue.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you have a situation where you have a list of objects of the entity 'OrderLine' and you want to set the purchase date for every object, you can use a loop with a change activity in it that sets the purchase date.
 

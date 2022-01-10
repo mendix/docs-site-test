@@ -1,16 +1,16 @@
 ---
 title: "File Manager"
-url: /refguide8/file-manager
+url: /refguide8/file-manager/
 parent: "file-widgets"
 tags: ["studio pro", "file manager", "file widget", "widget"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/file-manager.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/file-manager.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}The file manager widget is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="warning" %}}The file manager widget is not supported on native mobile pages.{{% /alert %}}
 
 ## 1 Introduction
 
@@ -20,7 +20,7 @@ A file manager is used to upload and/or download files.
 
 It must be placed inside a data view connected to the entity System.FileDocument or a specialization thereof.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 When uploading a file through the file manager, the FileDocument object will be committed immediately.
 {{% /alert %}}
 
@@ -47,15 +47,15 @@ File manager properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
+{{% snippet file="refguide8/design-section-link.md" %}} 
 
 ### 2.3 Editability Section {#editability}
 
-{{% snippet file="/static/_includes/refguide8/editability-section-link.md" %}}
+{{% snippet file="refguide8/editability-section-link.md" %}}
 
 ### 2.4 General Section {#general}
 
@@ -79,7 +79,7 @@ Default: *5*
 
 You can specify file extensions that users are allowed to upload. If no extension is specified, all file extensions are allowed. Separate multiple extensions by a semi-colon, for example, `txt;doc`
 
-If a file with an extension that is not allowed is selected, a [system text](system-texts) for **File manager/image viewer** > **Error: incorrect file extension** will be shown below the file manager.
+If a file with an extension that is not allowed is selected, a [system text](/refguide8/system-texts/) for **File manager/image viewer** > **Error: incorrect file extension** will be shown below the file manager.
 
 #### 2.4.4 Show File in Browser
 
@@ -89,15 +89,15 @@ Default: *False*
 
 ### 2.5 Label Section {#label}
 
-{{% snippet file="/static/_includes/refguide8/label-section-link.md" %}}
+{{% snippet file="refguide8/label-section-link.md" %}}
 
 ### 2.6 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
+{{% snippet file="refguide8/visibility-section-link.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [File Widgets](file-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
-* [System Texts](system-texts)
+* [Page](/refguide8/page/)
+* [File Widgets](/refguide8/file-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)
+* [System Texts](/refguide8/system-texts/)

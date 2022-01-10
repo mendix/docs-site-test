@@ -20,8 +20,8 @@ The look of individual **Charts** widgets can be fine tuned with advanced settin
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Download the latest [Chart Widget](/appstore/widgets/charts) from the Mendix Marketplace
-* Setup a chart: see [How to create a charts](charts-basic-create)
+* Download the latest [Chart Widget](/appstore/widgets/charts/) from the Mendix Marketplace
+* Setup a chart: see [How to create a charts](/howto/front-end/charts-basic-create/)
 
 ## 3 Creating a Chart Theme
 
@@ -117,6 +117,6 @@ To change the font in all charts in the app, follow these steps:
 
 ## 4 Read More
 
-* [Charts](/refguide/chart-widgets)
-* [Layout samples](/refguide/charts-advanced-cheat-sheet#layout-all)
-* [Configuration samples](/refguide/charts-advanced-cheat-sheet#config-options)
+* [Charts](/refguide/chart-widgets/)
+* [Layout samples](/refguide/charts-advanced-cheat-sheet/#layout-all)
+* [Configuration samples](/refguide/charts-advanced-cheat-sheet/#config-options)

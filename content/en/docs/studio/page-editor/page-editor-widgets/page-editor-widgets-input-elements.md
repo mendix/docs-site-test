@@ -9,7 +9,7 @@ tags: ["studio", "page editor", "input elements", "input widgets", "widgets"]
 
 ## 1 Introduction 
 
-**Input Elements** are [widgets](page-editor-widgets) in Mendix Studio that are typically used to allow end-users enter or edit data. For example, a text box below allows users to fill in their full names:
+**Input Elements** are [widgets](/studio/page-editor-widgets/) in Mendix Studio that are typically used to allow end-users enter or edit data. For example, a text box below allows users to fill in their full names:
 
 {{/* % image_container width="350" % */}}![](/attachments/studio/page-editor/page-editor-widgets/page-editor-widgets-input-elements/text-box-example.png)
 {{/* % /image_container % */}}
@@ -27,13 +27,13 @@ You can find the description of input elements available in Studio in the table 
 | Text Box      | A text box is used to allow end-users to enter, edit, and display a text. For example, end-users will be able to enter their names. |
 | Text Area     | A text area is used to enter, edit, and display a long text that can take several lines, for example, the description of a product. |
 | Date Picker   | A date picker is used to allow end-users select a date in a calendar, for example, when selecting a day for a delivery. |
-| Drop-Down     | A drop-down widget is used to allow end-users pick an option from the preset list of options. For example, users can select a color of a product.<br />You can also use this widget to display and select associations. You need a many-to-one association in the domain model (for more information, see [Associations](domain-models-association-properties)). For example, if a customer has several addresses, the user can select a delivery address from them. In this example, several addresses can be associated with one customer (many-to-one association). |
+| Drop-Down     | A drop-down widget is used to allow end-users pick an option from the preset list of options. For example, users can select a color of a product.<br />You can also use this widget to display and select associations. You need a many-to-one association in the domain model (for more information, see [Associations](/studio/domain-models-association-properties/)). For example, if a customer has several addresses, the user can select a delivery address from them. In this example, several addresses can be associated with one customer (many-to-one association). |
 | Check Box     | A check box widget is used to allow users to mark a value as true or false. For example, users can tick a box to sign up for the newsletter. |
 | Radio Buttons | Radio buttons are used to allow users select the option from a number of preset ones. For example, users can select from several possible locations for picking an order up. |
 
 {{% alert color="info" %}}
 
-Apart from the standard input elements, you can also [download widgets from the Mendix Marketplace](https://marketplace.mendix.com/) to your app. For more information, see the [Widgets by Origin](page-editor-widgets#widgets-by-origin) section in *Widgets*.
+Apart from the standard input elements, you can also [download widgets from the Mendix Marketplace](https:/marketplace.mendix.com/) to your app. For more information, see the [Widgets by Origin](/studio/page-editor-widgets/#widgets-by-origin) section in *Widgets*.
 
 {{% /alert %}}
 
@@ -62,7 +62,7 @@ The **Type** option allows you to quickly change the type of one input element t
 
 ### 3.2 Data Source Section {#input-elements-data-source}
 
-**Input Elements** need to be linked to an attribute to show data and to allow end-users to edit it. Different input elements require different [types of attributes](domain-models-attributes). You can find the correspondence between the input elements and attribute types in the table below:
+**Input Elements** need to be linked to an attribute to show data and to allow end-users to edit it. Different input elements require different [types of attributes](/studio/domain-models-attributes/). You can find the correspondence between the input elements and attribute types in the table below:
 
 | Input Element      | Allowed Attribute Type                                       |
 | ------------------ | ------------------------------------------------------------ |
@@ -96,7 +96,7 @@ Editability indicates whether the end-user will be able to change the value disp
 
 * **Conditional** – The widget is editable only if specified conditions are met based on an attribute value or based on an expression. 
 
-	{{%alert type="info" %}} If an attribute set for the widget's data source is of the AutoNumber type, the widget is set into read-only mode by default and the **Editability** setting itself is disabled, because attributes of this type are generated automatically.{{%/alert %}}
+	{{%alert color="info" %}} If an attribute set for the widget's data source is of the AutoNumber type, the widget is set into read-only mode by default and the **Editability** setting itself is disabled, because attributes of this type are generated automatically.{{%/alert %}}
 
 
 ##### 3.3.3.1 Condition Based on {#condition}
@@ -104,7 +104,7 @@ Editability indicates whether the end-user will be able to change the value disp
 The **Condition Based on** property is only shown when [Conditional Editability](#editability) is selected. The following options are available:
 
 * **Attribute** – Defines whether the condition is based on the attribute value. In this case the widget will be editable only when it matches a certain value of the selected attribute. The attribute must be of the Boolean or enumeration type. 
-* **Expression** – Defines whether the condition is based on the expression. In this case the widget will be editable only when the expression returns the Boolean value `true`. For more information on expressions, see [Expressions](expressions).
+* **Expression** – Defines whether the condition is based on the expression. In this case the widget will be editable only when the expression returns the Boolean value `true`. For more information on expressions, see [Expressions](/studio/expressions/).
 
 ##### 3.3.3.2 Attribute {#attribute}
 
@@ -118,7 +118,7 @@ For example, you would like to make the **City** field editable only when users 
 
 ##### 3.3.3.4 Expression
 
-This property allows you to create an expression and shown only when the expression the [Condition Based on](#condition) is set to **Expression**. The expression should be of the Boolean type. For more information on how to create expressions, see [Expressions](expressions).
+This property allows you to create an expression and shown only when the expression the [Condition Based on](#condition) is set to **Expression**. The expression should be of the Boolean type. For more information on how to create expressions, see [Expressions](/studio/expressions/).
 
 #### 3.3.4 Specific Properties
 
@@ -159,13 +159,13 @@ The **Input Validation** section properties are described in the table below:
 
 ### 3.6 Conditional Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/studio/visibility-section-link.md" %}}
+{{% snippet file="studio/visibility-section-link.md" %}}
 
 ### 3.7 Design Section {#input-elements-design}
 
-For information on the **Design** section and its properties, see [Design Section](page-editor-widgets-design-section).
+For information on the **Design** section and its properties, see [Design Section](/studio/page-editor-widgets-design-section/).
 
 ## 4 Read More
 
-* [Pages](page-editor) 
-* [Widgets](page-editor-widgets)
+* [Pages](/studio/page-editor/) 
+* [Widgets](/studio/page-editor-widgets/)

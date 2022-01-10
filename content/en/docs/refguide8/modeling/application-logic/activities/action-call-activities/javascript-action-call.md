@@ -1,24 +1,24 @@
 ---
 title: "JavaScript Action Call"
-url: /refguide8/javascript-action-call
+url: /refguide8/javascript-action-call/
 parent: "action-call-activities"
-menu_order: 20
+weight: 20
 description: "This reference explains the properties of the JavaScript action call activity."
 tags: ["javascript", "return", "variable", "studio pro", "action call"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/javascript-action-call.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/javascript-action-call.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Nanoflows**.
 {{% /alert %}}
 
 ## 1 Introduction
 
-The JavaScript action call activity can be used to call a [JavaScript action](javascript-actions). Arguments can be passed to the action, and the result can be stored.
+The JavaScript action call activity can be used to call a [JavaScript action](/refguide8/javascript-actions/). Arguments can be passed to the action, and the result can be stored.
 
 {{/* % image_container width="200" % */}}
 ![javascript action call properties](/attachments/refguide8/modeling/application-logic/activities/action-call-activities/javascript-action-call/javascript-call.png)
@@ -57,7 +57,7 @@ Click **Edit** next to the parameter to fill in the arguments.
 
 An argument is the input data that you are passing to the JavaScript action. For each JavaScript action parameter, you must supply an argument of the same type. 
 
-The values of the arguments are defined using [expressions](expressions):
+The values of the arguments are defined using [expressions](/refguide8/expressions/):
 
 ![argument](/attachments/refguide8/modeling/application-logic/activities/action-call-activities/javascript-action-call/argument-edit.png)
 
@@ -75,11 +75,11 @@ The name of the variable, list, or object returned by the activity. If it is an 
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 
-* [JavaScript Actions](javascript-actions)
-* [Build JavaScript Actions](/howto8/extensibility/build-javascript-actions)
-* [Nanoflows](nanoflows)
-* [Java Action Call](java-action-call)
+* [JavaScript Actions](/refguide8/javascript-actions/)
+* [Build JavaScript Actions](/howto8/extensibility/build-javascript-actions/)
+* [Nanoflows](/refguide8/nanoflows/)
+* [Java Action Call](/refguide8/java-action-call/)

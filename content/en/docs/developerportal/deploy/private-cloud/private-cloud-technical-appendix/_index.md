@@ -13,4 +13,5 @@ The Technical Appendix for Mendix Private Cloud contains more technical informat
 
 ## 2 Technical Appendix Content
 
-* [Technical Appendix: 1 Introduction to Operators](private-cloud-technical-appendix-01)
+* [Technical Appendix: 1 Introduction to Operators](/developerportal/deploy/private-cloud-technical-appendix-01/)
+* [Technical Appendix: 2 Operator Flows](/developerportal/deploy/private-cloud-technical-appendix-02/)

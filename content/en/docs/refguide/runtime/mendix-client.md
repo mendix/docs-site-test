@@ -23,11 +23,11 @@ For **mobile applications** Mendix Client acts as a React Native application. Th
 
 The three supported types of wrappers for mobile applications are as follows:
 
-* [Make It Native app](getting-the-make-it-native-app)
-* [Custom Developer apps](/howto/mobile/how-to-devapps)
-* [Native apps](/howto/mobile/deploying-native-app)
+* [Make It Native app](/refguide/getting-the-make-it-native-app/)
+* [Custom Developer apps](/howto/mobile/how-to-devapps/)
+* [Native apps](/howto/mobile/deploying-native-app/)
 
-The first two of these load a bundle dynamically, while the last one includes a pre-packaged bundle that can be [updated](/howto/mobile/how-to-ota) later.
+The first two of these load a bundle dynamically, while the last one includes a pre-packaged bundle that can be [updated](/howto/mobile/how-to-ota/) later.
 
 A **Hybrid application**, for most purposes, can be treated as an app running in a browser. In this case, however, the browser is embedded in a mobile application and has access to some features of a mobile device through [Cordova](https://cordova.apache.org/) plugins. We recommend that you use a native mobile app rather than a hybrid app if you want to make Mendix apps which run on mobile devices.
 
@@ -92,7 +92,7 @@ This is permanent storage, usually on a mobile device, where data can be stored 
 
 This manages requests to the Runtime Server. Note that some actions in the Mendix Client will not require access to the Runtime Server. For example, if the Object Cache already has access to the required data in the temporary object storage, or if the app is written as “offline-first”.
 
-For more information about the communication between the Mendix Client and the Runtime Server, see [Communication Patterns in the Mendix Runtime](communication-patterns).
+For more information about the communication between the Mendix Client and the Runtime Server, see [Communication Patterns in the Mendix Runtime](/refguide/communication-patterns/).
 
 #### 2.12.1 State Handling
 
@@ -106,7 +106,7 @@ State handling is also responsible for garbage collection. If you want to know m
 
 #### 2.12.2 Synchronization
 
-Where an app is “offline-first”, data created and changed in the app is stored locally until it is synchronized with the Runtime Server. This job is carried out by the synchronization process. This synchronizes the offline storage and object cache with the Runtime Server. For more information on offline-first apps and synchronization, see [Offline-First](offline-first).
+Where an app is “offline-first”, data created and changed in the app is stored locally until it is synchronized with the Runtime Server. This job is carried out by the synchronization process. This synchronizes the offline storage and object cache with the Runtime Server. For more information on offline-first apps and synchronization, see [Offline-First](/refguide/offline-first/).
 
 #### 2.12.3 Session
 
@@ -120,7 +120,7 @@ It will also notify the Mendix Client when changes are made to the app, and allo
 
 Because all information is sent to the Mendix Client to build pages, everything in the Mendix Client is visible to the end-user. Security is carried out in the Runtime Server, which will only send information to the Mendix Client which the user is allowed to see.
 
-For a description of the Runtime Server, see [Runtime Server](runtime-server).
+For a description of the Runtime Server, see [Runtime Server](/refguide/runtime-server/).
 
 ## 3 Widgets{#widgets}
 
@@ -136,7 +136,7 @@ These are described in the sections below.
 
 Mendix has a number of core widgets which support the standard functions of Mendix pages. Core widgets are part of the core client. Most of these widgets have native and web implementations, though some are limited only to one platform.
 
-In native mobile applications an implementation based on React Native framework is used. In web applications, implementation is based on either React or Dojo. Widgets that use Dojo have some limitations, for example they cannot be used inside a [pluggable widget](/apidocs-mxsdk/apidocs/pluggable-widgets-property-types#widgets). These Dojo implementations are gradually being replaced.
+In native mobile applications an implementation based on React Native framework is used. In web applications, implementation is based on either React or Dojo. Widgets that use Dojo have some limitations, for example they cannot be used inside a [pluggable widget](/apidocs-mxsdk/apidocs/pluggable-widgets-property-types/#widgets). These Dojo implementations are gradually being replaced.
 
 ### 3.1 Pluggable Widgets {#pluggable-widgets}
 
@@ -157,7 +157,7 @@ Mendix supports the following third-party libraries:
 * react-native-vector-icons
 * react-navigation
 
-For more information, see [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets).
+For more information, see [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets/).
 
 ### 3.2 Custom Widgets
 

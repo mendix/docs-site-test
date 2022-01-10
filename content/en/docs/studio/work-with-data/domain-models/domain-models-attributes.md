@@ -27,7 +27,7 @@ Attributes in Studio can be of the following types:
 | Long          | A whole number.  The range of this type is –9,223,372,036,854,775,808 to 9,223,372,036,854,775,807. |
 | String        | A text containing letters, spaces, numbers and other characters. You can set this type to unlimited or to limit it with the number of symbols you like. |
 
-For more technical information on attribute types, see the [Type](/refguide/attributes#type) section in *Attributes* in the *Studio Pro Guide*.
+For more technical information on attribute types, see the [Type](/refguide/attributes/#type) section in *Attributes* in the *Studio Pro Guide*.
 
 ## 3 Attribute Properties {#attribute-properties}
 
@@ -50,10 +50,10 @@ You can find the description of specific properties that differ per attribute ty
 | Property                                 | Attribute Type | Description                                                  |
 | ---------------------------------------- | -------------- | ------------------------------------------------------------ |
 | Localize                                 | Date and Time  | Indicates if local time or server time is used. **Use local time** means the local time zone of a user will be used. **Use server time** means UTC  will be set for all users. <br />*Default value: Use local time* |
-| [Enumeration](domain-models-enumeration) | Enumeration    | With this property you can define an enumeration (predefined list of options), by creating a new list or choosing from existing enumerations. For more information, see [Enumeration](domain-models-enumeration). |
+| [Enumeration](/studio/domain-models-enumeration/) | Enumeration    | With this property you can define an enumeration (predefined list of options), by creating a new list or choosing from existing enumerations. For more information, see [Enumeration](/studio/domain-models-enumeration/). |
 | Length                                   | String         | Specifies whether the length of a string is limited or unlimited. In the case the length is limited, the **Max-Length** property specifies the maximum number of characters that can be stored in the attribute . <br />*Default value: Unlimited* |
 
 ## 4 Read More
 
-* [Domain Model](domain-models)
-* [Enumeration](domain-models-enumeration)
+* [Domain Model](/studio/domain-models/)
+* [Enumeration](/studio/domain-models-enumeration/)

@@ -9,7 +9,7 @@ tags: ["studio pro"]
 
 This document describes the properties of a published OData resource. 
 
-For an overview of OData services, see [Published OData Services](published-odata-services).
+For an overview of OData services, see [Published OData Services](/refguide/published-odata-services/).
 
 ## 2 Adding or Editing a Resource
 
@@ -31,7 +31,7 @@ In the **Public documentation** tab, you can provide a summary and a description
 
 {{% alert color="info" %}}
 
-[IBM DB2](db2) does not support read-isolated data retrieval operations that are non-blocking in a multi-user environment. Therefore, the data retrieved by OData might not be 100% consistent if the same data rows are modified concurrently by another user. 
+[IBM DB2](/refguide/db2/) does not support read-isolated data retrieval operations that are non-blocking in a multi-user environment. Therefore, the data retrieved by OData might not be 100% consistent if the same data rows are modified concurrently by another user. 
 
 {{% /alert %}}
 
@@ -97,8 +97,8 @@ Default: *10000*
 
 ## 8 Capabilities {#capabilities}
 
-A published OData resource is always readable. Use the checkbox for **Updatable (write)** to indicate that clients can update the values of attributes and associations. Only users that have write entity access to attributes and associations can update them. For more information, see [OData query options](odata-query-options#updating-objects).
+A published OData resource is always readable. Use the checkbox for **Updatable (write)** to indicate that clients can update the values of attributes and associations. Only users that have write entity access to attributes and associations can update them. For more information, see [OData query options](/refguide/odata-query-options/#updating-objects).
 
 {{% alert color="info" %}}
-This *Capabilities* section was introduced in Studio Pro [9.6.0](/releasenotes/studio-pro/9.6).
+This *Capabilities* section was introduced in Studio Pro [9.6.0](/releasenotes/studio-pro/9.6/).
 {{% /alert %}}

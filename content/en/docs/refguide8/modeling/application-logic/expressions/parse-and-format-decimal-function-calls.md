@@ -1,13 +1,13 @@
 ---
 title: "Parse & Format Decimal Function Calls"
-url: /refguide8/parse-and-format-decimal-function-calls
+url: /refguide8/parse-and-format-decimal-function-calls/
 parent: "expressions"
-menu_order: 150
+weight: 150
 tags: ["studio pro", "expression", "parsing", "formatting"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/parse-and-format-decimal-function-calls.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/parse-and-format-decimal-function-calls.pdf).
 {{% /alert %}}
 
 ## 1 Introduction

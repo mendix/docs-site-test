@@ -1,8 +1,8 @@
 ---
 title: "Expose Data to BI Tools Using OData"
-url: /howto8/integration/exposing-data-to-bi-tools-using-odata
+url: /howto8/integration/exposing-data-to-bi-tools-using-odata/
 category: "Integration"
-menu_order: 13
+weight: 13
 description: "Presents how to create a published OData service with resources, add the OData server to Tableau and Excel, combine resources in Tableau, and create qustom queries."
 tags: ["expose", "bi tools", "odata", "integration"]
 ---
@@ -179,8 +179,8 @@ These are some other query examples:
 
 ## 7 Read More
 
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Consume a Simple Web Service](consume-a-simple-web-service)
-* [Export XML Documents](export-xml-documents)
-* [Import Excel Documents](importing-excel-documents)
-* [Expose a Web Service](expose-a-web-service)
+* [Consume a Complex Web Service](/howto8/integration/consume-a-complex-web-service/)
+* [Consume a Simple Web Service](/howto8/integration/consume-a-simple-web-service/)
+* [Export XML Documents](/howto8/integration/export-xml-documents/)
+* [Import Excel Documents](/howto8/integration/importing-excel-documents/)
+* [Expose a Web Service](/howto8/integration/expose-a-web-service/)

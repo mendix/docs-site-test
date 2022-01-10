@@ -19,10 +19,10 @@ Mendix applications frequently need to communicate with existing systems. Whethe
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Know how to create domain models (for details, see [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer))
-* Know how to create overview and detail pages (for details, see [How to Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages))
-* Know how to create microflows (for details, see [How to Build Your First Microflow: Hello world!](/howto/logic-business-rules/trigger-microflow-from-menu-item))
-* Understand the concepts behind REST and web services (for more information, see [How to Consume a Complex Web Service](consume-a-complex-web-service))
+* Know how to create domain models (for details, see [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer/))
+* Know how to create overview and detail pages (for details, see [How to Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages/))
+* Know how to create microflows (for details, see [How to Build Your First Microflow: Hello world!](/howto/logic-business-rules/trigger-microflow-from-menu-item/))
+* Understand the concepts behind REST and web services (for more information, see [How to Consume a Complex Web Service](/howto/integration/consume-a-complex-web-service/))
     * Creating an exposed REST service on top of your legacy system is beyond the scope of this tutorial; for instructions on how to accomplish this, refer to the configuration of your non-Mendix Platform
 
 ## 3 Interacting with a Legacy System Using REST
@@ -41,7 +41,7 @@ For this how-to, we will use the publicly available Google Books API (for detail
 1. The API we will use has a JSON structure.
 2.  Construct the appropriate data model for this JSON.
 
-    {{% alert color="warning" %}}Every REST service will have a different specific JSON structure. For details on how to build JSON data structures in Mendix, see [JSON Structures](/refguide/json-structures).
+    {{% alert color="warning" %}}Every REST service will have a different specific JSON structure. For details on how to build JSON data structures in Mendix, see [JSON Structures](/refguide/json-structures/).
 
     {{% /alert %}}
 3. Create a non-persistable search entity called **BookSearch** that allows the user to enter an author and title. This should be linked to a second object:
@@ -62,15 +62,15 @@ For this how-to, we will use the publicly available Google Books API (for detail
     b. Makes the REST call to the API using the following target:<br>
 
     ![](/attachments/howto/integration/integrating-a-legacy-system-into-a-mendix-app/18582035.png)<br>
-<br>
+
     c. Calls a sub microflow that retrieves all the items associated with the response. Each item then has all the associated volumes retrieved:
 
     ![](/attachments/howto/integration/integrating-a-legacy-system-into-a-mendix-app/18582031.png)<br>
-<br>
+
     d. Iterates through the **VolumeList** and makes a new **BookResult** object to display the search results:
 
     ![](/attachments/howto/integration/integrating-a-legacy-system-into-a-mendix-app/18582037.png)<br>
-<br>
+
     e. Retrieves the author list **Over Association** for each volume. <br>
     f. Iterates through the list of author names and uses a **Change** activity to add the author name. This is done to accommodate this situation:
 
@@ -88,7 +88,7 @@ For further documentation and to see the GitHub project for REST services, see t
 
 ## 4 Read More
 
-* [Consume a REST Service](consume-a-rest-service)
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Consume a Simple Web Service](consume-a-simple-web-service)
-* [Expose a Web Service](expose-a-web-service)
+* [Consume a REST Service](/howto/integration/consume-a-rest-service/)
+* [Consume a Complex Web Service](/howto/integration/consume-a-complex-web-service/)
+* [Consume a Simple Web Service](/howto/integration/consume-a-simple-web-service/)
+* [Expose a Web Service](/howto/integration/expose-a-web-service/)

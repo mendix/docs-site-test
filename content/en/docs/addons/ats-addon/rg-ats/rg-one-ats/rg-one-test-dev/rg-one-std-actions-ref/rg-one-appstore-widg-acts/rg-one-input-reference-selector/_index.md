@@ -6,6 +6,6 @@ parent: "rg-one-appstore-widg-acts"
 
 This section contains these documents:
 
-* [Assert InputReferenceSelector Value](rg-one-assert-inputreferenceselector-value)
-* [Get InputReferenceSelector Value](rg-one-get-inputreferenceselector-value)
-* [Set InputReferenceSelector Value](rg-one-set-inputreferenceselector-value)
+* [Assert InputReferenceSelector Value](/addons/ats-addon/rg-one-assert-inputreferenceselector-value/)
+* [Get InputReferenceSelector Value](/addons/ats-addon/rg-one-get-inputreferenceselector-value/)
+* [Set InputReferenceSelector Value](/addons/ats-addon/rg-one-set-inputreferenceselector-value/)

@@ -1,6 +1,6 @@
 ---
 title: "XPath contains"
-url: /refguide7/xpath-contains
+url: /refguide7/xpath-contains/
 parent: "xpath-constraint-functions"
 ---
 

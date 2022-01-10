@@ -1,6 +1,6 @@
 ---
 title: "OQL From Clause"
-url: /refguide7/oql-from-clause
+url: /refguide7/oql-from-clause/
 parent: "oql"
 ---
 

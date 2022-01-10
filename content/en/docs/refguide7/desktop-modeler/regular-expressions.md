@@ -1,11 +1,11 @@
 ---
 title: "Regular Expressions"
-url: /refguide7/regular-expressions
+url: /refguide7/regular-expressions/
 category: "Desktop Modeler"
 ---
 
 
-A regular expression describes a set of criteria that a string can match. In the [validation rules](validation-rules) of an entity a regular expression can be used to validate whether an attribute of type String matches these criteria.
+A regular expression describes a set of criteria that a string can match. In the [validation rules](/refguide7/validation-rules/) of an entity a regular expression can be used to validate whether an attribute of type String matches these criteria.
 
 A regular expression has the following properties.
 
@@ -13,7 +13,7 @@ A regular expression has the following properties.
 
 ### Name
 
-The name can be used to refer to the regular expression from a [validation rule](validation-rules) of an entity.
+The name can be used to refer to the regular expression from a [validation rule](/refguide7/validation-rules/) of an entity.
 
 ### Documentation
 
@@ -23,7 +23,7 @@ This is for documentation purpose only; it is not visible in the end-user applic
 
 The expression defines the criteria that a string should be checked against in a [formal, internationally standardized regular expression language](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 For example, an expression for checking the Dutch postcode could be: [1-9][0-9][0-9][0-9] ?[A-Za-z][A-Za-z]
 

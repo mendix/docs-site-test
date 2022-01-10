@@ -120,4 +120,4 @@ To set up a working directory for your script, follow these steps:
 
 ## 5 Next Step
 
-Continue with [Creating Your First Script](creating-your-first-script).
+Continue with [Creating Your First Script](/apidocs-mxsdk/mxsdk/creating-your-first-script/).

@@ -1,6 +1,6 @@
 ---
 title: "Static Image (Document Template)"
-url: /refguide7/static-image-document-template
+url: /refguide7/static-image-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Static+Image+(document+template).html
@@ -30,4 +30,4 @@ The height defines the height of the image in the document. This is set in pixel
 
 ## Common Properties
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}

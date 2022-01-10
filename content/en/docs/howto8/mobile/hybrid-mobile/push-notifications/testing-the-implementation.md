@@ -1,14 +1,14 @@
 ---
 title: "Test the Push Notifications Implementation"
-url: /howto8/mobile/testing-the-implementation
+url: /howto8/mobile/testing-the-implementation/
 parent: "push-notifications"
-menu_order: 60
+weight: 60
 tags: ["mobile", "push notification"]
 ---
 
 ## 1 Introduction
 
-Once you finish implementing the steps described in [How to Implement Push Notifications](implementation-guide), you need to test whether your push notifications work correctly. 
+Once you finish implementing the steps described in [How to Implement Push Notifications](/howto8/mobile/implementation-guide/), you need to test whether your push notifications work correctly. 
 
 ## 2 Prerequisites
 
@@ -22,7 +22,7 @@ To begin testing your push notifications, you will need to build new versions of
 
 This will give you a *zip* app that you can use to customize your app according to the [hybrid app package documentation](https://github.com/mendix/hybrid-app-template/). The *zip* app contains a *config.xml* file that refers to *google-services.json* and *GoogleService-info.plist* files. 
 
-To successfully use FCM push notifications, you must put the *google-services.json* and *GoogleService-Info.plist* files – obtained in the [Downloading the Google Services Config Files](setting-up-google-firebase-cloud-messaging-server#downloading-the-google-services-config-files) section of *Set Up the Google Firebase Cloud Messaging Server* – in your app's **config** folder.
+To successfully use FCM push notifications, you must put the *google-services.json* and *GoogleService-Info.plist* files – obtained in the [Downloading the Google Services Config Files](/howto8/mobile/setting-up-google-firebase-cloud-messaging-server/#downloading-the-google-services-config-files) section of *Set Up the Google Firebase Cloud Messaging Server* – in your app's **config** folder.
 
 When you add these files, it causes the **PushNotifications** widget to register your device with FCM, and then share the FCM registration token with your Mendix back-end server. This means you must use FCM to send messages to your devices. 
 
@@ -51,5 +51,5 @@ If you saw the notification, congratulations! By following this document, you ha
 
 ## 5 Read More
 
-* [Publish a Mendix Hybrid Mobile App in Mobile App Stores](publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores)
-* [Debug a Hybrid Mobile App](debug-a-mobile-app)
+* [Publish a Mendix Hybrid Mobile App in Mobile App Stores](/howto8/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores/)
+* [Debug a Hybrid Mobile App](/howto8/mobile/debug-a-mobile-app/)

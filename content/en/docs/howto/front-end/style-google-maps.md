@@ -20,7 +20,7 @@ Google Maps is a very powerful addition to your applications. You can use it to 
 
 Before you start this how-to, please make sure you have completed the following prerequisites.
 
-*   Have the latest version of the [Google Maps](/appstore/widgets/google-maps) widget in your app
+*   Have the latest version of the [Google Maps](/appstore/widgets/google-maps/) widget in your app
 
 {{% alert color="warning" %}}
 These instructions are for the Google Maps widget which you can download from the Marketplace. The Google Maps widget within the Atlas UI template has different options.
@@ -77,14 +77,14 @@ Supporting communities is cool. Therefore I will also show you how to upload you
 
 1.  Go-to Snazzymaps and click **Create.**
     **![](/attachments/howto/front-end/style-google-maps/19398964.png)** 
-**2.  Now you will see the same sort of handy quick style method that Mendix provides at the [Atlas 3](https://atlas.mendix.com/) site.
+2.  Now you will see the same sort of handy quick style method that Mendix provides at the [Atlas 3](https://atlas.mendix.com/) site.
     ![](/attachments/howto/front-end/style-google-maps/19398965.png) 
 
     Happy modeling!
 
 ## 4 Read More
 
-* [Atlas UI](atlas-ui)
-*   [Layouts and Snippets](layouts-and-snippets)
-*   [Setting Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure)
-*   [Creating your first two Overview and Detail pages](create-your-first-two-overview-and-detail-pages)
+* [Atlas UI](/howto/front-end/atlas-ui/)
+*   [Layouts and Snippets](/howto/front-end/layouts-and-snippets/)
+*   [Setting Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure/)
+*   [Creating your first two Overview and Detail pages](/howto/front-end/create-your-first-two-overview-and-detail-pages/)

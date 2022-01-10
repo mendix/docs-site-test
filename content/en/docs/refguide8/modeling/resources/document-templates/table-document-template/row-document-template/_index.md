@@ -1,6 +1,6 @@
 ---
 title: "Row (Document Template)"
-url: /refguide8/row-document-template
+url: /refguide8/row-document-template/
 parent: "table-document-template"
 tags: ["studio pro"]
 aliases:
@@ -9,8 +9,8 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/row-document-template.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/row-document-template.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -21,7 +21,7 @@ Rows are part of a table. They contain cells which in turn can contain other wid
 
 ### 2.1 Cell
 
-A cell of a row. For more information, see [Cell (Document Template)](cell-document-template).
+A cell of a row. For more information, see [Cell (Document Template)](/refguide8/cell-document-template/).
 
 ## 3 Appearance Properties
 

@@ -32,11 +32,11 @@ Dynamic image properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.3 Data Source Section {#data-source}
 
@@ -46,7 +46,7 @@ The **Entity (path)** property specifies which object will be shown in the dynam
 
 ### 2.4  Events Section {#events}
 
-{{% snippet file="/static/_includes/refguide/events-section-link.md" %}}
+{{% snippet file="refguide/events-section-link.md" %}}
 
 ### 2.5 General Section{#general}
 
@@ -106,10 +106,10 @@ Default: *Thumbnail*
 
 ### 2.6 Visibility Properties{#visibility}
 
-{{% snippet file="/static/_includes/refguide/visibility-section-link.md" %}}
+{{% snippet file="refguide/visibility-section-link.md" %}}
 
 ## 3 Read More
 
-* [Page](page)
-* [Images, Videos & Files](image-and-file-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Images, Videos & Files](/refguide/image-and-file-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

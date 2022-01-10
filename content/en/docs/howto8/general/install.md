@@ -1,8 +1,8 @@
 ---
 title: "Install Mendix Studio Pro"
-url: /howto8/general/install
+url: /howto8/general/install/
 category: "General Info"
-menu_order: 1
+weight: 1
 description: "Follow this how-to to learn how to install Mendix Studio Pro."
 toc-level: "2"
 tags: ["studio pro", "install", "install studio pro", "download"]
@@ -10,7 +10,7 @@ tags: ["studio pro", "install", "install studio pro", "download"]
 
 ## 1 Introduction
 
-Mendix Studio Pro enables you to build apps on the Mendix Platform. This how-to will guide you through the steps of installing the latest version of Mendix Studio Pro. If you use a Mac device, see [Configure Parallels](using-mendix-studio-pro-on-a-mac) to configure your Windows virtual machine.
+Mendix Studio Pro enables you to build apps on the Mendix Platform. This how-to will guide you through the steps of installing the latest version of Mendix Studio Pro. If you use a Mac device, see [Configure Parallels](/howto8/general/using-mendix-studio-pro-on-a-mac/) to configure your Windows virtual machine.
 
 For a deep-dive demonstration of how to install Studio Pro, follow along in this video:
 
@@ -27,7 +27,7 @@ For a deep-dive demonstration of how to install Studio Pro, follow along in this
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* A Windows environment to install Studio Pro (For the full list of supported systems and required frameworks, see [System Requirements](/refguide8/system-requirements))
+* A Windows environment to install Studio Pro (For the full list of supported systems and required frameworks, see [System Requirements](/refguide8/system-requirements/))
 
 ## 3 Downloading Mendix Studio Pro
 
@@ -104,5 +104,5 @@ It is possible to prepare the prerequisite installers beforehand, so that the Me
 
 ## 7 Read More
 
-* [Studio Pro Overview](/refguide8/studio-pro-overview)
-* [App Modeling](/refguide8/modeling)
+* [Studio Pro Overview](/refguide8/studio-pro-overview/)
+* [App Modeling](/refguide8/modeling/)

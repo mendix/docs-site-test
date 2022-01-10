@@ -1,17 +1,17 @@
 ---
 title: "Template Grid"
-url: /refguide8/template-grid
+url: /refguide8/template-grid/
 parent: "grids"
-menu_order: 20
+weight: 20
 tags: ["studio pro", "grid", "template grid", "data widgets"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/template-grid.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/template-grid.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}The template grid widget is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="warning" %}}The template grid widget is not supported on native mobile pages.{{% /alert %}}
 
 ## 1 Introduction
 
@@ -19,21 +19,21 @@ A template grid shows a list of objects in a tile view. For example, a template 
 
 ![](/attachments/refguide8/modeling/pages/data-widgets/grids/template-grid/template-grid.png)
 
-The template grid has a lot in common with a [data grid](data-grid). The main difference is that the objects are shown in templates instead of rows.
+The template grid has a lot in common with a [data grid](/refguide8/data-grid/). The main difference is that the objects are shown in templates instead of rows.
 
 ## 2 Components
 
 ### 2.1 Control Bar
 
-For more information, see [Control Bar](control-bar).
+For more information, see [Control Bar](/refguide8/control-bar/).
 
 ### 2.2 Search Bar
 
-**Search Bar** is only available for **Database** and **XPath** [data sources](#data-source). For more information on a search bar and its settings, see [Search Bar](search-bar).
+**Search Bar** is only available for **Database** and **XPath** [data sources](#data-source). For more information on a search bar and its settings, see [Search Bar](/refguide8/search-bar/).
 
 ### 2.3 Sort Bar
 
-**Sort Bar** is only available for **Database** and **XPath** [data sources](#data-source). For more information on a sort bar and its settings, see [Sort Bar](sort-bar).
+**Sort Bar** is only available for **Database** and **XPath** [data sources](#data-source). For more information on a sort bar and its settings, see [Sort Bar](/refguide8/sort-bar/).
 
 ## 3 Properties
 
@@ -52,26 +52,26 @@ Template grid properties consist of the following sections:
 
 ### 3.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 3.2 Data Source Properties {#data-source}
 
-The data source determines which objects will be shown in the template grid. For general information about data sources, see [Data Sources](data-sources).
+The data source determines which objects will be shown in the template grid. For general information about data sources, see [Data Sources](/refguide8/data-sources/).
 
 #### 3.2.1 Type
 
 The list view supports the following types of data sources: 
 
-* [Database source](database-source) – objects are retrieved directly form the database
-* [XPath source](xpath-source) – objects are retrieved directly form the database
-* [Microflow source](microflow-source) – calculates the list of objects by executing a microflow
-* [Association source](association-source) – follows an association to get to objects
+* [Database source](/refguide8/database-source/) – objects are retrieved directly form the database
+* [XPath source](/refguide8/xpath-source/) – objects are retrieved directly form the database
+* [Microflow source](/refguide8/microflow-source/) – calculates the list of objects by executing a microflow
+* [Association source](/refguide8/association-source/) – follows an association to get to objects
 
 The database and XPath sources retrieve objects from the database and supports searching and sorting. 
 
 ### 3.3 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
+{{% snippet file="refguide8/design-section-link.md" %}} 
 
 ### 3.4 General Section {#general}
 
@@ -79,15 +79,15 @@ The database and XPath sources retrieve objects from the database and supports s
 
 This property indicates whether the control bar will be visible in the end-user interface. The control bar also includes the paging buttons.
 
-{{% alert type="warning" %}}
-Even if the control bar is invisible there can still be a default button that is triggered by (double) clicking a row. See the property 'Default button trigger' and [grid buttons](control-bar) for more information.
+{{% alert color="warning" %}}
+Even if the control bar is invisible there can still be a default button that is triggered by (double) clicking a row. See the property 'Default button trigger' and [grid buttons](/refguide8/control-bar/) for more information.
 {{% /alert %}}
 
 Default: *True*
 
 #### 3.4.2 Show Paging Buttons {#show-paging-buttons}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This property is not available in Mendix 8.13 and above. Use the [Show Paging Bar](#show-paging-bar) property instead.
 {{% /alert %}}
 
@@ -97,7 +97,7 @@ Default: *True*
 
 #### 3.4.3 Show Paging Bar {#show-paging-bar}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property was introduced in Mendix 8.13. It replaces the [Show Paging Buttons](#show-paging-buttons) property.
 {{% /alert %}}
 
@@ -111,7 +111,7 @@ With this property, you can change the way the paging bar is shown.
 
 Default: *Yes (with total count)*
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Hiding the control bar also hides the paging buttons. For details, see [Show Control Bar](#show-control-bar).
 {{% /alert %}}
 
@@ -166,7 +166,7 @@ Default: *0*
 
 ### 3.5 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
+{{% snippet file="refguide8/visibility-section-link.md" %}}
 
 ## 4 Performing Specific Actions
 
@@ -177,7 +177,7 @@ To perform actions on a template grid, select it on a page and right-click it. T
 
 ## 5 Read More
 
-* [Page](page)
-* [Data Widgets](data-widgets)
-* [Data Sources](data-sources)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [Data Widgets](/refguide8/data-widgets/)
+* [Data Sources](/refguide8/data-sources/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)

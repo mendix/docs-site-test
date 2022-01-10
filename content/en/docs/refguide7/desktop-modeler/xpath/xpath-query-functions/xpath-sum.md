@@ -1,6 +1,6 @@
 ---
 title: "XPath sum"
-url: /refguide7/xpath-sum
+url: /refguide7/xpath-sum/
 parent: "xpath-query-functions"
 ---
 

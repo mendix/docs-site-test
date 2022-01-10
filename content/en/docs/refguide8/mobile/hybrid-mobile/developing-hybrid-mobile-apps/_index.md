@@ -1,6 +1,6 @@
 ---
 title: "Developing Hybrid Mobile Apps"
-url: /refguide8/developing-hybrid-mobile-apps
+url: /refguide8/developing-hybrid-mobile-apps/
 parent: "hybrid-mobile"
 tags: ["studio pro"]
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 ## 1 Introduction
 
-Hybrid Mendix apps can simply be viewed in mobile web browsers. However, mobile device features cannot be accessed through HTML and JavaScript. Also, if you want to publish your hybrid app on the Apple App Store, Google Play, or Microsoft Phone Store, you have to wrap your app in a native shell. We use [local builds](/howto8/mobile/build-hybrid-locally) to accomplish this.
+Hybrid Mendix apps can simply be viewed in mobile web browsers. However, mobile device features cannot be accessed through HTML and JavaScript. Also, if you want to publish your hybrid app on the Apple App Store, Google Play, or Microsoft Phone Store, you have to wrap your app in a native shell. We use [local builds](/howto8/mobile/build-hybrid-locally/) to accomplish this.
 
 These apps are called "hybrid" apps because they are a hybrid of a web and a native app. Mendix facilitates the creation of hybrid mobile apps in a number of ways.
 
@@ -21,9 +21,9 @@ However, when you use native widgets on your hybrid pages, some of these widgets
 
 ![](/attachments/refguide8/mobile/hybrid-mobile/developing-hybrid-mobile-apps/View_Hybrid_Mobile_App_Popup.png)
 
-For more information about how to download the Mendix Mobile app, see [Getting the Mendix Mobile App](getting-the-mendix-app).
+For more information about how to download the Mendix Mobile app, see [Getting the Mendix Mobile App](/refguide8/getting-the-mendix-app/).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Your mobile device has to be on the same network as your development machine for the Mendix Mobile app to work. If this is the case and the connection still fails, make sure that communication between devices is allowed in the Wi-Fi access point.
 
@@ -31,8 +31,8 @@ Your mobile device has to be on the same network as your development machine for
 
 ## 3 Read More
 
-* [Mobile](mobile)
-* [Getting the Mendix Mobile App](getting-the-mendix-app)
-* [Customizing Hybrid Mobile Apps](customizing-hybrid-mobile-apps)
-* [Packaging Hybrid Mobile Apps](packaging-hybrid-mobile-apps)
+* [Mobile](/refguide8/mobile/)
+* [Getting the Mendix Mobile App](/refguide8/getting-the-mendix-app/)
+* [Customizing Hybrid Mobile Apps](/refguide8/customizing-hybrid-mobile-apps/)
+* [Packaging Hybrid Mobile Apps](/refguide8/packaging-hybrid-mobile-apps/)
 

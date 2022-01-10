@@ -8,7 +8,7 @@ tags: ["Atlas", "UI", "UX", "user experience", "design"]
 
 ## 1 Introduction
 
-Atlas 3 brings a new degree of power and sophistication to styling in Mendix. To upgrade from Atlas 2 to Atlas 3, see the [Upgrade from Atlas 2 to Atlas 3](#upgrade) section below. To view a high-level summary of the changes Atlas 3 brings to Mendix, see the [Atlas 3 Change Summary Reference Guide](/refguide/atlas3-change-summary).
+Atlas 3 brings a new degree of power and sophistication to styling in Mendix. To upgrade from Atlas 2 to Atlas 3, see the [Upgrade from Atlas 2 to Atlas 3](#upgrade) section below. To view a high-level summary of the changes Atlas 3 brings to Mendix, see the [Atlas 3 Change Summary Reference Guide](/refguide/atlas3-change-summary/).
 
 To upgrade from Atlas 2 to Atlas 3, you must complete the [Upgrading from Atlas 2 to Atlas 3](#upgrade) section below. **If you have not added custom styling into your Atlas**, completing these subsections of *Upgrading from Atlas 2 to Atlas 3* is all you need to do: 
 
@@ -28,7 +28,7 @@ The sections after the upgrade instructions reference known issues and some trou
 
 Before upgrading, please note that in Atlas 3 all hybrid content is removed because hybrid profiles are deprecated in Mendix 9. If your app requires hybrid content, we recommend not upgrading to Atlas 3 unless you have created all your own hybrid content separate from Atlas’.
 
-Before you start the upgrade process, it may help if you consult the folder structure changes introduced in Atlas 3 by reading the [File and Folder Structure](/howto/front-end/customize-styling-new#file-and-folder) section of *How to Customize Styling*. 
+Before you start the upgrade process, it may help if you consult the folder structure changes introduced in Atlas 3 by reading the [File and Folder Structure](/howto/front-end/customize-styling-new/#file-and-folder) section of *How to Customize Styling*. 
 
 ### 2.1 Upgrading Your Theme Directory {#upgrade-theme-directory}
 
@@ -429,7 +429,7 @@ As this is a custom-defined design property, this needs to be added to the web's
 
 #### 2.5.3 Merging Options for Design Properties
 
-Design property options can also be merged across themesource modules. For more information see the [Extending or Overriding Design Properties of Other Modules](/apidocs-mxsdk/apidocs/design-properties#extend-existing-design-properties) section of the **Design Properties API Documentation**.
+Design property options can also be merged across themesource modules. For more information see the [Extending or Overriding Design Properties of Other Modules](/apidocs-mxsdk/apidocs/design-properties/#extend-existing-design-properties) section of the **Design Properties API Documentation**.
 
 ## 3 Expected Issues After Upgrading to Atlas 3 {#expected-issues}
 
@@ -445,7 +445,7 @@ When you have completed the sections above, you may have errors in your error li
 	* Add the **Phone web** or **Tablet web** navigation profile to your Mendix application
 	* In the widget's properties pane change the **Profile** to an already existed profile, like **Responsive web**
 
-	Note that navigation profiles have changed in Mendix 9. See the [Mendix 9 Release Notes](/releasenotes/studio-pro/9.0) for more information.
+	Note that navigation profiles have changed in Mendix 9. See the [Mendix 9 Release Notes](/releasenotes/studio-pro/9.0/) for more information.
 
 	![](/attachments/refguide/general/moving-from-8-to-9/moving-from-atlas-2-to-3/5-nav.png)
 
@@ -461,13 +461,13 @@ When you have completed the sections above, you may have errors in your error li
 
 	![](/attachments/refguide/general/moving-from-8-to-9/moving-from-atlas-2-to-3/7-errors.png)
 
-*  If you have **Design property X is not supported by your theme** errors, it either means a design property has been removed in Atlas 3 or you need to add your own design properties to the new file structure as instructed in the [migrating custom defined design properties](#upgrade-design-properties) section above. To suppress the error, right-click the error, then select **Remove property**. To check how to extend your design properties, please follow [How to Extend Design Properties](/howto/front-end/extend-design-properties).
+*  If you have **Design property X is not supported by your theme** errors, it either means a design property has been removed in Atlas 3 or you need to add your own design properties to the new file structure as instructed in the [migrating custom defined design properties](#upgrade-design-properties) section above. To suppress the error, right-click the error, then select **Remove property**. To check how to extend your design properties, please follow [How to Extend Design Properties](/howto/front-end/extend-design-properties/).
 
 	![](/attachments/refguide/general/moving-from-8-to-9/moving-from-atlas-2-to-3/8-errors-background.png)
 
 * If you have errors saying **Unknown option X for design property**, it means the design property option has been removed in Atlas 3. Use one of the following methods to solve the error: 
 	* Set the design property to its default option: right-click the error, then select **Set property X to default**
-	* Search for the design property option's CSS class in *theme_atlas2/settings.json* for web and *theme_atlas2/settings-native.json* for native, then add it to the applicable [widget's style property](common-widget-properties#style)  
+	* Search for the design property option's CSS class in *theme_atlas2/settings.json* for web and *theme_atlas2/settings-native.json* for native, then add it to the applicable [widget's style property](/refguide/common-widget-properties/#style)  
 
 	![](/attachments/refguide/general/moving-from-8-to-9/moving-from-atlas-2-to-3/9-set-prop.png)
 
@@ -497,5 +497,5 @@ To troubleshoot common Atlas problems, do the following:
 
 * [Atlas 3 Website](https://www.mendix.com/atlas/)
 * [Atlas Design System App](https://atlasdesignsystem.mendixcloud.com/)
-* [Atlas 3 Change Summary](/refguide/atlas3-change-summary)
-* [Studio Pro 9 Release Notes](/releasenotes/studio-pro/9.0)
+* [Atlas 3 Change Summary](/refguide/atlas3-change-summary/)
+* [Studio Pro 9 Release Notes](/releasenotes/studio-pro/9.0/)

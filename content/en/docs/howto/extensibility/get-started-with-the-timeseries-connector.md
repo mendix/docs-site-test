@@ -26,7 +26,7 @@ When looking at the IoT trend recently, one hundred sensors that send data each 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Have Mendix Studio Pro installed (download [here](https://marketplace.mendix.com/link/studiopro/))
-* Have the [Community Commons Function Library](/appstore/modules/community-commons-function-library) in your app
+* Have the [Community Commons Function Library](/appstore/modules/community-commons-function-library/) in your app
 
 ## 3 Sign Up for the TimeSeries Connector
 

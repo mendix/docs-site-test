@@ -1,8 +1,8 @@
 ---
 title: "Access a Samba Share"
-url: /howto7/extensibility/access-a-samba-share-from-the-mxcloud
+url: /howto7/extensibility/access-a-samba-share-from-the-mxcloud/
 category: "Extensibility"
-menu_order: 10
+weight: 10
 tags: ["Samba", "share"]
 ---
 
@@ -73,4 +73,4 @@ For more details on all the properties, see here: [http://jcifs.samba.org/src/do
 
 ## 5 Read More
 
-* [How to Access a Samba Share from the MxCloud](access-a-samba-share-from-the-mxcloud)
+* [How to Access a Samba Share from the MxCloud](/howto7/extensibility/access-a-samba-share-from-the-mxcloud/)

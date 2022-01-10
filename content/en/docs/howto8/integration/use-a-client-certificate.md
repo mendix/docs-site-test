@@ -1,6 +1,6 @@
 ---
 title: "Use a Client Certificate"
-url: /howto8/integration/use-a-client-certificate
+url: /howto8/integration/use-a-client-certificate/
 category: "Integration"
 tags: ["integration", "web service", "client certficate"]
 ---
@@ -9,7 +9,7 @@ tags: ["integration", "web service", "client certficate"]
 
 Some services require you to authenticate using a client certificate. This how-to describes how to configure your app to do this.
 
-Let's assume that you already have an app that calls a service. For details on how to configure this, have a look at [How to Consume a REST Service](consume-a-rest-service) or [How to Consume a Simple Web Service](consume-a-simple-web-service).
+Let's assume that you already have an app that calls a service. For details on how to configure this, have a look at [How to Consume a REST Service](/howto8/integration/consume-a-rest-service/) or [How to Consume a Simple Web Service](/howto8/integration/consume-a-simple-web-service/).
 
 This how-to will teach you how to do the following:
 
@@ -47,7 +47,7 @@ A complete configuration may look like this:
 
 You can use an empty path for `ClientCertificateUsages` to specify that you do not want to use a client certificate, even when the server accepts one. To do this, you need to add the **Value** `{"<endpoint>":""}` (replace `<endpoint>` with the actual endpoint).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Be sure to drop `https://` from a URL endpoint.
 
@@ -61,7 +61,7 @@ The following sample uses client certificate `Mx1.pfx` for `WebService1` and no 
 
 ## 4 Running in the Cloud
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 You will only be able to follow the steps below if you have the correct access rights for the client certificates.
 

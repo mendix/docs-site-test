@@ -1,11 +1,11 @@
 ---
 title: "Message Definitions"
-url: /refguide7/message-definitions
+url: /refguide7/message-definitions/
 parent: "integration"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This feature was introduced in version 7.10.0.
 
@@ -17,7 +17,7 @@ Message definitions define the structure of the messages that are sent from and 
 
 ## 2 General
 
-In the list of message definitions, you can add, edit, or delete a [message definition](message-definition) or find their usages.
+In the list of message definitions, you can add, edit, or delete a [message definition](/refguide7/message-definition/) or find their usages.
 
 ### 2.1 Generate Mapping(s)
 

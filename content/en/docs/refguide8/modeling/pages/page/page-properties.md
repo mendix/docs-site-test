@@ -1,18 +1,18 @@
 ---
 title: "Page Properties"
-url: /refguide8/page-properties
+url: /refguide8/page-properties/
 parent: "page"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "page", "properties"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/page-properties.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/page-properties.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-This document describes page properties. For details on what pages are for and what kind of widgets can be placed on them, see [Pages](pages).
+This document describes page properties. For details on what pages are for and what kind of widgets can be placed on them, see [Pages](/refguide8/pages/).
 
 ## 2 Properties
 
@@ -32,11 +32,11 @@ Page properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.2 Designer Section {#designer}
 
-{{% snippet file="/static/_includes/refguide8/designer-properties.md" %}}
+{{% snippet file="refguide8/designer-properties.md" %}}
 
 ### 2.3 General Section {#general}
 
@@ -61,13 +61,13 @@ The **Layout type**, determines the purpose of the page and how it is opened.
 
 #### 2.3.3 Layout
 
-The [layout](layout) on which this page is based.
+The [layout](/refguide8/layout/) on which this page is based.
 
 #### 2.3.4 Title {#title}
 
-The title of the page that is shown using the [page title widget](page-title). If the page is shown in a pop-up window, the title appears in the title bar of the pop-up. 
+The title of the page that is shown using the [page title widget](/refguide8/page-title/). If the page is shown in a pop-up window, the title appears in the title bar of the pop-up. 
 
-The title can be overridden. For example, the [Create button](control-bar) and the [Edit button](control-bar) of a data grid can refer to the same page, but they override the titles to **New** and **Edit**, respectively.
+The title can be overridden. For example, the [Create button](/refguide8/control-bar/) and the [Edit button](/refguide8/control-bar/) of a data grid can refer to the same page, but they override the titles to **New** and **Edit**, respectively.
 
 #### 2.3.6 URL
 
@@ -85,9 +85,9 @@ In simple e-commerce applications, the URLs can be configured as follows:
 
 #### 2.4.1 Visible For
 
-This property defines for what module roles the page is visible. This has an effect on [menu widgets](menu-widgets) and on buttons that are visible only if allowed (for example, an [action button](button-widgets) for editing).
+This property defines for what module roles the page is visible. This has an effect on [menu widgets](/refguide8/menu-widgets/) and on buttons that are visible only if allowed (for example, an [action button](/refguide8/button-widgets/) for editing).
 
-For more information, see [Module Security](module-security).
+For more information, see [Module Security](/refguide8/module-security/).
 
 ### 2.5 Pop-Up Section {#pop-up}
 

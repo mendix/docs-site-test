@@ -2,7 +2,7 @@
 title: "APM 1 Reference Guide"
 url: /addons/apd-addon/rg-one-apm/
 parent: "rg-apd"
-menu_order: 2
+weight: 2
 ---
 
 ## 1 Introduction
@@ -11,17 +11,17 @@ The Application Performance Monitor (APM) is a solution that helps to analyze pe
 
 This is the reference guide for the CLEVR APM for Mendix. It has the following chapters:
 
-*   [Dashboard](rg-one-dashboard)
-*   [Configuration](rg-one-configuration)
-*   [Log Tool](rg-one-log-tool)
-*   [Trap Tool](rg-one-trap-tool)
-*   [Statistics Tool](rg-one-statistics-tool)
-*   [Performance Tool](rg-one-performance-tool)
-*   [JVM Browser](rg-one-jvm-browser)
-*   [Measurements Tool](rg-one-measurements-tool)
-*   [Triggers](rg-one-triggers)
-*   [Query Tool](rg-one-query-tool)
-*   [Load Test Recorder](rg-one-load-test-recorder)
+*   [Dashboard](/addons/apd-addon/rg-one-dashboard/)
+*   [Configuration](/addons/apd-addon/rg-one-configuration/)
+*   [Log Tool](/addons/apd-addon/rg-one-log-tool/)
+*   [Trap Tool](/addons/apd-addon/rg-one-trap-tool/)
+*   [Statistics Tool](/addons/apd-addon/rg-one-statistics-tool/)
+*   [Performance Tool](/addons/apd-addon/rg-one-performance-tool/)
+*   [JVM Browser](/addons/apd-addon/rg-one-jvm-browser/)
+*   [Measurements Tool](/addons/apd-addon/rg-one-measurements-tool/)
+*   [Triggers](/addons/apd-addon/rg-one-triggers/)
+*   [Query Tool](/addons/apd-addon/rg-one-query-tool/)
+*   [Load Test Recorder](/addons/apd-addon/rg-one-load-test-recorder/)
 
 The sections below provide an introduction to APM. There is an explanation of what APM is, which tools are in the APM suite, and what they are used for. APM consists of the following tools:
 
@@ -45,7 +45,7 @@ Of course you need the basic infrastructure probes to measure hardware parts lik
 
 We all know software contains bugs, and of course we all test before we bring something into production. For users, an error is a sign that the application is not functioning. If the error appears unexpected, the user loses trust in the system. The standard reaction of support was always to ask questions, including whether the customer can reproduce the issue, to turn on logging and to ask for a database dump, so support can investigate the issue in a safe environment.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The APM tools provide valuable information for analyzing the behavior and performance of an application in production. A testing tool should of course also be used during development and test phases.
 

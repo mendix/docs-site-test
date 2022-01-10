@@ -1,19 +1,19 @@
 ---
 title: "Module Role"
-url: /refguide7/module-role
+url: /refguide7/module-role/
 parent: "module-security"
 ---
 
 
-The module roles define which roles users of this module can have. See [Security](security) for more information on module roles and [user roles](user-roles) and their relation.
+The module roles define which roles users of this module can have. See [Security](/refguide7/security/) for more information on module roles and [user roles](/refguide7/user-roles/) and their relation.
 
 ## Name
 
 The name of a module role is used to refer to the module role from other elements in your model.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-End users do not see the names of module roles. End users (if they create or view user accounts) only see the names of [user roles](user-roles).
+End users do not see the names of module roles. End users (if they create or view user accounts) only see the names of [user roles](/refguide7/user-roles/).
 
 {{% /alert %}}
 

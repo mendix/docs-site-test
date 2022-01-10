@@ -1,13 +1,13 @@
 ---
 title: "Enumerations in Expressions"
-url: /refguide8/enumerations-in-expressions
+url: /refguide8/enumerations-in-expressions/
 parent: "expressions"
-menu_order: 170
+weight: 170
 tags: ["studio pro", "expression", "enumeration", "expressions"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/enumerations-in-expressions.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/enumerations-in-expressions.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -63,7 +63,7 @@ Gouden
 
 ## 3 getKey
 
-The `getKey` function takes an enumeration value and returns the key (called *Name* in Studio Pro) of this value. The key is the technical name for the enumeration value and is language independent. For more information, see [Enumerations](enumerations).
+The `getKey` function takes an enumeration value and returns the key (called *Name* in Studio Pro) of this value. The key is the technical name for the enumeration value and is language independent. For more information, see [Enumerations](/refguide8/enumerations/).
 
 ### 3.1 Input Parameters
 
@@ -93,4 +93,4 @@ Golden
 
 ## 4 Read More
 
-* [Enumerations](enumerations)
+* [Enumerations](/refguide8/enumerations/)

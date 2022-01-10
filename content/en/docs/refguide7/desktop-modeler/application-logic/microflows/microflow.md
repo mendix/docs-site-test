@@ -1,13 +1,13 @@
 ---
 title: "Microflow Properties"
-url: /refguide7/microflow
+url: /refguide7/microflow/
 parent: "microflows"
 tags: ["microflow", "entity access"]
 ---
 
 ## 1 Introduction
 
-This document describes the properties of a microflow. If you want to see what microflows are for and what kind of elements they contain, you can check [Microflows](microflows).
+This document describes the properties of a microflow. If you want to see what microflows are for and what kind of elements they contain, you can check [Microflows](/refguide7/microflows/).
 
 ## 2 Common Properties
 
@@ -42,9 +42,9 @@ Error microflow defines which microflow is executed when concurrent execution is
 
 ### 4.1 Return type
 
-The return type defines what information the microflow returns. The caller of the microflow will get a result of this type. See [Data Types](data-types) for the possible return types.
+The return type defines what information the microflow returns. The caller of the microflow will get a result of this type. See [Data Types](/refguide7/data-types/) for the possible return types.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 A microflow could return whether or not the committing of an object should continue. In this case, a Boolean would be the return type of the microflow.
 
@@ -54,21 +54,21 @@ A microflow could return whether or not the committing of an object should conti
 
 ### 5.1 Allowed roles
 
-Allowed roles defines to which [module role](module-role) the user must have to be able to execute the microflow.
+Allowed roles defines to which [module role](/refguide7/module-role/) the user must have to be able to execute the microflow.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Note that these roles are only checked when the microflow is executed from the client. A microflow is always allowed to call another microflow and these roles are not checked then.
 
 {{% /alert %}}
 
-See also [Module Security](module-security).
+See also [Module Security](/refguide7/module-security/).
 
 ### 5.2 Apply entity access
 
-This property indicates whether entity access based on the current user is applied when performing operations on objects. Applying entity access limits the objects that are retrieved by the [retrieve action](retrieve) to only those that the current user is allowed to see. Similarly, to reading and writing attributes and associations the entity access of the current user is applied. If entity access is not applied on the other hand, all operations are allowed and all objects are retrieved.
+This property indicates whether entity access based on the current user is applied when performing operations on objects. Applying entity access limits the objects that are retrieved by the [retrieve action](/refguide7/retrieve/) to only those that the current user is allowed to see. Similarly, to reading and writing attributes and associations the entity access of the current user is applied. If entity access is not applied on the other hand, all operations are allowed and all objects are retrieved.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Microflows that apply entity access have an **Entity Access** tag in the editor for Mendix versions 7.14 and above. For Mendix versions below that, the editor has a yellow background for microflows that apply entity access.
 {{% /alert %}}
 
@@ -77,7 +77,7 @@ Microflows that apply entity access have an **Entity Access** tag in the editor 
 | Yes | Entity access is applied to retrieving and manipulating objects. The rights of current user are taken into account. |
 | No | Entity access is not applied. |
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 
 By default entity access is not applied. Set 'Apply entity access' to 'Yes' if you want to perform some actions that respect the access rights of the current user.
 

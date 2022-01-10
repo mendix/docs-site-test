@@ -59,5 +59,5 @@ The names of the actions can be used as the value of the ActionName attribute of
 
 ## 3 Read More
 
-* [Set Up the Google Firebase Cloud Messaging Server](setting-up-google-firebase-cloud-messaging-server)
+* [Set Up the Google Firebase Cloud Messaging Server](/howto/mobile/setting-up-google-firebase-cloud-messaging-server/)
 

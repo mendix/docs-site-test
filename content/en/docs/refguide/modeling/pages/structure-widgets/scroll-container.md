@@ -38,11 +38,11 @@ Scroll container properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide/design-section-link.md" %}} 
+{{% snippet file="refguide/design-section-link.md" %}} 
 
 ### 2.3 General Section {#general}
 
@@ -93,7 +93,7 @@ Default: *Center*
 Regions define the content area of a scroll container. For more information see the [Scroll Container Region](#scroll-container-region) section.
 
 {{% alert color="info" %}}
-If you add regions in a [layout](layout), they will automatically be filled with [placeholders](placeholder).
+If you add regions in a [layout](/refguide/layout/), they will automatically be filled with [placeholders](/refguide/placeholder/).
 {{% /alert %}}
 
 #### 2.4.1 Enable Top
@@ -128,7 +128,7 @@ You can add and remove all the regions listed above except the center one.
 
 #### 3.1.1 Common Section
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 #### 3.1.2 General Section
 
@@ -145,7 +145,7 @@ A scroll container region has the following properties in the **General** sectio
 
 ##### 3.1.2.2 Toggle Mode (Layouts Only)
 
-One (left or right) scroll container region within a layout can be set to toggle using a [sidebar toggle button](sidebar-toggle-button). This setting determines which region (here called a sidebar) will be toggled, and how the toggling is implemented.
+One (left or right) scroll container region within a layout can be set to toggle using a [sidebar toggle button](/refguide/sidebar-toggle-button/). This setting determines which region (here called a sidebar) will be toggled, and how the toggling is implemented.
 
 | Mode | Effect |
 | --- | --- |
@@ -157,6 +157,6 @@ One (left or right) scroll container region within a layout can be set to toggle
 
 ## 4 Read More
 
-* [Page](page)
-* [Structure](structure-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Structure](/refguide/structure-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

@@ -1,13 +1,13 @@
 ---
 title: "Sequence Flow"
-url: /refguide8/sequence-flow
+url: /refguide8/sequence-flow/
 parent: "application-logic"
-menu_order: 30
+weight: 30
 tags: ["studio pro", "sequence flow", "microflow"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/sequence-flow.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/sequence-flow.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -20,4 +20,4 @@ When you have two activities that you want to link together a sequence flow is u
 
 ## 2 Condition Value
 
-The **Condition value** describes which direction should be followed based on the outcome of a [decision](decision) or an [object type decision](object-type-decision).
+The **Condition value** describes which direction should be followed based on the outcome of a [decision](/refguide8/decision/) or an [object type decision](/refguide8/object-type-decision/).

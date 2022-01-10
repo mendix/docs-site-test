@@ -6,7 +6,7 @@ tags: ["studio pro", "metrics", "micrometer"]
 ---
 
 {{% alert color="warning" %}}
-Custom metrics were introduced in Studio Pro [9.6.0](/releasenotes/studio-pro/9.6#960).
+Custom metrics were introduced in Studio Pro [9.6.0](/releasenotes/studio-pro/9.6/#960).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -23,7 +23,7 @@ The Metrics can be configured and used with:
 
 ## 2 Metrics Registries Configuration {#registries-configuration}
 
-Micrometer can send metrics to multiple registries. To configure micrometer for a specific registry, use the following syntax in `runtime settings` with configuration key as `Metrics.Registries`. See [Runtime Customization](custom-settings) for more information. The setting is in JSON format.
+Micrometer can send metrics to multiple registries. To configure micrometer for a specific registry, use the following syntax in `runtime settings` with configuration key as `Metrics.Registries`. See [Runtime Customization](/refguide/custom-settings/) for more information. The setting is in JSON format.
 
 **Configuration Key:** `Metrics.Registries`
 
@@ -330,7 +330,7 @@ Common tags which should be reported by every metric can be specified using the 
 ```
 
 ## 4 Microflow Activities {#microflow-activities}
-See the description of these activities [here](metrics-activities).
+See the description of these activities [here](/refguide/metrics-activities/).
 
 ## 5 Java API {#java-api}
 

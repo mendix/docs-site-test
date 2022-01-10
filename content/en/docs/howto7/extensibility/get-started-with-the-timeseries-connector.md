@@ -1,8 +1,8 @@
 ---
 title: "Get Started with the TimeSeries Connector"
-url: /howto7/extensibility/get-started-with-the-timeseries-connector
+url: /howto7/extensibility/get-started-with-the-timeseries-connector/
 category: "Extensibility"
-menu_order: 2
+weight: 2
 tags: ["iot", "connector", "timeseries", "big data", "analytics", "extensibility"]
 ---
 
@@ -26,7 +26,7 @@ When looking at the IoT trend recently, one hundred sensors that send data each 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Have the Mendix Desktop Modeler installed (download [here](https://marketplace.mendix.com/link/studiopro/))
-* Have the [Community Commons Function Library](/appstore/modules/community-commons-function-library) in your app
+* Have the [Community Commons Function Library](/appstore/modules/community-commons-function-library/) in your app
 
 ## 3 Sign Up for the TimeSeries Connector
 
@@ -34,7 +34,7 @@ Follow these steps to get access to the TimeSeries connector and receive an API 
 
 1. Sign up for the connector by going to our [Connector website](https://connector.timeseries.com/) and register for free. You will receive your API key in an email after registering.
 
-  {{% alert type="info" %}}
+  {{% alert color="info" %}}
   It can take up to a few hours to generate the key and send it to you. This key is used to activate and access your TimeSeries Analytics instance.
   {{% /alert %}}
 
@@ -52,7 +52,7 @@ There are three constants that you can configure. Follow these steps to configur
 2. Open the **TimeSeriesAccessKey** constant.
 3. Paste your TimeSeries API key in the **Default value** field and click **OK**.
 
-  {{% alert type="info" %}}
+  {{% alert color="info" %}}
 
   There are two more constants that don't need to be configured unless otherwise instructed.
 
@@ -78,7 +78,7 @@ Let's take the concept of a house. In this scenario the house is an asset, of wh
 
 The module comes with a ready-to-use domain model, which we'll also use in this how-to. Of course, this isn't a necessity, and you can also use your own domain model. All referenced microflows in this how-to can also be found in the module.
 
-  {{% alert type="warning" %}}
+  {{% alert color="warning" %}}
 
   If you want to use your own domain model, make sure that your entities have the necessary attributes for every action that requires a Type Parameter.
 
@@ -100,7 +100,8 @@ You start the implementation by creating an asset object in a page, or directly 
 
 After having set the **Asset name**, we trigger some validation, call the **Create asset** action, and save the **Asset ID** for later references. Reference the microflow below:
 
-![](../../howto/extensibility/attachments/how-to-get-started-with-the-timeseries-connector/create-asset-microflow.png)
+![](/attachments/howto7/extensibility/how-to-get-started-with-the-timeseries-connector/create-asset-microflow.png)
+
 ### 5.2 Create a Channel
 
 The next step is creating a *Channel*. This *Channel* should belong to an *Asset*. Follow these steps to create a *Channel*:
@@ -109,7 +110,7 @@ The next step is creating a *Channel*. This *Channel* should belong to an *Asset
 2. Provide a **Channel key**. 
 3. Provide a **Measurement interval**. 
 
-  {{% alert type="info" %}}
+  {{% alert color="info" %}}
 
   You are free to choose the channel key name and the measurement interval. The interval is stored and can be used for analysis.
 
@@ -133,7 +134,7 @@ Now that you have created an asset with a channel, you can start storing measure
 3. Provide the **Measurement type**.
 4. Provide the **Value**.
 
-  {{% alert type="info" %}}
+  {{% alert color="info" %}}
 
   The **Date and time** needs to be formatted in UTC to the following format: yyyy-MM-dd'T'HH:mm:ss.SSSZ. The **Measurement type** can be INTERVAL, REGISTER, or EVENT. The **Value** is a decimal.
 

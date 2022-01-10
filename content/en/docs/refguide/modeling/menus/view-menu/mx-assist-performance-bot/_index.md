@@ -21,7 +21,7 @@ It consists of a three-level assistance:
 
 ## 2 MxAssist Performance Bot Pane
 
-To access settings of MxAssist Performance Bot, open **Edit** > **Preferences** >the **General** tab >the **MxAssist Performance Bot** tab. For more information, see [Preferences](preferences-dialog).
+To access settings of MxAssist Performance Bot, open **Edit** > **Preferences** >the **General** tab >the **MxAssist Performance Bot** tab. For more information, see [Preferences](/refguide/preferences-dialog/).
 
 MxAssist Performance Bot is enabled by default and is designed as a pane. To access the **MxAssist Performance Bot** pane, click **View** > **MxAssist Performance Bot.**
 
@@ -126,6 +126,6 @@ After the issue is auto-fixed, a pop-up window listing the changes appears. You 
 
 ## 4 Read More
 
-* [Mendix Assist](mx-assist-studio-pro)
-* [MxAssist Logic Bot](mx-assist-logic-bot)
-* [How to Implement Mendix Best Practices for Development](/howto/general/dev-best-practices)
+* [Mendix Assist](/refguide/mx-assist-studio-pro/)
+* [MxAssist Logic Bot](/refguide/mx-assist-logic-bot/)
+* [How to Implement Mendix Best Practices for Development](/howto/general/dev-best-practices/)

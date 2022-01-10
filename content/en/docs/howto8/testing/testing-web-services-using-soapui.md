@@ -1,8 +1,8 @@
 ---
 title: "Test Web Services Using SoapUI"
-url: /howto8/testing/testing-web-services-using-soapui
+url: /howto8/testing/testing-web-services-using-soapui/
 category: "Testing"
-menu_order: 30
+weight: 30
 tags: ["test", "testing", "web service", "soapui"]
 ---
 
@@ -21,13 +21,13 @@ You can publish your own webservices in a Mendix application. These webservices 
 Before you can start with this how-to, make sure you have completed the following prerequisites.
 
 *   Download and install [SoapUI](https://www.soapui.org/downloads/soapui.html)
-*   Complete the how-to [Exposing a web service](/howto/integration/expose-a-web-service)
+*   Complete the how-to [Exposing a web service](/howto/integration/expose-a-web-service/)
 
 | Software | Version used in this how-to |
 | --- | --- |
 | SoapUI | 5.2.0 |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 All images, names and steps in this how-to are based on these versions. When using other versions the images and/or names on your screen may be different than the images or names used in this how-to.
 
@@ -35,10 +35,10 @@ All images, names and steps in this how-to are based on these versions. When usi
 
 ## 3 Publishing More Microflows as Web Service Operation
 
-In the how-to [Exposing a web service](/howto/integration/expose-a-web-service) you already published the microflow _GetCustomers_ as web service operation. In this chapter you will create two more microflow and publish them as web service operation.
+In the how-to [Exposing a web service](/howto/integration/expose-a-web-service/) you already published the microflow _GetCustomers_ as web service operation. In this chapter you will create two more microflow and publish them as web service operation.
 
 1.  Open Studio Pro.
-2.  Open the project you created in the how-to [Exposing a web service](/howto/integration/expose-a-web-service).
+2.  Open the project you created in the how-to [Exposing a web service](/howto/integration/expose-a-web-service/).
 3.  Create a **Microflow** that creates a customer and returns a Boolean. 
 
 	![](/attachments/howto8/testing/testing-web-services-using-soapui/model1.jpg)
@@ -47,7 +47,7 @@ In the how-to [Exposing a web service](/howto/integration/expose-a-web-service) 
 
 	![](/attachments/howto8/testing/testing-web-services-using-soapui/model2.jpg)
 
-5.  Publish both microflows as web service operation of the **CustomerWebservice** as described in chapter 4 of the how-to [Exposing a web service](/howto/integration/expose-a-web-service).
+5.  Publish both microflows as web service operation of the **CustomerWebservice** as described in chapter 4 of the how-to [Exposing a web service](/howto/integration/expose-a-web-service/).
 
 ## 4 Creating a new SOAP Project
 
@@ -224,15 +224,15 @@ Congratulations! You have just created your first automated test with SoapUI.
 
 ## 9 Read More
 
-*   [Finding the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-*   [Clearing Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages)
-*   [Testing web services using SoapUI](testing-web-services-using-soapui)
-*   [Monitoring Mendix using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx)
-*   [Debugging Java actions remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely)
-*   [Log Levels](/howto8/monitoring-troubleshooting/log-levels)
-*   [Debugging Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions)
-*   [Debugging Microflows](/howto8/monitoring-troubleshooting/debug-microflows)
-*   [Debugging Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely)
+*   [Finding the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+*   [Clearing Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+*   [Testing web services using SoapUI](/howto8/testing/testing-web-services-using-soapui/)
+*   [Monitoring Mendix using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+*   [Debugging Java actions remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)
+*   [Log Levels](/howto8/monitoring-troubleshooting/log-levels/)
+*   [Debugging Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)
+*   [Debugging Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+*   [Debugging Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely/)
 
 Learn more about this topic using the following helpful links:
 

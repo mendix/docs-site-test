@@ -18,8 +18,8 @@ To test your application, you need to open it and log in. For this, you need to 
 
 Before starting this how-to, make sure you have the following prerequisites in place:
 
-* Complete [How to Create a Test Case](ht-two-create-a-test-case)
-* Understand [How to Create a Custom Action](ht-two-custom-action-general)
+* Complete [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
+* Understand [How to Create a Custom Action](/addons/ats-addon/ht-two-custom-action-general/)
 
 ## 3 Unmasking Your Password
 
@@ -111,4 +111,4 @@ You can now unmask your password using ATS. You can use these steps as well to m
 
 ## 4 Next Up
 
-You have now learned how to unmask your password in a login action. The next how-to to complete is [How to Upload a File in Your App Using ATS](ht-two-upload-file-using-ats). You can find an overview of all the how-tos and the structure on [ATS 2 How-to's](ht-two). We advise you to follow the predefined structure.
+You have now learned how to unmask your password in a login action. The next how-to to complete is [How to Upload a File in Your App Using ATS](/addons/ats-addon/ht-two-upload-file-using-ats/). You can find an overview of all the how-tos and the structure on [ATS 2 How-to's](/addons/ats-addon/ht-two/). We advise you to follow the predefined structure.

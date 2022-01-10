@@ -1,6 +1,6 @@
 ---
 title: "Preferences Dialog"
-url: /refguide7/preferences-dialog
+url: /refguide7/preferences-dialog/
 parent: "dialogs"
 ---
 ## 1 Introduction
@@ -49,7 +49,7 @@ This setting defines the default response to the question whether to automatical
 
 #### 4.1.1 Executable
 
-This is the path and name of the program that is used to view the details of file changes in the [Commit dialog box](commit-dialog).
+This is the path and name of the program that is used to view the details of file changes in the [Commit dialog box](/refguide7/commit-dialog/).
 
 #### 4.1.2 Argument Pattern
 
@@ -63,7 +63,7 @@ This is the pattern from which the arguments are derived that are passed to the 
 
 #### 4.2.1 Enable Private Version Control {#enabled}
 
-Select this option when you want to work on an app that is not stored in [Mendix Team Server](team-server), but in another SVN server to which you have access. This will allow you to specify the location of the app in the SVN server when, for example, opening or downloading an app, managing branch lines, or importing an app package.
+Select this option when you want to work on an app that is not stored in [Mendix Team Server](/refguide7/team-server/), but in another SVN server to which you have access. This will allow you to specify the location of the app in the SVN server when, for example, opening or downloading an app, managing branch lines, or importing an app package.
 
 ### 4.3 Proxy Server
 
@@ -71,4 +71,4 @@ Sometimes the computer running the Desktop Modeler cannot access the internet di
 
 ## 5 Read More
 
-* [Upload to Version Control Server](upload-to-version-control-dialog)
+* [Upload to Version Control Server](/refguide7/upload-to-version-control-dialog/)

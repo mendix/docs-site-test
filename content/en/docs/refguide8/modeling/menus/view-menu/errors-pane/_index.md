@@ -1,14 +1,14 @@
 ---
 title: "Errors Pane"
-url: /refguide8/errors-pane
+url: /refguide8/errors-pane/
 parent: view-menu
-menu_order: 30
+weight: 30
 description: "Describes the Errors pane in Mendix Studio Pro."
 tags: ["Studio Pro", "errors", "error list", "errors pane"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/errors-pane.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/errors-pane.pdf).
 {{% /alert %}}
 
 ## 1 Introduction 
@@ -35,9 +35,9 @@ The table below provides the details on each type of the message:
 | Type         | Icon                                              | Function                                                     |
 | ------------ | ------------------------------------------------- | ------------------------------------------------------------ |
 | Errors       | ![](/attachments/refguide8/modeling/menus/view-menu/errors-pane/error-icon.png)       | Consistency errors that prevent your app from functioning in a correct way and being deployed (for example, if you do not specify an entity for the data view, your app cannot function correctly). |
-       | Consistency errors that prevent your app from functioning in a correct way and being deployed (for example, if you do not specify an entity for the data view, your app cannot function correctly). || Deprecations | ![](/attachments/refguide8/modeling/menus/view-menu/errors-pane/deprecation-icon.png) | This type shows information on features that are deprecated and can be entirely removed in the future versions. This does not affect the app now, but may cause problems when upgrading to the next version. |
- | This type shows information on features that are deprecated and can be entirely removed in the future versions. This does not affect the app now, but may cause problems when upgrading to the next version. || Warnings     | ![](/attachments/refguide8/modeling/menus/view-menu/errors-pane/warning-icon.png)     | Errors that are not critical, so you can publish your app having warnings. However, it is highly recommended to take action based on the warnings, because your app has logical gaps (for example, clicking a button does nothing). |
-     | Errors that are not critical, so you can publish your app having warnings. However, it is highly recommended to take action based on the warnings, because your app has logical gaps (for example, clicking a button does nothing). |
+| Deprecations | ![](/attachments/refguide8/modeling/menus/view-menu/errors-pane/deprecation-icon.png) | This type shows information on features that are deprecated and can be entirely removed in the future versions. This does not affect the app now, but may cause problems when upgrading to the next version. |
+| Warnings     | ![](/attachments/refguide8/modeling/menus/view-menu/errors-pane/warning-icon.png)     | Errors that are not critical, so you can publish your app having warnings. However, it is highly recommended to take action based on the warnings, because your app has logical gaps (for example, clicking a button does nothing). |
+
 ## 3 Interacting with the Errors Pane
 
 ### 3.1 Displaying Different Types of Messages
@@ -82,5 +82,5 @@ The following actions are available in the drop-down menu:
 
 ##  4 Read More
 
-* [Consistency Errors](consistency-errors)
-* [Studio Pro Overview](studio-pro-overview)
+* [Consistency Errors](/refguide8/consistency-errors/)
+* [Studio Pro Overview](/refguide8/studio-pro-overview/)

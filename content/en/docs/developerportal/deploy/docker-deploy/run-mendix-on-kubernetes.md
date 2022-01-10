@@ -9,15 +9,15 @@ tags: ["Kubernetes", "cloud", "deployment"]
 
 ## 1 Introduction
 
-This how-to describes what is needed to deploy your Mendix app to [Kubernetes](https://kubernetes.io/). Kubernetes is the standard Docker orchestration platform supported by Mendix. If possible, we suggest you use [Mendix for Private Cloud](private-cloud) to deploy Mendix apps to Kubernetes as this provides you with integration with the Developer Portal and takes away some of the heavy lifting. For details on supported version of Kubernetes see [Mendix System Requirements](/refguide/system-requirements).
+This how-to describes what is needed to deploy your Mendix app to [Kubernetes](https:/kubernetes.io/). Kubernetes is the standard Docker orchestration platform supported by Mendix. If possible, we suggest you use [Mendix for Private Cloud](/developerportal/deploy/private-cloud/) to deploy Mendix apps to Kubernetes as this provides you with integration with the Developer Portal and takes away some of the heavy lifting. For details on supported version of Kubernetes see [Mendix System Requirements](/refguide/system-requirements/).
 
 {{% alert color="warning" %}}
-Do not use these instructions if you are using Mendix for Private Cloud — many of the steps here are not needed. For deploying using Mendix for Private Cloud, follow the instructions in the [Mendix for Private Cloud](private-cloud) documentation.
+Do not use these instructions if you are using Mendix for Private Cloud — many of the steps here are not needed. For deploying using Mendix for Private Cloud, follow the instructions in the [Mendix for Private Cloud](/developerportal/deploy/private-cloud/) documentation.
 {{% /alert %}}
 
-A Mendix application needs, as a minimum, a database to run. In this example you provision a PostgreSQL database within the Kubernetes cluster. In production scenarios, the database is usually provided as a service by the cloud provider, like AWS RDS or Azure SQL. For supported databases see [Mendix System Requirements](/refguide/system-requirements). 
+A Mendix application needs, as a minimum, a database to run. In this example you provision a PostgreSQL database within the Kubernetes cluster. In production scenarios, the database is usually provided as a service by the cloud provider, like AWS RDS or Azure SQL. For supported databases see [Mendix System Requirements](/refguide/system-requirements/). 
 
-If the application makes use of FileDocument or FileImage entities, a storage service needs to be attached as well. See [Mendix System Requirements](/refguide/system-requirements) for supported external storage services. In this how-to you use a node-bound storage volume as an example. For more information, see [Architecture Overview](#architecture), below.
+If the application makes use of FileDocument or FileImage entities, a storage service needs to be attached as well. See [Mendix System Requirements](/refguide/system-requirements/) for supported external storage services. In this how-to you use a node-bound storage volume as an example. For more information, see [Architecture Overview](#architecture), below.
 
 This how-to uses [Minikube](https://kubernetes.io/docs/getting-started-guides/minikube/), which is a way to run Kubernetes locally. Many of the operations you perform on Minikube are the same as those on a hosted environment and it provides a low-level entry to Kubernetes. For more information, see [Installing Kubernetes with Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/) on the Kubernetes documentation site.
 
@@ -78,7 +78,7 @@ Once Minikube is running you'll need to configure your local environment to use 
 minikube docker-env
 ```
 
-You'll need to build your image in Minikube if you haven't done so yet. See [Docker](docker-deploy) for the steps to do this.
+You'll need to build your image in Minikube if you haven't done so yet. See [Docker](/developerportal/deploy/docker-deploy/) for the steps to do this.
 
 The first step is deploying our database. For Minikube, an external folder to persist the data outside of the database pod is used.
 
@@ -213,7 +213,7 @@ YOUR-DATABASE-ENDPOINT will be in the form `postgres://mendix:mendix@255.255.255
 kubectl get ep postgres-service
 ```
 
-See [Run a Mendix Docker Image](run-mendix-docker-image) for expected value formats.
+See [Run a Mendix Docker Image](/developerportal/deploy/run-mendix-docker-image/) for expected value formats.
 
 To create the secrets in Kubernetes we execute the following command:
 
@@ -357,6 +357,6 @@ Congratulations! You have deployed your first Mendix app in Kubernetes.
 
 ## 5 Read More
 
-* [Docker: Deploy](docker-deploy)
+* [Docker: Deploy](/developerportal/deploy/docker-deploy/)
 * [Mendix Docker Buildpack](https://github.com/mendix/docker-mendix-buildpack)
 

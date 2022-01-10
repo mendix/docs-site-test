@@ -1,13 +1,13 @@
 ---
 title: "Data grid"
-url: /refguide7/data-grid
+url: /refguide7/data-grid/
 parent: "data-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 The data grid shows a list of objects in a grid. For example, a data grid can show all the orders a customer has placed. Using controls provided by the data grid you can browse, search and edit those objects.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/data-widgets/data-grid/data-grid.png)
 A data grid showing accounts.
@@ -16,13 +16,13 @@ A data grid showing accounts.
 
 ## Common Properties
 
-{{% snippet file="/static/_includes/refguide7/Name+Property.md" %}}
+{{% snippet file="refguide7/Name+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Class+Property.md" %}}
+{{% snippet file="refguide7/Class+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Style+Property.md" %}}
+{{% snippet file="refguide7/Style+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Tab+index+Property.md" %}}
+{{% snippet file="refguide7/Tab+index+Property.md" %}}
 
 ### General Properties
 
@@ -30,9 +30,9 @@ A data grid showing accounts.
 
 This property indicates whether the control bar buttons will be visible in the end user interface.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-Even if the control bar buttons are invisible, there can still be a default button that is triggered by (double) clicking a row. For more information, see the property [Default Button Trigger](#dbt) and [Data Grid Buttons](control-bar).
+Even if the control bar buttons are invisible, there can still be a default button that is triggered by (double) clicking a row. For more information, see the property [Default Button Trigger](#dbt) and [Data Grid Buttons](/refguide7/control-bar/).
 
 {{% /alert %}}
 
@@ -44,7 +44,7 @@ This property indicates with the buttons to page through the information in the 
 
 _Default value:_ True
 
-{{% snippet file="/static/_includes/refguide7/Column+Width+Properties.md" %}}
+{{% snippet file="refguide7/Column+Width+Properties.md" %}}
 
 #### Number of Rows
 
@@ -97,30 +97,30 @@ _Default value:_ 0
 
 #### Tooltip Page
 
-A tooltip page is a page that appears when you hover your mouse over a row. The tooltip page should consist of a data view on the same entity as the data grid. Besides creating and connecting a tooltip page you also have to specify on which columns the tooltip will appear. See the property 'Show tooltip' of [data grid columns](columns).
+A tooltip page is a page that appears when you hover your mouse over a row. The tooltip page should consist of a data view on the same entity as the data grid. Besides creating and connecting a tooltip page you also have to specify on which columns the tooltip will appear. See the property 'Show tooltip' of [data grid columns](/refguide7/columns/).
 
 ### Data Source Properties
 
-The data source determines which objects will be shown in the data grid. For general information about data sources, see [Data Sources](data-sources).
+The data source determines which objects will be shown in the data grid. For general information about data sources, see [Data Sources](/refguide7/data-sources/).
 
 #### Type
 
-The data grid supports the following types of data sources: [Database Source](database-source), [XPath Source](xpath-source), [Association Source](association-source), [Microflow Source](microflow-source). The database and XPath sources retrieve objects from the database and supports searching and sorting. The database source can also be used in [offline](offline) applications. The association source follows an association from the enclosing data view to get to the objects. Finally, the microflow source calculates the list of objects by executing a microflow.
+The data grid supports the following types of data sources: [Database Source](/refguide7/database-source/), [XPath Source](/refguide7/xpath-source/), [Association Source](/refguide7/association-source/), [Microflow Source](/refguide7/microflow-source/). The database and XPath sources retrieve objects from the database and supports searching and sorting. The database source can also be used in [offline](/refguide7/offline/) applications. The association source follows an association from the enclosing data view to get to the objects. Finally, the microflow source calculates the list of objects by executing a microflow.
 
 #### Other Properties
 
 See the corresponding data source for its properties:
 
-*   [Database source](database-source)
-*   [XPath source](xpath-source)
-*   [Microflow source](microflow-source)
-*   [Association source](association-source)
+*   [Database source](/refguide7/database-source/)
+*   [XPath source](/refguide7/xpath-source/)
+*   [Microflow source](/refguide7/microflow-source/)
+*   [Association source](/refguide7/association-source/)
 
 ### Visibility Properties
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property.md" %}}
+{{% snippet file="refguide7/Visibility+Property.md" %}}
 
-{{% snippet file="/static/_includes/refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}
+{{% snippet file="refguide7/Visibility+Property+With+Module+Roles+Simple.md" %}}
 
 ## Components
 
@@ -132,7 +132,7 @@ See the corresponding data source for its properties:
 
 The class property allows you to specify a cascading style sheet (CSS) class for the widget. This class will be applied to the widget in the browser and the widget will get the corresponding styling. The class should be a class from the theme that is used in the project. It overrules the default styling of the widget.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Note that the styling is applied in the following order:
 
@@ -146,7 +146,7 @@ Note that the styling is applied in the following order:
 
 The style property allows you to specify additional CSS styling. If a class is also specified, this styling is applied _after_ the class.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 background-color:blue;
 This will result in a blue background
@@ -209,7 +209,7 @@ If you choose 'Custom' as the date format (see above) the custom date format det
 | m | 1..2 | 59 | Minute, use one or two for zero padding |
 | s | 1..2 | 12 | Second, use one or two for zero padding |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 | Format | Example output |
 | --- | --- |
@@ -225,7 +225,7 @@ If you choose 'Custom' as the date format (see above) the custom date format det
 
 ##### Caption
 
-The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Translatable Texts](translatable-texts).
+The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Translatable Texts](/refguide7/translatable-texts/).
 
 ##### Editable
 
@@ -244,7 +244,7 @@ The values in a column can be aggregated in several ways. The aggregate function
 | Sum | Show the sum of the values. |
 | Count | Show the count of the values. |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Note that all objects will be taken into account, and not just the ones on the current page.
 
@@ -252,9 +252,9 @@ Note that all objects will be taken into account, and not just the ones on the c
 
 ##### Aggregate Caption
 
-The aggregate caption is the text that appears in front of the computed value. This is a translatable text. See [Translatable Texts](translatable-texts).
+The aggregate caption is the text that appears in front of the computed value. This is a translatable text. See [Translatable Texts](/refguide7/translatable-texts/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 'Total' could be an aggregate caption for a column that shows the sum of the values.
 
@@ -270,16 +270,16 @@ _Default value:_ False
 
 The control bar of the template grid, data grid, and reference set selector allows you to manipulate the objects displayed by means of buttons. By default, both grids will be created with a new, edit, and delete button in the control bar. The control bar can also include a number of selection options and spreadsheet export buttons, as well as microflow buttons for custom actions.
 
-See [Control Bar](control-bar).
+See [Control Bar](/refguide7/control-bar/).
 
 ### Search Bar (for the Database and XPath Data Source Types)
 
 The search bar contains search fields that allow the end-user to quickly find the information he or she needs.
 
-See [Search Bar](search-bar).
+See [Search Bar](/refguide7/search-bar/).
 
 ### Sort Bar (for the Database and XPath Data Source Types)
 
 The sort bar contains a number of sort items. Each sort item specifies what attribute to sort on and in what direction (ascending or descending). First the contents of the grid will be sorted on the first item; if two rows are the same with respect to this sort item the second item will be used et cetera. For example, if you have sort items for name and age and two people have the same name they will be sorted on their age.
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide7/sort-bar/).

@@ -59,8 +59,8 @@ Validate the ‘Status’ of the User. One of the login properties of the user i
 
 ## 3 Read More
 
-*   [Setting Up the Database User](setting-up-the-database-user)
-*   [Restoring a SQL Server Database](restoring-a-sql-server-database)
-*   [Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
-*   [Setting Up a New SQL Server Database](setting-up-a-new-sql-server-database)
-*   [Setting Up a SQL Server User](setting-up-a-sql-server-user)
+*   [Setting Up the Database User](/developerportal/deploy/setting-up-the-database-user/)
+*   [Restoring a SQL Server Database](/developerportal/deploy/restoring-a-sql-server-database/)
+*   [Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
+*   [Setting Up a New SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/)
+*   [Setting Up a SQL Server User](/developerportal/deploy/setting-up-a-sql-server-user/)

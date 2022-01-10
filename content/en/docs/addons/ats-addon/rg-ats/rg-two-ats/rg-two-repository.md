@@ -6,7 +6,7 @@ parent: "rg-two-ats"
 
 ## 1 Introduction
 
-The repository is the heart of ATS, as it allows you to create and manage folders, test suites, test cases, drop-down menus, and actions. You can also create test data for data-driven testing. For more information on how to use data-driven testing in ATS, see [Test Data](rg-two-data-driven-testing).
+The repository is the heart of ATS, as it allows you to create and manage folders, test suites, test cases, drop-down menus, and actions. You can also create test data for data-driven testing. For more information on how to use data-driven testing in ATS, see [Test Data](/addons/ats-addon/rg-two-data-driven-testing/).
 
 You can access the repository by clicking **Test Cases** in the navigation menu.
 
@@ -43,10 +43,10 @@ If you want to cut, copy, or delete an item in the repository, you can do so by 
 In the repository, you use the **Actions** drop-down menu to perform the following actions:
 
 * Create a **New Folder**
-* Create a **New Test Case** (for details on creating a test case, see [Test Case](rg-two-test-case))
-* Create a **New Test Suite** (for detailson creating a test suite, see [Test Suite](rg-two-test-suite))
-* Create a **New Action** (for details on creating an action, see [Action](rg-two-action))
-* Create a **New Drop-Down** (for details on creating a drop-down menu, see [Drop-Down](rg-two-drop-down))
+* Create a **New Test Case** (for details on creating a test case, see [Test Case](/addons/ats-addon/rg-two-test-case/))
+* Create a **New Test Suite** (for detailson creating a test suite, see [Test Suite](/addons/ats-addon/rg-two-test-suite/))
+* Create a **New Action** (for details on creating an action, see [Action](/addons/ats-addon/rg-two-action/))
+* Create a **New Drop-Down** (for details on creating a drop-down menu, see [Drop-Down](/addons/ats-addon/rg-two-drop-down/))
 * **Import** items into the repository
 
 ATS stores all created items in the repository.

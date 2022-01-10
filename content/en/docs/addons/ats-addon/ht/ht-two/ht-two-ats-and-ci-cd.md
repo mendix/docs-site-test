@@ -20,8 +20,8 @@ This how-to explains the basics of a CI/CD pipeline, how ATS fits in and an exam
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Complete [How to Get Started](ht-two-getting-started)
-* Complete [How to Create a Test Case](ht-two-create-a-test-case)
+* Complete [How to Get Started](/addons/ats-addon/ht-two-getting-started/)
+* Complete [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 * Complete Mendix Rapid App Developer course
 
 ## 3 CI/CD Basics
@@ -81,7 +81,7 @@ To generate a CI/CD API key follow these steps:
 
 8.  The **Your new API key:** dialog box appears. 
 
-	{{% alert type="info" %}} This is the only time ATS shows the API. Write it down in a secure place.
+	{{% alert color="info" %}} This is the only time ATS shows the API. Write it down in a secure place.
 	{{% /alert %}}
 
 9.  Make sure you wrote down the API key. Now close the dialog box. 

@@ -8,9 +8,9 @@ tags: ["studio pro"]
 ## 1 Introduction
 
 Below we describe what the various log levels of the runtime will show as output.
-During development, these log levels can be set in the console (advanced -> set log levels), when deployed on a server, please refer to the [Deployment](/developerportal/deploy/mendix-cloud-deploy) pages.
+During development, these log levels can be set in the console (advanced -> set log levels), when deployed on a server, please refer to the [Deployment](/developerportal/deploy/mendix-cloud-deploy/) pages.
 
-You can also set log levels to provide more or less information when testing locally using the console in Studio Pro. See [Configuring the Log Levels for Standard Log Messages](/howto/monitoring-troubleshooting/log-levels#standard-log-levels) in *How To Set Log Levels* for more information.
+You can also set log levels to provide more or less information when testing locally using the console in Studio Pro. See [Configuring the Log Levels for Standard Log Messages](/howto/monitoring-troubleshooting/log-levels/#standard-log-levels) in *How To Set Log Levels* for more information.
 
 ## 2 Log Levels
 
@@ -40,7 +40,7 @@ This is the most verbose logging level, and can be used if you want even more fi
 
 ## 3 Log Nodes
 
-This section provides some details on specific log nodes used by Mendix. It is recommended that if you write your own [log messages](log-message) you use your own log node names to avoid confusion with the Mendix log messages.
+This section provides some details on specific log nodes used by Mendix. It is recommended that if you write your own [log messages](/refguide/log-message/) you use your own log node names to avoid confusion with the Mendix log messages.
 
 ### 3.1 Default Mendix Log Nodes{#mendix-nodes}
 

@@ -14,7 +14,7 @@ This activity can only be used in **Microflows**.
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-This action is ignored and does not work when a microflow is called from an offline, native, or hybrid app. For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+This action is ignored and does not work when a microflow is called from an offline, native, or hybrid app. For more information, see the [Microflows](/refguide/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 {{% /alert %}}
 
 ## 1 Introduction
@@ -25,7 +25,7 @@ The **Show home page** activity opens the home page for an end-user. For example
 ![Show Home Page](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/client-activities/show-home-page/show-home-page.png)
 {{/* % /image_container % */}}
 
-This activity shows the same page that is displayed to the end-user after they log in, meaning it shows the home page defined for the current user role. For more information on role-based home pages, see [Navigation](navigation).
+This activity shows the same page that is displayed to the end-user after they log in, meaning it shows the home page defined for the current user role. For more information on role-based home pages, see [Navigation](/refguide/navigation/).
 
 ## 2 Properties
 
@@ -45,10 +45,10 @@ The **Action** section of the properties pane shows the action associated with t
 
 ## 4 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 
-* [Show Page](show-page)
-* [Activities](activities)
+* [Show Page](/refguide/show-page/)
+* [Activities](/refguide/activities/)
 

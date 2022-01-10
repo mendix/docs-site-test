@@ -15,7 +15,7 @@ For example, the object representing the CD 'Exodus' could be an instance of the
 
 ![Example of a CD entity](/attachments/refguide/modeling/domain-model/entities/example-entity.png) 
 
-The properties or features of an entity are described using [attributes](attributes). An attribute represents a small piece of information about an entity, such as the name or birth date of a person.
+The properties or features of an entity are described using [attributes](/refguide/attributes/). An attribute represents a small piece of information about an entity, such as the name or birth date of a person.
 
 For example, you have a collection of CDs like the one in the table below:
 
@@ -36,18 +36,18 @@ The entity type defines how the data is handled and there are two types:
 ![](/attachments/refguide/modeling/domain-model/entities/type-of-entities.jpg)
 
 {{% alert color="info" %}}
-You can also use data sources from other applications in your app through the [Data Hub](data-hub-pane) pane. These data sources are represented in the domain model as *external entities* which are displayed as purple entity containers in the domain model.
+You can also use data sources from other applications in your app through the [Data Hub](/refguide/data-hub-pane/) pane. These data sources are represented in the domain model as *external entities* which are displayed as purple entity containers in the domain model.
 
-For further information see [External Entities](external-entities).
+For further information see [External Entities](/refguide/external-entities/).
 {{% /alert %}}
 
 ### 2.1 Persistable Entity {#persistable-entity}
 
-When an entity is declared persistable, a database table is created for the entity. These type of entities are colored *blue* in the domain model. For more information on persistable entities, see [Persistability](persistability).
+When an entity is declared persistable, a database table is created for the entity. These type of entities are colored *blue* in the domain model. For more information on persistable entities, see [Persistability](/refguide/persistability/).
 
 ### 2.2 Non-Persistable Entity {#non-persistable-entity}
 
-Non-persistable entities are stored in the runtime memory and never get committed to the database. These type of entities are colored *orange* in the domain model. For more information on persistable entities, see [Persistability](persistability).
+Non-persistable entities are stored in the runtime memory and never get committed to the database. These type of entities are colored *orange* in the domain model. For more information on persistable entities, see [Persistability](/refguide/persistability/).
 
 ## 3 Properties {#properties}
 
@@ -64,14 +64,14 @@ Entity properties consist of the following sections:
 * [System members](#system-members)
 
 {{% alert color="info" %}}
-For more information, see the [Properties](external-entities#properties) section of *External Entities*.
+For more information, see the [Properties](/refguide/external-entities/#properties) section of *External Entities*.
 {{% /alert %}}
 
 ### 3.1 Access Rules Section {#access-rules}
 
 #### 3.1.1 Access Rules
 
-For more information on access rules, see [Access Rules](access-rules).
+For more information on access rules, see [Access Rules](/refguide/access-rules/).
 
 ### 3.2 Documentation Section {#documentation}
 
@@ -101,7 +101,7 @@ For example, this property can be used in a situation where, you have a **Studen
 
 ![](/attachments/refguide/modeling/domain-model/entities/917900.png)
 
-For more information, and a discussion on the relative merits of using generalization or associations, see [Generalization vs 1-1 Associations](generalization-and-association).
+For more information, and a discussion on the relative merits of using generalization or associations, see [Generalization vs 1-1 Associations](/refguide/generalization-and-association/).
 
 #### 3.3.4 Image {#image}
 
@@ -109,7 +109,7 @@ The image property can be used to associate the entity with an image. In the dom
 
 #### 3.3.5 Persistable
 
-Define whether instances of this entity can be stored in the database. For more information, see [Persistability](persistability).
+Define whether instances of this entity can be stored in the database. For more information, see [Persistability](/refguide/persistability/).
 
 ### 3.4 System Members Properties{#system-members}
 
@@ -169,11 +169,11 @@ You can also edit an entity by opening the entity properties dialog box.
 
 In addition to the properties described above, there are also tabs which allow you to edit the following:
 
-*   [Attributes](attributes)
-*   [Associations](associations)
-*   [Validation Rules](validation-rules)
-*   [Event Handlers](event-handlers)
-*   [Indexes](indexes)
-*   [Access Rules](access-rules)
+*   [Attributes](/refguide/attributes/)
+*   [Associations](/refguide/associations/)
+*   [Validation Rules](/refguide/validation-rules/)
+*   [Event Handlers](/refguide/event-handlers/)
+*   [Indexes](/refguide/indexes/)
+*   [Access Rules](/refguide/access-rules/)
 
 See the detailed pages for each of these tabs for more information.

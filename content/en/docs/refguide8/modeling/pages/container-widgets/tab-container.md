@@ -1,8 +1,8 @@
 ---
 title: "Tab Container"
-url: /refguide8/tab-container
+url: /refguide8/tab-container/
 parent: "container-widgets"
-menu_order: 40
+weight: 40
 tags: ["studio pro", "tab container", "tab page", "container widget", "widget"]
 aliases:
     - /refguide8/tab-page.html
@@ -10,8 +10,8 @@ aliases:
 #The anchor <tab-page> below is mapped, so it should not be removed or changed.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/tab-container.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/tab-container.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -35,15 +35,15 @@ Tab container properties consist of the following sections:
 
 ### 2.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 2.2 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
+{{% snippet file="refguide8/design-section-link.md" %}} 
 
 ### 2.3 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
+{{% snippet file="refguide8/visibility-section-link.md" %}}
 
 ## 3 Tab Page {#tab-page}
 
@@ -63,12 +63,12 @@ Default: *False*
 
 Default: *True*
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property is not supported on native mobile pages.
 {{% /alert %}}
 
 ## 4 Read More
 
-* [Page](page)
-* [Container Widgets](container-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [Container Widgets](/refguide8/container-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)

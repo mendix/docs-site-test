@@ -15,7 +15,7 @@ tags: ["App", "Developer Portal", "License", "Subscription Secret", "Upgrade", "
 
 ## 1 Introduction
 
-On the Mendix Cloud, you can build [Free Apps](mendix-cloud-deploy#free-app) which give you the opportunity to try things out and to build and test apps using all the functionality of Mendix.
+On the Mendix Cloud, you can build [Free Apps](/developerportal/deploy/mendix-cloud-deploy/#free-app) which give you the opportunity to try things out and to build and test apps using all the functionality of Mendix.
 
 You can also deploy apps without a license to another public or private cloud of your choice, for example SAP Business Technology Platform (SAP BTP). This gives you the opportunity to try things out and to build and test apps using both the functionality of Mendix and your target cloud.
 
@@ -65,7 +65,7 @@ An example LicenseId is aab8a0a1-1370-467e-918d-3a243b0ae160. LicenseKey is a ve
 
 ### 3.1 Mendix Cloud
 
-To run Mendix apps in production on the Mendix Cloud, they must be linked to a licensed node in the Mendix Cloud. This process is described in a separate document: [Licensing Mendix Cloud Apps](licensing-apps).
+To run Mendix apps in production on the Mendix Cloud, they must be linked to a licensed node in the Mendix Cloud. This process is described in a separate document: [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps/).
 
 ### 3.2 SAP BTP & IBM Cloud
 
@@ -73,7 +73,7 @@ To license a Mendix app on SAP BTP or IBM Cloud, you need to supply a *Subscript
 
 You can add this subscription secret as part of creating an environment on SAP BTP. You can also add, or change, the subscription secret on the *Environment Details* page of the environment you wish to license.
 
-For more information, see [SAP Business Technology Platform - deploy](sap-cloud-platform) or [IBM Cloud](ibm-cloud).
+For more information, see [SAP Business Technology Platform - deploy](/developerportal/deploy/sap-cloud-platform/) or [IBM Cloud](/developerportal/deploy/ibm-cloud/).
 
 ### 3.3 Siemens MindSphere
 
@@ -83,15 +83,15 @@ To license a MindSphere app, you need to provide your *License ID* and *License 
 
 To license a Mendix app on Mendix for Private Cloud, you need to supply a *Subscription Secret* which is linked to your app. See below for how it can be added to either a Connected or Standalone cluster.
 
-In addition to the licenses for your apps, you will also need to license the Mendix Operator which helps deploy your app to a Private Cloud environment. For information on the Mendix Operator license, see [Licensing Mendix for Private Cloud](private-cloud#licensing).
+In addition to the licenses for your apps, you will also need to license the Mendix Operator which helps deploy your app to a Private Cloud environment. For information on the Mendix Operator license, see [Licensing Mendix for Private Cloud](/developerportal/deploy/private-cloud/#licensing).
 
 #### 3.4.1 Mendix for Private Cloud Connected
 
-You can add the subscription secret as part of creating an environment on Mendix for Private Cloud. You can also add, or change, the subscription secret on the *Environment Details* page of the environment you wish to license. For more information see the [Change Subscription Secret](private-cloud-deploy#change-subscription-secret) section of *Deploying a Mendix App to a Private Cloud Cluster*.
+You can add the subscription secret as part of creating an environment on Mendix for Private Cloud. You can also add, or change, the subscription secret on the *Environment Details* page of the environment you wish to license. For more information see the [Change Subscription Secret](/developerportal/deploy/private-cloud-deploy/#change-subscription-secret) section of *Deploying a Mendix App to a Private Cloud Cluster*.
 
 #### 3.4.2 Mendix for Private Cloud Standalone
 
-You will need to add the subscription secret and configure the license in the Mendix Custom Resource (CR) for your Private Cloud environment. For more information see the [Editing the CR](private-cloud-operator#edit-cr) section of *Using Command Line to Deploy a Mendix App to a Private Cloud Cluster*.
+You will need to add the subscription secret and configure the license in the Mendix Custom Resource (CR) for your Private Cloud environment. For more information see the [Editing the CR](/developerportal/deploy/private-cloud-operator/#edit-cr) section of *Using Command Line to Deploy a Mendix App to a Private Cloud Cluster*.
 
 ### 3.5 Cloud Foundry{#cloudfoundry}
 
@@ -127,7 +127,7 @@ To activate a license on your app running on Kubernetes you need the license cre
 
 Two additional environment variables, `LICENSE_ID` and `LICENSE_KEY`, need to be set to the values of the *LicenseId* and *LicenseKey* provided by Mendix Support. This is done by adding them to the deployment command for your app.
 
-Full instructions on how to do this, and how to supply the keys using a *Secrets* file can be found in the [Deploying the Application](run-mendix-on-kubernetes#deploy) section of *Run Mendix on Kubernetes*.
+Full instructions on how to do this, and how to supply the keys using a *Secrets* file can be found in the [Deploying the Application](/developerportal/deploy/run-mendix-on-kubernetes/#deploy) section of *Run Mendix on Kubernetes*.
 
 ### 3.8 Windows Server
 
@@ -137,7 +137,7 @@ To license a Mendix app on Microsoft Windows you need to:
 2. Request a license key from Mendix Support.
 3. Insert the license key on the server.
 
-Full instructions on how to do this can be found in [MS Windows: Activate a Mendix License on Microsoft Windows](activate-a-mendix-license-on-microsoft-windows).
+Full instructions on how to do this can be found in [MS Windows: Activate a Mendix License on Microsoft Windows](/developerportal/deploy/activate-a-mendix-license-on-microsoft-windows/).
 
 ### 3.9 Unix-like Server
 
@@ -148,8 +148,8 @@ To license a Mendix app on Linux, or another Unix-like operating system, you nee
 3. Request a license key from Mendix Support.
 4. Activate your license on the server using the m2ee command `activate_license`.
 
-More instructions on how to do this can be found in [Unix Deployment](unix-like).
+More instructions on how to do this can be found in [Unix Deployment](/developerportal/deploy/unix-like/).
 
 ## 4 Read More
 
-* [Submit a Support Request](/developerportal/support/submit-support-request)
+* [Submit a Support Request](/developerportal/support/submit-support-request/)

@@ -16,7 +16,7 @@ This how-to describes a few possible local Selenium solutions and contains links
 * Docker Selenium and Selenoid are two open-source projects based on Selenium that we cover in this How-to. There are many more, but we limit us to these two. 
 * Support for open-source software could be limited or slower, compared to SaaS Selenium providers.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Mendix does not deliver support for local Selenium solutions. 
 {{% /alert %}}
 
@@ -28,7 +28,7 @@ The official website of the Selenium hub (SeleniumHQ) is [https://www.seleniumhq
 
 ### 2.2 Setting Up the Selenium Solution
 
-For an example of how to set up this Selenium solution, see: [How to Set Up a Local Selenium Hub](ht-two-setup-local-selenium-hub)
+For an example of how to set up this Selenium solution, see: [How to Set Up a Local Selenium Hub](/addons/ats-addon/ht-two-setup-local-selenium-hub/)
 
 ### 2.3 Characteristics of the Selenium Solution
 
@@ -44,7 +44,7 @@ The official GitHub page of the Docker Selenium hub (Docker Selenium) is [https:
 
 ### 3.2 Setting up the Selenium Solution
 
-For an example of how to set up this Selenium solution, see: [How to Set Up a Local Docker Selenium hub](ht-two-setup-local-docker-selenium-hub)
+For an example of how to set up this Selenium solution, see: [How to Set Up a Local Docker Selenium hub](/addons/ats-addon/ht-two-setup-local-docker-selenium-hub/)
 
 ### 3.3 Characteristics of the Selenium Solution
 
@@ -62,7 +62,7 @@ The official website of the Selenoid hub (Aerokude) is [http://aerokube.com/](ht
 
 ### 4.2 Setting Up the Selenium Solution
 
-For an example of how to set up this Selenium solution, see: [How to Set Up a Local Selenoid Hub](ht-two-setup-local-selenoid-hub)
+For an example of how to set up this Selenium solution, see: [How to Set Up a Local Selenoid Hub](/addons/ats-addon/ht-two-setup-local-selenoid-hub/)
 
 ### 4.3 Characteristics of the Selenium Solution
 

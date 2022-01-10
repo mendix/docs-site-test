@@ -10,10 +10,10 @@ tags: ["studio", "app viewing", "checks", "errors", "consistency errors"]
 
 Mendix Studio checks your app for consistency in real-time, for example, it checks if any necessary properties of elements are missing. Such checks help you build an app that will function properly. 
 
-If your app passes the check, the **Checks** button will have a green check mark and the app will be ready to be [previewed or published](publishing-app):
+If your app passes the check, the **Checks** button will have a green check mark and the app will be ready to be [previewed or published](/studio/publishing-app/):
 ![Passed Check](/attachments/studio/checks/passed-check.jpg)
 
-If the app does not pass the check, you see the **Checks** button goes red with the number of failed checks – [consistency errors](consistency-errors). If you click the button, a **Checks** panel with the list of errors will open and the elements that did not pass the check will be highlighted. This list can be seen as a to-do list that you need to complete before your app can be [previewed or published](publishing-app).
+If the app does not pass the check, you see the **Checks** button goes red with the number of failed checks – [consistency errors](/studio/consistency-errors/). If you click the button, a **Checks** panel with the list of errors will open and the elements that did not pass the check will be highlighted. This list can be seen as a to-do list that you need to complete before your app can be [previewed or published](/studio/publishing-app/).
 
 ![](/attachments/studio/checks/checks-button.png)
 
@@ -48,7 +48,7 @@ If there are no consistency errors, the **Checks** panel will be empty and **Pre
 
 ### {#checks-panel-overview}
 
-The **Checks** panel is represented as a table and shows you a list of consistence errors. This prevents your app from functioning in an incorrect way and being published (for example, if you do not specify an entity for the data view, your app cannot function correctly). For more information on consistency errors, see [Consistency Errors](consistency-errors). 
+The **Checks** panel is represented as a table and shows you a list of consistence errors. This prevents your app from functioning in an incorrect way and being published (for example, if you do not specify an entity for the data view, your app cannot function correctly). For more information on consistency errors, see [Consistency Errors](/studio/consistency-errors/). 
 
 The items displayed in the table of the **Checks** panel are described below. 
 
@@ -61,4 +61,4 @@ The items displayed in the table of the **Checks** panel are described below.
 
 ## 4 Main Documents in This Category
 
-* [Consistency Errors](consistency-errors) – provides information on what consistency errors are and how to fix them
+* [Consistency Errors](/studio/consistency-errors/) – provides information on what consistency errors are and how to fix them

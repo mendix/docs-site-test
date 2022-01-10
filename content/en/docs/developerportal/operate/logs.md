@@ -20,7 +20,7 @@ The page is accessed through the **Logs** menu item in the left-hand menu.
 This is the default Mendix deployment for a licensed app.
 {{% /alert %}}
 
-For apps deployed to Mendix Cloud Version 4 (v4), you can select which environment you want logs for. Production logs will require [Two-Factor Authentication](/developerportal/deploy/two-factor-authentication).
+For apps deployed to Mendix Cloud Version 4 (v4), you can select which environment you want logs for. Production logs will require [Two-Factor Authentication](/developerportal/deploy/two-factor-authentication/).
 
 You can view the live (current) log, download it, or view and download an archived log.
 
@@ -56,7 +56,7 @@ View Current Log | view the current log in a new browser tab
 For apps deployed to SAP Business Technology Platform (SAP BTP) you can see the logs using Kibana.
 
 {{% alert color="info" %}}
-To make full use of Kibana and see proper mapping of the log level, multiline log messages, and stack traces, you will need to configure the *SAP Logger Connector* in your app. For more information see [SAP Logger Connector](/partners/sap/sap-logger).
+To make full use of Kibana and see proper mapping of the log level, multiline log messages, and stack traces, you will need to configure the *SAP Logger Connector* in your app. For more information see [SAP Logger Connector](/partners/sap/sap-logger/).
 {{% /alert %}}
 
 The logs page shows all the environments for this app. Click the **Logs** button to open the log in Kibana.

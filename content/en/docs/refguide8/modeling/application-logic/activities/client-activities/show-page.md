@@ -1,24 +1,24 @@
 ---
 title: "Show Page"
-url: /refguide8/show-page
+url: /refguide8/show-page/
 parent: "client-activities"
-menu_order: 50
+weight: 50
 tags: ["studio pro", "show page", "client activity"]
 aliases:
     - /refguide8/Show+Page.html
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/show-page.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/show-page.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can be used in both **Microflows** and **Nanoflows**.
 {{% /alert %}}
 
-{{% alert type="warning" %}}
-This action is ignored and does not work when a microflow is called from an offline native or hybrid app. For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+{{% alert color="warning" %}}
+This action is ignored and does not work when a microflow is called from an offline native or hybrid app. For more information, see the [Microflows](/refguide8/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 {{% /alert %}}
 
 ## 1 Introduction
@@ -50,11 +50,11 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.1 Object to Pass {#object-to-pass}
 
-An object that will be passed to the page that is opened. This object will be used by [data views](data-view) with a page parameter data source.
+An object that will be passed to the page that is opened. This object will be used by [data views](/refguide8/data-view/) with a page parameter data source.
 
 ### 3.2 Page
 
-The [page](page) that is displayed to an end-user. If the [Object to pass](#object-to-pass) property is specified, the page must contain a data view connected to the same entity as the passed object (or its generalization).
+The [page](/refguide8/page/) that is displayed to an end-user. If the [Object to pass](#object-to-pass) property is specified, the page must contain a data view connected to the same entity as the passed object (or its generalization).
 
 To create a new page that **Show page** activity will show, click the **Select** button > **New**. If you have selected an **Object to pass**, Studio Pro will automatically create a data view to edit that object.
 
@@ -62,11 +62,11 @@ To create a new page that **Show page** activity will show, click the **Select**
 
 By default the title of the page is determined by the page title property of the page. You can replace this title with a custom title if necessary.
 
-This feature allows you to re-use the same page for the **New** and **Edit** buttons of a [data grid](data-grid). By simply setting the titles to, for example, *New Customer* and *Edit Customer*, you can save yourself the trouble of duplicating pages.
+This feature allows you to re-use the same page for the **New** and **Edit** buttons of a [data grid](/refguide8/data-grid/). By simply setting the titles to, for example, *New Customer* and *Edit Customer*, you can save yourself the trouble of duplicating pages.
 
 ### 3.4 Close Pages
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This option is only available for native mobile and was introduced with Mendix Studio Pro v8.14.
 {{% /alert %}}
 
@@ -84,9 +84,9 @@ Often you need to have control of page history, for example to show the correct 
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}
 
 ## 5 Read More
 
-* [Activities](activities)
-* [Native Navigation](native-navigation)
+* [Activities](/refguide8/activities/)
+* [Native Navigation](/refguide8/native-navigation/)

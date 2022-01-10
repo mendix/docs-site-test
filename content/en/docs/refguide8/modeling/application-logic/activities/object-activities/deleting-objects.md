@@ -1,16 +1,16 @@
 ---
 title: "Delete Object(s)"
-url: /refguide8/deleting-objects
+url: /refguide8/deleting-objects/
 parent: "object-activities"
-menu_order: 50
+weight: 50
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/deleting-objects.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/deleting-objects.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Microflows**.
 {{% /alert %}}
 
@@ -49,10 +49,10 @@ This setting defines whether data sources are rerun after objects are deleted fr
 
 Default: *No*
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 To make pages of a Mendix app efficient, many widgets display values from an attribute of an object which is cached on the page. Attributes in widgets which use cached data are *always* reflected in the client even if they are not committed and irrespective of the value of **Refresh in client**. When an object is deleted, it will display any attributes as null, but the object will still be displayed (for example, there will be a blank entry for the deleted object in a list view) 
 
-If **Refresh in client** is set to *Yes* then all widgets will be updated, including those which are only updated when a [data source](data-sources) is loaded. 
+If **Refresh in client** is set to *Yes* then all widgets will be updated, including those which are only updated when a [data source](/refguide8/data-sources/) is loaded. 
 
 When testing your app, ensure that the desired data is being displayed by the widgets you have chosen.
 {{% /alert %}}
@@ -61,17 +61,17 @@ When testing your app, ensure that the desired data is being displayed by the wi
 
 If **Refresh in client** is set to *No*, the data sources are not rerun, and widgets which need to reload data will still display the object(s).
 
-If set to *Yes*, the deletion is reflected across the client, which includes reloading the relevant [data sources](data-sources).
+If set to *Yes*, the deletion is reflected across the client, which includes reloading the relevant [data sources](/refguide8/data-sources/).
 
 #### 3.2.2 Microflow is Called in an Offline, Native, or Hybrid App
 
 When inside a microflow that is called from an offline, native, or hybrid app, the **Refresh in client** option is ignored and functions as if it was set to **No**.
 
-For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+For more information, see the [Microflows](/refguide8/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}
 
 ## 5 What Happens During a Delete?
 

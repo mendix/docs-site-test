@@ -1,20 +1,20 @@
 ---
 title: "Add Date Function Calls"
-url: /refguide8/add-date-function-calls
+url: /refguide8/add-date-function-calls/
 parent: "expressions"
-menu_order: 110
+weight: 110
 tags: ["studio pro", "expressions", "add date function"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/add-date-function-calls.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/add-date-function-calls.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 Add date function calls add a time period to a date and time and return the modified value. 
 
-The first parameter can be an attribute of a domain model entity of type **Date and time**, a variable of type **Date and time**, or a **Date and time** value created using a [Date Creation](date-creation) function.
+The first parameter can be an attribute of a domain model entity of type **Date and time**, a variable of type **Date and time**, or a **Date and time** value created using a [Date Creation](/refguide8/date-creation/) function.
 
 The second parameter specifies the time period to be added - you can use a negative time period to subtract it from the specified date.
 

@@ -23,7 +23,7 @@ The how-to applies to all widgets like the text box widget, which means that, if
 
 Before starting this how-to, make sure you have completed the following prerequisite:
  
-* Read [Custom Action General Section](ht-one-custom-action-general)
+* Read [Custom Action General Section](/addons/ats-addon/ht-one-custom-action-general/)
 
 ## 3 Defining the User Approach
 
@@ -75,7 +75,7 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-03-textbox/text-box-focusclearelementvalue-add.png)
 
-6.  After focusing the `input` element, enter the text. When entering text in an `input` element, use the [Send Keys](rg-one-send-keys) action. Add the action, connect the input element from step 1, and give it a proper description:
+6.  After focusing the `input` element, enter the text. When entering text in an `input` element, use the [Send Keys](/addons/ats-addon/rg-one-send-keys/) action. Add the action, connect the input element from step 1, and give it a proper description:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-03-textbox/text-box-sendkeys-add.png)
 
@@ -83,7 +83,7 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-03-textbox/text-box-unfocuswebelement-add.png)
 
-8.  The last action you add is [Mendix Wait](rg-one-mendix-wait). You trigger a possible event in the widget by entering text, so you need to ensure that ATS waits for all the background processes to finish:
+8.  The last action you add is [Mendix Wait](/addons/ats-addon/rg-one-mendix-wait/). You trigger a possible event in the widget by entering text, so you need to ensure that ATS waits for all the background processes to finish:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-03-textbox/text-box-mendix-wait.png)
 
@@ -95,8 +95,8 @@ Next, you need to add these action input parameters:
 * Value
 * Search Context
 
-{{% alert type="info" %}}
-Keep the [guidelines for creating a custom action](ht-one-guidelines-custom-action) in mind while creating action parameters. 
+{{% alert color="info" %}}
+Keep the [guidelines for creating a custom action](/addons/ats-addon/ht-one-guidelines-custom-action/) in mind while creating action parameters. 
 {{% /alert %}}
 
 To add the action parameters, follow these steps:

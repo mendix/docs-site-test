@@ -1,8 +1,8 @@
 ---
 title: "Use Any Chart"
-url: /howto8/front-end/charts-any-usage
+url: /howto8/front-end/charts-any-usage/
 parent: "charts-tutorials"
-menu_order: 20
+weight: 20
 description: "How to use the Any Chart widget to create advanced charts"
 tags: ["Any Chart", "Advanced Charts", "Charts", "Studio Pro", "Widgets"]
 ---
@@ -26,7 +26,7 @@ With **Any Chart** you can build all the chart types that are possible with Plot
 Before starting this how-to, make sure you have the following prerequisites:
 
 * The latest version of Mendix Studio Pro
-* The latest [Any Chart](/appstore/modules/any-chart) module
+* The latest [Any Chart](/appstore/modules/any-chart/) module
 * An understanding of JSON data structures
 
 ## 3 Chart Structure
@@ -41,7 +41,7 @@ To create a line chart with the **Any Chart** widget, follow these steps:
 
 1. Create a page with a data view (Chart context).
 2. Add the Any Chart widget in the data view.
-3. Select the line chart sample from the [Any Chart cheat sheet](/refguide8/charts-any-cheat-sheet#line-chart):
+3. Select the line chart sample from the [Any Chart cheat sheet](/refguide8/charts-any-cheat-sheet/#line-chart):
 
     ```json
     [ { "x": [ 1, 2 ], "y": [ 1, 2 ], "type": "scatter" } ]
@@ -92,7 +92,7 @@ If need be, the layout can also be generated in the same way as the data. In mos
 
 Editing the JSON configuration in Studio Pro can be cumbersome. With the live preview editor, developers can directly see the output of their changes. 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 The editor is only a playground and no settings are stored. All changes you make in the runtime preview that you wish to use the next time you view the app have to be applied to your **Any Chart** widget too.
 
@@ -118,9 +118,9 @@ To fine tune a Charts widget configuration, follow these steps:
 
 ## 7 Read More
 
-* **Any Chart** properties: [Any Chart](/refguide8/charts-any-configuration)
-* The most common chart types:  [Any Chart Cheat Sheet](/refguide8/charts-any-cheat-sheet)
-* The most common settings: [Configuration Cheat Sheet](/refguide8/charts-advanced-cheat-sheet)
+* **Any Chart** properties: [Any Chart](/refguide8/charts-any-configuration/)
+* The most common chart types:  [Any Chart Cheat Sheet](/refguide8/charts-any-cheat-sheet/)
+* The most common settings: [Configuration Cheat Sheet](/refguide8/charts-advanced-cheat-sheet/)
 * The full JSON reference: [https://plot.ly/javascript/reference/](https://plot.ly/javascript/reference/)
-* [JSON Structures](/refguide8/json-structures)
-* [Export Mappings](/refguide8/export-mappings)  
+* [JSON Structures](/refguide8/json-structures/)
+* [Export Mappings](/refguide8/export-mappings/)  

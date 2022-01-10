@@ -1,15 +1,15 @@
 ---
 title: "Scheduled Events"
-url: /refguide8/scheduled-events
+url: /refguide8/scheduled-events/
 parent: "resources"
-menu_order: 80
+weight: 80
 description: "Options for configuring scheduled events"
 tags: ["Scheduled Event", "Execution properties", "Timing", "intervals", "scheduling issues", "time zones", "daylight saving"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/scheduled-events.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/scheduled-events.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -18,8 +18,8 @@ With scheduled events you can let the runtime execute a microflow at a specific 
 
 A scheduled event is added to your module as a document (right-click your module and you will find it listed under *Add other...*).
 
-{{% alert type="warning" %}}
-Scheduled events can be tested locally, but they will not be run if your app is deployed as a Free App. See the Free App section of [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy#free-app) for more information on Free App limitations.
+{{% alert color="warning" %}}
+Scheduled events can be tested locally, but they will not be run if your app is deployed as a Free App. See the Free App section of [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/#free-app) for more information on Free App limitations.
 {{% /alert %}}
 
 ## 2 Common Properties
@@ -33,7 +33,7 @@ Scheduled events can be tested locally, but they will not be run if your app is 
 
 | Property | Description |
 | --- | --- |
-| Microflow | The microflow that is executed when the scheduled event is executed. It should have no parameters and run with all rights (see [Microflow](microflow)). |
+| Microflow | The microflow that is executed when the scheduled event is executed. It should have no parameters and run with all rights (see [Microflow](/refguide8/microflow/)). |
 | Enabled | The microflow is only executed if the scheduled event is enabled. This setting only applies when running from Studio Pro or from Eclipse. On production environments, scheduled events are enabled/disabled via the appropriate tools (Developer Portal, Windows Service Console, etc.). |
 
 ## 4 Timing Properties
@@ -89,7 +89,7 @@ switch(scheduledEvent.getIntervalType())
 }
 ```
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 If it is absolutely critical to run a scheduled event on a specific day of the month, you should schedule the event to run daily. 
 

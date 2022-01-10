@@ -5,6 +5,14 @@ parent: "nt-studio-pro-9-parent"
 weight: 10
 description: "Native Template 6 release notes."
 ---
+## 6.2.10
+
+**Release date: December 14th, 2021**
+
+### Fixes
+
+* We fixed an issue introduced with v6.2.9 where an Android app crashed when CodePush was enabled.
+
 ## 6.2.9 {#6.2.9}
 
 **Release date: November 29th, 2021**
@@ -35,7 +43,7 @@ description: "Native Template 6 release notes."
 
 ### Improvements
 
-* Mendix Studio Pro v9.7 brings with it a new over-the-air update mechanism. With this new mechanism you can update your apps directly via your app's runtime without using third-party services. For more information on OTA updates, see [Release Over the Air Updates with Mendix](/howto/mobile/how-to-ota).
+* Mendix Studio Pro v9.7 brings with it a new over-the-air update mechanism. With this new mechanism you can update your apps directly via your app's runtime without using third-party services. For more information on OTA updates, see [Release Over the Air Updates with Mendix](/howto/mobile/how-to-ota/).
 
 ### Fixes
 
@@ -115,7 +123,7 @@ This is a re-release of Native Template [6.2.0](#620).
 
 ### Improvements
 
-* Custom developer apps now fully support deep links. This allows you to use custom developer apps to test deeplink use cases. For more information, see [How to Create a Custom Developer App](/howto/mobile/how-to-devapps) and [How to Set Up Deep Links in Native Mobile Apps](/howto/mobile/native-deep-link).
+* Custom developer apps now fully support deep links. This allows you to use custom developer apps to test deeplink use cases. For more information, see [How to Create a Custom Developer App](/howto/mobile/how-to-devapps/) and [How to Set Up Deep Links in Native Mobile Apps](/howto/mobile/native-deep-link/).
 
 ### Breaking Change
 

@@ -1,17 +1,17 @@
 ---
 title: "Data Grid"
-url: /refguide8/data-grid
+url: /refguide8/data-grid/
 parent: "grids"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "data grid", "grid", "data widget"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/data-grid.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/data-grid.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}The data grid widget is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="warning" %}}The data grid widget is not supported on native mobile pages.{{% /alert %}}
 
 ## 1 Introduction
 
@@ -24,10 +24,10 @@ Using controls provided by the data grid you can browse, search, and edit those 
 
 A data grid contains the following components: 
 
-1. [Search bar](search-bar) – allows end-users to search for objects in the data grid
-2. [Control bar](control-bar) – allows you to control the objects displayed in the data grid by means of buttons
-3. [Sort bar](sort-bar) – allows end-users to sort items in the data grid 
-4.  [Grid Columns](columns) – allows end-users to set properties for a data grid column
+1. [Search bar](/refguide8/search-bar/) – allows end-users to search for objects in the data grid
+2. [Control bar](/refguide8/control-bar/) – allows you to control the objects displayed in the data grid by means of buttons
+3. [Sort bar](/refguide8/sort-bar/) – allows end-users to sort items in the data grid 
+4.  [Grid Columns](/refguide8/columns/) – allows end-users to set properties for a data grid column
 	![](/attachments/refguide8/modeling/pages/data-widgets/grids/data-grid/data-grid-components.png)
 
 ## 3 Properties
@@ -47,26 +47,26 @@ Data grid properties consist of the following sections:
 
 ### 3.1 Common Section {#common}
 
-{{% snippet file="/static/_includes/refguide8/common-section-link.md" %}}
+{{% snippet file="refguide8/common-section-link.md" %}}
 
 ### 3.2 Data Source Section {#data-source}
 
-The data source determines which objects will be shown in a list view. For general information on data sources, see [Data Sources](data-sources).
+The data source determines which objects will be shown in a list view. For general information on data sources, see [Data Sources](/refguide8/data-sources/).
 
 #### 3.2.1 Type
 
 The list view supports the following types of data sources: 
 
-* [Database source](database-source) – objects are retrieved directly form the database. The database source can be used in [offline](offline-first) applications. 
-* [XPath source](xpath-source) – objects are retrieved directly form the database
-* [Microflow source](microflow-source) – calculates the list of objects by executing a microflow
-* [Association source](association-source) – follows an association to get to objects
+* [Database source](/refguide8/database-source/) – objects are retrieved directly form the database. The database source can be used in [offline](/refguide8/offline-first/) applications. 
+* [XPath source](/refguide8/xpath-source/) – objects are retrieved directly form the database
+* [Microflow source](/refguide8/microflow-source/) – calculates the list of objects by executing a microflow
+* [Association source](/refguide8/association-source/) – follows an association to get to objects
 
 The database and XPath sources retrieve objects from the database and supports searching and sorting. 
 
 ### 3.3 Design Properties Section {#design-properties}
 
-{{% snippet file="/static/_includes/refguide8/design-section-link.md" %}} 
+{{% snippet file="refguide8/design-section-link.md" %}} 
 
 ### 3.4 General Section {#general}
 
@@ -74,15 +74,15 @@ The database and XPath sources retrieve objects from the database and supports s
 
 This property indicates whether the control bar buttons will be visible in the end-user interface.
 
-{{% alert type="warning" %}}
-Even if the control bar buttons are invisible, there can still be a default button that is triggered by (double) clicking a row. For more information, see the property [Default Button Trigger](#default-button-trigger) and [Control Bar](control-bar).
+{{% alert color="warning" %}}
+Even if the control bar buttons are invisible, there can still be a default button that is triggered by (double) clicking a row. For more information, see the property [Default Button Trigger](#default-button-trigger) and [Control Bar](/refguide8/control-bar/).
 {{% /alert %}}
 
 Default: *True*
 
 #### 3.4.2 Show Paging Buttons {#show-paging-buttons}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This property is not available in Mendix 8.13 and above. Use the [Show Paging Bar](#show-paging-bar) property instead.
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ Default: *True*
 
 #### 3.4.3 Show Paging Bar {#show-paging-bar}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property was introduced in Mendix 8.13. It replaces the [Show Paging Buttons](#show-paging-buttons) property.
 {{% /alert %}}
 
@@ -106,7 +106,7 @@ With this property, you can change the way the paging bar is shown.
 
 Default: *Yes (with total count)*
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Hiding the control bar also hides the paging buttons. For details, see [Show Control Bar Buttons](#show-control-bar).
 {{% /alert %}}
 
@@ -157,11 +157,11 @@ Default: *0*
 
 #### 3.4.10 Tooltip Page {#tooltip-page}
 
-A tooltip page is a page that appears when you hover your mouse over a row. The tooltip page should consist of a data view on the same entity as the data grid. Besides creating and connecting a tooltip page you also have to specify on which columns the tooltip will appear. See the property 'Show tooltip' of [data grid columns](columns).
+A tooltip page is a page that appears when you hover your mouse over a row. The tooltip page should consist of a data view on the same entity as the data grid. Besides creating and connecting a tooltip page you also have to specify on which columns the tooltip will appear. See the property 'Show tooltip' of [data grid columns](/refguide8/columns/).
 
 ### 3.5 Visibility Section {#visibility}
 
-{{% snippet file="/static/_includes/refguide8/visibility-section-link.md" %}}
+{{% snippet file="refguide8/visibility-section-link.md" %}}
 
 ## 4 Performing Specific Actions
 
@@ -173,8 +173,8 @@ To perform actions on a data grid, select it on a page and right-click it. The l
 
 ## 5 Read More
 
-* [Page](page)
-* [Data Widgets](data-widgets)
-* [Data Sources](data-sources)
-* [Properties Common in the Page Editor](common-widget-properties)
-* [Grid Columns](columns) 
+* [Page](/refguide8/page/)
+* [Data Widgets](/refguide8/data-widgets/)
+* [Data Sources](/refguide8/data-sources/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)
+* [Grid Columns](/refguide8/columns/) 

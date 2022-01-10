@@ -1,8 +1,8 @@
 ---
 title: "Debug Java Actions Remotely"
-url: /howto7/monitoring-troubleshooting/debug-java-actions-remotely
+url: /howto7/monitoring-troubleshooting/debug-java-actions-remotely/
 category: "Monitoring & Troubleshooting"
-menu_order: 7
+weight: 7
 tags: ["monitoring", "troubleshooting", "java action", "debug"]
 ---
 
@@ -41,15 +41,15 @@ In your Java IDE, you need to configure remote debugging. This screenshot shows 
 
 ## 4 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui)
-* [Monitor Mendix using JMX](monitoring-mendix-using-jmx)
-* [Log Levels](log-levels)
-* [Debug Microflows](debug-microflows)
-* [Debug Java Actions](debug-java-actions)
-* [Common Mendix SSO Errors](handle-common-mendix-sso-errors)
-* [Debug Microflows Remotely](debug-microflows-remotely)
+* [Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto7/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix using JMX](/howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Log Levels](/howto7/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows](/howto7/monitoring-troubleshooting/debug-microflows/)
+* [Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions/)
+* [Common Mendix SSO Errors](/howto7/monitoring-troubleshooting/handle-common-mendix-sso-errors/)
+* [Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely/)
 * [Get Started with Nexus Maven Repository Manager](http://www.andrejkoelewijn.com/blog/2010/03/09/getting-started-with-nexus-maven-repository-manager/)
 * [Use Eclipse to Debug Your Tomcat Web Application](http://www.andrejkoelewijn.com/blog/2003/10/23/using-eclipse-to-debug-your-tomcat-web-application/)
 * [Profile Mendix Using JProfiler](http://www.andrejkoelewijn.com/blog/2014/01/15/profiling-mendix-using-jprofiler/)

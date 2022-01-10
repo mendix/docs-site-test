@@ -18,9 +18,9 @@ For deployments to other platforms (for example Mendix for Private Cloud) you do
 
 For deployments to the Mendix Cloud, you can get the same information from various pages in the Developer Portal. For more information see:
 
-* [Metrics](/developerportal/operate/metrics)
-* [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4)
-* [Running Now Metrics](/developerportal/operate/troubleshooting-mxcloud-runningnow)
+* [Metrics](/developerportal/operate/metrics/)
+* [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/)
+* [Running Now Metrics](/developerportal/operate/troubleshooting-mxcloud-runningnow/)
 {{% /alert %}}
 
 You can change the admin port from Studio Pro by navigating to **App** > **Settings** > **Configurations** > *your configuration* > **Server** > **Admin port**.
@@ -39,7 +39,7 @@ The next sections explain which monitoring actions are supported.
 ### 2.1 Request
 
 ```json
-"{"action" : "get_current_runtime_requests", "params":{} }"
+{"action" : "get_current_runtime_requests", "params":{} }
 ```
 
 ### 2.2 Example Response
@@ -125,7 +125,7 @@ This request returns the current executions of actions known by the Mendix Runti
 ### 3.1 Request
 
 ```json
-"{"action" : "runtime_statistics", "params":{} }"
+{"action" : "runtime_statistics", "params":{} }
 ```
 
 ### 3.2 Example Response
@@ -281,7 +281,7 @@ If do want to develop a strategy on interpreting these pools anyway based on Jav
 ### 4.1 Request
 
 ```json
-"{"action" : "cache_statistics", "params":{} }"
+{"action" : "cache_statistics", "params":{} }
 ```
 
 ### 4.2 Example Response
@@ -322,7 +322,7 @@ This information can be an aid in figuring out which objects cause a lot of memo
 ### 5.1 Request
 
 ```json
-"{"action" : "server_statistics", "params":{} }"
+{"action" : "server_statistics", "params":{} }
 ```
 
 ### 5.2 Example Response
@@ -361,7 +361,7 @@ The "threadpool" section gives information about the threadpool of the handler w
 ### 6.1 Request
 
 ```json
-"{"action" : "get_logged_in_user_names", "params":{} }"
+{"action" : "get_logged_in_user_names", "params":{} }
 ```
 
 ### 6.2 Example Response
@@ -385,7 +385,7 @@ Shows which users are currently logged in. If a user has multiple sessions, this
 ### 7.1 Request
 
 ```json
-"{"action" : "get_all_thread_stack_traces", "params":{} }"
+{"action" : "get_all_thread_stack_traces", "params":{} }
 ```
 
 ### 7.2 Example Response
@@ -447,7 +447,7 @@ Returns all the current thread stack traces by name. This is useful for low leve
 ### 8.1 Request
 
 ```json
-"{"action" : "runtime_status", "params":{} }"
+{"action" : "runtime_status", "params":{} }
 ```
 
 ### 8.2 Example Response
@@ -479,7 +479,7 @@ This information can be used to track what state the Mendix Runtime is in when t
 ### 9.1 Request
 
 ```json
-"{"action" : "check_health", "params":{} }"
+{"action" : "check_health", "params":{} }
 ```
 
 ### 9.2 Example Response
@@ -496,7 +496,7 @@ This information can be used to track what state the Mendix Runtime is in when t
 
 ### 9.3 Return Values
 
-In Mendix Studio Pro, a [health check microflow](project-settings) can be configured. This microflow can report on the functional status of the application; does the general functionality of the application work, and are the necessary remote services available?
+In Mendix Studio Pro, a [health check microflow](/refguide/project-settings/) can be configured. This microflow can report on the functional status of the application; does the general functionality of the application work, and are the necessary remote services available?
 
 If a health check microflow has been configured, this request will report on the current health status. The "health" value can be one of "healthy", "sick", or "unknown" (when no health microflow was configured). For the value "sick," the "diagnosis" value will give the reason the application is not healthy. This reason is the return value of the health check microflow.
 
@@ -513,7 +513,7 @@ This request can only be executed when the Mendix Runtime status is "running" (s
 ### 10.1 Request
 
 ```json
-"{"action" : "about", "params":{} }"
+{"action" : "about", "params":{} }
 ```
 
 ### 10.2 Example Response

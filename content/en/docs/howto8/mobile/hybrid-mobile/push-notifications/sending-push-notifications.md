@@ -1,8 +1,8 @@
 ---
 title: "Send Push Notifications"
-url: /howto8/mobile/sending-push-notifications
+url: /howto8/mobile/sending-push-notifications/
 parent: "push-notifications"
-menu_order: 20
+weight: 20
 tags: ["mobile", "push notification", "mobile", "microflow"]
 ---
 
@@ -59,6 +59,6 @@ The names of the actions can be used as the value of the ActionName attribute of
 
 ## 3 Read More
 
-* [Set Up the Apple Push Notification Server](setting-up-apple-push-notification-server)
-* [Set Up the Google Firebase Cloud Messaging Server](setting-up-google-firebase-cloud-messaging-server)
+* [Set Up the Apple Push Notification Server](/howto8/mobile/setting-up-apple-push-notification-server/)
+* [Set Up the Google Firebase Cloud Messaging Server](/howto8/mobile/setting-up-google-firebase-cloud-messaging-server/)
 

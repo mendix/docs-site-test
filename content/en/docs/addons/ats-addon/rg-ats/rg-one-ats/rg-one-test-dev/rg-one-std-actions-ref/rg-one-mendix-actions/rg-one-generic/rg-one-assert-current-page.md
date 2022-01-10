@@ -6,7 +6,7 @@ parent: "rg-one-generic"
 
 ## 1 Description
 
-Asserts that a certain page is open, by checking the current page title. Note that the page title may depend on the user’s language! For dialogs use the [Find/Assert dialog action](rg-one-findassert-dialog).
+Asserts that a certain page is open, by checking the current page title. Note that the page title may depend on the user’s language! For dialogs use the [Find/Assert dialog action](/addons/ats-addon/rg-one-findassert-dialog/).
 
 ## 2 Usage
 

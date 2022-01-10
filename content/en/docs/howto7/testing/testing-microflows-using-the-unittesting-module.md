@@ -1,8 +1,8 @@
 ---
 title: "Test Microflows Using the UnitTesting Module"
-url: /howto7/testing/testing-microflows-using-the-unittesting-module
+url: /howto7/testing/testing-microflows-using-the-unittesting-module/
 category: "Testing"
-menu_order: 10
+weight: 10
 tags: ["test", "testing", "microflow", "unittesting"]
 ---
 
@@ -27,7 +27,7 @@ Before you can start with this how-to, make sure you have completed the followin
     | Community Commons Function Library module | 5.4 |
     | ObjectHandling module | 1.0 |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 All images, names and steps in this how-to are based on these versions. When using other versions the images and/or names on your screen may be different than the images or names used in this how-to.
 {{% /alert %}}
 
@@ -36,9 +36,9 @@ All images, names and steps in this how-to are based on these versions. When usi
 In this chapter you will set up the unit testing module and run the example tests.
 
 1.  Create a new project.
-2.  Download the [Unit Testing](/appstore/modules/unit-testing) module.
-3.  Download the [Community Commons Function Library](/appstore/modules/community-commons-function-library).
-4.  Download the [Object Handling](/appstore/modules/object-handling) module.
+2.  Download the [Unit Testing](/appstore/modules/unit-testing/) module.
+3.  Download the [Community Commons Function Library](/appstore/modules/community-commons-function-library/).
+4.  Download the [Object Handling](/appstore/modules/object-handling/) module.
 5.  Open the **Settings** of the project.
 
     ![](/attachments/howto7/testing/testing-microflows-using-the-unittesting-module/18580371.png)
@@ -203,7 +203,7 @@ In this chapter you will learn how to create a microflow test. To create a new m
 
 Congratulations! You created your first unit tests using the UnitTesting module.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 It is possible to create a Setup and TearDown microflow per module. The Setup microflow is invoked once before each test run and the TearDown microflow is invoked once after each test run (regardless whether the test run consists of one or multiple unit tests).
 
@@ -213,4 +213,4 @@ Do not test everything, focus on the most used and complex microflows.
 
 ## 4 Read More
 
-*   [How to Create Automated Tests with TestNG](create-automated-tests-with-testng)
+*   [How to Create Automated Tests with TestNG](/howto7/testing/create-automated-tests-with-testng/)

@@ -1,6 +1,6 @@
 ---
 title: "Detect & Resolve Performance Issues"
-url: /howto7/monitoring-troubleshooting/detect-and-resolve-performance-issues
+url: /howto7/monitoring-troubleshooting/detect-and-resolve-performance-issues/
 category: "Monitoring & Troubleshooting"
 tags: ["monitoring", "troubleshooting", "performance issue", "performance"]
 ---
@@ -20,7 +20,7 @@ In either case, some process is running too long or too many times to complete 
 
 First, you'll need to identify if your issue is UI-centric or microflow-centric. If a page is taking a long time to initially load, or if a page gets slow or unresponsive after clicking a microflow button, it's most likely a microflow slowing your application down. If the UI feels glitchy or slow _after_ the page has loaded, you may have a UI-centric issue.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 All performance issues are extremely context-sensitive. That is, there is no single cure-all for a performance problem, but this article will attempt to address common issues and how may be able to resolve them.
 
@@ -86,7 +86,7 @@ The Mendix Server and Developer Portal offer a number of performance graphs and 
 
 Once you've identified a slow page, it's pretty easy to identify which microflows are executed on that page. Make sure you look at directly referenced microflows, such as data sources, but also look at any sub-flows, on change event handlers, or domain model event handlers that could be called by your page.
 
-Setting a break point and stepping through these relevant microflows can often give you a quick (although subjective) way to find a slow action. To get started with debugging microflows, see: [Debugging Microflows](/howto7/monitoring-troubleshooting/debug-microflows). If you cannot subjectively identify your slow process, move on to the next step.
+Setting a break point and stepping through these relevant microflows can often give you a quick (although subjective) way to find a slow action. To get started with debugging microflows, see: [Debugging Microflows](/howto7/monitoring-troubleshooting/debug-microflows/). If you cannot subjectively identify your slow process, move on to the next step.
 
 ### Microflow Time Stamps
 
@@ -122,7 +122,7 @@ Slow retrieves can occur for a number of different reasons. Here are a few:
 *   Complex calculated attributes
 *   Large # of objects retrieved (See batching below)
 
-Additionally, review this article on denormalization and how it can improve your app performance in some cases: [How to Denormalize Data to Improve Performance](/howto7/data-models/denormalize-data-to-improve-performance).
+Additionally, review this article on denormalization and how it can improve your app performance in some cases: [How to Denormalize Data to Improve Performance](/howto7/data-models/denormalize-data-to-improve-performance/).
 
 ### Slow Database Commits
 

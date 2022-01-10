@@ -1,8 +1,8 @@
 ---
 title: "Generalization & One-to-One Associations"
-url: /refguide7/generalization-and-1-1-association
+url: /refguide7/generalization-and-1-1-association/
 parent: "entities"
-menu_order: 5
+weight: 5
 #tags: ["domain model", "association", "inheritance", "one-to-one", "generalization"]
 ---
 Mendix developers have to choose on a daily basis whether or not they want to use inheritance. It starts the moment you initiate a new project; how do you want to setup your users? Are you going to keep using the already available Account entity in the Administration module? Or are you going to work with separate entities with a one-to-one association to the user account? Or are you going to add (multiple) entities that inherit from **System.User**?
@@ -13,7 +13,7 @@ When defining closely related structures, it can be difficult to decide on the b
 
 The Mendix domain model is based on the [UML](http://en.wikipedia.org/wiki/Unified_Modeling_Language) [class diagram](http://en.wikipedia.org/wiki/Class_diagram), which allows us to specify the objects/entities, their attributes and associations. The concept of generalization in UML is exactly the same in Mendix, however, the Mendix Domain model uses a different notation to display the Generalization. The UML class diagram uses associations with a hollow triangle (arrow) pointing to the super class. In Mendix generalization is expressed with a blue label above the entity, specifying the entity name.
 
-UML also allows us to specify the types of associations, such as an [Aggregation](http://en.wikipedia.org/wiki/Aggregation_(object-oriented_programming)) or [Composition](http://en.wikipedia.org/wiki/Object_composition). The definition of these associations specify whether or not the objects can exist without each other. Unlike UML we can not specify how strong a relation ship is. Any dependencies between the two objects have to be specified using [event microflows](/refguide7/event-handlers) or [delete behavior/prevention](/refguide7/associations).
+UML also allows us to specify the types of associations, such as an [Aggregation](http:/en.wikipedia.org/wiki/Aggregation_(object-oriented_programming)) or [Composition](http:/en.wikipedia.org/wiki/Object_composition). The definition of these associations specify whether or not the objects can exist without each other. Unlike UML we can not specify how strong a relation ship is. Any dependencies between the two objects have to be specified using [event microflows](/refguide7/event-handlers/) or [delete behavior/prevention](/refguide7/associations/).
 
 ### Performance
 
@@ -31,7 +31,7 @@ When you change an object with inheritance the platform will potentially prevent
 
 #### One-to-One Association
 
-When changing an object, none of the associated objects will be changed. There are two exceptions to this rule: of course if you change the associated object in an object event, or because associated objects are being 'auto-committed', see [How to Work with Object Events](/howto7/data-models/working-with-object-events).
+When changing an object, none of the associated objects will be changed. There are two exceptions to this rule: of course if you change the associated object in an object event, or because associated objects are being 'auto-committed', see [How to Work with Object Events](/howto7/data-models/working-with-object-events/).
 
 Whenever you have a high number of write transactions in your application, it is far better to choose for a one-to-one association, since this limits the number of tables that are being changed/locked during a transaction. However, if you do more inserts than updates it might be worth using inheritance again. Inheritance uses one less table to store the relationship, it does not have the association table. Therefore, any inserts require one indexed table fewer to be updated.
 

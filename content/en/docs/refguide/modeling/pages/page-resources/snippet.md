@@ -9,7 +9,7 @@ tags: ["studio pro", "snippet", "page resources"]
 
 ## 1 Introduction
 
-Snippets define reusable interface parts. They can be used on both [pages](page) and [layouts](layout). By using snippets you can make changes in fewer places when you modify the interface. For example, you can have a snippet that is used both in the contents area of a template grid and in a data view. If you change something in the snippet, that change will show up in both places.
+Snippets define reusable interface parts. They can be used on both [pages](/refguide/page/) and [layouts](/refguide/layout/). By using snippets you can make changes in fewer places when you modify the interface. For example, you can have a snippet that is used both in the contents area of a template grid and in a data view. If you change something in the snippet, that change will show up in both places.
 
 A snippet is indicated by a blue bar above a drop-zone. The blue bar has the snippet icon at the left and the name of an entity, if the snippet is in the context of an entity. If the snippet has no context, the bar says `(none)`.
 
@@ -33,7 +33,7 @@ Snippet properties consist of the following sections:
 
 ### 2.1 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/common-section-link.md" %}}
+{{% snippet file="refguide/common-section-link.md" %}}
 
 ### 2.2 Designer Section{#designer}
 
@@ -62,6 +62,6 @@ The values for the platform property are:
 
 This property defines the entity that is used as context for the widgets placed on this snippet.
 
-Entity optionally specifies an [entity](entities) that serves as the context for the widgets placed on it. When an entity is defined on a snippet, any usages of the snippet need to be placed inside a context for that entity or a specialization: a data view, for example.
+Entity optionally specifies an [entity](/refguide/entities/) that serves as the context for the widgets placed on it. When an entity is defined on a snippet, any usages of the snippet need to be placed inside a context for that entity or a specialization: a data view, for example.
 
 For example, if you wanted to use an attribute of a Customer entity in a snippet, you could place a text box that shows the customer's name in the snippet without having to define a data view first.

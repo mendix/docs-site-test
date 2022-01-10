@@ -1,14 +1,14 @@
 ---
 title: "Consumed REST Services"
-url: /refguide8/consumed-rest-services
+url: /refguide8/consumed-rest-services/
 parent: "integration"
 description: "Presents an overview of consumed REST services and JSON in Mendix."
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/consumed-rest-services.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/consumed-rest-services.pdf).
 {{% /alert %}}
 
 ## 1 REST
@@ -21,7 +21,7 @@ Representational state transfer (REST) is an approach to consuming or exposing r
 
 Lack of contracts and schemas give you an easy start to using REST. However, many REST endpoints return complex data.
 
-The [JSON Structure](json-structures) document helps with giving structure to JSON data: from an example JSON snippet, a lightweight schema is extracted that is used in [Mapping Documents](mapping-documents). The [Import Mapping](import-mappings) document converts JSON (or XML) to Mendix objects, and the [Export Mapping](export-mappings) document serializes Mendix objects to JSON (or XML).
+The [JSON Structure](/refguide8/json-structures/) document helps with giving structure to JSON data: from an example JSON snippet, a lightweight schema is extracted that is used in [Mapping Documents](/refguide8/mapping-documents/). The [Import Mapping](/refguide8/import-mappings/) document converts JSON (or XML) to Mendix objects, and the [Export Mapping](/refguide8/export-mappings/) document serializes Mendix objects to JSON (or XML).
 
 ## 2 JSON
 

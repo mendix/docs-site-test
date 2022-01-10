@@ -1,9 +1,9 @@
 ---
 title: "Order By Behavior"
-url: /refguide8/ordering-behavior
+url: /refguide8/ordering-behavior/
 parent: "data-storage"
 tags: ["studio pro"]
-menu_order: 20
+weight: 20
 ---
 
 ## 1 Introduction

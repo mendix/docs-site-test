@@ -15,13 +15,13 @@ Microflows run in the runtime server and can therefore not be used in offline ap
 
 Explore the documentation for details on microflow and nanoflow definitions, properties, and usages.
 
-* [Microflows](microflows)
-* [Nanoflows](nanoflows)
-* [Sequence Flow](sequence-flow)
-* [Activities](activities)
-* [Decisions](decisions)
-* [Annotation](annotation)
-* [Parameter](parameter)
-* [Loop](loop)
-* [Events](events)
-* [Common Properties](microflow-element-common-properties)
+* [Microflows](/refguide/microflows/)
+* [Nanoflows](/refguide/nanoflows/)
+* [Sequence Flow](/refguide/sequence-flow/)
+* [Activities](/refguide/activities/)
+* [Decisions](/refguide/decisions/)
+* [Annotation](/refguide/annotation/)
+* [Parameter](/refguide/parameter/)
+* [Loop](/refguide/loop/)
+* [Events](/refguide/events/)
+* [Common Properties](/refguide/microflow-element-common-properties/)

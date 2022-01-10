@@ -20,10 +20,10 @@ Mendix is the app platform for the enterprise organization, and in enterprise so
 
 Before you continue, make sure that you know how to create:
 
-* Domain models (see [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer))
-* A custom file document (see [How to Work with Images & Files](/howto/data-models/working-with-images-and-files))
-* Overview and detail pages (see [How to Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages))
-* Menu items (see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure))
+* Domain models (see [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer/))
+* A custom file document (see [How to Work with Images & Files](/howto/data-models/working-with-images-and-files/))
+* Overview and detail pages (see [How to Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages/))
+* Menu items (see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure/))
 
 ## 3 Preparing the Data Structure & GUI
 
@@ -42,12 +42,12 @@ To prepare the data structure and the GUI, follow these steps:
     ![](/attachments/howto/integration/importing-xml-documents/18581650.png)
 
 5. Create the overview and detail pages to manage objects of the **XMLDocument** type.
-6. Create a menu item to access the XML document overview page (for more information, see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure).
+6. Create a menu item to access the XML document overview page (for more information, see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure/).
 
 ## 4 Adding an XML Schema (XSD)
 
-Whether you plan to import or export documents, working with XML means that your application must contain an XML schema, which is also called an XSD. An XSD describes the possible contents of an XML file. Based on the XSD, your application knows how to read or write an XML file. If you don't have an XSD file, there are some online XSD generators that accept an XML document as input. For this how-to, you can use [Customers.xsd](/attachments/howto/integration/importing-xml-documents/18581652.xsd).
-.
+Whether you plan to import or export documents, working with XML means that your application must contain an XML schema, which is also called an XSD. An XSD describes the possible contents of an XML file. Based on the XSD, your application knows how to read or write an XML file. If you don't have an XSD file, there are some online XSD generators that accept an XML document as input. For this how-to, you can use .
+
 To add an XML schema (XSD), follow these steps:
 
 1.  Right-click a module in the **App Explorer** and select **Add Other** > **XML schema** from the menu.
@@ -102,8 +102,8 @@ To create the XML-to-domain mapping, follow these steps:
 
 ## 6 Creating the Import Logic
 
-In this section, you will create the logic to import the customers stored in an [XML document](/attachments/howto/integration/importing-xml-documents/18581651.xml) in your application.
- in your application.
+In this section, you will create the logic to import the customers stored in an  in your application.
+
 To create the import logic, follow these steps:
 
 1. Open the **XMLDocument** overview page. It should look this, using a default layout:
@@ -141,16 +141,16 @@ To create the import logic, follow these steps:
 
 To import the XML file, follow these steps:
 
-1. Deploy the application, upload [Customers.xml](/attachments/howto/integration/importing-xml-documents/18581651.xml), and trigger the import microflow.
-, and trigger the import microflow.2. Open the customer overview page and check if the customer data has been imported into your application.
+1. Deploy the application, upload , and trigger the import microflow.
+2. Open the customer overview page and check if the customer data has been imported into your application.
 
 ## 8 Read More
 
-* [How to Consume a Complex Web Service](consume-a-complex-web-service)
-* [How to Consume a Simple Web Service](consume-a-simple-web-service)
-* [How to Export XML Documents](export-xml-documents)
-* [How to Expose a Web Service](expose-a-web-service)
-* [How to Handle Selenium Support](selenium-support)
-* [How to Consume a REST Service](consume-a-rest-service)
-* [How to Expose Data to BI Tools Using OData](exposing-data-to-bi-tools-using-odata) 
+* [How to Consume a Complex Web Service](/howto/integration/consume-a-complex-web-service/)
+* [How to Consume a Simple Web Service](/howto/integration/consume-a-simple-web-service/)
+* [How to Export XML Documents](/howto/integration/export-xml-documents/)
+* [How to Expose a Web Service](/howto/integration/expose-a-web-service/)
+* [How to Handle Selenium Support](/howto/integration/selenium-support/)
+* [How to Consume a REST Service](/howto/integration/consume-a-rest-service/)
+* [How to Expose Data to BI Tools Using OData](/howto/integration/exposing-data-to-bi-tools-using-odata/) 
 

@@ -1,14 +1,14 @@
 ---
 title: "Start Your Own GitHub Repository"
-url: /howto8/collaboration-requirements-management/starting-your-own-repository
+url: /howto8/collaboration-requirements-management/starting-your-own-repository/
 category: "Collaboration"
-menu_order: 30
+weight: 30
 tags: ["studio pro"]
 ---
 
 ## 1 Introduction
 
-In this how-to, you will learn how to set up a GitHub repository. The repository will contain your development content and can be shared for others to contribute to an application or [Marketplace component](/appstore/general/share-app-store-content).
+In this how-to, you will learn how to set up a GitHub repository. The repository will contain your development content and can be shared for others to contribute to an application or [Marketplace component](/appstore/general/share-app-store-content/).
 
 ## 2 Preparation
 
@@ -37,6 +37,6 @@ You should link this to the upcoming Mendix Marketplace release by mentioning th
 
 ## 6 Read More
 
-*   [Contributing to a GitHub repository](contribute-to-a-github-repository)
-*   [Version Control](/refguide8/version-control)
-*   [Sharing the Development Database](sharing-the-development-database)
+*   [Contributing to a GitHub repository](/howto8/collaboration-requirements-management/contribute-to-a-github-repository/)
+*   [Version Control](/refguide8/version-control/)
+*   [Sharing the Development Database](/howto8/collaboration-requirements-management/sharing-the-development-database/)

@@ -34,9 +34,9 @@ The **Caption** describes what happens in this element. It is displayed in the w
 **Target** is the activity that the workflow process will jump to during execution. You can select the activity you would like to go to from the drop-down menu. 
 
 {{% alert color="warning" %}}
-You cannot use the **Jump** activity in a [Parallel split](parallel-split) or in a path where it would end the workflow without any other path continuing it. 
+You cannot use the **Jump** activity in a [Parallel split](/refguide/parallel-split/) or in a path where it would end the workflow without any other path continuing it. 
 {{% /alert %}}
 
 ## 3 Read More
 
-* [Workflow Properties](workflow-properties)
+* [Workflow Properties](/refguide/workflow-properties/)

@@ -83,7 +83,7 @@ You may be asked to provide your credentials in one of two ways:
 * The Developer Portal will ask for your credentials, which it will then use to obtain an access token from SAP – the Developer Portal will then use the access token, but it will not store your credentials (please note this method is being deprecated)
 
 {{% alert color="info" %}}
-If you have issues using SAP authentication, please refer to the reference [SAP Single Sign On](/partners/sap/sap-single-sign-on).
+If you have issues using SAP authentication, please refer to the reference [SAP Single Sign On](/partners/sap/sap-single-sign-on/).
 {{% /alert %}}
 
 You will now be asked to provide the final details for the SAP BTP development environment.
@@ -225,7 +225,7 @@ When the package is ready to be deployed, a green tick will be shown next to the
 
 ### 4.2 Uploading MDA
 
-Alternatively, you can upload an MDA which has already been created from the app model, for example using [Create Deployment Package](/refguide/create-deployment-package-dialog) from the App menu in Studio Pro.
+Alternatively, you can upload an MDA which has already been created from the app model, for example using [Create Deployment Package](/refguide/create-deployment-package-dialog/) from the App menu in Studio Pro.
 
 1. Click **Upload** in the **Deployment Package Repository**.
 
@@ -260,8 +260,8 @@ SAP BTP [has a limit of 1.5GB](https://help.sap.com/viewer/65de2977205c403bbc107
 
 3.  The **Timeout** value indicates how long (in seconds) Cloud Foundry will wait between starting an app and the first healthy response from the app before deciding that the application has failed to start. For some apps, the default (60 seconds) is too short. If your app is failing to start you can try increasing this value using the **Change timeout** option.
 
-    {{/* % image_container width="60%" % */}}![](/attachments/developerportal/deploy/sap-cloud-platform/sap-change-timeout.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{% image_container width="60%" %}}![](/attachments/developerportal/deploy/sap-cloud-platform/sap-change-timeout.png){{/* % /image_container % */}}
+
 4.  Click **Transport** to deploy the package to the SAP environment. This will replace any current app deployed to this environment. If the app is already running, you will be asked to stop it so that your new app can be deployed.
 
 ### 5.2 Configure the Application{#ConfigureTheApplication}
@@ -280,8 +280,8 @@ SAP BTP [has a limit of 1.5GB](https://help.sap.com/viewer/65de2977205c403bbc107
 
 4. Select any additional services you need for your app. For more information see [Binding Services](#binding-services), below.
 
-    {{/* % image_container width="75%" % */}}![](/attachments/developerportal/deploy/sap-cloud-platform/transport-services.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{% image_container width="75%" %}}![](/attachments/developerportal/deploy/sap-cloud-platform/transport-services.png){{/* % /image_container % */}}
+
     {{% alert color="warning" %}}In your initial deployment, do not remove any of the services with the status **Services To Be Bound**. For a new app, these services are all required for the correct deployment of the app.{{% /alert %}}
 
 5. Click **Continue** to continue to the Start Application confirmation page.
@@ -321,8 +321,8 @@ If you want to remove a service instance from your environment, you can do it is
 
 3.  The **Timeout** value indicates how long (in seconds) Cloud Foundry will wait between starting an app and the first healthy response from the app before deciding that the application has failed to start. For some apps, the default (60 seconds) is too short. If your app is failing to start you can try increasing this value using the **Change timeout** option.
 
-    {{/* % image_container width="60%" % */}}![](/attachments/developerportal/deploy/sap-cloud-platform/sap-change-timeout.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{% image_container width="60%" %}}![](/attachments/developerportal/deploy/sap-cloud-platform/sap-change-timeout.png){{/* % /image_container % */}}
+
 4.  Click **Transport** to deploy the package to the SAP environment. This will replace any current app deployed to this environment. If the app is already running, you will be asked to stop it so that your new app can be deployed.
 
 When the app has been transported you will be on the page **Configure the Application**. This has the same options as the **Deploy** pages which are described above in the [Configure the Application](#ConfigureTheApplication) section.
@@ -405,7 +405,7 @@ Click **Scale Now** to apply the new settings. If the application is running, it
 Click **Reset** to return the values to what they were before the sliders were moved.
 
 {{% alert color="info" %}}
-You can also make use of the **Application Autoscaler** service on SAP BTP. Mendix provides assistance in setting up the parameters needed to configure application autoscaler. For more information see [Application Autoscaler for SAP Business Technology Platform](/partners/sap/sap-autoscaler).
+You can also make use of the **Application Autoscaler** service on SAP BTP. Mendix provides assistance in setting up the parameters needed to configure application autoscaler. For more information see [Application Autoscaler for SAP Business Technology Platform](/partners/sap/sap-autoscaler/).
 {{% /alert %}}
 
 #### 7.1.7 Change License Subscription ID
@@ -438,9 +438,9 @@ To change a value, select the constant you want to change and click **Edit**.
 
 This tab displays Cloud Foundry services which are bound to the app, waiting to be bound to the app, or available to be bound to the app. These are the services which are available to you in SAP BTP and are the same services that you can see in the SAP BTP marketplace.
 
-{{/* % image_container width="50%" % */}}
+{{% image_container width="50%" %}}
 ![](/attachments/developerportal/deploy/sap-cloud-platform/service-tab.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 {{% alert color="warning" %}}
 There are a number of services which your Mendix app requires. **If you unbind any of these services, your app will probably stop working**:
@@ -477,11 +477,11 @@ If you use the **PostgreSQL on SAP BTP** service on SAP BTP, Mendix can create a
 {{% /alert %}}
 
 {{% alert color="info" %}}
-If you use the **Application Autoscaler** service on SAP BTP, Mendix can create a JSON file for you. See [Application Autoscaler for SAP Business Technology Platform](/partners/sap/sap-autoscaler) for more information.
+If you use the **Application Autoscaler** service on SAP BTP, Mendix can create a JSON file for you. See [Application Autoscaler for SAP Business Technology Platform](/partners/sap/sap-autoscaler/) for more information.
 {{% /alert %}}
 
 {{% alert color="info" %}}
-If you use the **PostgreSQL on Amazon (AWS)** service on SAP BTP, Mendix can create a JSON file for you. See [PostgreSQL on Amazon (AWS) for SAP Business Technology Platform](/partners/sap/sap-postgresql-on-aws) for more information.
+If you use the **PostgreSQL on Amazon (AWS)** service on SAP BTP, Mendix can create a JSON file for you. See [PostgreSQL on Amazon (AWS) for SAP Business Technology Platform](/partners/sap/sap-postgresql-on-aws/) for more information.
 {{% /alert %}}
 
 To upload the JSON **File** for service binding, follow these steps:
@@ -508,7 +508,7 @@ If you no longer require a service you can unbind it or remove it from your app.
 
 1. Click the ellipsis (**...**) next to the service you want to unbind in the **Bound Services** section.
 2. Select one of the following:
-    * **Unbind Service** – unbind the service instance and move it to the **Services To Be Bound** section — the service will be bound next time your app is restarted
+    * **Unbind Service** – unbind the service instance and move it to the **Services To Be Bound** section — the service will be bound again next time your app is restarted
     * **Delete Service** – unbind the service instance from the application and delete the service instance from your environment
 
     ![](/attachments/developerportal/deploy/sap-cloud-platform/service-unbind.png)
@@ -522,7 +522,7 @@ If you no longer require a service you can unbind it or remove it from your app.
 
     ![](/attachments/developerportal/deploy/sap-cloud-platform/service-unbind-warning.png)
 
-    Once the service is deleted, it is deleted from the app environment and returned to the list of **Available Services**. If the service is unbound, it is returned to the list of **Services To Be Bound**, and will be rebound next time the app is restarted.
+    Once the service is deleted, it is deleted from the app environment and returned to the list of **Available Services**. If the service is unbound but not deleted, it is returned to the list of **Services To Be Bound**, and will be rebound next time the app is restarted.
 
 **Removing an Unbound Service**
 
@@ -536,7 +536,9 @@ If you no longer require a service you can unbind it or remove it from your app.
 
 #### 7.3.3 Add Binding Configuration
 
-When a service is in the **Services To Be Bound** section, you can add a new binding configuration.
+When a service is in the **Services To Be Bound** section, you can add a new binding configuration, if this is supported by the service and the Mendix Developer Portal.
+
+If you want to change the configuration of a service which is already bound, you will need to unbind the service first, as described above.
 
 1. Click the ellipsis next to the service you want to (re)configure in the **Services To Be Bound** section.
 
@@ -627,14 +629,14 @@ To use this database for your Mendix app, you will need to choose **AWS RDS Post
 
 ![](/attachments/developerportal/deploy/sap-cloud-platform/aws-rds.png)
 
-You will also need to set up the configuration of your AWS RDS PostgreSQL file. See [PostgreSQL on Amazon (AWS) for SAP Business Technology Platform](/partners/sap/sap-postgresql-on-aws) for more information.
+You will also need to set up the configuration of your AWS RDS PostgreSQL file. See [PostgreSQL on Amazon (AWS) for SAP Business Technology Platform](/partners/sap/sap-postgresql-on-aws/) for more information.
 
 ### 8.2 Running Mendix on SAP HANA{#sap-hana}
 
 {{% alert color="info" %}}
 You can only use SAP HANA as the Mendix database for Mendix version 7.23.3 and above.
 
-There are also some differences in the way that Mendix can be used with SAP HANA compared to PostgreSQL databases – see [SAP HANA – Known Issues](/refguide/saphana).
+There are also some differences in the way that Mendix can be used with SAP HANA compared to PostgreSQL databases – see [SAP HANA – Known Issues](/refguide/saphana/).
 {{% /alert %}}
 
 #### 8.2.1 SAP HANA Configuration for Full Accounts
@@ -723,9 +725,9 @@ If you are trying to bind more than one new service, it is not possible to ident
 
 If an app is deployed to SAP using the Studio Pro **Run** or **Publish** button before it has been started from the Developer Portal, the deployment will fail. This is because the marketplace services have not been bound.
 
-{{/* % image_container width="50%" % */}}
+{{% image_container width="50%" %}}
 ![](/attachments/developerportal/deploy/sap-cloud-platform/error-desktop-modeler.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 If you use the Developer Portal to look at the details of the environment to which you are deploying, you will see that the services are still waiting to be bound.
 
@@ -739,4 +741,4 @@ The Mendix status page ([https://status.mendix.com/](https://status.mendix.com/)
 
 ## 11 Read More
 
-* [SAP Single Sign On](/partners/sap/sap-single-sign-on)
+* [SAP Single Sign On](/partners/sap/sap-single-sign-on/)

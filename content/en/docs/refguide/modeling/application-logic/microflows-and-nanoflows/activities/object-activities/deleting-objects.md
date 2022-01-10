@@ -44,7 +44,7 @@ Default: *No*
 {{% alert color="info" %}}
 To make pages of a Mendix app efficient, many widgets display values from an attribute of an object which is cached on the page. Attributes in widgets which use cached data are *always* reflected in the client even if they are not committed and irrespective of the value of **Refresh in client**. When an object is deleted, it will display any attributes as null, but the object will still be displayed (for example, there will be a blank entry for the deleted object in a list view) 
 
-If **Refresh in client** is set to *Yes* then all widgets will be updated, including those which are only updated when a [data source](data-sources) is loaded. 
+If **Refresh in client** is set to *Yes* then all widgets will be updated, including those which are only updated when a [data source](/refguide/data-sources/) is loaded. 
 
 When testing your app, ensure that the desired data is being displayed by the widgets you have chosen.
 {{% /alert %}}
@@ -53,13 +53,13 @@ When testing your app, ensure that the desired data is being displayed by the wi
 
 If **Refresh in client** is set to *No*, the data sources are not rerun, and widgets which need to reload data will still display the object(s).
 
-If set to *Yes*, the deletion is reflected across the client, which includes reloading the relevant [data sources](data-sources).
+If set to *Yes*, the deletion is reflected across the client, which includes reloading the relevant [data sources](/refguide/data-sources/).
 
 #### 3.2.2 Activity Used in a Microflow Called in an Offline-First App
 
 When inside a microflow that is called from an offline, native, or hybrid app, the **Refresh in client** option is ignored and functions as if it was set to **No**.
 
-For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+For more information, see the [Microflows](/refguide/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 
 #### 3.2.3 Activity Used in a Nanoflow {#delete-in-nano}
 
@@ -79,7 +79,7 @@ When using the activity in a nanoflow accessible from an offline profile, please
 *  When you create an object in the client and optionally commit it, it does not exist in the runtime database until you synchronize it
 	* Deleting such an object removes it from the device and does not require synchronization, therefore the before and after events of the corresponding entity will not be triggered
 
-For more information on associations' delete behavior, see the [Delete Behavior](/refguide/association-properties#delete-behavior) section of *Association Properties*.
+For more information on associations' delete behavior, see the [Delete Behavior](/refguide/association-properties/#delete-behavior) section of *Association Properties*.
 
 <a name="delete-example"></a> For example, the **On delete of 'Customer' object** option below should be set to **Keep 'Order' objects**:
 
@@ -93,7 +93,7 @@ For more information on associations' delete behavior, see the [Delete Behavior]
 
 ## 5 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
+{{% snippet file="refguide/microflow-common-section-link.md" %}}
 
 ## 6 What Happens During a Delete? 
 

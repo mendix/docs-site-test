@@ -1,6 +1,6 @@
 ---
 title: "Data Grid (Document Template)"
-url: /refguide7/data-grid-document-template
+url: /refguide7/data-grid-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Data+Grid+(document+template).html
@@ -11,10 +11,10 @@ aliases:
 
 The data grid shows a list of objects in a grid. For example, a data grid can show all the orders a customer has placed.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-[![](/attachments/refguide7/desktop-modeler/document-templates/data-grid-document-template/918138.png)](data-grid-document-template)
-](data-grid-document-template)A data grid showing a list of orders with a description and the referenced customer name.
+[![](/attachments/refguide7/desktop-modeler/document-templates/data-grid-document-template/918138.png)](/refguide7/data-grid-document-template/)
+A data grid showing a list of orders with a description and the referenced customer name.
 
 {{% /alert %}}
 
@@ -22,11 +22,11 @@ The data grid shows a list of objects in a grid. For example, a data grid can sh
 
 ### Columns
 
-See [Columns (document template)](columns-document-template).
+See [Columns (document template)](/refguide7/columns-document-template/).
 
 ### Sort bar
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide7/sort-bar/).
 
 ## Appearance Properties
 
@@ -34,7 +34,7 @@ See [Sort Bar](sort-bar).
 
 The column weights are percentages separated by semi-colons that determine the widths of the columns. The weights have to add up to 100\. An alternative way of changing the widths of columns is by dragging the separating line between columns.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 In the screenshot above the column weights are 50;25;25.
 
@@ -54,13 +54,13 @@ With striping enabled you can set the properties of even and uneven datagrid row
 
 ### Style
 
-See [Style](style)
+See [Style](/refguide7/style/)
 
 ## Common Properties
 
 ### Name
 
-The internal name of the widget. You can use this to give sensible names to widgets. The name property also appears in the generated HTML: the widget DOM element automatically includes the class '`mx-name-{NAME}`', which can be useful for [Selenium testing](/howto7/integration/selenium-support).
+The internal name of the widget. You can use this to give sensible names to widgets. The name property also appears in the generated HTML: the widget DOM element automatically includes the class '`mx-name-{NAME}`', which can be useful for [Selenium testing](/howto7/integration/selenium-support/).
 
 ## Data Source Properties
 

@@ -57,7 +57,7 @@ The widget connects to the first list view it finds from within its parent conta
 
 {{/* % image_container width="300" % */}}
 ![](/attachments/appstore/widgets/list-view-controls/check-box-filter.gif)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ## 3 Drop-Down Filter Widget {#drop-down-filter}
 
@@ -83,7 +83,7 @@ When placed above a list view, this widget enables filtering the list view at ru
 
 {{/* % image_container width="300" % */}}
 ![](/attachments/appstore/widgets/list-view-controls/drop-down-filter.gif)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ## 4 Drop-Down Sort Widget {#drop-down-sort}
 
@@ -104,7 +104,7 @@ This widget adds an interactive sort to your list view. It supports sorting on a
 
 {{/* % image_container width="300" % */}}
 ![](/attachments/appstore/widgets/list-view-controls/drop-down-sort.gif)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 
 ## 5 Header Sort Widget {#header-sort}
@@ -113,7 +113,7 @@ This is an example of the header sort widget:
 
 {{/* % image_container width="300" % */}}
 ![](/attachments/appstore/widgets/list-view-controls/header-sort.gif)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ## 6 Pagination Widget {#pagination}
 
@@ -139,19 +139,19 @@ With this widget, you can add Bootstrap-like paging to your list view, similar t
 	
 	{{/* % image_container width="300" % */}}
 	![](/attachments/appstore/widgets/list-view-controls/lower-pagination.gif)
-	{{/* % /image_container % */}} 
+	{{/* % /image_container % */}}
   
 * Multiple paginations:
 
 	{{/* % image_container width="300" % */}}
 	![](/attachments/appstore/widgets/list-view-controls/multiple-pagination.gif)
-	{{/* % /image_container % */}} 
+	{{/* % /image_container % */}}
 
 * Page size:
 	
 	{{/* % image_container width="300" % */}}
 	![](/attachments/appstore/widgets/list-view-controls/page-size.gif)
-	{{/* % /image_container % */}} 
+	{{/* % /image_container % */}}
 	
 ## 7 Text Box Search Widget {#text-box-search}
 
@@ -172,7 +172,7 @@ Add an interactive search box to all of your list views with this widget. This s
 
 {{/* % image_container width="300" % */}}
 ![](/attachments/appstore/widgets/list-view-controls/text-box-search.gif)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ## 8 Developing This Marketplace Component
 

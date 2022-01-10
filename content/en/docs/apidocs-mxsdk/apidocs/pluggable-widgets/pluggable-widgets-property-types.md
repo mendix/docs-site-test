@@ -12,7 +12,7 @@ aliases:
 
 ## 1 Introduction
 
-In order to be configurable, pluggable widgets use a [widget properties definition](/apidocs-mxsdk/apidocs/pluggable-widgets#properties-definition) which describes the properties available to pluggable widgets. To see examples of pluggable widgets in action, see [How To Build Pluggable Widgets](/howto/extensibility/pluggable-widgets).
+In order to be configurable, pluggable widgets use a [widget properties definition](/apidocs-mxsdk/apidocs/pluggable-widgets/#properties-definition) which describes the properties available to pluggable widgets. To see examples of pluggable widgets in action, see [How To Build Pluggable Widgets](/howto/extensibility/pluggable-widgets/).
 
 The common structure of a property definition is as follows:
 
@@ -232,7 +232,7 @@ Then the Studio Pro UI for the property appears like this:
 
 ### 3.1 Icon {#icon}
 
-Properties of type icon allows a user to configure an icon similar to one used by a [button](/refguide/button-properties#icon). It is passed as `DynamicValue<IconValue>` prop to a client component. For more information, see the [IconValue](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis#icon-value) section of *Client APIs Available to Pluggable Widgets*.
+Properties of type icon allows a user to configure an icon similar to one used by a [button](/refguide/button-properties/#icon). It is passed as `DynamicValue<IconValue>` prop to a client component. For more information, see the [IconValue](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/#icon-value) section of *Client APIs Available to Pluggable Widgets*.
 
 #### 3.1.1 XML Attributes
 
@@ -258,7 +258,7 @@ Then the Studio Pro UI for the component appears like this:
 
 ### 3.2 Image {#image}
 
-Image allows a user to configure a static image from an [image collection](/refguide/image-collection). It also allows a user to configure an image from an object that is a specialization of **System.Image**. It is passed as an `DynamicValue<ImageValue>` prop to a client component (for more information, see the [ImageValue](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis#imagevalue) section of *Client APIs Available to Pluggable Widgets*). See the [Images Reference Guide](/refguide/images) for more information about supported image formats.
+Image allows a user to configure a static image from an [image collection](/refguide/image-collection/). It also allows a user to configure an image from an object that is a specialization of **System.Image**. It is passed as an `DynamicValue<ImageValue>` prop to a client component (for more information, see the [ImageValue](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/#imagevalue) section of *Client APIs Available to Pluggable Widgets*). See the [Images Reference Guide](/refguide/images/) for more information about supported image formats.
 
 {{% alert color="warning" %}}
 GIF images are not supported in native mobile apps on Android devices.
@@ -288,7 +288,7 @@ Then the Studio Pro UI for the component appears like this:
 
 ### 3.3 Widgets {#widgets}
 
-The widgets property allows a user to place multiple widgets inside a pluggable widget, similar to the content of a [container](/refguide/container) widget. It is passed as a `ReactNode` prop to a client component if a `dataSource` attribute is not specified, otherwise it is passed as a [`ListWidgetValue`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values#listwidgetvalue). For more information, see the [Datasource](#datasource) section below.
+The widgets property allows a user to place multiple widgets inside a pluggable widget, similar to the content of a [container](/refguide/container/) widget. It is passed as a `ReactNode` prop to a client component if a `dataSource` attribute is not specified, otherwise it is passed as a [`ListWidgetValue`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values/#listwidgetvalue). For more information, see the [Datasource](#datasource) section below.
 
 {{% alert color="warning" %}}
 Some widgets are not yet supported inside pluggable widgets. Placing unsupported widgets inside a pluggable widget results in a consistency error in Studio and Studio Pro.
@@ -337,11 +337,11 @@ then the Studio Pro UI for the component appears like this:
 
 ### 4.1 Expression{#expression}
 
-The expression property allows a user to configure an [expression](/refguide/expressions).
+The expression property allows a user to configure an [expression](/refguide/expressions/).
 
 If a `dataSource` attribute is not specified, the client will receive a `DynamicValue<T>` where `T` depends on the expression's return type.
 
-When a `dataSource` attribute is specified and configured by the user, it is passed as a [`ListExpressionValue<T>`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values#listexpressionvalue) where `T` depends on the expression's return type. For more information, see the [Datasource](#datasource) section below.
+When a `dataSource` attribute is specified and configured by the user, it is passed as a [`ListExpressionValue<T>`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values/#listexpressionvalue) where `T` depends on the expression's return type. For more information, see the [Datasource](#datasource) section below.
 
 #### 4.1.1 XML Attributes
 
@@ -383,11 +383,11 @@ Then the Studio Pro UI for the property appears like this:
 
 ### 4.2 TextTemplate{#texttemplate}
 
-The TextTemplate property allows a user to configure a translatable text template similar to the [Caption](/refguide/text#caption) of a text widget.
+The TextTemplate property allows a user to configure a translatable text template similar to the [Caption](/refguide/text/#caption) of a text widget.
 
 If a `dataSource` attribute is not specified, the interpolated string will be passed to the client component as `DynamicValue<string>`.
 
-When a `dataSource` attribute is specified and configured by the user, it is passed as a [`ListExpressionValue<string>`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values#listexpressionvalue). For more information, see the [Datasource](#datasource) section below.
+When a `dataSource` attribute is specified and configured by the user, it is passed as a [`ListExpressionValue<string>`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values/#listexpressionvalue). For more information, see the [Datasource](#datasource) section below.
 
 #### 4.2.1 XML Attributes
 
@@ -402,7 +402,7 @@ When a `dataSource` attribute is specified and configured by the user, it is pas
 
 #### 4.2.2 XML Elements
 
-`<translations>` — Allows a user to set a default value for text templates for different languages using `<translation>` elements with a `lang` attribute representing [ISO 639](https://en.wikipedia.org/wiki/ISO_639) code of the language. Available languages are listed in the [Languages Tab](/refguide/project-settings#languages-tab) in Studio Pro.
+`<translations>` — Allows a user to set a default value for text templates for different languages using `<translation>` elements with a `lang` attribute representing [ISO 639](https:/en.wikipedia.org/wiki/ISO_639) code of the language. Available languages are listed in the [Languages Tab](/refguide/project-settings/#languages-tab) in Studio Pro.
 
 #### 4.2.3 Studio Pro UI
 
@@ -430,7 +430,7 @@ The action property type allows a user to configure an action which can do thing
 
 If a `dataSource` attribute is not specified, the client will receive an `ActionValue` representing the action or `undefined` if the **Do nothing** action was selected.
 
-When a `dataSource` attribute is specified and configured by the user, it is passed as a [`ListActionValue`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values#listactionvalue). For more information, see the [Datasource](#datasource) section below.
+When a `dataSource` attribute is specified and configured by the user, it is passed as a [`ListActionValue`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values/#listactionvalue). For more information, see the [Datasource](#datasource) section below.
 
 #### 4.3.1 XML Attributes
 
@@ -459,9 +459,9 @@ Then the Studio Pro UI for the property appears like this:
 
 The attribute property type allows a widget to work directly with entities' attributes, both reading and writing attributes. Depending on the widget's purposes, a widget should define attribute types it supports. 
 
-If a `dataSource` attribute is not specified, the client will receive an `EditableValue<T>` where `T` depends on a configured `<attributeType>`. For more information, see the [EditableValue](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis#editable-value) section of *Client APIs Available to Pluggable Widgets*.
+If a `dataSource` attribute is not specified, the client will receive an `EditableValue<T>` where `T` depends on a configured `<attributeType>`. For more information, see the [EditableValue](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/#editable-value) section of *Client APIs Available to Pluggable Widgets*.
 
-When a `dataSource` attribute is specified and configured by the user, it is passed as a [`ListAttributeValue`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values#listattributevalue). For more information, see the [Datasource](#datasource) section below.
+When a `dataSource` attribute is specified and configured by the user, it is passed as a [`ListAttributeValue`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values/#listattributevalue). For more information, see the [Datasource](#datasource) section below.
 
 #### 4.4.1 XML 
 
@@ -531,7 +531,7 @@ The object property type allows to create an arbitrary list of properties.
 
 #### 4.5.2 XML Elements
 
-`<properties>` (required) — This encapsulates the list or properties to be configured. For more information on property groups, see the [Property Groups](/apidocs-mxsdk/apidocs/pluggable-widgets#property-groups) section of *Pluggable Widgets API*. Properties must be grouped by `<propertyGroup>` elements. Nested object properties are not supported.
+`<properties>` (required) — This encapsulates the list or properties to be configured. For more information on property groups, see the [Property Groups](/apidocs-mxsdk/apidocs/pluggable-widgets/#property-groups) section of *Pluggable Widgets API*. Properties must be grouped by `<propertyGroup>` elements. Nested object properties are not supported.
 
 #### 4.5.3 Studio Pro UI
 
@@ -562,7 +562,7 @@ Then the Studio Pro UI for the property appears like this:
 
 ### 4.6 File {#file}
 
-The file property type allows a user to configure a file from an object that is a specialization of **System.File**. It is passed as a [`DynamicValue<FileValue>`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis#filevalue) prop to a client component.
+The file property type allows a user to configure a file from an object that is a specialization of **System.File**. It is passed as a [`DynamicValue<FileValue>`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/#filevalue) prop to a client component.
 
 #### 4.6.1 XML Attributes
 
@@ -589,7 +589,7 @@ Then the Studio Pro UI for the property appears like this:
 
 ### 4.7 Datasource {#datasource}
 
-The datasource property allows widgets to work with object lists. The client component will receive value prop of type [`ListValue`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values#listvalue) and may be used with [`action`](#action), [`attribute`](#attribute), [`expression`](#expression), [`text template`](#texttemplate) and [`widgets`](#widgets) properties. See [Data Sources](/refguide/data-sources#list-widgets) for available data source types.
+The datasource property allows widgets to work with object lists. The client component will receive value prop of type [`ListValue`](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values/#listvalue) and may be used with [`action`](#action), [`attribute`](#attribute), [`expression`](#expression), [`text template`](#texttemplate) and [`widgets`](#widgets) properties. See [Data Sources](/refguide/data-sources/#list-widgets) for available data source types.
 
 If no data source has been configured by the user, any properties that are linked to the datasource property are automatically omitted from the props passed to the client component (even if they are marked as required).
 
@@ -623,7 +623,7 @@ Then the Studio Pro UI for the property appears like this:
 
 ## 5 System Properties {#system-properties}
 
-System properties is a way for a pluggable widget to adopt extended widget functionality provided by Mendix platform. System properties should be defined as `<systemProperty>` elements. The only property XML attribute `<systemProperty>` requires is `key` attribute, which defines a system property's type. The following values are allowed:
+System properties is a way for a pluggable widget to adopt extended widget functionality provided by Mendix Platform. System properties should be defined as `<systemProperty>` elements. The only property XML attribute `<systemProperty>` requires is `key` attribute, which defines a system property's type. The following values are allowed:
 
 * `Label`
 * `Name`
@@ -633,7 +633,7 @@ System properties is a way for a pluggable widget to adopt extended widget funct
 
 ### 5.1 Label {#label}
 
-Label property allows a pluggable widget to have labeling functionality similar to a [core input widget](/refguide/text-box#label). This allows a user to set a label, a label position, and a label width. If a widget has a label configured, its client component will automatically be wrapped into a correct markup.
+Label property allows a pluggable widget to have labeling functionality similar to a [core input widget](/refguide/text-box/#label). This allows a user to set a label, a label position, and a label width. If a widget has a label configured, its client component will automatically be wrapped into a correct markup.
 
 ```xml
 <systemProperty key="Label"/>
@@ -641,7 +641,7 @@ Label property allows a pluggable widget to have labeling functionality similar 
 
 ### 5.2 Name {#name}
 
-Every widget have a name by default. This property can be used to control position of the widget name input. If this property is not specified, input will be placed in **Common** tab. A widget’s name is also used for locating it during [automated tests](/howto/integration/selenium-support). For that purpose in web apps, a widget name is automatically appended to a `class` prop a component receives, and in native mobile apps is passed as a separate `name` prop.
+Every widget have a name by default. This property can be used to control position of the widget name input. If this property is not specified, input will be placed in **Common** tab. A widget’s name is also used for locating it during [automated tests](/howto/integration/selenium-support/). For that purpose in web apps, a widget name is automatically appended to a `class` prop a component receives, and in native mobile apps is passed as a separate `name` prop.
 
 ```xml
 <systemProperty key="Name"/>
@@ -649,7 +649,7 @@ Every widget have a name by default. This property can be used to control positi
 
 ### 5.3 TabIndex {#tabindex}
 
-The TabIndex property allows pluggable widgets to implement the **Tab index** setting similar to  a [core input widget](/refguide/common-widget-properties#tab-index). Every selectable or input-like widget should opt for this to provide a consistent developing experience and an accessible app for an end-user. A widget’s tab index, when it is not zero, is passed to a client component in a `tabIndex` prop.
+The TabIndex property allows pluggable widgets to implement the **Tab index** setting similar to  a [core input widget](/refguide/common-widget-properties/#tab-index). Every selectable or input-like widget should opt for this to provide a consistent developing experience and an accessible app for an end-user. A widget’s tab index, when it is not zero, is passed to a client component in a `tabIndex` prop.
 
 ```xml
 <systemProperty key="TabIndex"/>
@@ -657,7 +657,7 @@ The TabIndex property allows pluggable widgets to implement the **Tab index** se
 
 ### 5.4 Visibility {#visibility}
 
-Every pluggable widget can be [conditionally hidden](/refguide/common-widget-properties#visibility-properties). This property can be used to control a position of the widget visibility inputs.
+Every pluggable widget can be [conditionally hidden](/refguide/common-widget-properties/#visibility-properties). This property can be used to control a position of the widget visibility inputs.
 
 ```xml
 <systemProperty key="Visibility"/>
@@ -665,7 +665,7 @@ Every pluggable widget can be [conditionally hidden](/refguide/common-widget-pro
 
 ### 5.5 Editability {#editability}
 
-The editability property allows a pluggable widget to have an editable configuration similar to a [core input widget](/refguide/text-box#editability). When a widget is marked as read-only or conditionally editable with condition being false, all [editable values](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis#editable-value) its client component receives will have `readOnly` flag.
+The editability property allows a pluggable widget to have an editable configuration similar to a [core input widget](/refguide/text-box/#editability). When a widget is marked as read-only or conditionally editable with condition being false, all [editable values](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/#editable-value) its client component receives will have `readOnly` flag.
 
 ```xml
 <systemProperty key="Editability"/>
@@ -673,6 +673,6 @@ The editability property allows a pluggable widget to have an editable configura
 
 ## 6 Read More
 
-* [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets)
-* [Client APIs Available to Pluggable Widgets](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis)
-* [Build Pluggable Widgets](/howto/extensibility/pluggable-widgets)
+* [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets/)
+* [Client APIs Available to Pluggable Widgets](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis/)
+* [Build Pluggable Widgets](/howto/extensibility/pluggable-widgets/)

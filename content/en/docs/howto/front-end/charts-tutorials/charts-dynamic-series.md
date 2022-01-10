@@ -18,7 +18,7 @@ The charts widget provides a basic implementation of dynamic series. This allows
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Download the latest [Charts Widget](/appstore/widgets/charts) from the Mendix Marketplace
+* Download the latest [Charts Widget](/appstore/widgets/charts/) from the Mendix Marketplace
 
 ## 3 Setting up Chart Data
 
@@ -116,6 +116,6 @@ To view the chart, follow these steps:
 
 ## 6 Read More
 
-* [Create a Basic Chart](charts-basic-create)
-* [Fine_Tune a Chart with Advance Settings](charts-advanced-tuning)
-* [Use Any Chart](charts-any-usage)
+* [Create a Basic Chart](/howto/front-end/charts-basic-create/)
+* [Fine_Tune a Chart with Advance Settings](/howto/front-end/charts-advanced-tuning/)
+* [Use Any Chart](/howto/front-end/charts-any-usage/)

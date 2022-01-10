@@ -10,13 +10,13 @@ tags: ["Deploy", "Private Cloud", "Environment"]
 
 ## 1 Introduction
 
-To deploy apps to your private cloud cluster (for example to Red Hat OpenShift or AWS-EKS), the cluster needs to be registered in the Mendix Developer Portal. This creates a link between the Mendix Developer Portal and the cluster. See [Creating a Private Cloud Cluster](private-cloud-cluster) for instructions on how to do this.
+To deploy apps to your private cloud cluster (for example to Red Hat OpenShift or AWS-EKS), the cluster needs to be registered in the Mendix Developer Portal. This creates a link between the Mendix Developer Portal and the cluster. See [Creating a Private Cloud Cluster](/developerportal/deploy/private-cloud-cluster/) for instructions on how to do this.
 
 Once the cluster has been registered, and a namespace created, team members with *Deploy App* rights can create environments and deploy an app.
 
 This document explains how to use the Mendix Developer Portal to deploy your **connected** app.
 
-To deploy to a namespace in a **standalone** cluster, you provide the CRs through the console or command line. This is described in [Using Command Line to Deploy a Mendix App to a Private Cloud Cluster](private-cloud-operator).
+To deploy to a namespace in a **standalone** cluster, you provide the CRs through the console or command line. This is described in [Using Command Line to Deploy a Mendix App to a Private Cloud Cluster](/developerportal/deploy/private-cloud-operator/).
 
 Within your namespace you can run one, or several, Mendix apps. You can see the relationship between the Mendix environments and the Kubernetes namespaces in the image below.
 
@@ -28,7 +28,7 @@ Because you can run several Mendix apps in the same namespace, each environment 
 
 To deploy an app to your private cloud platform, you need the following:
 
-* A Mendix account with **Deploy App** rights to an existing Cluster – see [Registering a Private Cloud Cluster](private-cloud-cluster) for more information on setting up clusters and namespaces and adding members
+* A Mendix account with **Deploy App** rights to an existing Cluster – see [Registering a Private Cloud Cluster](/developerportal/deploy/private-cloud-cluster/) for more information on setting up clusters and namespaces and adding members
 * Mendix Studio Pro version 7.23.3 (build 48173) or above.
 * A Mendix app created with the version of Studio Pro you are using.
 
@@ -74,9 +74,9 @@ First you need to create an environment:
 5. Select the **Purpose**.
    
   1. For development of the app, for example acceptance testing, choose **Development**.
-  2. For production deployment, select **Production**. If you select **Production**, then you will be asked for the **Subscription Secret** which ensures that your app runs as a licensed app. These restrictions on unlicensed/test apps are very similar to those listed in the [Free Apps](mendix-cloud-deploy#free-app) section of *Mendix Cloud*.
+  2. For production deployment, select **Production**. If you select **Production**, then you will be asked for the **Subscription Secret** which ensures that your app runs as a licensed app. These restrictions on unlicensed/test apps are very similar to those listed in the [Free Apps](/developerportal/deploy/mendix-cloud-deploy/#free-app) section of *Mendix Cloud*.
 
-    {{% alert color="warning" %}}Your app can only be deployed to a production environment if [security in the app is set on](/refguide/project-security). You will not receive an error if security is set off, but the deployment will appear to hang with a spinner being displayed.{{% /alert %}}
+    {{% alert color="warning" %}}Your app can only be deployed to a production environment if [security in the app is set on](/refguide/project-security/). You will not receive an error if security is set off, but the deployment will appear to hang with a spinner being displayed.{{% /alert %}}
 
 6. Click **Next**.
    
@@ -420,7 +420,7 @@ For a *connected* cluster, the top level MendixApp​ CRD will be deleted from t
 
 * ​​Files related to that environment will be deleted from the S3/Minio/Tencent storage bucket (or prefix if this is using a shared bucket).
 
-    {{% alert color="info" %}}If you are using the S3 [create account with existing policy](private-cloud-cluster#storage-plan) plan - the files remain untouched.{{% /alert %}} 
+    {{% alert color="info" %}}If you are using the S3 [create account with existing policy](/developerportal/deploy/private-cloud-cluster/#storage-plan) plan - the files remain untouched.{{% /alert %}} 
 
 * ​​S3/Minio users and policies will be deleted (if there is a storage plan specified to create those objects).
 
@@ -438,10 +438,10 @@ If any of these garbage collection steps fail, you will no longer see the enviro
 
 This enables you to change the purpose of your app environment. You can label an environment as one used for development of the app, for example acceptance testing. In this case choose **Development** and the app will be deployed as an unlicensed.
 
-For production deployment, select **Production**. If you select **Production**, then you will be asked for the Subscription Secret which ensures that your app runs as a licensed app. For the differences between unlicensed/test apps and licensed apps, see the [Free App](mendix-cloud-deploy#free-app) section in *Mendix Cloud*.
+For production deployment, select **Production**. If you select **Production**, then you will be asked for the Subscription Secret which ensures that your app runs as a licensed app. For the differences between unlicensed/test apps and licensed apps, see the [Free App](/developerportal/deploy/mendix-cloud-deploy/#free-app) section in *Mendix Cloud*.
 
 {{% alert color="warning" %}}
-Your app can only be deployed to a production environment if [security in the app is set on](/refguide/project-security). You will not receive an error if security is set off, but the deployment will appear to hang with a spinner being displayed.
+Your app can only be deployed to a production environment if [security in the app is set on](/refguide/project-security/). You will not receive an error if security is set off, but the deployment will appear to hang with a spinner being displayed.
 {{% /alert %}}
 
 ##### 5.1.3.8 Change Subscription Secret{#change-subscription-secret}
@@ -462,13 +462,13 @@ To change any constants, select the constant you want to edit and then click **E
 
 ### 5.3 Network Tab
 
-On the Network tab, you add client certificates (in the PKCS12 format) or certificate authorities (in the PEM format) for outgoing connections. These will be used when your application initiates SSL/TLS connections. This works in the same way as the Network tab for deployments to the Mendix Cloud. For more details on these, see the [Network Tab](environments-details#network-tab) section of *Environment Details*.
+On the Network tab, you add client certificates (in the PKCS12 format) or certificate authorities (in the PEM format) for outgoing connections. These will be used when your application initiates SSL/TLS connections. This works in the same way as the Network tab for deployments to the Mendix Cloud. For more details on these, see the [Network Tab](/developerportal/deploy/environments-details/#network-tab) section of *Environment Details*.
 
 ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/network-tab.png)
 
 ### 5.4 Runtime Tab
 
-On the Runtime tab, you can change various runtime settings for your app environment. This works in the same way as the Runtime tab for deployments to the Mendix Cloud. For more details on these, see the [Runtime Tab](environments-details#runtime-tab) section of *Environment Details*.
+On the Runtime tab, you can change various runtime settings for your app environment. This works in the same way as the Runtime tab for deployments to the Mendix Cloud. For more details on these, see the [Runtime Tab](/developerportal/deploy/environments-details/#runtime-tab) section of *Environment Details*.
 
 ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/runtime-tab.png)
 
@@ -496,7 +496,7 @@ This might produce the log below for the example described above.
 
 ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/log-levels-tab-3.png)
 
-For more information, see the [Log Levels Tab](environments-details#log-levels) section of *Environment Details*.
+For more information, see the [Log Levels Tab](/developerportal/deploy/environments-details/#log-levels) section of *Environment Details*.
 
 ### 5.6 TLS
 
@@ -532,7 +532,7 @@ You will receive a warning that you have made some changes. Click **Apply Change
 
 ### 5.7 Debugger
 
-On the Debugger tab you can set up and view the credentials you need to debug your app when it is running in your private cloud. For more information see [How To Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely#private-cloud).
+On the Debugger tab you can set up and view the credentials you need to debug your app when it is running in your private cloud. For more information see [How To Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely/#private-cloud).
 
 ## 6 Current Limitations{#limitations}
 
@@ -612,7 +612,7 @@ This workaround is only required for Mendix Operator versions below 1.10.0. Mend
 
 In some cases, your Mendix app will need to know its own URL – for example when using SSO or sending emails.
 
-For this to work properly, you need to set the [ApplicationRootUrl](/refguide/custom-settings#general) **Custom Runtime Setting** in the **Runtime** tab to the app's URL.
+For this to work properly, you need to set the [ApplicationRootUrl](/refguide/custom-settings/#general) **Custom Runtime Setting** in the **Runtime** tab to the app's URL.
 
 To add this setting:
 

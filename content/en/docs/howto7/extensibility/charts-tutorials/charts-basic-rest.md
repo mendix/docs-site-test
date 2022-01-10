@@ -1,8 +1,8 @@
 ---
 title: "Use a Chart with a REST Data Source"
-url: /howto7/extensibility/charts-basic-rest
+url: /howto7/extensibility/charts-basic-rest/
 parent: "charts-tutorials"
-menu_order: 60
+weight: 60
 tags: ["Charts", "Widgets", "REST", "Desktop Modeler"]
 ---
 
@@ -21,7 +21,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Install the latest Mendix desktop modeler
 * Create an app
-* Import the latest [Charts Widgets](/appstore/widgets/charts) from the Mendix Marketplace
+* Import the latest [Charts Widgets](/appstore/widgets/charts/) from the Mendix Marketplace
 
 ## 3 Setting up Data to be Exposed by a REST Endpoint
 
@@ -29,9 +29,9 @@ Mendix allows you to publish REST Web services natively from the modeler. Using 
 
 To create an Area Chart with data from a REST service, follow these steps:
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-For more information on publishing a REST API refer to this Mendix document: [Published REST Operation](/refguide7/published-rest-operation)
+For more information on publishing a REST API refer to this Mendix document: [Published REST Operation](/refguide7/published-rest-operation/)
 
 {{% /alert %}}
 
@@ -103,6 +103,6 @@ To use the REST Data source end point in your chart, follow these steps:
 
 ## 6 Read More
 
-* [How to use chart data source REST](charts-basic-create)
-* [How to use Any Chart](charts-any-usage)
-* [How to use theme charts](charts-theme)
+* [How to use chart data source REST](/howto7/extensibility/charts-basic-create/)
+* [How to use Any Chart](/howto7/extensibility/charts-any-usage/)
+* [How to use theme charts](/howto7/extensibility/charts-theme/)

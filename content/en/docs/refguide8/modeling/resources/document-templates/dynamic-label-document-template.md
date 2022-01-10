@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Label (Document Template)"
-url: /refguide8/dynamic-label-document-template
+url: /refguide8/dynamic-label-document-template/
 parent: "document-templates"
 tags: ["studio pro"]
 aliases:
@@ -9,15 +9,15 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/dynamic-label-document-template.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/dynamic-label-document-template.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 A dynamic label is used for the same kind of attributes as a text box from the page editor. It can be used to display a text value.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide8/modeling/resources/document-templates/dynamic-label-document-template/918131.png)
 
@@ -29,7 +29,7 @@ A dynamic label linking to a customer name.
 
 ### 2.1 Style
 
-For details, see [Style](style).
+For details, see [Style](/refguide8/style/).
 
 ### 2.2 Render XHTML
 
@@ -66,11 +66,11 @@ These are the possible values:
 
 If you choose **Custom** as the date format (see above), this property determines how the attribute value is formatted. The custom date format is a string that allows for any combination of symbols found in the table below. Any punctuation will be rendered literally.
 
-{{% snippet file="/static/_includes/refguide8/custom-date-format-tokens.md" %}}
+{{% snippet file="refguide8/custom-date-format-tokens.md" %}}
 
 ## 3 Common Properties
 
-{{% snippet file="/static/_includes/refguide8/name-property.md" %}}
+{{% snippet file="refguide8/name-property.md" %}}
 
 ## 4 Data Source Properties
 

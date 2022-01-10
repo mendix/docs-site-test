@@ -6,7 +6,7 @@ parent: "ht-one-create-custom-actions"
 
 ## 1 Introduction
 
-This how-to explains the basics of creating a custom action. You must complete this how-to before proceeding with [How to Create Custom Actions](ht-one-create-custom-actions).
+This how-to explains the basics of creating a custom action. You must complete this how-to before proceeding with [How to Create Custom Actions](/addons/ats-addon/ht-one-create-custom-actions/).
 
 **This how-to will teach you how to do the following:**
 
@@ -19,9 +19,9 @@ This how-to explains the basics of creating a custom action. You must complete t
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Have a general knowledge of ATS
-* Complete [How to Get Started](ht-one-getting-started)
-* Complete [How to Create a Test Case](ht-one-create-a-test-case)
-* Read [Guidelines for Creating a Custom Action](ht-one-guidelines-custom-action)
+* Complete [How to Get Started](/addons/ats-addon/ht-one-getting-started/)
+* Complete [How to Create a Test Case](/addons/ats-addon/ht-one-create-a-test-case/)
+* Read [Guidelines for Creating a Custom Action](/addons/ats-addon/ht-one-guidelines-custom-action/)
 
 ## 3 Creating a Custom Action
 
@@ -101,12 +101,12 @@ To add input parameters, follow these steps:
 
 2.  Enter a name in the **Name** field (for example, *Widget Name*).
 
-	{{% alert type="info" %}}Use the ATS naming convention
+	{{% alert color="info" %}}Use the ATS naming convention
 	{{% /alert %}}
 
 3.  Enter a description in the **Description** field (for example, *Enter the name of the widget*).
 
-	{{% alert type="info" %}}You must make sure everybody understands what information they must enter.
+	{{% alert color="info" %}}You must make sure everybody understands what information they must enter.
 	{{% /alert %}}
   
 4.  Select a data type from the **Datatype** drop-down menu (for example, **String**).
@@ -129,7 +129,7 @@ You have now created an input parameter. You can add as many input parameters as
 
 2.  Enter a name in the **Name** field (for example, *Element*).
 
-	{{% alert type="info" %}}The user must know what the action returns, so be clear in the name that you enter.
+	{{% alert color="info" %}}The user must know what the action returns, so be clear in the name that you enter.
 	{{% /alert %}}
   
 3.  Enter a description in the **Description** field. Use this field to give a more detailed description of what is returned.
@@ -139,7 +139,7 @@ You have now created an input parameter. You can add as many input parameters as
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-basics/new-action-output-parameter-complete.png)
 
 6.  The **Output Parameter** requires additional steps. Go to the **Test Steps** tab and click **Add**.
-7.  Add the [Find/Assert Widget](rg-one-findassert-widget) action and the [Set Return Value](rg-one-set-return-value) action.
+7.  Add the [Find/Assert Widget](/addons/ats-addon/rg-one-findassert-widget/) action and the [Set Return Value](/addons/ats-addon/rg-one-set-return-value/) action.
 
   
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-basics/output-parameter-actions.png)
@@ -150,7 +150,7 @@ You have now created an input parameter. You can add as many input parameters as
 
 	ATS now returns the outcome of test step 1.
   
-	{{% alert type="info" %}}Make sure the datatype of the **Output Parameter** corresponds with datatype of the connected outcome.
+	{{% alert color="info" %}}Make sure the datatype of the **Output Parameter** corresponds with datatype of the connected outcome.
 	{{% /alert %}}
 
 You now know how to add parameters to your custom action.

@@ -27,8 +27,8 @@ Password policy properties are described in the table below:
 
 ## 3 Read More
 
-* [App Security](project-security)
-* [User Roles](user-roles)
-* [Administrator](administrator)
-* [Demo Users](demo-users)
-* [Anonymous Users](anonymous-users)
+* [App Security](/refguide/project-security/)
+* [User Roles](/refguide/user-roles/)
+* [Administrator](/refguide/administrator/)
+* [Demo Users](/refguide/demo-users/)
+* [Anonymous Users](/refguide/anonymous-users/)

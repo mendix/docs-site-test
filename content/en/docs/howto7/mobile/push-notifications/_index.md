@@ -1,8 +1,8 @@
 ---
 title: "Include Push Notifications"
-url: /howto7/mobile/push-notifications
+url: /howto7/mobile/push-notifications/
 category: "Mobile Development"
-menu_order: 10
+weight: 10
 tags: ["mobile", "push notification"]
 ---
 
@@ -22,7 +22,7 @@ The Mendix push notifications functionality makes it easy for developers to incl
 To use push notifications, make sure you have the following:
 
 * Mendix Desktop Modeler from the [Marketplace](https://marketplace.mendix.com/link/studiopro/)
-* The Mendix [Push Notifications Connector](/appstore/modules/push-notifications)
+* The Mendix [Push Notifications Connector](/appstore/modules/push-notifications/)
 * A mobile device (to get started, we recommend an Android device connected to your development machine via a data cable)
 
 ## 3 Supported Platforms
@@ -49,12 +49,12 @@ Earlier versions of the Mendix Push Notifications Connector supported Google Clo
 
 ## 6 Contributing
 
-For more information on contributing to this repository, see [How to Contribute to a GitHub Repository](/howto7/collaboration-requirements-management/contribute-to-a-github-repository).
+For more information on contributing to this repository, see [How to Contribute to a GitHub Repository](/howto7/collaboration-requirements-management/contribute-to-a-github-repository/).
 
 ## 7 Documents in This Section
 
-* [How to Implement Push Notifications](implementation-guide)
-* [How to Send Push Notifications](sending-push-notifications)
-* [How to Set Up the Firebase Cloud Messaging Server](setting-up-google-firebase-cloud-messaging-server)
-* [How to Set Up the Apple Push Notification Server](setting-up-apple-push-notification-server)
-* [How to Test the Push Notifications Implementation](testing-the-implementation)
+* [How to Implement Push Notifications](/howto7/mobile/implementation-guide/)
+* [How to Send Push Notifications](/howto7/mobile/sending-push-notifications/)
+* [How to Set Up the Firebase Cloud Messaging Server](/howto7/mobile/setting-up-google-firebase-cloud-messaging-server/)
+* [How to Set Up the Apple Push Notification Server](/howto7/mobile/setting-up-apple-push-notification-server/)
+* [How to Test the Push Notifications Implementation](/howto7/mobile/testing-the-implementation/)

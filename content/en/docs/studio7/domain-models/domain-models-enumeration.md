@@ -1,6 +1,6 @@
 ---
 title: "Enumeration"
-url: /studio7/domain-models-enumeration
+url: /studio7/domain-models-enumeration/
 category: "Domain Model"
 description: "Describes an attribute of the enumeration type in Mendix Studio."
 tags: ["studio", "domain model", "attributes", "attribute types", "enumeration"]
@@ -24,22 +24,22 @@ An enumeration is configured when you add an attribute of the enumeration type t
 
 To create a new enumeration, do the following: 
 
-1. Open your [domain model](domain-models).
+1. Open your [domain model](/studio7/domain-models/).
 
-2. Select an entity you want to create the attribute for. For more information on how to create the entity, see section [3 Adding New Entities](domain-models#adding-new-entities) in *Domain Models Overview*.
+2. Select an entity you want to create the attribute for. For more information on how to create the entity, see section [3 Adding New Entities](/studio7/domain-models/#adding-new-entities) in *Domain Models Overview*.
 
 3.  To create a new attribute of the enumeration type, click **New attribute** and do the following:<br />
     a. Set the attribute **Name**. In our example, the name of the attribute is *Grade*.<br />
-    b. Set the [**Type**](domain-models-attributes) to **Enumeration**.<br />
+    b. Set the [**Type**](/studio7/domain-models-attributes/) to **Enumeration**.<br />
     c. Click **Select enumeration** to create a new enumeration.<br />d. In the **Select enumeration** dialog window, click **New**.<br/>
     e. In the **Create new enumeration** dialog window, click **Add Item** to add possible options of the enumeration (**Name** is filled out automatically and is the same as the attribute name).<br />
 
     ![](/attachments/studio7/domain-models/domain-models-enumeration/new-enumeration-add-item.png)<br />
-<br />
+
     f. Fill out the name for the **Caption** (**Name** is filled out automatically). In our example, we first fill out  *Bronze*, as one of three possible items of the enumeration: Bronze, Silver, and Gold. <br />
 
     ![](/attachments/studio7/domain-models/domain-models-enumeration/new-enumeration-add-item-bronze.png)<br />
-<br />
+
     g. Click **Add Item** and repeat the step above to create other enumeration items.<br />
     h. Click **Create** to close the dialog windows and create the new attribute.
 
@@ -51,18 +51,18 @@ The attribute and the enumeration items are created.
 
 You can also set an existing enumeration for attributes of the enumeration type. Do the following:
 
-1. Open your [domain model](domain-models).
+1. Open your [domain model](/studio7/domain-models/).
 
-2. Select an entity you want to create the attribute for. For more information on how to create the entity, see section [3 Adding New Entities](domain-models#adding-new-entities) in *Domain Models Overview*.
+2. Select an entity you want to create the attribute for. For more information on how to create the entity, see section [3 Adding New Entities](/studio7/domain-models/#adding-new-entities) in *Domain Models Overview*.
 
 3.  To create a new attribute of the enumeration type, click **New attribute** and do the following:<br />
 
     a. Set the attribute **Name**. In our example, the name of the attribute is *Grade*.<br />
-    b. Set the [**Type**](domain-models-attributes) to **Enumeration**.<br />
+    b. Set the [**Type**](/studio7/domain-models-attributes/) to **Enumeration**.<br />
     c. Click **Select enumeration** to create a new enumeration.<br />
 
     ![](/attachments/studio7/domain-models/domain-models-enumeration/new-attribute-select-enumeration.png) <br/>
- <br/>
+
     d. In the **Select enumeration** dialog window, the existing enumerations are displayed in the list. Click the one you want to use, then click **Select**.<br />
 
     ![](/attachments/studio7/domain-models/domain-models-enumeration/selecting-existing-enumeration.png)
@@ -71,9 +71,9 @@ The existing enumeration is selected for the attribute of the enumeration type.
 
 ## 4 Properties
 
-For details on properties of attributes of the enumeration type, see section [3 Attribute Properties](domain-models-attributes#attribute-properties) in *Attribute Types*. 
+For details on properties of attributes of the enumeration type, see section [3 Attribute Properties](/studio7/domain-models-attributes/#attribute-properties) in *Attribute Types*. 
 
 ## 5 Read More
 
-* [Domain Model](domain-models)
-* [Attribute Types](domain-models-attributes) 
+* [Domain Model](/studio7/domain-models/)
+* [Attribute Types](/studio7/domain-models-attributes/) 

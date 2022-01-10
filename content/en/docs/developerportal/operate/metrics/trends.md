@@ -13,7 +13,7 @@ aliases:
 ---
 
 {{% alert color="warning" %}}
-Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be retired at the beginning of Q3 2021. To continue running your licensed Mendix application on the Mendix Cloud, you need to migrate your app to Mendix Cloud V4. To learn more about Mendix Cloud V4 and how to migrate from Mendix Cloud V3, please visit the following page: [Migrate to Mendix Cloud V4](/developerportal/deploy/migrating-to-v4). 
+Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be retired at the beginning of Q3 2021. To continue running your licensed Mendix application on the Mendix Cloud, you need to migrate your app to Mendix Cloud V4. To learn more about Mendix Cloud V4 and how to migrate from Mendix Cloud V3, please visit the following page: [Migrate to Mendix Cloud V4](/developerportal/deploy/migrating-to-v4/). 
 {{% /alert %}}
 
 ## 1 Introduction
@@ -21,9 +21,9 @@ Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be reti
 To track the usage growth of your app, and to debug performance problems, the Mendix Cloud includes detailed graphs of both your app and its environment. These graphs show performance trends of your apps in the paid editions of the Mendix Cloud. If you experience issues with your app, always check the **Alerts** and **Trends** in the **Developer Portal**.
 
 {{% alert color="info" %}}
-This document describes the trends graphs available in Mendix Cloud v3. If your app is deployed to Mendix Cloud v4, please refer to [Trends in Mendix Cloud v4](trends-v4).
+This document describes the trends graphs available in Mendix Cloud v3. If your app is deployed to Mendix Cloud v4, please refer to [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/).
 
-If you don't know which Mendix Cloud version you are using, you can find out by following the instructions in [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region).
+If you don't know which Mendix Cloud version you are using, you can find out by following the instructions in [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region/).
 {{% /alert %}}
 
 ## 2 Access to Monitoring Trends
@@ -31,7 +31,7 @@ If you don't know which Mendix Cloud version you are using, you can find out by 
 To view the **Trends**, you must have permission to **Access the Monitoring**.
 
 {{% alert color="info" %}}
-Only the [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) is allowed to grant node permissions.
+Only the [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) is allowed to grant node permissions.
 {{% /alert %}}
 
 Assign permission by following these steps:
@@ -104,14 +104,14 @@ The number of requests per second is split up by request handlers. The key ones 
 * **xas/** lists general queries for data in data grids, sending changes to the server and triggering the execution of microflows
 * **file** shows the number of file uploads and downloads
 
-Additional information about request handlers is available in the *Requests* section of [Monitoring Mendix Runtime](/refguide/monitoring-mendix-runtime#request-handlers) and the *Applying Access Restrictions to Unnecessary Request Handlers* section of [How To Implement Best Practices for App Security](/howto/security/best-practices-security#request-handlers).
+Additional information about request handlers is available in the *Requests* section of [Monitoring Mendix Runtime](/refguide/monitoring-mendix-runtime/#request-handlers) and the *Applying Access Restrictions to Unnecessary Request Handlers* section of [How To Implement Best Practices for App Security](/howto/security/best-practices-security/#request-handlers).
 
 ### 4.2 Object Cache{#Trends-appmxruntimecache}
 
 In the **Object cache** graph you can monitor the number of Mendix Objects that live in memory.
 
 {{% alert color="info" %}}
-This metric is only available for apps built with Mendix versions 6 and below. Mendix versions 7 and above use a stateless runtime and so have no object cache. See the [Mendix 7.0 Release Notes](/releasenotes/studio-pro/7.0) for more information.
+This metric is only available for apps built with Mendix versions 6 and below. Mendix versions 7 and above use a stateless runtime and so have no object cache. See the [Mendix 7.0 Release Notes](/releasenotes/studio-pro/7.0/) for more information.
 {{% /alert %}}
 
 ![](/attachments/developerportal/operate/metrics/trends/object-cache.png)
@@ -219,7 +219,7 @@ The **Application node load** is commonly used as a general indication of overal
 
 The load value is a composite value, calculated from a range of other measurements, as shown in the other graphs on this page. If you are investigating high server load, this graph alone is not sufficient.
 
-This value is used in [Alerts](/developerportal/operate/monitoring-application-health) to signal that the CPU usage is not OK. A **warning** is issued for extended load higher than 2.8, and **critical** is signaled for extended load higher than 6.0.
+This value is used in [Alerts](/developerportal/operate/monitoring-application-health/) to signal that the CPU usage is not OK. A **warning** is issued for extended load higher than 2.8, and **critical** is signaled for extended load higher than 6.0.
 
 ## 5 Database Statistics
 
@@ -311,10 +311,10 @@ The **Database node load** value is a composite value, calculated from a range o
 
 ## 6 Read More
 
-* [Alerts](monitoring-application-health)
-* [How to Calculate the Total Amount of Diskspace of a Cloud App Environment](calculate-diskspace-of-a-cloud-app-environment)
-* [Maintenance Windows: Configuration](/developerportal/deploy/maintenance-windows)
-* [Migrate to Mendix Cloud v4](/developerportal/deploy/migrating-to-v4)
-* [How to Receive Environment Status Alerts](receive-alerts)
-* [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region)
-* [Mendix Cloud v4](/developerportal/deploy/mxcloudv4)
+* [Alerts](/developerportal/operate/monitoring-application-health/)
+* [How to Calculate the Total Amount of Diskspace of a Cloud App Environment](/developerportal/operate/calculate-diskspace-of-a-cloud-app-environment/)
+* [Maintenance Windows: Configuration](/developerportal/deploy/maintenance-windows/)
+* [Migrate to Mendix Cloud v4](/developerportal/deploy/migrating-to-v4/)
+* [How to Receive Environment Status Alerts](/developerportal/operate/receive-alerts/)
+* [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region/)
+* [Mendix Cloud v4](/developerportal/deploy/mxcloudv4/)

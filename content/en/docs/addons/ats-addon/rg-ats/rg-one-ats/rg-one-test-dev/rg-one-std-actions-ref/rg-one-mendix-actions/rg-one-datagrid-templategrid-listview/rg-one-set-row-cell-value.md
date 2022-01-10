@@ -14,7 +14,7 @@ Sets the cell value in a given DataGrid row, specified by the column name.
 
 ## 3 Usage
 
-You have to pass a DataGrid row as WebElement and the column name to determine which cell you want to write. To get the DataGrid row, use the actions [Find Item/Row](rg-one-find-itemrow), [Find Item/Row (by child element)](rg-one-find-itemrow-by-child) or [Find/Assert DataGrid Row](rg-one-findassert-datagrid-row).    
+You have to pass a DataGrid row as WebElement and the column name to determine which cell you want to write. To get the DataGrid row, use the actions [Find Item/Row](/addons/ats-addon/rg-one-find-itemrow/), [Find Item/Row (by child element)](/addons/ats-addon/rg-one-find-itemrow-by-child/) or [Find/Assert DataGrid Row](/addons/ats-addon/rg-one-findassert-datagrid-row/).    
 
 ## 4 Input Parameters
 

@@ -10,15 +10,15 @@ tags: ["Deploy", "Private Cloud", "Environment", "Operator", "CI/CD", "CLI"]
 
 ## 1 Introduction
 
-Once you have the Mendix Operator installed in a namespace of your Red Hat OpenShift, or other Kubernetes cluster (see [Creating a Private Cloud Cluster](private-cloud-cluster)), you can use it to control the deployment of your Mendix app using Mendix Custom Resources (CRs). The Mendix operator then creates the app container and builds the app inside the namespace, together with all the resources the app needs.
+Once you have the Mendix Operator installed in a namespace of your Red Hat OpenShift, or other Kubernetes cluster (see [Creating a Private Cloud Cluster](/developerportal/deploy/private-cloud-cluster/)), you can use it to control the deployment of your Mendix app using Mendix Custom Resources (CRs). The Mendix operator then creates the app container and builds the app inside the namespace, together with all the resources the app needs.
 
 This document explains how to provide the CRs through the console or command line for a standalone cluster. This enables you to automate your deployment processes and perform deployments from behind a firewall which would prevent access to the Mendix Developer Portal.
 
-Alternatively, you can create a connected cluster and use the Mendix Developer Portal to deploy the app, as described in [Deploying a Mendix App to a Private Cloud Cluster](private-cloud-deploy).
+Alternatively, you can create a connected cluster and use the Mendix Developer Portal to deploy the app, as described in [Deploying a Mendix App to a Private Cloud Cluster](/developerportal/deploy/private-cloud-deploy/).
 
 ## 2 Prerequisites for Deploying a Mendix App
 
-* An OpenShift (version 3.11 or above), or Kubernetes platform – see [Supported Cluster Types](private-cloud-supported-environments#supported-clusters) in *Supported Providers* for a full list
+* An OpenShift (version 3.11 or above), or Kubernetes platform – see [Supported Cluster Types](/developerportal/deploy/private-cloud-supported-environments/#supported-clusters) in *Supported Providers* for a full list
 * Platform administration account
 * **OpenShift CLI** installation if you are deploying on OpenShift (see [Getting started with the CLI](https://docs.openshift.com/container-platform/4.1/cli_reference/getting-started-cli.html) on the Red Hat OpenShift website for more information)
 * **Kubectl** installation if you are deploying to another Kubernetes platform (see [Install and Set Up kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) on the Kubernetes webside for more information)
@@ -37,7 +37,7 @@ Create a deployment package (.mda) file from your app. It is this which is picke
 
 You can obtain the deployment package in a number of ways:
 
-* within Studio Pro, by choosing the menu option **Project > Create Deployment Package…** – see [Create Deployment Package](/refguide/create-deployment-package-dialog) for more information
+* within Studio Pro, by choosing the menu option **Project > Create Deployment Package…** – see [Create Deployment Package](/refguide/create-deployment-package-dialog/) for more information
 * from the **Environments** page of your app in the Developer Portal
     ![](/attachments/developerportal/deploy/private-cloud/private-cloud-operator/environments-create-mda.png)
 * through a CI/CD process, such as Jenkins.
@@ -150,7 +150,7 @@ spec:
 You need to make the following changes:
 
 * **name**: – You can deploy multiple apps in one project/namespace — the app name in the CR doesn't have to match the app name in the mda and will have an **Environment UUID** added when it is deployed to ensure that it is unique in the project — see [Reserved Names for Mendix Apps](#reserved-names), below, for restrictions on naming your app
-* **database/storage** – ensure that these have the correct **Database Plan** and **Storage Plan** — they have to have the same names that you [registered in the namespace](private-cloud-cluster#configure-namespace)
+* **database/storage** – ensure that these have the correct **Database Plan** and **Storage Plan** — they have to have the same names that you [registered in the namespace](/developerportal/deploy/private-cloud-cluster/#configure-namespace)
 * **mendixRuntimeVersion** – the full runtime version which matches the mda, including the build number
 * **sourceURL** – the location of the deployment package, this must be accessible from your cluster without any authentication
 * **appURL** – the endpoint where you can connect to your running app — this is optional, and if it is supplied it must be a URL which is supported by your platform
@@ -160,16 +160,16 @@ You need to make the following changes:
 * **certificate** and **key** – provide the `tls.crt` and `tls.key` values directly (not recommended for production environments) — cannot be used together with **secretName**
 * **replicas** – by default one replica will be started when you deploy your app
 * **resources** – change the minimum and maximum container resources your app requires
-* **serviceAnnotations** – set custom annotations for network Services; these annotations are applied on top of [default annotations](/developerportal/deploy/private-cloud-cluster#advanced-network-settings) from `OperatorConfiguration`
-* **endpointAnnotations** – set custom annotations for Ingress (or OpenShift Route) objects; these annotations are applied on top of [default annotations](/developerportal/deploy/private-cloud-cluster#advanced-network-settings) from `OperatorConfiguration`
-* **ingressPath** – specify a custom Ingress path; this overrides the [default ingress path](/developerportal/deploy/private-cloud-cluster#advanced-network-settings) from `OperatorConfiguration`
-* **ingressPathType** – specify a custom Ingress class name; this overrides the [default ingress pathType](/developerportal/deploy/private-cloud-cluster#advanced-network-settings) from `OperatorConfiguration`
+* **serviceAnnotations** – set custom annotations for network Services; these annotations are applied on top of [default annotations](/developerportal/deploy/private-cloud-cluster/#advanced-network-settings) from `OperatorConfiguration`
+* **endpointAnnotations** – set custom annotations for Ingress (or OpenShift Route) objects; these annotations are applied on top of [default annotations](/developerportal/deploy/private-cloud-cluster/#advanced-network-settings) from `OperatorConfiguration`
+* **ingressPath** – specify a custom Ingress path; this overrides the [default ingress path](/developerportal/deploy/private-cloud-cluster/#advanced-network-settings) from `OperatorConfiguration`
+* **ingressPathType** – specify a custom Ingress class name; this overrides the [default ingress pathType](/developerportal/deploy/private-cloud-cluster/#advanced-network-settings) from `OperatorConfiguration`
 * **logAutosubscribeLevel** – change the default logging level for your app, the standard level is INFO — possibilities are: `TRACE`, `DEBUG`, `INFO`, `WARNING`, `ERROR`, and `CRITICAL`
 * **mxAdminPassword** – here you can change the password for the MxAdmin user — if you leave this empty, the password will be the one set in the Mendix model
-* **debuggerPassword** – here you can provide the password for the debugger — this is optional. Setting an empty `debuggerPassword` will disable the debugging features. In order to connect to the debugger in Studio Pro, enter the debugger URL as `<AppURL>/debugger/`. You can find further information in [How to Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely)
+* **debuggerPassword** – here you can provide the password for the debugger — this is optional. Setting an empty `debuggerPassword` will disable the debugging features. In order to connect to the debugger in Studio Pro, enter the debugger URL as `<AppURL>/debugger/`. You can find further information in [How to Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely/)
 * **dtapmode** – for development of the app, for example acceptance testing, choose **D**, for production deployment, select **P**
 
-    If you select production, then you will need to provide a **Subscription Secret** to ensure that your app runs as a licensed app — see [Free Apps](mendix-cloud-deploy#free-app) in *Mendix Cloud* for the differences between unlicensed/test apps and licensed apps
+    If you select production, then you will need to provide a **Subscription Secret** to ensure that your app runs as a licensed app — see [Free Apps](/developerportal/deploy/mendix-cloud-deploy/#free-app) in *Mendix Cloud* for the differences between unlicensed/test apps and licensed apps
     the subscription secret needs to be supplied via the **customConfiguration** using the following values:
 
     * `"License.SubscriptionSecret":"{subscription secret}"`
@@ -177,7 +177,7 @@ You need to make the following changes:
     * `"License.LicenseServerURL":<https://subscription-api.test.mendix.com/activate>`
     * `"License.EnvironmentName":"{environment name}"`
 
-    {{% alert color="warning" %}}Your app can only be deployed to a production environment if [security in the app is set on](/refguide/project-security). {{% /alert %}}
+    {{% alert color="warning" %}}Your app can only be deployed to a production environment if [security in the app is set on](/refguide/project-security/). {{% /alert %}}
 
     If you have an offline license, you cannot provide it through **customConfiguration**. You will need to configure it by adding a **runtimeLicense** section within the **runtime** section and setting **LicenseId** and **LicenseKey** to the values received from Mendix Support:
 
@@ -275,7 +275,7 @@ kubectl apply -f {File containing the CR} -n {namespace where app is being deplo
 
 To build and deploy your app using the OpenShift CLI, do the following:
 
-1.  Paste the OpenShift login command into your command line terminal as described in the first few steps of the [Signing in to Open Shift](private-cloud-cluster#openshift-signin) section of *Creating a Private Cloud Cluster*.
+1.  Paste the OpenShift login command into your command line terminal as described in the first few steps of the [Signing in to Open Shift](/developerportal/deploy/private-cloud-cluster/#openshift-signin) section of *Creating a Private Cloud Cluster*.
 2.  Switch to the project where you've deployed the Mendix Operator using the command`oc project {my-project}` where {my-project} is the name of the project where the Mendix Operator is deployed.
 3.  Paste the following command into your command line terminal:
 
@@ -340,7 +340,7 @@ All names beginning **openshift-** are reserved for use by OpenShift if you are 
 
 In some cases, your Mendix app will need to know its own URL – for example when using SSO or sending emails.
 
-For this to work properly, you need to set the [ApplicationRootUrl variable](/refguide/custom-settings#general) in `customConfiguration` to the app's URL. For example: 
+For this to work properly, you need to set the [ApplicationRootUrl variable](/refguide/custom-settings/#general) in `customConfiguration` to the app's URL. For example: 
 ```yaml
 apiVersion: privatecloud.mendix.com/v1alpha1
 kind: MendixApp

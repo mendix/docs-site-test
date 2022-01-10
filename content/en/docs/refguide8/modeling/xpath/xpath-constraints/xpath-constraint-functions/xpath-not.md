@@ -1,19 +1,19 @@
 ---
 title: "XPath Not"
-url: /refguide8/xpath-not
+url: /refguide8/xpath-not/
 parent: "xpath-constraint-functions"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-not.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-not.pdf).
 {{% /alert %}}
 
 ## 1 Overview
 
 The `not()` function inverts the meaning (and as such; the result) of the argument.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This can have different results from an inverse comparison (for example `!=` as the negative of `=`) if the XPath is over a one-to-many relationship. See the examples below for more explanation.
 {{% /alert %}}
 

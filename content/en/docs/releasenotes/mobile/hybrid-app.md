@@ -11,7 +11,7 @@ If you are building your hybrid mobile app using the regular PhoneGap Build appr
 
 If you are using the advanced flow, you can get the latest version of the Hybrid App Base by running `npm update` from your hybrid app directory. To upgrade to the latest version of the Hybrid App Template, either pull in the latest changes from GitHub, or download a new copy from [Mendix Developer Portal](https://sprintr.home.mendix.com/index.html) > **DEPLOY**.
 
-For more information on hybrid mobile app development in Mendix, see the [Hybrid Mobile](/refguide/hybrid-mobile) section of the *Studio Pro 8 Guide* and the [Hybrid Mobile](/howto/mobile/hybrid-mobile) section of the *Studio Pro 8 How-to's*.
+For more information on hybrid mobile app development in Mendix, see the [Hybrid Mobile](/refguide/hybrid-mobile/) section of the *Studio Pro 8 Guide* and the [Hybrid Mobile](/howto/mobile/hybrid-mobile/) section of the *Studio Pro 8 How-to's*.
 
 ## 2021
 
@@ -188,7 +188,7 @@ To enable more control over the target architecture, use the following variants:
 **Release date: January 6th, 2019**
 
 {{% alert color="warning" %}}
-As of April 11th, 2019, Google will drop support for sending push notifications through their Google Cloud Messaging (GCM) service. By that time, all clients will need to have migrated to the new Firebase Cloud Messaging (FCM) service. The move from GCM to FCM impacts Mendix apps that employ push notifications through the Mendix [Push Notifications Connector](/appstore/modules/push-notifications) module. Please read the notes below for upgrade instructions
+As of April 11th, 2019, Google will drop support for sending push notifications through their Google Cloud Messaging (GCM) service. By that time, all clients will need to have migrated to the new Firebase Cloud Messaging (FCM) service. The move from GCM to FCM impacts Mendix apps that employ push notifications through the Mendix [Push Notifications Connector](/appstore/modules/push-notifications/) module. Please read the notes below for upgrade instructions
 {{% /alert %}}
 
 #### Push Notifications
@@ -197,14 +197,14 @@ The latest release of the Mendix Push Notifications Connector supports FCM as th
 
 This upgrade of the hybrid app package includes an upgrade to v2 of the [Cordova Push Notifications plugin](https://github.com/phonegap/phonegap-plugin-push). As part of the plugin upgrade, some additional setup is required for push notifications (in connection with the Mendix Push Notifications Connector). Specifically, if your app supports push notifications, you are now required to set up a [Firebase](https://firebase.google.com/) account for your app and include Google service description files (*google-services.json* and *GoogleService-Info.plist*) in your hybrid app.
 
-As a result of this, Mendix hybrid apps that employ push notifications can no longer be built directly using the Phonegap Build method. Instead, you will need to prepare the hybrid app package locally by following the [Do It Yourself](/developerportal/deploy/mobileapp#doing-it-yourself) section of the *Mobile App Guide*.
+As a result of this, Mendix hybrid apps that employ push notifications can no longer be built directly using the Phonegap Build method. Instead, you will need to prepare the hybrid app package locally by following the [Do It Yourself](/developerportal/deploy/mobileapp/#doing-it-yourself) section of the *Mobile App Guide*.
 
-If your app does not employ push notifications, you can still use the Phonegap Build workflow. Please make sure you clear the **Push Notifications** check box in the **Permissions** section of the **Deploy** > [Mobile App](/developerportal/deploy/mobileapp) page in the Developer Portal.
+If your app does not employ push notifications, you can still use the Phonegap Build workflow. Please make sure you clear the **Push Notifications** check box in the **Permissions** section of the **Deploy** > [Mobile App](/developerportal/deploy/mobileapp/) page in the Developer Portal.
 
 #### Other Fixes
 
 * We improved how permission texts are configured in order to fix an issue with building iOS apps.
-* We added an exception to the navigation for `about:blank` in order to fix an issue with the [Google Maps](/appstore/widgets/google-maps) widget.
+* We added an exception to the navigation for `about:blank` in order to fix an issue with the [Google Maps](/appstore/widgets/google-maps/) widget.
 
 ## 2018
 

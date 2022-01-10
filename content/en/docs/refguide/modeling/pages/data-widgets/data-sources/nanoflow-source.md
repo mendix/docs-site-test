@@ -8,9 +8,9 @@ weight: 50
 
 ## 1 Introduction
 
-The **Nanoflow** data source is available for [data views](data-view) and [list views](list-view). 
+The **Nanoflow** data source is available for [data views](/refguide/data-view/) and [list views](/refguide/list-view/). 
 
-In most cases, you use the *database*, *association* or *XPath* data sources to fill a [data widget](data-widgets). However, sometimes the target objects need to adhere to very specific criteria, or different objects are shown under different circumstances that cannot be handled by an [XPath](xpath-constraints). In these situations a *nanoflow data source* may be required. For more information on nanoflows and their advantages, see [Nanoflows](nanoflows).
+In most cases, you use the *database*, *association* or *XPath* data sources to fill a [data widget](/refguide/data-widgets/). However, sometimes the target objects need to adhere to very specific criteria, or different objects are shown under different circumstances that cannot be handled by an [XPath](/refguide/xpath-constraints/). In these situations a *nanoflow data source* may be required. For more information on nanoflows and their advantages, see [Nanoflows](/refguide/nanoflows/).
 
 When a data widget with a nanoflow data source is displayed in the browser or refreshed, it runs the designated nanoflow and displays the return value. The manner in which the objects are acquired in the nanoflow is entirely up to you, which allows for unlimited control over what objects to return.
 
@@ -48,5 +48,5 @@ Defines the nanoflow used to populate the widget. This nanoflow will be run when
 
 ## 4 Read More
 
-* [Nanoflows](nanoflows)
-* [Data Containers](data-widgets)
+* [Nanoflows](/refguide/nanoflows/)
+* [Data Containers](/refguide/data-widgets/)

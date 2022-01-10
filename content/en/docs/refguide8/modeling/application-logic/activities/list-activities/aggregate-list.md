@@ -1,16 +1,16 @@
 ---
 title: "Aggregate List"
-url: /refguide8/aggregate-list
+url: /refguide8/aggregate-list/
 parent: "list-activities"
-menu_order: 1
+weight: 1
 tags: ["studio pro", "Aggregate", "Sum", "Average", "Count", "Minimum", "Maximum"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/aggregate-list.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/aggregate-list.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can be used in both **Microflows** and **Nanoflows**.
 {{% /alert %}}
 
@@ -65,7 +65,7 @@ Defines which type of aggregation is applied.
 
 Defines which attribute of the objects in the list is used to aggregate over. This must be a numeric attribute (Long, Integer, or Decimal).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 When using the 'Count' function it is not necessary to select an attribute, as it simply counts the number of objects in the list.
 {{% /alert %}}
 
@@ -75,4 +75,4 @@ The name of the variable in which the result of the aggregation is stored. This 
 
 ## 4 Common Section{#common}
 
-{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="refguide8/microflow-common-section-link.md" %}}

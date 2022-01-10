@@ -1,8 +1,8 @@
 ---
 title: "Set Up Anonymous User Security"
-url: /howto8/security/set-up-anonymous-user-security
+url: /howto8/security/set-up-anonymous-user-security/
 category: "Security"
-menu_order: 30
+weight: 30
 tags: ["anonymous", "security"]
 ---
 
@@ -54,4 +54,4 @@ For example, to download a file, it is possible to get the UR (for example, `htt
 
 ## 7 Read More
 
-* [Creating a Secure App](create-a-secure-app)
+* [Creating a Secure App](/howto8/security/create-a-secure-app/)

@@ -36,5 +36,5 @@ If Mendix provides a workaround, the impact can never be higher than **Medium**.
 
 ## 4 Read More
 
-* [How to Submit a Support Request](submit-support-request)
-* [Escalation Management Process](escalation-management-process)
+* [How to Submit a Support Request](/developerportal/support/submit-support-request/)
+* [Escalation Management Process](/developerportal/support/escalation-management-process/)

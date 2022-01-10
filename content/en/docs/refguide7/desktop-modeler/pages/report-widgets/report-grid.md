@@ -1,6 +1,6 @@
 ---
 title: "Report Grid"
-url: /refguide7/report-grid
+url: /refguide7/report-grid/
 parent: "report-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -41,10 +41,10 @@ If this property is true, the **Export to Excel** button will be available for t
 
 ### Generate Report on Page Load
 
-If this property is false, the report grid will not show its data until the user presses the [Report Button](report-button). This is especially useful if the report uses parameters that should be specified by the user. 
+If this property is false, the report grid will not show its data until the user presses the [Report Button](/refguide7/report-button/). This is especially useful if the report uses parameters that should be specified by the user. 
 
 ## Common Properties
 
 ### Name, Class, Style
 
-For details, see [Common Widget Properties](common-widget-properties).
+For details, see [Common Widget Properties](/refguide7/common-widget-properties/).
