@@ -1,6 +1,6 @@
 ---
 title: "Strategic Partner Terms"
-url: /product-naming/strategic-partner-terms
+url: /product-naming/strategic-partner-terms/
 weight: 3
 draft: true
 ---
