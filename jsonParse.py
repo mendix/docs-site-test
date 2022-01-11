@@ -135,7 +135,7 @@ def linkSearch(line, itemList, jsonToParse):
     while len(stringToSearch) > 0:
         linkRefSearch1 = '(?<!!)\[(!\[.+\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
         linkRefSearch2 = '(?<!!)\[(!\[\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
-        linkRefSearch3 = '(?<!!)\[(.+?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
+        linkRefSearch3 = '(?<!!)\[([^!][-./\+\w\s#$\(\) ]*?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
         searchRes1 = re.search(linkRefSearch1,stringToSearch)
         searchRes2 = re.search(linkRefSearch2,stringToSearch)
         searchRes3 = re.search(linkRefSearch3,stringToSearch)
@@ -157,7 +157,9 @@ def linkSearch(line, itemList, jsonToParse):
             if len(linkToReplace) > 0:
                 findUrl = itemIn("url", linkToReplace, itemList, jsonToParse)
                 if findUrl != None:
-                    insert = ('[' + matched.group(1) + ']' + '(' + findUrl["url"] + matched.group(3) + matched.group(4) + ')').replace('//', '/')
+                    insert = '[' + matched.group(1) + ']' + '(' + findUrl["url"].replace('//', '/') + matched.group(3) + matched.group(4) + ')'
+                else:
+                    insert = matched.group()
             else:
                 insert = matched.group()
 
