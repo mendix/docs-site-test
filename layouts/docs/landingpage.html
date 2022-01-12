@@ -43,21 +43,23 @@
 			</li>
 			{{ end }}
 		  <!-- END of addition -->
-          <!-- MvM: Move breadcrumb above banner -->
-          {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
-          {{ partial "version-banner.html" . }}
-          <div class="row">
-            <div class="col-6">
-              <h1 class="page-title">{{ .Page.Title}}</h1>
-              <br>
-              <h5>{{ .Page.Description}}</h5>
-            </div>
-            <div class="col">
-              <img src="/images/docs-extended.png" width="320px">
-            </div>
-          </div>
           <!-- Start of landing page cards -->
           <div class="container my-container">
+             <!-- MvM: Move breadcrumb above banner -->
+            {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
+            {{ partial "version-banner.html" . }}
+            <div class="row" style="margin-left: 0.5rem;margin-bottom: 1rem;">
+              <div class="col-6" >
+                <h1 class="page-title">{{ .Page.Title}}</h1>
+                <br>
+                <h5>{{ .Page.Description}}</h5>
+              </div>
+              <div class="col-1">
+              </div>
+              <div class="col-5">
+                <img src="/images/docs-extended.png" width="320px">
+              </div>
+            </div>
             <div class="row">
               <div class="col cards-layout">
                 <div class="row my-row">
