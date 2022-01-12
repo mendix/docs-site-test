@@ -14,7 +14,9 @@ Define Global variables
 {{- /* Include What Pages? */ -}}
 {{- /* range $i, $hit := .Site.AllPages */ -}}
 {{- $section := $.Site.GetPage "section" .Section }}
-{{- range $pageDot := where (where .Site.Pages "Type" "in" (slice "docs")) "IsPage" true -}}
+{{- /* Add log line that Algolia is being built and count number of pages */ -}}
+{{- warnf "Algolia being generated" -}}
+    {{- range $pageDot := where .Site.Pages "Type" "in" (slice "docs") -}}
     {{- if or (and ($pageDot.IsDescendant $section) (and (not $pageDot.Draft) (not $pageDot.Params.private))) $section.IsHome -}}
         {{- /* Make a slice of the page content */ -}}
         {{- $contentSlices := slice .Content -}}
