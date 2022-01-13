@@ -148,7 +148,7 @@ Follow the steps below:
 
 Now checklist items are displayed in the table. You can add new checklist by clicking the **New** button in the table, and edit the selected checklist by clicking the **Edit** button.
 
-{{% image_container width="80%" %}}
+{{/* % image_container width="80%" % */}}
 
 ![](/attachments/studio-how-to/pages/pages-how-to-configure-form/data-grid-configured.png)
 
@@ -156,7 +156,7 @@ Now checklist items are displayed in the table. You can add new checklist by cli
 
 Congratulations! You have the page that displays details of the selected report and checklist items of this report:
 
-{{% image_container width="80%" %}}
+{{/* % image_container width="80%" % */}}
 
 ![Configured Page](/attachments/studio-how-to/pages/pages-how-to-configure-form/configured-page.png)
 

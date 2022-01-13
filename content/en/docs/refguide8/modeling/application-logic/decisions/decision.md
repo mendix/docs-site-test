@@ -21,7 +21,7 @@ A decision is an element that makes a choice based on a condition and follows on
 
 An example of decision properties is represented in the image below:
 
-{{% image_container width="50%" %}}
+{{/* % image_container width="50%" % */}}
 ![](/attachments/refguide8/modeling/application-logic/decisions/decision/decision-properties.png)
 {{/* % /image_container % */}}
 

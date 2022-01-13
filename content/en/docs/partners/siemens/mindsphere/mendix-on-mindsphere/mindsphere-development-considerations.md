@@ -116,7 +116,7 @@ Instructions for licensing apps are available in the [License Activation](https:
 
 If you need to use a corporate web proxy, the following settings must be applied in Mendix Studio Pro to allow communication with MindSphere during local development.
 
-{{% image_container width="50%" %}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/proxy-settings.png){{/* % /image_container % */}}
+{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/proxy-settings.png){{/* % /image_container % */}}
 
 Contact your local IT department for the `proxyHost` and `proxyPort` values you need.
 
@@ -132,7 +132,7 @@ The SSO module supports you in getting a valid MindSphere token locally via **Ap
 
 When you run your app locally, you will not be able to use SSO to get your credentials. You will be logged in as MxAdmin and will be presented with a login screen on app startup if the constant *AskForCredentialsOnStartUp* is true - otherwise communication to MindSphere is not possible.
 
-{{% image_container width="50%" %}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/image19.png){{/* % /image_container % */}}
+{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/image19.png){{/* % /image_container % */}}
 
 This will use the credentials you have set up under **App Credentials** in the *Authorization Management* tab of the MindSphere Developer Cockpit for this application.
 
@@ -141,7 +141,7 @@ This will use the credentials you have set up under **App Credentials** in the *
 
 Storing the *Client Secret* inside the project is, from a security perspective, not a good idea. A better approach is to use a local environment variable. Create a user-specific environment variable with *Variable name* equal to your *Client ID* value and the *Variable value* equal to your *Client Secret* value. See step 6 below for information on how to get these values.
 
-{{% image_container width="50%" %}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/envvariables.png){{/* % /image_container % */}}
+{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/envvariables.png){{/* % /image_container % */}}
 
 On startup, the system checks if there is an environment variable present with the name equal to your *Client ID* value and uses its value as *ClientSecret*.
 The *ClientID* is built from the combination of:
@@ -338,7 +338,7 @@ You have some limits which are set for the user's tenant to be applied to a time
 2.  Write a sub-microflow which returns a list of all limits.
 3.  Apply the XPath constraint to the **Retrieve Objects** action.
 
-    {{% image_container width="75%" %}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/image27.png){{/* % /image_container % */}}
+    {{/* % image_container width="75%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/image27.png){{/* % /image_container % */}}
 
 4.  When you want to retrieve the list of limits, call this microflow instead of using the retrieve objects action. This will ensure that tenant-based security is always applied.
 

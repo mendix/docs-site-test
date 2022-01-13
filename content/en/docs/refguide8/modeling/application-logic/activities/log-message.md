@@ -49,9 +49,9 @@ The log level defines the severity of the log message. In the [Studio Pro Consol
 | Trace |   | Used for detailed execution traces. |
 | Debug |   | Used to debug execution. |
 | Info  *(default)*  |   | Used to log informative messages. |
-| Warning | {{% image_container width="15%" %}}![Warning](/attachments/refguide8/modeling/application-logic/activities/log-message/warning.png){{/* % /image_container % */}} | Used to log warnings. These messages appear in orange. |
-| Error | {{% image_container width="15%" %}}![Error](/attachments/refguide8/modeling/application-logic/activities/log-message/error.png){{/* % /image_container % */}} | Used to log error messages. These messages appear in red. |
-| Critical | {{% image_container width="15%" %}}![Critical Error](/attachments/refguide8/modeling/application-logic/activities/log-message/critical-error.png){{/* % /image_container % */}} | Used to log critical errors. These messages appear in white on red. |
+| Warning | {{/* % image_container width="15%" % */}}![Warning](/attachments/refguide8/modeling/application-logic/activities/log-message/warning.png){{/* % /image_container % */}} | Used to log warnings. These messages appear in orange. |
+| Error | {{/* % image_container width="15%" % */}}![Error](/attachments/refguide8/modeling/application-logic/activities/log-message/error.png){{/* % /image_container % */}} | Used to log error messages. These messages appear in red. |
+| Critical | {{/* % image_container width="15%" % */}}![Critical Error](/attachments/refguide8/modeling/application-logic/activities/log-message/critical-error.png){{/* % /image_container % */}} | Used to log critical errors. These messages appear in white on red. |
 
 ### 3.2 Log Node Name {#log-node-name}
 
@@ -91,4 +91,4 @@ This option also applies to `$latestSoapFault`. If you define an error handler f
 
 ## 4 Common Section {#common}
 
-{{% snippet file="refguide8/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide8/microflow-common-section-link.md" %}}

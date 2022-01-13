@@ -473,7 +473,7 @@ Once you have created the scopes for your app, you will need to assign them to t
 
 1.  Go to **Settings > Roles** from the MindSphere launchpad.
 
-    {{% image_container width="50%" %}}![](/attachments/developerportal/deploy/deploying-to-mindsphere/image16.png){{/* % /image_container % */}}
+    {{/* % image_container width="50%" % */}}![](/attachments/developerportal/deploy/deploying-to-mindsphere/image16.png){{/* % /image_container % */}}
 
 2.  Choose the app role (scope) you want to assign from the list of **Roles**.
 3.  Click **Edit user assignment**.

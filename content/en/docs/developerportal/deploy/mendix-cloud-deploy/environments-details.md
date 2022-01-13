@@ -202,7 +202,7 @@ Here you can type a **New value**.
 
 You can also set **Mask** to **Yes**. This replaces the **Current value** and the **New value** with asterisks on all screens in the Developer Portal. You will also get asterisks if you export the constants to Excel. This means that you can keep your constants secret from users who do not have edit rights.
 
-{{% image_container width="50%" %}}
+{{/* % image_container width="50%" % */}}
 ![Edit Constants Pop-up window](/attachments/developerportal/deploy/mendix-cloud-deploy/environments-details/edit-constant.png)
 {{/* % /image_container % */}}
 
@@ -214,7 +214,7 @@ For more information, see [Constants](/refguide/constants/).
 
 ## 4 Network Tab {#network-tab}
 
-{{% image_container width="50%" %}}
+{{/* % image_container width="50%" % */}}
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments-details/network1.png)
 {{/* % /image_container % */}}
 

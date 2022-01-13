@@ -45,7 +45,7 @@ The properties dialog box consists of four tabs:
 
 ## 4 General Tab {#general}
 
-{{% image_container width="66%" %}}
+{{/* % image_container width="66%" % */}}
 ![](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/integration-activities/call-rest-action/general-tab.png)
 {{/* % /image_container % */}}
 
@@ -240,7 +240,7 @@ You should always add an error handler for a [call REST service](/refguide/call-
 
 ## 8 Common Section{#common}
 
-{{% snippet file="refguide/microflow-common-section-link.md" %}}
+{{% snippet file="/static/_includes/refguide/microflow-common-section-link.md" %}}
 
 ## 9 Troubleshooting{#troubleshooting}
 
