@@ -70,7 +70,7 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
     #pattern to find any 'attachment' between () in a line, will capture the last ) in line
     fullAttachmentRefSearch = '(?<=\]\().*?attachments/(.*)?\)'
     #pattern to search against - check to change search param to start with: (?<!)\[(.+?)\] - just needs testing against group numbers
-    attNameSearch = '(?<=\]\()[-./\+\w ]*?attachments([-./\+\w]*?)([-.\+\w= ]*)\)'
+    attNameSearch = '(?<=\]\()[-./\+\w ]*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
     logName = str()
     #define new dir for attachment
     newAttDir = startDir.replace('content\\', '') + 'static\\attachments' + newDirAtt.replace('/', os.sep)
@@ -93,31 +93,44 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
                     firstIndex = matched.start()
                     lastIndex = matched.end()
                     insert = ''
+                    newFileDir = ''
+                    newFilePath = ''
+                    attachmentListEntry = ''
                     #should give back the old attachment path reference
                     oldAttDir = matched.group().strip('()')
+                    oldFilePath = oldPath + '\\' + oldAttDir.replace('/', os.sep)
                     #gives back the name of the attachment
                     attName = matched.group(2)
                     #check to make sure there still is a file in path, otherwise os.replace errors
                     fileInOldDir = os.path.exists(oldPath + '\\' + oldAttDir.replace('/', os.sep))
                     #excludes any results with more than './' preceding 'attachments'
-                    if oldAttDir.find('attachments') > 2:
+                    if oldAttDir.find('attachments') > 2 or fileInOldDir is False:
                         insert = matched.group()
                         #saves the excluded to a list to run through later
                         attLeftover.append(entry)
-                    elif name == "_index.md":
-                        insert = ('/attachments' + newDirAtt + attName + ')').replace('//', '/')
-                        os.makedirs(newAttDir, exist_ok=True)
-                        if fileInOldDir is True:
-                            os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + attName)
-                            attList.append((newAttDir + attName).replace(os.sep, '/'))
-                            logName += 'OK %s\n' % entry
+                        logName += 'RP %s\n' % entry
                     else:
-                        insert = ('/attachments' + newDirAtt + name[:-(len(exten))] + '/' + attName + ')').replace('//', '/')
-                        os.makedirs((newAttDir+name[:-(len(exten))]), exist_ok=True)
-                        if fileInOldDir is True:
-                            os.replace(oldPath + '\\' + oldAttDir.replace('/', os.sep), newAttDir + name[:-(len(exten))] + '\\' + attName)
-                            attList.append((newAttDir + name[:-(len(exten))] + '\\' + attName).replace(os.sep, '/'))
-                            logName += 'OK %s\n' % entry
+                        # if there is NOTHING between attachments/ and attName OR matched.group(1) is part of newDirAtt
+                        # AND the file being processed is NOT called index
+                        if (matched.group(1) == '' or matched.group(1) in newDirAtt) and name != "_index.md":
+                            insert = ('/attachments/' + newDirAtt + name[:-(len(exten))] + '/' + attName + ')').replace('//', '/')
+                            newFileDir = newAttDir + name[:-(len(exten))]
+                            newFilePath = newFileDir + '\\' + attName
+                        elif matched.group(1) in newDirAtt and name == "_index.md":
+                            insert = ('/attachments/' + newDirAtt + attName + ')').replace('//', '/')
+                            newFileDir = newAttDir + (matched.group(1)).replace('/', os.sep)
+                            newFilePath = newFileDir + attName
+                        else:
+                            insert = ('/attachments/' + newDirAtt + matched.group(1) + attName + ')').replace('//', '/')
+                            newFileDir = newAttDir + (matched.group(1)).replace('/', os.sep)
+                            newFilePath = newFileDir + attName
+
+                        attachmentListEntry = newFilePath.replace(os.sep, '/')
+                        os.makedirs(newFileDir, exist_ok=True)
+                        os.replace(oldFilePath, newFilePath)
+                        attList.append(attachmentListEntry)
+                        logName += 'OK %s\n' % entry
+                        
                     lineReplacement += stringToSearch[:firstIndex] + insert
                     stringToSearch = stringToSearch[lastIndex:]
                 else:
@@ -353,7 +366,7 @@ for entry in attLeftover:
     with fileinput.input(os.path.join(entry["path"], entry["file"]), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
             if entry["line No."] == fileinput.filelineno():
-                attNameSearch = '(?<=\]\()[-./\+\w ]*?attachments([-./\+\w]*?)([-.\+\w= ]*)\)'
+                attNameSearch = '(?<=\]\()[-./\+\w ]*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
                 oldAttDir = ''
                 lineReplacement = ''
                 stringToSearch = line
@@ -367,10 +380,11 @@ for entry in attLeftover:
                         attItems += 'NO %s\n' % entry
                         insert = ''
                         for attItem in attList:
-                            if attItem.endswith(matched.group(2)):
+                            if attItem.endswith(matched.group(1)+matched.group(2)):
                                 newRef = attItem.split('attachments/', maxsplit=1)
                                 insert = ('/attachments/' + newRef[1] + ')').replace('//', '/')
                                 attItems += 'OK %s\n' % entry
+                                break
                             else:
                                 insert = matched.group()
                         lineReplacement += stringToSearch[:firstIndex] + insert
