@@ -129,6 +129,15 @@
     }  
 }
 
+.dropdown-toggle.lang-arrow {
+    &::after {
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+        border-top: 0.4em solid;
+        margin-left: -0.8em;
+    }
+}
+
 // Foldable sidebar menu
 nav.foldable-nav {
 
