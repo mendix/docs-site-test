@@ -70,7 +70,7 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
     #pattern to find any 'attachment' between () in a line, will capture the last ) in line
     fullAttachmentRefSearch = '(?<=\]\().*?attachments/(.*)?\)'
     #pattern to search against - check to change search param to start with: (?<!)\[(.+?)\] - just needs testing against group numbers
-    attNameSearch = '(?<=\]\()[-./\+\w ]*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
+    attNameSearch = '(?<=\]\()[\'!&<>-\u2013\u2014./\+\w\s#$\(\) ]*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
     logName = str()
     #define new dir for attachment
     newAttDir = startDir.replace('content\\', '') + 'static\\attachments' + newDirAtt.replace('/', os.sep)
@@ -148,7 +148,7 @@ def linkSearch(line, itemList, jsonToParse):
     while len(stringToSearch) > 0:
         linkRefSearch1 = '(?<!!)\[(!\[.+\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
         linkRefSearch2 = '(?<!!)\[(!\[\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
-        linkRefSearch3 = '(?<!!)\[([^!][-./\+\w\s#$\(\) ]*?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
+        linkRefSearch3 = '(?<!!)\[([^!][\'!&<>-\u2013\u2014./\+\w\s#$\(\) ]*?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
         searchRes1 = re.search(linkRefSearch1,stringToSearch)
         searchRes2 = re.search(linkRefSearch2,stringToSearch)
         searchRes3 = re.search(linkRefSearch3,stringToSearch)
@@ -366,7 +366,7 @@ for entry in attLeftover:
     with fileinput.input(os.path.join(entry["path"], entry["file"]), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
             if entry["line No."] == fileinput.filelineno():
-                attNameSearch = '(?<=\]\()[-./\+\w ]*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
+                attNameSearch = '(?<=\]\()[\'!&<>-\u2013\u2014./\+\w\s#$\(\) ]*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
                 oldAttDir = ''
                 lineReplacement = ''
                 stringToSearch = line
