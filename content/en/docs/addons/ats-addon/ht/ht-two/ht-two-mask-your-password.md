@@ -33,7 +33,7 @@ To unmask your password, follow these steps:
 
 	Clicking **New Action** opens the **Create new** dialog box:
 
-	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-mask-your-password/repository-create-new.png) 
+	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/repository-create-new.png) 
 
 4. Enter a name in the **Name** field (for example, *Open app and Login*).     
 5. Enter a description in the **Description** field (for example, *This action opens the app and logs into the app as Admin*).

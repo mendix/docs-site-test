@@ -50,8 +50,8 @@ Uses the [Basic HTTP Authentication Scheme](https://tools.ietf.org/html/rfc7617)
 
 ### 2.2 Schemas
 
-* 
-* 
+* [Request](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-function-api/functions_api_request.schema.json)
+* [Response](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-function-api/functions_api_response.schema.json)
 
 ### 2.3 Passing Web Elements
 

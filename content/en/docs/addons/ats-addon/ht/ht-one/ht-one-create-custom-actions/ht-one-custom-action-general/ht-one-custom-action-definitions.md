@@ -39,15 +39,15 @@ There are two ways of making a combined action:
 
 The steps in a Mendix app:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/combined-action-app-steps.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/cmb-act-app-steps.png)
 
 The steps in ATS:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/combined-action-ats-steps.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/cmb-act-ats-steps.png)
 
 The combined action:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/combined-action-ats-newexpense-action.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/cmb-act-ats-newexp-act.png)
 
 ### 2.2 Summary
 
@@ -71,15 +71,15 @@ Follow the guidelines bekiw for building a custom action to create an unsupporte
 
 The widget in a Mendix app:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/unsupported-widget-action-app-widget.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/unsup-wid-act-app-wid.png)
 
 The steps in ATS:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/unsupported-widget-action-ats-steps.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/unsup-wid-act-ats-steps.png)
 
 The unsupported widget action:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/unsupported-widget-action-ats-switch-action.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/unsup-wid-act-ats-switch-act.png)
 
 ### 3.3 Summary
 
@@ -100,15 +100,15 @@ The focus is on finding an element that you can use to find the widget. The [fin
 
 An element in a Mendix app:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/searchcontext-action-listview-app.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/srccon-act-listview-app.png)
 
 The steps in ATS:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/searchcontext-action-listview-ats-steps.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/srccon-act-listview-ats-steps.png)
 
 The search context action:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/searchcontext-action-listview-ats-searchcontext-action.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/srccon-act-listview-ats-srccon-act.png)
 
 ### 4.3 Summary
 
@@ -131,11 +131,11 @@ Function actions distinguish themselves from other actions by their purpose. If 
 
 The steps in ATS:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/function-action-ats-teststeps.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/fnc-act-ats-teststeps.png)
 
 The function action:
 
-![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-custom-action-definitions/function-action-ats-function-action.png)
+![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-cust-act-gen/ht-one-gen-def/fnc-act-ats-fnc-act.png)
 
 ### 5.3 Summary
 
