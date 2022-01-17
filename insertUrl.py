@@ -34,19 +34,22 @@ logname = 'urlLog.json'
 urlList = []
 # What are we searching for
 #let's hardcode
-start = 'title: ".*"'#input('\nPlease type in Regex to match:\n(hint: to match an entire title type in title: ".*") ')
+start = 'title: "?.*"?'#input('\nPlease type in Regex to match:\n(hint: to match an entire title type in title: ".*") ')
 
 for dirpath, dirnames, allfiles in os.walk(topdir):
     for name in allfiles:
         if name.lower().endswith(exten):
-            print('File: ', os.path.join(dirpath, name))  # Print Filename
+            #print('File: ', os.path.join(dirpath, name))  # Print Filename
             os.altsep = '/'
             altPath = dirpath.replace(os.sep, os.altsep)
             # for toplevel directory
             with fileinput.input(os.path.join(dirpath, name), inplace=True, backup='', encoding="utf-8") as file:
+                lineNum = 0
                 for line in file:
-                    if re.match(start,line) != None:
-                        matched = re.match(start,line)
+                    lineNum += 1
+                    searchTitle = re.search(start,line)
+                    if lineNum < 5 and searchTitle != None:
+                        matched = searchTitle
                         urlString = ''
                         # for toplevel directory
                         if dirpath == '.':
@@ -61,7 +64,7 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
                             else:
                                 urlString = '/' + altPath[2:] + '/' + name[:-(len(exten))] + '/'
                         insert = matched.string + 'url: ' + urlString + '\n'
-                        line = re.sub(r''+start,insert,line.rstrip())
+                        line = insert
                         # creates a dictionary for every entry, loggin the directory and url
                         itemDict = {"Dir": os.path.join(dirpath, name), "url": urlString}
                         # appends each dictionary to urlList
@@ -74,8 +77,3 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
 with open(logname, 'w') as logfile:
     # writes all of urlList as a json file (list of dicts)
     json.dump(urlList, logfile)
-
-
-
-
-
