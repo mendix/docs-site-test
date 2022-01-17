@@ -272,7 +272,7 @@ export const preview: React.FC<TruckWidgetPreviewProps> = (props) => (
 
 When the widget is added to a page you can select a specific item and edit it:
 
-![Example of the selectable component](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/pluggable-parent-8/studio-apis-for-pluggable-widgets-8/selectable-component.png)
+![Example of the selectable component](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/pluggable-parent-8/pluggable-widgets-8/selectable-component.png)
 
 ### 3.3 The GetPreviewCss Export
 

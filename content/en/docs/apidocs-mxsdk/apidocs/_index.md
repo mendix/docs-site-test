@@ -95,6 +95,6 @@ For details, see [User Management API](/apidocs-mxsdk/apidocs/user-management-ap
 
 ## 16 Webhooks
 
-Webhooks allow you to build or set up Mendix Platform connectors that subscribe to certain events on the .
+Webhooks allow you to build or set up Mendix Platform connectors that subscribe to certain events on the [Developer Portal](/developerportal/).
 
 Continue reading in [Webhooks](/apidocs-mxsdk/apidocs/webhooks-sprints/).
