@@ -34,26 +34,32 @@ attItems = str()
 
 # returns dictionary item from a list of dictionaries if value is part of item
 # used to return item from urlList, to feed proper link to replace old one
-def itemIn(key, value, list_dicts, jsonToParse):
-    if value[0] != '/':
-        value = '/'+value
+def itemIn(key, value, list_dicts, jsonToParse, currDir):
+
     if value[len(value)-1] != '/':
         value = value+'/'
-    strippedList = jsonToParse.rsplit('\\')
-    stripped1 = strippedList[len(strippedList)-1]
-    stripped2 = stripped1.rsplit('.json')
-    strippedName = stripped2[0]
-    for item in list_dicts:
-        if item[key].endswith(value):
-            if value.count('/') == 2 and item[key].startswith('/'+strippedName+'/'):
-                return item
-            elif value.count('/') >= 3:
+    if value[0] != '/':
+        value = '/'+value
+        strippedList = jsonToParse.rsplit('\\')
+        stripped1 = strippedList[len(strippedList)-1]
+        stripped2 = stripped1.rsplit('.json')
+        strippedName = stripped2[0]
+        for item in list_dicts:
+            if item[key].endswith(value):
+                if value.count('/') == 2 and item[key].startswith('/'+strippedName+'/'):
+                    if currDir in item["Dir"]:
+                        return item
+                elif value.count('/') >= 3:
+                    return item
+    else:
+        for item in list_dicts:
+            if item[key].endswith(value):
                 return item
 
 # returns dictionary item from a list of dictionaries
-def nextItem(key, value, list_dicts):
+def nextItem(key, value, value2, list_dicts):
     for item in list_dicts:
-        if item[key] == value:
+        if item[key] == value and item["d"] in value2:
             return item
 
 # returns dictionary item from a list of dictionaries & checks if directory is the same
@@ -70,7 +76,7 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
     #pattern to find any 'attachment' between () in a line, will capture the last ) in line
     fullAttachmentRefSearch = '(?<=\]\().*?attachments/(.*)?\)'
     #pattern to search against - check to change search param to start with: (?<!)\[(.+?)\] - just needs testing against group numbers
-    attNameSearch = '(?<=\]\()[\'!&<>-\u2013\u2014./\+\w\s#$\(\) ]*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
+    attNameSearch = '(?<=\]\().*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
     logName = str()
     #define new dir for attachment
     newAttDir = startDir.replace('content\\', '') + 'static\\attachments' + newDirAtt.replace('/', os.sep)
@@ -118,7 +124,7 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
                             newFilePath = newFileDir + '\\' + attName
                         elif matched.group(1) in newDirAtt and name == "_index.md":
                             insert = ('/attachments/' + newDirAtt + attName + ')').replace('//', '/')
-                            newFileDir = newAttDir + (matched.group(1)).replace('/', os.sep)
+                            newFileDir = newAttDir
                             newFilePath = newFileDir + attName
                         else:
                             insert = ('/attachments/' + newDirAtt + matched.group(1) + attName + ')').replace('//', '/')
@@ -142,13 +148,13 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
 
 # searches a line as many times as needed for an internal link
 # uses itemIn to find the replacement link
-def linkSearch(line, itemList, jsonToParse):
+def linkSearch(line, itemList, jsonToParse, currDir):
     stringToSearch = line
     lineReplacement = ''
     while len(stringToSearch) > 0:
         linkRefSearch1 = '(?<!!)\[(!\[.+\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
         linkRefSearch2 = '(?<!!)\[(!\[\]\([-./\+\w ]+\)?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
-        linkRefSearch3 = '(?<!!)\[([^!][\'!&<>-\u2013\u2014./\+\w\s#$\(\) ]*?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
+        linkRefSearch3 = '(?<!!)\[([^!].*?)\]\((?!http)([-./\+\w]*)(#?)([-./\+\w]*?)\)'
         searchRes1 = re.search(linkRefSearch1,stringToSearch)
         searchRes2 = re.search(linkRefSearch2,stringToSearch)
         searchRes3 = re.search(linkRefSearch3,stringToSearch)
@@ -168,7 +174,7 @@ def linkSearch(line, itemList, jsonToParse):
             lastIndex = matched.end()
             linkToReplace = matched.group(2)
             if len(linkToReplace) > 0:
-                findUrl = itemIn("url", linkToReplace, itemList, jsonToParse)
+                findUrl = itemIn("url", linkToReplace, itemList, jsonToParse, currDir)
                 if findUrl != None:
                     insert = '[' + matched.group(1) + ']' + '(' + findUrl["url"].replace('//', '/') + matched.group(3) + matched.group(4) + ')'
                 else:
@@ -191,7 +197,7 @@ def linkReformat(itemList, name, jsonToParse):
     #go through .md file line by line
     with fileinput.input(os.path.join(dirpath, name), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
-            result = linkSearch(line,itemList,jsonToParse)
+            result = linkSearch(line,itemList,jsonToParse, dirpath)
             print(result, end='')
     return logName
 
@@ -240,7 +246,7 @@ with open(jsonToParse, "r") as read_file:
             item["indexFlag"] = "true"
         #checks if item has a parent
         if "p" in item:
-            parentChecker = nextItem("i", item["p"], childrenOfParentsCopy)
+            parentChecker = nextItem("i", item["p"], item["u"], childrenOfParentsCopy)
             #as long as item has a parent
             while parentChecker != None:
                 #add parent name to dir path
@@ -248,9 +254,9 @@ with open(jsonToParse, "r") as read_file:
                 #set parent
                 item["p"] = parentChecker["p"]
                 #grabs next parent, if there is one
-                parentChecker = nextItem("i", item["p"], childrenOfParentsCopy)
+                parentChecker = nextItem("i", item["p"], item["u"], childrenOfParentsCopy)
             #checks if the next parent is a child of a category
-            childOfCategoryChecker = nextItem("i", item["p"], childrenOfCategories)
+            childOfCategoryChecker = nextItem("i", item["p"], item["u"], childrenOfCategories)
             #if next parent is a child of a category
             if childOfCategoryChecker != None:
                 #set parent to child of category
@@ -258,7 +264,7 @@ with open(jsonToParse, "r") as read_file:
                 #add child category name to dir path
                 item["newDir"] = "/" + childOfCategoryChecker["i"] + item["newDir"]
             #checks if the next parent is a category
-            categoryChecker = nextItem("t", childOfCategoryChecker["c"], catList)
+            categoryChecker = nextItem("t", childOfCategoryChecker["c"], childOfCategoryChecker["u"], catList)
             #if next parent is a category
             if categoryChecker != None:
                 #for category items that are named index
@@ -275,7 +281,7 @@ with open(jsonToParse, "r") as read_file:
                     item["newDir"] = baseParent["u"] + categoryChecker["i"] + item["newDir"]
         #checks if item has a category as parent (for items with only category parents)
         elif "c" in item:
-            categoryChecker = nextItem("t", item["c"], catList)
+            categoryChecker = nextItem("t", item["c"], item["u"], catList)
             #if next parent is a category
             if categoryChecker != None:
                 #for category items that are named index
@@ -366,7 +372,7 @@ for entry in attLeftover:
     with fileinput.input(os.path.join(entry["path"], entry["file"]), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
             if entry["line No."] == fileinput.filelineno():
-                attNameSearch = '(?<=\]\()[\'!&<>-\u2013\u2014./\+\w\s#$\(\) ]*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
+                attNameSearch = '(?<=\]\().*?attachments/([-./\+\w]*?)([-.\+\w= ]*)\)'
                 oldAttDir = ''
                 lineReplacement = ''
                 stringToSearch = line
