@@ -20,7 +20,7 @@ Every test step has a description box, where you give your test step a clear des
 
 By default, the name of the test step is the name of the action used in it. But if you set a description, it replaces the test step name. With this, you describe your test scenario step by step. Now you don't have to write an extra description.
 
-If you record your test steps, ATS enters a description automatically. For more information about recording test steps, see [Recorder](/addons/apd-addon/rg-two-recorder/).
+If you record your test steps, ATS enters a description automatically. For more information about recording test steps, see [Recorder](/addons/ats-addon/rg-two-recorder/).
 
 ## 3 Call Types
 

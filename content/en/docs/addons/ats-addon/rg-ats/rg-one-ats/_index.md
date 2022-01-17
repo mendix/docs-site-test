@@ -12,6 +12,6 @@ These are the main documents in this section:
 * [Monitoring](/addons/ats-addon/rg-one-monitoring/)
 * [Test Development](/addons/ats-addon/rg-one-test-dev/)
 * [Test Run](/addons/ats-addon/rg-one-test-run/)
-* [Configuration](/addons/apd-addon/rg-one-configuration/)
+* [Configuration](/addons/ats-addon/rg-one-configuration/)
 * [Administration](/addons/ats-addon/rg-one-administration/)
 

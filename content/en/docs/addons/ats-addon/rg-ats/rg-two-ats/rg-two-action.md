@@ -24,7 +24,7 @@ In the upper-right corner of the page, you can find the **Export** drop-down men
 
 **Test Steps** describe the actions that ATS performs. You add new test steps by searching for an action in the **Add step** box.
 
-Another way of adding test steps to a test case is to use the recorder by clicking **Record**. For more information, see [Recorder](/addons/apd-addon/rg-two-recorder/).
+Another way of adding test steps to a test case is to use the recorder by clicking **Record**. For more information, see [Recorder](/addons/ats-addon/rg-two-recorder/).
 
 Click the test step description to open the test step details. For more information, see [Test Step](/addons/ats-addon/rg-two-test-step/).
 

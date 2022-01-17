@@ -18,5 +18,5 @@ These are the main documents in this category:
 * [Test Run](/addons/ats-addon/rg-two-test-run/)
 * [Test Step](/addons/ats-addon/rg-two-test-step/)
 * [Test Suite](/addons/ats-addon/rg-two-test-suite/)
-* [Recorder](/addons/apd-addon/rg-two-recorder/)
+* [Recorder](/addons/ats-addon/rg-two-recorder/)
 * [Results](/addons/ats-addon/rg-two-results/)

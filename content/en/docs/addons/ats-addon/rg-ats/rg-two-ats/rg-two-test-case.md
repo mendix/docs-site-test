@@ -52,7 +52,7 @@ A dialog box will open where you can search for a specific action or you explore
 
 After you have found the desired action, add it to your test case as a test step by selecting it and clicking **Select**.
 
-Another way of adding test steps to a test case is to use the recorder by clicking **Record step**. For more information, see [Recorder](/addons/apd-addon/rg-two-recorder/).
+Another way of adding test steps to a test case is to use the recorder by clicking **Record step**. For more information, see [Recorder](/addons/ats-addon/rg-two-recorder/).
 
 The details of a test step open by clicking the test step. For more information, see [Test Step](/addons/ats-addon/rg-two-test-step/).
 

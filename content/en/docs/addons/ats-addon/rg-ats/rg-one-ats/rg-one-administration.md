@@ -39,7 +39,7 @@ You can also add existing Action Libraries.
 
 ## 3 Add Selenium Configurations
 
-As an admin user you can configure Selenium hubs as you normally would. For more information, see [SeleniumHub](/addons/apd-addon/rg-one-configuration/).
+As an admin user you can configure Selenium hubs as you normally would. For more information, see [SeleniumHub](/addons/ats-addon/rg-one-configuration/).
 
 ![Selenium Overview](/attachments/addons/ats-addon/rg-ats/rg-one-ats/rg-one-administration/selenium.png)
 
@@ -53,7 +53,7 @@ As an admin user, you can add and configure applications to test.
 
 ![Add Test Applications](/attachments/addons/ats-addon/rg-ats/rg-one-ats/rg-one-administration/applications.png)
 
-For more information, see [Configure Test Applications](/addons/apd-addon/rg-one-configuration/#configure-test-applications).
+For more information, see [Configure Test Applications](/addons/ats-addon/rg-one-configuration/#configure-test-applications).
 
 ## 5 Create Accounts
 
