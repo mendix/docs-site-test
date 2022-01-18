@@ -18,10 +18,10 @@
           </div>
           <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
             {{ block "main" . }}{{ end }}
-          </main>
+            {{ partial "print/print-footer.html" . }}
+        </main>
         </div>
       </div>
-      {{ partial "print/print-footer.html" . }}
     </div>
     {{ partial "scripts.html" . }}
   </body>
