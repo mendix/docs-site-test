@@ -201,7 +201,7 @@ As a helping hand, the checklist below presents the final items to consider when
 
 **Technical Readiness**
 
-* Make sure you have prepared your app service according to the [Marketplace content development guidelines](/appstore/general/share-app-store-content/#submission).
+* Make sure you have prepared your app service according to the [Marketplace content development guidelines](/appstore/general/share-app-store-content/#guidelines).
 * Verify  your app service for errors and warnings before submitting it to Marketplace. Warnings are accepted, but they are not recommended.
 * While importing the app service, there might still be errors that exist, because it is expected that the user needs to hook up some information from their existing modules into the new app services. Make sure you explain how to set up the app service and how to address all errors in the [app service's documentation](/appstore/general/share-app-store-content/#doc) when you are preparing for publication. There should be no errors displayed upon importing the app service that do not have an explanation.
 
@@ -210,7 +210,7 @@ As a helping hand, the checklist below presents the final items to consider when
 * Users should know what they are getting when they download or buy your app service, so make sure all of your app service's metadata (including privacy information, app service description, and screenshots) is complete and accurately reflects the app service's core experience. Remember to keep this up-to-date with new versions.
 * Include detailed explanations of non-obvious features and include supporting documentation where appropriate.
 * Select the **App Service** [type](/appstore/general/app-store-overview/#types) for your app service.
-* Make sure your  is up-to-date so that you can be contacted about your submission if necessary.
+* Make sure your [Mendix Profile](/developerportal/mendix-profile/) is up-to-date so that you can be contacted about your submission if necessary.
 * By default, you will see a template for the app service's documentation, so make sure you update all the sections. If the template is not provided for any reason, make sure you provide all the details as described in the [Adding New Marketplace Content](/appstore/general/share-app-store-content/#doc) section of *How to Share Marketplace Content*. In addition, ensure the styling (for example, font size, spacing, indentation) and headings for this documentation content are consistent.
 * Spell-check the content you are about to submit
 

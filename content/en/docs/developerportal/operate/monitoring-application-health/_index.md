@@ -273,7 +273,7 @@ To access the history of the alerts from your app, follow these steps:
 
     ![](/attachments/developerportal/operate/monitoring-application-health/alerts-history.png)
 
-    The overview shows alert types and details including date and time. The alert types provide a broad indication of the type of error that occurred, such as critical log messages or failures of the health check microflow. Recovery notifications will also be shown here.
+    The overview shows alert colors and details including date and time. The alert colors provide a broad indication of the type of error that occurred, such as critical log messages or failures of the health check microflow. Recovery notifications will also be shown here.
 
     The drop-down at the top lets you switch between viewing the status for your node environments. Note that accessing production information may require additional authentication and is subject to your app's security settings.
 
