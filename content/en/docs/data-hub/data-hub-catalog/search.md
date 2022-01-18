@@ -442,10 +442,10 @@ The **Curate Bar** is displayed in the asset detail screen if you are the owner 
 
 In **Edit** > **Edit Metadata**, you can edit the information that is displayed in the Catalog for an asset:
 
-* For the selected data source, you can edit  and 
-* For a selected dataset, you can edit 
+* For the selected data source, you can edit [Application Details](/data-hub/data-hub-catalog/curate/#curate-application) and [Data Source Details](/data-hub/data-hub-catalog/curate/#service-details)
+* For a selected dataset, you can edit [Dataset Details](/data-hub/data-hub-catalog/curate/#curate-datasets)
 
-For further details, see .
+For further details, see [Curate Registered Assets](/data-hub/data-hub-catalog/curate/).
 
 ### 3.8 Data Source and Dataset URIs
 
