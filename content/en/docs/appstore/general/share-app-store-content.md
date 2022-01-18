@@ -260,5 +260,5 @@ To update content that has already been published, follow these steps:
 ## 6 Read More
 
 * [Marketplace Overview](/appstore/general/app-store-overview/)
-* [How to Sell Your App Service in the Marketplace](sell)
+* [How to Sell Your App Service in the Marketplace](/appstore/creating-content/as-sell/)
 * [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/)
