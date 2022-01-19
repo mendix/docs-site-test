@@ -81,7 +81,7 @@ If a trigger fires, a record is created in the triggered events. The events are 
 
 **Remove triggered events after (days)**. If you want to keep an event for future reference, you can keep the event using the keep-button above the triggered event grid.
 
-![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-triggers/Triggered_Events.png)
+![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-measurements-tool/Triggered_Events.png)
 
 If a trap is created with the trigger actions, you can open the trap.
 

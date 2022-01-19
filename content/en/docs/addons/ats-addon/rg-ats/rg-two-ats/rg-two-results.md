@@ -14,34 +14,34 @@ The first column shows the status of a test. If the test is done, a warning and/
 
 *  Queued – the test is waiting for a free running slot on the Selenium hub:
 
-    ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-icons/queued.png)
+    ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/queued.png)
 
 *  Running – the test is currently running:
 
-    ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-icons/running.gif)
+    ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/running.gif)
     
 *  Warning – the test is passed but may require your attention.
 
-    ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-test-run/warning-flag.png)
+    ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/warning-flag.png)
     
 *  Canceled – the test was canceled before it could be completed.
 
-    ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-test-run/canceled-flag.PNG)
+    ![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/canceled-flag.PNG)
     
 
 The second column shows the type of the test. The following list explains all the different icons:
 
 *  Test case:
 
-    ![Test Case](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-project/test-case-icon.png)
+    ![Test Case](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-app/test-case-icon.png)
 
 *  Test suite:
 
-    ![Test Suite](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-project/test-suite-icon.png) 
+    ![Test Suite](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-app/test-suite-icon.png) 
 
 *  Data-driven instance:
 
-    ![Datadriven Test Case](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-project/ddt-icon.png)
+    ![Datadriven Test Case](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-app/ddt-icon.png)
 
 The duration column is formatted as followed: `HH:MM:SS`.
 
@@ -86,7 +86,7 @@ Under **Test steps**, you will find the result, start time, and the duration of 
 
 Drill down deeper into the log by clicking the name of the test step. You can always go back to a parent step by clicking its name in the breadcrumbs:
 
-![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-test-run/result-log.png)
+![](/attachments/addons/ats-addon/rg-ats/rg-two-ats/rg-two-results/result-log.png)
 
 The following results can be assigned to a test step:
 

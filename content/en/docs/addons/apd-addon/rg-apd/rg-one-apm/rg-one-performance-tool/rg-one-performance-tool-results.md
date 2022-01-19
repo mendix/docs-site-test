@@ -13,21 +13,21 @@ The user column is only populated for client API messages and when the profiler 
 
 When viewing or drilling down on called microflows, this will open a dialog box starting on the **Actions** tab. In the Action tab, it is possible to drill down on sub-microflows, loops, and other actions related to this microflow. 
 
-![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-performance-tool/rg-one-performance-tool/Browse/Microflow_Actions_Tab.png)
+![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-performance-tool/rg-one-performance-tool-results/Microflow_Actions_Tab.png)
 
 The **Main microflows during this microflow** tab shows domain model microflows and calculated attributes. Please note that other microflows occurring in the same interval might appear here as well.
 
 The **SQL statements** tab shows the SQL statements of the currently viewed microflow. If the microflow is a main microflow that consists of its own runtime request, all the SQL statements that are not linked to an individual action are linked here.
 
-![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-performance-tool/rg-one-performance-tool/Browse/Action_SQL_Statements.png) 
+![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-performance-tool/rg-one-performance-tool-results/Action_SQL_Statements.png) 
 
 The **Explain query plan** button opens a query tool window with this query inside an explain plan statement. This explain plan can help in debugging and tuning SQL statements.
 
-![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-performance-tool/rg-one-performance-tool/Browse/Explain_query_plan.png) 
+![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-performance-tool/rg-one-performance-tool-results/Explain_query_plan.png) 
 
 When a microflow has a loop, this will also be visible in the action grid. It is possible to drill down to the action with a special grid for each iteration. From there you can proceed to drill down further.
 
-![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-performance-tool/rg-one-performance-tool/Browse/Loop_Action.png)
+![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-performance-tool/rg-one-performance-tool-results/Loop_Action.png)
 
 To get a complete overview of a microflow or action, select a microflow from the grid and click **Show tree**. This will give a tree view of the microflow and all related actions and sub-microflows that were executed. The **Change parameters** button can be  used to filter the results.
 

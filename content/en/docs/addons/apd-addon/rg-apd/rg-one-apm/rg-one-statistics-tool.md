@@ -12,7 +12,7 @@ This chapter gives an overview of the statistics tool, which measures the durati
 
 The statistics tool screen is split into several sections:
 
- ![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-statistics-tool/Overview.png)
+ ![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/Overview.png)
 
 Statistics are stored periodically to be able to determine potential trends. The **Periodic store frequency** can be changed in the [Options](#Options).   
 

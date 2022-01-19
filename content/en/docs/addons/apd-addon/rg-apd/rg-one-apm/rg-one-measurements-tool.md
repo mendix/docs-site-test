@@ -100,7 +100,7 @@ The events are automatically deleted after a certain amount of days as configure
 
 If you want to keep an event for future reference you can use the **Keep**-button above the triggered event grid.
 
-![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-triggers/Triggered_Events.png)
+![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-measurements-tool/Triggered_Events.png)
 
 If a trap is created with the trigger actions, you can open the trap.
 
