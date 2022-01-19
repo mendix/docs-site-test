@@ -95,7 +95,7 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
                 #if there's a match to the strict pattern
                 if strictSearch != None:
                     matched = strictSearch
-                    entry = {"file": name, "path": dirpath, "line No.": fileinput.filelineno(), "match": matched.group()}
+
                     firstIndex = matched.start()
                     lastIndex = matched.end()
                     insert = ''
@@ -112,29 +112,25 @@ def attachmentChangeMove(oldPath, dirpath, newDirAtt, name):
                     #excludes any results with more than './' preceding 'attachments'
                     if oldAttDir.find('attachments') > 2 or fileInOldDir is False:
                         insert = matched.group()
+                        entry = {"file": name, "path": dirpath, "line No.": fileinput.filelineno(), "match": matched.group()}
                         #saves the excluded to a list to run through later
                         attLeftover.append(entry)
                         logName += 'RP %s\n' % entry
                     else:
-                        # if there is NOTHING between attachments/ and attName OR matched.group(1) is part of newDirAtt
-                        # AND the file being processed is NOT called index
-                        if (matched.group(1) == '' or matched.group(1) in newDirAtt) and name != "_index.md":
+                        # if the (.md) file name is not part of the new attachment path, add it
+                        if (matched.group(1) == '' or newDirAtt.replace('//', '/').endswith(name[:-(len(exten))] + '/') == False) and name != "_index.md":
                             insert = ('/attachments/' + newDirAtt + name[:-(len(exten))] + '/' + attName + ')').replace('//', '/')
                             newFileDir = newAttDir + name[:-(len(exten))]
                             newFilePath = newFileDir + '\\' + attName
-                        elif matched.group(1) in newDirAtt and name == "_index.md":
+                        else:
                             insert = ('/attachments/' + newDirAtt + attName + ')').replace('//', '/')
                             newFileDir = newAttDir
                             newFilePath = newFileDir + attName
-                        else:
-                            insert = ('/attachments/' + newDirAtt + matched.group(1) + attName + ')').replace('//', '/')
-                            newFileDir = newAttDir + (matched.group(1)).replace('/', os.sep)
-                            newFilePath = newFileDir + attName
-
-                        attachmentListEntry = newFilePath.replace(os.sep, '/')
+                        attachmentListEntry = (newFilePath.replace(os.sep, '/')).replace('//', '/')
+                        entry = {"file": name, "path": dirpath, "line No.": fileinput.filelineno(), "match": matched.group(), "newInsert": insert, "newPath": attachmentListEntry}
                         os.makedirs(newFileDir, exist_ok=True)
                         os.replace(oldFilePath, newFilePath)
-                        attList.append(attachmentListEntry)
+                        attList.append(entry)
                         logName += 'OK %s\n' % entry
                         
                     lineReplacement += stringToSearch[:firstIndex] + insert
@@ -197,7 +193,7 @@ def linkReformat(itemList, name, jsonToParse):
     #go through .md file line by line
     with fileinput.input(os.path.join(dirpath, name), inplace=True, backup='', encoding="utf-8") as file:
         for line in file:
-            result = linkSearch(line,itemList,jsonToParse, dirpath)
+            result = linkSearch(line,itemList,jsonToParse,dirpath)
             print(result, end='')
     return logName
 
@@ -386,9 +382,9 @@ for entry in attLeftover:
                         attItems += 'NO %s\n' % entry
                         insert = ''
                         for attItem in attList:
-                            if attItem.endswith(matched.group(1)+matched.group(2)):
-                                newRef = attItem.split('attachments/', maxsplit=1)
-                                insert = ('/attachments/' + newRef[1] + ')').replace('//', '/')
+                            if attItem["match"] in matched.group():
+                                newRef = attItem["newInsert"]
+                                insert = newRef
                                 attItems += 'OK %s\n' % entry
                                 break
                             else:
@@ -414,5 +410,5 @@ with open(logname, 'w') as logfile:
 #with open(catName, 'w') as catfile:
     #catfile.write(categories)
 with open(attName, 'w') as attfile:
-    attfile.write("FS - result of full search for any attachments reference in (), needs manual editing\nOK - reference updated and file moved\nNO - matched in 1st loop, no match in 2nd, needs manual editing\n")
+    attfile.write("FS - result of full search for any attachments reference in (), needs manual editing\nRP - will repeat search, file probably moved already\nOK - reference updated and file moved\nNO - matched in 1st loop, no match in 2nd, needs manual editing\n")
     attfile.write(attItems)
