@@ -45,7 +45,11 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
             # for toplevel directory
             with fileinput.input(os.path.join(dirpath, name), inplace=True, backup='', encoding="utf-8") as file:
                 lineNum = 0
+                frontMatterEnd = True
+                alias = '    - /(.*)(\.htm)?\n'
                 for line in file:
+                    if '---\n' == line:
+                        frontMatterEnd = not frontMatterEnd
                     lineNum += 1
                     searchTitle = re.search(start,line)
                     if lineNum < 5 and searchTitle != None:
@@ -69,6 +73,15 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
                         itemDict = {"Dir": os.path.join(dirpath, name), "url": urlString}
                         # appends each dictionary to urlList
                         urlList.append(itemDict)
+                    if frontMatterEnd == False:
+                        searchAlias = re.search(alias,line)
+                        if searchAlias != None:
+                            if searchAlias.group(1).endswith('/') or searchAlias.group(1).endswith('.html'):
+                                itemDict = {"Dir": "ALIAS", "url": '/'+ searchAlias.group(1)}
+                            else:
+                                itemDict = {"Dir": "ALIAS", "url": '/'+ searchAlias.group(1)+'/'}
+                            # appends each dictionary to urlList
+                            urlList.append(itemDict)
                     print(line, end='')
 
 
