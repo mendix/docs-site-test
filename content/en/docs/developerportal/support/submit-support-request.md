@@ -76,14 +76,14 @@ To submit a request with Mendix Support, follow these steps:
 		* **App - Other** – any other issues/questions regarding your own app that you are developing on the Mendix Platform
 	* **Developer Platform** – select one of these components when you have issues with the Mendix Platform itself:
 		* **Developer Platform - Account** – issues/questions regarding your Mendix account (for example, when you have difficulties creating an account or signing in)
-		* **Developer Platform - Marketplace** - issues/questions regarding the  (for example, when you have difficulties uploading new modules to the Marketplace)
+		* **Developer Platform - Marketplace** - issues/questions regarding the [Mendix Marketplace](/appstore/) (for example, when you have difficulties uploading new modules to the Marketplace)
 		* **Developer Platform - Sprintr** – issues/questions regarding the [Developer Portal](/developerportal/) (for example, when you cannot create a [story](/developerportal/collaborate/stories/) or start a Sprint)
 		* **Developer Platform - Academy** – issues/questions regarding the [Mendix Academy](https://academy.mendix.com/link/home) (for example, when you cannot open a learning path or you cannot find the attachments required for a module)
 		* **Developer Platform - Forum** – issues/questions regarding the [Mendix Forum](https://forum.mendixcloud.com/index3.html) (for example, when you cannot create a new question or add an answer)
 		* **Developer Platform - Cloud Portal** – issues/questions regarding [deploying in the Developer Portal](/developerportal/deploy/) (for example, when you cannot view your [log](/developerportal/operate/logs/) files or [scale](/developerportal/deploy/scale-environment/) your environment)
-		* **Developer Platform - Data Hub** – issues/questions regarding  (for example, when you have difficulties accessing the Data Hub Catalog)
-		* **Developer Platform - Control Center** - issues/questions regarding  (for example, when you have difficulties deactivating applications from the Control Center) 
-		* **Developer Platform - Studio** - issues/questions regarding  (for example, when you have difficulties opening Mendix Studio)
+		* **Developer Platform - Data Hub** – issues/questions regarding [Data Hub](/data-hub/) (for example, when you have difficulties accessing the Data Hub Catalog)
+		* **Developer Platform - Control Center** - issues/questions regarding [Control Center](/developerportal/control-center/index) (for example, when you have difficulties deactivating applications from the Control Center) 
+		* **Developer Platform - Studio** - issues/questions regarding [Mendix Studio](/releasenotes/studio/) (for example, when you have difficulties opening Mendix Studio)
 		* **Developer Platform - Support Portal** - issues/questions regarding the [Support Portal](https://support.mendix.com/hc) (for example, when you have difficulties creating Support tickets)
 		* **Developer Platform - Other** – any other issues/questions regarding the Mendix Platform itself
 	* **Licensing** – select this component when you have issues/questions regarding your Mendix licenses
@@ -98,7 +98,7 @@ If investigating the documentation and searching the [Mendix Forum](https://foru
 
 ## 4 Request Priority {#request-priority}
 
-You can select the priority that you feel the request should have. Please note the  for this priority.
+You can select the priority that you feel the request should have. Please note the [SLA regulations](index#sla) for this priority.
 
 The priority is based on the combination of impact and urgency: 
 
@@ -140,7 +140,7 @@ You can add large attachments such as project files to the request. Please note 
 
 ### 5.3 Team Server Problems & Project Issues
 
-* 
+* [App ID](/developerportal/settings/general-settings/)
 
 ### 5.4 Studio & Studio Pro Problems
 

@@ -107,4 +107,4 @@ For more information, see [Node Permissions](/developerportal/deploy/node-permis
 ## 7 Read More
 
 * [Deploy and Manage](/developerportal/deploy/)
-* 
+* [Settings](/developerportal/settings/)

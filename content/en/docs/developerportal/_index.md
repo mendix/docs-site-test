@@ -15,7 +15,7 @@ cascade:
 
 ## 1 What Is the Developer Portal?
 
-The [Developer Portal](http:/sprintr.home.mendix.com) is one of the three key components of the Mendix Platform. The other two are [Mendix Studio Pro](/refguide/modeling/) and . In the Developer Portal, Mendix developers can collaborate, deploy, and manage their apps, and manage their company and users. 
+The [Developer Portal](http://sprintr.home.mendix.com) is one of the three key components of the Mendix Platform. The other two are [Mendix Studio Pro](/refguide/modeling/) and [Mendix Studio](/releasenotes/studio/). In the Developer Portal, Mendix developers can collaborate, deploy, and manage their apps, and manage their company and users. 
 
 The Developer Portal also offers open, well-defined APIs, enabling third-party developers to integrate their own widgets and plugins. For more information, see [API Documentation](/apidocs-mxsdk/apidocs/).
 
@@ -36,14 +36,14 @@ On the left side of the top bar, you open an access menu by clicking the **Switc
 You can then access the following parts of the Mendix Platform:
 
 * **Mendix Home** – the [My Apps](/developerportal/#my-apps) page
-* 
-* **Get Studio Pro** – the  download page in the 
+* [Studio](/releasenotes/studio/)
+* **Get Studio Pro** – the [Studio Pro](/refguide/) download page in the [Mendix Marketplace](/appstore/)
 * **Cloud**  – the [Nodes](/developerportal/deploy/node-permissions/) page, which shows a list of all the licensed Mendix Cloud nodes to which you have access
 	* Clicking **Details** on this page opens the [Environments](/developerportal/deploy/environments/) page for the app that is deployed to a node
 	* For details on the **Cluster Manager** option in the top bar, see [Creating a Private Cloud Cluster](/developerportal/deploy/private-cloud-cluster/)
 * [Control Center](/developerportal/control-center/)
-* 
-* 
+* [Marketplace](/appstore/)
+* [Data Hub](/data-hub/)
 * [Academy](https://academy.mendix.com/link/home)
 * [Docs](https://docs.mendix.com/)
 * [Forum](/developerportal/community-tools/mendix-forum/)
@@ -88,7 +88,7 @@ In the header, you can click links to see your **Company Apps** and **Company Bu
 
 ![](/attachments/developerportal/company-links.png)
 
-On the **My Company's Apps** page, you will see all the apps created by members of your .
+On the **My Company's Apps** page, you will see all the apps created by members of your [company](/developerportal/control-center/index#company).
 
 You can also sort the order of the apps here.
 

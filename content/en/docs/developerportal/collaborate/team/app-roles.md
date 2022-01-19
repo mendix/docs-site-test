@@ -19,7 +19,7 @@ The roles defined in Developer Portal for an [app](/developerportal/#my-apps) an
 
 ## 2 Team Member
 
-If you want to join an a team, you have to ask a current team member (with the **Invite** permission) to send an invitation. Because team members are not visible to users outside that team, you can ask the  to send the invite. This means it is important the App Contact has the correct permissions to manage the app (for example, the **Scrum Master** role).
+If you want to join an a team, you have to ask a current team member (with the **Invite** permission) to send an invitation. Because team members are not visible to users outside that team, you can ask the [App Contact](/developerportal/settings/general-settings/) to send the invite. This means it is important the App Contact has the correct permissions to manage the app (for example, the **Scrum Master** role).
 
 ## 3 Team Roles {#team-roles}
 
@@ -29,13 +29,13 @@ Within a team, there are predefined roles that can be provisioned to team member
 * Who can edit the app model
 * Who has the correct [node permissions](/developerportal/deploy/node-permissions/) for access to the node information
 	* Note that node permissions must be provisioned by the [Technical Contact](#technical-contact)
-* Who can change the app's 
+* Who can change the app's [general settings](/developerportal/settings/general-settings/)
 
 Scrum Masters can edit and create new team roles on the [Team](/developerportal/collaborate/team/) page, and Mendix Admins can edit and create new team roles within the company in [Control Center](/developerportal/control-center/).
 
 ## 4 App Contact {#app-contact}
 
-When you view the  for a specific app, you will see the two roles responsible for the app: **App contact** and **Technical contact**. These are users you can contact with questions related to the app.
+When you view the [General Settings](/developerportal/settings/general-settings/) for a specific app, you will see the two roles responsible for the app: **App contact** and **Technical contact**. These are users you can contact with questions related to the app.
 
 ![](/attachments/developerportal/collaborate/team/app-roles/app-roles.png)
 
