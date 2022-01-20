@@ -2,6 +2,7 @@
 title: "Creating Solutions"
 url: /appstore/creating-content/sol-solutions-guide/
 linktitle: "Creating Solutions"
+url: /appstore/creating-content/sol-solutions-guide/
 category: "Creating Content"
 weight: 1
 description: "A guide to best practices and techniques for using Mendix"
