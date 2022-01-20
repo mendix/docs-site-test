@@ -13,11 +13,11 @@ aliases:
 
 Mendix Atlas UI is the design framework that makes building elegant user experiences a rapid process. It was built upon three design principles: simplicity, harmony, and flexibility. Simplicity helps you focus on what is important. We’ve simplified the design process with readymade page templates, building blocks, and widgets that can be arranged and customized to suit your app. Our design elements are harmonious, bringing a unified aesthetic to your app landscape. Atlas UI is built to be fully responsive, ensuring quality across scale without losing functionality. 
 
-Visit the [Atlas UI site](https:/atlas2.mendix.com/) for detailed previews and descriptions of all Atlas UI elements, or see the Atlas UI Framework [GitHub repository](https:/github.com/mendix/Atlas-UI-Framework). If you wish to customize your Mendix apps' styling, see [How to Customize Your Styling Using Calypso](/howto8/front-end/calypso/).
+Visit the [Atlas UI site](https://atlas2.mendix.com/) for detailed previews and descriptions of all Atlas UI elements, or see the Atlas UI Framework [GitHub repository](https://github.com/mendix/Atlas-UI-Framework). If you wish to customize your Mendix apps' styling, see [How to Customize Your Styling Using Calypso](/howto8/front-end/calypso/).
 
 ### 1.1 Mendix Studio
 
- brings the collaborative Mendix Platform to the browser, making it easier than ever to share and collaborate on application models. Every app built in Mendix Studio is styled with the Atlas UI framework. For more information, see [Get Started with Atlas UI](/howto8/front-end/get-started-with-atlasui/). 
+[Mendix Studio](/releasenotes/studio/) brings the collaborative Mendix Platform to the browser, making it easier than ever to share and collaborate on application models. Every app built in Mendix Studio is styled with the Atlas UI framework. For more information, see [Get Started with Atlas UI](/howto8/front-end/get-started-with-atlasui/). 
 
 ### 1.2 Design Principles
 

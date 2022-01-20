@@ -205,31 +205,31 @@ In order to deploy the *nativeTemplate.xcarchive* on a device or on the Apple Ap
 1. Using Xcode, double-click the *nativeTemplate.xcarchive* file. It should open with the built-in **Application Loader** software.
 1.  Click the *Distribute App* button to start the local signing flow:
 
-	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-1.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/deploying-native-app-cli/xcode-app-loader-1.png){{/* % /image_container % */}}
 
 1.  Select **Development**:
 
-	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-2.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/deploying-native-app-cli/xcode-app-loader-2.png){{/* % /image_container % */}}
 
 1.  Choose a **Development Team**:
 
-	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-3.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/deploying-native-app-cli/xcode-app-loader-3.png){{/* % /image_container % */}}
 
 1.  Configure your **Development distribution options**:
 
-	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-4.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/deploying-native-app-cli/xcode-app-loader-4.png){{/* % /image_container % */}}
 
 1.  Select a re-signing option:
 
-	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-5.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/deploying-native-app-cli/xcode-app-loader-5.png){{/* % /image_container % */}}
 
 1.  Review your *.ipa* content and click **Export**:
 
-	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-6.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/deploying-native-app-cli/xcode-app-loader-6.png){{/* % /image_container % */}}
 
 Congratulations. You now have a signed *.ipa* file:
 
-{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/xcode-app-loader-7.png){{/* % /image_container % */}}
+{{/* % image_container width="350" % */}}![Xcode Application loader](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/deploying-native-app-cli/xcode-app-loader-7.png){{/* % /image_container % */}}
 
 ### 6.2 Distribute the Android app to Google Play {#android-distributing}
 

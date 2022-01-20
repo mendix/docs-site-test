@@ -94,7 +94,7 @@ The Mendix Native Mobile Builder simplifies adding custom fonts to your app. It 
 
 1. Start the Native Builder:
 
-    {{/* % image_container width="350" % */}}![Start Native Builer](/attachments/howto8/mobile/native-mobile/native-custom-fonts/start-nbui.png){{/* % /image_container % */}}
+    {{/* % image_container width="350" % */}}![Start Native Builer](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/start-nbui.png){{/* % /image_container % */}}
 
 1. Navigate to **Custom Fonts**:
 

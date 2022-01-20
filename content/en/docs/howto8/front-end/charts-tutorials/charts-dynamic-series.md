@@ -71,7 +71,7 @@ To configure a Charts widget with a dynamic series, follow these steps:
 
 1. In the tab **Chart properties**, add a new **Series** property.
 
-    ![Chart Series](/attachments/howto8/front-end/charts-tutorials/charts-dynamic-series/charts-series.png)
+    ![Chart Series](/attachments/howto8/front-end/charts-tutorials/charts-basic-create/charts-series.png)
 
 1. In the tab **Data source**, select **Dynamic**.
    

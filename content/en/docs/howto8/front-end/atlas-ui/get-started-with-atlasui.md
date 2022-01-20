@@ -8,7 +8,7 @@ tags: ["Atlas", "UI", "UX", "user experience"]
 
 ## 1 Introduction
 
-Mendix Studio is a powerful collaborative tool that lets you build your application in the cloud together with your team. When you sign into Mendix Studio for the first time, you get the option to choose an app template that is powered by Atlas UI. For more information on Mendix Studio, see the . 
+Mendix Studio is a powerful collaborative tool that lets you build your application in the cloud together with your team. When you sign into Mendix Studio for the first time, you get the option to choose an app template that is powered by Atlas UI. For more information on Mendix Studio, see the [Studio Guide](/releasenotes/studio/). 
 
 **This how-to will teach you how to do the following:**
 
@@ -29,11 +29,11 @@ In the [Developer Portal](https://sprintr.home.mendix.com/index.html), click **C
 
 ![App template in Developer Portal](/attachments/howto8/front-end/atlas-ui/get-started-with-atlasui/start_choose_your_starter_app.png)
 
-For more information about Atlas UI, see . 
+For more information about Atlas UI, see [Atlas UI](/howto8/front-end/). 
 
 ## 3 Editing Your App in Mendix Studio
 
-You now have access to your app **Buzz** in the . From **Buzz**, you can open Mendix Studio clicking **Edit App** in the top-right corner of the screen:
+You now have access to your app **Buzz** in the [Developer Portal](/developerportal/). From **Buzz**, you can open Mendix Studio clicking **Edit App** in the top-right corner of the screen:
 
 {{/* % image_container width="300" % */}}
 ![Edit App Button in the Developer POrtal](/attachments/howto8/front-end/atlas-ui/get-started-with-atlasui/start_edit_your_app.png)

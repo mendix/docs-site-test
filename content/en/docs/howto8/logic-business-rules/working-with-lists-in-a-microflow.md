@@ -24,17 +24,17 @@ Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-fir
 
 1.  Create the following domain model:
 
-    ![](/attachments/howto8/logic-business-rules/working-with-lists-in-a-microflow/18581378.png)
+    ![](/attachments/howto8/logic-business-rules/define-access-rules-using-xpath/18581378.png)
 
 2.  Create **overview** and **detail** pages to manage objects of type **Customer** and **Order**.
 3.  Create **menu items** to access the **Order** and the **Customer** overview pages.
 4.  Add the following customer data to your app:
 
-    ![](/attachments/howto8/logic-business-rules/working-with-lists-in-a-microflow/18581374.png)
+    ![](/attachments/howto8/logic-business-rules/define-access-rules-using-xpath/18581374.png)
 
 5.  Add the following order data to your app:
 
-    ![](/attachments/howto8/logic-business-rules/working-with-lists-in-a-microflow/18581373.png)
+    ![](/attachments/howto8/logic-business-rules/define-access-rules-using-xpath/18581373.png)
 
 ## 3 Retrieving a Filtered List of Objects from the Database
 
@@ -61,7 +61,7 @@ In the previous section you have set up a basic data structure and created some 
 7.  Open the **IVK_SetOrderToComplete** microflow by right-clicking the new button and selecting **Go to microflow**.
 8.  Open the **Toolbox**. It should be on the bottom right of .
 
-	![](/attachments/howto8/logic-business-rules/working-with-lists-in-a-microflow/8946802.png)
+	![](/attachments/howto8/integration/consume-a-simple-web-service/8946802.png)
 
 9.  Drag a **Retrieve** action from the toolbox to the line between the green start and red end event. This inserts a retrieve action activity.
 

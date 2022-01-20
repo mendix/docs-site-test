@@ -37,15 +37,15 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 1. Open the local folder of your app.
 
-2.  Go to **theme**.
+2.  Go to **theme**:
 
     ![](/attachments/howto8/front-end/custom-error-page/theme.png)
 
-3.  Create a new folder named *error_page*.
+3.  Create a new folder named *error_page*:
 
     ![](/attachments/howto8/front-end/custom-error-page/error-page.png)
 
-4.  In the **error_page** folder, place your *offline.html* file. 
+4.  In the **error_page** folder, place your *offline.html* file:
 
     ![](/attachments/howto8/front-end/custom-error-page/offline.png)
 
