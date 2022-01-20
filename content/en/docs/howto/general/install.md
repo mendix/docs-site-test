@@ -9,11 +9,12 @@ tags: ["studio pro", "install", "install studio pro", "download"]
 ---
 
 {{/* % image_container width="100" % */}}
-[![](/attachments/howto/general/install/download.png)](https:/marketplace.mendix.com/link/studiopro/)](https://marketplace.mendix.com/link/studiopro/){{/* % /image_container % */}}
+[![](/attachments/howto/general/install/download.png)](https://marketplace.mendix.com/link/studiopro/)
+{{/* % /image_container % */}}
 
 ## 1 Introduction
 
-Mendix Studio Pro enables you to build apps on the Mendix Platform. This how-to will guide you through the steps of installing the [latest version of Studio Pro](https:/marketplace.mendix.com/link/studiopro/). If you use a Mac device, see [Configure Parallels](/howto/general/using-mendix-studio-pro-on-a-mac/) to configure your Windows virtual machine.
+Mendix Studio Pro enables you to build apps on the Mendix Platform. This how-to will guide you through the steps of installing the [latest version of Studio Pro](https://marketplace.mendix.com/link/studiopro/). If you use a Mac device, see [Configure Parallels](/howto/general/using-mendix-studio-pro-on-a-mac/) to configure your Windows virtual machine.
 
 For a deep-dive demonstration of how to install Studio Pro, follow along in this video:
 

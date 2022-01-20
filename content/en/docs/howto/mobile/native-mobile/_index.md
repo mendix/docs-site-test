@@ -14,7 +14,7 @@ You build Mendix native mobile apps the same way you build web or hybrid apps. Y
 
 ## 2 Documents in This Section
 
-* [Getting Started](/howto/front-end/get-started/)
+* [Getting Started](/howto/mobile/get-started/)
 	* [Get Started with Native Mobile](/howto/mobile/getting-started-with-native-mobile/)
 	* [Troubleshoot Common Native Mobile Issues](/howto/mobile/common-issues/)
 	* [Implement Best Practices for Native Mobile App UI](/howto/mobile/ui-best-practices/)

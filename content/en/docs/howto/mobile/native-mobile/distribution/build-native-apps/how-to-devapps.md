@@ -22,11 +22,11 @@ A custom developer app helps you by serving as a replacement for the Make It Nat
 
 1.  Run Mendix Native Mobile Builder from your app: 
 
-	{{/* % image_container width="350" % */}}![Start Mendix Native Mobiler Builder](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/how-to-devapps/start-nbui.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Start Mendix Native Mobiler Builder](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/deploying-native-app/start-nbui.png){{/* % /image_container % */}}
 
 1.  When Mendix Native Mobile launches you are greeted with the home screen:
 
-	{{/* % image_container width="350" % */}}![Mendix Natve Mobile Builder Home Screen](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/how-to-devapps/home-screen.png){{/* % /image_container % */}} 
+	{{/* % image_container width="350" % */}}![Mendix Natve Mobile Builder Home Screen](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/deploying-native-app/home-screen.png){{/* % /image_container % */}} 
 
 1. Choose *Build app for local development*
 
@@ -38,12 +38,12 @@ A custom developer app helps you by serving as a replacement for the Make It Nat
 
 1.  The tool will set up your GitHub repository commit your changes, configure App Center if needed with two new apps, one for iOS and one for Android and continue with building the apps.
 
-	{{/* % image_container width="350" % */}}![Building](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/how-to-devapps/build-release-app-build-step1.png){{/* % /image_container % */}}
-	{{/* % image_container width="350" % */}}![Build release app](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/how-to-devapps/build-release-app-build-step2.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Building](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/deploying-native-app/build-release-app-build-step1.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Build release app](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/deploying-native-app/build-release-app-build-step2.png){{/* % /image_container % */}}
 
 1.  When the build completes, you can scan the QR code provided to install the app to your device. Currently the QR code service is only supported for Android devices.
 
-	{{/* % image_container width="350" % */}}![Build release app](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/how-to-devapps/build-release-app-build-done-both.png){{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Build release app](/attachments/howto/mobile/native-mobile/distribution/build-native-apps/deploying-native-app/build-release-app-build-done-both.png){{/* % /image_container % */}}
 
 
 ## 4 Installing Your Custom Developer App manually

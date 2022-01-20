@@ -72,7 +72,7 @@ If you have made any changes directly to your iOS or Android app, you will have 
 * The initial release of your app
 * A Studio Pro version upgrade that requires a new [Native Template](/refguide/native-template/) version
 * You fundamentally changed your app's functionality (this is an Apple App Store limitation, and will require a re-release and re-review of your app by Apple — your app might be removed if you do not comply)
-* A new native module has been added (such as the [Native Mobile AR](https:/marketplace.mendix.com/link/component/117209) module — for more information see [Modules](/refguide/modules/)
+* A new native module has been added (such as the [Native Mobile AR](https://marketplace.mendix.com/link/component/117209) module — for more information see [Modules](/refguide/modules/)
 * The app has been renamed
 * The app's launcher icons have been changed
 * The splash screen has been changed
@@ -100,7 +100,7 @@ To make the OTA update functionality available to your users, release the new bi
 
 OTA updates let you correct mistakes in your published apps without issuing a new release. For example, imagine you issued a new release and later found a spelling mistake on your welcome screen:
 
-{{/* % image_container width="300" % */}}![Typo in welcome screen](/attachments/howto/mobile/native-mobile/distribution/how-to-ota/phone-error-text.png){{/* % /image_container % */}}
+{{/* % image_container width="300" % */}}![Typo in welcome screen](/attachments/howto/mobile/native-mobile/distribution/how-to-ota-appcenter/phone-error-text.png){{/* % /image_container % */}}
 
 Before OTA updates, you would have to make a new release and configure it in the app stores. But OTA updates make fixing such a mistake easy.
 

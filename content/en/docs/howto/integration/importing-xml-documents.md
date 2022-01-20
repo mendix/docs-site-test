@@ -39,21 +39,21 @@ To prepare the data structure and the GUI, follow these steps:
 3. Create a menu item to access the customer overview page.
 4. Create an entity called **XMLDocument** that inherits all the properties from **System.FileDocument**:
 
-    ![](/attachments/howto/integration/importing-xml-documents/18581650.png)
+    ![](/attachments/howto/integration/export-xml-documents/18581650.png)
 
 5. Create the overview and detail pages to manage objects of the **XMLDocument** type.
 6. Create a menu item to access the XML document overview page (for more information, see [How to Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure/).
 
 ## 4 Adding an XML Schema (XSD)
 
-Whether you plan to import or export documents, working with XML means that your application must contain an XML schema, which is also called an XSD. An XSD describes the possible contents of an XML file. Based on the XSD, your application knows how to read or write an XML file. If you don't have an XSD file, there are some online XSD generators that accept an XML document as input. For this how-to, you can use .
+Whether you plan to import or export documents, working with XML means that your application must contain an XML schema, which is also called an XSD. An XSD describes the possible contents of an XML file. Based on the XSD, your application knows how to read or write an XML file. If you don't have an XSD file, there are some online XSD generators that accept an XML document as input. For this how-to, you can use [Customers.xsd](/attachments/howto/integration/importing-xml-documents/18581652.xsd).
 
 To add an XML schema (XSD), follow these steps:
 
 1.  Right-click a module in the **App Explorer** and select **Add Other** > **XML schema** from the menu.
 2.  Enter **CustomersXSD** as the **Name** and click **OK**:
 
-    ![](/attachments/howto/integration/importing-xml-documents/18581696.png)
+    ![](/attachments/howto/integration/export-xml-documents/18581696.png)
 
 3.  In the **XML Schema** editor, click **Select** and select the XSD file that you downloaded earlier:
 
@@ -102,7 +102,7 @@ To create the XML-to-domain mapping, follow these steps:
 
 ## 6 Creating the Import Logic
 
-In this section, you will create the logic to import the customers stored in an  in your application.
+In this section, you will create the logic to import the customers stored in an [XML document](/attachments/howto/integration/importing-xml-documents/18581651.xml) in your application.
 
 To create the import logic, follow these steps:
 
@@ -141,7 +141,7 @@ To create the import logic, follow these steps:
 
 To import the XML file, follow these steps:
 
-1. Deploy the application, upload , and trigger the import microflow.
+1. Deploy the application, upload [Customers.xml](/attachments/howto/integration/importing-xml-documents/18581651.xml), and trigger the import microflow.
 2. Open the customer overview page and check if the customer data has been imported into your application.
 
 ## 8 Read More

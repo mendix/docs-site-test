@@ -24,17 +24,17 @@ Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-firs
 
 1.  Create the following domain model:
 
-    ![](/attachments/howto/logic-business-rules/working-with-lists-in-a-microflow/18581378.png)
+    ![](/attachments/howto/logic-business-rules/define-access-rules-using-xpath/18581378.png)
 
 2.  Create **overview** and **detail** pages to manage objects of type **Customer** and **Order**.
 3.  Create **menu items** to access the **Order** and the **Customer** overview pages.
 4.  Add the following customer data to your app:
 
-    ![](/attachments/howto/logic-business-rules/working-with-lists-in-a-microflow/18581374.png)
+    ![](/attachments/howto/logic-business-rules/define-access-rules-using-xpath/18581374.png)
 
 5.  Add the following order data to your app:
 
-    ![](/attachments/howto/logic-business-rules/working-with-lists-in-a-microflow/18581373.png)
+    ![](/attachments/howto/logic-business-rules/define-access-rules-using-xpath/18581373.png)
 
 ## 3 Retrieving a Filtered List of Objects from the Database
 

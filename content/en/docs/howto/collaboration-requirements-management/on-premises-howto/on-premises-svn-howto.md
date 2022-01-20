@@ -10,7 +10,7 @@ tags: ["on-premises", "svn", "version control"]
 
 When developing Mendix applications, changes to these applications are stored in a version control system. This system is called [Team Server](/developerportal/collaborate/team-server/) and is part of the Mendix Platform. This means that the application's files are stored in the Mendix online environment. For more information, see [Version Control](/refguide/version-control/).	
 
-While this is the recommended way of working for almost all Mendix developers, you may prefer to store your application's files in a system that is controlled by your own organization. For version control, Mendix uses the [Subversion](https:/subversion.apache.org) system (also known as SVN) and [Git](/howto/collaboration-requirements-management/on-premises-git-howto/). This how-to describes how to work with SVN version control system.	
+While this is the recommended way of working for almost all Mendix developers, you may prefer to store your application's files in a system that is controlled by your own organization. For version control, Mendix uses the [Subversion](https://subversion.apache.org) system (also known as SVN) and [Git](/howto/collaboration-requirements-management/on-premises-git-howto/). This how-to describes how to work with SVN version control system.	
 
 {{% alert color="info" %}}	
 This how-to will not describe how to set up an SVN server from scratch; typically, this will be taken care of by the IT department of your organization.	
@@ -69,7 +69,7 @@ To create a new app to store in your on-premises SVN server, you must create the
 
 ## 6 Moving an App from Mendix Team Server to an SVN Server
 
-To look at moving an app from Mendix Team Server to a private SVN server, we will use the scenario of creating a new app in the . In this case a Team Server app is created automatically.
+To look at moving an app from Mendix Team Server to a private SVN server, we will use the scenario of creating a new app in the [Developer Portal](/developerportal/). In this case a Team Server app is created automatically.
 
 {{% alert color="warning" %}}
 For the purpose of creating an app to store in your on-premises SVN server, this is a deprecated workflow.
