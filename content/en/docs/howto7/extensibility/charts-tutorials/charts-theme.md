@@ -28,7 +28,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 This is how the original chart looks:
 
-![chart](/attachments/howto7/extensibility/charts-tutorials/charts-theme/charts-toggle-editor.png)
+![chart](/attachments/howto7/extensibility/charts-tutorials/charts-advanced-tuning/charts-toggle-editor.png)
 
 ### 3.1 Creating an Advanced Custom Configuration
 
@@ -44,7 +44,7 @@ To create the required custom configuration easily, follow these steps:
 
 1. Set the **Mode** to **Developer**.
 
-    ![chart widget properties](/attachments/howto7/extensibility/charts-tutorials/charts-theme/charts-widget-properties-advanced.png)
+    ![chart widget properties](/attachments/howto7/extensibility/charts-tutorials/charts-advanced-tuning/charts-widget-properties-advanced.png)
 
 1. Run the app.
 
@@ -66,7 +66,7 @@ To create the required custom configuration easily, follow these steps:
 
 1. Change the font settings, till the chart shows the required font.
 
-    ![chart editor](/attachments/howto7/extensibility/charts-tutorials/charts-theme/charts-toggle-editor-open.png)
+    ![chart editor](/attachments/howto7/extensibility/charts-tutorials/charts-advanced-tuning/charts-toggle-editor-open.png)
 
     {{% alert color="warning" %}}Please note that the editor changes will not persist. They need to be stored in the advanced settings of the widget or stored in the theme.{{% /alert %}}
 

@@ -106,7 +106,7 @@ To fine tune a Charts widget configuration, follow these steps:
 
 3. Click the **Toggle Editor** button on the top right of the chart to fine-tune your settings.
 
-    ![chart editor](/attachments/howto7/extensibility/charts-tutorials/charts-any-usage/charts-toggle-editor-open.png)
+    ![chart editor](/attachments/howto7/extensibility/charts-tutorials/charts-advanced-tuning/charts-toggle-editor-open.png)
 
 4. In the editor, select either **Data** or **Layout** from the dropdown menu.
 

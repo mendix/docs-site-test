@@ -41,7 +41,7 @@ For more information on publishing a REST API refer to this Mendix document: [Pu
 1. Create **Value** and **Series** entities with the attributes and association shown in the picture below.
     ![Chart Rest Domain](/attachments/howto7/extensibility/charts-tutorials/charts-basic-rest/charts-rest-domain.png)  
 1. Right-click **Value** and select **Generate overview pages...**.
-    ![Chart Rest Enter Data](/attachments/howto7/extensibility/charts-tutorials/charts-basic-rest/charts-rest-generate-overview-pages.png)
+    ![Chart Rest Enter Data](/attachments/howto7/extensibility/charts-tutorials/charts-basic-create/charts-rest-generate-overview-pages.png)
 1. Add the **Value_NewEdit** page generated to your navigation.
 1. Run the app.
 1. In your browser, open the NewEdit page.
@@ -91,7 +91,7 @@ To use the REST Data source end point in your chart, follow these steps:
 
 1. In the tab **Data points**, select the **X-axis data attribute** and the **Y-axis data attribute**.
 
-    ![select Data Points](/attachments/howto7/extensibility/charts-tutorials/charts-basic-rest/charts-data-points.png)  
+    ![select Data Points](/attachments/howto7/extensibility/charts-tutorials/charts-basic-create/charts-data-points.png)  
 
 1. Add Parameters to the REST Request. The **contextId**, **series name** are provided by default.
 
