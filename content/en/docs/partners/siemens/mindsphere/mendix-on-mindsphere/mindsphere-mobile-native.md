@@ -165,7 +165,7 @@ When you enhance your application with MindSphere API calls to use the IoT capab
 
 With each MindSphere API call you have to ensure that the corresponding user token is part of the request. Do this by adding the **MindSphere Access Token** action before your REST calls and set the **Authorization** header accordingly.
 
-![Mobile](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-mobile-native/delete-mindspheretoken.png)
+![Mobile](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/delete-mindspheretoken.png)
 
 #### 2.5.2 Extend your application registration with MindSphere API roles
 

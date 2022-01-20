@@ -16,7 +16,7 @@ The OData Connector for SAP solutions is an OData connector written specifically
 
 ![](/attachments/partners/sap/sap-odata-connector/appstore-sapodata.png)
 
-You can use the [OData Model Creator for SAP solutions](https:/sapodatamodelcreator.mendixcloud.com/) to generate a data model from the metadata of your OData service, exposed from your SAP back-end system, or from APIs in the SAP API Business Hub or the SAP Catalog Service. For more details see [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/).
+You can use the [OData Model Creator for SAP solutions](https://sapodatamodelcreator.mendixcloud.com/) to generate a data model from the metadata of your OData service, exposed from your SAP back-end system, or from APIs in the SAP API Business Hub or the SAP Catalog Service. For more details see [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/).
 
 {{% alert color="info" %}}
 Version 5.3.0 of the OData Connector for SAP solutions adds support for services using OData version 4. Currently, only **Get List** and **Get Entry** are supported for services using OData version 4.
@@ -64,7 +64,7 @@ For more information on domain models, see [Domain Model](/refguide/domain-model
 
 Most of the actions of the OData Connector for SAP solutions make use of a domain model representing the SAP service data model. These models contain non-persistable Mendix entities which represent entities in the OData service which is exposed by an SAP back-end system. The entities contain attributes which correspond to the entity properties plus additional attributes which support the OData Connector for SAP solutions.
 
-You can create a data model by inspecting the service metadata. The response from the service can be used in the [OData Model Creator for SAP solutions](https:/sapodatamodelcreator.mendixcloud.com/) to generate a domain model which can be imported into your app. Instructions for doing this are in [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/).
+You can create a data model by inspecting the service metadata. The response from the service can be used in the [OData Model Creator for SAP solutions](https://sapodatamodelcreator.mendixcloud.com/) to generate a domain model which can be imported into your app. Instructions for doing this are in [How to Use the OData Model Creator for SAP Solutions](/partners/sap/use-sap-odata-model-creator/).
 
 {{% alert color="info" %}}
 In addition to the domain model, the OData Model Creator will also create three other items:
