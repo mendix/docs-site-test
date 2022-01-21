@@ -13,7 +13,7 @@ When inserting a page break, the current page will be cut off after the break an
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide7/desktop-modeler/document-templates/page-break-document-template/918135.png)
+![](/attachments/refguide7/desktop-modeler/document-templates/918135.png)
 A page break
 
 {{% /alert %}}

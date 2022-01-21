@@ -75,7 +75,7 @@ Parent and child settings show you the direction of the association. Parent defi
 
 Drawing an association from the **Order** entity to the **Customer** entity results in the following:
 
-![](/attachments/refguide7/desktop-modeler/domain-model/entities/associations/918217.png)
+![](/attachments/refguide7/desktop-modeler/domain-model/association-properties/918217.png)
 
 The type property has its default value `Reference`. In this example, a customer can have multiple orders, and an order can only have one customer.
 

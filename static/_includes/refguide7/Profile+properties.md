@@ -14,7 +14,7 @@ The desktop profile is always enabled.
 
 **Enable Offline Support (Only Hybrid Tablet and Hybrid Phone)**
 
-Specifies whether the hybrid profile allows users to continue using their Mendix application without a working Internet connection. Pages that are available offline are subject to certain restrictions, which you can read [here](offline).
+Specifies whether the hybrid profile allows users to continue using their Mendix application without a working Internet connection. Pages that are available offline are subject to certain restrictions, which you can read [here](/refguide7/offline/).
 
 **Application Title**
 
@@ -24,7 +24,7 @@ Specify the application title. This title is shown in the title bar of the brows
 
 **Default Home Page**
 
-The default home page indicates which [page](page) or [microflow](microflow) is opened after a user has signs in. If role-based home pages (see below) are specified for one of the [user roles](user-roles) of the user, then that home page will be used instead.
+The default home page indicates which [page](/refguide7/page/) or [microflow](/refguide7/microflow/) is opened after a user has signs in. If role-based home pages (see below) are specified for one of the [user roles](/refguide7/user-roles/) of the user, then that home page will be used instead.
 
 ### Role-Based Home Pages
 
@@ -34,18 +34,18 @@ Per role-based home page you can specify the user role it applies to and the tar
 
 ### Authentication
 
-If an [anonymous user](anonymous-users) tries to access a resource to which the user has no access, the configured [sign-in page](authentication-widgets) will be displayed, prompting the user to sign in.
+If an [anonymous user](/refguide7/anonymous-users/) tries to access a resource to which the user has no access, the configured [sign-in page](/refguide7/authentication-widgets/) will be displayed, prompting the user to sign in.
 
 If the sign-in page is set to none, a built-in pop-up window will appear instead. The page title may be overridden and is translatable.
 
 ### Menu
 
-Each device type contains a default menu. You can use these menus in [menu widgets](menu-widgets). Defining the menu for a device type works in the same way as when editing a menu document.
+Each device type contains a default menu. You can use these menus in [menu widgets](/refguide7/menu-widgets/). Defining the menu for a device type works in the same way as when editing a menu document.
 
-See [Menu](menu).
+See [Menu](/refguide7/menu/).
 
 <div class="alert alert-warning">
 
-If [security](project-security) is enabled, the menu will only show items that the user has access to.
+If [security](/refguide7/project-security/) is enabled, the menu will only show items that the user has access to.
 
 </div>

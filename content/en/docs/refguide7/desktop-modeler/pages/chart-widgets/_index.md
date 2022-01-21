@@ -11,7 +11,7 @@ You can add a wide range of charts to your app pages to display data series visu
 
 [Basic Charts](#basic-charts) are included in Mendix app templates based on Atlas UI. They can be included in other Mendix apps by downloading them from the Mendix Marketplace here: https://marketplace.mendix.com/link/component/105695/.
 
-[Any Chart](#any-chart) gives much more control and implements all the features of [plotly.js](https:/plot.ly/). The [Any Chart](/appstore/modules/any-chart/) module can be included in your Mendix app by downloading it from the Mendix Marketplace.
+[Any Chart](#any-chart) gives much more control and implements all the features of [plotly.js](https://plot.ly/). The [Any Chart](/appstore/modules/any-chart/) module can be included in your Mendix app by downloading it from the Mendix Marketplace.
 
 ## 2 Basic Charts {#basic-charts}
 
