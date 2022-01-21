@@ -81,7 +81,7 @@ The following XPath functions are available:
 **How to find the right path to XPath**
 
 {{% alert color="info" %}}
-This video was done with , but the concepts remain applicable.
+This video was done with [Studio Pro 8](/refguide8/), but the concepts remain applicable.
 {{% /alert %}}
 
 {{% youtube sdabUY-w4ZU %}}

@@ -11,7 +11,7 @@ tags: ["studio pro", "module", "modules"]
 
 A Mendix app consists of modules: a **System** module, a [UI resources package](/refguide/ui-resources-package/), and one or more user-defined modules. Modules are a way to split the functionality of your application into separate parts. For example, a web shop can put order management in a different module than customer and product management. Studio Pro does not enforce any kind of module structure; it is up to you to choose logical modules for your application.
 
-Some modules are part of your app by default, while others you can download in the [Mendix Marketplace](https:/marketplace.mendix.com/) to add functionality to app. For more information on downloading and installing a module from the Marketplace, see [Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/) in the *Marketplace Guide*.
+Some modules are part of your app by default, while others you can download in the [Mendix Marketplace](https://marketplace.mendix.com/) to add functionality to app. For more information on downloading and installing a module from the Marketplace, see [Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/) in the *Marketplace Guide*.
 
 A module always contains exactly one [domain model](/refguide/domain-model/). The domain model is a data model that describes the information in your application domain in an abstract way.
 

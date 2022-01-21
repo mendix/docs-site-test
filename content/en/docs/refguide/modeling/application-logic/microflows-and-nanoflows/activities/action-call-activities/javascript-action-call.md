@@ -55,7 +55,7 @@ An argument is the input data that you are passing to the JavaScript action. For
 
 The values of the arguments are defined using [expressions](/refguide/expressions/):
 
-![argument](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/action-call-activities/javascript-action-call/argument-edit.png)
+![argument](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/action-call-activities/java-action-call/argument-edit.png)
 
 ### 3.3 Return Type {#return-type}
 

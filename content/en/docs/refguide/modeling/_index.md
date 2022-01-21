@@ -15,7 +15,7 @@ weight: 20
 
 Mendix Studio Pro allows you to create, view, and edit your Mendix applications. This category of documentation describes the functionality used for modeling your app in Studio Pro. 
 
-*App modeling* is a process of creating and configuring an app, such as creating pages, adding data and logic, configuring security, and integrating with other applications. As well as Studio Pro, you can also model apps in .
+*App modeling* is a process of creating and configuring an app, such as creating pages, adding data and logic, configuring security, and integrating with other applications. As well as Studio Pro, you can also model apps in [Mendix Studio](/releasenotes/studio/).
 
 For more introductory information, see [Studio Pro Overview](/refguide/studio-pro-overview/).
 

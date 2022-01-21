@@ -65,7 +65,7 @@ To upgrade your theme directory to Atlas 3 specifications, please complete the f
 
 1.  Download **[Atlas Web Content](https://marketplace.mendix.com/link/component/117183)** from Marketplace
 
-	![Atlas web content](/attachments/refguide/general/moving-from-8-to-9/moving-from-atlas-2-to-3/atlas-web-content-marketplace.png)
+	![Atlas web content](/attachments/refguide/general/moving-from-8-to-9/moving-from-atlas-2-to-3/atlas3-change-summary/atlas-web-content-marketplace.png)
 
 1.  **Atlas Web Content** will appear as a new module inside **Marketplace Modules**
 
@@ -75,7 +75,7 @@ To upgrade your theme directory to Atlas 3 specifications, please complete the f
 
 1.  Download **[Atlas Native Content](https://marketplace.mendix.com/link/component/117175)** from Marketplace:
 
-	![Atlas native content](/attachments/refguide/general/moving-from-8-to-9/moving-from-atlas-2-to-3/atlas-native-content-marketplace.png)
+	![Atlas native content](/attachments/refguide/general/moving-from-8-to-9/moving-from-atlas-2-to-3/atlas3-change-summary/atlas-native-content-marketplace.png)
 
 1.  **Atlas Native Content** will appear as a new module inside **Marketplace Modules**:
 

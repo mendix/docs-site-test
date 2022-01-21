@@ -1,2 +1,2 @@
 <p>
-For more information on properties in this section, see [Common Properties](microflow-element-common-properties). 
+For more information on properties in this section, see [Common Properties](/refguide/microflow-element-common-properties/). 

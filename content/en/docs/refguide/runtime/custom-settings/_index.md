@@ -239,7 +239,7 @@ The settings below influence the behavior of the Mendix web client.
 
 ## 10 Metrics Settings
 
-The settings below configure metrics through [micrometer](https:/micrometer.io/docs). See [Metrics](/refguide/metrics/) for more information and the specification of the settings format. 
+The settings below configure metrics through [micrometer](https://micrometer.io/docs). See [Metrics](/refguide/metrics/) for more information and the specification of the settings format. 
 
 | Name | Description | Default Value |
 | --- | --- | --- |

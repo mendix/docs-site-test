@@ -15,7 +15,7 @@ When inserting a page break, the current page will be cut off after the break an
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide/modeling/resources/document-templates/page-break-document-template/918135.png)
+![](/attachments/refguide/modeling/resources/document-templates/918135.png)
 
 A page break.
 

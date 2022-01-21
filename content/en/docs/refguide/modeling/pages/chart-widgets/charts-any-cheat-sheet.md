@@ -278,7 +278,7 @@ This *cheat sheet* lists the most common chart types, together with a visual sam
 
 ### 6.1 Contour Chart
 
-![ContourProperties](/attachments/refguide/modeling/pages/chart-widgets/charts-any-cheat-sheet/contour.png)
+![ContourProperties](/attachments/refguide/modeling/pages/chart-widgets/contour.png)
 
 ``` json
 [ {

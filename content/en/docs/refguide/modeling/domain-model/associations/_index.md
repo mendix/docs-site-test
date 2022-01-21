@@ -63,7 +63,7 @@ For more information see [Association Properties](/refguide/association-properti
 
 You can edit the associations as members of the entity. In this case you will define the association using type and owner.
 
-![](/attachments/refguide/modeling/domain-model/associations/edit-entity-association.png)
+![](/attachments/refguide/modeling/domain-model/associations/association-member-properties/edit-entity-association.png)
 
 For more information see [Association Tab Properties](/refguide/association-member-properties/).
 

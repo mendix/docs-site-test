@@ -20,7 +20,7 @@ Before installing Studio Pro 9, please read [System Requirements](/refguide/syst
 
 If you have been using Studio Pro version 8, we recommend reading [Moving from Mendix Studio Pro 8 to 9](/refguide/moving-from-8-to-9/).
 
-If you are looking for step-by-step guides on performing various Mendix actions, browse the .
+If you are looking for step-by-step guides on performing various Mendix actions, browse the [Studio Pro 9 How-to's](/howto/).
 
 ## 2 Studio Pro Functionality
 
@@ -42,7 +42,7 @@ For more information on options for deploying your app see [Deployment](/develop
 
 ## 3 Version Control
 
-[Version Control](/refguide/version-control/) allows you to manage your app development, work on multiple development lines, as well as collaboratively work with .  For information on how Studio Pro handles versioning of apps, see the [Versioning an App Deployed to the Cloud](/refguide/using-version-control-in-studio-pro/#versioning-project) section in *Using Version Control in Studio Pro*. 
+[Version Control](/refguide/version-control/) allows you to manage your app development, work on multiple development lines, as well as collaboratively work with [Mendix Studio](/releasenotes/studio/).  For information on how Studio Pro handles versioning of apps, see the [Versioning an App Deployed to the Cloud](/refguide/using-version-control-in-studio-pro/#versioning-project) section in *Using Version Control in Studio Pro*. 
 
 ## 4 Mendix Runtime
 

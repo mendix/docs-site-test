@@ -40,7 +40,7 @@ For more information, see [Data Grid (Document Template)](/refguide/data-grid-do
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide/modeling/resources/document-templates/918138.png)
+![](/attachments/refguide/modeling/resources/document-templates/data-grid-document-template/918138.png)
 
 A data grid showing a list of orders with a description and the referenced customer name.
 
@@ -54,7 +54,7 @@ For more information, see [Data View (Document Template)](/refguide/data-view-do
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide/modeling/resources/document-templates/918139.png)
+![](/attachments/refguide/modeling/resources/document-templates/data-view-document-template/918139.png)
 
 A data view showing order line information.
 

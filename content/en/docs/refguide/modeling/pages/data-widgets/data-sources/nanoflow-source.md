@@ -23,12 +23,12 @@ For example, you have a list that needs to display a list of potential orders ba
 ![Nanoflow Source](/attachments/refguide/modeling/pages/data-widgets/data-sources/nanoflow-source/nanoflow-source.png)
 If the *OrderType* of the *Order* entity is set to *Cars*, then the data grid should display all *Products* for which the Boolean *Motorized* is set to true. If the *OrderType* is *Bicycles* only objects for which *Motorized* is set to false need be shown. If *OrderType* is empty the data grid should remain empty.
 
-![Entities Example](/attachments/refguide/modeling/pages/data-widgets/data-sources/nanoflow-source/entities-example.jpg)
+![Entities Example](/attachments/refguide/modeling/pages/data-widgets/data-sources/microflow-source/entities-example.jpg)
 Because of the mismatch in attribute types this cannot be constrained by XPath and a nanoflow data source is required. 
 
 The nanoflow for the use-case should look like this:
 
-![Nanoflow Example](/attachments/refguide/modeling/pages/data-widgets/data-sources/nanoflow-source/microflow-nanoflow-example.jpg)
+![Nanoflow Example](/attachments/refguide/modeling/pages/data-widgets/data-sources/microflow-source/microflow-nanoflow-example.jpg)
 This nanoflow does the following:
 
 1. It passes the *Order* of the enclosing data view as a parameter. 
