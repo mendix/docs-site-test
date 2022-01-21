@@ -25,7 +25,7 @@ There are following types of decisions:
 
 * [Decision](/refguide8/decision/) – makes a choice based on a condition and follows one and only one of the outgoing sequence flows
 
-	{{/* % image_container width="400" % */}}![](/attachments/refguide8/modeling/application-logic/decisions/decision-example.png){{/* % /image_container % */}}
+	{{/* % image_container width="400" % */}}![](/attachments/refguide8/modeling/application-logic/decisions/decision/decision-example.png){{/* % /image_container % */}}
 
 * [Object Type Decision](/refguide8/object-type-decision/) – makes a choice based on the type of an object of a generalized entity
 

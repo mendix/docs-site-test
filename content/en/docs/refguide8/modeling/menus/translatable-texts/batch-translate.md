@@ -30,7 +30,7 @@ You can select one or more modules you want to use for batch translate. For exam
 
 Click **Select…** and check the modules you want to work on.
 
-![Module selection screen](/attachments/refguide8/modeling/menus/translatable-texts/batch-translate/batch-replace-modules.png)
+![Module selection screen](/attachments/refguide8/modeling/menus/translatable-texts/batch-replace/batch-replace-modules.png)
 
 The default is to work on all modules in the app.
 

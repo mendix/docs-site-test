@@ -59,7 +59,7 @@ An argument is the input data that you are passing to the JavaScript action. For
 
 The values of the arguments are defined using [expressions](/refguide8/expressions/):
 
-![argument](/attachments/refguide8/modeling/application-logic/activities/action-call-activities/javascript-action-call/argument-edit.png)
+![argument](/attachments/refguide8/modeling/application-logic/activities/action-call-activities/java-action-call/argument-edit.png)
 
 ### 3.3 Return Type {#return-type}
 

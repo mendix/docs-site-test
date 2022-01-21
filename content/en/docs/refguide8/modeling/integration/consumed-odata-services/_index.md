@@ -12,7 +12,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-Data can be published from an app for use by other apps through [published OData services](/refguide8/published-odata-services/). Consumed OData services can be used to integrate external data sources in apps through .
+Data can be published from an app for use by other apps through [published OData services](/refguide8/published-odata-services/). Consumed OData services can be used to integrate external data sources in apps through [Mendix Data Hub](/data-hub/).
 
 Mendix Data Hub enables integration of available data sources from different sources in an organization into your Mendix apps.  OData services that are registered in the [Data Hub Catalog](/data-hub/data-hub-catalog/) expose entities that can be dragged and dropped into your domain model through the [Data Hub pane](/refguide8/data-hub-pane/) as external entities. The OData service document that is added to your project provides the information for retrieving the metadata for the service and exposed entities.
 
@@ -52,7 +52,7 @@ If the metadata contract at the specified service endpoint is different to the c
 
 ![Data Hub Pane update](/attachments/refguide8/modeling/integration/consumed-odata-services/data-hub-pane-update.png)
 
-![update service project-pane](/attachments/refguide8/modeling/integration/consumed-odata-services/project-pane-update-available.png)
+![update service project-pane](/attachments/refguide8/modeling/integration/consumed-odata-services/consumed-odata-service/project-pane-update-available.png)
 
 This means that the consumed service will have to be **Updated** to the new contract. If this is not done, then this will result in errors when data has to be retrieved from the endpoint based on an outdated contract. Changes in consumed OData service contracts is further described in [Updating or Switching a Consumed OData Service](/refguide8/consumed-odata-service/#updating).
 

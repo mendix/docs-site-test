@@ -13,7 +13,7 @@ tags: ["domain model", "entity", "entities", "attribute", "external entities", "
 
 ## 1 Introduction
 
-External entities connect to the data for shared data sources that are available through . These external entities represent the link to the datasets that are maintained and stored in the external applications. You can integrate or *consume* external entities in your project and use them with local entities to create an app that uses the shared datasets. This dataset that the external entity connects to will be updated as it is changed in the source application. 
+External entities connect to the data for shared data sources that are available through [Mendix Data Hub](/data-hub/). These external entities represent the link to the datasets that are maintained and stored in the external applications. You can integrate or *consume* external entities in your project and use them with local entities to create an app that uses the shared datasets. This dataset that the external entity connects to will be updated as it is changed in the source application. 
 
 This means that several properties of the external entities are determined in their originating app and cannot be changed in your project. 
 
@@ -37,7 +37,7 @@ To add an external entity to your project, do the following:
 
 3.  Drag and drop the entity in the domain model. The entity and its attributes are then added to your app:
 
-	![Virtual Entity Example](/attachments/refguide8/modeling/domain-model/external-entities/virtual-entity-example.png)
+	![Virtual Entity Example](/attachments/refguide8/modeling/domain-model/entities/virtual-entity-example.png)
 
 {{% alert color="info" %}}
 If you drag an entity that is associated with an entity from the same service already in your domain model, the association will be established between the entities. For more information on associations between external entities, see [Associations](#properties).
