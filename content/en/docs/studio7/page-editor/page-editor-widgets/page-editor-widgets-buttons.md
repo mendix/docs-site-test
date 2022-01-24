@@ -28,7 +28,7 @@ The following **Buttons** are available in Mendix Studio as default widgets:
 
 {{% alert color="info" %}}
 
-Apart from the default button widgets, you can also [download widgets from the Mendix Marketplace](https:/marketplace.mendix.com/) to your app. For more information, see section [4 Widgets by Origin](/studio7/page-editor-widgets/#widgets-by-origin) in *Widgets*.
+Apart from the default button widgets, you can also [download widgets from the Mendix Marketplace](https://marketplace.mendix.com/) to your app. For more information, see section [4 Widgets by Origin](/studio7/page-editor-widgets/#widgets-by-origin) in *Widgets*.
 
 {{% /alert %}}
 

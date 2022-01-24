@@ -63,7 +63,7 @@ Let us study an example: the **Customers** page contains a list view with a list
 
 However, the **Customer Details** page has a data view that expects an object *Customer* to be passed to it. In other words, this page needs to get data first to be able to display it. 
 
-{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio7/consistency-errors/consistency-errors-pages/data-view-customer.png)
+{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio7/consistency-errors/consistency-errors-navigation/data-view-customer.png)
 {{/* % /image_container % */}}
 
 As this object is not passed to it from the **Customers** page, you get a consistency error.
