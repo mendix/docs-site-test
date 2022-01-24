@@ -59,7 +59,7 @@ During the import process, spreadsheet data is analyzed and converted the follow
     3. The type of data in these columns is converted to string or enumeration attribute types. For more information on correspondence between Excel data types and attribute types, see the [Correspondence Between Excel Data Types and Attribute Types](#excel-type-attribute-type) section.
     
 
-Download this Excel spreadsheet example to check how data is normalized there: . You can also import it into an app and test how this spreadsheet is converted. For more information, see the [Importing a Spreadsheet](#importing-spreadsheet) section.
+Download this Excel spreadsheet example to check how data is normalized there: [Spreadsheet Example](/attachments/studio8/work-with-data/start-with-data/Example.xlsx). You can also import it into an app and test how this spreadsheet is converted. For more information, see the [Importing a Spreadsheet](#importing-spreadsheet) section.
 
 
 ## 4 Starting an App From a Spreadsheet {#importing-spreadsheet}
