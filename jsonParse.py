@@ -40,20 +40,18 @@ def itemIn(key, value, list_dicts, jsonToParse, currDir):
         value = value+'/'
     if value[0] != '/':
         value = '/'+value
-        strippedList = jsonToParse.rsplit('\\')
-        stripped1 = strippedList[len(strippedList)-1]
-        stripped2 = stripped1.rsplit('.json')
-        strippedName = stripped2[0]
-        for item in list_dicts:
-            if item[key].endswith(value):
-                if value.count('/') == 2 and item[key].startswith('/'+strippedName+'/'):
-                    if currDir in item["Dir"]:
-                        return item
-                elif value.count('/') >= 3:
+    strippedList = jsonToParse.rsplit('\\')
+    stripped1 = strippedList[len(strippedList)-1]
+    stripped2 = stripped1.rsplit('.json')
+    strippedName = stripped2[0]
+    for item in list_dicts:
+        if item[key].endswith(value):
+            if value.count('/') == 2:
+                if item[key].startswith('/'+strippedName+'/') and currDir in item["Dir"]:
                     return item
-    else:
-        for item in list_dicts:
-            if item[key].endswith(value):
+                elif item[key] == value:
+                    return item
+            elif value.count('/') >= 3:
                 return item
 
 # returns dictionary item from a list of dictionaries
