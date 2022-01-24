@@ -33,7 +33,7 @@ You can find the description of input elements available in Studio in the table 
 
 {{% alert color="info" %}}
 
-Apart from the standard input elements, you can also [download widgets from the Mendix Marketplace](https:/marketplace.mendix.com/) to your app. For more information, see the [Widgets by Origin](/studio/page-editor-widgets/#widgets-by-origin) section in *Widgets*.
+Apart from the standard input elements, you can also [download widgets from the Mendix Marketplace](https://marketplace.mendix.com/) to your app. For more information, see the [Widgets by Origin](/studio/page-editor-widgets/#widgets-by-origin) section in *Widgets*.
 
 {{% /alert %}}
 

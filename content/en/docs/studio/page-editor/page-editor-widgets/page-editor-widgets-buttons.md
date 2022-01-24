@@ -35,7 +35,7 @@ The following categories and buttons are available in Mendix Studio as default w
 
 {{% alert color="info" %}}
 
-Apart from the default button widgets, you can also [download widgets from the Mendix Marketplace](https:/marketplace.mendix.com/) to your app. For more information, see the [Widgets by Origin](/studio/page-editor-widgets/#widgets-by-origin) section in *Widgets*.
+Apart from the default button widgets, you can also [download widgets from the Mendix Marketplace](https://marketplace.mendix.com/) to your app. For more information, see the [Widgets by Origin](/studio/page-editor-widgets/#widgets-by-origin) section in *Widgets*.
 
 {{% /alert %}}
 

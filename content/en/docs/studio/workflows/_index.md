@@ -174,7 +174,7 @@ The **Toolbox** tab contains elements that you can drag and drop on a path. Belo
 
 Elements in the **General** section help you control the workflow path, for example, add parallel paths or end them:
 
-![General Section](/attachments/studio/workflows/general.jpg)
+![General Section](/attachments/studio/workflows/workflows-general-activities/general.jpg)
 
 The elements of this section are described in the table below:
 
