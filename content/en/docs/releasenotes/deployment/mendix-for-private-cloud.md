@@ -11,6 +11,26 @@ These release notes cover changes to deployment to [Mendix for Private Cloud](/d
 
 For information on the current status of deployment to Mendix for Private Cloud and any planned releases see [Mendix Status](https://status.mendix.com/).
 
+## 2022
+
+### January 13th, 2022
+
+#### Mendix Operator v2.3.0 and Mendix Gateway Agent v2.3.0
+
+* We have added a new field to set the kubernetes ingress class as an annotation in the installer.
+* We have added a new feature to customize your image names in the registry using a [custom imageNameTemplate](/developerportal/deploy/private-cloud-cluster/#customize-registry-imagenametemplate).
+
+#### Portal Improvements
+
+* We have added a new field, **cluster owner**, on the cluster details page. A cluster owner is now also displayed as a cluster manager in the cluster managers tab.
+* We have updated the UX in the create environment flow and added a **more info** button to the environment details page.
+
+### January 12th, 2022
+
+#### Prometheus Metrics
+
+* We have updated the [Grafana dashboard](/developerportal/deploy/private-cloud-monitor/#import-dashboard) to be compatible with version 2.5.1 of the `grafana/loki-stack` Helm chart. If you're planning to upgrade the `loki-stack` Helm chart in your cluster, you will need to use the updated dashboard.
+* The monitoring solution is now compatible with Kubernetes version 1.22.
 
 ## 2021
 
@@ -97,7 +117,7 @@ This tool is available as a technical preview. For documentation and download li
 * We have fixed an issue where you get duplicate scheduled events and constants after renaming them in a mendix app.
 * We have improved the page to configure annotations (ingress, service, and pod) from the Developer Portal for connected clusters.
 
-### September 2nd, 2021
+### September 2nd, 2021{#20210902}
 
 #### Mendix Operator v2.1.0 and Mendix Gateway Agent v2.1.0
 

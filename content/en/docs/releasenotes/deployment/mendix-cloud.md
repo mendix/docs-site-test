@@ -11,6 +11,14 @@ These release notes cover changes to deployment to [Mendix Cloud](/developerport
 
 For information on the current status of deployment to Mendix Cloud and any planned releases see [Mendix Status](https://status.mendix.com/).
 
+## 2022
+
+### January 13th, 2022
+
+#### Fixes
+
+* We fixed an issue where the start environment call to the deploy API failed to start the environment. (Ticket 132011)
+
 ## 2021
 
 ### December 23rd, 2021
@@ -459,8 +467,8 @@ SSL/TLS ciphers that are still supported for HTTPS connections after December 1s
 
 This value is displayed in the following graphs in Metrics for Mendix Cloud v4:
 
-* as **unused** in [JVM Object Heap](/developerportal/operate/trends-v4/#a-name-trends-appmxruntimejvmheap-a-4-4-jvm-object-heap)
-* as **unused java heap** in [JVM Process Memory Usage](/developerportal/operate/trends-v4/#a-name-trends-appmxruntimejvmprocessmemory-a-4-5-jvm-process-memory-usage)
+* as **unused** in [JVM Object Heap](/developerportal/operate/trends-v4/#Trends-appmxruntimejvmheap)
+* as **unused java heap** in [JVM Process Memory Usage](/developerportal/operate/trends-v4/#Trends-appmxruntimejvmprocessmemory)
 
 {{% alert color="info" %}}This change will take effect the next time you deploy your application.{{% /alert %}}
 
@@ -480,7 +488,7 @@ This value is displayed in the following graphs in Metrics for Mendix Cloud v4:
 
 * We introduced new alerts for Mendix Cloud v4.
     * Database IOPS Burst Balance, based on the graph [Database IOPS Burst Balance](/developerportal/operate/trends-v4/#Trends-dbmxdatabaseburstbalance)
-    * Database Freeable Memory, based on the graph [Database Node Operating System Memory](/developerportal/operate/trends-v4/#a-name-trends-dbmemory-a-5-5-database-node-operating-system-memory)
+    * Database Freeable Memory, based on the graph [Database Node Operating System Memory](/developerportal/operate/trends-v4/#Trends-dbmemory)
 
 ### June 4th, 2020
 
@@ -603,7 +611,7 @@ This value is displayed in the following graphs in Metrics for Mendix Cloud v4:
 We have renewed the SSL/TLS certificate for `*.mendixcloud.com`. Browsers like Mozilla Firefox, Microsoft Edge, Google Chrome, and Internet Explorer automatically trust the new certificate. In those cases, there is nothing you have to do.
 
 {{% alert color="warning" %}}
-If you run services that connect to a `*.mendixcloud.com` endpoint AND use a static or outdated trust store, we advise you to update them. The new SSL/TLS certificate can be downloaded .
+If you run services that connect to a `*.mendixcloud.com` endpoint AND use a static or outdated trust store, we advise you to update them. The new SSL/TLS certificate can be downloaded [here](/attachments/releasenotes/deployment/mendix-cloud/mendixcloud.com-2019-09-12.crt.txt).
 {{% /alert %}}
 
 **Current Certificate Details**

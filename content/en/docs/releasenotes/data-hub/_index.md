@@ -7,7 +7,27 @@ weight: 30
 #This document is mapped to the landing page, update the link there if renaming or moving the doc file.
 ---
 
-These release notes cover changes made to the [Mendix Data Hub](/releasenotes/data-hub/).
+These release notes cover changes made to the [Mendix Data Hub](/data-hub/).
+
+## 2022
+
+### January 14th, 2022
+
+#### Fixes
+
+* We fixed a bug where an error occurred after selecting any curate menu item on the **Curation** page as a Data Hub Curator.
+
+### January 13th, 2022
+
+#### Fixes
+
+* We fixed a bug where V3 contracts uploaded as single XML files were not downloadable from the Data Hub Catalog via the **Download Contract** button.
+
+### January 6th, 2022
+
+#### Fixes 
+
+* We updated the Log4j dependency to 2.17.1, which addresses [CVE-2021-44832](https://cert-portal.siemens.com/productcert/pdf/ssa-784507.pdf).
 
 ## 2021
 
@@ -28,7 +48,7 @@ These release notes cover changes made to the [Mendix Data Hub](/releasenotes/da
 
 #### Fixes
 
-* We updated Log4j dependency to 2.17.0, which addresses [CVE-2021-45105](https://cert-portal.siemens.com/productcert/pdf/ssa-501673.pdf).
+* We updated the Log4j dependency to 2.17.0, which addresses [CVE-2021-45105](https://cert-portal.siemens.com/productcert/pdf/ssa-501673.pdf).
 
 ### December 16th, 2021
 
@@ -112,7 +132,7 @@ These release notes cover changes made to the [Mendix Data Hub](/releasenotes/da
 
 #### Data Hub Free Edition
 
-* The Data Hub Free edition is now available to all Mendix users! Publish your data sources in the Data Hub Catalog, curate them, and then consume them in another application. Learn more about it [here](/releasenotes/data-hub/#data-hub-licences).
+* The Data Hub Free edition is now available to all Mendix users! Publish your data sources in the Data Hub Catalog, curate them, and then consume them in another application. Learn more about it [here](/data-hub/#data-hub-licences).
 
 #### Fixes
 
@@ -154,7 +174,7 @@ These release notes cover changes made to the [Mendix Data Hub](/releasenotes/da
     * `GET` all environments for an application
     * `GET` all consumed endpoints
 * A change was made to the `POST` application API call to also allow for the `Opcenter` and `MindSphere` application types.
-* We added Data Hub Catalog integration with . For details, see [Data Hub Administration](/developerportal/control-center/data-hub-admin/).
+* We added Data Hub Catalog integration with [Control Center](/developerportal/control-center/#data-hub). For details, see [Data Hub Administration](/developerportal/control-center/data-hub-admin/).
 
 ### August 19th, 2021
 
@@ -213,7 +233,7 @@ These release notes cover changes made to the [Mendix Data Hub](/releasenotes/da
 
 #### Improvements
 
-* In the search input boxes on the [Search result](/data-hub/data-hub-catalog/search/#search-results) listings and  page, the magnifying glass now appears on the right side.
+* In the search input boxes on the [Search result](/data-hub/data-hub-catalog/search/#search-results) listings and [Data Hub Home](/data-hub/data-hub-catalog/#data-hub-home) page, the magnifying glass now appears on the right side.
 * In the [Search result](/data-hub/data-hub-catalog/search/#search-results) listings, the filters have been restyled.
 * All cancel and discard buttons now have matching styles for improved usability.
 
@@ -248,13 +268,13 @@ These release notes cover changes made to the [Mendix Data Hub](/releasenotes/da
 
 #### New Features
 
-The [Data Hub Transform API](https:/datahub-spec.s3.eu-central-1.amazonaws.com/transform.html) is available for Mendix users deploying their apps to non-Mendix environments.  The Transform API extracts the information from the the app’s `dependencies.json` file to generate the request bodies that are required when using the [Data Hub API](/apidocs-mxsdk/apidocs/data-hub-apis/). For further information see [Data Hub Transform API](/apidocs-mxsdk/apidocs/data-hub-apis/#transform).
+The [Data Hub Transform API](https://datahub-spec.s3.eu-central-1.amazonaws.com/transform.html) is available for Mendix users deploying their apps to non-Mendix environments.  The Transform API extracts the information from the the app’s `dependencies.json` file to generate the request bodies that are required when using the [Data Hub API](/apidocs-mxsdk/apidocs/data-hub-apis/). For further information see [Data Hub Transform API](/apidocs-mxsdk/apidocs/data-hub-apis/#transform).
 
 ### April 29th, 2021
 
 #### Improvements
 
-* Improvements have been made to the styling of the .
+* Improvements have been made to the styling of the [Data Hub Home](/data-hub/data-hub-catalog/#data-hub-home).
 
 ### April 22nd, 2021
 
@@ -415,4 +435,4 @@ Every organization has valuable data in different applications. With Mendix Data
 
 Want to know how it can help you? Check out the launch blog post: [Data Hub: The Low-Code Approach to Data Integration](http://www.mendix.com/blogs/data-hub-the-low-code-approach-to-data-integration).
 
-For even more information, please consult the [Data Hub Guide](/releasenotes/data-hub/).
+For even more information, please consult the [Data Hub Guide](/data-hub/).

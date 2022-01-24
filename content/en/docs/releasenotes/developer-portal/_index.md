@@ -7,7 +7,7 @@ weight: 20
 #This document is mapped to the landing page, update the link there if renaming or moving the doc file.
 ---
 
-These release notes cover changes to the app management functionality and other features of the .
+These release notes cover changes to the app management functionality and other features of the [Mendix Developer Portal](/developerportal/).
 
 {{% alert color="info" %}}
 For release notes on Mendix Cloud and deployment options, see [Deployment](/releasenotes/developer-portal/deployment/).
@@ -42,7 +42,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 * The arrival of [Git support](/refguide/branch-line-manager-dialog/#byo-server-app) means that a new version of the [Platform SDK](/apidocs-mxsdk/mxsdk/) is in order. We made some changes to the Developer Portal to accommodate this new version, which is currently being tested and will be published soon.
 * We introduced a new version of the [Feedback API](/apidocs-mxsdk/apidocs/feedback-api/) that will be used by a new generation of [Feedback widgets](/appstore/widgets/mendix-feedback/) coming to the Marketplace soon.
-* Until now, you were not able to delete or deactivate an app if it was still deployed to an environment, regardless of whether it was a licensed environment or a sandbox for a Free App. We changed this behavior so that the only check is on whether the environment is licensed. A consequence of this change is that the cloud icon on the app tiles on the  page is only displayed if your app is deployed to a licensed node.
+* Until now, you were not able to delete or deactivate an app if it was still deployed to an environment, regardless of whether it was a licensed environment or a sandbox for a Free App. We changed this behavior so that the only check is on whether the environment is licensed. A consequence of this change is that the cloud icon on the app tiles on the [My Apps](/developerportal/#my-apps) page is only displayed if your app is deployed to a licensed node.
 
 ### November 4th, 2021
 
@@ -54,7 +54,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Update of *.mendixcloud.com SSL/TLS certificate
 
-* We have renewed the SSL/TLS certificate for `\*.mendixcloud.com`. Browsers like Mozilla Firefox, Microsoft Edge, Google Chrome, and Internet Explorer automatically trust the new certificate. In that case, there is nothing you have to do. If you run services that connect to a `\*.mendixcloud.com` endpoint and use a static or outdated trust store, we advise you to update their certificates. The new SSL/TLS certificate can be downloaded . This can be done from today, you do not have to wait for the old certificate to expire.
+* We have renewed the SSL/TLS certificate for `\*.mendixcloud.com`. Browsers like Mozilla Firefox, Microsoft Edge, Google Chrome, and Internet Explorer automatically trust the new certificate. In that case, there is nothing you have to do. If you run services that connect to a `\*.mendixcloud.com` endpoint and use a static or outdated trust store, we advise you to update their certificates. The new SSL/TLS certificate can be downloaded [here](/attachments/releasenotes/developer-portal/mendixcloud.com-2021-10-29.crt.txt). This can be done from today, you do not have to wait for the old certificate to expire.
 	* Current certificate details:
 		* Subject: `*.mendixcloud.com`
 		* Issuer: C = US, O = DigiCert Inc, OU = www.digicert.com, CN = RapidSSL TLS RSA CA G1
@@ -89,6 +89,12 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 #### Fixes
 
 * We fixed an issue where you could not see the story details if one of the tasks had a title that was longer than 200 characters.
+
+### October 1st, 2021 {#oct1}
+
+#### New Features
+
+* We have released the company [Onboarding](/developerportal/control-center/#onboarding) functionality in Control Center that enables setting up Mendix onboarding specifically for all new members of your company. You can set up an onboarding email that new users get as soon as they create their Mendix accounts and a company onboarding page that new users land on.
 
 ### September 23rd, 2021
 
@@ -125,7 +131,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 * We removed the **Burndown Chart** and the **Release Plan** from **Stories**. We are working on reintroducing solutions for project analytics and release planning in the future.
 * We implemented [context deep links](/developerportal/collaborate/manage-deeplinks/) to all main app pages on the Developer Portal so you can easily share references.
-* We increased the performance of opening the 
+* We increased the performance of opening the [My Apps page](/developerportal/#my-apps)
 
 #### Fixes
 
@@ -136,7 +142,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Improvements
 
-* We added a new menu item for Mendix Admins to access  tasks in Control Center. For details, see [Data Hub Administration](/developerportal/control-center/data-hub-admin/).
+* We added a new menu item for Mendix Admins to access [Data Hub](/developerportal/control-center/#data-hub) tasks in Control Center. For details, see [Data Hub Administration](/developerportal/control-center/data-hub-admin/).
 
 ### August 19th, 2021
 
@@ -190,7 +196,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 #### Improvements
 
 * We added a tab on the [Cloud](/developerportal/control-center/#cloud) page in Control Center that displays details on **Free Environments**.
-* We are deprecating part of the options to create an app based on an app template. As of June 20th, 2021, you can no longer create apps through the [Projects API](/apidocs-mxsdk/apidocs/projects-api/) or the  using app templates created in Desktop Modeler version [7.23.14](/releasenotes/studio-pro/7.23/#72314) or below. Please update your templates to [7.23.15](/releasenotes/studio-pro/7.23/#72315) or above before creating apps based on those templates.
+* We are deprecating part of the options to create an app based on an app template. As of June 20th, 2021, you can no longer create apps through the [Projects API](/apidocs-mxsdk/apidocs/projects-api/) or the [Developer Portal](/developerportal/#navigation) using app templates created in Desktop Modeler version [7.23.14](/releasenotes/studio-pro/7.23/#72314) or below. Please update your templates to [7.23.15](/releasenotes/studio-pro/7.23/#72315) or above before creating apps based on those templates.
 
 ### May 17th, 2021
 
@@ -212,7 +218,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Fixes
 
-* We fixed an issue where some graphs in the Contral Center  were loading indefinitely. 
+* We fixed an issue where some graphs in the Contral Center [Dashboard](/developerportal/control-center/#dashboard) were loading indefinitely. 
 * We fixed the page title of the [Mendix Studio](/releasenotes/studio/) landing page.
 * Page links now open in the correct tab.
 
@@ -220,19 +226,19 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### New Features
 
-* We released the Control Center , which provides an overview of various activities for your company on the Mendix Platform. This feature is currently in [Beta](/releasenotes/beta-features/), and you can provide feedback via the feedback button on the right of the page.
+* We released the Control Center [Dashboard](/developerportal/control-center/#dashboard), which provides an overview of various activities for your company on the Mendix Platform. This feature is currently in [Beta](/releasenotes/beta-features/), and you can provide feedback via the feedback button on the right of the page.
 
 ### March 30th, 2021
 
 #### Improvements
 
-* We have released our new  solution with these main features:
+* We have released our new [platform navigation](/developerportal/) solution with these main features:
 	* The **Switch to** menu on the left side of the top bar provides access to different parts of the Mendix Platform.
 	* The top bar contains sub-navigation items (for example, **Company Buzz**).
 	* Clicking the **+** button on the right side of the top bar will create a new app from anywhere in the platform.
 	* Under your avatar on the right side of the top bar, there is an option to switch off the new navigation, which will be available for a limited amount of time.
 * We improved the search experience and added a full page of search results that can be accessed by clicking **View Search Results Page** at the bottom of the search drop-down menu or by pressing <kbd>Enter</kbd> after typing a search query
-* We changed the  page and moved your favorite apps to the **Pinned** tab. This will become the default tab on this page, making it easy to quickly access the apps you care about the most.
+* We changed the [My Apps](/developerportal/#my-apps) page and moved your favorite apps to the **Pinned** tab. This will become the default tab on this page, making it easy to quickly access the apps you care about the most.
 * You asked and we listened: We added new label colors for labels in [Stories](/developerportal/collaborate/stories/). There are now 15 different colors to choose from, specifically selected with accessibility in mind.
 * We made some big changes to the look and feel of our Developer Portal:
 	* We reshuffled the navigation items in the [App Buzz](/developerportal/collaborate/buzz/#app-buzz) to a more logical order, based on our research insights. Now, there are two main sections: **Collaborate** and **Deploy**.
@@ -309,7 +315,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 #### Improvements
 
 * It is now possible to add or remove labels in the [Story Details](/developerportal/collaborate/stories/#story-details) page.
-* We added a link to your app's [environments](/developerportal/deploy/environments/) in the app tile on .
+* We added a link to your app's [environments](/developerportal/deploy/environments/) in the app tile on [My Apps](/developerportal/#my-apps).
 
 #### Fixes
 
@@ -334,13 +340,13 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Fixes
 
-* We fixed several minor issues with the  page.
+* We fixed several minor issues with the [My Apps](/developerportal/#my-apps) page.
 
 ### January 15th, 2021
 
 #### Improvements
 
-* We redesigned the  page.
+* We redesigned the [My Apps](/developerportal/#my-apps) page.
 * You will now see labels when you are editing a [story](/developerportal/collaborate/stories/#story-actions) using the new **Stories** UI. We will enable the editing of story labels and label colors in a future release.
 
 #### Fixes
@@ -365,7 +371,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Improvements
 
-* We changed the home page of the Developer Portal to .
+* We changed the home page of the Developer Portal to [My Apps](/developerportal/#my-apps).
 
 ### November 4th, 2020
 
@@ -449,7 +455,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 * The [new Stories UI](/developerportal/collaborate/stories/) has been improved with various sections. The old Stories UI will be made unavailable soon. We encourage you to turn your tasks that are still available in the old Stories UI into new stories before the old UI is inaccessible.
 * We improved performance on story-related actions such as drag-and-drop and status changes on large apps with many deleted items.
 * We renamed the default **End-User** team role to [Guest](/developerportal/collaborate/app-roles/#team-roles) to better distinguish team roles from app user roles.
-* We removed the list appearance of the  page.
+* We removed the list appearance of the [My Company's Apps](/developerportal/#my-company-apps) page.
 
 #### Fixes 
 
@@ -470,7 +476,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 #### Fixes
 
 * We fixed a bug where the calendar icon on date/time input fields was not displayed properly.
-* We fixed a bug where the star icon on your  was not displayed properly.
+* We fixed a bug where the star icon on your [favorite apps](/developerportal/#my-apps) was not displayed properly.
 
 ### May 22nd, 2020
 
@@ -488,7 +494,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Improvements
 
-* We fixed an issue where  still showed up in the favorites view on the  page after being deleted.
+* We fixed an issue where [favorited apps](/developerportal/#my-apps) still showed up in the favorites view on the [My Apps](/developerportal/#my-apps) page after being deleted.
 * We made performance improvements to the **My Apps** page.
 * We fixed an issue where the description field did not expand properly when creating a new [story](/developerportal/collaborate/stories/).
 
@@ -496,7 +502,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Improvements
 
-* We implemented a new design for the  flow.
+* We implemented a new design for the [Create App](/developerportal/) flow.
 * When creating a new app, you can now search through templates for feature demos, academy training apps, and ready-made apps.
 * After selecting an app template, you can now choose a nice icon for your app.
 
@@ -540,7 +546,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Improvements
 
-* We introduced the ability to  apps from the **My Apps** page and to filter on favorite apps. This is helpful when you have a large number of Mendix apps.
+* We introduced the ability to [favorite](/developerportal/#my-apps) apps from the **My Apps** page and to filter on favorite apps. This is helpful when you have a large number of Mendix apps.
 
 ### September 24th, 2019
 
@@ -554,7 +560,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Launchpad Removal & App User Management Update
 
-* We removed the old launchpad page, as we have moved to a new SSO architecture. The old URL `launchpad.mendix.com` now links to your  page.
+* We removed the old launchpad page, as we have moved to a new SSO architecture. The old URL `launchpad.mendix.com` now links to your [My Apps](/developerportal/#my-apps) page.
 * We moved the App User management functionality of the launchpad to the **General** app settings in the Developer Portal. For more information, see the [Managing App Users](/developerportal/collaborate/general-settings/#managing-app-users) section of *How to Manage General App Settings*.
 
 ### August 9th, 2019
@@ -651,7 +657,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 #### Mendix Shop
 
-* The [Mendix Shop](https:/mendixshop.mendixcloud.com) is open for business! This is a web shop where you can spend the credits you have gained by completing various [challenges](/developerportal/community-tools/mendix-profile/#challenges). The shop has cool products like Mendix t-shirts, socks, and sweatbands, so be sure to check it out.
+* The [Mendix Shop](https://mendixshop.mendixcloud.com) is open for business! This is a web shop where you can spend the credits you have gained by completing various [challenges](/developerportal/community-tools/mendix-profile/#challenges). The shop has cool products like Mendix t-shirts, socks, and sweatbands, so be sure to check it out.
 
 	{{/* % image_container width="300" % */}}![](/attachments/releasenotes/developer-portal/shop.png)
 	{{/* % /image_container % */}}
@@ -683,7 +689,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 * Several UX updates were made to Developer Portal pages:
   * The [My Apps](https://sprintr.home.mendix.com/link/myapps) page has been redesigned, and you can now toggle your app list views.
   * The **App** > **General** page has been redesigned.
-  * The [People](https:/developer.mendixcloud.com/link/people) overview has been redesigned. The same view on Mendix community members is available in the [Connections tab](/developerportal/community-tools/mendix-profile/#connections) of your Mendix Profile.
+  * The [People](https://developer.mendixcloud.com/link/people) overview has been redesigned. The same view on Mendix community members is available in the [Connections tab](/developerportal/community-tools/mendix-profile/#connections) of your Mendix Profile.
 
 ### October 1st, 2018
 

@@ -9,7 +9,7 @@ tags: ["Native", "Android", "iOS", "Apple", "mendix 8"]
 
 For more information on the Make It Native app, see [Getting the Make It Native App](/refguide/getting-the-make-it-native-app/).
 
-You can download the Make It Native app for [iOS](https:/apps.apple.com/app/make-it-native/id1334081181) or [Android](/refguide/getting-the-make-it-native-app/).
+You can download the Make It Native app for [iOS](https://apps.apple.com/app/make-it-native/id1334081181) or [Android](/refguide/getting-the-make-it-native-app/).
 
 ## Android 2.2.2 / iOS 2.2.2
 

@@ -10,7 +10,7 @@ weight: 5
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-These are the  major version release notes:
+These are the [Mendix Studio Pro](/refguide/) major version release notes:
 
 * [9](/releasenotes/studio-pro/9/)
 * [8](/releasenotes/studio-pro/8/)
