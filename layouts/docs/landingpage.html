@@ -15,7 +15,7 @@
     <div class="container-fluid td-outer">
       <div class="td-main">
         <div class="row flex-xl-nowrap stretch-main">
-          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <aside class="d-none d-lg-block col-lg-4 col-xl-3 td-sidebar d-print-none"> <!-- NK - adjusted resizing for different screens -->
             {{ partial "sidebar.html" . }}
           </aside>
          <!-- NK - deactivated toc
@@ -28,8 +28,7 @@
             {{ partial "toc.html" . }}
             {{ partial "taxonomy_terms_clouds.html" . }}
           </aside> -->
-		  <!-- NK - increased col-xl to 10 -->
-          <main class="col-12 col-md-9 col-xl-10 pl-md-5" role="main">
+          <main class="col-12 col-lg-8 col-xl-9 pl-md-5" role="main"> <!-- NK - adjusted resizing for different screens -->
         <!-- MvM - Do a test for missing Title -->
         {{ if not .Title }}
             {{ warnf "File %s \n\t\t\t\thas no title in the front matter\n " .Page.File.Path }}

@@ -74,12 +74,16 @@ div.w-50{
 	margin: 0.75rem;
 	padding: 1rem;
 	@include media-breakpoint-up(xl){
-		flex: 0 0 46%;
-		max-width: 46%;
+		flex: 0 0 45%;
+		max-width: 45%;
+	}
+	@include media-breakpoint-down(lg){
+		flex: 0 0 90%;
+		max-width: 90%;
 	}
 	@include media-breakpoint-down(md){
-		flex: 0 0 97%;
-		max-width: 97%;
+		flex: 0 0 90%;
+		max-width: 90%;
 	}
 }
 div.image-card-col{
