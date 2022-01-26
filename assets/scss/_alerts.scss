@@ -2,7 +2,7 @@
 
 .alert {
     font-weight: $font-weight-medium;
-    //background: $white; // NK - turns off explicit color set, now it's inherited from bootstrap _alert.scss, with a gradient
+    //background: $white; // NK - turns off explicit color set, now it's inherited from bootstrap _alerts.scss
     color: inherit;
     border-radius: 0;
 
@@ -15,6 +15,7 @@
             border-style: solid;
             border-color: $value;
             border-width: 0 0 0 4px;
+            background-color: fade-out($value, 0.75%); // NK - adds faded gradient to alert backgrounds
         }
     }
 }
