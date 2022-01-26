@@ -12,9 +12,15 @@ IgnoreInternalURLs:
 - "/misc/js/script.js"
 - "/js/"
 IgnoreDirs:
-- "lib"
-- "/js"
+- "_includes"
 - "_print"
+- "attachments"
+- "css"
+- "favicons"
+- "icons"
+- "js"
+- "scss"
+- "webfonts"
 CacheExpires: "20d"
 CheckExternal: false
 CheckMailto: false
