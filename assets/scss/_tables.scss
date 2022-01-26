@@ -13,6 +13,7 @@
     padding: $table-cell-padding;
     vertical-align: top;
     border: $table-border-width solid $table-border-color; // NK - added borders to tables
+    font-size: 0.9rem; // NK - smaller font size
   }
 
   thead th {
