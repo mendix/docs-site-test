@@ -65,7 +65,8 @@ install:
   - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
   #
   - ./bin/htmltest --version
-  - ./bin/htmltest
+  # TEMPORARY REMOVE htmltest
+  # - ./bin/htmltest
 
 before_script:
 ##############
@@ -86,6 +87,9 @@ script:
   - echo $TRAVIS_PULL_REQUEST
   - echo $TRAVIS_PULL_REQUEST_BRANCH
   - pwd
+  - cat /proc/meminfo
+  - free -g
+  - vmstat
 
 # before_cache
 ############## Skipped
