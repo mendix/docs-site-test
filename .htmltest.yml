@@ -4,8 +4,14 @@
 # See documentation in repo: https://github.com/wjdp/htmltest
 
 DirectoryPath: "./public"
-EnforceHTTPS: false
+DirectoryIndex: "index.html"
 FileExtension: .html
+# Do not check external files - will want to do this monthly or so - implement later
+CheckExternal: false
+CheckMailto: false
+# Not checking scripts for speed - should be OK as generated through HUGO
+CheckScripts: false
+CheckTel: false
 IgnoreURLs:
 - "example.com"
 IgnoreInternalURLs:
@@ -21,12 +27,18 @@ IgnoreDirs:
 - "js"
 - "scss"
 - "webfonts"
-CacheExpires: "20d"
-CheckExternal: false
-CheckMailto: false
-CheckTel: false
 IgnoreAltMissing: true
 IgnoreDirectoryMissingTrailingSlash: true
-DirectoryIndex: "index.html"
-IgnoreInternalEmptyHash: true
 IgnoreEmptyHref: true
+IgnoreInternalEmptyHash: true
+CacheExpires: "20d"
+EnforceHTTPS: false
+
+# ==========================================================
+# Speed up using concurrent testing by changing flag to true
+# Using 4 concurrent documents halves the processing time
+# EXPERIMENTAL - REMOVE IF THERE ARE PROBLEMS
+#===========================================================
+
+TestFilesConcurrently: false
+DocumentConcurrencylimit: 4
