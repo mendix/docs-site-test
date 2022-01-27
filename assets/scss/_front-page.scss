@@ -117,11 +117,16 @@ h4.card-title{
 	color: $gray-900;
 	font-weight: 600;
 	margin: 0.5rem 0;
+}
+h4.card-title-w-50{
+	color: $gray-900;
+	font-weight: 600;
+	margin: 0.5rem 0;
 
-	&:hover {
-		color: $blue;
-		text-decoration: none;
-	}
+		&:hover {
+			color: $blue;
+			text-decoration: none;
+		}
 }
 p.card-text{
 	margin-top: 1rem;
