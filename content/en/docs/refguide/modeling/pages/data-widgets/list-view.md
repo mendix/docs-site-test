@@ -37,17 +37,17 @@ List view properties consist of the following sections:
 
 ### 2.2. Data Source Section {#data-source}
 
-The data source determines which objects will be shown in a list view. For general information on data sources, see [Data Sources](data-sources).
+The data source determines which objects will be shown in a list view. For general information on data sources, see [Data Sources](/refguide/data-sources/).
 
 #### 2.2.1 Type
 
 The list view supports the following types of data sources: 
 
-* [Database source](database-source) – objects are retrieved directly form the database. The database source can be used in [offline](offline-first) applications. 
-* [XPath source](xpath-source) – objects are retrieved directly form the database
-* [Microflow source](microflow-source) – calculates the list of objects by executing a microflow
-* [Nanoflow source](nanoflow-source) – calculates the list of objects by executing a nanoflow
-* [Association source](association-source) – follows an association to get to objects
+* [Database source](/refguide/database-source/) – objects are retrieved directly form the database. The database source can be used in [offline](/refguide/offline-first/) applications. 
+* [XPath source](/refguide/xpath-source/) – objects are retrieved directly form the database
+* [Microflow source](/refguide/microflow-source/) – calculates the list of objects by executing a microflow
+* [Nanoflow source](/refguide/nanoflow-source/) – calculates the list of objects by executing a nanoflow
+* [Association source](/refguide/association-source/) – follows an association to get to objects
 
 The database and XPath sources retrieve objects from the database and supports searching and sorting. 
 
@@ -65,7 +65,7 @@ If this property is set to *Yes*, items in the list view can be edited. The chan
 
 #### 2.4.2 On Click 
 
-An on-click event defines what action is performed when a user clicks a list view row. For more information on on-click events, see [On Click Event](on-click-event). 
+An on-click event defines what action is performed when a user clicks a list view row. For more information on on-click events, see [On Click Event](/refguide/on-click-event/). 
 
 #### 2.4.3 Page Size {#page-size}
 
@@ -121,7 +121,7 @@ To perform actions on a list view, select it on a page and right-click it. The l
 
 ## 4 Read More
 
-* [Page](page)
-* [Data Containers](data-widgets)
-* [Data Sources](data-sources)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Data Containers](/refguide/data-widgets/)
+* [Data Sources](/refguide/data-sources/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

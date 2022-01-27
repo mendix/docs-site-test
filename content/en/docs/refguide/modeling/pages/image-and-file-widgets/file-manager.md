@@ -14,7 +14,7 @@ A file manager is used to upload and/or download files.
 
 ![File Manager](/attachments/refguide/modeling/pages/image-and-file-widgets/file-manager/file-manager.png)
 
-A file manager must be placed inside a data view connected to the entity that is either a **System.FileDocument** (or a specialization) or an [external entity](external-entities) with a `Contents` binary attribute.
+A file manager must be placed inside a data view connected to the entity that is either a **System.FileDocument** (or a specialization) or an [external entity](/refguide/external-entities/) with a `Contents` binary attribute.
 
 {{% alert color="info" %}}
 For an external entity to be used as a file source, it must be defined as a media element in the corresponding OData service. Such an element can be recognized by setting the `HasStream` attribute to `true` in its metadata.  
@@ -83,7 +83,7 @@ This value cannot be set arbitrarily high as the platform to which the app is de
 
 You can specify file extensions that users are allowed to upload. If no extension is specified, all file extensions are allowed. Separate multiple extensions by a semi-colon, for example, `txt;doc`
 
-If a file with an extension that is not allowed is selected, a [system text](system-texts) for **File manager/dynamic image** > **Error: incorrect file extension** will be shown below the file manager.
+If a file with an extension that is not allowed is selected, a [system text](/refguide/system-texts/) for **File manager/dynamic image** > **Error: incorrect file extension** will be shown below the file manager.
 
 #### 2.4.4 Show File in Browser
 
@@ -101,7 +101,7 @@ Default: *False*
 
 ## 3 Read More
 
-* [Page](page)
-* [Images, Videos & Files](image-and-file-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
-* [System Texts](system-texts)
+* [Page](/refguide/page/)
+* [Images, Videos & Files](/refguide/image-and-file-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)
+* [System Texts](/refguide/system-texts/)

@@ -24,7 +24,7 @@ During the synchronization stage, Mendix 9 will perform a check for the RCSI sta
 
 ## 3 Update from Mendix 8 to 9 for Studio Pro {#studio-pro-upgrade}
 
-The following sub-sections explain the steps to take in converting your app from Mendix 8 to Mendix 9. We recommend you first review the [Breaking Changes](/releasenotes/studio-pro/9.0#breaking-changes) section of the *Studio Pro 9.0* release notes as well as our updated [System Requirements](/refguide/system-requirements).
+The following sub-sections explain the steps to take in converting your app from Mendix 8 to Mendix 9. We recommend you first review the [Breaking Changes](/releasenotes/studio-pro/9.0/#breaking-changes) section of the *Studio Pro 9.0* release notes as well as our updated [System Requirements](/refguide/system-requirements/).
 
 ### 3.1 Back Up Your App
 
@@ -33,12 +33,12 @@ Make sure that you have either committed your latest changes to Team Server, or 
 ### 3.2 Upgrade to the Latest Release of Version 8
 
 {{% alert color="warning" %}}
-It is technically required for you to upgrade your app to Mendix 8.12 first to be able to update it to Mendix 9. However, we recommend you update to the latest version of Mendix 8: [8.18](/releasenotes/studio-pro/8.18).
+It is technically required for you to upgrade your app to Mendix 8.12 first to be able to update it to Mendix 9. However, we recommend you update to the latest version of Mendix 8: [8.18](/releasenotes/studio-pro/8.18/).
 {{% /alert %}}
 
 To upgrade to Mendix 8.18, follow these steps:
 
-1. Download the latest patch release of Studio Pro [8.18](/releasenotes/studio-pro/8.18).
+1. Download the latest patch release of Studio Pro [8.18](/releasenotes/studio-pro/8.18/).
 1. Open your app in Studio Pro v8.18.
 1. Allow it to upgrade the app, if necessary.
 
@@ -90,7 +90,7 @@ Congratulations! Your app has been successfully upgraded to Mendix 9 and you can
 
 ## 4 Runtime API Changes
 
-Most of the Java API calls that were deprecated in Mendix 8 have been removed. If you were still using such methods in your Java actions, you must replace or delete them. To check which calls were depreciated, click the **Mendix 8 Server Runtime API** link in our [Runtime API Documentation](/apidocs-mxsdk/apidocs/runtime-api).
+Most of the Java API calls that were deprecated in Mendix 8 have been removed. If you were still using such methods in your Java actions, you must replace or delete them. To check which calls were depreciated, click the **Mendix 8 Server Runtime API** link in our [Runtime API Documentation](/apidocs-mxsdk/apidocs/runtime-api/).
 
 Additionally, refer to the Mendix Studio Pro 9.02 Release notes for more Runtime API change details.
 
@@ -100,7 +100,13 @@ Before Mendix 9, Mendix could ensure data uniqueness using either the Mendix run
 
 If your app is still using Mendix runtime for uniqueness validation, then you should set the custom runtime setting `DataStorage.EnableDiagnostics` to `true`  to check for potential data redundancy issues that might exist in the database. 
 
-If any are found, an error like **An error occured while initializing the Runtime: Detected unique constraing violation...** will be logged. To solve this, your app will have to be prepared before moving to Mendix 9. You can obtain the tools you need by [submitting a support request](/developerportal/support/submit-support-request).
+If any are found, an error like **An error occured while initializing the Runtime: Detected unique constraing violation...** will be logged. To solve this, your app will have to be prepared before moving to Mendix 9. You can obtain the tools you need by [submitting a support request](/developerportal/support/submit-support-request/).
+
+### 4.2 Mendix Object Changed Flag
+
+In Mendix 9.5 and above, when you change an object member, the member state becomes 'CHANGED' even if the old value and the new value are the same. This also affects `objectHasChanged` and `memberHasChanged` Java actions of the Community Commons module.
+
+For example, you have a committed object `$User` with `$User/Name = 'Alice'`. Setting `$User/Name` to `'Alice'` results in the member state becoming 'CHANGED' even though the name is the same. Previously, this would have resulted in the member state remaining 'UNCHANGED'.
 
 ## 5 Testing Native Mobile Apps
 
@@ -113,19 +119,19 @@ For best results with native apps, make sure you have updated the [Native Mobile
 
 ## 6 Client API Changes
 
-Client APIs that were deprecated and marked for removal in Mendix 9 were indeed removed. Libraries like `big.js`, `react`, `react-native`, and a few others shipped with the Client have been updated to latest version. This might affect your custom and pluggable widgets and to JavaScript actions. Please refer to the [Breaking Changes](/releasenotes/studio-pro/9.0#breaking-changes) section of the *Studio Pro 9.0* release notes for more details.
+Client APIs that were deprecated and marked for removal in Mendix 9 were indeed removed. Libraries like `big.js`, `react`, `react-native`, and a few others shipped with the Client have been updated to latest version. This might affect your custom and pluggable widgets and to JavaScript actions. Please refer to the [Breaking Changes](/releasenotes/studio-pro/9.0/#breaking-changes) section of the *Studio Pro 9.0* release notes for more details.
 
 ## 7 Native Dependencies
 
 Mendix 9 native apps no longer include non-essential native libraries like `react-native-maps`, `react-native-ble-plx`, `react-native-geocoder`, and others by default. Instead, new functionality of declaring native dependencies for components has been introduced in Mendix 9. Every pluggable widget or JavaScript action must declare which native libraries it uses. This way, native apps can be bundled with only the libraries they need while unnecessary libraries are not included.
 
-If your pluggable widget or JavaScript action uses libraries that require native linking, please update your widgets and actions in order to define those native libraries as dependencies for your components. Read more about native dependencies in [Declaring Native Dependencies](/apidocs-mxsdk/apidocs/pluggable-widgets-native-dependencies).
+If your pluggable widget or JavaScript action uses libraries that require native linking, please update your widgets and actions in order to define those native libraries as dependencies for your components. Read more about native dependencies in [Declaring Native Dependencies](/apidocs-mxsdk/apidocs/pluggable-widgets-native-dependencies/).
 
 ## 8 XPath Query Engine 9 {#query-engine-9}
 
 Mendix 9 contains a new XPath query engine called *query engine 9* or QE9, replacing the current engine called *query engine 7* or QE7. There are a few changes in functionality between the query engines:
 
-* If an association is [navigable from both sides](/refguide/association-properties#navigability), both entities can have access rules defined which declare the readability of the association. For such associations, QE9 will always use the entity on the left of the current XPath to determine accessibility.
+* If an association is [navigable from both sides](/refguide/association-properties/#navigability), both entities can have access rules defined which declare the readability of the association. For such associations, QE9 will always use the entity on the left of the current XPath to determine accessibility.
 For example: in the query `//Customer[Customer_Address/Address/City = 'Rotterdam']`, the access rules defined in `Customer` will be used for the association, whereas in `//Address[Customer_Address/Customer/Lastname = 'Doe']`, the rules in `Address` will be used for that same association. In QE7 the behavior was not well defined.
 
 * QE9 has been written to follow the least privilege principle strictly when retrieving data. This might cause less data to be visible to end-users.
@@ -136,4 +142,4 @@ For example: in the query `//Customer[Customer_Address/Address/City = 'Rotterdam
 
 ## 9 Read More
 
-* [Studio Pro 9 Release Notes](/releasenotes/studio-pro/9.0)
+* [Studio Pro 9 Release Notes](/releasenotes/studio-pro/9.0/)

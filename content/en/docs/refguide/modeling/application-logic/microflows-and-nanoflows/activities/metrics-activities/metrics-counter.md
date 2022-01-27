@@ -44,7 +44,7 @@ The name of the counter whose value you want to increment.
 
 ### 3.2 Value
 
-The value used to increment the counter's value. Values are specified with [expressions](expressions) and should be of type Integer/Long. It is only possible to increment the counter, so values cannot be negative.
+The value used to increment the counter's value. Values are specified with [expressions](/refguide/expressions/) and should be of type Integer/Long. It is only possible to increment the counter, so values cannot be negative.
 
 ### 3.3 Tags
 
@@ -56,6 +56,6 @@ You can specify a list of tags to enrich the counter name with key/value pairs. 
 
 ## 5 Read More
 
-* [Metric Configuration](metrics)
-* [Metrics Activities](metrics-activities)
+* [Metric Configuration](/refguide/metrics/)
+* [Metrics Activities](/refguide/metrics-activities/)
 * [Meter Concepts](https://micrometer.io/docs/concepts)

@@ -1,8 +1,8 @@
 ---
 title: "Starting With Your Own Data"
-url: /studio8/start-with-data
+url: /studio8/start-with-data/
 category: "Working with Data"
-menu_order: 20
+weight: 20
 description: "Describes how to import an Excel spreadsheet to your domain model in Mendix Studio."
 tags: ["studio", "domain model", "excel import", "start with data", "data model"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -36,7 +36,7 @@ To create an app based on a spreadsheet, you need to use the **App from a spread
 
     a. Each column should name a unique name within a workbook. 
 
-      {{% alert type="info" %}}If a column name consists of several lines, Mendix Studio will process the only first one. If your column does not have a name, but has values in it, it will be named "_EMPTY".
+      {{% alert color="info" %}}If a column name consists of several lines, Mendix Studio will process the only first one. If your column does not have a name, but has values in it, it will be named "_EMPTY".
 
       {{% /alert %}}
 
@@ -60,7 +60,7 @@ During the import process, spreadsheet data is analyzed and converted the follow
     
 
 Download this Excel spreadsheet example to check how data is normalized there: [Spreadsheet Example](/attachments/studio8/work-with-data/start-with-data/Example.xlsx). You can also import it into an app and test how this spreadsheet is converted. For more information, see the [Importing a Spreadsheet](#importing-spreadsheet) section.
-. You can also import it into an app and test how this spreadsheet is converted. For more information, see the [Importing a Spreadsheet](#importing-spreadsheet) section.
+
 
 ## 4 Starting an App From a Spreadsheet {#importing-spreadsheet}
 
@@ -70,7 +70,7 @@ When you create your app, a page where you can upload your spreadsheet is opened
 ![](/attachments/studio8/work-with-data/start-with-data/drag-and-drop.png)
 {{/* % /image_container % */}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you choose to start without data, you will have just a blank app, and will not be able to import a spreadsheet later. 
 
@@ -98,7 +98,7 @@ In the table below, you can see how the Excel data corresponds to the attribute 
 
 After you upload the spreadsheet, worksheets that have relations (associations) are identified. 
 
-{{% alert type="info" %}}Associations are not identified if the data is converted to *Integer*. In this case you can either change the column type to *Text* in Excel, or change the type of both columns to *String* when previewing your data. For more information on how to change attribute types, see the [Managing Attribute Types](#managing-attribute-types) section.
+{{% alert color="info" %}}Associations are not identified if the data is converted to *Integer*. In this case you can either change the column type to *Text* in Excel, or change the type of both columns to *String* when previewing your data. For more information on how to change attribute types, see the [Managing Attribute Types](#managing-attribute-types) section.
 {{% /alert %}} 
 
 In the **Data Preview**, you can check the spreadsheet data before the actual import is completed. You can review tables and columns and untick the ones that you do not want to import. Tables that have relations (associations) detected are indicated with a link icon:
@@ -115,7 +115,7 @@ To review a list of associations and unselect the ones that you do not want to b
 
 For example, in the image above you can see that an association will be created from the **MarketingDocs** entity to the **Contributors** entity. This association was discovered through the column **Responsible** in **MarketingDocs** and the column **Name** in **Contributors**.  As a result, when data is imported the **MarketingDocs** entity will not have **Responsible** as an attribute, instead it will have an association to the **Contributors** entity and will get data from this entity through the association.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 A column can be used to create an association **from** it once only. If an association is created to lead **from** a column, no link can be created as a link **to** it. 
 
@@ -149,9 +149,9 @@ Open the domain model to see all created entities and attributes:
 {{/* % image_container width="350" % */}}![](/attachments/studio8/work-with-data/start-with-data/domain-model-example.png)
 {{/* % /image_container % */}}
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 
-After import is completed, you can [preview or publish your app](publishing-app) and see all your data or continue configuring your app.
+After import is completed, you can [preview or publish your app](/studio8/publishing-app/) and see all your data or continue configuring your app.
 
 {{% /alert %}}
 
@@ -175,5 +175,5 @@ If **Generate pages for my data** has been selected in the preview page, pages a
 
 ## 5 Read More
 
-* [Domain Model](domain-models)
-* [Attributes](domain-models-attributes) 
+* [Domain Model](/studio8/domain-models/)
+* [Attributes](/studio8/domain-models-attributes/) 

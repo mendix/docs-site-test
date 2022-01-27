@@ -1,8 +1,8 @@
 ---
 title: "Deploy Your First Hybrid Mobile App"
-url: /howto8/mobile/deploy-your-first-hybrid-mobile-app
+url: /howto8/mobile/deploy-your-first-hybrid-mobile-app/
 parent: "hybrid-mobile"
-menu_order: 50
+weight: 50
 tags: ["mobile", "deploy"]
 ---
 
@@ -19,7 +19,7 @@ Besides boasting native functionality, another major advantage of a hybrid mobil
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Install the hybrid Mendix mobile app on you device, which makes it easy to see a hybrid application in action without the need to get it approved in the Mendix Marketplace (for details and download links, see [Getting the Mendix App](/refguide8/getting-the-mendix-app) in the *Studio Pro Guide*)
+* Install the hybrid Mendix mobile app on you device, which makes it easy to see a hybrid application in action without the need to get it approved in the Mendix Marketplace (for details and download links, see [Getting the Mendix App](/refguide8/getting-the-mendix-app/) in the *Studio Pro Guide*)
 
 ## 3 Opening a Hybrid Example App
 
@@ -53,8 +53,8 @@ You should see the example application running on your device.
 
 ## 4 Installing the App on Your Device
 
-If you want to install this application as a native mobile app on your device, you can install it via iTunes or publish it to one of the mobile app stores. For details on how to achieve this, see [How to Publish a Mendix Hybrid Mobile App in App Stores](publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores).
+If you want to install this application as a native mobile app on your device, you can install it via iTunes or publish it to one of the mobile app stores. For details on how to achieve this, see [How to Publish a Mendix Hybrid Mobile App in App Stores](/howto8/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores/).
 
 ## 5 Read More
 
-* [Debug a Hybrid Mobile Application](/howto8/monitoring-troubleshooting/debug-a-hybrid-mobile-application)
+* [Debug a Hybrid Mobile Application](/howto8/monitoring-troubleshooting/debug-a-hybrid-mobile-application/)

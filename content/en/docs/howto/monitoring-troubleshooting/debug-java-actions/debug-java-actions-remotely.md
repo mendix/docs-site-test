@@ -16,11 +16,11 @@ To debug the Java actions used in a Mendix microflow, you need to make some conf
 
 ## 2 Editing the Server Configuration with Extra JVM Parameters
 
-In this section, you will learn how to configure the security at the [Prototype / demo](/howto/security/create-a-secure-app#prototype) level. Be aware that this level of security is only applicable for development/demo purposes. This level is available for the quick development of demo applications. It simulates security without the more complex configuration of data access. When deploying to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy), setting [Production](/howto/security/create-a-secure-app#production) security is mandatory.
+In this section, you will learn how to configure the security at the [Prototype / demo](/howto/security/create-a-secure-app/#prototype) level. Be aware that this level of security is only applicable for development/demo purposes. This level is available for the quick development of demo applications. It simulates security without the more complex configuration of data access. When deploying to the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/), setting [Production](/howto/security/create-a-secure-app/#production) security is mandatory.
 
 To edit the server configuration with extra JVM parameters, follow these steps:
 
-1. Open the [App Settings](/refguide/project-settings).
+1. Open the [App Settings](/refguide/project-settings/).
 2. Edit the configuration on the **Configurations** tab.
 3.  Go to the **Server** tab of the configuration, add the following line to the **Extra JVM parameters** field: `-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005`
 
@@ -52,8 +52,8 @@ To configure Eclipse, follow these steps:
 
 ## 4 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto/testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions](debug-java-actions)
+* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions](/howto/monitoring-troubleshooting/debug-java-actions/)

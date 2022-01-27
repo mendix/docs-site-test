@@ -1,9 +1,9 @@
 ---
 title: "Studio Pro Overview"
-url: /refguide8/studio-pro-overview
+url: /refguide8/studio-pro-overview/
 category: "App Modeling"
 description: "Describes Studio Pro in general: tabs, menus, shortcut keys."
-menu_order: 10
+weight: 10
 tags: ["Studio Pro"]
 aliases:
     - /refguide8/desktop-modeler-overview.html
@@ -11,23 +11,23 @@ aliases:
 #This document is mapped to the landing page, update the link there if renaming or moving the doc file.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/studio-pro-overview.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/studio-pro-overview.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-Mendix Studio Pro is a tool for creating, viewing, and editing your Mendix applications. A Mendix app is called a [project](project) in Studio Pro.  
+Mendix Studio Pro is a tool for creating, viewing, and editing your Mendix applications. A Mendix app is called a [project](/refguide8/project/) in Studio Pro.  
 
 One Studio Pro instance can have only one project open at a time, but you can open two Studio Pro instances when necessary.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 When Studio Pro is open, press <kbd>F1</kbd> to quickly jump to documentation.
 {{% /alert %}}
 
 This document describes the user interface of Mendix Studio Pro:
 
-<img src="attachments/studio-pro-overview/studio-pro-diagram.png" alt="Studio Pro Diagram"  />
+<img src="/attachments/refguide8/modeling/studio-pro-overview/studio-pro-diagram.png" alt="Studio Pro Diagram"  />
 
 ## 2 Top Bar
 
@@ -39,17 +39,17 @@ The Studio Pro top bar contains the following items:
 
 ### 2.1 Menus {#menus}
 
-In the Studio Pro top bar, you can see several menus, such as [Edit](edit-menu), [View](view-menu), and [Version Control](version-control-menu). Each menu contains menu items that allow you to perform various actions, for example, to [create a deployment package](create-deployment-package-dialog), set [preferences](preferences-dialog), or view the [Errors](errors-pane) pane. 
+In the Studio Pro top bar, you can see several menus, such as [Edit](/refguide8/edit-menu/), [View](/refguide8/view-menu/), and [Version Control](/refguide8/version-control-menu/). Each menu contains menu items that allow you to perform various actions, for example, to [create a deployment package](/refguide8/create-deployment-package-dialog/), set [preferences](/refguide8/preferences-dialog/), or view the [Errors](/refguide8/errors-pane/) pane. 
 
-For more information on menus, see [Menus](menus). 
+For more information on menus, see [Menus](/refguide8/menus/). 
 
 ### 2.2 Run & View App {#run-and-view}
 
 You can deploy your app by clicking the **Run** or **Run locally** buttons. To view your deployed app, click the **View** button. 
 
-For more information on deployment in Mendix, see [Deployment](/developerportal/deploy).
+For more information on deployment in Mendix, see [Deployment](/developerportal/deploy/).
 
-For more information on deploying your app and versioning it, see  the [Versioning a Project Deployed to the Cloud](using-version-control-in-studio-pro#versioning-project) section in *Using Version Control in Studio Pro*. 
+For more information on deploying your app and versioning it, see  the [Versioning a Project Deployed to the Cloud](/refguide8/using-version-control-in-studio-pro/#versioning-project) section in *Using Version Control in Studio Pro*. 
 
 ### 2.3 Links to Developer Portal & Marketplace {#links}
 
@@ -59,7 +59,7 @@ Your account is displayed next to these buttons if you are signed in. Click the 
 
 ## 3 Project Structure
 
-A project consists of individual files (*documents*) and settings that are grouped in folders and [modules](modules). The complete structure of your project can be viewed in the [Project Explorer](project-explorer). 
+A project consists of individual files (*documents*) and settings that are grouped in folders and [modules](/refguide8/modules/). The complete structure of your project can be viewed in the [Project Explorer](/refguide8/project-explorer/). 
 
 ## 4 Working Area
 
@@ -69,21 +69,21 @@ A working area is a current document tab that you work in. The working area and 
 
 The documents you view and edit are shown in tabs. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-This section describes documents in the working area, not panes that you can open and position around the working area. For more information on behavior of panes, see the [Layout of Panes](view-menu#layout-of-panes) section in *View Menu*.
+This section describes documents in the working area, not panes that you can open and position around the working area. For more information on behavior of panes, see the [Layout of Panes](/refguide8/view-menu/#layout-of-panes) section in *View Menu*.
 
 {{% /alert %}}
 
 You can have a number of tabs open, just like in a modern web browser. They can be closed, reordered, and shown side by side. The video below shows examples of how to interact with a tab:
 
-<video controls width="608" height="456" src="attachments/studio-pro-overview/document-tabs.mp4">VIDEO</video>
+<video controls width="608" height="456" src="/attachments/refguide8/studio-pro-overview/document-tabs.mp4">VIDEO</video>
 
 Each document has its own save state, history, and future, so undo and redo actions are unlimited.
 
 ## 5 Dockable Panes
 
-Dockable panes can be positioned around the working area and contain various elements and settings. For example, you can view list of errors, configure properties of a specific document or an element, view toolbox. Panes are opened via [Menus](menus).
+Dockable panes can be positioned around the working area and contain various elements and settings. For example, you can view list of errors, configure properties of a specific document or an element, view toolbox. Panes are opened via [Menus](/refguide8/menus/).
 
 ## 6 Status Bar
 
@@ -91,13 +91,13 @@ At the bottom of the Studio Pro main window pane is a status bar.
 
 On the left is the current status of Studio Pro.
 
-On the right is the currently selected language. If you have set up multiple languages in your app you can change the currently selected language by clicking here. For more information see [Language Menu](translatable-texts).
+On the right is the currently selected language. If you have set up multiple languages in your app you can change the currently selected language by clicking here. For more information see [Language Menu](/refguide8/translatable-texts/).
 
 ## 7 Shortcut Keys
 
 ### 7.1 General Shortcut Keys
 
-In the main window pane, <kbd>Ctrl</kbd> + <kbd>Tab</kbd> can be used to navigate between all open documents. Other shortcut keys that can be used in the main window pane can be found next to their relevant menu item in  [Menus](menus).
+In the main window pane, <kbd>Ctrl</kbd> + <kbd>Tab</kbd> can be used to navigate between all open documents. Other shortcut keys that can be used in the main window pane can be found next to their relevant menu item in  [Menus](/refguide8/menus/).
 
 In most dialog boxes for editing properties, the following shortcut keys can be used:
 
@@ -174,7 +174,7 @@ The following shortcut keys control the currently selected language:
 
 ## 8 Read More
 
-* [Project Explorer](project-explorer)
-* [Menus](menus)
+* [Project Explorer](/refguide8/project-explorer/)
+* [Menus](/refguide8/menus/)
 
   

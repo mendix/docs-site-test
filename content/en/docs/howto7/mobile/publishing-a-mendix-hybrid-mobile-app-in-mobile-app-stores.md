@@ -1,20 +1,20 @@
 ---
 title: "Publish a Mendix Hybrid Mobile App in Mobile App Stores"
-url: /howto7/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores
+url: /howto7/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores/
 category: "Mobile Development"
-menu_order: 60
+weight: 60
 tags: ["mobile", "marketplace", "phonegap"]
 ---
 ## 1 Introduction
 
-Once you have finished developing a Mendix mobile application, you will want to make it available as an app for mobile platforms such as Apple iOS and Google Android. We make it possible to produce platform-specific native mobile apps. For more details on deploying platform-specific apps, see [Mobile App](/developerportal/deploy/mobileapp).
+Once you have finished developing a Mendix mobile application, you will want to make it available as an app for mobile platforms such as Apple iOS and Google Android. We make it possible to produce platform-specific native mobile apps. For more details on deploying platform-specific apps, see [Mobile App](/developerportal/deploy/mobileapp/).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Building hybrid apps in the cloud uses the PhoneGap Build service from Adobe. Because Adobe no longer maintains this service, building hybrid apps in the cloud and publishing them to app stores is no longer possible.
 
-To build a hybrid app and publish it, see [How to Build a Mendix Hybrid App Locally](/howto8/mobile/build-hybrid-locally) for information on local building.
+To build a hybrid app and publish it, see [How to Build a Mendix Hybrid App Locally](/howto8/mobile/build-hybrid-locally/) for information on local building.
 
-To publish your app in an app store, we recommend you build native iOS apps instead. For more information, see [How to Build Native Apps](/howto/mobile/build-native-apps).
+To publish your app in an app store, we recommend you build native iOS apps instead. For more information, see [How to Build Native Apps](/howto/mobile/build-native-apps/).
 {{% /alert %}}
 
 The hybrid mobile app publishing process is based on Adobe PhoneGap. We have integrated the [Adobe PhoneGap Build](https://build.phonegap.com/) service into Mendix to provide support for automatically building the required hybrid mobile packages. Instead of worrying about technical details, you can focus on what matters most: rapidly developing an app to support your business processes.
@@ -36,7 +36,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 * Have an iOS deployment certificate and a provisioning file for which your test device is activated
 * Have an Android device for testing the APK package that will be produced
 	* You need both a *.p12* certificate file and a *.mobileprovision* profile file 
-	* For details on how to obtain app signing keys, see the [iOS](/refguide7/managing-app-signing-keys#ios) section of *Managing App Signing Keys*
+	* For details on how to obtain app signing keys, see the [iOS](/refguide7/managing-app-signing-keys/#ios) section of *Managing App Signing Keys*
 * Have Apple iTunes installed on your computer for deploying the iOS package that will be produced on your test device
 
 ## 3 Starting the Packaging Process{#starting-the-packaging-process}
@@ -61,9 +61,9 @@ To start the packaging process, follow these steps:
 
 	* For Free Apps, the only option is **Sandbox**
 	* For apps running on a licensed cloud node, you can choose from **Test**, **Acceptance**, and **Production** (depending on what is available on your cloud node)
-	* For apps using [Flexible Environments](/developerportal/deploy/mendix-cloud-deploy#flexible-environments) you will be able to select the environment from a drop-down list of environments.
+	* For apps using [Flexible Environments](/developerportal/deploy/mendix-cloud-deploy/#flexible-environments) you will be able to select the environment from a drop-down list of environments.
 
-10. Leave the default choice of how to build the package **Build Mobile  packages for me by sending the build configuration to Adobe PhoneGap Build** selected. You can use the alternative option to manually download a PhoneGap Build package, which you can then inspect, modify, and upload manually to Adobe PhoneGap Build (for more information, see [Customizing Local Build Packages](/refguide7/customizing-phonegap-build-packages)). This is unnecessary in most scenarios.
+10. Leave the default choice of how to build the package **Build Mobile  packages for me by sending the build configuration to Adobe PhoneGap Build** selected. You can use the alternative option to manually download a PhoneGap Build package, which you can then inspect, modify, and upload manually to Adobe PhoneGap Build (for more information, see [Customizing Local Build Packages](/refguide7/customizing-phonegap-build-packages/)). This is unnecessary in most scenarios.
 11. Before proceeding, you must accept linking your PhoneGap account to your Mendix account:
 
 	![phonegap authorization](/attachments/howto7/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores/phonegap-authorization-dialog.png)
@@ -94,7 +94,7 @@ For publishing to a specific platform, see the subsequent sections of this how-t
 Apple provides general information on [publishing an iOS app in the Apple ](https://developer.apple.com/programs/ios/distribute.html). Before uploading your app, make sure to check the [App Review Guidelines](https://developer.apple.com/app-store/review/) to make sure your app will be accepted. An Apple Developer Account is required. If you do not have one, [register as an Apple Developer](https://developer.apple.com/register/index.action).
 
 1. Click the **Signing Keys** tab, and under **iOS**, click **add a key**. 
-2. A pop-up window will prompt you to upload a certificate file and a provisioning profile file. You can get those files from Apple. The certificate is the *.p12* file, and the provisioning profile is the *.mobileprovision* file. For more information, see the [Managing App Signing Keys Reference Guide](/refguide7/managing-app-signing-keys).
+2. A pop-up window will prompt you to upload a certificate file and a provisioning profile file. You can get those files from Apple. The certificate is the *.p12* file, and the provisioning profile is the *.mobileprovision* file. For more information, see the [Managing App Signing Keys Reference Guide](/refguide7/managing-app-signing-keys/).
 3. Give the key a title that you can easily recognize, and upload the files.
 4. Before using the key, it must be unlocked with the passphrase that was set up for the key. Click the lock with the yellow background on the same row as the key and enter the passphrase. As the pop-up window states, the key can now be used for builds for the period of an hour. After an hour, the passphrase needs to be entered again for security reasons.
 5. Now you are ready to configure the app. Click **Apps** at the top of the page to go to an overview showing your apps. Click  your app's name or logo to go to the details of the app.
@@ -147,7 +147,7 @@ Publish your app by following Apple's [Overview of publishing an app](https://he
 
 If you plan on publishing an Android app, read Google's overview of [the Android app publishing process](http://developer.android.com/tools/publishing/publishing_overview.html). Before submitting your app to an app store, [review the launch checklist](http://developer.android.com/distribute/tools/launch-checklist.html). Google provides information on [publishing your app in the Google Play Store](http://developer.android.com/distribute/googleplay/index.html).
 
-To publish an Android app, you must first complete the [Android](/refguide7/managing-app-signing-keys#android) section of *Managing App Signing Keys* which will detail how to generate a keystore and upload that keystore to PhoneGap build. Creating a keystore is only needed should you wish to publish your app. If you just want to test your app, then do not consult *Managing App Signing Keys* and instead just keep following this document's steps.
+To publish an Android app, you must first complete the [Android](/refguide7/managing-app-signing-keys/#android) section of *Managing App Signing Keys* which will detail how to generate a keystore and upload that keystore to PhoneGap build. Creating a keystore is only needed should you wish to publish your app. If you just want to test your app, then do not consult *Managing App Signing Keys* and instead just keep following this document's steps.
 
 ### 6.1 Download the resulting Android Binary (APK){#download-apk}
 
@@ -209,6 +209,6 @@ The video below shows how to build a PhoneGap app in the cloud. After showing yo
 
 ## 8 Read More
 
-* [Deploy your First Hybrid Mobile App](deploy-your-first-hybrid-mobile-app)
-* [Debug a Hybrid Mobile App](debug-a-mobile-app)
-* [Include Push Notifications](push-notifications)
+* [Deploy your First Hybrid Mobile App](/howto7/mobile/deploy-your-first-hybrid-mobile-app/)
+* [Debug a Hybrid Mobile App](/howto7/mobile/debug-a-mobile-app/)
+* [Include Push Notifications](/howto7/mobile/push-notifications/)

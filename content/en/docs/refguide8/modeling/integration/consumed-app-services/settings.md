@@ -1,16 +1,16 @@
 ---
 title: "Settings"
-url: /refguide8/settings
+url: /refguide8/settings/
 parent: "consumed-app-services"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/settings.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/settings.pdf).
 {{% /alert %}}
 
-{{% alert type="info" %}}
-App services are deprecated and were removed in Studio Pro 9. Use a [consumed web service](consumed-web-services) to consume existing app services.
+{{% alert color="info" %}}
+App services are deprecated and were removed in Studio Pro 9. Use a [consumed web service](/refguide8/consumed-web-services/) to consume existing app services.
 {{% /alert %}}
 
 In the settings screen, you see the version of the app service, its icon and a short description. Three tabs are selectable: 'Actions', 'Settings' and 'Documentation'.

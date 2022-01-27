@@ -14,7 +14,7 @@ Performs a Click or Doubleclick and waits for Mendix activities.
 
 ## 3 Usage
 
-Pass the WebElement you want to click as parameter for the action. To get the WebElement, use an action like [Find/Assert Widget](rg-one-findassert-widget).
+Pass the WebElement you want to click as parameter for the action. To get the WebElement, use an action like [Find/Assert Widget](/addons/ats-addon/rg-one-findassert-widget/).
 Optionally you can specify if a doubleclick should be performed or not.
 
 ## 4 Input Parameters

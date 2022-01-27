@@ -1,18 +1,18 @@
 ---
 title: "Create Branch Line"
-url: /refguide8/create-branch-line-dialog
+url: /refguide8/create-branch-line-dialog/
 parent: "branch-line-manager-dialog"
-menu_order: 90
+weight: 90
 tags: ["studio pro", "create branch line"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/create-branch-line-dialog.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/create-branch-line-dialog.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-Use the **Create Branch Line** dialog box to create a new [branch line](version-control#branches) via the **Branch Line Manager**:
+Use the **Create Branch Line** dialog box to create a new [branch line](/refguide8/version-control/#branches) via the **Branch Line Manager**:
 
 ![](/attachments/refguide8/modeling/menus/version-control-menu/branch-line-manager-dialog/create-branch-line-dialog/create-branch-line.png)
 
@@ -23,7 +23,7 @@ To view the **Create Branch Line** dialog box,  do the following:
 
 The **Create Branch Line** dialog box is displayed.
 
-For more information on how to manage branch lines, see the [Managing Development Lines in Studio Pro](collaborative-development#managing-branches) section in *Collaborative Development* and [Branch Line Manager](branch-line-manager-dialog). For information on the version control, see [Version Control](version-control). 
+For more information on how to manage branch lines, see the [Managing Development Lines in Studio Pro](/refguide8/collaborative-development/#managing-branches) section in *Collaborative Development* and [Branch Line Manager](/refguide8/branch-line-manager-dialog/). For information on the version control, see [Version Control](/refguide8/version-control/). 
 
 ## 2 Create Branch From
 
@@ -55,7 +55,7 @@ Select from which tagged version you want to create a branch line. Every time yo
 
 Enter a name of the new branch line.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Branch names cannot include special characters (for example, `@`, `$`, `#`). 
 {{% /alert %}}
 
@@ -65,5 +65,5 @@ Since branch line names must be unique, this option shows the existing branch li
 
 ## 8 Read More
 
-* [Version Control](version-control)
-* [Collaborative Development](collaborative-development)
+* [Version Control](/refguide8/version-control/)
+* [Collaborative Development](/refguide8/collaborative-development/)

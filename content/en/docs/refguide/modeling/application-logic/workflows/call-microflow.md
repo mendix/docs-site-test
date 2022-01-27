@@ -8,7 +8,7 @@ tags: ["workflow", "workflows", "call microflow", "Studio Pro"]
 
 ## 1 Introduction
 
-**Call microflow** is used to call a selected [microflow](microflow). 
+**Call microflow** is used to call a selected [microflow](/refguide/microflow/). 
 
 ![Call Microflow Example](/attachments/refguide/modeling/application-logic/workflows/call-microflow/call-microflow-example.jpg)
 
@@ -45,4 +45,4 @@ Parameters of the selected microflow. Depending on the selected microflow, you w
 
 ## 3 Read More
 
-* [Workflow Properties](workflow-properties)
+* [Workflow Properties](/refguide/workflow-properties/)

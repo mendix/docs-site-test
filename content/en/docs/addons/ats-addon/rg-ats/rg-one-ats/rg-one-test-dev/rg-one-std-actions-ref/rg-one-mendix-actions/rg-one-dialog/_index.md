@@ -12,8 +12,8 @@ A <i>ConfirmationDialog</i> is shown when a delete or microflow action requires 
 
 ## 2 Main Documents in This Section
 
-* [Cancel Dialog](rg-one-cancel-dialog)
-* [Close Dialog](rg-one-close-dialog)
-* [Confirm Dialog](rg-one-confirm-dialog)
-* [Find/Assert Dialog](rg-one-findassert-dialog)
-* [Get Dialog Message Text](rg-one-get-dialog-message-text)
+* [Cancel Dialog](/addons/ats-addon/rg-one-cancel-dialog/)
+* [Close Dialog](/addons/ats-addon/rg-one-close-dialog/)
+* [Confirm Dialog](/addons/ats-addon/rg-one-confirm-dialog/)
+* [Find/Assert Dialog](/addons/ats-addon/rg-one-findassert-dialog/)
+* [Get Dialog Message Text](/addons/ats-addon/rg-one-get-dialog-message-text/)

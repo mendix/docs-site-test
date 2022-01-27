@@ -17,7 +17,7 @@ There are three types of expressions usable for constraints:
 
 ## 2 Comparisons
 
-A comparison expression consists of two attributes or values separated by a comparison [operator](xpath-operators) like `=`, `<=,` and `>`.
+A comparison expression consists of two attributes or values separated by a comparison [operator](/refguide/xpath-operators/) like `=`, `<=,` and `>`.
 
 ### 2.1 Examples
 
@@ -61,7 +61,7 @@ However, it is strongly recommended not to use the notation above. This is becau
 
 ## 3 Functions
 
-For information on the available functions, see [XPath Constraint Functions](xpath-constraint-functions).
+For information on the available functions, see [XPath Constraint Functions](/refguide/xpath-constraint-functions/).
 
 ## 4 Exist-Expressions {#exist}
 

@@ -13,8 +13,8 @@ Once you created some pages, it is important that your users can access them. Fo
 
 Before starting this how-to make sure you have completed the following prerequisites:
 
-* [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer)
-* [How to Create Your First Two Overview and Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages)
+* [How to Create a Basic Data Layer](/howto/data-models/create-a-basic-data-layer/)
+* [How to Create Your First Two Overview and Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages/)
 
 ## 3 Setting a Default Home Page {#home}
 
@@ -109,7 +109,7 @@ You can create menu items for your navigation. Do the following:
 
 7.  Click **OK** to save the menu item.
 
-In the overview of menu items you can see the name of the menu item, the target page/microflow, and the user role are the necessary settings to be configured for the menu item. The user roles are derived from the [page and microflow access settings](/refguide/module-security). 
+In the overview of menu items you can see the name of the menu item, the target page/microflow, and the user role are the necessary settings to be configured for the menu item. The user roles are derived from the [page and microflow access settings](/refguide/module-security/). 
 
 You can restructure the menu by dragging and dropping menu items.
 
@@ -137,11 +137,11 @@ Now that you have created a menu structure it is time to start using it on pages
 
 The menu widget is now showing the navigation items created in the navigation editor.
 
-To avoid adding the menu widget on every page in your app,  you can use a layout. With layouts you can define a structure for pages in your app. You can define where the menu should be rendered and you can simply reuse that layout for all or several pages. For more information on how to use layouts, see [How to Use Layouts and Snippets](/howto/front-end/layouts-and-snippets).
+To avoid adding the menu widget on every page in your app,  you can use a layout. With layouts you can define a structure for pages in your app. You can define where the menu should be rendered and you can simply reuse that layout for all or several pages. For more information on how to use layouts, see [How to Use Layouts and Snippets](/howto/front-end/layouts-and-snippets/).
 
 ## 8 Read More
 
-* [Atlas UI](/howto/front-end/atlas-ui)
-* [Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages)
-* [Use Layouts and Snippets](/howto/front-end/layouts-and-snippets)
-* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
+* [Atlas UI](/howto/front-end/atlas-ui/)
+* [Create Your First Two Overview & Detail Pages](/howto/front-end/create-your-first-two-overview-and-detail-pages/)
+* [Use Layouts and Snippets](/howto/front-end/layouts-and-snippets/)
+* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)

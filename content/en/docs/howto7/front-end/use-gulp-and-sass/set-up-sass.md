@@ -1,8 +1,8 @@
 ---
 title: "Set Up Gulp & Sass"
-url: /howto7/front-end/set-up-sass
+url: /howto7/front-end/set-up-sass/
 parent: "use-gulp-and-sass"
-menu_order: 1
+weight: 1
 tags: ["gulp", "sass", "ux", "front end"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -40,7 +40,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 To prepare your app, follow these steps:
 
-1. Open the [app directory](/howto7/general/show-project-directory) (via **Project** > **Show Project Directory in Explorer** in Studio Pro).
+1. Open the [app directory](/howto7/general/show-project-directory/) (via **Project** > **Show Project Directory in Explorer** in Studio Pro).
 2.  Unpack the *Gulp.zip* file into your main app folder. You will then see a *Gulpfile* and *package* file that look like this:
 
 	![](/attachments/howto7/front-end/use-gulp-and-sass/set-up-sass/unpack.png)
@@ -61,7 +61,7 @@ To prepare your app, follow these steps:
 
 	If you use `npm install`, you may receive an error. PowerShell will tell you to use `npm run dev` instead. If that does not work, use `npm install run`.
 
-	{{% alert type="info" %}}You should do this for each new app! That way, you will not have to repeat the installation step whenever you reopen the app and Powershell.
+	{{% alert color="info" %}}You should do this for each new app! That way, you will not have to repeat the installation step whenever you reopen the app and Powershell.
 	{{% /alert %}}
 
 7.  Write `gulp dev`. Your screen should then look like this:
@@ -155,7 +155,7 @@ To implement this in your app, open the app in Mendix Studio Pro. You can find t
 
 You can remove **spacing-outer-bottom-medium**, as that is a variable that contains defined styling code. If you do not remove this, you will probably have trouble later in the app if you, for example, want to position your title somewhere else. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The inline styling is not made use of in this example. That is because the inline styling will always overrule your code in VSC. 
 {{% /alert %}}
 
@@ -171,7 +171,7 @@ You then need to replace the `8080` with `3000` in order to sync the browser wit
 
 `http://localhost:3000/index.html?profile=Responsive`
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If you use a Mac laptop, you can open this URL: `http://windows-10:3000`.
 {{% /alert %}}
 
@@ -201,4 +201,4 @@ Have fun styling!
 
 ## 7 Read More
 
-* [How to Start Styling with Gulp & Sass](style-with-gulp-and-sass)
+* [How to Start Styling with Gulp & Sass](/howto7/front-end/style-with-gulp-and-sass/)

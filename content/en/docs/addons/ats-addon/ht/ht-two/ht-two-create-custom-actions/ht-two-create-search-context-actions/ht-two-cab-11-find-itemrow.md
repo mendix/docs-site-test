@@ -21,7 +21,7 @@ This how-to applies to all situations in which you must find an item/row using a
 
 Before starting this how-to, make sure you have completed the following prerequisite:
 
-*  Read [General](ht-two-custom-action-general)
+*  Read [General](/addons/ats-addon/ht-two-custom-action-general/)
 
 ## 3 Defining the User Approach
 
@@ -63,11 +63,11 @@ This is a summary:
 
 ## 4 Action Structure
 
-ATS has a Mendix action called [*Find Item/Row (by child element)*](rg-one-find-itemrow-by-child), which finds the parent item/row of a widget. This action returns the list view item that the element is currently in. The index number does not matter.
+ATS has a Mendix action called [*Find Item/Row (by child element)*](/addons/ats-addon/rg-one-find-itemrow-by-child/), which finds the parent item/row of a widget. This action returns the list view item that the element is currently in. The index number does not matter.
 
 To define the action structure, follow these steps:
 
-1.  Use the [*Find/Assert Widget*](rg-one-findassert-widget) action to find the text box containing a specific value. Add the Find/Assert Widget action, provide a proper test step description, and provide an output description:
+1.  Use the [*Find/Assert Widget*](/addons/ats-addon/rg-one-findassert-widget/) action to find the text box containing a specific value. Add the Find/Assert Widget action, provide a proper test step description, and provide an output description:
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-create-search-context-actions/ht-two-cab-11-find-itemrow/getitemrow-listviewitem-textbox.png)
 
@@ -77,7 +77,7 @@ To define the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-create-search-context-actions/ht-two-cab-11-find-itemrow/getitemrow-listviewitem-finditemrow.png)
 
-3.  The last step is that you must return the found list view as an output parameter. To use the output parameter, you must add the [Set Return Value](rg-one-set-return-value) action and connect the output of test step 2. This action does not need any descriptions. The Set Return Value action gives the connected input to the output parameter as a Page Element, because the item/row is a Page Element:
+3.  The last step is that you must return the found list view as an output parameter. To use the output parameter, you must add the [Set Return Value](/addons/ats-addon/rg-one-set-return-value/) action and connect the output of test step 2. This action does not need any descriptions. The Set Return Value action gives the connected input to the output parameter as a Page Element, because the item/row is a Page Element:
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-create-search-context-actions/ht-two-cab-11-find-itemrow/getitemrow-listviewitem-setreturnvalue.png)
 
@@ -91,8 +91,8 @@ Next, you need to add the action input and output parameters:
     * Output parameters:
         * Item/Row
 
-{{% alert type="info" %}}
-Keep the [guidelines for creating a custom action](ht-two-guidelines-custom-action) in mind while creating action parameters.
+{{% alert color="info" %}}
+Keep the [guidelines for creating a custom action](/addons/ats-addon/ht-two-guidelines-custom-action/) in mind while creating action parameters.
 {{% /alert %}}
 
 1.  Configure the **Widget Name** input parameter like this:

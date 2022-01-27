@@ -17,7 +17,7 @@ The team server API is only available to *licensed* apps which are running in a 
 
 ## 2 Authentication
 
-The Developer Portal Management API requires its users to authenticate themselves. This can be done by using API keys; for more information about this please refer to [this article](authentication "authentication").
+The Developer Portal Management API requires its users to authenticate themselves. This can be done by using API keys; for more information about this please refer to [this article](/apidocs-mxsdk/apidocs/authentication/).
 
 ## 3 API Calls
 

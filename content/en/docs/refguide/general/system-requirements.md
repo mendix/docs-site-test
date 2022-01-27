@@ -14,7 +14,7 @@ This document presents the system requirements for the various parts of the Mend
 
 ## 2 Mendix Studio Pro {#sp}
 
-Mendix [Studio Pro](modeling) version 9 is supported on 64-bit versions of Windows 10 release 1809 and above. Studio Pro does not run on Windows emulators on Apple Silicon Macs, such as the M1, or on any other ARM-based machines.
+Mendix [Studio Pro](/refguide/modeling/) version 9 is supported on 64-bit versions of Windows 10 release 1809 and above. MTS versions starting from Mendix Studio Pro 9.6.5 and Mendix Studio 9.9.1 are enabled and tested to run on Apple Silicon Macs such as the M1, which requires [Parallels 17](https://www.parallels.com/) and Windows 11.
 
 The following frameworks are automatically installed (if necessary):
 
@@ -28,7 +28,7 @@ You can choose which JDK is used for building and running locally via the **Edit
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-Please note the limitation that the database viewer built into Studio Pro (as described in [How to Share the Development Database](/howto/collaboration-requirements-management/sharing-the-development-database)) does not work with JDK 11.06 or 11.07.
+Please note the limitation that the database viewer built into Studio Pro (as described in [How to Share the Development Database](/howto/collaboration-requirements-management/sharing-the-development-database/)) does not work with JDK 11.06 or 11.07.
 {{% /alert %}}
 
 ### 2.1 Firewall Settings
@@ -101,7 +101,7 @@ If you are using the Intel® UHD Graphics 630 graphics processor, please ensure 
 
 ## 3 Team Server {#ts}
 
-The [Team Server](/developerportal/collaborate/team-server) is implemented using Subversion, and Studio Pro uses the HTTPS protocol to communicate with that server. To access the Team Server from within Studio Pro, the network at your location needs the following settings:
+The [Team Server](/developerportal/collaborate/team-server/) is implemented using Subversion, and Studio Pro uses the HTTPS protocol to communicate with that server. To access the Team Server from within Studio Pro, the network at your location needs the following settings:
 
 * The HTTPS port (TCP 443) needs to be open
 * The HTTP port (TCP 80) needs to be open
@@ -109,7 +109,7 @@ The [Team Server](/developerportal/collaborate/team-server) is implemented using
 
 ## 4 Mendix Studio
 
-[Mendix Studio](/studio) is optimized for use with Google Chrome. While Chrome is the officially supported browser, you can also use Mendix Studio with other popular browsers like Mozilla Firefox, Apple Safari, and Microsoft Edge. 
+[Mendix Studio](/studio/) is optimized for use with Google Chrome. While Chrome is the officially supported browser, you can also use Mendix Studio with other popular browsers like Mozilla Firefox, Apple Safari, and Microsoft Edge. 
 
 {{% alert color="info" %}}
 The browser you use needs to have JavaScript turned on.
@@ -159,21 +159,21 @@ Mendix tries to support the most recent and patched database server versions fro
 
 Current support:
 
-* [IBM DB2](db2) 11.1 and 11.5 for Linux, Unix, and Windows
-* [MariaDB](mysql) 10.2, 10.3, 10.4, 10.5
-* [Microsoft SQL Server](/developerportal/deploy/mendix-on-windows-microsoft-sql-server) 2017, 2019
+* [IBM DB2](/refguide/db2/) 11.1 and 11.5 for Linux, Unix, and Windows
+* [MariaDB](/refguide/mysql/) 10.2, 10.3, 10.4, 10.5
+* [Microsoft SQL Server](/developerportal/deploy/mendix-on-windows-microsoft-sql-server/) 2017, 2019
 * [Azure SQL](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-2017) v12 compatibility mode 140 or higher
-* [MySQL](mysql) 8.0
-* [Oracle Database](oracle) 19
-* PostgreSQL 9.6, 10, 11, 12, 13
-* [SAP HANA](saphana) 2.00.040.00.1545918182
+* [MySQL](/refguide/mysql/) 8.0
+* [Oracle Database](/refguide/oracle/) 19
+* PostgreSQL 9.6, 10, 11, 12, 13, 14
+* [SAP HANA](/refguide/saphana/) 2.00.040.00.1545918182
 
 {{% alert color="warning" %}}
 Each app must have its own database. Mendix apps cannot share data by sharing the same database.
 
-If you want two apps to share the same database, then you need to share the data from one app to the other using APIs. In Mendix these are supported by [Data Hub](/data-hub/share-data/) or the REST and OData services described in the [integration](integration) section of the *Studio Pro Guide*. This is referred to as a *microservices* architecture.
+If you want two apps to share the same database, then you need to share the data from one app to the other using APIs. In Mendix these are supported by [Data Hub](/data-hub/share-data/) or the REST and OData services described in the [integration](/refguide/integration/) section of the *Studio Pro Guide*. This is referred to as a *microservices* architecture.
 
-For more information on why data cannot be shared between apps see [Data Storage](data-storage#databases). Use the [Database Replication](/appstore/modules/database-replication) module if you need to copy the data from one app to another.
+For more information on why data cannot be shared between apps see [Data Storage](/refguide/data-storage/#databases). Use the [Database Replication](/appstore/modules/database-replication/) module if you need to copy the data from one app to another.
 {{% /alert %}}
 
 ## 9 File Storage {#file-storage}
@@ -188,7 +188,7 @@ For container-based deployments using Docker, Kubernetes, or Cloud Foundry, the 
 * SAP AWS S3 Object Storage
 * SAP Azure Blob Storage
 
-For container-mounted storage in Kubernetes, provided by an external storage class, see also [Run Mendix on Kubernetes](/developerportal/deploy/run-mendix-on-kubernetes).
+For container-mounted storage in Kubernetes, provided by an external storage class, see also [Run Mendix on Kubernetes](/developerportal/deploy/run-mendix-on-kubernetes/).
 
 ###  9.2 Storage Types for Servers
 
@@ -209,9 +209,9 @@ For server-based installations, the following storage types mounted by the OS ar
 {{% alert color="warning" %}}
 Internet Explorer is no longer supported in Studio Pro 9. As the market is moving away from Internet Explorer and Mendix continues to align with the best practices of the modern web ecosystem, we have dropped support for Internet Explorer 11. This allows us to keep in line with user expectations. Removing support has already improved app loading times and performance, and it will enable us to continue making improvements and innovating using modern web features.<br />
 <br />
-As of Studio Pro 9, app end-users still using IE will be shown an **Unsupported Browser** message stating that upgrading to a modern browser is required. You can [customize this message](/howto/front-end/customize-styling-new#customize-unsupported-browsers) to meet your needs.<br />
+As of Studio Pro 9, app end-users still using IE will be shown an **Unsupported Browser** message stating that upgrading to a modern browser is required. You can [customize this message](/howto/front-end/customize-styling-new/#customize-unsupported-browsers) to meet your needs.<br />
 <br />
-If you still need to support IE11, note that Studio Pro [8](/releasenotes/studio-pro/8.18) and [7](/releasenotes/studio-pro/7.23) will continue supporting IE11. Mendix recommends using Studio Pro 8 or 7 until your app end-users have upgraded their browsers.
+If you still need to support IE11, note that Studio Pro [8](/releasenotes/studio-pro/8.18/) and [7](/releasenotes/studio-pro/7.23/) will continue supporting IE11. Mendix recommends using Studio Pro 8 or 7 until your app end-users have upgraded their browsers.
 {{% /alert %}}
 
 ## 11 Mobile Operating Systems {#mobileos}
@@ -229,13 +229,13 @@ Hybrid apps cannot be tested in Android Emulator, only on a real device.
 
 ## 12 MxBuild {#mxbuild}
 
-MxBuild is a Windows and Linux command-line tool that can be used to build a Mendix Deployment Package. For more information, see [MxBuild](mxbuild).
+MxBuild is a Windows and Linux command-line tool that can be used to build a Mendix Deployment Package. For more information, see [MxBuild](/refguide/mxbuild/).
 
 * Mono v5.20.x or .NET v4.7.2
 * JDK 11
 
 ## 13 mx Command-Line Tool {#mxtool}
 
-The **mx** command-line tool is a Windows and Linux command-line tool that can be used to do useful things with your Mendix app. For more information, see [mx Command-Line Tool](mx-command-line-tool).
+The **mx** command-line tool is a Windows and Linux command-line tool that can be used to do useful things with your Mendix app. For more information, see [mx Command-Line Tool](/refguide/mx-command-line-tool/).
 
 * Mono v5.20.x or .NET v4.7.2

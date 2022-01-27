@@ -2,12 +2,12 @@
 title: "Installation Steps"
 url: /addons/apd-addon/ig-one-installation-steps/
 parent: "ig-one"
-menu_order: 2
+weight: 2
 ---
 
 ## 1 Introduction
 
-This section describes the installation of the APM tool. For details on upgrading to a new version, see [Upgrade Steps](ig-one-upgrade-steps).
+This section describes the installation of the APM tool. For details on upgrading to a new version, see [Upgrade Steps](/addons/apd-addon/ig-one-upgrade-steps/).
 
 ## 2 Backup
 
@@ -55,7 +55,7 @@ To use the APM tools, you need to call the APM tool UI. Use the **APMAgent/USE_M
 
 ## 7 Optional: Add to After Startup and Before Shutdown
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Using the AfterStartup and BeforeShutdown microflows is advised. If you do not use them and the tool is running, shutting down your Mendix application will take some time waiting for timeouts.
 
@@ -89,7 +89,7 @@ See the sample microflow APMAgent.SampleNotifyMicroflow_LogMessage.
 
 You can now start up.
 
-If an error appears, see [After Startup Error](ig-one-after-startup-error).
+If an error appears, see [After Startup Error](/addons/apd-addon/ig-one-after-startup-error/).
 
 Otherwise, log in as Admin and navigate to the APM tool.
 

@@ -1,8 +1,8 @@
 ---
 title: "Moving from Modeler Version 6 to 7"
-url: /refguide7/moving-from-6-to-7
+url: /refguide7/moving-from-6-to-7/
 category: "General"
-menu_order: 20
+weight: 20
 description: "Provides details on updating your project from Mendix 6 to Mendix 7, including sections on converting your project and deprecated features."
 aliases:
     - /refguide/moving-from-6-to-7.html
@@ -11,7 +11,7 @@ aliases:
 
 ## 1 Introduction
 
-For up-to-date details about all the new major improvements being added in Mendix 7, see the [Desktop Modeler 7 release notes](/releasenotes/studio-pro/7).
+For up-to-date details about all the new major improvements being added in Mendix 7, see the [Desktop Modeler 7 release notes](/releasenotes/studio-pro/7/).
 
 This document will help you to update your project from Mendix 6 to Mendix 7. It contains the following topics:
 
@@ -28,7 +28,7 @@ Before converting your project, reading the following sections is recommended.
 
 If you are not using Team Server, make a backup of your project. Check that the backup was successful by opening the project.
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 Seriously, make a backup!
 {{% /alert %}}
 
@@ -44,7 +44,7 @@ Fix errors, warnings, and deprecations as much as possible. Take special note of
 
 Fix the deprecations in your Java actions by importing your project in Eclipse and solving all the deprecations in the **Problems** tab. 
 
-For details on the removed and deprecated APIs, see the **Breaking changes** section of the [Desktop Modeler version 7 release notes](/releasenotes/studio-pro/7.0#BreakingChanges).
+For details on the removed and deprecated APIs, see the **Breaking changes** section of the [Desktop Modeler version 7 release notes](/releasenotes/studio-pro/7.0/#BreakingChanges).
 
 ## 3 Converting!
 
@@ -68,7 +68,7 @@ An earlier version of Mendix enabled applications to move sessions to the databa
 
 This functionality is enabled by default, so there is no need for additional configuration.
 
-Because this statelessness, it is the client that keeps track of the objects that are not yet committed, objects that are not persistable, and even changes to the objects that were not committed yet. To keep the resource usage low, Mendix periodically prunes the stored state — objects are removed that are not displayed in the UI and not connected by references. To gain insight into how big the state is in your app (and even why it exists), use <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> in your browser and the information will be dumped into your browser's console (note that this feature might be removed in a future release). For more details, see [Monitoring Client State](monitoring-client-state).
+Because this statelessness, it is the client that keeps track of the objects that are not yet committed, objects that are not persistable, and even changes to the objects that were not committed yet. To keep the resource usage low, Mendix periodically prunes the stored state — objects are removed that are not displayed in the UI and not connected by references. To gain insight into how big the state is in your app (and even why it exists), use <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> in your browser and the information will be dumped into your browser's console (note that this feature might be removed in a future release). For more details, see [Monitoring Client State](/refguide7/monitoring-client-state/).
 
 Please be aware that reloading the browser window (as in, pressing F5) will drop the entire state.
 
@@ -145,7 +145,7 @@ Note that while the tool is definitely awesome, it is not perfect. The resulting
 
 Support for navigation layouts of the **Legacy** type has been dropped. Layout types define how pages are opened in the web client: in a (modal) pop-up window or in the content. For navigation layouts of the Legacy type, that behavior was defined via the button (or microflow) opening the page, which could result in inconsistent behavior. All the navigation layouts of the Legacy type result in errors in the Modeler now.
 
-For more information, see [Layouts](layout#layout-type) and the blog post [Layouts Have Types](https://www.mendix.com/blog/layouts-have-types/).
+For more information, see [Layouts](/refguide7/layout/#layout-type) and the blog post [Layouts Have Types](https://www.mendix.com/blog/layouts-have-types/).
 
 #### 6.1.3 Apply Context & Remove from Context
 

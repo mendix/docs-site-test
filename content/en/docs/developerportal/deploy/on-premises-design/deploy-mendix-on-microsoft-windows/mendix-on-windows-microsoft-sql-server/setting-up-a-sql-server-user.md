@@ -35,14 +35,14 @@ To create a secure environment it is important to make a clear distinction betwe
 *   **Set the server role for each user:** Associate each user with the role `public`.
 *   **Define the user mapping for each user:** Associate all the databases related to Mendix with their respective user(s). The template for these databases should be: `dbo` and the roles for each corresponding user should be: `db_datareader` and `db_datawriter`. Additionally, the user should be granted the `view definition` permission.
 
-On this page you can find a step by step instruction on how to: [Set up the database user](setting-up-the-database-user)
+On this page you can find a step by step instruction on how to: [Set up the database user](/developerportal/deploy/setting-up-the-database-user/)
 
 ## 3 Read More
 
-*   [Activating a Mendix License on Microsoft Windows](activate-a-mendix-license-on-microsoft-windows)
-*   [Setting Up the Database User](setting-up-the-database-user)
-*   [Troubleshooting](troubleshooting-iis)
-*   [Restoring a SQL Server Database](restoring-a-sql-server-database)
-*   [Troubleshooting SQL Server](troubleshooting-sql-server)
-*   [Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
-*   [Setting Up a new SQL Server Database](setting-up-a-new-sql-server-database)
+*   [Activating a Mendix License on Microsoft Windows](/developerportal/deploy/activate-a-mendix-license-on-microsoft-windows/)
+*   [Setting Up the Database User](/developerportal/deploy/setting-up-the-database-user/)
+*   [Troubleshooting](/developerportal/deploy/troubleshooting-iis/)
+*   [Restoring a SQL Server Database](/developerportal/deploy/restoring-a-sql-server-database/)
+*   [Troubleshooting SQL Server](/developerportal/deploy/troubleshooting-sql-server/)
+*   [Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
+*   [Setting Up a new SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/)

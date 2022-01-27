@@ -2,12 +2,12 @@
 title: "Selectors"
 url: /addons/ats-addon/rg-one-selectors/
 parent: "rg-one-test-dev"
-menu_order: 7
+weight: 7
 ---
 
 ## 1 Introduction
 
-For the [Find Widget Child Node action](rg-one-find-widget-child-node)  or as part of a script for [Execute JavaScript Integer](rg-one-execute-javascript-integer), [Execute JavaScript String](rg-one-execute-javascript-string) and [Execute JavaScript WebElement](rg-one-execute-javascript-webelement) actions, you will have to use selectors to get a node or WebElement. ATS supports both, JQuery and CSS3 selectors. In addition to that, ATS includes its own selectors. The following summary will give you a short overview of the most commonly used selectors in ATS.
+For the [Find Widget Child Node action](/addons/ats-addon/rg-one-find-widget-child-node/)  or as part of a script for [Execute JavaScript Integer](/addons/ats-addon/rg-one-execute-javascript-integer/), [Execute JavaScript String](/addons/ats-addon/rg-one-execute-javascript-string/) and [Execute JavaScript WebElement](/addons/ats-addon/rg-one-execute-javascript-webelement/) actions, you will have to use selectors to get a node or WebElement. ATS supports both, JQuery and CSS3 selectors. In addition to that, ATS includes its own selectors. The following summary will give you a short overview of the most commonly used selectors in ATS.
 
 ## 2 ATS Selectors
 
@@ -43,9 +43,9 @@ For more informations visit the official [W3C CSS3 selectors reference](http://w
 
 JQuery uses CSS3 selectors and extends the collection of selectors with its own ones. You can use those in your ATS actions.
 
-If you use JQuery selectors in the [Find Widget Child Node](rg-one-find-widget-child-node) action, you **mustn't** use the *jQuery(...)* or *$(...)* function. Only use simple selectors, without quotation.
+If you use JQuery selectors in the [Find Widget Child Node](/addons/ats-addon/rg-one-find-widget-child-node/) action, you **mustn't** use the *jQuery(...)* or *$(...)* function. Only use simple selectors, without quotation.
 
-In the [Execute JavaScript actions](rg-one-execute-javascript-integer), you will have to use the *jQuery(...)* or *$(...)* function to select a WebElement or node.
+In the [Execute JavaScript actions](/addons/ats-addon/rg-one-execute-javascript-integer/), you will have to use the *jQuery(...)* or *$(...)* function to select a WebElement or node.
 
 The following table shows some of the additional JQuery selectors you can use in ATS.      
 

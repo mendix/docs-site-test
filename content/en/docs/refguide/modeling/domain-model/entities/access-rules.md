@@ -9,12 +9,12 @@ tags: ["domain model", "entity", "access rule", "xpath constraint", "module role
 
 ## 1 Introduction
 
-The **access rules** of an entity define what a user is allowed to do with objects of the entity. Users can be allowed to create and/or delete objects, and to view and/or edit member values. A member is an attribute or an association of an entity. Furthermore, the set of objects available for viewing, editing, and removing can be limited by means of an [XPath constraint](xpath-constraints).
+The **access rules** of an entity define what a user is allowed to do with objects of the entity. Users can be allowed to create and/or delete objects, and to view and/or edit member values. A member is an attribute or an association of an entity. Furthermore, the set of objects available for viewing, editing, and removing can be limited by means of an [XPath constraint](/refguide/xpath-constraints/).
 
-Every access rule is applicable to one or more [module roles](module-security#module-role). An access rule grants certain access rights to those roles. Rules are additive, which means that if multiple access rules apply to the same module role, all access rights of those rules are combined for that module role.
+Every access rule is applicable to one or more [module roles](/refguide/module-security/#module-role). An access rule grants certain access rights to those roles. Rules are additive, which means that if multiple access rules apply to the same module role, all access rights of those rules are combined for that module role.
 
 {{% alert color="warning" %}}
-Access rules are not inherited from an entity's [generalization](entities#generalization), the security for every entity is specified explicitly. This means that when adding an access rule to an entity, always make sure that all required XPath constraints are applied.
+Access rules are not inherited from an entity's [generalization](/refguide/entities/#generalization), the security for every entity is specified explicitly. This means that when adding an access rule to an entity, always make sure that all required XPath constraints are applied.
 
 If the entity has a generalization with access rules defining XPath constraints, these will not apply to its specializations and will therefore not limit its visibility.
 {{% /alert %}}
@@ -29,7 +29,7 @@ Access rules are defined via entity's **Properties** > **Access rules**, or on t
 ![Access Rules for Entities](/attachments/refguide/modeling/domain-model/entities/access-rules/access-rules-tab.png)
 
 {{% alert color="info" %}}
-The **Access rules** section is visible only if the [App Security](project-security) is set to **Production**.
+The **Access rules** section is visible only if the [App Security](/refguide/project-security/) is set to **Production**.
 {{% /alert %}}
 
 An example of the access rules properties is represented in the image below:
@@ -75,7 +75,7 @@ The set of objects that can be deleted can be limited by using an [XPath constra
 
 #### 2.3.2 Member Read & Write Rights Section
 
-**Member read and write rights** define the access rights for every member ([attribute](attributes) or [association](associations)) of the entity. These access rights indicate whether users are allowed to view and/or edit the member's value. The set of objects to which these rights apply can be limited by using an [XPath constraint](#xpath-constraint).
+**Member read and write rights** define the access rights for every member ([attribute](/refguide/attributes/) or [association](/refguide/associations/)) of the entity. These access rights indicate whether users are allowed to view and/or edit the member's value. The set of objects to which these rights apply can be limited by using an [XPath constraint](#xpath-constraint).
 
 | Value | Description |
 | --- | --- |
@@ -97,7 +97,7 @@ For example, a customer is allowed to view the discount, but is not allowed to e
 
 ### 2.4 XPath Constraint Tab {#xpath-constraint}
 
-An [XPath constraint](xpath-constraints) can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all objects of the entity.
+An [XPath constraint](/refguide/xpath-constraints/) can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all objects of the entity.
 
 ![](/attachments/refguide/modeling/domain-model/entities/access-rules/access-rule-xpath-tab.png)
 

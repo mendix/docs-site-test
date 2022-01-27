@@ -1,14 +1,14 @@
 ---
 title: "Language Menu"
-url: /refguide8/translatable-texts
+url: /refguide8/translatable-texts/
 parent: "menus"
-menu_order: 50
+weight: 50
 tags: ["studio pro", "translation", "languages", "translatable text"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/translatable-texts.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/translatable-texts.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -17,12 +17,12 @@ Mendix is designed so that it is easy to present the same information to users w
 
 These *translatable texts* include the following:
 
-* [button](button-widgets) captions
-* [data grid](data-grid) columns
-* [labels](label)
-* [menu items](menu#menu-item)
-* [messages](show-message) that are sent from a [microflow](microflows)
-* [text](text)
+* [button](/refguide8/button-widgets/) captions
+* [data grid](/refguide8/data-grid/) columns
+* [labels](/refguide8/label/)
+* [menu items](/refguide8/menu/#menu-item)
+* [messages](/refguide8/show-message/) that are sent from a [microflow](/refguide8/microflows/)
+* [text](/refguide8/text/)
 
 ## 2 Working in the Currently Selected Language{#selected-language}
 
@@ -42,7 +42,7 @@ If you edit your app to add new widgets while not in the default language, any n
 
 All untranslated texts will be displayed in the default language when you run the application.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If there is no text in the default language, the end-user will see `[no translation]`. If you want the text to be blank, set the default language text to be a space rather than empty.
 {{% /alert %}}
 
@@ -62,10 +62,10 @@ The **Language** menu items are described in the table below:
 | **Current Language** | Choose the current language from one of the languages set up in **Language Settings…**. | *None* |
 | **Select Previous Language** | Choose the previous language in the list of languages chosen in **Language Settings…**. | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> |
 | **Select Next Language** | Choose the next language in the list of languages chosen in **Language Settings…**. | <kbd>Ctrl</kbd> + <kbd>L</kbd> |
-| [Language Settings…](language-settings) | Choose which languages are supported by the app and configure date and time settings. | *None* |
-| [Batch Replace…](batch-replace) | Change all occurrences of chosen translatable texts in the current language where they are identical. | *None* |
-| [Batch Translate…](batch-translate) | Add and edit translations from a selected source language to a selected target language | *None* |
-| [Language Operations…](language-operations) | Manipulate (for example, copy) translations between languages. | *None* |
+| [Language Settings…](/refguide8/language-settings/) | Choose which languages are supported by the app and configure date and time settings. | *None* |
+| [Batch Replace…](/refguide8/batch-replace/) | Change all occurrences of chosen translatable texts in the current language where they are identical. | *None* |
+| [Batch Translate…](/refguide8/batch-translate/) | Add and edit translations from a selected source language to a selected target language | *None* |
+| [Language Operations…](/refguide8/language-operations/) | Manipulate (for example, copy) translations between languages. | *None* |
 
 ## 4 Setting the End-User's Language
 
@@ -96,13 +96,13 @@ There are two options to ensure that the language is changed:
 
     ![System Domain Model for User and Language](/attachments/refguide8/modeling/menus/translatable-texts/reload-with-state.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The above only applies to pages *within* your Mendix application (meaning, pages that are created in Studio Pro). The labels for static pages (such as the *index.html* and *login.html* pages in the **theme** folder of your app) are generated when you create a deployment package using the default language of your project. The labels on those pages will not change for different users, they will always be the same.
 {{% /alert %}}
 
 ## 5 Read More
 
-* [How to Translate Your App Content](/howto8/collaboration-requirements-management/translate-your-app-content) – a worked example of adding a translation 
-* [How To Use Translatable Validation Messages](/howto8/logic-business-rules/translatable-validation-messages)
+* [How to Translate Your App Content](/howto8/collaboration-requirements-management/translate-your-app-content/) – a worked example of adding a translation 
+* [How To Use Translatable Validation Messages](/howto8/logic-business-rules/translatable-validation-messages/)
 * [Change language by clicking a link](https://forum.mendixcloud.com/link/questions/91821) – explanations and ideas on the Mendix forum for refreshing the page when the language is changed
 * [Anonymous User Journey](https://forum.mendixcloud.com/link/questions/91676) – a discussion on the Mendix forum about switching languages for anonymous end-users

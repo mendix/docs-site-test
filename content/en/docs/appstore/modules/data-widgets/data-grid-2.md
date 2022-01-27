@@ -149,6 +149,26 @@ In this example we check the value of `StringAttribute` and then apply the class
 
 ![Example of dynamic cell class](/attachments/appstore/modules/data-widgets/data-grid-2/dynamic-cell-class.png)
 
+### 4.7 Wrap Text
+
+You can choose if you want to wrap the text content of a column and apply ellipsis in the end of it.
+
+{{% alert color="info" %}}
+If you are using **Custom content** in the **Show** option of the **General** tab, please make sure you are using a **Text Widget** without containers around it. Containers sometimes interfere with wrapping texts.
+{{% /alert %}}
+
+![Example of wrap text](/attachments/appstore/modules/data-widgets/data-grid-2/column-wrap-text.png)
+
+### 4.8 Tooltip
+
+If you need to display advisory information for cell content, you can specify the tooltip text. This text will be shown when a user is hovering over the cell content.
+
+{{% alert color="warning" %}}
+This property not available if you enable "Custom content" for the column
+{{% /alert %}}
+
+![Example of wrap text](/attachments/appstore/modules/data-widgets/data-grid-2/tooltip-prop.png)
+
 ## 5 Rows
 
 This section defines options for the rows of the grid.
@@ -184,7 +204,9 @@ Triggers an action (such as a nanoflow, microflow, or Show page action) when the
 Sets of filters can be used in combination with data grids. To be able to use filters you need to select the option **Show column filters**. When this option is selected a drop-zone where you can place your desired filter widget will appear in each column header.
 
 {{% alert color="warning" %}}
-The type of your selected attribute should match the filter type. For example, a **Text filter** should be used for a String attribute. Also the desired attribute should be filterable (for example, not computed in a microflow).
+The type of your selected attribute should match the filter type. For example, a **Text filter** should be used for a String attribute.
+
+Also the desired attribute must be filterable. For example, not a value which is calculated.
 {{% /alert %}}
 
 ![Settings for data grid 2](/attachments/appstore/modules/data-widgets/data-grid-2/settings-show-column-filters.png)
@@ -397,7 +419,7 @@ Here is an example of a configuration containing an On change action:
 
 ## 9 Performance
 
-The performance of the new data grid can be affected if sorting or filtering are enabled. This is because Data widgets v1.1 - 1.2 retrieve all available values for sorting or filtering while the widget runs. This problem does not occur in versions above 1.3 because those version use [Filtering Apis](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values#4-filter-helpers) to retrieve only the necessary data.
+The performance of the new data grid can be affected if sorting or filtering are enabled. This is because Data widgets v1.1 - 1.2 retrieve all available values for sorting or filtering while the widget runs. This problem does not occur in versions above 1.3 because those version use [Filtering Apis](/apidocs-mxsdk/apidocs/pluggable-widgets-client-apis-list-values/#4-filter-helpers) to retrieve only the necessary data.
 
 ## 10 Troubleshooting
 

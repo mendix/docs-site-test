@@ -1,14 +1,14 @@
 ---
 title: "Create Automated Tests with TestNG"
-url: /howto8/testing/create-automated-tests-with-testng
+url: /howto8/testing/create-automated-tests-with-testng/
 category: "Testing"
-menu_order: 50
+weight: 50
 tags: ["test", "testing", "testng"]
 ---
 
 ## 1 Introduction
 
-Automated tests can be created with different tools, depending on the type of tests. Integration tests can be created with [SoapUI](testing-web-services-using-soapui), unit tests with the [Unit Testing](testing-microflows-using-the-unittesting-module) module, and UI tests with [Selenium IDE](testing-mendix-applications-using-selenium-ide). With Selenium IDE you can create scripts to aid in automation-aided exploratory testing. If you’re looking to create robust, browser-based tests, you should look into using a testing framework with Selenium.
+Automated tests can be created with different tools, depending on the type of tests. Integration tests can be created with [SoapUI](/howto8/testing/testing-web-services-using-soapui/), unit tests with the [Unit Testing](/howto8/testing/testing-microflows-using-the-unittesting-module/) module, and UI tests with [Selenium IDE](/howto8/testing/testing-mendix-applications-using-selenium-ide/). With Selenium IDE you can create scripts to aid in automation-aided exploratory testing. If you’re looking to create robust, browser-based tests, you should look into using a testing framework with Selenium.
 
 TestNG is a Java testing framework that can be used to drive Selenium. In this how-to you will learn how to create an automated test with TestNG.
 
@@ -25,7 +25,7 @@ Before starting with this how-to, make sure you have completed the following pre
 * Download and install [Eclipse](http://www.eclipse.org/downloads/)
 * Download the [Selenium Client & WebDriver](http://www.seleniumhq.org/download/) for Java
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This how-to uses the Company Expenses app template starting in the [Add the Third Test Method](#third) section for an example scenario. However, this app template is no longer platform-supported by Mendix. Therefore, sections using this app template can only be used as reference and not as sections that can be completed step-by-step.
 {{% /alert %}}
 
@@ -255,7 +255,7 @@ Now that you are on the **Expenses** tab, you will want to create a new expense.
     | Description dropdown | `referenceSelector1` |
     | Save button | `saveButton1` |
 
-    {{% alert type="info" %}}
+    {{% alert color="info" %}}
 
     The name of an element in your app may be different than the name shown in the Name column. In step 7, use the name of the element of your app.
 
@@ -495,5 +495,5 @@ Happy testing!
 
 ## 10 Read More
 
-* [Test Mendix Applications Using Selenium IDE](testing-mendix-applications-using-selenium-ide)
-* [Test Microflows Using the Unit Testing Module](testing-microflows-using-the-unittesting-module)
+* [Test Mendix Applications Using Selenium IDE](/howto8/testing/testing-mendix-applications-using-selenium-ide/)
+* [Test Microflows Using the Unit Testing Module](/howto8/testing/testing-microflows-using-the-unittesting-module/)

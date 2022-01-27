@@ -1,11 +1,11 @@
 ---
 title: "Call REST Service Action"
-url: /refguide7/call-rest-action
+url: /refguide7/call-rest-action/
 parent: "microflow-activities"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This activity can only be used in microflows, not in nanoflows.
 {{% /alert %}}
 
@@ -19,7 +19,7 @@ The Call REST Service action can be used to call a REST endpoint. You can specif
 
 ### 2.1 Location
 
-The **Location** property defines the REST endpoint to be called. The location needs to be entered using a string template. The string template should result in a valid URL string. Parameters can be used by writing a number between braces (for example, `{1}`). For each parameter in the template, you can specify its value using a [microflow expression](expressions) resulting in a string value. To escape the opening brace (`{`), a double opening brace should be used (`{{`).
+The **Location** property defines the REST endpoint to be called. The location needs to be entered using a string template. The string template should result in a valid URL string. Parameters can be used by writing a number between braces (for example, `{1}`). For each parameter in the template, you can specify its value using a [microflow expression](/refguide7/expressions/) resulting in a string value. To escape the opening brace (`{`), a double opening brace should be used (`{{`).
 
 The **HTTP method** property defines the HTTP method to use when calling a REST endpoint. The possible values are: GET, POST, PUT, PATCH, DELETE, HEAD, and OPTIONS.
 
@@ -29,7 +29,7 @@ Set **Use timeout on request** to **Yes** to be able specify how long the Call R
 
 ### 2.3 Proxy Configuration
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This feature was introduced in version 7.15.0.
 
@@ -53,9 +53,9 @@ When you select **Override**, you can configure dynamically whether to use a pro
 
 The **Use HTTP authentication** check box defines whether basic authentication should be used.
 
-The **User name** property defines the user name that will be used to authenticate over HTTP. The user name needs to be entered using [microflow Expressions](expressions). The microflow expression should result in a string.
+The **User name** property defines the user name that will be used to authenticate over HTTP. The user name needs to be entered using [microflow Expressions](/refguide7/expressions/). The microflow expression should result in a string.
 
-The **Password** property defines the password that will be used to authenticate over HTTP. The password needs to be entered using [expressions](expressions). The microflow expression should result in a string.
+The **Password** property defines the password that will be used to authenticate over HTTP. The password needs to be entered using [expressions](/refguide7/expressions/). The microflow expression should result in a string.
 
 ### 3.2 Custom HTTP Headers
 
@@ -69,7 +69,7 @@ The sections below describe the options in the drop-down menu for generating the
 
 ### 4.1 Export Mapping for the Entire Request
 
-This option allows you to use a single [export mapping](export-mappings) for the body of the request. 
+This option allows you to use a single [export mapping](/refguide7/export-mappings/) for the body of the request. 
 
 #### 4.1.1 Mapping
 
@@ -77,15 +77,15 @@ Select the mapping that you want to apply.
 
 #### 4.1.2 Parameter Type
 
-If the [export mapping](export-mappings) requires an input, this field shows the type of the input.
+If the [export mapping](/refguide7/export-mappings/) requires an input, this field shows the type of the input.
 
 #### 4.1.3 Parameter
 
-If the [export mapping](export-mappings) requires an input, you can select a variable of the correct type.
+If the [export mapping](/refguide7/export-mappings/) requires an input, you can select a variable of the correct type.
 
 #### 4.1.4 Content Type
 
-If the [export mapping](export-mappings) is based on a message definition, it can export both XML and JSON. Choose the type of output you want. **Content-Type header** is not set by default. To set it, use the **Custom HTTP Headers** tab.
+If the [export mapping](/refguide7/export-mappings/) is based on a message definition, it can export both XML and JSON. Choose the type of output you want. **Content-Type header** is not set by default. To set it, use the **Custom HTTP Headers** tab.
 
 ### 4.2 Binary for the Entire Request
 
@@ -93,7 +93,7 @@ This option allows you to send binary data (for example, the contents of a FileD
 
 ### 4.3 Custom Request Template
 
-This option allows you to generate the request using a string template. The template defines the structure of the request in plain text. Parameters can be used by writing a number between braces (for example, `{1}`). For each parameter in the template, you can specify its value using a [microflow expression](expressions) resulting in a string value. To escape the opening brace (`{`), a double opening brace should be used (`{{`).
+This option allows you to generate the request using a string template. The template defines the structure of the request in plain text. Parameters can be used by writing a number between braces (for example, `{1}`). For each parameter in the template, you can specify its value using a [microflow expression](/refguide7/expressions/) resulting in a string value. To escape the opening brace (`{`), a double opening brace should be used (`{{`).
 
 ## 5 Response
 
@@ -103,8 +103,8 @@ This option allows you to generate the request using a string template. The temp
 
 These are the options in the drop-down menu for handling the response:
 
-* **Apply import mapping** – if the response is JSON or XML, it can be transformed directly into objects using an [import mapping](import-mappings). The fields that you can choose here are described in the [Import Mapping action](import-mapping-action)
-* **Store in an HTTP response** – any successful HTTP response can be stored directly in an [HttpResponse](http-request-and-response-entities#http-response) object, and the [$latestHttpResponse](#latesthttpresponse) variable is also updated
+* **Apply import mapping** – if the response is JSON or XML, it can be transformed directly into objects using an [import mapping](/refguide7/import-mappings/). The fields that you can choose here are described in the [Import Mapping action](/refguide7/import-mapping-action/)
+* **Store in an HTTP response** – any successful HTTP response can be stored directly in an [HttpResponse](/refguide7/http-request-and-response-entities/#http-response) object, and the [$latestHttpResponse](#latesthttpresponse) variable is also updated
 * **Store in a file document variable** – if the response is a binary content (for example, a PDF), it can be stored in an entity – this entity should inherit from `System.FileDocument`
 * **Store in a string** – if the response is a string (for example, CSV), it can be stored directly in a string variable
 * **Do not store in a variable** - use this option when the call does not return anything useful
@@ -123,7 +123,7 @@ When the **Store message body in $latestHttpResponse variable** option is select
 
 ### 5.4 $latestHttpResponse Variable<a name="latesthttpresponse"></a>
 
-The `$latestHttpResponse` variable is of the [HttpResponse](http-request-and-response-entities#http-response) type. It is available after a Call REST activity.
+The `$latestHttpResponse` variable is of the [HttpResponse](/refguide7/http-request-and-response-entities/#http-response) type. It is available after a Call REST activity.
 
 However, its `Content` attribute will be left empty in most cases to minimize memory usage.
 

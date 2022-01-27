@@ -28,14 +28,14 @@ Sales Representatives in your company would like to view a list of opportunity c
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio/page-editor). 
+* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio/page-editor/). 
 
-* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio/domain-models).
+* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio/domain-models/).
 
 * Make sure your domain model is configured the following way:
 
-    {{/* % image_container width="200" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/domain-model.png){{/* % /image_container % */}}  
-{{/* % /image_container % */}} 
+    {{/* % image_container width="200" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/domain-model.png){{/* % /image_container % */}} 
+
 ## 3 Adding the Master Detail Page
 
 You would like to open a page with opportunity contact list and its details from your home page. Do the following:
@@ -44,22 +44,22 @@ You would like to open a page with opportunity contact list and its details from
 
 2. Search for **Open Page** button and drag and drop it to the page.
 
-	{{/* % image_container width="250" % */}}![Open Page](/attachments/studio-how-to/pages/pages-how-to-configure-list/open-page-button.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+	{{/* % image_container width="250" % */}}![Open Page](/attachments/studio-how-to/pages/pages-how-to-configure-list/open-page-button.png){{/* % /image_container % */}}
+
 3. Open the button properties and follow the steps below:
 
     1. Set **Page** as an on-click action and click the **Page** property.
 
-    	{{/* % image_container width="250" % */}}![Button Properties](/attachments/studio-how-to/pages/pages-how-to-configure-list/button-properties.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    	{{/* % image_container width="250" % */}}![Button Properties](/attachments/studio-how-to/pages/pages-how-to-configure-list/button-properties.png){{/* % /image_container % */}}
+
     2.  In the **Select Page** dialog box, click the plus icon in the top right corner.
 
     3.  In the **Create new page** dialog box, fill in the page title. 
 
     4. Select the page template by clicking **Master Detail** in the side bar and choose **Master Detail**:
 
-    	{{/* % image_container width="550" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/create-master-detail.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    	{{/* % image_container width="550" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/create-master-detail.png){{/* % /image_container % */}}
+
     5. Click **Create**.
 
 
@@ -73,16 +73,16 @@ The page is created, now you need to configure it. First of all, you need to con
 
 1. Select the list view and click the **Entity** option in its properties:
 
-	{{/* % image_container width="250" % */}}![List View Properties](/attachments/studio-how-to/pages/pages-how-to-configure-list/list-view-entity.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+	{{/* % image_container width="250" % */}}![List View Properties](/attachments/studio-how-to/pages/pages-how-to-configure-list/list-view-entity.png){{/* % /image_container % */}}
+
 2. In the **Select Entity** dialog box, select **OpportunityContact** and confirm your choice by clicking **Select**. Now the list is connected to the **OpportunityContact** entity. 
 
 3. To display the name of each report per company, do the following:
 
     1. Select the **Name** text in the list view and open the **Properties** tab.
 
-    	{{/* % image_container width="300" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/text.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    	{{/* % image_container width="300" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/text.png){{/* % /image_container % */}}
+
     2. In the **Content** property, delete *Name* and click **Add** > **Attribute**:
 
     	![](/attachments/studio-how-to/pages/pages-how-to-configure-list/text-content.png)
@@ -90,16 +90,16 @@ The page is created, now you need to configure it. First of all, you need to con
     3. In the **Select Attribute** dialog box, choose **Name** and click **Select**. 
 
 4. Delete the image from the list and the column where this image is placed, as now the image displays a a user image that does not correspond to opportunity contacts you are displaying.
-    {{/* % image_container width="300" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/list-with-no-image.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{/* % image_container width="300" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/list-with-no-image.png){{/* % /image_container % */}}
+
 5. As the goal of the new page is to merely display data, delete the **New** button above the list view together with the container it is placed in:
 
-    {{/* % image_container width="300" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/container.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{/* % image_container width="300" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/container.png){{/* % /image_container % */}}
+
 Now the list view will display the list of opportunity contacts by their name:
 
-{{/* % image_container width="300" % */}}![Configured List](/attachments/studio-how-to/pages/pages-how-to-configure-list/list-configured.png){{/* % /image_container % */}}  
-{{/* % /image_container % */}} 
+{{/* % image_container width="300" % */}}![Configured List](/attachments/studio-how-to/pages/pages-how-to-configure-list/list-configured.png){{/* % /image_container % */}} 
+
 ## 5 Configuring Report Details
 
 Now you need to configure opportunity contact details displayed next to the list. The idea is when you select the name from the list, the details of the selected contact will be displayed. 
@@ -124,8 +124,8 @@ To displayed all the details that a contact has, do the following:
 
 5. In the **Select Attribute** dialog box, choose **Title** and click **Select**:
 
-    {{/* % image_container width="400" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/title.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{/* % image_container width="400" % */}}![](/attachments/studio-how-to/pages/pages-how-to-configure-list/title.png){{/* % /image_container % */}}
+
 6. Select the **Name** text box and click **Data Source** > **Attribute** in its properties. 
 
 7. In the **Select Attribute** dialog box, choose **Name** and click **Select**.
@@ -152,6 +152,6 @@ Congratulations! You have a page that displays a list of opportunity contacts an
 
 ![Configured Page](/attachments/studio-how-to/pages/pages-how-to-configure-list/configured-page.png)
 
-You can now preview your app and test your page. For more information on how to preview your page, see [Previewing & Publishing Your App](/studio/publishing-app).
+You can now preview your app and test your page. For more information on how to preview your page, see [Previewing & Publishing Your App](/studio/publishing-app/).
 
-You can also work on the page details, for example, add a dynamic image to the list to display a profile picture of an opportunity contact next to their name. For more information on dynamic images, see [Images & Files](/studio/page-editor-widgets-images-and-files).
+You can also work on the page details, for example, add a dynamic image to the list to display a profile picture of an opportunity contact next to their name. For more information on dynamic images, see [Images & Files](/studio/page-editor-widgets-images-and-files/).

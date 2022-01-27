@@ -1,8 +1,8 @@
 ---
 title: "Previewing & Publishing Your App"
-url: /studio7/publishing-app
+url: /studio7/publishing-app/
 description: "Describes previewing and publishing processes in the Mendix Studio."
-menu_order: 55
+weight: 55
 tags: ["studio", "deployment", "publishing", "app publishing", "deploy", "deploying", "publish", "preview"]
 ---
 
@@ -30,13 +30,13 @@ To exit the preview environment, click **Close Preview** in the top-right corner
 
 ![](/attachments/studio7/publishing-app/close-preview.jpg)
 
-You cannot preview your app if it has [consistency errors](consistency-errors). You will be notified when this is the case, and you will need to fix errors first to preview your app.
+You cannot preview your app if it has [consistency errors](/studio7/consistency-errors/). You will be notified when this is the case, and you will need to fix errors first to preview your app.
 
 Previewing your app does not change the published app. Also, the preview environment has a separate database from the published app, that means you can create your own test data without polluting the data in the published application.
 
-If your app has security enabled, in the preview mode you will be able to check how your app looks like for different user roles. For more information on how to test different user roles, see the [Testing Your Roles](settings-security#testing-your-roles) section in *Security, Roles & Permissions*. 
+If your app has security enabled, in the preview mode you will be able to check how your app looks like for different user roles. For more information on how to test different user roles, see the [Testing Your Roles](/studio7/settings-security/#testing-your-roles) section in *Security, Roles & Permissions*. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The app preview is your personal preview of the app. Hence, only users logged into Studio can preview the app, and the preview app will no longer be running when you exit Studio.  
 
@@ -44,13 +44,13 @@ The app preview is your personal preview of the app. Hence, only users logged in
 
 ## 3 Publishing Your App {#publishing-your-app}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-Publishing is no longer available in Studio for apps with Mendix version 7. You can either publish your app in Studio Pro or upgrade you app to Mendix version 8 or above. For more information, see [Moving from Desktop Modeler Version 7 to Studio Pro 8](/refguide8/moving-from-7-to-8).
+Publishing is no longer available in Studio for apps with Mendix version 7. You can either publish your app in Studio Pro or upgrade you app to Mendix version 8 or above. For more information, see [Moving from Desktop Modeler Version 7 to Studio Pro 8](/refguide8/moving-from-7-to-8/).
 
 {{% /alert %}}
 
-When you publish your app, you deploy it to a cloud environment. A cloud environment is a location in the cloud that can host your app, and deployment is a process to put the latest version of your app in that location. For more technical information, see [Environments](/developerportal/deploy/environments) in *Developer Portal Guide*.
+When you publish your app, you deploy it to a cloud environment. A cloud environment is a location in the cloud that can host your app, and deployment is a process to put the latest version of your app in that location. For more technical information, see [Environments](/developerportal/deploy/environments/) in *Developer Portal Guide*.
 
 By default all apps created in Mendix Studio are Free Apps. A Free App is a complete deployment environment in the Mendix Cloud with some limitations. You can upgrade your Free App to a licensed app. The main differences between a Free App and a licensed app are described in the table below: 
 
@@ -83,5 +83,5 @@ To view your app on a mobile device, follow these steps:
 
 ## 5 Read More
 
-* [Checks](checks)
-* [Consistency Errors](consistency-errors)
+* [Checks](/studio7/checks/)
+* [Consistency Errors](/studio7/consistency-errors/)

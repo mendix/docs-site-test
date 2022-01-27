@@ -49,7 +49,7 @@ This the browser in which ATS executes the test case. The browser version is set
 
 ### 3.1 Platform
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This option is only available for supported Selenium hubs.
 
@@ -57,16 +57,16 @@ This option is only available for supported Selenium hubs.
 
 If you have selected a Selenium hub from a supported Selenium hub provider (SauceLabs, or Browserstack), you get access to the platform settings. Here you can set the operating system on which the test case is executed.
 
-For more information on the different supported operating systems, see [Supported Selenium Hub Providers](rg-two-supported-selenium-hub-provider).
+For more information on the different supported operating systems, see [Supported Selenium Hub Providers](/addons/ats-addon/rg-two-supported-selenium-hub-provider/).
 
 ### 3.2 Resolution
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This option is only available for supported Selenium hubs.
 
 {{% /alert %}}
 
-With this option, you specify the screen resolution for your test run. For a list of all the supported screen resolutions, see [Supported selenium hub provider section](rg-two-supported-selenium-hub-provider).
+With this option, you specify the screen resolution for your test run. For a list of all the supported screen resolutions, see [Supported selenium hub provider section](/addons/ats-addon/rg-two-supported-selenium-hub-provider/).
 
-After you set the run configuration, execute the test case by clicking **Run**, or schedule the test case by clicking **Schedule**. For details on scheduling test cases in ATS, see [Scheduling](rg-two-schedule).
+After you set the run configuration, execute the test case by clicking **Run**, or schedule the test case by clicking **Schedule**. For details on scheduling test cases in ATS, see [Scheduling](/addons/ats-addon/rg-two-schedule/).

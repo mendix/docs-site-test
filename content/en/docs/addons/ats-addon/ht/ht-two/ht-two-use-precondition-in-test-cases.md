@@ -25,8 +25,8 @@ In the Company Expenses app I want to click the following expense to view the de
 
 Before starting with this how-to, make sure you have completed the following prerequisites:
 
-* Read [How to Get Started](ht-two-getting-started)
-* Read [How to Create a Test Case](ht-two-create-a-test-case)
+* Read [How to Get Started](/addons/ats-addon/ht-two-getting-started/)
+* Read [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 
 ## 3 How to Use Preconditions in Test Cases
 
@@ -42,7 +42,7 @@ The following steps explain how to create a test case with preconditions:
 	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-use-precondition-in-test-cases/beginning-of-test-case.png)
 
 4. Add the **Find/Assert DataGrid Row** action. Give it a description and enter an output value name. You must add the **Find/Assert DataGrid Row** action instead of the **Click DataGrid Row** action, since it has an output parameter which you need in the next steps.
-5. Enter `grid7` in **Widget Name**, `column9` in **Column 1 Name** and "Some office supplies" in **Column 1 Value**. You can make the search for this data grid row more specific by entering more column names with values. The different values are found by using the ATS Helper. For more information on how to find these values, see [How to Create a Test Case](ht-two-create-a-test-case).
+5. Enter `grid7` in **Widget Name**, `column9` in **Column 1 Name** and "Some office supplies" in **Column 1 Value**. You can make the search for this data grid row more specific by entering more column names with values. The different values are found by using the ATS Helper. For more information on how to find these values, see [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/).
 6. Check the **Precondition** checkbox.
 7.  Click **Setup precondition**.
 
@@ -54,7 +54,7 @@ The following steps explain how to create a test case with preconditions:
 
 8.  Add the **Find/Assert DataGrid Row** action as precondition. 
 
-	{{% alert type="info" %}}You add the same action as a precondition because you do not want the test case to fail at this step if the expense is not present on that page.
+	{{% alert color="info" %}}You add the same action as a precondition because you do not want the test case to fail at this step if the expense is not present on that page.
 	{{% /alert %}}
 
 9.  Enter the same values in the input parameter fields:
@@ -121,4 +121,4 @@ Congratulations, you created a test case using preconditions. This is an example
 
 ## 5 Next Up
 
-The next how-to is [How to Create a Negative Test Case](ht-two-create-a-negative-test-case). You can find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+The next how-to is [How to Create a Negative Test Case](/addons/ats-addon/ht-two-create-a-negative-test-case/). You can find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

@@ -94,7 +94,7 @@ Parameters have the following settings:
 
 To add parameters, do the following:
 
-1. Place the **Button** widget in the context of an entity, as in, inside a [data widget](data-widgets).
+1. Place the **Button** widget in the context of an entity, as in, inside a [data widget](/refguide/data-widgets/).
 
 2. Double-click the **Caption** setting in the button widget properties.
 
@@ -124,7 +124,7 @@ In addition to adding new parameters, you can perform the following actions on p
 
 #### 2.5.3 Tooltip
 
-The **Tooltip** property determines a text end-users will see in the tooltip that appears when they hover over the button. The tooltip text is translatable. For more information on translatable texts, see [Language Menu](translatable-texts). If the tooltip is not specified, no tooltip will be shown when hovering over the button.
+The **Tooltip** property determines a text end-users will see in the tooltip that appears when they hover over the button. The tooltip text is translatable. For more information on translatable texts, see [Language Menu](/refguide/translatable-texts/). If the tooltip is not specified, no tooltip will be shown when hovering over the button.
 
 #### 2.5.4 Icon {#icon}
 
@@ -159,7 +159,7 @@ The **Button style** property applies a predefined styling to the button. Possib
 
 #### 2.5.7 Disabled During Action
 
-This property is only shown when **Call a microflow** or **Call a nanoflow** is selected as the [on-click event](on-click-event). Selecting **Disabled during action** disables the button until the action is completed or failed.
+This property is only shown when **Call a microflow** or **Call a nanoflow** is selected as the [on-click event](/refguide/on-click-event/). Selecting **Disabled during action** disables the button until the action is completed or failed.
 
 Default: *true*
 
@@ -171,13 +171,13 @@ The **Items** section is only shown for drop-down buttons.
 
 {{% /alert %}}
 
-When an end-user clicks a drop-down button, a pop-up window with a list of items opens. Each item performs an event when an end-user clicks this item. Different items can perform different events. For more information on events that can be assigned, see [On Click Event & Events Section](on-click-event).
+When an end-user clicks a drop-down button, a pop-up window with a list of items opens. Each item performs an event when an end-user clicks this item. Different items can perform different events. For more information on events that can be assigned, see [On Click Event & Events Section](/refguide/on-click-event/).
 
 {{% alert color="info" %}}
 
-* Items with the **Create object** event are only shown when you have sufficient permissions on. For more information, see [Security](security). 
+* Items with the **Create object** event are only shown when you have sufficient permissions on. For more information, see [Security](/refguide/security/). 
 
-* Items with the **Sign out** event are not shown for anonymous users. For more information on different security levels and anonymous users, see [App Security](project-security) and [Anonymous Users](anonymous-users). 
+* Items with the **Sign out** event are not shown for anonymous users. For more information on different security levels and anonymous users, see [App Security](/refguide/project-security/) and [Anonymous Users](/refguide/anonymous-users/). 
 
 
 {{% /alert %}}
@@ -186,7 +186,7 @@ Each item has the following properties:
 
 * **Caption** – defines a caption of the item
 
-*  **Action** – defines an on-click event performed when the item is clicked (for more information on-click events, see [On Click Event & Events Section](on-click-event))
+*  **Action** – defines an on-click event performed when the item is clicked (for more information on-click events, see [On Click Event & Events Section](/refguide/on-click-event/))
 
     ![Properties of Items](/attachments/refguide/modeling/pages/button-widgets/button-properties/items-properties.png)
 
@@ -214,8 +214,8 @@ To add items to a drop-down buttons, do the following:
 
 ## 3 Read More
 
-* [Page](page)
-* [Buttons](button-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
-* [On Click Event & Events Section](on-click-event)
+* [Page](/refguide/page/)
+* [Buttons](/refguide/button-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)
+* [On Click Event & Events Section](/refguide/on-click-event/)
 

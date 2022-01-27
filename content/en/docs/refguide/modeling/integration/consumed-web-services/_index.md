@@ -9,7 +9,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-This document describes imported web services. For further information on the consumed web services screen, see [Consumed Web Service](consumed-web-service).
+This document describes imported web services. For further information on the consumed web services screen, see [Consumed Web Service](/refguide/consumed-web-service/).
 
 
 ## 2 Web Services
@@ -24,7 +24,7 @@ Using third party web services is easy in Mendix. There is a microflow activity 
 
 ### 2.2 Published web services
 
-To expose functionality in a Mendix Server (thus enabling other systems to make use of certain functions) a microflow can easily be published as a web service. For further information, see [Published Web Services](published-web-services).
+To expose functionality in a Mendix Server (thus enabling other systems to make use of certain functions) a microflow can easily be published as a web service. For further information, see [Published Web Services](/refguide/published-web-services/).
 
 ## 3 XML
 
@@ -45,8 +45,8 @@ In this case, the object 'person' is described with the corresponding values for
 
 XML can be used in Mendix for serialization and de-serialization in order to export and import data.
 
-See [XML Schemas](xml-schemas) for further information on importing XSDs into your application.
-See  [Import Mappings](import-mappings) for further information on mapping XML documents to domain model entities and [Export Mappings](export-mappings) for further information on exporting domain entities as XML.
+See [XML Schemas](/refguide/xml-schemas/) for further information on importing XSDs into your application.
+See  [Import Mappings](/refguide/import-mappings/) for further information on mapping XML documents to domain model entities and [Export Mappings](/refguide/export-mappings/) for further information on exporting domain entities as XML.
 
 ## 4 SOAP
 
@@ -63,11 +63,11 @@ A WSDL (Web Service Definition Language) document is a document that describes h
 Using imported web services, you can import a web service from an external application to use in your own application. You can import web services from third parties (such as the
 [w3schools example service](http://www.w3schools.com/xml/tempconvert.asmx?WSDL)) or from other Mendix apps.
 
-To use these imported web services in a microflow, see [Call Web Service](call-web-service-action).
+To use these imported web services in a microflow, see [Call Web Service](/refguide/call-web-service-action/).
 
 ## 7 Proxies
 
-If you are behind a firewall, you may have to use a proxy to call a web service. Specific information on how to configure the JVM to use a proxy can be found in [Using a Proxy to Call a Web Service](using-a-proxy-to-call-a-webservice).
+If you are behind a firewall, you may have to use a proxy to call a web service. Specific information on how to configure the JVM to use a proxy can be found in [Using a Proxy to Call a Web Service](/refguide/using-a-proxy-to-call-a-webservice/).
 
 ## 8 Protocols
 
@@ -83,4 +83,4 @@ Mendix supports consuming web service data according to the following protocols:
 *   WS-ReliableMessaging 1.1
 *   WS-Addressing 1.0 (from Mendix version 8.16)
 
-To connect to a Microsoft .NET web service, you have to configure your web service to use basicHttpBinding (SOAP 1.1) or wsHttpBinding (SOAP 1.2). For a secure connection, you have to configure SSL and to set the security mode to `Transport` with clientCredentialType `Basic` in the **web.config** file. The user credentials can be configured in Studio Pro as a **Call Web Service** activity as described in [Use HTTP authentication](call-web-service-action#http-headers).
+To connect to a Microsoft .NET web service, you have to configure your web service to use basicHttpBinding (SOAP 1.1) or wsHttpBinding (SOAP 1.2). For a secure connection, you have to configure SSL and to set the security mode to `Transport` with clientCredentialType `Basic` in the **web.config** file. The user credentials can be configured in Studio Pro as a **Call Web Service** activity as described in [Use HTTP authentication](/refguide/call-web-service-action/#http-headers).

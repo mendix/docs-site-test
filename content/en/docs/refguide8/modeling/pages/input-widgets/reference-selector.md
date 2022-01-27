@@ -1,21 +1,21 @@
 ---
 title: "Reference Selector"
-url: /refguide8/reference-selector
+url: /refguide8/reference-selector/
 parent: "input-widgets"
-menu_order: 70
+weight: 70
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/reference-selector.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/reference-selector.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-A **reference selector** is used to display and, optionally, allow the end-user to select the value of a one-to-one or one-to-many [association](associations) by selecting the associated object.
+A **reference selector** is used to display and, optionally, allow the end-user to select the value of a one-to-one or one-to-many [association](/refguide8/associations/) by selecting the associated object.
 
-A reference selector must be placed in a [data widget](data-widgets). The object(s) retrieved by this data widget must be at the *many* end of a one-to-many association, or at either end of a one-to-one association.
+A reference selector must be placed in a [data widget](/refguide8/data-widgets/). The object(s) retrieved by this data widget must be at the *many* end of a one-to-many association, or at either end of a one-to-one association.
 
 For example, if you have an employee they will work for one company. A company can have many employees. The entities **Employee** and **Company** have a one-to-many association, **Employee_Company**, which you can select by choosing a Company from the Employee through the reference selector.  
 
@@ -27,8 +27,8 @@ For example, the following reference allows the end-user to see, and set, the as
 
 ![](/attachments/refguide8/modeling/pages/input-widgets/reference-selector/reference-selector.png)
 
-{{% alert type="info" %}}
-If you only want to _display_ information, you can also use a [text box](text-box). This has the added advantage that you can choose an attribute from an object which is linked via several association steps.
+{{% alert color="info" %}}
+If you only want to _display_ information, you can also use a [text box](/refguide8/text-box/). This has the added advantage that you can choose an attribute from an object which is linked via several association steps.
 {{% /alert %}}
 
 ## 2 Properties
@@ -90,7 +90,7 @@ The formatting section applies only to the way that numeric attributes are displ
 
 #### 2.7.1 Select Using{#select-using}
 
-{{% alert type="warning" %}}The **Select using** property is not shown for native mobile pages. Native mobile pages only support the **Drop-down** method of selection{{% /alert %}}
+{{% alert color="warning" %}}The **Select using** property is not shown for native mobile pages. Native mobile pages only support the **Drop-down** method of selection{{% /alert %}}
 
 The reference selector allows the end-user to select objects by using either a drop-down menu or a pop-up page. If you choose to to use a page, the drop-down functionality will be replaced with a button to the right of the widget that will open a page selection pop-up window.
 
@@ -102,13 +102,13 @@ The reference selector allows the end-user to select objects by using either a d
 * The advantage of selecting using a [Drop-down](#drop-down) is that it is very efficient – the end-user can make a selection with fewer keystrokes, as all the information is on the same page
 * The advantage of selecting using a [Page](#page) is that the end-user can search the objects, and more information about each object can be displayed – if there are a lot of objects to select from (for example, more than 20), it is recommended that selecting is done using a page
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 There is a small difference in functionality between a **Drop-down** reference selector and a **Page** reference selector. When changing a reference selector item that also has a linked list included in a second drop-down menu or page, the **Page** reference selector is NOT cleared as it is with a **Drop-down** reference selector.
 {{% /alert %}}
 
 #### 2.7.1.1 Drop-Down {#drop-down}
 
-The drop-down reference selector is similar to a [drop-down](drop-down) for an enumeration, except that it allows users to choose from a list of objects which can be associated with the current object, rather than a list of values from an enumeration.
+The drop-down reference selector is similar to a [drop-down](/refguide8/drop-down/) for an enumeration, except that it allows users to choose from a list of objects which can be associated with the current object, rather than a list of values from an enumeration.
 
 The reference selector displays an attribute from the objects which can be linked to the current entity via an association. The chosen attribute should be unique for each object which can be associated, otherwise the end-user will have difficulty choosing the correct one. For example, you should display a company _name_ (which will hopefully be unique) rather than the company _region_ (which will probably not be unique to a company).
 
@@ -118,17 +118,17 @@ Select using a page, links a button to the right of the widget with a pop-up pag
 
 #### 2.7.2 Empty Option Caption
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This is only displayed if [Select using](#select-using) is set to **Drop-down**.
 {{% /alert %}}
 
-This property specifies the caption for the empty option in the drop-down reference selector shown to the end-user. This is a [translatable text](translatable-texts).
+This property specifies the caption for the empty option in the drop-down reference selector shown to the end-user. This is a [translatable text](/refguide8/translatable-texts/).
 
 Filling out the caption for an empty option improves the user experience of your application. It also helps end-users using screen-reader to operate the application easily.
 
 #### 2.7.3 Select Page{#select-page}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This is only displayed if [Select using](#select-using) is set to **Page**. Consequently, select page is not supported on native mobile pages.
 {{% /alert %}}
 
@@ -140,11 +140,11 @@ It is recommended that you generate a new page to show by right-clicking the wid
 
 ![Generate a select page by right-clicking the widget](/attachments/refguide8/modeling/pages/input-widgets/reference-selector/generate-select-page.png)
 
-See the [Show a Page](on-click-event#show-page) section of *On Click Event & Events Section*. Note that select pages must have a [pop-up layout](layout#layout-type).
+See the [Show a Page](/refguide8/on-click-event/#show-page) section of *On Click Event & Events Section*. Note that select pages must have a [pop-up layout](/refguide8/layout/#layout-type).
 
 **Page title**
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 **Page title** is only available in the **Properties** dialog box, not in the **Properties** pane.
 {{% /alert %}}
 
@@ -154,7 +154,7 @@ This is activated by checking the **Override page title** check box.
 
 #### 2.7.4 Go-To Page
 
-{{% alert type="warning" %}}Go-to page is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="warning" %}}Go-to page is not supported on native mobile pages.{{% /alert %}}
 
 The go-to page gives end users quick access to a more detailed overview of the currently selected object.
 
@@ -164,7 +164,7 @@ It is recommended that you generate a new go-to page by right-clicking the widge
 
 **Page title**
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 **Page title** is only available in the **Properties** dialog box, not in the **Properties** pane.
 {{% /alert %}}
 
@@ -196,7 +196,7 @@ You can limit the objects presented to the end-user by adding constraints. You w
 
 ![Edit constraints dialog box](/attachments/refguide8/modeling/pages/input-widgets/reference-selector/database-constraints.png)
 
-See the [constraints](database-source#constraints) section of *Database Source* for more information.
+See the [constraints](/refguide8/database-source/#constraints) section of *Database Source* for more information.
 
 **Sort Order**
 
@@ -212,7 +212,7 @@ The XPath constraint limits the list of objects that can be selected.
 
 For example, the XPath constraint `[InStock = true()]` on a reference selector for products will ensure that only products that are in stock are selectable.
 
-See [XPath Constraints](xpath-constraints) for more information on XPath constraints.
+See [XPath Constraints](/refguide8/xpath-constraints/) for more information on XPath constraints.
 
 **Constrained By**
 
@@ -225,7 +225,7 @@ _Example Domain model_
 
 In the domain model the order line has many-to-one associations to both category and product. These associations can be be edited using reference selectors. A third association, from product to category, describes the relation between those two entities – that is, that every product has an associated category.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Such a triangle-shaped part of the domain model is what makes using **constrained by** possible.
 {{% /alert %}}
 
@@ -251,7 +251,7 @@ The sort order specifies the order in which the items in the reference selector 
 
 #### 2.9.3 Microflow
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 A microflow can only be used if the selection is made using a drop-down.
 {{% /alert %}}
 
@@ -275,6 +275,6 @@ In microflow settings you can specify what parameters are passed to the microflo
 
 ## 3 Read More
 
-*   [Data view](data-view)
-*   [Entities](entities)
-*   [Associations](associations)
+*   [Data view](/refguide8/data-view/)
+*   [Entities](/refguide8/entities/)
+*   [Associations](/refguide8/associations/)

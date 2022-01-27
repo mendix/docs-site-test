@@ -24,7 +24,7 @@ Committing an object of this entity type results in a row being inserted into th
 
 Usually, a rollback reverts changes in memory since the last commit.
 
-However, performing a rollback on persistable autocommitted objects or objects with the state "NEW" deletes the row corresponding with this object from the database table for the associated entity. See [Object Activities](object-activities) for more information about autocommitted objects.
+However, performing a rollback on persistable autocommitted objects or objects with the state "NEW" deletes the row corresponding with this object from the database table for the associated entity. See [Object Activities](/refguide/object-activities/) for more information about autocommitted objects.
 
 ## 3 Non-Persistable Entities {#non-persistable}
 

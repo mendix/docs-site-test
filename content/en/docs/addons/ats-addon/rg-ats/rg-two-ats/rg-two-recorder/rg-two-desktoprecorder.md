@@ -13,7 +13,7 @@ ATS supports recording via two options:
 
 Both the web recorder and desktop recorder are maintaned. You can freely switch between them at any time in the **Project Preferences**.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 There is a known issue with the Desktop recorder that prevents it from communicating with ATS. We are working on resolving this issue asap. Because of this, at the moment, we recommend using the web recorder.
 {{% /alert %}}
 
@@ -35,4 +35,4 @@ For the desktop recorder, in most cases, no additional administrative privileges
 
 ### 2.4. Can I Use the ATS Helper in Combination with the Desktop Recorder?
 
-Yes. To install the [ATS Helper](rg-two-ats-helper), you first need to start a recording. Then, in the new window, open ATS and install the ATS Helper from the info dialog box via drag-and-drop.
+Yes. To install the [ATS Helper](/addons/ats-addon/rg-two-ats-helper/), you first need to start a recording. Then, in the new window, open ATS and install the ATS Helper from the info dialog box via drag-and-drop.

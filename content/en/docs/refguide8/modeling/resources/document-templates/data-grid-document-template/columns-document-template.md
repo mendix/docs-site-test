@@ -1,6 +1,6 @@
 ---
 title: "Columns (Document Template)"
-url: /refguide8/columns-document-template
+url: /refguide8/columns-document-template/
 parent: "data-grid-document-template"
 tags: ["studio pro"]
 aliases:
@@ -9,15 +9,15 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/columns-document-template.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/columns-document-template.pdf).
 {{% /alert %}}
 
 ## 1 Appearance Properties
 
 ### 1.1 Caption
 
-The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Internationalization](translatable-texts).
+The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Internationalization](/refguide8/translatable-texts/).
 
 ### 1.2 Enumeration Format (Only for Attributes of the Enumeration Type)
 

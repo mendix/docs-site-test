@@ -1,8 +1,8 @@
 ---
 title: "Test Mendix Applications Using Selenium IDE"
-url: /howto7/testing/testing-mendix-applications-using-selenium-ide
+url: /howto7/testing/testing-mendix-applications-using-selenium-ide/
 category: "Testing"
-menu_order: 40
+weight: 40
 tags: ["test", "testing", "selenium"]
 ---
 
@@ -29,7 +29,7 @@ Before starting with this how-to, make sure you have completed the following pre
 | Firefox | 50.1.0 |
 | Selenium IDE | 2.9.1.1 |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 All images, names, and steps in this how-to are based on these versions. When using other versions, the images and/or names on your screen may be different than what is used in this how-to.
 
@@ -155,7 +155,7 @@ You need to find the right locator, which will tell Selenium IDE which GUI eleme
 
 Congratulations! You have just created your second automated test.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Some widgets, like a grid or a list view, can show multiple items. Every item has the CSS class `mx-name-index-[indexNumber].` The index number starts at 0.
 {{% /alert %}}
 
@@ -216,15 +216,15 @@ Now the test steps will have `mx-name-` CSS selectors rather than the Selenium d
 
 ## 5 Read More
 
-* [How to Create Automated Tests with TestNG](create-automated-tests-with-testng)
-* [How to Test Microflows Using the UnitTesting Module](testing-microflows-using-the-unittesting-module)
-* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-* [How to Clear Warning Messages in Mendix](/howto7/monitoring-troubleshooting/clear-warning-messages)
-* [How to Test Web Services Using SoapUI](testing-web-services-using-soapui)
-* [How to Monitor Mendix Using JMX](/howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx)
-* [How to Debug Java Actions Remotely](/howto7/monitoring-troubleshooting/debug-java-actions-remotely)
-* [How to Log Levels](/howto7/monitoring-troubleshooting/log-levels)
-* [How to Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions)
+* [How to Create Automated Tests with TestNG](/howto7/testing/create-automated-tests-with-testng/)
+* [How to Test Microflows Using the UnitTesting Module](/howto7/testing/testing-microflows-using-the-unittesting-module/)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [How to Clear Warning Messages in Mendix](/howto7/monitoring-troubleshooting/clear-warning-messages/)
+* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui/)
+* [How to Monitor Mendix Using JMX](/howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [How to Debug Java Actions Remotely](/howto7/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [How to Log Levels](/howto7/monitoring-troubleshooting/log-levels/)
+* [How to Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions/)
 
 Learn more about this topic using the following helpful link:
 

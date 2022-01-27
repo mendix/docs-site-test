@@ -1,16 +1,16 @@
 ---
 title: "Build a Mendix Native Mobile App Locally using Mendix Native Builder"
-url: /howto8/mobile/native-build-locally
+url: /howto8/mobile/native-build-locally/
 parent: "build-native-apps"
-menu_order: 30
+weight: 30
 description: Describes how to build your first Mendix native mobile app locally using the Mendix Native Mobile Builder.
 tags: ["native", "mobile", "build", "local", "xcode", "android studio"]
 ---
 
 ## 1 Introduction
 
-{{% alert type="info" %}}
-For this how-to, Mendix Studio Pro v8.15.1 is required. If you are using an older Studio Pro version, please use [How to Build a Mendix Native Mobile App Locally Manually](native-build-locally-manually).
+{{% alert color="info" %}}
+For this how-to, Mendix Studio Pro v8.15.1 is required. If you are using an older Studio Pro version, please use [How to Build a Mendix Native Mobile App Locally Manually](/howto8/mobile/native-build-locally-manually/).
 {{% /alert %}}
 
 By default when building your native mobile app binaries, Mendix uses [Visual Studio App Center](https://appcenter.ms/sign-in?original_url=%2Fapps) as a service so that users can build without having to install tools like XCode or Android Studio. However, there are cases when using App Center is not allowed or possible. In those situations, you can build your apps locally.
@@ -37,35 +37,35 @@ For Android Builds:
 
 1.  Run the Mendix Native Mobile Builder from your project: 
 
-	{{/* % image_container width="350" % */}}![Start Mendix Native Mobile Builder](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/start-nbui.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Start Mendix Native Mobile Builder](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/start-nbui.png){{/* % /image_container % */}}
+
 1.  When the Mendix Native Mobile Builder launches you will see the home screen:
 
-	{{/* % image_container width="350" % */}}![Mendix Native Mobile Builder Home Screen](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/home-screen.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}	
+	{{/* % image_container width="350" % */}}![Mendix Native Mobile Builder Home Screen](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/home-screen.png){{/* % /image_container % */}}
+	
 1. Select **Build app for distribution**.
 1.  Fill in your app's name and the app identifier. The wizard provides defaults, but you might want to align the app identifier to use your company's reversed URL, or change the app name in some other way:
 
-	{{/* % image_container width="350" % */}}![Wizard App Details](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/wizard-app-details.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Wizard App Details](/attachments/howto8/mobile/native-mobile/build-native-apps/deploying-native-app/wizard-app-details.png){{/* % /image_container % */}}
+
 1. Click **Next Step** when ready.
 1.  In **Build type**, select the **Advanced** checkbox:
  
 	{{/* % image_container width="350" % */}}![Build type](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/wizard-buildtype-local.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}	
+	
 1. Select the folder where you want your project's Native Template to be created. Valid choices are either an empty directory or a directory with a Native Template.
 1. Disable any service you do not wish to use. App Center requires GitHub as a service to work.
 1. Click **Next Step** until you reach the end of the wizard. Feel free to configure any step as needed.  
 1. Select **Build type** from the side bar. 
 
 	{{/* % image_container width="350" % */}}![Build type](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/advanced-buildtype-local.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 	As you already selected to use the **Advanced** flow with this project it is not possible to switch back to just using **Cloud** services. But you can enable or disable any service as needed. If for instance GitHub is enabled, Native Mobile Builder will synchronize any local changes with your repository the next time you configure your project and commit your changes. But keep in mind that Mendix Native Builder is not a replacement of a Git client, and pushing local changes to a repository can add to the configuration time.
 
 1.  Select **Configure app locally** and fill in the information as needed for your app:
 
 	{{/* % image_container width="350" % */}}![Build type](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/advanced-configure-app-locally.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}	
+	
 1. Click **Configure locally**:
 
 The process will start and do the following:
@@ -91,18 +91,18 @@ In the sections below you can see the basic steps to get an app up and running o
 1. Select the `<Native Template root>/android` as the entry point for the app.
 1. After synchronizing the app your Android Studio should look something like this.**Do not accept any suggestions to update to latest Gradle or Kotlin version!**:
 
-	{{/* % image_container width="350" % */}}![Android Studio](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/as-home.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![Android Studio](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally-manually/as-home.png){{/* % /image_container % */}}
+
    Mendix native mobile apps make use of **Build Variants** to build a release app or a custom developer app. The idea of **Build Variants** is a Gradle build system concept for sharing the same codebase but delivering different experiences.
 
 1. Choose the **appstoreDebug** variant to be able to build and test your app on an emulator or connected device:
 
-	{{/* % image_container width="350" % */}}![Android Build Varients](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/as-build-variants.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}   
+	{{/* % image_container width="350" % */}}![Android Build Varients](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally-manually/as-build-variants.png){{/* % /image_container % */}}
+   
 1. After a short time the app should be synchronized and the play button (**Run Locally**) should be selectable. Select a device or create a device from the drop-down menu and click the play button (**Run Locally**) to build and install your app on the device:
 
-	{{/* % image_container width="250" % */}}![Android Build Toolbar](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/as-start-build.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+	{{/* % image_container width="250" % */}}![Android Build Toolbar](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally-manually/as-start-build.png){{/* % /image_container % */}}
+
 ### 4.2 Building an iOS App with XCode
 
 1. If you have not ran it yet, run `npm install` in the app root to install the required dependencies.
@@ -113,14 +113,14 @@ In the sections below you can see the basic steps to get an app up and running o
 1. Open *.xcodeworkspace* using XCode.
 1. Navigate to **Signing and Capabilities** and choose your **Team** from the drop-down menu:
 
-	{{/* % image_container width="350" % */}}![XCode Build Toolbar](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/xc-setup-team.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+	{{/* % image_container width="350" % */}}![XCode Build Toolbar](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally-manually/xc-setup-team.png){{/* % /image_container % */}}
+
 	As with the Android **Build Variants** the iOS app makes use of **Build Targets** to switch between building a custom developer app or a release app.
 
 1. From the drop-down menu choose **nativeTemplate** and the device you would like to run the app on, then click the play button (**Run Locally**) to start a build for your app:
 
-	{{/* % image_container width="250" % */}}![XCode Build Toolbar](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally/xc-start-build.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+	{{/* % image_container width="250" % */}}![XCode Build Toolbar](/attachments/howto8/mobile/native-mobile/build-native-apps/native-build-locally-manually/xc-start-build.png){{/* % /image_container % */}}
+
 After the build succeeds the app should be running on the selected device and connected to the runtime using the runtime URL you provided. 
 
 ## 5 Adding Dependencies{#adding-dependencies}
@@ -174,5 +174,5 @@ To remove dependencies which do not support auto-linking, do the following:
 
 ## 7 Read More
 
-* [How to Deploy Your First Mendix Native Mobile App](deploying-native-app)
-* [How to Create a Custom Developer App](how-to-devapps)
+* [How to Deploy Your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app/)
+* [How to Create a Custom Developer App](/howto8/mobile/how-to-devapps/)

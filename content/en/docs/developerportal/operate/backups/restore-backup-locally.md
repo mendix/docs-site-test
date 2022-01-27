@@ -3,6 +3,7 @@ title: "Restore a Backup Locally"
 url: /developerportal/operate/restore-backup-locally/
 # try using linktitle rather than having to rename everything to add the -a-
 linktitle: "restore backup locally"
+url: /developerportal/operate/restore-backup-locally/
 parent: "backups"
 weight: 40
 description: "This page describes how to restore a backup."
@@ -25,8 +26,8 @@ Restoring a backup locally can be useful if you want to test your cloud environm
 
 **Before starting this how-to, make sure you have completed the following prerequisites:**
 
-* [Download a backup](download-backup) that you want to restore locally
-* Install PostgreSQL on your local machine by downloading and running the [PostgreSQL Installer](https://www.postgresql.org/download/windows/); use the program defaults and choose a password:
+* [Download a backup](/developerportal/operate/download-backup/) that you want to restore locally
+* Install PostgreSQL version 12 or above (as you need pgAdmin version 4.12 or above) on your local machine by downloading and running the [PostgreSQL Installer](https://www.postgresql.org/download/windows/); use the program defaults and choose a password:
 
     ![](/attachments/developerportal/operate/backups/restore-backup-locally/postgres-password.png)
 
@@ -47,7 +48,7 @@ If your backup came from Mendix Cloud v4, it will have been compressed as a *.gz
 If you have downloaded a full backup, this will also have been archived as a *.tar* file which you need to extract to get your .backup file containing the database backup. The .backup file is in the **db** folder of the archive.
 {{% /alert %}}
 
-1. Start **pgAdmin 4** from the Windows start menu.
+1. Start **pgAdmin 4** from the Windows start menu. 
 2. Click the **+** in the Browser pane to open the **Servers > PostgreSQL 9.6** menu.
 3. Right-click **Databases** and **Create** a new database.
 
@@ -117,4 +118,4 @@ If you also want to restore the **FileDocuments**, you need to follow the follow
 
 ## 6 Read More
 
-* [Backups](backups)
+* [Backups](/developerportal/operate/backups/)

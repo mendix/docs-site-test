@@ -1,8 +1,8 @@
 ---
 title: "Denormalize Data to Improve Performance"
-url: /howto8/data-models/denormalize-data-to-improve-performance
+url: /howto8/data-models/denormalize-data-to-improve-performance/
 category: "Data Models"
-menu_order: 6
+weight: 6
 tags: ["studio pro"]
 ---
 
@@ -19,7 +19,7 @@ This how-to explains how you can improve performance by denormalizing data in Me
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Create a [basic data layer](create-a-basic-data-layer)
+* Create a [basic data layer](/howto8/data-models/create-a-basic-data-layer/)
 
 ## 3 Denormalization
 
@@ -30,7 +30,7 @@ To show the total order amount, there are two options:
 * First option: create a calculated attribute in the Customer entity to compute the total order amount
 	* The drawback of this option is that the calculated attributes bring down the performance of overview pages
 * Second option: create a persistable attribute in the Customer entity that stores the total order amount in the database – this is called denormalization
-	* The drawback of this option is that the redundant data needs to be kept in sync (but this is easy with Mendix [event handlers](/refguide8/event-handlers))
+	* The drawback of this option is that the redundant data needs to be kept in sync (but this is easy with Mendix [event handlers](/refguide8/event-handlers/))
 
 To enable denormalization, follow these steps:
 
@@ -144,12 +144,12 @@ Now the application is ready to store redundant data, but you still need to keep
 
 ## 5 Read More
 
-* [Work with Images & Files](working-with-images-and-files)
-* [Create a Basic Data Layer](create-a-basic-data-layer)
-* [Set Up Data Validation](setting-up-data-validation)
-* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-* [Stories](/developerportal/collaborate/stories)
-* [Define Access Rules Using XPath](/howto8/logic-business-rules/define-access-rules-using-xpath)
-* [Attributes](/refguide8/attributes)
-* [Event Handlers](/refguide8/event-handlers)
+* [Work with Images & Files](/howto8/data-models/working-with-images-and-files/)
+* [Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer/)
+* [Set Up Data Validation](/howto8/data-models/setting-up-data-validation/)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Stories](/developerportal/collaborate/stories/)
+* [Define Access Rules Using XPath](/howto8/logic-business-rules/define-access-rules-using-xpath/)
+* [Attributes](/refguide8/attributes/)
+* [Event Handlers](/refguide8/event-handlers/)
 

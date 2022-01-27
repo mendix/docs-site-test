@@ -7,7 +7,7 @@ weight: 20
 
 ## 1 Introduction
 
-In [Setting Up Your Development Environment](setting-up-your-development-environment), you set up all the development tools. Now you will create an SDK script that automatically bootstraps a new Mendix app.
+In [Setting Up Your Development Environment](/apidocs-mxsdk/mxsdk/setting-up-your-development-environment/), you set up all the development tools. Now you will create an SDK script that automatically bootstraps a new Mendix app.
 
 ## 2 Writing a First Script
 
@@ -52,7 +52,7 @@ After setting up all the prerequisites, you can start writing a first script tha
     main();
     ```
 
-3.  Replace the `username` and `apikey `variables (lines 7 and 8) with the email address of your Mendix account. From your "[Show Profile](https://sprintr.home.mendix.com/link/myprofile)" page, you can [generate an API Key](/apidocs-mxsdk/apidocs/authentication).
+3.  Replace the `username` and `apikey `variables (lines 7 and 8) with the email address of your Mendix account. From your "[Show Profile](https://sprintr.home.mendix.com/link/myprofile)" page, you can [generate an API Key](/apidocs-mxsdk/apidocs/authentication/).
 
 ### 2.1 Code Explanation
 
@@ -146,4 +146,4 @@ Note that the steps for project creation (line 3) and committing to the Team Ser
 
 ## 5 Next Step
 
-Continue with [How to Create the Domain Model](creating-the-domain-model).
+Continue with [How to Create the Domain Model](/apidocs-mxsdk/mxsdk/creating-the-domain-model/).

@@ -7,9 +7,9 @@ description: "These release notes showcase each release of the iOS and Android M
 tags: ["Native", "Android", "iOS", "Apple", "mendix 8"]
 ---
 
-For more information on the Make It Native app, see [Getting the Make It Native App](/refguide/getting-the-make-it-native-app).
+For more information on the Make It Native app, see [Getting the Make It Native App](/refguide/getting-the-make-it-native-app/).
 
-You can download the Make It Native app for [iOS](https://apps.apple.com/app/make-it-native/id1334081181) or [Android](/refguide/getting-the-make-it-native-app).
+You can download the Make It Native app for [iOS](https://apps.apple.com/app/make-it-native/id1334081181) or [Android](/refguide/getting-the-make-it-native-app/).
 
 ## Android 2.2.2 / iOS 2.2.2
 
@@ -62,7 +62,7 @@ From Mendix Studio Pro 8.10 and above, the responsibility of deciding when to sy
 **Release date: April 28th, 2020**
 
 {{% alert color="info" %}}
-Due to upgrades to our dependencies, neither version of Make It Native 2.0.0 is backwards compatible with versions older than Studio Pro 8.9. To keep working with older versions of Studio Pro, install a version from [the archive](/refguide8/getting-the-make-it-native-app#direct-links). 
+Due to upgrades to our dependencies, neither version of Make It Native 2.0.0 is backwards compatible with versions older than Studio Pro 8.9. To keep working with older versions of Studio Pro, install a version from [the archive](/refguide8/getting-the-make-it-native-app/#direct-links). 
 {{% /alert %}}
 
 ### New Features
@@ -77,7 +77,7 @@ Due to upgrades to our dependencies, neither version of Make It Native 2.0.0 is 
 {{% alert color="info" %}}
 If you are working in Mendix Studio Pro 8.8 or higher, you must update your Make It Native app to this version. 
 
-For older versions of Studio Pro please install the appropriate legacy app [here](/refguide/getting-the-make-it-native-app).
+For older versions of Studio Pro please install the appropriate legacy app [here](/refguide/getting-the-make-it-native-app/).
 {{% /alert %}}
 	
 ### New Features
@@ -87,7 +87,7 @@ For older versions of Studio Pro please install the appropriate legacy app [here
 ### Fixes
 
 * We updated the dependencies to remove the deprecated UIWebView library from iOS.
-* We [fixed an issue](/releasenotes/studio-pro/8.8#417) where a native mobile app crashed when debugging it using the **Touchable** option in the inspector overlay.
+* We [fixed an issue](/releasenotes/studio-pro/8.8/#417) where a native mobile app crashed when debugging it using the **Touchable** option in the inspector overlay.
 
 ## Android 1.2.3 / iOS 1.2.5
 
@@ -100,7 +100,7 @@ For older versions of Studio Pro please install the appropriate legacy app [here
 ### Known Issues
 
 * When using the **Touchable** option in the inspector overlay, the Mendix Native app crashes.
-	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8#417)
+	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8/#417)
 
 ## Android 1.2.2 / iOS 1.2.4
 
@@ -113,7 +113,7 @@ For older versions of Studio Pro please install the appropriate legacy app [here
 ### Known Issues
 
 * When using the **Touchable** option in the inspector overlay, the Mendix Native app crashes.
-	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8#417)
+	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8/#417)
 
 ## Android 1.2.1 / iOS 1.2.3
 
@@ -126,7 +126,7 @@ For older versions of Studio Pro please install the appropriate legacy app [here
 ### Known Issues
 
 * When using the **Touchable** option in the inspector overlay, the Mendix Native app crashes.
-	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8#417)
+	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8/#417)
 
 ## Android 1.2.1 / iOS 1.2.2
 
@@ -143,7 +143,7 @@ On Android:
 ### Known Issues
 
 * When using the **Touchable** option in the inspector overlay, the Mendix Native app crashes.
-	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8#417)
+	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8/#417)
 
 ## Android 1.2.0 / iOS 1.2.1
 
@@ -158,7 +158,7 @@ On iOS:
 ### Known Issues
 
 * When using the **Touchable** option in the inspector overlay, the Mendix Native app crashes.
-	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8#417)
+	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8/#417)
 
 ## Android 1.2.0 / iOS 1.2.0
 
@@ -166,7 +166,7 @@ On iOS:
 
 ### New Features
 
-* This version adds support for [Mendix Studio Pro 8.3](/releasenotes/studio-pro/8.3).
+* This version adds support for [Mendix Studio Pro 8.3](/releasenotes/studio-pro/8.3/).
 
 * The Make It Native app features a new **Toggle Inspector** developer menu option that exposes insights on styles and layouts. With this option you can debug styles, change them easily, and evaluate the results directly in the Make It Native app. We believe this option  greatly enhances the experience of creating feature-rich, engaging layouts for your Native Mendix Apps.
 
@@ -186,7 +186,7 @@ On Android:
 ### Known Issues
 
 * When using the **Touchable** option in the inspector overlay, the Mendix Native app crashes.
-	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8#417)
+	* Fixed in [Studio Pro 8.8](/releasenotes/studio-pro/8.8/#417)
 
 ## Android 1.1.0 / iOS 1.1.0
 
@@ -209,7 +209,7 @@ On Android:
 
 **Release date: August 1st, 2019**
 
-* This is the official release of the Android and iOS versions of the Make It Native app, with support for Mendix Studio Pro 8.0. Both Android and iOS versions allow you to preview and debug your locally running native app on any supported mobile platform. The apps are not backwards compatible with the Mendix Studio Pro 8.0.0 Beta versions of Mendix Studio Pro. For more information on Mendix Studio Pro 8.0, see the [8.0.0 Release Notes](/releasenotes/studio-pro/8.0).
+* This is the official release of the Android and iOS versions of the Make It Native app, with support for Mendix Studio Pro 8.0. Both Android and iOS versions allow you to preview and debug your locally running native app on any supported mobile platform. The apps are not backwards compatible with the Mendix Studio Pro 8.0.0 Beta versions of Mendix Studio Pro. For more information on Mendix Studio Pro 8.0, see the [8.0.0 Release Notes](/releasenotes/studio-pro/8.0/).
 
 ### Known Issues
 

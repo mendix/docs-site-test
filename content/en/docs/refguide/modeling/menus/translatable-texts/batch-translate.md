@@ -26,7 +26,7 @@ You can select one or more modules you want to use for batch translate. For exam
 
 Click **Select…** and check the modules you want to work on.
 
-![Module selection screen](/attachments/refguide/modeling/menus/translatable-texts/batch-translate/batch-replace-modules.png)
+![Module selection screen](/attachments/refguide/modeling/menus/translatable-texts/batch-replace/batch-replace-modules.png)
 
 The default is to work on all modules in the app.
 
@@ -53,7 +53,7 @@ In **Translation**, type new text that you want to use instead of the existing t
 
 ![](/attachments/refguide/modeling/menus/translatable-texts/batch-translate/batch-translate-translate.png)
 
-If you have two texts which are identical in the source language but different in the translation language, you will have to review and change these individually. This is not very common but imagine, for example, you have used `Order Lines` to both *describe the lines on an order* and to *label a button which sorts some lines*. See [Working in the Currently Selected Language](translatable-texts#selected-language) in *Language Menu* to find how to change individual texts.
+If you have two texts which are identical in the source language but different in the translation language, you will have to review and change these individually. This is not very common but imagine, for example, you have used `Order Lines` to both *describe the lines on an order* and to *label a button which sorts some lines*. See [Working in the Currently Selected Language](/refguide/translatable-texts/#selected-language) in *Language Menu* to find how to change individual texts.
 
 ## 3 Exporting & Importing Text{#export-import}
 

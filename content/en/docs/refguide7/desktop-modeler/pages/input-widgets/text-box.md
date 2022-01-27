@@ -1,6 +1,6 @@
 ---
 title: "Text Box"
-url: /refguide7/text-box
+url: /refguide7/text-box/
 parent: "input-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -8,7 +8,7 @@ parent: "input-widgets"
 
 A text box can be used to display and/or edit a textual value.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/input-widgets/text-box/text-box.png)
 This text box allows the end-user to set the name of the customer.
@@ -94,5 +94,5 @@ The placeholder text is shown when no text has been entered yet. It can be used 
 
 ## Read More
 
-*   [Data view](data-view)
-*   [Attributes](attributes)
+*   [Data view](/refguide7/data-view/)
+*   [Attributes](/refguide7/attributes/)

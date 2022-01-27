@@ -1,8 +1,8 @@
 ---
 title: "Pages"
-url: /studio7/page-editor
+url: /studio7/page-editor/
 description: "Describes the page editor in Mendix Studio."
-menu_order: 30
+weight: 30
 tags: ["studio", "page editor", "pages"]
 ---
 
@@ -15,9 +15,9 @@ To view the **Pages** of your app in Mendix Studio, click the **Pages** icon in 
 {{/* % image_container width="300" % */}}![](/attachments/studio7/page-editor/pages-icon.png)
 {{/* % /image_container % */}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-Studio supports apps based on the Atlas UI framework only. For details on Atlas UI, see [Atlas UI](/howto/front-end/atlas-ui).
+Studio supports apps based on the Atlas UI framework only. For details on Atlas UI, see [Atlas UI](/howto/front-end/atlas-ui/).
 
 {{% /alert %}}
 
@@ -27,10 +27,10 @@ Pages of Studio consist of the following components:
 
 * **Layouts** structure your pages. Every page is based on a layout. For example, **Atlas_Default** or **PopupLayout** are types of layouts you can choose when creating a page.
 * **Templates** – a starting point for creating new pages. Every time you create a new page, you select a template depending on data you want to display on your page and the way you want to display it: a list, a dashboard, a form. For example, **Dashboard Action Tiles**, **List Default**, **Master Detail** are types of templates. 
-* **Widgets** – single user-interface elements. For more information, see section [5.2. Widgets](#widgets) and [Widgets](page-editor-widgets).
+* **Widgets** – single user-interface elements. For more information, see section [5.2. Widgets](#widgets) and [Widgets](/studio7/page-editor-widgets/).
 * **Building blocks** – pre-configured  set of elements that speeds up the process of building your page and styling it. For more information, see section [5.1 Building Blocks](#building-blocks). 
 
-The components described above are powered by Atlas UI. For more information, see [Atlas UI](/howto/front-end/atlas-ui). 
+The components described above are powered by Atlas UI. For more information, see [Atlas UI](/howto/front-end/atlas-ui/). 
 
 ## 3 Performing Basic Functions {#page-editor-basic-functions}
 
@@ -122,11 +122,11 @@ This tab consists of the following:
 
 ### 5.1 Widgets {#widgets}
 
-Widgets are single user-interface elements that can be configured. You can [quickly configure](page-editor-widgets#quick-config) most of the non-custom widgets when adding them on a page. For more information, see [Widgets](page-editor-widgets). 
+Widgets are single user-interface elements that can be configured. You can [quickly configure](/studio7/page-editor-widgets/#quick-config) most of the non-custom widgets when adding them on a page. For more information, see [Widgets](/studio7/page-editor-widgets/). 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-You can update widgets in the [Widget Overview](settings-widget-overview). 
+You can update widgets in the [Widget Overview](/studio7/settings-widget-overview/). 
 
 {{% /alert %}}
 
@@ -159,7 +159,7 @@ If you want to read documentation on a particular building block and to know mor
 
 ![](/attachments/studio7/page-editor/info-icon-building-blocks.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Building Blocks categories may differ because Atlas UI can be customized using Studio Pro.
 
@@ -167,11 +167,11 @@ Building Blocks categories may differ because Atlas UI can be customized using S
 
 ### 5.2 Widgets {#widgets}
 
-Widgets are single user-interface elements that can be configured. You can [quickly configure](page-editor-widgets#quick-config) most of the non-custom widgets when adding them on a page. For more information, see [Widgets](page-editor-widgets). 
+Widgets are single user-interface elements that can be configured. You can [quickly configure](/studio7/page-editor-widgets/#quick-config) most of the non-custom widgets when adding them on a page. For more information, see [Widgets](/studio7/page-editor-widgets/). 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-You can update widgets in the [Widget Overview](settings-widget-overview). 
+You can update widgets in the [Widget Overview](/studio7/settings-widget-overview/). 
 
 {{% /alert %}}
 
@@ -185,4 +185,4 @@ The **Properties** tab displays the properties of the currently selected element
 
 ## 7 Read More
 
-* [Data View & List View Properties](page-editor-data-view-list-view)
+* [Data View & List View Properties](/studio7/page-editor-data-view-list-view/)

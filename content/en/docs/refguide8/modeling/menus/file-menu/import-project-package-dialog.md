@@ -1,14 +1,14 @@
 ---
 title: "Import Project Package"
-url: /refguide8/import-project-package-dialog
+url: /refguide8/import-project-package-dialog/
 parent: "file-menu"
-menu_order: 40
+weight: 40
 description: "Describes the Import Project Package process and Import Project Package dialog box."
 tags: ["studio pro", "import project package"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/import-project-package-dialog.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/import-project-package-dialog.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -25,7 +25,7 @@ To import a project package, do the following:
 
     ![Import Project Package Dialog Window](/attachments/refguide8/modeling/menus/file-menu/import-project-package-dialog/import-project-package.png)
 
-Project packages can be created using [Export Project Package](export-project-package-dialog).
+Project packages can be created using [Export Project Package](/refguide8/export-project-package-dialog/).
 
 ## 2 Where Should We Store Your App?
 
@@ -43,11 +43,11 @@ If you select to store your app in a new Mendix Team Server, a new Team Server p
 
 If you want to use an existing repository, select the app in the **Team Server App** option. Note that this works only when the existing repository is empty.
 
-For more information about the Mendix Team Server, see [Team Server](/developerportal/collaborate/team-server).
+For more information about the Mendix Team Server, see [Team Server](/developerportal/collaborate/team-server/).
 
 ### 2.2 Private Server {#private-server}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The **Private server** option is only available when support for other SVN servers is enabled: **Edit** >**Preferences** > **Advanced** > **Enable private version control**. 
 
@@ -65,5 +65,5 @@ Use this field to choose the directory where the project files of the app will b
 
 ## 4 Read More
 
-* [Team Server](/developerportal/collaborate/team-server)
-* [Export Project Package](export-project-package-dialog)
+* [Team Server](/developerportal/collaborate/team-server/)
+* [Export Project Package](/refguide8/export-project-package-dialog/)

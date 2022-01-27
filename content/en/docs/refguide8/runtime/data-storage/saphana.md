@@ -1,8 +1,8 @@
 ---
 title: "SAP HANA"
-url: /refguide8/saphana
+url: /refguide8/saphana/
 parent: "data-storage"
-menu_order: 70
+weight: 70
 tags: ["studio pro"]
 ---
 
@@ -22,9 +22,9 @@ For example, you have two associated entities — **Person** and **Address** —
 
 SAP HANA does not support unlimited strings or strings with a specified length greater than 5000 characters when using the equal (`=`) or not equal (`!=`) operators in XPath constraints. However, it does support functions including `contains()`, `starts-with()`, and `ends-with()`.
 
-See also [Case-Sensitive Database Behavior](case-sensitive-database-behavior).
+See also [Case-Sensitive Database Behavior](/refguide8/case-sensitive-database-behavior/).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 In versions of Mendix below 8.11.0, string comparisons in SAP HANA were case sensitive.
 {{% /alert %}}
 

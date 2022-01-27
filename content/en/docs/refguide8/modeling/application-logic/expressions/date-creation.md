@@ -1,20 +1,20 @@
 ---
 title: "Date Creation"
-url: /refguide8/date-creation
+url: /refguide8/date-creation/
 parent: "expressions"
-menu_order: 90
+weight: 90
 tags: ["studio pro", "expression", "date creation", "expressions"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/date-creation.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/date-creation.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-Dates can be created with the `dateTime` and `dateTimeUTC` functions. The difference between them is that  `dateTime` uses the calendar of the session used in the function call, and `dateTimeUTC` uses the UTC calendar. The system session runs as UTC by default, except for scheduled events, which can be configured in the [Scheduled Event Time Zone](project-settings#scheduled) section of **Project Settings**.
+Dates can be created with the `dateTime` and `dateTimeUTC` functions. The difference between them is that  `dateTime` uses the calendar of the session used in the function call, and `dateTimeUTC` uses the UTC calendar. The system session runs as UTC by default, except for scheduled events, which can be configured in the [Scheduled Event Time Zone](/refguide8/project-settings/#scheduled) section of **Project Settings**.
 
-This function does not accept variable or attribute parameters, only fixed values. To create a date using parameters, use the [parseDateTime](parse-and-format-date-function-calls#parsedatetime-utc) function.
+This function does not accept variable or attribute parameters, only fixed values. To create a date using parameters, use the [parseDateTime](/refguide8/parse-and-format-date-function-calls/#parsedatetime-utc) function.
 
 ## 2 Values
 

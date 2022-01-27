@@ -71,4 +71,4 @@ When designing the interfaces of your solutions, you should do the following:
 
 ### 3.3 Applying IP Protection to Make the Common Core Immutable
 
-IP protection can be used to make parts of the application model immutable by customers. For practical guidance, see [IP Protection](sol-ip-protection).
+IP protection can be used to make parts of the application model immutable by customers. For practical guidance, see [IP Protection](/appstore/creating-content/sol-ip-protection/).

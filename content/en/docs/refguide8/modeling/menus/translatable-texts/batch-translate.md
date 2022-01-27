@@ -1,13 +1,13 @@
 ---
 title: "Batch Translate"
-url: /refguide8/batch-translate
+url: /refguide8/batch-translate/
 parent: "translatable-texts"
-menu_order: 30
+weight: 30
 tags: ["studio pro", "translation", "languages", "translatable text"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/batch-translate.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/batch-translate.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -30,7 +30,7 @@ You can select one or more modules you want to use for batch translate. For exam
 
 Click **Select…** and check the modules you want to work on.
 
-![Module selection screen](/attachments/refguide8/modeling/menus/translatable-texts/batch-translate/batch-replace-modules.png)
+![Module selection screen](/attachments/refguide8/modeling/menus/translatable-texts/batch-replace/batch-replace-modules.png)
 
 The default is to work on all modules in the app.
 
@@ -47,7 +47,7 @@ The **#** column shows the number of times it occurs in the selected module(s).
 
 If you select a line, you can look in the **Show occurrence** section to see the **Object** containing the text and the **Document** it appears in. Double-clicking or clicking **Show occurrence** will open the document and select the object so you can easily see the context.
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 Tip: move the dialog box to one side to get a better look at the document.
 {{% /alert %}}
 
@@ -57,7 +57,7 @@ In **Translation**, type new text that you want to use instead of the existing t
 
 ![](/attachments/refguide8/modeling/menus/translatable-texts/batch-translate/batch-translate-translate.png)
 
-If you have two texts which are identical in the source language but different in the translation language, you will have to review and change these individually. This is not very common but imagine, for example, you have used `Order Lines` to both *describe the lines on an order* and to *label a button which sorts some lines*. See [Working in the Currently Selected Language](translatable-texts#selected-language) in *Language Menu* to find how to change individual texts.
+If you have two texts which are identical in the source language but different in the translation language, you will have to review and change these individually. This is not very common but imagine, for example, you have used `Order Lines` to both *describe the lines on an order* and to *label a button which sorts some lines*. See [Working in the Currently Selected Language](/refguide8/translatable-texts/#selected-language) in *Language Menu* to find how to change individual texts.
 
 ## 3 Exporting & Importing Text{#export-import}
 
@@ -94,6 +94,6 @@ This does the following:
 
 Changes will only be made if you click **Translate**.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 The formats of the Excel files for batch translate and batch replace are similar. You will be warned if you try to import a batch replace file or a batch translate file with the incorrect languages but you can still import it if you ignore the warning.
 {{% /alert %}}

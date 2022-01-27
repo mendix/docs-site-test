@@ -66,7 +66,7 @@ The 3D Viewer app service includes a few 3D widgets. These are some limitations 
 
 ### 1.4 Prerequisites
 
-This app service can only be used with Studio Pro 8 versions starting with [8.15.1](../../releasenotes/studio-pro/8.15#8151).
+This app service can only be used with Studio Pro 8 versions starting with [8.15.1](/releasenotes/studio-pro/8.15/#8151).
 
 ## 2 Installation
 
@@ -94,7 +94,7 @@ If you app does not have an after-startup microflow set,  follow these steps:
 1. Create a **Startup** microflow and add the **Viewer3D/USE_ME/VisServerAction** Java action to it.
 2. Make sure the java action parameter **Http endpoint** is set to `Expression:@Viewer3D.HttpEndpoint`.
 3. Set the return type of the microflow to **Boolean** with a **Value** of **true**.
-4.  Set this microflow as the **After startup** step via **Project Settings** > **Runtime** > [After startup](/refguide8/project-settings#after-startup).
+4.  Set this microflow as the **After startup** step via **Project Settings** > **Runtime** > [After startup](/refguide8/project-settings/#after-startup).
 
 If your project already has a microflow set to execute after startup, you need to extend it with the **Viewer3D/USE_ME/VisServerAction** Java action and configure it as described in the above steps. 
 
@@ -138,7 +138,7 @@ The **HttpEndpoint** constant with the default value **visualization** is used t
 
 The **ModelSourceType** constant with the value **Mendix** is used to signify the model source. You can use this constant to restrict the value of the **Data source** parameter in the **Uploader** widget, the **Model source type** parameter in the **Viewer** widget, or the value of the **Source** attribute in the **ModelDocument** entity.
 
-The **LicenseToken** constant is used to provide a valid 3DViewer license token for the app that uses 3DViewer to be successfully deployed to [Mendix Licensed Cloud Node](/developerportal/deploy/mendix-cloud-deploy) or your ownrenvironment. As 3DViewer is a commercial product and subject to a subscription fee, to be able to use the 3DViewer functionalities in a deployed app, you will need a valid license token, and you need to set the value of the **LicenseToken** constant to that license token in the deployment environment setting.
+The **LicenseToken** constant is used to provide a valid 3DViewer license token for the app that uses 3DViewer to be successfully deployed to [Mendix Licensed Cloud Node](/developerportal/deploy/mendix-cloud-deploy/) or your ownrenvironment. As 3DViewer is a commercial product and subject to a subscription fee, to be able to use the 3DViewer functionalities in a deployed app, you will need a valid license token, and you need to set the value of the **LicenseToken** constant to that license token in the deployment environment setting.
 
 However, if you only plan to try how 3DViewer works  (meaning, build and run an app that uses 3DViewer locally in Studio Pro or deploy to a Mendix Free App environment), you do not need to subscribe to get a license token. Therefore, you do not need to set a value for the **LicenseToken** constant, just leave it empty.
 
@@ -218,7 +218,7 @@ For this widget to visualize a model correctly, set the following properties:
 	* **On progress change** – by binding a String  attribute to the **Progress status** property, you can obtain the current model loading status; by binding a Decimal attribute to the **Progress percentage** property, you can obtain the current model loading percentage; you can also add custom actions triggered by this change
 	* **On load** – by binding a Boolean attribute to the **Loaded** property, you can obtain information about if the product structure is loaded; you can also add custom actions triggered by this change
 
-3D Viewer also exposes some APIs on the Viewer for you to invoke and implement custom logic that suits your needs. To receive information on how to use the Viewer APIs and other details, contact [Mendix Support](https://support.mendix.com/hc/en-us) and raise a ticket for 3DViewer development team.
+3D Viewer also exposes some APIs on the Viewer for you to invoke and implement custom logic that suits your needs. For information on how to use the 3D Viewer APIs and other details, see [Use the 3D Viewer API](/appstore/app-services/3d-viewer-api/).
 
 #### 4.6.2 Panel Widgets {#panel-widgets}
 
@@ -333,7 +333,7 @@ Loading progress in the Viewer widget can be obtained via the **Progress status*
 
 Follow these steps to display the model loading progress:
 
-1. Create an entity called *PageObject*, add a decimal attribute called *LoadingProgress* with a default value of `= 0` (as the [Progress Bar](../widgets/progress-bar) widget expects a decimal value).
+1. Create an entity called *PageObject*, add a decimal attribute called *LoadingProgress* with a default value of `= 0` (as the [Progress Bar](/appstore/widgets/progress-bar/) widget expects a decimal value).
 2. Create a nanoflow called *createPageObject* that returns a **PageObject** object.  
 3. Wrap the [Container3D](#container3d) widget with a data view and set the **Data source** of the data view to the **createPageObject** nanoflow.
 4.  Set the value of the **LoadingProgress** attribute by setting the **Progress percentage** property:
@@ -359,10 +359,10 @@ Usually, you will also need to manage the models that are uploaded and stored in
 
 #### 5.4.1 Building a Model List
 
-The Mendix native [list view](/refguide8/list-view) can be used to display the model list by following these steps:
+The Mendix native [list view](/refguide8/list-view/) can be used to display the model list by following these steps:
 
 1. Use the **View3D/USE_ME/GetModelListFromMendix** nanoflow or copy it to your app module. A list of **ModelDocument** objects will be returned after calling the nanoflow.
-2. Add a [pop-up page](../../refguide8/page-properties#pop-up) to display the model list via a button click or another event of your choice.
+2. Add a [pop-up page](/refguide8/page-properties/#pop-up) to display the model list via a button click or another event of your choice.
 3. Place a list view in the page and set the **GetModelListFromMendix** nanoflow as the **Data source**.
 4. As **GetModelListFromMendix** requires a **Pagination** parameter input, wrap the list view with a data view. Then, create a nanoflow called *CreatePaginationObject* nanoflow and set that nanoflow as the list view's **Data source**.
 5.  Fill in the list item with the information you are interested in:
@@ -398,7 +398,7 @@ There might be some models that you do not want in the database, so you can dele
 Follow these steps to delete a model from the database:
 
 1. Use the **Viewer3D/USE_ME/DeleteModelFromMendix** microflow directly or copy it to one of your app modules.
-2.  DeleteModelFromMendix expects a **ModelDocument** (which represents a model stored in Mendix file storage) as an input parameter. After successful execution, the model will be deleted from Mendix file storage. In the previous steps, a model list was built, each list item of which is a ModelDocument. For a model list item, add a [Delete button](/refguide8/button-widgets).
+2.  DeleteModelFromMendix expects a **ModelDocument** (which represents a model stored in Mendix file storage) as an input parameter. After successful execution, the model will be deleted from Mendix file storage. In the previous steps, a model list was built, each list item of which is a ModelDocument. For a model list item, add a [Delete button](/refguide8/button-widgets/).
 3.  Create a nanoflow called *DeleteModel* and set **ModelDocument** as the input parameter. Then, call the **DeleteModelFromMendix** microflow and commit the **ModelDocument**:
 
 	![deletemodel-nanoflow](/attachments/appstore/app-services/3d-viewer/deletemodel-nanoflow.jpg)
@@ -545,8 +545,8 @@ When you want to deploy your app to a licensed Mendix Cloud node or an on-premis
 On the [3D Viewer](https://marketplace.mendix.com/link/component/118345) page, click **Subscribe** to go to the subscription order page and follow these steps:
 
 1. Fill in technical contact information (first name, last name, email address), the subscription amount, billing account information, and other required information. 
-2. Upon successful order creation, if you are the app's [Technical Contact](/developerportal/collaborate/app-roles#technical-contact), you will receive an order confirmation email. 
-3. Click the link in the email to the Marketplace [Subscriptions](/appstore/general/app-store-overview#subscriptions) page and log in there.
+2. Upon successful order creation, if you are the app's [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact), you will receive an order confirmation email. 
+3. Click the link in the email to the Marketplace [Subscriptions](/appstore/general/app-store-overview/#subscriptions) page and log in there.
 4. In the list of your organization's subscriptions, click the **3D Viewer** subscription link to open the subscription details page.
 5. Click **Create Binding Keys** , give the key a meaningful name (which should include the name of the app where you are using 3D Viewer), then click **Create Keys**.
 6. When the **LicenseToken** key is generated, copy and save it for later use in your app.
@@ -555,7 +555,7 @@ On the [3D Viewer](https://marketplace.mendix.com/link/component/118345) page, c
 
 #### 6.3.1 In Studio Pro
 
-In Mendix Studio Pro, go to [Project Settings](/refguide8/project-settings) and follow these steps:
+In Mendix Studio Pro, go to [Project Settings](/refguide8/project-settings/) and follow these steps:
 
 1. In the **Configurations** tab, click **Edit**. 
 2. In the **Constants** tab of the dialog box, create a new constant with the predefined constant **Viewer3D.LicenseToken**.
@@ -568,7 +568,7 @@ In Mendix Studio Pro, go to [Project Settings](/refguide8/project-settings) and 
 
 #### 6.3.2 In Developer Portal
 
-Alternatively, you can add or update LicenseToken as a constant in the [Developer Portal](/developerportal/deploy/environments-details).
+Alternatively, you can add or update LicenseToken as a constant in the [Developer Portal](/developerportal/deploy/environments-details/).
 
 Before you deploy your app, configure the app **Constants** in the deployment package
 

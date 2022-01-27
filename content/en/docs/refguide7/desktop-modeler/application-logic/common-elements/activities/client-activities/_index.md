@@ -1,29 +1,29 @@
 ---
 title: "Client Activities"
-url: /refguide7/client-activities
+url: /refguide7/client-activities/
 parent: "activities"
 ---
 
 ## Close Page
 
-See [Close Page](close-page).
+See [Close Page](/refguide7/close-page/).
 
 ## Download File
 
-See [Download File](download-file).
+See [Download File](/refguide7/download-file/).
 
 ## Show Page
 
-See [Show Page](show-page).
+See [Show Page](/refguide7/show-page/).
 
 ## Show Home Page
 
-See [Show home page](show-home-page).
+See [Show home page](/refguide7/show-home-page/).
 
 ## Show Message
 
-See [Show Message](show-message).
+See [Show Message](/refguide7/show-message/).
 
 ## Validation Feedback
 
-See [Validation Feedback](validation-feedback).
+See [Validation Feedback](/refguide7/validation-feedback/).

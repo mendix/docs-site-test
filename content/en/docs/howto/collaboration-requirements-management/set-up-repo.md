@@ -8,7 +8,7 @@ tags: ["studio pro", "GitHub", "repository", "repo"]
 
 ## 1 Introduction
 
-In this document, you will learn best practices in how to set up a GitHub repository to publish an Marketplace item. The repository will contain your development content and can be shared for others to contribute to an application or [Marketplace component](/appstore/general/share-app-store-content).
+In this document, you will learn best practices in how to set up a GitHub repository to publish an Marketplace item. The repository will contain your development content and can be shared for others to contribute to an application or [Marketplace component](/appstore/general/share-app-store-content/).
 
 ## 2 Prerequisites
 
@@ -39,6 +39,6 @@ You should link this to the upcoming Mendix Marketplace release by mentioning th
 
 ## 6 Read More
 
-*   [Contributing to a GitHub repository](contribute-to-a-github-repository)
-*   [Version Control](/refguide/version-control)
-*   [Sharing the Development Database](sharing-the-development-database)
+*   [Contributing to a GitHub repository](/howto/collaboration-requirements-management/contribute-to-a-github-repository/)
+*   [Version Control](/refguide/version-control/)
+*   [Sharing the Development Database](/howto/collaboration-requirements-management/sharing-the-development-database/)

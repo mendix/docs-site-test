@@ -40,7 +40,7 @@ There are six folders in the example above, and the database is structured and t
 
 ![](/attachments/refguide/modeling/domain-model/associations/query-over/query-over-example-database.png)
 
-For more information on how domain models are implemented in databases, see the [Implementation](domain-model#implementation) section of *Domain Model*.
+For more information on how domain models are implemented in databases, see the [Implementation](/refguide/domain-model/#implementation) section of *Domain Model*.
 
 ### 2.1 Retrieving the SubFolder(s) (Children) from a Folder (Parent)
 
@@ -52,7 +52,7 @@ This is implemented using the following XPath constraint: `[QueryOver.Folder_Sub
 ![](/attachments/refguide/modeling/domain-model/associations/query-over/query-over-retrieve-normal.png)
 {{/* % /image_container % */}}
 
-If the $ChosenFolder object has **Code** `202002141322015` and **Name** `SubFolder2` we have chosen the folder with **ID** `3`. The two folders in the left-hand table, highlighted in orange, will be returned. The platform applies the constraint by default on the right/parent side of the association and returns the relevant ChildFolder(s).
+If the $ChosenFolder object has **Code** `202002141355334` and **Name** `SubFolder2` we have chosen the folder with **ID** `3`. The two folders in the left-hand table, highlighted in orange, will be returned. The platform applies the constraint by default on the right/parent side of the association and returns the relevant ChildFolder(s).
 
 ![](/attachments/refguide/modeling/domain-model/associations/query-over/query-over-retrieve-normal-tables.png)
 
@@ -74,7 +74,7 @@ The `[reversed()]` expression can only be applied on self-references. When an as
 ![](/attachments/refguide/modeling/domain-model/associations/query-over/query-over-retrieve-reversed.png)
 {{/* % /image_container % */}}
 
-If the $ChosenFolder object has **Code** `202002141322015` and **Name** `SubFolder2` we have chosen the folder with **ID** `3`. The folder in the right-hand table, highlighted in orange, will be returned. The platform applies the constraint in reverse, on the left/child side of the association and returns the relevant ParentFolder.
+If the $ChosenFolder object has **Code** `202002141355334` and **Name** `SubFolder2` we have chosen the folder with **ID** `3`. The folder in the right-hand table, highlighted in orange, will be returned. The platform applies the constraint in reverse, on the left/child side of the association and returns the relevant ParentFolder.
 
 ![](/attachments/refguide/modeling/domain-model/associations/query-over/query-over-retrieve-reversed-tables.png)
 
@@ -96,7 +96,7 @@ If the $ChosenFolder object is `SubFolder2`, you will retrieve all the **File** 
 
 ## 3 Associations to Specializations
 
-In the special case of self-reference when a one-to-many association is with a specialization of itself, you cannot retrieve [by association](retrieve#source).
+In the special case of self-reference when a one-to-many association is with a specialization of itself, you cannot retrieve [by association](/refguide/retrieve/#source).
 
 Here is an example inheritance:
 

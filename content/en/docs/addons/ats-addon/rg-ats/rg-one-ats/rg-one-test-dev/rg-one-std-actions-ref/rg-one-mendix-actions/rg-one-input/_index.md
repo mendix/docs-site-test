@@ -6,13 +6,13 @@ parent: "rg-one-mendix-actions"
 
 This section contains these documents:
 
-* [Assert Checkbox Value](rg-one-assert-checkbox-value)
-* [Assert Value](rg-one-assert-value)
-* [Dropdown Has Option](rg-one-dropdown-has-option)
-* [Get Checkbox Value](rg-one-get-checkbox-value)
-* [Get Index](rg-one-get-index)
-* [Get Value](rg-one-get-value)
-* [Set Checkbox Value](rg-one-set-checkbox-value)
-* [Set Value (by index)](rg-one-set-value-by-index)
-* [Set Value](rg-one-set-value)
-* [Toggle Checkbox Value](rg-one-toggle-checkbox-value)
+* [Assert Checkbox Value](/addons/ats-addon/rg-one-assert-checkbox-value/)
+* [Assert Value](/addons/ats-addon/rg-one-assert-value/)
+* [Dropdown Has Option](/addons/ats-addon/rg-one-dropdown-has-option/)
+* [Get Checkbox Value](/addons/ats-addon/rg-one-get-checkbox-value/)
+* [Get Index](/addons/ats-addon/rg-one-get-index/)
+* [Get Value](/addons/ats-addon/rg-one-get-value/)
+* [Set Checkbox Value](/addons/ats-addon/rg-one-set-checkbox-value/)
+* [Set Value (by index)](/addons/ats-addon/rg-one-set-value-by-index/)
+* [Set Value](/addons/ats-addon/rg-one-set-value/)
+* [Toggle Checkbox Value](/addons/ats-addon/rg-one-toggle-checkbox-value/)

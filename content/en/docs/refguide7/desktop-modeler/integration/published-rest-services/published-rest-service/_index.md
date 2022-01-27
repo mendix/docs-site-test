@@ -1,13 +1,13 @@
 ---
 title: "Published REST Service"
-url: /refguide7/published-rest-service
+url: /refguide7/published-rest-service/
 parent: "published-rest-services"
-menu_order: 10
+weight: 10
 description: "Configuration options for a published REST service"
 tags: ["published REST", "service", "reserved URL prefixes", "swagger", "security", "CORS", "resources", "operation", "how-to"]
 ---
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The **published REST service** feature was introduced in version 7.10.0.
 
@@ -25,26 +25,26 @@ This document describes the published REST service configuration options shown w
 
 ### 2.1 Service Name
 
-Service name uniquely identifies the service in the app. It is also displayed in [OpenAPI (Swagger) documentation page](open-api).
+Service name uniquely identifies the service in the app. It is also displayed in [OpenAPI (Swagger) documentation page](/refguide7/open-api/).
 
 When service is initially created, service name is used in the creation of the default location for the service. If the service name contains any spaces or special characters, they will be replaced with the `_` character in the service location.
 
 ### 2.2 Version
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The **Version** feature was introduced in version 7.12.0.
 
 {{% /alert %}}
 
-Version is used to display version information in [OpenAPI (Swagger) documentation page](open-api). You can set any string in the version field, but it is recomended to follow [semantic versioning](https://semver.org/) scheme.
+Version is used to display version information in [OpenAPI (Swagger) documentation page](/refguide7/open-api/). You can set any string in the version field, but it is recomended to follow [semantic versioning](https://semver.org/) scheme.
 
 By default, version is set to "1.0.0".
 
 <a name="location"></a>
 ### 2.3 Location
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 **Location** is editable in Mendix versions 7.12.0 and above.
 
@@ -75,18 +75,18 @@ Following URL prefixes are reserved and are not allowed to be used in location:
 * `p/`
 * `reload/`
 
-When your application is running, you can click the location to open the [interactive documentation page](published-rest-services#interactive-documentation).
+When your application is running, you can click the location to open the [interactive documentation page](/refguide7/published-rest-services/#interactive-documentation).
 
 <a name="public-documentation"></a>
 
 ### 2.3 Public Documentation
 
-The public documentation is used in the service's [OpenAPI 2.0 (Swagger) Documentation](open-api). You can use [GitHub-flavored markdown](gfm-syntax) for rich text.
+The public documentation is used in the service's [OpenAPI 2.0 (Swagger) Documentation](/refguide7/open-api/). You can use [GitHub-flavored markdown](/refguide7/gfm-syntax/) for rich text.
 
 <a name="export-swagger-json"></a>
 ### 2.5 Export swagger.json
 
-To save a service's [OpenAPI (Swagger) documentation](open-api) somewhere on your machine, simply right-click the service in the **Project Explorer** and select **Export swagger.json** (or just click the **Export swagger.json** button, depending on your Modeler version). This is a machine-readable file in the [OpenAPI 2.0 file format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md). Most API tools support this format.
+To save a service's [OpenAPI (Swagger) documentation](/refguide7/open-api/) somewhere on your machine, simply right-click the service in the **Project Explorer** and select **Export swagger.json** (or just click the **Export swagger.json** button, depending on your Modeler version). This is a machine-readable file in the [OpenAPI 2.0 file format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md). Most API tools support this format.
 
 When the app is running, this file is available under `/rest-doc/servicename/swagger.json`.
 
@@ -95,7 +95,7 @@ When the app is running, this file is available under `/rest-doc/servicename/swa
 <a name="authentication"></a>
 ### 3.1 Requires Authentication
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The **No Authentication** feature was introduced in version 7.11.0. In earlier versions, it was always **Username and password**.
 
@@ -123,18 +123,18 @@ If authentication is required, you can select which authentication methods you w
     ```
 * Select **Custom** to authenticate using a microflow. This microflow is called every time a user want to access a resource.
 
-Check more than one authentication method to have the service try each of them. It will first try **Custom** authentication, then **Username and password**, and then **Active session**. For more details, see [Published REST Routing](published-rest-routing).
+Check more than one authentication method to have the service try each of them. It will first try **Custom** authentication, then **Username and password**, and then **Active session**. For more details, see [Published REST Routing](/refguide7/published-rest-routing/).
 
 <a name="authentication-microflow"></a>
 ### 3.3 Microflow
 
 Specify which microflow to use for custom authentication.
 
-Select **Parameters** to see the [list of parameters passed to the authentication microflow](published-rest-authentication-parameter). In that window you can indicate whether the authentication microflow's parameters come from request headers or from the query string.
+Select **Parameters** to see the [list of parameters passed to the authentication microflow](/refguide7/published-rest-authentication-parameter/). In that window you can indicate whether the authentication microflow's parameters come from request headers or from the query string.
 
-The microflow may take an [HttpRequest](http-request-and-response-entities#http-request) as a parameter, so it can inspect the incoming request.
+The microflow may take an [HttpRequest](/refguide7/http-request-and-response-entities/#http-request) as a parameter, so it can inspect the incoming request.
 
-The microflow may also take an [HttpResponse](http-request-and-response-entities#http-response) as a parameter. When the microflow sets the status code of this response to something other then **200**, this value is returned and the operation will not be executed. Any headers set on the response are returned (except when the microflow returns an empty user).
+The microflow may also take an [HttpResponse](/refguide7/http-request-and-response-entities/#http-response) as a parameter. When the microflow sets the status code of this response to something other then **200**, this value is returned and the operation will not be executed. Any headers set on the response are returned (except when the microflow returns an empty user).
 
 The authentication microflow should return a User.
 
@@ -145,9 +145,9 @@ There are three possible outcomes of the authentication microflow
 
 ### 3.4 Allowed Roles
 
-The allowed roles define which [module role](module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
+The allowed roles define which [module role](/refguide7/module-role/) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Web service users cannot access REST services.
 {{% /alert %}}
 
@@ -155,17 +155,17 @@ Web service users cannot access REST services.
 
 Check this box when your service needs to be available on websites other than your own.
 
-Click the [Settings](cors-settings) button to specify this access in more detail (for instance, which websites are allowed to access the service).
+Click the [Settings](/refguide7/cors-settings/) button to specify this access in more detail (for instance, which websites are allowed to access the service).
 
 ## 5 Resources
 
-A REST service exposes a number of [resources](published-rest-resource). On a resource you can define GET, PUT, POST, PATCH, DELETE, HEAD and OPTIONS operations.
+A REST service exposes a number of [resources](/refguide7/published-rest-resource/). On a resource you can define GET, PUT, POST, PATCH, DELETE, HEAD and OPTIONS operations.
 
-You can drag an entity or a message definition onto this list to [generate a complete resource](generate-rest-resource).
+You can drag an entity or a message definition onto this list to [generate a complete resource](/refguide7/generate-rest-resource/).
 
 ## 6 Operations
 
-When you select a resource, you see the [operations](published-rest-operation) that are defined for that resource.
+When you select a resource, you see the [operations](/refguide7/published-rest-operation/) that are defined for that resource.
 
 Resources and Operations are appended to [Location](#location) to form a URL on which they can be accessed.
 
@@ -179,4 +179,4 @@ Resources and Operations are appended to [Location](#location) to form a URL on 
 
 ## 8 Read More
 
-For more information on which operation gets executed for a given request URL, see [Published REST Routing](published-rest-routing).
+For more information on which operation gets executed for a given request URL, see [Published REST Routing](/refguide7/published-rest-routing/).

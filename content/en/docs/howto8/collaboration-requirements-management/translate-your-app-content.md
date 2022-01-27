@@ -1,8 +1,8 @@
 ---
 title: "Translate Your App Content"
-url: /howto8/collaboration-requirements-management/translate-your-app-content
+url: /howto8/collaboration-requirements-management/translate-your-app-content/
 category: "Collaboration"
-menu_order: 50
+weight: 50
 tags: ["studio pro", "translate app", "batch translate", "translate"]
 ---
 
@@ -57,7 +57,7 @@ To add an additional language, do the following:
 
 1. Select the menu item **Language > Language settings…**.
 2. Click the **Add** button and select a second language. In this example we will be using *Russian, Russia*, but you can use any language you like.
-	{{% alert type="info" %}}It is recommended that you **don't** choose *Dutch, Netherlands* as this already contains translations for many of the translatable texts.{{% /alert %}}
+	{{% alert color="info" %}}It is recommended that you **don't** choose *Dutch, Netherlands* as this already contains translations for many of the translatable texts.{{% /alert %}}
 3. Click **OK** to confirm.
 	![Language settings tab in the project settings dialog](/attachments/howto8/collaboration-requirements-management/translate-your-app-content/language-settings.png)
 
@@ -73,7 +73,7 @@ To change your current language to Russian, do the following:
 2. Click **Russian, Russia** to make that your current language.
 	![Change the current language](/attachments/howto8/collaboration-requirements-management/translate-your-app-content/change-language.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If you do further development later on, you will need to remember to change back to your default language so that any new text is recorded there and not in a translated dictionary.
 {{% /alert %}}
 
@@ -197,7 +197,7 @@ You will probably want to know that you haven't missed any text that should have
 
 Mendix provides you with a completeness check for your languages. You can set this by editing the language in **Language Settings**. You will then receive warnings about all text which has not been translated into that language. There is always a completeness check for the default language.
 
-For more information, see [Advanced Language Settings](/refguide8/language-settings#advanced) in the *Language Settings* reference guide.
+For more information, see [Advanced Language Settings](/refguide8/language-settings/#advanced) in the *Language Settings* reference guide.
 
 ### 9.2 Sharing Translations With Other Apps
 
@@ -207,8 +207,8 @@ But what if you have several apps and want to add Russian to all of them? You mi
 
 Mendix allows you to export a translation to an Excel file, either for the whole app or just selected modules. You can then import this translation to another app and have your translation available to you.
 
-For more information, see [Exporting & Importing Text](/refguide8/batch-translate#export-import) in the *Batch Translate* reference guide.
+For more information, see [Exporting & Importing Text](/refguide8/batch-translate/#export-import) in the *Batch Translate* reference guide.
 
 ## 10 Read More
 
-* [Language Menu](/refguide8/translatable-texts)
+* [Language Menu](/refguide8/translatable-texts/)

@@ -1,6 +1,6 @@
 ---
 title: "Collaborative Development"
-url: /refguide8/collaborative-development
+url: /refguide8/collaborative-development/
 category: "Version Control"
 description: "Describes the process of collaborative development between the Mendix Studio Pro and the Mendix Studio"
 tags: ["studio pro", "studio", "collaborative development", "sync"]
@@ -9,23 +9,23 @@ tags: ["studio pro", "studio", "collaborative development", "sync"]
 
 ## 1 Introduction 
 
-Collaborative development is the process of sharing app model changes when a team of more than one person is working on the app. Collaborative development allows the team members to work together on one project in Mendix Studio Pro and Mendix Studio, and easily synchronize changes using [version control](version-control). Studio Pro can be used to work on different branches of an app, while Studio can be enabled for one of these branches. 
+Collaborative development is the process of sharing app model changes when a team of more than one person is working on the app. Collaborative development allows the team members to work together on one project in Mendix Studio Pro and Mendix Studio, and easily synchronize changes using [version control](/refguide8/version-control/). Studio Pro can be used to work on different branches of an app, while Studio can be enabled for one of these branches. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you get a **No Development Line Selected** message when opening your app in Studio, make sure you enable a development line for it. For more information, see [Enabling Studio for a Development Line](#active-branch).
 
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-Collaborative development is enabled by default for new apps created via the Developer Portal. If you are upgrading your project from Mendix 7 to 8, make sure you have followed the steps in [Moving from Desktop Modeler Version 7 to Studio Pro 8](moving-from-7-to-8). 
+Collaborative development is enabled by default for new apps created via the Developer Portal. If you are upgrading your project from Mendix 7 to 8, make sure you have followed the steps in [Moving from Desktop Modeler Version 7 to Studio Pro 8](/refguide8/moving-from-7-to-8/). 
 
 {{% /alert %}}
 
 ## 2 Collaborative Development Overview
 
-Studio Pro users can collaborate with each other through [version control](version-control) via **Commit** and **Update** operations. 
+Studio Pro users can collaborate with each other through [version control](/refguide8/version-control/) via **Commit** and **Update** operations. 
 
 The collaborative development process between Studio Pro and Studio consists of the following steps:
 
@@ -47,7 +47,7 @@ The collaborative development process between Studio Pro and Studio consists of 
 
    b. There are conflicts, the Studio Pro commit process is stopped. Studio is unlocked without getting changes from the Studio Pro user. The Studio Pro user needs to resolve the merge conflicts first to before being able to do a commit again.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 When the Studio Pro user wants to deploy the app to the cloud, they click the **Run** button. The commit is done automatically during this process and step five is executed. 
 
@@ -55,7 +55,7 @@ When the Studio Pro user wants to deploy the app to the cloud, they click the **
 
 ## 3 Studio Perspective
 
-For information on collaborative development from the Studio perspective, see [Collaborative Development in Studio](/studio8/collaborative-development). 
+For information on collaborative development from the Studio perspective, see [Collaborative Development in Studio](/studio8/collaborative-development/). 
 
 ## 4 Studio Pro Perspective
 
@@ -75,7 +75,7 @@ To merge the latest changes stored in the Team Server (from both Studio users an
 
 To commit your latest project changes and make them available to other users, open **Changes** and click **Commit**. The process of deploying your app (when you click the **Run** button) will also trigger a commit. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 We recommend you update your project and commit changes often to avoid multiple conflicts in your project.  
 
@@ -83,7 +83,7 @@ We recommend you update your project and commit changes often to avoid multiple 
 
 If your project has conflicts, Studio will be unlocked without receiving your changes. You need to resolve the conflicts in Studio Pro first to be able to complete the merge and commit again. 
 
-Your changes will be sent to Studio automatically if there are no conflicts. For more information on the collaborative development process in Studio, see [Collaborative Development in Studio](/studio8/collaborative-development).
+Your changes will be sent to Studio automatically if there are no conflicts. For more information on the collaborative development process in Studio, see [Collaborative Development in Studio](/studio8/collaborative-development/).
 
 ### 4.3 Viewing History of Commits
 
@@ -115,7 +115,7 @@ To enable Studio for a development line or switch it to another development line
 1.  Click **Version Control** > **Manage Branch Lines**. In the **Branch Line Manager** dialog box, you can see that the development line that Studio is enabled for (if any) is marked with a globe icon in the first column.<br/> 
 
 	![Globe Icon in the Branch Line Manager](/attachments/refguide8/version-control/collaborative-development/globe-icon.png)<br/>
-<br/>
+
 2.  Select the line you want to enable Studio for and click **Enable for Studio**. <br/>
 
 	![Branch Line Manager - Enabling Another Branch](/attachments/refguide8/version-control/collaborative-development/enable-another-branch.png) 
@@ -128,7 +128,7 @@ When you switch Studio to another development line, Studio gets locked for a few
 
 If Studio is enabled for a development line, you can disable it. 
 
- {{% alert type="info" %}}
+ {{% alert color="info" %}}
 
 If you disable Studio for a development line it was enabled for and do not enable it for any other development line, you will not be able to use collaborative development.
 
@@ -153,10 +153,10 @@ To create a new branch line, do the following:
 2.  In the **Branch Line Manager** dialog box, you see the list of existing development lines. Click **New** to create a branch line. <br/>
 
     ![Creating New Branch](/attachments/refguide8/version-control/collaborative-development/creating-new-branch.png)<br/>
-<br/>
+
 3.  In the **Create Branch Line** dialog box, set the following: <br/>
 
-    a. What line you are creating a new line from: the main line, a branch line, or a tagged version. For more information on these concepts, see the [Concepts](version-control#concepts) section in *Version Control*. <br/> b. Select the revision, if needed. <br/>
+    a. What line you are creating a new line from: the main line, a branch line, or a tagged version. For more information on these concepts, see the [Concepts](/refguide8/version-control/#concepts) section in *Version Control*. <br/> b. Select the revision, if needed. <br/>
 
     c. Type the name of the new line. 
 
@@ -178,7 +178,7 @@ To delete a branch line, do the following:
 
 You have deleted the branch.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 You cannot delete a Studio enabled branch. If you need to delete this branch, enable Studio for another line, and only then delete the branch. 
 
@@ -186,7 +186,7 @@ You cannot delete a Studio enabled branch. If you need to delete this branch, en
 
 ## 6 Read More
 
-* [Version Control](version-control)
-* [Troubleshooting Collaborative Development](collaborative-development-troubleshooting)
-* [Collaborative Development in Studio](/studio8/collaborative-development)
+* [Version Control](/refguide8/version-control/)
+* [Troubleshooting Collaborative Development](/refguide8/collaborative-development-troubleshooting/)
+* [Collaborative Development in Studio](/studio8/collaborative-development/)
 

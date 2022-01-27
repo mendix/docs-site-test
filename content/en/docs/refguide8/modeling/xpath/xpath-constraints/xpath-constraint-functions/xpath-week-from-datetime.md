@@ -1,19 +1,19 @@
 ---
 title: "XPath Week-from-DateTime"
-url: /refguide8/xpath-week-from-datetime
+url: /refguide8/xpath-week-from-datetime/
 parent: "xpath-constraint-functions"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-week-from-datetime.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-week-from-datetime.pdf).
 {{% /alert %}}
 
 ## 1 Overview
 
 The `week-from-dateTime()` function extracts the week number (in the year) from a **Date and time** attribute so it can be used to compare to a value. Values range from 1 to 53.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 The value returned depends on which *database* is being used to support your Mendix app. It does *not* take into account the app runtime setting **First day of the week**.
 
 Many databases implement [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601), but please refer to the documentation for the database you are using to find the exact details.
@@ -35,7 +35,7 @@ The HSQLDB database used for testing locally uses JVM's [Calendar.WEEK_OF_YEAR](
 
 PostgreSQL, Oracle, and MySQL follow [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601):
 
-* [PostgreSQL](https://www.postgresql.org/docs/11/functions-datetime.html)
+* [PostgreSQL](https://www.postgresql.org/docs/current/functions-datetime.html)
 * [Oracle](https://docs.oracle.com/cd/B28359_01/olap.111/b28126/dml_commands_1029.htm#OLADM780)
 * [MySQL](https://dev.mysql.com/doc/refman/8.0/en/date-and-time-functions.html#function_week)
 

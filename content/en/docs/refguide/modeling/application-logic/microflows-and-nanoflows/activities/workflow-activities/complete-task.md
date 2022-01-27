@@ -13,7 +13,7 @@ This activity can only be used in **Microflows**.
 
 ## 1 Introduction
 
-The **Complete task** activity can be used to define which outcome the [user task](user-task) should follow. 
+The **Complete task** activity can be used to define which outcome the [user task](/refguide/user-task/) should follow. 
 
 ![Complete Task](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/complete-task/complete-task.jpg)
 

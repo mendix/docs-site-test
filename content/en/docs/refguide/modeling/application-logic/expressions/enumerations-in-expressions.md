@@ -59,7 +59,7 @@ Gouden
 
 ## 3 getKey
 
-The `getKey` function takes an enumeration value and returns the key (called *Name* in Studio Pro) of this value. The key is the technical name for the enumeration value and is language independent. For more information, see [Enumerations](enumerations).
+The `getKey` function takes an enumeration value and returns the key (called *Name* in Studio Pro) of this value. The key is the technical name for the enumeration value and is language independent. For more information, see [Enumerations](/refguide/enumerations/).
 
 ### 3.1 Input Parameters
 
@@ -89,4 +89,4 @@ Golden
 
 ## 4 Read More
 
-* [Enumerations](enumerations)
+* [Enumerations](/refguide/enumerations/)

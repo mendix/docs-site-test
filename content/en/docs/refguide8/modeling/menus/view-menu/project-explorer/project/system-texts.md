@@ -1,13 +1,13 @@
 ---
 title: "System Texts"
-url: /refguide8/system-texts
+url: /refguide8/system-texts/
 parent: "project"
 tags: ["studio pro", "system text"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/system-texts.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/system-texts.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -16,7 +16,7 @@ System texts are texts that are shown to end-users by the server or the client. 
 
 ## 2 Languages
 
-In the [project settings](project-settings) you can manage the available languages of your application. For each language you can specify the translation of the system texts. If you do not provide a translation the text will be shown in the default language.
+In the [project settings](/refguide8/project-settings/) you can manage the available languages of your application. For each language you can specify the translation of the system texts. If you do not provide a translation the text will be shown in the default language.
 
 ## 3 Parameters
 

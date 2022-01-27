@@ -12,5 +12,5 @@ The [Native Mobile AR](https://marketplace.mendix.com/link/component/117209) mod
 
 ## 2 Read More
 
-* [Create An AR Business Card](/howto/mobile/how-to-ar-business-card)
-* [Get Started with AR](/howto/mobile/how-to-ar-simple-cube)
+* [Create An AR Business Card](/howto/mobile/how-to-ar-business-card/)
+* [Get Started with AR](/howto/mobile/how-to-ar-simple-cube/)

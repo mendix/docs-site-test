@@ -96,7 +96,7 @@ If you do **not** restage your app, it will continue to run using the old values
 
 **Mendix Constants**
 
-Your project will define the default values for [constants](/refguide/constants). You can override these default values with Cloud Foundry environment variables. To do this, you need to replace the dot with an underscore and prefix the name with `MX_`. For example, a constant `MyConstant` in module `MyModule` (that is, `MyModule.MyConstant`), in app `MyApp` could be set to `ABC123` like this:
+Your project will define the default values for [constants](/refguide/constants/). You can override these default values with Cloud Foundry environment variables. To do this, you need to replace the dot with an underscore and prefix the name with `MX_`. For example, a constant `MyConstant` in module `MyModule` (that is, `MyModule.MyConstant`), in app `MyApp` could be set to `ABC123` like this:
 
 ```bash
     cf set-env MyApp MX_MyModule_MyConstant "ABC123"
@@ -116,14 +116,14 @@ Instructions for licensing apps are available in the [License Activation](https:
 
 If you need to use a corporate web proxy, the following settings must be applied in Mendix Studio Pro to allow communication with MindSphere during local development.
 
-{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/proxy-settings.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/proxy-settings.png){{/* % /image_container % */}}
+
 Contact your local IT department for the `proxyHost` and `proxyPort` values you need.
 
 {{% alert color="info" %}}
 Proxy settings for version control used in Mendix Studio Pro:
 
-For more information about the version control used by Mendix apps, see [Using Version Control in Studio Pro](/refguide/using-version-control-in-studio-pro#working-outside-studio-pro). Depending on your local development environment, you may have to configure your version control client to use a proxy as well. You may need to do this to solve a merge conflict manually.
+For more information about the version control used by Mendix apps, see [Using Version Control in Studio Pro](/refguide/using-version-control-in-studio-pro/#working-outside-studio-pro). Depending on your local development environment, you may have to configure your version control client to use a proxy as well. You may need to do this to solve a merge conflict manually.
 {{% /alert %}}
 
 ### 5.2 Application Credentials{#app-creds}
@@ -132,8 +132,8 @@ The SSO module supports you in getting a valid MindSphere token locally via **Ap
 
 When you run your app locally, you will not be able to use SSO to get your credentials. You will be logged in as MxAdmin and will be presented with a login screen on app startup if the constant *AskForCredentialsOnStartUp* is true - otherwise communication to MindSphere is not possible.
 
-{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/image19.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/image19.png){{/* % /image_container % */}}
+
 This will use the credentials you have set up under **App Credentials** in the *Authorization Management* tab of the MindSphere Developer Cockpit for this application.
 
 {{% alert color="info" %}}
@@ -141,8 +141,8 @@ This will use the credentials you have set up under **App Credentials** in the *
 
 Storing the *Client Secret* inside the project is, from a security perspective, not a good idea. A better approach is to use a local environment variable. Create a user-specific environment variable with *Variable name* equal to your *Client ID* value and the *Variable value* equal to your *Client Secret* value. See step 6 below for information on how to get these values.
 
-{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/envvariables.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+{{/* % image_container width="50%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/envvariables.png){{/* % /image_container % */}}
+
 On startup, the system checks if there is an environment variable present with the name equal to your *Client ID* value and uses its value as *ClientSecret*.
 The *ClientID* is built from the combination of:
 
@@ -157,7 +157,7 @@ Don't forget to restart Studio Pro after you change / add the environment variab
 
 To create the app credentials:
 
-1.  Register this application using the identical application name as that set in the constant **CockpitApplicationName**, and a valid version number which is the same as the one you set in *CockpitApplicationVersion*, below . See also, [MindSphere Launchpad Setup](/developerportal/deploy/deploying-to-mindsphere#launchpad) in *Siemens Mindsphere – deployment*.
+1.  Register this application using the identical application name as that set in the constant **CockpitApplicationName**, and a valid version number which is the same as the one you set in *CockpitApplicationVersion*, below . See also, [MindSphere Launchpad Setup](/developerportal/deploy/deploying-to-mindsphere/#launchpad) in *Siemens Mindsphere – deployment*.
 
 2.  Go to the **App Credentials** page in the *Authorization Management* tab of the MindSphere Developer Cockpit.
 
@@ -280,7 +280,7 @@ For a MindSphere app to be multi-tenant, each user can only see the data from a 
 
 ### 7.1 Control Through MindSphere APIs
 
-The Authorization HTTP Header (see DS_MindSphereAccessToken in the [Microflows](mindsphere-module-details#microflows) section of *MindSphere Module Details*) which is passed for every MindSphere API call ensures that the user can only obtain data which is authorized to them via their tenant.
+The Authorization HTTP Header (see DS_MindSphereAccessToken in the [Microflows](/partners/siemens/mindsphere-module-details/#microflows) section of *MindSphere Module Details*) which is passed for every MindSphere API call ensures that the user can only obtain data which is authorized to them via their tenant.
 
 ### 7.2 Control Within a Mendix App
 
@@ -317,7 +317,7 @@ To make your Mendix app multi-tenant, do the following:
     [MindSphereSingleSignOn.TenantObject_Tenant/MindSphereSingleSignOn.Tenant/MindSphereSingleSignOn.MindSphereAccount_Tenant='$currentUser']
     ```
 
-    This ensures that the user can only retrieve entities which belong to their tenant, in other words, where their Tenant matches the TenantId of the entity. You can copy and paste this constraint from here (hover your mouse over the text and click the **Copy** button). You can also copy it from XPath constraint on the *TenantObject* entity in the *MindSphereSingleSignOn* module. For more information on XPath, see [XPath](/refguide/xpath).
+    This ensures that the user can only retrieve entities which belong to their tenant, in other words, where their Tenant matches the TenantId of the entity. You can copy and paste this constraint from here (hover your mouse over the text and click the **Copy** button). You can also copy it from XPath constraint on the *TenantObject* entity in the *MindSphereSingleSignOn* module. For more information on XPath, see [XPath](/refguide/xpath/).
 
     {{% alert color="info" %}}For consistency, it is recommended that all access to these entities is done through a sub-microflow which contains the XPath constraint. This enforces multi-tenant security.{{% /alert %}}
 
@@ -338,8 +338,8 @@ You have some limits which are set for the user's tenant to be applied to a time
 2.  Write a sub-microflow which returns a list of all limits.
 3.  Apply the XPath constraint to the **Retrieve Objects** action.
 
-    {{/* % image_container width="75%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/image27.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{/* % image_container width="75%" % */}}![](/attachments/partners/siemens/mindsphere/mendix-on-mindsphere/mindsphere-development-considerations/image27.png){{/* % /image_container % */}}
+
 4.  When you want to retrieve the list of limits, call this microflow instead of using the retrieve objects action. This will ensure that tenant-based security is always applied.
 
 ## 8 Validation {#validation}
@@ -379,7 +379,7 @@ MindSphere supports up to five application roles. You should take this into acco
 
 To use these scopes, you must create identically-named scopes for each MindSphere application role. These scopes will map to identically-name user roles in your Mendix app.
 
-There is a more detailed discussion of MindSphere and Mendix roles and scopes in the [Roles & Scopes](mindsphere-module-details) section of *MindSphere Module Details*.
+There is a more detailed discussion of MindSphere and Mendix roles and scopes in the [Roles & Scopes](/partners/siemens/mindsphere-module-details/) section of *MindSphere Module Details*.
 
 ### 9.4 Logout from MindSphere
 
@@ -397,9 +397,9 @@ With Mendix Studio Pro V8.0.0, Mendix has released support for developing native
 
 ### 9.6 Progressive Web Applications
 
-Mendix Studio Pro version 9 introduced support for developing [progressive web apps (PWAs)](/refguide/progressive-web-app). PWAs are not supported for *Mendix on MindSphere*.
+Mendix Studio Pro version 9 introduced support for developing [progressive web apps (PWAs)](/refguide/progressive-web-app/). PWAs are not supported for *Mendix on MindSphere*.
 
 ## 10 Read More
 
-* [Siemens MindSphere – deployment](/developerportal/deploy/deploying-to-mindsphere)
-* [MindSphere Module Details](mindsphere-module-details)
+* [Siemens MindSphere – deployment](/developerportal/deploy/deploying-to-mindsphere/)
+* [MindSphere Module Details](/partners/siemens/mindsphere-module-details/)

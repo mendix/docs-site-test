@@ -14,7 +14,7 @@ The **Login ID text box** is a widget that can be used to provide a login id for
 
 ![Login ID Text Box](/attachments/refguide/modeling/pages/authentication-widgets/login-id-text-box/login-id.png)
 
-The **Login ID text box** should be placed on a page together with a [Password text box](password-text-box) and a [Sign-in button](sign-in-button).
+The **Login ID text box** should be placed on a page together with a [Password text box](/refguide/password-text-box/) and a [Sign-in button](/refguide/sign-in-button/).
 
 ## 2 Properties
 
@@ -50,6 +50,6 @@ A **Placeholder** shows a text when an end-user has not entered any text yet. It
 
 ## 3 Read More
 
-* [Page](page)
-* [Password Text Box](password-text-box)
-* [Sign-In Button](sign-in-button)
+* [Page](/refguide/page/)
+* [Password Text Box](/refguide/password-text-box/)
+* [Sign-In Button](/refguide/sign-in-button/)

@@ -1,19 +1,19 @@
 ---
 title: "Generate Report Button"
-url: /refguide8/report-button
+url: /refguide8/report-button/
 parent: "report-widgets"
-menu_order: 40
+weight: 40
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/report-button.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/report-button.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-You can set a [report grid](report-grid) to automatically generate the report when the page is loaded. However, if a report page has parameter widgets, you must also add a **Generate report button** widget so that the end-user can regenerate the report after specifying the parameter(s).
+You can set a [report grid](/refguide8/report-grid/) to automatically generate the report when the page is loaded. However, if a report page has parameter widgets, you must also add a **Generate report button** widget so that the end-user can regenerate the report after specifying the parameter(s).
 
 The reports are generated when the end-user clicks the generate report button.
 

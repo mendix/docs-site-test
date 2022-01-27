@@ -1,8 +1,8 @@
 ---
 title: "Moving from Desktop Modeler Version 7 to Studio Pro 8"
-url: /refguide8/moving-from-7-to-8
+url: /refguide8/moving-from-7-to-8/
 category: "General Info"
-menu_order: 20
+weight: 20
 description: "Provides details on updating your project from Desktop Modeler version 7 to Studio Pro version 8 , including sections on converting your project and deprecated features."
 tags: ["studio pro"]
 ---
@@ -15,7 +15,7 @@ For information about new features in Mendix 8, see [Studio Pro 8 release notes]
 
 ## 2 Upgrading From Mendix 7 to 8 for Studio
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Due to breaking changes in Mendix version 8, apps in Studio cannot be upgraded automatically using the regular Studio upgrade mechanism.
 {{% /alert %}}
 
@@ -23,7 +23,7 @@ This means the following:
 
 * Existing apps built in Studio will remain in their current Mendix version and can be upgraded in Studio to the latest release of Mendix version 7.23
 
-    {{% alert type="info" %}}If your app was created in Studio Pro, using a Mendix 8 Beta version, it will be upgraded to the release version of Mendix 8 automatically.
+    {{% alert color="info" %}}If your app was created in Studio Pro, using a Mendix 8 Beta version, it will be upgraded to the release version of Mendix 8 automatically.
     {{% /alert %}}
 
 *  Any apps you create in Studio from now on will have Mendix version 8 from the start
@@ -59,7 +59,7 @@ How to update to Atlas 1.2.4:
 3. Update Atlas by opening the Marketplace inside Studio Pro, search for *Atlas UI Resources*, click the **All Versions** pane, and download **Atlas UI Resources v1.2.4**.
 4. When prompted, choose to replace your existing Atlas module.
 
-{{% alert type="info" %}} You do not have to move any customized files from **theme_oldest** to **theme** yet, as after migrating to Mx8, you will update Atlas again which will create a new **theme folder**.{{% /alert %}}
+{{% alert color="info" %}} You do not have to move any customized files from **theme_oldest** to **theme** yet, as after migrating to Mx8, you will update Atlas again which will create a new **theme folder**.{{% /alert %}}
 
 ## 4 Converting Your App {#converting}
 
@@ -71,13 +71,13 @@ Make sure that you have either committed your latest changes to Team Server, or 
 
 ### 4.2 Upgrade to the Latest Release of Version 7 {#upgrade}
 
-{{% alert type="warning" %}}
-It is technically required for you to upgrade your app to the latest version of Mendix 7, which is [7.23](/releasenotes/studio-pro/7.23). You can only convert your app to Mendix 8 from 7.23.x.
+{{% alert color="warning" %}}
+It is technically required for you to upgrade your app to the latest version of Mendix 7, which is [7.23](/releasenotes/studio-pro/7.23/). You can only convert your app to Mendix 8 from 7.23.x.
 {{% /alert %}}
 
 To upgrade to Mendix 7, follow these steps:
 
-1. Download the latest patch release of Desktop Modeler [7.23](/releasenotes/studio-pro/7.23).
+1. Download the latest patch release of Desktop Modeler [7.23](/releasenotes/studio-pro/7.23/).
 2. Open your app in Desktop Modeler 7.23.x.
 3. Allow it to upgrade the app, if necessary.
 
@@ -121,7 +121,7 @@ Finally, review the sections below and ensure that you have made all the changes
 
 Test the app for any unexpected results.
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 Congratulations! Your app has been successfully upgraded to Mendix 8 and you can continue working as normal.
 {{% /alert %}}
 
@@ -155,7 +155,7 @@ It is possible to fix most of the deprecation errors in one single action. To ac
 
 4. Click **Convert all to Decimal** to perform the conversion.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 If any attributes have been converted during this process, the next time your app is run locally or deployed the database will be converted to support the new attribute types.
 
 **This database conversion could take a long time!** We suggest that you first test the data conversion on a representative dataset, so that you can estimate how long it will take to convert your production database.
@@ -163,9 +163,9 @@ If any attributes have been converted during this process, the next time your ap
 
 ## 6 Using REST and Web Service Calls
 
-Mendix 8 introduces two [Custom Settings](custom-settings) which relate to **Call REST Service** and **Call Web Service** activities.
+Mendix 8 introduces two [Custom Settings](/refguide8/custom-settings/) which relate to **Call REST Service** and **Call Web Service** activities.
 
-If you use either of these activities, it is recommended that you increase the values of `http.client.MaxConnectionsPerRoute` and `http.client.MaxConnectionsTotal` to reduce the possibility of performance issues for concurrent end-users. For more information, see the [General Settings](custom-settings#general) of the *Custom Settings* documentation.
+If you use either of these activities, it is recommended that you increase the values of `http.client.MaxConnectionsPerRoute` and `http.client.MaxConnectionsTotal` to reduce the possibility of performance issues for concurrent end-users. For more information, see the [General Settings](/refguide8/custom-settings/#general) of the *Custom Settings* documentation.
 
 ## 7 64-Bit Studio Pro
 
@@ -250,7 +250,7 @@ To resolve this issue, use the previous version of Mendix to change the invalid 
 
 ### 10.2 DOM and Atlas UI Issues
 
-Mendix 8 comes with several improvements to its DOM structure. These DOM changes will affect the Sass styling of app. Because of these updates, Mendix 8 app are designed to be completed using [Atlas UI Resources](/appstore/modules/atlas-ui-resources) (v2.0.0 or higher). Upgrading your Atlas UI can cause issues with your app's theming. To troubleshoot either DOM or Atlas UI migration issues, consult the following documents:
+Mendix 8 comes with several improvements to its DOM structure. These DOM changes will affect the Sass styling of app. Because of these updates, Mendix 8 app are designed to be completed using [Atlas UI Resources](/appstore/modules/atlas-ui-resources/) (v2.0.0 or higher). Upgrading your Atlas UI can cause issues with your app's theming. To troubleshoot either DOM or Atlas UI migration issues, consult the following documents:
 
-* [Troubleshooting DOM Changes](migration-dom-issues)
-* [Troubleshooting Atlas UI Changes](migration-atlas)
+* [Troubleshooting DOM Changes](/refguide8/migration-dom-issues/)
+* [Troubleshooting Atlas UI Changes](/refguide8/migration-atlas/)

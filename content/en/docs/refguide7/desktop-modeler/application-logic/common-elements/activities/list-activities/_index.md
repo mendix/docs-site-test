@@ -1,20 +1,20 @@
 ---
 title: "List Activities"
-url: /refguide7/list-activities
+url: /refguide7/list-activities/
 parent: "activities"
 ---
 ## Aggregate
 
-See [Aggregate List](aggregate-list).
+See [Aggregate List](/refguide7/aggregate-list/).
 
 ## Change
 
-See [Change List](change-list).
+See [Change List](/refguide7/change-list/).
 
 ## Create
 
-See [Create List](create-list).
+See [Create List](/refguide7/create-list/).
 
 ## List Operation
 
-See [List Operation](list-operation).
+See [List Operation](/refguide7/list-operation/).

@@ -1,6 +1,6 @@
 ---
 title: "File manager"
-url: /refguide7/file-manager
+url: /refguide7/file-manager/
 parent: "file-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -8,7 +8,7 @@ parent: "file-widgets"
 
 A file manager is used to upload and/or download files.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/file-widgets/file-manager/file-manager.png)
 
@@ -74,6 +74,6 @@ _Default value:_ False
 
 ## Related articles
 
-*   [Data view](data-view)
-*   [Entities](entities)
-*   [Associations](associations)
+*   [Data view](/refguide7/data-view/)
+*   [Entities](/refguide7/entities/)
+*   [Associations](/refguide7/associations/)

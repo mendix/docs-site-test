@@ -56,7 +56,7 @@ Here you can define triggers on high memory usage for example.
 
  ![](/attachments/addons/apd-addon/rg-apd/rg-one-apm/rg-one-measurements-tool/Measurement_Triggers.png)                 
 
-See the description of [Triggers](rg-one-triggers) for how to configure triggers.
+See the description of [Triggers](/addons/apd-addon/rg-one-triggers/) for how to configure triggers.
 
 ### 3.3 Expressions
 
@@ -95,7 +95,7 @@ In the tester, you can clear the cache and also remove all records from the data
 
 If a trigger fires, a record is created in the triggered events. 
 
-The events are automatically deleted after a certain amount of days as configured in the global setting [More tab](rg-one-configuration#more). 
+The events are automatically deleted after a certain amount of days as configured in the global setting [More tab](/addons/apd-addon/rg-one-configuration/#more). 
 **Remove triggered events after (days)**. 
 
 If you want to keep an event for future reference you can use the **Keep**-button above the triggered event grid.

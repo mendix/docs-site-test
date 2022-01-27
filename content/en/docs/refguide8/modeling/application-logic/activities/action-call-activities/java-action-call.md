@@ -1,23 +1,23 @@
 ---
 title: "Java Action Call"
-url: /refguide8/java-action-call
+url: /refguide8/java-action-call/
 parent: "action-call-activities"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "Java", "java action call", "action call"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/java-action-call.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/java-action-call.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Microflows**.
 {{% /alert %}}
 
 ## 1 Introduction
 
-The **Java action call** activity can be used to call a [Java action](java-actions). 
+The **Java action call** activity can be used to call a [Java action](/refguide8/java-actions/). 
 
 {{/* % image_container width="200" % */}}
 
@@ -56,7 +56,7 @@ Click **Edit** next to the parameter to fill in the arguments.
 
 An argument is the input data that you are passing to the Java action. For each Java action parameter, you must supply an argument of the same type. 
 
-The values of the arguments are defined using [expressions](expressions):
+The values of the arguments are defined using [expressions](/refguide8/expressions/):
 
 ![argument](/attachments/refguide8/modeling/application-logic/activities/action-call-activities/java-action-call/argument-edit.png)
 

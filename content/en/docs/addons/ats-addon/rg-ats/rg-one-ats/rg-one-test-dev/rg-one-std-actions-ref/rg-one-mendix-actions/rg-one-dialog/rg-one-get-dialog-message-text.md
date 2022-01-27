@@ -15,7 +15,7 @@ Returns the text from messages and confirmation dialogs
 
 ## 3 Usage
 
-You have to pass the dialog as WebElement to the action. To get the dialog as WebElement use the action [Find/Assert Dialog](rg-one-findassert-dialog).
+You have to pass the dialog as WebElement to the action. To get the dialog as WebElement use the action [Find/Assert Dialog](/addons/ats-addon/rg-one-findassert-dialog/).
 
 ## 4 Input Parameters
 

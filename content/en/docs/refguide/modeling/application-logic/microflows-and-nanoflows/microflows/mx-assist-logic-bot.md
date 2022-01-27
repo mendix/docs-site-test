@@ -25,7 +25,7 @@ You can switch MxAssist Logic Bot on and off using the **On-Off** button in the 
 
 ![On-Off-Button](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/microflows/mx-assist-logic-bot/mx-assist-on-off-button.png)
 
-To access settings of MxAssist Logic Bot, open **Edit** > **Preferences** >the **Mendix Assist** tab >the **Logic Bot** section. For more information, see [Preferences](preferences-dialog).
+To access settings of MxAssist Logic Bot, open **Edit** > **Preferences** >the **Mendix Assist** tab >the **Logic Bot** section. For more information, see [Preferences](/refguide/preferences-dialog/).
 
 In the **Mendix Assist** tab, section **Logic Bot**, you can set the following: 
 
@@ -35,11 +35,11 @@ In the **Mendix Assist** tab, section **Logic Bot**, you can set the following:
 
   ![Suggestions for System Variables](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/microflows/mx-assist-logic-bot/mx-assist-system-variables.png)
 
-For more information on preferences, see [Preferences](preferences-dialog).
+For more information on preferences, see [Preferences](/refguide/preferences-dialog/).
 
 ## 3 Using MxAssist Logic Bot to Build Microflows
 
-MxAssist Logic Bot is enabled by default and is displayed as a blue dot in the flow of a [microflow](microflows):
+MxAssist Logic Bot is enabled by default and is displayed as a blue dot in the flow of a [microflow](/refguide/microflows/):
 
 ![Logic Bot Icon](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/microflows/mx-assist-logic-bot/mendix-assist-icon.png)
 
@@ -61,4 +61,4 @@ If you do not see the desired activity or element in the top-five recommendation
 
 ## 4 Read More
 
-* [Microflows](microflows)
+* [Microflows](/refguide/microflows/)

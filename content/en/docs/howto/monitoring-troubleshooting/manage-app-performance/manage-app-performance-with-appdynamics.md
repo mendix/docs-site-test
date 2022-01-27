@@ -170,13 +170,13 @@ For more information on AppDynamics, see the AppDynamics documentation here: [ht
 
 ## 9 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages](clear-warning-messages)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Set Log Levels](log-levels)
-* [Debug Microflows and Nanoflows](debug-microflows-and-nanoflows)
-* [Debug Java Actions](debug-java-actions)
-* [Solve Load & Import Errors](solving-load-and-import-errors)
-* [Debug Microflows Remotely](debug-microflows-remotely)
+* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages](/howto/monitoring-troubleshooting/clear-warning-messages/)
+* [Monitor Mendix Using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Set Log Levels](/howto/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows and Nanoflows](/howto/monitoring-troubleshooting/debug-microflows-and-nanoflows/)
+* [Debug Java Actions](/howto/monitoring-troubleshooting/debug-java-actions/)
+* [Solve Load & Import Errors](/howto/monitoring-troubleshooting/solving-load-and-import-errors/)
+* [Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely/)
 * [Monitoring Tools](https://github.com/mendix/cf-mendix-buildpack#monitoring-tools) in the *cf-mendix-buildpack* repo on GitHub

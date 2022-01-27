@@ -1,13 +1,13 @@
 ---
 title: "Chart Advanced Cheat Sheet"
-url: /refguide8/charts-advanced-cheat-sheet
+url: /refguide8/charts-advanced-cheat-sheet/
 parent: "chart-widgets"
-menu_order: 20
+weight: 20
 tags: ["Charts", "Advanced", "Studio Pro", "Layout Controls", "Data Properties", "Series Properties", "studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/charts-advanced-cheat-sheet.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/charts-advanced-cheat-sheet.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -343,7 +343,7 @@ A small pop-up box that appears when the user moves the mouse pointer over a cha
 ```
 
 ![Tooltip configurations](/attachments/refguide8/modeling/pages/chart-widgets/charts-advanced-cheat-sheet/tooltip.gif).
-.
+
 More options can be found here: [Tooltip configurations](https://plot.ly/javascript/reference/#layout-hovermode).
 
 ### 2.10 Fonts
@@ -420,7 +420,7 @@ This is the default range mode in charts. Both positive and negative ranges for 
 
 ![Range mode](/attachments/refguide8/modeling/pages/chart-widgets/charts-advanced-cheat-sheet/tozero.gif)  
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 When **fill** for the series is set to something other than *none*, the Y-axis range is forced to start from zero (*tozero*). For example:
 
 **Layout**
@@ -540,7 +540,7 @@ More options can be found here: [Area chart data properties](https://plot.ly/jav
 The example below shows how you can set up filter buttons to filter a chart by time.
 
 ![Line chart data properties](/attachments/refguide8/modeling/pages/chart-widgets/charts-advanced-cheat-sheet/time-series-filters.png).
-.
+
 ``` json
 {
   "xaxis": {
@@ -625,7 +625,7 @@ Displays two different X axes with different scales.
 ```
 
 ![Multiple X axes properties](/attachments/refguide8/modeling/pages/chart-widgets/charts-advanced-cheat-sheet/data-multiple-x.png).
-.
+
 ## 4 Configurations Options (All Charts) {#config-options}
 
 The following configuration options are available in all charts (presented here as an example with formatting for the `nl` `locale`):

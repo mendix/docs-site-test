@@ -6,14 +6,14 @@ parent: "ht-one-custom-action-general"
 
 ## 1 Introduction
 
-For a details on custom actions, please see [Custom Actions](rg-one-custom-actions) in the ATS Reference Guide 1.
+For a details on custom actions, please see [Custom Actions](/addons/ats-addon/rg-one-custom-actions/) in the ATS Reference Guide 1.
 
 These are the definitions of Mendix actions and Core actions:
 
-* Mendix actions are a combination [Mendix actions](rg-one-mendix-actions) and [Mendix Marketplace widget actions](rg-one-appstore-widg-acts)
-* Core actions are a combination of [ATS Core actions](rg-one-ats-core-actions) and [Selenium actions](rg-one-selenium-actions)
+* Mendix actions are a combination [Mendix actions](/addons/ats-addon/rg-one-mendix-actions/) and [Mendix Marketplace widget actions](/addons/ats-addon/rg-one-appstore-widg-acts/)
+* Core actions are a combination of [ATS Core actions](/addons/ats-addon/rg-one-ats-core-actions/) and [Selenium actions](/addons/ats-addon/rg-one-selenium-actions/)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 These are guidelines, not rules. It is possible that you will encounter situations in which the guidelines cannot be followed.
 {{% /alert %}}
 
@@ -27,7 +27,7 @@ Always try to use a Mendix action first. This table explains why you should use 
 | Visibility checks | A Mendix action only searches for elements that are _visible_. |
 | Browser support | A Mendix action always works in the supported browser. |
 | Mendix support | A Mendix action always works on the latest version of Mendix. |
-| Waiting for background processes | A Mendix action waits untill the Mendix app is finished rendering. This aspect is also covered by the [Mendix Wait](rg-one-mendix-wait) action.<br> |
+| Waiting for background processes | A Mendix action waits untill the Mendix app is finished rendering. This aspect is also covered by the [Mendix Wait](/addons/ats-addon/rg-one-mendix-wait/) action.<br> |
 
 However, there are reasons not to use the Mendix actions. For example, sometimes a custom action can get too complex using a Mendix action, because of the input parameters that are required. For example, when using a Mendix action, you have six input parameters:
 
@@ -47,7 +47,7 @@ This is a visual component:
 
 ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-guidelines-custom-action/visual-component-widget.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This guideline focuses on how to find certain widgets.
 
@@ -76,7 +76,7 @@ This is the `mx-name` in the debugger:
 
 ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-guidelines-custom-action/mx-name-in-debugger.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This guideline focuses on unsupported widget actions.
 
@@ -90,9 +90,9 @@ This is the Mendix Wait action:
 
 ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-custom-action-general/ht-one-guidelines-custom-action/mendix-wait-action.png)
 
-For more information, please see [Mendix wait](rg-one-mendix-wait).
+For more information, please see [Mendix wait](/addons/ats-addon/rg-one-mendix-wait/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This guideline does not apply to the Search Context action, since it does not trigger any events.
 
@@ -100,7 +100,7 @@ This guideline does not apply to the Search Context action, since it does not tr
 
 ## 7 Action Parameters
 
-When defining action parameters, always use the ATS [naming conventions](rg-one-best-practices).
+When defining action parameters, always use the ATS [naming conventions](/addons/ats-addon/rg-one-best-practices/).
 
 In addition, include the optional input parameters in the action parameters for an unsupported widget action.
 
@@ -126,7 +126,7 @@ These are the three most used action parameters:
 
 Last but not least, give a description to the action parameters especially, when it requires specific information. You can also give a generic example of what the user should enter, making it more user-friendly.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Follow the naming conventions. Only deviate when there is no standard name.
 
@@ -166,9 +166,9 @@ These are the different data types in ATS:
 
 The JavaScript actions have three different versions, based on the data types:
 
-* [Execute Javascript Integer](rg-one-execute-javascript-integer)
-* [Execute Javascript String](rg-one-execute-javascript-string)
-* [Execute Javascript WebElement](rg-one-execute-javascript-webelement)
+* [Execute Javascript Integer](/addons/ats-addon/rg-one-execute-javascript-integer/)
+* [Execute Javascript String](/addons/ats-addon/rg-one-execute-javascript-string/)
+* [Execute Javascript WebElement](/addons/ats-addon/rg-one-execute-javascript-webelement/)
 
 They all produce outputs based on their data type. This means that you cannot return a string inside the Execute Javascript web element action.
 

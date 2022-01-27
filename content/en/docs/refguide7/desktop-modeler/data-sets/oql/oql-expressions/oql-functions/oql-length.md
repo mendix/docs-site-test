@@ -1,6 +1,6 @@
 ---
 title: "OQL LENGTH"
-url: /refguide7/oql-length
+url: /refguide7/oql-length/
 parent: "oql-functions"
 ---
 

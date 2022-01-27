@@ -2,14 +2,14 @@
 title: "Function API with Java"
 url: /addons/ats-addon/ov-function-api-java/
 parent: "ov-function-api"
-menu_order: 2
+weight: 2
 ---
 
 ## 1 Introduction
 
 Java is the undisputed champion when it comes to automated UI testing (for example, see [Which programming language is most popular for UI test automation in 2019?](https://medium.com/@applitools/which-programming-language-is-most-popular-for-ui-test-automation-in-2019-d8787bb6feb6)). That is why CLEVR decided to build an integration between ATS and Java. This integration allows testers to leverage the power of Java and combine it with the ease-of-use and Mendix-focus of ATS. With this integration, executing an ATS function is as simple as calling a Java method.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Before you start writing tests, you need to import the ATS Java library. We have made this step painless by packaging all the dependencies in a single *.jar* file.
 {{% /alert %}}
 
@@ -131,7 +131,7 @@ The ATS Java client comes with built-in documentation and auto-complete:
 
 ## 7 Read More
 
-* [Function API](rg-two-function-api)
-* [Function API Reference](rg-two-function-api-reference)
-* [Function API with REST](ov-function-api-rest)
-* [Function API with Katalon](ov-function-api-katalon)
+* [Function API](/addons/ats-addon/rg-two-function-api/)
+* [Function API Reference](/addons/ats-addon/rg-two-function-api-reference/)
+* [Function API with REST](/addons/ats-addon/ov-function-api-rest/)
+* [Function API with Katalon](/addons/ats-addon/ov-function-api-katalon/)

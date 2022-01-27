@@ -1,10 +1,10 @@
 ---
 title: "Aggregate List"
-url: /refguide7/aggregate-list
+url: /refguide7/aggregate-list/
 parent: "list-activities"
 ---
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This activity can only be used in microflows, not in nanoflows.
 {{% /alert %}}
 
@@ -12,9 +12,9 @@ This activity can only be used in microflows, not in nanoflows.
 
 Aggregate List can be used to calculate aggregated values such as the maximum, minimum, sum, average and total amount of objects over a list of objects.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-See [Microflow Element Common Properties](microflow-element-common-properties) for properties that all activities share (for example, caption). This page only describes the properties specific to the action.
+See [Microflow Element Common Properties](/refguide7/microflow-element-common-properties/) for properties that all activities share (for example, caption). This page only describes the properties specific to the action.
 
 {{% /alert %}}
 

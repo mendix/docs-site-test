@@ -1,10 +1,10 @@
 ---
 title: "File Widgets"
-url: /refguide7/file-widgets
+url: /refguide7/file-widgets/
 parent: "pages"
 ---
 
 
-*   [File manager](file-manager)
-*   [Image uploader](image-uploader)
-*   [Image viewer](image-viewer)
+*   [File manager](/refguide7/file-manager/)
+*   [Image uploader](/refguide7/image-uploader/)
+*   [Image viewer](/refguide7/image-viewer/)

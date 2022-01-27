@@ -9,7 +9,7 @@ tags: ["studio pro"]
 
 The `RANGEEND` function extracts the end value of a range parameter.
 
-[RANGEBEGIN](oql-rangebegin) and `RANGEEND` are OQL functions that use a parameter, and OQL parameters are only available in [datasets](data-sets) (which are used for generating a report). When you create a page and add a report that has a dataset, you can use `RANGEBEGIN` and `RANGEEND` in that dataset.
+[RANGEBEGIN](/refguide/oql-rangebegin/) and `RANGEEND` are OQL functions that use a parameter, and OQL parameters are only available in [datasets](/refguide/data-sets/) (which are used for generating a report). When you create a page and add a report that has a dataset, you can use `RANGEBEGIN` and `RANGEEND` in that dataset.
 
 ## 2 Syntax
 

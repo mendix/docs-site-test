@@ -13,7 +13,7 @@ A small investment in setting up ATS, which is very easy to learn, will save you
 
 ## 2 Main Documents in This Category
 
-* [ATS Overview](ov) – presents details on compatibility, deployment options, and maintenance
-* [ATS Reference Guides](rg-ats) – provides reference content on ATS Helper, data-driven testing, and other topics
-* [ATS How-to's](ht) – describes how to get started with ATS, create a test case, and mask your password, among other topics
-* [ATS Best Practices](bp) – presents best practices on test case dependencies and appropriate actions
+* [ATS Overview](/addons/ats-addon/ov/) – presents details on compatibility, deployment options, and maintenance
+* [ATS Reference Guides](/addons/ats-addon/rg-ats/) – provides reference content on ATS Helper, data-driven testing, and other topics
+* [ATS How-to's](/addons/ats-addon/ht/) – describes how to get started with ATS, create a test case, and mask your password, among other topics
+* [ATS Best Practices](/addons/ats-addon/bp/) – presents best practices on test case dependencies and appropriate actions

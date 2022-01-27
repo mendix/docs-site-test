@@ -11,9 +11,9 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-A navigation tree displays menu items of a [navigation profile](navigation#profiles) or [menu](menu) document in the form of a tree. These items are determined by the [Menu source](#menu-source) and are either configured in the [Navigation](navigation) or a [Menu](menu).
+A navigation tree displays menu items of a [navigation profile](/refguide/navigation/#profiles) or [menu](/refguide/menu/) document in the form of a tree. These items are determined by the [Menu source](#menu-source) and are either configured in the [Navigation](/refguide/navigation/) or a [Menu](/refguide/menu/).
 
-The menu structure of a navigation tree can have three levels, that means that menu items can have sub-items. For more information on menu items and their properties, see [Menu](menu). 
+The menu structure of a navigation tree can have three levels, that means that menu items can have sub-items. For more information on menu items and their properties, see [Menu](/refguide/menu/). 
 
 ![Navigation Tree](/attachments/refguide/modeling/pages/menu-widgets/navigation-tree/navigation-tree.png)
 
@@ -46,21 +46,21 @@ The items that are shown in the menu widget are determined by the **Menu source*
 
 | Value              | Description                                                  |
 | ------------------ | ------------------------------------------------------------ |
-| Project navigation *(default)*  | The menu items are taken from one of profiles defined in the [Navigation](navigation). |
-| Menu document      | The menu items are taken from a [menu](menu) document.       |
+| Project navigation *(default)*  | The menu items are taken from one of profiles defined in the [Navigation](/refguide/navigation/). |
+| Menu document      | The menu items are taken from a [menu](/refguide/menu/) document.       |
 
 #### 2.3.2 Profile 
 
-Only available when the [menu source](#menu-source) is set to **Project navigation**. The **Profile** property specifies what [navigation profile](navigation#profiles) is used for the widget. 
+Only available when the [menu source](#menu-source) is set to **Project navigation**. The **Profile** property specifies what [navigation profile](/refguide/navigation/#profiles) is used for the widget. 
 
 Default: *Responsive*
 
 #### 2.3.3 Menu 
 
-Only available when the [menu source](#menu-source) is set to **Menu document**. The **Menu** property specifies what [Menu](menu) document is used for the widget.
+Only available when the [menu source](#menu-source) is set to **Menu document**. The **Menu** property specifies what [Menu](/refguide/menu/) document is used for the widget.
 
 ## 3 Read More
 
-* [Page](page)
-* [Menus & Navigation](menu-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Menus & Navigation](/refguide/menu-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

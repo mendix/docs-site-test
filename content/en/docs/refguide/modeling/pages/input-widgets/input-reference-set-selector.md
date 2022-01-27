@@ -11,9 +11,9 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-An **input reference set selector** is used to allow the end-user to display or select the value(s) of a many-to-many (reference set) [association](associations) by selecting the associated object(s).
+An **input reference set selector** is used to allow the end-user to display or select the value(s) of a many-to-many (reference set) [association](/refguide/associations/) by selecting the associated object(s).
 
-An input reference set selector must be placed in a [data widget](data-widgets).
+An input reference set selector must be placed in a [data widget](/refguide/data-widgets/).
 
 For example, you could group customers into groups, and each customer could belong to several groups. Each Group can have many customers. The entities **Customer** and **Group** have a many-to-many (reference set) relationship. An input reference set selector can be used to select the groups the customer belongs to.
 
@@ -84,7 +84,7 @@ The select page property determines which page is displayed when the input refer
 
 If an input reference set selector is never editable, a select page is not required.
 
-See the [Show a Page](on-click-event#show-page) section of *On Click Event & Events Section*. Note that select pages must have a [pop-up layout](layout#layout-type).
+See the [Show a Page](/refguide/on-click-event/#show-page) section of *On Click Event & Events Section*. Note that select pages must have a [pop-up layout](/refguide/layout/#layout-type).
 
 {{% alert color="info" %}}
 You can generate a new page to show by right-clicking the widget and selecting **Generate select page…**.
@@ -98,7 +98,7 @@ You can generate a new page to show by right-clicking the widget and selecting *
 
 The properties in the Selectable objects section determine the objects from which the end user can make a selection. As source, you can use **Database** or **XPath**. When using **XPath**, you can add an **XPath constraint**, or use a **Constrained by** path.
 
-For more information, see the [XPath](reference-selector#xpath-constraints) section of *Reference Selector*.
+For more information, see the [XPath](/refguide/reference-selector/#xpath-constraints) section of *Reference Selector*.
 
 {{% alert color="info" %}}
 You cannot use a microflow to define selectable objects in an input reference set selector.

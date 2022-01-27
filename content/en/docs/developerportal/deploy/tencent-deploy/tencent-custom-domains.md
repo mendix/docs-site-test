@@ -12,7 +12,7 @@ tags: ["Custom Domain","Tencent Cloud", "certificates"]
 When running Mendix on Tencent, you can add custom domains such as `https://myapp.mycompany.com/` to your environments. This how-to walks you through the process.
 
 {{% alert color="info" %}}
-This documentation is describing certificates for *incoming* connections. For information on setting up certificates for *outgoing* connections, see [Certificates](certificates).
+This documentation is describing certificates for *incoming* connections. For information on setting up certificates for *outgoing* connections, see [Certificates](/developerportal/deploy/certificates/).
 {{% /alert %}}
 
 {{% alert color="warning" %}} You may not immediately see changes which affect DNS routing. This is because of DNS caching, where changes are not visible until the cache is updated.
@@ -31,7 +31,7 @@ This documentation is describing certificates for *incoming* connections. For in
 Before starting this how-to, you will need to have the following prerequisites:
 
 * a basic knowledge of DNS (Domain Name System)
-* the correct permission to your app environment to **Manage TLS configurations** (for example having the cluster manager, developer, or admin role) – see [Namespace Management](tencent-deploy#members) for information on the permissions granted to roles
+* the correct permission to your app environment to **Manage TLS configurations** (for example having the cluster manager, developer, or admin role) – see [Namespace Management](/developerportal/deploy/tencent-deploy/#members) for information on the permissions granted to roles
 * if you are going to use HTTPS to connect to your app:
     * a basic knowledge of SSL/TLS certificates:
         * What is an SSL/TLS certificate and what it is used for?
@@ -139,8 +139,8 @@ To reach the root certificate, you have to link your certificate via the interme
 
 ### 5.3 How Do I Get my SAML Metadata or CommunityCommons.GetApplicationUrl to Use the Custom URL?
 
-For certain use cases, it is important for the Mendix runtime to know the public URL of your applications. This is most commonly needed when your app generates links back to itself. To tell the runtime where it lives, set the ApplicationRootUrl [custom runtime setting](/refguide/custom-settings#general). To set the custom runtime setting, follow the instructions in the [Custom Runtime Settings](environments-details#custom-runtime-settings) section of *Environment Details*.
+For certain use cases, it is important for the Mendix runtime to know the public URL of your applications. This is most commonly needed when your app generates links back to itself. To tell the runtime where it lives, set the ApplicationRootUrl [custom runtime setting](/refguide/custom-settings/#general). To set the custom runtime setting, follow the instructions in the [Custom Runtime Settings](/developerportal/deploy/environments-details/#custom-runtime-settings) section of *Environment Details*.
 
 ## 6 Read More
 
-* [Certificates](certificates)
+* [Certificates](/developerportal/deploy/certificates/)

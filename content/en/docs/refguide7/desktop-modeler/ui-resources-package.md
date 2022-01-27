@@ -1,20 +1,20 @@
 ---
 title: "UI Resources Package"
-url: /refguide7/ui-resources-package
+url: /refguide7/ui-resources-package/
 category: "Desktop Modeler"
 ---
 
 ## 1 Introduction
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-The option to designate a custom UI resources package was added in Mendix 7.9.0. In older versions, theme information was stored in theme ZIP files stored in the **theme** folder. The required ZIP file could be selected in the Runtime tab of the app's [project settings](project-settings).
+The option to designate a custom UI resources package was added in Mendix 7.9.0. In older versions, theme information was stored in theme ZIP files stored in the **theme** folder. The required ZIP file could be selected in the Runtime tab of the app's [project settings](/refguide7/project-settings/).
 
 {{% /alert %}}
 
-The UI resources package is a specific [module](modules) marked by a green icon in the Project Explorer, that determines the projects look and feel. It does this in two distinct ways. First, the package supplies the project with all the page documents required to create well-designed, consistent pages, such as [page templates](page-templates) and [building blocks](building-block). Second, the package contains theme information, which allows users to easily switch out themes that complement the accompanying page documents. 
+The UI resources package is a specific [module](/refguide7/modules/) marked by a green icon in the Project Explorer, that determines the projects look and feel. It does this in two distinct ways. First, the package supplies the project with all the page documents required to create well-designed, consistent pages, such as [page templates](/refguide7/page-templates/) and [building blocks](/refguide7/building-block/). Second, the package contains theme information, which allows users to easily switch out themes that complement the accompanying page documents. 
 
-Which module is set as the UI resources package is governed by the **UI resources package** setting in the **Theme** tab of the [project settings](project-settings). This setting will automatically be updated if a new UI resources package is imported. 
+Which module is set as the UI resources package is governed by the **UI resources package** setting in the **Theme** tab of the [project settings](/refguide7/project-settings/). This setting will automatically be updated if a new UI resources package is imported. 
 
 The core concept of a UI resources package as an easily shared source of design utilities works best if the contents of the module is restricted to page templates and building blocks. Adding pages, microflows, and entities is possible and can be useful, but it also forces users to use static resources that may not be ideally suited to their specific application. Consequently, when they inevitably feel the need to tweak those resources to their requirements, the package can no longer be easily updated and maintained by the original designer.
 

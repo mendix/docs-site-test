@@ -1,8 +1,8 @@
 ---
 title: "MxBuild"
-url: /refguide8/mxbuild
+url: /refguide8/mxbuild/
 category: "General Info"
-menu_order: 50
+weight: 50
 description: "Describes MxBuild which is a command-line tool for building and deploying Mendix Apps"
 tags: ["build", "deploy", "deployment package", "command-line", "studio pro"]
 ---
@@ -13,7 +13,7 @@ MxBuild is a Windows and Linux command-line tool that can be used to build a Men
 
 The version of MxBuild which you need is dependent on the version of the Mendix model you want to build. You can find your correct MxBuild by entering this URL into a browser and replacing `mxversion` with your own, full Mendix version number: `https://cdn.mendix.com/runtime/mxbuild-{mxversion}.tar.gz`.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 A build number is included in the version, and this has to be included in the link path mentioned above — for example`8.12.1.3458` is the 3458 build of the 8.12.1 Studio Pro release.
 
@@ -25,9 +25,9 @@ Any public version in this [list of Studio Pro releases](https://marketplace.men
 
 You can extract the files using your favorite archival tool, such as [7-Zip](https://www.7-zip.org/).
 
-For details on the system requirements for MxBuild, see [System Requirements](system-requirements#mxbuild).
+For details on the system requirements for MxBuild, see [System Requirements](/refguide8/system-requirements/#mxbuild).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Except where specifically mentioned, the examples used in this document are for Windows.
 {{% /alert %}}
 
@@ -62,7 +62,7 @@ Command-line options are described in the table below:
 
 ### 2.2 Options When Creating a Package
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The following options are only applicable with the `--target=package` option:
 {{% /alert %}}
 
@@ -128,7 +128,7 @@ The following table describes the various properties of the *problems* JSON obje
 | --- | --- |
 | `name` | A unique identifier of the problem or `null` when the consistency check is not yet defined in the Mendix Metamodel. |
 | `severity` | Describes the type of problem: `Warning`, `Error`, or `Deprecation`. |
-| `message` | The description of the problem. This is the same as the message in the [Errors pane](errors-pane) of Mendix Studio Pro. |
+| `message` | The description of the problem. This is the same as the message in the [Errors pane](/refguide8/errors-pane/) of Mendix Studio Pro. |
 | `locations` | Contains zero or more objects that describe the location in the Mendix project where the problem occurs (see the following table). |
 
 The location(s) associated with the problem have the following properties:

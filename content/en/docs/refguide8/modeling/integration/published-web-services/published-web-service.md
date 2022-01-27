@@ -1,17 +1,17 @@
 ---
 title: "Published Web Service"
-url: /refguide8/published-web-service
+url: /refguide8/published-web-service/
 parent: "published-web-services"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-web-service.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-web-service.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-This document describes the properties of a published web service. If you want a general overview of how Mendix publishes microflows as web services, see [Published Web Services](published-web-services).
+This document describes the properties of a published web service. If you want a general overview of how Mendix publishes microflows as web services, see [Published Web Services](/refguide8/published-web-services/).
 
 ## 2 Operations
 
@@ -19,7 +19,7 @@ This document describes the properties of a published web service. If you want a
 
 Provide the actual operations of which the web service is composed. Each of these operations is a Microflow.
 
-See [Operations](operations).
+See [Operations](/refguide8/operations/).
 
 ## 3 Settings
 

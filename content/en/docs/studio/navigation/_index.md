@@ -34,11 +34,11 @@ A new menu item or a sub-item is added to the navigation.
 
 {{% alert color="info" %}}
 
-In Studio, you are viewing and editing a Responsive type of the navigation profile, while there are more types of profiles in Studio Pro. For more information on profiles in Studio Pro, see the [Profiles](/refguide/navigation#profiles) section in *Navigation* in the *Studio Pro Guide*. 
+In Studio, you are viewing and editing a Responsive type of the navigation profile, while there are more types of profiles in Studio Pro. For more information on profiles in Studio Pro, see the [Profiles](/refguide/navigation/#profiles) section in *Navigation* in the *Studio Pro Guide*. 
 
 {{% /alert %}}
 
-For more information on how to configure navigation in your app, see [How to Configure a Navigation Bar](/studio-how-to/navigation-how-to-configure).
+For more information on how to configure navigation in your app, see [How to Configure a Navigation Bar](/studio-how-to/navigation-how-to-configure/).
 
 ## 2 Navigation Editor Properties
 
@@ -61,7 +61,7 @@ A home page icon is displayed in a list of pages or microflows against a page or
 
 ### 2.2 Role-Specific Home Page {#role-specific-home-page}
 
-A role-specific home page is a home page that that overrides the [default home page](#default-home-page) and is opened only for users with the specified role. You can set a separate home page per each role in your app. For more information on roles and how to create them, see [Security, Roles & Permissions](settings-security).
+A role-specific home page is a home page that that overrides the [default home page](#default-home-page) and is opened only for users with the specified role. You can set a separate home page per each role in your app. For more information on roles and how to create them, see [Security, Roles & Permissions](/studio/settings-security/).
 
 For example, an Administrator role can have the **Admin_Dashboard** page as its home page, while other users will have the default home page opened when they open the app:
 
@@ -90,7 +90,7 @@ A role-specific home page icon is displayed in a list of pages or microflows aga
 
 To add a role-specific home page, do the following:
 
-1. Make sure your [security](settings-security) is enabled and configured.
+1. Make sure your [security](/studio/settings-security/) is enabled and configured.
 
 2. Open the navigation editor > Navigation Editor properties.
 
@@ -151,6 +151,6 @@ The properties that can be configured in the **General** section are the followi
 
 ## 4 Read More
 
-* [How to Configure a Navigation Bar](/studio-how-to/navigation-how-to-configure)
-* [General Info](general)
-* [Navigation Consistency Errors](consistency-errors-navigation)
+* [How to Configure a Navigation Bar](/studio-how-to/navigation-how-to-configure/)
+* [General Info](/studio/general/)
+* [Navigation Consistency Errors](/studio/consistency-errors-navigation/)

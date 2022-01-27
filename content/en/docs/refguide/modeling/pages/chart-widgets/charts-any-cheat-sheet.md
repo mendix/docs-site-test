@@ -278,7 +278,7 @@ This *cheat sheet* lists the most common chart types, together with a visual sam
 
 ### 6.1 Contour Chart
 
-![ContourProperties](/attachments/refguide/modeling/pages/chart-widgets/charts-any-cheat-sheet/contour.png)
+![ContourProperties](/attachments/refguide/modeling/pages/chart-widgets/contour.png)
 
 ``` json
 [ {
@@ -372,5 +372,5 @@ This *cheat sheet* lists the most common chart types, together with a visual sam
 ## 7 Read More
 
 * Full chart documentation is here: [https://plot.ly/javascript/](https://plot.ly/javascript/)
-* [Any Chart Widget](charts-any-configuration)
-* [How to Use Any Chart](/howto/front-end/charts-any-usage)
+* [Any Chart Widget](/refguide/charts-any-configuration/)
+* [How to Use Any Chart](/howto/front-end/charts-any-usage/)

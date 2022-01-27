@@ -1,6 +1,6 @@
 ---
 title: "App Settings Dialog"
-url: /refguide7/app-settings-dialog
+url: /refguide7/app-settings-dialog/
 parent: "dialogs"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -22,7 +22,7 @@ In the **App name** field, enter the name of your new app. This name is used as 
 
 ## 3 Enable Online Services
 
-The Mendix Platform offers online services such as [version control](version-control), cloud deployment, and collaboration. If you select **Yes** for **Enable online services**, this will create a project in the Developer Portal and a corresponding version control repository. If you choose **No**, you will create an app that is only stored on your local disk. At a later point you can still decide to upload this local app to a version control server and enjoy the benefits of version control.
+The Mendix Platform offers online services such as [version control](/refguide7/version-control/), cloud deployment, and collaboration. If you select **Yes** for **Enable online services**, this will create a project in the Developer Portal and a corresponding version control repository. If you choose **No**, you will create an app that is only stored on your local disk. At a later point you can still decide to upload this local app to a version control server and enjoy the benefits of version control.
 
 ## 4 Default Language
 

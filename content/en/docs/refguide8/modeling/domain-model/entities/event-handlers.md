@@ -1,14 +1,14 @@
 ---
 title: "Event Handlers"
-url: /refguide8/event-handlers
+url: /refguide8/event-handlers/
 parent: "entities"
-menu_order: 50
+weight: 50
 tags: ["domain model", "entity", "event handler", "studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/event-handlers.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/event-handlers.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -17,13 +17,13 @@ Event handlers define microflows that handle certain events related to the entit
 
 Event handlers should be used moderately, as they will be triggered every time the corresponding event occurs, so they must be for things you want always to happen. If you only want something to happen on a certain page, you can use a microflow there (for example, on a customized **Save** button).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Event handlers are not triggered in a particular order. So, make sure events do not depend on each other in any way (also with regard to events in generalizations and specializations).
 
 When events are triggered from microflows you can choose to bypass the event handlers in the microflow action.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If the specified event is applied to a list of objects (if, for example, you are committing a list of objects), the handler will be triggered for all the objects first, and then the event will be applied to the list. In the given example,  the handler will run on all the objects first and then all the objects in the list will be committed.
 
 If your handler relies on the event having already been applied to another object in a list, you should loop through the list and apply the event to each object in turn.
@@ -33,11 +33,11 @@ For example, say your **Customer** entity has a **Postcode** attribute and you w
 
 ![Example of adding a before commit event handler to the Customer entity](/attachments/refguide8/modeling/domain-model/entities/event-handlers/customer-event-handlers.png)
 
-For more information on using event handlers for data validation, see [How To Set Up Data Validation](/howto8/data-models/setting-up-data-validation).
+For more information on using event handlers for data validation, see [How To Set Up Data Validation](/howto8/data-models/setting-up-data-validation/).
 
 ## 2 Properties
 
-You can add and edit event handlers for an entity from the [entity dialog box](entities#dialog-box).
+You can add and edit event handlers for an entity from the [entity dialog box](/refguide8/entities/#dialog-box).
 
 An example of the event handler properties is represented in the image below:
 
@@ -60,7 +60,7 @@ Event handler properties consist of the following sections:
 
 | Value | Description |
 | --- | --- |
-| Create | The microflow is executed when an object of this entity is created. This happens when the user clicks **Create** on a grid or when an object is created in a microflow. In a [create](create-object) action in a microflow, an after create action is executed after the object is initialized with the attributes' default values, but before any change items specified in the action are applied. |
+| Create | The microflow is executed when an object of this entity is created. This happens when the user clicks **Create** on a grid or when an object is created in a microflow. In a [create](/refguide8/create-object/) action in a microflow, an after create action is executed after the object is initialized with the attributes' default values, but before any change items specified in the action are applied. |
 | Commit | The microflow is executed when an object of this entity is committed. This happens when the user clicks **Save** on a page or when an object is committed in a microflow. |
 | Delete | The microflow is executed when an object of this entity is deleted. This happens when a user clicks **Delete** in a grid or when an object is deleted in a microflow. |
 | Rollback | The microflow is executed when an object of this entity is rolled back. This happens when a user clicks **Cancel** on a page or when an object is rolled back in a microflow. |
@@ -103,5 +103,5 @@ Default: *Yes*
 
 ## 3 Read More
 
-* [How to Denormalize Data to Improve Performance](/howto8/data-models/denormalize-data-to-improve-performance)
-* [How To Set Up Data Validation](/howto8/data-models/setting-up-data-validation)
+* [How to Denormalize Data to Improve Performance](/howto8/data-models/denormalize-data-to-improve-performance/)
+* [How To Set Up Data Validation](/howto8/data-models/setting-up-data-validation/)

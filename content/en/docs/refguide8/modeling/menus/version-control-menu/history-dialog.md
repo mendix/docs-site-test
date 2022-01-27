@@ -1,20 +1,20 @@
 ---
 title: "History"
-url: /refguide8/history-dialog
+url: /refguide8/history-dialog/
 parent: "version-control-menu"
-menu_order: 50
+weight: 50
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/history-dialog.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/history-dialog.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 Use the **History** dialog box to look at all the changes that have been committed to a development line of an app. This dialog box is also used when selecting a revision to merge from, create a branch line off of, or create a deployment archive of.
 
-![](/attachments/refguide8/modeling/menus/version-control-menu/history-dialog/history-dialog.png)
+![](/attachments/refguide8/version-control/collaborative-development/history-dialog.png)
 
 ## 2 Revisions
 
@@ -47,5 +47,5 @@ This tab page shows a list of the files that were changed on disk. You see wheth
 
 ## 7 Read More
 
-* [Version Control](version-control)
-* [Stories Pane](stories-pane)
+* [Version Control](/refguide8/version-control/)
+* [Stories Pane](/refguide8/stories-pane/)

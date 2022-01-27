@@ -45,6 +45,6 @@ The [Nanoflow Commons](https://marketplace.mendix.com/link/component/109515/) mo
 
 ## 2 Read More
 
-* [How to Build JavaScript Actions: Part 1 (Basic)](/howto/extensibility/write-javascript-actions)
-* [How to Build JavaScript Actions: Part 2 (Advanced)](/howto/extensibility/write-javascript-github)
-* [How to Build JavaScript Actions for Native Mobile](/howto/extensibility/create-native-javascript-action)
+* [How to Build JavaScript Actions: Part 1 (Basic)](/howto/extensibility/write-javascript-actions/)
+* [How to Build JavaScript Actions: Part 2 (Advanced)](/howto/extensibility/write-javascript-github/)
+* [How to Build JavaScript Actions for Native Mobile](/howto/extensibility/create-native-javascript-action/)

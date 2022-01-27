@@ -1,24 +1,24 @@
 ---
 title: "Access Rules"
-url: /refguide8/access-rules
+url: /refguide8/access-rules/
 parent: "entities"
-menu_order: 70
+weight: 70
 tags: ["domain model", "entity", "access rule", "xpath constraint", "module role", "studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/access-rules.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/access-rules.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-The **access rules** of an entity define what a user is allowed to do with objects of the entity. Users can be allowed to create and/or delete objects, and to view and/or edit member values. A member is an attribute or an association of an entity. Furthermore, the set of objects available for viewing, editing, and removing can be limited by means of an [XPath constraint](xpath-constraints).
+The **access rules** of an entity define what a user is allowed to do with objects of the entity. Users can be allowed to create and/or delete objects, and to view and/or edit member values. A member is an attribute or an association of an entity. Furthermore, the set of objects available for viewing, editing, and removing can be limited by means of an [XPath constraint](/refguide8/xpath-constraints/).
 
-Every access rule is applicable to one or more [module roles](module-security#module-role). An access rule grants certain access rights to those roles. Rules are additive, which means that if multiple access rules apply to the same module role, all access rights of those rules are combined for that module role.
+Every access rule is applicable to one or more [module roles](/refguide8/module-security/#module-role). An access rule grants certain access rights to those roles. Rules are additive, which means that if multiple access rules apply to the same module role, all access rights of those rules are combined for that module role.
 
-{{% alert type="warning" %}}
-Access rules are not inherited from an entity's [generalization](entities#generalization), the security for every entity is specified explicitly. This means that when adding an access rule to an entity, always make sure that all required XPath constraints are applied.
+{{% alert color="warning" %}}
+Access rules are not inherited from an entity's [generalization](/refguide8/entities/#generalization), the security for every entity is specified explicitly. This means that when adding an access rule to an entity, always make sure that all required XPath constraints are applied.
 
 If the entity has a generalization with access rules defining XPath constraints, these will not apply to its specializations and will therefore not limit its visibility.
 {{% /alert %}}
@@ -32,8 +32,8 @@ Access rules are defined via entity's **Properties** > **Access rules**, or on t
 
 ![Access Rules for Entities](/attachments/refguide8/modeling/domain-model/entities/access-rules/access-rules-tab.png)
 
-{{% alert type="info" %}}
-The **Access rules** section is visible only if the [Project Security](project-security) is set to **Production**.
+{{% alert color="info" %}}
+The **Access rules** section is visible only if the [Project Security](/refguide8/project-security/) is set to **Production**.
 {{% /alert %}}
 
 An example of the access rules properties is represented in the image below:
@@ -79,7 +79,7 @@ The set of objects that can be deleted can be limited by using an [XPath constra
 
 #### 2.3.2 Member Read & Write Rights Section
 
-**Member read and write rights** define the access rights for every member ([attribute](attributes) or [association](associations)) of the entity. These access rights indicate whether users are allowed to view and/or edit the member's value. The set of objects to which these rights apply can be limited by using an [XPath constraint](#xpath-constraint).
+**Member read and write rights** define the access rights for every member ([attribute](/refguide8/attributes/) or [association](/refguide8/associations/)) of the entity. These access rights indicate whether users are allowed to view and/or edit the member's value. The set of objects to which these rights apply can be limited by using an [XPath constraint](#xpath-constraint).
 
 | Value | Description |
 | --- | --- |
@@ -87,7 +87,7 @@ The set of objects that can be deleted can be limited by using an [XPath constra
 | Read | Users are allowed to view the value of this member, but cannot edit it. |
 | Read, Write | Users are allowed to view and edit the value of this member. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 You cannot set *write* access to attributes which are calculated. This includes attributes of type *Autonumber* and attributes where the attribute value is set to **Calculated**.
 {{% /alert %}}
 
@@ -101,7 +101,7 @@ For example, a customer is allowed to view the discount, but is not allowed to e
 
 ### 2.4 XPath Constraint Tab {#xpath-constraint}
 
-An [XPath constraint](xpath-constraints) can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all objects of the entity.
+An [XPath constraint](/refguide8/xpath-constraints/) can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all objects of the entity.
 
 ![](/attachments/refguide8/modeling/domain-model/entities/access-rules/access-rule-xpath-tab.png)
 
@@ -117,6 +117,6 @@ A logged-in customer is allowed to view personal orders, but is not allowed to v
 
 Because of this XPath constraint, the access rule only applies to orders for which the customer is the currently signed-in user.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 XPath constraints can only be applied to persistable entities as they are applied by the database. Defining XPath constraints for non-persistable entities results in consistency errors.
 {{% /alert %}}

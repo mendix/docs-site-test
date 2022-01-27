@@ -8,7 +8,7 @@ tags: ["Charts", "Widgets", "Studio Pro", "Chart Configuration", "Configuration"
 
 ## 1 Introduction
 
-This guide explains the options for configuring chart widgets. Charts are included in Mendix app templates based on Atlas UI. They can be included in other Mendix apps by downloading them from the [Mendix Marketplace](https://marketplace.mendix.com/link/component/105695/). For more documentation, see [Charts](/appstore/widgets/charts) in the *Marketplace Guide*.
+This guide explains the options for configuring chart widgets. Charts are included in Mendix app templates based on Atlas UI. They can be included in other Mendix apps by downloading them from the [Mendix Marketplace](https://marketplace.mendix.com/link/component/105695/). For more documentation, see [Charts](/appstore/widgets/charts/) in the *Marketplace Guide*.
 
 This guide covers the following widgets:
 
@@ -22,7 +22,7 @@ This guide covers the following widgets:
 * Time series
   * Note that some apps may have two *Time series* widgets. This document refers to the one with this icon: ![Image of correct Time series widget](/attachments/refguide/modeling/pages/chart-widgets/charts-configuration/time-series-icon.png)
 
-The configuration of *Any chart* widgets is in another document, here: [Any Chart Widgets](charts-any-configuration).
+The configuration of *Any chart* widgets is in another document, here: [Any Chart Widgets](/refguide/charts-any-configuration/).
 
 ## 2 Common configuration
 
@@ -48,7 +48,7 @@ Add series and configure their properties, each series represents a dataset. For
 
   In this case, new series can be added by clicking the **Series > New** button in the **Chart properties** tab.
 
-  {{% alert color="info" %}}From version 1.4 of charts you can create charts with a variable number of data series. For instructions on how to do this, see [How to Create a Dynamic Series Chart](/howto/front-end/charts-dynamic-series).{{% /alert %}}
+  {{% alert color="info" %}}From version 1.4 of charts you can create charts with a variable number of data series. For instructions on how to do this, see [How to Create a Dynamic Series Chart](/howto/front-end/charts-dynamic-series/).{{% /alert %}}
 
 1. Data source<a name="data-source"></a>
 
@@ -62,7 +62,7 @@ Add series and configure their properties, each series represents a dataset. For
 
     * **Data source**: the data source type for the series: *Database*, *Microflow* or *REST endpoint*
 
-    * **REST URL**: Relative or full URL to REST endpoint. For more information on setting up a REST endpoint see [REST Charts](/howto/front-end/charts-basic-rest)
+    * **REST URL**: Relative or full URL to REST endpoint. For more information on setting up a REST endpoint see [REST Charts](/howto/front-end/charts-basic-rest/)
 
     * **XPath constraint**: The constraint on the data from the entity (used when the data source is Database)
 
@@ -107,7 +107,7 @@ Add series and configure their properties, each series represents a dataset. For
 
     * **Series entity**: the entity which defines a series – the list of objects of this entity type will be used to construct the series; one series for each object.
     
-      Each entity is associated with the values which will be plotted, see [How to Create a Dynamic Series Chart](/howto/front-end/charts-dynamic-series) for more information.
+      Each entity is associated with the values which will be plotted, see [How to Create a Dynamic Series Chart](/howto/front-end/charts-dynamic-series/) for more information.
 
     * **Series name attribute**: the attribute in the series entity which will be displayed as the series name if a legend is displayed
 
@@ -192,17 +192,17 @@ See the following link for more information about plotly.js and the options: htt
     ![](/attachments/refguide/modeling/pages/chart-widgets/charts-configuration/toggle-editor.png)
 
 * **Layout options**: The JSON containing the Plotly layout options
-  * [Samples](charts-advanced-cheat-sheet#layout-all)
+  * [Samples](/refguide/charts-advanced-cheat-sheet/#layout-all)
   * [Full reference](https://plot.ly/javascript/reference/#layout)
 
 * **Configuration options**: The JSON containing the Plotly configuration options
-  * [Samples](charts-advanced-cheat-sheet#config-options)
+  * [Samples](/refguide/charts-advanced-cheat-sheet/#config-options)
   * [Documentation](https://plot.ly/javascript/configuration-options/)
   * [Full reference](https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js)
 
 #### 2.1.5 Common
 
-These are properties which are common to many widgets. For information see [Properties Common in the Page Editor](common-widget-properties#common-properties).
+These are properties which are common to many widgets. For information see [Properties Common in the Page Editor](/refguide/common-widget-properties/#common-properties).
 
 ## 3 Configuration by Chart Type {#configuration-by-chart-type}
 

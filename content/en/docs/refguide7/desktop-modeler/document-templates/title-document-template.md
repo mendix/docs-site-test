@@ -1,6 +1,6 @@
 ---
 title: "Title (Document Template)"
-url: /refguide7/title-document-template
+url: /refguide7/title-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Title+(document+template).html
@@ -19,7 +19,7 @@ This is the value you wish to display in the document.
 
 ### Style
 
-See [Style](style)
+See [Style](/refguide7/style/)
 
 ## Common Properties
 

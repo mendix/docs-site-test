@@ -1,8 +1,8 @@
 ---
 title: "Extend Design Properties to Customize Your Studio Experience"
-url: /howto8/front-end/extend-design-properties-to-customize
+url: /howto8/front-end/extend-design-properties-to-customize/
 parent: "atlas-ui"
-menu_order: 60
+weight: 60
 tags: ["Atlas", "UI", "UX", "user experience", "Studio", "customize", "custom"]
 ---
 
@@ -33,7 +33,7 @@ These design properties are used in the **Design** section of Studio.
 
 ![Design Properties in Studio](/attachments/howto8/front-end/atlas-ui/extend-design-properties-to-customize/button-design-properties.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 When you use a new class as a design property, make sure that this class exists.
 
@@ -41,8 +41,8 @@ When you use a new class as a design property, make sure that this class exists.
 
 ## 3 Read More
 
-* [Get Started with Atlas UI](get-started-with-atlasui)
-* [Create Company Atlas UI Resources](create-company-atlas-ui-resources)
-* [Create Custom Preview Images for Building Blocks & Page Templates](create-custom-preview-images-for-building-blocks-and-page-templates)
-* [Migrate Existing Apps to Atlas UI](migrate-existing-projects-to-atlasui)
-* [Share Company Atlas UI Resources](share-company-atlas-ui-resources)
+* [Get Started with Atlas UI](/howto8/front-end/get-started-with-atlasui/)
+* [Create Company Atlas UI Resources](/howto8/front-end/create-company-atlas-ui-resources/)
+* [Create Custom Preview Images for Building Blocks & Page Templates](/howto8/front-end/create-custom-preview-images-for-building-blocks-and-page-templates/)
+* [Migrate Existing Apps to Atlas UI](/howto8/front-end/migrate-existing-projects-to-atlasui/)
+* [Share Company Atlas UI Resources](/howto8/front-end/share-company-atlas-ui-resources/)

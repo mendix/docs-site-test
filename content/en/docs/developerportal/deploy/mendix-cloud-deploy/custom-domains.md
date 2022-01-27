@@ -20,7 +20,7 @@ The Mendix Cloud supports adding custom domains such as `https://myapp.mycompany
 {{% alert color="info" %}}
 This option is provided for licensed apps. You cannot add custom domains to Free Apps.
 
-This documentation is describing certificates for *incoming* connections. For information on setting up certificates for *outgoing* connections, see [Certificates](certificates).
+This documentation is describing certificates for *incoming* connections. For information on setting up certificates for *outgoing* connections, see [Certificates](/developerportal/deploy/certificates/).
 {{% /alert %}}
 
 {{% alert color="warning" %}}
@@ -47,7 +47,7 @@ Before starting this how-to, you will need to have the following prerequisites:
     * What is an SSL/TLS private key and what it is used for?
     * What is a certificate request and what it is used for?
 * a basic knowledge of certificate authorities (like GeoTrust, Thawte, Verisign, RapidSSL, GoDaddy, Comodo)
-* the correct permissions to your licensed node (for more information, see [Node Permissions](/developerportal/deploy/node-permissions))
+* the correct permissions to your licensed node (for more information, see [Node Permissions](/developerportal/deploy/node-permissions/))
 
 ### 2.2 Create and Configure a CNAME Record{#DNS}
 
@@ -250,13 +250,13 @@ To reach the root certificate, you have to link your certificate via the interme
 
 ### 8.3 How Do I Get my SAML Metadata or CommunityCommons.GetApplicationUrl to Use the Custom URL?
 
-For certain use cases, it is important for the Mendix runtime to know the public URL of your applications. This is most commonly needed when your app generates links back to itself. To tell the runtime where it lives, set the ApplicationRootUrl [custom runtime setting](/refguide/custom-settings#general). To set the custom runtime setting, follow the instructions in the [Custom Runtime Settings](environments-details#custom-runtime-settings) section of *Environment Details*.
+For certain use cases, it is important for the Mendix runtime to know the public URL of your applications. This is most commonly needed when your app generates links back to itself. To tell the runtime where it lives, set the ApplicationRootUrl [custom runtime setting](/refguide/custom-settings/#general). To set the custom runtime setting, follow the instructions in the [Custom Runtime Settings](/developerportal/deploy/environments-details/#custom-runtime-settings) section of *Environment Details*.
 
 ## 9 Read More
 
-* [Certificates](certificates)
-* [Environments](environments)
-* [Mendix Cloud: Deploy](mendix-cloud-deploy)
-* [Licensing Mendix Cloud Apps](licensing-apps)
-* [App Roles](/developerportal/collaborate/app-roles)
+* [Certificates](/developerportal/deploy/certificates/)
+* [Environments](/developerportal/deploy/environments/)
+* [Mendix Cloud: Deploy](/developerportal/deploy/mendix-cloud-deploy/)
+* [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps/)
+* [App Roles](/developerportal/collaborate/app-roles/)
 * [Control Center](/developerportal/control-center/)

@@ -15,9 +15,9 @@ Design properties are based on the classes in the styling for both web apps and 
 In both Studio and Studio Pro, design properties are visible as part of the widget properties:
 
 {{/* % image_container width="350" % */}}![Design Properties in Studio](/attachments/howto/front-end/atlas-ui/extend-design-properties/studio-design-properties.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
-{{/* % image_container width="350" % */}}![Design Properties in Studio Pro](/attachments/howto/front-end/atlas-ui/extend-design-properties/studio-pro-design-properties.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
-For more information on learning how to add design properties, see the [Design Properties API Documentation](/apidocs-mxsdk/apidocs/design-properties).
 
-Developers can also add additional design properties as part of a module. For more information, see the [File and Folder Structure](customize-styling-new#file-and-folder) section of *How to Customize Styling*.
+{{/* % image_container width="350" % */}}![Design Properties in Studio Pro](/attachments/howto/front-end/atlas-ui/extend-design-properties/studio-pro-design-properties.png){{/* % /image_container % */}}
+
+For more information on learning how to add design properties, see the [Design Properties API Documentation](/apidocs-mxsdk/apidocs/design-properties/).
+
+Developers can also add additional design properties as part of a module. For more information, see the [File and Folder Structure](/howto/front-end/customize-styling-new/#file-and-folder) section of *How to Customize Styling*.

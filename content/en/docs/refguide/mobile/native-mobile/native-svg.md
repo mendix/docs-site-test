@@ -56,7 +56,7 @@ You can check the list of allowed style properties at the [react-native-svg](htt
 
 ### 4.1 Coloring SVG Icons
 
-Icons can only be set for buttons and bottom bar items. When you integrate an SVG icon into a button or bottom bar item, you will have to set the SVG's color yourself. When using an app which employs Atlas UI, by default the colors are all white. For more information on styling, see the [Native Mobile Styling Reference Guide](/refguide/native-styling-refguide).
+Icons can only be set for buttons and bottom bar items. When you integrate an SVG icon into a button or bottom bar item, you will have to set the SVG's color yourself. When using an app which employs Atlas UI, by default the colors are all white. For more information on styling, see the [Native Mobile Styling Reference Guide](/refguide/native-styling-refguide/).
 
 For example, the following code:
 
@@ -115,6 +115,6 @@ If you want to use SVG elements directly in your pluggable widget, see the [reac
 
 ## 5 Read More
 
-* [Build a Pluggable Native Widget](/howto/extensibility/build-native-widget)
-* [Atlas UI](/howto/front-end/atlas-ui)
-* [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets)
+* [Build a Pluggable Native Widget](/howto/extensibility/build-native-widget/)
+* [Atlas UI](/howto/front-end/atlas-ui/)
+* [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets/)

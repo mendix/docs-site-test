@@ -1,27 +1,27 @@
 ---
 title: "Project Security"
-url: /refguide8/project-security
+url: /refguide8/project-security/
 parent: "security"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "security", "project security"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 #The anchor password-policy below is mapped, so it should not be removed or changed
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/project-security.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/project-security.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-In the **Project Security**, you can switch security on or off for the whole project. You can also configure security settings related to the project, such as user roles, administrator credentials, demo users, anonymous users, and password policy. To be able to configure, for example, [security per module](module-security) or [access rule for entities](access-rules), you need to switch the project security on first. 
+In the **Project Security**, you can switch security on or off for the whole project. You can also configure security settings related to the project, such as user roles, administrator credentials, demo users, anonymous users, and password policy. To be able to configure, for example, [security per module](/refguide8/module-security/) or [access rule for entities](/refguide8/access-rules/), you need to switch the project security on first. 
 
 To configure the project security, open **Project Explorer** > **Project** > **Security**, and the dialog box will open:
 
 ![](/attachments/refguide8/modeling/menus/view-menu/project-explorer/security/project-security/project-security-dialog.png)
 
-{{% alert type="info" %}}
-For more general information on security, see [Security](security).
+{{% alert color="info" %}}
+For more general information on security, see [Security](/refguide8/security/).
 {{% /alert %}}
 
 ## 2 Security Level {#security-level}
@@ -34,7 +34,7 @@ The security level defines if security is switched off or on for the project and
 | Prototype/demo | Security is applied to signing in, forms, and microflows. Users can access all data. | Administrator and anonymous access, user roles, security for forms and microflows. |
 | Production | Full security is applied. | Administrator and anonymous access, user roles, security for forms, microflows, entities, and reports. |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 For all licensed Mendix Cloud nodes, you need to use the **Production** security level and configure all security settings accordingly. Security levels **Off** and **Prototype/demo** are only allowed when testing locally, when deploying a Free App, and in cloud environments outside the Mendix Cloud which are specifically set up with **Development mode**. 
 {{% /alert %}}
 
@@ -78,25 +78,25 @@ Additionally, at the **Production** security level, the status of entity access 
 
 ## 4 User Roles {#user-roles}
 
-A user role aggregates a number of access rights on data, pages, and microflows. An end-user of the application is assigned one or more user roles by an administrator, and gets all access rights that these user roles represent. For more information, see [User Roles](user-roles).
+A user role aggregates a number of access rights on data, pages, and microflows. An end-user of the application is assigned one or more user roles by an administrator, and gets all access rights that these user roles represent. For more information, see [User Roles](/refguide8/user-roles/).
 
 ## 5 Administrator {#administrator}
 
-In the **Administrator** tab of **Project Security**, you can change the default credentials and a user role for the Administrator user. For more information, see [Administrator](administrator). 
+In the **Administrator** tab of **Project Security**, you can change the default credentials and a user role for the Administrator user. For more information, see [Administrator](/refguide8/administrator/). 
 
 ## 6 Demo Users {#demo-users}
 
-Demo users are a demonstration of each [user role](user-roles) existing in your app. You can use demo users to test what your app looks like for each user role or to demonstrate your app to other people. For more information, see [Demo Users](demo-users). 
+Demo users are a demonstration of each [user role](/refguide8/user-roles/) existing in your app. You can use demo users to test what your app looks like for each user role or to demonstrate your app to other people. For more information, see [Demo Users](/refguide8/demo-users/). 
 
 ## 7 Anonymous Users {#anonymous-users}
 
-Anonymous users allow end-users access your application without having to sign in. You can restrict the data that anonymous users can access by assigning a specific user role to them. For more information, see [Anonymous Users](anonymous-users).
+Anonymous users allow end-users access your application without having to sign in. You can restrict the data that anonymous users can access by assigning a specific user role to them. For more information, see [Anonymous Users](/refguide8/anonymous-users/).
 
 ## 8 Password Policy {#password-policy}
 
-Specify the password requirements when users create their accounts and set passwords for them. For example, you can set the minimum length of the password, if it must contain digits or an upper case characters. For more information, see [Password Policy](password-policy). 
+Specify the password requirements when users create their accounts and set passwords for them. For example, you can set the minimum length of the password, if it must contain digits or an upper case characters. For more information, see [Password Policy](/refguide8/password-policy/). 
 
 ## 9 Read More
 
-* [Security](security)
-* [Module Security](module-security)
+* [Security](/refguide8/security/)
+* [Module Security](/refguide8/module-security/)

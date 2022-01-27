@@ -19,7 +19,7 @@ Mendix uses visual models called microflows to define the logic of your applicat
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with microflow terms. For more information, see [Microflows](/refguide/microflows). 
+* Familiarize yourself with microflow terms. For more information, see [Microflows](/refguide/microflows/). 
 
 ## 2 Creating a Menu Item {#creating-menu-item}
 
@@ -91,11 +91,11 @@ Congratulations! You have created the menu item that triggers the microflow and 
 
 ## 4 Read More
 
-* [Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [Create a Custom Save Button](create-a-custom-save-button)
-* [Extend Your Application with Custom Java](extending-your-application-with-custom-java)
-* [Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [Optimize the Retrieve Activities](optimizing-retrieve-activities)
-* [Configure Error Handling](set-up-error-handling)
-* [Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Extract and Use Sub-Microflows](extract-and-use-sub-microflows)
+* [Define Access Rules Using XPath](/howto/logic-business-rules/define-access-rules-using-xpath/)
+* [Create a Custom Save Button](/howto/logic-business-rules/create-a-custom-save-button/)
+* [Extend Your Application with Custom Java](/howto/logic-business-rules/extending-your-application-with-custom-java/)
+* [Work with Lists in a Microflow](/howto/logic-business-rules/working-with-lists-in-a-microflow/)
+* [Optimize the Retrieve Activities](/howto/logic-business-rules/optimizing-retrieve-activities/)
+* [Configure Error Handling](/howto/logic-business-rules/set-up-error-handling/)
+* [Optimize Microflow Aggregates](/howto/logic-business-rules/optimizing-microflow-aggregates/)
+* [Extract and Use Sub-Microflows](/howto/logic-business-rules/extract-and-use-sub-microflows/)

@@ -1,16 +1,16 @@
 ---
 title: "Published App Service"
-url: /refguide8/published-app-service
+url: /refguide8/published-app-service/
 parent: "published-app-services"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-app-service.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-app-service.pdf).
 {{% /alert %}}
 
-{{% alert type="info" %}}
-App services are deprecated and were removed in Studio Pro 9. Use a [published web service](published-web-services) or a [published REST service](published-rest-services) instead.
+{{% alert color="info" %}}
+App services are deprecated and were removed in Studio Pro 9. Use a [published web service](/refguide8/published-web-services/) or a [published REST service](/refguide8/published-rest-services/) instead.
 {{% /alert %}}
 
 ## 1 General Tab
@@ -29,7 +29,7 @@ A newly created version will have the status set to 'Draft' by default. With 'Dr
 
 Once the status is set to 'Consumable', you cannot edit the app service anymore. App service versions are only editable when the version is in 'Draft'. Only one version of app service is allowed to be in 'Draft' status.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Always remember to set at least one app service version to Consumable before going to production. Only Consumable app service versions will be available in production.
 {{% /alert %}}
 
@@ -49,7 +49,7 @@ Can be used to describe what the app service is used for.
 
 ![](/attachments/refguide8/modeling/integration/published-app-services/published-app-service/16843915.png)
 
-Provide the actual actions of which the app service is composed. Each of these actions is coupled to a microflow. See [Actions](actions).
+Provide the actual actions of which the app service is composed. Each of these actions is coupled to a microflow. See [Actions](/refguide8/actions/).
 
 ## 3 Settings
 
@@ -70,7 +70,7 @@ The 'Target namespace' is a technical term, that provides an XML namespace.
 
 The button 'Export Mendix Service Definition' creates an MSD-file with the definition of the App service. It can be imported by a consumer of your service. You can test your app service on the local machine by importing this MSD file in another app, and running the provider and consumer apps simultaneously.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 This MSD file contains a default location: the Application Root URL of the default configuration in the project settings. For example: [http://localhost:8080/](http://localhost:8080/). This endpoint address is overwritten if you deploy your app in the cloud, and will be set to the cloud location where your app is running.
 

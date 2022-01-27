@@ -1,6 +1,6 @@
 ---
 title: "Monitoring Mendix Runtime"
-url: /refguide8/monitoring-mendix-runtime
+url: /refguide8/monitoring-mendix-runtime/
 category: "Mendix Runtime"
 description: "Describes the supported Mendix Runtime monitoring actions."
 tags: ["runtime", "json", "studio pro", "on-premises", "local"]
@@ -11,14 +11,14 @@ tags: ["runtime", "json", "studio pro", "on-premises", "local"]
 
 For on-premises and local deployments of Mendix, the Mendix Runtime monitoring actions can be called by sending a JSON request to the admin handler. This is accomplished by sending a request to the admin port which is specified in the application configuration (the default port is 8090).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This is only available for local and on-premises deployments of your app.
 
 For deployments to the Mendix Cloud, you will not have access to the m2ee admin handler. However, you can get the same information from various pages in the Developer Portal. For more information see:
 
-* [Metrics](/developerportal/operate/metrics)
-* [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4)
-* [Running Now Metrics](/developerportal/operate/troubleshooting-mxcloud-runningnow)
+* [Metrics](/developerportal/operate/metrics/)
+* [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/)
+* [Running Now Metrics](/developerportal/operate/troubleshooting-mxcloud-runningnow/)
 {{% /alert %}}
 
 You can change the admin port from Studio Pro by navigating to **Project** > **Settings** > **Configurations** > *your configuration* > **Server** > **Admin port**.
@@ -37,7 +37,7 @@ The next sections explain which monitoring actions are supported.
 ### 2.1 Request
 
 ```json
-"{"action" : "get_current_runtime_requests", "params":{} }"
+{"action" : "get_current_runtime_requests", "params":{} }
 ```
 
 ### 2.2 Example Response
@@ -123,7 +123,7 @@ This request returns the current executions of actions known by the Mendix Runti
 ### 3.1 Request
 
 ```json
-"{"action" : "runtime_statistics", "params":{} }"
+{"action" : "runtime_statistics", "params":{} }
 ```
 
 ### 3.2 Example Response
@@ -251,7 +251,7 @@ Number of database requests. Distinguishes between "select", "update", "insert",
 
 #### 3.3.5 Memory
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Memory statistics should only be interpreted by experts, lack of detailed knowledge of the Java memory model can lead to false conclusions.
 
@@ -266,7 +266,7 @@ The "memorypools" section contains an ordered list of all the memory pools exact
 *   "name" – the description of the memory pool as received by the JVM. These names can be different depending on for example JDK,memory manager or  garbage collection options
 *   "index" – the index in the JSON Array. This field is not strictly needed as the pools are returned in a list so you can, and should, rely on the order of the list in case you are processing them in a program
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you are automatically processing the "memorypools" section to, for example, display in a graph, you should ideally not make any assumptions about the kind of memory pool based on its order in the list or its name as these may change depending on for example garbage collector settings or Java version.
 
@@ -279,7 +279,7 @@ If do want to develop a strategy on interpreting these pools anyway based on Jav
 ### 4.1 Request
 
 ```json
-"{"action" : "cache_statistics", "params":{} }"
+{"action" : "cache_statistics", "params":{} }
 ```
 
 ### 4.2 Example Response
@@ -320,7 +320,7 @@ This information can be an aid in figuring out which objects cause a lot of memo
 ### 5.1 Request
 
 ```json
-"{"action" : "server_statistics", "params":{} }"
+{"action" : "server_statistics", "params":{} }
 ```
 
 ### 5.2 Example Response
@@ -359,7 +359,7 @@ The "threadpool" section gives information about the threadpool of the handler w
 ### 6.1 Request
 
 ```json
-"{"action" : "get_logged_in_user_names", "params":{} }"
+{"action" : "get_logged_in_user_names", "params":{} }
 ```
 
 ### 6.2 Example Response
@@ -383,7 +383,7 @@ Shows which users are currently logged in. If a user has multiple sessions, this
 ### 7.1 Request
 
 ```json
-"{"action" : "get_all_thread_stack_traces", "params":{} }"
+{"action" : "get_all_thread_stack_traces", "params":{} }
 ```
 
 ### 7.2 Example Response
@@ -445,7 +445,7 @@ Returns all the current thread stack traces by name. This is useful for low leve
 ### 8.1 Request
 
 ```json
-"{"action" : "runtime_status", "params":{} }"
+{"action" : "runtime_status", "params":{} }
 ```
 
 ### 8.2 Example Response
@@ -477,7 +477,7 @@ This information can be used to track what state the Mendix Runtime is in when t
 ### 9.1 Request
 
 ```json
-"{"action" : "check_health", "params":{} }"
+{"action" : "check_health", "params":{} }
 ```
 
 ### 9.2 Example Response
@@ -494,13 +494,13 @@ This information can be used to track what state the Mendix Runtime is in when t
 
 ### 9.3 Return Values
 
-In Mendix Studio Pro, a [health check microflow](project-settings) can be configured. This microflow can report on the functional status of the application; does the general functionality of the application work, and are the necessary remote services available?
+In Mendix Studio Pro, a [health check microflow](/refguide8/project-settings/) can be configured. This microflow can report on the functional status of the application; does the general functionality of the application work, and are the necessary remote services available?
 
 If a health check microflow has been configured, this request will report on the current health status. The "health" value can be one of "healthy", "sick", or "unknown" (when no health microflow was configured). For the value "sick," the "diagnosis" value will give the reason the application is not healthy. This reason is the return value of the health check microflow.
 
 The health check microflow gets invoked multiple times per minute. Therefore, it is recommended to make it light-weight and run quickly. Heavy operations may have a significant impact on your application's performance.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 This request can only be executed when the Mendix Runtime status is "running" (see [Runtime Status](#runtime-status) above).
 
@@ -511,7 +511,7 @@ This request can only be executed when the Mendix Runtime status is "running" (s
 ### 10.1 Request
 
 ```json
-"{"action" : "about", "params":{} }"
+{"action" : "about", "params":{} }
 ```
 
 ### 10.2 Example Response

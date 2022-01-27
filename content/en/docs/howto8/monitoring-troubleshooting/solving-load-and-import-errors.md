@@ -1,8 +1,8 @@
 ---
 title: "Solve Load & Import Errors"
-url: /howto8/monitoring-troubleshooting/solving-load-and-import-errors
+url: /howto8/monitoring-troubleshooting/solving-load-and-import-errors/
 category: "Monitoring & Troubleshooting"
-menu_order: 11
+weight: 11
 tags: ["monitoring", "troubleshooting", "load", "import", "error"]
 aliases:
     - /howto8/solving-load-and-import-errors.html
@@ -37,13 +37,13 @@ Before trying to solve the problems, it's useful to discover the origin of the p
 
 ### 3.1 Is This a Team Server Project?
 
-If your project is a [Team Server](/developerportal/collaborate/team-server) project, and you just did a [download or update](/refguide8/using-version-control-in-studio-pro) from the server, the problem may have been added in a revision that was recently committed to the Team Server. You can check who made the most recent commit via the [Team Server](/developerportal/collaborate/team-server) menu item in the [Developer Portal](https://sprintr.home.mendix.com).
+If your project is a [Team Server](/developerportal/collaborate/team-server/) project, and you just did a [download or update](/refguide8/using-version-control-in-studio-pro/) from the server, the problem may have been added in a revision that was recently committed to the Team Server. You can check who made the most recent commit via the [Team Server](/developerportal/collaborate/team-server/) menu item in the [Developer Portal](https://sprintr.home.mendix.com).
 
 If the latest change on your branch line was committed by someone other than yourself, please inform the person about the problem.
 
 ### 3.2 Did You Obtain the Model from Someone Else?
 
-If you received the model from someone else, for example as a [project package](/howto8/integration/importing-and-exporting-objects) (.mpk) file, then it's possible they created the model with the Mendix Model SDK. Please inform the person about the problem and ask them for a solution.
+If you received the model from someone else, for example as a [project package](/howto8/integration/importing-and-exporting-objects/) (.mpk) file, then it's possible they created the model with the Mendix Model SDK. Please inform the person about the problem and ask them for a solution.
 
 ### 3.3 Did You Create the Project Yourself?
 
@@ -57,12 +57,12 @@ The most likely cause for these kinds of errors is a faulty script that was run 
 
 ## 5 Read More
 
-*   [Clearing Warning Messages in Mendix](clear-warning-messages)
-*   [Debug a Hybrid Mobile Application](debug-a-hybrid-mobile-application)
-*   [Debugging Java Actions](debug-java-actions)
-*   [Debugging Java actions remotely](debug-java-actions-remotely)
-*   [Debugging Microflows](debug-microflows)
-*   [Debugging Microflows Remotely](debug-microflows-remotely)
-*   [Finding the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-*   [Log Levels](log-levels)
-*   [Monitoring Mendix using JMX](monitoring-mendix-using-jmx)
+*   [Clearing Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+*   [Debug a Hybrid Mobile Application](/howto8/monitoring-troubleshooting/debug-a-hybrid-mobile-application/)
+*   [Debugging Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)
+*   [Debugging Java actions remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)
+*   [Debugging Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+*   [Debugging Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely/)
+*   [Finding the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+*   [Log Levels](/howto8/monitoring-troubleshooting/log-levels/)
+*   [Monitoring Mendix using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)

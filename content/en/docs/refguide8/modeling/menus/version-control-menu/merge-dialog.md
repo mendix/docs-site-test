@@ -1,24 +1,24 @@
 ---
 title: "Merge Dialog"
-url: /refguide8/merge-dialog
+url: /refguide8/merge-dialog/
 parent: "version-control-menu"
 tags: ["studio pro", "merge-dialog", "merge", "version control"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/merge-dialog.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/merge-dialog.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-With the **Merge** dialog you can [merge](version-control#merge) changes from a branch line to the main line. For example, a fix that you applied in a maintenance branch line can be merged back to the main line so that you do not have to apply the fix by hand again. Also if you completed developing a large feature in a separate branch line you can use merge to incorporate that feature into the main line.
+With the **Merge** dialog you can [merge](/refguide8/version-control/#merge) changes from a branch line to the main line. For example, a fix that you applied in a maintenance branch line can be merged back to the main line so that you do not have to apply the fix by hand again. Also if you completed developing a large feature in a separate branch line you can use merge to incorporate that feature into the main line.
 
-To access the **Merge** dialog, open [Version Control menu](version-control-menu) > **Merge Changes Here**:
+To access the **Merge** dialog, open [Version Control menu](/refguide8/version-control-menu/) > **Merge Changes Here**:
 
 ![Merge Dialog](/attachments/refguide8/modeling/menus/version-control-menu/merge-dialog/merge-dialog.png)
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Before continuing with the merge action, please make sure that you are currently working in the development line that you want to merge to.
 {{% /alert %}}
 

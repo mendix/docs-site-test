@@ -1,6 +1,6 @@
 ---
 title: "Table (Document Template)"
-url: /refguide7/table-document-template
+url: /refguide7/table-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Table+(document+template.html
@@ -14,9 +14,9 @@ Tables can be used to change the layout of the form. They contain a number of ro
 
 Tables can be used both inside and outside the data view or templategrid widgets.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-![](/attachments/refguide7/desktop-modeler/document-templates/table-document-template/918134.png)
+![](/attachments/refguide7/desktop-modeler/document-templates/918134.png)
 
 This table has four rows and three columns. The last row contains a data view with another table.
 
@@ -30,7 +30,7 @@ A column in a table.
 
 ### 2.2 Row
 
-A row in a table. See [Row (document template)](row-document-template).
+A row in a table. See [Row (document template)](/refguide7/row-document-template/).
 
 ## 3 Appearance Properties
 
@@ -38,7 +38,7 @@ A row in a table. See [Row (document template)](row-document-template).
 
 The column weights are percentages separated by semi-colons that determine the widths of the columns. The weights have to add up to 100\. An alternative way of changing the widths of columns is by dragging the separating line between columns.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 In the screenshot above, the column weights of the enclosing table are `25;25;50`.
 
@@ -54,7 +54,7 @@ Cell padding specifies the space between the content of the cell and the cell wa
 
 ### 3.4 Style
 
-For details, see [Style](style).
+For details, see [Style](/refguide7/style/).
 
 ## 4 Common Properties
 

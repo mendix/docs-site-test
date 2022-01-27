@@ -1,6 +1,6 @@
 ---
 title: "Widget Development"
-url: /howto7/widget-development
+url: /howto7/widget-development/
 tags: ["widget", "develop widget", "customize"]
 ---
 
@@ -42,7 +42,7 @@ For details on the widget life cycle, reference this documentation:
 
 In the past we created widgets using Brackets and a plugin. With the new JavaScript/Node.JS tools that have recently come out, we deprecated this way of creating widgets. The new way of creating widgets is done using Yeoman and a generator.
 
-For a quick tutorial on using the widget generator, see [How to Scaffold a Widget with the Yeoman Widget Generator](scaffold-a-widget-with-the-yeoman-widget-generator).
+For a quick tutorial on using the widget generator, see [How to Scaffold a Widget with the Yeoman Widget Generator](/howto7/widget-development/scaffold-a-widget-with-the-yeoman-widget-generator/).
 
 This information is also covered in [Expert Series: Kickstart Your Widget Development](https://www.youtube.com/watch?v=MZ0Ihu2QGYY).
 
@@ -54,7 +54,7 @@ Widgets have the ability to get data from the Runtime, manipulate objects, show 
 
 Mendix has a specific way of configuring your widget through the use of an XML file. For more information and an example, see [WidgetName](https://github.com/mendix/AppStoreWidgetBoilerplate/blob/master/src/WidgetName/WidgetName.xml) in the AppStoreWidgetBoilerplate repository.
 
-For the full reference on writing a widget XML, see the [Build Widgets with XML](use-xml-widget).
+For the full reference on writing a widget XML, see the [Build Widgets with XML](/howto7/widget-development/use-xml-widget/).
 
 ### 3.6 Boilerplate
 
@@ -82,6 +82,6 @@ Within the Mendix community of developers, there are plenty of widget developers
 
 ## 5 Main Documents in This Category
 
-* [Build a Preview Image for a Custom Widget](add-a-preview-image-for-custom-widget)
-* [Scaffold a Widget with the Yeoman Widget Generator](scaffold-a-widget-with-the-yeoman-widget-generator)
-* [Use the Widget Development Plugin for Adobe Brackets](use-the-widget-development-plugin-for-adobe-brackets)
+* [Build a Preview Image for a Custom Widget](/howto7/widget-development/add-a-preview-image-for-custom-widget/)
+* [Scaffold a Widget with the Yeoman Widget Generator](/howto7/widget-development/scaffold-a-widget-with-the-yeoman-widget-generator/)
+* [Use the Widget Development Plugin for Adobe Brackets](/howto7/widget-development/use-the-widget-development-plugin-for-adobe-brackets/)

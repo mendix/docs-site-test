@@ -1,14 +1,14 @@
 ---
 title: "Project Menu"
-url: /refguide8/project-menu
+url: /refguide8/project-menu/
 parent: "menus"
 description: "Describes the Project Menu in Studio Pro."
-menu_order: 30
+weight: 30
 tags: ["Studio Pro", "project menu", "top bar"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/project-menu.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/project-menu.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -42,7 +42,7 @@ The **Check Widgets** option checks that the widgets you have implemented in the
 
 ### 2.5 Convert Classes to Design Properties
 
-The **Convert classes to design properties** option allows you to convert classes in widgets into design properties to assist in changing the widget styling. See [How To Implement Native Mobile Styling](/howto8/mobile/native-styling) for more information.
+The **Convert classes to design properties** option allows you to convert classes in widgets into design properties to assist in changing the widget styling. See [How To Implement Native Mobile Styling](/howto8/mobile/native-styling/) for more information.
 
 ## 3 Synchronize Project Directory
 
@@ -72,7 +72,7 @@ The **Create Deployment Package** option creates a Mendix Deployment Archive pac
 
 Shortcut key:  <kbd>F7</kbd>
 
-For more information on settings displayed on the Create Deployment Package dialog box, see [Create Deployment Package](create-deployment-package-dialog).
+For more information on settings displayed on the Create Deployment Package dialog box, see [Create Deployment Package](/refguide8/create-deployment-package-dialog/).
 
 ## 7 Clean Deployment Directory
 
@@ -84,13 +84,13 @@ The **Deploy to Licensed Cloud Node** option deploys the latest committed revisi
 
 Shortcut key:  <kbd>Ctrl</kbd> + <kbd>F5</kbd>
 
-{{% alert type="warning" %}}
-The [Mendix Studios Target](/developerportal/deploy/studio-deployment-settings#target) needs to be set and the deploying user needs to have transport rights to the set target.
+{{% alert color="warning" %}}
+The [Mendix Studios Target](/developerportal/deploy/studio-deployment-settings/#target) needs to be set and the deploying user needs to have transport rights to the set target.
 {{% /alert %}}
 
-For more information on using this option, see [Deploy to the Cloud](deploy-to-the-cloud-dialog).
+For more information on using this option, see [Deploy to the Cloud](/refguide8/deploy-to-the-cloud-dialog/).
 
 ## 9 Read More
 
-* [Studio Pro Overview](studio-pro-overview)
-* [Deployment](/developerportal/deploy)
+* [Studio Pro Overview](/refguide8/studio-pro-overview/)
+* [Deployment](/developerportal/deploy/)

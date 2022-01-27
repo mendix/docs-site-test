@@ -56,8 +56,8 @@ The response can include the number of objects retrieved, the count of an XPath,
 
 The **Connection** tab displays the header information and the timings of the request. The timing of a request includes the time needed to send the response to the server, the wait time due to server processing, and the time needed to download the response from the server. 
 
-{{% alert type="warning" %}}
-Request timing information is not yet available for [Mendix 7.6](/releasenotes/studio-pro/7.6) or above.
+{{% alert color="warning" %}}
+Request timing information is not yet available for [Mendix 7.6](/releasenotes/studio-pro/7.6/) or above.
 {{% /alert %}}
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-recorder/rg-three-browser-recorder-results/Performance_browser_recording_ActionsConnection.png)

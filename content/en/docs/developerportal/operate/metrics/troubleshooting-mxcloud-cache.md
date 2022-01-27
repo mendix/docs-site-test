@@ -14,7 +14,7 @@ tags: ["App","Troubleshoot","Developer Portal","Cache","Mendix Cloud"]
 
 This information is only relevant for apps built using Mendix Studio Pro/Runtime version 6.
 
-Runtime versions 7.0 and above are stateless and do not cache Mendix objects on the server. See the [Mendix Desktop Modeler Release Notes 7.0](/releasenotes/studio-pro/7.0) for more information.
+Runtime versions 7.0 and above are stateless and do not cache Mendix objects on the server. See the [Mendix Desktop Modeler Release Notes 7.0](/releasenotes/studio-pro/7.0/) for more information.
 
 {{% /alert %}}
 
@@ -32,7 +32,7 @@ The **User Sessions** data grid will show the entities per session, you can pres
 
 ![](/attachments/developerportal/operate/metrics/troubleshooting-mxcloud-cache/troubleshooting-mxcloud-cache-img2.png)
 
-The **unknown** user means the entities are part of a system session, for example a [scheduled event](/refguide/scheduled-events).
+The **unknown** user means the entities are part of a system session, for example a [scheduled event](/refguide/scheduled-events/).
 
 ![](/attachments/developerportal/operate/metrics/troubleshooting-mxcloud-cache/troubleshooting-mxcloud-cache-img3.png)
 
@@ -47,6 +47,6 @@ The cache statistics might also help you identify the most commonly used entitie
 
 ## 3 Read More
 
-* [Metrics](metrics)
-* [Node Permissions](/developerportal/deploy/node-permissions)
-* [Running Now Metrics](troubleshooting-mxcloud-runningnow)
+* [Metrics](/developerportal/operate/metrics/)
+* [Node Permissions](/developerportal/deploy/node-permissions/)
+* [Running Now Metrics](/developerportal/operate/troubleshooting-mxcloud-runningnow/)

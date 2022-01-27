@@ -1,17 +1,17 @@
 ---
 title: "Call REST Service"
-url: /refguide8/call-rest-action
+url: /refguide8/call-rest-action/
 parent: "integration-activities"
 tags: ["studio pro", "integration activity", "call rest service"]
-menu_order: 10
+weight: 10
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/call-rest-action.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/call-rest-action.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Microflows**.
 {{% /alert %}}
 
@@ -63,7 +63,7 @@ The template for the location can contain parameters that are written as a numbe
 
 #### 4.1.2 Parameters
 
-For each parameter in the template, you can specify its value using a [microflow expression](expressions) resulting in a string value. This value will be inserted at the position of the parameter.
+For each parameter in the template, you can specify its value using a [microflow expression](/refguide8/expressions/) resulting in a string value. This value will be inserted at the position of the parameter.
 
 ### 4.2 HTTP Method
 
@@ -73,17 +73,17 @@ The **HTTP method** property defines the HTTP method to use when calling a REST 
 
 Set **Use timeout on request** to **Yes** to be able specify how long the Call REST activity should wait for the REST endpoint to respond. 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 It is recommended that you keep this set to **Yes**. Most cloud infrastructure services (including those used by the Mendix Cloud) will close HTTP connections automatically if there is no traffic for a few minutes, even if your activity is still waiting for a response. This means that, if your activity calls a web service which takes a long time to respond, the connection may be closed without the activity being aware of this, and your activity will not receive a response. Under these circumstances, if **Use timeout on request** is set to **No**, your activity will get stuck waiting indefinitely for data to arrive.
 {{% /alert %}}
 
-Default value: *Yes* (as of Studio Pro [8.5.0](/releasenotes/studio-pro/8.5#850); in earlier versions, the default value was No)
+Default value: *Yes* (as of Studio Pro [8.5.0](/releasenotes/studio-pro/8.5/#850); in earlier versions, the default value was No)
 
 ### 4.4 Timeout (s)
 
 If the REST endpoint has not responded after the number of seconds in **Timeout (s)**, an exception will occur and the microflow will roll back or go into your custom error handler.
 
-Default value: *300 seconds* (as of Studio Pro [8.5.0](/releasenotes/studio-pro/8.5#850); in earlier versions, the default value for **Use timeone on request** was No)
+Default value: *300 seconds* (as of Studio Pro [8.5.0](/releasenotes/studio-pro/8.5/#850); in earlier versions, the default value for **Use timeone on request** was No)
 
 ### 4.5 Proxy Configuration
 
@@ -99,7 +99,7 @@ When you select **Override**, you can configure dynamically whether to use a pro
 
 ### 4.6 Client certificate
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This feature is available in Mendix 8.18.0 and later.
 {{% /alert %}}
 
@@ -113,8 +113,8 @@ Select from one of the following:
 
 When you select **Override**, you can configure the client certificate that will be used. Click **Edit** to specify the **Client certificate identifier**. This identifier can be set in different places, depending on where you deploy the app:
 
-* When you deploy the app to the Mendix cloud, the identifier is set when [pinning a client certificate](/developerportal/deploy/certificates#outgoing-client-certificates)
-* When you deploy the app elsewhere, the identifier is set in the custom setting [ClientCertificateUsages](custom-settings#ca-certificates)
+* When you deploy the app to the Mendix cloud, the identifier is set when [pinning a client certificate](/developerportal/deploy/certificates/#outgoing-client-certificates)
+* When you deploy the app elsewhere, the identifier is set in the custom setting [ClientCertificateUsages](/refguide8/custom-settings/#ca-certificates)
 
 When this identifier is not set (either not pinned or not present in _ClientCertificateUsages_), the default settings will be used (as if **Use project settings** were selected).
 
@@ -128,11 +128,11 @@ The **Use HTTP authentication** check box defines whether basic authentication s
 
 ### 5.2 User Name
 
-The **User name** property defines the user name that will be used to authenticate over HTTP. The user name needs to be entered using [microflow Expressions](expressions). The microflow expression should result in a string.
+The **User name** property defines the user name that will be used to authenticate over HTTP. The user name needs to be entered using [microflow Expressions](/refguide8/expressions/). The microflow expression should result in a string.
 
 ### 5.3 Password
 
-The **Password** property defines the password that will be used to authenticate over HTTP. The password needs to be entered using [expressions](expressions). The microflow expression should result in a string.
+The **Password** property defines the password that will be used to authenticate over HTTP. The password needs to be entered using [expressions](/refguide8/expressions/). The microflow expression should result in a string.
 
 ### 5.4 Custom HTTP Headers
 
@@ -144,13 +144,13 @@ These headers are added to the HTTP request header. Each custom header is a pair
 
 The sections below describe the options in the drop-down menu for generating the request.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Requests can only be generated for HTTP methods POST, PUT, PATCH, and OPTIONS.
 {{% /alert %}}
 
 ### 6.1 Export Mapping for the Entire Request
 
-This option allows you to use a single [export mapping](export-mappings) for the body of the request. 
+This option allows you to use a single [export mapping](/refguide8/export-mappings/) for the body of the request. 
 
 #### 6.1.1 Mapping
 
@@ -158,17 +158,17 @@ Select the mapping that you want to apply.
 
 #### 6.1.2 Parameter Type
 
-If the [export mapping](export-mappings) requires an input, this field shows the type of the input.
+If the [export mapping](/refguide8/export-mappings/) requires an input, this field shows the type of the input.
 
 #### 6.1.3 Parameter
 
-If the [export mapping](export-mappings) requires an input, you can select a parameter of the correct type.
+If the [export mapping](/refguide8/export-mappings/) requires an input, you can select a parameter of the correct type.
 
 #### 6.1.4 Content Type
 
-If the [export mapping](export-mappings) is based on a message definition, it can export either XML or JSON. Choose the type of output you want.
+If the [export mapping](/refguide8/export-mappings/) is based on a message definition, it can export either XML or JSON. Choose the type of output you want.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 **Content-Type header** is not set by default. To set it, use the **Custom HTTP Headers** tab.
 {{% /alert %}}
 
@@ -202,8 +202,8 @@ See [String Template](#string-template), above, for more information on construc
 
 These are the options in the drop-down menu for handling the response:
 
-* **Apply import mapping** – if the response is JSON or XML, it can be transformed directly into objects using an [import mapping](import-mappings); the fields that you can choose here are described in the [Import Mapping action](import-mapping-action)
-* **Store in an HTTP response** – any successful HTTP response can be stored directly in an [HttpResponse](http-request-and-response-entities#http-response) object, and the [$latestHttpResponse](#latesthttpresponse) variable is also updated
+* **Apply import mapping** – if the response is JSON or XML, it can be transformed directly into objects using an [import mapping](/refguide8/import-mappings/); the fields that you can choose here are described in the [Import Mapping action](/refguide8/import-mapping-action/)
+* **Store in an HTTP response** – any successful HTTP response can be stored directly in an [HttpResponse](/refguide8/http-request-and-response-entities/#http-response) object, and the [$latestHttpResponse](#latesthttpresponse) variable is also updated
 * **Store in a file document** – if the response contains binary content (for example, a PDF), it can be stored in an object of an entity type which inherits from `System.FileDocument`
 * **Store in a string** – if the response is a string (for example, CSV), it can be stored directly in a string variable
 * **Do not store in a variable** - use this option when the call does not return anything useful
@@ -218,7 +218,7 @@ The **Variable** field defines the name for the result of the operation.
 
 #### 7.3.1 $latestHttpResponse Variable
 
-The `$latestHttpResponse` variable is of the [HttpResponse](http-request-and-response-entities#http-response) type. It is available after a **Call REST** activity.
+The `$latestHttpResponse` variable is of the [HttpResponse](/refguide8/http-request-and-response-entities/#http-response) type. It is available after a **Call REST** activity.
 
 However, its `Content` attribute will be left empty in most cases to minimize memory usage.
 
@@ -231,10 +231,10 @@ This variable can be accessed from any microflow action in the scope.
 
 #### 7.3.2  Store Message Body in $latestHttpResponse Variable {#latesthttpresponse}
 
-If HTTP response status code is not successful (for example, `[4xx]` or `[5xx]`), the flow will continue in an [error handler](error-event#errorhandlers).
+If HTTP response status code is not successful (for example, `[4xx]` or `[5xx]`), the flow will continue in an [error handler](/refguide8/error-event/#errorhandlers).
 
-{{% alert type="warning" %}}
-You should always add an error handler for a [call REST service](/refguide8/call-rest-action) action.
+{{% alert color="warning" %}}
+You should always add an error handler for a [call REST service](/refguide8/call-rest-action/) action.
 {{% /alert %}}
 
 ## 8 Common Section{#common}

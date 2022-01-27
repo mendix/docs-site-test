@@ -25,7 +25,7 @@ It describes the installation and configuration of the Mendix software on multip
 
 * An active Azure subscription
 
-* Two or more servers, configured as described in the [Deploy Mendix on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows) guide. Make sure these servers have an extra data disk added which you configure to use as the location of apps and server files in the Mendix Service Console preferences.
+* Two or more servers, configured as described in the [Deploy Mendix on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/) guide. Make sure these servers have an extra data disk added which you configure to use as the location of apps and server files in the Mendix Service Console preferences.
 
 * An Azure admin account with sufficient permissions to create or modify:
 
@@ -54,7 +54,7 @@ In a clustered environment there are some tasks (for example, cleaning up expire
 
 4. Click **Close** on both screens to return to the Service Console.
 
-More information on the cluster leader and slave roles can be found in the [Cluster Leader & Cluster Slaves](/refguide/clustered-mendix-runtime#cluster-leader-follower) section of *Clustered Mendix Runtime*.
+More information on the cluster leader and slave roles can be found in the [Cluster Leader & Cluster Slaves](/refguide/clustered-mendix-runtime/#cluster-leader-follower) section of *Clustered Mendix Runtime*.
 
 
 ## 4 Configuring the Azure Load Balancer
@@ -81,7 +81,7 @@ Then select your application, click **Configuration** and then **Advanced...**. 
 
    ![](/attachments/developerportal/deploy/on-premises-design/deploy-mendix-on-microsoft-windows/deploy-mendix-ha-on-windows-in-microsoft-azure/application_storage_settings.png)
 
-By default, the container will be created in the blob storage if it does not yet exist. More information about the configuration options for Azure Blob Storage in the Mendix Runtime is available in the [Microsoft Azure Blob Storage Settings](/refguide/custom-settings#azure-blob) section of *Runtime Customization*.
+By default, the container will be created in the blob storage if it does not yet exist. More information about the configuration options for Azure Blob Storage in the Mendix Runtime is available in the [Microsoft Azure Blob Storage Settings](/refguide/custom-settings/#azure-blob) section of *Runtime Customization*.
 
 It is also strongly recommended to add the setting _com.mendix.storage.PerformDeleteFromStorage_ with value `false`. This prevents the runtime from deleting files from the underlying storage when they are deleted in the app, which can result in missing files when restoring a database back-up.
 If you do not want to enable this setting, make sure you have a restore strategy configured for your storage back end.
@@ -93,11 +93,11 @@ These settings have to be configured on *all* servers in the cluster.
 ## 6 Database
 
 Please note that, when using an Azure SQL database for your deployment, it is recommended you use either Premium (DTU-based model) or Business Critical (vCore-based model). Otherwise, the latency of the database affect the performance of your application.
-Also, keep in mind that each published application needs its own database! More information on database requirements can be found here: [Databases](/refguide/system-requirements#databases)
+Also, keep in mind that each published application needs its own database! More information on database requirements can be found here: [Databases](/refguide/system-requirements/#databases)
 
 
 ## 7 Read More
 
-* [Mendix deployment on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows)
-* [Clustered Mendix Runtime](/refguide/clustered-mendix-runtime)
-* [System requirements](/refguide/system-requirements)
+* [Mendix deployment on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/)
+* [Clustered Mendix Runtime](/refguide/clustered-mendix-runtime/)
+* [System requirements](/refguide/system-requirements/)

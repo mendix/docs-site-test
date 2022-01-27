@@ -1,26 +1,26 @@
 ---
 title: "Image Collection"
-url: /refguide8/image-collection
+url: /refguide8/image-collection/
 parent: "page-resources"
-menu_order: 5
+weight: 5
 description: "Why and how to create an image collection"
 tags: ["Studio Pro", "Images", "Image Collection"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/image-collection.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/image-collection.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 If you want to use your own static images within an application, for example for branding or to give your buttons a unique feel, you will need to store them in your app. To do this, you create an **image collection** where you can store your images.
 
-For information on how to use images in your app, see [Images](images).
+For information on how to use images in your app, see [Images](/refguide8/images/).
 
-Remember that, if you want to use the same set of custom images in several apps, you can export and import complete image collections, with their images, using [Import & Export Objects](/howto8/integration/importing-and-exporting-objects).
+Remember that, if you want to use the same set of custom images in several apps, you can export and import complete image collections, with their images, using [Import & Export Objects](/howto8/integration/importing-and-exporting-objects/).
 
-{{% alert type="warning" %}}
-Too many large static images in your app can lead to performance issues. If you need a lot of large images, you can store them in your database (see [How to Work with Images & Files](/howto8/data-models/working-with-images-and-files) for more information).
+{{% alert color="warning" %}}
+Too many large static images in your app can lead to performance issues. If you need a lot of large images, you can store them in your database (see [How to Work with Images & Files](/howto8/data-models/working-with-images-and-files/) for more information).
 {{% /alert %}}
 
 ## 2 Adding an Image Collection
@@ -68,7 +68,7 @@ The **Find usages** button displays, in the **Find Results** dock, all the place
 
 The **Move to other image collection** button allows you to move the selected image(s) to another image collection. When you move the image(s), all references elsewhere in your app will also be updated.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 It is not possible to *copy* an image, you can only *move* it. If you need to make a copy, you can export the image to a file (see below) and then add the image to a different image collection.
 {{% /alert %}}
 

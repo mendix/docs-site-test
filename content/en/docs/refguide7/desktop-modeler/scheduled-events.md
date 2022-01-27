@@ -1,8 +1,8 @@
 ---
 title: "Scheduled Events"
-url: /refguide7/scheduled-events
+url: /refguide7/scheduled-events/
 category: "Desktop Modeler"
-#menu_order: 
+#weight: 
 description: "Options for configuring scheduled events"
 tags: ["Scheduled Event", "Execution properties", "Timing", "intervals", "scheduling issues", "time zones", "daylight saving"]
 ---
@@ -12,8 +12,8 @@ With scheduled events you can let the runtime execute a microflow at a specific 
 
 A scheduled event is added to your module as a document (right-click your module and you will find it listed under *Add other...*).
 
-{{% alert type="warning" %}}
-Scheduled events can be tested locally, but they will not be run if your app is deployed as a Free App. See the Free App section of [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy#free-app) for more information on Free App limitations.
+{{% alert color="warning" %}}
+Scheduled events can be tested locally, but they will not be run if your app is deployed as a Free App. See the Free App section of [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/#free-app) for more information on Free App limitations.
 {{% /alert %}}
 
 ## Common Properties
@@ -27,7 +27,7 @@ Scheduled events can be tested locally, but they will not be run if your app is 
 
 | Property | Description |
 | --- | --- |
-| Microflow | The microflow that is executed when the scheduled event is executed. It should have no parameters and run with all rights (see [Microflow](microflow)). |
+| Microflow | The microflow that is executed when the scheduled event is executed. It should have no parameters and run with all rights (see [Microflow](/refguide7/microflow/)). |
 | Enabled | The microflow is only executed if the scheduled event is enabled. This setting only applies when running from the Modeler or from Eclipse. On production environments, scheduled events are enabled/disabled via the appropriate tools (Developer Portal, Windows Service Console, etc.). |
 
 ## Timing Properties
@@ -83,7 +83,7 @@ switch(scheduledEvent.getIntervalType())
 }
 ```
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 If it is absolutely critical to run a scheduled event on a specific day of the month, you should schedule the event to run daily. 
 

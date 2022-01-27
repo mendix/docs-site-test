@@ -1,8 +1,8 @@
 ---
 title: "Share the Development Database"
-url: /howto7/collaboration-requirements-management/sharing-the-development-database
+url: /howto7/collaboration-requirements-management/sharing-the-development-database/
 category: "Collaboration & Requirements Management"
-menu_order: 40
+weight: 40
 tags: []
 ---
 All Mendix applications need a database running in the background. While developing an application it is advised to use the standard built-in database that is supplied with the Mendix Modeler. This how-to will teach you how to open and manage the data stored inside the built-in database.
@@ -94,7 +94,7 @@ To import a data snapshot into the model, the app has to be updated since the la
 
 3.  Now copy the data directory to the data directory in the deployment directory
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Make sure the names of the databases aren't the same or make a copy of your own database first so it will not be overwritten.
 
@@ -102,7 +102,7 @@ Make sure the names of the databases aren't the same or make a copy of your own 
 
 ## 8\. Read More
 
-*   [Stories](/developerportal/collaborate/stories)
-*   [Contributing to a GitHub repository](contribute-to-a-github-repository)
-*   [Starting your own repository](starting-your-own-repository)
-*   [Version Control](/refguide7/version-control)
+*   [Stories](/developerportal/collaborate/stories/)
+*   [Contributing to a GitHub repository](/howto7/collaboration-requirements-management/contribute-to-a-github-repository/)
+*   [Starting your own repository](/howto7/collaboration-requirements-management/starting-your-own-repository/)
+*   [Version Control](/refguide7/version-control/)

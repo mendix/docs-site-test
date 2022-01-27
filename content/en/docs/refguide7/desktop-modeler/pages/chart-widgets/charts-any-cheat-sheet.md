@@ -1,9 +1,9 @@
 ---
 title: "Any Chart Cheat Sheet"
-url: /refguide7/charts-any-cheat-sheet
+url: /refguide7/charts-any-cheat-sheet/
 parent: "chart-widgets"
 description: "Shows, with examples, how the most common types of chart can be configured using the Any Chart Widget"
-menu_order: 50
+weight: 50
 tags: ["Any Chart", "Examples", "Charts", "Widget"]
 ---
 
@@ -372,5 +372,5 @@ This *cheat sheet* lists the most common chart types, together with a visual sam
 ## 7 Read More
 
 * Full chart documentation is here: [https://plot.ly/javascript/](https://plot.ly/javascript/)
-* [Any Chart Widget](charts-any-configuration)
-* [How to Use Any Chart](/howto7/extensibility/charts-any-usage)
+* [Any Chart Widget](/refguide7/charts-any-configuration/)
+* [How to Use Any Chart](/howto7/extensibility/charts-any-usage/)

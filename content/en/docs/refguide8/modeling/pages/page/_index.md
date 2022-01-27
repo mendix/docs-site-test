@@ -1,25 +1,25 @@
 ---
 title: "Page"
-url: /refguide8/page
+url: /refguide8/page/
 parent: "pages"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "page", "properties"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/page.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/page.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-This document describes basic functions you can perform in the page editor and its modes. For details on what pages are for and what kind of widgets can be placed on them, see [Pages](pages).
+This document describes basic functions you can perform in the page editor and its modes. For details on what pages are for and what kind of widgets can be placed on them, see [Pages](/refguide8/pages/).
 
 {{% /alert %}}
 
-Pages define the end-user interface of a Mendix application. Every page is based on a [layout](layout). A page fills the "gaps" defined by a layout with widgets such as the [data view](data-view) and [data grid](data-grid).
+Pages define the end-user interface of a Mendix application. Every page is based on a [layout](/refguide8/layout/). A page fills the "gaps" defined by a layout with widgets such as the [data view](/refguide8/data-view/) and [data grid](/refguide8/data-grid/).
 
 ## 2 Performing Basic Functions
 
@@ -36,7 +36,7 @@ You can perform the following basic function when working in the page editor:
 
 To open a page in Studio Pro, do the following:
 
-1. In the [Project Explorer](project-explorer), open a module where this page is located. 
+1. In the [Project Explorer](/refguide8/project-explorer/), open a module where this page is located. 
 
 2. Navigate to the page's location inside the module. A page can be listed as an individual element or be included in the **Pages** folder:
 
@@ -50,7 +50,7 @@ The selected page is opened.
 
 To create a new page, do the following:
 
-1.  In the [Project Explorer](project-explorer), right-click the module or a folder you want to create a page in and select **Add page**:
+1.  In the [Project Explorer](/refguide8/project-explorer/), right-click the module or a folder you want to create a page in and select **Add page**:
 
     {{/* % image_container width="350" % */}}![](/attachments/refguide8/modeling/pages/page/add-page.png)
     {{/* % /image_container % */}}
@@ -67,7 +67,7 @@ A new page is created.
 
 To delete a page, do the following:
 
-1. In the [Project Explorer](project-explorer), select a page you would like to delete and right-click it.
+1. In the [Project Explorer](/refguide8/project-explorer/), select a page you would like to delete and right-click it.
 2. In the displayed list, select **Delete** and confirm your choice by clicking **Delete** in the pop-up dialog.
 
 The selected page is deleted. 
@@ -129,7 +129,7 @@ To cut/copy/paste you can use the following shortcuts:
 * <kbd>Ctrl</kbd> + <kbd>Z</kbd> /  <kbd>Ctrl</kbd> + <kbd>C</kbd> / <kbd>Ctrl</kbd> + <kbd>V</kbd>  
 * <kbd>Cmd</kbd> + <kbd>Z</kbd> /  <kbd>Cmd</kbd> + <kbd>C</kbd> / <kbd>Cmd</kbd> + <kbd>V</kbd>
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 You can cut/copy/paste elements on a page to different apps in Studio Pro if they have the same Mendix version. However, you cannot cut/copy/paste the whole page.
 
@@ -199,5 +199,5 @@ It has the following features which are not available in **Structure mode**:
 
 ## 4 Read More
 
-* [Pages](pages)
-* [Page Properties](page-properties)
+* [Pages](/refguide8/pages/)
+* [Page Properties](/refguide8/page-properties/)

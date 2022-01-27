@@ -127,7 +127,7 @@ In this section, you are going to create a new maintenance plan called **MP_USER
     ![](/attachments/developerportal/deploy/on-premises-design/deploy-mendix-on-microsoft-windows/mendix-on-windows-microsoft-sql-server/mendix-sql-maintenance-plans/18580668.png)
 
     ![](/attachments/developerportal/deploy/on-premises-design/deploy-mendix-on-microsoft-windows/mendix-on-windows-microsoft-sql-server/mendix-sql-maintenance-plans/18580658.png) .
- .
+
 {{% alert color="info" %}}
 
 You should adapt the times set to your desired backup retention time. The cleanup might be set to smaller intervals in order to save disk space.
@@ -162,10 +162,10 @@ In this section, you are going to create a new maintenance plan called **MP_SYSD
 
 ## 4 Read More
 
-* [How to Restore an SQL Server Database](restoring-a-sql-server-database)
-* [How to Troubleshoot SQL Server](troubleshooting-sql-server)
-* [How to Set Up a New SQL Server Database](setting-up-a-new-sql-server-database)
-* [How to Set Up an SQL Server User](setting-up-a-sql-server-user)
-* [How to Configure a Security Checklist for Your On-Premises Installation](security-checklist-for-your-on-premises-installation)
-* [How to Deploy Mendix on Microsoft Windows](deploy-mendix-on-microsoft-windows)
-* [U*ix Deployment](unix-like)
+* [How to Restore an SQL Server Database](/developerportal/deploy/restoring-a-sql-server-database/)
+* [How to Troubleshoot SQL Server](/developerportal/deploy/troubleshooting-sql-server/)
+* [How to Set Up a New SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/)
+* [How to Set Up an SQL Server User](/developerportal/deploy/setting-up-a-sql-server-user/)
+* [How to Configure a Security Checklist for Your On-Premises Installation](/developerportal/deploy/security-checklist-for-your-on-premises-installation/)
+* [How to Deploy Mendix on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/)
+* [U*ix Deployment](/developerportal/deploy/unix-like/)

@@ -16,9 +16,9 @@ On the **Feedback** page of the Developer Portal, you can view and manage the fe
 
 This feedback comes from different sources:
 
-* Submitted via the [Mendix Feedback widget](/appstore/widgets/mendix-feedback)
+* Submitted via the [Mendix Feedback widget](/appstore/widgets/mendix-feedback/)
 * Submitted on the **Feedback** page itself (for details, see the [Actions](#actions) section, below)
-* Submitted in Mendix Studio (for more information, see [Buzz](/studio/collaboration-buzz)) in the *Studio Guide*
+* Submitted in Mendix Studio (for more information, see [Buzz](/studio/collaboration-buzz/)) in the *Studio Guide*
 
 ## 2 Feedback Fundamentals
 
@@ -107,7 +107,7 @@ After clicking **Accept feedback**, you can create a story on the basis of the f
 6. Click **Submit** to submit the story.
 
 	{{/* % image_container width="350" % */}}![](/attachments/developerportal/collaborate/feedback/accept-feedback.png)
-	{{/* % /image_container % */}} 
+	{{/* % /image_container % */}}
 
 Once a feedback item is connected to a user story, the user who submitted the story will automatically be updated on the progress made on that story:
 

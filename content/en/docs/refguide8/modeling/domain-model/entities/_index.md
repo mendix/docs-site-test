@@ -1,14 +1,14 @@
 ---
 title: "Entities"
-url: /refguide8/entities
+url: /refguide8/entities/
 parent: "domain-model"
-menu_order: 10
+weight: 10
 tags: ["domain model", "entity", "entities", "attribute", "validation rule", "even handler", "access rule", "studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/entities.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/entities.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -19,7 +19,7 @@ For example, the object representing the CD 'Exodus' could be an instance of the
 
 ![Example of a CD entity](/attachments/refguide8/modeling/domain-model/entities/example-entity.png) 
 
-The properties or features of an entity are described using [attributes](attributes). An attribute represents a small piece of information about an entity, such as the name or birth date of a person.
+The properties or features of an entity are described using [attributes](/refguide8/attributes/). An attribute represents a small piece of information about an entity, such as the name or birth date of a person.
 
 For example, you have a collection of CDs like the one in the table below:
 
@@ -30,11 +30,11 @@ For example, you have a collection of CDs like the one in the table below:
 
 The rows in the table are CDs. The type of the two rows is *CD* and this is the entity name. A specific CD like *How to Dismantle an Atomic Bomb* from the band *U2* is called an object of the entity *CD*. Characteristics like the title and artist are called attributes.
 
-{{% alert type="info" %}}
-You can also use data sources from other applications in your project  through the [Data Hub](data-hub-pane) pane. These data sources are represented in the domain model as *external entities* which are displayed as purple entity containers in the domain model:
+{{% alert color="info" %}}
+You can also use data sources from other applications in your project  through the [Data Hub](/refguide8/data-hub-pane/) pane. These data sources are represented in the domain model as *external entities* which are displayed as purple entity containers in the domain model:
  ![Virtual Entity Example](/attachments/refguide8/modeling/domain-model/entities/virtual-entity-example.png) 
 
-For further information see [External Entities](external-entities).
+For further information see [External Entities](/refguide8/external-entities/).
 {{% /alert %}}
 
 ## 2 Type of Entities {#entity-types}
@@ -48,11 +48,11 @@ The entity type defines how the data is handled and there are two types:
 
 ### 2.1 Persistable Entity {#persistable-entity}
 
-When an entity is declared persistable, a database table is created for the entity. These type of entities are colored *blue* in the domain model. For more information on persistable entities, see [Persistability](persistability).
+When an entity is declared persistable, a database table is created for the entity. These type of entities are colored *blue* in the domain model. For more information on persistable entities, see [Persistability](/refguide8/persistability/).
 
 ### 2.2 Non-Persistable Entity {#non-persistable-entity}
 
-Non-persistable entities are stored in the runtime memory and never get committed to the database. These type of entities are colored *orange* in the domain model. For more information on persistable entities, see [Persistability](persistability).
+Non-persistable entities are stored in the runtime memory and never get committed to the database. These type of entities are colored *orange* in the domain model. For more information on persistable entities, see [Persistability](/refguide8/persistability/).
 
 ## 3 Properties {#properties}
 
@@ -68,15 +68,15 @@ Entity properties consist of the following sections:
 * [General](#entities-general-properties)
 * [System members](#system-members)
 
-{{% alert type="info" %}}
-For more information, see the [Properties](external-entities#properties) section of *External Entities*.
+{{% alert color="info" %}}
+For more information, see the [Properties](/refguide8/external-entities/#properties) section of *External Entities*.
 {{% /alert %}}
 
 ### 3.1 Access Rules Section {#access-rules}
 
 #### 3.1.1 Access Rules
 
-For more information on access rules, see [Access Rules](access-rules).
+For more information on access rules, see [Access Rules](/refguide8/access-rules/).
 
 ### 3.2 Documentation Section {#documentation}
 
@@ -106,7 +106,7 @@ For example, this property can be used in a situation where, you have a **Studen
 
 ![](/attachments/refguide8/modeling/domain-model/entities/917900.png)
 
-For more information, and a discussion on the relative merits of using generalization or associations, see [Generalization vs 1-1 Associations](generalization-and-association).
+For more information, and a discussion on the relative merits of using generalization or associations, see [Generalization vs 1-1 Associations](/refguide8/generalization-and-association/).
 
 #### 3.3.4 Image {#image}
 
@@ -114,7 +114,7 @@ The image property can be used to associate the entity with an image. In the dom
 
 #### 3.3.5 Persistable
 
-Define whether instances of this entity can be stored in the database. For more information, see [Persistability](persistability).
+Define whether instances of this entity can be stored in the database. For more information, see [Persistability](/refguide8/persistability/).
 
 ### 3.4 System Members Properties{#system-members}
 
@@ -127,7 +127,7 @@ This property defines whether the entity contains the system attribute 'createdD
 | True | Entity contains the system attribute 'createdDate'. |
 | False *(default)* | Entity does not contain the system attribute 'createdDate'. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 We do not support displaying this system member of the System.User entity or its specializations in a data grid directly.
 {{% /alert %}}
 
@@ -140,11 +140,11 @@ This property defines whether the entity contains the system attribute 'changedD
 | True | Entity contains the system attribute 'changedDate'. |
 | False *(default)* | Entity does not contain the system attribute 'changedDate'. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The 'changedDate' property is only updated on real changes. Simply changing and committing an entity with the same attribute values does not update 'changedDate'.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 We do not support displaying this system member of the System.User entity or its specializations in a data grid directly.
 {{% /alert %}}
 
@@ -174,11 +174,11 @@ You can also edit an entity by opening the entity properties dialog box.
 
 In addition to the properties described above, there are also tabs which allow you to edit the following:
 
-*   [Attributes](attributes)
-*   [Associations](associations)
-*   [Validation Rules](validation-rules)
-*   [Event Handlers](event-handlers)
-*   [Indexes](indexes)
-*   [Access Rules](access-rules)
+*   [Attributes](/refguide8/attributes/)
+*   [Associations](/refguide8/associations/)
+*   [Validation Rules](/refguide8/validation-rules/)
+*   [Event Handlers](/refguide8/event-handlers/)
+*   [Indexes](/refguide8/indexes/)
+*   [Access Rules](/refguide8/access-rules/)
 
 See the detailed pages for each of these tabs for more information.

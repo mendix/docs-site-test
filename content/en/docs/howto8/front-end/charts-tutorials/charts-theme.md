@@ -1,8 +1,8 @@
 ---
 title: "Use the Charts Theme"
-url: /howto8/front-end/charts-theme
+url: /howto8/front-end/charts-theme/
 parent: "charts-tutorials"
-menu_order: 40
+weight: 40
 description: "How to set up a theme which will be applied to all the charts created with charts widgets in an app"
 tags: ["Charts", "Theme", "Widget", "Studio Pro"]
 ---
@@ -20,14 +20,14 @@ The look of individual **Charts** widgets can be fine tuned with advanced settin
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Download the latest [Chart Widget](/appstore/widgets/charts) from the Mendix Marketplace
-* Setup a chart: see [How to create a charts](charts-basic-create)
+* Download the latest [Chart Widget](/appstore/widgets/charts/) from the Mendix Marketplace
+* Setup a chart: see [How to create a charts](/howto8/front-end/charts-basic-create/)
 
 ## 3 Creating a Chart Theme
 
 This is how the original chart looks:
 
-![chart](/attachments/howto8/front-end/charts-tutorials/charts-theme/charts-toggle-editor.png)
+![chart](/attachments/howto8/front-end/charts-tutorials/charts-advanced-tuning/charts-toggle-editor.png)
 
 ### 3.1 Creating an Advanced Custom Configuration
 
@@ -43,7 +43,7 @@ To create the required custom configuration easily, follow these steps:
 
 1. Set the **Mode** to **Developer**.
 
-    ![chart widget properties](/attachments/howto8/front-end/charts-tutorials/charts-theme/charts-widget-properties-advanced.png)
+    ![chart widget properties](/attachments/howto8/front-end/charts-tutorials/charts-advanced-tuning/charts-widget-properties-advanced.png)
 
 1. Run the app.
 
@@ -65,13 +65,13 @@ To create the required custom configuration easily, follow these steps:
 
 1. Change the font settings, till the chart shows the required font.
 
-    ![chart editor](/attachments/howto8/front-end/charts-tutorials/charts-theme/charts-toggle-editor-open.png)
+    ![chart editor](/attachments/howto8/front-end/charts-tutorials/charts-advanced-tuning/charts-toggle-editor-open.png)
 
-    {{% alert type="warning" %}}Please note that the editor changes will not persist. They need to be stored in the advanced settings of the widget or stored in the theme.{{% /alert %}}
+    {{% alert color="warning" %}}Please note that the editor changes will not persist. They need to be stored in the advanced settings of the widget or stored in the theme.{{% /alert %}}
 
 12. In Studio Pro, set **Mode** in the chart widget to **Advanced**, to remove the Toggle Editor button.
 
-    {{% alert type="warning" %}}Please note that the theme settings only apply to charts in Advanced or Developer mode.{{% /alert %}}
+    {{% alert color="warning" %}}Please note that the theme settings only apply to charts in Advanced or Developer mode.{{% /alert %}}
 
 ### 3.2 Adding a Theme Configuration
 
@@ -83,7 +83,7 @@ To add a theme file which will apply to all charts in the app, follow these step
 
 1. Create a new file: *com.mendix.charts.json*
 
-    {{% alert type="info" %}}Please note that<br/>
+    {{% alert color="info" %}}Please note that<br/>
     * the file name is case sensitive<br/>
     * the file extension is `json`<br/>
     * the file must contain a *json* object, even if this is empty — for example `{ }`
@@ -117,6 +117,6 @@ To change the font in all charts in the app, follow these steps:
 
 ## 4 Read More
 
-* [Charts](/refguide8/chart-widgets)
-* [Layout samples](/refguide8/charts-advanced-cheat-sheet#layout-all)
-* [Configuration samples](/refguide8/charts-advanced-cheat-sheet#config-options)
+* [Charts](/refguide8/chart-widgets/)
+* [Layout samples](/refguide8/charts-advanced-cheat-sheet/#layout-all)
+* [Configuration samples](/refguide8/charts-advanced-cheat-sheet/#config-options)

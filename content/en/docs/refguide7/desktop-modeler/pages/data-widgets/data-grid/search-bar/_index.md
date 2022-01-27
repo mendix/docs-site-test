@@ -1,6 +1,6 @@
 ---
 title: "Search Bar"
-url: /refguide7/search-bar
+url: /refguide7/search-bar/
 parent: "data-grid"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -14,12 +14,12 @@ There are three different kinds of search fields that can be used for different 
 
 ### Comparison
 
-See [Comparison Search Field](comparison-search-field).
+See [Comparison Search Field](/refguide7/comparison-search-field/).
 
 ### Drop down
 
-See [Drop-Down Search Field](drop-down-search-field).
+See [Drop-Down Search Field](/refguide7/drop-down-search-field/).
 
 ### Range
 
-See [Range Search Field](range-search-field).
+See [Range Search Field](/refguide7/range-search-field/).

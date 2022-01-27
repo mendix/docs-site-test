@@ -26,7 +26,7 @@ This window will only be used when planned maintenance is being scheduled.
 
 ## 2 Prerequisites
 
-To view maintenance windows, you need to have monitor or backup access to your Mendix app. To configure them, you need to have transport rights to it. For more information, see [Node Permissions](/developerportal/deploy/node-permissions).
+To view maintenance windows, you need to have monitor or backup access to your Mendix app. To configure them, you need to have transport rights to it. For more information, see [Node Permissions](/developerportal/deploy/node-permissions/).
 
 ## 3 Configuring Maintenance for Your Application
 
@@ -67,5 +67,5 @@ For example: imagine today is Tuesday, your maintenance window is currently Thur
 
 ## 4 Read More
 
-* [App Roles](/developerportal/collaborate/app-roles)
-* [Node Permissions](/developerportal/deploy/node-permissions) 
+* [App Roles](/developerportal/collaborate/app-roles/)
+* [Node Permissions](/developerportal/deploy/node-permissions/) 

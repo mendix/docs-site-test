@@ -1,8 +1,8 @@
 ---
 title: "Share the Development Database"
-url: /howto8/collaboration-requirements-management/sharing-the-development-database
+url: /howto8/collaboration-requirements-management/sharing-the-development-database/
 category: "Collaboration"
-menu_order: 40
+weight: 40
 tags: ["studio pro"]
 ---
 
@@ -98,13 +98,13 @@ To import a data snapshot into the model, the app has to be updated since the la
 
 3.  Now copy the data directory to the data directory in the deployment directory
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Make sure the names of the databases aren't the same or make a copy of your own database first so it will not be overwritten.
 {{% /alert %}}
 
 ## 9 Read More
 
-*   [Stories](/developerportal/collaborate/stories)
-*   [Contributing to a GitHub repository](contribute-to-a-github-repository)
-*   [Starting your own repository](starting-your-own-repository)
-*   [Version Control](/refguide8/version-control)
+*   [Stories](/developerportal/collaborate/stories/)
+*   [Contributing to a GitHub repository](/howto8/collaboration-requirements-management/contribute-to-a-github-repository/)
+*   [Starting your own repository](/howto8/collaboration-requirements-management/starting-your-own-repository/)
+*   [Version Control](/refguide8/version-control/)

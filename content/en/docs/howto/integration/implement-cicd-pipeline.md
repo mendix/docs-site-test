@@ -17,7 +17,7 @@ Before starting this how-to, make sure you are familiar with the following:
 
 * CICD
 * Using REST services
-* [Unit Testing](/appstore/modules/unit-testing) (only if used in your application)
+* [Unit Testing](/appstore/modules/unit-testing/) (only if used in your application)
 * [Application Test Suite](/addons/ats-addon/) (only if used in your application)
 
 ## 3 The Pipeline
@@ -26,7 +26,7 @@ Before starting this how-to, make sure you are familiar with the following:
 
 #### 3.1.1 User API Key
 
-To get access to the Mendix Cloud environments, an authorized user is needed when executing the APIs. With Mendix APIs, API keys are used to achieve this. To create a Mendix API key, follow the steps in [Authentication](/apidocs-mxsdk/apidocs/authentication).
+To get access to the Mendix Cloud environments, an authorized user is needed when executing the APIs. With Mendix APIs, API keys are used to achieve this. To create a Mendix API key, follow the steps in [Authentication](/apidocs-mxsdk/apidocs/authentication/).
 
 #### 3.1.2 Mendix API Rights
 
@@ -36,11 +36,11 @@ To be able to use the Mendix APIs to access your environment, you will need to g
 
 ### 3.2 Building the Deployment Package
 
-To build the deployment package, use the [Team Server API](/apidocs-mxsdk/apidocs/team-server-api) and the [Build API](/apidocs-mxsdk/apidocs/build-api). In this scenario, a package will be built for the latest revision, but you can use whatever version you wish.
+To build the deployment package, use the [Team Server API](/apidocs-mxsdk/apidocs/team-server-api/) and the [Build API](/apidocs-mxsdk/apidocs/build-api/). In this scenario, a package will be built for the latest revision, but you can use whatever version you wish.
 
 #### 3.2.1 Getting the Latest Revision
 
-To get the latest revision, use the [Retrieve Branch API call](/apidocs-mxsdk/apidocs/team-server-api#retrieve-branch) to get the `LatestRevisionNumber` from the output.
+To get the latest revision, use the [Retrieve Branch API call](/apidocs-mxsdk/apidocs/team-server-api/#retrieve-branch) to get the `LatestRevisionNumber` from the output.
 
 An example of how to do this call is below. Be aware that `<AppId>` is not a GUID, but the actual name of the cloud node. In the example below, the `<AppId>` is `ukservices`.
 
@@ -48,33 +48,33 @@ An example of how to do this call is below. Be aware that `<AppId>` is not a GUI
 
 #### <a name="BuildPackage"></a>3.2.2 Building the Package
 
-After getting the version you want to build the package for, you need to build the package. To do this, use the [Start Building a Deployment Package API call](/apidocs-mxsdk/apidocs/build-api#start-building-deployment-package).
+After getting the version you want to build the package for, you need to build the package. To do this, use the [Start Building a Deployment Package API call](/apidocs-mxsdk/apidocs/build-api/#start-building-deployment-package).
 
 This is a POST call, so you will need to pass the relevant fields in the body (follow the link above to know what to use).
 
 ![](/attachments/howto/integration/implement-cicd-pipeline/03StartBuildingPackage.png)
 
-Before proceeding to the next step, you need to wait for the build of the deployment package to be successful. To do this, use the [Retrieve Package API call](/apidocs-mxsdk/apidocs/build-api#retrieve-package). This scenario needs to use the `PackageId` (output from the previous call) and check if the status is `Succeeded` (the other possible statuses are Queued, Building, Uploading, and Failed).
+Before proceeding to the next step, you need to wait for the build of the deployment package to be successful. To do this, use the [Retrieve Package API call](/apidocs-mxsdk/apidocs/build-api/#retrieve-package). This scenario needs to use the `PackageId` (output from the previous call) and check if the status is `Succeeded` (the other possible statuses are Queued, Building, Uploading, and Failed).
 
 ![](/attachments/howto/integration/implement-cicd-pipeline/04RetrievePackageStatus.png)
 
 ### 3.3 Deploying to the Next Environment {#deploying-to-the-next-environment}
 
-After building the deployment package, you can now deploy the new package to the next (Test, Acceptance, etc.) environment. To do this, use the [Deploy API](/apidocs-mxsdk/apidocs/deploy-api).
+After building the deployment package, you can now deploy the new package to the next (Test, Acceptance, etc.) environment. To do this, use the [Deploy API](/apidocs-mxsdk/apidocs/deploy-api/).
 
 #### 3.3.1 Getting the Environment Status
 
-First, you need to check if the environment to which you want to deploy is running. You need to know if you need to stop it before deploying the new deployment package to it. To do this, use the [Retrieve Environment API call](/apidocs-mxsdk/apidocs/deploy-api#retrieve-environment) and check the status.
+First, you need to check if the environment to which you want to deploy is running. You need to know if you need to stop it before deploying the new deployment package to it. To do this, use the [Retrieve Environment API call](/apidocs-mxsdk/apidocs/deploy-api/#retrieve-environment) and check the status.
 
 ![](/attachments/howto/integration/implement-cicd-pipeline/05GetEnvironment.png)
 
 #### 3.3.2 Stopping the Environment
 
-If the environment is running, you need to stop it. To do this, use the [Stop Environment API call](/apidocs-mxsdk/apidocs/deploy-api#stop-environment).
+If the environment is running, you need to stop it. To do this, use the [Stop Environment API call](/apidocs-mxsdk/apidocs/deploy-api/#stop-environment).
 
 #### 3.3.3 Deploying/Transporting the Package
 
-To deploy/transport a package to the environment, use the [Transporting a Deployment Package to an Environment API call](/apidocs-mxsdk/apidocs/deploy-api#transport-deployment-package).
+To deploy/transport a package to the environment, use the [Transporting a Deployment Package to an Environment API call](/apidocs-mxsdk/apidocs/deploy-api/#transport-deployment-package).
 
 For this action, you need the `PackageId` from section [3.2.2 Building the Package](#BuildPackage).
 
@@ -82,11 +82,11 @@ For this action, you need the `PackageId` from section [3.2.2 Building the Packa
 
 #### 3.3.4 Starting the Environment
 
-After a successful deployment, you must start the environment. To do that, use the [Start Environment API call](/apidocs-mxsdk/apidocs/deploy-api#start-environment).
+After a successful deployment, you must start the environment. To do that, use the [Start Environment API call](/apidocs-mxsdk/apidocs/deploy-api/#start-environment).
 
 ![](/attachments/howto/integration/implement-cicd-pipeline/07StartEnvironment.png)
 
-Before proceeding to the next steps (although you might not have any, if all you want to automate is the transport to another environment), you must make sure the environment has started. To do that, use the [Get Environment Status API call](/apidocs-mxsdk/apidocs/deploy-api#get-start-environment-status) with the `JobId` (output of the previous call). The environment will be ready when the status is **Started**.
+Before proceeding to the next steps (although you might not have any, if all you want to automate is the transport to another environment), you must make sure the environment has started. To do that, use the [Get Environment Status API call](/apidocs-mxsdk/apidocs/deploy-api/#get-start-environment-status) with the `JobId` (output of the previous call). The environment will be ready when the status is **Started**.
 
 ![](/attachments/howto/integration/implement-cicd-pipeline/08StartEnvironmentStatusStarting.png)
 
@@ -98,7 +98,7 @@ The sections below show you how to execute unit and ATS (UI) tests remotely. The
 
 #### 3.4.1 Unit Tests
 
-One way of doing unit tests in a Mendix app is by using the [Unit Testing](/appstore/modules/unit-testing) module available from the Mendix Marketplace. This module already exposes an API to execute remote calls.
+One way of doing unit tests in a Mendix app is by using the [Unit Testing](/appstore/modules/unit-testing/) module available from the Mendix Marketplace. This module already exposes an API to execute remote calls.
 
 First, you need to start the tests.
 
@@ -117,7 +117,7 @@ You can also (manually) create a web service that exposes the standard unit stru
 
 #### 3.4.2 Mendix Application Test Suite (ATS) Tests
 
-ATS has its own [API for CICD](/addons/ats-addon/rg-two-cicd-api#api). To use this, follow the steps in the **ATS and CI/CD** section of [How to Use ATS in Combination with CI/CD](/addons/ats-addon/ht-two-ats-and-ci-cd#ats-and-ci-cd).
+ATS has its own [API for CICD](/addons/ats-addon/rg-two-cicd-api/#api). To use this, follow the steps in the **ATS and CI/CD** section of [How to Use ATS in Combination with CI/CD](/addons/ats-addon/ht-two-ats-and-ci-cd/#ats-and-ci-cd).
 
 ### 3.5 Next Steps
 

@@ -10,7 +10,7 @@ parent: "apd-3"
 
 ### APM Renamed to Application Performance Diagnostics (APD)
 
-APM has been renamed to [Application Performance Diagnostics (APD)](/addons/apd-addon/rg-three-apd), since that better covers the functionality and since APD can work side-by-side with other APM solutions.
+APM has been renamed to [Application Performance Diagnostics (APD)](/addons/apd-addon/rg-three-apd/), since that better covers the functionality and since APD can work side-by-side with other APM solutions.
 
 ### SMART Digital Factory APIs
 

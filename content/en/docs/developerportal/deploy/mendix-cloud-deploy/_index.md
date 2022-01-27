@@ -60,7 +60,7 @@ As noted in the table above, a Free App will go to sleep after an hour or so of 
 
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/appresumed.png)
 
-You can upgrade a Free App to a licensed node with a *node* in the Mendix Cloud. Instructions for doing this are here: [Licensing Mendix Cloud Apps](licensing-apps).
+You can upgrade a Free App to a licensed node with a *node* in the Mendix Cloud. Instructions for doing this are here: [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps/).
 
 ### 1.2 Licensed App
 
@@ -82,7 +82,7 @@ If you need to use a different database, you will need to look at deploying your
 
 When your app is running on the Mendix Cloud it will automatically be given its own URL. For licensed apps this is of the form `(appname){-environment}.mendixcloud.com`. The environment name will be added to the subdomain name for `test`, `acceptance`, and flexible environments. The production URL uses just the app name as the subdomain. Free apps have a URL of the form `{appname}.mxapps.io`.
 
-You can customize a URL by adding [custom domains](custom-domains).
+You can customize a URL by adding [custom domains](/developerportal/deploy/custom-domains/).
 
 Mendix apps cannot use custom ports. They communicate on the standard HTTP and HTTPS ports (80 and 443) with connections to HTTP (80) being redirected to HTTPS (443).
 
@@ -186,7 +186,7 @@ If you want to run your app in a Free App environment in the Mendix cloud, you c
 
 ### 5.3 From Studio
 
-Click the **Publish** button in Studio. For more information see the [Publishing Your App](/studio/publishing-app#publishing-your-app) section of *Previewing & Publishing Your App*.
+Click the **Publish** button in Studio. For more information see the [Publishing Your App](/studio/publishing-app/#publishing-your-app) section of *Previewing & Publishing Your App*.
 
 ## 6 Status of Deployment
 
@@ -209,7 +209,9 @@ More information on these plans is available on the [Pricing](https://www.mendix
 
 ### 7.2 Cloud Resource Packs{#resource-pack}
 
-Mendix environments are sized by reference to cloud resource packs. The table below shows the current cloud resource packs. The *Standard* resource packs can also be used with *all* plans, but *premium* resource packs can only be purchased with a *premium* plan.
+Mendix environments are sized by reference to cloud resource packs. The table below shows the current cloud resource packs for standard and premium plans. Resources for the *basic package* are fixed as described in [Mendix Basic Package](/developerportal/deploy/basic-package/).
+
+The *Standard* resource packs can be used with both standard and premium plans, but *premium* resource packs can only be purchased with a *premium* plan.
 
 | Pack | App RAM | App vCPU | DB RAM | DB vCPU | DB Storage | File Storage |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -267,10 +269,10 @@ The Fallback option ensures that the data in your database is automatically copi
 
 #### 7.3.3 On-premises and Private Cloud
 
-If you want to deploy your Mendix apps to other environments, you can add these to your Mendix plan. For example, you can choose to deploy to [SAP Cloud Platform](sap-cloud-platform), or to your own cloud using [Mendix for Private Cloud](private-cloud).
+If you want to deploy your Mendix apps to other environments, you can add these to your Mendix plan. For example, you can choose to deploy to [SAP Cloud Platform](/developerportal/deploy/sap-cloud-platform/), or to your own cloud using [Mendix for Private Cloud](/developerportal/deploy/private-cloud/).
 
 ## 8 Read More
 
-* [Custom Domains](custom-domains)
-* [Licensing Mendix Cloud Apps](licensing-apps)
-* [App Roles](/developerportal/collaborate/app-roles)
+* [Custom Domains](/developerportal/deploy/custom-domains/)
+* [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps/)
+* [App Roles](/developerportal/collaborate/app-roles/)

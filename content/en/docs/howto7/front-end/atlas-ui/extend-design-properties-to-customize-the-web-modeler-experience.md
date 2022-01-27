@@ -1,8 +1,8 @@
 ---
 title: "Extend Design Properties to Customize Your Web Modeler Experience"
-url: /howto7/front-end/extend-design-properties-to-customize-the-web-modeler-experience
+url: /howto7/front-end/extend-design-properties-to-customize-the-web-modeler-experience/
 parent: "atlas-ui"
-menu_order: 60
+weight: 60
 tags: ["Atlas", "UI", "UX", "user experience", "customize", "custom", "studio"]
 ---
 
@@ -34,7 +34,7 @@ These design properties are used in the **Design** section of the Web Modeler.
 
 ![Design Properties in the Web Modeler](/attachments/howto7/front-end/atlas-ui/extend-design-properties-to-customize-the-web-modeler-experience/wm-button-design-properties.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 When you apply a new class in **settings.json** file, make sure that this class exists in the scss file. For example, the detailed Sass information for buttons can be found in this file: */theme/styles/sass/lib/components/_buttons.scss*
 
@@ -50,7 +50,7 @@ The first line in the **settings.json** file enables the resources, page templat
 
 If this line is deleted, the old Mendix UI Framework resources will be loaded in the Mendix Web Modeler and the Desktop Modeler. If you do not want to use Atlas UI, it is possible to delete this line.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 You can only switch to the old Mendix UI Framework following the instructions above if your app's  version is 7.8.0 or lower.
 
@@ -58,8 +58,8 @@ You can only switch to the old Mendix UI Framework following the instructions ab
 
 ## 4 Read More
 
-* [How to Get Started with Atlas UI](get-started-with-atlasui)
-* [How to Create Company Atlas UI Resources](create-company-atlas-ui-resources)
-* [How to Create Custom Preview Images for Building Blocks & Page Templates](create-custom-preview-images-for-building-blocks-and-page-templates)
-* [How to Migrate Existing Apps to Atlas UI](migrate-existing-projects-to-atlasui)
-* [How to Share Company Atlas UI Resources](share-company-atlas-ui-resources)
+* [How to Get Started with Atlas UI](/howto7/front-end/get-started-with-atlasui/)
+* [How to Create Company Atlas UI Resources](/howto7/front-end/create-company-atlas-ui-resources/)
+* [How to Create Custom Preview Images for Building Blocks & Page Templates](/howto7/front-end/create-custom-preview-images-for-building-blocks-and-page-templates/)
+* [How to Migrate Existing Apps to Atlas UI](/howto7/front-end/migrate-existing-projects-to-atlasui/)
+* [How to Share Company Atlas UI Resources](/howto7/front-end/share-company-atlas-ui-resources/)

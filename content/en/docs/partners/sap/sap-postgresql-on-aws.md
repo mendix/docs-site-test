@@ -31,7 +31,7 @@ You can choose the **AWS RDS PostgreSQL-development** standard database when you
 
 #### 2.1.3 Services Tab
 
-PostgreSQL on Amazon (AWS) can also be found on the [services tab](/developerportal/deploy/sap-cloud-platform#binding-services) of the environment details page of your app's environment under *aws-rds-postgresql*.
+PostgreSQL on Amazon (AWS) can also be found on the [services tab](/developerportal/deploy/sap-cloud-platform/#binding-services) of the environment details page of your app's environment under *aws-rds-postgresql*.
 
 ![RDW AWS PostgreSQL-development service on the environment details page](/attachments/partners/sap/sap-postgresql-on-aws/database-service.png)
 

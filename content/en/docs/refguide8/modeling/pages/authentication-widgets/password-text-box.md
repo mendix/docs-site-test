@@ -1,16 +1,16 @@
 ---
 title: "Password Text Box"
-url: /refguide8/password-text-box
+url: /refguide8/password-text-box/
 parent: "authentication-widgets"
 tags: ["studio pro", "password text box", "authentication widget", "authentication"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/password-text-box.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/password-text-box.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}The **Password text box** widget is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="warning" %}}The **Password text box** widget is not supported on native mobile pages.{{% /alert %}}
 
 ## 1 Introduction
 
@@ -18,7 +18,7 @@ The **Password text box** is a widget that provides a password for authenticatio
 
 ![Password Text Box](/attachments/refguide8/modeling/pages/authentication-widgets/password-text-box/password-text-box.png)
 
-The **Password text box** should be placed on a page together with  with a [Login ID text box](login-id-text-box) and a [Sign-in button](sign-in-button).
+The **Password text box** should be placed on a page together with  with a [Login ID text box](/refguide8/login-id-text-box/) and a [Sign-in button](/refguide8/sign-in-button/).
 
 ## 2 Properties
 
@@ -54,6 +54,6 @@ A **Placeholder** shows a text when an end-user has not entered any text yet. It
 
 ## 3 Read More
 
-* [Page](page)
-* [Login ID Text Box](login-id-text-box)
-* [Sign-In Button](sign-in-button)
+* [Page](/refguide8/page/)
+* [Login ID Text Box](/refguide8/login-id-text-box/)
+* [Sign-In Button](/refguide8/sign-in-button/)

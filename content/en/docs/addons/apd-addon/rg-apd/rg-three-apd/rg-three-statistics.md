@@ -28,13 +28,13 @@ The **Tree** tab can be used to see the statistic results in a quick overview. T
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-statistics/statistics_tree.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In the tree of the statistics, a child action can take longer than the parent. This is because the average durations are compared, and if you consider a microflow with a decision and most cases take the quick route while only some cases take the slow route, then the average of the parent is faster than the average of the slow route child.
 {{% /alert %}}
 
 The **History** tab gives insight into the duration and count over time. These insights help to detect trends and see if the optimizations were successful. 
 
-![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-statistics/statistics_history.png)
+![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/statistics_history.png)
 
 Using the **Manual snapshots** tab, it is possible to create a manual statistics snapshot. When clearing the counters, the manual statistics are reset. This can be helpful to collect data over a small period of time.
 

@@ -23,9 +23,9 @@ The Mendix Marketplace is driven by contributions from members of the community 
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with the [Marketplace Overview](app-store-overview) and [How to Use Marketplace Content in Studio Pro](app-store-content)
+* Familiarize yourself with the [Marketplace Overview](/appstore/general/app-store-overview/) and [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/)
 
-## 3 Marketplace Content Development Guidelines {#submission}
+## 3 Marketplace Content Development Guidelines {#guidelines}
 
 This section presents guidelines for developing content that you will submit to the Mendix Marketplace.
 
@@ -47,7 +47,7 @@ You can add information the end-user should know to the component [Documentation
 
 To develop widgets and submit them to Marketplace, follow these guidelines:
 
-* The widget should be [pluggable](/howto/extensibility/create-a-pluggable-widget-one)
+* The widget should be [pluggable](/howto/extensibility/create-a-pluggable-widget-one/)
 * When writing variable and function names, use lowerCamelCase (for example, *mySecondVariable*)
 * Add code comments
 * Use descriptive variable and function names in both XML and JavaScript
@@ -67,11 +67,11 @@ To develop modules and submit them to the Marketplace, follow these guidelines:
 
 	![](/attachments/appstore/general/share-app-store-content/userlibBlankFiles_boxed.jpg)
 
-* Verify that the module's Java actions compile correctly (the easiest way to check is to create a deployment package, as it will clean the deployment folder and rebuild the app; for more information, see [Environments](/developerportal/deploy/environments))
+* Verify that the module's Java actions compile correctly (the easiest way to check is to create a deployment package, as it will clean the deployment folder and rebuild the app; for more information, see [Environments](/developerportal/deploy/environments/))
 * Reduce the use of layouts and use snippets instead, which will result in fewer module dependencies and will reduce the number of potential errors (for example, missing layouts)
-* Implement [user roles](/refguide/user-roles) and [security](/refguide/security)
+* Implement [user roles](/refguide/user-roles/) and [security](/refguide/security/)
 * Creating a new release or module export should be done while the security level of the app containing the module is set to **Production**
-* The [status](/refguide/project-security#app-status) must be **Complete** for the following:
+* The [status](/refguide/project-security/#app-status) must be **Complete** for the following:
 	* Page access
 	* Microflow access
 	* OData access
@@ -83,7 +83,7 @@ To develop modules and submit them to the Marketplace, follow these guidelines:
 
 ### 3.4 For Selling App Services
 
-For details on preparing and selling your component, see [How to Sell Your App Service in the Marketplace](sell).
+For details on preparing and selling your component, see [How to Sell Your App Service in the Marketplace](/appstore/creating-content/as-sell/).
 
 ## 4 Adding New Marketplace Content {#adding}
 
@@ -97,7 +97,7 @@ To start, click **Add content** in the top-right corner of the Marketplace home 
 
 Follow these steps to continue adding content:
 
-1.  On the **Upload Content** page, select the type of content you would like to publish (the available types correspond to the [Marketplace home page](app-store-overview#home)):
+1.  On the **Upload Content** page, select the type of content you would like to publish (the available types correspond to the [Marketplace home page](/appstore/general/app-store-overview/#home)):
 
 	![](/attachments/appstore/general/share-app-store-content/category.JPG)
 
@@ -108,21 +108,25 @@ Follow these steps to continue adding content:
 3.  Select the location where you want to publish your component:
 
 	* <a name="public-app-store"></a>**Public Marketplace (all Mendix users)** – your component will be available to the Mendix community (this content will have to be reviewed and approved by Mendix before it is available)
-	* <a name="private-app-store"></a>**Private Marketplace (your company only)** – your content will receive the **Company only** label and be available only via your [Company Content](app-store-overview#company-content) page; selected private content of a user group can also be made available to [user group guests](app-store-overview#guests) for download; this content will not be reviewed by Mendix
+	* <a name="private-app-store"></a>**Private Marketplace (your company only)** – your content will receive the **Company only** label and be available only via your [Company Content](/appstore/general/app-store-overview/#company-content) page; selected private content of a user group can also be made available to [user group guests](/appstore/general/app-store-overview/#guests) for download; this content will not be reviewed by Mendix
 	
 	![](/attachments/appstore/general/share-app-store-content/public-private.jpg)
 	
 	{{% alert color="warning" %}}You can only set the location in the initial version of your content. You cannot change this setting by updating the Marketplace component later.
 	{{% /alert %}}
 	
-### 4.2 General
+### 4.2 General {#general}
 
 On the **General** page,  you need to provide some details about your component. The information you entered above is pre-filled on this page.
 
 Follow these steps to describe your content:
 
 1. Enter a **Name** for your component.<br />
-2. Enter a **Description** of your component (for example, "Node control is an native Android app that gives a system administrator access to the Mendix Cloud nodes being administered. From the app, the status of the different environments within a node can be monitored and an environment can be started or stopped.").
+2.  Enter a **Description** of your component.
+
+	{{% alert color="warning" %}}You can use rich text in the editor. However, using rich text at the beginning of the description is not recommended, as the rich text will not get rendered properly. You should add a few lines of regular text before using rich text.
+	{{% /alert %}}
+
 3. The **Category** you selected earlier will be listed here. You can change this if necessary.
 	
 	{{% alert color="warning" %}}You can only set the category in the initial version of your content. You cannot change this setting after the inital version is published.
@@ -141,12 +145,12 @@ Follow these steps to describe your content:
 	* SDISW End-User License Agreement for Mendix Connectors and Widgets EXTERNAL
 	* SDISW End-User License Agreement for Mendix Sample Apps
 
-	![](/attachments/appstore/general/share-app-store-content/general.jpg)
+	![](/attachments/appstore/general/share-app-store-content/general.png)
 
 6. Click **Upload an Image** to upload an icon for the component.
 7. <a name="draft"></a>On each page of the upload flow, click one of the following buttons:
 
-	* **Save Draft** to save the details you have entered so far to the [Drafts](app-store-overview#my-content) page of your Marketplace (which you can access via the **My Drafts** button in the top-right of the page)
+	* **Save Draft** to save the details you have entered so far to the [Drafts](/appstore/general/app-store-overview/#my-content) page of your Marketplace (which you can access via the **My Drafts** button in the top-right of the page)
 	* **Save & Continue** to go to the next page of the upload flow
 
 ### 4.3 Package {#version}
@@ -212,10 +216,22 @@ Finally, on the **Publish** page, you can review all the details of your compone
 
 ![](/attachments/appstore/general/share-app-store-content/publish.png)
 
-<a name="approval"></a>After you click **Publish Content**, your draft will be reviewed by Mendix within approximately 5 working days before it is visible in the Marketplace.
+After you click **Publish Content**, your draft will be reviewed by Mendix before it is visible in the Marketplace. See the next section on details for the approval process.
+
+### 4.7 Approval Process {#approval}
+
+All components that are to be listed in the [Public Marketplace](#public-app-store) are subject to an approval process to ensure the quality and accuracy of the listing and that the component meets the expectations of users. 
+
+Component submissions are processed in a queue and reviewed on a first-come, first-served basis within 5 working days after submission. Mendix checks a range of requirements (for example, that the component installs properly and reports no errors, and that the documentation is clear, accurate, and of sufficient detail). 
+
+It may sometimes take a few iterations for a component to be approved, depending on the issues identified. To avoid a high number of necessary iterations, make sure you follow the [content development guidelines](#guidelines) before you submit a component for approval.
 
 {{% alert color="info" %}}
-Review and approval by Mendix is required only for the first version of [Public Marketplace](#public-app-store) content. Subsequent versions of public content do not need review or approval by Mendix. [Private Marketplace](#private-app-store) content does not require any review or approval.
+Review and approval by Mendix is required only for the first version of a publicly-listed component. Subsequent versions of a public component do not need review or approval by Mendix.
+{{% /alert %}}
+
+{{% alert color="info" %}}
+[Private Marketplace](#private-app-store) content does not require any review or approval.
 {{% /alert %}}
 
 ## 5 Updating Existing Marketplace Content {#updating}
@@ -225,7 +241,7 @@ To update content that has already been published, follow these steps:
 1.  Find the component by clicking **My Marketplace** and selecting one of the following:
 	* **My Content**
 	* **Company Content**
-	* **User Groups** (note that if an existing Marketplace component is assigned to a [user group](app-store-overview#user-groups) as specific user group [content](app-store-overview#group-content), you can only update the component if you are a member of that group)
+	* **User Groups** (note that if an existing Marketplace component is assigned to a [user group](/appstore/general/app-store-overview/#user-groups) as specific user group [content](/appstore/general/app-store-overview/#group-content), you can only update the component if you are a member of that group)
 	
 2.  Click **Manage** next to the component you want to update.
 
@@ -243,6 +259,6 @@ To update content that has already been published, follow these steps:
 
 ## 6 Read More
 
-* [Marketplace Overview](app-store-overview)
-* [How to Sell Your App Service in the Marketplace](sell)
-* [How to Use Marketplace Content in Studio Pro](app-store-content)
+* [Marketplace Overview](/appstore/general/app-store-overview/)
+* [How to Sell Your App Service in the Marketplace](/appstore/creating-content/as-sell/)
+* [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/)

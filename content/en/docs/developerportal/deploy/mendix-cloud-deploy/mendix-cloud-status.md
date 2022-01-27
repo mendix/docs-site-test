@@ -42,7 +42,7 @@ You can elect to receive emails, or subscribe to the RSS or Atom feeds.
 
 ## 6 Read More
 
-* [Maintenance Windows: Configuration](maintenance-windows)
-* [Operate](/developerportal/operate)
-* [How to Receive Environment Status Alerts](/developerportal/operate/receive-alerts)
-* [Cloud Version and Region in the Mendix Cloud](cloud-version-region)
+* [Maintenance Windows: Configuration](/developerportal/deploy/maintenance-windows/)
+* [Operate](/developerportal/operate/)
+* [How to Receive Environment Status Alerts](/developerportal/operate/receive-alerts/)
+* [Cloud Version and Region in the Mendix Cloud](/developerportal/deploy/cloud-version-region/)

@@ -23,7 +23,7 @@ You can perform the actions described below via the buttons on your app's **Docu
 Click **Upload document** to upload a new document:
 
 {{/* % image_container width="400" % */}}![](/attachments/developerportal/collaborate/documents/upload-file.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 {{% alert color="info" %}}
 All file types are allowed, and they are scanned for viruses by Mendix.
@@ -51,6 +51,6 @@ To upload a new version of a document, go to the **Document Details** page and c
 
 ## 3 Read More
 
-* [Buzz](buzz)
-* [Team](team)
-* [Stories](stories)
+* [Buzz](/developerportal/collaborate/buzz/)
+* [Team](/developerportal/collaborate/team/)
+* [Stories](/developerportal/collaborate/stories/)

@@ -8,7 +8,7 @@ weight: 60
 
 ## 1 Introduction
 
-The **Association** source is a data source available to nested [data grids](data-grid), [template grids](template-grid), and [list views](list-view). 
+The **Association** source is a data source available to nested [data grids](/refguide/data-grid/), [template grids](/refguide/template-grid/), and [list views](/refguide/list-view/). 
 
 {{% alert color="warning" %}}
 
@@ -18,7 +18,7 @@ The **Association** source retrieves objects from memory, not from the database.
 
 An **Association** data source fills the widget with objects linked to another object by an association. To provide the context, the data container needs to be nested within another data container.
 
-Data containers that can have other data containers inside them are the [template grid](template-grid), [list view](list-view), and [data view](data-view).
+Data containers that can have other data containers inside them are the [template grid](/refguide/template-grid/), [list view](/refguide/list-view/), and [data view](/refguide/data-view/).
 
 {{% alert color="warning" %}}
 
@@ -34,5 +34,5 @@ The **Entity (path)** property specifies the association by which the widget is 
 
 ## 3 Read More
 
-* [Associations](associations)
-* [Data Containers](data-widgets)
+* [Associations](/refguide/associations/)
+* [Data Containers](/refguide/data-widgets/)

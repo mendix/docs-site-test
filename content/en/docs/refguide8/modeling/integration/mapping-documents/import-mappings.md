@@ -1,18 +1,18 @@
 ---
 title: "Import Mappings"
-url: /refguide8/import-mappings
+url: /refguide8/import-mappings/
 parent: "mapping-documents"
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/import-mappings.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/import-mappings.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-For an introduction to import mappings, refer to [Mapping Documents](mapping-documents).
+For an introduction to import mappings, refer to [Mapping Documents](/refguide8/mapping-documents/).
 
 ## 2 Obtaining Objects in Import Mappings
 
@@ -52,13 +52,13 @@ This is the action that the runtime will perform when an error occurred in the s
 | **Ignore** | Don't map this element and continue parsing the rest of the XML. |
 | **Error** | Explicitly stop parsing the XML and throw an error. This error needs to be handled in the calling microflow. |
 
-If this is the top level of the mapping, you can check **Decide this at the place where the mapping gets used**. If this is checked the option **if no object was found** can be set whenever you use the mapping, for instance in an [import mapping action](import-mapping-action) or a [call REST service action](call-rest-action).
+If this is the top level of the mapping, you can check **Decide this at the place where the mapping gets used**. If this is checked the option **if no object was found** can be set whenever you use the mapping, for instance in an [import mapping action](/refguide8/import-mapping-action/) or a [call REST service action](/refguide8/call-rest-action/).
 
 ### 2.3 Setting Associations
 
 Optionally, you may set an association to the parent object. If set to Yes, a list of allowed associations is shown. If an association is selected, it is drawn in the mapping document.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Be aware that lists are not stored ordered in the Mendix database. XML Schema can prescribe that a grouping of objects is a sequence, but the order of Mendix objects in the database may differ from the order of incoming XML elements.
 
@@ -91,7 +91,7 @@ Having defined the mappings for the attributes, these mappings are also shown in
 
 ## 4 Mapping Parameter
 
-Import mappings have the additional option to receive an incoming parameter. The parameter can be passed in by the calling microflow when microflow uses the [import from mapping](import-mapping-action) action.
+Import mappings have the additional option to receive an incoming parameter. The parameter can be passed in by the calling microflow when microflow uses the [import from mapping](/refguide8/import-mapping-action/) action.
 
 To define a parameter for your mapping, click the parameter box and select the data type. You can also drag an entity to the parameter box. 
 

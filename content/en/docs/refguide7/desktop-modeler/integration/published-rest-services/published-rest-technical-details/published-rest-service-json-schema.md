@@ -1,13 +1,13 @@
 ---
 title: "JSON Schema for Published REST Operation"
-url: /refguide7/published-rest-service-json-schema
+url: /refguide7/published-rest-service-json-schema/
 parent: "published-rest-technical-details"
-menu_order: 20
+weight: 20
 description: "Describes the JSON schemas for operation request bodies and operation results"
 tags: ["published REST", "JSON", "Schema", "operation", "request body", "result", "message definition"]
 ---
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Support for *JSON Schema* was added in version 7.14.0.
 
@@ -15,9 +15,9 @@ Support for *JSON Schema* was added in version 7.14.0.
 
 ## 1 Introduction
 
-When you [publish a rest service](published-rest-services), an [OpenApi (Swagger) documentation page](published-rest-services#interactive-documentation) is generated for it. It includes a description of the structure of the messages that the service can receive and return. This structure is described using JSON Schema.
+When you [publish a rest service](/refguide7/published-rest-services/), an [OpenApi (Swagger) documentation page](/refguide7/published-rest-services/#interactive-documentation) is generated for it. It includes a description of the structure of the messages that the service can receive and return. This structure is described using JSON Schema.
 
-Operations that have an import or export mapping defined on it will generate such a schema, but only for mappings that are based on [message definitions](message-definitions).
+Operations that have an import or export mapping defined on it will generate such a schema, but only for mappings that are based on [message definitions](/refguide7/message-definitions/).
 
 The JSON schema is generated based on the rules documented here.
 

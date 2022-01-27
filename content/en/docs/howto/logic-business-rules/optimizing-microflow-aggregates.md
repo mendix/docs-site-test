@@ -23,11 +23,11 @@ When an average is calculated within an optimized SQL query, the rounding mode c
 
 ## 2 Read More
 
-* [Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [Extend Your Application with Custom Java](extending-your-application-with-custom-java)
-* [Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [Create a Custom Save Button](create-a-custom-save-button)
-* [Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [Configure Error Handling](set-up-error-handling)
-* [Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Extract & Use Sub-Microflows](extract-and-use-sub-microflows)
+* [Define Access Rules Using XPath](/howto/logic-business-rules/define-access-rules-using-xpath/)
+* [Extend Your Application with Custom Java](/howto/logic-business-rules/extending-your-application-with-custom-java/)
+* [Work with Lists in a Microflow](/howto/logic-business-rules/working-with-lists-in-a-microflow/)
+* [Create a Custom Save Button](/howto/logic-business-rules/create-a-custom-save-button/)
+* [Optimize Retrieve Activities](/howto/logic-business-rules/optimizing-retrieve-activities/)
+* [Configure Error Handling](/howto/logic-business-rules/set-up-error-handling/)
+* [Optimize Microflow Aggregates](/howto/logic-business-rules/optimizing-microflow-aggregates/)
+* [Extract & Use Sub-Microflows](/howto/logic-business-rules/extract-and-use-sub-microflows/)

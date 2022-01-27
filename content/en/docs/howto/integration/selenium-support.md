@@ -57,11 +57,11 @@ Note that the fourth row in a grid has an index of `3`.
 
 ## 5 Read More
 
-* [Create Automated Tests with TestNG](/howto/testing/create-automated-tests-with-testng)
-* [Test Mendix Applications Using Selenium IDE](/howto/testing/testing-mendix-applications-using-selenium-ide)
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Consume a Simple Web Service](consume-a-simple-web-service)
-* [Import Excel Documents](importing-excel-documents)
-* [Export XML Documents](export-xml-documents)
-* [Expose a Web Service](expose-a-web-service)
-* [Import XML Documents](importing-xml-documents)
+* [Create Automated Tests with TestNG](/howto/testing/create-automated-tests-with-testng/)
+* [Test Mendix Applications Using Selenium IDE](/howto/testing/testing-mendix-applications-using-selenium-ide/)
+* [Consume a Complex Web Service](/howto/integration/consume-a-complex-web-service/)
+* [Consume a Simple Web Service](/howto/integration/consume-a-simple-web-service/)
+* [Import Excel Documents](/howto/integration/importing-excel-documents/)
+* [Export XML Documents](/howto/integration/export-xml-documents/)
+* [Expose a Web Service](/howto/integration/expose-a-web-service/)
+* [Import XML Documents](/howto/integration/importing-xml-documents/)

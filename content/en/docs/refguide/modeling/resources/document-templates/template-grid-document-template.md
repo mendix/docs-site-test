@@ -15,7 +15,7 @@ The template grid shows a list of objects in a tile view. For example, a templat
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide/modeling/resources/document-templates/template-grid-document-template/918137.png)
+![](/attachments/refguide/modeling/resources/document-templates/918137.png)
 
 A template grid showing products with name, description, and image.
 
@@ -25,7 +25,7 @@ A template grid showing products with name, description, and image.
 
 ### 2.1 Sort Bar
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide/sort-bar/).
 
 ## 3 Appearance Properties
 

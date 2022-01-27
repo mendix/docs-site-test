@@ -1,14 +1,14 @@
 ---
 title: "End Event"
-url: /refguide8/end-event
+url: /refguide8/end-event/
 parent: "events"
-menu_order: 2
+weight: 2
 tags: ["studio pro", "end event", "event"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/end-event.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/end-event.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -21,7 +21,7 @@ In the example below, a *Buyer* variable of the *Customer* entity is returned by
 
 ![](/attachments/refguide8/modeling/application-logic/events/end-event/end-event.png)
 
-The number of end events depends on the number of possible outcomes of the microflow or a nanoflow. That means there can be more than one end event, for example when a [decision](decision) is used:
+The number of end events depends on the number of possible outcomes of the microflow or a nanoflow. That means there can be more than one end event, for example when a [decision](/refguide8/decision/) is used:
 
 ![](/attachments/refguide8/modeling/application-logic/events/end-event/end-events.png)
 
@@ -39,9 +39,9 @@ You can choose to return nothing, or to return, for example, a list, enumeration
 
 ![](/attachments/refguide8/modeling/application-logic/events/end-event/end-event-type.png)
 
-The return value can be entered as an [expression](expressions).
+The return value can be entered as an [expression](/refguide8/expressions/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you are calling a microflow from another microflow, note that a *calling* microflow cannot control what is returned. It is controlled by the *called* microflow. 
 
@@ -49,6 +49,6 @@ If you are calling a microflow from another microflow, note that a *calling* mic
 
 ## 3 Read More
 
-* [Start Event](start-event)
+* [Start Event](/refguide8/start-event/)
 
-* [Microflow Call](microflow-call)
+* [Microflow Call](/refguide8/microflow-call/)

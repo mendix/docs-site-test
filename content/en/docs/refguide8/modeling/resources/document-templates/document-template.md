@@ -1,17 +1,17 @@
 ---
 title: "Document Template"
-url: /refguide8/document-template
+url: /refguide8/document-template/
 parent: "document-templates"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/document-template.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/document-template.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-This document describes the properties of a document template. If you want to see what document templates are for and what kind of widgets can be placed on them, you can check the [Document Templates](document-templates) overview documentation.
+This document describes the properties of a document template. If you want to see what document templates are for and what kind of widgets can be placed on them, you can check the [Document Templates](/refguide8/document-templates/) overview documentation.
 
 ## 2 Appearance Properties {#appearance-properties}
 
@@ -39,7 +39,7 @@ The margins specify the distance between the border of the paper and the content
 
 Indicates whether the header and/or footer are also shown on the first page.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 You must use a page break widget to indicate you're no longer on the first page. This cannot be calculated while generating content.
 {{% /alert %}}
 
@@ -55,7 +55,7 @@ Indicates whether the page has a footer that is displayed on each page (except o
 
 ## 3 Style
 
-For details, see [Style](style).
+For details, see [Style](/refguide8/style/).
 
 ## 4 Common Properties
 

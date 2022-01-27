@@ -1,6 +1,6 @@
 ---
 title: "Clustered Mendix Runtime"
-url: /refguide7/clustered-mendix-runtime
+url: /refguide7/clustered-mendix-runtime/
 category: "Mendix Runtime"
 description: "This page describes the impact and its behavior of running Mendix Runtime as a Cluster. Using the Cluster functionality you can setup your Mendix application to run behind a load balancer to enable a failover and/or high availability architecture."
 tags: ["runtime", "cluster", "load balancer", "failover"]
@@ -16,7 +16,7 @@ Mendix 7 contains a completely new build approach for clustering. The main featu
 
 Clustering support is built natively into our Cloud Foundry buildpack implementation. This means that you can simply scale up using Cloud Foundry. The buildpack ensures that your system automatically starts behaving as a cluster.
 
-Clustering is also supported on Kubernetes, but you will have to use a *StatefulSet*. There is more information on this in the *Some Notes on Scaling* section [How to Run Mendix on Kubernetes](/developerportal/deploy/run-mendix-on-kubernetes#scaling).
+Clustering is also supported on Kubernetes, but you will have to use a *StatefulSet*. There is more information on this in the *Some Notes on Scaling* section [How to Run Mendix on Kubernetes](/developerportal/deploy/run-mendix-on-kubernetes/#scaling).
 
 ## 3 Cluster Infrastructure
 
@@ -31,8 +31,8 @@ This means that a Mendix Cluster requires a Load Balancer to distribute the load
 Mendix Runtime has the concept of a cluster leader. This is a single node within a Mendix Runtime cluster that performs cluster management activities. Those activities are:
 
 * `Session Expiration handling` - removing sessions after they have expired (not been used for a configured timespan)
-	* For version [7.23.4](/releasenotes/studio-pro/7.23#7234) and above – each node expires its sessions (after not having been used for a configured timespan) and the cluster leader removes the sessions persisted in the database; in exceptional cases (for example, a node crash), some sessions may not be removed from the database, in which case the cluster leader performs a clean-up of the sessions
-	* For version [7.23.3](/releasenotes/studio-pro/7.23#7233) and below – the cluster leader removes sessions after they have expired (having not been used for a configured timespan)
+	* For version [7.23.4](/releasenotes/studio-pro/7.23/#7234) and above – each node expires its sessions (after not having been used for a configured timespan) and the cluster leader removes the sessions persisted in the database; in exceptional cases (for example, a node crash), some sessions may not be removed from the database, in which case the cluster leader performs a clean-up of the sessions
+	* For version [7.23.3](/releasenotes/studio-pro/7.23/#7233) and below – the cluster leader removes sessions after they have expired (having not been used for a configured timespan)
 * `Cluster node expiration handling` - removing cluster nodes after they have expired (not giving a heartbeat for a configured timespan)
 * `Background job expiration handling` - removing data about background jobs after the information has expired (older than a specific timespan)
 * `Unblocking blocked users`
@@ -52,7 +52,7 @@ If no database synchronization is required, all cluster nodes will become fully 
 
 ## 6 File Storage
 
-Uploaded files should be stored in a shared file storage facility, as every Mendix Runtime node should access the same files. Either the local storage facility is shared or the files are stored in a central storage facility such as an Amazon S3 file storage, Microsoft Azure Blob storage, or IBM Bluemix Object Storage (see [custom settings](custom-settings) for more information about configuring the Mendix Runtime to store files on these storage facilities).
+Uploaded files should be stored in a shared file storage facility, as every Mendix Runtime node should access the same files. Either the local storage facility is shared or the files are stored in a central storage facility such as an Amazon S3 file storage, Microsoft Azure Blob storage, or IBM Bluemix Object Storage (see [custom settings](/refguide7/custom-settings/) for more information about configuring the Mendix Runtime to store files on these storage facilities).
 
 ## 7 After-Startup and Before-Shutdown Microflows {#startup-shutdown-microflows}
 
@@ -68,7 +68,7 @@ While running a multi-node cluster it is not predictable on which node a microfl
 
 Some apps require a guaranteed single execution of a certain activity at a given point in time. In a single node Mendix Runtime this could be guaranteed by using JVM locks. However, in a distributed scenario those JVMs run on different machines, so there is no locking system available. Mendix does not support cluster wide locking either. If this can't be circumvented, you might need to resort to an external distributed lock manager. However, keep in mind that locking in a distributed system is complex and prone to failure (lock starvation, lock expiration, etc.).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 For the reason described above, the **Disallow concurrent execution** property of a microflow only applies to a single node.
 {{% /alert %}}
 
@@ -90,9 +90,9 @@ Note that whenever the Mendix Client is restarted, all the state is discarded, a
 
 The more objects that are part of the 'Dirty State', the more data has to be transferred in the requests and responses between the Mendix Runtime and the Mendix Client. As such, it has an impact on performance. In cluster environments it is advised to minimize the amount of 'Dirty State' to minimize the impact of the synchronization on performance.
 
-The Mendix Client attempts to optimize the amount of state sent to the Mendix Runtime by only sending data that can potentially be read while processing the request. For example, if you call a microflow that gets `Booking` as a parameter and retrieves `Flight` over association, then the client will pass only `Booking` and the associated `Flight`s from the dirty state along with the request, but not the `Hotel`s. Note that this behavior is the best effort; if the microflow is too complex to analyze (for example, when a Java action is called with a state object as a parameter), the entire dirty state will be sent along. This optimization can be disabled by the [`Optimize network calls` Project Setting](project-settings#optimize-network-calls).
+The Mendix Client attempts to optimize the amount of state sent to the Mendix Runtime by only sending data that can potentially be read while processing the request. For example, if you call a microflow that gets `Booking` as a parameter and retrieves `Flight` over association, then the client will pass only `Booking` and the associated `Flight`s from the dirty state along with the request, but not the `Hotel`s. Note that this behavior is the best effort; if the microflow is too complex to analyze (for example, when a Java action is called with a state object as a parameter), the entire dirty state will be sent along. This optimization can be disabled by the [`Optimize network calls` Project Setting](/refguide7/project-settings/#optimize-network-calls).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 It's important to realize that when calling external web services in Mendix to fetch external data, the responses of those actions are converted into Mendix entities. As long as they are not persisted in the Mendix Database, they will be part of the `Dirty State` and have a negative impact on the performance of the application. To reduce this impact, this behavior is likely to change in the future.
 
@@ -106,7 +106,7 @@ To reduce the performance impact of large requests and responses, an app develop
 | Microflow that calls a web service/app service to retrieve external data and convert them to non-persistable entities. |
 | A page has multiple microflow data source data views, each causing the state transferred to the Mendix Runtime to handle the microflow. |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 To make sure the dirty state does not become too big when the above scenarios apply to your app, it's recommended to explicitly delete objects when they are no longer necessary, so that they are not part of the state anymore. This frees up memory for the Mendix Runtime nodes to handle requests and improves performance.
 
@@ -126,7 +126,7 @@ The `Value` values can easily be obtained by performing a find on the `Key` valu
 
 ![](/attachments/refguide7/runtime/clustered-mendix-runtime/2018-03-01_17-56-37.png)
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 When data is associated to the current user or current session it can not be automatically garbage collected. As such, this data will be sent with every request to the server and returned by the responses of those requests. Therefore, associating entity instances with current user and current session should be done when no other solutions are possible to retain this temporary data.
 
@@ -138,6 +138,6 @@ To support seamless clustering, sessions will always be persisted in the databas
 
 Persistent Sessions also store a 'last active' date upon each request. To improve this particular aspect of the performance, the 'last active' date attribute of a session is no longer committed to the database immediately on each request. Instead, this information is queued for an action to run at a configurable interval to be stored in the Mendix Database. This action verifies whether the session has not been logged out by another node and whether the last active date is more recent than the one in the database. The interval can be configured by setting `ClusterManagerActionInterval` (value in milliseconds).
 
-{{% alert type="warning" %}}
-Overriding the default values for `SessionTimeout` and `ClusterManagerActionInterval` custom settings can impact the behavior of keep alive and results in an unexpected session logout. In particular, the best practice is to set the `ClusterManagerActionInterval` to half of the `SessionTimeout` so that each node gets the chance to run at least once before the cluster leader (version [7.23.3](/releasenotes/studio-pro/7.23#7233) and below) or a node (version [7.23.4](/releasenotes/studio-pro/7.23#7234) and above) attempts to delete a session.
+{{% alert color="warning" %}}
+Overriding the default values for `SessionTimeout` and `ClusterManagerActionInterval` custom settings can impact the behavior of keep alive and results in an unexpected session logout. In particular, the best practice is to set the `ClusterManagerActionInterval` to half of the `SessionTimeout` so that each node gets the chance to run at least once before the cluster leader (version [7.23.3](/releasenotes/studio-pro/7.23/#7233) and below) or a node (version [7.23.4](/releasenotes/studio-pro/7.23/#7234) and above) attempts to delete a session.
 {{% /alert %}}

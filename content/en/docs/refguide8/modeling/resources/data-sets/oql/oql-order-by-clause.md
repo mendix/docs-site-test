@@ -1,12 +1,12 @@
 ---
 title: "OQL Order by Clause"
-url: /refguide8/oql-order-by-clause
+url: /refguide8/oql-order-by-clause/
 parent: "oql"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/oql-order-by-clause.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/oql-order-by-clause.pdf).
 {{% /alert %}}
 
 The ORDER BY clause specifies the sort order used on columns returned in a SELECT statement. Multiple columns can be specified. Columns are ordered in the sequence of the items in the ORDER BY clause.
@@ -44,6 +44,6 @@ SELECT FirstName + ' ' + LastName FROM Sales.Customer
 ORDER BY LastName DESC
 ```
 
-{{% alert type="info" %}}
-For default ordering behavior of NULL values, see the [NULL Values Order Behavior](ordering-behavior#null-ordering-behavior) section of *Order By Behavior*.
+{{% alert color="info" %}}
+For default ordering behavior of NULL values, see the [NULL Values Order Behavior](/refguide8/ordering-behavior/#null-ordering-behavior) section of *Order By Behavior*.
 {{% /alert %}}

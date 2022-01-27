@@ -1,6 +1,6 @@
 ---
 title: "Template Grid (Document Template)"
-url: /refguide7/template-grid-document-template
+url: /refguide7/template-grid-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Template+Grid+(document+template).html
@@ -11,9 +11,9 @@ aliases:
 
 The template grid shows a list of objects in a tile view. For example, a template grid can show a list of products. The template grid has a lot in common with the data grid. The main difference is that the objects are shown in templates (a sort of small data view) instead of rows.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-![](/attachments/refguide7/desktop-modeler/document-templates/template-grid-document-template/918137.png)
+![](/attachments/refguide7/desktop-modeler/document-templates/918137.png)
 A template grid showing products with name, description and image.
 
 {{% /alert %}}
@@ -22,7 +22,7 @@ A template grid showing products with name, description and image.
 
 ### Sort bar
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide7/sort-bar/).
 
 ## Appearance Properties
 

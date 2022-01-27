@@ -113,7 +113,7 @@ You can filter on attributes of an associated entity. The way you do this depend
 | Filter on an associated object | `People?$filter=BirthPlace/CityName eq 'Rotterdam'` |
 | Filter on an associated list  | `City?$filter=BornIn/any(person:person/Year le 1919)` |
 
-Filtering on an associated object or list in this way is possible when you [expose associations as a link](odata-representation#associations). It is not possible when you [expose associations as an associated object ID](odata-representation#associations).
+Filtering on an associated object or list in this way is possible when you [expose associations as a link](/refguide/odata-representation/#associations). It is not possible when you [expose associations as an associated object ID](/refguide/odata-representation/#associations).
 
 ## 5 Sorting
 
@@ -129,7 +129,7 @@ It is possible to sort on multiple attributes, which have to be comma-separated.
 
 You can select which attributes and associations to return by specifying the `$select` query option. For example: `?$select=Name,Age`.
 
-## 7 Paging
+## 7 Paging {#paging}
 
 ### 7.1 Top (Limit)
 
@@ -157,7 +157,7 @@ The body must adhere to *URL encoding* principles. So, for instance, spaces, tab
 
 ## 10 Updating objects {#updating-objects}
 
-When a published resource has the [Updatable (write)](published-odata-resource#capabilities) capability, clients can update its attributes and associations by sending a `PATCH` request to the URL of the object (for example, `PATCH /odata/myservice/v1/Exployees(8444249301330581)`). 
+When a published resource has the [Updatable (write)](/refguide/published-odata-resource/#capabilities) capability, clients can update its attributes and associations by sending a `PATCH` request to the URL of the object (for example, `PATCH /odata/myservice/v1/Exployees(8444249301330581)`). 
 
 Specify new values for attributes in the body of the request. Here is an example:
 
@@ -196,8 +196,8 @@ When the association refers to multiple objects, add objects to or remove object
 }
 ```
 
-Clients can only update an association from the entity that is the [owner](associations).
+Clients can only update an association from the entity that is the [owner](/refguide/associations/).
 
 {{% alert color="info" %}}
-The updating attributes functionality was introduced in Studio Pro [9.6.0](/releasenotes/studio-pro/9.6). The updating associations functionality was introduced in Studio Pro [9.8.0](/releasenotes/studio-pro/9.8).
+The updating attributes functionality was introduced in Studio Pro [9.6.0](/releasenotes/studio-pro/9.6/). The updating associations functionality was introduced in Studio Pro [9.8.0](/releasenotes/studio-pro/9.8/).
 {{% /alert %}}

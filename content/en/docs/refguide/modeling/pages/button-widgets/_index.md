@@ -36,7 +36,7 @@ Buttons perform an action when clicked. They can be rendered as a button or as a
 
 	![Drop-Down Button Example](/attachments/refguide/modeling/pages/button-widgets/drop-down-example.png)
 
-  Different items can perform different actions. For more information on items and actions that can be assigned to them, see the [Item Section](button-properties#items) in *Button Properties*.  
+  Different items can perform different actions. For more information on items and actions that can be assigned to them, see the [Item Section](/refguide/button-properties/#items) in *Button Properties*.  
 
 ## 2 Performing Basic Functions
 
@@ -44,5 +44,5 @@ Buttons perform an action when clicked. They can be rendered as a button or as a
 
 ## 3 Read More
 
-* [Page](page)
-* [Pages](pages)
+* [Page](/refguide/page/)
+* [Pages](/refguide/pages/)

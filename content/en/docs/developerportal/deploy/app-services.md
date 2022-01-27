@@ -11,7 +11,7 @@ tags: ["Developer Portal", "App Services", "Deploy"]
 ## 1 Introduction
 
 {{% alert color="info" %}}
-App services are deprecated and  were removed in Studio Pro 9. Use a [published web service](/refguide/published-web-services) or a [published REST service](/refguide/published-rest-services) instead.
+App services are deprecated and  were removed in Studio Pro 9. Use a [published web service](/refguide/published-web-services/) or a [published REST service](/refguide/published-rest-services/) instead.
 {{% /alert %}}
 
 The **App Services** page provides an overview of possible resources that can be published to the [Mendix Marketplace](https://marketplace.mendix.com/):
@@ -28,7 +28,7 @@ On the **App Service** page, you can see a list of the available app services, w
 
 ![](/attachments/developerportal/deploy/app-services/publish-appservice.png)
 
-For more information, see [Published App Services](/refguide8/published-app-services) in the *Studio Pro Guide*.
+For more information, see [Published App Services](/refguide8/published-app-services/) in the *Studio Pro Guide*.
 
 ### 2.1 Settings
 
@@ -81,7 +81,7 @@ By selecting **Application**, you can publish the application's model in the Men
 
 Click **Go to Marketplace** to publish your app's model.
 
-For more information, see [How to Share Marketplace Content](/appstore/general/share-app-store-content).
+For more information, see [How to Share Marketplace Content](/appstore/general/share-app-store-content/).
 
 ## 4 Widget
 
@@ -89,9 +89,9 @@ By selecting **Widget**, you can upload a widget to the Mendix Marketplace.
 
 Click **Go to Marketplace** to upload your widget.
 
-For more information, see [How to Share Marketplace Content](/appstore/general/share-app-store-content).
+For more information, see [How to Share Marketplace Content](/appstore/general/share-app-store-content/).
 
 ## 5 Read More
 
-* [Deploy and Manage](/developerportal/deploy)
-* [Published App Service](/refguide8/published-app-services)
+* [Deploy and Manage](/developerportal/deploy/)
+* [Published App Service](/refguide8/published-app-services/)

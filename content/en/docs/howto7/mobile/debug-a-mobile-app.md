@@ -1,8 +1,8 @@
 ---
 title: "Debug a Hybrid Mobile App"
-url: /howto7/mobile/debug-a-mobile-app
+url: /howto7/mobile/debug-a-mobile-app/
 category: "Mobile Development"
-menu_order: 40
+weight: 40
 description: "How to set up a mobile app to run from your local machine and debug using Mendix's tools"
 tags: ["mobile", "debug", "android", "ios"]
 ---
@@ -11,12 +11,12 @@ tags: ["mobile", "debug", "android", "ios"]
 
 Mendix has great tools for debugging web applications, including the offline and online debugger, but a lot of people don’t know that these tools can also be used to debug and test mobile applications.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Building hybrid apps in the cloud uses the PhoneGap Build service from Adobe. Because Adobe no longer maintains this service, building hybrid apps in the cloud and publishing them to app stores is no longer possible.
 
-To build a hybrid app and publish it, see [How to Build a Mendix Hybrid App Locally](/howto8/mobile/build-hybrid-locally) for information on local building.
+To build a hybrid app and publish it, see [How to Build a Mendix Hybrid App Locally](/howto8/mobile/build-hybrid-locally/) for information on local building.
 
-To publish your app in an app store, we recommend you build native iOS apps instead. For more information, see [How to Build Native Apps](/howto/mobile/build-native-apps).
+To publish your app in an app store, we recommend you build native iOS apps instead. For more information, see [How to Build Native Apps](/howto/mobile/build-native-apps/).
 {{% /alert %}}
 
 **This how-to will teach you how to do the following:**
@@ -57,7 +57,7 @@ Since the Mendix Modeler only runs on Mendix, we need to make sure that your vir
 6. Make sure that the **Connect Mac to this network** option is checked.
 
       ![mac-3b](/attachments/howto7/mobile/debug-a-mobile-app/mac-3b-1163119.png) |
- |
+
 7. Click **+** button at the bottom of the page to add a new Port Forwarding Rule with the following settings:
       * Protocol: *TCP*
       * Source Port: *8080*
@@ -411,7 +411,7 @@ For more help with Android remote debugging, check out [Get Started with Remote 
 
 ## 6 Read More
 
-* [Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions)
-* [Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](/howto7/monitoring-troubleshooting/clear-warning-messages)
-* [Debug Microflows](/howto7/monitoring-troubleshooting/debug-microflows)
+* [Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions/)
+* [Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto7/monitoring-troubleshooting/clear-warning-messages/)
+* [Debug Microflows](/howto7/monitoring-troubleshooting/debug-microflows/)

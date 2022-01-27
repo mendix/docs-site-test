@@ -38,7 +38,7 @@ The following settings can be changed:
 	* ConnectionBus_Synchronize
 	* ConnectionBus_Validation
 	* QueryParser
-* **Generate API key** – After clicking this, click **Copy** to copy the API key to the clipboard (when you generate an API key for a runtime/Mendix Studio Pro environment, you see this key only once, so copy-paste and use it immediately; for more information about the installation, see [APD 3 Installation Guide](ig-three))
+* **Generate API key** – After clicking this, click **Copy** to copy the API key to the clipboard (when you generate an API key for a runtime/Mendix Studio Pro environment, you see this key only once, so copy-paste and use it immediately; for more information about the installation, see [APD 3 Installation Guide](/addons/apd-addon/ig-three/))
 
 	![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-settings/api_key_dialog.png)
 

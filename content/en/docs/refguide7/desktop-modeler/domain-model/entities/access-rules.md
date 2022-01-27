@@ -1,17 +1,17 @@
 ---
 title: "Access Rules"
-url: /refguide7/access-rules
+url: /refguide7/access-rules/
 parent: "entities"
-menu_order: 70
+weight: 70
 tags: ["domain model", "entity", "access rule", "xpath constraint", "module role"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-The access rules of an entity define what a user is allowed to do with objects of the entity. Users can be allowed to create and/or delete objects, and to view and/or edit member values. A member is an attribute or an association of an entity. Furthermore, the set of objects available for viewing, editing and removing can be limited by means of an [XPath constraint](xpath-constraints).
+The access rules of an entity define what a user is allowed to do with objects of the entity. Users can be allowed to create and/or delete objects, and to view and/or edit member values. A member is an attribute or an association of an entity. Furthermore, the set of objects available for viewing, editing and removing can be limited by means of an [XPath constraint](/refguide7/xpath-constraints/).
 
-Every access rule is applicable to one or more [module roles](module-role). An access rule grants certain access rights to those roles. Rules are additive, which means that if multiple access rules apply to the same module role, all access rights of those rules are combined for that module role.
+Every access rule is applicable to one or more [module roles](/refguide7/module-role/). An access rule grants certain access rights to those roles. Rules are additive, which means that if multiple access rules apply to the same module role, all access rights of those rules are combined for that module role.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Access rules are not inherited from an entity's generalization; rather, the security for every entity is specified explicitly. This means that when adding an access rule to an entity, always make sure that all required XPath constraints are applied. The generalization's access rules, that might already define XPath constraints, do not apply to its specializations and will therefore not limit their visibility.
 
@@ -23,9 +23,9 @@ Access rules are defined in the entity **Properties** > the **Access rules** sec
 
 ![Access Rules for Entities](/attachments/refguide7/desktop-modeler/domain-model/entities/access-rules/dm-access-rules-section.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-The **Access rules** section is visible only if  the project security is set to **Production**. For more information, see [Project Security](project-security).
+The **Access rules** section is visible only if  the project security is set to **Production**. For more information, see [Project Security](/refguide7/project-security/).
 
 {{% /alert %}}
 
@@ -59,7 +59,7 @@ Member read and write rights define the access rights for every member (attribut
 
 The set of objects to which the member access rights apply can be limited by using an XPath constraint (see below).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 A customer is allowed to view the discount, but is not allowed to edit it. The access rights for the discount attribute are 'Read'.
 
@@ -69,7 +69,7 @@ A customer is allowed to view the discount, but is not allowed to edit it. The a
 
 ### XPath constraint
 
-The [XPath constraint](xpath-constraints) can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all objects of the entity.
+The [XPath constraint](/refguide7/xpath-constraints/) can be used to constrain the set of objects to which the access rule applies. If the XPath constraint is empty, the rule applies to all objects of the entity.
 
 Entity 'Customer' is a specialization of entity 'User'. Entity 'Order' is associated to entity 'Customer'.
 
@@ -83,11 +83,11 @@ A logged in customer is allowed to view personal orders, but is not allowed to v
 
 Because of this XPath constraint, the access rule only applies to orders of which the customer is the currently signed in user.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The checkbox 'Show XPath constraint' only indicates whether you can see the XPath constraint in the access rule dialog, it does not influence the behavior of your application.
 
-{{% /alert %}}{{% alert type="warning" %}}
+{{% /alert %}}{{% alert color="warning" %}}
 
 XPath constraints can only be applied to persistable entities as they are computed in the database. Defining XPath constraints for non-persistable entities results in consistency check errors.
 

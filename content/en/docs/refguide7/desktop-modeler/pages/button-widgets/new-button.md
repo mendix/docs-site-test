@@ -1,12 +1,12 @@
 ---
 title: "Create Button"
-url: /refguide7/new-button
+url: /refguide7/new-button/
 parent: "button-widgets"
 ---
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-This button was removed in Mendix 7.17. Use a normal [Action button](action-button) with the **Create object** action instead.
+This button was removed in Mendix 7.17. Use a normal [Action button](/refguide7/action-button/) with the **Create object** action instead.
 
 {{% /alert %}}
 
@@ -40,7 +40,7 @@ When the user presses the **Create** button, the Mendix application will create 
 
 This property specifies the page that is opened when the end user presses this button. The end user can use this page to edit the newly created object before it is saved. This page should contain a data view connected to the same entity as this button.
 
-See [Opening Pages](opening-pages).
+See [Opening Pages](/refguide7/opening-pages/).
 
 ### Entity (Path)
 

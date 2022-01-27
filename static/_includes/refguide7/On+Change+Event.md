@@ -19,23 +19,23 @@ _Default value:_ Do nothing
 
 #### Page (Only for "Show a page") {#on-change-page}
 
-The [page](page) that should be shown.
+The [page](/refguide7/page/) that should be shown.
 
-For more information, see [Opening Pages](opening-pages).
+For more information, see [Opening Pages](/refguide7/opening-pages/).
 
 #### Microflow (Only for "Call a microflow") {#on-change-microflow}
 
-The [microflow](microflow) that should be executed.
+The [microflow](/refguide7/microflow/) that should be executed.
 
 #### Microflow Settings (Only for "Call a microflow") {#on-change-microflow-settings}
 
 The microflow settings specify what parameters will be passed to the microflow, whether to show a progress bar or not, and more.
 
-For more information, see [Starting Microflows](starting-microflows).
+For more information, see [Starting Microflows](/refguide7/starting-microflows/).
 
 #### Nanoflow (Only for "Call a nanoflow") {#on-change-nanoflow}
 
-The [nanoflow](nanoflow) that should be executed.
+The [nanoflow](/refguide7/nanoflow/) that should be executed.
 
 #### Link Type (Only for "Open link") {#on-change-link-type}
 
@@ -70,6 +70,6 @@ This flag indicates whether the current page should be closed.
 
 #### Sync Automatically (Only for "Save changes") {#on-change-sync-automatically}
 
-When an object is saved in a Mendix application running in an [offline profile](hybrid-phone-profile), this information is stored in a local database until it can be synchronized with the server. In practice, this means that uploading a new object to the server requires two distinct actions: saving the object and [syncing it](offline#synchronization).
+When an object is saved in a Mendix application running in an [offline profile](/refguide7/hybrid-phone-profile/), this information is stored in a local database until it can be synchronized with the server. In practice, this means that uploading a new object to the server requires two distinct actions: saving the object and [syncing it](/refguide7/offline/#synchronization).
 
 This flag indicates whether synchronization should happen when the Save button is clicked.

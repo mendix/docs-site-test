@@ -13,7 +13,7 @@ aliases:
 
 ## 1 Introduction
 
-The search bar contains search fields that allow the end-user to quickly find the information they need in a [data grid](data-grid) or [template grid](template-grid).
+The search bar contains search fields that allow the end-user to quickly find the information they need in a [data grid](/refguide/data-grid/) or [template grid](/refguide/template-grid/).
 
 To add a search field to the search bar, right-click within the search bar in your data grid and choose **Add search field** > [Type of the search field](#search-field-type). 
 
@@ -210,5 +210,5 @@ Default: *Smaller*
 
 ## 4 Read More
 
-* [Data Grid](data-grid)
-* [Template Grid](template-grid)
+* [Data Grid](/refguide/data-grid/)
+* [Template Grid](/refguide/template-grid/)

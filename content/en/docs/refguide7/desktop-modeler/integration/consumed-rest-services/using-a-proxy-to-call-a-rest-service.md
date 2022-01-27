@@ -1,6 +1,6 @@
 ---
 title: "Using a Proxy to Call a REST Service"
-url: /refguide7/using-a-proxy-to-call-a-rest-service
+url: /refguide7/using-a-proxy-to-call-a-rest-service/
 parent: "consumed-rest-services"
 ---
 
@@ -14,11 +14,11 @@ You can either specify these as custom settings or as JVM parameters (system pro
 
 ## Custom Settings
 
-For details on specifying REST proxy settings as custom server setting, see [Configuration](configuration#custom). 
+For details on specifying REST proxy settings as custom server setting, see [Configuration](/refguide7/configuration/#custom). 
 
 ## JVM Parameters
 
-Alternatively, you can specify JVM parameters in your `.m2eerc` under JVM parameters. This is useful if you want to use these settings to [consume web services](using-a-proxy-to-call-a-webservice) too.
+Alternatively, you can specify JVM parameters in your `.m2eerc` under JVM parameters. This is useful if you want to use these settings to [consume web services](/refguide7/using-a-proxy-to-call-a-webservice/) too.
 
 ```java
 ...

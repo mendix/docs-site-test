@@ -41,7 +41,7 @@ You can give the execute procedure permission using the following command:
 
 `GRANT EXECUTE ON OBJECT::usp_nextsequencevalue TO <YourDatabaseUser>`
 
-Additionally, to start the application from a new `.mda` file the `view definition` permission is required, even if no database synchronization is necessary. During the database upgrade, altering the tables and stored functions is required. During that action, it is usually sufficient to have the `db_ddladmin` role, but when the stored functions needs to be added, the `db_owner` role is required (for more information, see [SQL Server Troubleshooter](troubleshooting-sql-server)).
+Additionally, to start the application from a new `.mda` file the `view definition` permission is required, even if no database synchronization is necessary. During the database upgrade, altering the tables and stored functions is required. During that action, it is usually sufficient to have the `db_ddladmin` role, but when the stored functions needs to be added, the `db_owner` role is required (for more information, see [SQL Server Troubleshooter](/developerportal/deploy/troubleshooting-sql-server/)).
 
 ## 4 Status
 
@@ -51,12 +51,12 @@ Allow the user to connect to the database. If the user is Denied the privilege t
 
 ## 5 Read More
 
-*   [Restoring an SQL Server Database](restoring-a-sql-server-database)
-*   [Troubleshooting SQL Server](troubleshooting-sql-server)
-*   [Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
-*   [Setting Up a New SQL Server Database](setting-up-a-new-sql-server-database)
-*   [Setting Up a SQL Server User](setting-up-a-sql-server-user)
-*   [Security Checklist for Your On-Premises Installation](security-checklist-for-your-on-premises-installation)
-*   [Mendix on Windows - Microsoft SQL Server](mendix-on-windows-microsoft-sql-server)
-*   [Deploying Mendix on Microsoft Windows](deploy-mendix-on-microsoft-windows)
-*   [U*ix Deployment](unix-like)
+*   [Restoring an SQL Server Database](/developerportal/deploy/restoring-a-sql-server-database/)
+*   [Troubleshooting SQL Server](/developerportal/deploy/troubleshooting-sql-server/)
+*   [Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
+*   [Setting Up a New SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/)
+*   [Setting Up a SQL Server User](/developerportal/deploy/setting-up-a-sql-server-user/)
+*   [Security Checklist for Your On-Premises Installation](/developerportal/deploy/security-checklist-for-your-on-premises-installation/)
+*   [Mendix on Windows - Microsoft SQL Server](/developerportal/deploy/mendix-on-windows-microsoft-sql-server/)
+*   [Deploying Mendix on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/)
+*   [U*ix Deployment](/developerportal/deploy/unix-like/)

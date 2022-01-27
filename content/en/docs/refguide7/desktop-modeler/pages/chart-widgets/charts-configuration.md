@@ -1,8 +1,8 @@
 ---
 title: "Chart Configuration"
-url: /refguide7/charts-configuration
+url: /refguide7/charts-configuration/
 parent: "chart-widgets"
-menu_order: 10
+weight: 10
 tags: ["Charts", "Widgets", "Desktop Modeler", "Chart Configuration", "Configuration"]
 ---
 
@@ -22,7 +22,7 @@ This guide covers the following widgets:
 * Time series
   * Note that some apps may have two *Time series* widgets. This document refers to the one with this icon: ![Image of correct Time series widget](/attachments/refguide7/desktop-modeler/pages/chart-widgets/charts-configuration/time-series-icon.png)
 
-The configuration of *Any chart* widgets is in another document, here: [Any Chart Widgets](charts-any-configuration).
+The configuration of *Any chart* widgets is in another document, here: [Any Chart Widgets](/refguide7/charts-any-configuration/).
 
 ## 2 Common configuration
 
@@ -48,7 +48,7 @@ Add series and configure their properties, each series represents a dataset. For
 
   In this case, new series can be added by clicking the **Series > New** button in the **Chart properties** tab.
 
-  {{% alert type="info" %}}From version 1.4 of charts you can create charts with a variable number of data series. For instructions on how to do this, see [How to Create a Dynamic Series Chart](/howto7/extensibility/charts-dynamic-series).{{% /alert %}}
+  {{% alert color="info" %}}From version 1.4 of charts you can create charts with a variable number of data series. For instructions on how to do this, see [How to Create a Dynamic Series Chart](/howto7/extensibility/charts-dynamic-series/).{{% /alert %}}
 
 1. Data source<a name="data-source"></a>
 
@@ -62,7 +62,7 @@ Add series and configure their properties, each series represents a dataset. For
 
     * **Data source**: the data source type for the series: *Database*, *Microflow* or *REST endpoint*
 
-    * **REST URL**: Relative or full URL to REST endpoint. For more information on setting up a REST end point see [REST Charts](/howto7/extensibility/charts-basic-rest)
+    * **REST URL**: Relative or full URL to REST endpoint. For more information on setting up a REST end point see [REST Charts](/howto7/extensibility/charts-basic-rest/)
 
     * **XPath constraint**: The constraint on the data from the entity (used when the data source is Database)
 
@@ -107,7 +107,7 @@ Add series and configure their properties, each series represents a dataset. For
 
     * **Series entity**: the entity which defines a series – the list of objects of this entity type will be used to construct the series; one series for each object.
     
-      Each entity is associated with the values which will be plotted, see [How to Create a Dynamic Series Chart](/howto7/extensibility/charts-dynamic-series) for more information.
+      Each entity is associated with the values which will be plotted, see [How to Create a Dynamic Series Chart](/howto7/extensibility/charts-dynamic-series/) for more information.
 
     * **Series name attribute**: the attribute in the series entity which will be displayed as the series name if a legend is displayed
 
@@ -123,7 +123,7 @@ Add series and configure their properties, each series represents a dataset. For
     
     ![Edit series Events tab](/attachments/refguide7/desktop-modeler/pages/chart-widgets/charts-configuration/series-item-events.png)
 
-    {{% alert type="info" %}}The context of the page, microflow, or nanoflow selected for an event or tooltip will be the plotted object from which the point on the chart is drawn. This means you can display or use the x and y values, _and_ any other values stored in that object.<br /><br />For example you could use the tooltip to display the precise y value of a point, plus information on when the data was collected{{% /alert %}}
+    {{% alert color="info" %}}The context of the page, microflow, or nanoflow selected for an event or tooltip will be the plotted object from which the point on the chart is drawn. This means you can display or use the x and y values, _and_ any other values stored in that object.<br /><br />For example you could use the tooltip to display the precise y value of a point, plus information on when the data was collected{{% /alert %}}
     
     * **On click**: Select the way a click of a data point should be handled:
       * Do nothing
@@ -165,7 +165,7 @@ The **Appearance** settings are used to set the size of the chart on the page.
   * **Pixels**: is an absolute height
   * **Percentage of parent**: sets the height in relation to a container in which the widget is placed
   
-  {{% alert type="warning" %}}When using **Percentage of parent** the parent container must have an **absolute** height, else nothing is displayed.{{% /alert %}}
+  {{% alert color="warning" %}}When using **Percentage of parent** the parent container must have an **absolute** height, else nothing is displayed.{{% /alert %}}
 
 * **Height**: The height in pixels or percentage based on the setting of **Height unit**
 
@@ -192,17 +192,17 @@ See the following link for more information about plotly.js and the options: htt
     ![](/attachments/refguide7/desktop-modeler/pages/chart-widgets/charts-configuration/toggle-editor.png)
 
 * **Layout options**: The JSON containing the Plotly layout options
-  * [Samples](charts-advanced-cheat-sheet#layout-all)
+  * [Samples](/refguide7/charts-advanced-cheat-sheet/#layout-all)
   * [Full reference](https://plot.ly/javascript/reference/#layout)
 
 * **Configuration options**: The JSON containing the Plotly configuration options
-  * [Samples](charts-advanced-cheat-sheet#config-options)
+  * [Samples](/refguide7/charts-advanced-cheat-sheet/#config-options)
   * [Documentation](https://plot.ly/javascript/configuration-options/)
   * [Full reference](https://github.com/plotly/plotly.js/blob/master/src/plot_api/plot_config.js)
 
 #### 2.1.5 Common
 
-These are properties which are common to many widgets. For information see [Common Widget Properties](common-widget-properties#common-properties).
+These are properties which are common to many widgets. For information see [Common Widget Properties](/refguide7/common-widget-properties/#common-properties).
 
 ## 3 Configuration by Chart Type {#configuration-by-chart-type}
 
@@ -375,7 +375,7 @@ To the theme folder, add a `.json` file named *com.mendix.charts*. The JSON shou
 }
 ```
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Please use with caution, as the configuration set up here shall be applied to every instance of the charts in your application.  
 Only the advanced configurations set up in the widget itself have a higher precedence.

@@ -1,6 +1,6 @@
 ---
 title: "Consumed REST Services"
-url: /refguide7/consumed-rest-services
+url: /refguide7/consumed-rest-services/
 parent: "integration"
 description: "Presents an overview of consumed REST services and JSON in Mendix."
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -16,7 +16,7 @@ Representational state transfer (REST) is an approach to consuming or exposing r
 
 Lack of contracts and schemas give you an easy start to using REST. However, many REST endpoints return complex data.
 
-The [JSON Structure](json-structures) document helps with giving structure to JSON data: from an example JSON snippet, a lightweight schema is extracted that is used in [Mapping Documents](mapping-documents). The [Import Mapping](import-mappings) document converts JSON (or XML) to Mendix objects, and the [Export Mapping](export-mappings) document serializes Mendix objects to JSON (or XML).
+The [JSON Structure](/refguide7/json-structures/) document helps with giving structure to JSON data: from an example JSON snippet, a lightweight schema is extracted that is used in [Mapping Documents](/refguide7/mapping-documents/). The [Import Mapping](/refguide7/import-mappings/) document converts JSON (or XML) to Mendix objects, and the [Export Mapping](/refguide7/export-mappings/) document serializes Mendix objects to JSON (or XML).
 
 ## 2 JSON
 

@@ -1,8 +1,8 @@
 ---
 title: "Share Company Atlas UI Resources"
-url: /howto7/front-end/share-company-atlas-ui-resources
+url: /howto7/front-end/share-company-atlas-ui-resources/
 parent: "atlas-ui"
-menu_order: 40
+weight: 40
 tags: ["Atlas", "UI", "UX", "user experience"]
 ---
 
@@ -58,7 +58,7 @@ Let’s start with creating a new Mendix application in the Mendix Developer Por
 
     ![](/attachments/howto7/front-end/atlas-ui/share-company-atlas-ui-resources/sharing_delete_module.png)
 
-3. Now it’s time to import your company UI resources (if you have not created the UI resources yet, see [How to Create Company UI Resources](create-company-atlas-ui-resources)). Import these resources by clicking **App Store** in the top toolbar of the Desktop Modeler, and then selecting **UI Resources** in the left sidebar **Categories** menu.
+3. Now it’s time to import your company UI resources (if you have not created the UI resources yet, see [How to Create Company UI Resources](/howto7/front-end/create-company-atlas-ui-resources/)). Import these resources by clicking **App Store** in the top toolbar of the Desktop Modeler, and then selecting **UI Resources** in the left sidebar **Categories** menu.
 4. Download the company UI resources module you have created.
 5. When the download is complete, the UI resources will be visible in the **App Store modules** in **Project Explorer**.  Be sure to check if all the errors are resolved before continuing.
 
@@ -101,8 +101,8 @@ To use the UI Resources module from teh Mendix Marketplace, follow these steps:
 
 ## 5 Read More
 
-* [How to Get Started with Atlas UI](get-started-with-atlasui)
-* [How to Create Company Atlas UI Resources](create-company-atlas-ui-resources)
-* [How to Create Custom Preview Images for Building Blocks & Page Templates](create-custom-preview-images-for-building-blocks-and-page-templates)
-* [How to Extend Design Properties to Customize the Web Modeler Experience](extend-design-properties-to-customize-the-web-modeler-experience)
-* [How to Migrate Existing Projects to Atlas UI](migrate-existing-projects-to-atlasui)
+* [How to Get Started with Atlas UI](/howto7/front-end/get-started-with-atlasui/)
+* [How to Create Company Atlas UI Resources](/howto7/front-end/create-company-atlas-ui-resources/)
+* [How to Create Custom Preview Images for Building Blocks & Page Templates](/howto7/front-end/create-custom-preview-images-for-building-blocks-and-page-templates/)
+* [How to Extend Design Properties to Customize the Web Modeler Experience](/howto7/front-end/extend-design-properties-to-customize-the-web-modeler-experience/)
+* [How to Migrate Existing Projects to Atlas UI](/howto7/front-end/migrate-existing-projects-to-atlasui/)

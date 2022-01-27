@@ -9,7 +9,7 @@ tags: ["data hub", "data hub catalog"]
 
 ## 1 Introduction
 
-Finding the right data to use in your app development is made easier using the search functionality in the Data Hub Catalog. The details of registered data assets can be accessed via the [Data Hub Search API](/apidocs-mxsdk/apidocs/data-hub-apis), or viewed in the [Asset details](#search-details) screen of the Catalog or the [Data Hub pane](/refguide/data-hub-pane) in Studio Pro.  This document describes the functionality of the Data Hub Catalog.
+Finding the right data to use in your app development is made easier using the search functionality in the Data Hub Catalog. The details of registered data assets can be accessed via the [Data Hub Search API](/apidocs-mxsdk/apidocs/data-hub-apis/), or viewed in the [Asset details](#search-details) screen of the Catalog or the [Data Hub pane](/refguide/data-hub-pane/) in Studio Pro.  This document describes the functionality of the Data Hub Catalog.
 
 ## 2 Search via the API {#search-api}
 
@@ -264,6 +264,7 @@ When searching in the Data Hub Catalog, the following fields are searched:
 From the **Data Hub Home** page, you can search the Catalog in the following ways:
 
 ![data hub home page](/attachments/data-hub/share-data/data-hub-home.png)
+
 * Type a search term in the search box and click **Search** (search strings must be at least 3 alphanumeric characters)
 * Click one of the *tags* given in the **Search suggestions**
 * Click one of the services under **Popular Data Sources**
@@ -282,7 +283,7 @@ The **Search** screen is divided into the [search](#search-pane) pane on the lef
 The collapsible **Search** pane is used to search for registered assets in the Data Hub Catalog:
 
  {{/* % image_container width="300" % */}}![search pane](/attachments/data-hub/data-hub-catalog/search/search-pane.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 #### 3.4.1 Specifying the Search
 
 Enter a search string in the **Search** area with a minimum of 3 alphanumeric characters. Searching for the wildcard `*` or the empty string `''` will return all registered items.
@@ -388,15 +389,15 @@ You can perform the following actions from this screen:
 The metadata panel at the right of the asset details screen displays details from the OData service metadata contract and values that have been curated in the Data Hub Catalog:
 
  {{/* % image_container width="300" % */}}![metadata pane](/attachments/data-hub/data-hub-catalog/search/metadata.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 #### 3.6.1 Tags
 
-These are the tags that have been assigned to the data source in the Catalog (for more information, see the [Adding or Editing Tags to a Service](curate#tags) section of *How to 
+These are the tags that have been assigned to the data source in the Catalog (for more information, see the [Adding or Editing Tags to a Service](/data-hub/data-hub-catalog/curate/#tags) section of *How to 
 Curate Registered Assets*). Tags assigned at a data source-level propagate down to the datasets and attributes exposed in the service.
 
 #### 3.6.2 Business Owner {#busines-owner}
 
-This is a link to the business owner of the data exposed in the data source. For more information, see the [Changing Owners of an App](curate#changing-owners) section of *How to Curate Registered Assets*.
+This is a link to the business owner of the data exposed in the data source. For more information, see the [Changing Owners of an App](/data-hub/data-hub-catalog/curate/#changing-owners) section of *How to Curate Registered Assets*.
 
 #### 3.6.3 Technical Owner
 
@@ -404,7 +405,7 @@ The technical contact of the app; by default this is the owner who registered th
 
 For apps hosted in the Mendix Cloud, the **Technical Owner** is the app developer that deployed the app.
 
-Technical owners can be [changed](curate#changing-owners).
+Technical owners can be [changed](/data-hub/data-hub-catalog/curate/#changing-owners).
 
 #### 3.6.4 Discoverability {#discoverability-metadata}
 
@@ -439,13 +440,12 @@ The **Curate Bar** is displayed in the asset detail screen if you are the owner 
 
 ![called out curate bar](/attachments/data-hub/data-hub-catalog/search/curate-bar.png)
 
-The following actions can be carried out:
+In **Edit** > **Edit Metadata**, you can edit the information that is displayed in the Catalog for an asset:
 
-* **Edit Metadata** – edit information that is displayed in the Catalog for the asset:
-  * for a selected data source you can edit [Application Details](./curate#curate-application) and [Data Source Details](./curate#service-details)
-  * for a selected dataset you can edit [Dataset Details](./curate#curate-datasets)
+* For the selected data source, you can edit [Application Details](/data-hub/data-hub-catalog/curate/#curate-application) and [Data Source Details](/data-hub/data-hub-catalog/curate/#service-details)
+* For a selected dataset, you can edit [Dataset Details](/data-hub/data-hub-catalog/curate/#curate-datasets)
 
-For further details, see [Curate Registered Assets](./curate).
+For further details, see [Curate Registered Assets](/data-hub/data-hub-catalog/curate/).
 
 ### 3.8 Data Source and Dataset URIs
 

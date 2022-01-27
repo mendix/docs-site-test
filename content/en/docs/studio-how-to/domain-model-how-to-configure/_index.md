@@ -25,7 +25,7 @@ You are configuring the domain model for an online shopping app.
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio/domain-models).
+* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio/domain-models/).
 
 ## 3 Defining What Data to Include  
 
@@ -62,23 +62,23 @@ To add the product to your domain model, follow the steps below:
 
 1. Create the **Product** entity. Do the following:
 
-    1. Open your [domain model](/studio/domain-models).
+    1. Open your [domain model](/studio/domain-models/).
 
     2. Open **Toolbox**, drag and drop **Entity** in your domain model:
 
-       {{/* % image_container width="350" % */}}![Adding a New Entity](/attachments/studio-how-to/domain-model-how-to-configure/adding-entity.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+       {{/* % image_container width="350" % */}}![Adding a New Entity](/attachments/studio-how-to/domain-model-how-to-configure/adding-entity.png){{/* % /image_container % */}}
+
     3. In the **Create New Entity**, dialog box, set the name to **Product** and click **Create**.
 
 2. Create attributes for the **Product** entity. Do the following:<br />
     1. Select the entity and click **New attribute**:
       
-		{{/* % image_container width="250" % */}}![Adding New Attribute](/attachments/studio-how-to/domain-model-how-to-configure/adding-new-attribute.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}}       
+		{{/* % image_container width="250" % */}}![Adding New Attribute](/attachments/studio-how-to/domain-model-how-to-configure/adding-new-attribute.png){{/* % /image_container % */}}
+      
     2. In the **Create New Attribute** dialog box, set the name to *Product_ID*, set the type to *Autonumber* (so that ID for a product will be assigned automatically), and click **Create**:
       
-        {{/* % image_container width="450" % */}}![Create New Attribute Dialog Window](/attachments/studio-how-to/domain-model-how-to-configure/create-new-attribute-dialog.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}}       
+        {{/* % image_container width="450" % */}}![Create New Attribute Dialog Window](/attachments/studio-how-to/domain-model-how-to-configure/create-new-attribute-dialog.png){{/* % /image_container % */}}
+      
     3. Repeat step 2a to add the *Name* attribute. 
       
     4. In the **Create New Attribute** dialog box, set the name to *Name*, set the type to *String*, and click **Create**.
@@ -103,16 +103,16 @@ To add the product to your domain model, follow the steps below:
 
 	1.  Open **Toolbox**, drag and drop the **Image Entity** in your domain model:
 
-		{{/* % image_container width="300" % */}}![Image Entity](/attachments/studio-how-to/domain-model-how-to-configure/adding-image-entity.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+		{{/* % image_container width="300" % */}}![Image Entity](/attachments/studio-how-to/domain-model-how-to-configure/adding-image-entity.png){{/* % /image_container % */}}
+
 	2. In the **Create New Image Attribute** dialog box, set the name to *Product_Image* and click **Create**.
 		{{% alert color="info" %}} *Name* and *Size* attributes are created automatically and are read-only.
 		{{% /alert %}}
 
 Good job! You created the **Product** entity, its attributes, and the **Product_Image** image entity:
 
-{{/* % image_container width="500" % */}}![Product and Product Image Entities](/attachments/studio-how-to/domain-model-how-to-configure/product-and-product-image.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+{{/* % image_container width="500" % */}}![Product and Product Image Entities](/attachments/studio-how-to/domain-model-how-to-configure/product-and-product-image.png){{/* % /image_container % */}}
+
 ## 5 Defining the Order {#order}
 
 The order information can be divided into following:
@@ -136,22 +136,22 @@ Do the following:
       
     4. Set the attribute **Name** to *Status* and **Type** to *Enumeration*. The enumeration will include different status values, for example, *Placed* or *Shipped*. 
       
-    5. Click **Select enumeration** to create a new [enumeration](/studio/domain-models-enumeration). 
+    5. Click **Select enumeration** to create a new [enumeration](/studio/domain-models-enumeration/). 
       
-		{{/* % image_container width="450" % */}}![Select Enumeration](/attachments/studio-how-to/domain-model-how-to-configure/select-enumeration.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}}       
+		{{/* % image_container width="450" % */}}![Select Enumeration](/attachments/studio-how-to/domain-model-how-to-configure/select-enumeration.png){{/* % /image_container % */}}
+      
     6. In the **Select enumeration** dialog box, click the plus icon in the top right corner to add a new enumeration.
       
     7. In the **Create new enumeration** dialog box, click **Add Item** (*Status* is filled out automatically for the **Name**).
       
-		{{/* % image_container width="450" % */}}![Create New Enumeration](/attachments/studio-how-to/domain-model-how-to-configure/create-new-enumeration.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}}       
+		{{/* % image_container width="450" % */}}![Create New Enumeration](/attachments/studio-how-to/domain-model-how-to-configure/create-new-enumeration.png){{/* % /image_container % */}}
+      
     8. Enter *Ordered* for the **Caption** (**Name** is filled out as *Ordered* automatically).
       
     9. Click **Add Item** and repeat the step above to create the **Paid**, **Shipped**, **Delivered**, and **Canceled** statuses.
       
-		{{/* % image_container width="450" % */}}![Create Enumeration Items](/attachments/studio-how-to/domain-model-how-to-configure/create-enumeration-items.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}}       
+		{{/* % image_container width="450" % */}}![Create Enumeration Items](/attachments/studio-how-to/domain-model-how-to-configure/create-enumeration-items.png){{/* % /image_container % */}}
+      
     10. Click **Create** to close the dialog box and create the attribute.
    
 3. Create the **Order_Line** entity to hold the order products and quantities. Use the same method as for creating the **Product** entity. For more information, see the [Defining the Product](#product) section. 
@@ -167,8 +167,8 @@ Do the following:
 
     1. Open **Toolbox**, drag and drop the **File Entity** in your domain model:
 
-		{{/* % image_container width="350" % */}}![Image Entity](/attachments/studio-how-to/domain-model-how-to-configure/adding-file-entity.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+		{{/* % image_container width="350" % */}}![Image Entity](/attachments/studio-how-to/domain-model-how-to-configure/adding-file-entity.png){{/* % /image_container % */}}
+
     2. In the **Create New File Attribute** dialog box, set the name to *Order_Confirmation* and click **Create**.
 
 6. Create attributes for the the **Order_Confirmation** entity. Do the following:<br />
@@ -189,7 +189,7 @@ A customer is another crucial part of the online shopping app that needs a separ
 Follow the steps below:
 
 1. Create the **Customer** entity. Use the same method as for creating the **Product** entity. For more information, see the [Defining the Product](#product) section.
-2. Create attributes for the **Customer** entity (for more information on how to create an attribute, see the [Adding New Attributes](/studio/domain-models#adding-new-attributes) section in *Domain Model*). Do the following:<br />
+2. Create attributes for the **Customer** entity (for more information on how to create an attribute, see the [Adding New Attributes](/studio/domain-models/#adding-new-attributes) section in *Domain Model*). Do the following:<br />
 1. Select the entity and click **New attribute**.
     2. In the **Create New Attribute** dialog box, set **Name** to *Customer_ID*, set **Type** to *Autonumber*, and click **Create**. 
 3. Repeat step 2a to create the *Name* attribute.
@@ -206,15 +206,15 @@ You created the **Customer** entity and its attributes:
 
 {{/* % image_container width="200" % */}}
 ![Customer Entity](/attachments/studio-how-to/domain-model-how-to-configure/customer_entity.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ## 7 Creating Associations
 
 You have created all the entities and their attributes:
 
-<img src="attachments/domain-model-how-to-configure/entities.png" alt="Entities"  />
+<img src="/attachments/studio-how-to/domain-model-how-to-configure/entities.png" alt="Entities"  />
 
-Now you need to define how these entities are connected to each other and create associations. For more information on associations, see [Associations](/studio/domain-models-association-properties).  
+Now you need to define how these entities are connected to each other and create associations. For more information on associations, see [Associations](/studio/domain-models-association-properties/).  
 
 First, define how entities are connected between each other:
 
@@ -230,8 +230,8 @@ Now that you defined connections between entities, you can start creating these 
 
     1. Hover over the **Product_Image** entity and click the dot icon:
 
-       {{/* % image_container width="500" % */}}![Product Image and Product Association](/attachments/studio-how-to/domain-model-how-to-configure/product-image-product-association.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+       {{/* % image_container width="500" % */}}![Product Image and Product Association](/attachments/studio-how-to/domain-model-how-to-configure/product-image-product-association.png){{/* % /image_container % */}}
+
     2. Drag the dot to the **Product** entity.
     
     	{{% alert color="info" %}}Another way to create an association between entities is to select an entity and click the arrow icon.
@@ -239,8 +239,8 @@ Now that you defined connections between entities, you can start creating these 
 
     3. Open **Properties** and change the multiplicity (one-to-many is created by default) to one-to-one.
 
-		{{/* % image_container width="300" % */}}![Product_Image and Product Association](/attachments/studio-how-to/domain-model-how-to-configure/product-image-and-product-association.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}}     
+		{{/* % image_container width="300" % */}}![Product_Image and Product Association](/attachments/studio-how-to/domain-model-how-to-configure/product-image-and-product-association.png){{/* % /image_container % */}}
+    
 2. Create an association from **Order_Line** to **Order** following the steps 1a and 1b above. (The one-to-many multiplicity that you need is created by default).
 3. Create an association from **Order** to **Customer** following the steps 1a and 1b above. (The one-to-many multiplicity that you need is created by default).
 
@@ -252,7 +252,7 @@ All associations are created.
 
 {{% alert color="info" %}}
 
-Alternatively, you can create an image or file entity clicking **New attribute** > **Add file or image**, in this case an association is created by default. For more information, see the [Adding New Image or File Entities](/studio/domain-models#adding-image-or-file-entities) section in *Domain Model*.
+Alternatively, you can create an image or file entity clicking **New attribute** > **Add file or image**, in this case an association is created by default. For more information, see the [Adding New Image or File Entities](/studio/domain-models/#adding-image-or-file-entities) section in *Domain Model*.
 
 {{% /alert %}}
 
@@ -260,11 +260,11 @@ Congratulations! You have now configured the domain model for the online shoppin
 
 ![Domain Model online shopping app](/attachments/studio-how-to/domain-model-how-to-configure/domain-model-online-shop.png)
 
-Now you can build [pages](/studio/page-editor) for it or use [Buzz](/studio/collaboration-buzz) to collaborate with developers and designers from your team and build the app experience. 
+Now you can build [pages](/studio/page-editor/) for it or use [Buzz](/studio/collaboration-buzz/) to collaborate with developers and designers from your team and build the app experience. 
 
 ## 8 Read More
 
-* [Domain Model](/studio/domain-models)
-* [Pages](/studio/page-editor)
-* [Microflows](/studio/microflows)
-* [Buzz](/studio/collaboration-buzz)
+* [Domain Model](/studio/domain-models/)
+* [Pages](/studio/page-editor/)
+* [Microflows](/studio/microflows/)
+* [Buzz](/studio/collaboration-buzz/)

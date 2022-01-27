@@ -1,8 +1,8 @@
 ---
 title: "Troubleshooting Atlas UI Changes"
-url: /refguide8/migration-atlas
+url: /refguide8/migration-atlas/
 parent: "moving-from-7-to-8"
-menu_order: 20
+weight: 20
 description: "This document explains how to fix your styling when migrating a project from Mendix 7 to Mendix 8."
 tags: [ "Widgets", "Themes", "Classes", "Atlas", "Atlas UI", "Styling", "SASS", "CSS"]
 ---
@@ -13,7 +13,7 @@ When you upgrade to Mendix 8, your widgets' DOM structure will be changed. This 
 
 Each section in this document could apply to your app, but some sections may *not* apply. If a section does not apply to your case, you may skip it.
 
-{{% alert type="warning" %}}If you have added any content in the **Atlas_UI_Resource module**, you have to move that content out of the module. If you do not, it will be overwritten.{{% /alert %}}
+{{% alert color="warning" %}}If you have added any content in the **Atlas_UI_Resource module**, you have to move that content out of the module. If you do not, it will be overwritten.{{% /alert %}}
 
 When your app is using unmodified Atlas UI resources, upgrading your app to Mendix 8 will automatically update your Atlas UI resources to version 2.1. If you did not make any changes in the custom folder, you are good to go and you can skip the rest of this guide. 
 
@@ -23,7 +23,7 @@ If you are using a modified version of Atlas UI resources, Mendix cannot update 
 
 Follow the steps below to begin upgrading your Atlas UI Resources module:
 
-1. Download the latest [Atlas UI Resources](/appstore/modules/atlas-ui-resources) module (v2.0.0 or higher).
+1. Download the latest [Atlas UI Resources](/appstore/modules/atlas-ui-resources/) module (v2.0.0 or higher).
 2. Import this module into your app and replace the old resource module. This will overwrite the layouts, page templates, and building blocks inside of the resource module. The **theme** folder related to your old resource module will be moved to **theme_old**. You will get a new **theme** folder with the latest changes. From here, you must choose one of the following based on if you have custom styling or not:<br />
 	* If you did not change anything in the old **theme** folder, you can safely remove **theme_old** and leave everything else as is. Your styling will work and you can stop with consulting this document. <br />
 	* If you did change anything in the old **theme** folder, you will have to do some manual work to align your styling. Consult the information below to decide what to do based on your needs.
@@ -32,7 +32,7 @@ Follow the steps below to begin upgrading your Atlas UI Resources module:
 
 When migrating from Mendix 7 to Mendix 8, you must integrate **theme_old** into **theme** while adhering to several guidelines. Which guidelines you must follow vary based on your specific project. Consult the subsections below for instructions based on your unique case.
 
-{{% alert type="info" %}}If you customized any widget where the DOM structure has changed, consult [Troubleshoot DOM Changes when Migrating to Mendix 8](migration-dom-issues) to ensure your custom styling works.{{% /alert %}}
+{{% alert color="info" %}}If you customized any widget where the DOM structure has changed, consult [Troubleshoot DOM Changes when Migrating to Mendix 8](/refguide8/migration-dom-issues/) to ensure your custom styling works.{{% /alert %}}
 
 ### 2.1 Working with HTML Files
 
@@ -68,7 +68,7 @@ Please move your custom design properties to the *settings.json* file of the new
 
 ### 2.2.2 Additional CSS Files
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Changing `cssFiles` is not recommended. Please consider moving custom CSS files to your *theme/styles/web/sass/app/_custom.scss* file.
 {{% /alert %}}
 
@@ -114,7 +114,7 @@ If you have altered your *styles/sass/lib* folder, consult the instructions belo
 
 If you changed any files in the *styles/sass/lib* folder, complete the actions below::
 
-* If you changed a file’s content or name, you must manually make the same changes in the new file and in the new theme folder (while also keeping the Mendix 8 [DOM changes](migration-dom-issues) in mind)
+* If you changed a file’s content or name, you must manually make the same changes in the new file and in the new theme folder (while also keeping the Mendix 8 [DOM changes](/refguide8/migration-dom-issues/) in mind)
 * If you removed a file, no action is required
 
 If you added a file to the *lib/base* folder, copy that file from *theme_old/styles/sass/lib/base/* to *theme/styles/web/sass/core/base/*. You must also complete the following action:
@@ -153,5 +153,5 @@ After troubleshooting your issues with the guidance above, complete the followin
 
 ## 3 Read More
 
-* [Troubleshoot DOM Changes](migration-dom-issues)
-* [Atlas UI](/howto8/front-end/atlas-ui)
+* [Troubleshoot DOM Changes](/refguide8/migration-dom-issues/)
+* [Atlas UI](/howto8/front-end/atlas-ui/)

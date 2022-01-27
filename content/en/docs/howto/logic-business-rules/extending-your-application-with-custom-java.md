@@ -187,14 +187,14 @@ If you get an `UnsupportedClassVersionError` when running your app, follow these
 
 1. Clean your app's **deployment** folder by selecting **App** > **Clean Deployment Directory**.
 
-2. Add the same JDK version to Eclipse as that which you are using in Studio Pro (this is the recommended version correlation). For details on JDK requirements, see the [Mendix Studio Pro](/refguide/system-requirements#sp) section of *System Requirements*.
+2. Add the same JDK version to Eclipse as that which you are using in Studio Pro (this is the recommended version correlation). For details on JDK requirements, see the [Mendix Studio Pro](/refguide/system-requirements/#sp) section of *System Requirements*.
 
 ## 8 Read More
 
-* [Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [Create a Custom Save Button](create-a-custom-save-button)
-* [Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [Set Up Error Handling](set-up-error-handling)
-* [Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Extract & Use Sub-Microflows](extract-and-use-sub-microflows)
+* [Define Access Rules Using XPath](/howto/logic-business-rules/define-access-rules-using-xpath/)
+* [Create a Custom Save Button](/howto/logic-business-rules/create-a-custom-save-button/)
+* [Work with Lists in a Microflow](/howto/logic-business-rules/working-with-lists-in-a-microflow/)
+* [Optimize Retrieve Activities](/howto/logic-business-rules/optimizing-retrieve-activities/)
+* [Set Up Error Handling](/howto/logic-business-rules/set-up-error-handling/)
+* [Optimize Microflow Aggregates](/howto/logic-business-rules/optimizing-microflow-aggregates/)
+* [Extract & Use Sub-Microflows](/howto/logic-business-rules/extract-and-use-sub-microflows/)

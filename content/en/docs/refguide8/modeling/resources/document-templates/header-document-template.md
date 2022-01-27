@@ -1,6 +1,6 @@
 ---
 title: "Header (Document Template)"
-url: /refguide8/header-document-template
+url: /refguide8/header-document-template/
 parent: "document-templates"
 tags: ["studio pro"]
 aliases:
@@ -9,15 +9,15 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/header-document-template.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/header-document-template.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 When enabled, the header will be inserted at the top of every page. Other widgets can be put in the header.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide8/modeling/resources/document-templates/header-document-template/918236.png)
 
@@ -25,9 +25,9 @@ A header.
 
 {{% /alert %}}
 
-For details on enabling the header from the properties of the document template itself, see the [Appearance Properties](document-template#appearance-properties) section of *Document Template*.
+For details on enabling the header from the properties of the document template itself, see the [Appearance Properties](/refguide8/document-template/#appearance-properties) section of *Document Template*.
 
-For details on inserting page numbers, see [Static Label](static-label-document-template).
+For details on inserting page numbers, see [Static Label](/refguide8/static-label-document-template/).
 
 ## 2 Appearance
 

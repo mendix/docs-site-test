@@ -2,14 +2,14 @@
 title: "Function API with REST"
 url: /addons/ats-addon/ov-function-api-rest/
 parent: "ov-function-api"
-menu_order: 1
+weight: 1
 ---
 
 ## 1 Introduction
 
 This page describes how to use the Function API directly.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Before you start writing tests, install the [selenium-webdriver](https://www.npmjs.com/package/selenium-webdriver) package.
 {{% /alert %}}
 
@@ -166,7 +166,7 @@ The Function API is not limited to Node.js. It is a generic web REST and JSON AP
 
 ## 8 Read More
 
-* [Function API](rg-two-function-api)
-* [Function API Reference](rg-two-function-api-reference)
-* [Function API with Java](ov-function-api-java)
-* [Function API with Katalon](ov-function-api-katalon)
+* [Function API](/addons/ats-addon/rg-two-function-api/)
+* [Function API Reference](/addons/ats-addon/rg-two-function-api-reference/)
+* [Function API with Java](/addons/ats-addon/ov-function-api-java/)
+* [Function API with Katalon](/addons/ats-addon/ov-function-api-katalon/)

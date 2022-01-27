@@ -1,9 +1,9 @@
 ---
 title: "Build a Pluggable Native Widget"
-url: /howto8/extensibility/build-native-widget
+url: /howto8/extensibility/build-native-widget/
 category: "Extensibility"
 description: "Describes building a native widget, configuring it, and styling it in a Mendix app."
-menu_order: 10
+weight: 10
 tags: ["native","widget","pluggable","react native","extensibility"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -14,7 +14,7 @@ Pluggable widgets, introduced in Mendix 8, enable developers to create new widge
 
 In this how-to, you will learn to create a group box pluggable widget for native mobile applications with React Native.
 
-This how-to will teach you core widget concepts by having you build configure, and style a group box widget. For more information on customizing pluggable widgets, see the [Pluggable Widgets API Documentation](/apidocs-mxsdk/apidocs/pluggable-widgets).
+This how-to will teach you core widget concepts by having you build configure, and style a group box widget. For more information on customizing pluggable widgets, see the [Pluggable Widgets API Documentation](/apidocs-mxsdk/apidocs/pluggable-widgets/).
 
 A group box can be used to visually group related widgets together. Group boxes are displayed as a frame around nested widgets with an optional header. Group boxes can be configured to collapse and expand dynamically, and look like this:
 
@@ -74,7 +74,7 @@ To scaffold your project folder for the group box widget, follow these steps:
 1. Open up a terminal.
 2. Change the current working directory to the folder where you want to store your widget project.
 
-	{{% alert type="info" %}}Make sure to store your widget project in a folder not connected to Dropbox. Dropbox blocks files from being watched, which will prevent you from completing this document. 
+	{{% alert color="info" %}}Make sure to store your widget project in a folder not connected to Dropbox. Dropbox blocks files from being watched, which will prevent you from completing this document. 
 	{{% /alert %}}
 
 3. Start the generator by executing the following command:
@@ -1460,7 +1460,7 @@ The developer needs to have the class names memorized to apply a certain group b
 	
 ## 4 Read More
 
-* [Pluggable Widgets API Documentation](/apidocs-mxsdk/apidocs/pluggable-widgets)
-* [How to Implement Native Mobile Styling](/howto8/mobile/native-styling)
-* [Native Mobile Styling Reference Guide](/refguide8/native-styling-refguide)
-* [How to Build Pluggable Widgets](/howto8/extensibility/pluggable-widgets)
+* [Pluggable Widgets API Documentation](/apidocs-mxsdk/apidocs/pluggable-widgets/)
+* [How to Implement Native Mobile Styling](/howto8/mobile/native-styling/)
+* [Native Mobile Styling Reference Guide](/refguide8/native-styling-refguide/)
+* [How to Build Pluggable Widgets](/howto8/extensibility/pluggable-widgets/)

@@ -39,8 +39,6 @@ to ensure that this logging/monitoring solution is compliant with your organizat
 
 ### 2.1 Prerequisites
 
-{{% alert color="warning" %}}The Grafana Helm chart doesn't yet support Kubernetes version 1.22 and above.{{% /alert %}}
-
 Before installing Grafana, make sure you have [installed Helm](https://grafana.com/docs/loki/latest/installation/helm/) and can access your Kubernetes cluster.
 
 Download the latest version of the Grafana Helm chart using the following commands:
@@ -76,7 +74,7 @@ Run the following commands in a Bash console, (replace `{namespace}` with the na
 
 ```shell
 NAMESPACE={namespace}
-helm upgrade --install loki grafana/loki-stack --version='^2.5.0' --namespace=${NAMESPACE} --set grafana.enabled=true,grafana.persistence.enabled=true,grafana.persistence.size=1Gi,grafana.initChownData.enabled=false,grafana.admin.existingSecret=grafana-admin \
+helm upgrade --install loki grafana/loki-stack --version='^2.5.1' --namespace=${NAMESPACE} --set grafana.enabled=true,grafana.persistence.enabled=true,grafana.persistence.size=1Gi,grafana.initChownData.enabled=false,grafana.admin.existingSecret=grafana-admin \
 --set prometheus.enabled=true,prometheus.server.persistentVolume.enabled=true,prometheus.server.persistentVolume.size=50Gi,prometheus.server.retention=7d \
 --set loki.persistence.enabled=true,loki.persistence.size=10Gi,loki.config.chunk_store_config.max_look_back_period=168h,loki.config.table_manager.retention_deletes_enabled=true,loki.config.table_manager.retention_period=168h \
 --set promtail.enabled=true,promtail.securityContext.privileged=true \
@@ -168,7 +166,7 @@ Run the following commands in a Bash console: replace `{uid}` with the UID chose
 ```shell
 PROJECT={project}
 GRAFANA_UID={uid}
-helm upgrade --install loki grafana/loki-stack --version='^2.5.0' --namespace=${PROJECT} --set grafana.enabled=true,grafana.persistence.enabled=true,grafana.persistence.size=1Gi,grafana.initChownData.enabled=false,grafana.admin.existingSecret=grafana-admin \
+helm upgrade --install loki grafana/loki-stack --version='^2.5.1' --namespace=${PROJECT} --set grafana.enabled=true,grafana.persistence.enabled=true,grafana.persistence.size=1Gi,grafana.initChownData.enabled=false,grafana.admin.existingSecret=grafana-admin \
 --set prometheus.enabled=true,prometheus.server.persistentVolume.enabled=true,prometheus.server.persistentVolume.size=50Gi,prometheus.server.retention=7d \
 --set loki.persistence.enabled=true,loki.persistence.size=10Gi,loki.config.chunk_store_config.max_look_back_period=168h,loki.config.table_manager.retention_deletes_enabled=true,loki.config.table_manager.retention_period=168h \
 --set promtail.enabled=true,promtail.securityContext.privileged=true \
@@ -273,7 +271,7 @@ It is possible to specify annotations for all Mendix app environments in the nam
 
 ### 3.1 Enable Scraping for Entire Namespace
 
-To enable scraping annotations for all environments in a namespace, add the following `runtimeDeploymentPodAnnotations` in the [Mendix App Deployment settings](private-cloud-cluster#advanced-deployment-settings):
+To enable scraping annotations for all environments in a namespace, add the following `runtimeDeploymentPodAnnotations` in the [Mendix App Deployment settings](/developerportal/deploy/private-cloud-cluster/#advanced-deployment-settings):
 
 ```yaml
 apiVersion: privatecloud.mendix.com/v1alpha1
@@ -300,15 +298,15 @@ If you would like to enable Prometheus scraping only for a specific environment,
 
 1. Go to the Cluster Manager page by clicking **Cluster Manager** in the top menu of the **Clouds** page of the Developer Portal.
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-monitor/cluster-manager.png)
+    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/cluster-manager.png)
 
 2. Click **Details** next to the namespace where your environment is deployed.
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-monitor/cluster-details.png)
+    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/cluster-details.png)
     
 3. Click **Configure** next to the environment name where Prometheus scraping should be enabled.
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-monitor/image27.png)
+    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/image27.png)
 
 4. Click **Quick setup** within  **Pod annotations**:
 
@@ -328,7 +326,7 @@ If you would like to enable Prometheus scraping only for a specific environment,
 
 {{% alert color="warning" %}}Do not use this approach in Connected mode - any annotations you set this way will be overridden by annotations set in the Private Cloud section of the Developer Portal.{{% /alert %}}
 
-Open an environment's `MendixApp` CR [for editing](private-cloud-operator#edit-cr) and add the following pod annotations:
+Open an environment's `MendixApp` CR [for editing](/developerportal/deploy/private-cloud-operator/#edit-cr) and add the following pod annotations:
 
 ```yaml
 apiVersion: privatecloud.mendix.com/v1alpha1
@@ -351,22 +349,22 @@ Save and apply the changes.
 
 ## 4 Setting up a Grafana Dashboard
 
-Mendix for Private Cloud offers a reference dashboard that looks similar to [Mendix Cloud V4 metrics](/developerportal/operate/trends-v4).
+Mendix for Private Cloud offers a reference dashboard that looks similar to [Mendix Cloud V4 metrics](/developerportal/operate/trends-v4/).
 
 In addition, this dashboard will display Mendix app and Runtime logs.
 
 {{% alert color="warning" %}}
-Mendix for Private Cloud uses a `m2ee-metrics` sidecar that collects metrics from the [admin port](/refguide/monitoring-mendix-runtime) and translates them into a format supported by Prometheus.
+Mendix for Private Cloud uses a `m2ee-metrics` sidecar that collects metrics from the [admin port](/refguide/monitoring-mendix-runtime/) and translates them into a format supported by Prometheus.
 This approach works with all Mendix versions, starting from Mendix 7.23.
 
-Mendix 9.6 introduces native [Prometheus metrics](/refguide/metrics).
+Mendix 9.6 introduces native [Prometheus metrics](/refguide/metrics/).
 The Mendix Runtime Prometheus metrics are not yet supported by Mendix for Private Cloud.
 The reference dashboard provided in this document will not be compatible with the native Mendix 9.6 metrics.
 {{% /alert %}}
 
-### 4.1 Import the Dashboard
+### 4.1 Import the Dashboard{#import-dashboard}
 
-To install the reference dashboard, download the [dashboard JSON](https://cdn.mendix.com/mendix-for-private-cloud/grafana-dashboard/mendix_app_dashboard-1.0.0.json) to a local file.
+To install the reference dashboard, download the [dashboard JSON](https://cdn.mendix.com/mendix-for-private-cloud/grafana-dashboard/mendix_app_dashboard_compatibility-1.1.0.json) to a local file.
 
 [Import](https://grafana.com/docs/grafana/latest/dashboards/export-import/#import-dashboard) the downloaded JSON into Grafana:
 
@@ -429,14 +427,14 @@ To set the **Metrics** and **Logs** links:
 
 1. Go to the Cluster Manager page by clicking **Cluster Manager** in the top menu of the **Clouds** page of the Developer Portal.
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-monitor/cluster-manager.png)
+    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/cluster-manager.png)
 
 2. Click **Details** next to the namespace where your environment is deployed.
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-monitor/cluster-details.png)
+    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/cluster-details.png)
 
 3. Open the **Operate** tab, enter dashboard URL for the **Metrics** and **Logs** links, and click **Save** for each one.
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-monitor/image32.png)
+    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/image32.png)
 
 <!-- Be careful - this documentation reuses some screenshots from other pages like private-cloud-cluster.md -->

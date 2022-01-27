@@ -1,16 +1,16 @@
 ---
 title: "Rollback Object"
-url: /refguide8/rollback-object
+url: /refguide8/rollback-object/
 parent: "object-activities"
-menu_order: 70
+weight: 70
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/rollback-object.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/rollback-object.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can be used in both **Microflows** and **Nanoflows**.
 {{% /alert %}}
 
@@ -18,7 +18,7 @@ This activity can be used in both **Microflows** and **Nanoflows**.
 
 The rollback object action can be used to undo changes (that have not been committed) made to the object in the part of the flow preceding the activity. Furthermore, it deletes objects that have been created but never committed.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 When the rollback object action is performed in a sub-microflow, it rolls back the changes in its parent microflow as well as the sub-microflow.
 {{% /alert %}}
 
@@ -53,10 +53,10 @@ This setting defines how changes are reflected in the pages presented to the end
 
 Default: *No*
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 To make pages of a Mendix app efficient, many widgets display values from an attribute of an object which is cached on the page. Attributes in widgets which use cached data are *always* reflected in the client even if they are not committed and irrespective of the value of **Refresh in client**.
 
-If a widget is only updated when a [data source](data-sources) is loaded, then rollbacks will only be seen if they are committed and **Refresh in client** is set to *Yes*.
+If a widget is only updated when a [data source](/refguide8/data-sources/) is loaded, then rollbacks will only be seen if they are committed and **Refresh in client** is set to *Yes*.
 
 When testing your app, ensure that the desired data is being displayed by the widgets you have chosen.
 {{% /alert %}}
@@ -65,17 +65,17 @@ When testing your app, ensure that the desired data is being displayed by the wi
 
 If **Refresh in client** is set to *No*, the rollback is not reflected in the client.
 
-If set to *Yes*, the object is refreshed across the client, which includes reloading the relevant [data sources](data-sources).
+If set to *Yes*, the object is refreshed across the client, which includes reloading the relevant [data sources](/refguide8/data-sources/).
 
 #### 3.2.2 Microflow Is Called in an Offline, Native, or Hybrid App
 
 When inside a microflow that is called from an offline, native, or hybrid app, the **Refresh in client** option is ignored and functions as if it was set to **No**.
 
-For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+For more information, see the [Microflows](/refguide8/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 
 #### 3.2.3 Action Is in a Nanoflow
 
-When inside a [nanoflow](nanoflows), the rollback object action reloads [data sources](data-sources) as if **Refresh in client** was set to *Yes*.
+When inside a [nanoflow](/refguide8/nanoflows/), the rollback object action reloads [data sources](/refguide8/data-sources/) as if **Refresh in client** was set to *Yes*.
 
 ## 4 Common Section{#common}
 

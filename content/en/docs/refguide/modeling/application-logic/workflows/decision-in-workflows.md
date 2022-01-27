@@ -32,7 +32,7 @@ The **Caption** describes what happens in this element. It is displayed in the w
 
 #### 2.2.3 Condition
 
-**Condition** is configured based on an [expression](expressions). The expression should result in a Boolean or an enumeration.
+**Condition** is configured based on an [expression](/refguide/expressions/). The expression should result in a Boolean or an enumeration.
 
 For the expression resulting in a Boolean, two paths are possible: **true** and **false**. For example, you can use the expression resulting in a Boolean to follow different paths whether a new employee is working from home or from the office (and either send their devices to the home address or set up a workstation in the office).
 
@@ -44,4 +44,4 @@ The number of conditions available for the enumeration type depends on the corre
 
 ## 3 Read More
 
-* [Parallel Split](parallel-split)
+* [Parallel Split](/refguide/parallel-split/)

@@ -53,7 +53,7 @@ SELECT "Sales.Order".* FROM "Sales.Order"
 SELECT Name AS CustomerName, LastName AS CustomerLastName, Birthday, Category FROM Sales.Customer
 ```
 
-For more information, see [OQL Expressions](oql-expressions).
+For more information, see [OQL Expressions](/refguide/oql-expressions/).
 
 ### 2.5 column_alias
 

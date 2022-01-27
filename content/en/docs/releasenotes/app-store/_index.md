@@ -11,17 +11,23 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 
 ## 2021
 
+### December 16th, 2021
+
+#### Improvements
+
+* We now support using rich text for your [component description](/appstore/general/share-app-store-content/#general).
+
 ### November 18th, 2021
 
 #### New Features
 
 * We released **Try for Free** for premium app services (like [Email Service](https://marketplace.mendix.com/link/component/118393)). This self-service experience helps to evaluate the capabilities offered and realize the value of premium content.
-* You can now provide key capabilities, a banner, external links, and industry cloud details when sharing new **Solution** and **Solution Template** [component types](/appstore/general/share-app-store-content#adding).
+* You can now provide key capabilities, a banner, external links, and industry cloud details when sharing new **Solution** and **Solution Template** [component types](/appstore/general/share-app-store-content/#adding).
 
 #### Improvements
 
-* You can now add [release notes](/appstore/general/share-app-store-content#version) for your new component version without uploading a new source file.
-* You can now skip uploading a source file on the [Package](/appstore/general/share-app-store-content#version) page for **App Service** and **Solution Template** component types if your component is not downloadable.
+* You can now add [release notes](/appstore/general/share-app-store-content/#version) for your new component version without uploading a new source file.
+* You can now skip uploading a source file on the [Package](/appstore/general/share-app-store-content/#version) page for **App Service** and **Solution Template** component types if your component is not downloadable.
 
 ### September 7th, 2021
 
@@ -29,7 +35,7 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 
 * Marketplace filtering has been revamped. You can now find content faster by filtering by **Industry**, [Content Type](https://docs.mendix.com/appstore/general/app-store-overview#types), and Studio Pro **Compatibility**. 
 * We have made 15+ fully developed solutions and 10+ solution templates available to help you realize value even more quickly.
-* We have listed 10+ **Premium** [app services](https://docs.mendix.com/appstore/app-services/), and we now support a self-service [subscription](/appstore/general/app-store-overview#subscriptions) experience using credit card for two app services in supported regions.
+* We have listed 10+ **Premium** [app services](https://docs.mendix.com/appstore/app-services/), and we now support a self-service [subscription](/appstore/general/app-store-overview/#subscriptions) experience using credit card for two app services in supported regions.
 
 ### August 12th, 2021
 
@@ -41,7 +47,7 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 
 #### New Features
 
-* We have implemented a UX refresh of [My Marketplace](/appstore/general/app-store-overview#my-marketplace) to be in-line with other Marketplace pages.
+* We have implemented a UX refresh of [My Marketplace](/appstore/general/app-store-overview/#my-marketplace) to be in-line with other Marketplace pages.
 
 ### June 3rd, 2021
 
@@ -53,9 +59,9 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 
 #### Improvements
 
-* When [adding new Marketplace content](/appstore/general/share-app-store-content#adding), you can now only set the **Category** in the initial version of your content. You cannot change this setting by updating the content later.
+* When [adding new Marketplace content](/appstore/general/share-app-store-content/#adding), you can now only set the **Category** in the initial version of your content. You cannot change this setting by updating the content later.
 * When you create a new component in the **Solutions** category, you will not be able to upload a source file, as solutions will no longer have downloadable content.
-* We have started supporting rich characters in the message describing what needs to be changed in your content for approval via the steps on the [Publish](/appstore/general/share-app-store-content#publish) page.
+* We have started supporting rich characters in the message describing what needs to be changed in your content for approval via the steps on the [Publish](/appstore/general/share-app-store-content/#publish) page.
 
 #### Fixes
 
@@ -65,9 +71,9 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 
 #### New Features
 
-* We released support for the subscription to an app service (like [MindSphere IIoT for Makers](/partners/siemens/mindsphere-app-service)):
+* We released support for the subscription to an app service (like [MindSphere IIoT for Makers](/partners/siemens/mindsphere-app-service/)):
 	* Automatic provisioning of the app service on subscription.
-	* The [Service Management Dashboard](/appstore/general/app-store-overview#subscriptions), where you can view the service instance to which you have subscribed and generate binding keys for your service instance.
+	* The [Service Management Dashboard](/appstore/general/app-store-overview/#subscriptions), where you can view the service instance to which you have subscribed and generate binding keys for your service instance.
 
 ### May 4th, 2021
 
@@ -80,7 +86,7 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 
 #### Improvements
 
-* We added a section to **Get Studio Pro** for downloading versions that have [long-term support (LTS)](/releasenotes/studio-pro/lts-mts#lts) and [medium-term support (MTS)](/releasenotes/studio-pro/lts-mts#mts).
+* We added a section to **Get Studio Pro** for downloading versions that have [long-term support (LTS)](/releasenotes/studio-pro/lts-mts/#lts) and [medium-term support (MTS)](/releasenotes/studio-pro/lts-mts/#mts).
 	{{% alert color="info" %}}This is based on an [upvoted idea from Alexander Keßler](https://forum.mendixcloud.com/link/ideas/2212) submitted to the [Mendix Idea Forum](https://forum.mendixcloud.com/link/ideas). Thanks, Alexander!
 	{{% /alert %}}
 
@@ -97,14 +103,14 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 
 #### Improvements
 
-* We added email notifications for several actions in the Marketplace. You can now receive emails if one of your components has changed, when a published component has received a review, and when you receive a reply to one of your reviews. You can unsubscribe from any of notifications in the [My Marketplace](/appstore/general/app-store-overview#my-marketplace) section of the of Marketplace.
+* We added email notifications for several actions in the Marketplace. You can now receive emails if one of your components has changed, when a published component has received a review, and when you receive a reply to one of your reviews. You can unsubscribe from any of notifications in the [My Marketplace](/appstore/general/app-store-overview/#my-marketplace) section of the of Marketplace.
 * Developers can now reply to reviews of their components.
 
 ### February 9th, 2021
 
 #### Improvements
 
-* You can now download [Windows Service](/releasenotes/studio-pro/windows-service) and **Server Distribution** for the latest Studio Pro version using the **Related Downloads** button on the **Get Studio pro** page.  
+* You can now download [Windows Service](/releasenotes/studio-pro/windows-service/) and **Server Distribution** for the latest Studio Pro version using the **Related Downloads** button on the **Get Studio pro** page.  
 * Adding beta versions for components is no longer supported. Beta versions of published components and existing drafts have been automatically updated to remove the Beta tag.
 
 ### January 26th, 2021
@@ -115,7 +121,7 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 
 #### Fixes
 
-* We fixed some bugs in the [add new Marketplace content](/appstore/general/share-app-store-content#adding) flow and we made error messages more descriptive.
+* We fixed some bugs in the [add new Marketplace content](/appstore/general/share-app-store-content/#adding) flow and we made error messages more descriptive.
 
 ## 2020
 
@@ -124,47 +130,47 @@ These release notes cover changes made to the [Mendix Marketplace](/appstore/).
 #### Improvements
 
 * The Mendix "App Store" has been renamed to the "Marketplace" as part of the continued investment in new capabilities that is underway. This rename (and URL change) is only for the pages rebuilt so far listed above. Further implementation of this renaming is to follow in future releases.
-* We have implemented a UX Refresh to provide a fresh new look and feel for the [Marketplace home](/appstore/general/app-store-overview#home), [catalog](/appstore/general/app-store-overview), [component details](/appstore/general/app-store-overview#details), and Studio Pro download pages.
+* We have implemented a UX Refresh to provide a fresh new look and feel for the [Marketplace home](/appstore/general/app-store-overview/#home), [catalog](/appstore/general/app-store-overview/), [component details](/appstore/general/app-store-overview/#details), and Studio Pro download pages.
 * We have enabled an enhanced navigation and undertaken some curation of published components to help you discover the components you require more easily.
-* We have enabled a more structured wizard-based flow that makes it a lot easier for you to [share new content](/appstore/general/share-app-store-content) to the Marketplace.
+* We have enabled a more structured wizard-based flow that makes it a lot easier for you to [share new content](/appstore/general/share-app-store-content/) to the Marketplace.
 
 ### May 27th, 2020
 
 #### Fixes
 
-* As of Studio Pro version [8.10.0](/releasenotes/studio-pro/8.10#1400), you are able to download private content in the App Store again. This is not possible for Studio Pro versions 8.7–8.9.
+* As of Studio Pro version [8.10.0](/releasenotes/studio-pro/8.10/#1400), you are able to download private content in the App Store again. This is not possible for Studio Pro versions 8.7–8.9.
 
 ### May 6th, 2020
 
 #### Improvements
 
-* You can now download previous versions of App Store components from the [Mendix Marketplacee](https://marketplace.mendix.com/). This can be done in the **All versions** tab on the component's [details page](/appstore/general/app-store-overview#details). This can be used as a workaround for not being able to download private content from the App Store available in older versions of Studio Pro/Desktop Modeler due to the [security issue](#private-fix) described below.
+* You can now download previous versions of App Store components from the [Mendix Marketplacee](https://marketplace.mendix.com/). This can be done in the **All versions** tab on the component's [details page](/appstore/general/app-store-overview/#details). This can be used as a workaround for not being able to download private content from the App Store available in older versions of Studio Pro/Desktop Modeler due to the [security issue](#private-fix) described below.
 
 #### Fixes
 
-* As of Studio Pro version [8.6.4](/releasenotes/studio-pro/8.6#private-content), you are able to download private content in the App Store again. This is possible for Studio Pro version 8.6.4 and all further 8.6.x versions. It is not possible for Studio Pro versions below 8.6.4.
+* As of Studio Pro version [8.6.4](/releasenotes/studio-pro/8.6/#private-content), you are able to download private content in the App Store again. This is possible for Studio Pro version 8.6.4 and all further 8.6.x versions. It is not possible for Studio Pro versions below 8.6.4.
 
 ### May 4th, 2020
 
 #### Fixes
 
-* As of Desktop Modeler version [7.23.14](/releasenotes/studio-pro/7.23#private), you are able to download private content in the App Store again. This is possible for Desktop Modeler version 7.23.14 and all further 7.23.x versions. It is not possible for Desktop Modeler versions below 7.23.14.
+* As of Desktop Modeler version [7.23.14](/releasenotes/studio-pro/7.23/#private), you are able to download private content in the App Store again. This is possible for Desktop Modeler version 7.23.14 and all further 7.23.x versions. It is not possible for Desktop Modeler versions below 7.23.14.
 
 ### April 7th, 2020
 
 #### Security Fix Needed for App Store in Studio Pro/Desktop Modeler {#private-fix}
 
-Downloading [private content](/appstore/general/share-app-store-content#private-app-store) from the App Store available in Studio Pro/Desktop Modeler has been temporarily disabled due to a security vulnerability.
+Downloading [private content](/appstore/general/share-app-store-content/#private-app-store) from the App Store available in Studio Pro/Desktop Modeler has been temporarily disabled due to a security vulnerability.
 
-You will be able to download private content from the App Store available in Studio Pro/Desktop Modeler again once a fix is released in a future [8.x](/releasenotes/studio-pro/8), [8.6.x](/releasenotes/studio-pro/8.6), and [7.23.x](/releasenotes/studio-pro/7.23) release. This functionality will then only be available in those specific versions with the fix and subsequent versions. This functionality will not be available again for the App Store in Desktop Modeler version 6.
+You will be able to download private content from the App Store available in Studio Pro/Desktop Modeler again once a fix is released in a future [8.x](/releasenotes/studio-pro/8/), [8.6.x](/releasenotes/studio-pro/8.6/), and [7.23.x](/releasenotes/studio-pro/7.23/) release. This functionality will then only be available in those specific versions with the fix and subsequent versions. This functionality will not be available again for the App Store in Desktop Modeler version 6.
 
-You can continue downloading the latest version of private App Store content from the [Company Content](/appstore/general/app-store-overview#company-content) page in the [Mendix Marketplace](https://marketplace.mendix.com/) and use it in the respective versions of Studio Pro/Desktop Modeler.
+You can continue downloading the latest version of private App Store content from the [Company Content](/appstore/general/app-store-overview/#company-content) page in the [Mendix Marketplace](https://marketplace.mendix.com/) and use it in the respective versions of Studio Pro/Desktop Modeler.
 
 ### February 26th, 2020
 
 #### Improvements
 
-* We have updated the single sign-on functionality in the App Store to use the latest [Mendix SSO](/developerportal/deploy/mendix-sso). Now, the first time you visit any App Store page requiring authentication, you will see a screen asking you to authorize access to your Mendix account. Click **Authorize** to continue.
+* We have updated the single sign-on functionality in the App Store to use the latest [Mendix SSO](/developerportal/deploy/mendix-sso/). Now, the first time you visit any App Store page requiring authentication, you will see a screen asking you to authorize access to your Mendix account. Click **Authorize** to continue.
 
 ## 2019
 
@@ -174,35 +180,35 @@ You can continue downloading the latest version of private App Store content fro
 
 We are invested in maintaining Mendix Marketplace content to make it easier for you to find and use the widgets and modules that you need. To that end, we have cleaned up old App Store content where Mendix support is no longer possible and changed the support level from **Platform support** to **Community support**.
 
-For more information on these support levels, see [App Store Content Support](/appstore/general/app-store-content-support).
+For more information on these support levels, see [App Store Content Support](/appstore/general/app-store-content-support/).
 
 ### November 6th, 2019
 
 #### Improvements
 
-* You can now subscribe to receive emails when new versions of your [favorite](/appstore/general/app-store-overview#saved) App Store content are published.
+* You can now subscribe to receive emails when new versions of your [favorite](/appstore/general/app-store-overview/#saved) App Store content are published.
 
 ### October 23rd, 2019
 
 #### New Features
 
-You can now create [user groups](/appstore/general/app-store-overview#user-groups) for your company and assign your company’s App Store content to different groups. Management of user group content is restricted to only the members of the group. You can also add [guest](/appstore/general/app-store-overview#guests) users to these groups and allow them to download selected private company content.
+You can now create [user groups](/appstore/general/app-store-overview/#user-groups) for your company and assign your company’s App Store content to different groups. Management of user group content is restricted to only the members of the group. You can also add [guest](/appstore/general/app-store-overview/#guests) users to these groups and allow them to download selected private company content.
 
-The former App Store **Content Managers** and **External Downloaders** groups have been removed. Members of these groups have been migrated to a new temporary user group called **Migrated Data**. Former “content managers” have been added as user group [members] (/appstore/general/app-store-overview#members), and former “external downloaders” have been added as [guests](/appstore/general/app-store-overview#guests).
+The former App Store **Content Managers** and **External Downloaders** groups have been removed. Members of these groups have been migrated to a new temporary user group called **Migrated Data**. Former “content managers” have been added as user group [members] (/appstore/general/app-store-overview#members), and former “external downloaders” have been added as [guests](/appstore/general/app-store-overview/#guests).
 
-Content that was marked as **Protected** as well as content marked as **Shared with Others** has been migrated to the [Content](/appstore/general/app-store-overview#group-content) tab of the Migrated Data user group. This makes all “externally shared” content protected for that user group.
+Content that was marked as **Protected** as well as content marked as **Shared with Others** has been migrated to the [Content](/appstore/general/app-store-overview/#group-content) tab of the Migrated Data user group. This makes all “externally shared” content protected for that user group.
 
 ### October 1st, 2019
 
 #### Improvements
 
-* We now display the UUID of a App Store component in the [Usage](/appstore/general/app-store-overview#usage) section of its details page. This allows you to specify the `TemplateUUID` when calling the [CreateNewApp operation](/apidocs-mxsdk/apidocs/projects-api#createnewapp) in the *Projects API*.
+* We now display the UUID of a App Store component in the [Usage](/appstore/general/app-store-overview/#usage) section of its details page. This allows you to specify the `TemplateUUID` when calling the [CreateNewApp operation](/apidocs-mxsdk/apidocs/projects-api/#createnewapp) in the *Projects API*.
 
 ### September 11th, 2019
 
 #### Improvement
 
-We added the flexibility to label your App Store content with a [custom version number](/appstore/general/share-app-store-content#updating).
+We added the flexibility to label your App Store content with a [custom version number](/appstore/general/share-app-store-content/#updating).
 
 {{% alert color="info" %}}This is based on an [upvoted idea from Andreas Blaesius](https://forum.mendixcloud.com/link/ideas/1324) submitted to the [Mendix Idea Forum](https://forum.mendixcloud.com/index4.html). Thanks, Andreas!{{% /alert %}}
 
@@ -250,7 +256,7 @@ We renamed all the SAP-related connectors and app templates in the App Store to 
 
 #### SAP Logging Improvement
 
-We added a component in the App Store which, when configured in your app, allows you to use the logging format supported by SAP Kibana. For more information, see [SAP Logging Connector](/partners/sap/sap-logger).
+We added a component in the App Store which, when configured in your app, allows you to use the logging format supported by SAP Kibana. For more information, see [SAP Logging Connector](/partners/sap/sap-logger/).
 
 ### June 6th, 2019
 
@@ -282,7 +288,7 @@ We added a component in the App Store which, when configured in your app, allows
 * We released an upgraded version of the [IBM Watson Connector Suite](https://marketplace.mendix.com/link/component/2860/), which supports IBM Watson SDK version 6.11.0 and adds additional microflow actions.
 * We released an upgraded version of the [IBM Watson Connector Suite Example Project](https://marketplace.mendix.com/link/component/2880/), which includes the new IBM Watson Connector Suite.
 * We released an upgraded version of the IBM Watson Blank App app template, which includes the new IBM Watson Connector Suite.
-* For more information see [IBM Watson Connector](/appstore/connectors/ibm-watson-connector).
+* For more information see [IBM Watson Connector](/appstore/connectors/ibm-watson-connector/).
 
 ### January 21st, 2019
 
@@ -302,7 +308,7 @@ We have noticed that when searching in the App Store (via the **Search Mendix** 
 
 #### SAP OData Connector Version 4.0.0
 
-This version of the [SAP OData Connector](https://marketplace.mendix.com/link/component/74525/) allows you to use the destination services of SAP Cloud Platform. This simplifies configuration, authentication and endpoint management when integrating your application, running in SAP Cloud Platform, with SAP back end services. See [SAP Destination Service](/partners/sap/sap-destination-service).
+This version of the [SAP OData Connector](https://marketplace.mendix.com/link/component/74525/) allows you to use the destination services of SAP Cloud Platform. This simplifies configuration, authentication and endpoint management when integrating your application, running in SAP Cloud Platform, with SAP back end services. See [SAP Destination Service](/partners/sap/sap-destination-service/).
 
 The following authentication types are currently supported in SAP Destination Services:
 
@@ -322,7 +328,7 @@ The existing SAP Blank app template has been replaced by a new Fiori Blank app t
 
 #### Breaking Change
 
-The new **SAP OData Connector** will break existing projects which are using the SAP Cloud Connector. The SAP OData Connector no longer supports the “Use Cloud Connector” attribute. This is now embedded in the destination service configuration. See [SAP Destination Service](/partners/sap/sap-destination-service) for more details.
+The new **SAP OData Connector** will break existing projects which are using the SAP Cloud Connector. The SAP OData Connector no longer supports the “Use Cloud Connector” attribute. This is now embedded in the destination service configuration. See [SAP Destination Service](/partners/sap/sap-destination-service/) for more details.
 
 ## 2017
 

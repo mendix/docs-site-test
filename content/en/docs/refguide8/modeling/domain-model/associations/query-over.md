@@ -1,13 +1,13 @@
 ---
 title: "Querying Over Self-References"
-url: /refguide8/query-over
+url: /refguide8/query-over/
 parent: "associations"
-menu_order: 20
+weight: 20
 tags: ["query", "self-reference", "association", "domain model"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/query-over.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/query-over.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -22,7 +22,7 @@ This example is for an implementation of folders on a computer, where one folder
 
 To implement this, a self-reference to **Folder** is used. The self-reference is an association called **Folder_SubFolder**. This allows you to build a folder structure with unlimited numbers and levels of folders.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The association in this case is a one-to-many association, but the same techniques apply to many-to-many or one-to-one associations.
 {{% /alert %}}
 
@@ -44,7 +44,7 @@ There are six folders in the example above, and the database is structured and t
 
 ![](/attachments/refguide8/modeling/domain-model/associations/query-over/query-over-example-database.png)
 
-For more information on how domain models are implemented in databases, see the [Implementation](domain-model#implementation) section of *Domain Model*.
+For more information on how domain models are implemented in databases, see the [Implementation](/refguide8/domain-model/#implementation) section of *Domain Model*.
 
 ### 2.1 Retrieving the SubFolder(s) (Children) from a Folder (Parent)
 
@@ -66,7 +66,7 @@ When you have the $ChosenFolder object available and you want to retrieve its Pa
 
 Use the expression `[reversed ()]` to instruct Mendix to read the constraint in the reverse direction to that which it would normally use.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 `[reversed()]` only applies to one association. If you have multiple associations they will continue to be interpreted the normal way. See [Creating More Complex Queries](#more-complex), below.
 
 The `[reversed()]` expression can only be applied on self-references. When an association is between two different object types, the platform will be able to determine the direction of the join automatically.
@@ -100,7 +100,7 @@ If the $ChosenFolder object is `SubFolder2`, you will retrieve all the **File** 
 
 ## 3 Associations to Specializations
 
-In the special case of self-reference when a one-to-many association is with a specialization of itself, you cannot retrieve [by association](retrieve#source).
+In the special case of self-reference when a one-to-many association is with a specialization of itself, you cannot retrieve [by association](/refguide8/retrieve/#source).
 
 Here is an example inheritance:
 
@@ -136,7 +136,7 @@ public class RetrieveAsAssociatedWithB extends CustomJavaAction<java.util.List<I
 }
 ```
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Be sure to import `com.mendix.core.Core` so you are able to execute `Core.retrieveByPath(..)` in this code snippet.
 {{% /alert %}}
 

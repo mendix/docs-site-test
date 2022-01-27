@@ -1,6 +1,6 @@
 ---
 title: "Version Control"
-url: /refguide8/version-control
+url: /refguide8/version-control/
 description: "This document gives definitions and explains the version control  process"
 tags: ["Version Control", "Application Lifecycle Management", "Commit", "Collaborate"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -20,7 +20,7 @@ Version control in Mendix is built on top of [Apache Subversion](https://subvers
 
 ### 2.1 Team Server {#team-server}
 
-[Team Server](/developerportal/collaborate/team-server) is where all the committed versions of Mendix apps are stored. If you commit a revision of an app, it is stored on the Team Server.
+[Team Server](/developerportal/collaborate/team-server/) is where all the committed versions of Mendix apps are stored. If you commit a revision of an app, it is stored on the Team Server.
 
 To commit to the Team Server you will need to have a role in the project which allows you to edit the app.
 
@@ -139,7 +139,7 @@ The developer using Studio Pro wants to include the changes made by the develope
 
 All the changes from the Studio working copy are put into a new revision on the Team Server (state 4). This revision is merged into the Studio Pro working copy. While the Studio Pro working copy is being updated, Studio is locked temporarily so that the Studio working copy is stable while it is copied.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This will also pick up changes from other developers using Studio Pro, if they have committed changes to this branch.
 {{% /alert %}}
 
@@ -206,6 +206,6 @@ Note that errors can be introduced by the [merge](#merge) process even if no con
 
 ## 5 Main Documents in This Category
 
-* [Using Version Control in Studio Pro](using-version-control-in-studio-pro) – presents technical details for using version control (theoretical concerns are described above)
-* [Collaborative Development](collaborative-development) – describes the process of sharing app model changes when a team of more than one person is working on the app
-* [Team Server](/developerportal/collaborate/team-server) – presents an overview of viewing Team Server information in the Developer Portal (for example, revision summary and details)
+* [Using Version Control in Studio Pro](/refguide8/using-version-control-in-studio-pro/) – presents technical details for using version control (theoretical concerns are described above)
+* [Collaborative Development](/refguide8/collaborative-development/) – describes the process of sharing app model changes when a team of more than one person is working on the app
+* [Team Server](/developerportal/collaborate/team-server/) – presents an overview of viewing Team Server information in the Developer Portal (for example, revision summary and details)

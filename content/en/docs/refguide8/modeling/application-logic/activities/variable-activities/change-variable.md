@@ -1,16 +1,16 @@
 ---
 title: "Change Variable"
-url: /refguide8/change-variable
+url: /refguide8/change-variable/
 parent: "variable-activities"
 tags: ["studio pro", "change variable", "variable", "variable activities"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/change-variable.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/change-variable.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can be used in both **Microflows** and **Nanoflows**.
 {{% /alert %}}
 
@@ -39,7 +39,7 @@ The variable which you want to change the value of.
 
 ### 3.2 Value
 
-The new value for the variable. The value is entered using an [expression](expressions). The type of the expression must be the same as the type of the selected variable.
+The new value for the variable. The value is entered using an [expression](/refguide8/expressions/). The type of the expression must be the same as the type of the selected variable.
 
 ## 4 Common Section {#common}
 
@@ -47,4 +47,4 @@ The new value for the variable. The value is entered using an [expression](expre
 
 ## 5 Read More
 
-* [Activities](activities)
+* [Activities](/refguide8/activities/)

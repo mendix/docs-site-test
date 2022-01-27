@@ -1,8 +1,8 @@
 ---
 title: "Data Hub in Studio"
-url: /studio8/data-hub-in-studio
+url: /studio8/data-hub-in-studio/
 category: "Working with Data"
-menu_order: 30
+weight: 30
 description: "Describes the Data Hub Catalog usage in Mendix Studio."
 tags: ["studio", "data hub", "data hub catalog", "external entities"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -20,7 +20,7 @@ For example, you have an *Employee Onboarding app* containing information on wha
 
 For more information on how to use data in your app, see the [Selecting External Entities on Pages](#select-external-entities) section.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 You can access Data Hub if your organization has a Data Hub license. 
 {{% /alert %}}
 
@@ -36,19 +36,19 @@ You can select external entities as a data source for data containers (a data vi
     1. **Search for a specific service or entity name** – enter a search term in the search field to find an entity you would like to add:
 
         {{/* % image_container width="400" % */}}![Searching for an Entity](/attachments/studio8/work-with-data/data-hub-in-studio/searching-for-entity.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}        
+        
     2. **Browse through available data** – click the **Data Hub** section and browse through available services and entities:
     
         {{/* % image_container width="400" % */}}![Selecting an Entity](/attachments/studio8/work-with-data/data-hub-in-studio/selecting-entity.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 3. Click **Select**.
 
 The selected external entity will be added to your domain model automatically together with all integration and security settings. 
 ![Domain Model](/attachments/studio8/work-with-data/data-hub-in-studio/domain-model-example.png)
 
-When you [publish your app](publishing-app), you can see that the data from the external entity is shown in your app. 
+When you [publish your app](/studio8/publishing-app/), you can see that the data from the external entity is shown in your app. 
 
-When you [preview your app](publishing-app), you will see data from the external entities, except for external entities from services that require authentication credentials. In this case you have to publish your app to see the data. 
+When you [preview your app](/studio8/publishing-app/), you will see data from the external entities, except for external entities from services that require authentication credentials. In this case you have to publish your app to see the data. 
 
 ### 2.1 The Data Hub Tab
 
@@ -60,7 +60,7 @@ In the **Data Hub** tab, you can do the following:
 
 * **Search** – when you enter a search term, you will get a list of services and entities available for your organization, as well as entities and services that are already used in your app.
 
-    {{% alert type="info" %}} In Studio, you can discover services that are published to a **Production** environment. {{% /alert %}}
+    {{% alert color="info" %}} In Studio, you can discover services that are published to a **Production** environment. {{% /alert %}}
 
 * **Filter out Studio incompatible services** – some services require authentication that is not compatible with Studio, you can use them only in Studio Pro. You can view all services, or filter out only compatible ones. Choose one of the following options in the drop-down menu:
 
@@ -72,7 +72,7 @@ In the **Data Hub** tab, you can do the following:
 * **Update services** – when a new version of the service is available, you can update it. However, it is best to check out the changes made to the service in the Data Hub Catalog first. 
 
     {{/* % image_container width="500" % */}}![Update Available](/attachments/studio8/work-with-data/data-hub-in-studio/service-update.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
     Click the drop-down menu to choose the following options:
 
     * **Update Now** – allows you to update the service to a new version.
@@ -97,7 +97,7 @@ In the **Data Hub** tab, you can do the following:
     * **View in Data Hub Catalog** – a link to the Data Hub Catalog of your organization.
     
         {{/* % image_container width="300" % */}}![Service Information](/attachments/studio8/work-with-data/data-hub-in-studio/service-information.jpg){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 
 ## 3 External Entity Properties
 
@@ -118,8 +118,8 @@ You can rename external entity attributes to better fit your app structure. It w
 External attributes may have limitations that you can see in their properties. Limitation are added by the external service owner to indicate the features that are not supported. For example, if there are limitations on an attribute, you will not be able to use it in filters and/or sort on it on pages and in microflows.
 
 {{/* % image_container width="250" % */}}![Attribute with Limitations](/attachments/studio8/work-with-data/data-hub-in-studio/attribute-with-limitations.jpg){{/* % /image_container % */}}
-{{/* % /image_container % */}}
-{{% alert type="info" %}}
+
+{{% alert color="info" %}}
 
 You cannot delete attributes of external entities.
 

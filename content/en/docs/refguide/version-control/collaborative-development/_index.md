@@ -9,7 +9,7 @@ tags: ["studio pro", "studio", "collaborative development", "sync"]
 
 ## 1 Introduction 
 
-Collaborative development is the process of sharing app model changes when a team of more than one person is working on the app. Collaborative development allows the team members to work together on one app in Mendix Studio Pro and Mendix Studio, and easily synchronize changes using [version control](version-control). Studio Pro can be used to work on different branches of an app, while Studio can be enabled for one of these branches. 
+Collaborative development is the process of sharing app model changes when a team of more than one person is working on the app. Collaborative development allows the team members to work together on one app in Mendix Studio Pro and Mendix Studio, and easily synchronize changes using [version control](/refguide/version-control/). Studio Pro can be used to work on different branches of an app, while Studio can be enabled for one of these branches. 
 
 {{% alert color="info" %}}
 If you get a **Mendix Studio is not enabled for this app yet** message when opening your app in Studio, make sure you enable a development line for it. For more information, see [Enabling Studio for a Development Line](#active-branch).
@@ -17,7 +17,7 @@ If you get a **Mendix Studio is not enabled for this app yet** message when open
 
 ## 2 Collaborative Development Overview
 
-Studio Pro users can collaborate with each other through [version control](version-control) via **Commit** and **Update** operations. 
+Studio Pro users can collaborate with each other through [version control](/refguide/version-control/) via **Commit** and **Update** operations. 
 
 The collaborative development process between Studio Pro and Studio consists of the following steps:
 
@@ -41,7 +41,7 @@ When the Studio Pro user wants to deploy the app to the cloud, they click the **
 
 ## 3 Studio Perspective
 
-For information on collaborative development from the Studio perspective, see [Collaborative Development in Studio](/studio/collaborative-development). 
+For information on collaborative development from the Studio perspective, see [Collaborative Development in Studio](/studio/collaborative-development/). 
 
 ## 4 Studio Pro Perspective
 
@@ -67,7 +67,7 @@ We recommend you update your app and commit changes often to avoid multiple conf
 
 If your app has conflicts, Studio will be unlocked without receiving your changes. You need to resolve the conflicts in Studio Pro first to be able to complete the merge and commit again. 
 
-Your changes will be sent to Studio automatically if there are no conflicts. For more information on the collaborative development process in Studio, see [Collaborative Development in Studio](/studio/collaborative-development).
+Your changes will be sent to Studio automatically if there are no conflicts. For more information on the collaborative development process in Studio, see [Collaborative Development in Studio](/studio/collaborative-development/).
 
 ### 4.3 Viewing History of Commits
 
@@ -134,10 +134,10 @@ To create a new branch line, do the following:
 2.  In the **Branch Line Manager** dialog box, you see the list of existing development lines. Click **New** to create a branch line. <br/>
 
 	![Creating New Branch](/attachments/refguide/version-control/collaborative-development/creating-new-branch.png)<br/>
-<br/>
+
 3.  In the **Create Branch Line** dialog box, set the following: 
 
-    1. What line you are creating a new line from: the main line, a branch line, or a tagged version. For more information on these concepts, see the [Concepts](version-control#concepts) section in *Version Control*. 
+    1. What line you are creating a new line from: the main line, a branch line, or a tagged version. For more information on these concepts, see the [Concepts](/refguide/version-control/#concepts) section in *Version Control*. 
     2. Select the **Revision**, if needed. 
     3. Type the name of the new line.
 		
@@ -164,6 +164,6 @@ You cannot delete a Studio enabled branch. If you need to delete this branch, en
 
 ## 7 Read More
 
-* [Version Control](version-control)
-* [Troubleshooting Collaborative Development](collaborative-development-troubleshooting)
-* [Collaborative Development in Studio](/studio/collaborative-development)
+* [Version Control](/refguide/version-control/)
+* [Troubleshooting Collaborative Development](/refguide/collaborative-development-troubleshooting/)
+* [Collaborative Development in Studio](/studio/collaborative-development/)

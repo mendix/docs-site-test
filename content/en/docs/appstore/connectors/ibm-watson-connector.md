@@ -70,7 +70,7 @@ Not all Watson services are currently supported by the IBM Watson Connector Suit
 
 These connectors are based on version 6.11.0 of the [Watson SDK](https://github.com/watson-developer-cloud/java-sdk).
 
-If there is no connector for the service you want, you can use Mendix native REST to use the service yourself. See [How to Consume a REST Service](/howto/integration/consume-a-rest-service).
+If there is no connector for the service you want, you can use Mendix native REST to use the service yourself. See [How to Consume a REST Service](/howto/integration/consume-a-rest-service/).
 {{% /alert %}}
 
 ## 2 Connector Actions: Assistant{#WatsonAssistant}
@@ -658,7 +658,7 @@ The microflow does the following:
 * Calls CFCommons.getEnvVariables to get an environment variable **VCAP_SERVICES**
 * If the variable does not exist, the microflow ends and returns **false**
 * If the VCAP_SERVICE environment variable does exist it will contain the credentials, in JSON format, of all the services which have been allocated to your project on IBM Cloud
-* The action **Import with mapping** is used, together with the mapping **USE_ME > JsonMapping > VCAP_Import_Mapping** to populate an object of type **Config** (see [Import Mapping Action](/refguide/import-mapping-action) for more information)
+* The action **Import with mapping** is used, together with the mapping **USE_ME > JsonMapping > VCAP_Import_Mapping** to populate an object of type **Config** (see [Import Mapping Action](/refguide/import-mapping-action/) for more information)
 
     ![Domain model for Watson VCAP Management](/attachments/appstore/connectors/ibm-watson-connector/vcap.png)
 
@@ -701,7 +701,7 @@ The enumeration **WatsonServiceConfigType** contains a *Name* which reflects the
 
 The IBM Watson Connector Suite does not yet have actions for all the APIs of the services which it does support. For example the APIs which allow you to build a conversation without using the IBM Watson Conversation Workspaces Tool.
 
-In addition, the following IBM AI services are not yet supported at all by the IBM Watson Connector Suite. However, you can connect to them yourself using the native Mendix activities for consuming REST services. See [How to Consume a REST Service](/howto/integration/consume-a-rest-service).
+In addition, the following IBM AI services are not yet supported at all by the IBM Watson Connector Suite. However, you can connect to them yourself using the native Mendix activities for consuming REST services. See [How to Consume a REST Service](/howto/integration/consume-a-rest-service/).
 
 1. AI OpenScale
 2. Compare Comply
@@ -718,7 +718,7 @@ In addition, the following IBM AI services are not yet supported at all by the I
 ## 11 Read More
 
 * [Getting started with Watson and IBM Cloud](https://cloud.ibm.com/docs/services/watson/index.html)
-* [How to Consume a REST Service](/howto/integration/consume-a-rest-service)
+* [How to Consume a REST Service](/howto/integration/consume-a-rest-service/)
 * [IBM Cloud](https://www.ibm.com/cloud/)
 * [IBM Watson Connector Suite](https://marketplace.mendix.com/link/component/2860/)
 * [IBM Watson website](https://www.ibm.com/watson/products-services/)

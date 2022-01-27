@@ -1,8 +1,8 @@
 ---
 title: "Find Object Activities"
-url: /howto7/logic-business-rules/finding-object-activities
+url: /howto7/logic-business-rules/finding-object-activities/
 category: "Logic & Business Rules"
-menu_order: 14
+weight: 14
 tags: ["object", "microflow", "desktop modeller"]
 ---
 

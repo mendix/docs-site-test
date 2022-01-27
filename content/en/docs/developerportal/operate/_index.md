@@ -23,17 +23,17 @@ The four operations pages which allow you to monitor your operations are describ
 
 On this page you can monitor the performance and health of your app in all environments where it is deployed.
 
-For details of the information available for licensed apps running in the Mendix cloud, see [Metrics](metrics).
+For details of the information available for licensed apps running in the Mendix cloud, see [Metrics](/developerportal/operate/metrics/).
 
 If your app is deployed to SAP Business Technology Platform (SAP BTP) or IBM Cloud, this page will give you the option to go to the platform where your app is deployed. Here you will be able to find similar information about the performance and health of your app.
 
-You can also use a third-party service, such as Datadog, to assist you in monitoring your app. For more information, see [Datadog for v4 Mendix Cloud](datadog-metrics).
+You can also use a third-party service, such as Datadog, to assist you in monitoring your app. For more information, see [Datadog for v4 Mendix Cloud](/developerportal/operate/datadog-metrics/).
 
 ### 2.2 Alerts
 
 On this page you can see the health of your app in all environments where it is deployed. You can also manage which environments will send you alerts.
 
-For details of the information available for licensed apps running in the Mendix cloud, see [Alerts](monitoring-application-health).
+For details of the information available for licensed apps running in the Mendix cloud, see [Alerts](/developerportal/operate/monitoring-application-health/).
 
 If your app is deployed to SAP BTP or IBM Cloud, this page will give you the option to go to the platform where your app is deployed. Here you will be able to find similar information about the health of your app.
 
@@ -41,7 +41,7 @@ If your app is deployed to SAP BTP or IBM Cloud, this page will give you the opt
 
 On this page you can see and manage your app logs in all environments where the app is deployed.
 
-For details of the logs for licensed apps running in the Mendix Cloud, see [Logs](logs).
+For details of the logs for licensed apps running in the Mendix Cloud, see [Logs](/developerportal/operate/logs/).
 
 If your app is deployed to SAP BTP or IBM Cloud, this page will give you the option to go to the platform where your app is deployed. Here you will be able to find your app's logs.
 
@@ -49,13 +49,13 @@ If your app is deployed to SAP BTP or IBM Cloud, this page will give you the opt
 
 On this page you can see and manage your backups in all environments where your app is deployed.
 
-For details of managing your backups in the Mendix Cloud, see [Backups](backups).
+For details of managing your backups in the Mendix Cloud, see [Backups](/developerportal/operate/backups/).
 
 If your app is deployed to SAP BTP or IBM Cloud, this page will give you the option to go to the platform where your app is deployed. Here you will be able to manage your app's backups.
 
 ## 3 Main Documents in This Category
 
-* [Metrics](metrics)
-* [Alerts](monitoring-application-health)
-* [Logs](logs)
-* [Backups](backups)
+* [Metrics](/developerportal/operate/metrics/)
+* [Alerts](/developerportal/operate/monitoring-application-health/)
+* [Logs](/developerportal/operate/logs/)
+* [Backups](/developerportal/operate/backups/)

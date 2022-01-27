@@ -1,8 +1,8 @@
 ---
 title: "Configure Your Theme"
-url: /howto8/front-end/configuring-your-theme
+url: /howto8/front-end/configuring-your-theme/
 category: "Front End"
-menu_order: 15
+weight: 15
 tags: ["theming", "UX", "front end"]
 aliases:
     - /howto8/ux/configuring-your-theme.html

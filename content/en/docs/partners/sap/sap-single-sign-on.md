@@ -110,4 +110,4 @@ You cannot solve this problem by changing your email address on Mendix. This **d
 
 ## 5 Read More
 
-* [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform)
+* [SAP Business Technology Platform](/developerportal/deploy/sap-cloud-platform/)

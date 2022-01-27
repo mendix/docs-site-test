@@ -1,6 +1,6 @@
 ---
 title: "Create Deployment Package Dialog"
-url: /refguide7/create-deployment-package-dialog
+url: /refguide7/create-deployment-package-dialog/
 parent: "dialogs"
 ---
 

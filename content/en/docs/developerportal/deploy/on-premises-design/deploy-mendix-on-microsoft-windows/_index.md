@@ -49,7 +49,7 @@ Before starting this how-to, make sure you have the following prerequisites:
 
 * MS IIS URL Rewrite installed (for more information, see [URL Rewrite](https://www.iis.net/downloads/microsoft/url-rewrite))
 
-* Java Runtime, version depending on your Mendix Server Distribution. See [System Requirements](/refguide/system-requirements#java) for more information. 
+* Java Runtime, version depending on your Mendix Server Distribution. See [System Requirements](/refguide/system-requirements/#java) for more information. 
 
 * The Mendix Deployment Archive (MDA) of your Mendix project
 
@@ -57,7 +57,7 @@ Before starting this how-to, make sure you have the following prerequisites:
 
 * A database with sufficient security rights
 
-    * Suitable database servers are IBM DB2, MariaDB, MS SQL Server, MySQL, Oracle Database and PostgreSQL. See [System Requirements](/refguide/system-requirements#databases) for more information
+    * Suitable database servers are IBM DB2, MariaDB, MS SQL Server, MySQL, Oracle Database and PostgreSQL. See [System Requirements](/refguide/system-requirements/#databases) for more information
 
 * A local or domain user with the *“log on as a service”* local security policy set
 
@@ -127,7 +127,7 @@ To deploy a Mendix app using the Mendix Service Console, follow these steps:
 
     ![](/attachments/developerportal/deploy/on-premises-design/deploy-mendix-on-microsoft-windows/18580727.png)
 
-6. Now select the **MDA** file that was [created in Studio Pro](/refguide/create-deployment-package-dialog) and contains your application logic. After the installation of your MDA file, you will see which Mendix server (Mendix Runtime) version is needed.
+6. Now select the **MDA** file that was [created in Studio Pro](/refguide/create-deployment-package-dialog/) and contains your application logic. After the installation of your MDA file, you will see which Mendix server (Mendix Runtime) version is needed.
 
 7. Configure the **Database Settings**:
 
@@ -500,9 +500,9 @@ To make sure the correct application root URL is used within your web services, 
 
 ## 7 Troubleshooting
 
-When configuring IIS it can seem like you have done everything right but it just doesn't seem to work. A guide to troubleshooting IIS is available here: [Troubleshooting IIS](troubleshooting-iis).
+When configuring IIS it can seem like you have done everything right but it just doesn't seem to work. A guide to troubleshooting IIS is available here: [Troubleshooting IIS](/developerportal/deploy/troubleshooting-iis/).
 
 
 ## 8 Read More
 
-* [On-Premises](on-premises-design)
+* [On-Premises](/developerportal/deploy/on-premises-design/)

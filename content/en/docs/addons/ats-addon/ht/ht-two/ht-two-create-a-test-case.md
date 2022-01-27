@@ -22,8 +22,8 @@ This how-to uses the Mendix Company Expenses app as an example, and you will cre
 
 Before starting with this how-to, make sure you have completed the following prerequisites:
 
-*  Read [How to Get Started](ht-two-getting-started)
-*  Read [How to Install the ATS Helper and ATS Recorder](ht-two-install-ats-helper-recorder)
+*  Read [How to Get Started](/addons/ats-addon/ht-two-getting-started/)
+*  Read [How to Install the ATS Helper and ATS Recorder](/addons/ats-addon/ht-two-install-ats-helper-recorder/)
 
 ## 3 Creating a Test Case {#creating-a-test-case}
 
@@ -56,11 +56,11 @@ The following steps describe how to add test steps manually to your test case. Y
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/test-case-page-add.png)
 
-    The first step is opening the Company Expenses app, which you do by entering a URL in the browser. ATS does the same by using the [Open Application](rg-one-open-application) action.
+    The first step is opening the Company Expenses app, which you do by entering a URL in the browser. ATS does the same by using the [Open Application](/addons/ats-addon/rg-one-open-application/) action.
 
 2. Enter *Open Mendix Application* in the input area of the dialog box. You have the core action and Mendix actions. Mendix actions are preferred over core actions, so select the Mendix action to open the application. 
 
-    {{% alert type="info" %}} Enter terms like *Find*, *Click*, *Set*, *Assert*, and *Get* to find the right action. {{% /alert %}}
+    {{% alert color="info" %}} Enter terms like *Find*, *Click*, *Set*, *Assert*, and *Get* to find the right action. {{% /alert %}}
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/test-case-page-open-application.png)
 
@@ -78,7 +78,7 @@ The following steps describe how to add test steps manually to your test case. Y
   
     ATS now uses the application URL you select in the **Run Configuration** application.
     
-5.  After opening the application, you must log in. ATS has a standard login action for logging in to a Mendix application that you must use, which is the [login](rg-one-login) action. The login page of the company expenses app looks like this:
+5.  After opening the application, you must log in. ATS has a standard login action for logging in to a Mendix application that you must use, which is the [login](/addons/ats-addon/rg-one-login/) action. The login page of the company expenses app looks like this:
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/comp-app-login-page.1.png)
 
@@ -96,7 +96,7 @@ The following steps describe how to add test steps manually to your test case. Y
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/helper-new-expense-button.png)
 
-11. ATS has an action that clicks a widget, which is the [Click Widget](rg-one-click-widget) action. Inside your test case, click **Setup step manually** again and add the **Click Widget** action.
+11. ATS has an action that clicks a widget, which is the [Click Widget](/addons/ats-addon/rg-one-click-widget/) action. Inside your test case, click **Setup step manually** again and add the **Click Widget** action.
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/click-widget-new-expense.png)
 
 12. Add a description in **Describe your test step here**.
@@ -110,7 +110,7 @@ The following steps describe how to add test steps manually to your test case. Y
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/new-expense-dialog.png)
 
-16. The user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](rg-one-findassert-dialog) action. Inside your test case, click **Setup step manually** again and add the **Find/Assert Dialog** action.
+16. The user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](/addons/ats-addon/rg-one-findassert-dialog/) action. Inside your test case, click **Setup step manually** again and add the **Find/Assert Dialog** action.
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/new-expense-dialog-action.png)
 
@@ -123,7 +123,7 @@ The following steps describe how to add test steps manually to your test case. Y
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/new-expense-dialog-fields.png)
 
-20. The **Amount** field is a text box widget, the **Type** field is a reference selector widget, and the **Description** field is a text area widget. ATS can interact with all these widgets using the [Set Value](rg-one-set-value) action. Inside your test case, click **Setup step manually** and add the **Set Value** action. Then, select the test step with the **Set Value** action, click **Copy**, and click **Paste**.
+20. The **Amount** field is a text box widget, the **Type** field is a reference selector widget, and the **Description** field is a text area widget. ATS can interact with all these widgets using the [Set Value](/addons/ats-addon/rg-one-set-value/) action. Inside your test case, click **Setup step manually** and add the **Set Value** action. Then, select the test step with the **Set Value** action, click **Copy**, and click **Paste**.
 21. Repeat the copy and paste step of the test step with the **Set value** action. Now you have a test step for each field.
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/three-set-value-actions.png)
@@ -148,7 +148,7 @@ The following steps describe how to add test steps manually to your test case. Y
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/click-widget-save-submit.png)
 
-27.  You must confirm that the expense is successfully submitted. In the Company Expenses app, a submitted expense appears in the data grid. ATS can assert the new expense with the [Find/Assert DataGrid Row](rg-one-findassert-datagrid-row) action. Inside your test case, click **Setup step manually** and add the **Find/Assert Datagrid Row** action.
+27.  You must confirm that the expense is successfully submitted. In the Company Expenses app, a submitted expense appears in the data grid. ATS can assert the new expense with the [Find/Assert DataGrid Row](/addons/ats-addon/rg-one-findassert-datagrid-row/) action. Inside your test case, click **Setup step manually** and add the **Find/Assert Datagrid Row** action.
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/add-findassert-datagrid-row-new-expense.png)
 
 28. Now use the ATS Helper to find the **Widget Name** of the data grid in the Company Expenses app:
@@ -171,7 +171,7 @@ The following steps describe how to add test steps manually to your test case. Y
 31. The last step of your test case is to end your user session by logging out. ATS has two ways for logging out of your application:
 
     * ATS clicks the **Logout** button
-    * ATS uses the [Logout](rg-one-logout) action 
+    * ATS uses the [Logout](/addons/ats-addon/rg-one-logout/) action 
     
     The Logout action is a hard logout, meaning that no matter where ATS is inside your application, it always logs out. Inside your test case, click **Setup step manually** and add the **Logout** action.
    
@@ -196,7 +196,7 @@ The following steps describe how to add test steps manually to your test case. Y
 
 ## 5 Adding Test Steps Using the ATS Recorder
 
-The following steps describe how to add test steps to your test case using the [ATS Recorder](rg-one-recorder). You add the steps necessary for creating a new expense in the Company Expenses app. Create a new test case by completing [Creating a Test Case](#creating-a-test-case) before starting with this section.
+The following steps describe how to add test steps to your test case using the [ATS Recorder](/addons/ats-addon/rg-one-recorder/). You add the steps necessary for creating a new expense in the Company Expenses app. Create a new test case by completing [Creating a Test Case](#creating-a-test-case) before starting with this section.
 
 To add test steps using the ATS Recorder, follow these steps:
 
@@ -232,7 +232,7 @@ To add test steps using the ATS Recorder, follow these steps:
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/global-constant-open-application.png)
 
-13.  You must manually add the **New Expense** dialog box (you cannot record this). You must add the action between test step 3 and test step 4. A user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](rg-one-findassert-dialog) action. Inside your test case, hover over step 3 and click **Add Below**:
+13.  You must manually add the **New Expense** dialog box (you cannot record this). You must add the action between test step 3 and test step 4. A user visually confirms that the dialog box appears. ATS has an action that finds and asserts a dialog box, which is the [Find/Assert Dialog](/addons/ats-addon/rg-one-findassert-dialog/) action. Inside your test case, hover over step 3 and click **Add Below**:
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-test-case/Add-test-step.png)
 
@@ -262,9 +262,9 @@ You have now created your test case using the ATS Recorder.
 
 We advise you to use the recorder as much as possible to add test steps. But, the ATS Recorder might not be able to record certain manual test steps. So, we advise to add steps in the following order:
 * Record your manual test steps using the ATS Recorder
-* Adding test steps using the ATS Helper, see [Finding the action you need](bp-two-finding-the-action-you-need).
-* Create a custom action, see [Create custom action](ht-two-create-custom-actions).
+* Adding test steps using the ATS Helper, see [Finding the action you need](/addons/ats-addon/bp-two-finding-the-action-you-need/).
+* Create a custom action, see [Create custom action](/addons/ats-addon/ht-two-create-custom-actions/).
 
 ## 6 Next Up
 
-You now learned how to create a test case. The next how-to is [How to Create a Test Suite](ht-two-create-a-test-suite). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+You now learned how to create a test case. The next how-to is [How to Create a Test Suite](/addons/ats-addon/ht-two-create-a-test-suite/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

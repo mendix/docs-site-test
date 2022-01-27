@@ -35,7 +35,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Have sufficient rights on the DBMS (for details, see the [Permissions](#Permissions) section below)
 * Make sure the following points are true:
-    * The Mendix database is maintained using maintenance plans as described in [How to Set Up Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
+    * The Mendix database is maintained using maintenance plans as described in [How to Set Up Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
     * A valid database backup file exists for the Mendix database
     * Valid transaction log files exist for the Mendix database
 
@@ -86,8 +86,8 @@ To restore the database, follow these steps:
 
 ## 5 Read More
 
-* [How to Troubleshoot an SQL Server](troubleshooting-sql-server)
-* [How to Set Up an SQL Server User](setting-up-a-sql-server-user)
-* [How to Set Up a New SQL Server Database](setting-up-a-new-sql-server-database)
-* [How to Set Up Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
-* [How to Set Up a Security Checklist for Your On-Premises Installation](security-checklist-for-your-on-premises-installation)
+* [How to Troubleshoot an SQL Server](/developerportal/deploy/troubleshooting-sql-server/)
+* [How to Set Up an SQL Server User](/developerportal/deploy/setting-up-a-sql-server-user/)
+* [How to Set Up a New SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/)
+* [How to Set Up Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
+* [How to Set Up a Security Checklist for Your On-Premises Installation](/developerportal/deploy/security-checklist-for-your-on-premises-installation/)

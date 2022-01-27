@@ -16,7 +16,7 @@ Here is an example of a Gallery widget using filters:
 
 {{/* % image_container width="300" % */}}
 ![Example of gallery using filter and sort](/attachments/appstore/modules/data-widgets/gallery/example.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 1.2 Advanced Options
 
@@ -67,7 +67,7 @@ When this option is defined as custom it will show a composable region. Here you
 
 {{/* % image_container width="300" % */}}
 ![Example of empty message](/attachments/appstore/modules/data-widgets/gallery/empty-message.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 #### 2.3.5 Dynamic Item Class
 
@@ -77,7 +77,7 @@ In this example we check the value of `CountryName`, then if the attribute is eq
 
 {{/* % image_container width="300" % */}}
 ![Example of dynamic item class](/attachments/appstore/modules/data-widgets/gallery/dynamic-item-class.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 2.4 Events
 
@@ -91,7 +91,7 @@ Triggers an action (such as a nanoflow, microflow, or Show page action) when the
 
 {{/* % image_container width="300" % */}}
 ![Example of filtering](/attachments/appstore/modules/data-widgets/gallery/filtering.gif)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 In order to enable filtering within the gallery items you need to select the desired attributes to be filtered in the **Filtering** tab. You can select attributes of the following types:
 
@@ -115,21 +115,21 @@ An example of filtering configuration:
 
 {{/* % image_container width="300" % */}}
 ![Example of filtering configuration](/attachments/appstore/modules/data-widgets/gallery/filtering.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 An example of text filter being used in the composable region combined with a drop-down sort:
 
 {{/* % image_container width="300" % */}}
 ![Example of filtering composable region](/attachments/appstore/modules/data-widgets/gallery/filter-region.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
-For more information about filters, see the [Filters](data-grid-2#filters) section of *Data Grid 2*.
+For more information about filters, see the [Filters](/appstore/modules/data-grid-2/#filters) section of *Data Grid 2*.
 
 ## 4 Sorting
 
 {{/* % image_container width="300" % */}}
 ![Example of sorting](/attachments/appstore/modules/data-widgets/gallery/sorting.gif)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 In the new Gallery widget it is possible to add sorting widgets to the composable region and use them based on the configurations available in the **Sorting** tab. In order to make the attributes available for the sorting widgets, you must select an attribute and define the name it will show via the sort button.
 
@@ -139,7 +139,7 @@ If you have a sorting applied in the datasource of the gallery it will pre-selec
 
 {{/* % image_container width="300" % */}}
 ![Example of sorting configuration](/attachments/appstore/modules/data-widgets/gallery/sorting.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 ### 4.1 Drop-Down Sort {#dropdown}
 

@@ -1,6 +1,6 @@
 ---
 title: "Collaborative Development"
-url: /refguide7/collaborative-development
+url: /refguide7/collaborative-development/
 category: "Version Control"
 description: "Describes the process of collaborative development between the Mendix Desktop Modeler and the Mendix Web Modeler"
 tags: ["desktop modeler", "collaborative development", "sync"]
@@ -14,7 +14,7 @@ aliases:
 
 ## 1 Introduction 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Collaborative development is only available if your project has Mendix version 7.23.3 or above. You cannot sync your changes with the Web Modeler if your project has Mendix version 7.23.2 or below. 
 
@@ -22,13 +22,13 @@ You will still be able to open your project in the Web Modeler (the Web Modeler 
 
 {{% /alert %}}
 
-Collaborative development is the process of sharing app model changes when a team of more than one person is working on the app. Collaborative development allows the team members to work together on one project in the Desktop Modeler and the Web Modeler and easily synchronize changes using [version control](version-control). The Desktop Modeler can be used to work on different branches of an app, while the Web Modeler can be enabled for one of these branches. 
+Collaborative development is the process of sharing app model changes when a team of more than one person is working on the app. Collaborative development allows the team members to work together on one project in the Desktop Modeler and the Web Modeler and easily synchronize changes using [version control](/refguide7/version-control/). The Desktop Modeler can be used to work on different branches of an app, while the Web Modeler can be enabled for one of these branches. 
 
 If you have never used the Mendix Web Modeler before, mind that you need to enable it for a development line first. For more information on managing development lines, see the [Managing Development Lines in the Desktop Modeler](#managing-branches) section.  
 
 ## 2 Collaborative Development Overview
 
-Desktop Modeler users can collaborate with each other through [version control](version-control) via **Commit** and **Update** operations. 
+Desktop Modeler users can collaborate with each other through [version control](/refguide7/version-control/) via **Commit** and **Update** operations. 
 
 The collaborative development process between the Desktop Modeler and the Web Modeler consists of the following steps:
 
@@ -50,7 +50,7 @@ The collaborative development process between the Desktop Modeler and the Web Mo
 
     b. There are conflicts, the Desktop Modeler commit process is stopped. The Web Modeler is unlocked without getting changes from the Desktop Modeler user. The Desktop Modeler user needs to resolve the merge conflicts first to before being able to do a commit again.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 When the Desktop Modeler user wants to deploy the app to the cloud, they click the **Run** button. The commit is done automatically during this process and step five is executed. 
 
@@ -58,7 +58,7 @@ When the Desktop Modeler user wants to deploy the app to the cloud, they click t
 
 ## 3 Web Modeler Perspective
 
-For information on collaborative development from the Web Modeler perspective, see [Collaborative Development in the Web Modeler](/studio7/general-collaborative-development) in the *Web Modeler Guide*. 
+For information on collaborative development from the Web Modeler perspective, see [Collaborative Development in the Web Modeler](/studio7/general-collaborative-development/) in the *Web Modeler Guide*. 
 
 ## 4 Desktop Modeler Perspective
 
@@ -78,7 +78,7 @@ To merge the latest changes stored in the Team Server (from both Web Modeler use
 
 To commit your latest project changes and make them available to other users, open **Changes** and click **Commit**. The process of deploying your app (when you click the **Run** button) will also trigger a commit. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 We recommend you update your project and commit changes often to avoid multiple conflicts in your project. 
 
@@ -86,7 +86,7 @@ We recommend you update your project and commit changes often to avoid multiple 
 
 If your project has conflicts, the Web Modeler will be unlocked without receiving your changes. You need to resolve the conflicts in the Desktop Modeler first to be able to complete the merge and commit again. 
 
-Your changes will be sent to the Web Modeler automatically if there are no conflicts. For more information on the collaborative development process in the Web Modeler, see [Collaborative Development in the Web Modeler](/studio7/general-collaborative-development) in the *Web Modeler Guide*.
+Your changes will be sent to the Web Modeler automatically if there are no conflicts. For more information on the collaborative development process in the Web Modeler, see [Collaborative Development in the Web Modeler](/studio7/general-collaborative-development/) in the *Web Modeler Guide*.
 
 ### 4.3 Viewing History of Commits
 
@@ -120,7 +120,7 @@ To enable the Web Modeler for a development line or switch it to another develop
 1.  Click **Project** > **More Versioning** > **Manage Branch Lines**. In the **Branch Line Manager** dialog window, you can see the development line that the Web Modeler is enabled for (if any) is marked with a globe icon in the first column.<br/> 
 
 	![Globe Icon in the Branch Line Manager](/attachments/refguide7/version-control/collaborative-development/globe-icon.png)<br/>
-<br/>
+
 2.  Select the line you want to enable the Web Modeler for and click **Enable for the Web Modeler**. <br/>
 
 	![Branch Line Manager - Enabling Another Branch](/attachments/refguide7/version-control/collaborative-development/enable-another-branch.png) 
@@ -138,10 +138,10 @@ To create a new branch line, do the following:
 2.  In the **Branch Line Manager** dialog window, you see the list of existing development lines. Click **New** to create a branch line. <br/>
 
 	![Creating New Branch](/attachments/refguide7/version-control/collaborative-development/creating-new-branch.png)<br/>
-<br/>
+
 3.  In the **Create Branch Line** dialog window, set the following: <br/>
 
-	a. What line you are creating a new line from: the main line, a branch line, or a tagged version. For more information on these concepts, see section [2 Concepts](version-control#concepts) in *Version Control*. <br/> 
+	a. What line you are creating a new line from: the main line, a branch line, or a tagged version. For more information on these concepts, see section [2 Concepts](/refguide7/version-control/#concepts) in *Version Control*. <br/> 
 	
 	b. Select revision if needed. <br/>
 
@@ -165,7 +165,7 @@ To delete a branch line, do the following:
 
 You have deleted the branch.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 You cannot delete the Web Modeler enabled branch. If you need to delete this branch, enable the Web Modeler for another line, and only then delete the branch. 
 
@@ -173,6 +173,6 @@ You cannot delete the Web Modeler enabled branch. If you need to delete this bra
 
 ## 6 Read More
 
-* [Version Control](version-control)
-* [Troubleshooting Collaborative Development](collaborative-development-troubleshooting)
-* [Collaborative Development in the Web Modeler](/studio7/general-collaborative-development)
+* [Version Control](/refguide7/version-control/)
+* [Troubleshooting Collaborative Development](/refguide7/collaborative-development-troubleshooting/)
+* [Collaborative Development in the Web Modeler](/studio7/general-collaborative-development/)

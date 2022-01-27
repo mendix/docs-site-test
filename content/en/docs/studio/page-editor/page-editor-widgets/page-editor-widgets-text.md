@@ -9,7 +9,7 @@ tags: ["studio", "page editor", "typography", "text widgets", "widgets"]
 
 ## 1 Introduction 
 
-Text is a group of [widgets](page-editor-widgets) that consists of [Text, Paragraph, Headings (H1-H6)](#text-widget), and the [Page Title](#page-title-widget). They are used to display textual information to the end-user. For example, you can display a text paragraph:
+Text is a group of [widgets](/studio/page-editor-widgets/) that consists of [Text, Paragraph, Headings (H1-H6)](#text-widget), and the [Page Title](#page-title-widget). They are used to display textual information to the end-user. For example, you can display a text paragraph:
 
 {{/* % image_container width="350" % */}}![](/attachments/studio/page-editor/page-editor-widgets/page-editor-widgets-text/paragraph-example.png)
 {{/* % /image_container % */}}
@@ -26,7 +26,7 @@ When add attributes, the attribute value is displayed to the user. Choose **Add*
 
 ![](/attachments/studio/page-editor/page-editor-widgets/page-editor-widgets-text/content-example.png)
 
-You can also configure an expression and display the expression outcome (for more information on expressions, see [Expressions](expressions)). Choose **Add** > **Expression Outcome** to write an expression. For example, you can show an price excluding VAT and including it:
+You can also configure an expression and display the expression outcome (for more information on expressions, see [Expressions](/studio/expressions/)). Choose **Add** > **Expression Outcome** to write an expression. For example, you can show an price excluding VAT and including it:
 
 ![Content Example Expressions](/attachments/studio/page-editor/page-editor-widgets/page-editor-widgets-text/content-example-expression.png)
 
@@ -45,7 +45,7 @@ The render mode defines the way a text will be shown to the end-user. Basically,
 
 ## 3 Page Title General Properties {#page-title-widget}
 
-The page title widget sets the title of the current page and displays it. This title also appears as the page title in your browser tab.  The title will be displayed in the **H1** style of the **Theme Customizer**. For details, see [Theme Customizer](theme-customizer).
+The page title widget sets the title of the current page and displays it. This title also appears as the page title in your browser tab.  The title will be displayed in the **H1** style of the **Theme Customizer**. For details, see [Theme Customizer](/studio/theme-customizer/).
 
 If you want to change the name of the page, do the following:
 
@@ -72,9 +72,9 @@ You can put several **Title** widgets on your page, but they will all display th
 
 ## 5 Design Section {#input-elements-design}
 
-For information on the **Design** section and its properties, see [Design Section](page-editor-widgets-design-section).
+For information on the **Design** section and its properties, see [Design Section](/studio/page-editor-widgets-design-section/).
 
 ## 6 Read More
 
-* [Pages](page-editor) 
-* [Widgets](page-editor-widgets)
+* [Pages](/studio/page-editor/) 
+* [Widgets](/studio/page-editor-widgets/)

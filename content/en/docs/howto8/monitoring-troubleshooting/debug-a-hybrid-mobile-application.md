@@ -1,8 +1,8 @@
 ---
 title: "Debug a Hybrid Mobile Application"
-url: /howto8/monitoring-troubleshooting/debug-a-hybrid-mobile-application
+url: /howto8/monitoring-troubleshooting/debug-a-hybrid-mobile-application/
 category: "Monitoring & Troubleshooting"
-menu_order: 5
+weight: 5
 tags: ["monitoring", "troubleshooting", "debug", "hybrid mobile"]
 ---
 
@@ -40,12 +40,12 @@ You can now navigate to the same address on your local browser to start the debu
 
 ## 4 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Log Levels](log-levels)
-* [Debug Microflows](debug-microflows)
-* [Debug Java Actions](debug-java-actions)
-* [Debug Microflows Remotely](debug-microflows-remotely)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Log Levels](/howto8/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+* [Debug Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)
+* [Debug Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely/)

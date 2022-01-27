@@ -1,12 +1,12 @@
 ---
 title: "Create Deployment Package"
-url: /refguide8/create-deployment-package-dialog
+url: /refguide8/create-deployment-package-dialog/
 parent: "project-menu"
 tags: ["studio pro", "project menu", "deployment package"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/create-deployment-package-dialog.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/create-deployment-package-dialog.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -25,7 +25,7 @@ A non-versioned deployment package is based on your local project on disk and ca
 
 ## 3 Options for Versioned Deployment Packages
 
-If you are creating a versioned deployment package, you will need to enter the information described below. For more information on versioning, see [Version Control](version-control).
+If you are creating a versioned deployment package, you will need to enter the information described below. For more information on versioning, see [Version Control](/refguide8/version-control/).
 
 ### 3.1 Development Line
 

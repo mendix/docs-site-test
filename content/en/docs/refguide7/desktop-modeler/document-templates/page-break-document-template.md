@@ -1,6 +1,6 @@
 ---
 title: "Page Break (Document Template)"
-url: /refguide7/page-break-document-template
+url: /refguide7/page-break-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Page+Break+(document+template).html
@@ -11,9 +11,9 @@ aliases:
 
 When inserting a page break, the current page will be cut off after the break and widgets below the break will be inserted in a new page.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-![](/attachments/refguide7/desktop-modeler/document-templates/page-break-document-template/918135.png)
+![](/attachments/refguide7/desktop-modeler/document-templates/918135.png)
 A page break
 
 {{% /alert %}}

@@ -1,13 +1,13 @@
 ---
 title: "MxAssist Logic Bot"
-url: /refguide8/mx-assist-studio-pro
+url: /refguide8/mx-assist-studio-pro/
 parent: "microflows"
 description: "Describes MxAssist Logic Bot in Mendix Studio Pro."
 tags: ["studio pro", "mendix assist", "AI", "assistant", "mx assist logic bot", "logic bot"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/mx-assist-studio-pro.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/mx-assist-studio-pro.pdf).
 {{% /alert %}}
 
 ## 1 Introduction 
@@ -29,7 +29,7 @@ You can switch MxAssist Logic Bot on and off clicking the **On-Off** button in t
 
 ![On-Off Button](/attachments/refguide8/modeling/application-logic/microflows/mx-assist-studio-pro/on-off-button.png)
 
-To access settings of MxAssist Logic Bot, open **Edit** > **Preferences** >the **Mendix Assist** tab >the **Logic Bot** section. For more information, see [Preferences](preferences-dialog).
+To access settings of MxAssist Logic Bot, open **Edit** > **Preferences** >the **Mendix Assist** tab >the **Logic Bot** section. For more information, see [Preferences](/refguide8/preferences-dialog/).
 
 In the **Mendix Assist** tab, section **Logic Bot**, you can set the following: 
 
@@ -39,11 +39,11 @@ In the **Mendix Assist** tab, section **Logic Bot**, you can set the following:
 
   ![Suggestions for System Variables](/attachments/refguide8/modeling/application-logic/microflows/mx-assist-studio-pro/mx-assist-system-variables.png)
 
-For more information on preferences, see [Preferences](preferences-dialog).
+For more information on preferences, see [Preferences](/refguide8/preferences-dialog/).
 
 ## 3 Using MxAssist Logic Bot to Build Microflows
 
-MxAssist Logic Bot is enabled by default and is displayed as a blue dot in the flow of a [microflow](/refguide8/microflows). 
+MxAssist Logic Bot is enabled by default and is displayed as a blue dot in the flow of a [microflow](/refguide8/microflows/). 
 
 It is possible to add elements to the microflow in a regular way without using MxAssist Logic Bot, however, MxAssist Logic Bot helps you add elements to the microflow faster as it suggests a short list of the most relevant activities. 
 
@@ -52,7 +52,7 @@ To use MxAssist Logic Bot, do the following:
 1. Click the bow-tie to see the next best action recommendations:
 
     {{/* % image_container width="350" % */}}![Logic Bot Recommendations](/attachments/refguide8/modeling/application-logic/microflows/mx-assist-studio-pro/mx-assist-recommendations.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 2. Click one of the recommended activities to insert it into a microflow.
 
 3. In the **Properties** dialog box, configure the selected activity/event.
@@ -63,4 +63,4 @@ If you do not see the desired activity or element in the top-five recommendation
 
 ## 4 Read More
 
-* [Microflows](microflows)
+* [Microflows](/refguide8/microflows/)

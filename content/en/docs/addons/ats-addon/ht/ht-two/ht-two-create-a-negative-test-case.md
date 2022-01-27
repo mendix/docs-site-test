@@ -34,7 +34,7 @@ This is the navigation menu for an administrator:
 
 Before starting this how-to, make sure you have completed the following prerequisite:
 
-* Read [How to Create a Test Case](ht-two-create-a-test-case)
+* Read [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 
 ## 3 Creating a Negative Test Case
 
@@ -62,7 +62,7 @@ This is the final test case:
 
 	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-negative-test-case/set-to-true.png)
 
-6.  Add the action needed to search for the menu item as a **Precondition**. Check the precondition box and add the [Find/Assert Menu Item](rg-one-findassert-menu-item) action:
+6.  Add the action needed to search for the menu item as a **Precondition**. Check the precondition box and add the [Find/Assert Menu Item](/addons/ats-addon/rg-one-findassert-menu-item/) action:
 
 	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-negative-test-case/add-findassert-menu-item-as-precondition-2.png)
 
@@ -83,10 +83,10 @@ _The finished test case_
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-a-negative-test-case/the-finished-test-case.png)
 
- {{% alert type="info" %}}
+ {{% alert color="info" %}}
 You can also add the **Assert not false** action with the **Assert value** set to false, instead of the **Assert not true** action, to create a negative test case.
   {{% /alert %}}
 
 ## 4 Next Up
 
-The next how-to is [How to Create Extracted Actions](ht-two-create-extracted-actions). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+The next how-to is [How to Create Extracted Actions](/addons/ats-addon/ht-two-create-extracted-actions/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

@@ -28,13 +28,13 @@ The view of the **General** tab depends on the Mendix Cloud version on which the
    * Red – the environment is not working correctly
         ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments-details/environment-status.png)   
 * **Running since** date – the date on which the app was started
-* **Name** – the type of environment (Test, Acceptance, Production or the name of a [flexible environment](/developerportal/deploy/mendix-cloud-deploy#flexible-environments)): see [Naming of Environments](#naming) for more information
+* **Name** – the type of environment (Test, Acceptance, Production or the name of a [flexible environment](/developerportal/deploy/mendix-cloud-deploy/#flexible-environments)): see [Naming of Environments](#naming) for more information
 * **URL** – the URL of the app
 * **Project ID** – the unique identifier for your Mendix app
 * **Environment ID** – the unique identifier of this environment
 * **Custom domains** – the custom domains of the app
 * **Java Version** – Oracle version 1.8 or AdoptOpenJDK version 8
-* **Mendix Studios Target** – whether this environment is the one where apps will be deployed from Mendix Studio - see [Studio Deployment Settings](studio-deployment-settings) for more information
+* **Mendix Studios Target** – whether this environment is the one where apps will be deployed from Mendix Studio - see [Studio Deployment Settings](/developerportal/deploy/studio-deployment-settings/) for more information
 * **Plan** – (*Cloud v4 only*) the type of plan covered by this license
 * **Instances** – (*Cloud v4 only*) A summary of the number and memory allocation of *instances* of this environment: see [Scaling...](#scaling) for more information
 * **Database Status** – (*Cloud v3 only*) this is **Running** by default
@@ -53,10 +53,10 @@ On the right side of the screen, you can find the following action buttons:
 * **Start/Stop Application**
 * **Clear Environment** *(only visible if your application is stopped)* – this allows you to empty all the data from your database and, optionally, remove the app and file storage from the environment as well — see [Clearing an Environment](#clear-environment), below, for more information
 * **Show Logged in Users** 
-* **Change Admin Password** – this changes the password for the inbuilt [administrator](/refguide/administrator) account — the new password is applied immediately, without the need for a restart and will also force the administrator to pick up any new roles assigned in the app deployment package — see the [User Role](/refguide/administrator#user-role) section of *Administrator* for more information
+* **Change Admin Password** – this changes the password for the inbuilt [administrator](/refguide/administrator/) account — the new password is applied immediately, without the need for a restart and will also force the administrator to pick up any new roles assigned in the app deployment package — see the [User Role](/refguide/administrator/#user-role) section of *Administrator* for more information
 
 {{% alert color="info" %}}
-During a [maintenance window](maintenance-windows), you will not be able to start, restart, or stop your app.
+During a [maintenance window](/developerportal/deploy/maintenance-windows/), you will not be able to start, restart, or stop your app.
 {{% /alert %}}
 
 #### 2.1.1 Clearing an Environment {#clear-environment}
@@ -71,7 +71,7 @@ When you click **Clear Environment** you will have two options:
 
 {{/* % image_container width="400" % */}}
 ![Clear Environment options and confirmation](/attachments/developerportal/deploy/mendix-cloud-deploy/environments-details/clear-environment.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 * **Only clear the database** – this empties all data from your database — after delete confirmation, the application will be stopped, the existing database will be deleted, a new database will be created, and the application will be restarted — ensure you have a backup of any data you want to keep
 * **Clear the full environment (model and database)** *(default)* – this clears all data from your database and file storage, and removes your app from this environment — you should do this if you want to deploy a different app to this environment
@@ -85,12 +85,12 @@ You will need to confirm that you want to clear your environment by typing *clea
 In Mendix Cloud v4 environments, you have two additional action buttons:
 
 * **View Live Log**
-* **Show debugger information** – shows the settings needed to connect the debugger in Studio Pro to your app — for Mendix Cloud v4, the debugger is *always* enabled — for more information on debugging in the cloud, see [How To Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely)
+* **Show debugger information** – shows the settings needed to connect the debugger in Studio Pro to your app — for Mendix Cloud v4, the debugger is *always* enabled — for more information on debugging in the cloud, see [How To Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely/)
 
 #### 2.1.3 Logging and Debugging in Mendix Cloud v3
 
 {{% alert color="warning" %}}
-Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be retired at the beginning of Q3 2021. To continue running your licensed Mendix application on the Mendix Cloud, you need to migrate your app to Mendix Cloud V4. To learn more about Mendix Cloud V4 and how to migrate from Mendix Cloud V3, please visit the following page: [Migrate to Mendix Cloud V4](/developerportal/deploy/migrating-to-v4). 
+Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be retired at the beginning of Q3 2021. To continue running your licensed Mendix application on the Mendix Cloud, you need to migrate your app to Mendix Cloud V4. To learn more about Mendix Cloud V4 and how to migrate from Mendix Cloud V3, please visit the following page: [Migrate to Mendix Cloud V4](/developerportal/deploy/migrating-to-v4/). 
 {{% /alert %}}
 
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments-details/actions-v3.png)
@@ -98,11 +98,11 @@ Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be reti
 In Mendix Cloud v3 environments, you have two additional action buttons:
 
 * **View Current Log**
-* **Enable/Disable Debugging** – enables or disables the debugger option — for more information about enabling the debugger, see [How to Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely)
+* **Enable/Disable Debugging** – enables or disables the debugger option — for more information about enabling the debugger, see [How to Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely/)
 
 ### 2.2 Naming of Environments – Flexible Environments in Mendix Cloud v4 {#naming}
 
-If you are the [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) of the app, you can rename the environments as you wish.
+If you are the [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) of the app, you can rename the environments as you wish.
 
 Click the **Change** button next to the name of the environment.
 
@@ -190,7 +190,7 @@ You have to restart your application before the changes will be made.
 
 With scheduled events, you can let the Runtime execute a microflow at a specific moment in time. The event can also be repeated with a given interval (for example, every day).
 
-For more information, see [Scheduled Events](/refguide/scheduled-events).
+For more information, see [Scheduled Events](/refguide/scheduled-events/).
 
 ### 3.2 Constants {#constants}
 
@@ -204,19 +204,19 @@ You can also set **Mask** to **Yes**. This replaces the **Current value** and th
 
 {{/* % image_container width="50%" % */}}
 ![Edit Constants Pop-up window](/attachments/developerportal/deploy/mendix-cloud-deploy/environments-details/edit-constant.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 {{% alert color="info" %}}
 You have to restart your application before the changes will be made.
 {{% /alert %}}
 
-For more information, see [Constants](/refguide/constants).
+For more information, see [Constants](/refguide/constants/).
 
 ## 4 Network Tab {#network-tab}
 
 {{/* % image_container width="50%" % */}}
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments-details/network1.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 On this tab, you can manage the elements described below.
 
@@ -232,7 +232,7 @@ You can perform the following actions:
 * **Edit**
 * **Delete**
 
-For more information, see [Certificates](certificates) and [Custom Domains](custom-domains).
+For more information, see [Certificates](/developerportal/deploy/certificates/) and [Custom Domains](/developerportal/deploy/custom-domains/).
 
 ### 4.2 HTTP Headers {#http-headers}
 
@@ -292,7 +292,7 @@ There can be additional issues when using cookies in iframes for end-users using
 
 ##### 4.2.2.1 Using Custom Domains
 
-To avoid security issues when you want to embed the app in an iframe, we recommend that you use [custom domains](custom-domains) to ensure that the app you want to embed is part of the same domain. For example, if your page is mainpage.domain.name, then the app embedded in the iframe should be appname.domain.name.
+To avoid security issues when you want to embed the app in an iframe, we recommend that you use [custom domains](/developerportal/deploy/custom-domains/) to ensure that the app you want to embed is part of the same domain. For example, if your page is mainpage.domain.name, then the app embedded in the iframe should be appname.domain.name.
 
 ##### 4.2.2.2 Applying a Different SameSite Setting
 
@@ -388,7 +388,7 @@ You can **Delete** a path or you can **Add** and **Edit** a path with the follow
 * Custom Profile for Client Certificates and/or IP ranges
 * N/A (inherit)
 
-For more information, see [How to Restrict Access for Incoming Requests](access-restrictions).
+For more information, see [How to Restrict Access for Incoming Requests](/developerportal/deploy/access-restrictions/).
 
 ### 4.5 Outgoing Connections Certificates
 
@@ -398,7 +398,7 @@ Add client certificates (in the PKCS12 format) or certificate authorities (in th
 
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments-details/loglevels-tab.png)   
 
-Log levels are used to distinguish the log messages and to highlight the highest priority ones so that they can receive the immediate intervention they require. Note that custom log nodes appear in the list only after a message has been logged to them. See [Log Message](/refguide/log-message#log-node-name) for more information.
+Log levels are used to distinguish the log messages and to highlight the highest priority ones so that they can receive the immediate intervention they require. Note that custom log nodes appear in the list only after a message has been logged to them. See [Log Message](/refguide/log-message/#log-node-name) for more information.
 
 On this tab, you can perform the following actions:
 
@@ -438,7 +438,7 @@ The log level types are the following:
 | **Error** | Red | Due to a more serious problem, the application has not been able to perform some function. |
 | **Critical** | White (text), red (background) | A serious error has occurred, indicating that the application itself may be unable to continue running. |
 
-For more information about log levels, see [How to Set Log Levels](/howto/monitoring-troubleshooting/log-levels).
+For more information about log levels, see [How to Set Log Levels](/howto/monitoring-troubleshooting/log-levels/).
 
 ## 6 Runtime Tab {#runtime-tab}
 
@@ -454,7 +454,7 @@ Use the Custom Runtime Settings section to perform the following actions:
 * **Edit** the runtime setting
 * **Delete** the runtime settings
 
-For more information about runtime settings, read the [Runtime Customization](/refguide/custom-settings) and [Advanced Custom Settings in Mendix Runtime](/refguide/tricky-custom-runtime-settings) documentation.
+For more information about runtime settings, read the [Runtime Customization](/refguide/custom-settings/) and [Advanced Custom Settings in Mendix Runtime](/refguide/tricky-custom-runtime-settings/) documentation.
 
 The Mendix Cloud uses runtime settings to configure the included systems for logs, backups, and database. Therefore, the following settings are **not** configurable by users:
 
@@ -519,7 +519,7 @@ There are two types of maintenance:
 * Regular weekly maintenance (which does not affect your app), during which you can change the preferred maintenance window
 * Planned maintenance (which will affect your app in some ways), about which you will automatically receive an email and you can override the maintenance window if necessary
 
-For more information about maintenance, see [Maintenance Windows: Configuration](maintenance-windows).
+For more information about maintenance, see [Maintenance Windows: Configuration](/developerportal/deploy/maintenance-windows/).
 
 ### 7.1 Preferred Maintenance Window
 

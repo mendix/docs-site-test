@@ -39,12 +39,12 @@ Default: *1*
 {{% alert color="info" %}}
 Since the value of the password is general knowledge, it is safer to change this to a custom password.
 
-This password is only used when Mendix is running locally. Changing the password in your model will not update the password in your Cloud environments. You can change the password for your other licensed [environments](/developerportal/deploy/environments-details) in the Developer Portal.
+This password is only used when Mendix is running locally. Changing the password in your model will not update the password in your Cloud environments. You can change the password for your other licensed [environments](/developerportal/deploy/environments-details/) in the Developer Portal.
 {{% /alert %}}
 
 #### 2.2.1 Free Apps
 
-The MxAdmin user is not created automatically when you deploy your app as a Free App. For licensed environments the MxAdmin user is created when you change the password for the first time, for example through the [Environment Details](/developerportal/deploy/environments-details) for the Mendix Cloud.
+The MxAdmin user is not created automatically when you deploy your app as a Free App. For licensed environments the MxAdmin user is created when you change the password for the first time, for example through the [Environment Details](/developerportal/deploy/environments-details/) for the Mendix Cloud.
 
 When your Free App *has never been deployed and the database still needs to be created*, any data snapshot you have added to your app will be restored to the database of your Free App. You can use this process to add the MxAdmin user to your Free App by doing the following:
 
@@ -69,7 +69,7 @@ Alternatively you can log in as an administrator to a Free App deployed to the c
 
 ### 2.3 User Role {#user-role}
 
-The user role assigned to the Administrator. For more information, see [User Roles](user-roles). 
+The user role assigned to the Administrator. For more information, see [User Roles](/refguide/user-roles/). 
 
 Default: *Administrator*
 
@@ -82,13 +82,13 @@ This role may be helpful in case you have exceeded your user license restriction
 {{% /alert %}}
 
 {{% alert color="warning" %}}
-When your app is not deployed locally, for example to the Mendix Cloud, changes to the user role of the administrator account will not be applied until the administrator password is changed. See the [actions](/developerportal/deploy/environments-details#actions) section of *Environment Detail* for instructions on changing the admin password.
+When your app is not deployed locally, for example to the Mendix Cloud, changes to the user role of the administrator account will not be applied until the administrator password is changed. See the [actions](/developerportal/deploy/environments-details/#actions) section of *Environment Detail* for instructions on changing the admin password.
 {{% /alert %}}
 
 ## 3 Read More
 
-* [App Security](project-security)
-* [User Roles](user-roles)
-* [Demo Users](demo-users)
-* [Anonymous Users](anonymous-users)
-* [Password Policy](password-policy)
+* [App Security](/refguide/project-security/)
+* [User Roles](/refguide/user-roles/)
+* [Demo Users](/refguide/demo-users/)
+* [Anonymous Users](/refguide/anonymous-users/)
+* [Password Policy](/refguide/password-policy/)

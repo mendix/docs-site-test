@@ -1,15 +1,15 @@
 ---
 title: "Text Widgets"
-url: /studio7/page-editor-widgets-text
+url: /studio7/page-editor-widgets-text/
 parent: "page-editor-widgets"
 description: "Describes typography widgets in Mendix Studio."
-menu_order: 40
+weight: 40
 tags: ["studio", "page editor", "typography", "text widgets", "widgets"]
 ---
 
 ## 1 Introduction 
 
-Text is a group of [widgets](page-editor-widgets) that consists of **[Text, Paragraph, Headings (H1-H6)](#text-widget)**, and the [**Page Title**](#page-title-widget). They are used to display textual information to the end-user. 
+Text is a group of [widgets](/studio7/page-editor-widgets/) that consists of **[Text, Paragraph, Headings (H1-H6)](#text-widget)**, and the [**Page Title**](#page-title-widget). They are used to display textual information to the end-user. 
 
 ## 2 Text, Paragraph, and Headings General Properties {#text-widget}
 
@@ -32,7 +32,7 @@ To configure **Content** without adding attributes, you can do one of the follow
 
 To configure **Content** and add attributes to it, do the following:
 
-1. Place the widget (**Text**, **Paragraph**, or **Heading**) inside a data container (a list view or a data view) and set an entity for the list view/data view. For more information, see [Data View & List View Properties](page-editor-data-view-list-view). This is necessary to allow attributes of the selected entity to be inserted into the text. 
+1. Place the widget (**Text**, **Paragraph**, or **Heading**) inside a data container (a list view or a data view) and set an entity for the list view/data view. For more information, see [Data View & List View Properties](/studio7/page-editor-data-view-list-view/). This is necessary to allow attributes of the selected entity to be inserted into the text. 
 
 2.  Open **Properties** of the **Text**, **Paragraph**, or **Heading**, delete the default text in the **General** section > **Content** and start typing the message you want to show to the end-user.  
 
@@ -65,7 +65,7 @@ The render mode defines the way a text will be shown to the end-user. Basically,
 
 ## 3 Page Title General Properties {#page-title-widget}
 
-The page title widget sets the title of the current page and displays it. This title also appears as the page title in your browser tab.  The title will be displayed in the **H1** style of the **Theme Customizer**. For details, see [Theme Customizer](theme-customizer).
+The page title widget sets the title of the current page and displays it. This title also appears as the page title in your browser tab.  The title will be displayed in the **H1** style of the **Theme Customizer**. For details, see [Theme Customizer](/studio7/theme-customizer/).
 
 If you want to change the name of the page, do the following:
 
@@ -80,7 +80,7 @@ The **Title** that you see in the page properties and in widget is one and the s
 
 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 You can put several **Title** widgets on your page, but they will all display the same text and cannot be edited individually.
 
@@ -88,9 +88,9 @@ You can put several **Title** widgets on your page, but they will all display th
 
 ## 4 Design Section {#input-elements-design}
 
-For information on the **Design** section and its properties, see [Design Section in Widgets](page-editor-widgets-design-section).
+For information on the **Design** section and its properties, see [Design Section in Widgets](/studio7/page-editor-widgets-design-section/).
 
 ## 5 Read More
 
-* [Pages](page-editor) 
-* [Widgets](page-editor-widgets)
+* [Pages](/studio7/page-editor/) 
+* [Widgets](/studio7/page-editor-widgets/)

@@ -15,9 +15,9 @@ The Make It Native app allows developers to preview, test, and debug native mobi
 
 Both of these apps are available for both Android and iOS devices.
 
-For more information on using the Make It Native app to test an app, see [How To Get Started with Native Mobile](/howto/mobile/getting-started-with-native-mobile). For advanced information on debugging with the Make It Native app, see [Debug Native Mobile Apps (Advanced)](/howto/mobile/native-debug). If your app will require custom dependencies, such as custom widgets or fonts, see [How to Create a Custom Developer App](/howto/mobile/how-to-devapps).
+For more information on using the Make It Native app to test an app, see [How To Get Started with Native Mobile](/howto/mobile/getting-started-with-native-mobile/). For advanced information on debugging with the Make It Native app, see [Debug Native Mobile Apps (Advanced)](/howto/mobile/native-debug/). If your app will require custom dependencies, such as custom widgets or fonts, see [How to Create a Custom Developer App](/howto/mobile/how-to-devapps/).
 
-For information on which mobile operating systems are supported by the Make It Native app, see the [Mobile Operating Systems](system-requirements#mobileos) section of *System Requirements*.
+For information on which mobile operating systems are supported by the Make It Native app, see the [Mobile Operating Systems](/refguide/system-requirements/#mobileos) section of *System Requirements*.
 
 To download the Make It Native app, search for *Make It Native* in your device's app store.
 
@@ -45,13 +45,12 @@ For Make it Native 9 apps, please download them in their app stores. If you woul
 
 |                                  Android                                  |                                iOS                                |
 | :-----------------------------------------------------------------------: | :---------------------------------------------------------------: |
-| ![Android QR Code](/attachments/refguide/mobile/native-mobile/getting-the-make-it-native-app/qr-android-8.8.png) | ![iOS QR Code](attachments/make-it-native-archive/qr-ios-8.8.png) |
- | ![iOS QR Code](/attachments/refguide/mobile/native-mobile/getting-the-make-it-native-app/qr-android-8.8.png) | ![iOS QR Code](attachments/make-it-native-archive/qr-ios-8.8.png) |
- ||   [Link](https://www.dropbox.com/s/z0255q1gcxpvlwl/MiN%208.8.apk?dl=0)    |        [Link](https://testflight.apple.com/join/ra3QR6iG)         |
+| ![Android QR Code](/attachments/refguide/mobile/native-mobile/getting-the-make-it-native-app/qr-android-8.8.png) | ![iOS QR Code](/attachments/refguide/mobile/native-mobile/getting-the-make-it-native-app/qr-ios-8.8.png) |
+|   [Link](https://www.dropbox.com/s/z0255q1gcxpvlwl/MiN%208.8.apk?dl=0)    |        [Link](https://testflight.apple.com/join/ra3QR6iG)         |
 
 
 ## 4 Read More
 
-* [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app)
-* [How to Create a Custom Developer App](/howto/mobile/how-to-devapps)
-* [How to Debug Native Mobile Apps (Advanced)](/howto/mobile/native-debug)
+* [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app/)
+* [How to Create a Custom Developer App](/howto/mobile/how-to-devapps/)
+* [How to Debug Native Mobile Apps (Advanced)](/howto/mobile/native-debug/)

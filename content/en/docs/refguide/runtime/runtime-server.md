@@ -15,7 +15,7 @@ This description of the Runtime Server is based on an app running in the cloud. 
 
 ## 2 Description
 
-The Runtime Server is deployed to the cloud (see [Runtime Deployment](runtime-deployment) for more information) and waits for requests from the Mendix Client or a call from another app or service. It processes the request and returns the requested data, plus any additional state information where appropriate. For details of how this communication takes place, see [Communication Patterns in the Mendix Runtime](communication-patterns). The Runtime Server itself is stateless, which allows it to be efficiently scaled to multiple instances.
+The Runtime Server is deployed to the cloud (see [Runtime Deployment](/refguide/runtime-deployment/) for more information) and waits for requests from the Mendix Client or a call from another app or service. It processes the request and returns the requested data, plus any additional state information where appropriate. For details of how this communication takes place, see [Communication Patterns in the Mendix Runtime](/refguide/communication-patterns/). The Runtime Server itself is stateless, which allows it to be efficiently scaled to multiple instances.
 
 Below is a chart showing the components of the Runtime Server. Each of the components is described below the chart.
 
@@ -120,4 +120,4 @@ This is the browser or device which allow the end-user to interact with the app.
 
 The Runtime Server communicates with the Mendix Client using a private API called *xas*.
 
-For a description of the Mendix Client, see [Mendix Client](mendix-client).
+For a description of the Mendix Client, see [Mendix Client](/refguide/mendix-client/).

@@ -1,6 +1,6 @@
 ---
 title: "Edit Cloud Foundry Settings Dialog"
-url: /refguide7/edit-cloud-foundry-settings-dialog
+url: /refguide7/edit-cloud-foundry-settings-dialog/
 parent: "dialogs"
 tags: ["Cloud Foundry", "Deploy"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -9,9 +9,9 @@ tags: ["Cloud Foundry", "Deploy"]
 
 Use this dialog to specify the information necessary for deploying your app to a Cloud Foundry instance.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-For more information on deploying to Cloud Foundry, see [Cloud Foundry: Deploy](/developerportal/deploy/cloud-foundry-deploy) in *Developer Portal Guide*.
+For more information on deploying to Cloud Foundry, see [Cloud Foundry: Deploy](/developerportal/deploy/cloud-foundry-deploy/) in *Developer Portal Guide*.
 
 {{% /alert %}}
 

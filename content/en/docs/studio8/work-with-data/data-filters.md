@@ -1,8 +1,8 @@
 ---
 title: "Data Filters"
-url: /studio8/data-filters
+url: /studio8/data-filters/
 category: "Working with Data"
-menu_order: 40
+weight: 40
 description: "Describes data filtering in page and microflow editors in Mendix Studio."
 tags: ["studio", "microflow", "filter", "filters", "filtering", "data", "data filtering", "retrieve", "page", "xpath", "constraints"]
 ---
@@ -84,7 +84,7 @@ To create a new filter, do the following:
 2. Click the **Filter** field.
 
     {{/* % image_container width="300" % */}}![](/attachments/studio8/work-with-data/data-filters/filter-field.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 3. In the **Add Filter** dialog box, specify the attribute/association on the left first, as operators depend on the type of attribute that you have chosen. For example, if you choose *Date and Time* attribute type, you will be able to select the **in same quarter as** operator, while this operator is unavailable for other attribute types. 
 
     ![](/attachments/studio8/work-with-data/data-filters/in-same-quarter-as-operator-example.png)
@@ -100,18 +100,18 @@ To create a new filter, do the following:
     a. Click **Add new condition**. <br/>
 
     ![](/attachments/studio8/work-with-data/data-filters/add-new-condition.png)<br/>
-<br/>
+
     b. If needed, change the `and` operator to `or` operator clicking the drop-down arrow. <br/>
     c.  If you want to change the order of conditions, click the icon on the left (appears when you hover over it) and drag it.<br/>
 
     ![](/attachments/studio8/work-with-data/data-filters/change-order.png)<br/>
-<br/>
+
 6. To create a new group and manage it, do the following: <br/>
 
     a.  Hover over the bottom of the dialog-box and click **Create a New Group** that appears there.<br/>
 
     ![](/attachments/studio8/work-with-data/data-filters/create-new-group.png)<br/>
-<br/>
+
     b. To change the `and` operator applied to groups to `or` operator, click the drop-down arrow. 
 
 7. Click **Add** to save the filter.
@@ -134,11 +134,11 @@ To delete a filter, do the following:
 
 All conditions in the filter are deleted.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If you want to delete just one condition and not all of them, click the trash can icon on the right. 
 {{% /alert %}}
 
 ## 6 Read More
 
-* [Microflows](microflows)
-* [Pages](page-editor)
+* [Microflows](/studio8/microflows/)
+* [Pages](/studio8/page-editor/)

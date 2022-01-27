@@ -11,9 +11,9 @@ These guides will teach you to configure both push notifications (also known as 
 
 Push Notifications:
 
-* [Set Up Push Notifications](setting-up-native-push-notifications)
-* [Use Push Notifications](native-remote-notifications)
+* [Set Up Push Notifications](/howto/mobile/setting-up-native-push-notifications/)
+* [Use Push Notifications](/howto/mobile/native-remote-notifications/)
 
 Local Notifications:
 
-* [Use Local Notifications](local-notif-parent)
+* [Use Local Notifications](/howto/mobile/local-notif-parent/)

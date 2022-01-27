@@ -1,8 +1,8 @@
 ---
 title: "Implement Best Practices for App Security"
-url: /howto8/security/best-practices-security
+url: /howto8/security/best-practices-security/
 category: "Security"
-menu_order: 20
+weight: 20
 description: "A set of security aspects and checks to use when developing your Mendix application."
 tags: ["security", "best practices", "access rules", "authentication", "encryption", "password", "ssl", "identity provider", "mendix cloud"]
 #The anchor request-handlers below is mapped, so it should not be removed or changed.
@@ -22,7 +22,7 @@ The Mendix architecture includes the Mendix Client, which can compose its own qu
 ![Mendix Runtime Architecture](/attachments/howto8/security/best-practices-security/mendix-runtime-architecture.png)
 {{/* % /image_container % */}}
 
-When designing an application, a developer can specify access rules on an entity (for more information, see [How to Create A Secure App](/howto8/security/create-a-secure-app)). These access rules are applied whenever a query (received from a client) should be executed, thus they constrain the data returned to the client. For example, users with the "Customer" role can only view orders that are associated to the customer of which this user is part.
+When designing an application, a developer can specify access rules on an entity (for more information, see [How to Create A Secure App](/howto8/security/create-a-secure-app/)). These access rules are applied whenever a query (received from a client) should be executed, thus they constrain the data returned to the client. For example, users with the "Customer" role can only view orders that are associated to the customer of which this user is part.
 
 While the data that should be viewable and editable in which role is application-specific, the following best practices are key:
 
@@ -43,9 +43,9 @@ When you are building an application, you may use [Mendix Marketplace](https://m
 These are the common cases and best practices:
 
 *	HTML content, usually derived from an HTML editor and displayed using an HTML viewer, format string,  or an email client – these are the ways to avoid this abuse:
-    *	Use the XSSSanitize action from the [CommunityCommons Function Library](/appstore/modules/community-commons-function-library) module to strip malicious code from the entered HTML
-    *	Display the value of an attribute as HTML or using the HTMLEncode function from the [Community Commons Function Library](/appstore/modules/community-commons-function-library) module
-*	Database connections (for example, using the [Database Connector](/appstore/connectors/database-connector)), where user input is being used within constraints – these are the ways to avoid this abuse:
+    *	Use the XSSSanitize action from the [CommunityCommons Function Library](/appstore/modules/community-commons-function-library/) module to strip malicious code from the entered HTML
+    *	Display the value of an attribute as HTML or using the HTMLEncode function from the [Community Commons Function Library](/appstore/modules/community-commons-function-library/) module
+*	Database connections (for example, using the [Database Connector](/appstore/connectors/database-connector/)), where user input is being used within constraints – these are the ways to avoid this abuse:
     *	Use prepared statements, which will cause the database-specific connector to take care of escaping the value
     *	Sanity-check your user input (for example, use a regular expression to check if your user input only contains alphanumeric characters, spaces, and dashes)
 
@@ -79,7 +79,7 @@ When publishing a web or REST service, you should consider whether this service 
 
 Mendix offers the following options for providing authentication for your services:
 
-* User name and password validation, specified within Mendix Studio Pro (for details, see [Published Web Services](/refguide8/published-web-services))
+* User name and password validation, specified within Mendix Studio Pro (for details, see [Published Web Services](/refguide8/published-web-services/))
 * Client certificates and IP ranges, which are specified in the Mendix Cloud – these can be found at the network tab of your node’s environment details as **Access Restriction Profiles**
 
 ## 6 Using the Encryption Module When Storing Sensitive Information
@@ -89,13 +89,13 @@ Your application might require sensitive information that should be extra encryp
 * Connection information for consumed services (like credentials, service locations, or keys)
 * Personal information (like bank account numbers or social security numbers)
 
-This data is defined within the domain model and stored within the database of your application. To minimize the impact of this information when it is leaked, we recommend storing this data in a (symmetric) encrypted manner. The [Encryption](/appstore/modules/encryption) module available from the Mendix Marketplace provides a way to encrypt this sensitive information in a database record based on an encryption key that is stored at the Mendix application server.
+This data is defined within the domain model and stored within the database of your application. To minimize the impact of this information when it is leaked, we recommend storing this data in a (symmetric) encrypted manner. The [Encryption](/appstore/modules/encryption/) module available from the Mendix Marketplace provides a way to encrypt this sensitive information in a database record based on an encryption key that is stored at the Mendix application server.
 
 ## 7 Using a Third-Party Identity Provider
 
 When developing an application, authentication is one of the basic considerations. Even though Mendix comes with a basic authentication mechanism, your application’s security is improved when authentication is delegated to an enterprise grade identity provider like ADFS.
 
-Mendix offers the [SAML](/appstore/modules/saml) module that enables your application to be connected with these services.
+Mendix offers the [SAML](/appstore/modules/saml/) module that enables your application to be connected with these services.
 
 Your application can gain the following benefits from using an identity provider:
 
@@ -111,7 +111,7 @@ By default, Mendix forces a strong password policy. The same password policy tha
 
 It is very tempting to simplify the password constraints for development purposes (for example, making it possible to use a single character to login). However, we recommend avoiding this approach so that deployments will continue to force a strong password policy.
 
-The password policy can be set by via the guidelines described in [Password Policy](/refguide8/password-policy).
+The password policy can be set by via the guidelines described in [Password Policy](/refguide8/password-policy/).
 
 ## 9 Renaming the Administrator User
 
@@ -123,7 +123,7 @@ The user name of the administrator can be changed in 's **Project Security** set
 
 When deployed to the Mendix Cloud, the information about the administrator user name and role is taken into account when using the **Change admin password** button on the environment. After changing the settings in  and redeploying the application, a successful admin password change will trigger the creation of a user in the app with the new name and role.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 At this point, the application does not automatically remove the user with the previous user name. Removing the old **MxAdmin** account has to be done manually.
 {{% /alert %}}
 
@@ -137,17 +137,17 @@ By using an SSL connection and adding the public key of the endpoint within your
 * The conversation is not readable if it was ever intercepted
 * The identity of your endpoint is confirmed
 
-There are several scenarios possible for protecting your outgoing connections using encryption. These depend on the infrastructure possibilities and protocols used. For more information, see [How to Secure Outgoing Connections from Your App](/developerportal/deploy/securing-outgoing-connections-from-your-application).
+There are several scenarios possible for protecting your outgoing connections using encryption. These depend on the infrastructure possibilities and protocols used. For more information, see [How to Secure Outgoing Connections from Your App](/developerportal/deploy/securing-outgoing-connections-from-your-application/).
 
-You can add individual certificates in your project’s settings in . Test, acceptance, and production environments require their certificates to be uploaded to the Mendix Cloud (for more information, see [Certificates](/developerportal/deploy/certificates)).
+You can add individual certificates in your project’s settings in . Test, acceptance, and production environments require their certificates to be uploaded to the Mendix Cloud (for more information, see [Certificates](/developerportal/deploy/certificates/)).
 
 ## 11 Adding HTTP Headers {#adding-http-header}
 
-HTTP headers can add an additional layer of security and help you detect certain attacks. For information on how to add HTTP headers, see the [HTTP Headers](/developerportal/deploy/environments-details#http-headers) section in *Environment Details*.  
+HTTP headers can add an additional layer of security and help you detect certain attacks. For information on how to add HTTP headers, see the [HTTP Headers](/developerportal/deploy/environments-details/#http-headers) section in *Environment Details*.  
 
 An example of an attack is when an application is embedded in an iframe. Applications that can be embedded within an iframe can be misused by attackers. By using an overlay, it could trick users into clicking buttons and make them perform actions within the application on their behalf without knowing it. This approach is called [clickjacking](https://www.owasp.org/index.php/Clickjacking).
 
-By sending a header to the user’s browser, it can block the use of the Mendix application within an iframe and avoid this type of attack. The header is set by default to block embedding within an iframe, but can be configured using [HTTP Headers](/developerportal/deploy/environments-details#http-headers) in your node’s environment details within the Mendix Developer Portal. If you change this value, you will also need to ensure that *SameSite* cookies are set to the correct value. See [Iframes and Running Apps](/developerportal/deploy/running-in-iframe) for more information.
+By sending a header to the user’s browser, it can block the use of the Mendix application within an iframe and avoid this type of attack. The header is set by default to block embedding within an iframe, but can be configured using [HTTP Headers](/developerportal/deploy/environments-details/#http-headers) in your node’s environment details within the Mendix Developer Portal. If you change this value, you will also need to ensure that *SameSite* cookies are set to the correct value. See [Iframes and Running Apps](/developerportal/deploy/running-in-iframe/) for more information.
 
 ## 12 Maintaining a High Level of Project Hygiene
 
@@ -177,4 +177,4 @@ Security in Mendix does not include scanning files that end-users upload or down
 To scan uploaded files for malicious content, do one of the following:
 
 * Create a custom module and configure the functionality yourself.
-* Check available modules in the [Mendix Marketplace](https://marketplace.mendix.com/). For more information on how to use the Mendix Marketplace content, see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content).
+* Check available modules in the [Mendix Marketplace](https://marketplace.mendix.com/). For more information on how to use the Mendix Marketplace content, see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/).

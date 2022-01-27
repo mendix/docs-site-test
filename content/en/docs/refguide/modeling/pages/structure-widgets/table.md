@@ -12,7 +12,7 @@ tags: ["studio pro", "table", "container widget", "widget"]
 
 ## 1 Introduction
 
-Tables can be used to give structure to a page. They contain [rows](table#rows), columns, and [cells](table#cells). Each cell can contain widgets. 
+Tables can be used to give structure to a page. They contain [rows](/refguide/table/#rows), columns, and [cells](/refguide/table/#cells). Each cell can contain widgets. 
 
 For example, you can create a table with text widgets, a logo, and a data view information as a customer report:
 
@@ -32,7 +32,7 @@ A row has the following properties:
 * **Style** – allows you to specify additional CSS styling
 * **Visible** – allows you to hide an element from a page
 
-For more information on properties listed above, see [Properties Common in the Page Editor](common-widget-properties).
+For more information on properties listed above, see [Properties Common in the Page Editor](/refguide/common-widget-properties/).
 
 ### 2.2 Cells and Their Properties {#cells}
 
@@ -40,9 +40,9 @@ Each section of a table row or column is called a cell. Cells can contain widget
 
 A cell has the following properties:
 
-* **Class** – allows you to specify one or more cascading style sheet (CSS) classes (for more information on this property, see [Properties Common in the Page Editor](common-widget-properties))
+* **Class** – allows you to specify one or more cascading style sheet (CSS) classes (for more information on this property, see [Properties Common in the Page Editor](/refguide/common-widget-properties/))
 
-* **Style** – allows you to specify additional CSS styling (for more information on this property, see [Properties Common in the Page Editor](common-widget-properties))
+* **Style** – allows you to specify additional CSS styling (for more information on this property, see [Properties Common in the Page Editor](/refguide/common-widget-properties/))
 
 * **Cell type** – indicates the type of the cell, the following options are possible:
 
@@ -147,8 +147,8 @@ For example, you can you can have three columns of which the first is 200 pixels
 
 ## 4 Read More
 
-* [Page](page)
-* [Structure](structure-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Structure](/refguide/structure-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)
 
 

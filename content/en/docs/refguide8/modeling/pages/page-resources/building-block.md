@@ -1,21 +1,21 @@
 ---
 title: "Building Block"
-url: /refguide8/building-block
+url: /refguide8/building-block/
 parent: "page-resources"
-menu_order: 40
+weight: 40
 tags: ["studio pro", "building block", "page resource"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/building-block.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/building-block.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 Building blocks are components that can be re-used to streamline the page creation process. By pre-configuring and styling building blocks, users can easily click together interfaces without having to worry about the details of styling guidelines or user experience. 
 
-Building blocks are stored in the project's [UI resources package](ui-resources-package). This keeps them in sync with the project theme, and provides a handy place to consolidate all design-related data. 
+Building blocks are stored in the project's [UI resources package](/refguide8/ui-resources-package/). This keeps them in sync with the project theme, and provides a handy place to consolidate all design-related data. 
 
 To create a building block, simply right-click a widget anywhere in your project in Studio Pro and select **Create building block**. The widget along with its contents will be added as a new building block. The building block will now automatically appear in the **Building blocks** tab of the **Toolbox**. 
 

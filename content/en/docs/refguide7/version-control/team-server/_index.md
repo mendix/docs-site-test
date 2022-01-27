@@ -1,8 +1,8 @@
 ---
 title: "Team Server"
-url: /refguide7/team-server
+url: /refguide7/team-server/
 category: "Version Control"
-menu_order: 20
+weight: 20
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
@@ -16,4 +16,4 @@ The Team Server also connects the capture-and-develop phase of the Agile applica
 
 ## 2 Read More
 
-* [Team Server FAQ](team-server-faq)
+* [Team Server FAQ](/refguide7/team-server-faq/)

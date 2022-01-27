@@ -63,4 +63,4 @@ Next, you need to push the image to a registry. This can be a public registry or
 
 ## 5 Read More
 
-* [How to Run a Mendix Docker Image](run-mendix-docker-image)
+* [How to Run a Mendix Docker Image](/developerportal/deploy/run-mendix-docker-image/)

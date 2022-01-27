@@ -1,6 +1,6 @@
 ---
 title: "XPath weekday-from-dateTime"
-url: /refguide7/xpath-weekday-from-datetime
+url: /refguide7/xpath-weekday-from-datetime/
 parent: "xpath-constraint-functions"
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Native Mobile"
-url: /refguide8/native-mobile
+url: /refguide8/native-mobile/
 category: "Mobile"
-menu_order: 1
+weight: 1
 tags: ["mobile", "native", "studio pro"]
 ---
 
@@ -12,7 +12,7 @@ As of Mendix 8, it is possible to build fully native mobile apps. Native mobile 
 
 ## 2 Documents in This Section
 
-* [Getting the Make It Native App](getting-the-make-it-native-app)
-* [Native Navigation](native-navigation)
-* [Native Mobile Styling](native-styling-refguide)
-* [Working with Vector Graphics](native-svg)
+* [Getting the Make It Native App](/refguide8/getting-the-make-it-native-app/)
+* [Native Navigation](/refguide8/native-navigation/)
+* [Native Mobile Styling](/refguide8/native-styling-refguide/)
+* [Working with Vector Graphics](/refguide8/native-svg/)

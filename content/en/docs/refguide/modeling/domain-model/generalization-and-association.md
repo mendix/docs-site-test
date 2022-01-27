@@ -20,7 +20,7 @@ The Mendix domain model is based on the [class diagram](http://en.wikipedia.org/
 
 ![example of generalization notation](/attachments/refguide/modeling/domain-model/generalization-and-association/generalization-indication.png)
 
-UML also allows us to specify the types of associations, such as an [Aggregation](http://en.wikipedia.org/wiki/Aggregation_(object-oriented_programming)) or [Composition](http://en.wikipedia.org/wiki/Object_composition). The definition of these associations specify whether or not the objects can exist without each other. Unlike UML we can not specify how strong a relationship is. Any dependencies between the two objects have to be specified using [event microflows](/refguide/event-handlers) or [delete behavior/prevention](/refguide/association-properties#delete-behavior).
+UML also allows us to specify the types of associations, such as an [Aggregation](http://en.wikipedia.org/wiki/Aggregation_(object-oriented_programming)) or [Composition](http://en.wikipedia.org/wiki/Object_composition). The definition of these associations specify whether or not the objects can exist without each other. Unlike UML we can not specify how strong a relationship is. Any dependencies between the two objects have to be specified using [event microflows](/refguide/event-handlers/) or [delete behavior/prevention](/refguide/association-properties/#delete-behavior).
 
 ### 2.1 Performance
 
@@ -40,7 +40,7 @@ When you change an object with inheritance the platform will potentially prevent
 
 #### 2.2.2 One-to-One Association
 
-When changing an object, none of the associated objects will be changed. There are two exceptions to this rule: if you change the associated object in an object event, or when associated objects are being 'autocommitted', see [Object Activities](object-activities).
+When changing an object, none of the associated objects will be changed. There are two exceptions to this rule: if you change the associated object in an object event, or when associated objects are being 'autocommitted', see [Object Activities](/refguide/object-activities/).
 
 Whenever you have a high number of write transactions in your application, it is better to choose a one-to-one association, since this limits the number of tables that are being changed/locked during a transaction. However, if you do more inserts than updates it might be worth using inheritance again. Inheritance uses one fewer table to store the relationship; it does not have the association table. Therefore, any inserts require one indexed table fewer to be updated.
 

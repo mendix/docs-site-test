@@ -45,7 +45,7 @@ const customerEntity = model.findEntityByQualifiedName("Customers.Customer");
 const attributeName = customerEntity.attributes[0].name;
 ```
 
-For more information, see [How to Load Units and Elements](loading-units-and-elements).
+For more information, see [How to Load Units and Elements](/apidocs-mxsdk/mxsdk/loading-units-and-elements/).
 
 ## 5 The model.allModules Function
 

@@ -10,7 +10,7 @@ tags: ["App", "Node", "Developer Portal", "Licensed", "Free App", "Upgrade", "Ba
 
 ## 1 Introduction
 
-This how-to will teach you how to migrate your app and its database from a Free App environment to a paid Mendix Basic node. For more information on the Mendix Basic Package, see [Mendix Basic Package](basic-package).
+This how-to will teach you how to migrate your app and its database from a Free App environment to a paid Mendix Basic node. For more information on the Mendix Basic Package, see [Mendix Basic Package](/developerportal/deploy/basic-package/).
 
 You can also see these steps by watching this video:
 
@@ -26,7 +26,7 @@ You can also see these steps by watching this video:
   data-type="inline"
 />
 
-See [Environment Details](environments-details) for more information on setting up any environment details as described in the video.
+See [Environment Details](/developerportal/deploy/environments-details/) for more information on setting up any environment details as described in the video.
 
 ## 2 Prerequisites 
 
@@ -34,9 +34,9 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Make sure you have received confirmation that your Basic node is ready
 
-* Make sure you are the [technical contact](/developerportal/company-app-roles/technical-contact) of the app
+* Make sure you are the [technical contact](/developerportal/collaborate/app-roles/) of the app
 
-* Ensure that [two-factor authentication](two-factor-authentication) is enabled on your account
+* Ensure that [two-factor authentication](/developerportal/deploy/two-factor-authentication/) is enabled on your account
 
 ## 3 Migrating to Mendix Basic
 
@@ -94,13 +94,13 @@ To migrate your Free App and its database to your Mendix Basic environment, foll
 
 ### 3.5 Configure Your Environment
 
-Before your app can be deployed live, You might need to configure your environment details. This is only required if you have some special configurations or you have to specify settings in order for your functionality to work. For example, if your app makes use of scheduled events or application constants, you can configure them here. See [Environment Details](environments-details) for more information about configuring your environment.
+Before your app can be deployed live, You might need to configure your environment details. This is only required if you have some special configurations or you have to specify settings in order for your functionality to work. For example, if your app makes use of scheduled events or application constants, you can configure them here. See [Environment Details](/developerportal/deploy/environments-details/) for more information about configuring your environment.
 
 ### 3.6 Deploy your app
 
 Now you need to deploy your app! In order to do so, you will need a deployment package.
 
-1. Create a deployment package using Environments methods described on the [deployment package documentation page](mendix-cloud-deploy#package-from-team-server).
+1. Create a deployment package using Environments methods described on the [deployment package documentation page](/developerportal/deploy/mendix-cloud-deploy/#package-from-team-server).
 2. Select the deployment package you just created and click **Deploy** to publish your app to production.
 
 ### 3.7 Upload and Restore the Backup

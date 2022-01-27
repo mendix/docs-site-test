@@ -1,6 +1,6 @@
 ---
 title: "Sort Bar"
-url: /refguide7/sort-bar
+url: /refguide7/sort-bar/
 parent: "data-grid"
 aliases:
     - /refguide7/Sort+Bar.html
@@ -11,6 +11,6 @@ The sort bar contains sort items. Each sort item specifies what attribute to sor
 
 If you do not specify any sort items, the objects will appear in the order in which they were created.
 
-{{% alert type="info" %}}
-There are special cases for ordering behavior. For more details, see [Order By Behavior](ordering-behavior).
+{{% alert color="info" %}}
+There are special cases for ordering behavior. For more details, see [Order By Behavior](/refguide7/ordering-behavior/).
 {{% /alert %}}

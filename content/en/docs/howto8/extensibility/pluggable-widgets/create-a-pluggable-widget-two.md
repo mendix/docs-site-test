@@ -1,15 +1,15 @@
 ---
 title: "Build a Pluggable Web Widget: Part 2 (Advanced)"
-url: /howto8/extensibility/create-a-pluggable-widget-two
+url: /howto8/extensibility/create-a-pluggable-widget-two/
 parent: "pluggable-widgets"
-menu_order: 20
+weight: 20
 description: "This how-to will teach you how to add advanced features to your TextBox input widget."
 tags: ["mobile", "javascript", "widget"]
 ---
 
 ## 1 Introduction
 
-The new pluggable widget API makes building feature-complete widgets much easier. This how-to will go beyond [How to Build a Pluggable Web Widget: Part 1](create-a-pluggable-widget-one) and teach you how to add advanced features to your TextBox input widget.
+The new pluggable widget API makes building feature-complete widgets much easier. This how-to will go beyond [How to Build a Pluggable Web Widget: Part 1](/howto8/extensibility/create-a-pluggable-widget-one/) and teach you how to add advanced features to your TextBox input widget.
 
 **This how-to will teach you how to do the following:**
 
@@ -24,7 +24,7 @@ The new pluggable widget API makes building feature-complete widgets much easier
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Complete [Build a Pluggable Web Widget: Part 1](create-a-pluggable-widget-one)
+* Complete [Build a Pluggable Web Widget: Part 1](/howto8/extensibility/create-a-pluggable-widget-one/)
 
 ## 3 Adding Advanced Features to Your TextBox Input Widget
 
@@ -41,7 +41,7 @@ Right now the input is editable for any user at all times. However, the input sh
 
 To add these restrictions, follow the instructions below:
 
-1. In *TextBox.xml* add the [system property](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8#editability)  for `Editability` inside the `propertyGroup` of `Data source` (where you put the attribute inside `propertyGroup` will affect how the attribute renders in the Mendix Studios): 
+1. In *TextBox.xml* add the [system property](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8/#editability)  for `Editability` inside the `propertyGroup` of `Data source` (where you put the attribute inside `propertyGroup` will affect how the attribute renders in the Mendix Studios): 
 
 	```xml
 	<propertyGroup caption="Editability">
@@ -52,7 +52,7 @@ To add these restrictions, follow the instructions below:
 2. Run `npm run build` to update the widget. When viewing in Studio Pro, the `Editability` property can been seen here:
 	
 	{{/* % image_container width="500" % */}}![Editability studio pro](/attachments/howto8/extensibility/pluggable-widgets/create-a-pluggable-widget-two/editability-property-studio-pro.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 3. Now add read-only functionality to your widget. In *TextBox.tsx*, replace the `render` function with the code below to check if the input should be disabled and pass it to in the `TextInput` component:
 
 	```tsx
@@ -125,7 +125,7 @@ To add these restrictions, follow the instructions below:
 5. When you select **Never** for your TextBox widget's `Editable` property in Mendix Studio Pro, the widget will function like this: 
 
 	{{/* % image_container width="500" % */}}![editable never result](/attachments/howto8/extensibility/pluggable-widgets/create-a-pluggable-widget-two/settonever.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 	Explaining the code:
 
 	* The theme styling will apply the disabled style to the input in the same way as the standard input widget in the disabled state 
@@ -137,13 +137,13 @@ This section will teach you to add validation to your TextBox widget. Using micr
 1. Drag a **call microflow button** widget below your TextBox widget and drop it there. On the subsequent dialog box, click **New** to assign a new microflow to your button, name it *Validation_Microflow*, and click **OK**:
 
 	{{/* % image_container width="500" % */}}![validation microflow dialog box](/attachments/howto8/extensibility/pluggable-widgets/create-a-pluggable-widget-two/validation-microflow-dialog.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 	Before moving forward, go back to your app's **Home** page, double-click your validation button, and name it *Show validation feedback*.
 
 2. Open your *Validation_Microflow* and drop a **Validation feedback** activity onto your microflow: 
 
 	{{/* % image_container width="500" % */}}![validation feedback client activity](/attachments/howto8/extensibility/pluggable-widgets/create-a-pluggable-widget-two/addingvalidation.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 	To define your validation feedback activity:<br />
 	a. Double-click the **Validation feedback** activity.<br />
 	b. Set **Variable** to **Entity (MyFirstModule Entity)**.<br />
@@ -217,10 +217,10 @@ This section will teach you to add validation to your TextBox widget. Using micr
 	Now, your widget will show validation feedback from its microflow:
 
 	{{/* % image_container width="350" % */}}![validation feedback demo](/attachments/howto8/extensibility/pluggable-widgets/create-a-pluggable-widget-two/microflowwithvalidationfeedback.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ### 3.3 Customizing Validation
 
-Validation can come from a modeled microflow or nanoflow, but can also be widget specific. For this sample you will learn to implement a custom, required [text template](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8#texttemplate) message which will show when the input is empty.
+Validation can come from a modeled microflow or nanoflow, but can also be widget specific. For this sample you will learn to implement a custom, required [text template](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8/#texttemplate) message which will show when the input is empty.
 
 
 1. In *TextBox.xml*, add the `requiredMessage` property inside the `propertyGroup` of `Data source`:
@@ -271,7 +271,7 @@ Validation can come from a modeled microflow or nanoflow, but can also be widget
 3. When entering text and removing all characters, the following error is shown:
 
 	{{/* % image_container width="500" % */}}![no character error](/attachments/howto8/extensibility/pluggable-widgets/create-a-pluggable-widget-two/nocharerror.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ### 3.4 Adding an OnChange Action
 
 Until now the components did not keep any state. Each keystroke passed through the `onUpdate` function, which set the new value. The newly-set value was received through the React lifecycle, which updated the property and called the `render` function. This method can cause many rendering actions to be triggered by all widgets that are using that same attribute, such as a re-render for each keystroke. This pattern also makes it also difficult to trigger an onChange action. The onChange action should only trigger on leaving the input combined with a changed value. 
@@ -552,7 +552,7 @@ Explaining the code:
 
 ### 3.7 Grouping and System Properties
 
-All pluggable widgets will automatically benefit from the `Visibility` property, which can be used to set the [conditional visibility](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8#visibility) of a widget. Within *widget.xml*, property groups can be used to move a property to a specific tab or place properties in a group. For more detailed information on property groups, see the (Property Groups)[/apidocs-mxsdk/apidocs/pluggable-widgets#property-groups] section of the *Pluggable Widgets API Documentation*.
+All pluggable widgets will automatically benefit from the `Visibility` property, which can be used to set the [conditional visibility](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8/#visibility) of a widget. Within *widget.xml*, property groups can be used to move a property to a specific tab or place properties in a group. For more detailed information on property groups, see the (Property Groups)[/apidocs-mxsdk/apidocs/pluggable-widgets#property-groups] section of the *Pluggable Widgets API Documentation*.
 
 To apply this knowledge, reorganize the `properties` section in *TextBox.xml* to make the properties look like the core text box properties (which you can see after double-clicking the widget):
 
@@ -605,10 +605,10 @@ To apply this knowledge, reorganize the `properties` section in *TextBox.xml* to
 Your code alterations will produce the following result:
 
 	{{/* % image_container width="500" % */}}![property dialog Studio Pro](/attachments/howto8/extensibility/pluggable-widgets/create-a-pluggable-widget-two/property-grouping-studio-pro.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 4 Read More
 
-* [Build a Pluggable Web Widget: Part 1](create-a-pluggable-widget-one)
-* [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets)
-* [Client APIs Available to Pluggable Widgets](/apidocs-mxsdk/apidocs/client-apis-for-pluggable-widgets-8)
-* [Pluggable Widget Property Types](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8)
+* [Build a Pluggable Web Widget: Part 1](/howto8/extensibility/create-a-pluggable-widget-one/)
+* [Pluggable Widgets API](/apidocs-mxsdk/apidocs/pluggable-widgets/)
+* [Client APIs Available to Pluggable Widgets](/apidocs-mxsdk/apidocs/client-apis-for-pluggable-widgets-8/)
+* [Pluggable Widget Property Types](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8/)

@@ -60,7 +60,7 @@ During the import process, spreadsheet data is analyzed and converted the follow
     
 
 Download this Excel spreadsheet example to check how data is normalized there: [Spreadsheet Example](/attachments/studio/work-with-data/start-with-data/Example.xlsx). You can also import it into an app and test how this spreadsheet is converted. For more information, see the [Importing a Spreadsheet](#importing-spreadsheet) section.
-. You can also import it into an app and test how this spreadsheet is converted. For more information, see the [Importing a Spreadsheet](#importing-spreadsheet) section.
+
 
 ## 4 Starting an App From a Spreadsheet {#importing-spreadsheet}
 
@@ -151,7 +151,7 @@ Open the domain model to see all created entities and attributes:
 
 {{% alert color="success" %}}
 
-After import is completed, you can [preview or publish your app](publishing-app) and see all your data or continue configuring your app.
+After import is completed, you can [preview or publish your app](/studio/publishing-app/) and see all your data or continue configuring your app.
 
 {{% /alert %}}
 
@@ -175,5 +175,5 @@ If **Generate pages for my data** has been selected in the preview page, pages a
 
 ## 5 Read More
 
-* [Domain Model](domain-models)
-* [Attributes](domain-models-attributes) 
+* [Domain Model](/studio/domain-models/)
+* [Attributes](/studio/domain-models-attributes/) 

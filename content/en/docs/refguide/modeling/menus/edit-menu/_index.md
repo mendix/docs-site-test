@@ -9,7 +9,7 @@ tags: ["Studio Pro", "view menu", "top bar"]
 
 ## 1 Introduction
 
-Via the **Edit** menu you can perform various actions, such cut/copy/paste or search where a particular document is used. You can also open the [Preferences](preferences-dialog) dialog that contains user-specific settings. 
+Via the **Edit** menu you can perform various actions, such cut/copy/paste or search where a particular document is used. You can also open the [Preferences](/refguide/preferences-dialog/) dialog that contains user-specific settings. 
 
 ![Edit Menu](/attachments/refguide/modeling/menus/edit-menu/edit-menu.png)
 
@@ -34,11 +34,11 @@ The **Edit** menu items are described in the table below:
 | **Go to** (<kbd>Ctrl</kbd> + <kbd>G</kbd>)                   | Quickly navigates to any document or domain model element in the app by typing a few letters and pressing <kbd>Enter</kbd>. |
 | **Next Error** (<kbd>F8</kbd>)                               | Highlights the next error in the **Error List** pane and open it in an editor. |
 | **Previous Error** (<kbd>Shift</kbd> + <kbd>F8</kbd>)        | Highlights the previous error result in the **Error List** pane and open it in an editor. |
-| **Preferences**                                              | Opens the **Preferences** dialog box, where you can set your general, model, and advanced editing preferences. For more information on the **Preferences** dialog box, see [Preferences](preferences-dialog). |
+| **Preferences**                                              | Opens the **Preferences** dialog box, where you can set your general, model, and advanced editing preferences. For more information on the **Preferences** dialog box, see [Preferences](/refguide/preferences-dialog/). |
 
 ## 3 Read More
 
-* [Changes Pane](changes-pane)
-* [Errors Pane](errors-pane)
-* [App Explorer](project-explorer)
-* [Studio Pro Overview](studio-pro-overview)
+* [Changes Pane](/refguide/changes-pane/)
+* [Errors Pane](/refguide/errors-pane/)
+* [App Explorer](/refguide/project-explorer/)
+* [Studio Pro Overview](/refguide/studio-pro-overview/)

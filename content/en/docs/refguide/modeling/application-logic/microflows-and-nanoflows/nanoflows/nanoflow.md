@@ -7,7 +7,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-This page describes the properties of nanoflows. For details on using nanoflows and nanoflow elements, see [Nanoflows](nanoflows).
+This page describes the properties of nanoflows. For details on using nanoflows and nanoflow elements, see [Nanoflows](/refguide/nanoflows/).
 
 ## 2 Properties
 
@@ -37,15 +37,15 @@ Nanoflow properties consist of the following sections:
 
 #### 2.2.1 Return Type
 
-The return type defines what information the nanoflow returns. The caller of the nanoflow will get a result of this type. For possible return types, see [Data Types](data-types).
+The return type defines what information the nanoflow returns. The caller of the nanoflow will get a result of this type. For possible return types, see [Data Types](/refguide/data-types/).
 
 ### 2.3 Security Section{#security}
 
 #### 2.3.1 Allowed Roles
 
-These are the [module roles](module-security#module-role) the user must have to be able to execute the nanoflow.
+These are the [module roles](/refguide/module-security/#module-role) the user must have to be able to execute the nanoflow.
 
-For more information, see [Module Security](module-security).
+For more information, see [Module Security](/refguide/module-security/).
 
 ### 2.4 Usage Section {#usage}
 

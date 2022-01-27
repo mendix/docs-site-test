@@ -1,24 +1,24 @@
 ---
 title: "Microflow Source"
-url: /refguide8/microflow-source
+url: /refguide8/microflow-source/
 parent: "data-sources"
 tags: ["studio pro", "microflow source", "data source"]
-menu_order: 40
+weight: 40
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/microflow-source.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/microflow-source.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-In most cases, you use the **Database**, **XPath**, or **Association** data sources to fill a [data widget](data-widgets). For example, if the properties of a data grid require an object of an entity selected in the data grid, the data grid gets its objects from a database query. Another example is that a nested template grid can retrieve its objects over an association. However, sometimes the target objects need to adhere to very specific criteria, or different objects are shown under different circumstances that cannot be handled by an [XPath](xpath-constraints). In these situations a **Microflow** data source may be required.
+In most cases, you use the **Database**, **XPath**, or **Association** data sources to fill a [data widget](/refguide8/data-widgets/). For example, if the properties of a data grid require an object of an entity selected in the data grid, the data grid gets its objects from a database query. Another example is that a nested template grid can retrieve its objects over an association. However, sometimes the target objects need to adhere to very specific criteria, or different objects are shown under different circumstances that cannot be handled by an [XPath](/refguide8/xpath-constraints/). In these situations a **Microflow** data source may be required.
 
 When a data widget with a microflow data source is displayed in the browser or refreshed, it runs the designated microflow and displays the return value. The manner in which the objects are acquired in the microflow is entirely up to you, which allows for unlimited control over what objects to return.
 
 A microflow data source ignores all context. It performs the actions described in the microflow, nothing else. For example, nested data widgets with a microflow data source will not automatically create or invoke associations to the encasing data widget.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 When **Microflow** is selected as the data source, this is regarded as "indirect usage." This means that you cannot also select an **Entity (path)** as you can with the **Database**, **XPath**, or **Association** data source types.
 {{% /alert %}}
 
@@ -65,4 +65,4 @@ This duplicates the [Microflow](#microflow) specified above.
 
 ## 4 Read More
 
-* [Data Widgets](data-widgets)
+* [Data Widgets](/refguide8/data-widgets/)

@@ -23,7 +23,7 @@ In the top-right corner of the page, you find the **Export** and **Run** buttons
 | Name                   | Description                              |
 | ---------------------- | ---------------------------------------- |
 | Export Test Definition | Creates an XML representation of your test suite, which you can import into another app. |
-| Run                    | The [run configuration page](rg-two-test-run) opens, where you edit the run configuration. If the test suite was run before, the prior configuration is copied. |
+| Run                    | The [run configuration page](/addons/ats-addon/rg-two-test-run/) opens, where you edit the run configuration. If the test suite was run before, the prior configuration is copied. |
 
 ### 2.3 Test Steps
 

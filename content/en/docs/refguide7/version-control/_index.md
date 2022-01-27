@@ -1,6 +1,6 @@
 ---
 title: "Version Control"
-url: /refguide7/version-control
+url: /refguide7/version-control/
 #description: "Set a description with a maximum of 140 characters; this should describe what the goal of the document is, and it can be different from the document introduction; this is optional, and it can be removed"
 tags: ["Version Control", "Application Lifecycle Management", "Commit", "Collaborate"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -15,7 +15,7 @@ Version Control allows you to manage your app development in two ways:
 
 Version control in Mendix is built on top of [Apache Subversion](https://subversion.apache.org/) and the concepts will be familiar to Subversion users. Mendix simplifies Subversion commands by building them into the Modelers and Developer Portal.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 The processes involving the Web Modeler described here apply to collaborative working in Mendix versions 7.23.3 and above. 
 
@@ -141,7 +141,7 @@ The developer using the Desktop Modeler wants to include the changes made by the
 
 All the changes from the Web Modeler working copy are put into a new revision on the Team Server (state 4). This revision is merged into the Desktop Modeler working copy. While the Desktop Modeler working copy is being updated, the Web Modeler is locked temporarily so that the Web Modeler working copy is stable while it is copied.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This will also pick up changes from other developers using the Desktop Modeler, if they have committed changes to this branch.
 {{% /alert %}}
 
@@ -208,5 +208,5 @@ Note that *errors* can be introduced by the *merge* process even if no conflicts
 
 ## 5 Main Documents in This Category
 
-* [Using Version Control in the Desktop Modeler](using-version-control-in-the-dm)
-* [Team Server](team-server)
+* [Using Version Control in the Desktop Modeler](/refguide7/using-version-control-in-the-dm/)
+* [Team Server](/refguide7/team-server/)

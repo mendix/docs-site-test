@@ -1,6 +1,6 @@
 ---
 title: "Image"
-url: /refguide7/image
+url: /refguide7/image/
 parent: "common-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -8,9 +8,9 @@ parent: "common-widgets"
 
 The image widget can be used to show a predefined image on a page, layout or snippet.
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 
-If you want to dynamically show different images based on data, please take a look at the [image viewer](image-viewer).
+If you want to dynamically show different images based on data, please take a look at the [image viewer](/refguide7/image-viewer/).
 
 {{% /alert %}}
 
@@ -32,7 +32,7 @@ If you want to dynamically show different images based on data, please take a lo
 
 The actual image that this widget shows.
 
-See [Images](images).
+See [Images](/refguide7/images/).
 
 {{% snippet file="/static/_includes/refguide7/Image+Width+Unit.md" %}}
 

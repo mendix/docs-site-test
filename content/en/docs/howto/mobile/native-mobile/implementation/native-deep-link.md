@@ -21,16 +21,16 @@ When an app is installed it registers the `schema` and optionally the `host` so 
 
 ### 1.1 Testing With the Make It Native App
 
-For this tutorial we recommend running your app from source against a local instance of Mendix Studio Pro. This will save you time when rebuilding and redeploying your app. To do this, follow the steps in [How to Get Started with Native Mobile](/howto/mobile/getting-started-with-native-mobile) to make an app and link it to the Make It Native mobile testing app.
+For this tutorial we recommend running your app from source against a local instance of Mendix Studio Pro. This will save you time when rebuilding and redeploying your app. To do this, follow the steps in [How to Get Started with Native Mobile](/howto/mobile/getting-started-with-native-mobile/) to make an app and link it to the Make It Native mobile testing app.
 
-Please note that the Make It Native app has already the registered schema `makeitnative://` and can be used out of the box. To use the Make It Native app with that schema, see the [Using Deep Linking in Your App](#using-deep-linking) section below. If you want to change this schema, see [How to Create a Custom Developer App](/howto/mobile/how-to-devapps) to build your own custom developer app and then use the [Setting up App Deep Linking](#set-up) section below to change its schema.
+Please note that the Make It Native app has already the registered schema `makeitnative://` and can be used out of the box. To use the Make It Native app with that schema, see the [Using Deep Linking in Your App](#using-deep-linking) section below. If you want to change this schema, see [How to Create a Custom Developer App](/howto/mobile/how-to-devapps/) to build your own custom developer app and then use the [Setting up App Deep Linking](#set-up) section below to change its schema.
 
 ## 2. Prerequisites
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Complete the [Prerequisites](/howto/mobile/deploying-native-app#prerequisites) section of *How to Deploy Your First Mendix Native Mobile App*
-* Make sure your [Native Mobile Resources](/appstore/modules/native-mobile-resources) module is up to date
+* Complete the [Prerequisites](/howto/mobile/deploying-native-app/#prerequisites) section of *How to Deploy Your First Mendix Native Mobile App*
+* Make sure your [Native Mobile Resources](/appstore/modules/native-mobile-resources/) module is up to date
 * Install git [command line](https://git-scm.com/downloads) tool for working with the Native Mobile App Builder CLI
 * Install Mendix Studio Pro v 8.15.0 or above in order to use the Native Mobile App Builder
 
@@ -42,18 +42,18 @@ If you do not already have a native template for your app, you can create one by
 
 Set up a native template with the **Native Mobile App Builder** by following these instructions:
 
-1.  Launch the Native Mobile App Builder from the **App** menu. Walk through the wizard and configure the app's details and tokens (for more information, see [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app)):
+1.  Launch the Native Mobile App Builder from the **App** menu. Walk through the wizard and configure the app's details and tokens (for more information, see [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app/)):
 
     {{/* % image_container width="400" % */}}![launch native mobile builder](/attachments/howto/mobile/native-mobile/implementation/native-deep-link/launch-native-mobile-app-builder.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 2.  Once done with the wizard you will enable deep linking capabilities. First, select the **Capabilities** menu item:
 
     {{/* % image_container width="400" % */}}![capability menu option](/attachments/howto/mobile/native-mobile/implementation/native-deep-link/capability-menu-option.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}    
+    
 3.  Enter the `schema` name without the appending `://`:
 
     {{/* % image_container width="400" % */}}![deep link input field](/attachments/howto/mobile/native-mobile/implementation/native-deep-link/deep-link-input-field.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}    
+    
 4. Click the **Save** button. 
 
 5. Navigate to the build page and click **Build**.
@@ -68,7 +68,7 @@ Now your app is ready to use links, so you will set up the additional path and q
 
 ### 4.1 Native Deep Link Nanoflow Actions 
 
-Now you have to handle the incoming URL in your Mendix application. To do this, you will use the Nanoflow Actions **Register Deep Link** and **Parse Url To Object** found in the [Native Mobile Resources](/appstore/modules/native-mobile-resources) module. This module is automatically included in your app if it began as an up-to-date Starter App. If you do not see these actions available in your app, please update the module through the Marketplace.
+Now you have to handle the incoming URL in your Mendix application. To do this, you will use the Nanoflow Actions **Register Deep Link** and **Parse Url To Object** found in the [Native Mobile Resources](/appstore/modules/native-mobile-resources/) module. This module is automatically included in your app if it began as an up-to-date Starter App. If you do not see these actions available in your app, please update the module through the Marketplace.
 
 #### 4.1.1 Registering Deep Link
 
@@ -149,7 +149,7 @@ Add a few test link buttons, for example {app://myapp/task/123} or {makeitnative
 
 ## 5. Read more
 
-*   [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app)
+*   [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app/)
 *   [React Native Linking](https://facebook.github.io/react-native/docs/linking)
 *   [Deep Linking Android](https://developer.android.com/training/app-links/deep-linking)
 *   [Deep Linking iOS](https://developer.apple.com/documentation/uikit/inter-process_communication/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app)

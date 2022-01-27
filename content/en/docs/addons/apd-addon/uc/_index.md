@@ -10,6 +10,6 @@ The *APD Use Cases* are organized according to the APD version.
 
 ## 2 Main Documents in This Section
 
-* [APD 3 Use Cases](uc-three)
-* [APM 2 Use Cases](uc-two)
-* [APM 1 Use Case](uc-one)
+* [APD 3 Use Cases](/addons/apd-addon/uc-three/)
+* [APM 2 Use Cases](/addons/apd-addon/uc-two/)
+* [APM 1 Use Case](/addons/apd-addon/uc-one/)

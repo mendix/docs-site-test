@@ -23,7 +23,7 @@ On the **Environments** page, there are four tabs:
     * IP Address Filtering
     * TLS Client Certificate Verification
 * **Permissions**
-    * [Node Permissions](/developerportal/deploy/node-permissions)
+    * [Node Permissions](/developerportal/deploy/node-permissions/)
     
    ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments/environment-tab.png)       
 
@@ -100,13 +100,13 @@ There are three types of environment statuses:
 The environment status is cached; there can be a delay of up to five minutes before the status icon displays a change of status.
 {{% /alert %}}
 
-To see the details of the alerts, click **Alerts**. This is documented here: [Alerts](/developerportal/operate/monitoring-application-health).
+To see the details of the alerts, click **Alerts**. This is documented here: [Alerts](/developerportal/operate/monitoring-application-health/).
 
 **Actions**
 
 There are two actions you can take :
 
-* **Details** of the selected environment – information about the details available are documented here: [Details](environments-details)
+* **Details** of the selected environment – information about the details available are documented here: [Details](/developerportal/deploy/environments-details/)
 
 * **Transport to ...** – initiates the staging of an environment to the next stage: acceptance or production
 
@@ -130,7 +130,7 @@ You can use the **Search...** box to find a specific environment.
 
 **Reordering Environments**
 
-If you are the [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) you can reorder the environments by dragging and dropping:
+If you are the [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) you can reorder the environments by dragging and dropping:
 
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments/reorder-environments.gif)
 
@@ -138,13 +138,13 @@ If you are the [Technical Contact](/developerportal/collaborate/app-roles#techni
 
 For flexible environments there is only one action you can take :
 
-* **Details** of the selected environment – information about the details available are documented here: [Details](environments-details)
+* **Details** of the selected environment – information about the details available are documented here: [Details](/developerportal/deploy/environments-details/)
 
 There is no concept of staging, and you need to deploy your app directly to the target environment.
 
 #### 2.2.3 Setup Studios Deployment
 
-If you are the [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) for an app, you will be see the **Setup Studios Deployment** button which enables you to set the target environment to which apps will be deployed from Studio and Studio Pro. For more information, see [Studio Deployment Settings](studio-deployment-settings).
+If you are the [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) for an app, you will be see the **Setup Studios Deployment** button which enables you to set the target environment to which apps will be deployed from Studio and Studio Pro. For more information, see [Studio Deployment Settings](/developerportal/deploy/studio-deployment-settings/).
 
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments/setup-studios-target.png)
 
@@ -152,7 +152,7 @@ If you are the [Technical Contact](/developerportal/collaborate/app-roles#techni
 
 ![](/attachments/developerportal/deploy/mendix-cloud-deploy/environments/activity.png)
 
-If you are the [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) you will see the **Download to CSV** button and can download a copy of the activity log as follows:
+If you are the [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) you will see the **Download to CSV** button and can download a copy of the activity log as follows:
 
 1. Click **Download to CSV**.
 2. Choose the period for which you want to download log entries. If you choose **Custom Period** you will need to enter a valid period using **Start Date** and **End Date**.
@@ -174,23 +174,23 @@ When your Mendix app needs to be accessible via your own URL (for example, `http
 
 There is also a section with an overview of linked custom domains.
 
-For more information, see [Custom Domains](custom-domains).
+For more information, see [Custom Domains](/developerportal/deploy/custom-domains/).
 
 ## 4 Access Restriction Profiles {#asp}
 
 In this tab you can manage custom access restriction profiles. These profiles can combine IP range filters and client certificate verification, then any match on either the IP range or the client certificate will grant access. Access restriction profiles can be applied to path-based access restrictions in specific environments of the application.
 
-For more information on setting up access restriction profiles, see [Restrict Access for Incoming Requests](access-restrictions)
+For more information on setting up access restriction profiles, see [Restrict Access for Incoming Requests](/developerportal/deploy/access-restrictions/)
 
 ## 5 Permissions {#permissions}
 
-Here, the [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) and other team members who can *Manage Permissions* can manage various permissions to the environments for each team member. Team members who have permission to *Deploy, Publish, and Monitor* can view the permissions.
+Here, the [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) and other team members who can *Manage Permissions* can manage various permissions to the environments for each team member. Team members who have permission to *Deploy, Publish, and Monitor* can view the permissions.
 
-For more information on managing node permissions, see [Node Permissions](node-permissions).
+For more information on managing node permissions, see [Node Permissions](/developerportal/deploy/node-permissions/).
 
 ## 6 Read More 
 
-* [Deploy and Manage](/developerportal/deploy)
-* [Environment Details](environments-details)
-* [How to Receive Environment Status Alerts](/developerportal/operate/receive-alerts)
-* [How to Restrict Access for Incoming Requests](access-restrictions)
+* [Deploy and Manage](/developerportal/deploy/)
+* [Environment Details](/developerportal/deploy/environments-details/)
+* [How to Receive Environment Status Alerts](/developerportal/operate/receive-alerts/)
+* [How to Restrict Access for Incoming Requests](/developerportal/deploy/access-restrictions/)

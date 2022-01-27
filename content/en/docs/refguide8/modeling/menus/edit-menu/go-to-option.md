@@ -1,14 +1,14 @@
 ---
 title: "Go to Option"
-url: /refguide8/go-to-option
+url: /refguide8/go-to-option/
 parent: "edit-menu"
 description: "Describes the Go to option in Mendix Studio Pro."
-menu_order: 40
+weight: 40
 tags: ["project", "go to", "navigation", "usage"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/go-to-option.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/go-to-option.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -28,8 +28,8 @@ The examples of using the **Go to** option are described below:
 
 ## 3 Read More
 
-* [Find, Find Advanced, and Find Usages](find-and-find-advanced)
-* [Navigation](navigation)
-* [Pages](pages)
-* [Microflows](microflows)
-* [Domain Model](domain-model)
+* [Find, Find Advanced, and Find Usages](/refguide8/find-and-find-advanced/)
+* [Navigation](/refguide8/navigation/)
+* [Pages](/refguide8/pages/)
+* [Microflows](/refguide8/microflows/)
+* [Domain Model](/refguide8/domain-model/)

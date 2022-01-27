@@ -29,7 +29,7 @@ By default, the best options are already selected for the most common situations
 * **Generate API key**
 * **Delete this environment** – Clicking this button will delete the environment from the APM manager.
 
-When you generate an API key for a runtime/Mendix Studio Pro environment, you see this key only once, so copy-paste and use it immediately. For more information about the installation, see the [APM 2 Installation Guide](ig-two).
+When you generate an API key for a runtime/Mendix Studio Pro environment, you see this key only once, so copy-paste and use it immediately. For more information about the installation, see the [APM 2 Installation Guide](/addons/apd-addon/ig-two/).
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-two-apm/rg-two-settings/api_key_dialog.png)
 

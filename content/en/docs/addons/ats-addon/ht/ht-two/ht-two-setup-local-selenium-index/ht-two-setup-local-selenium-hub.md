@@ -10,7 +10,7 @@ tags: ["ATS", "testing", "Selenium hub"]
 
 This how-to shows you an example of a simple installation of a Selenium hub with a Google Chrome/Mozilla Firefox node on a Windows machine. For the official documentation go to: [https://www.seleniumhq.org/projects/](https://www.seleniumhq.org/projects/)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Mendix does not deliver support for local Selenium solutions. 
 {{% /alert %}}
 
@@ -126,7 +126,7 @@ The following steps describe how to start the node with three Chrome and three F
 
 You can start testing by sending your test script to `http://yourmachinenameorIP:4444/wd/hub`.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Make sure it is reachable from the outside!
 {{% /alert %}}
 
@@ -223,4 +223,4 @@ The following steps describe how to create a batch file to start up everything a
 	start.bat
 	```
 
-Congratulations you have finished setting up a local selenium hub. The next how-to is [How to Set Up a Local Docker Selenium Hub](ht-two-setup-local-docker-selenium-hub). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+Congratulations you have finished setting up a local selenium hub. The next how-to is [How to Set Up a Local Docker Selenium Hub](/addons/ats-addon/ht-two-setup-local-docker-selenium-hub/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

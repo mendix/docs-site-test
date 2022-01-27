@@ -1,21 +1,21 @@
 ---
 title: "Navigation Consistency Errors"
-url: /refguide8/consistency-errors-navigation
+url: /refguide8/consistency-errors-navigation/
 parent: "consistency-errors"
 description: "Describes consistency errors in Mendix Studio Pro and the way to fix them."
 tags: ["Studio Pro", "consistency errors", "checks", "errors", "navigation"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/consistency-errors-navigation.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/consistency-errors-navigation.pdf).
 {{% /alert %}}
 
 ## 1 Introduction 
 
 In this document, we explain how to solve the most common consistency errors that can occur when configuring navigation in Studio Pro. An example of a consistency error is when you set a page that has a data view as a menu item. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This document does not describe *all* the errors, as there are a lot of errors that can occur, some of which are simple and do not need extra explanation, others are rare and/or heavily dependent on a use-case. 
 
@@ -31,13 +31,13 @@ The most common errors you can come across when configuring a navigation item ar
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | CE0568     | The selected page {Name of the page} expects an object of type {type of object}, which is not available here. | You have set a page that expects an object to be passed to it (a page with a data view and the **Context** data source) as a menu item. | Pass an object to the page by changing the **On click** property  of the menu item from **Show a page** to **Create object**. For more information, see the [Error Fix Example for CE0568](#page-expects-an-object) section. |
 | CE0529     | The selected {Name of the page} expects an object of type {type of object} and cannot be used as a home page. Change the page or use a microflow to provide the page with an object. | You have set a page that expects an object to be passed to it (for example, a page with a data view) as a home page. But the home page has no object that is passed to it, because it is the starting point of a flow. | You can use a microflow as the home page that will open the preferred page and pass a specific object to the home page. For more information, see the [Error Fix Example for CE0529](#home-page-expects-an-object). |
-| CE0548     | Items with subitems cannot have an action themselves.        | You have assigned an [on-click event](on-click-event) to a menu item that has a sub-item, when menu items with have sub-items cannot have on-click events assigned to them. | You need to either set the on-click event of the menu item to *Nothing*, or delete/move the sub-item. |
+| CE0548     | Items with subitems cannot have an action themselves.        | You have assigned an [on-click event](/refguide8/on-click-event/) to a menu item that has a sub-item, when menu items with have sub-items cannot have on-click events assigned to them. | You need to either set the on-click event of the menu item to *Nothing*, or delete/move the sub-item. |
 
 ### 2.1 Error Fix Example for CE0568 {#page-expects-an-object}
 
 When you set a page with a data view as a menu item, you get a consistency error, because the page expects an object to be passed to it. 
 
-For example, you have created a menu item called **Program** for a **Responsive** [profile](navigation#profiles). This menu item opens the **Program** page. However, the **Program** page has a data view on it and expects a *ProgramItem* object to be passed to it, so that it can show the program details of a specific *ProgramItem* on the page. As a result, you get a consistency error, as no object is passed to this page from the navigation.
+For example, you have created a menu item called **Program** for a **Responsive** [profile](/refguide8/navigation/#profiles). This menu item opens the **Program** page. However, the **Program** page has a data view on it and expects a *ProgramItem* object to be passed to it, so that it can show the program details of a specific *ProgramItem* on the page. As a result, you get a consistency error, as no object is passed to this page from the navigation.
 
 ![Scheme Showing the Menu Item Error](/attachments/refguide8/modeling/menus/view-menu/errors-pane/consistency-errors/consistency-errors-navigation/page-expects-an-object-error.png)
 
@@ -54,12 +54,12 @@ To fix the error, you can create an object and pass it to the page. Do the follo
     c. Set **Program** as **On click page**. <br/>
 
     ![Menu Item Properties](/attachments/refguide8/modeling/menus/view-menu/errors-pane/consistency-errors/consistency-errors-navigation/menu-item-properties.png)<br/>
-<br/>
+
 Now when an end-user clicks the menu item, a new *ProgramItem* object will be created and passed to the page.
 
 ### 2.2. Error Fix Example for CE0529 {#home-page-expects-an-object}
 
-If you set a page that expects an object to be passed to it as a home page for a [navigation profile](navigation#properties), you will get a consistency error.
+If you set a page that expects an object to be passed to it as a home page for a [navigation profile](/refguide8/navigation/#properties), you will get a consistency error.
 
 For example, you have added a data view that expects an object of type *Customer* to the home page of the responsive profile, and you get a consistency error. 
 
@@ -96,6 +96,6 @@ Now the new object of type *Customer* will be created and passed to the home pag
 
 ## 3 Read More
 
-* [Navigation](navigation)
-* [Microflows](microflows)
-* [Microflow Properties](microflow)
+* [Navigation](/refguide8/navigation/)
+* [Microflows](/refguide8/microflows/)
+* [Microflow Properties](/refguide8/microflow/)

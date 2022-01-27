@@ -13,7 +13,7 @@ This activity can be used in both **Microflows** and **Nanoflows**.
 
 ## 1 Introduction
 
-The **List operation** activity can perform various actions on a list. The result of the action is returned as a new list in contrast to the [Change list](change-list) activity.
+The **List operation** activity can perform various actions on a list. The result of the action is returned as a new list in contrast to the [Change list](/refguide/change-list/) activity.
 
 The actions which can be performed are:
 

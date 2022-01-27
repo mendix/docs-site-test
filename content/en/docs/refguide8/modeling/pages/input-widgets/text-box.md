@@ -1,19 +1,19 @@
 ---
 title: "Text Box"
-url: /refguide8/text-box
+url: /refguide8/text-box/
 parent: "input-widgets"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "data"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/text-box.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/text-box.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-A text box is used to display and, optionally, allow the end-user to edit the value of an attribute from an object in a textual form. It can be used to display attributes of the following [data types](data-types):
+A text box is used to display and, optionally, allow the end-user to edit the value of an attribute from an object in a textual form. It can be used to display attributes of the following [data types](/refguide8/data-types/):
 
 * Autonumber
 * Decimal
@@ -22,7 +22,7 @@ A text box is used to display and, optionally, allow the end-user to edit the va
 * Long
 * String
 
-A text box must be placed in a [data widget](data-widgets) and displays an attribute of the object(s) retrieved by that widget. The name of the attribute to be displayed is shown inside the text box, between square brackets, and colored blue.
+A text box must be placed in a [data widget](/refguide8/data-widgets/) and displays an attribute of the object(s) retrieved by that widget. The name of the attribute to be displayed is shown inside the text box, between square brackets, and colored blue.
 
 For example, the following text box allows the end-user to see, and set, the **Name** of a customer.
 
@@ -146,7 +146,7 @@ Attributes of the data type `String` or `Hashed string` can have their value hid
 
 #### 2.8.2 Input Mask
 
-{{% alert type="info" %}}Input masks are not supported on native mobile pages.
+{{% alert color="info" %}}Input masks are not supported on native mobile pages.
 
 Input masks are designed for string data types. Be cautious when using them with numeric or hashed string data types.
 {{% /alert %}}
@@ -196,6 +196,6 @@ It can be used, for example, to give a hint to the end-user what kind of text sh
 
 ## 3 Read More
 
-* [Data Types](data-types)  
-* [Data View](data-view)
-* [Attributes](attributes)
+* [Data Types](/refguide8/data-types/)  
+* [Data View](/refguide8/data-view/)
+* [Attributes](/refguide8/attributes/)

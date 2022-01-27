@@ -38,7 +38,7 @@ You can enable conditional visibility based on the outcome of the [dynamic data]
 The **Condition Based on** property is only shown when [Visible Based on Data](#based-on-data) is enabled. The following options are available:
 
 * **Attribute** – Defines whether the condition is based on the attribute value. In this case the widget will be shown only when it matches a certain value of the selected attribute.
-* **Expression** – Defines whether the condition is based on the expression. In this case the widget will be shown only when the expression returns the Boolean value `true`. For more information on expressions, see [Expressions](expressions).
+* **Expression** – Defines whether the condition is based on the expression. In this case the widget will be shown only when the expression returns the Boolean value `true`. For more information on expressions, see [Expressions](/studio/expressions/).
 
 ### 2.3 Attribute {#attribute}
 
@@ -54,7 +54,7 @@ If you would like to show a special offer price only for customers with the **Go
 
 ### 2.5 Expression
 
-This property allows you to create an expression and is shown only when the expression the [Condition is Based on](#condition) is set to **Expression**. The expression should be of the Boolean type. For more information on how to create expressions, see [Expressions](expressions).
+This property allows you to create an expression and is shown only when the expression the [Condition is Based on](#condition) is set to **Expression**. The expression should be of the Boolean type. For more information on how to create expressions, see [Expressions](/studio/expressions/).
 
 ### 2.7 Visible Based on Role {#role-based}
 
@@ -64,7 +64,7 @@ The widget can be made visible to users with a specific user role only. For exam
 
 {{% alert color="info" %}}
 
-You can only configure role-based conditional visibility when security is enabled. For more information, see [Security, Roles & Permissions](settings-security).
+You can only configure role-based conditional visibility when security is enabled. For more information, see [Security, Roles & Permissions](/studio/settings-security/).
 
 {{% /alert %}}
 
@@ -91,7 +91,7 @@ To configure visibility based on the attribute value, follow the steps below:
 5. The **Attribute Values** property is now displayed in properties. Untick the values that do not meet the conditions you would like to set:
 
     {{/* % image_container width="300" % */}}![](/attachments/studio/page-editor/page-editor-widgets/page-editor-widgets-visibility-section/attribute-values.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}}
+
 Conditional visibility based on the attribute value is set for the widget.
 
 ### 3.2 Configuring Conditional Visibility Based on a Role
@@ -110,5 +110,5 @@ Conditional visibility based on user roles is set for the widget.
 
 ## 4 Read More
 
-* [Widgets](page-editor-widgets)
-* [Security, Roles & Permissions](settings-security)
+* [Widgets](/studio/page-editor-widgets/)
+* [Security, Roles & Permissions](/studio/settings-security/)

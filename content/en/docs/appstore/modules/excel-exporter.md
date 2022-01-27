@@ -19,11 +19,11 @@ You can add styling to your Excel to create proper headers and styling formats i
 
 This version is compatible with the following components:
 
-* [Excel Importer](excel-importer) version 8.1.1
-* [Mx Model Reflection](model-reflection) version 6.1.1
-* [Atlas UI Resources](atlas-ui-resources) version 1.2.2
+* [Excel Importer](/appstore/modules/excel-importer/) version 8.1.1
+* [Mx Model Reflection](/appstore/modules/model-reflection/) version 6.1.1
+* [Atlas UI Resources](/appstore/modules/atlas-ui-resources/) version 1.2.2
 
 ## 3 Read More
 
-* [How to Export to Excel](/howto/integration/using-the-excel-exporter)
+* [How to Export to Excel](/howto/integration/using-the-excel-exporter/)
 

@@ -1,6 +1,6 @@
 ---
 title: "Parameter"
-url: /refguide7/parameter
+url: /refguide7/parameter/
 parent: "common-elements"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -9,7 +9,7 @@ parent: "common-elements"
 
 A parameter is data that serves as input for the flow. Parameters are filled at the location from where the flow is triggered.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 When you have an object of the entity 'Customer' that you want to use in a microflow, a parameter is used. The variable name is 'EnclosingCustomer' and is shown in black. The data type is object, therefore the entity name is shown underneath the variable name in blue.
 
@@ -25,6 +25,6 @@ Variable name defines the name of the variable in which the argument of the para
 
 ### 2.2 Data Type
 
-The data type of a flow parameter defines the type of the value that it expects. See [Data Types](data-types) for the possible data types.
+The data type of a flow parameter defines the type of the value that it expects. See [Data Types](/refguide7/data-types/) for the possible data types.
 
 _Default value:_ Object

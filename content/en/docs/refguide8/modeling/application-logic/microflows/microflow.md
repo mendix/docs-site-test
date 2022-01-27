@@ -1,17 +1,17 @@
 ---
 title: "Microflow Properties"
-url: /refguide8/microflow
+url: /refguide8/microflow/
 parent: "microflows"
 tags: ["microflow", "entity access"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/microflow.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/microflow.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-This document describes the properties of a microflow. If you want to see what microflows are for and what kind of elements they contain, you can check [Microflows](microflows).
+This document describes the properties of a microflow. If you want to see what microflows are for and what kind of elements they contain, you can check [Microflows](/refguide8/microflows/).
 
 ## 2 Properties
 
@@ -63,9 +63,9 @@ Disallowing concurrent execution of a microflow can be useful if a microflow wou
 
 #### 2.3.1 Return Type
 
-The return type defines what information the microflow returns. The caller of the microflow will get a result of this type. See [Data Types](data-types) for the possible return types.
+The return type defines what information the microflow returns. The caller of the microflow will get a result of this type. See [Data Types](/refguide8/data-types/) for the possible return types.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 To indicate whether or not an object should be committed, you can use Boolean as the return type of the microflow.
 {{% /alert %}}
 
@@ -73,30 +73,30 @@ To indicate whether or not an object should be committed, you can use Boolean as
 
 #### 2.4.1 Apply Entity Access
 
-**Apply entity access** indicates whether entity access based on the current user is applied when performing operations on objects. Setting this to yes limits the objects that are retrieved by the [retrieve action](retrieve) to only those that the current user is allowed to see. Similarly, when reading and writing attributes and associations the entity access of the current user is applied. Conversely, if entity access is not applied, all operations are allowed and all objects are retrieved.
+**Apply entity access** indicates whether entity access based on the current user is applied when performing operations on objects. Setting this to yes limits the objects that are retrieved by the [retrieve action](/refguide8/retrieve/) to only those that the current user is allowed to see. Similarly, when reading and writing attributes and associations the entity access of the current user is applied. Conversely, if entity access is not applied, all operations are allowed and all objects are retrieved.
 
 | Option | Description |
 | --- | --- |
 | Yes | Entity access is applied to retrieving and manipulating objects. The rights of current user are taken into account. |
 | No  *(default)*  | Entity access is not applied. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 By default entity access is not applied. Set **Apply entity access** to **Yes** if you want to perform some actions that respect the access rights of the current user.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Microflows that apply entity access have an **Entity Access** tag in the editor.
 {{% /alert %}}
 
 #### 2.4.2 Allowed Roles
 
-**Allowed roles** defines which [module role](module-security#module-role) the user must have to be able to execute the microflow.
+**Allowed roles** defines which [module role](/refguide8/module-security/#module-role) the user must have to be able to execute the microflow.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 These roles are only checked when the microflow is executed from the client. A microflow is always allowed to call another microflow, and these roles are not checked then.
 {{% /alert %}}
 
-For more information, see [Module Security](module-security).
+For more information, see [Module Security](/refguide8/module-security/).
 
 ### 2.5 Usage Section {#usage}
 

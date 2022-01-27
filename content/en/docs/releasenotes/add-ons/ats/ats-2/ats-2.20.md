@@ -62,4 +62,4 @@ To make this process even faster and skip one click, we added the option to run 
 
 ### Other Changes
 
-* We upgraded to the latest [Mendix SSO](/appstore/modules/mendix-sso) version, which includes some security patches.
+* We upgraded to the latest [Mendix SSO](/appstore/modules/mendix-sso/) version, which includes some security patches.

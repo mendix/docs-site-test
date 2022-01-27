@@ -8,7 +8,7 @@ tags: ["Support", "custom settings"]
 
 ## 1 Introduction
 
-There are many custom settings in Mendix, most of which are described in [Runtime Customization](/refguide/custom-settings).
+There are many custom settings in Mendix, most of which are described in [Runtime Customization](/refguide/custom-settings/).
 
 However, a few of the more commonly used custom settings can be complicated and have far-reaching implications. That is why we would like to give these settings a bit of special attention and more thoroughly explain the consequences of changing them.
 
@@ -77,7 +77,7 @@ If you change these settings, you will need to restart your app to apply the cha
 {{% /alert %}}
 
 {{% alert color="info" %}}
-These settings are configured *per runtime instance*. If you have [scaled your application](/developerportal/deploy/scale-environment), the number of connections on the database side will be multiplied by the number of runtime instances. For example, if you set `ConnectionPoolingMaxIdle` to `50` and scale your app to 2 runtime instances, each runtime instance will create at most 50 connections, but on the database side this will lead to a maximum of 100 connections.
+These settings are configured *per runtime instance*. If you have [scaled your application](/developerportal/deploy/scale-environment/), the number of connections on the database side will be multiplied by the number of runtime instances. For example, if you set `ConnectionPoolingMaxIdle` to `50` and scale your app to 2 runtime instances, each runtime instance will create at most 50 connections, but on the database side this will lead to a maximum of 100 connections.
 {{% /alert %}}
 
 When changing the `ConnectionPoolingMaxIdle` and `ConnectionPoolingMinIdle` settings, consider the following points:
@@ -109,10 +109,10 @@ However, if all of the following are true, you should increase the `ConnectionPo
 * There are no long running queries showing up in the application log, even with the `LogMinDurationQuery` set to a relatively low number (like 3 seconds)
 * There is plenty of database memory available at all times
 
-In general, we see that increasing the `ConnectionPoolingMaxActive` value to a (much) higher number is very rarely the right action to take, even if it is unfortunately the action usually taken when you run into connection pooling issues.s
+In general, we see that increasing the `ConnectionPoolingMaxActive` value to a (much) higher number is very rarely the right action to take, even if it is unfortunately the action usually taken when you run into connection pooling issues.
 
 In addition, keep in mind that changing this value for an application running in Mendix Cloud v3 will also require an adjustment on the database node that only Mendix can make. So, before changing the value, please file a ticket in the [Mendix Support Portal](https://support.mendix.com/hc/en-us) stating the number to which you intend to change the value. When your application is running in Mendix Cloud v4, you can change the value without a change on the database node.
 
 ## 5 Read More
 
-* [Runtime Customization](/refguide/custom-settings)
+* [Runtime Customization](/refguide/custom-settings/)

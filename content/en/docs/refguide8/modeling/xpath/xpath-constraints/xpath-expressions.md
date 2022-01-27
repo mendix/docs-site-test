@@ -1,12 +1,12 @@
 ---
 title: "XPath Expressions"
-url: /refguide8/xpath-expressions
+url: /refguide8/xpath-expressions/
 parent: "xpath-constraints"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-expressions.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-expressions.pdf).
 {{% /alert %}}
 
 ## 1 Overview
@@ -21,7 +21,7 @@ There are three types of expressions usable for constraints:
 
 ## 2 Comparisons
 
-A comparison expression consists of two attributes or values separated by a comparison [operator](xpath-operators) like `=`, `<=,` and `>`.
+A comparison expression consists of two attributes or values separated by a comparison [operator](/refguide8/xpath-operators/) like `=`, `<=,` and `>`.
 
 ### 2.1 Examples
 
@@ -65,7 +65,7 @@ However, it is strongly recommended not to use the notation above. This is becau
 
 ## 3 Functions
 
-For information on the available functions, see [XPath Constraint Functions](xpath-constraint-functions).
+For information on the available functions, see [XPath Constraint Functions](/refguide8/xpath-constraint-functions/).
 
 ## 4 Exist-Expressions {#exist}
 

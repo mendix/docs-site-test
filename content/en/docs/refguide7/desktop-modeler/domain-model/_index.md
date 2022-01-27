@@ -1,13 +1,13 @@
 ---
 title: "Domain Model"
-url: /refguide7/domain-model
+url: /refguide7/domain-model/
 category: "Desktop Modeler"
 tags: ["domain model", "entity", "association", "annotation"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 
-The domain model is a data model that describes the information in your application domain in an abstract way. It is central to the architecture of your application. The domain model consists of [entities](entities) and their relations represented by [associations](associations).
+The domain model is a data model that describes the information in your application domain in an abstract way. It is central to the architecture of your application. The domain model consists of [entities](/refguide7/entities/) and their relations represented by [associations](/refguide7/associations/).
 
 Here is a domain model that defines customers and orders. The line between them is an association. The words 'Customer' and 'Order' are the names of the entities. The words below the entity names are the attributes of the entities.
 
@@ -15,9 +15,9 @@ Here is a domain model that defines customers and orders. The line between them 
 
 ## Components
 
-*   [Entities](entities)
-*   [Associations](associations)
-*   [Annotations](annotations)
+*   [Entities](/refguide7/entities/)
+*   [Associations](/refguide7/associations/)
+*   [Annotations](/refguide7/annotations/)
 
 ## Technical Appendix
 

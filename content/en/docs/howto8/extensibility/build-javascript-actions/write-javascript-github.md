@@ -1,15 +1,15 @@
 ---
 title: "Build JavaScript Actions: Part 2 (Advanced)"
-url: /howto8/extensibility/write-javascript-github
+url: /howto8/extensibility/write-javascript-github/
 parent: "build-javascript-actions"
-menu_order: 20
+weight: 20
 description: "This advanced how-to will teach you to make a JavaScript action which can search for GitHub users."
 tags: ["widget", "search", "GitHub", "JavaScript", "API", "JavaScript-API"]
 ---
 
 ## 1 Introduction
 
-Mendix has made nanoflows even more powerful with pluggable nanoflow actions — called JavaScript actions — in Mendix 8. [How to Build JavaScript Actions: Part 1 (Basic)](write-javascript-actions) shows you how to create a JavaScript TextToSpeech action, expose it as a nanoflow action, and then use it in a demo. In this advanced how-to you will learn to call a REST service, use a generic return type, and make an API to enhance the power of your JavaScript actions.
+Mendix has made nanoflows even more powerful with pluggable nanoflow actions — called JavaScript actions — in Mendix 8. [How to Build JavaScript Actions: Part 1 (Basic)](/howto8/extensibility/write-javascript-actions/) shows you how to create a JavaScript TextToSpeech action, expose it as a nanoflow action, and then use it in a demo. In this advanced how-to you will learn to call a REST service, use a generic return type, and make an API to enhance the power of your JavaScript actions.
 
 **This how-to will teach you how to do the following:**
 
@@ -273,7 +273,7 @@ To create a JavaScript action that can search for users on GitHub, follow the st
 
 	![select search GitHub users](/attachments/howto8/extensibility/build-javascript-actions/write-javascript-github/select-searchgithub-users.png)
 
-	Optionally, you can expose the JavaScript action as a nanoflow action. When you do, you can choose a **Caption**, **Category**, and **Icon**. Note that your icon image will need to be in an existing [image collection](/refguide8/image-collection):
+	Optionally, you can expose the JavaScript action as a nanoflow action. When you do, you can choose a **Caption**, **Category**, and **Icon**. Note that your icon image will need to be in an existing [image collection](/refguide8/image-collection/):
 
 	![nanoflow options](/attachments/howto8/extensibility/build-javascript-actions/write-javascript-github/nanoflow-options.png)
 
@@ -315,9 +315,9 @@ Congratulations! Using the power of JavaScript actions, your app can search for 
 
 ## 5 Read More
 
-* [Build JavaScript Actions: Part 1 (Basic)](write-javascript-actions)
+* [Build JavaScript Actions: Part 1 (Basic)](/howto8/extensibility/write-javascript-actions/)
 * [Mendix Client API](https://apidocs.rnd.mendix.com/8/client/index.html)
-* [JavaScript Actions](/refguide8/javascript-actions)
+* [JavaScript Actions](/refguide8/javascript-actions/)
 * JavaScript Resources
 	* [JavaScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 	* [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)

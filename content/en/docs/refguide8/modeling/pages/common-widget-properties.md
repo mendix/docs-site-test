@@ -1,14 +1,14 @@
 ---
 title: "Properties Common in the Page Editor"
-url: /refguide8/common-widget-properties
+url: /refguide8/common-widget-properties/
 parent: "pages"
-menu_order: 120
+weight: 120
 tags: ["studio pro", "widget properties", "properties", "common", "widget", "classes"]
 #Common Section and Visibility section anchors are used in links of common-section-link and visibility-section-link snippets. If moving or renaming them, do not forget to update snippets.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/common-widget-properties.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/common-widget-properties.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -21,21 +21,21 @@ These are properties that are shared by many elements in the page editor, such a
 
 The Screen reader caption property allows information to be read by screen readers when **Show label** is set to **No** in an input widget.
 
-{{% alert type="info" %}}The Screen reader caption property is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="info" %}}The Screen reader caption property is not supported on native mobile pages.{{% /alert %}}
 
 #### 2.1.1 Screen Reader Caption Input Widgets 
 
 The **Screen reader caption** property can be set on the following widgets:
 
-*   [Text Box](text-box)
-*   [Text Area](text-area)
-*   [Drop-down](drop-down)
-*   [Check Box](check-box)
-*   [Radio Buttons](radio-buttons)
-*   [Date Picker](date-picker)
-*   [File Manager](file-manager)
-*   [Reference Selector](reference-selector)
-*   [Input Reference Set Selector](input-reference-set-selector)
+*   [Text Box](/refguide8/text-box/)
+*   [Text Area](/refguide8/text-area/)
+*   [Drop-down](/refguide8/drop-down/)
+*   [Check Box](/refguide8/check-box/)
+*   [Radio Buttons](/refguide8/radio-buttons/)
+*   [Date Picker](/refguide8/date-picker/)
+*   [File Manager](/refguide8/file-manager/)
+*   [Reference Selector](/refguide8/reference-selector/)
+*   [Input Reference Set Selector](/refguide8/input-reference-set-selector/)
 
 ## 3 Common Section{#common-properties}
 
@@ -43,7 +43,7 @@ The **Screen reader caption** property can be set on the following widgets:
 
 ### 3.1 Name{#name}
 
-The internal name of the widget. You can use this to give sensible names to widgets. The name property also appears in the generated HTML: the widget DOM element automatically includes the class `mx-name-{NAME}`, which can be useful for [Selenium testing](/howto7/integration/selenium-support).
+The internal name of the widget. You can use this to give sensible names to widgets. The name property also appears in the generated HTML: the widget DOM element automatically includes the class `mx-name-{NAME}`, which can be useful for [Selenium testing](/howto7/integration/selenium-support/).
 
 ### 3.2 Tab Index{#tab-index}
 
@@ -51,7 +51,7 @@ The tab index influences the order in which the end-user navigates through the p
 
 Default: *0*
 
-{{% alert type="info" %}}Tab index is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="info" %}}Tab index is not supported on native mobile pages.{{% /alert %}}
 
 ### 3.3 Class{#class}
 
@@ -75,11 +75,11 @@ The style property allows you to specify additional CSS styling. If a class is a
 
 ### 3.5 Dynamic Classes{#dynamicclasses}
 
-The dynamic classes property allows you to specify one or more cascading stylesheet (CSS) class like the class property, but based on an [expression](expressions). This allows you to dynamically construct classes based on data from an enclosing data container. The dynamic classes constructed in the expression are appended to the classes defined in the [`Class`](#class) property.
+The dynamic classes property allows you to specify one or more cascading stylesheet (CSS) class like the class property, but based on an [expression](/refguide8/expressions/). This allows you to dynamically construct classes based on data from an enclosing data container. The dynamic classes constructed in the expression are appended to the classes defined in the [`Class`](#class) property.
 
 ![](/attachments/refguide8/modeling/pages/common-widget-properties/dynamic-classes.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The dynamic classes property was introduced in Mendix Studio Pro v8.14.
 {{% /alert %}}
 
@@ -101,12 +101,12 @@ This property identifies an attribute which is used in an input widget.
 
 With the following widgets, the Attribute (Path) specifies the attribute which is being changed (or displayed) by the widget:
 
-*   [Text Box](text-box)
-*   [Text Area](text-area)
-*   [Drop-down](drop-down)
-*   [Check Box](check-box)
-*   [Radio Buttons](radio-buttons)
-*   [Date Picker](date-picker)
+*   [Text Box](/refguide8/text-box/)
+*   [Text Area](/refguide8/text-area/)
+*   [Drop-down](/refguide8/drop-down/)
+*   [Check Box](/refguide8/check-box/)
+*   [Radio Buttons](/refguide8/radio-buttons/)
+*   [Date Picker](/refguide8/date-picker/)
 
 The attribute can be one of the following:
 
@@ -116,15 +116,15 @@ The attribute can be one of the following:
 
 In the first two cases we say the widget is connected to an **attribute** and in the third case to an **attribute path**.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In Mendix 8.0, an input widget connected to an **attribute path** must be read-only. Studio Pro will check this for you.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In Mendix 8.1 and above, you can edit attributes presented in input widgets over a path.
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In Mendix 8.8 and above, you can edit attributes of any enclosing data container including grandparent data containers.
 {{% /alert %}}
 
@@ -132,17 +132,17 @@ In Mendix 8.8 and above, you can edit attributes of any enclosing data container
 
 For widgets which manipulate associations, the Attribute (Path) specifies an attribute which is from an entity which is reachable from the current data container using an association. This applies to the following input widgets:
 
-*   [Reference Selector](reference-selector)
-*   [Reference Set Selector](reference-set-selector)
-*   [Input Reference Set Selector](input-reference-set-selector)
+*   [Reference Selector](/refguide8/reference-selector/)
+*   [Reference Set Selector](/refguide8/reference-set-selector/)
+*   [Input Reference Set Selector](/refguide8/input-reference-set-selector/)
 
 For these widgets, only an **Attribute path** can be selected. In other words, the selected attribute must be from an entity associated with the data container entity by following an association, of the type which matches the widget, through the domain model.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 For these widgets you are selecting an association to another object. The attribute should therefore indicate uniquely to the end-user which object is being selected.
 {{% /alert %}}
 
-The attribute can be of one of the following [data types](data-types):
+The attribute can be of one of the following [data types](/refguide8/data-types/):
 
 * Autonumber
 * Date and Time
@@ -179,12 +179,12 @@ When selected, this enables the widget when a particular attribute has a certain
 
 #### 5.2.2 Based on Expression
 
-When selected, this enables the widget when a provided [expression](expressions) evaluates to true. The object of the containing data container is available inside an expression as the `$currentObject` variable.
+When selected, this enables the widget when a provided [expression](/refguide8/expressions/) evaluates to true. The object of the containing data container is available inside an expression as the `$currentObject` variable.
 
 The expression provided is evaluated in the browser and, currently, does not support all the functions that are available in microflows. The autocomplete function will only list those functions which are supported.
 
-{{% alert type="info" %}}
-As the expression is evaluated in the browser, we advise against using "secret" values (like access keys) in it. In particular, we disallow usages of [constants](constants).
+{{% alert color="info" %}}
+As the expression is evaluated in the browser, we advise against using "secret" values (like access keys) in it. In particular, we disallow usages of [constants](/refguide8/constants/).
 {{% /alert %}}
 
 ### 5.3 Read-Only Style
@@ -199,7 +199,7 @@ This property determines how the widget is rendered if it is read-only.
 | Control                     | Widget is displayed but disabled so the value cannot be modified.
 | Text                        | Widget is replaced by a textual representation of the value.
 
-{{% alert type="info" %}}Read-only style is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="info" %}}Read-only style is not supported on native mobile pages.{{% /alert %}}
 
 ## 6 Label Section {#label}
 
@@ -207,7 +207,7 @@ This property determines how the widget is rendered if it is read-only.
 
 A label can be used to described the purpose of the widget to the user. The label is shown next to the widget in the user interface. If a label is configured, the widget will be rendered in the browser wrapped in a form group. See [Bootstrap documentation](http://getbootstrap.com/css/#forms).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The position of the label in relation to the widget is configured in the **Form orientation** and **Label width (weight)** properties of the data container.
 {{% /alert %}}
 
@@ -247,11 +247,11 @@ There are three options, described below:
 
 ### 7.1 Decimal Mode{#decimal-mode}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This mode only applies to attributes of type Decimal.
 {{% /alert %}}
 
-If set to _Fixed_, the decimal part always will be displayed with the number of places specified in the [Decimal precision](#decimal-precision) property. The value will be rounded using the method defined in the [rounding](project-settings#rounding) section of *Project Settings*.
+If set to _Fixed_, the decimal part always will be displayed with the number of places specified in the [Decimal precision](#decimal-precision) property. The value will be rounded using the method defined in the [rounding](/refguide8/project-settings/#rounding) section of *Project Settings*.
 
 If set to _Auto_, the whole decimal part of the attribute value will be displayed. No decimal part will be be displayed if the attribute value is an integer.
 
@@ -271,13 +271,13 @@ Default: *Fixed*
 
 ### 7.2 Decimal Precision{#decimal-precision}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This only applies to attributes of type Decimal and is available only when the [Decimal mode](#decimal-mode) is set to **Fixed**.
 {{% /alert %}}
 
 The precision of a value describes the number of decimal places that are used to express that value. This property indicates the number of decimal places (the number of digits following the point).
 
-The way that the number is rounded when displayed is defined in the [rounding](project-settings#rounding) section of *Project Settings*.
+The way that the number is rounded when displayed is defined in the [rounding](/refguide8/project-settings/#rounding) section of *Project Settings*.
 
 Default: *2*
 
@@ -310,7 +310,7 @@ There are two settings in the validation section which are described below:
 
 This property indicates whether this widget value should be validated and, if so, how. These are the possible options:
 
-* No validation – the data has to be the correct [data type](data-types) for the widget, but otherwise there is no further validation
+* No validation – the data has to be the correct [data type](/refguide8/data-types/) for the widget, but otherwise there is no further validation
 * A [predefined validation](#predefined-validation) – see description below
 * A [custom validation](#custom-validation) – see description below
 
@@ -326,13 +326,13 @@ The possible values of a predefined validation are the following:
 
 #### 8.1.2 Custom Validation{#custom-validation}
 
-Custom validation is an expression that follows the [Microflow expression](expressions) syntax.
+Custom validation is an expression that follows the [Microflow expression](/refguide8/expressions/) syntax.
 
 There are a number of variables you can use in your expression:
 * `$currentObject` – the current object
 * `$value` – the current member (attribute or association) value
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In **Mendix 8.1 and above**, the expression can access objects of **all** the data containers enclosing the input widget. The objects are given the name of the widget they originate from (for example, `$dataView1`).
 {{% /alert %}}
 
@@ -342,7 +342,7 @@ Default: *(none)*
 
 ### 8.2 Message
 
-This property determines the message that is shown to the user if widget validation is enabled and has failed. This is a translatable text (for more information, see [Language Menu](translatable-texts)).
+This property determines the message that is shown to the user if widget validation is enabled and has failed. This is a translatable text (for more information, see [Language Menu](/refguide8/translatable-texts/)).
 
 For example, if an address field is required, the validation message for the text box of the address could be something like, `The address is required.`
 
@@ -354,7 +354,7 @@ For example, if an address field is required, the validation message for the tex
 
 By default, whether or not an element is displayed in the browser is determined by how the page is designed and the user's roles within the application. However, the page can be configured to hide the element unless a certain condition is met.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 You can choose both **Context** conditions and **Module roles** conditions to apply to the widget.
 {{% /alert %}}
 
@@ -372,9 +372,9 @@ When selected, this shows the widget while a particular attribute has a certain 
 
 ##### 9.1.1.2 Based on Expression{#visibility-based-on-expression}
 
-When selected, this shows the widget while a provided [expression](expressions) evaluates to true. The object of the containing data container is available inside an expression as a `$currentObject` variable. In Mendix 8.1 and above, the expression can access objects of all the data containers enclosing that data container widget. These objects are available under the name of the widget they originate from (for example, `$dataView1`).
+When selected, this shows the widget while a provided [expression](/refguide8/expressions/) evaluates to true. The object of the containing data container is available inside an expression as a `$currentObject` variable. In Mendix 8.1 and above, the expression can access objects of all the data containers enclosing that data container widget. These objects are available under the name of the widget they originate from (for example, `$dataView1`).
 
-Note that the expression is evaluated in the browser, and hence, we advise against using "secret" values (like access keys) in it. In particular, we disallow usages of [constants](constants). Also, client-side expressions currently do not support all the functions that are available in the microflows. Please refer to an autocomplete list to know what functions are supported in your version.
+Note that the expression is evaluated in the browser, and hence, we advise against using "secret" values (like access keys) in it. In particular, we disallow usages of [constants](/refguide8/constants/). Also, client-side expressions currently do not support all the functions that are available in the microflows. Please refer to an autocomplete list to know what functions are supported in your version.
 
 #### 9.1.2 Module Roles
 

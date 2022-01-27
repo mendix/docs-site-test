@@ -152,13 +152,13 @@ The idea is that you will have a Java Action that you can call in a microflow wh
 
 ## 6 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto/testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Log Levels](log-levels)
-* [Debug Java Actions](debug-java-actions)
-* [Debug Microflows and Nanoflows](debug-microflows-and-nanoflows)
-* [Debug Microflows Remotely](debug-microflows-remotely)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
+* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages](/howto/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Log Levels](/howto/monitoring-troubleshooting/log-levels/)
+* [Debug Java Actions](/howto/monitoring-troubleshooting/debug-java-actions/)
+* [Debug Microflows and Nanoflows](/howto/monitoring-troubleshooting/debug-microflows-and-nanoflows/)
+* [Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely/)
+* [Debug Java Actions Remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely/)

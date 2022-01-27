@@ -17,7 +17,7 @@ Retrieving an entity that is sorted on an attribute of one of its associated ent
 For example, you have two associated entities — **Person** and **Address** — and they have the **name** and **street** attributes, respectively. You cannot retrieve `Person` objects sorted on `Person_Address/Address/street`. 
 
 {{% alert color="info" %}}
-This limitation has been removed in Studio Pro version [9.8.0](/releasenotes/studio-pro/9.8) and above, and also from MTS version [9.6.3](/releasenotes/studio-pro/9.6#963) and above.
+This limitation has been removed in Studio Pro version [9.8.0](/releasenotes/studio-pro/9.8/) and above, and also from MTS version [9.6.3](/releasenotes/studio-pro/9.6/#963) and above.
 {{% /alert %}}
 
 ## 3 Behavior of Unlimited & Very Long Strings
@@ -26,7 +26,7 @@ This limitation has been removed in Studio Pro version [9.8.0](/releasenotes/stu
 
 SAP HANA does not support unlimited strings or strings with a specified length greater than 5000 characters when using the equal (`=`) or not equal (`!=`) operators in XPath constraints. However, it does support functions including `contains()`, `starts-with()`, and `ends-with()`.
 
-See also [Case-Sensitive Database Behavior](case-sensitive-database-behavior).
+See also [Case-Sensitive Database Behavior](/refguide/case-sensitive-database-behavior/).
 
 {{% alert color="warning" %}}
 In versions of Mendix below 8.11.0, string comparisons in SAP HANA were case sensitive.

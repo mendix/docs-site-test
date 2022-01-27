@@ -1,22 +1,22 @@
 ---
 title: "Published REST Query Parameters"
-url: /refguide8/published-rest-query-parameters
+url: /refguide8/published-rest-query-parameters/
 parent: "published-rest-service"
-menu_order: 40
+weight: 40
 description: "Parameters for a published REST query"
 tags: ["published REST", "query", "parameters", "Date and Time format", "studio pro"]
 # Merge into published rest service document
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-rest-query-parameters.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-rest-query-parameters.pdf).
 {{% /alert %}}
 
-The specification of a [published REST operation](published-rest-operation) includes a microflow that implements the operation. This microflow may take parameters that come from the query string of the request.
+The specification of a [published REST operation](/refguide8/published-rest-operation/) includes a microflow that implements the operation. This microflow may take parameters that come from the query string of the request.
 
 A query parameter can only have a primitive type (Boolean, date and time, decimal, enumeration, integer/long, or string).
 
-Query parameters are added to the end of the path following a question mark in the format `?name=John&age=42`. This is shown in the [example location of the operation](published-rest-operation#example-location).
+Query parameters are added to the end of the path following a question mark in the format `?name=John&age=42`. This is shown in the [example location of the operation](/refguide8/published-rest-operation/#example-location).
 
 These are some additional notes about query parameters:
 

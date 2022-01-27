@@ -1,8 +1,8 @@
 ---
 title: "MxBuild"
-url: /refguide7/mxbuild
+url: /refguide7/mxbuild/
 category: "General"
-menu_order: 50
+weight: 50
 description: "Describes MxBuild which is a command-line tool for building and deploying Mendix Apps"
 tags: ["Build", "Deploy", "deployment package", "command-line"]
 ---
@@ -13,7 +13,7 @@ MxBuild is a Windows and Linux command-line tool that can be used to build a Men
 
 The version of MxBuild which you need is dependent on the version of the Mendix model you want to build. You can find the correct MxBuild download at a link with the format `https://cdn.mendix.com/runtime/mxbuild-{mxversion}.tar.gz`.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Mendix versions 7.18.1 and above include a build number in the version, and this has to be included in the link path. For example:
 
@@ -28,9 +28,9 @@ So, MxBuild for Mendix version 7.18.1 is found at [https://cdn.mendix.com/runtim
 
 You can extract the files using your favorite archival tool, such as [7-Zip](https://www.7-zip.org/).
 
-The system requirements for MxBuild are documented here: [System Requirements](system-requirements#mxbuild).
+The system requirements for MxBuild are documented here: [System Requirements](/refguide7/system-requirements/#mxbuild).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Except where specifically mentioned, the examples used in this document are for Windows.
 {{% /alert %}}
 
@@ -50,7 +50,7 @@ You can also run MxBuild under Linux using the the following command line format
 
 After creating the deployment package, the MxBuild process quits.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The examples used in this document are for Windows.
 {{% /alert %}}
 
@@ -70,7 +70,7 @@ The examples used in this document are for Windows.
 
 ### 2.2 Options When Creating a Package
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The following options are only applicable with the `--target=package` option:
 {{% /alert %}}
 

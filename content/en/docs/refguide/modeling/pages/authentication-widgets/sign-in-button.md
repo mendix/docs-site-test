@@ -16,7 +16,7 @@ The **Sign-in button** sends a user's login ID and password to the server for au
 
 Any errors are displayed in a [validation message widget](#validation-message-widget) or in a pop-up window. 
 
-The **Sign-in button** should be placed on a page together with a [Login ID text box](login-id-text-box) and a [Password text box](password-text-box).
+The **Sign-in button** should be placed on a page together with a [Login ID text box](/refguide/login-id-text-box/) and a [Password text box](/refguide/password-text-box/).
 
 ## 2 Properties
 
@@ -42,11 +42,11 @@ Sign-in button properties consist of the following sections:
 
 ### 2.3 General Section {#general}
 
-Most properties of a sign-in button are the same as properties of buttons. For more information on button properties in the **General** section, see the [General Section](button-properties#general) in *Button Properties*.
+Most properties of a sign-in button are the same as properties of buttons. For more information on button properties in the **General** section, see the [General Section](/refguide/button-properties/#general) in *Button Properties*.
 
 #### 2.3.1 Validation Message Widget {#validation-message-widget}
 
-**Validation message widget** is a specific property of a sign-in button. It defines the [Validation message widget](validation-message) that displays authentication failure messages on a page. If no widget is selected in this property, authentication failure messages will be displayed in a pop-up window:
+**Validation message widget** is a specific property of a sign-in button. It defines the [Validation message widget](/refguide/validation-message/) that displays authentication failure messages on a page. If no widget is selected in this property, authentication failure messages will be displayed in a pop-up window:
 ![Validation Failure](/attachments/refguide/modeling/pages/authentication-widgets/sign-in-button/validation-failure.png)
 
 Default: *None*
@@ -57,7 +57,7 @@ Default: *None*
 
 ## 3 Read More
 
-* [Page](page)
-* [Login ID Text Box](login-id-text-box)
-* [Password Text Box](password-text-box)
-* [Validation Message](validation-message)
+* [Page](/refguide/page/)
+* [Login ID Text Box](/refguide/login-id-text-box/)
+* [Password Text Box](/refguide/password-text-box/)
+* [Validation Message](/refguide/validation-message/)

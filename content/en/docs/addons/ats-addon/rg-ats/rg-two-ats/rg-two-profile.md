@@ -10,7 +10,7 @@ tags: ["ats", "profile", "password"]
 
 Local accounts, meaning accounts created by a tenant administrator, can access and change their profile information via the **Edit Profile** page. 
 
-For more details on tenant administration, see [Administration](rg-two-administration).
+For more details on tenant administration, see [Administration](/addons/ats-addon/rg-two-administration/).
 
 ## 2 Performing Basic Functions
 
@@ -28,7 +28,7 @@ To open the **Edit Profile** page, do the following:
 
 To change your **Full name** from the **Edit Profile** page, type a new one in a text box. The change is automatically saved. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Full name is displayed in various places in the app, for example, in the test run history. This is not the user name which is used to log in.
 
@@ -44,9 +44,9 @@ To change your password from the **Edit Profile** page, do the following:
 
 3. Click **Change**.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-To change your password, you need to log in first. If you have problems with logging in, contact your tenant administrator. For more details on tenant administration, see [Administration](rg-two-administration).
+To change your password, you need to log in first. If you have problems with logging in, contact your tenant administrator. For more details on tenant administration, see [Administration](/addons/ats-addon/rg-two-administration/).
 
 {{% /alert %}} 
 

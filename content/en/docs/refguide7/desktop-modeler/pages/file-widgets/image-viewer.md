@@ -1,6 +1,6 @@
 ---
 title: "Image viewer"
-url: /refguide7/image-viewer
+url: /refguide7/image-viewer/
 parent: "file-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -8,7 +8,7 @@ parent: "file-widgets"
 
 An image viewer can be used to display an image or its thumbnail.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/file-widgets/image-viewer/image-viewer.png)
 This image viewer shows the product image.
@@ -53,7 +53,7 @@ This property specifies the microflow that will be executed when the image is cl
 
 The on click settings specify what parameters will be passed to the microflow, whether to show a progress bar or not, and more.
 
-See [Starting Microflows](starting-microflows).
+See [Starting Microflows](/refguide7/starting-microflows/).
 
 ## General properties
 
@@ -93,5 +93,5 @@ _Default value:_ Thumbnail
 
 ## Related articles
 
-*   [Data view](data-view)
-*   [Entities](entities)
+*   [Data view](/refguide7/data-view/)
+*   [Entities](/refguide7/entities/)

@@ -21,13 +21,13 @@ Every POST payload contains the following delivery information as part of the he
 
 ## 2 Sprints
 
-Webhook events are generated when a [sprint](/developerportal/collaborate/stories#sprint-actions) is created or updated.
+Webhook events are generated when a [sprint](/developerportal/collaborate/stories/#sprint-actions) is created or updated.
 
 The required event category subscription is **sprints**.
 
 ## 3 Stories
 
-Webhooks event are generated when a [story](/developerportal/collaborate/stories) is created or updated.
+Webhooks event are generated when a [story](/developerportal/collaborate/stories/) is created or updated.
 
 The required event category subscription is **stories**.
 

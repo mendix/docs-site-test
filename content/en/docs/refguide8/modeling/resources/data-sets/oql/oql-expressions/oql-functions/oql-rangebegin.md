@@ -1,12 +1,12 @@
 ---
 title: "OQL RANGEBEGIN"
-url: /refguide8/oql-rangebegin
+url: /refguide8/oql-rangebegin/
 parent: "oql-functions"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/oql-rangebin.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/oql-rangebin.pdf).
 {{% /alert %}}
 
 ## 1 Description
@@ -23,7 +23,7 @@ RANGEBEGIN ( $range )
 
 ## 2 Example
 
-`RANGEBEGIN` and [RANGEEND](oql-rangeend) are OQL functions that use a parameter, and OQL parameters are only available in datasets (which are used for generating a report). When you create a page and add a report that has a dataset, you can use `RANGEBEGIN` and `RANGEEND` in that dataset.
+`RANGEBEGIN` and [RANGEEND](/refguide8/oql-rangeend/) are OQL functions that use a parameter, and OQL parameters are only available in datasets (which are used for generating a report). When you create a page and add a report that has a dataset, you can use `RANGEBEGIN` and `RANGEEND` in that dataset.
 
 This is an example of using a range in OQL, where `$range` is set to last week, which will give you all the customers born in the last week:
 

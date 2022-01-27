@@ -12,7 +12,7 @@ The homepage of APM displays the list of licensed applications from the Mendix D
 
 It is possible to search on an app's name or select one from the overview directly.
 
-Selecting an app in the overview displays the overview of the [environments](rg-two-environments) for that app.
+Selecting an app in the overview displays the overview of the [environments](/addons/apd-addon/rg-two-environments/) for that app.
 
 In order to find a specific application faster, it is possible to mark it as a favorite by clicking the star icon on the application tile. Favorite applications are shown first in the overview.
 
@@ -24,7 +24,7 @@ APM has several tour guides and videos to help navigate through APM to perform c
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-two-apm/rg-two-apps/Documentation.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 By default, APM displays the tour guides and videos upon login for new users.
 {{% /alert %}}
 

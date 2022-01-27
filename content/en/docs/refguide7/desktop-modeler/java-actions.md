@@ -1,6 +1,6 @@
 ---
 title: "Java Actions"
-url: /refguide7/java-actions
+url: /refguide7/java-actions/
 category: "Desktop Modeler"
 description: "Describes using Java Actions to extend the functionality of your Mendix app."
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -8,13 +8,13 @@ description: "Describes using Java Actions to extend the functionality of your M
 
 ## 1 Introduction
 
-With Java actions you can extend the functionality of your application in situations where it would be hard to implement this functionality in microflows. You can call a Java action from a microflow using the [Java Action Call](java-action-call).
+With Java actions you can extend the functionality of your application in situations where it would be hard to implement this functionality in microflows. You can call a Java action from a microflow using the [Java Action Call](/refguide7/java-action-call/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Each Java action defined in the Modeler corresponds to a file *{name of Java action}.java* in the subdirectory *javasource{module name}/actions* of the project directory.
 
-The skeletons of these *.java* files are generated automatically when you deploy for Eclipse (in the **Project** menu). For more information about creating the Java code in these files, see [Java Programming](java-programming).
+The skeletons of these *.java* files are generated automatically when you deploy for Eclipse (in the **Project** menu). For more information about creating the Java code in these files, see [Java Programming](/refguide7/java-programming/).
 
 {{% /alert %}}
 
@@ -30,9 +30,9 @@ A Java action has zero or more parameters. Parameters are the means by which you
 
 Each parameter has a name, type, category, and description. 
 
-Use categories to keep the parameters apart in the [Java Action Call](java-action-call). If you do not specify a category, the parameter will appear in the **Input** group.
+Use categories to keep the parameters apart in the [Java Action Call](/refguide7/java-action-call/). If you do not specify a category, the parameter will appear in the **Input** group.
 
-See [Data Types](data-types) for the possible standard parameter types. When the type is an Object or List, you must also select its Entity type, which can be either a specific entity or a type parameter. The type parameter postpones the selection of the actual entity type until the Java action is used in a microflow. This allows your Java action to accept a (list of) Mendix object(s) of an arbitrary entity type.
+See [Data Types](/refguide7/data-types/) for the possible standard parameter types. When the type is an Object or List, you must also select its Entity type, which can be either a specific entity or a type parameter. The type parameter postpones the selection of the actual entity type until the Java action is used in a microflow. This allows your Java action to accept a (list of) Mendix object(s) of an arbitrary entity type.
 
 The other types supported by Java actions are described below.
 
@@ -53,7 +53,7 @@ The **Microflow** parameter type allows users of Java actions to pass a microflo
 
 The **Import mapping** parameter type allows users of Java actions to pass an import mapping into a Java action. In the generated Java action template code, this type is represented as a string (as in, the name of the import mapping).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The Import mapping parameter type was introduced in Mendix 7.2.0.
 
@@ -63,7 +63,7 @@ The Import mapping parameter type was introduced in Mendix 7.2.0.
 
 The **Export mapping** parameter type allows users of Java Actions to pass an export mapping into a Java action. In the generated Java action template code, this type is represented as a string (the name of the export mapping).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The Export mapping parameter type was introduced in version 7.2.0.
 
@@ -71,7 +71,7 @@ The Export mapping parameter type was introduced in version 7.2.0.
 
 #### 2.2.5 Return Type
 
-The return type determines the type of the data that the Java action returns. It corresponds with the return type of the `executeAction()` method in the *.java* file of the Java action. You can use the result of a Java action in the microflow in which you call it. See [Data Types](data-types) for the possible return types.
+The return type determines the type of the data that the Java action returns. It corresponds with the return type of the `executeAction()` method in the *.java* file of the Java action. You can use the result of a Java action in the microflow in which you call it. See [Data Types](/refguide7/data-types/) for the possible return types.
 
 As with parameters, the return type can also be an object or a list of some type parameter. The type parameter you choose for the return type must also be used by at least one of the Java action parameters.
 

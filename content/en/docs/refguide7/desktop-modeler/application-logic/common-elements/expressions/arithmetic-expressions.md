@@ -1,6 +1,6 @@
 ---
 title: "Arithmetic expressions"
-url: /refguide7/arithmetic-expressions
+url: /refguide7/arithmetic-expressions/
 parent: "expressions"
 ---
 
@@ -120,9 +120,9 @@ results in a Float with value
 
 Adds two numbers.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-See [String function calls](string-function-calls) for more information.
+See [String function calls](/refguide7/string-function-calls/) for more information.
 
 {{% /alert %}}
 

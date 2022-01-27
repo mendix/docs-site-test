@@ -22,8 +22,8 @@ Mendix ATS is a testing tool designed for automated testing of Mendix applicatio
 
 Before starting this how-to, make sure you have completed the following prerequisite:
 
-* Read [How to Get Started](ht-two-getting-started)
-* Read [How to Create a Test Case](ht-two-create-a-test-case)
+* Read [How to Get Started](/addons/ats-addon/ht-two-getting-started/)
+* Read [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 
 ## 3 Set the Mendix API Key
 
@@ -33,9 +33,9 @@ The following steps describe how you can set your Mendix API Key in ATS:
 2. Open the app where you want to add the Mendix API Key.
 3.  Inside your app click the profile menu and click **Show Test Settings**.
 
-	{{% alert type="info" %}} **Show Test Settings** is only present if you have Scrum Master rights in the Mendix Developer Portal project {{% /alert %}}
+	{{% alert color="info" %}} **Show Test Settings** is only present if you have Scrum Master rights in the Mendix Developer Portal project {{% /alert %}}
 	
-	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-connect-stories-to-testcases/show-test-settings.png)
+	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-configure-a-selenium-hub/show-test-settings.png)
 
 4.  On the **Settings** page click **Set API Key**.
 
@@ -181,4 +181,4 @@ You can now link test cases to stories and link stories to test cases.
 
 ## 7 Next Up
 
-You now learned how to link user stories to your test cases. The next how-to is [Use ATS in Combination with CI/CD](ht-two-ats-and-ci-cd). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+You now learned how to link user stories to your test cases. The next how-to is [Use ATS in Combination with CI/CD](/addons/ats-addon/ht-two-ats-and-ci-cd/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

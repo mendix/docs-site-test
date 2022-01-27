@@ -58,7 +58,7 @@ You can choose different types of button by setting the appropriate **Button sty
 
 {{/* % image_container width="75%" % */}}
 ![SAP Fiori Button Styles](/attachments/partners/sap/sap-fiori-3-0/button-styles.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 For the **Link button**, see [Applying CSS Classes Manually](#apply-css), below*.
 

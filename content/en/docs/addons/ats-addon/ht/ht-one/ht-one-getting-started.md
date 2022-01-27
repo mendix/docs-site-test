@@ -2,7 +2,7 @@
 title: "Get Started"
 url: /addons/ats-addon/ht-one-getting-started/
 parent: "ht-one"
-menu_order: 1
+weight: 1
 description: "Describes the initial steps for automatically testing your apps using ATS."
 tags: ["ATS", "testing"]
 ---
@@ -26,7 +26,7 @@ Before starting with this how-to, make sure you have the following prerequisites
 * ATS account
 * Your ATS instance
 * An application under test (AUT)
-* Selenium hub (for more information on the Selenium options, see [ATS Deployment](ov-deployment))
+* Selenium hub (for more information on the Selenium options, see [ATS Deployment](/addons/ats-addon/ov-deployment/))
 
 {{% youtube zJOpO0AymAg %}}
 
@@ -51,7 +51,7 @@ To create a new project, follow these steps:
       **Mendix Project/App ID** | Enter the Mendix project/app ID of the app you want to test, NOT the project ID of ATS! This will give ATS access to your Developer Portal and user stories. A project can be created without a Mendix project/app ID, but than you have no access to the Developer Portal and user stories.
       **Mendix API Key** | This is the API key you created in your Developer Portal project for ATS.
       **Project Users** | Enter the people that need access to this project. This project will then appear in their **My Projects** menu. You can always edit this later. There are two different roles for a project user: a **Tester** can only test, create tests, and monitor results; a **Project Administrator** has the same rights as the tester but has also editing rights to the configuration settings of a project.
-      **Action Libraries** | Make sure that the action libraries **Core** and **Mendix** are included. Please note that without libraries, it is not possible to select actions for the test script. For more information on action libraries, see [Standard Actions Reference](rg-one-std-actions-ref).
+      **Action Libraries** | Make sure that the action libraries **Core** and **Mendix** are included. Please note that without libraries, it is not possible to select actions for the test script. For more information on action libraries, see [Standard Actions Reference](/addons/ats-addon/rg-one-std-actions-ref/).
 
 3.  Click **Save & Open** at the bottom of the page to open the **Project Dashboard**.
 
@@ -59,7 +59,7 @@ To create a new project, follow these steps:
 
 ## 4 Configuring Your Project
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Only the Project Administrator role has the rights to edit the settings in **Configuration**. For a project user, only the Tester can see these settings and not edit them.
 
@@ -186,7 +186,7 @@ To use the recorder function, follow these steps:
 
       ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-getting-started/recorded-test-steps.png)
 
-All the test steps are numbered for easy identification. The up and down arrows can be used to change the sequence of the test steps. You can **delete**, **copy** or **paste** a selected test step. With the **Extract action**, you can combine actions of multiple steps into one step. Select the steps you want to combine and click **Extract action**. For more information on extracting an action, see [Custom Action](rg-one-custom-actions).
+All the test steps are numbered for easy identification. The up and down arrows can be used to change the sequence of the test steps. You can **delete**, **copy** or **paste** a selected test step. With the **Extract action**, you can combine actions of multiple steps into one step. Select the steps you want to combine and click **Extract action**. For more information on extracting an action, see [Custom Action](/addons/ats-addon/rg-one-custom-actions/).
 
 #### 5.2.2 Test Data Tab
 
@@ -194,7 +194,7 @@ In this tab, you can connect your datasets to a test case. Use the arrow to sele
 
 ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-getting-started/data-set-test-case.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you do not use the dataset, make sure to disconnect it. ATS will remember where you selected the dataset fields as input, so if you reconnect the dataset, ATS will automatically set the correct input.
 
@@ -265,7 +265,7 @@ Here, you can select your AUT and Selenium hub for ATS to use.
 | **Selenium Hub** | Select the Selenium Hub you want to use to execute the test case. |
 | **Browser** | Select the browser that the Selenium Hub uses to execute the test case. Please note that these are the supported browsers. |
 
-Now click **Run** again in the upper-right corner to execute the test case against the provided parameters. For more information on the run configuration, see [Run Configuration](rg-one-test-run).
+Now click **Run** again in the upper-right corner to execute the test case against the provided parameters. For more information on the run configuration, see [Run Configuration](/addons/ats-addon/rg-one-test-run/).
 
 ## 7 Result
 
@@ -273,14 +273,14 @@ When you click **Run**, the **Monitoring / Results** page will open.
 
 ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-getting-started/monitoring-results-pending.png)
 
-Once your test case is executed, the result is shown here. For more information on results, see [Monitoring](rg-one-monitoring).
+Once your test case is executed, the result is shown here. For more information on results, see [Monitoring](/addons/ats-addon/rg-one-monitoring/).
 
-You have now finished the getting started guide for ATS. Please check the [how-to's](ht-one) and [best practices](bp-one) for more information.
+You have now finished the getting started guide for ATS. Please check the [how-to's](/addons/ats-addon/ht-one/) and [best practices](/addons/ats-addon/bp-one/) for more information.
 
 Good luck testing your Mendix app with ATS!
 
 ## 8 Next Up
 
-You have now learned a few basics of working with ATS, so the next how-to is [How to Install the ATS Helper and ATS Recorder](ht-one-install-ats-helper-recorder).
+You have now learned a few basics of working with ATS, so the next how-to is [How to Install the ATS Helper and ATS Recorder](/addons/ats-addon/ht-one-install-ats-helper-recorder/).
 
-For an overview of all the how-tos and the structure, see [ATS 1 How-to's](ht-one). We advise following the how-to's in the order listed there.
+For an overview of all the how-tos and the structure, see [ATS 1 How-to's](/addons/ats-addon/ht-one/). We advise following the how-to's in the order listed there.

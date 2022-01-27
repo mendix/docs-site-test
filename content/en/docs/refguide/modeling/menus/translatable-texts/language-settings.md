@@ -15,7 +15,7 @@ Mendix is designed to be used by users in multiple languages. The **Languages** 
 You can reach this tab in two ways:
 
 1. Select the menu option **Language > Language Settings…**.
-2. Open the **App{Name} > Settings** dialog box from the [App Explorer](project-explorer) and select the **Language** tab.
+2. Open the **App{Name} > Settings** dialog box from the [App Explorer](/refguide/project-explorer/) and select the **Language** tab.
 
 ## 2 Setting Default Language
 
@@ -44,7 +44,7 @@ You can set each language in your app to have additional settings.
 
 ### 4.1 Check Completeness
 
-If you check the **Check completeness** box, you will get a warning (or error) message in the [Errors pane](errors-pane) for every text which has no entry in this language's dictionary.
+If you check the **Check completeness** box, you will get a warning (or error) message in the [Errors pane](/refguide/errors-pane/) for every text which has no entry in this language's dictionary.
 
 If this is the default language, the **Check completeness** box will be checked and you will not be able to uncheck it.
 
@@ -66,7 +66,7 @@ Click **Edit…** to open a dialog box which will provide a full reference for t
 
 The most up-to-date list of supported languages in your version of Studio Pro is the one in the add languages menu. The list below is provided to enable you to quickly evaluate if Mendix supports your desired language.
 
-| Language | Country | Locale | Available Since |
+| Language | Region | Locale | Available Since |
 | --- | --- | --- | --- |
 | Albanian | Albania | sq_AL | 9.0.5 |
 | Amharic | Ethiopia | am_ET | 9.2.0 |
@@ -95,8 +95,8 @@ The most up-to-date list of supported languages in your version of Studio Pro is
 | Catalan | Spain | ca_ES | 9.0.5 |
 | Chinese (Simplified) | China | zh_CN | 9.0.5 |
 | Chinese (Simplified) | Singapore | zh_SG | 9.0.5 |
-| Chinese (Traditional) | Hong Kong | zh_HK | 9.0.5 |
-| Chinese (Traditional) | Taiwan | zh_TW | 9.0.5 |
+| Chinese (Traditional) | Hong Kong, China | zh_HK | 9.0.5 |
+| Chinese (Traditional) | Taiwan, China | zh_TW | 9.0.5 |
 | Croatian | Croatia | hr_HR | 9.0.5 |
 | Czech | Czech Republic | cs_CZ | 9.0.5 |
 | Dari | Afghanistan | fa_AF | 9.2.0 |

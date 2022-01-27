@@ -8,7 +8,7 @@ tags: ["native", "mobile", "ota", "native-builder", "over the air", "update", "d
 ---
 
 {{% alert color="info" %}}
-OTA updates via App Center's CodePush are now deprecated. Please consider switching to the newly introduced [Mendix OTA update solution](how-to-ota). 
+OTA updates via App Center's CodePush are now deprecated. Please consider switching to the newly introduced [Mendix OTA update solution](/howto/mobile/how-to-ota/). 
 {{% /alert %}}
 
 ## 1 Introduction
@@ -43,16 +43,16 @@ Third-party OTA update solutions present the following shortcomings:
 
 With these shortcomings in mind, we developed a Mendix OTA update mechanism which solves these issues. Your Mendix server is the single source of truth, as OTA updates are served from the same endpoint. In addition, instead of thinking of OTA packages and deployments, we merged both actions into one. Instead of deploying a new application to your server, the native apps can simply be updated the next time they are restarted and the devices are updated. As your Mendix server is the one providing the OTA bundles, no third-party service is required. Finally, by developing an in-house solution we can continuously improve it based on your feedback.
 
-Therefore, please consider using the [Mendix OTA update solution](how-to-ota) compatible with Studio Pro v9.7 and above.
+Therefore, please consider using the [Mendix OTA update solution](/howto/mobile/how-to-ota/) compatible with Studio Pro v9.7 and above.
 
 ## 3 Prerequisites {#prerequisites}
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Deploy your app by completing [How to Deploy Your First Mendix Native Mobile App](deploying-native-app).
-* Ensure you have set up and configured App Center for your app. For information on setting up App Center, see the [App Center Token](deploying-native-app#appcenter-token) section of *How to Deploy Your First Mendix Native Mobile App*. If you previously opted out of configuring App Center while building your app, you must navigate to the **Tokens** screen and toggle on the **I want to use App Center** option.
+* Deploy your app by completing [How to Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app/).
+* Ensure you have set up and configured App Center for your app. For information on setting up App Center, see the [App Center Token](/howto/mobile/deploying-native-app/#appcenter-token) section of *How to Deploy Your First Mendix Native Mobile App*. If you previously opted out of configuring App Center while building your app, you must navigate to the **Tokens** screen and toggle on the **I want to use App Center** option.
 * Install your app on a test device or emulator.
-* Read the [Offline-First](/refguide/offline-first) reference guide. Understand this document before issuing OTA updates or releasing new versions.
+* Read the [Offline-First](/refguide/offline-first/) reference guide. Understand this document before issuing OTA updates or releasing new versions.
 
 ## 4 When to Use OTA Updates
 
@@ -67,16 +67,16 @@ It is good practice to *always* redeploy your Mendix app before pushing a new OT
 * JavaScript action changes
 * Widgets added or removed
 * A new custom JavaScript-only widget or module was added
-* Non-destructive model changes (for more information, see [Offline-First](/refguide/offline-first))
+* Non-destructive model changes (for more information, see [Offline-First](/refguide/offline-first/))
 
 ### 4.2 When a Full Release Is Required
 
 If you have made any changes directly to your iOS or Android app, you will have to fully redeploy your app to the app stores for the changes to take effect. OTA updates do not suffice and a full release is required in the following cases:
 
 * The initial release of your app
-* A Studio Pro version upgrade that requires a new [Native Template](/refguide/native-template) version
+* A Studio Pro version upgrade that requires a new [Native Template](/refguide/native-template/) version
 * You fundamentally changed your app's functionality (this is an Apple App Store limitation, and will require a re-release and re-review of your app by Apple — your app might be removed if you do not comply)
-* A new native module has been added (such as the [Native Mobile AR](https://marketplace.mendix.com/link/component/117209) module—for more information see [Modules](/refguide/modules). 
+* A new native module has been added (such as the [Native Mobile AR](https://marketplace.mendix.com/link/component/117209) module—for more information see [Modules](/refguide/modules/). 
 * The app has been renamed
 * The app's launcher icons have been changed
 * The splash screen has been changed
@@ -91,16 +91,16 @@ Next you must build new binaries with this capability toggled on, and then relea
 1.  Navigate to **App Capabilities**: 
 
 	{{/* % image_container width="350" % */}}![Start Mendix Native Mobile Builder](/attachments/howto/mobile/native-mobile/distribution/how-to-ota-appcenter/advanced-capabilities.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1.  Toggle **App Center CodePush OTA Support** on: 
 
 	{{/* % image_container width="350" % */}}![OTA capability enabled](/attachments/howto/mobile/native-mobile/distribution/how-to-ota-appcenter/advanced-capabilities-ota.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Click **Save**.
 1.  Build an application for distribution and make a note of the version number used: 
 
 	{{/* % image_container width="350" % */}}![Build release app page](/attachments/howto/mobile/native-mobile/distribution/how-to-ota-appcenter/build-release-app-for-ota.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 To make the OTA update functionality available to your users, release the new binaries via the appropriate app stores. If you are testing the functionality you can now install the apps on your test devices.
 
 ## 6 Deploying an OTA Update
@@ -108,7 +108,7 @@ To make the OTA update functionality available to your users, release the new bi
 OTA updates let you correct mistakes in your published apps without issuing a new release. For example, imagine you issued a new release and later found a spelling mistake on your welcome screen:
 
 {{/* % image_container width="300" % */}}![Typo in welcome screen](/attachments/howto/mobile/native-mobile/distribution/how-to-ota-appcenter/phone-error-text.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 Before OTA updates, you would have to make a new release and configure it in the app stores. But OTA updates make fixing such a mistake easy.
 
 To release a new version OTA, follow these steps:
@@ -124,9 +124,9 @@ To release a new version OTA, follow these steps:
 1.  On compilation, you will receive links to the CodePush OTA update administration pages for your Android and iOS apps:
 
 	{{/* % image_container width="350" % */}}![OTA build step success](/attachments/howto/mobile/native-mobile/distribution/how-to-ota-appcenter/advanced-ota-success.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 	{{/* % image_container width="350" % */}}![OTA App Center page](/attachments/howto/mobile/native-mobile/distribution/how-to-ota-appcenter/advanced-ota-appcenter-page.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 1. Wait for the Native Mobile Builder to complete.
 1. Restart the app on your testing device. You should be greeted with the following message: **Update available: An update is available that must be installed**.
 1. Tap **Confirm** to update your app.
@@ -196,8 +196,8 @@ If the OTA release button remains disabled, verify that the app names added in t
 
 ## 9 Read More
 
-* [Release Over the Air Updates with Mendix](how-to-ota)
-* [Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app)
-* [Offline-First](/refguide/offline-first)
+* [Release Over the Air Updates with Mendix](/howto/mobile/how-to-ota/)
+* [Deploy Your First Mendix Native Mobile App](/howto/mobile/deploying-native-app/)
+* [Offline-First](/refguide/offline-first/)
 * [CodePush Introduction](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/)
 * [Using the CodePush UI](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/using-ui)

@@ -16,13 +16,13 @@ General knowledge of the Mendix platform is a must when creating custom actions.
 
 During the [Become a Rapid Developer](https://academy.mendix.com/link/path/31/Become-a-Rapid-Developer) learning path, you learn all the fundamentals of the Mendix platform, including how the different widgets work and how to adjust them. This is a great advantage when looking at a widget through the HTML.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 You must be signed in to the Mendix Platform to see the above learning path.
 {{% /alert %}}
 
 ## 3 Guidelines for Building a Custom Action
 
-[Guidelines for Building a Custom Action](ht-two-guidelines-custom-action) is a best practice document that describes the guidelines  you must follow when building custom actions. These guidelines deliver the best results.
+[Guidelines for Building a Custom Action](/addons/ats-addon/ht-two-guidelines-custom-action/) is a best practice document that describes the guidelines  you must follow when building custom actions. These guidelines deliver the best results.
 
 ## 4 Google Chrome and Chrome DevTools Basics
 
@@ -43,9 +43,9 @@ For more information, see [W3Cschools](https://www.w3schools.com/html/default.as
 
 ## 6 ATS Selectors
 
-The how-to's use jQuery selectors to find elements in the browser. Next to the standard jQuery selectors, ATS also uses pseudo-selectors. You can find these pseudo-selectors in the [ATS Selector](rg-one-selectors) documentation.
+The how-to's use jQuery selectors to find elements in the browser. Next to the standard jQuery selectors, ATS also uses pseudo-selectors. You can find these pseudo-selectors in the [ATS Selector](/addons/ats-addon/rg-one-selectors/) documentation.
 
-For more information on selectors, see [Helpful Resources](ht-two-custom-action-helpful-resources).
+For more information on selectors, see [Helpful Resources](/addons/ats-addon/ht-two-custom-action-helpful-resources/).
 
 ## 7 General ATS Knowledge
 
@@ -53,4 +53,4 @@ The how-to's describe how to create custom actions, but they do not describe eve
 
 ## 8 Custom Action Basics
 
-The how-to's don't explain everything in detail. Simple things like adding an input parameter are not explained. Make sure you have completed the [Custom Action Basics](ht-two-custom-action-basics) how-to.
+The how-to's don't explain everything in detail. Simple things like adding an input parameter are not explained. Make sure you have completed the [Custom Action Basics](/addons/ats-addon/ht-two-custom-action-basics/) how-to.

@@ -26,7 +26,7 @@ With **Any Chart** you can build all the chart types that are possible with Plot
 Before starting this how-to, make sure you have the following prerequisites:
 
 * The latest version of Mendix Studio Pro
-* The latest [Any Chart](/appstore/modules/any-chart) module
+* The latest [Any Chart](/appstore/modules/any-chart/) module
 * An understanding of JSON data structures
 
 ## 3 Chart Structure
@@ -41,7 +41,7 @@ To create a line chart with the **Any Chart** widget, follow these steps:
 
 1. Create a page with a data view (Chart context).
 2. Add the Any Chart widget in the data view.
-3. Select the line chart sample from the [Any Chart cheat sheet](/refguide/charts-any-cheat-sheet#line-chart):
+3. Select the line chart sample from the [Any Chart cheat sheet](/refguide/charts-any-cheat-sheet/#line-chart):
 
     ```json
     [ { "x": [ 1, 2 ], "y": [ 1, 2 ], "type": "scatter" } ]
@@ -104,7 +104,7 @@ To fine tune a Charts widget configuration, follow these steps:
 2. Run the app, and open the page containing the chart.
 3. Click the **Toggle Editor** button on the top right of the chart to fine-tune your settings.
 
-    ![chart editor](/attachments/howto/front-end/charts-tutorials/charts-any-usage/charts-toggle-editor-open.png)
+    ![chart editor](/attachments/howto/front-end/charts-tutorials/charts-advanced-tuning/charts-toggle-editor-open.png)
 
 4. In the editor, select either **Data** or **Layout** from the drop-down menu.
 5. Edit Static or Data settings.
@@ -113,9 +113,9 @@ To fine tune a Charts widget configuration, follow these steps:
 
 ## 7 Read More
 
-* **Any Chart** properties: [Any Chart](/refguide/charts-any-configuration)
-* The most common chart types:  [Any Chart Cheat Sheet](/refguide/charts-any-cheat-sheet)
-* The most common settings: [Configuration Cheat Sheet](/refguide/charts-advanced-cheat-sheet)
+* **Any Chart** properties: [Any Chart](/refguide/charts-any-configuration/)
+* The most common chart types:  [Any Chart Cheat Sheet](/refguide/charts-any-cheat-sheet/)
+* The most common settings: [Configuration Cheat Sheet](/refguide/charts-advanced-cheat-sheet/)
 * The full JSON reference: [https://plot.ly/javascript/reference/](https://plot.ly/javascript/reference/)
-* [JSON Structures](/refguide/json-structures)
-* [Export Mappings](/refguide/export-mappings)  
+* [JSON Structures](/refguide/json-structures/)
+* [Export Mappings](/refguide/export-mappings/)  

@@ -10,7 +10,7 @@ tags: ["monitoring", "troubleshooting", "debug", "microflow", "remote"]
 In addition to debugging a local deployment of your app, it is also possible to debug applications that are already in a cloud environment.
 
 {{% alert color="info" %}}
-These instructions are for apps running in Mendix Cloud v4. If you are running an older version of Mendix which is deployed to Mendix Cloud v3 you need the previous version of this document here: [Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely).
+These instructions are for apps running in Mendix Cloud v4. If you are running an older version of Mendix which is deployed to Mendix Cloud v3 you need the previous version of this document here: [Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely/).
 {{% /alert %}}
 
 {{% alert color="warning" %}}
@@ -27,15 +27,15 @@ If you are debugging in the cloud, be aware of other app end-users. Breakpoints 
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Have access as a team member to a Mendix app deployed to a [licensed](/developerportal/deploy/licensing-apps) Mendix Cloud v4 environment
-* Have **TRANSPORT RIGHTS** to the app environment you want to debug in the app's [node permissions](/developerportal/deploy/node-permissions)
+* Have access as a team member to a Mendix app deployed to a [licensed](/developerportal/deploy/licensing-apps/) Mendix Cloud v4 environment
+* Have **TRANSPORT RIGHTS** to the app environment you want to debug in the app's [node permissions](/developerportal/deploy/node-permissions/)
 
 ## 3 The Basics
 
 In Mendix Cloud v4, the debugger is always listening for connections so you cannot turn it on or off. To debug your app in the cloud, you need to get a URL and a password from the app environment and provide that information to Studio Pro. The steps below explain how to do this.
 
 {{% alert color="info" %}}
-The debugger supports only debugging of single-instance environments. Multi-instance environments need to be scaled down to one instance before the debugger can be used. See [Scaling Your Environment in Mendix Cloud v4](/developerportal/deploy/scale-environment) for more information.
+The debugger supports only debugging of single-instance environments. Multi-instance environments need to be scaled down to one instance before the debugger can be used. See [Scaling Your Environment in Mendix Cloud v4](/developerportal/deploy/scale-environment/) for more information.
 {{% /alert %}}
 
 ### 3.1 Obtain Debugging Credentials
@@ -136,12 +136,12 @@ The debugger is now connected to your app running in the cloud.
 
 ## 4 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto/testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Log Levels](log-levels)
-* [Debug Microflows and Nanoflows](debug-microflows-and-nanoflows)
-* [Debug Java Actions](debug-java-actions)
+* [Find the Root Cause of Runtime Errors](/howto/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages](/howto/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Log Levels](/howto/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows and Nanoflows](/howto/monitoring-troubleshooting/debug-microflows-and-nanoflows/)
+* [Debug Java Actions](/howto/monitoring-troubleshooting/debug-java-actions/)
 * [The Ultimate Debugger](http://www.mendix.com/tech-blog/the-ultimate-debugger/) 

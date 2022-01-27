@@ -8,11 +8,11 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-For an introduction to export mappings, refer to [Mapping Documents](mapping-documents).
+For an introduction to export mappings, refer to [Mapping Documents](/refguide/mapping-documents/).
 
 ## 2 Obtaining Objects in Export Mappings
 
-Figure 1 shows an example of an Export Mapping document in which two elements from a schema have been selected using the [Select Elements](select--elements) dialog. The entity Cheesecake (on the left) was dragged into the mapping to map to the Cheesecake element (on the right) and the entity Topping was mapped to the Topping element.
+Figure 1 shows an example of an Export Mapping document in which two elements from a schema have been selected using the [Select Elements](/refguide/select--elements/) dialog. The entity Cheesecake (on the left) was dragged into the mapping to map to the Cheesecake element (on the right) and the entity Topping was mapped to the Topping element.
 
 ![](/attachments/refguide/modeling/integration/mapping-documents/export-mappings/16843939.png)
 

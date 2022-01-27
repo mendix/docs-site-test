@@ -1,6 +1,6 @@
 ---
 title: "Close Page Button"
-url: /refguide7/back-button
+url: /refguide7/back-button/
 parent: "button-widgets"
 ---
 

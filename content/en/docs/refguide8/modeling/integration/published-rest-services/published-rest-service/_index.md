@@ -1,14 +1,14 @@
 ---
 title: "Published REST Service"
-url: /refguide8/published-rest-service
+url: /refguide8/published-rest-service/
 parent: "published-rest-services"
-menu_order: 10
+weight: 10
 description: "Configuration options for a published REST service"
 tags: ["published REST", "service", "reserved URL prefixes", "swagger", "security", "CORS", "resources", "operation", "how-to", "studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-rest-service.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-rest-service.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -21,13 +21,13 @@ This document describes the published REST service configuration options shown w
 
 ### 2.1 Service Name {#service-name}
 
-Service name uniquely identifies the service in the app. It is also displayed in [OpenAPI (Swagger) documentation page](open-api).
+Service name uniquely identifies the service in the app. It is also displayed in [OpenAPI (Swagger) documentation page](/refguide8/open-api/).
 
 When service is initially created, service name is used in the creation of the default location for the service. If the service name contains any spaces or special characters, they will be replaced with the `_` character in the service location.
 
 ### 2.2 Version
 
-Version is used to display version information in [OpenAPI (Swagger) documentation page](open-api). You can set any string in the version field, but it is recomended to follow [semantic versioning](https://semver.org/) scheme.
+Version is used to display version information in [OpenAPI (Swagger) documentation page](/refguide8/open-api/). You can set any string in the version field, but it is recomended to follow [semantic versioning](https://semver.org/) scheme.
 
 By default, version is set to "1.0.0".
 
@@ -58,15 +58,15 @@ Following URL prefixes are reserved and are not allowed to be used in location:
 * `p/`
 * `reload/`
 
-When your application is running, you can click the location to open the [interactive documentation page](published-rest-services#interactive-documentation).
+When your application is running, you can click the location to open the [interactive documentation page](/refguide8/published-rest-services/#interactive-documentation).
 
 ### 2.3 Public Documentation {#public-documentation}
 
-The public documentation is used in the service's [OpenAPI 2.0 (Swagger) Documentation](open-api). You can use [GitHub-flavored markdown](gfm-syntax) for rich text.
+The public documentation is used in the service's [OpenAPI 2.0 (Swagger) Documentation](/refguide8/open-api/). You can use [GitHub-flavored markdown](/refguide8/gfm-syntax/) for rich text.
 
 ### 2.5 Export swagger.json {#export-swagger-json}
 
-To save a service's [OpenAPI (Swagger) documentation](open-api) somewhere on your machine, simply right-click the service in the **Project Explorer** and select **Export swagger.json** (or just click the **Export swagger.json** button, depending on your Studio Pro version). This is a machine-readable file in the [OpenAPI 2.0 file format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md). Most API tools support this format.
+To save a service's [OpenAPI (Swagger) documentation](/refguide8/open-api/) somewhere on your machine, simply right-click the service in the **Project Explorer** and select **Export swagger.json** (or just click the **Export swagger.json** button, depending on your Studio Pro version). This is a machine-readable file in the [OpenAPI 2.0 file format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md). Most API tools support this format.
 
 When the app is running, this file is available under */rest-doc/servicename/swagger.json*.
 
@@ -83,7 +83,7 @@ If authentication is required, you can select which authentication methods you w
 * Select **Username and password** to allow clients to authenticate themselves using a username and a password in the **Authorization** header (this is called "basic authentication")
 *  Select **Active session** to allow access from JavaScript inside your current application
   * Once a user has logged into the browser, the JavaScript in your app can access the REST service using the current user's session
-  * [Offline-first](offline-first) apps cannot use active session authentication, because they do not have sessions that stay active while the app is running
+  * [Offline-first](/refguide8/offline-first/) apps cannot use active session authentication, because they do not have sessions that stay active while the app is running
   * To prevent cross-site request forgery, the `X-Csrf-Token` header needs to be set on each request, for example:
 
   ```javascript
@@ -95,17 +95,17 @@ If authentication is required, you can select which authentication methods you w
 
 * Select **Custom** to authenticate using a microflow. This microflow is called every time a user want to access a resource.
 
-Check more than one authentication method to have the service try each of them. It will first try **Custom** authentication, then **Username and password**, and then **Active session**. For more details, see [Published REST Routing](published-rest-routing).
+Check more than one authentication method to have the service try each of them. It will first try **Custom** authentication, then **Username and password**, and then **Active session**. For more details, see [Published REST Routing](/refguide8/published-rest-routing/).
 
 ### 3.3 Microflow {#authentication-microflow}
 
 Specify which microflow to use for custom authentication.
 
-Select **Parameters** to see the [list of parameters passed to the authentication microflow](published-rest-authentication-parameter). In that window you can indicate whether the authentication microflow's parameters come from request headers or from the query string.
+Select **Parameters** to see the [list of parameters passed to the authentication microflow](/refguide8/published-rest-authentication-parameter/). In that window you can indicate whether the authentication microflow's parameters come from request headers or from the query string.
 
-The microflow may take an [HttpRequest](http-request-and-response-entities#http-request) as a parameter, so it can inspect the incoming request.
+The microflow may take an [HttpRequest](/refguide8/http-request-and-response-entities/#http-request) as a parameter, so it can inspect the incoming request.
 
-The microflow may also take an [HttpResponse](http-request-and-response-entities#http-response) as a parameter. When the microflow sets the status code of this response to something other then **200**, this value is returned and the operation will not be executed. In that case, any headers set on the response are returned as well.
+The microflow may also take an [HttpResponse](/refguide8/http-request-and-response-entities/#http-response) as a parameter. When the microflow sets the status code of this response to something other then **200**, this value is returned and the operation will not be executed. In that case, any headers set on the response are returned as well.
 
 The authentication microflow should return a User.
 
@@ -117,9 +117,9 @@ There are three possible outcomes of the authentication microflow:
 
 ### 3.4 Allowed Roles
 
-The allowed roles define which [module role](module-security#module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
+The allowed roles define which [module role](/refguide8/module-security/#module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Web service users cannot access REST services.
 {{% /alert %}}
 
@@ -127,17 +127,17 @@ Web service users cannot access REST services.
 
 Check this box when your service needs to be available on websites other than your own.
 
-Click the [Settings](cors-settings) button to specify this access in more detail (for instance, which websites are allowed to access the service).
+Click the [Settings](/refguide8/cors-settings/) button to specify this access in more detail (for instance, which websites are allowed to access the service).
 
 ## 5 Resources
 
-A REST service exposes a number of [resources](published-rest-resource). On a resource you can define GET, PUT, POST, PATCH, DELETE, HEAD and OPTIONS operations.
+A REST service exposes a number of [resources](/refguide8/published-rest-resource/). On a resource you can define GET, PUT, POST, PATCH, DELETE, HEAD and OPTIONS operations.
 
-You can drag an entity or a message definition onto this list to [generate a complete resource](generate-rest-resource).
+You can drag an entity or a message definition onto this list to [generate a complete resource](/refguide8/generate-rest-resource/).
 
 ## 6 Operations
 
-When you select a resource, you see the [operations](published-rest-operation) that are defined for that resource.
+When you select a resource, you see the [operations](/refguide8/published-rest-operation/) that are defined for that resource.
 
 Resources and Operations are appended to [Location](#location) to form a URL on which they can be accessed.
 
@@ -151,4 +151,4 @@ Resources and Operations are appended to [Location](#location) to form a URL on 
 
 ## 8 Read More
 
-For more information on which operation gets executed for a given request URL, see [Published REST Routing](published-rest-routing).
+For more information on which operation gets executed for a given request URL, see [Published REST Routing](/refguide8/published-rest-routing/).

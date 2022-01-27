@@ -1,25 +1,25 @@
 ---
 title: "Page Title"
-url: /refguide8/page-title
+url: /refguide8/page-title/
 parent: "common-widgets"
-menu_order: 50
+weight: 50
 tags: ["studio pro", "page title", "common widgets"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/page-title.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/page-title.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-This widget displays a page title of the current page that is set in [page properties](page-properties#title).
+This widget displays a page title of the current page that is set in [page properties](/refguide8/page-properties/#title).
 
 ![Page Title Example](/attachments/refguide8/modeling/pages/common-widgets/page-title/page-title-example.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-The page title widget makes it possible to embed the page title in a [layout](layout), as it will show the title of the page that uses the layout.
+The page title widget makes it possible to embed the page title in a [layout](/refguide8/layout/), as it will show the title of the page that uses the layout.
 
 {{% /alert %}}
 
@@ -50,6 +50,6 @@ Page title properties consist of the following sections:
 
 ## 3 Read More
 
-* [Page](page)
-* [Common Widgets](common-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [Common Widgets](/refguide8/common-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)

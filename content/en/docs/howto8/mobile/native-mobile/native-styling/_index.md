@@ -1,8 +1,8 @@
 ---
 title: "Implement Native Mobile Styling"
-url: /howto8/mobile/native-styling
+url: /howto8/mobile/native-styling/
 parent: "native-mobile"
-menu_order: 30
+weight: 30
 description: General information for native styling in Mendix.
 tags: ["styling", "design", "native"]
 ---
@@ -43,5 +43,5 @@ Available in Mendix Studio and Mendix Studio Pro, design properties are an easie
 
 ## 5 Read More
 
-* [Mendix Atlas UI](/howto8/front-end/atlas-ui)
-* [Get Started with Native Mobile](getting-started-with-native-mobile)
+* [Mendix Atlas UI](/howto8/front-end/atlas-ui/)
+* [Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile/)

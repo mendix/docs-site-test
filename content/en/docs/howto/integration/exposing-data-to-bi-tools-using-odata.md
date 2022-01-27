@@ -177,8 +177,8 @@ These are some other query examples:
 
 ## 7 Read More
 
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Consume a Simple Web Service](consume-a-simple-web-service)
-* [Export XML Documents](export-xml-documents)
-* [Import Excel Documents](importing-excel-documents)
-* [Expose a Web Service](expose-a-web-service)
+* [Consume a Complex Web Service](/howto/integration/consume-a-complex-web-service/)
+* [Consume a Simple Web Service](/howto/integration/consume-a-simple-web-service/)
+* [Export XML Documents](/howto/integration/export-xml-documents/)
+* [Import Excel Documents](/howto/integration/importing-excel-documents/)
+* [Expose a Web Service](/howto/integration/expose-a-web-service/)

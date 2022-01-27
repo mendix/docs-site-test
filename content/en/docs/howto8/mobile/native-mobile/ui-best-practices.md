@@ -1,8 +1,8 @@
 ---
 title: "Implement Best Practices for Native Mobile App UI"
-url: /howto8/mobile/ui-best-practices
+url: /howto8/mobile/ui-best-practices/
 parent: "native-mobile"
-menu_order: 35
+weight: 35
 description: "This document will teach you how to build a native mobile app's UI."
 tags: ["ux", "native", "mobile", "ui"]
 ---
@@ -67,11 +67,11 @@ By default Mendix has a default set of design properties which enable developers
 
 For example, Mendix offers a set of button variants (default, secondary, warning, success, and danger). However, during your design process you can choose to just have a default and a secondary variant. Choices like this are a part of UI design. It is up to people in UI and front-end design roles to determine how much freedom a Mendix developer should have.
 
-The design properties are located in *theme/settings-native.json*, and more information be found in the [Design Properties API Documentation](/apidocs-mxsdk/apidocs/design-properties).
+The design properties are located in *theme/settings-native.json*, and more information be found in the [Design Properties API Documentation](/apidocs-mxsdk/apidocs/design-properties/).
 
 #### 3.2.3 Create the App Layouts
 
-The default Atlas theme comes pre-bundled with a set of layouts. If these do not fit your app’s design, you can create or customize the layouts and name them accordingly. Do not change the supplied layouts. Either create a separate module with the custom layouts, page templates, and building blocks or create your own [UI resources module](/howto8/front-end/create-company-atlas-ui-resources#moving-from-local-to-atlas-ui-resources).
+The default Atlas theme comes pre-bundled with a set of layouts. If these do not fit your app’s design, you can create or customize the layouts and name them accordingly. Do not change the supplied layouts. Either create a separate module with the custom layouts, page templates, and building blocks or create your own [UI resources module](/howto8/front-end/create-company-atlas-ui-resources/#moving-from-local-to-atlas-ui-resources).
 
 #### 3.2.4 Create Building Blocks for Common UI Structures
 
@@ -109,7 +109,7 @@ Try to avoid very specific class names. Very specific class names are often only
 
 By changing styling in the **core** folder you risk incurring errors the next time you update Atlas. Updating Atlas might also be more difficult. 
 
-A large part of your app's overall styling can be changed in `theme/styles/native/app/custom-variables.js`. However, if more changes are needed you could extend a widget’s default styling or define the default styling yourself. For more information, see [How to Extend Design Properties to Customize Your Studio Experience](/howto8/front-end/extend-design-properties-to-customize).
+A large part of your app's overall styling can be changed in `theme/styles/native/app/custom-variables.js`. However, if more changes are needed you could extend a widget’s default styling or define the default styling yourself. For more information, see [How to Extend Design Properties to Customize Your Studio Experience](/howto8/front-end/extend-design-properties-to-customize/).
 
 ### 4.4 Favor Design Properties Over Including Properties
 
@@ -135,5 +135,5 @@ It is a common pitfall to keep adding classes to a single file. However, this wi
 
 ## 5 Read More
 
-* [Native Mobile Styling Reference Guide](/refguide8/native-styling-refguide)
-* [How to Style Your Mendix Native Mobile App](/howto8/mobile/how-to-use-native-styling)
+* [Native Mobile Styling Reference Guide](/refguide8/native-styling-refguide/)
+* [How to Style Your Mendix Native Mobile App](/howto8/mobile/how-to-use-native-styling/)

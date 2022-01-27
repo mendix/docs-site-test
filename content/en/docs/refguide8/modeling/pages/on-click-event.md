@@ -1,8 +1,8 @@
 ---
 title: "On Click Event & Events Section"
-url: /refguide8/on-click-event
+url: /refguide8/on-click-event/
 parent: "pages"
-menu_order: 130
+weight: 130
 tags: ["studio pro", "events section", "properties", "widget", "on click", "action", "on click event"]
 aliases:
     - /refguide8/opening-pages.html
@@ -10,8 +10,8 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/on-click-event.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/on-click-event.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -79,7 +79,7 @@ No action is taken. This option is useful for setting up a page without defining
 
 The **Show a page** event opens the specified page. Select the page which opens using the options below:
 
-* **Page** – a [page](page) that should open.
+* **Page** – a [page](/refguide8/page/) that should open.
 
 * **Page title** – the page you open can be given a unique title, depending on where you open it from. This allows you to re-use the same page for different purposes. For example, by setting the title to **New Customer** from one button and **Edit Customer** from another, you can use the same page for editing new and existing customers.
 
@@ -93,7 +93,7 @@ The **Show a page** event opens the specified page. Select the page which opens 
 
 The **Call a microflow** event executes the specified microflow.
 
-{{%alert type="info" %}}
+{{%alert color="info" %}}
 
 When setting **Call a microflow** as an action for the **On change**, **On enter**, or **On leave** event of a widget, note that microflows require some time to complete. Any changes to the current form made in the meantime (for example, changing values in input widgets) will be overwritten by the results of the microflow.
 Therefore, it is not recommended to change entities/attributes on the current page in a microflow triggered by an **On change**, **On enter**, or **On leave** event.
@@ -104,7 +104,7 @@ The following settings are specific for this event:
 
 #### 3.3.1 Microflow {#microflow}
 
-The [microflow](microflow) that should be executed.
+The [microflow](/refguide8/microflow/) that should be executed.
 
 #### 3.3.2 Microflow Settings
 
@@ -146,7 +146,7 @@ If the microflow is triggered within a grid and has an object list parameter, th
 | Non-Blocking | A progress bar is shown, but the end-user can continue working. |
 | Blocking | A progress bar is shown and the end-user must wait until the microflow is done. |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Non-blocking progress bars are shown with a delay of half a second. If the execution of your microflow takes less than half a second, the progress bar will not be shown at all. Blocking progress bars are shown immediately.
 {{% /alert %}}
 
@@ -198,7 +198,7 @@ For microflows that are used within a data widget, setting **Abort on Validation
 
 The **Call a nanoflow** event executes the specified nanoflow. 
 
-Set the **Nanoflow** property to specify a [nanoflow](nanoflow) that should be executed.
+Set the **Nanoflow** property to specify a [nanoflow](/refguide8/nanoflow/) that should be executed.
 
 ### 3.5 Open Link {#open-link}
 
@@ -220,7 +220,7 @@ The table below described link types available for the **Open link** on click ev
 | Call  | Starts a phone call to this number                   | `+1-202-555-0165`                         |
 | Text  | Specifies a number to which to send a text message   | `+1-202-555-0112`                         |
 
-{{%alert type="info" %}}
+{{%alert color="info" %}}
 
 When you Specify  **Email**, **Call**, or **Text** options, the corresponding default app will be opened on the device when the action is triggered, for example, the default email client will be opened to compose a message.
 
@@ -231,14 +231,14 @@ When you Specify  **Email**, **Call**, or **Text** options, the corresponding de
 The **Create object** event creates a new object. The following properties are specific for this event:
 
 * **Entity (path)** – specifies which entity to create. It is also possible to choose an association (if available) from the context object. If an entity is configured, a new instance of the entity will be created. If an entity through association from the context object is configured, a new instance of the entity will be created and an object associated with the context will be created.
-* **On {event} page** – specifies which [page](page) should be shown to allow the end-user to enter values for the new created object. This page must accept a context parameter object (for example, a data view) with the same entity or a sub-type of the created entity. **{event}** specifies which event is being used to trigger this action (**click**, for example).
+* **On {event} page** – specifies which [page](/refguide8/page/) should be shown to allow the end-user to enter values for the new created object. This page must accept a context parameter object (for example, a data view) with the same entity or a sub-type of the created entity. **{event}** specifies which event is being used to trigger this action (**click**, for example).
 
 ### 3.7 Save Changes {#save-changes}
 
 The **Save changes** event commits all changes made on the page. The following properties are specific for this event:
 
 * **Close page** – specifies whether the current page should be closed.
-* **Auto-synchronize** –  specifies whether synchronization should happen when the save button is clicked for a Mendix application running in an offline profile. When an object is saved in a Mendix application running in an offline profile it is stored in a local database until it can be synchronized with the server (for more information on the capabilities of offline apps, see [Offline First](offline-first). In practice, this means that uploading a new object to the server requires two distinct actions: saving the object and [syncing it](offline-first#synchronization).
+* **Auto-synchronize** –  specifies whether synchronization should happen when the save button is clicked for a Mendix application running in an offline profile. When an object is saved in a Mendix application running in an offline profile it is stored in a local database until it can be synchronized with the server (for more information on the capabilities of offline apps, see [Offline First](/refguide8/offline-first/). In practice, this means that uploading a new object to the server requires two distinct actions: saving the object and [syncing it](/refguide8/offline-first/#synchronization).
 
 ### 3.8 Cancel Changes {#cancel-changes}
 
@@ -258,7 +258,7 @@ Set the **Close page** property to indicate whether the current page should be c
 
 ### 3.11 Synchronize {#synchronize}
 
-The **Synchronize** event [synchronizes](offline-first#synchronization) the data stored locally on your device with the server database.
+The **Synchronize** event [synchronizes](/refguide8/offline-first/#synchronization) the data stored locally on your device with the server database.
 
 ### 3.12 Sign Out {#sign-out}
 
@@ -266,5 +266,5 @@ The **Sign out** event signs the currently signed-in user out. When no user is s
 
 ## 4 Read More
 
-* [Pages](pages)
-* [Page](page)
+* [Pages](/refguide8/pages/)
+* [Page](/refguide8/page/)

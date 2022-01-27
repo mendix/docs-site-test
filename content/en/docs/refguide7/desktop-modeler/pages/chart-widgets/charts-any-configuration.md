@@ -1,9 +1,9 @@
 ---
 title: "Any Chart Widgets"
-url: /refguide7/charts-any-configuration
+url: /refguide7/charts-any-configuration/
 parent: "chart-widgets"
 description: "A reference guide on the configuration of the Any Chart widget to pass the correct values to plotly. This enables you to draw a wide variety of charts"
-menu_order: 30
+weight: 30
 tags: ["Any Chart", "Reference Guide", "Options", "Configuration", "Charts"]
 ---
 
@@ -11,7 +11,7 @@ tags: ["Any Chart", "Reference Guide", "Options", "Configuration", "Charts"]
 
 With **Any Chart**, you can build any chart type that is supported by Plotly.js. So if you want to build a chart which is not available as a standard chart widget, such as a 3D chart, Any Chart is your friend.
 
-The configuration of this chart type is complex. For help, you can look at the **building blocks** that are delivered in the [Any Chart](/appstore/modules/any-chart) module from the Mendix Marketplace. Alternatively, use [How to Use Any Chart](/howto7/extensibility/charts-any-usage) or the [Any Chart cheat sheet](charts-any-cheat-sheet) for a quick start.
+The configuration of this chart type is complex. For help, you can look at the **building blocks** that are delivered in the [Any Chart](/appstore/modules/any-chart/) module from the Mendix Marketplace. Alternatively, use [How to Use Any Chart](/howto7/extensibility/charts-any-usage/) or the [Any Chart cheat sheet](/refguide7/charts-any-cheat-sheet/) for a quick start.
 
 Any Charts are configured with a JSON **Data** array and **Layout** object. The configuration can be set statically, via the **Source attribute** and **Sample data** properties.
 
@@ -21,7 +21,7 @@ The Sample data is for demo purposes. It is shown at run time when there is no S
 
 ## 2. Location of Any Chart Widget
 
-The Any Chart Widget must be placed in the context of a **data view**. The data view contains an entity object which has a **Source attribute** (unlimited length string) which contains the JSON representation of the data which you want to plot. Unlike the basic chart widgets, the Any Chart widget does not work directly on the data in your domain model. You have to convert the data you want to plot into the JSON format which Any Chart expects. See [How to Use Any Chart](/howto7/extensibility/charts-any-usage) for a step-by-step explanation of how to do this.
+The Any Chart Widget must be placed in the context of a **data view**. The data view contains an entity object which has a **Source attribute** (unlimited length string) which contains the JSON representation of the data which you want to plot. Unlike the basic chart widgets, the Any Chart widget does not work directly on the data in your domain model. You have to convert the data you want to plot into the JSON format which Any Chart expects. See [How to Use Any Chart](/howto7/extensibility/charts-any-usage/) for a step-by-step explanation of how to do this.
 
 ## 3 Data
 
@@ -89,7 +89,7 @@ The width of the chart in pixels or as a percentage, based on the **Width unit**
 
 **Percentage of width** allows you to change the aspect ratio, **Pixels** is an absolute measure, and **Percentage of parent** allows you to set the height in relation to the parent container.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Warning: When using **Percentage of parent** the parent container must have an absolute height, else nothing is displayed.
 {{% /alert %}}
 
@@ -104,7 +104,7 @@ The **Any Chart** widget supports two sorts of event, related to the points plot
 * **hover**: which resolves as a *Tooltip* request
 * **click**: which resolves as an *On click* event
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Events will be triggered by hovering over or clicking on the points plotted on the chart. Clicks on other parts of the chart will NOT trigger an event.
 {{% /alert %}}
 
@@ -191,9 +191,9 @@ To the theme folder, add a `.json` file named *com.mendix.charts*. The JSON shou
 }
 ```
 
-For guidance on how to set up chart theming see: [How to Use the Charts Theme](/howto7/extensibility/charts-theme).
+For guidance on how to set up chart theming see: [How to Use the Charts Theme](/howto7/extensibility/charts-theme/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Please use with caution, as the configuration set up here will be applied to every chart in your application. Only the advanced configurations set up in the widget itself have a higher precedence.
 

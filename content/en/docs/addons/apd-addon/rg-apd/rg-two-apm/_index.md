@@ -2,7 +2,7 @@
 title: "APM 2 Reference Guide"
 url: /addons/apd-addon/rg-two-apm/
 parent: "rg-apd"
-menu_order: 1
+weight: 1
 aliases:
     - /apm/reference-guide/rg-2/reference-guide-2.html
 ---
@@ -13,13 +13,13 @@ The Application Performance Monitor (APM) is a solution that helps you to analyz
 
 This is the reference guide for CLEVR APM 2 for Mendix. It has the following chapters:
 
-* [Apps](rg-two-apps)
-* [Environments](rg-two-environments)
-* [Dashboard](rg-two-dashboard)
-* [Logs](rg-two-logs)
-* [Performance Statistics](rg-two-statistics)
-* [Performance Recorder](rg-two-recorder)
-* [Settings](rg-two-settings)
+* [Apps](/addons/apd-addon/rg-two-apps/)
+* [Environments](/addons/apd-addon/rg-two-environments/)
+* [Dashboard](/addons/apd-addon/rg-two-dashboard/)
+* [Logs](/addons/apd-addon/rg-two-logs/)
+* [Performance Statistics](/addons/apd-addon/rg-two-statistics/)
+* [Performance Recorder](/addons/apd-addon/rg-two-recorder/)
+* [Settings](/addons/apd-addon/rg-two-settings/)
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-two-apm/APM_Powered_logo.png)
 

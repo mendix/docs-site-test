@@ -12,9 +12,9 @@ This activity can only be used in **Microflows**.
 
 ## 1 Introduction
 
-The cast object activity is used in a microflow after an [object type decision](object-type-decision) to change the type of object from the generalized object type to the specialized object type of the path out of the object type decision.
+The cast object activity is used in a microflow after an [object type decision](/refguide/object-type-decision/) to change the type of object from the generalized object type to the specialized object type of the path out of the object type decision.
 
-To read more about specialization and generalization, see [Entities](entities).
+To read more about specialization and generalization, see [Entities](/refguide/entities/).
 
 ## 2 Properties
 

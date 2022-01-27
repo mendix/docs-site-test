@@ -1,8 +1,8 @@
 ---
 title: "Native Mobile"
-url: /howto8/mobile/native-mobile
+url: /howto8/mobile/native-mobile/
 category: "Mobile"
-menu_order: 1
+weight: 1
 tags: ["mobile", "native", "iOS", "Android"]
 ---
 
@@ -14,14 +14,14 @@ You build Mendix native mobile apps the same way you build web or hybrid apps. Y
 
 ## 2 Documents in This Section
 
-* [Get Started with Native Mobile](getting-started-with-native-mobile)
-* [Build Native Apps](build-native-apps)
-* [Use Notifications](notifications)
-* [Implement Native Mobile Styling](native-styling)
-* [Implement Best Practices for Native Mobile App UI](ui-best-practices)
-* [Use Over the Air Updates](how-to-ota)
-* [Set Up Deep Links in Native Mobile Apps](native-deep-link)
-* [Add Fonts to Your Native Mobile App](native-custom-fonts)
-* [Set Up Maps in Native Mobile Apps](how-to-maps)
-* [Troubleshoot Common Native Mobile Issues](common-issues)
+* [Get Started with Native Mobile](/howto8/mobile/getting-started-with-native-mobile/)
+* [Build Native Apps](/howto8/mobile/build-native-apps/)
+* [Use Notifications](/howto8/mobile/notifications/)
+* [Implement Native Mobile Styling](/howto8/mobile/native-styling/)
+* [Implement Best Practices for Native Mobile App UI](/howto8/mobile/ui-best-practices/)
+* [Use Over the Air Updates](/howto8/mobile/how-to-ota/)
+* [Set Up Deep Links in Native Mobile Apps](/howto8/mobile/native-deep-link/)
+* [Add Fonts to Your Native Mobile App](/howto8/mobile/native-custom-fonts/)
+* [Set Up Maps in Native Mobile Apps](/howto8/mobile/how-to-maps/)
+* [Troubleshoot Common Native Mobile Issues](/howto8/mobile/common-issues/)
 

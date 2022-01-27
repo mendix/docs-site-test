@@ -57,9 +57,9 @@ Download and install the following modules:
 
 ## 4 Usage
 
-For more information on module's components and how to use them, see the [Workflow Commons Components](/refguide/workflow-setting-up-app#components) section in *Adding a Workflow to an Existing App: Setting Up the Basics*.
+For more information on module's components and how to use them, see the [Workflow Commons Components](/refguide/workflow-setting-up-app/#components) section in *Adding a Workflow to an Existing App: Setting Up the Basics*.
 
 ## 5 Read More
 
-* [Adding a Workflow to an Existing App: Setting Up the Basics](/refguide/workflow-setting-up-app)
-* [Data Widgets](data-widgets)
+* [Adding a Workflow to an Existing App: Setting Up the Basics](/refguide/workflow-setting-up-app/)
+* [Data Widgets](/appstore/modules/data-widgets/)

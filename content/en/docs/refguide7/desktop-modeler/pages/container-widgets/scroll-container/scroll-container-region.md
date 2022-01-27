@@ -1,11 +1,11 @@
 ---
 title: "Scroll Container Region"
-url: /refguide7/scroll-container-region
+url: /refguide7/scroll-container-region/
 parent: "scroll-container"
 ---
 
 
-A scroll container region is part of a [Scroll Container](scroll-container), and defines a content area.
+A scroll container region is part of a [Scroll Container](/refguide7/scroll-container/), and defines a content area.
 
 ## Common Properties
 

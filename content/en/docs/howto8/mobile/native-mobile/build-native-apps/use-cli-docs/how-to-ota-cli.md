@@ -1,16 +1,16 @@
 ---
 title: "Release Over the Air Updates with App Center's CodePush using the CLI"
-url: /howto8/mobile/how-to-ota-cli
+url: /howto8/mobile/how-to-ota-cli/
 parent: "use-cli-docs"
-menu_order: 71
+weight: 71
 description: A tutorial for pushing over the air updates (OTA).
 tags: ["native", "mobile", "ota", "native-builder", "over the air", "update"]
 ---
 
 ## 1 Introduction
 
-{{% alert type="info" %}}
-This document is for legacy cases when older projects cannot use the Mendix Native Mobile Builder. However, we *strongly suggest* you migrate your project to the Mendix Native Mobile Builder. If you have not migrated your project to the Native Mobile Builder, or are on an Native Template version older than 5.1.9 (Mendix Studio Pro 8.15.0 or older), follow the [Transfer a CLI OTA-Compatible App to the Mendix Native Mobile Builder](/howto8/mobile/how-to-ota#from-cli-to-ui) section of *How to Release Over the Air Updates with App Center's CodePush* to update your Native Template. If for whatever reason it's not possible to migrate your project to a newer version of Native Template, continue with this guide.
+{{% alert color="info" %}}
+This document is for legacy cases when older projects cannot use the Mendix Native Mobile Builder. However, we *strongly suggest* you migrate your project to the Mendix Native Mobile Builder. If you have not migrated your project to the Native Mobile Builder, or are on an Native Template version older than 5.1.9 (Mendix Studio Pro 8.15.0 or older), follow the [Transfer a CLI OTA-Compatible App to the Mendix Native Mobile Builder](/howto8/mobile/how-to-ota/#from-cli-to-ui) section of *How to Release Over the Air Updates with App Center's CodePush* to update your Native Template. If for whatever reason it's not possible to migrate your project to a newer version of Native Template, continue with this guide.
 {{% /alert %}}
 
 Using Native Builder and Mendix Studio Pro, you can update your Mendix Native Apps over the air (OTA). OTA updates are a fast and painless way of updating things like layouts, pages, assets, or even you app's business logic (such as nanoflows and JavaScript actions).
@@ -19,7 +19,7 @@ Native apps are separated into two parts: a wrapper that is basically a native i
 
 OTA updates are bound to a specific app version and build number. Therefore, you can target specific updates to specific versions of your app. For example, you can push an update for version 1.0.0 as a legacy version that supports older devices, and also push an update for the 2.0.0 version of your app which includes more features.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Currently OTA  does not update your app while the app is open or minimized.
 {{% /alert %}}
 
@@ -35,10 +35,10 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Install Native Builder 3.0.0 or higher
 * Install Mendix Studio Pro 8.4 or higher
-* Complete [How to Deploy your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app)
+* Complete [How to Deploy your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app/)
 * Complete at least one successful build using Native Builder v3.0.0 and Native Template v2.0.0
 * Install your app on a test device or emulator
-* Read the [Offline First Reference Guide](/refguide8/offline-first)
+* Read the [Offline First Reference Guide](/refguide8/offline-first/)
 
 ## 3 When to Use OTA Updates
 
@@ -53,7 +53,7 @@ It is good practice to *always* redeploy your Mendix App before pushing a new ov
 * JavaScript action changes
 * Widgets shipped with Mendix added or removed
 * A new custom Javascript-only widget or module was added
-* Non-destructive model changes (for more information, see the [Offline First Reference Guide](/refguide8/offline-first))
+* Non-destructive model changes (for more information, see the [Offline First Reference Guide](/refguide8/offline-first/))
 
 ### 3.2 When a Full Release is Required
 
@@ -72,7 +72,7 @@ If you have made any changes directly to your iOS or Android project, you will h
 Over the air updates let you correct mistakes in your published apps without issuing a new release. For example, imagine you issued a new release and later found a spelling mistake on your welcome screen:
 
 {{/* % image_container width="300" % */}}![Typo in welcome screen](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-error-text.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 Before OTA updates, you would have to make a new release and configure it in the app stores. But OTA updates make fixing such a mistake easy.
 
 To release a new version OTA, follow these steps:
@@ -80,7 +80,7 @@ To release a new version OTA, follow these steps:
 1.  Correct the title and message as follows:
 
 	{{/* % image_container width="300" % */}}![Make some changes](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/modeller-correct.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 2. Save your changes.
 3. Note the version and build number of the app build you want to update. This how-to assumes an app version of 1.0.0 and a build number of 1.
 4. Open a command line interface (CLI) such as Command Prompt.
@@ -96,7 +96,7 @@ To release a new version OTA, follow these steps:
 	native-builder.exe release push-update --project-name "CoolApp" --target-version "1.0.0" --build-number 1 --rollout-percentage 100 --mandatory
 	```
 
-	{{% alert type="info" %}}
+	{{% alert color="info" %}}
 This command does the following:<br />
 * Runs Mx Build to build your project<br />
 * Packages your project to be pushed as a new update<br />
@@ -109,12 +109,12 @@ This command does the following:<br />
 2. Restart the app on your testing device. You should be greeted with the following message:
 
 	{{/* % image_container width="300" % */}}![Update available prompt](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-update-prompt.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 3.  Tap **Confirm** to update your app.
 4.  The app should reload and greet you with the following dialog box:
 
 	{{/* % image_container width="300" % */}}![Update success prompt](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/phone-success-prompt.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 5 Rolling Back Updates
 
 Sometimes an update might not perform as expected. Out of the box, when an update fails, the automatic update mechanism will try to recover by switching back to the bundle packaged with your app's binary. In cases such as these, you should update your bundle by either fixing the issue and pushing a new update or by rolling back to the previous version.
@@ -136,7 +136,7 @@ Imagine you want to rollback an update. Maybe you released it too early or somet
 	```
 
 	{{/* % image_container width="300" % */}}![Output of rollback command](/attachments/howto8/mobile/native-mobile/build-native-apps/use-cli-docs/how-to-ota-cli/rollback-result.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 3. Next time you open your app, you should be greeted with the **Update available** dialog box. Tap **Confirm** to roll your app back on your device.
 
 ## 6 Initiating a Partial Initial Rollout
@@ -184,7 +184,7 @@ Instead of the mandatory update pop-up window, you app's users should now be gre
 
 ## 8 Preserving your Model's Integrity
 
-Before issuing OTA updates or releasing new versions, please read and understand the [Offline First](/refguide8/offline-first) reference guide. It is important to understand the implications of offline first.
+Before issuing OTA updates or releasing new versions, please read and understand the [Offline First](/refguide8/offline-first/) reference guide. It is important to understand the implications of offline first.
 
 Mendix Native Apps are offline first. This means you should be cautious when changing the following elements, and should avoid changing them if possible:
 
@@ -203,8 +203,8 @@ This issue is independent from OTA updates and specific to offline apps. Your of
 
 ## 9 Read More
 
-* [How to Deploy Your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app)
-* [Native Builder Reference Guide](/refguide8/native-builder)
-* [Offline First Reference Guide](/refguide8/offline-first)
+* [How to Deploy Your First Mendix Native Mobile App](/howto8/mobile/deploying-native-app/)
+* [Native Builder Reference Guide](/refguide8/native-builder/)
+* [Offline First Reference Guide](/refguide8/offline-first/)
 * [Codepush Introduction](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/)
 * [Using the CodePush UI](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/using-ui)

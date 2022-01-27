@@ -1,8 +1,8 @@
 ---
 title: "Use Mendix Data Storage APIs to Build Reusable Microflow Actions"
-url: /howto8/extensibility/howto-datastorage-api
+url: /howto8/extensibility/howto-datastorage-api/
 category: "Extensibility"
-menu_order: 90
+weight: 90
 description: "Describes creating custom microflow actions using Data Storage APIs."
 tags: ["java", "connector kit", "microflow action", "parameter type", "sql", "xpath", "oql", "datastorage"]
 output:
@@ -30,9 +30,9 @@ This how to describes how you can build the following microflow actions:
 
     ![Microflow actions toolbox](/attachments/howto8/extensibility/howto-datastorage-api/image001.png)
 
-For more information on Java programming for Mendix, see [Java Programming](/refguide8/java-programming).
+For more information on Java programming for Mendix, see [Java Programming](/refguide8/java-programming/).
 
-For more information on calling Java actions from a microflow, see [Java Actions](/refguide8/java-actions).
+For more information on calling Java actions from a microflow, see [Java Actions](/refguide8/java-actions/).
 
 ## 2 Retrieving Advanced Xpath
 
@@ -114,7 +114,7 @@ The Java action illustrated below does the following:
 * Retrieves all data using the Mendix API Core.retrieveOQLDataTable()
 * Loops through all the rows, creates a new object of the type specified by ResultEntity.
 
-    {{% alert type="info" %}}Setting a Java action parameter of type **Entity of type parameter...** (*ResultEntity* in the example above) creates a Java string in the action which contains the name of the entity type. This string can be passed to Core.instantiate to create a new object.
+    {{% alert color="info" %}}Setting a Java action parameter of type **Entity of type parameter...** (*ResultEntity* in the example above) creates a Java string in the action which contains the name of the entity type. This string can be passed to Core.instantiate to create a new object.
     {{% /alert %}}
 
 * Loops through all columns of a record and copies the column value to an attribute with the same name. If an attribute with a column name does not exist, a message is printed, and the loop continues
@@ -175,7 +175,7 @@ You now have a generic SQL action that can be used in microflows to retrieve dat
 
 ![](/attachments/howto8/extensibility/howto-datastorage-api/image029.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Note that in case of SQL statements you need to implement security constraints yourself.
 {{% /alert %}}
 
@@ -183,7 +183,7 @@ Note that in case of SQL statements you need to implement security constraints y
 
 Using the JDBC connection you can benefit from vendor specific database extensions, like Oracle Pl/SQL or Postgres user-defined functions.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 If you use vendor specific database functionality you will not be able to deploy your application seamlessly on other platforms and databases. Therefore, we advise you to use SQL only if you have no alternative way of implementing your requirements. In most cases you should be able to use OQL to achieve the same result, whilst keeping your application database independent.
 {{% /alert %}}
 

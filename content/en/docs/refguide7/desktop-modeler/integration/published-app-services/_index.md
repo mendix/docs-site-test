@@ -1,12 +1,12 @@
 ---
 title: "Published App Services"
-url: /refguide7/published-app-services
+url: /refguide7/published-app-services/
 parent: "integration"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-App services have been deprecated in version 7.23.4 and are marked for removal. Use a [published web service](published-web-services) or a [published REST service](published-rest-services) instead.
+{{% alert color="info" %}}
+App services have been deprecated in version 7.23.4 and are marked for removal. Use a [published web service](/refguide7/published-web-services/) or a [published REST service](/refguide7/published-rest-services/) instead.
 {{% /alert %}}
 
 ## 1 Introduction
@@ -19,7 +19,7 @@ Names of published app service documents must be unique (also with regard to pub
 
 ## 2 Create Version
 
-The **Create version** button instantiates a new app service version. For more information, see [Published App Service](published-app-service).
+The **Create version** button instantiates a new app service version. For more information, see [Published App Service](/refguide7/published-app-service/).
 
 ## 3 Edit
 

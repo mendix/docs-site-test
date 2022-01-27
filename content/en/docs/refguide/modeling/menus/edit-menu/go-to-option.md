@@ -24,8 +24,8 @@ The examples of using the **Go to** option are described below:
 
 ## 3 Read More
 
-* [Find, Find Advanced, and Find Usages](find-and-find-advanced)
-* [Navigation](navigation)
-* [Pages](pages)
-* [Microflows](microflows)
-* [Domain Model](domain-model)
+* [Find, Find Advanced, and Find Usages](/refguide/find-and-find-advanced/)
+* [Navigation](/refguide/navigation/)
+* [Pages](/refguide/pages/)
+* [Microflows](/refguide/microflows/)
+* [Domain Model](/refguide/domain-model/)

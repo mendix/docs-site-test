@@ -1,14 +1,14 @@
 ---
 title: "XPath"
-url: /refguide8/xpath
+url: /refguide8/xpath/
 category: "App Modeling"
-menu_order: 90
+weight: 90
 description: "Describes how the XPath query language is used in Mendix by presenting functions and examples."
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -26,7 +26,7 @@ Examples of XPath queries are:
 *   `avg(//Sales.Order[IsPaid = true()]/TotalPrice)`
     Retrieve the average of the total prices of all paid orders.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 In Studio Pro, you do not write complete queries, only the constraints. The entity is implicitly determined by the context. So, instead of `//Sales.Customer[Name='Jansen']`, you only need to write `[Name='Jansen']` in the context of a customer. In Java, you do need to write the whole queries, including the double slashes (`//`) and the entity name.
 {{% /alert %}}
 
@@ -48,37 +48,37 @@ Consider the following query:
 `//Sales.Customer[Name='Jansen']`
 
 The constraint is clearly visible between brackets and restricts the objects retrieved to those for which the attribute 'Name' equals 'Jansen'. Objects with any other name than Jansen are excluded from the list.
-The number of possible constraints on a single query is unlimited. For more information on how to add and manipulate these constraints, see [XPath Constraints](xpath-constraints).
+The number of possible constraints on a single query is unlimited. For more information on how to add and manipulate these constraints, see [XPath Constraints](/refguide8/xpath-constraints/).
 
 Element D of a query is optional and specifies an attribute of the retrieved entity. This option is rarely used in Studio Pro itself as all data is stored in objects, making it cumbersome and needlessly complicated to deal with a list of single attribute. However, various Java actions have use of such lists. Also, this functionality can be used in conjunction with Part A to create aggregates of certain attributes easily.
 
-Element A of a query is optional and specifies an aggregation. Element A can be one of the following functions: [avg](xpath-avg), [count](xpath-count), [max](xpath-max), [min](xpath-min) and [sum](xpath-sum). With the exception of 'count', each of these functions require that a particular attribute is specified in element D.
+Element A of a query is optional and specifies an aggregation. Element A can be one of the following functions: [avg](/refguide8/xpath-avg/), [count](/refguide8/xpath-count/), [max](/refguide8/xpath-max/), [min](/refguide8/xpath-min/) and [sum](/refguide8/xpath-sum/). With the exception of 'count', each of these functions require that a particular attribute is specified in element D.
 
 ## 3 Tokens
 
-For details, see [XPath Tokens](xpath-tokens).
+For details, see [XPath Tokens](/refguide8/xpath-tokens/).
 
 ## 4 Operators
 
-For details, see [XPath Operators](xpath-operators).
+For details, see [XPath Operators](/refguide8/xpath-operators/).
 
 ## 5 Functions
 
 The following XPath functions are available:
 
-* [XPath functions](xpath-query-functions):
-	* [avg](xpath-avg)
-	* [count](xpath-count)
-	* [max](xpath-max)
-	* [min](xpath-min)
-	* [sum](xpath-sum)
-* [Constraint functions](xpath-constraint-functions):
-	* [contains](xpath-contains)
-	* [starts-with](xpath-starts-with)
-	* [ends-with](xpath-ends-with)
-	* [not](xpath-not)
-	* [true](xpath-true)
-	* [false](xpath-false)
+* [XPath functions](/refguide8/xpath-query-functions/):
+	* [avg](/refguide8/xpath-avg/)
+	* [count](/refguide8/xpath-count/)
+	* [max](/refguide8/xpath-max/)
+	* [min](/refguide8/xpath-min/)
+	* [sum](/refguide8/xpath-sum/)
+* [Constraint functions](/refguide8/xpath-constraint-functions/):
+	* [contains](/refguide8/xpath-contains/)
+	* [starts-with](/refguide8/xpath-starts-with/)
+	* [ends-with](/refguide8/xpath-ends-with/)
+	* [not](/refguide8/xpath-not/)
+	* [true](/refguide8/xpath-true/)
+	* [false](/refguide8/xpath-false/)
 ## 6 Example
 
 **How to find the right path to XPath**

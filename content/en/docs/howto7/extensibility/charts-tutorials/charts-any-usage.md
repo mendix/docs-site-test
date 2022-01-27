@@ -1,8 +1,8 @@
 ---
 title: "Use Any Chart"
-url: /howto7/extensibility/charts-any-usage
+url: /howto7/extensibility/charts-any-usage/
 parent: "charts-tutorials"
-menu_order: 20
+weight: 20
 description: "How to use the Any Chart widget to create advanced charts"
 tags: ["Any Chart", "Advanced Charts", "Charts", "Desktop Modeler", "Widgets"]
 ---
@@ -26,7 +26,7 @@ With **Any Chart** you can build all the chart types that are possible with Plot
 Before starting this how-to, make sure you have the following prerequisites:
 
 * The latest Mendix modeler
-* The latest **Any Chart** widget module from the [Mendix Marketplace](/appstore/modules/any-chart)
+* The latest **Any Chart** widget module from the [Mendix Marketplace](/appstore/modules/any-chart/)
 * An understanding of JSON data structures
 
 ## 3 Chart Structure
@@ -41,7 +41,7 @@ To create a line chart with the **Any Chart** widget, follow these steps:
 
 1. Create a page with a data view (Chart context).
 2. Add the Any Chart widget in the data view.
-3. Select the line chart sample from the [Any Chart cheat sheet](/refguide7/charts-any-cheat-sheet#line-chart):
+3. Select the line chart sample from the [Any Chart cheat sheet](/refguide7/charts-any-cheat-sheet/#line-chart):
 
     ```json
     [ { "x": [ 1, 2 ], "y": [ 1, 2 ], "type": "scatter" } ]
@@ -92,7 +92,7 @@ If need be, the layout can also be generated in the same way as the data. In mos
 
 Editing the JSON configuration in the modeler can be cumbersome. With the live preview editor, developers can directly see the output of their changes. 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 The editor is only a playground and no settings are stored. All changes you make in the runtime preview that you wish to use the next time you view the app have to be applied to your **Any Chart** widget too.
 
@@ -106,7 +106,7 @@ To fine tune a Charts widget configuration, follow these steps:
 
 3. Click the **Toggle Editor** button on the top right of the chart to fine-tune your settings.
 
-    ![chart editor](/attachments/howto7/extensibility/charts-tutorials/charts-any-usage/charts-toggle-editor-open.png)
+    ![chart editor](/attachments/howto7/extensibility/charts-tutorials/charts-advanced-tuning/charts-toggle-editor-open.png)
 
 4. In the editor, select either **Data** or **Layout** from the dropdown menu.
 
@@ -118,9 +118,9 @@ To fine tune a Charts widget configuration, follow these steps:
 
 ## 7 Read More
 
-* **Any Chart** properties: [Any Chart Reference Guide](/refguide7/charts-any-configuration)
-* The most common chart types:  [Any Chart Cheat Sheet](/refguide7/charts-any-cheat-sheet)
-* The most common settings: [Configuration Cheat Sheet](/refguide7/charts-advanced-cheat-sheet)
+* **Any Chart** properties: [Any Chart Reference Guide](/refguide7/charts-any-configuration/)
+* The most common chart types:  [Any Chart Cheat Sheet](/refguide7/charts-any-cheat-sheet/)
+* The most common settings: [Configuration Cheat Sheet](/refguide7/charts-advanced-cheat-sheet/)
 * The full JSON reference: [https://plot.ly/javascript/reference/](https://plot.ly/javascript/reference/)
-* Mendix modeler documentation: [JSON structures](/refguide7/json-structures)
-* Mendix modeler documentation: [Export Mappings](/refguide7/export-mappings)  
+* Mendix modeler documentation: [JSON structures](/refguide7/json-structures/)
+* Mendix modeler documentation: [Export Mappings](/refguide7/export-mappings/)  

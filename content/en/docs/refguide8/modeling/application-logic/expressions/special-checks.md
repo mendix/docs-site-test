@@ -1,14 +1,14 @@
 ---
 title: "Special Checks"
-url: /refguide8/special-checks
+url: /refguide8/special-checks/
 parent: "expressions"
-menu_order: 40
+weight: 40
 description: "Describes special checks in expressions in Mendix."
 tags: ["studio pro", "special checks", "special check", "expressions"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/special-checks.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/special-checks.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -112,7 +112,7 @@ isNew($object1)
 
 ## 5 Checking Whether an Object Is Synced {#synced}
 
-This function is available only in expressions for [conditional visibility or editability](common-widget-properties), as only they are evaluated on client side.
+This function is available only in expressions for [conditional visibility or editability](/refguide8/common-widget-properties/), as only they are evaluated on client side.
 
 ### 5.1 Input Parameters
 
@@ -128,7 +128,7 @@ The output is described in the table below:
 
 | Value                                                        | Type    |
 | ------------------------------------------------------------ | ------- |
-| Returns whether the changes done to the object [offline](offline-first) have been synchronized to the runtime database. In web profiles and [hybrid profiles](navigation#hybrid-profiles) without offline support, this always returns `true`. | Boolean |
+| Returns whether the changes done to the object [offline](/refguide8/offline-first/) have been synchronized to the runtime database. In web profiles and [hybrid profiles](/refguide8/navigation/#hybrid-profiles) without offline support, this always returns `true`. | Boolean |
 
 ### 5.3 Example
 

@@ -25,11 +25,11 @@ The properties of anonymous users are described in the table below:
 
 ## 3 Read More
 
-* [App Security](project-security)
-* [User Roles](user-roles)
-* [Administrator](administrator)
-* [Demo Users](demo-users)
-* [Password Policy](password-policy)
+* [App Security](/refguide/project-security/)
+* [User Roles](/refguide/user-roles/)
+* [Administrator](/refguide/administrator/)
+* [Demo Users](/refguide/demo-users/)
+* [Password Policy](/refguide/password-policy/)
 
 
 

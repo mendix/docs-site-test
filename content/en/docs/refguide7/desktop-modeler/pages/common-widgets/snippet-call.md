@@ -1,12 +1,12 @@
 ---
 title: "Snippet Call"
-url: /refguide7/snippet-call
+url: /refguide7/snippet-call/
 parent: "common-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 
-The snippet call widget allows you to use a [snippet](snippet) on another snippet, a [page](page) or a [layout](layout).
+The snippet call widget allows you to use a [snippet](/refguide7/snippet/) on another snippet, a [page](/refguide7/page/) or a [layout](/refguide7/layout/).
 
 ## Common Properties
 
@@ -16,4 +16,4 @@ The snippet call widget allows you to use a [snippet](snippet) on another snippe
 
 ### Snippet
 
-The actual [Snippet](snippet) that will be shown here.
+The actual [Snippet](/refguide7/snippet/) that will be shown here.

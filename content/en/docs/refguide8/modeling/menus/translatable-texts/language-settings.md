@@ -1,13 +1,13 @@
 ---
 title: "Language Settings"
-url: /refguide8/language-settings
+url: /refguide8/language-settings/
 parent: "translatable-texts"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "translation", "languages", "translatable text", "add language", "date format", "completeness"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/language-settings.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/language-settings.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -19,7 +19,7 @@ Mendix is designed to be used by users in multiple languages. The **Languages** 
 You can reach this tab in two ways:
 
 1. Select the menu option **Language > Language Settings…**.
-2. Open the **Project {Name} > Settings** dialog box from the [Project Explorer](project-explorer) and select the **Language** tab.
+2. Open the **Project {Name} > Settings** dialog box from the [Project Explorer](/refguide8/project-explorer/) and select the **Language** tab.
 
 ## 2 Setting Default Language
 
@@ -48,7 +48,7 @@ You can set each language in your app to have additional settings.
 
 ### 4.1 Check Completeness
 
-If you check the **Check completeness** box, you will get a warning (or error) message in the [Errors pane](errors-pane) for every text which has no entry in this language's dictionary.
+If you check the **Check completeness** box, you will get a warning (or error) message in the [Errors pane](/refguide8/errors-pane/) for every text which has no entry in this language's dictionary.
 
 If this is the default language, the **Check completeness** box will be checked and you will not be able to uncheck it.
 

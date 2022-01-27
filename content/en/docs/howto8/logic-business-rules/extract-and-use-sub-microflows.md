@@ -1,8 +1,8 @@
 ---
 title: "Extract & Use Sub-Microflows"
-url: /howto8/logic-business-rules/extract-and-use-sub-microflows
+url: /howto8/logic-business-rules/extract-and-use-sub-microflows/
 category: "Logic & Business Rules"
-menu_order: 5
+weight: 5
 tags: ["microflow", "sub-microflow", "extract"]
 ---
 
@@ -62,7 +62,7 @@ To create a sub-microflow for the validation steps, follow these steps:
 
 	![](/attachments/howto8/logic-business-rules/extract-and-use-sub-microflows/18581017.png)
 
-	{{% alert type="warning" %}} The best practice is to identify sub-microflows by their name. You can use "Sub_MicroflowDescriptionHere", "Subflow_MicroflowDescriptionHere", or any other notation you feel works best. The key is to be consistent when you name your microflows so that it is easy for other team members to understand and find the microflows they need.
+	{{% alert color="warning" %}} The best practice is to identify sub-microflows by their name. You can use "Sub_MicroflowDescriptionHere", "Subflow_MicroflowDescriptionHere", or any other notation you feel works best. The key is to be consistent when you name your microflows so that it is easy for other team members to understand and find the microflows they need.
 
 	{{% /alert %}}
 4. Click **OK** to create your first sub-microflow:
@@ -75,7 +75,7 @@ To create a sub-microflow for the validation steps, follow these steps:
 
 The new sub-microflow will do the registration validation. You can reuse this sub-microflow whenever you need to do a registration validation. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Because this sub-microflow does not return anything, the sub-microflow call cannot be used in the **Is Valid?** check that immediately follows it. To stop or continue your microflow based on the sub-microflow's outcome, right-click the **Create Boolean Variable** activity and select **Set $isValid as return value**.
 {{% /alert %}}
 
@@ -91,11 +91,11 @@ The extra sub-microflow option is based on the Mendix reusability principle. You
 
 ## 6 Read More
 
-* [Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [Create a Custom Save Button](create-a-custom-save-button)
-* [Extend Your Application with Custom Java](extending-your-application-with-custom-java)
-* [Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [Set Up Error Handling](set-up-error-handling)
-* [Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Microflows](/refguide8/microflows)
+* [Define Access Rules Using XPath](/howto8/logic-business-rules/define-access-rules-using-xpath/)
+* [Create a Custom Save Button](/howto8/logic-business-rules/create-a-custom-save-button/)
+* [Extend Your Application with Custom Java](/howto8/logic-business-rules/extending-your-application-with-custom-java/)
+* [Work with Lists in a Microflow](/howto8/logic-business-rules/working-with-lists-in-a-microflow/)
+* [Optimize Retrieve Activities](/howto8/logic-business-rules/optimizing-retrieve-activities/)
+* [Set Up Error Handling](/howto8/logic-business-rules/set-up-error-handling/)
+* [Optimize Microflow Aggregates](/howto8/logic-business-rules/optimizing-microflow-aggregates/)
+* [Microflows](/refguide8/microflows/)

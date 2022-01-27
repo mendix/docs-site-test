@@ -20,9 +20,9 @@ This document explains how to migrate the data in an existing Mendix database to
 * Migrate a PostgreSQL database to a non-PostgreSQL database, including migrating a PostgreSQL database to SAP HANA
 
 {{% alert color="warning" %}}
-You cannot use these methods to transfer data from one app to another. This is because each app labels the entities uniquely, even if the name in the domain model is the same. See [Data Storage](/refguide/data-storage) for more information.
+You cannot use these methods to transfer data from one app to another. This is because each app labels the entities uniquely, even if the name in the domain model is the same. See [Data Storage](/refguide/data-storage/) for more information.
 
-If you want to copy data to another app, we recommend using the [Database Replication](/appstore/modules/database-replication) module.
+If you want to copy data to another app, we recommend using the [Database Replication](/appstore/modules/database-replication/) module.
 {{% /alert %}}
 
 ## 2 Overview
@@ -39,7 +39,7 @@ The most commonly used custom settings for database migration are:
 *   SourceDatabaseUserName
 *   SourceDatabasePassword
 
-For more information on the full list of available settings, see [Runtime Customization](/refguide/custom-settings).
+For more information on the full list of available settings, see [Runtime Customization](/refguide/custom-settings/).
 
 These settings can be configured as follows:
 
@@ -91,7 +91,7 @@ To do this, perform the following steps:
 6. Run your app locally. Provided your PostgreSQL database is empty, your app will configure the database to support the domain model of your app.
 
 {{% alert color="info" %}}
-If you already have the database, for example a test database in the cloud, you can also restore this to a local PostgreSQL database. Instructions for doing this can be found in [Restore a Backup Locally](/developerportal/operate/restore-backup-locally).
+If you already have the database, for example a test database in the cloud, you can also restore this to a local PostgreSQL database. Instructions for doing this can be found in [Restore a Backup Locally](/developerportal/operate/restore-backup-locally/).
 {{% /alert %}}
 
 ## 4 Migrating a Non-PostgreSQL Database to a PostgreSQL Database
@@ -104,7 +104,7 @@ Having configured the Mendix app, just run the application locally and it will a
 
 ### 4.1 Exporting a PostgreSQL Database
 
-To export a PostgreSQL database, refer to either the [pg_dump](https://www.postgresql.org/docs/9.5/static/backup-dump.html) command line tool or the [PG Admin](https://www.pgadmin.org/docs/) visual tool documentation to understand how to create a backup of your new PostgreSQL database.
+To export a PostgreSQL database, refer to either the [pg_dump](https://www.postgresql.org/docs/current/backup-dump.html) command line tool or the [PG Admin](https://www.pgadmin.org/docs/) visual tool documentation to understand how to create a backup of your new PostgreSQL database.
 
 ### 4.2 Uploading an Exported PostgreSQL Database to a Mendix Cloud Database
 
@@ -126,7 +126,7 @@ Export the Mendix cloud database via the Developer Portal. This can be accessed 
 
 ### 5.1 Importing into an On-premises PostgreSQL Database
 
-To import a PostgreSQL database using the downloaded database file, refer to either the [pg_dump](https://www.postgresql.org/docs/9.5/static/backup-dump.html) command line tool or the [PG Admin](https://www.pgadmin.org/docs/) visual tool documentation to understand how to restore your downloaded database file.
+To import a PostgreSQL database using the downloaded database file, refer to either the [pg_dump](https://www.postgresql.org/docs/current/backup-dump.html) command line tool or the [PG Admin](https://www.pgadmin.org/docs/) visual tool documentation to understand how to restore your downloaded database file.
 
 ### 5.2 Migrating a PostgreSQL Database To a Non-PostgreSQL Database
 

@@ -1,9 +1,9 @@
 ---
 title: "Filter and Sort Items in a List"
-url: /studio-how-to8/pages-how-to-filter-and-sort
+url: /studio-how-to8/pages-how-to-filter-and-sort/
 category: "Pages"
 description: "Describes how to filter and sort items in a list in Mendix Studio."
-menu_order: 50
+weight: 50
 tags: ["studio", "pages", "list", "how to", "filter", "sort"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -43,9 +43,9 @@ Domain model is configured the following way in this use-case:
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio8/page-editor). 
-* Familiarize yourself with terms on data filters. For more information, see [Data Filters](/studio8/data-filters).
-* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio8/domain-models).
+* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio8/page-editor/). 
+* Familiarize yourself with terms on data filters. For more information, see [Data Filters](/studio8/data-filters/).
+* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio8/domain-models/).
 
 ## 3 Filtering Information 
 
@@ -60,23 +60,23 @@ To configure a filter, do the following:
 2. In the **Data Source** section, click **Filter**:
 
     {{/* % image_container width="250" % */}}![](/attachments/studio-how-to8/pages/pages-how-to-filter-and-sort/properties-filter.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 3. In the **Add Filter** dialog box, add conditions of the filter by doing the following:
 
     1. Select the **Passed** attribute in the drop-down menu:
 
     	{{/* % image_container width="550" % */}}![](/attachments/studio-how-to8/pages/pages-how-to-filter-and-sort/add-filter-select-attribute.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
     2. Once you select the first part of the condition, you can select the other part to complete it. Select *false*:
 
     	{{/* % image_container width="550" % */}}![](/attachments/studio-how-to8/pages/pages-how-to-filter-and-sort/add-filter-condition.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
     3. To filter inspection reports for the current day, you need to add another condition to your filter: click **Add new condition** and select the **DateAndTime** attribute in the drop-down menu.
 
     4. Add the second part of the condition: the date should be today's date. Select *Today* in the drop-down menu: 
 
 		{{/* % image_container width="550" % */}}![](/attachments/studio-how-to8/pages/pages-how-to-filter-and-sort/filter-date-and-time.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
     5. Click **Add**.
 
 Good job! You have created the filter that has two conditions and reads the following way: *Select records of InspectionReport where Passed is false and date and time is Today.* This means this filter will show you only the reports that fall under both conditions: which failed the inspection check and which were created or modified in the current day. 
@@ -92,7 +92,7 @@ To sort items in the list by date and time starting from the latest one, follow 
 3. In **Add sorting rule** dialog box, select the **DateAndTime** attribute and set **Order** to *Descending*.
 
 	{{/* % image_container width="450" % */}}![](/attachments/studio-how-to8/pages/pages-how-to-filter-and-sort/add-sorting-rule.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 4. Click **Add**.
 
-Congratulations! You have added a filter and sorting order to your list. You can now preview your app and test your page. For more information on how to preview your page, see [Previewing & Publishing Your App](/studio8/publishing-app).
+Congratulations! You have added a filter and sorting order to your list. You can now preview your app and test your page. For more information on how to preview your page, see [Previewing & Publishing Your App](/studio8/publishing-app/).

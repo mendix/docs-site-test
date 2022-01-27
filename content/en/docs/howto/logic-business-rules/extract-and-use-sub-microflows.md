@@ -91,11 +91,11 @@ The extra sub-microflow option is based on the Mendix reusability principle. You
 
 ## 6 Read More
 
-* [Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [Create a Custom Save Button](create-a-custom-save-button)
-* [Extend Your Application with Custom Java](extending-your-application-with-custom-java)
-* [Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [Set Up Error Handling](set-up-error-handling)
-* [Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Microflows](/refguide/microflows)
+* [Define Access Rules Using XPath](/howto/logic-business-rules/define-access-rules-using-xpath/)
+* [Create a Custom Save Button](/howto/logic-business-rules/create-a-custom-save-button/)
+* [Extend Your Application with Custom Java](/howto/logic-business-rules/extending-your-application-with-custom-java/)
+* [Work with Lists in a Microflow](/howto/logic-business-rules/working-with-lists-in-a-microflow/)
+* [Optimize Retrieve Activities](/howto/logic-business-rules/optimizing-retrieve-activities/)
+* [Set Up Error Handling](/howto/logic-business-rules/set-up-error-handling/)
+* [Optimize Microflow Aggregates](/howto/logic-business-rules/optimizing-microflow-aggregates/)
+* [Microflows](/refguide/microflows/)

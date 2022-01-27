@@ -1,14 +1,14 @@
 ---
 title: "Radio Buttons"
-url: /refguide7/radio-buttons
+url: /refguide7/radio-buttons/
 parent: "input-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 
-The **Radio Buttons** widget is an [input widget](input-widgets) that can be used to display and edit Boolean and enumeration attributes.
+The **Radio Buttons** widget is an [input widget](/refguide7/input-widgets/) that can be used to display and edit Boolean and enumeration attributes.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/input-widgets/radio-buttons/radio-buttons.png)
 
@@ -64,5 +64,5 @@ _Default value:_ Horizontal
 
 ## Read More
 
-*   [Data view](data-view)
-*   [Attributes](attributes)
+*   [Data view](/refguide7/data-view/)
+*   [Attributes](/refguide7/attributes/)

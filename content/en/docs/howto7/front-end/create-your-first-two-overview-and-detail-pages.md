@@ -1,8 +1,8 @@
 ---
 title: "Create Your First Two Overview & Detail Pages"
-url: /howto7/front-end/create-your-first-two-overview-and-detail-pages
+url: /howto7/front-end/create-your-first-two-overview-and-detail-pages/
 category: "Front End"
-menu_order: 20
+weight: 20
 tags: ["front end"]
 ---
 
@@ -19,7 +19,7 @@ This how-to explains how you can create overview and detail pages in Mendix.
 
 Before starting with this how-to, make sure you have completed the following prerequisite:
 
-*  Set up a basic data structure by reading [How to Create a Basic Data Layer](/howto7/data-models/create-a-basic-data-layer):
+*  Set up a basic data structure by reading [How to Create a Basic Data Layer](/howto7/data-models/create-a-basic-data-layer/):
    
     ![](/attachments/howto7/front-end/create-your-first-two-overview-and-detail-pages/18582175.png)
 
@@ -74,13 +74,13 @@ You should now have an overview page with a data grid like this:
 
 ## 4 Navigation and Security
 
-1. Now create a navigation item for your overview page to start using it. For details on how to set up the navigation structure, see [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure).
-2. If you switched on security for this application, you need to configure page access on both the overview and detail pages. For more information on configuring page access, see [How to Create a Secure App](/howto7/security/create-a-secure-app).
+1. Now create a navigation item for your overview page to start using it. For details on how to set up the navigation structure, see [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure/).
+2. If you switched on security for this application, you need to configure page access on both the overview and detail pages. For more information on configuring page access, see [How to Create a Secure App](/howto7/security/create-a-secure-app/).
 
 ## 5 Read More
 
-* [Atlas UI](atlas-ui)
-* [How to Use Layouts and Snippets](layouts-and-snippets)
-* [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure)
-* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-* [Page](/refguide7/page)
+* [Atlas UI](/howto7/front-end/atlas-ui/)
+* [How to Use Layouts and Snippets](/howto7/front-end/layouts-and-snippets/)
+* [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure/)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Page](/refguide7/page/)

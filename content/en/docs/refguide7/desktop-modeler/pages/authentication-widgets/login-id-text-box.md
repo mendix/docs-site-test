@@ -1,6 +1,6 @@
 ---
 title: "Login Id Text Box"
-url: /refguide7/login-id-text-box
+url: /refguide7/login-id-text-box/
 parent: "authentication-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -8,7 +8,7 @@ parent: "authentication-widgets"
 
 The login id text box is a widget that can be used to provide a login id for authentication. A login id is a unique identifier used to identify a user. Examples are a username or  email address. 
 
-It must be placed on a page together with a [login id text box](login-id-text-box) and a [sign-in button](sign-in-button).
+It must be placed on a page together with a [login id text box](/refguide7/login-id-text-box/) and a [sign-in button](/refguide7/sign-in-button/).
 
 ## Common Properties
 

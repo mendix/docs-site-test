@@ -28,11 +28,11 @@ App Buzz is Buzz for a specific app:
 
 ![](/attachments/developerportal/collaborate/buzz/app-buzz.jpg)
 
-You can see the size of your **Team** and your fellow team members on the right side of the page. Click the **+** icon to invite new members to your team directly. Click **Show all** to go to the [Team](team) page for the app.
+You can see the size of your **Team** and your fellow team members on the right side of the page. Click the **+** icon to invite new members to your team directly. Click **Show all** to go to the [Team](/developerportal/collaborate/team/) page for the app.
 
-**Latest Stories** shows the last few stories created for this app. Click **Show all** to see all the [Stories](stories).
+**Latest Stories** shows the last few stories created for this app. Click **Show all** to see all the [Stories](/developerportal/collaborate/stories/).
 
-**App Feedback** shows the last few items of feedback for this app. Click **Show all** to see all the [Feedback](feedback).
+**App Feedback** shows the last few items of feedback for this app. Click **Show all** to see all the [Feedback](/developerportal/collaborate/feedback/).
 
 ## 2 Communicating on Buzz
 
@@ -54,9 +54,9 @@ In App Buzz, a comment can come from Mendix Studio and refer to a specific docum
 
 ![](/attachments/developerportal/collaborate/buzz/show-document.png)
 
-For more information on making comments in Studio, see [Buzz](/studio/collaboration-buzz).  
+For more information on making comments in Studio, see [Buzz](/studio/collaboration-buzz/).  
 
 ## 3 Read More
 
-* [Team](team)
-* [Stories](stories)
+* [Team](/developerportal/collaborate/team/)
+* [Stories](/developerportal/collaborate/stories/)

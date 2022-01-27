@@ -10,19 +10,19 @@ tags: ["studio pro", "file widgets", "widget"]
 
 Images, videos & files allow end-users to upload, download, and display files, images, and videos. 
 
-* [Static Image](image) – displays static image:
+* [Static Image](/refguide/image/) – displays static image:
 
     ![](/attachments/refguide/modeling/pages/image-and-file-widgets/image-design-mode-example.png)
 
-* [Dynamic Image](image-viewer) – displays an image or its thumbnail:
+* [Dynamic Image](/refguide/image-viewer/) – displays an image or its thumbnail:
 
     ![Dynamic Image Example](/attachments/refguide/modeling/pages/image-and-file-widgets/image-viewer-example.png)
 
-* [File manager](file-manager) – allows end-users to upload and/or download files:
+* [File manager](/refguide/file-manager/) – allows end-users to upload and/or download files:
 
     ![File Manager Example](/attachments/refguide/modeling/pages/image-and-file-widgets/file-manager-example.png)
 
-* [Image uploader](image-uploader) – allows end-users to upload images to the server:
+* [Image uploader](/refguide/image-uploader/) – allows end-users to upload images to the server:
 
     ![Image Uploader Example](/attachments/refguide/modeling/pages/image-and-file-widgets/image-uploader-example.png)
 
@@ -33,5 +33,5 @@ Images, videos & files allow end-users to upload, download, and display files, i
 
 ## 3 Read More
 
-* [Page](page)
-* [Pages](pages)
+* [Page](/refguide/page/)
+* [Pages](/refguide/pages/)

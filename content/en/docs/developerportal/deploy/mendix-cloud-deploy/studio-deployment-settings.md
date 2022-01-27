@@ -10,7 +10,7 @@ tags: ["node","developer portal","deploy", "Studio", "settings", "target", "Mend
 
 ## 1 Introduction
 
-If you have a licensed app in Mendix Cloud v4 which you want to deploy directly to an environment, you need to select a target environment where Mendix Studio and Mendix Studio Pro will deploy your app when you click **Publish** (for Studio) or **Deploy to Licensed Cloud Node** (for Studio Pro). For more information on licensed apps and environments, see [Mendix Cloud](mendix-cloud-deploy) and [Environments](environments).
+If you have a licensed app in Mendix Cloud v4 which you want to deploy directly to an environment, you need to select a target environment where Mendix Studio and Mendix Studio Pro will deploy your app when you click **Publish** (for Studio) or **Deploy to Licensed Cloud Node** (for Studio Pro). For more information on licensed apps and environments, see [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/) and [Environments](/developerportal/deploy/environments/).
 
 {{% alert color="info" %}}
 By default the target environment is set to *Build Only*, which means that your app will not be deployed directly to an environment from Studio Pro, and you will receive an error **No target selected** if you publish from Studio.
@@ -28,23 +28,23 @@ To select the target environment, do the following:
 
     ![Deploy Tab of Environments Page](/attachments/developerportal/deploy/mendix-cloud-deploy/studio-deployment-settings/developer-portal-web-modeler-target.png)
 
-    {{% alert color="info" %}} Only a [Technical Contact](/developerportal/collaborate/app-roles#technical-contact) can see the **Setup Studios Deployment** button and click it. 
+    {{% alert color="info" %}} Only a [Technical Contact](/developerportal/collaborate/app-roles/#technical-contact) can see the **Setup Studios Deployment** button and click it. 
     {{% /alert %}}
 
 3. In the **Select Studio Target** dialog box, click the drop-down menu and select the environment.
 
-    {{/* % image_container width="400" % */}}![Select Studios Target Dialog](/attachments/developerportal/deploy/mendix-cloud-deploy/studio-deployment-settings/setup-studios-deployment.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{/* % image_container width="400" % */}}![Select Studios Target Dialog](/attachments/developerportal/deploy/mendix-cloud-deploy/studio-deployment-settings/setup-studios-deployment.png){{/* % /image_container % */}}
+
     {{% alert color="info" %}}If you do not want to deploy your app to an environment automatically from Studio Pro, choose the option **Build Only**. This will place your MDA in the **Deployment Package Repository** and you can deploy it from within the Developer Portal.<br /><br />If you choose **Build Only**, you will not be able to publish your app from Studio, but will get an error **No target selected**.{{% /alert %}}
 
 4. Click **Save**.
 
 You have selected the target environment and can now deploy your app to that environment from either Studio or Studio Pro.
 
-You can see whether an environment is the target for Studio and Studio Pro from the **General** tab of the [Environment Details](environments-details) page for the environment.
+You can see whether an environment is the target for Studio and Studio Pro from the **General** tab of the [Environment Details](/developerportal/deploy/environments-details/) page for the environment.
 
 ## 3 Read More
 
-*   [Previewing & Publishing Your App](/studio/publishing-app)
-*   [Mendix Cloud](mendix-cloud-deploy)
-*   [Environments](environments)
+*   [Previewing & Publishing Your App](/studio/publishing-app/)
+*   [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/)
+*   [Environments](/developerportal/deploy/environments/)

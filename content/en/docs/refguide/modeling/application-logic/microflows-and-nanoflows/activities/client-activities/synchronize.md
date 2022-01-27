@@ -17,7 +17,7 @@ The **Synchronize** activity can be used to synchronize your data between your d
 
 ## 2 Synchronization Modes
 
-All three modes perform synchronization in two phases: upload and download. For more information, see the [Synchronization Behavior](#synchronization-behavior) section below and the [Synchronization types](offline-first#synchronization-types) section of the Offline-first Reference Guide.
+All three modes perform synchronization in two phases: upload and download. For more information, see the [Synchronization Behavior](#synchronization-behavior) section below and the [Synchronization types](/refguide/offline-first/#synchronization-types) section of the Offline-first Reference Guide.
 
 ### 2.1 All Objects
 
@@ -27,7 +27,7 @@ All three modes perform synchronization in two phases: upload and download. For 
 
 The **All objects** mode synchronizes the entire local database. The server database is updated with the changes from the local database. The local database is updated with the latest data from the server, including the file contents.
 
-The behavior of this mode can be configured through [synchronization configuration](offline-first#customizable-synchronization).
+The behavior of this mode can be configured through [synchronization configuration](/refguide/offline-first/#customizable-synchronization).
 
 ### 2.2 Unsynchronized Objects {#unsynchronized-objects}
 
@@ -56,7 +56,7 @@ Using this mode, only the selected objects or lists are synchronized. Deleted ob
 This section describes the behavior for the [Unsynchronized objects](#unsynchronized-objects) and [Selected object(s)](#selected-objects) modes.
 
 {{% alert color="warning" %}}
-The settings in [synchronization configuration](offline-first#customizable-synchronization) are not applied for the **Unsynchronized objects** and **Selected object(s)** modes.
+The settings in [synchronization configuration](/refguide/offline-first/#customizable-synchronization) are not applied for the **Unsynchronized objects** and **Selected object(s)** modes.
 {{% /alert %}}
 
 In the **Selected object(s)** mode, if the set of objects selected for synchronization contains any objects that have not been committed yet, those objects will be skipped and thus not synchronized.
@@ -78,7 +78,7 @@ The **Synchronize** activity properties consists of the following sections:
 * [Common](#common)
 
 {{/* % image_container width="300" % */}}![Synchronize Action Properties](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/client-activities/synchronize/synchronize-properties.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 5 Action Section {#action}
 
 The **Action** section of the properties pane shows the action associated with this activity.
@@ -93,9 +93,9 @@ Running multiple synchronization processes at the same time is not supported, re
 
 If you try to trigger another synchronization process while the synchronization is in progress, the following error message will be shown: "Performing simultaneous synchronizations is not supported. Please try again after the current synchronization is completed."
 
-Such an error can be handled in the nanoflow from which the synchronization attempt was triggered using [error handlers](/refguide/error-event#errorhandlers).
+Such an error can be handled in the nanoflow from which the synchronization attempt was triggered using [error handlers](/refguide/error-event/#errorhandlers).
 
 ## 8 Read More
 
-* [Activities](activities)
-* [Offline-first](offline-first)
+* [Activities](/refguide/activities/)
+* [Offline-first](/refguide/offline-first/)

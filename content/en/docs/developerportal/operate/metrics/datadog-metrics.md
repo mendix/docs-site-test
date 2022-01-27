@@ -66,7 +66,7 @@ The following metrics are useful when monitoring the performance of your Mendix 
 * postgresql.max_connections
 * postgresql.percent_usage_connections
 
-Note that the absolute values are often not useful, but looking at trends over time can indicate performance issues or future action which might be required. Some of these trends are similar to those described in [Trends in Mendix Cloud v4](trends-v4).
+Note that the absolute values are often not useful, but looking at trends over time can indicate performance issues or future action which might be required. Some of these trends are similar to those described in [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/).
 
 ## 3 App Metrics {#app-metrics}
 
@@ -235,7 +235,7 @@ The following Mendix *request handler* calls will be passed to Datadog:
 | `FileRequestHandler` | File upload/download requests | `mx.client.time` |
 | `PageUrlRequestHandler` | `/p` requests | `mx.client.time` |
 
-You can find help in analyzing some of these values in [Trends in Mendix Cloud v4](trends-v4).
+You can find help in analyzing some of these values in [Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/).
 </details>
 
 **<details><summary><sup><small>[2]</small></sup> Activities (click to see list)</summary>**
@@ -371,7 +371,7 @@ To send your runtime information to Datadog, you need to provide the Datadog API
 
 ### 5.1 Log Levels{#log-levels}
 
-The **DD_LOG_LEVEL** sets the level for which log messages *from the Mendix Datadog agent* will be sent to the Mendix application logs. It does not affect the [log level set in your app](/howto/monitoring-troubleshooting/log-levels). Valid values are:
+The **DD_LOG_LEVEL** sets the level for which log messages *from the Mendix Datadog agent* will be sent to the Mendix application logs. It does not affect the [log level set in your app](/howto/monitoring-troubleshooting/log-levels/). Valid values are:
 
 * CRITICAL
 * ERROR
@@ -437,4 +437,4 @@ If you have any issues related to accessing Datadog, please contact their suppor
 
 ## 7 Read More
 
-* [Metrics](metrics)
+* [Metrics](/developerportal/operate/metrics/)

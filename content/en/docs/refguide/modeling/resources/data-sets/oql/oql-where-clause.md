@@ -19,7 +19,7 @@ WHERE <constraint>
 
 `<constraint>` is an expression for which the value always equals true. Expressions consist of simple comparisons using operators, functions, keywords or system variables.
 
-For more information, see [OQL Expressions](oql-expressions).
+For more information, see [OQL Expressions](/refguide/oql-expressions/).
 
 ## 3 Examples
 

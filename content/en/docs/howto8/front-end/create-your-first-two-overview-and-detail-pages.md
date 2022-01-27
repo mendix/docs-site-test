@@ -1,8 +1,8 @@
 ---
 title: "Create Your First Two Overview & Detail Pages"
-url: /howto8/front-end/create-your-first-two-overview-and-detail-pages
+url: /howto8/front-end/create-your-first-two-overview-and-detail-pages/
 category: "Front End"
-menu_order: 25
+weight: 25
 tags: ["front end"]
 ---
 
@@ -19,7 +19,7 @@ This how-to explains how you can create overview and detail pages in Mendix.
 
 Before starting with this how-to, make sure you have completed the following prerequisite:
 
-*  Set up a basic data structure by reading [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer):
+*  Set up a basic data structure by reading [How to Create a Basic Data Layer](/howto8/data-models/create-a-basic-data-layer/):
    
     ![](/attachments/howto8/front-end/create-your-first-two-overview-and-detail-pages/18582175.png)
 
@@ -33,7 +33,7 @@ To create the overview and detail pages for your data structure, follow these st
 
 And there you go! For each entity, an overview page and a detail page is generated. Also, an **Entity_Menu** snippet is created and added to each overview page.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Mendix can do even more of the work for you if you create an Excel spreadsheet with two tabs (one for the header and data for **Customer** and the other for the header and data for **Order**). When you are creating a new app, select **App from a spreadsheet** and upload your Excel spreadsheet.
 {{% /alert %}}
 
@@ -94,14 +94,14 @@ To create a new detail page manually, follow these steps:
 
 ## 5 Navigation & Security
 
-Now create a navigation item for your overview page to start using it. For details on how to set up the navigation structure, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure).
+Now create a navigation item for your overview page to start using it. For details on how to set up the navigation structure, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure/).
 
-If you switched on security for this application, you also need to configure page access on both the overview and detail pages. For more information, see [How to Create a Secure App](/howto8/security/create-a-secure-app).
+If you switched on security for this application, you also need to configure page access on both the overview and detail pages. For more information, see [How to Create a Secure App](/howto8/security/create-a-secure-app/).
 
 ## 6 Read More
 
-* [Atlas UI](atlas-ui)
-* [Use Layouts and Snippets](layouts-and-snippets)
-* [Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure)
-* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-* [Page](/refguide8/page)
+* [Atlas UI](/howto8/front-end/atlas-ui/)
+* [Use Layouts and Snippets](/howto8/front-end/layouts-and-snippets/)
+* [Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure/)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Page](/refguide8/page/)

@@ -21,7 +21,7 @@ The **Show workflow admin page** activity can be used to open a workflow overvie
 
 An example of create object properties is represented in the image below:
 
-![Show Workflow Admin Page](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/show-workflow-page/open-workflow-page-properties.jpg)
+![Show Workflow Admin Page](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/show-task-page/open-workflow-page-properties.jpg)
 
 There are two sets of properties for this activity, those in the dialog box on the left, and those in the properties pane on the right.
 

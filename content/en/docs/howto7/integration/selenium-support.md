@@ -1,8 +1,8 @@
 ---
 title: "Configure Selenium Support"
-url: /howto7/integration/selenium-support
+url: /howto7/integration/selenium-support/
 category: "Integration"
-menu_order: 16
+weight: 16
 tags: ["selenium", "integration"]
 ---
 
@@ -57,11 +57,11 @@ Note that the fourth row in a grid has an index of `3`.
 
 ## 5 Read More
 
-* [How to Create Automated Tests with TestNG](/howto7/testing/create-automated-tests-with-testng)
-* [How to Test Mendix Applications Using Selenium IDE](/howto7/testing/testing-mendix-applications-using-selenium-ide)
-* [How to Consume a Complex Web Service](consume-a-complex-web-service)
-* [How to Consume a Simple Web Service](consume-a-simple-web-service)
-* [How to Import Excel Documents](importing-excel-documents)
-* [How to Export XML Documents](export-xml-documents)
-* [How to Expose a Web Service](expose-a-web-service)
-* [How to Import XML Documents](importing-xml-documents)
+* [How to Create Automated Tests with TestNG](/howto7/testing/create-automated-tests-with-testng/)
+* [How to Test Mendix Applications Using Selenium IDE](/howto7/testing/testing-mendix-applications-using-selenium-ide/)
+* [How to Consume a Complex Web Service](/howto7/integration/consume-a-complex-web-service/)
+* [How to Consume a Simple Web Service](/howto7/integration/consume-a-simple-web-service/)
+* [How to Import Excel Documents](/howto7/integration/importing-excel-documents/)
+* [How to Export XML Documents](/howto7/integration/export-xml-documents/)
+* [How to Expose a Web Service](/howto7/integration/expose-a-web-service/)
+* [How to Import XML Documents](/howto7/integration/importing-xml-documents/)

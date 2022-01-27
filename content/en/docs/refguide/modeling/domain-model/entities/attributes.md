@@ -20,18 +20,18 @@ The domain model editor uses the following symbols to help visualize attribute p
 | Symbol | Description |
 | --- | --- |
 | ![](/attachments/refguide/modeling/domain-model/entities/attributes/917593.png) | This attribute has one or more validation rules. |
- | This attribute has one or more validation rules. || ![](/attachments/refguide/modeling/domain-model/entities/attributes/917592.png) | This attribute has a microflow that calculates the value of the attribute. |
- | This attribute has a microflow that calculates the value of the attribute. |
+| ![](/attachments/refguide/modeling/domain-model/entities/attributes/917592.png) | This attribute has a microflow that calculates the value of the attribute. |
+
 {{% alert color="info" %}}
-Attributes for external entities are specified in the **External Entity Properties**. These attributes are defined in the originating app and the only local changes that can be applied to these entities is a local name and description. For further information see the [Attributes](external-entities#attributes) section of *External Entities*.
+Attributes for external entities are specified in the **External Entity Properties**. These attributes are defined in the originating app and the only local changes that can be applied to these entities is a local name and description. For further information see the [Attributes](/refguide/external-entities/#attributes) section of *External Entities*.
 {{% /alert %}}
 
 ## 2 Properties
 
-You can add attributes to an entity from the [entity properties dialog box](entities#dialog-box). You can also edit them from this dialog box, or by double-clicking the attribute name in the domain model.
+You can add attributes to an entity from the [entity properties dialog box](/refguide/entities/#dialog-box). You can also edit them from this dialog box, or by double-clicking the attribute name in the domain model.
 
 {{% alert color="info" %}}
-You can **Add** new attributes to [external entities](external-entities#attributes), **Edit** some of the attribute properties, or **Delete** them. However, the changes will only apply locally, and the values in the originating app will not be affected. For more information on operations on attributes of external entities, see the [Attributes](external-entities#attributes) section of *External Entities*.
+You can **Add** new attributes to [external entities](/refguide/external-entities/#attributes), **Edit** some of the attribute properties, or **Delete** them. However, the changes will only apply locally, and the values in the originating app will not be affected. For more information on operations on attributes of external entities, see the [Attributes](/refguide/external-entities/#attributes) section of *External Entities*.
 {{% /alert %}}
 
 An example of the attribute properties is represented in the image below:
@@ -63,10 +63,10 @@ This allows you to describe aspects of the entity which may be useful to you or 
 
 #### 2.2.1 Type
 
-The type property defines the type of data that can be stored in the attribute. These are related to the data types described in [Data Types](data-types), but there is not a one-to-one mapping.
+The type property defines the type of data that can be stored in the attribute. These are related to the data types described in [Data Types](/refguide/data-types/), but there is not a one-to-one mapping.
 
 {{% alert color="warning" %}}
-Mendix allows you to change attribute and association types on existing domain models. While some attributes can easily be converted, there are limitations and consequences of converting between some types. For more information, see [Attributes Type Migration](attributes-type-migration).
+Mendix allows you to change attribute and association types on existing domain models. While some attributes can easily be converted, there are limitations and consequences of converting between some types. For more information, see [Attributes Type Migration](/refguide/attributes-type-migration/).
 {{% /alert %}}
 
 An attribute has one of the following types:
@@ -78,8 +78,8 @@ Binary<sup><small>[1]</small></sup> | Binary data. Can only be used for persista
 Boolean | True or false. | Boolean | 
 Date and time | A point in time consisting of a date and a time component accurate up to milliseconds. | Date and time |
 Decimal | A positive or negative number that can have digits after the decimal point. The Decimal type can be used for high-precision calculations. Use this type to represent amounts of money for example. When a Decimal type attribute is persisted in the database its value is validated against 2 conditions. In case the number of digits of the integral part (before the decimal separator) is more than 20, an exception is thrown. In case the number of digits of the fractional part (after the decimal separator) is more than 8, the fractional value is automatically rounded according to [the round half to even rule (also known as bankers' rounding)](https://en.wikipedia.org/wiki/Rounding#Round_half_to_even). Therefore, the maximum allowable value for the Decimal type is 99999999999999999999.99999999. | Decimal |
-Enumeration | A list of predefined attributes. For more information, see [Enumerations](enumerations). | Enumeration |
-Hashed string | A string which is hashed using the algorithm specified in the [app settings](project-settings#hash-algorithm). This can be used to store password hashes, for example, so that the original password is not recorded in the database.  | String |
+Enumeration | A list of predefined attributes. For more information, see [Enumerations](/refguide/enumerations/). | Enumeration |
+Hashed string | A string which is hashed using the algorithm specified in the [app settings](/refguide/project-settings/#hash-algorithm). This can be used to store password hashes, for example, so that the original password is not recorded in the database.  | String |
 Integer | A whole number that can be positive (maximum 2<sup>31</sup>-1, thus 2147483647), negative (minimum -2<sup>31</sup>, thus -2147483648), or zero. | Integer/Long |
 Long | A whole number that can be positive (maximum 2<sup>63</sup>-1), negative (minimum -2<sup>63</sup>), or zero. | Integer/Long |
 String *(default)* | A text containing letters, spaces, numbers and other characters. | String |

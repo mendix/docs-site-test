@@ -32,7 +32,7 @@ Note that in the tree of the statistics, a child action can take longer than the
 
 The **History** tab gives insight into the duration and count over time. These insights help to detect trends and see if the optimizations were successful. 
 
-![](/attachments/addons/apd-addon/rg-apd/rg-two-apm/rg-two-statistics/statistics_history.png)
+![](/attachments/addons/apd-addon/rg-apd/rg-two-apm/statistics_history.png)
 
 Using the **Manual snapshots** tab, it is possible to create a manual statistics snapshot. When clearing the counters, the manual statistics are reset. This can be helpful to collect data over a small period of time.
 

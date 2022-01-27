@@ -1,13 +1,13 @@
 ---
 title: "Reference Set Selector"
-url: /refguide7/reference-set-selector
+url: /refguide7/reference-set-selector/
 parent: "input-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 The reference set selector allows you to set an association of type reference set by selecting objects. For example, if customers can belong to several groups, a reference set selector can be used to select the groups the customer belongs to. This requires that there is an association from customer to group of type reference set in the domain model.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/input-widgets/reference-set-selector/reference-set-selector.png)
 In this data view on customer you can select multiple groups using the reference set selector.
@@ -17,9 +17,9 @@ In the domain model there is an association of type reference set from customer 
 
 {{% /alert %}}
 
-The reference set selector looks a lot like a [data grid](data-grid) and consequently shares many properties with the data grid. Main differences are that the reference set selector lacks a search bar and that it has different buttons by default (Add, Remove).
+The reference set selector looks a lot like a [data grid](/refguide7/data-grid/) and consequently shares many properties with the data grid. Main differences are that the reference set selector lacks a search bar and that it has different buttons by default (Add, Remove).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 The **Add** and **Remove** buttons mean something else than the **New** and **Delete** buttons that are used by default in the data grid:
 
@@ -32,15 +32,15 @@ The **Add** and **Remove** buttons mean something else than the **New** and **De
 
 ### Control Bar
 
-See [Control Bar](control-bar).
+See [Control Bar](/refguide7/control-bar/).
 
 ### Sort Bar
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide7/sort-bar/).
 
 ### Columns
 
-See [Columns](columns) for more information.
+See [Columns](/refguide7/columns/) for more information.
 
 ## Common Properties
 
@@ -58,9 +58,9 @@ See [Columns](columns) for more information.
 
 This property indicates whether the control bar will be visible in the end user interface. The control bar also includes the paging buttons.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-Even if the control bar is invisible there can still be a default button that is triggered by (double) clicking on a row. See the property 'Default button trigger' and [control bar](control-bar) for more information.
+Even if the control bar is invisible there can still be a default button that is triggered by (double) clicking on a row. See the property 'Default button trigger' and [control bar](/refguide7/control-bar/) for more information.
 
 {{% /alert %}}
 
@@ -76,7 +76,7 @@ _Default value:_ True
 
 The column weights are percentages separated by semi-colons. They determine the widths of the columns. The weights have to add up to 100\. An alternative way of changing the widths of columns is by dragging the separating line between columns.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 In the screenshot above the column weights are 63;37.
 
@@ -122,7 +122,7 @@ _Default value:_ Double click
 
 ### Tooltip Page
 
-A tooltip page is a page that appears when you hover your mouse over a row. The tooltip page should consist of a data view on the same entity as the data grid. On top of creating, and connecting, a tooltip page you also have to specify on which columns the tooltip will appear. See the property 'Show tooltip' of [data grid columns](columns).
+A tooltip page is a page that appears when you hover your mouse over a row. The tooltip page should consist of a data view on the same entity as the data grid. On top of creating, and connecting, a tooltip page you also have to specify on which columns the tooltip will appear. See the property 'Show tooltip' of [data grid columns](/refguide7/columns/).
 
 ## Data Source Properties
 
@@ -130,13 +130,13 @@ A tooltip page is a page that appears when you hover your mouse over a row. The 
 
 The entity path of a reference set selector is a path following one association of type 'reference set' from the entity of the containing data view to the entity on the other side of that association. In the example above the association Customer_Group from Customer to Group is followed and the path is: Customer_Group/Group.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 With the reference selector you are editing an association of type reference set (Customer_Group). Adding, and removing, objects using the selector will only add and remove references to those objects; the objects themselves are unchanged.
 
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Using non-persistable entities (NPEs) in a reference set selector is not supported yet. For that reason, selecting an NPE in the entity selector for the reference set selector is not possible.
 
@@ -148,15 +148,15 @@ Using non-persistable entities (NPEs) in a reference set selector is not support
 
 ## Selectable Objects Properties
 
-The selectable objects are determined in the same way as in the reference selector. See the [selectable objects properties](reference-selector) of the reference selector for more information. Note that you cannot use a microflow in a reference set selector.
+The selectable objects are determined in the same way as in the reference selector. See the [selectable objects properties](/refguide7/reference-selector/) of the reference selector for more information. Note that you cannot use a microflow in a reference set selector.
 
 ### XPath Constraint
 
-See [Selectable Objects Properties](reference-selector) of the reference selector.
+See [Selectable Objects Properties](/refguide7/reference-selector/) of the reference selector.
 
 ### Constrained By
 
-See [Selectable Objects Properties](reference-selector) of the reference selector.
+See [Selectable Objects Properties](/refguide7/reference-selector/) of the reference selector.
 
 ## Visibility Properties
 
@@ -166,6 +166,6 @@ See [Selectable Objects Properties](reference-selector) of the reference selecto
 
 ## Read More
 
-*   [Data view](data-view)
-*   [Entities](entities)
-*   [Associations](associations)
+*   [Data view](/refguide7/data-view/)
+*   [Entities](/refguide7/entities/)
+*   [Associations](/refguide7/associations/)

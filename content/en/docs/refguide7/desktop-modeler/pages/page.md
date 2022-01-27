@@ -1,21 +1,21 @@
 ---
 title: "Page"
-url: /refguide7/page
+url: /refguide7/page/
 parent: "pages"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 ## 1 Introduction
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-This document describes the properties of a page. For details on what pages are for and what kind of widgets can be placed on them, see [Pages](pages).
+This document describes the properties of a page. For details on what pages are for and what kind of widgets can be placed on them, see [Pages](/refguide7/pages/).
 
 {{% /alert %}}
 
-Pages define the end-user interface of a Mendix application. Every page is based on a [layout](layout). A page fills the "gaps" defined by a layout with widgets such as the [data view](data-view) and [data grid](data-grid).
+Pages define the end-user interface of a Mendix application. Every page is based on a [layout](/refguide7/layout/). A page fills the "gaps" defined by a layout with widgets such as the [data view](/refguide7/data-view/) and [data grid](/refguide7/data-grid/).
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 From Mendix version 7.16 it is possible to see a preview of a page you are designing by clicking the **View mode** button in the page editor. You can return to editing the page by clicking **Edit mode**.
 
 ![Edit mode and View mode buttons](/attachments/refguide7/desktop-modeler/pages/page/view-mode.png)
@@ -42,11 +42,11 @@ From Mendix version 7.16 it is possible to see a preview of a page you are desig
 
 ### 4.1 Title
 
-The title of the page that is shown using the [page title widget](page-title). If the page is shown in a pop-up window, the title appears in the title bar of the pop-up. The title can be overridden from places where forms are opened to make it possible to reuse a page for different purposes. For example, a [grid create button](grid-new-button) and an [edit button](edit-button) can refer to the same page, but they override the titles to **New** and **Edit**, respectively.
+The title of the page that is shown using the [page title widget](/refguide7/page-title/). If the page is shown in a pop-up window, the title appears in the title bar of the pop-up. The title can be overridden from places where forms are opened to make it possible to reuse a page for different purposes. For example, a [grid create button](/refguide7/grid-new-button/) and an [edit button](/refguide7/edit-button/) can refer to the same page, but they override the titles to **New** and **Edit**, respectively.
 
 ### 4.2 Layout
 
-This is the [layout](layout) on which this page is based.
+This is the [layout](/refguide7/layout/) on which this page is based.
 
 ### 4.3 URL
 
@@ -64,9 +64,9 @@ In simple e-commerce applications, the URLs can be configured as follows:
 
 ### 5.1 Visible For
 
-These are the module roles for which the page is visible. This has an effect on [menu widgets](menu-widgets) and on buttons that are visible only if allowed (for example, the [edit button](edit-button)).
+These are the module roles for which the page is visible. This has an effect on [menu widgets](/refguide7/menu-widgets/) and on buttons that are visible only if allowed (for example, the [edit button](/refguide7/edit-button/)).
 
-For more information, see [Module Security](module-security).
+For more information, see [Module Security](/refguide7/module-security/).
 
 ## 6 Pop-Up Properties
 

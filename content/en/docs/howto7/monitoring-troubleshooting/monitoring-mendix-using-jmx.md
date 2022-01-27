@@ -1,8 +1,8 @@
 ---
 title: "Monitor Mendix Using JMX"
-url: /howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx
+url: /howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx/
 category: "Monitoring & Troubleshooting"
-menu_order: 10
+weight: 10
 tags: ["monitoring", "troubleshooting", "jmx"]
 ---
 
@@ -152,14 +152,14 @@ The idea is that you will have a Java Action that you can call in a microflow wh
 
 ## 6 Read More
 
-* [How to Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [How to Clear Warning Messages](clear-warning-messages)
-* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui)
-* [How to Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [How to Debug Java Actions Remotely](debug-java-actions-remotely)
-* [How to Log Levels](log-levels)
-* [How to Debug Java Actions](debug-java-actions)
-* [How to Handle Common Mendix SSO Errors](handle-common-mendix-sso-errors)
-* [How to Debug Microflows](debug-microflows)
-* [How to Debug Microflows Remotely](debug-microflows-remotely)
-* [How to Debug Java Actions Remotely](debug-java-actions-remotely)
+* [How to Find the Root Cause of Runtime Errors](/howto7/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [How to Clear Warning Messages](/howto7/monitoring-troubleshooting/clear-warning-messages/)
+* [How to Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui/)
+* [How to Monitor Mendix Using JMX](/howto7/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [How to Debug Java Actions Remotely](/howto7/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [How to Log Levels](/howto7/monitoring-troubleshooting/log-levels/)
+* [How to Debug Java Actions](/howto7/monitoring-troubleshooting/debug-java-actions/)
+* [How to Handle Common Mendix SSO Errors](/howto7/monitoring-troubleshooting/handle-common-mendix-sso-errors/)
+* [How to Debug Microflows](/howto7/monitoring-troubleshooting/debug-microflows/)
+* [How to Debug Microflows Remotely](/howto7/monitoring-troubleshooting/debug-microflows-remotely/)
+* [How to Debug Java Actions Remotely](/howto7/monitoring-troubleshooting/debug-java-actions-remotely/)

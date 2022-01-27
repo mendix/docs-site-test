@@ -15,7 +15,7 @@ In **Stories**, you are able to manage Sprints, stories, and labels for your app
 By adding your Sprints to Mendix, you will have a clear overview of your tasks and can easily view the status of the development of your app. You can create, refine, and prioritize user stories collaboratively using the stories' conversation threads. User stories can be estimated and organized into Sprints which can be monitored using Scrum boards and burndown charts.
 
 {{% alert color="info" %}}
-You can also manage the progress of tasks and Sprints from within Mendix Studio Pro via the [Stories pane](/refguide/stories-pane).
+You can also manage the progress of tasks and Sprints from within Mendix Studio Pro via the [Stories pane](/refguide/stories-pane/).
 {{% /alert %}}
 
 ![](/attachments/developerportal/collaborate/stories/stories.png)
@@ -32,7 +32,7 @@ Click **New Sprint** to open the **Edit Sprint** dialog box:
 
 {{/* % image_container width="400" % */}}
 ![](/attachments/developerportal/collaborate/stories/new-sprint.jpg)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 Fill in the following details:
 
@@ -49,7 +49,7 @@ Each Sprint contains a number of stories that describe the specific functionalit
 
 {{/* % image_container width="400" % */}}
 ![](/attachments/developerportal/collaborate/stories/new-story.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 Fill in the following details:
 
@@ -66,7 +66,7 @@ You can also create a story via the [New Story](#new-story) button for Sprint or
 
 {{/* % image_container width="550" % */}}
 ![](/attachments/developerportal/collaborate/stories/new-story-from-sprint.jpg)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 For more information on stories, see the [Story Actions](#story-actions) section below.
 
@@ -76,7 +76,7 @@ Click **New Label** to create a new label for your app:
 
 {{/* % image_container width="400" % */}}
 ![](/attachments/developerportal/collaborate/stories/new-label.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 * **Label caption** – the caption of the label
 * **Label color** – select a color from the drop-down list for easy visibility (the small square below the drop-down list shows how the color looks)
@@ -97,7 +97,7 @@ After you click **Import / Export**, you will be asked what you want to do:
 
 {{/* % image_container width="350" % */}}
 ![](/attachments/developerportal/collaborate/stories/import-export.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 In Mendix, you can export stories from your app at any time. If you select **Export single sprint to Excel**, you can select just the stories in one Sprint and export these to Excel to work on.
 
@@ -117,7 +117,7 @@ The **Manage Labels** page is where you can add or remove your labels:
 
 {{/* % image_container width="550" % */}}
 ![](/attachments/developerportal/collaborate/stories/labels.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 The following buttons are available:
 
@@ -132,7 +132,7 @@ The **Completed Sprints** page presents an overview of Sprints that have been co
 
 {{/* % image_container width="550" % */}}
 ![](/attachments/developerportal/collaborate/stories/completed-sprints.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 The following buttons are available:
 
@@ -147,9 +147,9 @@ The **Project History** page presents the collaboration actions for the app. On 
 
 {{/* % image_container width="550" % */}}
 ![](/attachments/developerportal/collaborate/stories/history.jpg)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
-When you select a history item and click **Show item**, the details of the story, Sprint, or [feedback item](feedback) will be presented.
+When you select a history item and click **Show item**, the details of the story, Sprint, or [feedback item](/developerportal/collaborate/feedback/) will be presented.
 
 ### 2.5 Sprint Actions {#sprint-actions}
 
@@ -157,7 +157,7 @@ For each Sprint, the following options are provided via the menu button on the r
 
 {{/* % image_container width="350" % */}}
 ![](/attachments/developerportal/collaborate/stories/sprint-options.jpg)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 * **Complete Sprint** (only available for the Sprint identified as an **Active Sprint**) – enables completing the Sprint, which will move it to the [Completed Sprints](#completed-sprints) page
 * **Add Story** – enables [creating a new story](#new-story) 
@@ -185,7 +185,7 @@ When you click a story title, the story details page opens:
 
 {{/* % image_container width="500" % */}}
 ![](/attachments/developerportal/collaborate/stories/story-details.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 On this page, you can perform a number of actions:
 
@@ -201,8 +201,8 @@ You can also do this following on this page:
 
 * **Move** a story to a different app or Sprint (for details, see the [Moving Stories](#move-stories) section below)
 * **Duplicate** a story and its tasks, story points, status, and labels into a new user story
-* View the **Feedback** on which this story is based (if applicable; for details, see the [Adding a Feedback Item to Your Backlog](feedback#adding) section of *Feedback Management*)
-* View the committed **Revisions** linked to the story (which are configured in the [Related stories](/refguide/commit-dialog#stories) tab of the **Commit** dialog box in Studio Pro)
+* View the **Feedback** on which this story is based (if applicable; for details, see the [Adding a Feedback Item to Your Backlog](/developerportal/collaborate/feedback/#adding) section of *Feedback Management*)
+* View the committed **Revisions** linked to the story (which are configured in the [Related stories](/refguide/commit-dialog/#stories) tab of the **Commit** dialog box in Studio Pro)
 * Click **History** to view the history of changes to the story
 * **Delete** the story
 
@@ -213,7 +213,7 @@ If you need to reorder stories or move a story to a different Sprint, there are 
 * Select the story, click **Move**, and then select the new Sprint from the **Move Stories** dialog box
 
 	{{/* % image_container width="500" % */}}![](/attachments/developerportal/collaborate/stories/move-story-move-button.jpg)
-	{{/* % /image_container % */}} 
+	{{/* % /image_container % */}}
 
 * Select the story and drag it to the desired Sprint location:
 
@@ -251,12 +251,12 @@ When you return to your app in the Developer Portal, you will see the new story 
 ![](/attachments/developerportal/collaborate/stories/status-update.png)
 
 {{% alert color="info" %}}
-Changing the status of a story or updating story points automatically synchronizes the updates between the Developer Portal and Studio Pro. For more information on how to change the status of your story, see the [Changing the Status of a Story or a Task](/refguide/stories-pane#changing-status) section in *Stories Pane*.
+Changing the status of a story or updating story points automatically synchronizes the updates between the Developer Portal and Studio Pro. For more information on how to change the status of your story, see the [Changing the Status of a Story or a Task](/refguide/stories-pane/#changing-status) section in *Stories Pane*.
 {{% /alert %}}
 
 ## 3 Sprint Status
 
-On the **Sprint Status** tab, there is a Kanban overview of the [stories](/developerportal/collaborate/stories) in the current Sprint. 
+On the **Sprint Status** tab, there is a Kanban overview of the [stories](/developerportal/collaborate/stories/) in the current Sprint. 
 
 There is also a percentage bar of the stories that are done and the deadline date of the current Sprint:
 
@@ -264,7 +264,7 @@ There is also a percentage bar of the stories that are done and the deadline dat
 
 You can click **Mark current sprint as completed** only when all stories have the **Done** status.
 
-When you click **Details** for a story, you will be taken to the [story details](/developerportal/collaborate/stories#story-details) page.
+When you click **Details** for a story, you will be taken to the [story details](/developerportal/collaborate/stories/#story-details) page.
 
 {{% alert color="info" %}}
 All the changes made on this page are directly passed on to the **Stories** page and vice versa.
@@ -272,7 +272,7 @@ All the changes made on this page are directly passed on to the **Stories** page
 
 ## 4 Read More
 
-* [Buzz](buzz)
-* [Team](team)
-* [Team Server](team-server)
-* [Feedback](feedback)
+* [Buzz](/developerportal/collaborate/buzz/)
+* [Team](/developerportal/collaborate/team/)
+* [Team Server](/developerportal/collaborate/team-server/)
+* [Feedback](/developerportal/collaborate/feedback/)

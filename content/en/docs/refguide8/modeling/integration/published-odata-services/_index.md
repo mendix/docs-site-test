@@ -1,6 +1,6 @@
 ---
 title: "Published OData Services"
-url: /refguide8/published-odata-services
+url: /refguide8/published-odata-services/
 parent: "integration"
 tags: ["studio pro"]
 aliases:
@@ -8,13 +8,13 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-odata-services.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-odata-services.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-In Studio Pro, entities can be exposed as [OData resources](published-odata-resource) by adding a new published OData service. You can expose any number of related resources in a published OData service. By default, the non-qualified names of entities are used in the URI to uniquely identify them, but you can override the name of the resource as well.
+In Studio Pro, entities can be exposed as [OData resources](/refguide8/published-odata-resource/) by adding a new published OData service. You can expose any number of related resources in a published OData service. By default, the non-qualified names of entities are used in the URI to uniquely identify them, but you can override the name of the resource as well.
 
 The standard used for OData in Mendix is [OData version 3](http://www.odata.org/documentation/odata-version-3-0) with the default representation set to Atom XML. Not all parts of the standard are implemented. If something is not documented here, it is has not yet been added.
 
@@ -36,21 +36,21 @@ In OData, the namespace is used to refer to data types. On the **Settings** tab,
 
 ### 2.4 Resources
 
-A [resource](published-odata-resource) is a network-accessible data object representing an entity, identified by a URI.
+A [resource](/refguide8/published-odata-resource/) is a network-accessible data object representing an entity, identified by a URI.
 
 ## 3 Settings
 
 ### 3.1 Associations
 
-You can choose how you want to represent associations. For more information, see the [Associations](odata-representation#associations) section of *OData Representation*.
+You can choose how you want to represent associations. For more information, see the [Associations](/refguide8/odata-representation/#associations) section of *OData Representation*.
 
 ### 3.2 Security {#security}
 
-You can configure security for the OData service when [Project Security](project-security) is enabled.
+You can configure security for the OData service when [Project Security](/refguide8/project-security/) is enabled.
 
 #### 3.2.1 Requires Authentication {#authentication}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The **No Authentication** feature was introduced in version 8.0.0. In earlier versions, it was always **Username and password**.
 
@@ -60,7 +60,7 @@ The **Active Session** and **Custom** authentications were also introduced in ve
 
 Select whether clients need to authenticate or not. Choose _No_ to allow access to the resources without restrictions. Choose _Yes_ to be able to select which authentication methods to support.
 
-Even when you choose _Yes_, you can still expose OData resources to anonymous users. For detailed information on allowing anonymous users, refer to [Anonymous User Role](anonymous-users).
+Even when you choose _Yes_, you can still expose OData resources to anonymous users. For detailed information on allowing anonymous users, refer to [Anonymous User Role](/refguide8/anonymous-users/).
 
 #### 3.2.2 Authentication Methods
 
@@ -99,9 +99,9 @@ xmlHttp.send(null);
 
 Specify which microflow to use for custom authentication.
 
-The microflow may take an [HttpRequest](http-request-and-response-entities#http-request) as a parameter, so it can inspect the incoming request.
+The microflow may take an [HttpRequest](/refguide8/http-request-and-response-entities/#http-request) as a parameter, so it can inspect the incoming request.
 
-The microflow may also take an [HttpResponse](http-request-and-response-entities#http-response) as a parameter. When the microflow sets the status code of this response to something other then **200**, this value is returned and the operation will not be executed. Any headers set on the response are returned (except when the microflow returns an empty user).
+The microflow may also take an [HttpResponse](/refguide8/http-request-and-response-entities/#http-response) as a parameter. When the microflow sets the status code of this response to something other then **200**, this value is returned and the operation will not be executed. Any headers set on the response are returned (except when the microflow returns an empty user).
 
 The authentication microflow should return a User.
 
@@ -113,9 +113,9 @@ There are three possible outcomes of the authentication microflow:
 
 #### 3.2.3 Allowed Roles
 
-The allowed roles define which [module role](module-security#module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
+The allowed roles define which [module role](/refguide8/module-security/#module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Web service users cannot access OData services.
 {{% /alert %}}
 
@@ -152,13 +152,13 @@ You can write a *summary* and a *description* intended for people using the serv
 
 Once your OData-enabled app is running, an overview of exposed OData resources is available on the root URL followed by `/odata-doc/`. For example, `http://localhost:8080/odata-doc/` You can copy and paste the links into for instance Excel to establish a link between your OData resources and Excel.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 While the API documentation for OData resources is enabled by default, access to it may be restricted by the administrator for apps running in production.
 {{% /alert %}}
 
-For details on how to filter the OData response, refer to [OData Query Options](odata-query-options).
+For details on how to filter the OData response, refer to [OData Query Options](/refguide8/odata-query-options/).
 
-For details on how Mendix attributes are represented in OData, refer to [OData Representation](odata-representation).
+For details on how Mendix attributes are represented in OData, refer to [OData Representation](/refguide8/odata-representation/).
 
 When exposing entities through OData, the entities are retrieved from the Mendix database in a streaming fashion, to avoid out-of-memory errors in the Mendix Runtime.
 
@@ -166,4 +166,4 @@ When exposing entities through OData, the entities are retrieved from the Mendix
 
 Some on-premises servers, in particular those using Microsoft IIS, will strip the host header from requests. This means that your OData service and documentation will be published on an unexpected URL.
 
-To resolve this issue, you will need to ensure your server preserves host headers. See the section [Preserving the Host Header](/developerportal/deploy/deploy-mendix-on-microsoft-windows#preserve-header) in the *Microsoft Windows* deployment documentation.
+To resolve this issue, you will need to ensure your server preserves host headers. See the section [Preserving the Host Header](/developerportal/deploy/deploy-mendix-on-microsoft-windows/#preserve-header) in the *Microsoft Windows* deployment documentation.

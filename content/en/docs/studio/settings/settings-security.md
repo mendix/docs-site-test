@@ -19,17 +19,17 @@ Security is a way of controlling access to your app. For example, you can decide
 
 Whether security is enabled for your app by default, depends on whether the security has been enabled in Studio Pro and on the way it has been configured there. You can come across the following cases:
 
-1. Your app security is **off** in Studio Pro. In this case, you can either enable it via **App Settings**>**Roles and Permissions** >the **Enable Security** button, or you will be prompted to enable security, when you try to [publish the app](publishing-app). 
+1. Your app security is **off** in Studio Pro. In this case, you can either enable it via **App Settings**>**Roles and Permissions** >the **Enable Security** button, or you will be prompted to enable security, when you try to [publish the app](/studio/publishing-app/). 
 
     {{/* % image_container width="300" % */}}![Secure Your App Pop-up Window](/attachments/studio/settings/settings-security/security-pop-up.png) {{/* % /image_container % */}}
- {{/* % /image_container % */}}    
-    {{% alert color="info" %}}When you enable security, it is enabled for the whole app, and there are checks and changes applied to the model that are visible in Studio Pro. For more technical information on these checks and changes, see [Model Changes When Security Is Enabled in Studio](/refguide/studio-security-enabled).{{% /alert %}}
+    
+    {{% alert color="info" %}}When you enable security, it is enabled for the whole app, and there are checks and changes applied to the model that are visible in Studio Pro. For more technical information on these checks and changes, see [Model Changes When Security Is Enabled in Studio](/refguide/studio-security-enabled/).{{% /alert %}}
 
-2. Security is set to the **Production** level in Studio Pro and settings are compatible with Studio. In this case, you can view and edit **Roles and Permissions** in Studio. (For more information on what security settings are compatible with Studio, see the [Studio Compatibility](/refguide/studio-security-enabled#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
+2. Security is set to the **Production** level in Studio Pro and settings are compatible with Studio. In this case, you can view and edit **Roles and Permissions** in Studio. (For more information on what security settings are compatible with Studio, see the [Studio Compatibility](/refguide/studio-security-enabled/#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
 
     ![](/attachments/studio/settings/settings-security/roles-and-permissions-screen.png)
 
-3. Security is set to the **Prototype/demo** or **Production** level in Studio Pro and settings are not compatible with Studio. In this case, you can only view, but not edit **Roles and Permissions** in Studio. (For more information on security settings compatible with Studio, see the [Studio Compatibility](/refguide/studio-security-enabled#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
+3. Security is set to the **Prototype/demo** or **Production** level in Studio Pro and settings are not compatible with Studio. In this case, you can only view, but not edit **Roles and Permissions** in Studio. (For more information on security settings compatible with Studio, see the [Studio Compatibility](/refguide/studio-security-enabled/#studio-compatible) section in *Model Changes When Security Is Enabled in Studio*.)
 
     ![](/attachments/studio/settings/settings-security/security-read-only.png)
 
@@ -148,21 +148,21 @@ There are two ways to change access for specific pages/microflows/workflows in y
 	4.  Go to **Properties** > the **Permissions** section and tick/untick **Allowed Roles** to grant/restrict access. 
 
 		{{/* % image_container width="300" % */}}![](/attachments/studio/settings/settings-security/permissions-section.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 4 Demo Users {#demo-users}
 
-Demo users are a demonstration of each user role existing in your app. You can use demo users to review how your app looks like for each user role. For more technical information, see [Demo Users](/refguide/demo-users). 
+Demo users are a demonstration of each user role existing in your app. You can use demo users to review how your app looks like for each user role. For more technical information, see [Demo Users](/refguide/demo-users/). 
 
 ### 4.1 Testing Your Roles {#testing-your-roles}
 
 You can test how your app looks like for different roles the following way:
 
-1. [Preview your app](publishing-app).
+1. [Preview your app](/studio/publishing-app/).
 
 2. Click a user icon in the right side of the screen:
 
     {{/* % image_container width="400" % */}}![](/attachments/studio/settings/settings-security/user-icon.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 4. In the displayed menu bar, select a demo user and the app will be viewed from the perspective of the corresponding role.
 
     ![](/attachments/studio/settings/settings-security/select-user.png)
@@ -179,7 +179,7 @@ To manage App Users, open **Roles and Permissions** and click **Manage Users** i
 
 ![](/attachments/studio/settings/settings-security/manage-users-button.png)
 
-You will be taken to the [App User Management](/developerportal/collaborate/general-settings#managing-app-users) page in the Developer Portal, where you can invite people to your app and manage their user roles. 
+You will be taken to the [App User Management](/developerportal/collaborate/general-settings/#managing-app-users) page in the Developer Portal, where you can invite people to your app and manage their user roles. 
 
 {{% alert color="info" %}}
 People invited to join your team in the Developer Portal are not added as App Users automatically, so you will need to invite your team members if necessary.
@@ -207,5 +207,5 @@ If the auto-upgrade detects that the service was customized in Studio Pro by a t
 
 ## 7 Read More
 
-* [Security](/refguide/security)
-* [Model Changes When Security Is Enabled in Studio](/refguide/studio-security-enabled)
+* [Security](/refguide/security/)
+* [Model Changes When Security Is Enabled in Studio](/refguide/studio-security-enabled/)

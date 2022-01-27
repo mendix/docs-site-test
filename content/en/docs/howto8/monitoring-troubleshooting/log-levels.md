@@ -1,8 +1,8 @@
 ---
 title: "Set Log Levels"
-url: /howto8/monitoring-troubleshooting/log-levels
+url: /howto8/monitoring-troubleshooting/log-levels/
 category: "Monitoring & Troubleshooting"
-menu_order: 9
+weight: 9
 tags: ["monitoring", "troubleshooting", "log level", "logging", "log"]
 ---
 
@@ -58,9 +58,9 @@ These are the log levels used by Mendix:
 | Debug | | | Detailed information, typically of interest only when diagnosing problems. |
 | Info  | | | Confirmation that things are working as expected. |
 | Warning | ![](/attachments/howto8/monitoring-troubleshooting/log-levels/18580038.png) | Orange | Indicates that something unexpected happened or that there is some problem in the near future (for example, "disk space low"). The application is still working as expected. |
- | Orange | Indicates that something unexpected happened or that there is some problem in the near future (for example, "disk space low"). The application is still working as expected. || Error | ![](/attachments/howto8/monitoring-troubleshooting/log-levels/18580037.png) | Red | Due to a more serious problem, the application has not been able to perform some function. |
- | Red | Due to a more serious problem, the application has not been able to perform some function. || Critical | ![](/attachments/howto8/monitoring-troubleshooting/log-levels/18580036.png) | White (text), red (background) | A serious error has occurred, indicating that the application itself may be unable to continue running. |
- | White (text), red (background) | A serious error has occurred, indicating that the application itself may be unable to continue running. |
+| Error | ![](/attachments/howto8/monitoring-troubleshooting/log-levels/18580037.png) | Red | Due to a more serious problem, the application has not been able to perform some function. |
+| Critical | ![](/attachments/howto8/monitoring-troubleshooting/log-levels/18580036.png) | White (text), red (background) | A serious error has occurred, indicating that the application itself may be unable to continue running. |
+
 ## 3 Setting the Log Levels
 
 In this section, you will learn how to configure the log levels of the messages produced by the system. The different highlighted [levels](#level) can be applied to the predefined logging produced by Mendix Studio Pro and to custom logging. 
@@ -103,8 +103,8 @@ To set the log levels for standard log messages, follow these steps:
 
 ![](/attachments/howto8/monitoring-troubleshooting/log-levels/18580029.png)
 
-{{% alert type="info" %}}
-You can override the log level for standard log messages in each environment when your app is deployed to the Mendix cloud. See the [Log Levels Tab](/developerportal/deploy/environments-details#log-levels) section in *Environment Details* for more information.
+{{% alert color="info" %}}
+You can override the log level for standard log messages in each environment when your app is deployed to the Mendix cloud. See the [Log Levels Tab](/developerportal/deploy/environments-details/#log-levels) section in *Environment Details* for more information.
 {{% /alert %}}
 
 ### 3.3 Configuring the Log Levels for Custom Log Messages
@@ -119,9 +119,9 @@ To set the level of custom log messages that you have created via a microflow, f
 
 ## 4 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Microflows](debug-microflows)
-* [Debug Java Actions](debug-java-actions)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+* [Debug Java Actions](/howto8/monitoring-troubleshooting/debug-java-actions/)
 * [A Script to Set the Log Node Levels in Mendix](http://www.mxblog.eu/p/post/2533274790397906)

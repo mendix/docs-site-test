@@ -15,7 +15,7 @@ A dynamic label is used for the same kind of attributes as a text box from the p
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide/modeling/resources/document-templates/dynamic-label-document-template/918131.png)
+![](/attachments/refguide/modeling/resources/document-templates/918131.png)
 
 A dynamic label linking to a customer name.
 
@@ -25,7 +25,7 @@ A dynamic label linking to a customer name.
 
 ### 2.1 Style
 
-For details, see [Style](style).
+For details, see [Style](/refguide/style/).
 
 ### 2.2 Render XHTML
 

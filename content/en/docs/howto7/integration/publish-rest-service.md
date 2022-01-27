@@ -1,8 +1,8 @@
 ---
 title: "Publish a REST Service"
-url: /howto7/integration/publish-rest-service
+url: /howto7/integration/publish-rest-service/
 category: "Integration"
-menu_order: 10
+weight: 10
 description: "Describes how to publish REST web services natively from the Desktop Modeler."
 tags: ["rest", "rest service", "web service", "integration"]
 ---
@@ -206,4 +206,4 @@ To add the error handling for those situations when the OrderID parameter is fil
 
 ## 6 Read More
 
-* For more information on creating published REST services in Mendix (including GET, POST, and DELETE operations), see [Published REST Services](/refguide7/published-rest-services)
+* For more information on creating published REST services in Mendix (including GET, POST, and DELETE operations), see [Published REST Services](/refguide7/published-rest-services/)

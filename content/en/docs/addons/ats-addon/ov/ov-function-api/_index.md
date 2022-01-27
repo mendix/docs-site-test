@@ -2,7 +2,7 @@
 title: "Using the Function API"
 url: /addons/ats-addon/ov-function-api/
 parent: "ov"
-menu_order: 5
+weight: 5
 ---
 
 ## 1 Introduction
@@ -56,7 +56,7 @@ The API works according to these basic steps:
     }
     ```
 
-For a more detailed example, see [Function API with REST](ov-function-api-rest).
+For a more detailed example, see [Function API with REST](/addons/ats-addon/ov-function-api-rest/).
 
 ## 4 Clients
 
@@ -64,7 +64,7 @@ For certain programing languages and testing tools, ATS provides simple-to-use c
 
 As an alternative, you can call ATS functions natively in the tool, like normal functions and keywords.
 
-Currently, there are two clients available: for [Java](ov-function-api-java) and [Katalon](ov-function-api-katalon).
+Currently, there are two clients available: for [Java](/addons/ats-addon/ov-function-api-java/) and [Katalon](/addons/ats-addon/ov-function-api-katalon/).
 
 ## 5 Function API Availability
 
@@ -74,8 +74,8 @@ If you have feedback on the Function API, send an email to `info@CLEVR.com`.
 
 ## 6 Read More
 
-* [Function API with REST](ov-function-api-rest)
-* [Function API with Java](ov-function-api-java)
-* [Function API with Katalon](ov-function-api-katalon)
-* [Function API](rg-two-function-api)
-* [Function API Reference](rg-two-function-api-reference)
+* [Function API with REST](/addons/ats-addon/ov-function-api-rest/)
+* [Function API with Java](/addons/ats-addon/ov-function-api-java/)
+* [Function API with Katalon](/addons/ats-addon/ov-function-api-katalon/)
+* [Function API](/addons/ats-addon/rg-two-function-api/)
+* [Function API Reference](/addons/ats-addon/rg-two-function-api-reference/)

@@ -1,13 +1,13 @@
 ---
 title: "Loop"
-url: /refguide8/loop
+url: /refguide8/loop/
 parent: "application-logic"
-menu_order: 80
+weight: 80
 tags: ["studio pro", "loop", "iterate over"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/loop.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/loop.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -18,7 +18,7 @@ For example, if you have a list of objects of the *OrderLine* entity and you wan
 
 ![](/attachments/refguide8/modeling/application-logic/loop/loop.png)
 
-The loop can contain all types of elements used in microflows, except for start and end events. Only a loop can contain [break events](break-event) and [continue events](continue-event).
+The loop can contain all types of elements used in microflows, except for start and end events. Only a loop can contain [break events](/refguide8/break-event/) and [continue events](/refguide8/continue-event/).
 
 ## 2 Input Properties
 

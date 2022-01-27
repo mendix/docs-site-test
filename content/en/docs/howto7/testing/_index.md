@@ -1,6 +1,6 @@
 ---
 title: "Testing"
-url: /howto7/testing
+url: /howto7/testing/
 tags: ["test", "testing"]
 ---
 
@@ -10,11 +10,11 @@ Testing is a vital component when creating a Mendix application. In this categor
 
 ## 2 Main Documents in This Category
 
-* [Test Microflows Using the UnitTesting Module](testing-microflows-using-the-unittesting-module)
-* [Test with Application Test Suite (ATS)](testing-with-application-test-suite)
-* [Test Web Services Using SoapUI](testing-web-services-using-soapui)
-* [Test Mendix Applications Using Selenium IDE](testing-mendix-applications-using-selenium-ide)
-* [Create Automated Tests with TestNG](create-automated-tests-with-testng)
+* [Test Microflows Using the UnitTesting Module](/howto7/testing/testing-microflows-using-the-unittesting-module/)
+* [Test with Application Test Suite (ATS)](/howto7/testing/testing-with-application-test-suite/)
+* [Test Web Services Using SoapUI](/howto7/testing/testing-web-services-using-soapui/)
+* [Test Mendix Applications Using Selenium IDE](/howto7/testing/testing-mendix-applications-using-selenium-ide/)
+* [Create Automated Tests with TestNG](/howto7/testing/create-automated-tests-with-testng/)
 
 ## 3 Blog Posts
 

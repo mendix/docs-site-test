@@ -1,6 +1,6 @@
 ---
 title: "Export to excel button"
-url: /refguide7/export-to-excel-button
+url: /refguide7/export-to-excel-button/
 parent: "control-bar"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -38,7 +38,7 @@ Defines how dates will be exported. When _Date value_ is selected, date values w
 
 _Default value:_ Date value
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 When choosing _Date value_, dates will be shown only in the time zone of your Windows account, because Excel does not support defining specific time zones.
 

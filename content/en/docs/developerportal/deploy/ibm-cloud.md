@@ -203,8 +203,8 @@ When the package is ready to be deployed, a green tick will be shown next to the
 
 4. Select any additional services you need for your app. For more information see [Binding Services](#binding-services), below.
 
-    {{/* % image_container width="75%" % */}}![](/attachments/developerportal/deploy/ibm-cloud/transport-services.png){{/* % /image_container % */}} 
-{{/* % /image_container % */}} 
+    {{/* % image_container width="75%" % */}}![](/attachments/developerportal/deploy/ibm-cloud/transport-services.png){{/* % /image_container % */}}
+
     {{% alert color="warning" %}}In your initial deployment, do not remove any of the services with the status **Services To Be Bound**. For a new app, these services are all required for the correct deployment of the app.{{% /alert %}}
 
 5. Click **Continue** to continue to the Start Application confirmation page.
@@ -331,7 +331,7 @@ This tab displays Cloud Foundry services which are bound to the app, waiting to 
 
 {{/* % image_container width="50%" % */}}
 ![](/attachments/developerportal/deploy/ibm-cloud/service-tab.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 {{% alert color="warning" %}}
 **If you unbind the database (compose-for-postgreSQL) service, your app will probably stop working**
@@ -468,7 +468,7 @@ If an app is deployed to IBM using the Studio Pro **Run** or **Publish** button 
 
 {{/* % image_container width="50%" % */}}
 ![](/attachments/developerportal/deploy/ibm-cloud/error-desktop-modeler.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 If you use the Developer Portal to look at the details of the environment to which you are deploying, you will see that the services are still waiting to be bound.
 

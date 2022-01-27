@@ -27,12 +27,12 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Create an SAP app using an SAP app template
 * Select and deploy the app to an SAP account and subaccount where you have authority to configure security
-* Set the security level for the app to at least Prototype/demo to use SAP Authentication; for more information see [App Security](/refguide/project-security) and for instructions on setting security levels, see [How To Create a Secure App](/howto/security/create-a-secure-app)
+* Set the security level for the app to at least Prototype/demo to use SAP Authentication; for more information see [App Security](/refguide/project-security/) and for instructions on setting security levels, see [How To Create a Secure App](/howto/security/create-a-secure-app/)
 * Set up the app with the following two **User roles** in **App** > **Security**: Supervisor and Inspector
 
 	![](/attachments/partners/sap/use-sap-xsuaa-connector/add-roles-to-app.png)
 
-* Ensure the app behaves differently according to the user role, so you can see the effect of setting up the roles in XSUAA. For example, give each role a different starting page as described here: [How To Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure)
+* Ensure the app behaves differently according to the user role, so you can see the effect of setting up the roles in XSUAA. For example, give each role a different starting page as described here: [How To Set Up the Navigation Structure](/howto/general/setting-up-the-navigation-structure/)
 
 ## 3 Getting the XSUAA Connector for SAP Business Technology Platform Module
 
@@ -40,7 +40,7 @@ The SAP app may already have the XSUAA Connector for SAP Business Technology Pla
 
 If the XSUAA Connector for SAP Business Technology Platform is not already in your app, download it from the Marketplace. It can be found here: [XSUAA Connector for SAP Business Technology Platform](https://marketplace.mendix.com/link/component/78091/).
 
-For more information, see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content).
+For more information, see [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/).
 
 ## 4 Using the Connector
 
@@ -69,7 +69,7 @@ By default, the Mendix login page will not allow the user to enter their SSO cre
 * Bypass the Mendix login page altogether and just display the XSUAA login page
 
 {{% alert color="info" %}}
-If you are using the [Deep Link](/appstore/modules/deep-link) module, you will also need to set the **LoginLocation** constant to `/xsauaalogin/`.
+If you are using the [Deep Link](/appstore/modules/deep-link/) module, you will also need to set the **LoginLocation** constant to `/xsauaalogin/`.
 {{% /alert %}}
 
 #### 4.2.1 Adding the SSO Login Button to the Login Page<a name="adding"></a>
@@ -246,8 +246,8 @@ You can picture the authentication as shown below:
 
 ## 6 Read More
 
-* [How to Create a Secure App](/howto/security/create-a-secure-app)
-* [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content)
-* [App Security](/refguide/project-security)
-* [XSUAA Connector for SAP Business Technology Platform](/partners/sap/sap-xsuaa-connector) (documentation)
+* [How to Create a Secure App](/howto/security/create-a-secure-app/)
+* [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/)
+* [App Security](/refguide/project-security/)
+* [XSUAA Connector for SAP Business Technology Platform](/partners/sap/sap-xsuaa-connector/) (documentation)
 * [SAP Business Technology Platform cockpit](https://account.hana.ondemand.com/cockpit#/home/allaccounts)

@@ -50,7 +50,7 @@ The **Page** action opens the specified page.
 
 The following properties are specific for this action:
 
-* **Page** – a [page](page-editor) that should open.
+* **Page** – a [page](/studio/page-editor/) that should open.
 
 * **Create Object** – creates a new object and passed it to the selected page (disabled by default). For more information, see the [Create Object Option](#create-object-option) section below
 
@@ -60,7 +60,7 @@ When you set the **On Click Action** to **Page**, you can enable the **Create Ob
 
 For example, you want to create a new customer by clicking the **New** button. This button will open a page where you can fill in a new customer's details and save them. However, the *Customer Details* page needs to get data first, in other words, it expects the object *Customer* to be passed to it. 
 
-{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio/page-editor/page-editor-widgets/page-editor-widgets-events-section/data-view-customer.png)
+{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio/checks/consistency-errors/consistency-errors-navigation/data-view-customer.png)
 {{/* % /image_container % */}}
 
 Thus, when setting the on-click action of the **New** button to **Page**, you need to enable the **Create Object** option and select the **Customer** entity.
@@ -82,7 +82,7 @@ The **Call Workflow** action executes the specified workflow.
 
 The following properties are specific for this action:
 
-* **Workflow** – A [workflow](workflows) that should be executed.
+* **Workflow** – A [workflow](/studio/workflows/) that should be executed.
 * **Close page** – Specifies whether the current page should be closed.
 * **Commit** – Specifies whether the object should be committed when running a workflow. 
 
@@ -92,7 +92,7 @@ The following properties are specific for this action:
 
 ### 2.6 Show Task Page {#show-task-page}
 
-**Show Task Page** opens an overview page set for the [user task](workflows-user-task) in properties. An element with this on-click action should be placed in a data container connected to the **System.WorkflowUserTask** entity. 
+**Show Task Page** opens an overview page set for the [user task](/studio/workflows-user-task/) in properties. An element with this on-click action should be placed in a data container connected to the **System.WorkflowUserTask** entity. 
 
 ### 2.7 Complete Task {#complete-task}
 
@@ -100,9 +100,9 @@ The **Complete Task** action marks the specified user task in the workflow as co
 
 The following properties are specific for this action:
 
-* **Task** – The [user task](workflows-user-task) that should be marked as completed.
+* **Task** – The [user task](/studio/workflows-user-task/) that should be marked as completed.
 
-* **Outcome** – Lists the outcomes of the selected [user task](workflows-user-task) and follows the selected outcome. If the user task has only one outcome, the **Default** is set as an outcome and the property cannot be edited. 
+* **Outcome** – Lists the outcomes of the selected [user task](/studio/workflows-user-task/) and follows the selected outcome. If the user task has only one outcome, the **Default** is set as an outcome and the property cannot be edited. 
 
 * **Close page** – Specifies whether the current page should be closed.
 
@@ -143,7 +143,7 @@ The following properties are specific for this action:
 
   * **Text Message** – Sends a text message.
 
-    {{%alert type="info" %}}When you configure **Email**, **Phone Call** or **Message** options, the corresponding default app will be opened on the device when the action is triggered, for example, the default email client will be opened to compose a message.
+    {{%alert color="info" %}}When you configure **Email**, **Phone Call** or **Message** options, the corresponding default app will be opened on the device when the action is triggered, for example, the default email client will be opened to compose a message.
     
     {{%/alert %}}
 
@@ -154,7 +154,7 @@ The following properties are specific for this action:
 
 ### 2.13 Delete Object Action {#delete-object-action}
 
-Behavior of the **Delete Object** action depends on a data container it is placed in: a [list view](page-editor-data-view-list-view#list-view-properties) or a [data view](page-editor-data-view-list-view#data-view-properties). 
+Behavior of the **Delete Object** action depends on a data container it is placed in: a [list view](/studio/page-editor-data-view-list-view/#list-view-properties) or a [data view](/studio/page-editor-data-view-list-view/#data-view-properties). 
 
 #### 2.13.1 Delete Object Action in a List View
 
@@ -175,4 +175,4 @@ When placed on a data view, **Delete Object** will delete the connected object. 
 
 ## 3 Read More
 
-* [Widgets](page-editor-widgets)
+* [Widgets](/studio/page-editor-widgets/)

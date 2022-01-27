@@ -1,8 +1,8 @@
 ---
 title: "Transient Objects & Garbage Collecting"
-url: /refguide7/transient-objects-garbage-collecting
+url: /refguide7/transient-objects-garbage-collecting/
 parent: "runtime-java"
-menu_order: 1
+weight: 1
 description: "This page will explain the life cycle of both persistable and non-persistable objects, and how they flow through the platform memory."
 tags: ["persistable", "non-persistable", "transient", "objects", "garbage", "collecing"]
 ---
@@ -84,4 +84,4 @@ For every request to the Mendix Runtime—be it from the client or via web servi
 
 ## 6 Read More
 
-*   [Java Memory Usage](java-memory-usage)
+*   [Java Memory Usage](/refguide7/java-memory-usage/)

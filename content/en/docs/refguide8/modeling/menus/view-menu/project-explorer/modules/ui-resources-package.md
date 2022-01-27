@@ -1,19 +1,19 @@
 ---
 title: "UI Resources Package"
-url: /refguide8/ui-resources-package
+url: /refguide8/ui-resources-package/
 parent: "modules"
 tags: ["studio pro", "ui resources"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/ui-resources-package.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/ui-resources-package.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-The UI resources package is a specific [module](modules) marked by a green icon in the Project Explorer, that determines the projects look and feel. It does this in two distinct ways. First, the package supplies the project with all the page documents required to create well-designed, consistent pages, such as [page templates](page-templates) and [building blocks](building-block). Second, the package contains theme information, which allows users to easily switch out themes that complement the accompanying page documents. 
+The UI resources package is a specific [module](/refguide8/modules/) marked by a green icon in the Project Explorer, that determines the projects look and feel. It does this in two distinct ways. First, the package supplies the project with all the page documents required to create well-designed, consistent pages, such as [page templates](/refguide8/page-templates/) and [building blocks](/refguide8/building-block/). Second, the package contains theme information, which allows users to easily switch out themes that complement the accompanying page documents. 
 
-Which module is set as the UI resources package is governed by the **UI resources package** setting in the **Theme** tab of the [project settings](project-settings). This setting will automatically be updated if a new UI resources package is imported. 
+Which module is set as the UI resources package is governed by the **UI resources package** setting in the **Theme** tab of the [project settings](/refguide8/project-settings/). This setting will automatically be updated if a new UI resources package is imported. 
 
 The core concept of a UI resources package as an easily shared source of design utilities works best if the contents of the module is restricted to page templates and building blocks. Adding pages, microflows, and entities is possible and can be useful, but it also forces users to use static resources that may not be ideally suited to their specific application. Consequently, when they inevitably feel the need to tweak those resources to their requirements, the package can no longer be easily updated and maintained by the original designer.
 

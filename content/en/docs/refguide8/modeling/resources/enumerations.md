@@ -1,8 +1,8 @@
 ---
 title: "Enumerations"
-url: /refguide8/enumerations
+url: /refguide8/enumerations/
 parent: "resources"
-menu_order: 40
+weight: 40
 tags: ["studio pro", "enumeration", "enumeration values", "enumeration value"]
 aliases:
     - /refguide8/enumeration-values.html
@@ -10,21 +10,21 @@ aliases:
 #The anchor <enum-value-properties> below is mapped, so it should not be removed or changed.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/enumerations.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/enumerations.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 An enumeration defines a list of predefined values. Enumerations are used for the enumeration attribute type. For example, the status of an order can be *Open*, *Closed*, or *In Progress*. So, the enumeration for the order status will consist of three values: *Open*, *Closed*, and *In_Progress*. 
 
-An enumeration consists of one or more [enumeration values](enumerations#enum-properties). Each value represents one option. An attribute of the enumeration type can also represent an uninitialized state: for example, if you do not assign any status to an order, the order status will be *empty*. 
+An enumeration consists of one or more [enumeration values](/refguide8/enumerations/#enum-properties). Each value represents one option. An attribute of the enumeration type can also represent an uninitialized state: for example, if you do not assign any status to an order, the order status will be *empty*. 
 
 ## 2 Creating an Enumeration  
 
 To create a new enumeration, do the following: 
 
-1.  In the [Project Explorer](project-explorer), right-click the module or a folder you want to add enumeration to and in the list of actions, select **Add other** > **Enumeration**:
+1.  In the [Project Explorer](/refguide8/project-explorer/), right-click the module or a folder you want to add enumeration to and in the list of actions, select **Add other** > **Enumeration**:
 
     ![](/attachments/refguide8/modeling/resources/enumerations/add-enumeration.png)
 
@@ -58,17 +58,17 @@ An enumeration has the following properties:
 
 Enumeration value properties are described below:
 
-* **Caption** – the caption of an enumeration value is the text that the end-user sees for this enumeration value. This is a translatable text. For more information, see [Language Menu](translatable-texts). 
+* **Caption** – the caption of an enumeration value is the text that the end-user sees for this enumeration value. This is a translatable text. For more information, see [Language Menu](/refguide8/translatable-texts/). 
 
 * **Name** – the name of an enumeration value is a technical name of the value which is used to refer to the enumeration value in your project.
 
-    {{% alert type="warning" %}}The name of an enumeration value is also used for storing the enumeration value in the database. That is why changing the **Name** of an enumeration value is not allowed; it would invalidate the data in your database. The **Caption**, however, can be changed and this is the text that is displayed to the end-users.<br />The name of an enumeration value must be a technical name without spaces and special characters. The caption of an enumeration value can any character. For example, an enumeration value can have *In_Progress* as its name and *In Progress* as its caption.  
+    {{% alert color="warning" %}}The name of an enumeration value is also used for storing the enumeration value in the database. That is why changing the **Name** of an enumeration value is not allowed; it would invalidate the data in your database. The **Caption**, however, can be changed and this is the text that is displayed to the end-users.<br />The name of an enumeration value must be a technical name without spaces and special characters. The caption of an enumeration value can any character. For example, an enumeration value can have *In_Progress* as its name and *In Progress* as its caption.  
     {{% /alert %}}
   
-* **Image** –  an image selected for an enumeration value can be displayed in a data grid column. In this case, the enumeration format of the column should be *Image*. For more information on data grid columns, see [Grid Columns](columns).
+* **Image** –  an image selected for an enumeration value can be displayed in a data grid column. In this case, the enumeration format of the column should be *Image*. For more information on data grid columns, see [Grid Columns](/refguide8/columns/).
 
 ## 4 Read More
 
-* [Attributes](attributes)
-* [Entities](entities)
+* [Attributes](/refguide8/attributes/)
+* [Entities](/refguide8/entities/)
 

@@ -7,6 +7,7 @@ description: "This page describes how to monitor the application health."
 tags: ["Monitoring","Mendix Cloud","Developer Portal","Performance","Health", "Database IOPS Burst Balance", "Database Freeable Memory"]
 aliases:
     - /mendixcloud/monitoring-application-health.html
+    - /howtogeneral/mendixcloud/monitoring-application-health.html
 #To update these screenshots, you can log in with credentials detailed in How to Update Screenshots Using Team Apps.
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -16,7 +17,7 @@ aliases:
 When your application has reached production status, it's important to keep track of its status and health. When you click **Alerts** in the **Developer Portal**, you can inspect your application's health in the Mendix Cloud. 
 
 Mendix analyzes the application and platform status periodically. All status alerts are logged in the **History** of the **Alerts**. 
-If you [Receive Environment Status Alerts](receive-alerts), you will receive a status alert only once. Mendix will not send you multiple alerts of the same status.
+If you [Receive Environment Status Alerts](/developerportal/operate/receive-alerts/), you will receive a status alert only once. Mendix will not send you multiple alerts of the same status.
 
 This document will explain how to access the application status page, what the information on this page means, and how to look at the alerts for your app.
 
@@ -161,7 +162,7 @@ First actions to take | Check the log files and application metrics for a possib
 ## 4 Cloud v3 Alerting Categories and Thresholds
 
 {{% alert color="warning" %}}
-Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be retired at the beginning of Q3 2021. To continue running your licensed Mendix application on the Mendix Cloud, you need to migrate your app to Mendix Cloud V4. To learn more about Mendix Cloud V4 and how to migrate from Mendix Cloud V3, please visit the following page: [Migrate to Mendix Cloud V4](/developerportal/deploy/migrating-to-v4). 
+Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be retired at the beginning of Q3 2021. To continue running your licensed Mendix application on the Mendix Cloud, you need to migrate your app to Mendix Cloud V4. To learn more about Mendix Cloud V4 and how to migrate from Mendix Cloud V3, please visit the following page: [Migrate to Mendix Cloud V4](/developerportal/deploy/migrating-to-v4/). 
 {{% /alert %}}
 
 Mendix Cloud v3 also has a number of alerting categories and thresholds. These differ from those in Mendix Cloud v4 and so are documented in this separate section.Again, any category that does not display as *OK* needs to be investigated.
@@ -258,7 +259,7 @@ You may receive an email informing you of the following error: **CRITICAL: Healt
 
 You do not have to do anything, your app will continue to work as expected.
 
-The reason you receive a message is this. When you are using a [basic license](/developerportal/deploy/basic-package), you are given your own database schema which is part of a shared database hosted by AWS. As part of normal operations, AWS can apply autoscaling to the shared database. This will trigger this alert.
+The reason you receive a message is this. When you are using a [basic license](/developerportal/deploy/basic-package/), you are given your own database schema which is part of a shared database hosted by AWS. As part of normal operations, AWS can apply autoscaling to the shared database. This will trigger this alert.
 
 The autoscaling might occur when your app does not have high resource usage because of the way shared databases are managed. More resources may be required by an app using another schema on the shared database. This is a known phenomenon, which AWS terms a [noisy neighbor](https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/noisy-neighbor.html).
 
@@ -273,7 +274,7 @@ To access the history of the alerts from your app, follow these steps:
 
     ![](/attachments/developerportal/operate/monitoring-application-health/alerts-history.png)
 
-    The overview shows alert types and details including date and time. The alert types provide a broad indication of the type of error that occurred, such as critical log messages or failures of the health check microflow. Recovery notifications will also be shown here.
+    The overview shows alert colors and details including date and time. The alert colors provide a broad indication of the type of error that occurred, such as critical log messages or failures of the health check microflow. Recovery notifications will also be shown here.
 
     The drop-down at the top lets you switch between viewing the status for your node environments. Note that accessing production information may require additional authentication and is subject to your app's security settings.
 
@@ -281,8 +282,8 @@ To access the history of the alerts from your app, follow these steps:
 
 ## 7 Read More
 
-* [Application Trends in Mendix Cloud v3](trends)
-* [Application Trends in Mendix Cloud v4](trends-v4)
-* [Maintenance Windows: Configuration](/developerportal/deploy/maintenance-windows)
-* [Cloud Status: Mendix Cloud](/developerportal/deploy/mendix-cloud-status)
-* [How to Submit Support Requests](/developerportal/support/submit-support-request)
+* [Application Trends in Mendix Cloud v3](/developerportal/operate/trends/)
+* [Application Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/)
+* [Maintenance Windows: Configuration](/developerportal/deploy/maintenance-windows/)
+* [Cloud Status: Mendix Cloud](/developerportal/deploy/mendix-cloud-status/)
+* [How to Submit Support Requests](/developerportal/support/submit-support-request/)

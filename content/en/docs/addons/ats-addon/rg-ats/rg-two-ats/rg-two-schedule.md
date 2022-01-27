@@ -30,21 +30,21 @@ The following schedule settings are available:
 
 ## 3 Platform
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This option is only available for supported Selenium hubs.
 {{% /alert %}}
 
 If you have selected a Selenium hub from a supported Selenium hub provider (SauceLabs, or Browserstack), you will get access to the platform settings. Here you can set the operating system on which the test case will be run.
 
-For more information on the different supported operating systems, see [Supported Selenium Hub Providers](rg-two-supported-selenium-hub-provider).
+For more information on the different supported operating systems, see [Supported Selenium Hub Providers](/addons/ats-addon/rg-two-supported-selenium-hub-provider/).
 
 ## 4 Resolution
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This option is only available for supported Selenium hubs.
 {{% /alert %}}
 
-With this option, you can specify the screen resolution for your test run. A list of all the supported screen resolutions can be found in [Supported Selenium Hub Providers](rg-two-supported-selenium-hub-provider).
+With this option, you can specify the screen resolution for your test run. A list of all the supported screen resolutions can be found in [Supported Selenium Hub Providers](/addons/ats-addon/rg-two-supported-selenium-hub-provider/).
 
 ## 5 Alerts
 

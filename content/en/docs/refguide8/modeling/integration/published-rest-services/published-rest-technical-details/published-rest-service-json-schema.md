@@ -1,21 +1,21 @@
 ---
 title: "JSON Schema for Published REST Operation"
-url: /refguide8/published-rest-service-json-schema
+url: /refguide8/published-rest-service-json-schema/
 parent: "published-rest-technical-details"
-menu_order: 20
+weight: 20
 description: "Describes the JSON schemas for operation request bodies and operation results"
 tags: ["published REST", "JSON", "Schema", "operation", "request body", "result", "message definition"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-rest-service-json-schema.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/published-rest-service-json-schema.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-When you [publish a rest service](published-rest-services), an [OpenApi (Swagger) documentation page](published-rest-services#interactive-documentation) is generated for it. It includes a description of the structure of the messages that the service can receive and return. This structure is described using JSON Schema.
+When you [publish a rest service](/refguide8/published-rest-services/), an [OpenApi (Swagger) documentation page](/refguide8/published-rest-services/#interactive-documentation) is generated for it. It includes a description of the structure of the messages that the service can receive and return. This structure is described using JSON Schema.
 
-Operations that have an import or export mapping defined on it will generate such a schema, but only for mappings that are based on [message definitions](message-definitions).
+Operations that have an import or export mapping defined on it will generate such a schema, but only for mappings that are based on [message definitions](/refguide8/message-definitions/).
 
 The JSON schema is generated based on the rules documented here.
 

@@ -1,8 +1,8 @@
 ---
 title: "Consume a Simple Web Service"
-url: /howto8/integration/consume-a-simple-web-service
+url: /howto8/integration/consume-a-simple-web-service/
 category: "Integration"
-menu_order: 7
+weight: 7
 tags: ["integration", "wsdl", "web service", "consume"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["integration", "wsdl", "web service", "consume"]
 
 Mendix is the app platform for the enterprise, and in enterprise software it is not likely that you work in a [greenfield project](https://en.wikipedia.org/wiki/Greenfield_project). In almost every situation, you will need to integrate with existing systems. Mendix supports many ways of integration, and this how-to focuses on how you can consume web services with Mendix.
 
-In this how-to, you will be using an example web service of [W3Schools](http://www.w3schools.com/). This is a very simple web service that converts temperatures from Celsius to Fahrenheit and vice versa. The converted temperature will be returned as a string value that can be stored in a variable directly. If you want to invoke a web service that returns a complex XML message, you can use the XML-to-domain mappings described in [How to Import XML Documents](importing-xml-documents).
+In this how-to, you will be using an example web service of [W3Schools](http://www.w3schools.com/). This is a very simple web service that converts temperatures from Celsius to Fahrenheit and vice versa. The converted temperature will be returned as a string value that can be stored in a variable directly. If you want to invoke a web service that returns a complex XML message, you can use the XML-to-domain mappings described in [How to Import XML Documents](/howto8/integration/importing-xml-documents/).
 
 **This how-to will teach you how to do the following:**
 
@@ -107,16 +107,16 @@ To create logic to call the web service, follow these steps:
 
     ![](/attachments/howto8/integration/consume-a-simple-web-service/18582070.png)
 
-21. Create a menu item that triggers this microflow. For details on how to create a menu item, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure).
+21. Create a menu item that triggers this microflow. For details on how to create a menu item, see [How to Set Up the Navigation Structure](/howto8/general/setting-up-the-navigation-structure/).
 
 22. Deploy the application and trigger the microflow to call the web service operation. You should see a message with the converted temperature.
 
 ## 4 Read More
 
-* [Create a Secure App](/howto8/security/create-a-secure-app)
-* [Consume a Complex Web Service](consume-a-complex-web-service)
-* [Export XML Documents](export-xml-documents)
-* [Import Excel Documents](importing-excel-documents)
-* [Expose a Web Service](expose-a-web-service)
-* [Use Selenium Support](selenium-support)
+* [Create a Secure App](/howto8/security/create-a-secure-app/)
+* [Consume a Complex Web Service](/howto8/integration/consume-a-complex-web-service/)
+* [Export XML Documents](/howto8/integration/export-xml-documents/)
+* [Import Excel Documents](/howto8/integration/importing-excel-documents/)
+* [Expose a Web Service](/howto8/integration/expose-a-web-service/)
+* [Use Selenium Support](/howto8/integration/selenium-support/)
 * [Security How-to's](/howto8/security/)

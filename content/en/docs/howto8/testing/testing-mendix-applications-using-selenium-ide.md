@@ -1,8 +1,8 @@
 ---
 title: "Test Mendix Apps Using Selenium IDE"
-url: /howto8/testing/testing-mendix-applications-using-selenium-ide
+url: /howto8/testing/testing-mendix-applications-using-selenium-ide/
 category: "Testing"
-menu_order: 40
+weight: 40
 tags: ["test", "testing", "selenium"]
 ---
 
@@ -29,11 +29,11 @@ These are the software versions used in this how-to:
 | Firefox | 67.0.1 |
 | Selenium IDE | 3.8.1 |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 All images, names, and steps in this how-to are based on these versions. When using other versions, the images and/or names on your screen may be different than what is used in this how-to.
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This how-to uses the Company Expenses app template for an example scenario. However, this app template is no longer platform-supported by Mendix. Therefore, sections using this app template can only be used as reference and not as sections that can be completed step-by-step.
 {{% /alert %}}
 
@@ -70,7 +70,7 @@ To create an automated test by using the record button in Selenium IDE, follow t
 
 3. Enter a name for your new Selenium project (for example, *CompanyExpenses*).
 4. Enter the URL for your Company Expenses app's login screen (`http://localhost:8080/login.html`), then click **START RECORDING**. This will open up your app in a new browser window. The Selenium IDE is now recording.
-5.  Sign in with default [administrator credentials](/refguide8/administrator#administrator-properties): 
+5.  Sign in with default [administrator credentials](/refguide8/administrator/#administrator-properties): 
 	* **User name**: MxAdmin
 	* **Password**: 1
 	
@@ -128,12 +128,12 @@ In this example scenario, you need to do the following:
 
 ## 6 Read More
 
-* [Automated Tests with TestNG](create-automated-tests-with-testng)
-* [Test Microflows Using the Unit Testing Module](testing-microflows-using-the-unittesting-module)
-* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages)
-* [Test Web Services Using SoapUI](testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx)
+* [Automated Tests with TestNG](/howto8/testing/create-automated-tests-with-testng/)
+* [Test Microflows Using the Unit Testing Module](/howto8/testing/testing-microflows-using-the-unittesting-module/)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
 
 Learn more about this topic using the following helpful link:
 

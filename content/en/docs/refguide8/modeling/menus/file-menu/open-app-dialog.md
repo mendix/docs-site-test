@@ -1,8 +1,8 @@
 ---
 title: "Open Project"
-url: /refguide8/open-app-dialog
+url: /refguide8/open-app-dialog/
 parent: "file-menu"
-menu_order: 20
+weight: 20
 description: "Describes the Open Project (app) flow and the Open App dialog box"
 tags: ["studio pro", "open app", "open project"]
 aliases:
@@ -10,8 +10,8 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/open-app-dialog.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/open-app-dialog.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -37,13 +37,13 @@ Use this setting to select the location where your app is stored. This can be th
 
 Select the Team Server app you would like to open, then choose the development line.
 
-For more information about the Mendix Team Server, see [Team Server](/developerportal/collaborate/team-server).
+For more information about the Mendix Team Server, see [Team Server](/developerportal/collaborate/team-server/).
 
-For more information about development lines, see [Version Control](version-control).
+For more information about development lines, see [Version Control](/refguide8/version-control/).
 
 ### 2.2 Private Server {#private-server}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The **Private server** option is only available when support for other SVN servers is enabled: **Edit** >**Preferences** > **Advanced** > **Enable private version control**. 
 
@@ -57,4 +57,4 @@ For opening an app you already have on disk, simply point to the project file.
 
 ## 3 Read More
 
-* [Import Project Package](import-project-package-dialog)
+* [Import Project Package](/refguide8/import-project-package-dialog/)

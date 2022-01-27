@@ -110,6 +110,6 @@ Default: *Thumbnail*
 
 ## 3 Read More
 
-* [Page](page)
-* [Images, Videos & Files](image-and-file-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide/page/)
+* [Images, Videos & Files](/refguide/image-and-file-widgets/)
+* [Properties Common in the Page Editor](/refguide/common-widget-properties/)

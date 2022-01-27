@@ -16,19 +16,11 @@ Quick summary:
 
 | Selenium Setup | Uploading your own file | Uploading a file | Uploading possible? |
 | :-------------- | :---------------------- | :--------------- | :------------------ |
-| Local Selenium Server (Docker) | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/grey.png) Limited<sup>1</sup> | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes |
- Limited<sup>1</sup> | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/grey.png) Limited<sup>1</sup> | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/grey.png) Limited<sup>1</sup> | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes |
- Yes || BrowserStack (SaaS) | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes |
- No | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes |
- Yes | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes |
- Yes || SauceLabs (SaaS) | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/red.png) No |
- No | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/red.png) No |
- No | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/red.png) No | ![](attachments/ht-two-upload-file-using-ats/red.png) No |
- No || Selenium SaaS Agent | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/grey.png) Limited<sup>2</sup> | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/red.png) No |
- Limited<sup>2</sup> | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/grey.png) Limited<sup>2</sup> | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/red.png) No |
- Yes | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/grey.png) Limited<sup>2</sup> | ![](attachments/ht-two-upload-file-using-ats/green.png) Yes | ![](attachments/ht-two-upload-file-using-ats/red.png) No |
- No |
+| Local Selenium Server (Docker) | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/grey.png) Limited<sup>1</sup> | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/green.png) Yes | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/green.png) Yes |
+| BrowserStack (SaaS) | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/green.png) Yes | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/green.png) Yes |
+| SauceLabs (SaaS) | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No |
+| Selenium SaaS Agent | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/grey.png) Limited<sup>2</sup> | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/green.png) Yes | ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-upload-file-using-ats/red.png) No |
+
 <small><sup>1</sup> This only possible when you prepare your own files on that server. <br>
 <sup>2</sup> This depends on where the agent is installed.</small>
 
@@ -42,7 +34,7 @@ Quick summary:
 
 Before starting with this how-to, make sure you have the following prerequisites in place:
 
-* Complete [How to Create a Test Case](ht-two-create-a-test-case)
+* Complete [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 * Know your Selenium setup (a provider like Browsertack, local server, etc.)
 
 ## 3 Uploading a File
@@ -59,7 +51,7 @@ The third situation is that you use a Selenium SaaS agent. ATS executes the test
 
 ### 3.2 Uploading a File Using ATS
 
-ATS has a standard action for uploading files into your Mendix app. The [Set File Manager](rg-one-set-file-manager) action uploads a file from the local computer into the app using a file path. As explained earlier the file must be on the local machine for this to work.
+ATS has a standard action for uploading files into your Mendix app. The [Set File Manager](/addons/ats-addon/rg-one-set-file-manager/) action uploads a file from the local computer into the app using a file path. As explained earlier the file must be on the local machine for this to work.
 
 _The Set File Manager action_
 
@@ -93,9 +85,9 @@ When testing using the BrowserStack, ATS executes the test against a new VM sess
 
 Those files are always present so you don't have to change the filepath every time.
 
-You can find the BrowserStack test files [here](ht-two-browserstack-test-files).
+You can find the BrowserStack test files [here](/addons/ats-addon/ht-two-browserstack-test-files/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 These files are possibly outdated and not maintained by Mendix. For the latest version please contact BrowserStack.
 
@@ -107,4 +99,4 @@ When you use a Selenium SaaS provider you can also use their agent. Each provide
 
 ## 7 Next Up
 
-You now learned how to upload a file and if it is possible with your selenium set up. The next how-to is [How to Assert Data Grid Rows](ht-two-assert-datagrid-rows). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+You now learned how to upload a file and if it is possible with your selenium set up. The next how-to is [How to Assert Data Grid Rows](/addons/ats-addon/ht-two-assert-datagrid-rows/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

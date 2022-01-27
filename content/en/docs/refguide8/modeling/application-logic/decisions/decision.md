@@ -1,16 +1,16 @@
 ---
 title: "Decision"
-url: /refguide8/decision
+url: /refguide8/decision/
 parent: "decisions"
-menu_order: 3
+weight: 3
 tags: ["studio pro", "decision", "exclusive split"]
 aliases:
     - /refguide8/exclusive-split.html
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/decision.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/decision.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -33,7 +33,7 @@ The decision properties pane consists of the following sections:
 
 #### 2.1.1 Caption
 
-For more information, see the [Caption](microflow-element-common-properties#caption) section in *Common Properties*.
+For more information, see the [Caption](/refguide8/microflow-element-common-properties/#caption) section in *Common Properties*.
 
 #### 2.1.2 Decision Type
 
@@ -46,7 +46,7 @@ For more information, see the [Caption](microflow-element-common-properties#capt
 
 ##### 2.1.2.1 Expression {#expression}
 
-If the **Type** property is set to **Expression**, the expression entered here is used to define the condition of the decision. For more information on expressions, see [Microflow Expressions](expressions).
+If the **Type** property is set to **Expression**, the expression entered here is used to define the condition of the decision. For more information on expressions, see [Microflow Expressions](/refguide8/expressions/).
 
 The expression should result in a Boolean or an enumeration. 
 
@@ -64,16 +64,16 @@ Since you want to go in a different direction for each value of the enumeration,
 
 ##### 2.2.2.2 Rule {#rule}
 
-If the **Type** property is set to **Rule**, a [rule](rules) can be selected to define the condition of the decision. You can use the outcome of the rule for the decision instead of calling a sub-microflow and using the return variable of that sub-microflow.
+If the **Type** property is set to **Rule**, a [rule](/refguide8/rules/) can be selected to define the condition of the decision. You can use the outcome of the rule for the decision instead of calling a sub-microflow and using the return variable of that sub-microflow.
 
 The properties of the **Rule** decision type are the following ones:
 
 * **Rule** – allows you to select a rule.
 
-* **Parameter** – for each parameter of the rule an argument needs to be specified using [expressions](expressions). For example, a rule that determines whether a customer deserves a certain status will have a customer object as a parameter.
+* **Parameter** – for each parameter of the rule an argument needs to be specified using [expressions](/refguide8/expressions/). For example, a rule that determines whether a customer deserves a certain status will have a customer object as a parameter.
 
 	{{/* % image_container width="350" % */}} ![](/attachments/refguide8/modeling/application-logic/decisions/decision/rule-properties.png)	{{/* % /image_container % */}}
-	{{/* % /image_container % */}}
+
 #### 2.1.3 Error Handling Type
 
-For more information, see the [Error Handling Type](microflow-element-common-properties#error-handling) section in *Common Properties*.
+For more information, see the [Error Handling Type](/refguide8/microflow-element-common-properties/#error-handling) section in *Common Properties*.

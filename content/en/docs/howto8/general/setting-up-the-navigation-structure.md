@@ -1,8 +1,8 @@
 ---
 title: "Set Up the Navigation Structure"
-url: /howto8/general/setting-up-the-navigation-structure
+url: /howto8/general/setting-up-the-navigation-structure/
 category: "General Info"
-menu_order: 3
+weight: 3
 tags: ["studio pro", "navigation", "menu", "how to"]
 ---
 ## 1 Introduction
@@ -13,14 +13,14 @@ Once you created some pages, it is important that your users can access them. Fo
 
 Before starting this how-to make sure you have completed the following prerequisites:
 
-*   [Create a basic data layer](/howto8/data-models/create-a-basic-data-layer)
-*   [Create your first two Overview and Detail pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages)
+*   [Create a basic data layer](/howto8/data-models/create-a-basic-data-layer/)
+*   [Create your first two Overview and Detail pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages/)
 
 ## 3 Setting a Default Home Page {#home}
 
 This section will explain how to set the default home page. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Note that the **Default home page** setting is overridden by a **Role-based home page** if you configure it. For more information, see the [Setting a Role-Based Home Page](#role-based-home-page).
 
@@ -48,7 +48,7 @@ Do the following:
 
 5. Click **Select**.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 You can also select a microflow as a default home page. Make sure that the microflow contains a *Show Form* activity, otherwise the user will not see anything.
 
@@ -97,7 +97,7 @@ You can create menu items for your navigation. Do the following:
 
 7.  Click **OK** to save the menu item.
 
-In the overview of menu items you can see the name of the menu item, the target page/microflow, and the user role are the necessary settings to be configured for the menu item. The user roles are derived from the [page and microflow access settings](/refguide8/module-security). 
+In the overview of menu items you can see the name of the menu item, the target page/microflow, and the user role are the necessary settings to be configured for the menu item. The user roles are derived from the [page and microflow access settings](/refguide8/module-security/). 
 
 You can restructure the menu by dragging and dropping menu items.
 
@@ -125,11 +125,11 @@ Now that you have created a menu structure it is time to start using it on pages
 
 The menu widget is now showing the navigation items created in the navigation editor.
 
-To avoid adding the menu widget on every page in your project,  you can use a layout. With layouts you can define a structure for pages in your project. You can define where the menu should be rendered and you can simply reuse that layout for all or several pages. For more information on how to use layouts, see [How to Use Layouts and Snippets](/howto8/front-end/layouts-and-snippets).
+To avoid adding the menu widget on every page in your project,  you can use a layout. With layouts you can define a structure for pages in your project. You can define where the menu should be rendered and you can simply reuse that layout for all or several pages. For more information on how to use layouts, see [How to Use Layouts and Snippets](/howto8/front-end/layouts-and-snippets/).
 
 ## 7 Read More
 
-* [Atlas UI](/howto8/front-end/atlas-ui)
-* [Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages)
-* [Use Layouts and Snippets](/howto8/front-end/layouts-and-snippets)
-* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors)
+* [Atlas UI](/howto8/front-end/atlas-ui/)
+* [Create Your First Two Overview & Detail Pages](/howto8/front-end/create-your-first-two-overview-and-detail-pages/)
+* [Use Layouts and Snippets](/howto8/front-end/layouts-and-snippets/)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)

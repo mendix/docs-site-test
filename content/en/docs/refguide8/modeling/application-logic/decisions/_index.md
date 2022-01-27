@@ -1,14 +1,14 @@
 ---
 title: "Decisions"
-url: /refguide8/decisions
+url: /refguide8/decisions/
 parent: "application-logic"
-menu_order: 50
+weight: 50
 tags: ["studio pro", "decision", "decisions"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details. 
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/decisions.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/decisions.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -23,14 +23,14 @@ The elements described in this document are in the **Decisions** section of the 
 
 There are following types of decisions:
 
-* [Decision](decision) – makes a choice based on a condition and follows one and only one of the outgoing sequence flows
+* [Decision](/refguide8/decision/) – makes a choice based on a condition and follows one and only one of the outgoing sequence flows
 
-	{{/* % image_container width="400" % */}}![](/attachments/refguide8/modeling/application-logic/decisions/decision-example.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
-* [Object Type Decision](object-type-decision) – makes a choice based on the type of an object of a generalized entity
+	{{/* % image_container width="400" % */}}![](/attachments/refguide8/modeling/application-logic/decisions/decision/decision-example.png){{/* % /image_container % */}}
+
+* [Object Type Decision](/refguide8/object-type-decision/) – makes a choice based on the type of an object of a generalized entity
 
 	![](/attachments/refguide8/modeling/application-logic/decisions/object-type-decision.png)
 
-* [Merge](merge) – merges incoming flows 
+* [Merge](/refguide8/merge/) – merges incoming flows 
 
 	![](/attachments/refguide8/modeling/application-logic/decisions/merge.png)

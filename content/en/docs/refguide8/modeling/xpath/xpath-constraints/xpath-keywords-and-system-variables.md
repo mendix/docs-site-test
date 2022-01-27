@@ -1,12 +1,12 @@
 ---
 title: "XPath Keywords & System Variables"
-url: /refguide8/xpath-keywords-and-system-variables
+url: /refguide8/xpath-keywords-and-system-variables/
 parent: "xpath-constraints"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-keywords-and-system-variables.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/xpath-keywords-and-system-variables.pdf).
 {{% /alert %}}
 
 ## 1 Overview
@@ -28,7 +28,7 @@ This query returns all the customers whose name is not known to the system:
 //Sales.Customer[Name = NULL]
 ```
 
-These keywords can only be used in conjunction with attributes. The existence of associations cannot be confirmed in this manner. For more information on how to constrain on associations, see [XPath Constraint Functions](xpath-constraint-functions).
+These keywords can only be used in conjunction with attributes. The existence of associations cannot be confirmed in this manner. For more information on how to constrain on associations, see [XPath Constraint Functions](/refguide8/xpath-constraint-functions/).
 
 ## 3 System Variables
 
@@ -97,7 +97,7 @@ The following tokens can be used to add or subtract a period of time from a date
 | `[%MonthLength%]` | The length of one month. |
 | `[%YearLength%]` | The length of one year. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 These variables must be used as string values and placed between two quotes. Time-related tokens combined with period-related tokens must be placed within one string. See example 3.
 {{% /alert %}}
 
@@ -126,6 +126,6 @@ This query returns users with the role "Administrator":
 ```java
 //System.User[System.UserRoles = '[%UserRole_Administrator%]']
 ```
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Because system variables are written as a string (between quotes), it is not possible to use parentheses to group expressions.
 {{% /alert %}}

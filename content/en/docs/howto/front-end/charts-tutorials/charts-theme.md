@@ -20,14 +20,14 @@ The look of individual **Charts** widgets can be fine tuned with advanced settin
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Download the latest [Chart Widget](/appstore/widgets/charts) from the Mendix Marketplace
-* Setup a chart: see [How to create a charts](charts-basic-create)
+* Download the latest [Chart Widget](/appstore/widgets/charts/) from the Mendix Marketplace
+* Setup a chart: see [How to create a charts](/howto/front-end/charts-basic-create/)
 
 ## 3 Creating a Chart Theme
 
 This is how the original chart looks:
 
-![chart](/attachments/howto/front-end/charts-tutorials/charts-theme/charts-toggle-editor.png)
+![chart](/attachments/howto/front-end/charts-tutorials/charts-advanced-tuning/charts-toggle-editor.png)
 
 ### 3.1 Creating an Advanced Custom Configuration
 
@@ -43,7 +43,7 @@ To create the required custom configuration easily, follow these steps:
 
 1. Set the **Mode** to **Developer**.
 
-    ![chart widget properties](/attachments/howto/front-end/charts-tutorials/charts-theme/charts-widget-properties-advanced.png)
+    ![chart widget properties](/attachments/howto/front-end/charts-tutorials/charts-advanced-tuning/charts-widget-properties-advanced.png)
 
 1. Run the app.
 
@@ -65,7 +65,7 @@ To create the required custom configuration easily, follow these steps:
 
 1. Change the font settings, till the chart shows the required font.
 
-    ![chart editor](/attachments/howto/front-end/charts-tutorials/charts-theme/charts-toggle-editor-open.png)
+    ![chart editor](/attachments/howto/front-end/charts-tutorials/charts-advanced-tuning/charts-toggle-editor-open.png)
 
     {{% alert color="warning" %}}Please note that the editor changes will not persist. They need to be stored in the advanced settings of the widget or stored in the theme.{{% /alert %}}
 
@@ -117,6 +117,6 @@ To change the font in all charts in the app, follow these steps:
 
 ## 4 Read More
 
-* [Charts](/refguide/chart-widgets)
-* [Layout samples](/refguide/charts-advanced-cheat-sheet#layout-all)
-* [Configuration samples](/refguide/charts-advanced-cheat-sheet#config-options)
+* [Charts](/refguide/chart-widgets/)
+* [Layout samples](/refguide/charts-advanced-cheat-sheet/#layout-all)
+* [Configuration samples](/refguide/charts-advanced-cheat-sheet/#config-options)

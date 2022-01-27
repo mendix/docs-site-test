@@ -1,18 +1,18 @@
 ---
 title: "Consumed OData Service"
-url: /refguide8/consumed-odata-service
+url: /refguide8/consumed-odata-service/
 parent: "consumed-odata-services"
-menu_order: 10
+weight: 10
 tags: ["studio pro", "data hub", "odata service", "consumed odata service"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/consumed-odata-service.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/consumed-odata-service.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-When an external entity is used in a project module through the [Data Hub pane](data-hub-pane), a consumed OData service document is added specifying the details of the consumed service. This is the API to the publishing app and the data associated with the entity.
+When an external entity is used in a project module through the [Data Hub pane](/refguide8/data-hub-pane/), a consumed OData service document is added specifying the details of the consumed service. This is the API to the publishing app and the data associated with the entity.
 
 ## 2 Consume OData Service screen
 
@@ -27,9 +27,9 @@ The **Consumed OData Service** document that is added to the project displays th
   * **Update** – this button is displayed so that you can **Update** the contract that is currently consumed (and shown in the **Consumed OData Service** document). You will be presented with the contract that is currently at the service end-point. It is good practice that only minor, non-breaking changes are deployed to the same end-point.
    * **Switch** – this button is shown if other registered instances of the same service (with the same name, from the same app) are available in Data Hub and are deployed to different endpoints (for example, to another environment or because of changes that would break existing apps consuming the previous version)
 
-    {{% alert type="info" %}}Studio Pro displays the **Update** option for the **Consumed OData Service** where you can check if an update is available. In the Data Hub search and **Project**  pane, when a different contract is detected at the service end-point, this will be indicated with an update arrow for the service. For further information on updating and switching services see the [Updating or Switching a Consumed OData service](#updating) section of this document. {{% /alert %}}
+    {{% alert color="info" %}}Studio Pro displays the **Update** option for the **Consumed OData Service** where you can check if an update is available. In the Data Hub search and **Project**  pane, when a different contract is detected at the service end-point, this will be indicated with an update arrow for the service. For further information on updating and switching services see the [Updating or Switching a Consumed OData service](#updating) section of this document. {{% /alert %}}
 
-    {{% alert type="info" %}}In the **Data Hub** pane consumed services that have an available **Update** will have an update arrow to indicate this:<br />
+    {{% alert color="info" %}}In the **Data Hub** pane consumed services that have an available **Update** will have an update arrow to indicate this:<br />
     ![update service data hub pane](/attachments/refguide8/modeling/integration/consumed-odata-services/consumed-odata-service/data-hub-pane-update-available.png)
 	{{% /alert %}}
 
@@ -41,14 +41,14 @@ The **Connection** tab displays the connection values for the consumed OData ser
 
 The **Service URL** displays the URL of the service endpoint:
 
-* Click **Select** to select another [constant](/refguide8/constants) for the service
+* Click **Select** to select another [constant](/refguide8/constants/) for the service
 *  Click **Show** to display the **Constant** dialog box displaying the service URL or endpoint:
 
 	![Connection Tab](/attachments/refguide8/modeling/integration/consumed-odata-services/consumed-odata-service/consumed-service-constant.png)
 
 ### 2.3 Timeout
 
-**Timeout** is the response time for fetching the data from the service endpoint. If the endpoint has not responded after the number of seconds in **Timeout (s)**, an exception will occur. If this happens during a microflow activity, the microflow will roll back or go into your custom [error handling](/howto8/logic-business-rules/set-up-error-handling).
+**Timeout** is the response time for fetching the data from the service endpoint. If the endpoint has not responded after the number of seconds in **Timeout (s)**, an exception will occur. If this happens during a microflow activity, the microflow will roll back or go into your custom [error handling](/howto8/logic-business-rules/set-up-error-handling/).
 
 Default value: *300 seconds*
 
@@ -60,7 +60,7 @@ Default value: *300 seconds*
 * **Override** – override the project-level settings for this action by specifying the host, port, user name, and password settings for the proxy
 *  **No proxy** – do not use a proxy for this service, even if there is a proxy configured at the project level
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 In most cases, this setting can be ignored, and the default **Use project settings** can be used.
 {{% /alert %}}
 
@@ -79,12 +79,12 @@ You can specify additional HTTP request headers to be passed to the endpoint in 
 
 Using **Headers from a Microflow**, you can specify a microflow for creating a key and value pair(s) for dynamic values. The microflow must return a list of **System.HttpHeader** objects.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 For more flexible HTTP request headers, you can select a microflow that returns a list of **System.HttpHeader**. This microflow may take a parameter of type **System.HttpResponse**. The microflow is called every time a request is made. Initially, the HTTP response parameter will be empty. If the response is **401 Unauthorized**, the microflow is called with that HTTP response and another call is made with the new HTTP headers.
 {{% /alert %}}
 
-{{% alert type="info" %}}
-Custom authentication can be done with the microflow where the authentication value is retrieved (such as SSO). For further information on access and authentication, see [Using Custom HTTP Header Validation for Published Entities](/data-hub/data-hub-catalog/security#http-header-validation) in the *Data Hub Guide*.
+{{% alert color="info" %}}
+Custom authentication can be done with the microflow where the authentication value is retrieved (such as SSO). For further information on access and authentication, see [Using Custom HTTP Header Validation for Published Entities](/data-hub/data-hub-catalog/security/#http-header-validation) in the *Data Hub Guide*.
 {{% /alert %}}
 
 ## 3 Metadata Tab {#metadata}
@@ -107,13 +107,13 @@ The following settings are available:
 	* **URL** – click **Edit** to specify the URL for the metadata
 	* **File** – click **Browse** to select an XML metadata file
 
-Support for basic authentication was added from [version 8.16.0](/releasenotes/studio-pro/8.16). When downloading the metadata from a URL, the server may request a username and password (basic authentication). In that case, a dialog box will prompt you to enter your username and password. If the metadata file refers to other metadata files on the same server within the same realm, the username and password are re-used.
+Support for basic authentication was added from [version 8.16.0](/releasenotes/studio-pro/8.16/). When downloading the metadata from a URL, the server may request a username and password (basic authentication). In that case, a dialog box will prompt you to enter your username and password. If the metadata file refers to other metadata files on the same server within the same realm, the username and password are re-used.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This information is not stored, so if you download the metadata from the same server again, you will have to enter your username and password again.
 {{% /alert %}}
 
-When you import the metadata, you can add external entities from the consumed OData service in the [Data Hub Pane](data-hub-pane).
+When you import the metadata, you can add external entities from the consumed OData service in the [Data Hub Pane](/refguide8/data-hub-pane/).
 
 ### 3.2 Consumed OData Service Properties
 
@@ -139,7 +139,7 @@ When you add an external entity to your project, you are consuming the entity fr
 The same service, deployed to a different environment will be to a different service endpoint and this will be registered as a different asset in the Data Hub Catalog. In the following example, there are two endpoints for the **CustomerApi service version 1.1.0** which is deployed to the production environment and the **Acceptance** environment:
 
 {{/* % image_container width="250" % */}}![2 endpoints](/attachments/refguide8/modeling/integration/consumed-odata-services/consumed-odata-service/same-service-different-endpoints.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 When you drag the **Customer** entity from **CustomerApi version 1.0.0** deployed to the **Acceptance** environment into your project, Studio Pro will retrieve the information it requires from the contract that is at the endpoint.
 
 ### 4.2 Semantic Numbering for Service Versions {#semantic}
@@ -165,10 +165,10 @@ When a major change has been made to a published service we recommend that the s
 In this case the new service will be registered in the Data Hub Catalog as a different service, and show up in the catalog as a separate asset. In the following example, there are 4 registered occurrences of the **OrderManagementService**:
 
 {{/* % image_container width="250" % */}}![4 endpoints](/attachments/refguide8/modeling/integration/consumed-odata-services/consumed-odata-service/consume-major-service-update-version.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 There is a major service update indicated by the change in the version number from **1.0.0** to **2.0.0**. Further, both versions have also been deployed to the **Acceptance** which also results in separately registered assets in the Data Hub Catalog.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Entities of non-Mendix OData services are identified with a key of one or more fields. If the key fields are changed in an update of the service, this will also be seen as a breaking change.
 {{% /alert %}}
 
@@ -237,8 +237,8 @@ To consume the service deployed to the **Acceptance environment**, follow these 
 3. The consumed service will now be consumed from the new selected environment. The information on the **Consumed OData Service** screen will display the changed service details and the **Data Hub** pane will now show that you are consuming from the selected environment:
 
 	{{/* % image_container width="300" % */}}![major change environment dh pane](/attachments/refguide8/modeling/integration/consumed-odata-services/consumed-odata-service/switch-new-environment.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 5 Read More
 
-* [Data Hub Pane](data-hub-pane)
-* [Consumed OData Service](consumed-odata-service)
+* [Data Hub Pane](/refguide8/data-hub-pane/)
+* [Consumed OData Service](/refguide8/consumed-odata-service/)

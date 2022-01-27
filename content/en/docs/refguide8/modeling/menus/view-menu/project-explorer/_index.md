@@ -1,13 +1,13 @@
 ---
 title: "Project Explorer"
-url: /refguide8/project-explorer
+url: /refguide8/project-explorer/
 parent: view-menu
-menu_order: 40
+weight: 40
 tags: ["studio pro", "project explorer"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/project-explorer.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/project-explorer.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -19,10 +19,10 @@ The **Project Explorer** shows the complete structure of your project including 
 
 The **Project Explorer** consists of the following:
 
-* **Project** folder – contains settings and documents that apply to your project as a whole (for more information, see [Projects](project))
-* **Modules**  – contain settings, a domain model, and *documents* that apply to this module (for more information, see [Modules](modules)) 
+* **Project** folder – contains settings and documents that apply to your project as a whole (for more information, see [Projects](/refguide8/project/))
+* **Modules**  – contain settings, a domain model, and *documents* that apply to this module (for more information, see [Modules](/refguide8/modules/)) 
   * **Domain model** – a model that describes the information (or *data*) used by your application in an abstract way; one module can have one domain model only 
-  * **Document** – an individual file, for example, a [page](pages), [microflow](microflows), or a [scheduled event](scheduled-events). 
+  * **Document** – an individual file, for example, a [page](/refguide8/pages/), [microflow](/refguide8/microflows/), or a [scheduled event](/refguide8/scheduled-events/). 
 
 ## 2 Performing Basic Functions
 
@@ -41,6 +41,6 @@ In the **Project Explorer**, you can do the following:
 
 ## 3 Read More
 
-* [Projects](project)
-* [Modules](modules)
-* [Security](security)
+* [Projects](/refguide8/project/)
+* [Modules](/refguide8/modules/)
+* [Security](/refguide8/security/)

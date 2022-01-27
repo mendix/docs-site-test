@@ -1,13 +1,13 @@
 ---
 title: "Variable Activities"
-url: /refguide8/variable-activities
+url: /refguide8/variable-activities/
 parent: "activities"
-menu_order: 40
+weight: 40
 tags: ["studio pro", "variable activities", "variable", "variables"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/variable-actiities.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/variable-actiities.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -21,5 +21,5 @@ The activities described in this document are in the **Variable Activities** sec
 
 The following are the client activities you can use in your microflow or nanoflow:
 
-* [Create Variable](create-variable) – allows you to create a new variable and assign a value to it
-* [Change Variable](change-variable) – allows you to change the value of an existing variable 
+* [Create Variable](/refguide8/create-variable/) – allows you to create a new variable and assign a value to it
+* [Change Variable](/refguide8/change-variable/) – allows you to change the value of an existing variable 

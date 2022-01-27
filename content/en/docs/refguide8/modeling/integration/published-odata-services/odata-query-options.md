@@ -1,19 +1,19 @@
 ---
 title: "OData Query Options"
-url: /refguide8/odata-query-options
+url: /refguide8/odata-query-options/
 parent: "published-odata-services"
 tags: ["OData", "filter", "count", "sort", "select", "page", "studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/odata-query-options.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/odata-query-options.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
 This is a list of query options for OData.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 We currently only support the options described here.
 {{% /alert %}}
 
@@ -31,8 +31,8 @@ A single object can be retrieved by passing the object identifier in the URI. Fo
 
 Associated objects can be retrieved by passing the `$expand` query parameter. For example: `/odata/myservice/Exployees?$expand=Cars,Address/City`.
 
-{{% alert type="info" %}}
-The `$expand` feature was introduced in Studio Pro [8.11.0](/releasenotes/studio-pro/8.11#8110).
+{{% alert color="info" %}}
+The `$expand` feature was introduced in Studio Pro [8.11.0](/releasenotes/studio-pro/8.11/#8110).
 {{% /alert %}}
 
 ## 3 Counting the Number of Objects
@@ -117,7 +117,7 @@ You can filter on attributes of an associated entity. The way you do this depend
 | Filter on an associated object | `People?$filter=BirthPlace/CityName eq 'Rotterdam'` |
 | Filter on an associated list  | `City?$filter=BornIn/any(person:person/Year le 1919)` |
 
-Filtering on an associated object or list in this way is possible when you [expose associations as a link](odata-representation#associations). It is not possible when you [expose associations as an associated object ID](odata-representation#associations).
+Filtering on an associated object or list in this way is possible when you [expose associations as a link](/refguide8/odata-representation/#associations). It is not possible when you [expose associations as an associated object ID](/refguide8/odata-representation/#associations).
 
 ## 5 Sorting
 

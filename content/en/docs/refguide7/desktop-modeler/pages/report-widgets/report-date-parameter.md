@@ -1,15 +1,15 @@
 ---
 title: "Report Date Parameter"
-url: /refguide7/report-date-parameter
+url: /refguide7/report-date-parameter/
 parent: "report-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 
 
-With the report date parameter, the user can specify the DateTime parameter of the dataset, which is then used for filtering the data displayed in the [Report](report-widgets).
+With the report date parameter, the user can specify the DateTime parameter of the dataset, which is then used for filtering the data displayed in the [Report](/refguide7/report-widgets/).
 
-In the report date parameter you can add [Date Range Fields](date-range-field) to make it easier for an end user to select a data range. To do this, right-click the widget and choose **Add field** from the pop-up menu.
+In the report date parameter you can add [Date Range Fields](/refguide7/date-range-field/) to make it easier for an end user to select a data range. To do this, right-click the widget and choose **Add field** from the pop-up menu.
 
 ## General Properties
 
@@ -47,4 +47,4 @@ This is the maximum year that can be chosen in the date range field where the en
 
 ### Name, Class, Style
 
-For details, see [Widget Properties](common-widget-properties).
+For details, see [Widget Properties](/refguide7/common-widget-properties/).

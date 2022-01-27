@@ -22,8 +22,8 @@ The individual Charts widgets can be fine-tuned with advanced settings. The sett
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Installed the latest version of Mendix Studio Pro
-* Downloaded the latest [Chart Widget](/appstore/widgets/charts) from the Mendix Marketplace
-* Setup a chart, see [How to Create a Chart](charts-basic-create)
+* Downloaded the latest [Chart Widget](/appstore/widgets/charts/) from the Mendix Marketplace
+* Setup a chart, see [How to Create a Chart](/howto/front-end/charts-basic-create/)
 
 ## 3 Changing the Layout {#layout-changes}
 
@@ -114,10 +114,10 @@ To create custom a configuration, follow these steps:
 
 ## 6 Read More
 
-Reference for the [advanced properties](/refguide/charts-configuration#advanced)
+Reference for the [advanced properties](/refguide/charts-configuration/#advanced)
 
-Layout options: [cheat sheet](/refguide/charts-advanced-cheat-sheet#layout-all)  
-Configuration options: [cheat sheet](/refguide/charts-advanced-cheat-sheet#config-options)  
-Data series options: [cheat sheet](/refguide/charts-advanced-cheat-sheet#data-series)  
+Layout options: [cheat sheet](/refguide/charts-advanced-cheat-sheet/#layout-all)  
+Configuration options: [cheat sheet](/refguide/charts-advanced-cheat-sheet/#config-options)  
+Data series options: [cheat sheet](/refguide/charts-advanced-cheat-sheet/#data-series)  
 
 Full reference: https://plot.ly/javascript/

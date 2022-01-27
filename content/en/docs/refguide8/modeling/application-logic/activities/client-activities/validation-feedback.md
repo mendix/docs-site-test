@@ -1,24 +1,24 @@
 ---
 title: "Validation Feedback"
-url: /refguide8/validation-feedback
+url: /refguide8/validation-feedback/
 parent: "client-activities"
-menu_order: 70
+weight: 70
 tags: ["studio pro", "validation feedback", "client activities"]
 aliases:
     - /refguide8/Validation+Feedback.html
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/validation-feedback.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/validation-feedback.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can be used in both **Microflows** and **Nanoflows**.
 {{% /alert %}}
 
-{{% alert type="warning" %}}
-This action is ignored and does not work when a microflow is called from an offline, native, or hybrid app. For more information, see the [Microflows](offline-first#microflows) section of the *Offline-First Reference Guide*.
+{{% alert color="warning" %}}
+This action is ignored and does not work when a microflow is called from an offline, native, or hybrid app. For more information, see the [Microflows](/refguide8/offline-first/#microflows) section of the *Offline-First Reference Guide*.
 {{% /alert %}}
 
 ## 1 Introduction
@@ -54,13 +54,13 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.2 Member
 
-**Member** defines for which attribute or association the message will be shown. In you have a [reference selector](reference-selector) or [reference set selector](reference-set-selector), you should select the association that is edited with these widgets.
+**Member** defines for which attribute or association the message will be shown. In you have a [reference selector](/refguide8/reference-selector/) or [reference set selector](/refguide8/reference-set-selector/), you should select the association that is edited with these widgets.
 
 ### 3.3 Template
 
 **Template** is the message that will be shown to the end-user. The template can contain parameters that are written as a number between braces, for example, {1}. The first parameter has number 1, the second 2, etc.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Nanoflows do not support text templates in validation feedback. Only a static message text can be provided.
 
@@ -68,7 +68,7 @@ Nanoflows do not support text templates in validation feedback. Only a static me
 
 ### 3.4 Parameters
 
-Parameters are attributes the value of which will be displayed. Parameters need to be entered using [expressions](expressions) resulting in a string.
+Parameters are attributes the value of which will be displayed. Parameters need to be entered using [expressions](/refguide8/expressions/) resulting in a string.
 
 ## 4 Common Section {#common}
 
@@ -76,4 +76,4 @@ Parameters are attributes the value of which will be displayed. Parameters need 
 
 ## 5 Read More
 
-* [Activities](activities)
+* [Activities](/refguide8/activities/)

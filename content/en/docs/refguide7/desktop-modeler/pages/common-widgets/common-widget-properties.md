@@ -1,6 +1,6 @@
 ---
 title: "Common Widget Properties"
-url: /refguide7/common-widget-properties
+url: /refguide7/common-widget-properties/
 parent: "common-widgets"
 ---
 
@@ -16,9 +16,9 @@ _Default value:_ False
 
 ### Required message (only in web forms)
 
-This property determines the message that is shown to the end user if the widget is empty and the 'Required' property is set to true. This is a translatable text. See [Translatable Texts](translatable-texts).
+This property determines the message that is shown to the end user if the widget is empty and the 'Required' property is set to true. This is a translatable text. See [Translatable Texts](/refguide7/translatable-texts/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 For example, if an address field is required, the required message for the text box of the address could be something like "The address is required."
 

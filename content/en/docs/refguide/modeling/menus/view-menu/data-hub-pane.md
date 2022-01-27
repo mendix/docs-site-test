@@ -13,10 +13,10 @@ tags: ["studio Pro", "data hub", "data hub pane", "data hub catalog"]
 [Mendix Data Hub](/data-hub/) enables integration of available data sources from the different applications in an organization into your Mendix apps. This means that new apps can be created using shared datasets that are registered in the [Data Hub Catalog](/data-hub/data-hub-catalog/). In Studio Pro, this is possible using the integrated functionality of Data Hub Catalog through the **Data Hub** pane.
 
 {{% alert color="info" %}}
-You need a license to use Data Hub in Studio Pro. For further information see [Data Hub License](consumed-odata-service-requirements#license-limitations).
+You need a license to use Data Hub in Studio Pro. For further information see [Data Hub License](/refguide/consumed-odata-service-requirements/#license-limitations).
 {{% /alert %}}
 
-You can search in the Data Hub Catalog through the **Data Hub** pane to discover data sources that you can use in your app. Via this pane you can add the entities that are exposed in the registered OData services—called **Data Sources** in Data Hub—into your app's domain model. These entities are called [external entities](external-entities) and are different because they enable the connection to the data associated with the entities in the originating app.
+You can search in the Data Hub Catalog through the **Data Hub** pane to discover data sources that you can use in your app. Via this pane you can add the entities that are exposed in the registered OData services—called **Data Sources** in Data Hub—into your app's domain model. These entities are called [external entities](/refguide/external-entities/) and are different because they enable the connection to the data associated with the entities in the originating app.
 
 {{% alert color="info" %}}
 In the Data Hub Catalog, registered published services are referred to as *data sources* and exposed entities will show the **Entity set** name and are called *datasets.*
@@ -41,28 +41,28 @@ When you do not enter search text in the **Data Hub** pane, then **Used in your 
 
 ![User in Your App Section](/attachments/refguide/modeling/menus/view-menu/data-hub-pane/used-in-your-app.png)
 
-For more information on how to add entities to your app, see [Adding an External Entity to an App](external-entities#adding-external-entities) section in *External Entities*.
+For more information on how to add entities to your app, see [Adding an External Entity to an App](/refguide/external-entities/#adding-external-entities) section in *External Entities*.
 
 ## 3 Searching the Data Hub Catalog {#search}
 
-As you enter a search term, all the items in the Data Hub Catalog satisfying the search string are listed in the search results. This includes words in the service, entity and attribute descriptions, which are not displayed in the **Data Hub** pane. For more information, see the [Selected Asset Details](/data-hub/data-hub-catalog/search#search-details) section in *Search in the Data Hub Catalog*.
+As you enter a search term, all the items in the Data Hub Catalog satisfying the search string are listed in the search results. This includes words in the service, entity and attribute descriptions, which are not displayed in the **Data Hub** pane. For more information, see the [Selected Asset Details](/data-hub/data-hub-catalog/search/#search-details) section in *Search in the Data Hub Catalog*.
 
-You can drag the entity from the search results into your domain model and it will be added to your app and displayed as an [external entity](external-entities).
+You can drag the entity from the search results into your domain model and it will be added to your app and displayed as an [external entity](/refguide/external-entities/).
 
-{{% alert color="info" %}}Services that are set to **not-Discoverable** in the Catalog are not be included in the search results for *any* user including owners of the service. To consume entities from these services owners must ensure that they are [Discoverable](/data-hub/data-hub-catalog/curate#discoverability).{{% /alert %}}
+{{% alert color="info" %}}Services that are set to **not-Discoverable** in the Catalog are not be included in the search results for *any* user including owners of the service. To consume entities from these services owners must ensure that they are [Discoverable](/data-hub/data-hub-catalog/curate/#discoverability).{{% /alert %}}
 
 ### 3.1 Wildcard Search
 You can perform a wildcard search by entering `*` in the search field.
 
 {{% alert color="info" %}}
-The search strings must be a minimum of three alphanumeric characters. Punctuation cannot be used as part of the search term except for the wildcard character `*` to perform an "empty" search in the Data Hub Catalog. You cannot use the wildcard in combination with other characters. For further details, see [How to Search for Registered Assets](/data-hub/data-hub-catalog/search).
+The search strings must be a minimum of three alphanumeric characters. Punctuation cannot be used as part of the search term except for the wildcard character `*` to perform an "empty" search in the Data Hub Catalog. You cannot use the wildcard in combination with other characters. For further details, see [How to Search for Registered Assets](/data-hub/data-hub-catalog/search/).
 {{% /alert %}}
 
 ### 3.2 Filtering Environments {#filter}
 By default, the search is performed on assets in the **Production** environment. To include all other environments such as test, acceptance, and also the Mendix free app environment, **Sandbox** in the search, click the **Filter** icon and check **Show development environments**:
 
 {{/* % image_container width="300" % */}}![Filter Icon](/attachments/refguide/modeling/menus/view-menu/data-hub-pane/filter-icon.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 {{% alert color="info" %}}
 When the **Show development environments** is checked, all subsequent searches results will also include those in non-production environments.
 {{% /alert %}}
@@ -88,7 +88,7 @@ The search results and **User in your App** section show the following informati
 * **Green check-mark** if the service or entity is consumed in the app. If you right-click a consumed service, you can do the following:
 
     * **View in Data Hub Catalog** – click this to go to the **Data Source Details** page in the Data Hub Catalog
-    * **Go to connection settings** – click this to open the [consumed OData service](consumed-odata-service) document
+    * **Go to connection settings** – click this to open the [consumed OData service](/refguide/consumed-odata-service/) document
     
         ![info on a Service](/attachments/refguide/modeling/menus/view-menu/data-hub-pane/data-hub-pane-menu.png)
   
@@ -102,7 +102,7 @@ The search results and **User in your App** section show the following informati
 
     {{% alert color="info" %}}The version number that is shown for the OData service is the latest one that is available in the Data Hub Catalog at the service endpoint – in the example above, version 1.0.0 of **BikeVehicleService** is currently consumed in the app, but the contract that is available in the Catalog is different to the one currently consumed.{{% /alert %}}
 
-* **Information icon** allows you to view further details for the service and a link to go directly to the [Service Details](/data-hub/data-hub-catalog/search#search-details) screen in the Data Hub Catalog:
+* **Information icon** allows you to view further details for the service and a link to go directly to the [Service Details](/data-hub/data-hub-catalog/search/#search-details) screen in the Data Hub Catalog:
 
     ![Data Hub Pane Information](/attachments/refguide/modeling/menus/view-menu/data-hub-pane/data-hub-pane-info.png)
 
@@ -145,7 +145,7 @@ Entities and associations can have any of the CRUD capabilities, while attribute
 
 ## 5 Read More
 
-* [Data Hub Catalog](/data-hub/data-hub-catalog)
-* [External Entities](external-entities)
-* [Consumed OData Service](consumed-odata-service)
-* [How to Consume Registered Assets](/data-hub/data-hub-catalog/consume)
+* [Data Hub Catalog](/data-hub/data-hub-catalog/)
+* [External Entities](/refguide/external-entities/)
+* [Consumed OData Service](/refguide/consumed-odata-service/)
+* [How to Consume Registered Assets](/data-hub/data-hub-catalog/consume/)

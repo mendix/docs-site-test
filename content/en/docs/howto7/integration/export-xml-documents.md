@@ -1,8 +1,8 @@
 ---
 title: "Export XML Documents"
-url: /howto7/integration/export-xml-documents
+url: /howto7/integration/export-xml-documents/
 category: "Integration"
-menu_order: 4
+weight: 4
 tags: ["export", "xml", "integration"]
 ---
 
@@ -19,10 +19,10 @@ In enterprise software, it is not likely that you work in a [greenfield](https:/
 
 Before you can start exporting XML documents, you need data in your application that is used during the export. You first need to set up the data structure and GUI to maintain the customer data. Then you'll create the actual export logic and the corresponding export mapping. So, you need to know how to do the following:
 
-* Create a domain model (for more information, see [How to Create a Basic Data Layer](/howto7/data-models/create-a-basic-data-layer))
-* Create a custom file document (for more information, see [How to Work with Images & Files](/howto7/data-models/working-with-images-and-files))
-* Create overview and detail pages (for more information, see [How to Create Your First Two Overview & Detail Pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages))
-* Create menu items, (for more information, see [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure))
+* Create a domain model (for more information, see [How to Create a Basic Data Layer](/howto7/data-models/create-a-basic-data-layer/))
+* Create a custom file document (for more information, see [How to Work with Images & Files](/howto7/data-models/working-with-images-and-files/))
+* Create overview and detail pages (for more information, see [How to Create Your First Two Overview & Detail Pages](/howto7/front-end/create-your-first-two-overview-and-detail-pages/))
+* Create menu items, (for more information, see [How to Set Up the Navigation Structure](/howto7/general/setting-up-the-navigation-structure/))
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
@@ -43,7 +43,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 ## 3 Adding an XML Schema (XSD)
 
 Whether you plan to import documents or export documents, working with XML means that your application must contain an XML schema (also called XSD). An XSD describes the possible contents of an XML file. Based on this XSD, your application knows how to read or write an XML file. If you don't have an XSD file, there are a couple of online XSD generators that accept an XML document as input. For this how-to, you can use [Customers.xsd](/attachments/howto7/integration/export-xml-documents/18581813.xsd).
-.
+
 1.  Right-click your module in the **Project Explorer** and select **Add other** > **XML schema**.
 2.  Enter *CustomersXSD* for the **Name** and click **OK**:
 
@@ -187,10 +187,10 @@ To create the export logic, follow these steps:
 
 ## 6 Read More
 
-* [How to Consume a Complex Web Service](consume-a-complex-web-service)
-* [How to Consume a Simple Web Service](consume-a-simple-web-service)
-* [How to Import Excel Documents](importing-excel-documents)
-* [How to Expose a Web Service](expose-a-web-service)
-* [How to Enable Selenium Support](selenium-support)
-* [How to Import XML Documents](importing-xml-documents)
-* [How to Consume a REST Service](consume-a-rest-service)
+* [How to Consume a Complex Web Service](/howto7/integration/consume-a-complex-web-service/)
+* [How to Consume a Simple Web Service](/howto7/integration/consume-a-simple-web-service/)
+* [How to Import Excel Documents](/howto7/integration/importing-excel-documents/)
+* [How to Expose a Web Service](/howto7/integration/expose-a-web-service/)
+* [How to Enable Selenium Support](/howto7/integration/selenium-support/)
+* [How to Import XML Documents](/howto7/integration/importing-xml-documents/)
+* [How to Consume a REST Service](/howto7/integration/consume-a-rest-service/)

@@ -1,8 +1,8 @@
 ---
 title: "Theme Customizer"
-url: /studio7/theme-customizer
+url: /studio7/theme-customizer/
 description: "Describes the Theme Customizer in Mendix Studio."
-menu_order: 80
+weight: 80
 tags: ["studio", "theme customizer", "atlas ui"]
 ---
 
@@ -75,4 +75,4 @@ To change the color, do the following:
 
 ## 5 Read More
 
-* [Atlas UI](/howto/front-end/atlas-ui)
+* [Atlas UI](/howto/front-end/atlas-ui/)

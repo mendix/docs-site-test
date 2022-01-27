@@ -1,9 +1,9 @@
 ---
 title: "Step 2: Embed the Microflow in Your App"
-url: /studio7/microflows-how-to-configure-decision-p2
+url: /studio7/microflows-how-to-configure-decision-p2/
 parent: "microflows-how-to-configure-decision"
 description: "This how to describes the process of configuring a decision in in Mendix Studio."
-menu_order: 20
+weight: 20
 tags: ["studio", "microflows", "decision", "pages"]
 ---
 
@@ -19,7 +19,7 @@ You have configured microflows and decisions with enumeration attribute type and
 
 To start this tutorial, make sure you have completed the following prerequisites:
 
-* [Step 1: Build the Domain Model & Configure a Microflow](microflows-how-to-configure-decision-p1)
+* [Step 1: Build the Domain Model & Configure a Microflow](/studio7/microflows-how-to-configure-decision-p1/)
 
 ## 3 Embedding the Microflow to Pages   
 
@@ -29,7 +29,7 @@ After microflows are created, you can add them to pages to run them in your app.
 
 To embed the microflow with a decision (the attribute of the enumeration type) to pages, do the following:
 
-1. Create a page for the existing customers details and name it *Customer_details*. For more information on creating pages, see section [3.2 Creating a New Page](page-editor) in *Pages*.
+1. Create a page for the existing customers details and name it *Customer_details*. For more information on creating pages, see section [3.2 Creating a New Page](/studio7/page-editor/) in *Pages*.
 2.  In **Toolbox**>**Widgets** >**Data Containers**, find **Data View**.
 
     ![](/attachments/studio7/microflows/microflows-how-to-configure-decision/microflows-how-to-configure-decision-p2/data-view.png)
@@ -47,7 +47,7 @@ To embed the microflow with a decision (the attribute of the enumeration type) t
     b. Click **Select Page**.<br/>
 
     ![](/attachments/studio7/microflows/microflows-how-to-configure-decision/microflows-how-to-configure-decision-p2/create-button-properties.png) <br/>
- <br/>
+
     c. In the **Select Page** dialog window, click **New** page.<br/>
     d. In the **Create new page** dialog window, fill out the title of the page, for example, *New_customer*. <br/>
     e. Tick **Pre-fill page contents based on the Customer entity** and click **Create**.
@@ -114,4 +114,4 @@ To embed the microflow with a decision (the attribute of the Boolean type), do t
 
 Congratulations! Now when the user clicks **Place order**, only the customers who are not blocked will be able to proceed. If the user is blocked, he will get an error message. 
 
-You can preview and publish. For more information, see [Previewing & Publishing Your App](publishing-app).
+You can preview and publish. For more information, see [Previewing & Publishing Your App](/studio7/publishing-app/).

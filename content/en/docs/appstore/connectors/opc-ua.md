@@ -51,7 +51,7 @@ Recommended; Having an external OPC UA Client tool will make setup of the connec
 
 ## 2 Installation
 
-Follow the instructions in [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content) to import the [OPC UA Client connector](https://marketplace.mendix.com/link/component/117391/) module into your app. You will see the new module in the **Marketplace modules** section of the **App Explorer**.
+Follow the instructions in [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/) to import the [OPC UA Client connector](https://marketplace.mendix.com/link/component/117391/) module into your app. You will see the new module in the **Marketplace modules** section of the **App Explorer**.
 
 When you edit a microflow, you will also see five additional actions in the **Toolbox**.
 
@@ -79,7 +79,7 @@ The module/app is designed for usage with multiple servers if necessary. The sta
 
 {{/* % image_container width="300" % */}}
 ![OPC UA Server configuration entity](/attachments/appstore/connectors/opc-ua/opcuaservercfg.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 For each OPC UA server, the following information will need to be stored in a OpcUaServerCfg object.
 
@@ -182,7 +182,7 @@ Information about nodes which are subscribed to is stored in the **MonitoredItem
 
 {{/* % image_container width="300" % */}}
 ![The subscription entity](/attachments/appstore/connectors/opc-ua/monitoreditem.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 An object is created for each Node you request to monitor and contains the following information:
 
@@ -201,7 +201,7 @@ The subscription reflects the connection configuration with the OPC UA Server.
 
 {{/* % image_container width="300" % */}}
 ![The subscription entity](/attachments/appstore/connectors/opc-ua/subscription.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 This is the only object from the OpcUaClientMx domain that you should create from a microflow, you can create, change and commit this before passing it into the Subscribe action. If you choose to leave the parameter empty then an object is created automatically for each Node you request to monitor. The entity contains the following information:
 

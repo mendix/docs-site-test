@@ -51,7 +51,7 @@ The **Execute query** and **Execute parameterized query** actions should be used
 For both queries and statements, the difference between the parameterized and regular versions are that the parameterized version takes a string template parameter, while the regular version takes a fully formed SQL command string with no placeholders.
 
 {{% alert color="info" %}}
-The parameterized actions are only available with Database Connector versions 3.0.0 and above. For these, it is necessary to use Mendix [8.6.0](/releasenotes/studio-pro/8.6#860).
+The parameterized actions are only available with Database Connector versions 3.0.0 and above. For these, it is necessary to use Mendix [8.6.0](/releasenotes/studio-pro/8.6/#860).
 {{% /alert %}}
 
 #### 3.1.2 Results
@@ -158,4 +158,4 @@ If you intend to connect to SQL Server using integrated security, please be awar
 
 ## 7 Read More
 
-* [How to Implement Best Practices for App Security](/howto/security/best-practices-security)
+* [How to Implement Best Practices for App Security](/howto/security/best-practices-security/)

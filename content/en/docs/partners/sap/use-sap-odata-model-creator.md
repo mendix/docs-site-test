@@ -267,10 +267,10 @@ Now you have a Mendix module ready to import into your project.
 Do not change the names of entities, attributes, or associations in the Domain Model of the module; they need to match the names used by the SAP OData service for the OData Connector for SAP solutions to work correctly.
 {{% /alert %}}
 
-For more information on how to use the imported data model together with the OData Connector for SAP solutions, see [How to Use the OData Connector for SAP Solutions](use-sap-odata-connector).
+For more information on how to use the imported data model together with the OData Connector for SAP solutions, see [How to Use the OData Connector for SAP Solutions](/partners/sap/use-sap-odata-connector/).
 
 ## 5 Read More
 
-* [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content)
-* [How to Use the OData Connector for SAP Solutions](use-sap-odata-connector)
+* [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/)
+* [How to Use the OData Connector for SAP Solutions](/partners/sap/use-sap-odata-connector/)
 * [OData Model Creator for SAP Solutions](https://sapodatamodelcreator.mendixcloud.com/)

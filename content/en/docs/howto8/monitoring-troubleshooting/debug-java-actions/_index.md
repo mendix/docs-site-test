@@ -1,8 +1,8 @@
 ---
 title: "Debug Java Actions"
-url: /howto8/monitoring-troubleshooting/debug-java-actions
+url: /howto8/monitoring-troubleshooting/debug-java-actions/
 category: "Monitoring & Troubleshooting"
-menu_order: 4
+weight: 4
 tags: ["monitoring", "troubleshooting", "debug", "java action"]
 ---
 
@@ -21,7 +21,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Install [Eclipse](https://eclipse.org/)
 * Add a Java action and open the project in Eclipse
-* Read [How to Extend Your Application with Custom Java](/howto8/logic-business-rules/extending-your-application-with-custom-java)
+* Read [How to Extend Your Application with Custom Java](/howto8/logic-business-rules/extending-your-application-with-custom-java/)
 * Deploy the application for Eclipse by selecting **Deploy for Eclipse** from the project menu in Studio Pro (you should redo this every time you make changes in Studio Pro):
     ![](/attachments/howto8/monitoring-troubleshooting/debug-java-actions/18581045.png)
 
@@ -33,7 +33,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 3. Place the cursor on the line that needs debugging, hold down **Ctrl+Shift**, and press **B** to enable a breakpoint. A blue dot in front of the line will appear: 
     ![](/attachments/howto8/monitoring-troubleshooting/debug-java-actions/18580059.png)
 
-    {{% alert type="info" %}}
+    {{% alert color="info" %}}
 
     You can also use Ctrl+Shift+B to disable a breakpoint.
 
@@ -53,7 +53,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 4. Click **Step into** (or press F5) or **Step over** (or press F6) to move on the next step in the microflow:
     ![](/attachments/howto8/monitoring-troubleshooting/debug-java-actions/18580056.png)
 
-    {{% alert type="warning" %}}
+    {{% alert color="warning" %}}
 
     With debugger options, the difference between "Step into" and "Step over" is only noticeable if you run into a function call. "Step into" means that the debugger steps into the function, and "Step over" just moves the debugger to the next line in the same Java action. With "Step Return" (pressing F7), you can instruct the debugger to leave the function; this is basically the opposite of "Step Into." Clicking "Resume" (pressing F8) instructs the debugger to continue until it reaches another breakpoint.
 
@@ -63,12 +63,12 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 ## 5 Read More
 
-* [Find the Root Cause of Runtime Errors](finding-the-root-cause-of-runtime-errors)
-* [Clear Warning Messages in Mendix](clear-warning-messages)
-* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui)
-* [Monitor Mendix Using JMX](monitoring-mendix-using-jmx)
-* [Debug Java Actions Remotely](debug-java-actions-remotely)
-* [Log Levels](log-levels)
-* [Debug Microflows](debug-microflows)
-* [Debug Microflows Remotely](debug-microflows-remotely)
-* [Java Actions](/refguide8/java-actions)
+* [Find the Root Cause of Runtime Errors](/howto8/monitoring-troubleshooting/finding-the-root-cause-of-runtime-errors/)
+* [Clear Warning Messages in Mendix](/howto8/monitoring-troubleshooting/clear-warning-messages/)
+* [Test Web Services Using SoapUI](/howto8/testing/testing-web-services-using-soapui/)
+* [Monitor Mendix Using JMX](/howto8/monitoring-troubleshooting/monitoring-mendix-using-jmx/)
+* [Debug Java Actions Remotely](/howto8/monitoring-troubleshooting/debug-java-actions-remotely/)
+* [Log Levels](/howto8/monitoring-troubleshooting/log-levels/)
+* [Debug Microflows](/howto8/monitoring-troubleshooting/debug-microflows/)
+* [Debug Microflows Remotely](/howto8/monitoring-troubleshooting/debug-microflows-remotely/)
+* [Java Actions](/refguide8/java-actions/)

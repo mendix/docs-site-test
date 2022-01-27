@@ -1,12 +1,12 @@
 ---
 title: "Published Web Service"
-url: /refguide7/published-web-service
+url: /refguide7/published-web-service/
 parent: "published-web-services"
 ---
 
 ## 1 Introduction
 
-This document describes the properties of a published web service. If you want a general overview of how Mendix publishes microflows as web services, see [Published Web Services](published-web-services).
+This document describes the properties of a published web service. If you want a general overview of how Mendix publishes microflows as web services, see [Published Web Services](/refguide7/published-web-services/).
 
 ## 2 Operations
 
@@ -14,7 +14,7 @@ This document describes the properties of a published web service. If you want a
 
 Provide the actual operations of which the web service is composed. Each of these operations is a Microflow.
 
-See [Operations](operations).
+See [Operations](/refguide7/operations/).
 
 ## 3 Settings
 
@@ -40,7 +40,7 @@ It is important to correctly configure the target namespace before publishing yo
 
 ### 3.4 Generated XML
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The **Generated XML** feature was introduced in version 7.13.0.
 

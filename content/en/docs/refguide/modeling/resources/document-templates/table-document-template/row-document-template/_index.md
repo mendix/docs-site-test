@@ -17,7 +17,7 @@ Rows are part of a table. They contain cells which in turn can contain other wid
 
 ### 2.1 Cell
 
-A cell of a row. For more information, see [Cell (Document Template)](cell-document-template).
+A cell of a row. For more information, see [Cell (Document Template)](/refguide/cell-document-template/).
 
 ## 3 Appearance Properties
 

@@ -1,8 +1,8 @@
 ---
 title: "Optimize Microflow Aggregates"
-url: /howto8/logic-business-rules/optimizing-microflow-aggregates
+url: /howto8/logic-business-rules/optimizing-microflow-aggregates/
 category: "Logic & Business Rules"
-menu_order: 7
+weight: 7
 tags: ["microflow", "aggregate"]
 #To update screenshots of these microflows in , use the Microflow Screenshots app.
 ---
@@ -21,11 +21,11 @@ If you do want to use the list but you also want the optimized query, do two sep
 
 ## 2 Read More
 
-* [Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [Extend Your Application with Custom Java](extending-your-application-with-custom-java)
-* [Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [Create a Custom Save Button](create-a-custom-save-button)
-* [Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [Configure Error Handling](set-up-error-handling)
-* [Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Extract & Use Sub-Microflows](extract-and-use-sub-microflows)
+* [Define Access Rules Using XPath](/howto8/logic-business-rules/define-access-rules-using-xpath/)
+* [Extend Your Application with Custom Java](/howto8/logic-business-rules/extending-your-application-with-custom-java/)
+* [Work with Lists in a Microflow](/howto8/logic-business-rules/working-with-lists-in-a-microflow/)
+* [Create a Custom Save Button](/howto8/logic-business-rules/create-a-custom-save-button/)
+* [Optimize Retrieve Activities](/howto8/logic-business-rules/optimizing-retrieve-activities/)
+* [Configure Error Handling](/howto8/logic-business-rules/set-up-error-handling/)
+* [Optimize Microflow Aggregates](/howto8/logic-business-rules/optimizing-microflow-aggregates/)
+* [Extract & Use Sub-Microflows](/howto8/logic-business-rules/extract-and-use-sub-microflows/)

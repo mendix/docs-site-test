@@ -108,7 +108,7 @@ isNew($object1)
 
 ## 5 Checking Whether an Object Is Synced {#synced}
 
-This function is available only in expressions for [conditional visibility or editability](common-widget-properties), as only they are evaluated on client side.
+This function is available only in expressions for [conditional visibility or editability](/refguide/common-widget-properties/), as only they are evaluated on client side.
 
 ### 5.1 Input Parameters
 
@@ -124,7 +124,7 @@ The output is described in the table below:
 
 | Value                                                        | Type    |
 | ------------------------------------------------------------ | ------- |
-| Returns whether the changes done to the object [offline](offline-first) have been synchronized to the runtime database. In web profiles and [hybrid profiles](navigation#hybrid-profiles) without offline support, this always returns `true`. | Boolean |
+| Returns whether the changes done to the object [offline](/refguide/offline-first/) have been synchronized to the runtime database. In web profiles and [hybrid profiles](/refguide/navigation/#hybrid-profiles) without offline support, this always returns `true`. | Boolean |
 
 ### 5.3 Example
 
@@ -136,7 +136,7 @@ isSynced($currentObject)
 
 ## 6 Checking if a Synchronization is Running {#is-syncing}
 
-This function is available only in client-side expressions (expressions in [nanoflows](nanoflows) and [pages](pages)).
+This function is available only in client-side expressions (expressions in [nanoflows](/refguide/nanoflows/) and [pages](/refguide/pages/)).
 
 ### 6.1 Input Parameters
 
@@ -148,7 +148,7 @@ The output is described in the table below:
 
 | Value                                                        | Type    |
 | ------------------------------------------------------------ | ------- |
-| Returns `true` when there is a [synchronization](synchronize) process running, otherwise it returns `false`.| Boolean |
+| Returns `true` when there is a [synchronization](/refguide/synchronize/) process running, otherwise it returns `false`.| Boolean |
 
 ### 6.3 Example
 

@@ -18,7 +18,7 @@ The **Studio 9 Guide** describes Mendix Studio functionality that corresponds to
 
 ## 1 Introduction 
 
-The Mendix Platform includes [Mendix Studio](general) in addition to [Mendix Studio Pro](/refguide/modeling). Studio is a collaborative, no-code, web-based application development environment. It enables business developers and users with minimal coding or software development experience to create web and mobile applications without having to know how to code.
+The Mendix Platform includes [Mendix Studio](/studio/general/) in addition to [Mendix Studio Pro](/refguide/modeling/). Studio is a collaborative, no-code, web-based application development environment. It enables business developers and users with minimal coding or software development experience to create web and mobile applications without having to know how to code.
 
 Studio enables you to do the following: 
 
@@ -31,14 +31,14 @@ Studio enables you to do the following:
 
 The *Studio 9 Guide* is divided into the following categories:
 
-* [General Info](general) 
-* [Pages](page-editor)
-* [Working with Data](work-with-data)
-* [Navigation Document](navigation)
-* [Microflows](microflows)
-* [Workflows](workflows)
-* [Previewing & Publishing Your App](publishing-app)
-* [Checks](checks)
-* [Theme Customizer](theme-customizer)
-* [Settings](settings)
-* [Collaboration](collaboration)
+* [General Info](/studio/general/) 
+* [Pages](/studio/page-editor/)
+* [Working with Data](/studio/work-with-data/)
+* [Navigation Document](/studio/navigation/)
+* [Microflows](/studio/microflows/)
+* [Workflows](/studio/workflows/)
+* [Previewing & Publishing Your App](/studio/publishing-app/)
+* [Checks](/studio/checks/)
+* [Theme Customizer](/studio/theme-customizer/)
+* [Settings](/studio/settings/)
+* [Collaboration](/studio/collaboration/)

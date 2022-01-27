@@ -13,7 +13,7 @@ weight: 20
 
 ## 1 Introduction
 
-The **Call web service** activity can be used to call one of the [imported web service](consumed-web-services) operations. You can specify whether or not to use authentication, what the request should look like and how the response of the web service should be handled.
+The **Call web service** activity can be used to call one of the [imported web service](/refguide/consumed-web-services/) operations. You can specify whether or not to use authentication, what the request should look like and how the response of the web service should be handled.
 
 ## 2 Properties
 
@@ -68,7 +68,7 @@ When calling a web service using a call web service activity, the location of th
 
 ### 4.3 Location
 
-**Location** defines the address of the web service if you override the location. The location needs to be entered using an [expression](expressions) which results in a valid URL string.
+**Location** defines the address of the web service if you override the location. The location needs to be entered using an [expression](/refguide/expressions/) which results in a valid URL string.
 
 ### 4.4 Use Timeout on Request
 
@@ -98,7 +98,7 @@ Setting this setting to yes can greatly decrease performance!
 When consuming a WSDL that uses encoding, turning on validation will lead to a consistency error, because it is not WS-I compliant.
 {{% /alert %}}
 
-Schema validation is not supported when you configure the [consumed web service](consumed-web-service) to send binary data as attachments.
+Schema validation is not supported when you configure the [consumed web service](/refguide/consumed-web-service/) to send binary data as attachments.
 
 Default: *No*
 
@@ -127,8 +127,8 @@ The options are:
 
 When you select **Override**, you can configure which client certificate will be used. Click **Edit** to specify the **Client certificate identifier**. This identifier can be set in different places, depending on where you deploy the app:
 
-* When you deploy the app in the Mendix cloud, set the **Client certificate identifier** to the desired **WEB SERVICE CALL NAME** when [pinning a client certificate](/developerportal/deploy/certificates#outgoing-client-certificates).
-* When you deploy the app elsewhere, the identifier is set in the custom setting [ClientCertificateUsages](custom-settings#ca-certificates). For testing locally, this can be set as a custom server setting in a [Configuration](configuration#custom).
+* When you deploy the app in the Mendix cloud, set the **Client certificate identifier** to the desired **WEB SERVICE CALL NAME** when [pinning a client certificate](/developerportal/deploy/certificates/#outgoing-client-certificates).
+* When you deploy the app elsewhere, the identifier is set in the custom setting [ClientCertificateUsages](/refguide/custom-settings/#ca-certificates). For testing locally, this can be set as a custom server setting in a [Configuration](/refguide/configuration/#custom).
 
 When this identifier is not set for the environment where your app is deployed (either not pinned or not present in _ClientCertificateUsages_), the default settings will be used (as if **Use app settings** were selected).
 
@@ -142,11 +142,11 @@ Use HTTP authentication defines whether the basic authentication should be used.
 
 ### 5.2 User Name
 
-User name defines the user name that will be used to authenticate over HTTP. The user name needs to be entered using [expressions](expressions). The microflow expression should result in a string.
+User name defines the user name that will be used to authenticate over HTTP. The user name needs to be entered using [expressions](/refguide/expressions/). The microflow expression should result in a string.
 
 ### 5.3 Password
 
-Password defines the password that will be used to authenticate over HTTP. The password needs to be entered using [expressions](expressions). The microflow expression should result in a string.
+Password defines the password that will be used to authenticate over HTTP. The password needs to be entered using [expressions](/refguide/expressions/). The microflow expression should result in a string.
 
 ### 5.4 Custom HTTP Headers
 
@@ -164,13 +164,13 @@ The XML for the request parts (header and body) can be generated in several ways
 
 ### 7.1 Export Mapping for Entire Request
 
-Using this option, a single [Export Mapping](export-mappings) can be used to generate the XML for the request part. You can choose the export mapping to use for the request part and, if applicable, the object or list that you want to use as parameter for the mapping.
+Using this option, a single [Export Mapping](/refguide/export-mappings/) can be used to generate the XML for the request part. You can choose the export mapping to use for the request part and, if applicable, the object or list that you want to use as parameter for the mapping.
 
 ### 7.2 Simple Expressions for Each Request Parameter
 
 This option for request parts can be used when all children of the XML element of the request part occur at most once and are primitive values. If that is not the case, this option is disabled and cannot be used.
 
-Using this option you need to supply an argument value for all elements of a primitive type (parameters). Argument values need to be entered using [expressions](expressions) resulting in the same data type as the parameter.
+Using this option you need to supply an argument value for all elements of a primitive type (parameters). Argument values need to be entered using [expressions](/refguide/expressions/) resulting in the same data type as the parameter.
 
 ![](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/integration-activities/call-web-service-action/request-parameter-option.png)
 
@@ -198,17 +198,17 @@ The template for the XML request can contain parameters that are written as a nu
 
 #### 7.4.2 Parameters
 
-For each parameter in the template, you can specify its value using a [microflow expression](expressions) resulting in a string value. This value will be inserted at the position of the parameter.
+For each parameter in the template, you can specify its value using a [microflow expression](/refguide/expressions/) resulting in a string value. This value will be inserted at the position of the parameter.
 
 ## 8 SOAP Response Tab{#response}
 
 ![](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/integration-activities/call-web-service-action/soap-response-tab.png)
 
-If the data type is a complex XML structure it can be mapped to entities using a [Import Mapping](import-mappings). If it is primitive data, it can be stored in a variable immediately. The response does not have to be used though; it can also be ignored if you are not interested in it.
+If the data type is a complex XML structure it can be mapped to entities using a [Import Mapping](/refguide/import-mappings/). If it is primitive data, it can be stored in a variable immediately. The response does not have to be used though; it can also be ignored if you are not interested in it.
 
 ### 8.1 Mapping
 
-If you are using complex XML structures you can choose the [Import Mapping](import-mappings) that will be used to transform the XML into objects.
+If you are using complex XML structures you can choose the [Import Mapping](/refguide/import-mappings/) that will be used to transform the XML into objects.
 
 ### 8.2 If No Object Was Found
 
@@ -224,9 +224,9 @@ Indicates whether the resulting objects should be committed to the database, and
 
 | Option | Description |
 | --- | --- |
-| Yes | The objects are saved in the database and the [event handlers](event-handlers) are triggered. |
-| Yes without events | The objects are saved in the database, but the [event handlers](event-handlers) are not triggered (default). |
-| No | The objects are created without being saved in the database. You will need a [commit action](committing-objects) to save them. |
+| Yes | The objects are saved in the database and the [event handlers](/refguide/event-handlers/) are triggered. |
+| Yes without events | The objects are saved in the database, but the [event handlers](/refguide/event-handlers/) are not triggered (default). |
+| No | The objects are created without being saved in the database. You will need a [commit action](/refguide/committing-objects/) to save them. |
 
 ### 8.5 Range (If the Mapping Returns a List)
 

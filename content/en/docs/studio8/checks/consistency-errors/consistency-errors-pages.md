@@ -1,8 +1,8 @@
 ---
 title: "Page Consistency Errors"
-url: /studio8/consistency-errors-pages
+url: /studio8/consistency-errors-pages/
 parent: "consistency-errors"
-menu_order: 10
+weight: 10
 description: "Describes consistency errors in the page editor in Mendix Studio and the way to fix them."
 tags: ["studio", "consistency errors", "checks", "errors", "page editor"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -10,11 +10,11 @@ tags: ["studio", "consistency errors", "checks", "errors", "page editor"]
 
 ## 1 Introduction 
 
-In this document, we explain how to solve the most common consistency errors that can occur you  configure pages in Mendix Studio. For more information on pages, see [Pages](page-editor).
+In this document, we explain how to solve the most common consistency errors that can occur you  configure pages in Mendix Studio. For more information on pages, see [Pages](/studio8/page-editor/).
 
 An example of a consistency error is when you do not specify the entity property of a data view on a page. 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This document does not describe *all* the errors, as there are a lot of errors that can occur, some of which are simple and do not need extra explanation, others are rare and/or heavily dependent on a use-case. 
 
@@ -24,7 +24,7 @@ Some errors have error codes and if these errors are described in documentation,
 
 ## 2 List View Consistency Errors 
 
-If you do not configure a data source for a [list view](page-editor-data-view-list-view#list-view-properties) properly, you will get a consistency error. 
+If you do not configure a data source for a [list view](/studio8/page-editor-data-view-list-view/#list-view-properties) properly, you will get a consistency error. 
 
 The scheme below shows that the data source of the list view has been set to **Database**, but the entity that needs to be retrieved from the database has not been specified. This results in a consistency error.![List View Errors Cause](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/list-view-error.png)
 
@@ -38,7 +38,7 @@ The table below describes the most common errors you can come across when config
 
 ## 3 Data View Consistency Errors 
 
-If you do not configure a data source for a [data view](page-editor-data-view-list-view#data-view-properties) properly, you will get a consistency error. For example, you selected a list widget as the data source, but you have not selected the specific list you would like the data view to listen to.
+If you do not configure a data source for a [data view](/studio8/page-editor-data-view-list-view/#data-view-properties) properly, you will get a consistency error. For example, you selected a list widget as the data source, but you have not selected the specific list you would like the data view to listen to.
 
 {{/* % image_container width="350" % */}}![Data View Properties Not Configured](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/data-view-error.png)
 {{/* % /image_container % */}}
@@ -60,20 +60,20 @@ The errors that you can get when a page is expecting a context that is unavailab
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | CE1568     | The selected page {Name of the page} expects an object of type {type of object}, which is not available here. | The page has a data view that expects an object of a particular type to be passed to it. This error occurs when the page is opened from another page, which does not have this object available. For a more detailed example, see the [Error Fix Example for CE1568](#error-example-1) section. | Make sure that the object is passed to the page which has a configured data view on it. For more information, see the  [Error Fix Example for CE1568](#error-example-1) section. |
 | CE1569     | The selected page {Name of page} expects an object of type X, which is not compatible with the object of type Y that is available here. | You have a widget (for example, a button) that opens a page. The page has a data view that expects an object of particular type to be passed to it. However, the widget is placed inside a data container with another type of object. For a detailed example, see the [Error Fix Example for CE1569](#error-example-2) section. | Make sure that the button is placed in a data container which passes the correct type of object to the page. For more information, see the [Error Fix Example for CE1569](#error-example-2) section. |
-| CE0529     | The selected {Name of the page} expects an object of type {type of object} and cannot be used as a home page. Change the page or use a microflow to provide the page with an object. | You have set a page that expects an object to be passed to it (for example, a page with a data view) as the home page. But by default the home page has no object that is passed to it, because it is the starting point for your user. For a more detailed example, see the [Error Fix When the Home Page Expects an Object](consistency-errors-navigation#home-page-expects-an-object) section in *Navigation Consistency Errors*. | Set a different  page as the home page. Alternatively, you can use a microflow that will open the home page and pass a specific object to it. For more information, see the [Error Fix When the Home Page Expects an Object](consistency-errors-navigation#home-page-expects-an-object) section in *Navigation Consistency Errors*. |
+| CE0529     | The selected {Name of the page} expects an object of type {type of object} and cannot be used as a home page. Change the page or use a microflow to provide the page with an object. | You have set a page that expects an object to be passed to it (for example, a page with a data view) as the home page. But by default the home page has no object that is passed to it, because it is the starting point for your user. For a more detailed example, see the [Error Fix When the Home Page Expects an Object](/studio8/consistency-errors-navigation/#home-page-expects-an-object) section in *Navigation Consistency Errors*. | Set a different  page as the home page. Alternatively, you can use a microflow that will open the home page and pass a specific object to it. For more information, see the [Error Fix When the Home Page Expects an Object](/studio8/consistency-errors-navigation/#home-page-expects-an-object) section in *Navigation Consistency Errors*. |
 | CE0558     | All data views receiving object from the page parameter must have the same entity. | You have several data view on one page that have different entities as a data source. | Select one and the same entity for all data views, or change the data source for them. |
 
 ### 4.1 Error Fix Example for CE1568 {#error-example-1}
 
 When a page expects a context that is not passed to it from another page or a microflow, you will get consistency errors. 
 
-For example, the **Customers** page contains a list view with a list of all customer names (**Customer** is set as **Entity** in the **Data Source** properties), and a **Details** button outside of the list view (placed in a [container](page-editor-widgets-structure#container-overview) only). The **Details** button opens a **Customer Details** page when a user clicks it (the **On Click Action** for the button is set to **Page** and the **Create Object** option is disabled). 
+For example, the **Customers** page contains a list view with a list of all customer names (**Customer** is set as **Entity** in the **Data Source** properties), and a **Details** button outside of the list view (placed in a [container](/studio8/page-editor-widgets-structure/#container-overview) only). The **Details** button opens a **Customer Details** page when a user clicks it (the **On Click Action** for the button is set to **Page** and the **Create Object** option is disabled). 
 
 ![Button Properties on the Customers Page](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/customers-page.png)
 
 However, the **Customer Details** page has a data view that expects an object *Customer* to be passed to it. In other words, this page needs to get data first to be able to display it. 
 
-{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/data-view-customer.png)
+{{/* % image_container width="350" % */}}![Data View Expects the Customer Object](/attachments/studio8/checks/consistency-errors/consistency-errors-navigation/data-view-customer.png)
 {{/* % /image_container % */}}
 
 As this object is not passed to it from the **Customers** page, you get a consistency error.
@@ -201,7 +201,7 @@ The best way to fix this error is to either change the microflow to accept *Phot
 
 ## 6 Input Element Consistency Errors
 
-The most common errors for [input elements](page-editor-widgets-input-elements) (such as, a text box, a drop-down, a check box, etcetera) , their causes, and ways to fix them are described in the table below. 
+The most common errors for [input elements](/studio8/page-editor-widgets-input-elements/) (such as, a text box, a drop-down, a check box, etcetera) , their causes, and ways to fix them are described in the table below. 
 
 | Error Code | Message in the Checks Panel                                  | Cause of the Error                                           | Way to Fix                                                   |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
@@ -210,9 +210,9 @@ The most common errors for [input elements](page-editor-widgets-input-elements) 
 
 ## 7 Image Widget Consistency Errors
 
-The most common consistency errors for [static image widgets](page-editor-widgets-images-and-files) can occur when you place an image widget on a page, but do not select an actual image for it. 
+The most common consistency errors for [static image widgets](/studio8/page-editor-widgets-images-and-files/) can occur when you place an image widget on a page, but do not select an actual image for it. 
 
-[Dynamic images](page-editor-widgets-images-and-files) need to be placed inside a data container (a data view or a list view) and an entity should be selected for them. 
+[Dynamic images](/studio8/page-editor-widgets-images-and-files/) need to be placed inside a data container (a data view or a list view) and an entity should be selected for them. 
 
 {{/* % image_container width="350" % */}}![Dynamic Image Properties](/attachments/studio8/checks/consistency-errors/consistency-errors-pages/dynamic-image-properties.png)
 {{/* % /image_container % */}}
@@ -227,7 +227,7 @@ Errors for static and dynamic images are described in the table below.
 
 ## 8 On Click Action Consistency Errors 
 
-You can specify an **On Click Action** for different widgets, for example, for buttons or images. For more details about on click actions, see [Events Section](page-editor-widgets-events-section).
+You can specify an **On Click Action** for different widgets, for example, for buttons or images. For more details about on click actions, see [Events Section](/studio8/page-editor-widgets-events-section/).
 
 The most common consistency errors appear when you do not configure the on click action entirely. For example, you select a microflow as an on click action, but do not select the microflow itself. 
 
@@ -237,7 +237,7 @@ To fix the consistency errors, finish configuring the on click action (for examp
 
 ##  9 Read More
 
-* [Pages](page-editor)
-* [Navigation Consistency Errors](consistency-errors-navigation)
-* [Microflow Consistency Errors](consistency-errors-microflows)
-* [Checks](checks)
+* [Pages](/studio8/page-editor/)
+* [Navigation Consistency Errors](/studio8/consistency-errors-navigation/)
+* [Microflow Consistency Errors](/studio8/consistency-errors-microflows/)
+* [Checks](/studio8/checks/)

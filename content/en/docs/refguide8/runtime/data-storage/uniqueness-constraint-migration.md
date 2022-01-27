@@ -1,8 +1,8 @@
 ---
 title: "Uniqueness Constraint Migration"
-url: /refguide8/uniqueness-constraint-migration
+url: /refguide8/uniqueness-constraint-migration/
 parent: "data-storage"
-menu_order: 30
+weight: 30
 tags: ["studio pro"]
 aliases:
     - /refguide/uniqueness-constraint-migration.html
@@ -28,7 +28,7 @@ This document discusses:
 
 A migration toolkit is available to help you fix any inconsistencies between data in your database and validation rules defined in your model.
 
-For more information about the setting for *Uniqueness Validation*, see [Project Settings](project-settings).
+For more information about the setting for *Uniqueness Validation*, see [Project Settings](/refguide8/project-settings/).
 
 ## 2 Unique Attributes
 

@@ -8,7 +8,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-A **Date range field** can be placed inside a [Report date parameter](report-date-parameter) to make it easier for an end-user to select a date range, rather than having to specify a from and to date. The report date parameter is then updated with the from and to dates of the selected period.
+A **Date range field** can be placed inside a [Report date parameter](/refguide/report-date-parameter/) to make it easier for an end-user to select a date range, rather than having to specify a from and to date. The report date parameter is then updated with the from and to dates of the selected period.
 
 To add a date range field, right-click the widget and choose **Add field** from the pop-up menu.
 
@@ -43,5 +43,5 @@ The **Label** property specifies the text that is displayed beside the date rang
 
 | **Notes** |
 | --- |
-| <sup><small>[1]</small></sup> The year will be between the **Min. year** and **Max. year** (inclusive) specified in the [report date parameter](report-date-parameter) widget. |
+| <sup><small>[1]</small></sup> The year will be between the **Min. year** and **Max. year** (inclusive) specified in the [report date parameter](/refguide/report-date-parameter/) widget. |
 | <sup><small>[2]</small></sup> You also need to add a **Year** date range field if you use a date range field of this type.<br />– The end-user will need to choose the year before they can choose a date range field of this type.<br />– The end-user can only choose one of these types, plus the year. |

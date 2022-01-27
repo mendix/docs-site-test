@@ -128,7 +128,7 @@ As of August 2020, Google Play requires apps to be built targeting SDK 29. This 
 
 **Release date: August 7th, 2020**
 
-Mendix Studio Pro [8.12.1](/releasenotes/studio-pro/8.12#8121) introduces better splash screen support for native mobile apps. As the new functionality requires new native dependencies, the changes are not backwards-compatible with previous Mendix Studio versions. 
+Mendix Studio Pro [8.12.1](/releasenotes/studio-pro/8.12/#8121) introduces better splash screen support for native mobile apps. As the new functionality requires new native dependencies, the changes are not backwards-compatible with previous Mendix Studio versions. 
 
 In the first implementation, splash screens were static resources controlled by the native side of the app. While good enough in simple cases, they were inadequate for longer synchronizing sessions where the splash screen could toggle off too soon.
 

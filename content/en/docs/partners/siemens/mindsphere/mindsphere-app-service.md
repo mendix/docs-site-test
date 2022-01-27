@@ -28,7 +28,7 @@ This documentation will help you find out how to develop for Siemens MindSphere.
 
 MindSphere IIoT for Makers is easy to add to your app but has the following limitations:
 
-* You cannot make your app multi-tenant – see [Multi-tenancy](mindsphere-development-considerations#multitenancy) in *MindSphere Development Considerations* for more information on multi-tenancy
+* You cannot make your app multi-tenant – see [Multi-tenancy](/partners/siemens/mindsphere-development-considerations/#multitenancy) in *MindSphere Development Considerations* for more information on multi-tenancy
 * Your app cannot be deployed to the MindSphere platform and cannot be added to the MindSphere Developer Cockpit
 * End users cannot use MindSphere credentials to sign in to your app, so MindSphere does not know anything about individual app end users — you must design your app to handle any required security for each end user
 
@@ -46,7 +46,7 @@ Once your order is processed, your entitlement to MindSphere IIoT for Makers wil
 
 ### 2.2 Provisioning a MindSphere Tenant
 
-On receipt of your confirmation, a [Mendix Administrator](/developerportal/control-center/index#company) for your company will need to initiate the creation of a dedicated tenant account within MindSphere.
+On receipt of your confirmation, a [Mendix Administrator](/developerportal/control-center/#company) for your company will need to initiate the creation of a dedicated tenant account within MindSphere.
 
 Once all the resources have been provisioned, the Mendix Administrator for your company will receive an email confirming that your MindSphere account has been created. The email will also contain the following:
 
@@ -71,7 +71,7 @@ There are two ways to use the Mendix App Service.
 
     In this case your assets are now set up and you can continue by [Creating Binding Keys](#binding-keys).
 
-* You can publish your assets through Mendix Data Hub and add the asset data as an [External Entity](/refguide/external-entities) in your domain model. In this case, you first have to publish a contract of your assets to Data Hub so that they can be found in the [Data Hub Pane](/refguide/data-hub-pane) in Studio Pro.
+* You can publish your assets through Mendix Data Hub and add the asset data as an [External Entity](/refguide/external-entities/) in your domain model. In this case, you first have to publish a contract of your assets to Data Hub so that they can be found in the [Data Hub Pane](/refguide/data-hub-pane/) in Studio Pro.
 
     The instructions for doing this are below, and instructions for using the external entities are in [Using MindSphere IIoT for Makers Through Mendix Data Hub](#using-data-hub).
 
@@ -117,7 +117,7 @@ To access your IoT data using the OData technology provided by the Mendix Data H
 1. Click the **Submit** button to finalize the creation of your contract.
 
 {{% alert color="info" %}}
-   In Mendix, every user is a member of (exactly) one company ([User Account](/apidocs-mxsdk/apidocs/user-management-api#user-account)). All users with the same email domain (the part after the `@`) are part of the same [Company](/apidocs-mxsdk/apidocs/user-management-api#company-account).
+   In Mendix, every user is a member of (exactly) one company ([User Account](/apidocs-mxsdk/apidocs/user-management-api/#user-account)). All users with the same email domain (the part after the `@`) are part of the same [Company](/apidocs-mxsdk/apidocs/user-management-api/#company-account).
 
    Published contracts are only visible in Mendix DataHub for users that belong to the same company.
 
@@ -151,25 +151,25 @@ To authenticate your calls you will need to provide the MindSphere IIoT Authenti
 
     ![Binding](/attachments/partners/siemens/mindsphere/mindsphere-app-service/binding-keys.png)
 
-You can find more information about managing binding keys in the [Subscriptions](/appstore/general/app-store-overview#subscriptions) section of *Marketplace Overview*.
+You can find more information about managing binding keys in the [Subscriptions](/appstore/general/app-store-overview/#subscriptions) section of *Marketplace Overview*.
 
 ## 4 Using MindSphere IIoT for Makers Through Mendix Data Hub{#using-data-hub}
 
-The easiest way to get your data from MindSphere is to use Mendix Data Hub. To do this you will need a [Data Hub license](/refguide/consumed-odata-service-requirements#license-limitations).
+The easiest way to get your data from MindSphere is to use Mendix Data Hub. To do this you will need a [Data Hub license](/refguide/consumed-odata-service-requirements/#license-limitations).
 
 See [Data Hub Limitations](#dh-limitations) for information on restrictions and workarounds when using Mendix Data Hub.
 
 ### 4.1 Adding External Entities to the Domain Model
 
-To add the external entities representing your MindSphere data to the domain model, search in the [Data Hub pane](/refguide/data-hub-pane) for your MindSphere service.
+To add the external entities representing your MindSphere data to the domain model, search in the [Data Hub pane](/refguide/data-hub-pane/) for your MindSphere service.
 
-Drag the [entities](/refguide/external-entities) you need into your domain model. This will also create a **Consumed OData Service** document which you will need to edit to authenticate your calls to the MindSphere API.
+Drag the [entities](/refguide/external-entities/) you need into your domain model. This will also create a **Consumed OData Service** document which you will need to edit to authenticate your calls to the MindSphere API.
 
 ### 4.2 Authenticating Calls to External Entities
 
 To extract data from MindSphere, your calls to the MindSphere API need to be authenticated. This is done through the [MindSphere IIot Authenticator Module](https://marketplace.mendix.com/link/component/117578).
 
-Download the **MindSphere IIot Authenticator Module** by following the instructions [Downloading Content from the Marketplace](/appstore/general/app-store-content#downloading) in the document *How To Use Marketplace Content in Studio Pro*.
+Download the **MindSphere IIot Authenticator Module** by following the instructions [Downloading Content from the Marketplace](/appstore/general/app-store-content/#downloading) in the document *How To Use Marketplace Content in Studio Pro*.
 
 In the **_Use me** folder of the *MindSphereIIotAuthenticator* module set the following constants:
 
@@ -177,9 +177,13 @@ In the **_Use me** folder of the *MindSphereIIotAuthenticator* module set the fo
 * **ClientID** – this is the *clientID* from the binding keys you generated
 * **ClientSecret** – this is the *clientSecret* from the binding keys you generated
 
-In the Consumed OData Service document associated with your MindSphere service, set the **Headers from microflow** to be *MindSphereIIoTAuthenticator.AddAuthHeader*. This ensures that the values you have set in the **Use me** folder are passed as HTTP headers with every call to authenticate your app to MindSphere.
+In the Consumed OData Service document associated with your MindSphere service, set the **Headers from microflow** to be *MindSphereIIoTAuthenticator.DH_AddAuthHeader*. This ensures that the values you have set in the **Use me** folder are used to authenticate each HTTP request to MindSphere.
 
 ![Binding](/attachments/partners/siemens/mindsphere/mindsphere-app-service/data-hub-authentication.png)
+
+Set the **Error handling microflow** to be *MindsphereIIoTAuthenticator.DH_ErrorHandler*. This microflow is executed if there is an error. It logs the error and provides a human readable string of the error, which is shown to the user in an error message. See [Custom Error Handling](#ts-customerrorhandling), below, for further details.
+
+![Binding](/attachments/partners/siemens/mindsphere/mindsphere-app-service/data-hub-error-handling.png)
 
 ## 5 Using MindSphere IIoT for Makers Through REST Calls{#using-rest}
 
@@ -187,11 +191,11 @@ In the Consumed OData Service document associated with your MindSphere service, 
 
 To extract data from MindSphere, your calls to the MindSphere API need to be authenticated. This is done through the [MindSphere IIot Authenticator Module](https://marketplace.mendix.com/link/component/117578).
 
-Download the **MindSphere IIot Authenticator Module** by following the instructions [Downloading Content from the Marketplace](/appstore/general/app-store-content#downloading) in the document *How To Use Marketplace Content in Studio Pro*.
+Download the **MindSphere IIot Authenticator Module** by following the instructions [Downloading Content from the Marketplace](/appstore/general/app-store-content/#downloading) in the document *How To Use Marketplace Content in Studio Pro*.
 
 ### 5.3 Authenticating MindSphere REST Calls {#authenticating}
 
-Calls to MindSphere are made through REST calls which can be made using the standard Mendix [Call REST Service](/refguide/call-rest-action) functionality. See [How To Consume a REST Service](/howto/integration/consume-a-rest-service) for a full walkthrough on doing this. For calls to MindSphere, these calls need to be authenticated.
+Calls to MindSphere are made through REST calls which can be made using the standard Mendix [Call REST Service](/refguide/call-rest-action/) functionality. See [How To Consume a REST Service](/howto/integration/consume-a-rest-service/) for a full walkthrough on doing this. For calls to MindSphere, these calls need to be authenticated.
 
 To extract data from MindSphere, your calls to the MindSphere API need to be authenticated. This is done through the [MindSphere IIot Authenticator Module](https://marketplace.mendix.com/link/component/117578).
 
@@ -215,7 +219,7 @@ However, authentication will only be successful if the correct credentials are p
 
 ### 6.1 Authenticating During Development
 
-When you are developing your app, you can set the **ClientID** and **ClientSecret** constants within the app. You can also override these by using different [Configurations](/refguide/configuration) within your project settings.
+When you are developing your app, you can set the **ClientID** and **ClientSecret** constants within the app. You can also override these by using different [Configurations](/refguide/configuration/) within your project settings.
 
 For security, the values of these constants should not be included when you deploy the app.
 
@@ -223,7 +227,7 @@ For security, the values of these constants should not be included when you depl
 
 When you deploy your app, you should remove the values of **ClientID** and **ClientSecret** from the app model for security reasons. You should then set the correct value as a constant (Cloud Foundry environment variable) during the deployment.
 
-For the Mendix Cloud, this can be done by setting the value of the constants on the [Model Options](/developerportal/deploy/environments-details#model-options) tab of the **Environment Details**. See [Constants](/refguide/constants) for information on how to set these values on other deployment platforms.
+For the Mendix Cloud, this can be done by setting the value of the constants on the [Model Options](/developerportal/deploy/environments-details/#model-options) tab of the **Environment Details**. See [Constants](/refguide/constants/) for information on how to set these values on other deployment platforms.
 
 ## 7 MindSphere Widgets
 
@@ -232,7 +236,7 @@ If you want to use the [Siemens MindSphere Web Components Widgets](https://marke
 To enable this, you will have to do two things:
 
 1. Ensure that the constant **EnableMindSphereApiReverseProxy** is set to *true* to ensure this can happen.
-2. Add the microflow **Register ApiReverseProxy** to the [After Startup](/refguide/project-settings#after-startup) microflow(s) which are run when the app is started.
+2. Add the microflow **Register ApiReverseProxy** to the [After Startup](/refguide/project-settings/#after-startup) microflow(s) which are run when the app is started.
 
 ## 8 Data Hub Limitations{#dh-limitations}
 
@@ -288,17 +292,11 @@ For example, Time Series can only be sorted using the timestamp attribute. If yo
 
 ## 9 Troubleshooting
 
-### 9.1 "An error occurred…" Error Message
+### 9.1 Custom Error Handling{#ts-customerrorhandling}
 
-If your app returns the message "An error occurred, please contact your system administrator", this could be due to a MindSphere error that Mendix is unable to handle. Always check the log to see if there is more information to help you resolve this issue.
+Custom Error Handling is possible when using OData in Microflows, for example on a retrieve action. On the error flow of the action you get a human-readable error string in the variable **$latestError/Message**. Use this variable as input to *MindsphereIIoTAuthenticator.DH_MindSphereErrorFromString* to get a *MindSphereError* entity. Now implement your custom error handling, for example based on the **StatusCode** of the error.
 
-To ensure that you get full information about MindSphere responses that cause Mendix to return these generic errors, set the **Log Level** for `ODataConsume` to **Trace**, using the instructions in [How To Set Log Levels](/howto/monitoring-troubleshooting/log-levels#standard-log-levels).
-
-![Example of setting the Log Level for ODataConsume](/attachments/partners/siemens/mindsphere/mindsphere-app-service/odata-log-levels.png)
-
-{{% alert color="info" %}}
-Setting log levels to trace can have in impact on performance and should only be done during testing.
-{{% /alert %}}
+![Binding](/attachments/partners/siemens/mindsphere/mindsphere-app-service/data-hub-custom-error-handingScreenshot.png)
 
 ### 9.2 Internal Server Error and Long Names
 

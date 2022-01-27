@@ -22,7 +22,7 @@ Upgrading the Mendix for Private Cloud Operator in a namespace will modify globa
 Once you have installed a particular version of the Mendix Operator into any namespace in the cluster, you should not install older versions of the Mendix Operator into the same cluster, even if they are in other namespaces. This is because all the CRDs are global resources and operators in all namespaces use the same one, which may not be compatible across versions.
 {{% /alert %}}
 
-If you are using your own private registry, follow the [Migrating to Your Own Registry](private-cloud-migrating) guide first
+If you are using your own private registry, follow the [Migrating to Your Own Registry](/developerportal/deploy/private-cloud-migrating/) guide first
 to migrate new component versions of Mendix for Private Cloud into your private registry.
 
 {{% alert color="warning" %}}
@@ -40,10 +40,10 @@ upgrading to Kubernetes 1.21 and Mendix Operator v2.\*.\* will prepare resources
 
 ### 2.1 Download the Configuration Tool{#download-configuration-tool}
 
-Follow the instructions to [Download the Configuration Tool](private-cloud-cluster#download-configuration-tool).
+Follow the instructions to [Download the Configuration Tool](/developerportal/deploy/private-cloud-cluster/#download-configuration-tool).
 When downloading the Configuration Tool, choose the version you would like to upgrade to (1.9.0 or a later version) - not the version that is currently installed.
 
-If you're using an OpenShift cluster, follow the [Signing in to OpenShift](private-cloud-cluster#openshift-signin) instructions.
+If you're using an OpenShift cluster, follow the [Signing in to OpenShift](/developerportal/deploy/private-cloud-cluster/#openshift-signin) instructions.
 
 ### 2.2 CLI Availability
 
@@ -51,7 +51,7 @@ You must have the *OpenShift CLI* installed for upgrading Mendix for Private Clo
 
 ## 3 Upgrade Namespace{#upgrade-cluster}
 
-1. Follow the instructions to [Run the Configuration Tool](private-cloud-cluster#running-the-tool). You will see the initial screen:
+1. Follow the instructions to [Run the Configuration Tool](/developerportal/deploy/private-cloud-cluster/#running-the-tool). You will see the initial screen:
 
     ![](/attachments/developerportal/deploy/private-cloud/private-cloud-upgrade-guide/mxpc-cli-welcome.png)
 2. Click **Upgrade Namespace**. You will see the screen below:

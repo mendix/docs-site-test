@@ -1,17 +1,17 @@
 ---
 title: "Group Box"
-url: /refguide8/group-box
+url: /refguide8/group-box/
 parent: "container-widgets"
-menu_order: 30
+weight: 30
 tags: ["studio pro", "group box", "container widget", "widget"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/group-box.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/group-box.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}The group box widget is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="warning" %}}The group box widget is not supported on native mobile pages.{{% /alert %}}
 
 ## 1 Introduction
 
@@ -71,8 +71,8 @@ Possible values of this property are the following:
 
 ## 3 Read More
 
-* [Page](page)
-* [Container Widgets](container-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [Container Widgets](/refguide8/container-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)
 
 

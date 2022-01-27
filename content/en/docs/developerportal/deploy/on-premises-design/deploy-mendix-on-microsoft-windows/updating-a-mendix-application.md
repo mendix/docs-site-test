@@ -76,12 +76,12 @@ After updating, don't forget to start your app service again!
 
 ## 5 Read More
 
-*   [Restoring a SQL Server database](restoring-a-sql-server-database)
-*   [Troubleshooting SQL Server](troubleshooting-sql-server)
-*   [Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
-*   [Setting up a new SQL Server database](setting-up-a-new-sql-server-database)
-*   [Setting up a SQL Server user](setting-up-a-sql-server-user)
-*   [Security checklist for your on-premises installation](security-checklist-for-your-on-premises-installation)
-*   [Mendix on Windows - Microsoft SQL Server](mendix-on-windows-microsoft-sql-server)
-*   [Deploying Mendix on Microsoft Windows](deploy-mendix-on-microsoft-windows)
-*   [U*ix Deployment](unix-like)
+*   [Restoring a SQL Server database](/developerportal/deploy/restoring-a-sql-server-database/)
+*   [Troubleshooting SQL Server](/developerportal/deploy/troubleshooting-sql-server/)
+*   [Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
+*   [Setting up a new SQL Server database](/developerportal/deploy/setting-up-a-new-sql-server-database/)
+*   [Setting up a SQL Server user](/developerportal/deploy/setting-up-a-sql-server-user/)
+*   [Security checklist for your on-premises installation](/developerportal/deploy/security-checklist-for-your-on-premises-installation/)
+*   [Mendix on Windows - Microsoft SQL Server](/developerportal/deploy/mendix-on-windows-microsoft-sql-server/)
+*   [Deploying Mendix on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/)
+*   [U*ix Deployment](/developerportal/deploy/unix-like/)

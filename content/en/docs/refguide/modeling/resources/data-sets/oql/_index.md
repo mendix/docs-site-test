@@ -29,10 +29,10 @@ An OQL query can use these components:
 
 | Query Part | OQL | Purpose |
 | --- | --- | --- |
-| [Select clause](oql-select-clause) (required)  | `SELECT AVG(TotalPrice)` | Determines which attributes of the object being queried are retrieved. Any functions that need to be performed on the retrieved data should also be defined here.  |
-| [From clause](oql-from-clause) (required)  | `FROM Sales.Order`  | Designates the source entity from which the data will be retrieved.  |
-| [Where clause](oql-where-clause) (optional) | `WHERE IsPaid = 1` | Constrains the data being retrieved.  |
-| [Group by clause](oql-group-by-clause) (optional) | `GROUP BY Department` | Groups rows on the values of the specified attributes.  |
-| [Order by clause](oql-order-by-clause) (optional) | `ORDER BY Date` | Sorts rows on the specified attributes.  |
-| [Limit clause](oql-limit-clause) (optional) | `LIMIT 50 OFFSET 30` | Limits rows to a subset of the total amount.  |
+| [Select clause](/refguide/oql-select-clause/) (required)  | `SELECT AVG(TotalPrice)` | Determines which attributes of the object being queried are retrieved. Any functions that need to be performed on the retrieved data should also be defined here.  |
+| [From clause](/refguide/oql-from-clause/) (required)  | `FROM Sales.Order`  | Designates the source entity from which the data will be retrieved.  |
+| [Where clause](/refguide/oql-where-clause/) (optional) | `WHERE IsPaid = 1` | Constrains the data being retrieved.  |
+| [Group by clause](/refguide/oql-group-by-clause/) (optional) | `GROUP BY Department` | Groups rows on the values of the specified attributes.  |
+| [Order by clause](/refguide/oql-order-by-clause/) (optional) | `ORDER BY Date` | Sorts rows on the specified attributes.  |
+| [Limit clause](/refguide/oql-limit-clause/) (optional) | `LIMIT 50 OFFSET 30` | Limits rows to a subset of the total amount.  |
 

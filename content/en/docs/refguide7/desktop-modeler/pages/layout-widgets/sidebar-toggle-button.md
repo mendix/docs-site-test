@@ -1,12 +1,12 @@
 ---
 title: "Sidebar toggle button"
-url: /refguide7/sidebar-toggle-button
+url: /refguide7/sidebar-toggle-button/
 parent: "layout-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 
-The sidebar toggle is a button that when pressed will make a region of a [scroll container](scroll-container) appear or disappear. This makes it possible to create sidebars, for instance a menu on a mobile phone that is hidden by default and can be shown by clicking the button. See the picture for an example layout that used the sidebar toggle. 
+The sidebar toggle is a button that when pressed will make a region of a [scroll container](/refguide7/scroll-container/) appear or disappear. This makes it possible to create sidebars, for instance a menu on a mobile phone that is hidden by default and can be shown by clicking the button. See the picture for an example layout that used the sidebar toggle. 
 
 ![](/attachments/refguide7/desktop-modeler/pages/layout-widgets/sidebar-toggle-button/sidebar-toggle-button.png)
 
@@ -41,7 +41,7 @@ Choose the region that should be collapsed/expanded by clicking this button.
 | Left | The left region of the layout container will be toggled. |
 | Right | The right region of the layout container will be toggled. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The sidebar toggle is right-to-left-aware (RTL) which means that in RTL languages the sidebar will slide in from the right if you choose 'Left'.}
 

@@ -1,6 +1,6 @@
 ---
 title: "Advanced Custom Settings in Mendix Runtime"
-url: /refguide7/tricky-custom-runtime-settings
+url: /refguide7/tricky-custom-runtime-settings/
 parent: "custom-settings"
 description: "Describes advanced custom settings in Mendix Runtime and how to configure them."
 tags: ["Support", "custom settings"]
@@ -8,7 +8,7 @@ tags: ["Support", "custom settings"]
 
 ## 1 Introduction
 
-There are many custom settings in Mendix, most of which are described in [Custom Settings](/refguide7/custom-settings) in the Mendix Reference Guide.
+There are many custom settings in Mendix, most of which are described in [Custom Settings](/refguide7/custom-settings/) in the Mendix Reference Guide.
 
 However, a few of the more commonly used custom settings can be complicated and have far-reaching implications. That is why we would like to give these settings a bit of special attention and more thoroughly explain the consequences of changing them.
 
@@ -71,12 +71,12 @@ The settings below are used to define the database connection pooling behavior. 
 | `ConnectionPoolingMaxIdle` | Sets the cap on the number of "idle" instances in the pool. | 50 (since Mendix 3.3, 20 before Mendix 3.3) |
 | `ConnectionPoolingMinIdle` | Sets the minimum number of objects allowed in the pool before the evictor thread (if active) spawns new objects. Note that no objects are created when `numActive` + `numIdle` >= `maxActive`.  This setting has no effect if the idle object evictor is disabled (meaning, if `timeBetweenEvictionRunsMillis` <= 0). | 0 |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If you change these settings, you will need to restart your app to apply the changes.
 {{% /alert %}}
 
-{{% alert type="info" %}}
-These settings are configured *per runtime instance*. If you have [scaled your application](/developerportal/deploy/scale-environment), the number of connections on the database side will be multiplied by the number of runtime instances. For example, if you set `ConnectionPoolingMaxIdle` to `50` and scale your app to 2 runtime instances, each runtime instance will create at most 50 connections, but on the database side this will lead to a maximum of 100 connections.
+{{% alert color="info" %}}
+These settings are configured *per runtime instance*. If you have [scaled your application](/developerportal/deploy/scale-environment/), the number of connections on the database side will be multiplied by the number of runtime instances. For example, if you set `ConnectionPoolingMaxIdle` to `50` and scale your app to 2 runtime instances, each runtime instance will create at most 50 connections, but on the database side this will lead to a maximum of 100 connections.
 {{% /alert %}}
 
 When changing the `ConnectionPoolingMaxIdle` and `ConnectionPoolingMinIdle` settings, consider the following points:
@@ -114,4 +114,4 @@ In addition, keep in mind that changing this value for an application running in
 
 ## 5 Read More
 
-* [Custom Settings](/refguide7/custom-settings)
+* [Custom Settings](/refguide7/custom-settings/)

@@ -7,7 +7,7 @@ tags: ["microflow", "entity access"]
 
 ## 1 Introduction
 
-This document describes the properties of a microflow. If you want to see what microflows are for and what kind of elements they contain, you can check [Microflows](microflows).
+This document describes the properties of a microflow. If you want to see what microflows are for and what kind of elements they contain, you can check [Microflows](/refguide/microflows/).
 
 ## 2 Properties
 
@@ -59,7 +59,7 @@ Disallowing concurrent execution of a microflow can be useful if a microflow wou
 
 #### 2.3.1 Return Type
 
-The return type defines what information the microflow returns. The caller of the microflow will get a result of this type. See [Data Types](data-types) for the possible return types.
+The return type defines what information the microflow returns. The caller of the microflow will get a result of this type. See [Data Types](/refguide/data-types/) for the possible return types.
 
 {{% alert color="info" %}}
 To indicate whether or not an object should be committed, you can use Boolean as the return type of the microflow.
@@ -69,7 +69,7 @@ To indicate whether or not an object should be committed, you can use Boolean as
 
 #### 2.4.1 Apply Entity Access
 
-**Apply entity access** indicates whether entity access based on the current user is applied when performing operations on objects. Setting this to yes limits the objects that are retrieved by the [retrieve action](retrieve) to only those that the current user is allowed to see. Similarly, when reading and writing attributes and associations the entity access of the current user is applied. Conversely, if entity access is not applied, all operations are allowed and all objects are retrieved.
+**Apply entity access** indicates whether entity access based on the current user is applied when performing operations on objects. Setting this to yes limits the objects that are retrieved by the [retrieve action](/refguide/retrieve/) to only those that the current user is allowed to see. Similarly, when reading and writing attributes and associations the entity access of the current user is applied. Conversely, if entity access is not applied, all operations are allowed and all objects are retrieved.
 
 | Option | Description |
 | --- | --- |
@@ -86,13 +86,13 @@ Microflows that apply entity access have an **Entity Access** tag in the editor.
 
 #### 2.4.2 Allowed Roles
 
-**Allowed roles** defines which [module role](module-security#module-role) the user must have to be able to execute the microflow.
+**Allowed roles** defines which [module role](/refguide/module-security/#module-role) the user must have to be able to execute the microflow.
 
 {{% alert color="warning" %}}
 These roles are only checked when the microflow is executed from the client. A microflow is always allowed to call another microflow, and these roles are not checked then.
 {{% /alert %}}
 
-For more information, see [Module Security](module-security).
+For more information, see [Module Security](/refguide/module-security/).
 
 ### 2.5 Usage Section {#usage}
 
@@ -120,6 +120,6 @@ This property is accessible by right-clicking in the microflow and selecting **P
 
 ![Expose As Workflow Action](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/microflows/microflow/workflow-expose.jpg)
 
-By selecting the **Expose as workflow action**  option, you can expose the microflow as a [workflow](workflows) action. Exposing the workflow will make it appear in the **Toolbox** of a [workflow editor](workflows) in the category of your choice. When this action is used in a workflow, it will show the provided caption and icon.
+By selecting the **Expose as workflow action**  option, you can expose the microflow as a [workflow](/refguide/workflows/) action. Exposing the workflow will make it appear in the **Toolbox** of a [workflow editor](/refguide/workflows/) in the category of your choice. When this action is used in a workflow, it will show the provided caption and icon.
 
 The caption and category of the workflow action are required, but the icon is optional. When no icon is selected, the default workflow call action icon is used. The recommended size for the icon is 16x16 pixels.

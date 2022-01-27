@@ -1,8 +1,8 @@
 ---
 title: "Configure Your Theme"
-url: /howto7/front-end/configuring-your-theme
+url: /howto7/front-end/configuring-your-theme/
 category: "Front End"
-menu_order: 15
+weight: 15
 tags: ["theming", "UX", "front end"]
 aliases:
     - /howto7/ux/configuring-your-theme.html
@@ -13,7 +13,7 @@ aliases:
 
 This document describes how to configure the styling of your page in the Desktop Modeler and Web Modeler.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This functionality was introduced in Mendix 7.16.
 

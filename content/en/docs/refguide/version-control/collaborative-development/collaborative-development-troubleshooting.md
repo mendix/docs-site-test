@@ -13,7 +13,7 @@ Collaborative development allows users to share model changes with each other. T
 
 ## 2 Concepts
 
-For concepts and definitions, see the [Concepts](version-control#concepts) section in *Version Control*. 
+For concepts and definitions, see the [Concepts](/refguide/version-control/#concepts) section in *Version Control*. 
 
 ## 3 Studio Is Out of Sync {#out-of-sync}
 
@@ -46,7 +46,7 @@ You can choose one of the following:
 	b.  The warning described in the [Studio Pro & Studio Are Out of Sync](#out-of-sync) section will be displayed.<br/>
 
 	![](/attachments/refguide/version-control/collaborative-development/collaborative-development-troubleshooting/changes-are-out-of-sync.png)<br/>
-<br/>
+
 	c. Click **Merge** to synchronize the changes with Studio.<br/>
 
 	d. Open the previous branch and do the merge again. 
@@ -82,5 +82,5 @@ You can do one of the following:
 
 ## 7 Read More
 
-* [Version Control](version-control) 
-* [Collaborative Development in Studio](/studio/collaborative-development)
+* [Version Control](/refguide/version-control/) 
+* [Collaborative Development in Studio](/studio/collaborative-development/)

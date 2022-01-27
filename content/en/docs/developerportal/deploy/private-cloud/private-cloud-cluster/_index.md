@@ -42,7 +42,7 @@ Should you consider using a connected environment, the following URLs should be 
 
 ## 3 Creating a Cluster & Namespace
 
-### 3.1 Creating a Cluster
+### 3.1 Creating a Cluster{#create-cluster}
 
 1. Click **Cloud Settings** on the **General Settings** page of your Mendix app.
     
@@ -72,7 +72,7 @@ Should you consider using a connected environment, the following URLs should be 
     
   1. **Name** – The name you want to give the cluster you are creating.
   
-  2. **Type** – choose the correct type for your cluster. See [Supported Providers](private-cloud-supported-environments) for more information.
+  2. **Type** – choose the correct type for your cluster. See [Supported Providers](/developerportal/deploy/private-cloud-supported-environments/) for more information.
 
   3. **Description** – an optional description of the cluster which will be displayed under the cluster name in the cluster manager.
 
@@ -96,7 +96,7 @@ To add a namespace, do the following:
 
 3. Enter the following details:
 	* **Namespace** – this is the namespace in your platform; this must conform to the namespace naming conventions of the cluster: all lower-case with hyphens allowed within the name
-	* **Installation type** – if you want to [create environments and deploy your app from the Mendix Developer Portal](private-cloud-deploy), choose **Connected**, but if you only want to [control your deployments through the Mendix Operator using the CLI](private-cloud-operator), choose **Standalone**
+	* **Installation type** – if you want to [create environments and deploy your app from the Mendix Developer Portal](/developerportal/deploy/private-cloud-deploy/), choose **Connected**, but if you only want to [control your deployments through the Mendix Operator using the CLI](/developerportal/deploy/private-cloud-operator/), choose **Standalone**
 
 4. Click **Done** to create the namespace.
 
@@ -175,11 +175,11 @@ You can do this as follows:
 
 Once you are signed in to your cluster you can run the Configuration Tool.
 
-To install in non-interactive mode please see: [Install and Configure Mendix for Private Cloud Non-interactive Mode](private-cloud-cli-non-interactive)
+To install in non-interactive mode please see: [Install and Configure Mendix for Private Cloud Non-interactive Mode](/developerportal/deploy/private-cloud-cli-non-interactive/)
 
 1. Copy the **Installation Command** by clicking **Copy to clipboard**.
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/installation-command.png)
+    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/private-cloud-cli-non-interactive/installation-command.png)
 
 2. Paste the command into your command line terminal and press <kbd>Enter</kbd>
 
@@ -201,7 +201,7 @@ If the Mendix Operator and the Mendix Gateway Agent have not been installed in y
 
 2. Select the required **Cluster Mode** – *connected* or *standalone*.
 
-    For more information, see [Connected and Standalone Clusters](private-cloud#connected-standalone) in the *Private Cloud* documentation.
+    For more information, see [Connected and Standalone Clusters](/developerportal/deploy/private-cloud/#connected-standalone) in the *Private Cloud* documentation.
 
 3. Select the required **Cluster Type** – *openshift* or *generic*.
 
@@ -325,7 +325,7 @@ Enabling the **Strict TLS** option will enable full TLS certificate validation a
 Disabling **Strict TLS** will attempt to connect with TLS, but skip certificate validation. If encryption is not supported, it will fall back to an unencrypted connection.
 {{% /alert %}}
 
-**Dedicated JDBC** will enable you to enter the [database configuration parameters](/refguide/custom-settings) for an existing database directly, as supported by the Mendix Runtime.
+**Dedicated JDBC** will enable you to enter the [database configuration parameters](/refguide/custom-settings/) for an existing database directly, as supported by the Mendix Runtime.
 
 {{% alert color="info" %}}
 A dedicated JDBC database cannot be used by more than one Mendix app.
@@ -340,7 +340,7 @@ If the plan name already exists you will receive an error that it cannot be crea
 {{% /alert %}}
 
 {{% alert color="info" %}}
-To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide) the Mendix Operator to version 1.1.0 or later.
+To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide/) the Mendix Operator to version 1.1.0 or later.
 {{% /alert %}}
 
 ##### 4.3.2.2 Storage Plan{#storage-plan}
@@ -396,7 +396,7 @@ If the plan name already exists you will receive an error that it cannot be crea
 {{% /alert %}}
 
 {{% alert color="info" %}}
-To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide) the Mendix Operator to version 1.8.0 or later.
+To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide/) the Mendix Operator to version 1.8.0 or later.
 {{% /alert %}}
 
 **S3 (create bucket and account with existing policy)** will connect to an AWS account to create S3 buckets and associated IAM user accounts. Each app environment will receive a dedicated S3 bucket and an IAM user account. An existing policy, which you specify, will be attached to the account. The Mendix Operator will use a **management IAM user account** to create and delete S3 buckets and IAM user accounts. You will need to provide all the information relating to your Amazon S3 storage such as plan name, region, policy ARN, access key, and secret key.
@@ -498,7 +498,7 @@ If the plan name already exists you will receive an error that it cannot be crea
 {{% /alert %}}
 
 {{% alert color="info" %}}
-To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide) the Mendix Operator to version 1.8.0 or later.
+To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide/) the Mendix Operator to version 1.8.0 or later.
 {{% /alert %}}
 
 **S3 (create account with inline policy)** will connect to an AWS account to IAM user accounts. Each app environment will receive a dedicated IAM user account with an inline policy. This inline policy only allows access to objects in the existing S3 bucket if the object name prefix matches the environment's account name (IAM user name). The Mendix Operator will use a **management IAM user account** to create and delete IAM user accounts. You will need to provide all the information relating to your Amazon S3 storage such as plan name, bucket name, region, access key, and secret key.
@@ -535,7 +535,7 @@ If the plan name already exists you will receive an error that it cannot be crea
 {{% /alert %}}
 
 {{% alert color="info" %}}
-To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide) the Mendix Operator to version 1.8.0 or later.
+To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide/) the Mendix Operator to version 1.8.0 or later.
 {{% /alert %}}
 
 **S3 (create account with existing policy)** will connect to an AWS account to IAM user accounts. Each app environment will receive a dedicated IAM user account. The specified existing policy will be attached to the account and should only allow access to objects in the existing S3 bucket if the object name prefix matches the environment's account name (IAM user name). The Mendix Operator will use a **management IAM user account** to create and delete IAM user accounts. You will need to provide all the information relating to your Amazon S3 storage such as plan name, bucket name, region, policy ARN, access key, and secret key.
@@ -628,7 +628,7 @@ If the plan name already exists you will receive an error that it cannot be crea
 {{% /alert %}}
 
 {{% alert color="info" %}}
-To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide) the Mendix Operator to version 1.8.0 or later.
+To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide/) the Mendix Operator to version 1.8.0 or later.
 {{% /alert %}}
 
 **S3 (existing bucket and account)** will connect to an existing S3 bucket with the provided IAM user access key and secret keys. All apps (environments) will use the same S3 bucket and an IAM user account. You will need to provide all the information relating to your Amazon S3 storage such as plan name, endpoint, access key, and secret key. The associated IAM user account needs to have the following IAM policy (replace `<bucket_name>` with the your S3 bucket name):
@@ -671,7 +671,7 @@ If the plan name already exists you will receive an error that it cannot be crea
 {{% /alert %}}
 
 {{% alert color="info" %}}
-To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide) the Mendix Operator to version 1.1.0 or later.
+To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide/) the Mendix Operator to version 1.1.0 or later.
 {{% /alert %}}
 
 **Azure Blob storage Container (existing)** will connect to an existing Azure Blob storage Container with the provided storage account name and key. All apps will use the same Container bucket and account credentials. You will need to provide all the information about your Azure Blob storage such as plan name, account name, account key, and container name.
@@ -694,7 +694,7 @@ If the plan name already exists you will receive an error that it cannot be crea
 {{% /alert %}}
 
 {{% alert color="info" %}}
-To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide) the Mendix Operator to version 1.1.0 or later.
+To use this plan, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide/) the Mendix Operator to version 1.1.0 or later.
 {{% /alert %}}
 
 **Ephemeral** will enable you to quickly set up your environment and deploy your app, but any data objects you store will be lost when you restart your environment.
@@ -733,7 +733,7 @@ You can choose one of the following registry types. OpenShift registries can onl
 
 **Additional Information**
 
-You can host the default Mendix components in your own registry, for example if your cluster is firewalled and cannot open up a route to the Mendix registry. In this case you need to migrate some, or all, of the Mendix components to your cluster. See the instructions in [Migrating to Your Own Registry](private-cloud-migrating) to find out how to do this.
+You can host the default Mendix components in your own registry, for example if your cluster is firewalled and cannot open up a route to the Mendix registry. In this case you need to migrate some, or all, of the Mendix components to your cluster. See the instructions in [Migrating to Your Own Registry](/developerportal/deploy/private-cloud-migrating/) to find out how to do this.
 
 For **OpenShift 3** and **OpenShift 4** registries, the default image pull credentials from the `default` ServiceAccount will be used. No additional configuration steps are required to enable image pulls in OpenShift.
 
@@ -784,7 +784,7 @@ For more information about how to use this field, see the [http proxy documentat
 #### 4.3.4 Custom TLS{#custom-tls}
 
 {{% alert color="info" %}}
-To use this option, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide) the Mendix Operator to version 1.7.0 or later.
+To use this option, [upgrade](/developerportal/deploy/private-cloud-upgrade-guide/) the Mendix Operator to version 1.7.0 or later.
 {{% /alert %}}
 
 To use encryption and avoid [MITM attacks](https://en.wikipedia.org/wiki/Man-in-the-middle_attack), communication with all external services should be done over TLS.
@@ -875,7 +875,7 @@ When using a connected cluster, its status will be shown as **Connected** in the
 Some advanced configuration options of the Mendix Operator are not yet available in the **Configuration Tool**.
 These options can be changed by editing the `OperatorConfiguration` custom resource directly in Kubernetes.
 
-Look at [Supported Providers](private-cloud-supported-environments) to ensure that your planned configuration is supported by Mendix for Private Cloud.
+Look at [Supported Providers](/developerportal/deploy/private-cloud-supported-environments/) to ensure that your planned configuration is supported by Mendix for Private Cloud.
 
 To start editing the `OperatorConfiguration`, use the following commands (replace `{namespace}` with the namespace where the operator is installed):
 
@@ -1257,6 +1257,40 @@ The following fields can be configured:
 * `runtimeResources`: this is used for `mendix-runtime` containers in the namespace (but this is overwritten if the Mendix app CRD has a resources block)
 * `buildResources`  – this is used for the main container in `*-build` pods
 
+#### 5.3.4 Customize Registry ImageNameTemplate{#customize-registry-imagenametemplate}
+
+ImageNameTemplate allows you to specify how the image name and tag are generated. It allows both use of OpenShift-style "repository per app" and ECR-style "tag per app". For example, a value of imageNameTemplate may be `registry.example.com/mendix-apps/{{.Name}}-{{.Version}}-{{.UnixTimestamp}}` which would generate an image for the build like `registry.example.com/mendix-apps/pgv9gw71-0.0.1.2-1640699175.392`
+
+The imageNameTemplate is generated by mxpc-cli when you update the registry configuration.
+
+{{% alert color="warning" %}}
+Any manual changes you make to the imageNameTemplate in the manifest are overwritten when you update the registry configuration using mxpc-cli.
+{{% /alert %}}
+
+An example of the imageNameTemplate in the operator configuration manifest is given below.
+
+```yaml
+  apiVersion: privatecloud.mendix.com/v1alpha1
+  kind: OperatorConfiguration
+      # …
+  spec:
+    registry:
+      imageNameTemplate: 'my-registry/{{.Name}}-{{.Version}}-{{.UnixTimestamp}}'
+      pullURL: 'image-registry.openshift-image-registry.svc:5000'
+      pushURL: 'image-registry.openshift-image-registry.svc:5000'
+      type: openshift
+    # …
+```
+
+You can customize the registry imageNameTemplate in OperatorConfiguration with these available variables:
+
+* `{{.Name}}`: internal environment name.
+* `{{.Generation}}`: value of the Build CR’s [Generation](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace#generation) attribute.
+* `{{.Version}}`: value of sourceVersion in MendixApp CR. The value will be automatically set to the MDA version if an MDA is deployed from the Private Cloud Portal.
+* `{{.UnixTimestamp}}`: current UNIX timestamp with at least millisecond precision e.g. 1640615972.897.
+* `{{.Timestamp}}`: current timestamp in the following format 20211231.081224.789 for 2021-12-31 08:12:24.789.
+
+
 ## 6 Cluster and Namespace Management
 
 Once it is configured, you can manage your cluster and namespaces through the Developer Portal.
@@ -1587,4 +1621,4 @@ Within your cluster you can run one, or several, Mendix apps. Each app runs in a
 
 ![](/attachments/developerportal/deploy/private-cloud/private-cloud-cluster/mx4pc-containerized-architecture.png)
 
-To ensure that every app deployed to a namespace has a unique name, the environment will have an **Environment UUID** added to the environment name when it is deployed to ensure that it is unique in the project. This also ensures the app cannot have the same name as the Mendix tools used to deploy the app. See [Deploying a Mendix App to a Private Cloud Cluster](private-cloud-deploy) for more information.
+To ensure that every app deployed to a namespace has a unique name, the environment will have an **Environment UUID** added to the environment name when it is deployed to ensure that it is unique in the project. This also ensures the app cannot have the same name as the Mendix tools used to deploy the app. See [Deploying a Mendix App to a Private Cloud Cluster](/developerportal/deploy/private-cloud-deploy/) for more information.

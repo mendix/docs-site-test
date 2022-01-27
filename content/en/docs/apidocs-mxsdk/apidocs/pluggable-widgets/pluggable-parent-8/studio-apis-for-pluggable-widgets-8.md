@@ -11,7 +11,7 @@ tags: ["Widget", "Pluggable", "Custom", "JavaScript", "React", "Preview"]
 
 This guide explains the APIs offered by Mendix Studio and Studio Pro so you can build better pluggable widgets. Specifically, you can use these APIs and modules to alter pluggable widgets' preview appearances while working in Mendix Studio or Studio Pro's Design mode.
 
-In contrast, [Client APIs Available to Pluggable Widgets](/apidocs-mxsdk/apidocs/client-apis-for-pluggable-widgets-8) is meant for pluggable widget development once your app is running in the client. This guide's APIs are available in Mendix 8.0.0 and higher.
+In contrast, [Client APIs Available to Pluggable Widgets](/apidocs-mxsdk/apidocs/client-apis-for-pluggable-widgets-8/) is meant for pluggable widget development once your app is running in the client. This guide's APIs are available in Mendix 8.0.0 and higher.
 
 ## 2 Values API {#values}
 
@@ -291,6 +291,6 @@ export function getPreviewCss() {
 
 ## 4 Read More
 
-* [Client APIs Available to Pluggable Widgets (Mendix 8)](/apidocs-mxsdk/apidocs/client-apis-for-pluggable-widgets-8)
-* [Pluggable Widget Property Types (Mendix 8)](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8)
-* [How to Build a Pluggable Native Widget](/howto/extensibility/build-native-widget)
+* [Client APIs Available to Pluggable Widgets (Mendix 8)](/apidocs-mxsdk/apidocs/client-apis-for-pluggable-widgets-8/)
+* [Pluggable Widget Property Types (Mendix 8)](/apidocs-mxsdk/apidocs/property-types-pluggable-widgets-8/)
+* [How to Build a Pluggable Native Widget](/howto/extensibility/build-native-widget/)

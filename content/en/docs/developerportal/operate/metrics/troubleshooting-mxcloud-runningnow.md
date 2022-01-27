@@ -31,13 +31,13 @@ You can use the information displayed in the **Running now** tab for various pur
 * To see if any actions are currently running in your application – this can be useful if you want to shutdown the application to perform maintenance
 * If you fear two actions are blocking one another you might be able to prevent the deadlock by stopping one of the two actions using the **Kill request** button
 * If you have a performance or memory problem the listed actions (and their **Details** page(s)) might help you pinpoint the most likely cause of the problem
-* If the above alone is not enough, you can combine the information in this tab page with the information in the **Cache** tab page, the [Logs](logs) page, and the **Trends** tab page to gather more information
+* If the above alone is not enough, you can combine the information in this tab page with the information in the **Cache** tab page, the [Logs](/developerportal/operate/logs/) page, and the **Trends** tab page to gather more information
 
 ## 3 Read More
 
-* [Alerts](monitoring-application-health)
-* [Application Trends in Mendix Cloud v3](trends)
-* [Application Trends in Mendix Cloud v4](trends-v4)
-* [Metrics](metrics)
-* [Node Permissions](/developerportal/deploy/node-permissions)
-* [Cache Metrics](troubleshooting-mxcloud-cache)
+* [Alerts](/developerportal/operate/monitoring-application-health/)
+* [Application Trends in Mendix Cloud v3](/developerportal/operate/trends/)
+* [Application Trends in Mendix Cloud v4](/developerportal/operate/trends-v4/)
+* [Metrics](/developerportal/operate/metrics/)
+* [Node Permissions](/developerportal/deploy/node-permissions/)
+* [Cache Metrics](/developerportal/operate/troubleshooting-mxcloud-cache/)

@@ -25,4 +25,4 @@ async function closeConnection(workingCopy: OnlineWorkingCopy) {
 }
 ```
 
-Continue with [How to Find Things in the Model](finding-things-in-the-model).
+Continue with [How to Find Things in the Model](/apidocs-mxsdk/mxsdk/finding-things-in-the-model/).

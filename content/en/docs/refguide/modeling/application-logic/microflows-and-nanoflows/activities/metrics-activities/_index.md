@@ -11,12 +11,12 @@ The activities described in this document are in the **Metrics Activities** sect
 
 The following are the metrics activities you can use in your microflow:
 
-* [Counter](metrics-counter) – increments a counter by the specified value
-* [Increment Counter](metrics-increment-counter) – increments a counter by 1
-* [Gauge](metrics-gauge) – specifies the value of a gauge
+* [Counter](/refguide/metrics-counter/) – increments a counter by the specified value
+* [Increment Counter](/refguide/metrics-increment-counter/) – increments a counter by 1
+* [Gauge](/refguide/metrics-gauge/) – specifies the value of a gauge
 
 ## 2 Read More
 
-* [Metric Configuration](metrics)
-* [Activities](activities)
+* [Metric Configuration](/refguide/metrics/)
+* [Activities](/refguide/activities/)
 * [Meter Concepts](https://micrometer.io/docs/concepts)

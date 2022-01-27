@@ -6,4 +6,4 @@ tags: ["studio pro"]
 ---
 
 
-For information on this constraint function, see [XPath length](xpath-length).
+For information on this constraint function, see [XPath length](/refguide/xpath-length/).

@@ -1,11 +1,11 @@
 ---
 title: "Table row"
-url: /refguide7/table-row
+url: /refguide7/table-row/
 parent: "table"
 ---
 
 
-A table consists of a number of rows divided into [table cells](table-cell).
+A table consists of a number of rows divided into [table cells](/refguide7/table-cell/).
 
 ## Common properties
 

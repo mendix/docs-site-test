@@ -40,7 +40,7 @@ User task properties consist of the following sections:
 
 ### 2.2 Data {#data} 
 
-**Entity** is an entity that stores data on the user task execution. Once you drag and drop a user task to the workflow, the entity is created automatically for every user task, which specializes from the **WorkflowUserTask** entity in the System module. For more information on entities, see [Workflow Entities in the System Module](workflows#workflow-entities) section in *Workflows*.
+**Entity** is an entity that stores data on the user task execution. Once you drag and drop a user task to the workflow, the entity is created automatically for every user task, which specializes from the **WorkflowUserTask** entity in the System module. For more information on entities, see [Workflow Entities in the System Module](/refguide/workflows/#workflow-entities) section in *Workflows*.
 
 {{% alert color="info" %}}
 
@@ -48,7 +48,7 @@ When removing the user task from the workflow, the related entity remains in the
 
 {{% /alert %}}
 
-You can set [entity access](module-security#entity-access) in the domain model to restrict access to a certain user task.  
+You can set [entity access](/refguide/module-security/#entity-access) in the domain model to restrict access to a certain user task.  
 
 You can also add task-specific attributes, such as *Priority*. The *Priority* attribute can help you prioritize this user task across multiple instances. 
 
@@ -137,8 +137,8 @@ Possible options of this property are described in the table below:
 
 | Option    | Description                                                  |
 | --------- | ------------------------------------------------------------ |
-| XPath     | Allows you to filter users who should be assigned the user task. For example, you can assign a certain task only to users with the Manager user role. You can use attributes of the of the **User Entity** set in [Project Settings](project-settings#workflows). |
-| Microflow | Allows you to assign the user task to certain users. Using microflow you can check, for example, which users have the right to approve user tasks and are currently not on vacation and assign the task only to users who passed the check.<br />The return type of the microflow should be the **User Entity** set in [Project Settings](project-settings#workflows). |
+| XPath     | Allows you to filter users who should be assigned the user task. For example, you can assign a certain task only to users with the Manager user role. You can use attributes of the of the **User Entity** set in [Project Settings](/refguide/project-settings/#workflows). |
+| Microflow | Allows you to assign the user task to certain users. Using microflow you can check, for example, which users have the right to approve user tasks and are currently not on vacation and assign the task only to users who passed the check.<br />The return type of the microflow should be the **User Entity** set in [Project Settings](/refguide/project-settings/#workflows). |
 
 #### 2.9.2 XPath Constraint
 
@@ -150,4 +150,4 @@ Specifies the microflow used to assign the user task. This option is displayed o
 
 ## 3 Read More
 
-* [Workflows](workflows)
+* [Workflows](/refguide/workflows/)

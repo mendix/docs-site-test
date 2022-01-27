@@ -58,6 +58,6 @@ The level of support depends on the availability and effort of the developer and
 
 ## 3 Read More
 
-* [Marketplace Overview](app-store-overview)
-* [How to Share Marketplace Content](share-app-store-content)
-* [How to Use Marketplace Content in Studio Pro](app-store-content)
+* [Marketplace Overview](/appstore/general/app-store-overview/)
+* [How to Share Marketplace Content](/appstore/general/share-app-store-content/)
+* [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/)

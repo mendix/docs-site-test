@@ -1,13 +1,13 @@
 ---
 title: "Language Operations"
-url: /refguide8/language-operations
+url: /refguide8/language-operations/
 parent: "translatable-texts"
-menu_order: 40
+weight: 40
 tags: ["studio pro", "translation", "languages", "translatable text"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/language-operations.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/language-operations.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -43,7 +43,7 @@ Click **Apply** to apply the selected language operation.
 
 Select the **Source language** and the **Destination language** from the  drop-down menus.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 * Texts that are absent in the source language will be absent in the destination language – any original text will be removed
 * All the texts in the source language will be deleted
 {{% /alert %}}
@@ -54,7 +54,7 @@ Select the **Source language** and the **Destination language** from the  drop-d
 
 Select the **Source language** and the **Destination language** from the  drop-down menus.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Texts that are absent in the source language will be absent in the destination language – any original text will be removed
 {{% /alert %}}

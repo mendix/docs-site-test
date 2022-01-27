@@ -13,12 +13,12 @@ These activities can only be used in **Microflows**.
 The **Send external object** activity can be used to persist changes to an external object.
 
 {{% alert color="info" %}}
-The ability to send attributes using this activity was introduced in Studio Pro [9.6.0](/releasenotes/studio-pro/9.6). The sending of association members was added in Studio Pro [9.8.0](/releasenotes/studio-pro/9.8)
+The ability to send attributes using this activity was introduced in Studio Pro [9.6.0](/releasenotes/studio-pro/9.6/). The sending of association members was added in Studio Pro [9.8.0](/releasenotes/studio-pro/9.8/)
 {{% /alert %}}
 
 ## 2 Updatable External Entities
 
-External entities may have updatable attributes. The values of these attributes can change, for instance in a widget or by using the [change object activity](change-object). Associations between two external entities from the same OData service may be updatable as well.
+External entities may have updatable attributes. The values of these attributes can change, for instance in a widget or by using the [change object activity](/refguide/change-object/). Associations between two external entities from the same OData service may be updatable as well.
 
 Use the **Send External Object** activity to send the changed attributes and the changed associations that the entity owns to the app that publishes the entity. That app will persist the changes, overwriting the previous values of the attributes and associations.
 
@@ -30,6 +30,6 @@ Some services may have updatable attributes that are part of the key of the enti
 
 ## 3 Related
 
-Persistable objects are persisted by using the [commit activity](committing-objects). External entities cannot be committed. Use this activity instead.
+Persistable objects are persisted by using the [commit activity](/refguide/committing-objects/). External entities cannot be committed. Use this activity instead.
 
-The [Save](button-widgets) button does not work for external entities, either. To persist changes to an external object on a page, use a microflow that has this activity.
+The [Save](/refguide/button-widgets/) button does not work for external entities, either. To persist changes to an external object on a page, use a microflow that has this activity.

@@ -1,14 +1,14 @@
 ---
 title: "Published Web Services"
-url: /refguide7/published-web-services
+url: /refguide7/published-web-services/
 parent: "integration"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-This document describes published web services. If you're looking for specific information on the published web services screen, you can check the [Published web service](published-web-service) documentation.
+This document describes published web services. If you're looking for specific information on the published web services screen, you can check the [Published web service](/refguide7/published-web-service/) documentation.
 
 {{% /alert %}}
 

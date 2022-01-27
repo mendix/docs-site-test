@@ -1,20 +1,20 @@
 ---
 title: "String Function Calls"
-url: /refguide8/string-function-calls
+url: /refguide8/string-function-calls/
 parent: "expressions"
-menu_order: 80
+weight: 80
 description: "Describes the functions for converting and inspecting strings in Mendix."
 tags: ["studio pro", "string function calls", "expression", "expressions"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/string-function-calls.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/string-function-calls.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-This document describes functions that are used to convert and inspect [strings](data-types). Note that these functions never change the string itself, they only return a new value.
+This document describes functions that are used to convert and inspect [strings](/refguide8/data-types/). Note that these functions never change the string itself, they only return a new value.
 
 Strings are surrounded by quotes. If the string contains a quote, it should be escaped by another quote. For example: `'this isn''t funny'`.
 
@@ -323,7 +323,7 @@ contains('stringtosearchin', $param)
 
 The input above will return `true`.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This function is case-sensitive.
 {{% /alert %}}
 
@@ -475,15 +475,15 @@ The input parameters are described in the table below:
 | String to try and match     | String |
 | Regular expression to match | String |
 
-{{% alert type="info" %}}
-The regular expression must be provided as a string. Although it uses the same format for regular expressions, you cannot use a [regular expression](regular-expressions) resource document in this function.
+{{% alert color="info" %}}
+The regular expression must be provided as a string. Although it uses the same format for regular expressions, you cannot use a [regular expression](/refguide8/regular-expressions/) resource document in this function.
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Please note that this function call uses the regular expression language provided by the current platform:
 
-* When used inside a [microflow](microflow) – Java's regular expressions (for details, see [Class Pattern documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html))
+* When used inside a [microflow](/refguide8/microflow/) – Java's regular expressions (for details, see [Class Pattern documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html))
 * When used in the client – JavaScript's regular expressions (for details, see [Regular Expressions documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions))
 
 {{% /alert %}}
@@ -535,15 +535,15 @@ The input parameters are described in the table below:
 | The regular expression to match; if you want to search for a literal string, enclose it between `\Q` and `\E` (for example, `\QPaul S. Mueller\E` will search for the string `Paul S. Mueller`, without interpreting the dot as a wildcard) | String |
 | The string to be substituted for each match (this does not support backreferences, substitutions, or captures) | String |
 
-{{% alert type="info" %}}
-The regular expression must be provided as a string. Although it uses the same format for regular expressions, you cannot use a [regular expression](regular-expressions) resource document in this function.
+{{% alert color="info" %}}
+The regular expression must be provided as a string. Although it uses the same format for regular expressions, you cannot use a [regular expression](/refguide8/regular-expressions/) resource document in this function.
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Please note that this function call uses the regular expression language provided by the current platform:
 
-* When used inside [microflows](microflows) – Java's regular expressions (for details, see [Class Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html))
+* When used inside [microflows](/refguide8/microflows/) – Java's regular expressions (for details, see [Class Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html))
 * When used in the client – JavaScript's regular expressions (for details, see [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions))
 
 {{% /alert %}}
@@ -596,15 +596,15 @@ The input parameters are described in the table below:
 | The regular expression to match; if you want to search for a literal string, enclose it between `\Q` and `\E` (for example, `\QPaul S. Mueller\E` will search for the string `Paul S. Mueller`, without interpreting the dot as a wildcard) | String |
 | The string to be substituted for each match (this does not support backreferences, substitutions, or captures) | String |
 
-{{% alert type="info" %}}
-The regular expression must be provided as a string. Although it uses the same format for regular expressions, you cannot use a [regular expression](regular-expressions) resource document in this function.
+{{% alert color="info" %}}
+The regular expression must be provided as a string. Although it uses the same format for regular expressions, you cannot use a [regular expression](/refguide8/regular-expressions/) resource document in this function.
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Please note that this function call uses the regular expression language provided by the current platform:
 
-* When used inside a [microflow](microflow) – Java's regular expressions (for details, see [Class Pattern documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html))
+* When used inside a [microflow](/refguide8/microflow/) – Java's regular expressions (for details, see [Class Pattern documentation](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html))
 * When used in the client – JavaScript's regular expressions (for details, see [Regular Expressions documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions))
 
 {{% /alert %}}
@@ -644,7 +644,7 @@ The input parameters are described in the table below:
 | First parameter  | String, integer/long, decimal |
 | Second parameter | String, integer/long, decimal |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 At least one of the parameters must be of type string.
 

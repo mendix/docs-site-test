@@ -1,8 +1,8 @@
 ---
 title: "DB2"
-url: /refguide7/db2
+url: /refguide7/db2/
 parent: "data-storage"
-menu_order: 40
+weight: 40
 ---
 
 ## 1 Introduction

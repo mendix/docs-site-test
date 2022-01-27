@@ -14,7 +14,7 @@ This activity can only be used in **Microflows**.
 
 ## 1 Introduction
 
-The **Export with mapping** activity allows you to export the data stored in [domain model](domain-model) entities into an XML document, JSON document, or string variable.
+The **Export with mapping** activity allows you to export the data stored in [domain model](/refguide/domain-model/) entities into an XML document, JSON document, or string variable.
 
 ## 2 Properties
 
@@ -39,19 +39,19 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.1 Export Mapping
 
-The [Export Mapping](export-mappings) action defines in which way the data in the [domain model](domain-model) corresponds with the XML schema or JSON structure.
+The [Export Mapping](/refguide/export-mappings/) action defines in which way the data in the [domain model](/refguide/domain-model/) corresponds with the XML schema or JSON structure.
 
 ### 3.2 Parameter Type
 
-If the [export mapping](export-mappings) requires an input, this field shows the type of the input.
+If the [export mapping](/refguide/export-mappings/) requires an input, this field shows the type of the input.
 
 ### 3.3 Parameter
 
-If the [export mapping](export-mappings) requires an input, you can select a parameter of the correct type.
+If the [export mapping](/refguide/export-mappings/) requires an input, you can select a parameter of the correct type.
 
 ### 3.4 Content Type
 
-If the [export mapping](export-mappings) is based on a message definition, it can export both XML and JSON. Choose which type of output you want.
+If the [export mapping](/refguide/export-mappings/) is based on a message definition, it can export both XML and JSON. Choose which type of output you want.
 
 ### 3.5 Validate Against Schema
 

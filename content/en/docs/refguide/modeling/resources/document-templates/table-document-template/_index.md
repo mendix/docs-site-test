@@ -16,7 +16,7 @@ Tables can be used both inside and outside the data view or templategrid widgets
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide/modeling/resources/document-templates/table-document-template/918134.png)
+![](/attachments/refguide/modeling/resources/document-templates/918134.png)
 
 This table has four rows and three columns. The last row contains a data view with another table.
 
@@ -30,7 +30,7 @@ A column in a table.
 
 ### 2.2 Row
 
-A row in a table. See [Row (document template)](row-document-template).
+A row in a table. See [Row (document template)](/refguide/row-document-template/).
 
 ## 3 Appearance Properties
 
@@ -54,7 +54,7 @@ Cell padding specifies the space between the content of the cell and the cell wa
 
 ### 3.4 Style
 
-For details, see [Style](style).
+For details, see [Style](/refguide/style/).
 
 ## 4 Common Properties
 

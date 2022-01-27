@@ -28,9 +28,9 @@ Buttons allow you to perform the following actions:
 * **Back** – goes back up one level; at the top level, this button is disabled
 * **Go to** – opens a zoomed-in level and opens up the selected document 
 * **Tasks** – allows you to perform specific actions such as reverting the change to the latest commit, or solving conflicts
-* **Update** – retrieves latest changes from the repository (for more information on the update concept, see the [Update](version-control#update) section in *Version Control*) 
-* **Commit** – commits your changes to the repository and starts a new revision (for more information on the commit concept, see the [Commit](version-control#commit) section in *Version Control*)
-* **History** – opens the **History** dialog box that shows the changes made on the current development line of the app (for more information on history, see [History](history-dialog))
+* **Update** – retrieves latest changes from the repository (for more information on the update concept, see the [Update](/refguide/version-control/#update) section in *Version Control*) 
+* **Commit** – commits your changes to the repository and starts a new revision (for more information on the commit concept, see the [Commit](/refguide/version-control/#commit) section in *Version Control*)
+* **History** – opens the **History** dialog box that shows the changes made on the current development line of the app (for more information on history, see [History](/refguide/history-dialog/))
 
 The **Back** and **Go to** buttons are common throughout all the levels, while other buttons will only apply to a specific one.
 
@@ -91,7 +91,7 @@ The left side of the grid contains the following columns:
 The zoomed-in level for conflicted documents is split into two grids, with conflicting elements on the left and conflicting properties on the right.
 
 {{% alert color="info" %}}
-Mendix 9 has an improved conflict resolution method compared to Mendix 8. You can turn this off in the **Edit > Preferences > New features** dialog. If this is turned off, you should refer to the Mendix 8 version of this documentation [Changes Pane - Mendix 8](/refguide8/changes-pane#conflicts).
+Mendix 9 has an improved conflict resolution method compared to Mendix 8. You can turn this off in the **Edit > Preferences > New features** dialog. If this is turned off, you should refer to the Mendix 8 version of this documentation [Changes Pane - Mendix 8](/refguide8/changes-pane/#conflicts).
 {{% /alert %}}
 
 There are two sorts of conflict:
@@ -103,7 +103,7 @@ The toolbar at this level contains the following buttons:
 
 * **Back** – takes you back to the top level
 * **Go to** – takes you directly to the selected element
-* **Merge** – start the merge process — instructions for resolving conflicts are in the document [New Merge Algorithm with Fine-Grained Conflict Resolution](new-merge-algorithm) 
+* **Merge** – start the merge process — instructions for resolving conflicts are in the document [New Merge Algorithm with Fine-Grained Conflict Resolution](/refguide/new-merge-algorithm/) 
 * **Show purely visual changes** – shows visual changes, such as dragging an entity to a new location in the domain model
 
 The grid on the left contains the following columns
@@ -123,7 +123,7 @@ The grid on the right contains the following columns:
 
 ### 4.3 Merge Mode{#merge-mode}
 
-When you click **Merge** to start the merge mode, you will see options to resolve the conflicts. For more information on resolving resolving conflicts see [New Merge Algorithm with Fine-Grained Conflict Resolution](new-merge-algorithm).
+When you click **Merge** to start the merge mode, you will see options to resolve the conflicts. For more information on resolving resolving conflicts see [New Merge Algorithm with Fine-Grained Conflict Resolution](/refguide/new-merge-algorithm/).
 
 The document you are working on can be edited while in merge mode to allow you to resolve the conflict successfully.
 
@@ -146,5 +146,5 @@ The left and right panes will contain the same information as in [Zoomed-In Leve
 
 ##  5 Read More
 
-* [Studio Pro Overview](studio-pro-overview)
-* [Version Control](version-control) 
+* [Studio Pro Overview](/refguide/studio-pro-overview/)
+* [Version Control](/refguide/version-control/) 

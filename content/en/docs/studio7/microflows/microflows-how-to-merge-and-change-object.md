@@ -1,8 +1,8 @@
 ---
 title: "Configure Merge & Change Object Activities"
-url: /studio7/microflows-how-to-merge-and-change-object
+url: /studio7/microflows-how-to-merge-and-change-object/
 category: "Microflows"
-menu_order: 70
+weight: 70
 description: "This how to describes the process of configuring a merge and a change object activity in Mendix Studio."
 tags: ["studio", "microflows", "merge", "expression", "change object"]
 ---
@@ -11,7 +11,7 @@ tags: ["studio", "microflows", "merge", "expression", "change object"]
 
 This how-to explains how you can add advanced logic to a microflow by configuring a merge and a change object activity in Mendix Studio. 
 
-A merge is used to combine flows into one. If you split the microflow flow (with a decision) and now one and the same action needs to be executed for these separated flows, you can combine the two (or more) flows using a merge. For more information on decision, see [Decision](microflows-decision).
+A merge is used to combine flows into one. If you split the microflow flow (with a decision) and now one and the same action needs to be executed for these separated flows, you can combine the two (or more) flows using a merge. For more information on decision, see [Decision](/studio7/microflows-decision/).
 
 **This how-to will teach you how to do the following:**
 
@@ -20,7 +20,7 @@ A merge is used to combine flows into one. If you split the microflow flow (with
 
 This how-to describes the following use case: 
 
-In [Configure a Decision Step 1: Build the Domain Model & Configure a Microflow ](microflows-how-to-configure-decision-p1) you have configured the decision to open a specific page depending on the customer's grade. In case the customer's grade is not indicated, the error message is shown. So you have four flows after the decision: 
+In [Configure a Decision Step 1: Build the Domain Model & Configure a Microflow ](/studio7/microflows-how-to-configure-decision-p1/) you have configured the decision to open a specific page depending on the customer's grade. In case the customer's grade is not indicated, the error message is shown. So you have four flows after the decision: 
 
 * Showing a page for bronze  grade customers
 * Showing a page for silver grade customers
@@ -33,7 +33,7 @@ In this how-to, you will merge flows for bronze, silver, and gold customer grade
 
 To start this tutorial, make sure you have completed the following prerequisites:
 
-* Create the microflow with the decision: [Configure a Decision Step 1: Build the Domain Model & Configure a Microflow](microflows-how-to-configure-decision-p1)
+* Create the microflow with the decision: [Configure a Decision Step 1: Build the Domain Model & Configure a Microflow](/studio7/microflows-how-to-configure-decision-p1/)
 
 ## 3 Creating a Merge
 
@@ -54,13 +54,13 @@ To create a merge for gold, silver, and bronze customer grades in a microflow, f
     b. Hover over the **Show Page** activity.<br/>
 
     ![](/attachments/studio7/microflows/microflows-how-to-merge-and-change-object/hover-over.png)<br/>
-<br/>
+
     c. Click one of the dots that will turn into an arrow.<br/>
 
     d. Drag the arrow to the merge. Now the **Show Page activity** is connected to the merge.
 
     ![](/attachments/studio7/microflows/microflows-how-to-merge-and-change-object/connecting-activity-and-merge.png)<br/>
-<br/>
+
 4. Repeat step 3 for the flow labelled **Silver**. 
 
 As a result, you have three flows merged into one.
@@ -80,7 +80,7 @@ Now you will add logic to the microflow. You have merged three flows into one to
     b. In the **Create New Attribute** dialog window, set **Name** to *Active* and **Type** to *Boolean*.<br/> 
 
     ![](/attachments/studio7/microflows/microflows-how-to-merge-and-change-object/new-attribute-active.png)<br/>
-<br/>
+
     c. Click **Create**.
 
 2. Now you will configure a new activity in the microflow. Open the microflow named *Show_grade_specific_page*.
@@ -95,11 +95,11 @@ Now you will add logic to the microflow. You have merged three flows into one to
     b. Click **Add New Value**.<br/>
 
     ![](/attachments/studio7/microflows/microflows-how-to-merge-and-change-object/change-object-add-new-value.png)<br/>
-<br/>
+
     c. In the **Change value** dialog window, select the attribute named **Active**, then click the **Expression** tab, and type *true*. This means that after the order form is opened for a specific customer, the customer's status is set to active (active=true), no matter what grade this customer has.<br/> 
 
     ![](/attachments/studio7/microflows/microflows-how-to-merge-and-change-object/change-value-expression-editor.png)<br/>
-<br/>
+
     d. Click **Add** to finish setting the value for the **Active** attribute.<br/>
 
     e. In the **Properties** tab > the **Behavior** section do the following: leave the **Commit** option set to **Yes**, (this means the object will not be changed further and your changes will be saved (committed) to the database).  <br/>
@@ -113,4 +113,4 @@ Congratulations! Now you have the microflow that works the following way:
    b. If the customer does not have a grade, the error message pops up.<br/>
 2. If the customer has the grade, the customer's status is set to active irrespective of the grade once the order form is opened.
 
-Now you can preview or publish your app. For more information, see [Previewing & Publishing Your App](publishing-app).
+Now you can preview or publish your app. For more information, see [Previewing & Publishing Your App](/studio7/publishing-app/).

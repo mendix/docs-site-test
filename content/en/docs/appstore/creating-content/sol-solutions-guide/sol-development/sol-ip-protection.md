@@ -48,7 +48,7 @@ IP protection is currently in [Private Beta](/releasenotes/beta-features/) and o
 
 ### 4.2 Hiding Implementations {#implementation}
 
-Mendix supports the hiding of module implementations as a means to protect your IP. As a publisher, you can control which parts of the app model are visible and editable, and which parts of the app model are hidden from your customers. On top of the hidden model documents and elements, you can define an API to make it possible to reuse the functionality in other parts of the app. In this way, adaptive solutions can have a [common core](sol-architecting#three-parts) shared across all customers which is protected, with a flexible shell on top of that which is customized for each customer, either by making model changes or by extending the app with entirely new modules that make use of the APIs of the common core.
+Mendix supports the hiding of module implementations as a means to protect your IP. As a publisher, you can control which parts of the app model are visible and editable, and which parts of the app model are hidden from your customers. On top of the hidden model documents and elements, you can define an API to make it possible to reuse the functionality in other parts of the app. In this way, adaptive solutions can have a [common core](/appstore/creating-content/sol-architecting/#three-parts) shared across all customers which is protected, with a flexible shell on top of that which is customized for each customer, either by making model changes or by extending the app with entirely new modules that make use of the APIs of the common core.
 
 <!-- [TODO: add visual describing 80/20 rule with common core and flexible shell with model customizations & extensions] -->
 
@@ -66,7 +66,7 @@ Adaptive solutions that will be customized by your customer, by a third-party im
 
 To protect your solutions, follow these steps:
 
-1. Identify the shared [common core](sol-architecting#three-parts) that will be unchanged across customers and protect it.
+1. Identify the shared [common core](/appstore/creating-content/sol-architecting/#three-parts) that will be unchanged across customers and protect it.
 2. Identify the parts that make up the flexible shell that customers might want to adapt.
 3. Define clear APIs between the common core and the flexible shell. This ensures good architecture so that the core does not need to be adjusted and can be extended with limited effort.
 

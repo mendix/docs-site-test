@@ -1,8 +1,8 @@
 ---
 title: "Using Version Control in Studio Pro"
-url: /refguide8/using-version-control-in-studio-pro
+url: /refguide8/using-version-control-in-studio-pro/
 category: "Version Control"
-menu_order: 10
+weight: 10
 description: "How to work with version control and how to resolve some issues which may arise"
 tags: ["Version Control", "Conflicts", "Resolve", "Merge", "Patch", "Branch", "Development"]
 # Renamed from version-control-scenarios
@@ -10,7 +10,7 @@ tags: ["Version Control", "Conflicts", "Resolve", "Merge", "Patch", "Branch", "D
 
 ## 1 Introduction
 
-This reference guide describes how to use version control in Mendix Studio Pro. The theory behind how version control works in Mendix, and a definition of the concepts can be found in [Version Contol](version-control).
+This reference guide describes how to use version control in Mendix Studio Pro. The theory behind how version control works in Mendix, and a definition of the concepts can be found in [Version Contol](/refguide8/version-control/).
 
 ## 2 Starting a Project with Version Control
 
@@ -27,7 +27,7 @@ The app is created on the Team Server, and a working copy is created in the **Pr
 
 ## 3 Joining a Project
 
-If there is already a Team Server enabled project, you can be invited to join it (see [Team](/developerportal/collaborate/team)).
+If there is already a Team Server enabled project, you can be invited to join it (see [Team](/developerportal/collaborate/team/)).
 
 Once you are a team member, providing you have been given a role with sufficient rights, you can work on the app by doing the following:
 
@@ -60,13 +60,13 @@ The project explorer shows an icon in front of items (documents, folders, and mo
 | Icon | Meaning |
 | --- | --- |
 | ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688173.png) | Nothing happened to this item. It is unchanged with the respect to the original. |
- | Nothing happened to this item. It is unchanged with the respect to the original. || ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688172.png) | You modified this item (as in, document, folder or module). |
- | You modified this item (as in, document, folder or module). || ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688175.png) | You added this item. |
- | You added this item. || ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688174.png) | You moved this item to another position in the project tree. |
- | You moved this item to another position in the project tree. || ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688164.png) | You deleted this item. |
- | You deleted this item. || ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688165.png) | You and somebody else made conflicting changes to this item. For more information, see the [Dealing With Conflicts](#conflicts) section below. |
- | You and somebody else made conflicting changes to this item. For more information, see the [Dealing With Conflicts](#conflicts) section below. |
-{{% alert type="info" %}}
+| ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688172.png) | You modified this item (as in, document, folder or module). |
+| ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688175.png) | You added this item. |
+| ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688174.png) | You moved this item to another position in the project tree. |
+| ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688164.png) | You deleted this item. |
+| ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688165.png) | You and somebody else made conflicting changes to this item. For more information, see the [Dealing With Conflicts](#conflicts) section below. |
+
+{{% alert color="info" %}}
 There is only room for one icon and if a document is both modified and moved it is shown as modified.
 {{% /alert %}}
 
@@ -78,7 +78,7 @@ You can see the same information in the **Changes** dock. In this case there is 
 
 ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/changes-pane.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 When you successfully commit your project, this becomes the new original and all the change information is removed from the project explorer and the changes dock.
 {{% /alert %}}
 
@@ -194,7 +194,7 @@ The involved document is marked as conflicted and you can see the reason in the 
 
 ![Example of project conflicts](/attachments/refguide8/version-control/using-version-control-in-studio-pro/project-conflicts.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 If a whole folder (or module) was *deleted* and another person changes a document inside that folder, the folder/module is restored and also marked as conflicted. This way you know that the intention was to delete that folder but it has been restored to show you the context of the changed document.
 {{% /alert %}}
 
@@ -206,7 +206,7 @@ A repository can contain a number of development lines. Each development line of
 
 ![](/attachments/refguide8/version-control/using-version-control-in-studio-pro/688156.png)
 
-It is often convenient to have more than one development line. For example, one development line for fixing bugs in the currently deployed version of your project and another line where you develop new functionality. If you then find a bug in the deployed version you can fix it in the corresponding development line irrespective of the state of the development line where new functionality is developed. See [Version Control](version-control) for more information about branches.
+It is often convenient to have more than one development line. For example, one development line for fixing bugs in the currently deployed version of your project and another line where you develop new functionality. If you then find a bug in the deployed version you can fix it in the corresponding development line irrespective of the state of the development line where new functionality is developed. See [Version Control](/refguide8/version-control/) for more information about branches.
 
 ### 7.1 When to Use a Branch
 
@@ -223,7 +223,7 @@ If you want to add some functionality to a deployed application or you want to f
 4. Testing that things work as intended.
 5. Create a new deployment archive with a higher version number (increase patch or minor version).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 We advise you to merge the fixed maintenance branch into the main line quickly, if required. If the merge is too complicated to be made automatically, because the main line has changed too much, you will know how to apply the fix by hand to the main line as the changes will still be fresh in your mind.
 
 Of course, not all maintenance fixes need to be merged to the main line. Sometimes, it is a fix of something that was completely redesigned or eliminated in the main line. In this case, merging is unnecessary.
@@ -309,7 +309,7 @@ While developing you can deploy and run your app on your local machine by using 
 
 ### 8.2 Deploying Your Working Copy
 
-When you deploy to the cloud, you can choose to use the version of the app stored on your local machine, the *working copy* and deploy that to the default environment. If you are using the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy), or other partner cloud (SAP BTP, for example), choose the menu item **Run > Run** to commit the version of the app stored on your local machine and deploy that to the default environment.
+When you deploy to the cloud, you can choose to use the version of the app stored on your local machine, the *working copy* and deploy that to the default environment. If you are using the [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/), or other partner cloud (SAP BTP, for example), choose the menu item **Run > Run** to commit the version of the app stored on your local machine and deploy that to the default environment.
 
 ### 8.3 Choosing a Specific Development Line and Revision
 
@@ -317,7 +317,7 @@ It is also possible to choose a specific development line and revision to deploy
 
 In this case, Studio Pro will create a fresh checkout of the chosen revision. This means that any team member can always recreate this version of the deployment package. In other words, Studio Pro does *not* rely on your local files for creating a versioned deployment package.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 You can only create a versioned deployment package of changes that have been committed. If you have local changes that you want to deploy in a versioned deployment package, commit them first.
 {{% /alert %}}
 
@@ -345,7 +345,7 @@ We advise you to always commit and update inside Studio Pro because in this way 
 
 If you are doing more advanced changes to files, like adding Java actions or resources to your project, you will have to install TortoiseSVN on your computer and perform some operations yourself. You can download it for free at [https://tortoisesvn.net/](https://tortoisesvn.net/).
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Mendix Studio Pro uses the Subversion 1.9 working copy. Previous versions of the Mendix Desktop Modeler used a Subversion 1.7 working copy. These working copy versions **are not compatible**.
 
 Always use the version of TortoiseSVN which matches your app model. If you open a local model from Mendix version 7.x or 6.x with the latest version of TortoiseSVN **you will no longer be able to open it in Mendix**.

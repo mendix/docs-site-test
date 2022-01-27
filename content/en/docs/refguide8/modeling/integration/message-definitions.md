@@ -1,13 +1,13 @@
 ---
 title: "Message Definitions"
-url: /refguide8/message-definitions
+url: /refguide8/message-definitions/
 parent: "integration"
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/message-definitions.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/message-definitions.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -88,8 +88,8 @@ The structure tree shows the attributes and some of the associations of the enti
 | Occurrence | How many times this item can occur for each parent item. | n | |
 | External Name | The name of the XML node or the JSON property. | y | By default, the name of the attribute or (for associations) entity.<br />For a `0..*` occurrence, a letter `s` is added. |
 | External Single Item Name | The XML node that represents a single item. | y | Only relevant for XML when the occurrence is `0..*`<br /> By default, the entity name. |
-| Example value | A typical value for an attribute. | y | For a published REST service, this value shows up in the [interactive documentation](published-rest-services#interactive-documentation).<br />A date/time value is specified in the format `year-month-day` or `year-month-day hour:minute:second`. |
-| Public Documentation | Additional information to be displayed in the [interactive documentation](published-rest-services#interactive-documentation). | y | |
+| Example value | A typical value for an attribute. | y | For a published REST service, this value shows up in the [interactive documentation](/refguide8/published-rest-services/#interactive-documentation).<br />A date/time value is specified in the format `year-month-day` or `year-month-day hour:minute:second`. |
+| Public Documentation | Additional information to be displayed in the [interactive documentation](/refguide8/published-rest-services/#interactive-documentation). | y | |
 
 ### 4.2 Documentation
 

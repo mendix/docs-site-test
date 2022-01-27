@@ -1,8 +1,8 @@
 ---
 title: "Fine-Tune a Chart with Advanced Settings"
-url: /howto7/extensibility/charts-advanced-tuning
+url: /howto7/extensibility/charts-advanced-tuning/
 parent: "charts-tutorials"
-menu_order: 30
+weight: 30
 description: "Describes the settings you can use to change chart layouts and types"
 tags: ["Desktop Modeler", "Charts", "Layout", "Chart Type"]
 ---
@@ -22,8 +22,8 @@ The individual Charts widgets can be fine-tuned with advanced settings. The sett
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Installed the latest Mendix modeler
-* Downloaded the latest [Chart Widget](/appstore/widgets/charts) from the Mendix Marketplace
-* Setup a chart, see [How to create a chart](charts-basic-create)
+* Downloaded the latest [Chart Widget](/appstore/widgets/charts/) from the Mendix Marketplace
+* Setup a chart, see [How to create a chart](/howto7/extensibility/charts-basic-create/)
 
 ## 3 Changing the Layout {#layout-changes}
 
@@ -55,7 +55,7 @@ To create a custom layout, follow these steps:
     ```
 10. Change the font settings till the chart shows the required font. Copy the font settings.
 
-    {{% alert type="warning" %}}Please note that changes made in the editor will not persist unless they are stored in the advanced settings of the widget or in the theme.{{% /alert %}}
+    {{% alert color="warning" %}}Please note that changes made in the editor will not persist unless they are stored in the advanced settings of the widget or in the theme.{{% /alert %}}
 
     After making some changes, the chart looks like this:
 
@@ -67,7 +67,7 @@ To create a custom layout, follow these steps:
 
 12. Change the **Mode** back to **Advanced** in the  modeler, this will remove the Toggle Editor button from the chart.  
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Please note that the advanced settings only apply to the chart in Advanced or Developer mode.
 
@@ -108,16 +108,16 @@ To create custom a configuration, follow these steps:
     ![chart editor](/attachments/howto7/extensibility/charts-tutorials/charts-advanced-tuning/charts-widget-properties-advanced-config.png)
 7. Change **Mode** to **Advanced** set modeler, to remove the **Toggle Editor** button.
 
-    {{% alert type="warning" %}}Please note that the advanced settings only apply to the chart in Advanced or Developer mode{{% /alert %}}
+    {{% alert color="warning" %}}Please note that the advanced settings only apply to the chart in Advanced or Developer mode{{% /alert %}}
 
     ![chart editor](/attachments/howto7/extensibility/charts-tutorials/charts-advanced-tuning/charts-config-toolbar.png)
 
 ## 6 Read More
 
-Reference guide for the [advanced properties](/refguide7/charts-configuration#advanced)
+Reference guide for the [advanced properties](/refguide7/charts-configuration/#advanced)
 
-Layout options: [cheat sheet](/refguide7/charts-advanced-cheat-sheet#layout-all)  
-Configuration options: [cheat sheet](/refguide7/charts-advanced-cheat-sheet#config-options)  
-Data series options: [cheat sheet](/refguide7/charts-advanced-cheat-sheet#data-series)  
+Layout options: [cheat sheet](/refguide7/charts-advanced-cheat-sheet/#layout-all)  
+Configuration options: [cheat sheet](/refguide7/charts-advanced-cheat-sheet/#config-options)  
+Data series options: [cheat sheet](/refguide7/charts-advanced-cheat-sheet/#data-series)  
 
 Full reference: https://plot.ly/javascript/

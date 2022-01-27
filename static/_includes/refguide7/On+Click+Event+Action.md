@@ -21,9 +21,9 @@ _Default value:_ Do nothing
 
 #### Page (Only for "Show a page") {#on-click-page}
 
-The [page](page) that should be shown.
+The [page](/refguide7/page/) that should be shown.
 
-See [Opening Pages](opening-pages).
+See [Opening Pages](/refguide7/opening-pages/).
 
 #### Page for Specializations (Only for "Show a page") {#on-click-page}
 
@@ -31,17 +31,17 @@ Allows you to configure a different page for each specialization of the context 
 
 #### Microflow (Only for "Call a microflow") {#on-click-microflow}
 
-The [microflow](microflow) that should be executed.
+The [microflow](/refguide7/microflow/) that should be executed.
 
 #### Microflow Settings (Only for "Call a microflow") {#on-click-microflow-settings}
 
 The microflow settings specify what parameters will be passed to the microflow, whether to show a progress bar or not, and more.
 
-See [Starting Microflows](starting-microflows).
+See [Starting Microflows](/refguide7/starting-microflows/).
 
 #### Nanoflow (Only for "Call a nanoflow") {#on-click-nanoflow}
 
-The [nanoflow](nanoflow) that should be executed.
+The [nanoflow](/refguide7/nanoflow/) that should be executed.
 
 #### Link Type (Only for "Open link") {#on-click-link-type}
 
@@ -76,7 +76,7 @@ This flag indicates whether the current page should be closed.
 
 #### Sync Automatically (Only for "Save changes") {#on-click-sync-automatically}
 
-When an object is saved in a Mendix application running in an [offline profile](hybrid-phone-profile), this information is stored in a local database until it can be synchronized with the server. In practice, this means that uploading a new object to the server requires two distinct actions: saving the object and [syncing it](offline#synchronization).
+When an object is saved in a Mendix application running in an [offline profile](/refguide7/hybrid-phone-profile/), this information is stored in a local database until it can be synchronized with the server. In practice, this means that uploading a new object to the server requires two distinct actions: saving the object and [syncing it](/refguide7/offline/#synchronization).
 
 This flag indicates whether synchronization should happen when the save button is clicked.
 
@@ -89,4 +89,4 @@ Specifies which entity to create. It is also possible to choose an association (
 
 #### On Click Page (Only for "Create object")
 
-Specifies which [page](page) should be shown with the new created object. This page must accept a context parameter object with the same or sub-type of the created entity.
+Specifies which [page](/refguide7/page/) should be shown with the new created object. This page must accept a context parameter object with the same or sub-type of the created entity.

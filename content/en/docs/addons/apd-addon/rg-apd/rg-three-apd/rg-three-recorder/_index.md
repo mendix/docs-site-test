@@ -29,11 +29,11 @@ When recording a browser, the user has to confirm the following message:
 
 The results of a recording are found in the **Recorded sessions** overview. This tab displays the recordings of the runtime(s) separate from the browser recordings. 
 
-When you click a recording of the **Browser** type, the [browser recorder results](rg-three-browser-recorder-results) screen opens. When you click a recording of the **Server** type, the [server recording results](rg-three-runtime-recorder-results) screen opens.
+When you click a recording of the **Browser** type, the [browser recorder results](/addons/apd-addon/rg-three-browser-recorder-results/) screen opens. When you click a recording of the **Server** type, the [server recording results](/addons/apd-addon/rg-three-runtime-recorder-results/) screen opens.
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-recorder/recorder.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 A browser session is per browser window. If a user uses multiple browser instances to connect with the application, this results in a recorded session for each instance.
 {{% /alert %}}
 

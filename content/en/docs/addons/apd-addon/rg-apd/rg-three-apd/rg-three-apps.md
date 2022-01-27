@@ -6,13 +6,13 @@ parent: "rg-three-apd"
 
 ## 1 Apps Overview
 
-The homepage of APD displays the list of licensed applications from the Mendix [Developer Portal](/developerportal) in alphabetical order.
+The homepage of APD displays the list of licensed applications from the Mendix [Developer Portal](/developerportal/) in alphabetical order.
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-apps/ProjectsDashboard.png)
 
 It is possible to search on an app's name or select one from the overview directly.
 
-Selecting an app in the overview displays the overview of the [Environments](rg-three-environments) for that app.
+Selecting an app in the overview displays the overview of the [Environments](/addons/apd-addon/rg-three-environments/) for that app.
 
 In order to find a specific application faster, it is possible to mark it as a favorite by clicking the star icon on the application tile. Favorite applications are shown first in the overview.
 
@@ -24,7 +24,7 @@ APD has several tour guides and videos to help you navigate through APD to perfo
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-apps/Documentation.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 By default, APD displays the tour guides and videos upon login for new users.
 {{% /alert %}}
 
@@ -36,14 +36,14 @@ When starting a tour, a tooltip will appear throughout the APD application with 
 
 ## 3 Profile Menu & User Settings
 
-In the profile menu, you can see links to your [Mendix Profile](/developerportal/community-tools/mendix-profile) and also the user settings for APD:
+In the profile menu, you can see links to your [Mendix Profile](/developerportal/community-tools/mendix-profile/) and also the user settings for APD:
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-apps/profile_menu.png)
 
 In the user settings, you can configure the home page to be one of the following:
 
 * All your apps (if both drop-down menus are empty)
-* A specific app on the [Environments](rg-three-environments) overview if an app is selected and the **Environment** drop-down menu is empty
+* A specific app on the [Environments](/addons/apd-addon/rg-three-environments/) overview if an app is selected and the **Environment** drop-down menu is empty
 * A specific environment of a specific app
 
 ![](/attachments/addons/apd-addon/rg-apd/rg-three-apd/rg-three-apps/user_settings.png)
@@ -55,7 +55,7 @@ These are the settings available on the **User settings** dialog box:
 * **Statistics period** – determines if the statistics by default open with hourly or daily data
 * **Time zone** – determines your time zone for the proper representation of date/time information
 
-Clicking **Delete account** deletes your account, including the [Mendix Studio Pro environments](rg-three-environments) belonging to your account. After the deletion, you will navigate to the Mendix Developer Portal. Apps are not deleted at this time.
+Clicking **Delete account** deletes your account, including the [Mendix Studio Pro environments](/addons/apd-addon/rg-three-environments/) belonging to your account. After the deletion, you will navigate to the Mendix Developer Portal. Apps are not deleted at this time.
 
 ## 4 Cleanups {#cleanups}
 

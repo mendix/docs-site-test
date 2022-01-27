@@ -15,7 +15,7 @@ With scheduled events you can let the runtime execute a microflow at a specific 
 A scheduled event is added to your module as a document (right-click your module and you will find it listed under *Add other*).
 
 {{% alert color="warning" %}}
-Scheduled events can be tested locally, but they will not be run if your app is deployed as a Free App. See the Free App section of [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy#free-app) for more information on Free App limitations.
+Scheduled events can be tested locally, but they will not be run if your app is deployed as a Free App. See the Free App section of [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/#free-app) for more information on Free App limitations.
 {{% /alert %}}
 
 A `ScheduledEventInformation` object is created every time the scheduled event defined in your app model is run. This records the following:
@@ -39,14 +39,13 @@ The `ScheduledEventInformation` objects are not cleared automatically. If you ha
 | Property | Description |
 | --- | --- |
 | Name | The name of the scheduled event. This name is stored in the `ScheduledEventInformation` objects at runtime, so that runs of the scheduled event are recognizable. |
-| Documentation | This field is for documentation purposes in the app model only. Its value is not visible to end-users, is not displayed in the Developer Portal, and doesn't influence the behavior of your application. |
-
+| Documentation | This field is for documentation purposes in the app model only. Its value is not visible to end-users and doesn't influence the behavior of your application. |
 
 ## 3 Execution Properties
 
 | Property | Description |
 | --- | --- |
-| Microflow | The microflow that is executed when the scheduled event is executed. It should have no parameters and run with all rights (see [Microflow](microflow)). |
+| Microflow | The microflow that is executed when the scheduled event is executed. It should have no parameters and run with all rights (see [Microflow](/refguide/microflow/)). |
 | Enabled | The microflow is only executed if the scheduled event is enabled. This setting only applies when running from Studio Pro or from Eclipse. On production environments, scheduled events are enabled/disabled via the platform tools (for example Developer Portal or Windows Service Console). |
 
 ## 4 Timing Properties
@@ -147,4 +146,18 @@ Unfortunately there isn't a great workaround for this issue. If the scheduled ev
 
 ### 5.4 Long Running Events
 
-If a repeated scheduled event takes longer than the interval set, then the next scheduled event will be delayed; the events will not run concurrently. For example, if a scheduled event is repeated every 5 minutes but the event takes 10 minutes then the next event is delayed by 5 minutes.
+If a repeated scheduled event takes longer than the interval then the next scheduled event will be delayed, the events will not run concurrently. For example, if a scheduled event is repeated every 5 minutes but the event takes 10 minutes then the next event is delayed by 5 minutes.
+
+### 5.5 Cleaning up old events {#cleanup}
+
+The execution of a scheduled event produces a `System.ScheduledEventInformation` row in the database. Over time these accumulate and the table can grow large.
+
+In Mendix versions 9.9.0 and above, the `System.ScheduledEventInformation` can be cleaned up automatically by specifying the `com.mendix.core.ScheduledEventsCleanupAge` runtime setting. This setting specifies (in milliseconds) how old rows in the table have to be before they are automatically cleaned up. Only rows with the "Completed" status are cleaned up.
+
+When this setting is not specified, no cleanup is performed.
+
+{{% alert color="info" %}}
+When turning on the automatic cleanup after having used scheduled events for a long time, there might be many rows to clean up, which will be initiated when the runtime starts. This may cause additional load on the database, but will not block the startup. It is recommended not to do this during a busy period.
+{{% /alert %}}
+
+In versions of Mendix below 9.9.0, you can clean up old events by creating a microflow for administrators to use if the table gets too large.

@@ -23,7 +23,7 @@ The how-to applies to all widgets like the text box widget, which means that, if
 
 Before starting this how-to, make sure you have completed the following prerequisite:
  
-* Read [General](ht-two-custom-action-general)
+* Read [General](/addons/ats-addon/ht-two-custom-action-general/)
 
 ## 3 Defining the User Approach
 
@@ -59,7 +59,7 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-crt-unsup-widg-acts/ht-two-cab-03-textbox/text-box-childelement-input-debugger.png)
 
-    When you create a custom action for an unsupported widget action, you must use the [*Find Widget Child Node*](rg-one-find-widget-child-node) action. This action is a combination of the [*Find/Assert Widget*](rg-one-findassert-widget) and [*Find Element by Sizzle*](rg-one-find-element-by-sizzle) actions, combining the best of both. It is an official Mendix action, it has all the internal processes, and it uses a CSS/jQuery selector to find the child, which makes it flexible. The selector for finding the input element is an input. You use this selector in the *Find Widget Child Node* action to find an input element inside the text box widget.
+    When you create a custom action for an unsupported widget action, you must use the [*Find Widget Child Node*](/addons/ats-addon/rg-one-find-widget-child-node/) action. This action is a combination of the [*Find/Assert Widget*](/addons/ats-addon/rg-one-findassert-widget/) and [*Find Element by Sizzle*](/addons/ats-addon/rg-one-find-element-by-sizzle/) actions, combining the best of both. It is an official Mendix action, it has all the internal processes, and it uses a CSS/jQuery selector to find the child, which makes it flexible. The selector for finding the input element is an input. You use this selector in the *Find Widget Child Node* action to find an input element inside the text box widget.
 
     Before you start creating the action, you must know if ATS can find the `input` element within the text box widget. You use the debugger to simulate what ATS does. Since the *Find Widget Child Node* action uses the `mx-name` to find the parent, you must also use the `mx-name` in your code.
 
@@ -77,11 +77,11 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-crt-unsup-widg-acts/ht-two-cab-03-textbox/text-box-focusclearelementvalue-add.png)
 
-6.  After focusing the `input` element, enter the text. When entering text in an `input` element, use the [*Send Keys*](rg-one-send-keys) action. Add the action, connect the input element from step 1, and give it a proper description:
+6.  After focusing the `input` element, enter the text. When entering text in an `input` element, use the [*Send Keys*](/addons/ats-addon/rg-one-send-keys/) action. Add the action, connect the input element from step 1, and give it a proper description:
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-crt-unsup-widg-acts/ht-two-cab-03-textbox/text-box-sendkeys-add.png)
 
-7.  The last action you add is [*Mendix Wait*](rg-one-mendix-wait). You trigger a possible event in the widget by entering text, so you need to ensure that ATS waits for all the background processes to finish:
+7.  The last action you add is [*Mendix Wait*](/addons/ats-addon/rg-one-mendix-wait/). You trigger a possible event in the widget by entering text, so you need to ensure that ATS waits for all the background processes to finish:
 
     ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-create-custom-actions/ht-two-crt-unsup-widg-acts/ht-two-cab-03-textbox/text-box-mendix-wait.png)
 
@@ -93,7 +93,7 @@ Next, you need to add these action input parameters:
 * Value
 * Search Context
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Keep the **guidelines for creating a custom action** in mind while creating action parameters. 
 {{% /alert %}}
 

@@ -11,12 +11,14 @@ tags: ["studio pro", "layout grid", "container widget", "column", "row", "grid",
 
 The layout grid is a widget that gives structure to your pages.  
 
-A layout grid consists of [rows](#rows) and [columns](#columns): ![Layout Grid Example](/attachments/refguide/modeling/pages/structure-widgets/layout-grid/layout-grid.png)
+A layout grid consists of [rows](#rows) and [columns](#columns): 
+![Layout Grid Example](/attachments/refguide/modeling/pages/structure-widgets/layout-grid/layout-grid.png)
+
 In a browser, the layout grid is based on the Bootstrap grid system. For more information on the Bootstrap grid system, see the [official Bootstrap documentation](http://getbootstrap.com/css/#grid).
 
 {{% alert color="info" %}}
 
-Row and column properties described below are available if your app has [Atlas UI Resources](/appstore/modules/atlas-ui-resources) version 2.4.0 or above. 
+Row and column properties described below are available if your app has [Atlas UI Resources](/appstore/modules/atlas-ui-resources/) version 2.4.0 or above. 
 
 For more information on row and column properties, see the [Rows and Their Properties](#rows) and [Columns and Their Properties](#columns) sections. 
 
@@ -212,6 +214,6 @@ In adding to inserting a new column, you can perform the following actions when 
 
 ## 6 Read More
 
-* [Page](page)
-* [Structure](structure-widgets)
-* [Properties Common for Widgets](common-widget-properties)
+* [Page](/refguide/page/)
+* [Structure](/refguide/structure-widgets/)
+* [Properties Common for Widgets](/refguide/common-widget-properties/)

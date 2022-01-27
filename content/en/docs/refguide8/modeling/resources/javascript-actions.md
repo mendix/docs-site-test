@@ -1,26 +1,26 @@
 ---
 title: "JavaScript Actions"
-url: /refguide8/javascript-actions
+url: /refguide8/javascript-actions/
 parent: "resources"
-menu_order: 20
+weight: 20
 description: "This reference guide details the ways JavaScript Actions can extend the functionality of your Mendix app."
 tags: ["javascript", "javascript action", "parameter", "studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/javascript-actions.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/javascript-actions.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 This activity can only be used in **Nanoflows**.
 {{% /alert %}}
 
 ## 1 Introduction
 
-With JavaScript actions, you can extend your application's functionality in ways nanoflows alone cannot. To use a JavaScript action, call it from a nanoflow using the [JavaScript Action Call](javascript-action-call).
+With JavaScript actions, you can extend your application's functionality in ways nanoflows alone cannot. To use a JavaScript action, call it from a nanoflow using the [JavaScript Action Call](/refguide8/javascript-action-call/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Each JavaScript action defined in Mendix Studio Pro corresponds to a file *{JavaScript action name}.js* in the subdirectory **javascriptsource{module name}/actions/** in your project directory.
 
@@ -28,14 +28,14 @@ The skeletons of these *.js* files are generated automatically when you save an 
 
 {{% /alert %}}
 
-To learn how to create, configure, and use a JavaScript action, see these [Build JavaScript Actions](/howto8/extensibility/build-javascript-actions) how-to's.
+To learn how to create, configure, and use a JavaScript action, see these [Build JavaScript Actions](/howto8/extensibility/build-javascript-actions/) how-to's.
 
 ## 2 General Settings
 
 After double-clicking a JavaScript action in your **Project Explorer** you will see the JavaScript action's settings: 
 
 {{/* % image_container width="400" % */}}![javascript settings](/attachments/refguide8/modeling/resources/javascript-actions/javascript-action-settings-no-para.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The settings for JavaScript actions and their implications are detailed below.
 
 ### 2.1 Name
@@ -55,7 +55,7 @@ In a JavaScript action's **Code** tab, you can see its parameters' values and ha
 You will see a parameter's category (1), parameter name (2), and description (3) in the **Call JavaScript Action** dialog box after double-clicking its activity in your nanoflow:
 
 {{/* % image_container width="400" % */}}![call javascript action dialog](/attachments/refguide8/modeling/resources/javascript-actions/call-js-action-dialog.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 The parameter types supported by JavaScript actions are described below.
 
 #### 2.2.1 Name
@@ -79,7 +79,7 @@ This setting handles the parameter's name. A name is required. Names must start 
 
 #### 2.2.3 Category
 
-Use categories to keep parameters apart in a [JavaScript Action Call](javascript-action-call). Categories are useful for making logical groups of parameters when your project has several parameters. If you do not specify a category, the parameter will appear in the **Input** group.
+Use categories to keep parameters apart in a [JavaScript Action Call](/refguide8/javascript-action-call/). Categories are useful for making logical groups of parameters when your project has several parameters. If you do not specify a category, the parameter will appear in the **Input** group.
 
 #### 2.2.4 Description
 
@@ -94,7 +94,7 @@ The return parameter type determines the type of data a JavaScript action return
 A type parameter is a placeholder for an entity type which will be filled with a specific entity when called in a nanoflow. Type parameters can be used when configuring the data type of a parameter, which allows users to pass an object or list of an arbitrary entity type. They can easily be added, edited, or deleted:
 
 {{/* % image_container width="450" % */}}![type parameter](/attachments/refguide8/modeling/resources/javascript-actions/type-parameter.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 A JavaScript action can have zero or more type parameters. Each type parameter should have a unique name.
 
 ## 4 Expose as Nanoflow Action
@@ -102,7 +102,7 @@ A JavaScript action can have zero or more type parameters. Each type parameter s
 In the **Expose as nanoflow action** tab, it is possible to expose a JavaScript action as a nanoflow action. This sample action has been given *Sample Action* caption text, assigned *Workshop* as its category, and given no icon:
 
 {{/* % image_container width="450" % */}}![expose action](/attachments/refguide8/modeling/resources/javascript-actions/expose-jsaction.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 Exposing the JavaScript action will make it appear in the **Toolbox** window when editing a nanoflow in the category of your choice. When this action is used in a nanoflow, it will show the caption and icon you provided. The category and caption are apparent here, and the default icon is being displayed as no custom one was assigned: 
 
 ![workshop exposed](/attachments/refguide8/modeling/resources/javascript-actions/workshop-exposed.png)
@@ -124,11 +124,11 @@ An icon is optional when exposing a JavaScript action. When no icon is selected,
 In the **Documentation** tab, press **Edit** to document a JavaScript action: 
 
 {{/* % image_container width="450" % */}}![documentation](/attachments/refguide8/modeling/resources/javascript-actions/documentation-pro.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 Documentation is visible in the **Code** tab. Your documentation also is copied into the JavaScript action as comment on the function in the corresponding *.js* file:
 
 {{/* % image_container width="450" % */}}![documentation js file](/attachments/refguide8/modeling/resources/javascript-actions/documentation-js-file.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 ## 6 Code
 
 In the **Code** tab, you can edit the JavaScript action code without leaving Studio Pro. The editor is based on the [Monaco Editor](https://microsoft.github.io/monaco-editor/index.html). It offers features such as syntax highlighting and code completion. From Mendix version 8.3 and above, the code can be written in modern JavaScript (ES8 / ES2017) and can use functions like `async` with `await` and `Promise`. The code will be transpiled and polyfilled for you to run (even on Internet Explorer 11). 
@@ -168,8 +168,8 @@ export async function Hello(message) {
 
 ## 7 Read More
 
-* [JavaScript Action Call](javascript-action-call)
-* [Nanoflows](nanoflows)
-* [Build JavaScript Actions](/howto8/extensibility/build-javascript-actions)
-* [Java Action Call](java-action-call)
-* [Microflow Call](microflow-call)
+* [JavaScript Action Call](/refguide8/javascript-action-call/)
+* [Nanoflows](/refguide8/nanoflows/)
+* [Build JavaScript Actions](/howto8/extensibility/build-javascript-actions/)
+* [Java Action Call](/refguide8/java-action-call/)
+* [Microflow Call](/refguide8/microflow-call/)

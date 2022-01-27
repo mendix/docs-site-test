@@ -1,11 +1,11 @@
 ---
 title: "Published OData Resource"
-url: /refguide7/published-odata-resource
+url: /refguide7/published-odata-resource/
 parent: "published-odata-services"
 ---
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-This document describes the properties of a published OData resource. If you want a general overview of OData services, you can check the [Published OData Services](published-odata-services) documentation.
+This document describes the properties of a published OData resource. If you want a general overview of OData services, you can check the [Published OData Services](/refguide7/published-odata-services/) documentation.
 
 {{% /alert %}}
 
@@ -23,7 +23,7 @@ Press the **Select...** button to open a dialog window that allows you to select
 
 ![](/attachments/refguide7/desktop-modeler/integration/published-odata-services/published-odata-resource/16843930.png)
 
-IBM DB2 does not support read-isolated data retrieval operations that are non-blocking in a multi-user environment. Therefore the data retrieved by OData might not be 100% consistent if the same data rows are modified concurrently by another user. For the details see this [IBM DB2](db2) page.
+IBM DB2 does not support read-isolated data retrieval operations that are non-blocking in a multi-user environment. Therefore the data retrieved by OData might not be 100% consistent if the same data rows are modified concurrently by another user. For the details see this [IBM DB2](/refguide7/db2/) page.
 
 ## 2 Selecting Exposed Attributes & Associations
 

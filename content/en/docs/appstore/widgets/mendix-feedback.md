@@ -9,7 +9,7 @@ tags: ["marketplace", "marketplace component", "widget", "feedback", "platform s
 
 ## 1 Introduction
 
-The [Mendix Feedback](https://marketplace.mendix.com/link/component/199/) widget allows end-users of your application to directly submit feedback into your app. The feedback widget is fully integrated with the [Feedback](/developerportal/collaborate/feedback) page in the Developer Portal, where you can review feedback and convert it into [user stories](/developerportal/collaborate/stories) to improve your app.
+The [Mendix Feedback](https://marketplace.mendix.com/link/component/199/) widget allows end-users of your application to directly submit feedback into your app. The feedback widget is fully integrated with the [Feedback](/developerportal/collaborate/feedback/) page in the Developer Portal, where you can review feedback and convert it into [user stories](/developerportal/collaborate/stories/) to improve your app.
 
 The Mendix Feedback widget is easy to set up and automatically attaches additional information to each submitted issue such as the user's name, role, active form, browser version, and screen resolution.
 
@@ -43,14 +43,14 @@ Once you are in feedback mode, you can click anywhere on the screen to leave a c
 
 ![](/attachments/appstore/widgets/mendix-feedback/add-comment.png)
 
-And voila! A screenshot of the current page is created automatically, which you can choose to attach to your feedback. After clicking **Send**, your feedback will go straight to the [Feedback](/developerportal/collaborate/feedback) page of the app in the Developer Portal.
+And voila! A screenshot of the current page is created automatically, which you can choose to attach to your feedback. After clicking **Send**, your feedback will go straight to the [Feedback](/developerportal/collaborate/feedback/) page of the app in the Developer Portal.
 
 When you have left your feedback, you need to exit the feedback mode by clicking this button:
 
 ![](/attachments/appstore/widgets/mendix-feedback/exit.png)
 
 {{% alert color="info" %}}
-For details on how to see all the feedback you have submitted, see the [Feedback](/developerportal/community-tools/mendix-profile#feedback) section of *Mendix Profile*.
+For details on how to see all the feedback you have submitted, see the [Feedback](/developerportal/community-tools/mendix-profile/#feedback) section of *Mendix Profile*.
 {{% /alert %}}
 
 ### 2.2 Editing the App
@@ -70,7 +70,7 @@ You can access this mobile view by installing the [Mendix Mobile app](https://pl
 When you click the **Share** icon on the widget, a pop-up window appears for sharing your app via **Email**:
 
 {{/* % image_container width="450" % */}}![](/attachments/appstore/widgets/mendix-feedback/share.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 You can add as many email addresses as you like and email your app to colleagues for further collaboration and feedback.
 
@@ -79,7 +79,7 @@ You can add as many email addresses as you like and email your app to colleagues
 When you click the **App Switcher** button, a pop-up window appears with a list of other Mendix SSO-enabled apps that you have access to:
 
 {{/* % image_container width="450" % */}}![](/attachments/appstore/widgets/mendix-feedback/app-switcher.png)
-{{/* % /image_container % */}} 
+{{/* % /image_container % */}}
 
 When you click an app, you are redirected to it.
 
@@ -87,12 +87,12 @@ When you click an app, you are redirected to it.
 This feature is available when the following conditions are met:<br />
 
 * You have configured the widget to show the App Switcher (for details, see the [Configuring the Widget](#configuring) section below)<br />
-* Your app uses [Mendix SSO](/developerportal/deploy/mendix-sso)
+* Your app uses [Mendix SSO](/developerportal/deploy/mendix-sso/)
 {{% /alert %}}
 
 ## 3 Adding & Configuring the Widget
 
-You should use the latest version of the Mendix Feedback widget, as it will provide the most up-to-date features for leaving feedback and communicating with the [Team](/developerportal/collaborate/team).
+You should use the latest version of the Mendix Feedback widget, as it will provide the most up-to-date features for leaving feedback and communicating with the [Team](/developerportal/collaborate/team/).
 
 ### 3.1 Adding the Widget to Your app
 
@@ -117,10 +117,10 @@ You can configure the widget for certain actions in your app (for example, to al
 
 The feedback feature requires the following properties to be set:
 
-* **Project** tab > **App ID** – the unique identifier of your app available in your app's [General Settings](/developerportal/collaborate/general-settings) in the Developer Portal
+* **Project** tab > **App ID** – the unique identifier of your app available in your app's [General Settings](/developerportal/collaborate/general-settings/) in the Developer Portal
 * **Advanced** tab > **Feedback server location** – the URL of the Developer Portal server (usually `https://sprintr.home.mendix.com`)
 
-For the best user experience, your are strongly encouraged to apply Mendix SSO to your app and connect the [Mendix SSO](/appstore/modules/mendix-sso) module to version 8.2.1 or above of the Mendix Feedback widget. For version 8.1.0 or above of the widget, you need to set the following:
+For the best user experience, your are strongly encouraged to apply Mendix SSO to your app and connect the [Mendix SSO](/appstore/modules/mendix-sso/) module to version 8.2.1 or above of the Mendix Feedback widget. For version 8.1.0 or above of the widget, you need to set the following:
 
 *  **MendixSSO Authentication** tab > **Decrypted Token Entity** – select the entity **DecryptedToken** from the Mendix SSO module
 *  **MendixSSO Authentication** tab > **Decrypted Token Value** – after selecting **Decrypted Token Entity**, select the **Value** attribute from it
@@ -134,7 +134,7 @@ The result should look like this:
 If Mendix SSO is applied and the above **MendixSSO Authentication** settings are configured correctly, the end-user can leave feedback without having to enter their name and email address. If you are not using the Mendix SSO module and are using other SSO solutions instead, you should configure the settings in the **Custom Authentication** tab. In this tab, you can provide a microflow that should return a valid user name and email when the end-user is signed in with your authentication solution. The Feedback widget will then go directly into feedback mode. If the end-user is not signed in (meaning, the **User Object Provider** microflow returns an empty user name or an invalid email address), the end-user will have to manually enter their name and email address when they leave feedback.
 {{% /alert %}}
 
-The [app switcher](#app-switcher) feature requires the [Mendix SSO](/appstore/modules/mendix-sso) module to be implemented and the following property to be set:
+The [app switcher](#app-switcher) feature requires the [Mendix SSO](/appstore/modules/mendix-sso/) module to be implemented and the following property to be set:
 
 * **Advanced** tab > **Show App Switcher button** – set to **Yes**
 

@@ -1,6 +1,6 @@
 ---
 title: "Starting With Your Own Data"
-url: /studio7/start-with-data
+url: /studio7/start-with-data/
 description: "Describes how to import an Excel spreadsheet to your domain model in Mendix Studio."
 tags: ["studio", "domain model", "excel import", "start with data", "data model"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -34,7 +34,7 @@ To create an app based on a spreadsheet, you need to use the **App from a spread
 
     a. Each column should name a unique name within a workbook. 
 
-      {{% alert type="info" %}}If a column name consists of several lines, Mendix Studio will process the only first one. If your column does not have a name, but has values in it, it will be named "_EMPTY".
+      {{% alert color="info" %}}If a column name consists of several lines, Mendix Studio will process the only first one. If your column does not have a name, but has values in it, it will be named "_EMPTY".
 
       {{% /alert %}}
 
@@ -54,7 +54,7 @@ During the import process, spreadsheet data is analyzed and converted the follow
    a. All values of one column in your spreadsheet are used in another column.<br/>b. The values of the other column are unique. <br/>c. The type of data in these columns is converted to string or enumeration attribute types. For more information on correspondence between Excel data types and attribute types, see the [Correspondence Between Excel Data Types and Attribute Types](#excel-type-attribute-type) section.<br/>
 
 Download this Excel spreadsheet example to check how data is normalized there: [Spreadsheet Example](/attachments/studio7/start-with-data/Example.xlsx). You can also import it into an app and test how this spreadsheet is converted. For more information, see the [Importing a Spreadsheet](#importing-spreadsheet) section.
-. You can also import it into an app and test how this spreadsheet is converted. For more information, see the [Importing a Spreadsheet](#importing-spreadsheet) section.
+
 
 ## 4 Starting an App From a Spreadsheet {#importing-spreadsheet}
 
@@ -63,7 +63,7 @@ When you create your app, a page where you can upload your spreadsheet is opened
 {{/* % image_container width="500" % */}}![](/attachments/studio7/start-with-data/drag-and-drop.png)
 {{/* % /image_container % */}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 If you choose to start without data, you will have just a blank app, and will not be able to import a spreadsheet later. 
 
@@ -88,7 +88,7 @@ To review a list of associations and unselect the ones that you do not want to b
 
 For example, in the image above you can see that an association will be created from the **MarketingDocs** entity to the **Contributors** entity. This association was discovered through the column **Responsible** in **MarketingDocs** and the column **Name** in **Contributors**.  As a result, when data is imported the **MarketingDocs** entity will not have **Responsible** as an attribute, instead it will have an association to the **Contributors** entity and will get data from this entity through the association.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 A column can be used to create an association **from** it once only. If an association is created to lead **from** a column, no link can be created as a link **to** it. 
 
@@ -127,9 +127,9 @@ Open the domain model to see all created entities and attributes:
 {{/* % image_container width="350" % */}}![](/attachments/studio7/start-with-data/domain-model-example.png)
 {{/* % /image_container % */}}
 
-{{% alert type="success" %}}
+{{% alert color="success" %}}
 
-After import is completed, you can [preview or publish your app](publishing-app) and see all your data or continue configuring your app.
+After import is completed, you can [preview or publish your app](/studio7/publishing-app/) and see all your data or continue configuring your app.
 
 {{% /alert %}}
 
@@ -153,5 +153,5 @@ If **Generate pages for my data** has been selected in the preview page, pages a
 
 ## 5 Read More
 
-* [Domain Model](domain-models)
-* [Attribute Types](domain-models-attributes) 
+* [Domain Model](/studio7/domain-models/)
+* [Attribute Types](/studio7/domain-models-attributes/) 

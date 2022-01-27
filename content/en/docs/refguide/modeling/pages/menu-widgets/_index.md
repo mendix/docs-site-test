@@ -9,17 +9,17 @@ tags: ["studio pro", "menu widgets", "navigation", "widget"]
 
 ## 1 Introduction
 
-Menus and navigation widgets display menu items configured in the [Navigation](navigation) or in a [Menu](menu).
+Menus and navigation widgets display menu items configured in the [Navigation](/refguide/navigation/) or in a [Menu](/refguide/menu/).
 
-* [Menu Bar](menu-bar) – displays menu items of a [navigation profile](navigation#profiles) or a [menu](menu) document in a form of a horizontal bar
+* [Menu Bar](/refguide/menu-bar/) – displays menu items of a [navigation profile](/refguide/navigation/#profiles) or a [menu](/refguide/menu/) document in a form of a horizontal bar
 
     ![Menu Bar Example](/attachments/refguide/modeling/pages/menu-widgets/menu-bar-example.png)
 
-* [Navigation Tree](navigation-tree) – displays menu items of a [navigation profile](navigation#profiles) or a [menu](menu) document in a form of a tree
+* [Navigation Tree](/refguide/navigation-tree/) – displays menu items of a [navigation profile](/refguide/navigation/#profiles) or a [menu](/refguide/menu/) document in a form of a tree
 
     ![Navigation Tree Example](/attachments/refguide/modeling/pages/menu-widgets/navigation-tree-example.png)
 
-* [Simple Menu Bar](simple-menu-bar) – displays menu items of a [navigation profile](navigation#profiles) or a [menu](menu) document in a form a horizontal or vertical bar 
+* [Simple Menu Bar](/refguide/simple-menu-bar/) – displays menu items of a [navigation profile](/refguide/navigation/#profiles) or a [menu](/refguide/menu/) document in a form a horizontal or vertical bar 
 
     ![Simple Menu Bar Example](/attachments/refguide/modeling/pages/menu-widgets/simple-menu-bar-example.png)
 
@@ -30,5 +30,5 @@ Menus and navigation widgets display menu items configured in the [Navigation](n
 
 ## 3 Read More
 
-* [Page](page)
-* [Pages](pages)
+* [Page](/refguide/page/)
+* [Pages](/refguide/pages/)

@@ -33,7 +33,7 @@ An example test case is used to illustrate how to connect the dataset to a test 
 
 Before starting with this how-to, make sure you have the following prerequisites in place:
 
-* Read [How to Create a Test Case](ht-two-create-a-test-case)
+* Read [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/)
 
 {{% youtube ucvD8cjo6JI %}}
 
@@ -204,7 +204,7 @@ Great! You have updated the master dataset using an Excel file.
 
 ## 7 Connecting the Master Data Set to Your Test Case
 
-The following steps explain how to connect the master dataset to your test case. An example test case is used in this chapter. For more information, see [How to Create a Test Case](ht-two-create-a-test-case).
+The following steps explain how to connect the master dataset to your test case. An example test case is used in this chapter. For more information, see [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/).
 
 1. Open your test case and click the **Test Data** tab.
 2.  Click the arrow icon:
@@ -269,4 +269,4 @@ You now know how to do the following:
 
 ## 10 Next Up
 
-You now learned how to create a dataset and how to use that data in your test case. The next how-to is [How to Use Precondition in Test Cases](ht-two-use-precondition-in-test-cases). You find an overview of all the how-tos and the structure on the [ATS 2 How-To's](ht-two) page. We advise you to follow the predefined structure.
+You now learned how to create a dataset and how to use that data in your test case. The next how-to is [How to Use Precondition in Test Cases](/addons/ats-addon/ht-two-use-precondition-in-test-cases/). You find an overview of all the how-tos and the structure on the [ATS 2 How-To's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

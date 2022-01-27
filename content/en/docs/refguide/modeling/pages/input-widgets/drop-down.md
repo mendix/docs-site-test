@@ -11,12 +11,12 @@ aliases:
 
 ## 1 Introduction
 
-A **drop-down** is used to display and, optionally, allow the end-user to edit the value of an attribute of [data type](data-types) *enumeration*.
+A **drop-down** is used to display and, optionally, allow the end-user to edit the value of an attribute of [data type](/refguide/data-types/) *enumeration*.
 
-A drop-down must be placed in a [data widget](data-widgets) and displays an attribute of the object(s) retrieved by that widget. The name of the attribute to be displayed is shown inside the drop-down, between square brackets, and colored blue.
+A drop-down must be placed in a [data widget](/refguide/data-widgets/) and displays an attribute of the object(s) retrieved by that widget. The name of the attribute to be displayed is shown inside the drop-down, between square brackets, and colored blue.
 
 {{% alert color="info" %}}
-A drop-down should not be confused with a [reference selector](reference-selector), which is used to select an [association](associations) to another object.
+A drop-down should not be confused with a [reference selector](/refguide/reference-selector/), which is used to select an [association](/refguide/associations/) to another object.
 {{% /alert %}}
 
 For example, the following drop-down allows the end-user to see, and set, the **Region** to which a customer is allocated. The possible values for **Region** are held in an enumeration.
@@ -84,7 +84,7 @@ This differs from the [On change](#on-change) property in that the event will al
 
 #### 2.6.1 Empty Option Caption
 
-Empty option caption is the text that is shown for the empty option in the drop-down shown to the end-user. This is a translatable text. For more details, see [Language Menu](translatable-texts).
+Empty option caption is the text that is shown for the empty option in the drop-down shown to the end-user. This is a translatable text. For more details, see [Language Menu](/refguide/translatable-texts/).
 
 Adding a caption for the empty option improves the user experience of your application. It also helps end-users using a screen-reader to operate the application easily.
 
@@ -106,5 +106,5 @@ For example, the drop-down that allows the end-user to select the region allocat
 
 ## 3 Read More
 
-*   [Data View](data-view)
-*   [Attributes](attributes)
+*   [Data View](/refguide/data-view/)
+*   [Attributes](/refguide/attributes/)

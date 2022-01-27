@@ -20,6 +20,6 @@ Default value: Horizontal
 
 ### Label Width (Weight)
 
-This property is shown only when Show Label is Yes. If the form orientation is set to horizontal this property can be used to specify the width of the label. The width is specified using column weights from the [Bootstrap grid system](http://getbootstrap.com/css/#grid) (see [Layout Grid](layout-grid)).
+This property is shown only when Show Label is Yes. If the form orientation is set to horizontal this property can be used to specify the width of the label. The width is specified using column weights from the [Bootstrap grid system](http://getbootstrap.com/css/#grid) (see [Layout Grid](/refguide7/layout-grid/)).
 
 Default value: 3

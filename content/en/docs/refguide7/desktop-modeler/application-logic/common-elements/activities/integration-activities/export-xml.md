@@ -1,12 +1,12 @@
 ---
 title: "Export XML"
-url: /refguide7/export-xml
+url: /refguide7/export-xml/
 parent: "integration-activities"
 ---
 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-Please see [Export Mapping Action](export-mapping-action) for details on exporting XML.
+Please see [Export Mapping Action](/refguide7/export-mapping-action/) for details on exporting XML.
 
 {{% /alert %}}

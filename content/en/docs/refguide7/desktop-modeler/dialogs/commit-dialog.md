@@ -1,6 +1,6 @@
 ---
 title: "Commit Dialog"
-url: /refguide7/commit-dialog
+url: /refguide7/commit-dialog/
 parent: "dialogs"
 ---
 
@@ -17,8 +17,8 @@ At the top of the dialog box you will see the branch which you are committing. T
 | Branch type | Description |
 | --- | --- |
 | ![](/attachments/refguide7/desktop-modeler/dialogs/commit-dialog/commit-main.png) | You are committing the main line. |
- | You are committing the main line. || ![](/attachments/refguide7/desktop-modeler/dialogs/commit-dialog/commit-branch.png) | You are committing the specified branch. |
- | You are committing the specified branch. |
+| ![](/attachments/refguide7/desktop-modeler/dialogs/commit-dialog/commit-branch.png) | You are committing the specified branch. |
+
 ## 3 Message
 
 In the **Message** field, enter a message describing the changes you have made. This message may contain multiple lines. If you want to confirm the form by keyboard and you are inside the message box you can use <kbd>Ctrl</kbd> + <kbd>Enter</kbd>.

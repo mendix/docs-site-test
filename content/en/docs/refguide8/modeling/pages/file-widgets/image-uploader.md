@@ -1,16 +1,16 @@
 ---
 title: "Image Uploader"
-url: /refguide8/image-uploader
+url: /refguide8/image-uploader/
 parent: "file-widgets"
 tags: ["studio pro", "image uploader", "file widget", "widget"] 
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/image-uploader.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/image-uploader.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}The image uploader widget is not supported on native mobile pages.{{% /alert %}}
+{{% alert color="warning" %}}The image uploader widget is not supported on native mobile pages.{{% /alert %}}
 
 ## 1 Introduction
 
@@ -60,7 +60,7 @@ Default: *5*
 
 You can specify file extensions that users are allowed to upload. If no extension is specified, all file extensions are allowed. Separate multiple extensions by a semi-colon (for example, `txt;doc`).
 
-If a file with an extension that is not allowed is selected, a [system text](system-texts) for **File manager/image viewer** > **Error: incorrect file extension** will be shown below the file manager.
+If a file with an extension that is not allowed is selected, a [system text](/refguide8/system-texts/) for **File manager/image viewer** > **Error: incorrect file extension** will be shown below the file manager.
 
 #### 2.4.3 Thumbnail Width
 
@@ -80,6 +80,6 @@ If a file with an extension that is not allowed is selected, a [system text](sys
 
 ## 3 Read More
 
-* [Page](page)
-* [File Widgets](file-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [File Widgets](/refguide8/file-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)

@@ -49,7 +49,7 @@ Settings available for **Static Image** and **Dynamic Image** are described in t
 | Property      | The property applies to   | Description                                                  |
 | ------------- | ------------------------- | ------------------------------------------------------------ |
 | Image Source  | Static and Dynamic Images | Switches between static (from a file) and dynamic (from the database) image. |
-| Entity        | Dynamic Image             | Specifies which entity will be shown in the dynamic image. You can only set an entity for the dynamic image if it is an image entity. For more information on image entities, see the [Types of Entities](domain-models#entity-types) section in *Domain Model*. |
+| Entity        | Dynamic Image             | Specifies which entity will be shown in the dynamic image. You can only set an entity for the dynamic image if it is an image entity. For more information on image entities, see the [Types of Entities](/studio/domain-models/#entity-types) section in *Domain Model*. |
 | Image         | Static Image              | Sets an image that will be shown to the end-user.            |
 | Default Image | Dynamic Image             | This is the image that is displayed if is stored in the database. |
 | Width Unit    | Static and Dynamic Images | The width of an image can be specified in the following ways:  <br /><ul><li>**Auto** – the width of the given image is used.</li><li>**Pixels** – the width is specified in a number of pixels. If you specify both width and height, the image will be scaled automatically: the proportions will be kept, the picture will not be stretched.</li><li>**Percentage** –  the width is specified in a percentage of the original width. It can be larger than its original width in which case the image is stretched.</li></ul><br />Default value for **Width Unit**: Auto |
@@ -65,7 +65,7 @@ You can choose the **On Click Action** in the **Events** section. The **On Click
 
 The static image and the dynamic image share the properties in the **Events** section, except for one property that is [specific for the dynamic image](#events-dynamic-image). 
 
-For more information on the **Events** section for static and dynamic images, see [Events Section in Widgets](page-editor-widgets-events-section).
+For more information on the **Events** section for static and dynamic images, see [Events Section in Widgets](/studio/page-editor-widgets-events-section/).
 
 #### 2.2.2 Dynamic Image Specific Property {#events-dynamic-image}
 
@@ -77,21 +77,21 @@ The dynamic image has a specific on-click action **Enlarge on Click**. The full-
 
 ### 2.4 Design Section
 
-For information on the **Design** section and its properties, see [Design Section in Widgets](page-editor-widgets-design-section).
+For information on the **Design** section and its properties, see [Design Section in Widgets](/studio/page-editor-widgets-design-section/).
 
 ## 3 Image Uploader and File Manager Properties
 
 An **image uploader** allows end-users to upload images to your app and it generates a thumbnail of the uploaded image. For example, users can upload a picture for their profile.
 
-The image uploader must be placed inside a data view or a list view that has an image entity as their data source.  For more information on image entities, see the [Types of Entities](domain-models#entity-types) section in *Domain Model*. 
+The image uploader must be placed inside a data view or a list view that has an image entity as their data source.  For more information on image entities, see the [Types of Entities](/studio/domain-models/#entity-types) section in *Domain Model*. 
 
 A **file manager** allows end-users to upload and/or download files. For example, users can download a spreadsheet with necessary data. 
 
-The file manager must be placed inside a data view or a list view that has a file entity as their data source.  For more information on file entities, see the [Types of Entities](domain-models#entity-types) section in *Domain Model*. 
+The file manager must be placed inside a data view or a list view that has a file entity as their data source.  For more information on file entities, see the [Types of Entities](/studio/domain-models/#entity-types) section in *Domain Model*. 
 
-The default maximum size of files and images that can be uploaded/downloaded is 5 MB. You can change the maximum size in Studio Pro. For more information on properties in Studio Pro, see [File Manager](/refguide/file-manager) and [Image Uploader](/refguide/image-uploader).  
+The default maximum size of files and images that can be uploaded/downloaded is 5 MB. You can change the maximum size in Studio Pro. For more information on properties in Studio Pro, see [File Manager](/refguide/file-manager/) and [Image Uploader](/refguide/image-uploader/).  
 
-All file extensions are allowed for image uploader and file manager unless specified otherwise in Studio Pro. For more information on properties in Studio Pro, see [File Manager](/refguide/file-manager) and [Image Uploader](/refguide/image-uploader). 
+All file extensions are allowed for image uploader and file manager unless specified otherwise in Studio Pro. For more information on properties in Studio Pro, see [File Manager](/refguide/file-manager/) and [Image Uploader](/refguide/image-uploader/). 
 
 ### 3.1 Data Source Section
 
@@ -119,14 +119,14 @@ Editability indicates whether the end-user will be able to change the value disp
 
 * **Conditional** – The widget is editable only if specified conditions are met based on an attribute value or based on an expression.
 
-    {{%alert type="info" %}} If an attribute set for the widget's data source is of the AutoNumber type, the widget is set into read-only mode by default and the **Editability** setting itself is disabled, because attributes of this type are generated automatically.{{%/alert %}}
+    {{%alert color="info" %}} If an attribute set for the widget's data source is of the AutoNumber type, the widget is set into read-only mode by default and the **Editability** setting itself is disabled, because attributes of this type are generated automatically.{{%/alert %}}
 
 #### 3.2.4 Condition Based on {#condition}
 
 The **Condition Based on** property is only shown when [Conditional Editability](#editability) is selected. The following options are available:
 
 * **Attribute** – Defines whether the condition is based on the attribute value. In this case the widget will be editable only when it matches a certain value of the selected attribute. The attribute must be of the Boolean or enumeration type.
-* **Expression** – Defines whether the condition is based on the expression. In this case the widget will be editable only when the expression returns the Boolean value `true`. For more information on expressions, see [Expressions](expressions).
+* **Expression** – Defines whether the condition is based on the expression. In this case the widget will be editable only when the expression returns the Boolean value `true`. For more information on expressions, see [Expressions](/studio/expressions/).
 
 #### 3.2.5 Attribute {#attribute}
 
@@ -140,7 +140,7 @@ For example, you would like to allow users upload images only when their *email 
 
 #### 3.2.7 Expression
 
-This property allows you to create an expression and is shown only when the expression the [Condition Based on](#condition) is set to **Expression**. The expression should be of the Boolean type. For more information on how to create expressions, see [Expressions](expressions).
+This property allows you to create an expression and is shown only when the expression the [Condition Based on](#condition) is set to **Expression**. The expression should be of the Boolean type. For more information on how to create expressions, see [Expressions](/studio/expressions/).
 
 ### 3.3 Controls Section
 
@@ -162,9 +162,9 @@ The **Show Buttons For** option specifies whether end-users are able to upload a
 
 ### 3.5 Design Section
 
-For information on the **Design** section and its properties, see [Design Section in Widgets](page-editor-widgets-design-section).
+For information on the **Design** section and its properties, see [Design Section in Widgets](/studio/page-editor-widgets-design-section/).
 
 ## 4 Read More
 
-* [Pages](page-editor) 
-* [Widgets](page-editor-widgets)
+* [Pages](/studio/page-editor/) 
+* [Widgets](/studio/page-editor-widgets/)

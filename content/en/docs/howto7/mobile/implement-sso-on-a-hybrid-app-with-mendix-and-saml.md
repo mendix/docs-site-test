@@ -1,8 +1,8 @@
 ---
 title: "Implement SSO on a Hybrid App with Mendix & SAML"
-url: /howto7/mobile/implement-sso-on-a-hybrid-app-with-mendix-and-saml
+url: /howto7/mobile/implement-sso-on-a-hybrid-app-with-mendix-and-saml/
 category: "Mobile Development"
-menu_order: 30
+weight: 30
 description: "Describes how to address the challenges of implementing SSO in hybrid mobile apps."
 tags: ["SAML", "SSO", "mobile", "hybrid app", "phonegap", "authentication"]
 ---
@@ -11,21 +11,21 @@ tags: ["SAML", "SSO", "mobile", "hybrid app", "phonegap", "authentication"]
 
 This how-to will describe the challenges involved in implementing SSO (single sign-on) in hybrid mobile apps, and teach you how this can be solved in Mendix app.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 The implementation described in this how-to will not work when you have enabled anonymous users in your app. Disable anonymous users in your app to use this implementation.
 {{% /alert %}}
 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 The implementation described in this how-to will not work when you have enabled the PIN feature for your hybrid app. Disable the PIN feature for your hybrid app to use this implementation.
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Building hybrid apps in the cloud uses the PhoneGap Build service from Adobe. Because Adobe no longer maintains this service, building hybrid apps in the cloud and publishing them to app stores is no longer possible.
 
-To build a hybrid app and publish it, see [How to Build a Mendix Hybrid App Locally](/howto8/mobile/build-hybrid-locally) for information on local building.
+To build a hybrid app and publish it, see [How to Build a Mendix Hybrid App Locally](/howto8/mobile/build-hybrid-locally/) for information on local building.
 
-To publish your app in an app store, we recommend you build native iOS apps instead. For more information, see [How to Build Native Apps](/howto/mobile/build-native-apps).
+To publish your app in an app store, we recommend you build native iOS apps instead. For more information, see [How to Build Native Apps](/howto/mobile/build-native-apps/).
 {{% /alert %}}
 
 ## 2 Prerequisites
@@ -33,8 +33,8 @@ To publish your app in an app store, we recommend you build native iOS apps inst
 Before starting this how-to, make sure you have completed the following prerequisites:
 
 * Have a [PhoneGap Build account](https://build.phonegap.com/)
-* Be familiar with how the [SAML](/appstore/modules/saml) module works
-* Read [How to Publish a Mendix Hybrid Mobile App in App Stores](publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores)
+* Be familiar with how the [SAML](/appstore/modules/saml/) module works
+* Read [How to Publish a Mendix Hybrid Mobile App in App Stores](/howto7/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores/)
 * Read [Building a Mobile App with Mendix](https://www.mendix.com/blog/building-mobile-app-mendix/)
 
 ## 3 Context
@@ -135,7 +135,7 @@ MxApp.onConfigReady(function(config) {
 });
 ```
 
-To address the [second problem](#secondproblem), after a successful authentication against the IdP, Mendix stores a token in the device’s local storage. The system will use that token from that moment on to create a new session for the user. The session is created in Mendix only, so a new authentication against the IdP will not be performed again. This token is a TokenInformation (part of the System module) object, and it can be accessed/edited in microflows. By default, this local token will never expire, but this can be overridden by changing the `com.mendix.webui.HybridAppLoginTimeOut` [custom runtime setting](/refguide7/custom-settings). The downside of this approach is that access rights will not be updated upon login, since no interaction is done with the IdP. However, in most systems using SSO, user and role provisioning is handled separately from the authentication, so this might not be an issue.
+To address the [second problem](#secondproblem), after a successful authentication against the IdP, Mendix stores a token in the device’s local storage. The system will use that token from that moment on to create a new session for the user. The session is created in Mendix only, so a new authentication against the IdP will not be performed again. This token is a TokenInformation (part of the System module) object, and it can be accessed/edited in microflows. By default, this local token will never expire, but this can be overridden by changing the `com.mendix.webui.HybridAppLoginTimeOut` [custom runtime setting](/refguide7/custom-settings/). The downside of this approach is that access rights will not be updated upon login, since no interaction is done with the IdP. However, in most systems using SSO, user and role provisioning is handled separately from the authentication, so this might not be an issue.
 
 ### 5.2 The Hybrid App Package
 
@@ -171,7 +171,7 @@ To use the hybrid app package, follow these steps:
     
 ### 5.3 The SAML Module 
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 Not all versions of the SAML module will work correctly when implementing SSO for your hybrid app. Please make sure you use a version of the SAML module that is capable of creating mobile app tokens (that is, version 1.9.3 or above). We recommend updating the SAML module to the latest version available, and if needed, updating the Mendix version of your application.
 {{% /alert %}}
 
@@ -181,7 +181,7 @@ The last thing to do is to check the **Enable mobile authentication token** box 
 
 ## 6 Read More
 
-* [How to Deploy Your First Hybrid Mobile App](deploy-your-first-hybrid-mobile-app)
-* [How to Publish a Mendix Hybrid Mobile App in App Stores](publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores)
-* [How to Debug a Hybrid Mobile App](debug-a-mobile-app)
+* [How to Deploy Your First Hybrid Mobile App](/howto7/mobile/deploy-your-first-hybrid-mobile-app/)
+* [How to Publish a Mendix Hybrid Mobile App in App Stores](/howto7/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores/)
+* [How to Debug a Hybrid Mobile App](/howto7/mobile/debug-a-mobile-app/)
 * [Building a Mobile App with Mendix](https://www.mendix.com/blog/building-mobile-app-mendix/)

@@ -1,13 +1,13 @@
 ---
 title: "Common Widgets"
-url: /refguide8/common-widgets
+url: /refguide8/common-widgets/
 parent: "pages"
-menu_order: 20
+weight: 20
 tags: ["studio pro", "common widgets", "widget"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/common-widgets.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/common-widgets.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -15,21 +15,21 @@ tags: ["studio pro", "common widgets", "widget"]
 Common widgets category contain widgets that are commonly used. This category contains the following widgets:
 
 
-*  [Text](text) – displays a text that can contain parameters:
+*  [Text](/refguide8/text/) – displays a text that can contain parameters:
 
     ![](/attachments/refguide8/modeling/pages/common-widgets/text-widget-example.png)
 
-*  [Image](image) – displays static image:
+*  [Image](/refguide8/image/) – displays static image:
 
     ![](/attachments/refguide8/modeling/pages/common-widgets/image-design-mode-example.png)
 
-* [Label](label) – displays static text (the functionality of this widget is outdated, we recommend using the label property of [input widgets](input-widgets) or a text widget instead) 
+* [Label](/refguide8/label/) – displays static text (the functionality of this widget is outdated, we recommend using the label property of [input widgets](/refguide8/input-widgets/) or a text widget instead) 
 
-*  [Snippet Call](snippet-call) – allows you to use a snippet on another snippet, a page, or a layout
+*  [Snippet Call](/refguide8/snippet-call/) – allows you to use a snippet on another snippet, a page, or a layout
 
     ![](/attachments/refguide8/modeling/pages/common-widgets/snippet-call-design-mode-example.png)
 
-*  [Page Title](page-title) – displays page title set in [page properties](page-properties#title)
+*  [Page Title](/refguide8/page-title/) – displays page title set in [page properties](/refguide8/page-properties/#title)
 
     ![](/attachments/refguide8/modeling/pages/common-widgets/page-title-design-properties-example.png)
 
@@ -39,8 +39,8 @@ Common widgets category contain widgets that are commonly used. This category co
 
 ## 3 Read More
 
-* [Page](page)
+* [Page](/refguide8/page/)
 
-* [Pages](pages)
+* [Pages](/refguide8/pages/)
 
   

@@ -1,21 +1,21 @@
 ---
 title: "Loop"
-url: /studio7/microflows-loop
+url: /studio7/microflows-loop/
 category: "Microflows"
-menu_order: 30
+weight: 30
 description: "Describes a loop in Mendix Studio."
 tags: ["studio", "microflow", "loop", "loops"]
 ---
 
 ## 1 Introduction 
 
-A loop is used to iterate over a list of object and perform actions on each item of the list when building [microflows](microflows). For example, you can retrieve a list of orders from your database, then loop over this list and mark orders as processed. For more details, see section [3 Loop Example](#loop-example).
+A loop is used to iterate over a list of object and perform actions on each item of the list when building [microflows](/studio7/microflows/). For example, you can retrieve a list of orders from your database, then loop over this list and mark orders as processed. For more details, see section [3 Loop Example](#loop-example).
 
 The loop is visualized as a frame. The flow inside the loop is executed for each object. That means, if you add more than one activity to the loop, the full flow gets executed on each item. For example, you can add a loop that will prevent orders from processing if a customer is blocked. 
 
 ![](/attachments/studio7/microflows/microflows-loop/loop.png)
 
-The loop can contain all types of elements used in other parts of microflows, with the exception of start and stop events. Additionally, only a loop can contain [break events](/refguide/break-event) and [continue events](/refguide/continue-event). A break event is used in loops only to stop iterating over a list of objects and continue with the rest of the flow in a microflow. A continue event is used in loops only to stop the current iteration and start the iteration of the next object.
+The loop can contain all types of elements used in other parts of microflows, with the exception of start and stop events. Additionally, only a loop can contain [break events](/refguide/break-event/) and [continue events](/refguide/continue-event/). A break event is used in loops only to stop iterating over a list of objects and continue with the rest of the flow in a microflow. A continue event is used in loops only to stop the current iteration and start the iteration of the next object.
 
 ## 2 Loop Properties
 
@@ -36,9 +36,9 @@ Let us study a straightforward use-case, where you retrieve a list of orders fro
 
 Make sure you have the following prerequisites:
 
-1. [Create an entity](domain-models#adding-new-entities) in your domain model and name it *Order*.
-2. [Create an attribute](domain-models#adding-new-attributes) of the Boolean type for this entity to indicate the status of an order and name this attribute *Processed*.
-3. [Create a microflow](microflows#creating-new-microflow).
+1. [Create an entity](/studio7/domain-models/#adding-new-entities) in your domain model and name it *Order*.
+2. [Create an attribute](/studio7/domain-models/#adding-new-attributes) of the Boolean type for this entity to indicate the status of an order and name this attribute *Processed*.
+3. [Create a microflow](/studio7/microflows/#creating-new-microflow).
 
 To start the use-case, do the following:
 
@@ -58,7 +58,7 @@ To start the use-case, do the following:
     a. In the **Toolbox**, select **Loop**, drag and drop it to the microflow. <br />
 
     ![Loop is Added](/attachments/studio7/microflows/microflows-loop/loop-added.png)<br />
-<br />
+
     b. In **Properties**, set **OrderList** as **Loop Over** (**Loop Variable Name** is set automatically). We have selected the entity, and will loop over the list of its objects. <br />
 
     {{/* % image_container width="350" % */}}![Loop Properties in an Example](/attachments/studio7/microflows/microflows-loop/loop-properties-in-example.png)
@@ -86,10 +86,10 @@ To start the use-case, do the following:
 
 Check out the video with the process of configuring the example above:
 
-<video width="768" height="432" controls src="attachments/microflows-loop/loop-example-video.mp4">VIDEO</video>
+<video width="768" height="432" controls src="/attachments/studio7/microflows-loop/loop-example-video.mp4">VIDEO</video>
 
 As a result, we have a list of orders retrieved to our microflow, and a loop that iterates over this list. The activity inside the loop sets the status of each order to processed. 
 
 ## 4 Read More
 
-* [Microflows](microflows)
+* [Microflows](/studio7/microflows/)

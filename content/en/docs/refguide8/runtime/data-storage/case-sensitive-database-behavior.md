@@ -1,9 +1,9 @@
 ---
 title: "Case-Sensitive Database Behavior"
-url: /refguide8/case-sensitive-database-behavior
+url: /refguide8/case-sensitive-database-behavior/
 parent: "data-storage"
 tags: ["studio pro", "strings", "sort", "case", "query", "constraint"]
-menu_order: 20
+weight: 20
 ---
 
 ## 1 Introduction
@@ -19,7 +19,7 @@ For the purposes of this document we can divide case sensitive operations into t
 
 * Sorting: Indicates the order in which you want objects to be retrieved (alphabetically ascending or descending).
 * Comparing: These are operations that involve equality or other comparisons directly in queries (for instance, in the query `\\Entity[Attribute = 'a']`)
-* String functions: These are the [contains](xpath-contains), [starts-with](xpath-starts-with), and [ends-with](xpath-ends-with) functions of an XPath.
+* String functions: These are the [contains](/refguide8/xpath-contains/), [starts-with](/refguide8/xpath-starts-with/), and [ends-with](/refguide8/xpath-ends-with/) functions of an XPath.
 
 Unless otherwise indicated below, sorting and comparing strings is case sensitive whereas string functions are case insensitive.
 This is affected by the database, table, or column collation, and sometimes by other database specific options.
@@ -41,7 +41,7 @@ String functions are **case insensitive** as they are implemented using the `ILI
 
 ### 2.3 DB2
 
-As of version [8.14.0](/releasenotes/studio-pro/8.14), sorting and comparing are **case sensitive**. For versions below 8.14, all operations are **case sensitive**. There is an exception for both version groups where collation is configured to **case insensitive**, which affects all operations. For more information, see the [Making DB2 Case-Insensitive](db2#making) section of *DB2*.
+As of version [8.14.0](/releasenotes/studio-pro/8.14/), sorting and comparing are **case sensitive**. For versions below 8.14, all operations are **case sensitive**. There is an exception for both version groups where collation is configured to **case insensitive**, which affects all operations. For more information, see the [Making DB2 Case-Insensitive](/refguide8/db2/#making) section of *DB2*.
 
 Does not support sorting on string attributes of unlimited length.
 
@@ -70,7 +70,7 @@ Does not support sorting or comparison on string attributes of unlimited length.
 
 All operations depend on collation.
 The default recommended collation is `SQL_Latin1_General_CP1_CI_AS`.
-For more information, see our guide on [Setting Up a new SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database) and the Microsoft documentation [Windows Collation Name](https://docs.microsoft.com/en-us/sql/t-sql/statements/windows-collation-name-transact-sql).
+For more information, see our guide on [Setting Up a new SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/) and the Microsoft documentation [Windows Collation Name](https://docs.microsoft.com/en-us/sql/t-sql/statements/windows-collation-name-transact-sql).
 
 ## 3 Overview of Default Case Sensitivity
 

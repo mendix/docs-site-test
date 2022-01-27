@@ -25,11 +25,11 @@ A data grid showing a list of orders with a description and the referenced custo
 
 ### 2.1 Columns
 
-See [Columns (document template)](columns-document-template).
+See [Columns (document template)](/refguide/columns-document-template/).
 
 ### 2.2 Sort Bar
 
-See [Sort Bar](sort-bar).
+See [Sort Bar](/refguide/sort-bar/).
 
 ## 3 Appearance Properties
 
@@ -55,13 +55,13 @@ With striping enabled you can set the properties of even and uneven data grid ro
 
 ### 3.5 Style
 
-See [Style](style)
+See [Style](/refguide/style/)
 
 ## 4 Common Properties
 
 ### 4.1 Name
 
-The internal name of the widget. You can use this to give sensible names to widgets. The name property also appears in the generated HTML: the widget DOM element automatically includes the class '`mx-name-{NAME}`', which can be useful for [Selenium testing](/howto/integration/selenium-support).
+The internal name of the widget. You can use this to give sensible names to widgets. The name property also appears in the generated HTML: the widget DOM element automatically includes the class '`mx-name-{NAME}`', which can be useful for [Selenium testing](/howto/integration/selenium-support/).
 
 ## 5 Data Source Properties
 

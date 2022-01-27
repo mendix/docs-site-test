@@ -13,12 +13,12 @@ Mendix is designed so that it is easy to present the same information to users w
 
 These *translatable texts* include the following:
 
-* [button](button-widgets) captions
-* [data grid](data-grid) columns
-* [labels](label)
-* [menu items](menu#menu-item)
-* [messages](show-message) that are sent from a [microflow](microflows)
-* [text](text)
+* [button](/refguide/button-widgets/) captions
+* [data grid](/refguide/data-grid/) columns
+* [labels](/refguide/label/)
+* [menu items](/refguide/menu/#menu-item)
+* [messages](/refguide/show-message/) that are sent from a [microflow](/refguide/microflows/)
+* [text](/refguide/text/)
 
 ## 2 Working in the Currently Selected Language{#selected-language}
 
@@ -62,10 +62,10 @@ The **Language** menu items are described in the table below:
 | **Current Language** | Choose the current language from one of the languages set up in **Language Settings…**. | *None* |
 | **Select Previous Language** | Choose the previous language in the list of languages chosen in **Language Settings…**. | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>L</kbd> |
 | **Select Next Language** | Choose the next language in the list of languages chosen in **Language Settings…**. | <kbd>Ctrl</kbd> + <kbd>L</kbd> |
-| [Language Settings…](language-settings) | Choose which languages are supported by the app and configure date and time settings. | *None* |
-| [Batch Replace…](batch-replace) | Change all occurrences of chosen translatable texts in the current language where they are identical. | *None* |
-| [Batch Translate…](batch-translate) | Add and edit translations from a selected source language to a selected target language | *None* |
-| [Language Operations…](language-operations) | Manipulate (for example, copy) translations between languages. | *None* |
+| [Language Settings…](/refguide/language-settings/) | Choose which languages are supported by the app and configure date and time settings. | *None* |
+| [Batch Replace…](/refguide/batch-replace/) | Change all occurrences of chosen translatable texts in the current language where they are identical. | *None* |
+| [Batch Translate…](/refguide/batch-translate/) | Add and edit translations from a selected source language to a selected target language | *None* |
+| [Language Operations…](/refguide/language-operations/) | Manipulate (for example, copy) translations between languages. | *None* |
 
 ## 4 Setting the End-User's Language
 
@@ -102,7 +102,7 @@ The above only applies to pages *within* your Mendix application (meaning, pages
 
 ## 5 Read More
 
-* [How to Translate Your App Content](/howto/collaboration-requirements-management/translate-your-app-content) – a worked example of adding a translation 
-* [How To Use Translatable Validation Messages](/howto/logic-business-rules/translatable-validation-messages)
+* [How to Translate Your App Content](/howto/collaboration-requirements-management/translate-your-app-content/) – a worked example of adding a translation 
+* [How To Use Translatable Validation Messages](/howto/logic-business-rules/translatable-validation-messages/)
 * [Change language by clicking a link](https://forum.mendixcloud.com/link/questions/91821) – explanations and ideas on the Mendix forum for refreshing the page when the language is changed
 * [Anonymous User Journey](https://forum.mendixcloud.com/link/questions/91676) – a discussion on the Mendix forum about switching languages for anonymous end-users

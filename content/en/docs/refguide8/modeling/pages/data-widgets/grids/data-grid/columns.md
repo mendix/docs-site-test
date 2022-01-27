@@ -1,18 +1,18 @@
 ---
 title: "Grid Columns"
-url: /refguide8/columns
+url: /refguide8/columns/
 parent: "data-grid"
 tags: ["studio pro", "column", "grid column", "data grid"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/columns.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/columns.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-Grid columns allow you to set properties for a [data grid](data-grid) or [reference set selector](reference-set-selector) column. 
+Grid columns allow you to set properties for a [data grid](/refguide8/data-grid/) or [reference set selector](/refguide8/reference-set-selector/) column. 
 
 ## 2 Properties
 
@@ -80,7 +80,7 @@ If you choose **Custom** as the date format (see above), this property determine
 
 #### 2.4.1 Caption
 
-The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Language Menu](translatable-texts).
+The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Language Menu](/refguide8/translatable-texts/).
 
 #### 2.4.2 Editable
 
@@ -99,7 +99,7 @@ The values in a column can be aggregated in several ways. The aggregate function
 | Sum | Show the sum of the values. |
 | Count | Show the count of the values. |
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Note that all objects will be taken into account, and not just the ones on the current page.
 
@@ -107,9 +107,9 @@ Note that all objects will be taken into account, and not just the ones on the c
 
 #### 2.4.4 Aggregate Caption
 
-The aggregate caption is the text that appears in front of the computed value. This is a translatable text. See [Language Menu](translatable-texts).
+The aggregate caption is the text that appears in front of the computed value. This is a translatable text. See [Language Menu](/refguide8/translatable-texts/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 'Total' could be an aggregate caption for a column that shows the sum of the values.
 
@@ -117,11 +117,11 @@ The aggregate caption is the text that appears in front of the computed value. T
 
 #### 2.4.5 Show Tooltip
 
-This property determines whether the tooltip page is shown as the mouse is hovered over this column. The tooltip page can be configured on the [Data grid](data-grid).
+This property determines whether the tooltip page is shown as the mouse is hovered over this column. The tooltip page can be configured on the [Data grid](/refguide8/data-grid/).
 
 Default: *False*
 
 ## 3 Read More
 
-* [Data Grid](data-grid)
-* [Template Grid](template-grid)
+* [Data Grid](/refguide8/data-grid/)
+* [Template Grid](/refguide8/template-grid/)

@@ -165,4 +165,4 @@ These are the design property changes for Atlas 3 native mobile:
 
 * [Atlas 3 Website](https://www.mendix.com/atlas/)
 * [Atlas Design System App](https://atlasdesignsystem.mendixcloud.com/)
-* [Studio Pro 9 Release Notes](/releasenotes/studio-pro/9.0)
+* [Studio Pro 9 Release Notes](/releasenotes/studio-pro/9.0/)

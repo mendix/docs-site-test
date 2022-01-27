@@ -1,8 +1,8 @@
 ---
 title: "Configure a Navigation Bar"
-url: /studio-how-to8/navigation-how-to-configure
+url: /studio-how-to8/navigation-how-to-configure/
 description: "This how-to describes the process of configuring a navigation bar in Mendix Studio."
-menu_order: 15
+weight: 15
 tags: ["studio", "navigation", "how to", "navigation bar"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -44,9 +44,9 @@ You have several pages that you would like to add to the navigation:
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio8/page-editor). 
-* Familiarize yourself with navigation document terms. For more information, see [Navigation Document](/studio8/navigation). 
-* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio8/domain-models).
+* Familiarize yourself with page terms and how to perform basic functions on pages. For more information, see [Pages](/studio8/page-editor/). 
+* Familiarize yourself with navigation document terms. For more information, see [Navigation Document](/studio8/navigation/). 
+* Familiarize yourself with the domain model terms and learn how to perform basic functions. For more information, see [Domain Model](/studio8/domain-models/).
 
 ## 3 Creating Menu Items and Sub-Items
 
@@ -81,7 +81,7 @@ To create the menu item for the **New_Employee** page, do the following:
 1. Click a plus at the bottom of the navigation tree to create a menu item:
 
     {{/* % image_container width="350" % */}}![Adding Menu Item](/attachments/studio-how-to8/navigation-how-to-configure/adding-menu-item.png){{/* % /image_container % */}}
-{{/* % /image_container % */}}
+
 2. Open the new menu item properties and do the following:
 
     1.  Set the **On Click Action** to **Page**.
@@ -112,7 +112,7 @@ Good job! You have added a menu item for the **New Employee** page to your navig
 
 ![New Menu Item Created](/attachments/studio-how-to8/navigation-how-to-configure/new-menu-item-created.png)
 
-Click **Preview** in the top-right corner to [preview your app](/studio8/publishing-app) and test how the navigation menu looks like:
+Click **Preview** in the top-right corner to [preview your app](/studio8/publishing-app/) and test how the navigation menu looks like:
 ![Previewed Menu Items](/attachments/studio-how-to8/navigation-how-to-configure/previewed-menu-items.png)
 
 ### 3.3 Create a Menu Item for the Employee_Details Page and Configuring Its Sub-Items
@@ -157,7 +157,7 @@ Congratulations! You created and configured navigation for your app:
 
 ![Configured Navigation](/attachments/studio-how-to8/navigation-how-to-configure/configured-navigation.png)
 
-[Preview your app](/studio8/publishing-app) to see how the navigation menu is displayed:
+[Preview your app](/studio8/publishing-app/) to see how the navigation menu is displayed:
 
 ![Previewed Navigation](/attachments/studio-how-to8/navigation-how-to-configure/navigation-previewed.png)
 

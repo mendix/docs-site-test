@@ -12,12 +12,12 @@ aliases:
 ---
 
 {{% alert color="warning" %}}
-Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be retired at the beginning of Q3 2021. To continue running your licensed Mendix application on the Mendix Cloud, you need to migrate your app to Mendix Cloud V4. To learn more about Mendix Cloud V4 and how to migrate from Mendix Cloud V3, please visit the following page: [Migrate to Mendix Cloud V4](/developerportal/deploy/migrating-to-v4). 
+Our Mendix Cloud V3 is deprecated, currently in a grace period, and will be retired at the beginning of Q3 2021. To continue running your licensed Mendix application on the Mendix Cloud, you need to migrate your app to Mendix Cloud V4. To learn more about Mendix Cloud V4 and how to migrate from Mendix Cloud V3, please visit the following page: [Migrate to Mendix Cloud V4](/developerportal/deploy/migrating-to-v4/). 
 {{% /alert %}}
 
 ## 1 Introduction
 
-You may want to send email from your apps running in the Mendix Cloud via, for instance, the [Email with Templates](/appstore/modules/email-with-templates) module. After you have installed this you will need to configure an SMTP server in your application. There are several options:
+You may want to send email from your apps running in the Mendix Cloud via, for instance, the [Email with Templates](/appstore/modules/email-with-templates/) module. After you have installed this you will need to configure an SMTP server in your application. There are several options:
 
 | Service | Mendix Cloud v3 | Mendix Cloud v4 | Free App environment |
 | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ However, for new applications or applications that send large amounts of e-mail 
 
 In general we recommend external services as these offer specialized tools for sending e-mail, working with spam filters, keeping track of sent e-mail and giving insights into your target reach via analytics tools.
 
-The [Email with Templates](/appstore/modules/email-with-templates) module from the Marketplace is compatible with all providers that offer an SMTP interface. You can also use other ways of sending e-mail using an external service, such as REST APIs or creating your own Java actions to send e-mail.
+The [Email with Templates](/appstore/modules/email-with-templates/) module from the Marketplace is compatible with all providers that offer an SMTP interface. You can also use other ways of sending e-mail using an external service, such as REST APIs or creating your own Java actions to send e-mail.
 
 To use an external provider, you will need to sign up for an account with them and use their SMTP settings which include:
 
@@ -85,7 +85,7 @@ The settings for the Mendix mail servers are as follows:
 * Servername: localhost
 * Port: 25
 
-No authentication information is needed. You can use this same SMTP server from the [Email with Templates](/appstore/modules/email-with-templates) module from the Marketplace or custom Java actions.
+No authentication information is needed. You can use this same SMTP server from the [Email with Templates](/appstore/modules/email-with-templates/) module from the Marketplace or custom Java actions.
 
 ### 3.2 Using Sender Policy Framework (SPF) While Sending Outgoing Mail from Mendix
 
@@ -111,5 +111,5 @@ When using Mendix mail servers and a sender address in a domain that has a restr
 
 ## 5 Read More
 
-*   [Trends in Mendix Cloud v3](/developerportal/operate/trends)
-*   [Mendix Cloud: Deploy](mendix-cloud-deploy)
+*   [Trends in Mendix Cloud v3](/developerportal/operate/trends/)
+*   [Mendix Cloud: Deploy](/developerportal/deploy/mendix-cloud-deploy/)

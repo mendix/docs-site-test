@@ -1,13 +1,13 @@
 ---
 title: "Common Widgets"
-url: /refguide7/common-widgets
+url: /refguide7/common-widgets/
 parent: "pages"
 ---
 
 
-*   [Text](text)
-*   [Image](image)
-*   [Label](label)
-*   [Page title](page-title)
-*   [Snippet Call](snippet-call)
-*   [Common Widget Properties](common-widget-properties)
+*   [Text](/refguide7/text/)
+*   [Image](/refguide7/image/)
+*   [Label](/refguide7/label/)
+*   [Page title](/refguide7/page-title/)
+*   [Snippet Call](/refguide7/snippet-call/)
+*   [Common Widget Properties](/refguide7/common-widget-properties/)

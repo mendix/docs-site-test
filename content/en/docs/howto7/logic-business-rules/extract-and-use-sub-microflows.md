@@ -1,8 +1,8 @@
 ---
 title: "Extract and Use Sub-Microflows"
-url: /howto7/logic-business-rules/extract-and-use-sub-microflows
+url: /howto7/logic-business-rules/extract-and-use-sub-microflows/
 category: "Logic & Business Rules"
-menu_order: 5
+weight: 5
 tags: ["microflow", "sub-microflow", "extract"]
 ---
 
@@ -56,7 +56,7 @@ To create a sub-microflow for the validation steps, follow these steps:
 
 	![](/attachments/howto7/logic-business-rules/extract-and-use-sub-microflows/18581017.png)
 
-	{{% alert type="warning" %}} The best practice is to identify sub-microflows by their name. You can use "Sub_MicroflowDescriptionHere", "Subflow_MicrocflowDescriptionHere", or any other notation you feel works best. The key is to be consistent when you name your microflows so that it is easy for other team members to understand and find the microflows they need.
+	{{% alert color="warning" %}} The best practice is to identify sub-microflows by their name. You can use "Sub_MicroflowDescriptionHere", "Subflow_MicrocflowDescriptionHere", or any other notation you feel works best. The key is to be consistent when you name your microflows so that it is easy for other team members to understand and find the microflows they need.
 
 	{{% /alert %}}
 4. Click **OK** to create your first sub-microflow:
@@ -81,11 +81,11 @@ The extra sub-microflow option is based on the Mendix reusability principle. You
 
 ## 6 Read More
 
-* [How to Define Access Rules Using XPath](define-access-rules-using-xpath)
-* [How to Trigger Logic Using Microflows](triggering-logic-using-microflows)
-* [How to Create a Custom Save Button](create-a-custom-save-button)
-* [How to Work with Lists in a Microflow](working-with-lists-in-a-microflow)
-* [How to Optimize Retrieve Activities](optimizing-retrieve-activities)
-* [How to Set Up Error Handling](set-up-error-handling)
-* [How to Optimize Microflow Aggregates](optimizing-microflow-aggregates)
-* [Microflows](/refguide7/microflows)
+* [How to Define Access Rules Using XPath](/howto7/logic-business-rules/define-access-rules-using-xpath/)
+* [How to Trigger Logic Using Microflows](/howto7/logic-business-rules/triggering-logic-using-microflows/)
+* [How to Create a Custom Save Button](/howto7/logic-business-rules/create-a-custom-save-button/)
+* [How to Work with Lists in a Microflow](/howto7/logic-business-rules/working-with-lists-in-a-microflow/)
+* [How to Optimize Retrieve Activities](/howto7/logic-business-rules/optimizing-retrieve-activities/)
+* [How to Set Up Error Handling](/howto7/logic-business-rules/set-up-error-handling/)
+* [How to Optimize Microflow Aggregates](/howto7/logic-business-rules/optimizing-microflow-aggregates/)
+* [Microflows](/refguide7/microflows/)

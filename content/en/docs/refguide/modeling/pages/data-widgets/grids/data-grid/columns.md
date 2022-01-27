@@ -7,7 +7,7 @@ tags: ["studio pro", "column", "grid column", "data grid"]
 ---
 ## 1 Introduction
 
-Grid columns allow you to set properties for a [data grid](data-grid) or [reference set selector](reference-set-selector) column. 
+Grid columns allow you to set properties for a [data grid](/refguide/data-grid/) or [reference set selector](/refguide/reference-set-selector/) column. 
 
 ## 2 Properties
 
@@ -75,7 +75,7 @@ If you choose **Custom** as the date format (see above), this property determine
 
 #### 2.4.1 Caption
 
-The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Language Menu](translatable-texts).
+The caption of a column is the text that appears as a header above the rows. This is a translatable text. See [Language Menu](/refguide/translatable-texts/).
 
 #### 2.4.2 Editable
 
@@ -102,7 +102,7 @@ Note that all objects will be taken into account, and not just the ones on the c
 
 #### 2.4.4 Aggregate Caption
 
-The aggregate caption is the text that appears in front of the computed value. This is a translatable text. See [Language Menu](translatable-texts).
+The aggregate caption is the text that appears in front of the computed value. This is a translatable text. See [Language Menu](/refguide/translatable-texts/).
 
 {{% alert color="info" %}}
 
@@ -112,11 +112,11 @@ The aggregate caption is the text that appears in front of the computed value. T
 
 #### 2.4.5 Show Tooltip
 
-This property determines whether the tooltip page is shown as the mouse is hovered over this column. The tooltip page can be configured on the [Data grid](data-grid).
+This property determines whether the tooltip page is shown as the mouse is hovered over this column. The tooltip page can be configured on the [Data grid](/refguide/data-grid/).
 
 Default: *False*
 
 ## 3 Read More
 
-* [Data Grid](data-grid)
-* [Template Grid](template-grid)
+* [Data Grid](/refguide/data-grid/)
+* [Template Grid](/refguide/template-grid/)

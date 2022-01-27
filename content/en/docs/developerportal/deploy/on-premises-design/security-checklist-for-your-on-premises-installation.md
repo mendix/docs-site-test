@@ -74,10 +74,10 @@ For example, Content Security Policy (CSP) is not enabled for you. There is no d
 
 ## 11 Read More
 
-* [How to Restore a SQL Server Database](restoring-a-sql-server-database)
-* [How to Troubleshoot an SQL Server](troubleshooting-sql-server)
-* [How to Set Up Mendix SQL Maintenance Plans](mendix-sql-maintenance-plans)
-* [How to Set Up a New SQL Server Database](setting-up-a-new-sql-server-database)
-* [How to Set Up a SQL Server User](setting-up-a-sql-server-user)
-* [How to Deploy Mendix on Microsoft Windows](deploy-mendix-on-microsoft-windows)
-* [U*ix Deployment](unix-like)
+* [How to Restore a SQL Server Database](/developerportal/deploy/restoring-a-sql-server-database/)
+* [How to Troubleshoot an SQL Server](/developerportal/deploy/troubleshooting-sql-server/)
+* [How to Set Up Mendix SQL Maintenance Plans](/developerportal/deploy/mendix-sql-maintenance-plans/)
+* [How to Set Up a New SQL Server Database](/developerportal/deploy/setting-up-a-new-sql-server-database/)
+* [How to Set Up a SQL Server User](/developerportal/deploy/setting-up-a-sql-server-user/)
+* [How to Deploy Mendix on Microsoft Windows](/developerportal/deploy/deploy-mendix-on-microsoft-windows/)
+* [U*ix Deployment](/developerportal/deploy/unix-like/)

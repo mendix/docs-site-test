@@ -24,7 +24,7 @@ To run your Mendix apps using Mendix for Private Cloud, you need a license for t
 
 In addition, you need a runtime license for your app, in the same way as you would if you were deploying it to any other platform.
 
-See [Licensing Mendix for Private Cloud](private-cloud#licensing) for more information on this subject.
+See [Licensing Mendix for Private Cloud](/developerportal/deploy/private-cloud/#licensing) for more information on this subject.
 
 ## 3 Production Environments
 

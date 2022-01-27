@@ -1,19 +1,19 @@
 ---
 title: "Published REST Request Routing"
-url: /refguide7/published-rest-routing
+url: /refguide7/published-rest-routing/
 parent: "published-rest-technical-details"
-menu_order: 10
+weight: 10
 description: "A flow chart which shows how an example request is processed, what security is applied, and what is returned by the service."
 tags: ["flow chart", "processing", "security", "service", "resource", "operation", "method", "authentication", "return code", "published REST"]
 ---
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The **published REST service** feature was introduced in Mendix 7.10.0.
 
 {{% /alert %}}
 
-When a REST HTTP request arrives at the server, the server needs to determine which [operation](published-rest-operation) to execute and what security to apply.
+When a REST HTTP request arrives at the server, the server needs to determine which [operation](/refguide7/published-rest-operation/) to execute and what security to apply.
 
 This flow chart shows an example request, how this will be processed, and what will be returned by the service under different circumstances.
 

@@ -23,6 +23,6 @@ If you want to use an object of the *Customer* entity in a microflow, use the pa
 
 ### 2.2 Data Type
 
-The data type of a parameter defines the type of the value that it expects. See [Data Types](data-types) for the possible data types.
+The data type of a parameter defines the type of the value that it expects. See [Data Types](/refguide/data-types/) for the possible data types.
 
 Default: *Object*

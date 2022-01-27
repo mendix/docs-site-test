@@ -1,14 +1,14 @@
 ---
 title: "Indexes"
-url: /refguide8/indexes
+url: /refguide8/indexes/
 parent: "entities"
-menu_order: 60
+weight: 60
 tags: ["domain model", "entity", "attribute", "index", "studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/indexes.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/indexes.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -19,8 +19,8 @@ Indexes can be added and edited from the **Indexes** tab of the entity propertie
 
 ![Example of index tab](/attachments/refguide8/modeling/domain-model/entities/indexes/index-properties.png)
 
-{{% alert type="info" %}}
-Index properties are read-only for external entities. For further details, see [External Entities](external-entities).
+{{% alert color="info" %}}
+Index properties are read-only for external entities. For further details, see [External Entities](/refguide8/external-entities/).
 {{% /alert %}}
 
 ## 2 Important Considerations
@@ -31,7 +31,7 @@ Indexes are ordered, which means that when you create an index on two or more at
 
 ### 2.2 Indexes on System Members
 
-If you choose to store an entity's `owner` and `changedBy` system members, an index is created. This is not so for the `createdDate` and `changedDate` system members. In addition, an index is created for the automatically generated attribute `id`. See [Domain Model](domain-model) for more information about the implementation of these attributes.
+If you choose to store an entity's `owner` and `changedBy` system members, an index is created. This is not so for the `createdDate` and `changedDate` system members. In addition, an index is created for the automatically generated attribute `id`. See [Domain Model](/refguide8/domain-model/) for more information about the implementation of these attributes.
 
 ### 2.3 Indexes on Non-Persistable Entities
 

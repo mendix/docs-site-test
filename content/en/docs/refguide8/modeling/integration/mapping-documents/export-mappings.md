@@ -1,22 +1,22 @@
 ---
 title: "Export Mappings"
-url: /refguide8/export-mappings
+url: /refguide8/export-mappings/
 parent: "mapping-documents"
 tags: ["studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/export-mappings.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/export-mappings.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
 
-For an introduction to export mappings, refer to [Mapping Documents](mapping-documents).
+For an introduction to export mappings, refer to [Mapping Documents](/refguide8/mapping-documents/).
 
 ## 2 Obtaining Objects in Export Mappings
 
-Figure 1 shows an example of an Export Mapping document in which two elements from a schema have been selected using the [Select Elements](select--elements) dialog. The entity Cheesecake (on the left) was dragged into the mapping to map to the Cheesecake element (on the right) and the entity Topping was mapped to the Topping element.
+Figure 1 shows an example of an Export Mapping document in which two elements from a schema have been selected using the [Select Elements](/refguide8/select--elements/) dialog. The entity Cheesecake (on the left) was dragged into the mapping to map to the Cheesecake element (on the right) and the entity Topping was mapped to the Topping element.
 
 ![](/attachments/refguide8/modeling/integration/mapping-documents/export-mappings/16843939.png)
 

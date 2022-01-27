@@ -1,14 +1,14 @@
 ---
 title: "Attributes"
-url: /refguide8/attributes
+url: /refguide8/attributes/
 parent: "entities"
-menu_order: 30
+weight: 30
 tags: ["domain model", "entity", "attribute", "studio pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/attributes.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/attributes.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -24,18 +24,18 @@ The domain model editor uses the following symbols to help visualize attribute p
 | Symbol | Description |
 | --- | --- |
 | ![](/attachments/refguide8/modeling/domain-model/entities/attributes/917593.png) | This attribute has one or more validation rules. |
- | This attribute has one or more validation rules. || ![](/attachments/refguide8/modeling/domain-model/entities/attributes/917592.png) | This attribute has a microflow that calculates the value of the attribute. |
- | This attribute has a microflow that calculates the value of the attribute. |
-{{% alert type="info" %}}
-Attributes for external entities are specified in the **External Entity Properties**. These attributes are defined in the originating app and the only local changes that can be applied to these entities is a local name and description. For further information see the [Attributes](external-entities#attributes) section of *External Entities*.
+| ![](/attachments/refguide8/modeling/domain-model/entities/attributes/917592.png) | This attribute has a microflow that calculates the value of the attribute. |
+
+{{% alert color="info" %}}
+Attributes for external entities are specified in the **External Entity Properties**. These attributes are defined in the originating app and the only local changes that can be applied to these entities is a local name and description. For further information see the [Attributes](/refguide8/external-entities/#attributes) section of *External Entities*.
 {{% /alert %}}
 
 ## 2 Properties
 
-You can add attributes to an entity from the [entity properties dialog box](entities#dialog-box). You can also edit them from this dialog box, or by double-clicking the attribute name in the domain model.
+You can add attributes to an entity from the [entity properties dialog box](/refguide8/entities/#dialog-box). You can also edit them from this dialog box, or by double-clicking the attribute name in the domain model.
 
-{{% alert type="info" %}}
-You can **Add** new attributes to [external entities](external-entities#attributes), **Edit** some of the attribute properties, or **Delete** them. However, the changes will only apply locally, and the values in the originating app will not be affected. For more information on operations on attributes of external entities, see the [Attributes](external-entities#attributes) section of *External Entities*.
+{{% alert color="info" %}}
+You can **Add** new attributes to [external entities](/refguide8/external-entities/#attributes), **Edit** some of the attribute properties, or **Delete** them. However, the changes will only apply locally, and the values in the originating app will not be affected. For more information on operations on attributes of external entities, see the [Attributes](/refguide8/external-entities/#attributes) section of *External Entities*.
 {{% /alert %}}
 
 An example of the attribute properties is represented in the image below:
@@ -55,7 +55,7 @@ Attribute properties consist of the following sections:
 
 The **Name** property specifies the name of the attribute. This name is used to refer to the attribute in forms, microflows, queries, constraints, and so forth.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 If you delete an attribute in your entity and then create a new attribute with the same name, Mendix will consider it a new and different attribute. This means that upon deployment the old column will be dropped, including its data. Then a new, empty, column with the same name will be created.
 {{% /alert %}}
 
@@ -67,10 +67,10 @@ This allows you to describe aspects of the entity which may be useful to you or 
 
 #### 2.2.1 Type
 
-The type property defines the type of data that can be stored in the attribute. These are related to the data types described in [Data Types](data-types), but there is not a one-to-one mapping.
+The type property defines the type of data that can be stored in the attribute. These are related to the data types described in [Data Types](/refguide8/data-types/), but there is not a one-to-one mapping.
 
-{{% alert type="warning" %}}
-Mendix allows you to change attribute and association types on existing domain models. While some attributes can easily be converted, there are limitations and consequences of converting between some types. For more information, see [Attributes Type Migration](attributes-type-migration).
+{{% alert color="warning" %}}
+Mendix allows you to change attribute and association types on existing domain models. While some attributes can easily be converted, there are limitations and consequences of converting between some types. For more information, see [Attributes Type Migration](/refguide8/attributes-type-migration/).
 {{% /alert %}}
 
 An attribute has one of the following types:
@@ -82,8 +82,8 @@ Binary<sup><small>[1]</small></sup> | Binary data. Can only be used for persista
 Boolean | True or false. | Boolean | 
 Date and time | A point in time consisting of a date and a time component accurate up to milliseconds. | Date and time |
 Decimal | A positive or negative number that can have digits after the decimal point. The Decimal type can be used for high-precision calculations. Use this type to represent amounts of money for example. When a Decimal type attribute is persisted in the database its value is validated against 2 conditions. In case the number of digits of the integral part (before the decimal separator) is more than 20, an exception is thrown. In case the number of digits of the fractional part (after the decimal separator) is more than 8, the fractional value is automatically rounded according to [the round half to even rule (also known as bankers' rounding)](https://en.wikipedia.org/wiki/Rounding#Round_half_to_even). Therefore the the maximum allowable value for the Decimal type is 99999999999999999999.99999999. | Decimal |
-Enumeration | A list of predefined attributes. For more information, see [Enumerations](enumerations). | Enumeration |
-Hashed string | A string which is hashed using the algorithm specified in the [project settings](project-settings#hash-algorithm). This can be used to store password hashes, for example, so that the original password is not recorded in the database.  | String |
+Enumeration | A list of predefined attributes. For more information, see [Enumerations](/refguide8/enumerations/). | Enumeration |
+Hashed string | A string which is hashed using the algorithm specified in the [project settings](/refguide8/project-settings/#hash-algorithm). This can be used to store password hashes, for example, so that the original password is not recorded in the database.  | String |
 Integer | A whole number that can be positive (maximum 2<sup>31</sup>-1, thus 2147483647), negative (minimum -2<sup>31</sup>, thus -2147483648), or zero. | Integer/Long |
 Long | A whole number that can be positive (maximum 2<sup>63</sup>-1), negative (minimum -2<sup>63</sup>), or zero. | Integer/Long |
 String *(default)* | A text containing letters, spaces, numbers and other characters. | String |
@@ -112,7 +112,7 @@ A customer can be active or inactive, which is stored in an attribute named **Ac
 
 #### 2.2.2 Localize
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property is shown if **Type** is set to **Date and time**.
 {{% /alert %}}
 
@@ -124,7 +124,7 @@ Default: *Yes*
 
 #### 2.2.3 Enumeration
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property is shown if **Type** is set to **Enumeration**.
 {{% /alert %}}
 
@@ -132,7 +132,7 @@ The enumeration property indicates which enumeration defines the possible values
 
 #### 2.2.4 Length
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property is shown if **Type** is set to **String**.
 {{% /alert %}}
 
@@ -142,7 +142,7 @@ Default: *Limited*
 
 #### 2.2.5 Max Length (Only for String Attribute Type)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property is shown if **Type** is set to **String**.
 {{% /alert %}}
 
@@ -165,7 +165,7 @@ Take note of the following things when using **Calculated** attributes:
 
 #### 2.3.2 Microflow
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property is shown if **Value** is set to **Calculated**.
 {{% /alert %}}
 
@@ -177,7 +177,7 @@ For example, in a web shop, you want to show the total expenses for each custome
 
 #### 2.3.3 Default Value
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 This property is shown if **Value** is set to **Stored**.
 {{% /alert %}}
 

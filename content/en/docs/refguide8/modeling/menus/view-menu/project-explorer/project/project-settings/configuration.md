@@ -1,13 +1,13 @@
 ---
 title: "Configurations"
-url: /refguide8/configuration
+url: /refguide8/configuration/
 parent: "project-settings"
 tags: ["studio pro", "configurations", "configuration"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/configuration.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/configuration.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -18,9 +18,9 @@ You can define any number of configurations. The active configuration, as in, th
 
 You can use configurations to have different database settings for different people working on your project. Maybe one person has SQL Server on their computer and the other has PostgreSQL. You can also have a shared configuration for connecting to a database server that you both have access to.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
-When you are deploying your application to a server or the Mendix cloud you will have to configure settings  there. For more information, see [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy).
+When you are deploying your application to a server or the Mendix cloud you will have to configure settings  there. For more information, see [Mendix Cloud](/developerportal/deploy/mendix-cloud-deploy/).
 
 {{% /alert %}}
 
@@ -68,7 +68,7 @@ Constants have a default value that you can override per configuration. You only
 
 You can use custom server settings to configure the Runtime beyond the standard possibilities offered by Studio Pro.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 Only use this functionality if you know exactly what you are doing. Wrong values can prevent the Runtime from starting.
 
@@ -76,8 +76,8 @@ Only use this functionality if you know exactly what you are doing. Wrong values
 
 Each custom setting consists of a name and a value. For example, to enable persistent sessions you add a custom setting with name `PersistentSessions` and value `true`.
 
-For settings overview, see [Runtime Customization](custom-settings).
+For settings overview, see [Runtime Customization](/refguide8/custom-settings/).
 
 ## 3 Read More
 
-* [Project Settings](project-settings)
+* [Project Settings](/refguide8/project-settings/)

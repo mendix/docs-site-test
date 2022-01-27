@@ -1,13 +1,13 @@
 ---
 title: "Commit"
-url: /refguide8/commit-dialog
+url: /refguide8/commit-dialog/
 parent: "version-control-menu"
-menu_order: 20
+weight: 20
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/commit-dialog.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/commit-dialog.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -23,8 +23,8 @@ At the top of the dialog box you will see the branch which you are committing. T
 | Branch Description | Notes |
 | --- | --- |
 | ![Version Control Menu](/attachments/refguide8/modeling/menus/version-control-menu/commit-dialog/commit-main.png) |  you are committing the main line |
- |  you are committing the main line || ![Version Control Menu](/attachments/refguide8/modeling/menus/version-control-menu/commit-dialog/commit-branch.png) |  you are committing the specified branch |
- |  you are committing the specified branch |
+| ![Version Control Menu](/attachments/refguide8/modeling/menus/version-control-menu/commit-dialog/commit-branch.png) |  you are committing the specified branch |
+
 ## 3 Message
 
 Enter a message describing the changes you have made. This message may contain multiple lines. If you want to make the commit using the keyboard you can press <kbd>Ctrl</kbd>+<kbd>Enter</kbd>.
@@ -41,7 +41,7 @@ Tick the boxes next to the stories that are related to your commit. We recommend
 
 ![Version Control Menu](/attachments/refguide8/modeling/menus/version-control-menu/commit-dialog/commit-dialog-model-changes.png)
 
-If there are changes in the model this tab shows a summary of those changes. See [Changes Pane](changes-pane) for a description of how changes are reported in Studio Pro.
+If there are changes in the model this tab shows a summary of those changes. See [Changes Pane](/refguide8/changes-pane/) for a description of how changes are reported in Studio Pro.
 
 ### 4.3 Changes on Disk
 

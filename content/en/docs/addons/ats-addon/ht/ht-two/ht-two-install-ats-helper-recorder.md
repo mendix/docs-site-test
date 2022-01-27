@@ -13,7 +13,7 @@ ATS provides two different tools to help build test scripts: the ATS Helper and 
 **This how-to will teach you  how to do the following:**
 
 * Install the ATS Helper
-* Install the [ATS Recorder](rg-one-recorder)
+* Install the [ATS Recorder](/addons/ats-addon/rg-one-recorder/)
 
 ## 2 Prerequisites
 
@@ -22,14 +22,14 @@ Before starting this how-to, make sure you have the following prerequisites in p
 *  ATS
 *   Mendix app
 
-	{{% alert type="info" %}}  Both the ATS Helper and the ATS Recorder only work on a Mendix app.
+	{{% alert color="info" %}}  Both the ATS Helper and the ATS Recorder only work on a Mendix app.
 	{{% /alert %}}
 	
 	{{% youtube C7GuDU9nePQ %}}
 
 *   Google Chrome Browser
 
-	{{% alert type="info" %}}  Both the ATS Helper and the ATS Recorder only function in [Google Chrome](https://www.google.com/chrome/browser/). 
+	{{% alert color="info" %}}  Both the ATS Helper and the ATS Recorder only function in [Google Chrome](https://www.google.com/chrome/browser/). 
 	{{% /alert %}}
 
 ## 3 Installing the ATS Helper
@@ -52,11 +52,11 @@ To use the ATS Helper, select the bookmark, press <kbd>Ctrl</kbd>, and hover ove
 
 ![](/attachments/addons/ats-addon/ht/ht-two/ht-two-install-ats-helper-recorder/ats-helper-widget.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 The ATS Helper only works on standalone widgets.
 {{% /alert %}}
 
-See [How to Create a Test Case](ht-two-create-a-test-case) for more information on how to use the ATS Helper.
+See [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/) for more information on how to use the ATS Helper.
 
 ## 4 Installing the ATS Recorder
 
@@ -76,8 +76,8 @@ To install the ATS Recorder, follow these steps:
 
 	![](/attachments/addons/ats-addon/ht/ht-two/ht-two-install-ats-helper-recorder/add-ats-recorder.png)
 
-See [How to Create a Test Case](ht-two-create-a-test-case) for more information on how to use the ATS Helper.
+See [How to Create a Test Case](/addons/ats-addon/ht-two-create-a-test-case/) for more information on how to use the ATS Helper.
 
 ## 5 Next Up
 
-You now learned how to install the ATS tools. The next how-to is [How to Configure a Selenium Hub](ht-two-configure-a-selenium-hub). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](ht-two) page. We advise you to follow the predefined structure.
+You now learned how to install the ATS tools. The next how-to is [How to Configure a Selenium Hub](/addons/ats-addon/ht-two-configure-a-selenium-hub/). You find an overview of all the how-tos and the structure on the [ATS 2 How-to's](/addons/ats-addon/ht-two/) page. We advise you to follow the predefined structure.

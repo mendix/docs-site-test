@@ -1,13 +1,13 @@
 ---
 title: "Arithmetic Expressions"
-url: /refguide8/arithmetic-expressions
+url: /refguide8/arithmetic-expressions/
 parent: "expressions"
-menu_order: 20
+weight: 20
 tags: ["studio pro", "expressions", "arithmetic expressions"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/arithmetic-expressions.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/arithmetic-expressions.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -170,7 +170,7 @@ the output is:
 
 Adds two numbers.
 
-For the use of the addition symbol for string concatenation, see [String function calls](string-function-calls).
+For the use of the addition symbol for string concatenation, see [String function calls](/refguide8/string-function-calls/).
 
 ### 5.1 Input Parameters
 

@@ -1,6 +1,6 @@
 ---
 title: "Import a Large Excel File"
-url: /howto7/integration/import-a-large-excel-file
+url: /howto7/integration/import-a-large-excel-file/
 parent: "importing-excel-documents"
 tags: ["excel", "excel  importer", "marketplace", "sheet"]
 ---
@@ -23,14 +23,14 @@ We will use XML-to-domain mapping to create a new import entity from an Excel sh
 
 Before starting this how-to, make sure you have completed the following prerequisite:
 
-* Have an app with the [MxModel Reflection](/appstore/modules/model-reflection) and [Excel Importer](/appstore/modules/excel-importer) modules installed and configured from the Mendix Marketplace
+* Have an app with the [MxModel Reflection](/appstore/modules/model-reflection/) and [Excel Importer](/appstore/modules/excel-importer/) modules installed and configured from the Mendix Marketplace
 
 ## 3 Modifying Your Excel Sheet
 
 The Excel sheet you receive in this scenario contains almost every country in the world, and for every country, some data is stored. This data has to be imported into your application.
 
 You can find the Excel sheet here: [Countries](/attachments/howto7/integration/importing-excel-documents/import-a-large-excel-file/Countries.xlsx).
-.
+
 You are going to make an XSD schema from the headers in the Excel sheet so that you can import this later into the model.
 
 To modify your Excel sheet, follow these steps:
@@ -41,7 +41,7 @@ To modify your Excel sheet, follow these steps:
     ![](/attachments/howto7/integration/importing-excel-documents/import-a-large-excel-file/19398888.png)
 
     Your headers should be listed vertically and your sheet should look like this: [Countries Transposed](/attachments/howto7/integration/importing-excel-documents/import-a-large-excel-file/CountriesTransposed.xlsx).
-.
+
     We are now ready to add some tags around the column.
 
 3. Add one column to the left.
@@ -62,7 +62,7 @@ To modify your Excel sheet, follow these steps:
     ```
 
 7. Like you did with the previous string, drag it down to the last country. The Excel sheet should now look like this: [Countries with Tags](/attachments/howto7/integration/importing-excel-documents/import-a-large-excel-file/CountriesWithTags.xlsx).
-.
+
     ![](/attachments/howto7/integration/importing-excel-documents/import-a-large-excel-file/19398890.png)
 
 
@@ -75,7 +75,7 @@ To modify your Excel sheet, follow these steps:
     ```
 
 9. Drag the cells down like you’ve done with column **A1** and **C1**. Now your column **D** should have the columns **A**, **B**, and **C** combined into one, and your sheet should look like this: [Countries with Tags and Column D](/attachments/howto7/integration/importing-excel-documents/import-a-large-excel-file/CountriesWithTagsAndColumnD.xlsx).
-.
+
 ## 4 Preparing Your XSD File
 
 We have used some of the basic functionalities of Excel to help us out creating the first part of our XSD structure. For a proper XSD file, we still need to have a header and a footer. This is where your favourite text editor comes in (for example, Brackets).
@@ -104,7 +104,7 @@ To prepare your XSD file, follow these steps:
     ```
 
     Your file should look like this: [Country Import](/attachments/howto7/integration/importing-excel-documents/import-a-large-excel-file/CountryImport.xsd).
-.
+
 5.  Don’t forget to save it!
 
 ## 5 Importing into Your Application Project

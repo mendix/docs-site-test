@@ -23,7 +23,7 @@ The how-to applies to all widgets like the AutoComplete widget. If the widget ha
 
 Before starting this how-to, make sure you have completed the following prerequisite:
 
-* Read [Custom Action General Section](ht-one-custom-action-general)
+* Read [Custom Action General Section](/addons/ats-addon/ht-one-custom-action-general/)
 
 ## 3 Defining the User Approach
 
@@ -61,7 +61,7 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/autocompletewidget-parentelement-outlined.png)
 
-2.  In a standard situation, you use the [Find Widget Child Node](rg-one-find-widget-child-node) action while creating an unsupported widget action. In this case, you see that the drop-down menu is not a child element of the AutoComplete widget. To find it, click the inspector icon in the top-left corner of the debugger: 
+2.  In a standard situation, you use the [Find Widget Child Node](/addons/ats-addon/rg-one-find-widget-child-node/) action while creating an unsupported widget action. In this case, you see that the drop-down menu is not a child element of the AutoComplete widget. To find it, click the inspector icon in the top-left corner of the debugger: 
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/debugger-inspector.png)
 
@@ -76,13 +76,13 @@ To create the action structure, follow these steps:
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/debugger-inspector-inspected-input.png)
 
 4.  In the input element, you see that the `autocomplete` option is set to off. The widget can also autocomplete the entered text. You will cover this scenario later.
-5.  Use the [Find/Assert Widget](rg-one-findassert-widget) action to find the AutoComplete widget. Then, add the Find/Assert Widget action to your custom action, and give it a proper test step description and output description:
+5.  Use the [Find/Assert Widget](/addons/ats-addon/rg-one-findassert-widget/) action to find the AutoComplete widget. Then, add the Find/Assert Widget action to your custom action, and give it a proper test step description and output description:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/autocompletewidget-findassertwidget-action.png)
 
     You will create and connect the input parameters later.
 
-6.  Click the AutoComplete widget to open the drop-down menu. Add the [Click/Doubleclick](rg-one-clickdoubleclick) action, describe the test step, and connect the output of test step 1:
+6.  Click the AutoComplete widget to open the drop-down menu. Add the [Click/Doubleclick](/addons/ats-addon/rg-one-clickdoubleclick/) action, describe the test step, and connect the output of test step 1:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/autocompletewidget-clickdoubleclick-action.png)
 
@@ -90,7 +90,7 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/autocompletewidget-dropdowncontainer-parentelement-debugger.png)
 
-    If the parent element doesn’t have an `mx-name`, then use the [Find Element by Sizzle](rg-one-find-element-by-sizzle) action. This action uses jQuery to find an element on the page. You use the same selectors as in the Find Widget Child Node action. 
+    If the parent element doesn’t have an `mx-name`, then use the [Find Element by Sizzle](/addons/ats-addon/rg-one-find-element-by-sizzle/) action. This action uses jQuery to find an element on the page. You use the same selectors as in the Find Widget Child Node action. 
 
 8.  You must be sure that ATS picks the right `input` element. Use a generic class name to find the parent. Next, find the child that contains the input element and return the input element:
 
@@ -114,11 +114,11 @@ To create the action structure, follow these steps:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/autocompletewidget-focusandclearelement-action.png)
 
-12. Add the [Send Keys](rg-one-send-keys) action to enter the value in the `input` element. Add the action, connect the `input` element from test step 3 as an input, and provide a proper description:
+12. Add the [Send Keys](/addons/ats-addon/rg-one-send-keys/) action to enter the value in the `input` element. Add the action, connect the `input` element from test step 3 as an input, and provide a proper description:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/autocompletewidget-sendkeys-action.png)
 
-13. Add a [Mendix Wait](rg-one-mendix-wait) action to give the app time to perform activities:
+13. Add a [Mendix Wait](/addons/ats-addon/rg-one-mendix-wait/) action to give the app time to perform activities:
 
     ![](/attachments/addons/ats-addon/ht/ht-one/ht-one-create-custom-actions/ht-one-crt-unsup-widg-acts/ht-one-cab-10-autocomplete/autocompletewidget-mendixwait-action.png)
 
@@ -132,7 +132,7 @@ To create the action structure, follow these steps:
 
     It can happen that the debugger does not return an element. Check if jQuery is available and if you constructed the code in the correct manner. When you enter a selector in ATS, don’t use `$( ‘….’ )` or `jQuery( ‘…..’ )`.
 
-    The action user must enter the text they want ATS to click. You need a variable selector to achieve this. You create a variable selector by using the [Concatenate String](rg-one-concatenate-string) action. This action combines the different input strings into one string. The Concatenate String action does not add spaces. You need to add spaces yourself.
+    The action user must enter the text they want ATS to click. You need a variable selector to achieve this. You create a variable selector by using the [Concatenate String](/addons/ats-addon/rg-one-concatenate-string/) action. This action combines the different input strings into one string. The Concatenate String action does not add spaces. You need to add spaces yourself.
 
 16. Add the Concatenate String action. Leave the **String 2** input parameter empty! You will connect an action input parameter here later. 
 17. Enter the selector `.select2-results .autoCompleteResult:containsExactCase(“”)`, provide a proper test step description, and describe the output:
@@ -172,8 +172,8 @@ Next, you need to add these action input parameters:
 * Value
 * Search Context
 
-{{% alert type="info" %}}
-Keep the [guidelines for creating a custom action](ht-one-guidelines-custom-action) in mind while creating action parameters. 
+{{% alert color="info" %}}
+Keep the [guidelines for creating a custom action](/addons/ats-addon/ht-one-guidelines-custom-action/) in mind while creating action parameters. 
 {{% /alert %}}
 
 To add the action parameters, follow these steps:

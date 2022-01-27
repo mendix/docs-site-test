@@ -1,6 +1,6 @@
 ---
 title: "Header (Document Template)"
-url: /refguide7/header-document-template
+url: /refguide7/header-document-template/
 parent: "document-templates"
 aliases:
     - /refguide7/Header+(document+template).html
@@ -11,9 +11,9 @@ aliases:
 
 When enabled, the header will be inserted at the top of every page. Other widgets can be put in the header.
 
-For inserting page numbers, see [Static Label](static-label-document-template).
+For inserting page numbers, see [Static Label](/refguide7/static-label-document-template/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/document-templates/header-document-template/918236.png)
 A header

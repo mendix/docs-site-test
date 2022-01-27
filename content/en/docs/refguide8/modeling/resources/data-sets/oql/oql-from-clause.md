@@ -1,12 +1,12 @@
 ---
 title: "OQL From Clause"
-url: /refguide8/oql-from-clause
+url: /refguide8/oql-from-clause/
 parent: "oql"
 tags: ["studio pro"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/oql-from-clause.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/oql-from-clause.pdf).
 {{% /alert %}}
 
 ## 1 Introduction

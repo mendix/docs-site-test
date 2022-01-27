@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting"
-url: /refguide8/troubleshooting
+url: /refguide8/troubleshooting/
 category: "Java Programming"
 tags: ["studio pro"]
 ---
@@ -12,4 +12,4 @@ There are some known compatibility issues regarding JAR files in the `<project p
 | JAR File | Exception in the Log | Workaround |
 | --- | --- | --- |
 | *xml-apis.jar* | _java.util.concurrent.ExecutionException: Boxed Error or java.lang.NoClassDefFoundError: org/w3c/dom/Document_ | Use an alternative *xml-apis.jar*, which you can [download here](/attachments/refguide8/java-programming/troubleshooting/16844051.jar). |
-. || *servlet-api.jar* | _java.lang.LinkageError: javax/servlet/http/HttpServletRequest_ | Remove *servlet-api.jar* from the *userlib* directory. |
+| *servlet-api.jar* | _java.lang.LinkageError: javax/servlet/http/HttpServletRequest_ | Remove *servlet-api.jar* from the *userlib* directory. |

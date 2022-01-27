@@ -1,11 +1,11 @@
 ---
 title: "Report Chart"
-url: /refguide7/report-chart
+url: /refguide7/report-chart/
 parent: "report-widgets"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This widget was deprecated and is marked for removal in version 8.0.0.
 
@@ -29,7 +29,7 @@ This property determines the aspect ratio (width : height) of the report chart a
 
 ### Generate Report on Page Load
 
-If this property is false, the report chart will not show its data until the user clicks [Report](report-button). This is especially useful if the report uses parameters that should be specified by the user. 
+If this property is false, the report chart will not show its data until the user clicks [Report](/refguide7/report-button/). This is especially useful if the report uses parameters that should be specified by the user. 
 
 ## Chart Properties
 
@@ -40,14 +40,14 @@ With this property you can choose the type of the report chart. The following ty
 | Name | Layout |
 | --- | --- |
 | VerticalBars | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688226.png) |
- || VerticalBars3D | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688227.png) |
- || HorizontalBars | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688228.png) |
- || Lines | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688229.png) |
- || Area | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688223.png) |
- |
+| VerticalBars3D | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688227.png) |
+| HorizontalBars | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688228.png) |
+| Lines | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688229.png) |
+| Area | ![](/attachments/refguide7/desktop-modeler/pages/report-widgets/report-chart/688223.png) |
+
 ### Horizontal Axis Properties
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 If the chart type is HorizontalBars, the axisses are swapped, and these properties apply to the vertical axis instead of the horizontal axis.
 
@@ -67,7 +67,7 @@ If the dataset column of the horizontal axis has type DateTime, through this pro
 
 ## Vertical Axis Properties
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 
 If the chart type is HorizontalBars, the axisses are swapped, and these properties apply to the horizontal axis instead of the vertical axis.
 
@@ -99,4 +99,4 @@ Maximum value of the vertical axis. This is only used if property 'Use min/max' 
 
 ### Name, Class, Style
 
-For details, see [Common Widget Properties](common-widget-properties).
+For details, see [Common Widget Properties](/refguide7/common-widget-properties/).

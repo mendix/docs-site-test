@@ -21,7 +21,7 @@ When you log in as an administrator the _Projects_ page is shown:
 
 On this page you can see all the projects that exist on this ATS instance. Here you can create new _Projects_ and _Action Libraries_. Also as an admin user you have the rights to delete projects and libraries from the system. When creating a new library you can choose to _Include by default in new projects_ , so this library is included by default in any project that is created on the system. For more information on project/library creation see the ReferenceGuide_Projects page of the reference guide.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 When creating a new library on the _Projects_ page, the created library is empty at first and you can import action libraries into it or include available libraries.
 
@@ -39,7 +39,7 @@ You can also add existing Action Libraries.
 
 ## 3 Add Selenium Configurations
 
-As an admin user you can configure Selenium hubs as you normally would. For more information, see [SeleniumHub](rg-one-configuration).
+As an admin user you can configure Selenium hubs as you normally would. For more information, see [SeleniumHub](/addons/ats-addon/rg-one-configuration/).
 
 ![Selenium Overview](/attachments/addons/ats-addon/rg-ats/rg-one-ats/rg-one-administration/selenium.png)
 
@@ -53,7 +53,7 @@ As an admin user, you can add and configure applications to test.
 
 ![Add Test Applications](/attachments/addons/ats-addon/rg-ats/rg-one-ats/rg-one-administration/applications.png)
 
-For more information, see [Configure Test Applications](rg-one-configuration#configure-test-applications).
+For more information, see [Configure Test Applications](/addons/ats-addon/rg-one-configuration/#configure-test-applications).
 
 ## 5 Create Accounts
 
@@ -83,7 +83,7 @@ Password | The initial password of the user (which should be changed by the user
 
 Admin users have access to the _Recorder Config_ page where recorder setting can be changed.
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Recorder settings should not be changed under normal circumstances
 

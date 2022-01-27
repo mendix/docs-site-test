@@ -1,34 +1,34 @@
 ---
 title: "Object Activities"
-url: /refguide7/object-activities
+url: /refguide7/object-activities/
 parent: "activities"
 ---
 
 
 ## Cast
 
-See [Cast Object](cast-object).
+See [Cast Object](/refguide7/cast-object/).
 
 ## Change
 
-See [Change Object](change-object).
+See [Change Object](/refguide7/change-object/).
 
 ## Commit 
 
-See [Commit Object](committing-objects).
+See [Commit Object](/refguide7/committing-objects/).
 
 ## Create
 
-See [Create Object](create-object).
+See [Create Object](/refguide7/create-object/).
 
 ## Delete
 
-See [Delete Object(s)](deleting-objects).
+See [Delete Object(s)](/refguide7/deleting-objects/).
 
 ## Retrieve
 
-See [Retrieve](retrieve).
+See [Retrieve](/refguide7/retrieve/).
 
 ## Rollback
 
-See [Rollback Object](rollback-object).
+See [Rollback Object](/refguide7/rollback-object/).

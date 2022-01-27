@@ -1,6 +1,6 @@
 ---
 title: "Data view"
-url: /refguide7/data-view
+url: /refguide7/data-view/
 parent: "data-widgets"
 tags: ["Page", "Display", "widget", "object"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
@@ -10,7 +10,7 @@ tags: ["Page", "Display", "widget", "object"]
 
 The data view is a central component of Mendix applications. It is the starting point for showing the contents of exactly one object. For example, if you want to show the details of a single customer, you can use a data view to do this. The data view typically contains input widgets like text boxes with labels. In more complex screens, a data view can contain tab controls per topic (for example, address and payment information) and data views and data grids for related objects (for example, order history or wish list).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 ![](/attachments/refguide7/desktop-modeler/pages/data-widgets/data-view/data-view.png)
 
@@ -50,7 +50,7 @@ _Default value:_ Horizontal
 
 ### 4.2 Label Width (Weight)
 
-If the form orientation is set to horizontal, this property can be used to specify the width of the input widget labels inside the data view. The width is specified using column weights from the [Bootstrap grid system](http://getbootstrap.com/css/#grid). For more details, see [Layout Grid](layout-grid).
+If the form orientation is set to horizontal, this property can be used to specify the width of the input widget labels inside the data view. The width is specified using column weights from the [Bootstrap grid system](http://getbootstrap.com/css/#grid). For more details, see [Layout Grid](/refguide7/layout-grid/).
 
 _Default value:_ 3
 
@@ -62,7 +62,7 @@ _Default value:_ True
 
 ### 4.4 Empty Entity Message
 
-If this message is specified, a data view that receives no source data will show this message instead of its content. Otherwise, the data view will show its static content and disabled input widgets. This property is a translatable text. For more details, see [Translatable Texts](translatable-texts).
+If this message is specified, a data view that receives no source data will show this message instead of its content. Otherwise, the data view will show its static content and disabled input widgets. This property is a translatable text. For more details, see [Translatable Texts](/refguide7/translatable-texts/).
 
 There are a number of ways a data view can end up without source data. For instance, a data view with a **Listen to widget** data source will remain empty until an object is selected in the target grid. In this scenario, **Empty entity message** can be used to guide the user to select an item from the grid.
 
@@ -89,7 +89,7 @@ This property determines how input widgets are rendered if read-only.
 
 ## 6 Data Source Properties
 
-The data source determines which object will be shown in the data view. For general information about data sources, see [Data Sources](data-sources).
+The data source determines which object will be shown in the data view. For general information about data sources, see [Data Sources](/refguide7/data-sources/).
 
 ### 6.1 Type
 
@@ -99,13 +99,13 @@ The data view supports the following types of data source: context, microflow, a
 
 See the corresponding data source for specific properties:
 
-* [Context source](entity-path-source) - either a page parameter or a surrounding data element
-* [Microflow source](microflow-source) - a microflow returning only one object
-* [Listen to widget source](listen-to-grid-source) - any widget returning only one object
+* [Context source](/refguide7/entity-path-source/) - either a page parameter or a surrounding data element
+* [Microflow source](/refguide7/microflow-source/) - a microflow returning only one object
+* [Listen to widget source](/refguide7/listen-to-grid-source/) - any widget returning only one object
 
 ### 6.3 Use Schema
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 This property has been deprecated in version 7.2.0 and is marked for removal in version 8.0.0.
 
@@ -121,5 +121,5 @@ Curently this has no effect.
 
 ## 8 Read More
 
-* [Entities](entities)
-* [Associations](associations)
+* [Entities](/refguide7/entities/)
+* [Associations](/refguide7/associations/)

@@ -20,7 +20,7 @@ Your ability to delete and deactivate an app depends on your team role:
 * A custom role with the **App Settings** permission is also allowed to deactivate and delete an app
 * A [Mendix Admin](/developerportal/control-center/#apps) is allowed to delete, deactivate, and activate all the company's apps (with or without team members for the app)
 
-For more information on roles, see [App Roles](/developerportal/collaborate/app-roles).
+For more information on roles, see [App Roles](/developerportal/collaborate/app-roles/).
 
 **This how-to will teach you how to do the following as a Scrum Master:**
 
@@ -40,7 +40,7 @@ There are some important points to understand when you want to leave and/or dele
 
 * You cannot delete or deactivate an app if you are the **Technical Contact** of the app
 * Only Free Apps can be deleted
-* App deletion cannot be undone, which means that ALL DATA WILL BE LOST, including all files on the [Team Server](/developerportal/collaborate/team-server) and all data in the Free App node
+* App deletion cannot be undone, which means that ALL DATA WILL BE LOST, including all files on the [Team Server](/developerportal/collaborate/team-server/) and all data in the Free App node
 
 If you want to leave and delete your app, follow these steps:
 
@@ -60,9 +60,9 @@ If you want to leave and delete your app, follow these steps:
 
 ## 4 Alternative Method
 
-If you are the only team member of an app, you can also delete it directly from your list of apps. For more information, see [My Apps](/developerportal#my-apps).
+If you are the only team member of an app, you can also delete it directly from your list of apps. For more information, see [My Apps](/developerportal/#my-apps).
 
 ## 5 Read More
 
-* [How to Manage General Settings](general-settings)
-* [App Roles](/developerportal/collaborate/app-roles)
+* [How to Manage General Settings](/developerportal/collaborate/general-settings/)
+* [App Roles](/developerportal/collaborate/app-roles/)

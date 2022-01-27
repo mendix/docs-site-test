@@ -14,7 +14,7 @@ A custom action is an action created by the user. The how-to's for creating cust
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Read [Guidelines for Creating a Custom Action](ht-one-guidelines-custom-action)
+* Read [Guidelines for Creating a Custom Action](/addons/ats-addon/ht-one-guidelines-custom-action/)
 
 ## 3 Combined Actions
 
@@ -94,7 +94,7 @@ The unsupported widget action:
 
 Sometimes an app has a lot of widgets with the same *mx-name*, but ATS always finds the first result. To overcome this, you need to create a search context action. All Mendix actions have an input parameter called **Search Context**. The search context action finds an element that a Mendix/core action can use.
 
-The focus is on finding an element that you can use to find the widget. The [find/assert widget](rg-one-findassert-widget) action is a great example for a search context action.
+The focus is on finding an element that you can use to find the widget. The [find/assert widget](/addons/ats-addon/rg-one-findassert-widget/) action is a great example for a search context action.
 
 ### 4.2 Example
 

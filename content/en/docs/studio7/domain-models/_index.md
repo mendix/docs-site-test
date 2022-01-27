@@ -1,8 +1,8 @@
 ---
 title: "Domain Model"
-url: /studio7/domain-models
+url: /studio7/domain-models/
 description: "Describes the domain models in Mendix Studio."
-menu_order: 20
+weight: 20
 tags: ["studio", "domain model"]
 ---
 
@@ -13,9 +13,9 @@ The domain model is a data model that describes the information in your applicat
 The domain model in Studio consists of the following:
 
 * [Entities](#entity)
-* [Associations](domain-models-association-properties) 
+* [Associations](/studio7/domain-models-association-properties/) 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Let us say you have a collection of CDs like the one in the table below.
 
@@ -37,7 +37,7 @@ After opening a domain model, you will see an overview of all the entities, attr
 
 ![](/attachments/studio7/domain-models/domain-overview.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The complexity of your domain model depends on the complexity of your app. 
 
@@ -49,11 +49,11 @@ The **Auto Arrange** option above the domain model groups and aligns entities by
 
 | Domain model components                                  | Description                                                  | Properties |
 | -------------------------------------------------------- | :----------------------------------------------------------- | ------------------- |
-| Entity<a name="entity"></a>                          | An entity represents a class of real-world objects, such as customers, invoices, work items, etc. <br />If we draw a parallel with databases, the entity is a table. | Name<br />[Persistablity](/refguide/persistability) |
-| [Attribute](domain-models-attributes) | Attributes are characteristics that describe and/or identify the entity. For example, a *Customer* entity typically has attributes for the name of the customer, an e-mail address, and other personal information. If we draw a parallel with databases, the attribute is a column. | Name<br />Type |
-| [Association](domain-models-association-properties) | An association describes a relation between entities. In the domain model, an association is represented by a line/arrow between two entities. If we draw a parallel with databases, the association is a foreign key. | Name<br />[Multiplicity](domain-models-association-properties#multiplicity)<br />[Delete behavior](domain-models-association-properties#delete-behavior) |
+| Entity<a name="entity"></a>                          | An entity represents a class of real-world objects, such as customers, invoices, work items, etc. <br />If we draw a parallel with databases, the entity is a table. | Name<br />[Persistablity](/refguide/persistability/) |
+| [Attribute](/studio7/domain-models-attributes/) | Attributes are characteristics that describe and/or identify the entity. For example, a *Customer* entity typically has attributes for the name of the customer, an e-mail address, and other personal information. If we draw a parallel with databases, the attribute is a column. | Name<br />Type |
+| [Association](/studio7/domain-models-association-properties/) | An association describes a relation between entities. In the domain model, an association is represented by a line/arrow between two entities. If we draw a parallel with databases, the association is a foreign key. | Name<br />[Multiplicity](/studio7/domain-models-association-properties/#multiplicity)<br />[Delete behavior](/studio7/domain-models-association-properties/#delete-behavior) |
 
-For examples and more technical details, see [Domain Model](/refguide/domain-model), [Entities](/refguide/entities), [Attributes](/refguide/attributes), and [Associations](/refguide/associations) in the *Studio Pro Guide*. 
+For examples and more technical details, see [Domain Model](/refguide/domain-model/), [Entities](/refguide/entities/), [Attributes](/refguide/attributes/), and [Associations](/refguide/associations/) in the *Studio Pro Guide*. 
 
 ## 3 Adding New Entities {#adding-new-entities}
 
@@ -111,9 +111,9 @@ To add association in the domain model, do the following:
 
     ![](/attachments/studio7/domain-models/new-association.png)
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-The module is indicated next to the entity name in the brackets. If you select the entity from another module, you will create a cross-  module association. For more information, see section [5 Cross-Module Associations](domain-models-association-properties#cross-module-associations) in *Association Properties*. The entities of the current module are listed first. 
+The module is indicated next to the entity name in the brackets. If you select the entity from another module, you will create a cross-  module association. For more information, see section [5 Cross-Module Associations](/studio7/domain-models-association-properties/#cross-module-associations) in *Association Properties*. The entities of the current module are listed first. 
 
 {{% /alert %}}  
 
@@ -129,7 +129,7 @@ You can manage the following properties of an entity:
 
 * The **Name** of the entity
 
-* [Persistability](/refguide/persistability) of the entity
+* [Persistability](/refguide/persistability/) of the entity
 
 	![](/attachments/studio7/domain-models/entity-properties.png)
 
@@ -140,7 +140,7 @@ To change the entity properties, click the entity in the domain model. The **Pro
 You can manage the following properties of an attribute:
 
 *   The **Name** of the attribute
-*   The [**Type**](domain-models-attributes)  of the attribute
+*   The [**Type**](/studio7/domain-models-attributes/)  of the attribute
 
 	![](/attachments/studio7/domain-models/attribute-properties.png)
 
@@ -149,7 +149,7 @@ To change the attribute properties, click the attribute in the domain model. The
 ![](/attachments/studio7/domain-models/selecting-attribute.png)
 
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Fields that are displayed in **Properties** may vary depending on the type of the attribute.
 
@@ -163,11 +163,11 @@ You can manage the following properties of an association:
 *   **Multiplicity** of the association
 *   The delete behavior of the objects
 
-For more information, see [Association Properties](domain-models-association-properties). 
+For more information, see [Association Properties](/studio7/domain-models-association-properties/). 
 
 To change the association, click the line in the domain model. The **Properties** tab for the selected entity is displayed automatically. 
 
-If the association type is one-to-many or many-to-many, you can swap direction of it clicking the corresponding icon. For more information, see section [3 Multiplicity](domain-models-association-properties#multiplicity) in *Association Properties*. 
+If the association type is one-to-many or many-to-many, you can swap direction of it clicking the corresponding icon. For more information, see section [3 Multiplicity](/studio7/domain-models-association-properties/#multiplicity) in *Association Properties*. 
 
 {{/* % image_container width="350" % */}}![](/attachments/studio7/domain-models/managing-associations.png)
 {{/* % /image_container % */}}
@@ -185,5 +185,5 @@ To delete the entity, attribute or association, do the following:
 
 ## 8 Read More
 
-* [Attribute Types](domain-models-attributes)
-* [Association Properties](domain-models-association-properties) 
+* [Attribute Types](/studio7/domain-models-attributes/)
+* [Association Properties](/studio7/domain-models-association-properties/) 

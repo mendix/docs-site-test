@@ -1,13 +1,13 @@
 ---
 title: "Persistability"
-url: /refguide8/persistability
+url: /refguide8/persistability/
 parent: "entities"
-menu_order: 20
+weight: 20
 tags: ["domain model", "entity", "persistability", "persistable", "non-persistable"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/persistability.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/persistability.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -28,7 +28,7 @@ Committing an object of this entity type results in a row being inserted into th
 
 Usually, a rollback reverts changes in memory since the last commit.
 
-However, performing a rollback on persistable autocommitted objects or objects with the state "NEW" deletes the row corresponding with this object from the database table for the associated entity. See [Object Activities](object-activities) for more information about autocommitted objects.
+However, performing a rollback on persistable autocommitted objects or objects with the state "NEW" deletes the row corresponding with this object from the database table for the associated entity. See [Object Activities](/refguide8/object-activities/) for more information about autocommitted objects.
 
 ## 3 Non-Persistable Entities {#non-persistable}
 

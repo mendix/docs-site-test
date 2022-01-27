@@ -1,6 +1,6 @@
 ---
 title: "Drop-Down"
-url: /refguide7/drop_down
+url: /refguide7/drop_down/
 parent: "input-widgets"
 tags: ["Drop-down", "input", "page", "widget", "enumeration"]
 aliases:
@@ -8,9 +8,9 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-A drop-down is an [input widget](input-widgets) that can be used to display and edit enumeration attributes. It should not be confused with a reference selector, which is used to select a object with which to fill an [association](associations).
+A drop-down is an [input widget](/refguide7/input-widgets/) that can be used to display and edit enumeration attributes. It should not be confused with a reference selector, which is used to select a object with which to fill an [association](/refguide7/associations/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
  ![](/attachments/refguide7/desktop-modeler/pages/input-widgets/drop_down/drop-down.png)
 
@@ -22,15 +22,15 @@ This drop-down widget allows the user to select their favorite color.
 
 ### Empty Option Caption
 
-This property represents the caption for the empty option in the drop-down shown to the user. This is a translatable text. For more details, see [Translatable Texts](translatable-texts).
+This property represents the caption for the empty option in the drop-down shown to the user. This is a translatable text. For more details, see [Translatable Texts](/refguide7/translatable-texts/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 Filling out the caption for an empty option improves the user experience of your application. It also helps screen-reader users to operate the application easily. For example, the drop-down that represents the color selection for a car could have a caption reading "Select a color".
 
 {{% /alert %}}
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
 The empty option caption is available from Mendix 7.2.0.
 
@@ -80,5 +80,5 @@ The empty option caption is available from Mendix 7.2.0.
 
 ## Read More
 
-*   [Data View](data-view)
-*   [Attributes](attributes)
+*   [Data View](/refguide7/data-view/)
+*   [Attributes](/refguide7/attributes/)

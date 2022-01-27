@@ -1,8 +1,8 @@
 ---
 title: "Set Up the Apple Push Notification Server"
-url: /howto7/mobile/setting-up-apple-push-notification-server
+url: /howto7/mobile/setting-up-apple-push-notification-server/
 parent: "push-notifications"
-menu_order: 30
+weight: 30
 tags: ["mobile", "push notification", "apple", "server"]
 ---
 
@@ -10,7 +10,7 @@ tags: ["mobile", "push notification", "apple", "server"]
 
 In order to proceed you need an Apple developer license and a device running Mac OS X.
 
-We assume that you already have the app signing key with provisioning profile and can freely build and install your mobile app (if not, please refer to [this how-to](publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores)). Take into account that your App ID should use `Explicit App ID` and have `Push Notifications` turned on so you can receive push notifications with your app.
+We assume that you already have the app signing key with provisioning profile and can freely build and install your mobile app (if not, please refer to [this how-to](/howto7/mobile/publishing-a-mendix-hybrid-mobile-app-in-mobile-app-stores/)). Take into account that your App ID should use `Explicit App ID` and have `Push Notifications` turned on so you can receive push notifications with your app.
 
 ![](/attachments/howto7/mobile/push-notifications/setting-up-apple-push-notification-server/20217895.png)
 
@@ -39,7 +39,7 @@ Press the download button and store the key in a secure place. Also, copy the **
 
 ### 2.4 Configuring APNs in Your Application
 
-For the last step, you need to configure APNs within your application. This can be done by logging into your application as a user with the Administrator role and navigating to the **PushNotifications_Administration** page that was set up in [step 7](implementation-guide#setting) of *How to Implement Push Notifications*.
+For the last step, you need to configure APNs within your application. This can be done by logging into your application as a user with the Administrator role and navigating to the **PushNotifications_Administration** page that was set up in [step 7](/howto7/mobile/implementation-guide/#setting) of *How to Implement Push Notifications*.
 
 For this purpose, do the following:
 
@@ -77,7 +77,7 @@ This certificate needs to be converted into the *.p12* format. If you do not kno
 
 ### 3.5 Configuring APNs in Your Application
 
-For the last step, you need to configure APNs within your application. This can be done by logging into your application as a user with Administrator role and navigating to the **PushNotifications_Administration** page that was set up in [step 7](implementation-guide#setting) of *How to Implement Push Notifications*.
+For the last step, you need to configure APNs within your application. This can be done by logging into your application as a user with Administrator role and navigating to the **PushNotifications_Administration** page that was set up in [step 7](/howto7/mobile/implementation-guide/#setting) of *How to Implement Push Notifications*.
 
 For this purpose, do the following:
 

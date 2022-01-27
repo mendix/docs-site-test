@@ -24,15 +24,15 @@ MindSphere IIoT for Makers uses the [IIoT Authenticator Module](https://marketpl
 
 The MindSphere IIoT for Makers is easy to add to your app but has the following limitations:
 
-* You cannot make your app multi-tenant – see [Multi-tenancy](mindsphere-development-considerations#multitenancy) in *MindSphere Development Considerations* for more information on multi-tenancy
+* You cannot make your app multi-tenant – see [Multi-tenancy](/partners/siemens/mindsphere-development-considerations/#multitenancy) in *MindSphere Development Considerations* for more information on multi-tenancy
 * Your app cannot be deployed to the MindSphere platform and cannot leverage the MindSphere Application Lifecycle including the deployment to third parties
 * End users cannot use MindSphere credentials to sign in to your app, you must handle app security within your app
 * It is not possible to use Sub- / Cross Tenancy
 
-For full information on using the MindSphere IIoT for Makers see [MindSphere IIoT for Makers](mindsphere-app-service).
+For full information on using the MindSphere IIoT for Makers see [MindSphere IIoT for Makers](/partners/siemens/mindsphere-app-service/).
 
 ## 3 Mendix on MindSphere {#mendix-on-mindsphere}
 
-A Mendix app can be fully integrated into Siemens MindSphere's application lifecycle. This includes the capability to provide your app to third parties in the MindSphere eco system. To find out how to develop and deploy your app to Siemens MindSphere, see [Siemens MindSphere – Deployment](/developerportal/deploy/deploying-to-mindsphere).
+A Mendix app can be fully integrated into Siemens MindSphere's application lifecycle. This includes the capability to provide your app to third parties in the MindSphere eco system. To find out how to develop and deploy your app to Siemens MindSphere, see [Siemens MindSphere – Deployment](/developerportal/deploy/deploying-to-mindsphere/).
 
-Once your app is registered in MindSphere, there are a number of things you need to consider as you develop your Mendix app. For details see [Mendix on MindSphere](mendix-on-mindsphere).
+Once your app is registered in MindSphere, there are a number of things you need to consider as you develop your Mendix app. For details see [Mendix on MindSphere](/partners/siemens/mendix-on-mindsphere/).

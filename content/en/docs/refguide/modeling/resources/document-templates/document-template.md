@@ -7,7 +7,7 @@ tags: ["studio pro"]
 
 ## 1 Introduction
 
-This document describes the properties of a document template. If you want to see what document templates are for and what kind of widgets can be placed on them, you can check the [Document Templates](document-templates) overview documentation.
+This document describes the properties of a document template. If you want to see what document templates are for and what kind of widgets can be placed on them, you can check the [Document Templates](/refguide/document-templates/) overview documentation.
 
 ## 2 Appearance Properties {#appearance-properties}
 
@@ -51,7 +51,7 @@ Indicates whether the page has a footer that is displayed on each page (except o
 
 ## 3 Style
 
-For details, see [Style](style).
+For details, see [Style](/refguide/style/).
 
 ## 4 Common Properties
 

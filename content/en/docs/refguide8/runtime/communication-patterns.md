@@ -1,6 +1,6 @@
 ---
 title: "Communication Patterns in the Mendix Runtime"
-url: /refguide8/communication-patterns
+url: /refguide8/communication-patterns/
 category: "Mendix Runtime"
 tags: ["studio pro", "Mendix Runtime", "Communications", "Runtime Server", "Mendix Client"]
 ---
@@ -23,14 +23,14 @@ The Mendix Platform consists of the following components:
 *   Marketplace – a portal with hundreds of publicly-available building blocks to speed up app development
 *   Mendix Studio and Studio Pro – multi-user modeling studios of the Mendix Platform
 *   Team Server – a central repository for managing application model versions
-*   Mendix Runtime – runs applications using a server part (the [Runtime Server](runtime-server)) and a client part ([Mendix Client](mendix-client))
+*   Mendix Runtime – runs applications using a server part (the [Runtime Server](/refguide8/runtime-server/)) and a client part ([Mendix Client](/refguide8/mendix-client/))
 *   Build – a process which creates deployment packages from artifacts such as models, style sheets, and custom Java classes
 *   MxID – a user management and provisioning service that applies the OpenID standard
 
 The focus of this document is on the Mendix Runtime, more specifically the collaboration between the following parts:
 
-*   [Mendix Client](mendix-client) – a React, React Native, or JavaScript client running on the device of a user
-*   [Runtime Server](runtime-server) – a Java/Scala runtime running on a server, responsible for executing microflow logic, business rules, and persisting objects
+*   [Mendix Client](/refguide8/mendix-client/) – a React, React Native, or JavaScript client running on the device of a user
+*   [Runtime Server](/refguide8/runtime-server/) – a Java/Scala runtime running on a server, responsible for executing microflow logic, business rules, and persisting objects
 *   RDBMS – where the data is persisted
 
 Communication between these components operates as follows:

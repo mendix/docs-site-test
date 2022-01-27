@@ -1,13 +1,13 @@
 ---
 title: "Password Policy"
-url: /refguide8/password-policy
+url: /refguide8/password-policy/
 parent: "project-security"
-menu_order: 50
+weight: 50
 tags: ["studio pro", "password policy", "project security", "security"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/password-policy.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/password-policy.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -31,8 +31,8 @@ Password policy properties are described in the table below:
 
 ## 3 Read More
 
-* [Project Security](project-security)
-* [User Roles](user-roles)
-* [Administrator](administrator)
-* [Demo Users](demo-users)
-* [Anonymous Users](anonymous-users)
+* [Project Security](/refguide8/project-security/)
+* [User Roles](/refguide8/user-roles/)
+* [Administrator](/refguide8/administrator/)
+* [Demo Users](/refguide8/demo-users/)
+* [Anonymous Users](/refguide8/anonymous-users/)

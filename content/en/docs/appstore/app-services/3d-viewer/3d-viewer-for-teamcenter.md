@@ -8,11 +8,11 @@ tags: ["3d visualization", "3d viewer", "cad", "app store", "marketplace", "comp
 
 ## 1 Introduction
 
-The [3D Viewer for Teamcenter](https://marketplace.mendix.com/link/component/118608) module lets you connect, search, and fetch JT models from a Teamcenter instance with the help of the [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627). This is an add-on module to the [3D Viewer](3d-viewer) app service that provides easy-to-use nanoflows and microflows that help you work with 3D models.
+The [3D Viewer for Teamcenter](https://marketplace.mendix.com/link/component/118608) module lets you connect, search, and fetch JT models from a Teamcenter instance with the help of the [Teamcenter Connector](https://marketplace.mendix.com/link/component/111627). This is an add-on module to the [3D Viewer](/appstore/app-services/3d-viewer/) app service that provides easy-to-use nanoflows and microflows that help you work with 3D models.
 
 ### 1.1 Typical Use Cases
 
-You can use this module to search and fetch JT models that are stored in a Teamcenter instance and use [3D Viewer](3d-viewer) widgets to visualize the fetched models. Once a model is fetched, you can perform some basic operations, such as navigating the model product structure tree and PMI tree, sectioning, and many more operations enabled by the 3D Viewer out-of-the-box tools. 
+You can use this module to search and fetch JT models that are stored in a Teamcenter instance and use [3D Viewer](/appstore/app-services/3d-viewer/) widgets to visualize the fetched models. Once a model is fetched, you can perform some basic operations, such as navigating the model product structure tree and PMI tree, sectioning, and many more operations enabled by the 3D Viewer out-of-the-box tools. 
 
 {{% alert color="warning" %}}
 Using this module alone will not be enough to visualize a 3D model.
@@ -36,25 +36,25 @@ If you want to visualize models stored in a Teamcenter instance, you also need t
 
 ### 1.4 Limitations
 
-To visualize a model from Teamcenter, the limitations are similar to those of 3D Viewer. For details, see the [Limitations](3d-viewer#limitations) section of *3D Viewer*.
+To visualize a model from Teamcenter, the limitations are similar to those of 3D Viewer. For details, see the [Limitations](/appstore/app-services/3d-viewer/#limitations) section of *3D Viewer*.
 
 ## 2 Prerequisites
 
 Make sure you have the following prerequisites in place:
 
-* [Studio Pro 9.4.0](/releasenotes/studio-pro/9.4) or above installed
+* [Studio Pro 9.4.0](/releasenotes/studio-pro/9.4/) or above installed
 * A living Teamcenter instance (you need the **Teamcenter Host Address** and **Teamcenter FMS URL** to configure the Teamcenter instance – for more information, see the [Reusing Teamcenter Login APIs to Get Access to Teamcenter Instance Data](#reusing) section below)
 * A Teamcenter account (it is best to have both an admin user account and a non-admin user account)
 
 ## 3 Installation
 
-To visualize a model fetched from a Teamcenter instance, you need to import the components below into your app (follow the instructions in [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content) as necessary):
+To visualize a model fetched from a Teamcenter instance, you need to import the components below into your app (follow the instructions in [How to Use Marketplace Content in Studio Pro](/appstore/general/app-store-content/) as necessary):
 
 * [3D Viewer for Teamcenter](https://marketplace.mendix.com/link/component/118608)
 * [3D Viewer](https://marketplace.mendix.com/link/component/118345) app service（v.2.0.0 or above). 
 * [Teamcenter connector](https://marketplace.mendix.com/link/component/111627)(v.3.3.0)
 
-After downloading and importing, you need to map the **Administrator** and **User** [module roles](/refguide/module-security#module-role) of the installed components to the applicable [user roles](/refguide/user-roles) in your app.
+After downloading and importing, you need to map the **Administrator** and **User** [module roles](/refguide/module-security/#module-role) of the installed components to the applicable [user roles](/refguide/user-roles/) in your app.
 
 ## 4 Initializing on App Startup
 
@@ -81,7 +81,7 @@ To get data from Teamcenter, the end-user of your app needs to be authenticated 
 
 Follow these steps to build this login:
 
-1. Add a **Login** [button](/refguide/button-widgets) to a page in your app.
+1. Add a **Login** [button](/refguide/button-widgets/) to a page in your app.
 2. Set the **On click** action to the **Viewer3D_TC** > **USE_ME** > **Login** > **LoginTeamcenter** microflow.
 3.  Run your app locally. When you click **Login**, you will be shown the Teamcenter admin page where you can add, edit, and manage the Teamcenter instance you want to connect to by providing the **Teamcenter Host Address** and **Teamcenter FMS URL** and setting the instance to **Active**:
 
@@ -102,11 +102,11 @@ The **SearchTC** nanoflow in the 3D Viewer For Teamcenter module enables setting
 Follow these steps to get the list:
 
 1. Create an **Open TC model** button and add it to a page in your app.
-2. Set the **On click** action of the button to show a [pop-up page](/refguide/page-properties#pop-up).
+2. Set the **On click** action of the button to show a [pop-up page](/refguide/page-properties/#pop-up).
 3. Add a list view to the pop-up page and set the **Data source** to **Viewer3D_TC/USE_ME/SearchTC**.
-4. Wrap the list view with a [data view](/refguide/data-view), as the SearchTC nanoflow requires a SearchCriteria object as the input parameter.
+4. Wrap the list view with a [data view](/refguide/data-view/), as the SearchTC nanoflow requires a SearchCriteria object as the input parameter.
 5. Create a simple nanoflow and name it *createSearchCriteriaObject* that creates a default **SearchCriteria** object and returns it as result. Set the **Data source** of the data view to this new nanoflow.
-6.  Add a [text box](/refguide/text-box) and **Search** button to allow the end-user to type in an item name (as in, a model name) and perform a search:
+6.  Add a [text box](/refguide/text-box/) and **Search** button to allow the end-user to type in an item name (as in, a model name) and perform a search:
 
 	![teamcenter-tcmodellist](/attachments/appstore/app-services/3d-viewer/3d-viewer-for-teamcenter/teamcenter-tcmodellist.jpg)
 
@@ -141,7 +141,7 @@ Since you built a model list pop-up page, one scenario is to select a list item 
 
 	![teamcenter-homepagedataviews ](/attachments/appstore/app-services/3d-viewer/3d-viewer-for-teamcenter/teamcenter-homepagedataviews.jpg)
 
-4. Find the 3D widgets in the **Toolbox** and add them to the inner data view (for details on the usage of each widget, see [3D Viewer](3d-viewer)). Now you can set the **Model ID** and **Model Source Type** that the 3D Viewer widget needs:
+4. Find the 3D widgets in the **Toolbox** and add them to the inner data view (for details on the usage of each widget, see [3D Viewer](/appstore/app-services/3d-viewer/)). Now you can set the **Model ID** and **Model Source Type** that the 3D Viewer widget needs:
 
 	![teamcenter-setviewermodelid ](/attachments/appstore/app-services/3d-viewer/3d-viewer-for-teamcenter/teamcenter-setviewermodelid.jpg)  
 
@@ -186,4 +186,4 @@ A **ModelDocument** entity type object is the unique identifier defined across 3
 
 ## 6 Read More
 
-* [3D Viewer](3d-viewer)
+* [3D Viewer](/appstore/app-services/3d-viewer/)

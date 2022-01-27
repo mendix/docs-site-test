@@ -1,6 +1,6 @@
 ---
 title: "Add Button"
-url: /refguide7/add-button
+url: /refguide7/add-button/
 parent: "control-bar"
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -30,7 +30,7 @@ The add button can only be used in the reference set selector. With this button,
 
 This property indicates the page that is shown to users after they click this button. The user can use this page to select objects that have to be added to the reference set selector. This page should contain a data grid, template grid, or list view connected to the same entity as the reference set selector.
 
-See [Opening Pages](opening-pages). Note that opening select pages in content is prohibited.
+See [Opening Pages](/refguide7/opening-pages/). Note that opening select pages in content is prohibited.
 
 ## Visibility Properties
 

@@ -1,8 +1,8 @@
 ---
 title: "New Project"
-url: /refguide8/new-project
+url: /refguide8/new-project/
 parent: "file-menu"
-menu_order: 10
+weight: 10
 description: "This document describes the New Project (New App) flow and the App Settings dialog box."
 tags: ["studio pro", "create app", "new app", "new project", "creating new app"]
 aliases:
@@ -10,8 +10,8 @@ aliases:
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/new-project.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/new-project.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -43,7 +43,7 @@ The name of your new app. This name is used as the name of the project directory
 
 ### 2.2 Enable Online Services
 
-The Mendix Platform offers online services such as [version control](version-control), [cloud deployment](/developerportal/deploy/), and [collaboration](collaborative-development). When enabled, this will create a project in the Developer Portal and a corresponding version control repository.
+The Mendix Platform offers online services such as [version control](/refguide8/version-control/), [cloud deployment](/developerportal/deploy/), and [collaboration](/refguide8/collaborative-development/). When enabled, this will create a project in the Developer Portal and a corresponding version control repository.
 
 If you choose *No*, you will create an app that is only stored on your local disk. At a later point you can still decide to upload this local app to a version control server and enjoy the benefits of version control.
 
@@ -53,9 +53,9 @@ The default language is the language of the user interface of your project. Choo
 
 ### 2.4 Project Directory
 
-Specify the project directory in which the files for your app are stored. If you enable the online services for the new app, you will see that the suffix *-main* will be appended to the directory name automatically. This is to indicate that the directory contains the main branch line of your project. While working on your app, you can create new branches and download these to other directories. For more information on the branch line management, see [Branch Line Manager](branch-line-manager-dialog).
+Specify the project directory in which the files for your app are stored. If you enable the online services for the new app, you will see that the suffix *-main* will be appended to the directory name automatically. This is to indicate that the directory contains the main branch line of your project. While working on your app, you can create new branches and download these to other directories. For more information on the branch line management, see [Branch Line Manager](/refguide8/branch-line-manager-dialog/).
 
 ## 3 Read More
 
-* [Version Control](version-control)
-* [Open Project](open-app-dialog)
+* [Version Control](/refguide8/version-control/)
+* [Open Project](/refguide8/open-app-dialog/)

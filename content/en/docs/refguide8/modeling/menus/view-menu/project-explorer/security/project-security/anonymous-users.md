@@ -1,13 +1,13 @@
 ---
 title: "Anonymous Users"
-url: /refguide8/anonymous-users
+url: /refguide8/anonymous-users/
 parent: "project-security"
-menu_order: 40
+weight: 40
 tags: ["studio pro", "anonymous users", "project security", "security"]
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/anonymous-users.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/anonymous-users.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -29,11 +29,11 @@ The properties of anonymous users are described in the table below:
 
 ## 3 Read More
 
-* [Project Security](project-security)
-* [User Roles](user-roles)
-* [Administrator](administrator)
-* [Demo Users](demo-users)
-* [Password Policy](password-policy)
+* [Project Security](/refguide8/project-security/)
+* [User Roles](/refguide8/user-roles/)
+* [Administrator](/refguide8/administrator/)
+* [Demo Users](/refguide8/demo-users/)
+* [Password Policy](/refguide8/password-policy/)
 
 
 

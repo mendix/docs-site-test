@@ -1,17 +1,17 @@
 ---
 title: "Navigation List"
-url: /refguide8/navigation-list
+url: /refguide8/navigation-list/
 parent: "container-widgets"
-menu_order: 70
+weight: 70
 tags: ["studio pro", "navigation list", "container widget", "widget"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/navigation-list.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/navigation-list.pdf).
 {{% /alert %}}
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 The navigation list widget is not supported on native mobile pages.
 {{% /alert %}}
 
@@ -60,11 +60,11 @@ A row in a navigation list is a navigation list item. You can set a separate **O
 
 #### 3.1.2 General Section
 
-In the **General** section, you can set a specific on click event for each navigation list item. An on click event defines what action is performed when a user clicks a row. For more information on on click events, see [On Click Event & Events Section](on-click-event).
+In the **General** section, you can set a specific on click event for each navigation list item. An on click event defines what action is performed when a user clicks a row. For more information on on click events, see [On Click Event & Events Section](/refguide8/on-click-event/).
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 
-Microflows set as an on click event for a navigation list item have no **Execution**, **Confirmation**, or **Advanced** microflow settings. For more information on calling a microflow, see [On Click Event & Events Section](on-click-event#call-microflow). 
+Microflows set as an on click event for a navigation list item have no **Execution**, **Confirmation**, or **Advanced** microflow settings. For more information on calling a microflow, see [On Click Event & Events Section](/refguide8/on-click-event/#call-microflow). 
 
 {{% /alert %}}
 
@@ -74,6 +74,6 @@ Microflows set as an on click event for a navigation list item have no **Executi
 
 ## 4 Read More
 
-* [Page](page)
-* [Container Widgets](container-widgets)
-* [Properties Common in the Page Editor](common-widget-properties)
+* [Page](/refguide8/page/)
+* [Container Widgets](/refguide8/container-widgets/)
+* [Properties Common in the Page Editor](/refguide8/common-widget-properties/)

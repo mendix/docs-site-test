@@ -13,7 +13,7 @@ tags: ["studio pro", "nanoflow call", "call nanoflow"]
 This activity can only be used in **Nanoflows**.
 {{% /alert %}}
 
-The **Call nanoflow** activity can be used to call another [nanoflow](nanoflows). 
+The **Call nanoflow** activity can be used to call another [nanoflow](/refguide/nanoflows/). 
 
 {{/* % image_container width="200" % */}}
 ![Nanoflow Call](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/client-activities/nanoflow-call/nanoflow-call.png)
@@ -54,11 +54,11 @@ The name of the parameter that is read-only.
 
 #### 3.2.2 Type
 
-The type of the parameter that is read-only. For more information on possible types of parameters, see [Data Types](data-types).
+The type of the parameter that is read-only. For more information on possible types of parameters, see [Data Types](/refguide/data-types/).
 
 #### 3.2.3 Argument {#argument}
 
-The **Edit parameter value** button allows you to edit the argument value. For each parameter of the nanoflow, you have to supply an argument of the same type. The values of the arguments are expressed using [expressions](expressions).
+The **Edit parameter value** button allows you to edit the argument value. For each parameter of the nanoflow, you have to supply an argument of the same type. The values of the arguments are expressed using [expressions](/refguide/expressions/).
 
 ### 3.3 Return Type
 

@@ -9,7 +9,7 @@ tags: ["studio pro", "regular expressions", "regular expression"]
 
 ## 1 Introduction
 
-A regular expression resource document is used in the [validation rules](validation-rules) of an entity to describe a set of criteria that a string must match.
+A regular expression resource document is used in the [validation rules](/refguide/validation-rules/) of an entity to describe a set of criteria that a string must match.
 
 A regular expression has the properties described below.
 
@@ -17,7 +17,7 @@ A regular expression has the properties described below.
 
 ### 2.1 Name
 
-The name can be used to refer to the regular expression from a [validation rule](validation-rules) of an entity.
+The name can be used to refer to the regular expression from a [validation rule](/refguide/validation-rules/) of an entity.
 
 ### 2.2 Documentation
 

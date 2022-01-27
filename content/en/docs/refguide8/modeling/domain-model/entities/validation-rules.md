@@ -1,14 +1,14 @@
 ---
 title: "Validation Rules"
-url: /refguide8/validation-rules
+url: /refguide8/validation-rules/
 parent: "entities"
-menu_order: 40
+weight: 40
 tags: ["domain model", "entity", "validation rule"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert type="info" %}}
-<img src="attachments/chinese-translation/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/validation-rules.pdf).
+{{% alert color="info" %}}
+<img src="/attachments/china.png" style="display: inline-block; margin: 0" /> For the Simplified Chinese translation, click [中文译文](https://cdn.mendix.tencent-cloud.com/documentation/refguide8/validation-rules.pdf).
 {{% /alert %}}
 
 ## 1 Introduction
@@ -25,13 +25,13 @@ For example, for entity 'Customer' the name and credit need to be filled in at a
 
 ![](/attachments/refguide8/modeling/domain-model/entities/validation-rules/customer-validation-rules.png)
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 You can only define validation rules for persistable entities as they are designed to ensure database integrity. Therefore, validation rules are disabled for non-persistable entities.
 {{% /alert %}}
 
 ## 2 Properties
 
-You can add and edit validation rules for an entity from the [entity dialog box](entities#dialog-box).
+You can add and edit validation rules for an entity from the [entity dialog box](/refguide8/entities/#dialog-box).
 
 An example of the validation rule properties is represented in the image below:
 
@@ -64,10 +64,10 @@ The rule defines which condition an attribute should satisfy.
 | Unique | The value of this attribute must be different from the values of this attribute in all other objects of the same entity. |
 | Equals | The attribute value needs to be equal to a specified value or equal to the value of another attribute of the same object. |
 | Range | The attribute value needs to be greater than or equal to, less than or equal to, or between two values. The values are either specified fixed values or values of other attributes of the same object. |
-| Regular expression | The attribute needs to match a regular expression stored in a [regular expression](regular-expressions) resource. |
+| Regular expression | The attribute needs to match a regular expression stored in a [regular expression](/refguide8/regular-expressions/) resource. |
 | Maximum length | The attribute may have no more than the specified number of characters. |
 
-{{% alert type="info" %}}
+{{% alert color="info" %}}
 Date values should be entered in [ISO 8601](http://en.wikipedia.org/wiki/ISO_8601) format, for example 2015-07-26.
 {{% /alert %}}
 

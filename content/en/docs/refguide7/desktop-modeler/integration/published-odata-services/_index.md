@@ -1,6 +1,6 @@
 ---
 title: "Published OData Services"
-url: /refguide7/published-odata-services
+url: /refguide7/published-odata-services/
 parent: "integration"
 aliases:
     - /refguide7/consumed-odata-services.html
@@ -9,7 +9,7 @@ aliases:
 
 ## 1 Introduction
 
-In the Modeler, entities can be exposed as [OData resources](published-odata-resource) by adding a new published OData service. You can expose any number of related resources in a published OData service. By default, the non-qualified names of entities are used in the URI to uniquely identify them, but you can override the name of the resource as well.
+In the Modeler, entities can be exposed as [OData resources](/refguide7/published-odata-resource/) by adding a new published OData service. You can expose any number of related resources in a published OData service. By default, the non-qualified names of entities are used in the URI to uniquely identify them, but you can override the name of the resource as well.
 
 ## 2 OData Version
 
@@ -17,11 +17,11 @@ The standard used for OData in Mendix is [OData version 3](http://www.odata.org/
 
 ## 3 Query Options
 
-For details on how to filter the OData response, refer to [OData Query Options](odata-query-options).
+For details on how to filter the OData response, refer to [OData Query Options](/refguide7/odata-query-options/).
 
 ## 4 Supported Types
 
-For details on how Mendix attributes are represented in OData, refer to [OData Representation](odata-representation).
+For details on how Mendix attributes are represented in OData, refer to [OData Representation](/refguide7/odata-representation/).
 
 ## 5 Service Name
 
@@ -29,7 +29,7 @@ The service name is used to create a unique URI for the OData service. Thus, the
 
 ## 6 Resources
 
-A [resource](published-odata-resource) is a network-accessible data object representing an entity, identified by a URI. You can add, edit, or remove resources and their unique identifiers from the **Resources** tab. 
+A [resource](/refguide7/published-odata-resource/) is a network-accessible data object representing an entity, identified by a URI. You can add, edit, or remove resources and their unique identifiers from the **Resources** tab. 
 
 ## 7 Service Namespace
 
@@ -41,7 +41,7 @@ When exposing entities through OData, the entities are retrieved from the Mendix
 
 ## 9 Associations
 
-You can choose how you want to represent associations. For more information, see the [Associations](odata-representation#associations) section of *OData Representation*.
+You can choose how you want to represent associations. For more information, see the [Associations](/refguide7/odata-representation/#associations) section of *OData Representation*.
 
 ## 10 Security
 
@@ -59,7 +59,7 @@ This result is a header which looks like `Authorization: Basic QWxhZGRpbjpvcGVuI
 
 ### 10.2 Anonymous Access
 
-With project security enabled, OData resources can still be exposed to anonymous users. For detailed information on allowing anonymous users, refer to [Anonymous User Role](anonymous-users).
+With project security enabled, OData resources can still be exposed to anonymous users. For detailed information on allowing anonymous users, refer to [Anonymous User Role](/refguide7/anonymous-users/).
 
 ### 10.3 Project Security Off
 
@@ -67,7 +67,7 @@ If project security is off, for debugging purposes you can retrieve all data wit
 
 ### 10.4 Role-Based Access
 
-If security is enabled, it is required to configure which users have access rights to a specific OData service document. This can be done by opening the specific Published OData service document, navigating to the Settings tab and changing the allowed roles in the Security section. By default, no allowed user roles are selected. The security settings are reflected in [Module Security](module-security).
+If security is enabled, it is required to configure which users have access rights to a specific OData service document. This can be done by opening the specific Published OData service document, navigating to the Settings tab and changing the allowed roles in the Security section. By default, no allowed user roles are selected. The security settings are reflected in [Module Security](/refguide7/module-security/).
 
 ![](/attachments/refguide7/desktop-modeler/integration/published-odata-services/16843927.png)
 
@@ -82,6 +82,6 @@ If security is enabled, it is required to configure which users have access righ
 
 Once your OData-enabled app is running, an overview of exposed OData resources is available on the root URL followed by `/odata-doc/`. For example, `http://localhost:8080/odata-doc/` You can copy and paste the links into for instance Excel to establish a link between your OData resources and Excel.
 
-{{% alert type="warning" %}}
+{{% alert color="warning" %}}
 While the API documentation for OData resources is enabled by default, access to it may be restricted by the administrator for apps running in production.
 {{% /alert %}}

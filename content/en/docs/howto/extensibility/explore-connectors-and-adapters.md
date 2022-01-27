@@ -20,7 +20,7 @@ For documentation on using more specific connectors and adapters for Siemens, SA
 
 This module allows you to use SAML to authenticate your users in your cloud application. The module can communicate with any identity provider that supports SAML2.0 or Shibboleth.
 
-For more information, see [SAML](/appstore/modules/saml).
+For more information, see [SAML](/appstore/modules/saml/).
 
 ## 3 Excel Importer
 
@@ -28,7 +28,7 @@ For more information, see [SAML](/appstore/modules/saml).
 
 With this module, you can import all the Excel files you want!
 
-For more information, see [Excel Importer](/appstore/modules/excel-importer).
+For more information, see [Excel Importer](/appstore/modules/excel-importer/).
 
 ## 4 Excel Exporter
 
@@ -36,7 +36,7 @@ For more information, see [Excel Importer](/appstore/modules/excel-importer).
 
 This module enables creating templates that export data from your Mendix application to Excel or the CSV format. This module creates an OQL query and directly prints the result to a FileDocument in your desired format. Add styling to your Excel to create the proper headers and styling formats for a complete report.
 
-For more information, see [Excel Exporter](/appstore/modules/excel-exporter).
+For more information, see [Excel Exporter](/appstore/modules/excel-exporter/).
 
 ## 5 Google Maps
 
@@ -44,7 +44,7 @@ For more information, see [Excel Exporter](/appstore/modules/excel-exporter).
 
 This widget enables bringing the world into your application via Google Maps!
 
-For more information, see [Google Maps](/appstore/widgets/google-maps).
+For more information, see [Google Maps](/appstore/widgets/google-maps/).
 
 ## 6 IMAP/POP3 Incoming Email
 
@@ -52,7 +52,7 @@ For more information, see [Google Maps](/appstore/widgets/google-maps).
 
 This module enables your app to retrieve emails from POP3, POP3S, IMAP, and IMAPS servers.
 
-For more information, see [IMAP/POP3 Incoming Email](/appstore/modules/imap).
+For more information, see [IMAP/POP3 Incoming Email](/appstore/modules/imap/).
 
 ## 7 Google Analytics
 
@@ -60,4 +60,4 @@ For more information, see [IMAP/POP3 Incoming Email](/appstore/modules/imap).
 
 You can now add Google Analytics-tracking to your Mendix application! This widget lets you track events, pages, and transactions on your own Google Analytics account.
 
-For more information, see [Google Analytics](/appstore/widgets/google-analytics).
+For more information, see [Google Analytics](/appstore/widgets/google-analytics/).
