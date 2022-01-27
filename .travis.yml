@@ -72,7 +72,7 @@ install:
   - free -g
   - swapon --show
   - ./bin/htmltest --version
-  - ./bin/htmltest
+  - travis wait 15 ./bin/htmltest
 
 before_script:
 ##############
