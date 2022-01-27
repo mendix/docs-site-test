@@ -62,7 +62,8 @@ install:
   - mkdir public  # This because <Maybe> the process of syncing to public is probably deadlocked behind waiting for the public folder to be made, and is never signalled that the folder is created, which ends up stalling the build on Travis CI.
   # ------------------------
   - ./hugo config --environment $TRAVIS_BRANCH # report the config we are using
-  - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
+  # TEMPORARY REMOVE hugo
+  # - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
   #
   - ./bin/htmltest --version
   # TEMPORARY REMOVE htmltest
@@ -87,9 +88,14 @@ script:
   - echo $TRAVIS_PULL_REQUEST
   - echo $TRAVIS_PULL_REQUEST_BRANCH
   - pwd
-  - cat /proc/meminfo
   - free -g
   - vmstat
+  - sudo fallocate -l 1G /swapfile
+  - sudo chmod 600 /swapfile
+  - sudo mkswap /swapfile
+  - sudo swapon /swapfile
+  - swapon --show
+  - free -g
 
 # before_cache
 ############## Skipped
