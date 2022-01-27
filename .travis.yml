@@ -62,11 +62,9 @@ install:
   - mkdir public  # This because <Maybe> the process of syncing to public is probably deadlocked behind waiting for the public folder to be made, and is never signalled that the folder is created, which ends up stalling the build on Travis CI.
   # ------------------------
   - ./hugo config --environment $TRAVIS_BRANCH # report the config we are using
-  # TEMPORARY REMOVE hugo
-  # - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
+  - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
   #
-  - free -g
-  - swapon --show
+  # Allocate virtual memory for htmltest
   - sudo fallocate -l 24G /swapfile
   - sudo chmod 600 /swapfile
   - sudo mkswap /swapfile
@@ -74,8 +72,7 @@ install:
   - free -g
   - swapon --show
   - ./bin/htmltest --version
-  # TEMPORARY REMOVE htmltest
-  # - ./bin/htmltest
+  - ./bin/htmltest
 
 before_script:
 ##############
