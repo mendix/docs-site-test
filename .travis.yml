@@ -65,6 +65,14 @@ install:
   # TEMPORARY REMOVE hugo
   # - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
   #
+  - free -g
+  - swapon --show
+  - sudo fallocate -l 24G /swapfile
+  - sudo chmod 600 /swapfile
+  - sudo mkswap /swapfile
+  - sudo swapon /swapfile
+  - free -g
+  - swapon --show
   - ./bin/htmltest --version
   # TEMPORARY REMOVE htmltest
   # - ./bin/htmltest
@@ -88,14 +96,7 @@ script:
   - echo $TRAVIS_PULL_REQUEST
   - echo $TRAVIS_PULL_REQUEST_BRANCH
   - pwd
-  - free -g
-  - swapon --show
-  - sudo fallocate -l 20G /swapfile
-  - sudo chmod 600 /swapfile
-  - sudo mkswap /swapfile
-  - sudo swapon /swapfile
-  - free -g
-  - swapon --show
+
 
 # before_cache
 ############## Skipped
