@@ -64,15 +64,8 @@ install:
   - ./hugo config --environment $TRAVIS_BRANCH # report the config we are using
   - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
   #
-  # Allocate virtual memory for htmltest
-  - sudo fallocate -l 24G /swapfile
-  - sudo chmod 600 /swapfile
-  - sudo mkswap /swapfile
-  - sudo swapon /swapfile
-  - free -g
-  - swapon --show
   - ./bin/htmltest --version
-  - travis_wait 30 ./bin/htmltest
+  - ./bin/htmltest
 
 before_script:
 ##############
