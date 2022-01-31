@@ -64,9 +64,10 @@ install:
   - ./hugo config --environment $TRAVIS_BRANCH # report the config we are using
   - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
   #
-  - ./bin/htmltest --version
-  - ./bin/htmltest
-
+  # htmltest takes too much memory
+  # - ./bin/htmltest --version
+  # - ./bin/htmltest
+  
 before_script:
 ##############
   - eval "$(pyenv init --path)" # Instructions from Travis support
