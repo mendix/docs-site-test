@@ -35,6 +35,12 @@
 
         padding-bottom: 2rem;
     }
+    main.lp{
+        @include media-breakpoint-up(xl){
+            min-width: 800px;
+        }
+    }
+
 	div.stretch-main{
 		height: 100%; // NK - so that all of main (side menus and content get stretched to bottom of page)
 	}

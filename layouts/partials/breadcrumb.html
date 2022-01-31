@@ -9,7 +9,7 @@
 			{{end}}
 		</div>
 		<!-- NK - moved language dropdown here -->
-		<div class="col-lg-4"> <!-- NK - adjusted column resizing for multiple screen sizes -->
+		<div class="col-lg-4 col-xl-3"> <!-- NK - adjusted column resizing for multiple screen sizes -->
 			{{ if  (gt (len .Site.Home.Translations) 0) }}
 				<li class="nav-item dropdown d-none d-md-block d-print-none">
 				{{ partial "navbar-lang-selector.html" . }}

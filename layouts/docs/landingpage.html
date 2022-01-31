@@ -28,7 +28,7 @@
             {{ partial "toc.html" . }}
             {{ partial "taxonomy_terms_clouds.html" . }}
           </aside> -->
-          <main class="col-12 col-lg-8 col-xl-6" role="main"> <!-- NK - adjusted resizing for different screens -->
+          <main class="col-12 col-lg-8 col-xl-6 lp" role="main"> <!-- NK - adjusted resizing for different screens -->
         <!-- MvM - Do a test for missing Title -->
         {{ if not .Title }}
             {{ warnf "File %s \n\t\t\t\thas no title in the front matter\n " .Page.File.Path }}
@@ -48,23 +48,23 @@
             {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
             {{ partial "version-banner.html" . }}
             <div class="row" style="margin-left: 0.5rem;margin-bottom: 1rem;">
-              <div class="col-4 col-xl-5">
+              <div class="col-lg-6">
                 <h1 class="page-title">{{ .Page.Title}}</h1>
                 <br>
                 <h5>{{ .Page.Description}}</h5>
               </div>
-              <!-- <div class="col-xl-1">
+<!--               <div class="col-lg-1">
               </div> -->
-              <div class="col-lg-6 col-xl-5">
-                <img src="/images/docs-extended.png" width="320px">
+              <div class="col-lg-4 col-xl-3">
+                <img src="/images/docs-extended.png" width="310px" height="155px">
               </div>
             </div>
-            <div class="row">
+            <div class="row my-row">
               <div class="col cards-layout">
                 <div class="row my-row">
                   <div class="card w-50">
                     <div class="card-body">
-                      <div class="row">
+                      <div class="row my-row">
                         <img class="my-icon" src="/icons/mx-pro-logo.png"><a href="/refguide/"><h4 class="card-title-w-50">Studio Pro 9</h4></a>
                       </div>
                       <p class="card-text"><ul class="landing-list">
@@ -209,6 +209,9 @@
               </ul></p>
             </div>
           </div>
+        </main>
+          <aside class="d-none d-xl-block col-xl-3 td-sidebar d-print-none">
+          </aside>
         </div>
       </div>
 	  {{ partial "footer.html" . }}
