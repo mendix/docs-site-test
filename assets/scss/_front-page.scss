@@ -32,7 +32,7 @@ ul.contributing-list{
 li.link-list{
 	//padding-left: 10%;
 	margin-top: 0.5rem;
-	font-size: 1.125rem;
+	font-size: 1rem;
 	list-style-position: outside;
 	list-style: none;
 	color: $blue;
@@ -44,7 +44,7 @@ li.link-list{
 }
 p.rn-date{
 	color: $gray-600;
-	font-size: 1rem;
+	font-size: 0.85rem;
 }
 
 div.my-column{
@@ -56,7 +56,7 @@ div.my-column{
 	margin-bottom: 1rem;
 	//margin-left: 0.75%;
 	//margin-right: 1%;
-	padding: 2rem;
+	padding: 1rem;
 	@include media-breakpoint-up(xl){
 		flex: 0 0 31%;
 		max-width: 31%;
@@ -72,7 +72,7 @@ div.w-50{
 	box-sizing: border-box;
 	border-radius: 4px;
 	margin: 0.75rem;
-	padding: 1rem;
+	padding: 0.5rem;
 	@include media-breakpoint-up(xl){
 		flex: 0 0 45%;
 		max-width: 45%;
@@ -127,6 +127,9 @@ h4.card-title-w-50{
 			color: $blue;
 			text-decoration: none;
 		}
+}
+div.card-body{
+	padding: 1rem;
 }
 p.card-text{
 	margin-top: 1rem;

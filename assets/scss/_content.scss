@@ -10,13 +10,14 @@
     }
 
     > h1 {
-        font-weight: $headings-font-weight;
+        font-weight: $font-weight-light;
         margin-bottom: 1rem;
-        color: darken($primary, 20%);  // NK - change color of titles
+        font-size: 2rem;
     }
 
     > h2 {
         margin-bottom: 1rem;
+        font-size: 1.7rem;
     }
 
     > h2:not(:first-child) {
