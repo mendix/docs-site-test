@@ -15,7 +15,7 @@
     <div class="container-fluid td-outer">
       <div class="td-main">
         <div class="row flex-xl-nowrap stretch-main">
-          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+          <aside class="d-none d-lg-block col-lg-4 col-xl-3 td-sidebar d-print-none"> <!-- NK - adjusted resizing for different screens -->
             {{ partial "sidebar.html" . }}
           </aside>
          <!-- NK - deactivated toc
@@ -28,8 +28,7 @@
             {{ partial "toc.html" . }}
             {{ partial "taxonomy_terms_clouds.html" . }}
           </aside> -->
-		  <!-- NK - increased col-xl to 10 -->
-          <main class="col-12 col-md-9 col-xl-10 pl-md-5" role="main">
+          <main class="col-12 col-lg-8 col-xl-6 lp" role="main"> <!-- NK - adjusted resizing for different screens -->
         <!-- MvM - Do a test for missing Title -->
         {{ if not .Title }}
             {{ warnf "File %s \n\t\t\t\thas no title in the front matter\n " .Page.File.Path }}
@@ -49,24 +48,22 @@
             {{ if not .Site.Params.ui.breadcrumb_disable }}{{ partial "breadcrumb.html" . }}{{ end }}
             {{ partial "version-banner.html" . }}
             <div class="row" style="margin-left: 0.5rem;margin-bottom: 1rem;">
-              <div class="col-6" >
+              <div class="col-lg-6 col-xl-7">
                 <h1 class="page-title">{{ .Page.Title}}</h1>
                 <br>
-                <h5>{{ .Page.Description}}</h5>
+                <h5 class="lp">{{ .Page.Description}}</h5>
               </div>
-              <div class="col-1">
-              </div>
-              <div class="col-5">
-                <img src="/images/docs-extended.png" width="320px">
+              <div class="col-lg-4 col-xl-3">
+                <img src="/images/docs-extended.png" width="310px" height="155px">
               </div>
             </div>
-            <div class="row">
+            <div class="row my-row">
               <div class="col cards-layout">
-                <div class="row my-row">
+                <div class="row justify-content-center inner-row">
                   <div class="card w-50">
                     <div class="card-body">
                       <div class="row">
-                        <img class="my-icon" src="/icons/mx-pro-logo.png"><a href="/refguide/"><h4 class="card-title">Studio Pro 9</h4></a>
+                        <img class="my-icon" src="/icons/mx-pro-logo.png"><a href="/refguide/"><h4 class="card-title-w-50">Studio Pro 9</h4></a>
                       </div>
                       <p class="card-text"><ul class="landing-list">
                         <li class="link-list"><a href="/refguide/general/">General Info</a></li>
@@ -77,7 +74,7 @@
                   <div class="card w-50">
                     <div class="card-body">
                       <div class="row">
-                        <img class="my-icon" src="/icons/mx-studio.png"><a href="/studio/"><h4 class="card-title">Studio 9</h4></a>
+                        <img class="my-icon" src="/icons/mx-studio.png"><a href="/studio/"><h4 class="card-title-w-50">Studio 9</h4></a>
                       </div>
                       <p class="card-text"><ul class="landing-list">
                         <li class="link-list"><a href="/studio/general/">General Info</a></li>
@@ -86,11 +83,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="row my-row">
+                <div class="row justify-content-center inner-row">
                   <div class="card w-50">
                     <div class="card-body">
                       <div class="row">
-                        <img class="my-icon" src="/icons/mx-dev-portal.png"><a href="/developerportal/"><h4 class="card-title">Developer Portal</h4></a>
+                        <img class="my-icon" src="/icons/mx-dev-portal.png"><a href="/developerportal/"><h4 class="card-title-w-50">Developer Portal</h4></a>
                       </div>
                       <p class="card-text"><ul class="landing-list">
                         <li class="link-list"><a href="/developerportal/deploy/">Deployment</a></li>
@@ -101,7 +98,7 @@
                   <div class="card w-50">
                     <div class="card-body">
                       <div class="row">
-                        <img class="my-icon" src="/icons/shopping-cart-1.png"><a href="/appstore/"><h4 class="card-title">Marketplace</h4></a>
+                        <img class="my-icon" src="/icons/shopping-cart-1.png"><a href="/appstore/"><h4 class="card-title-w-50">Marketplace</h4></a>
                       </div>
                       <p class="card-text"><ul class="landing-list">
                         <li class="link-list"><a href="/appstore/creating-content/">Creating Content</a></li>
@@ -110,11 +107,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="row my-row">
+                <div class="row justify-content-center inner-row">
                   <div class="card w-50">
                     <div class="card-body">
                       <div class="row">
-                        <img class="my-icon" src="/icons/mx-data-hub.png"><a href="/data-hub/"><h4 class="card-title">Data Hub</h4></a>
+                        <img class="my-icon" src="/icons/mx-data-hub.png"><a href="/data-hub/"><h4 class="card-title-w-50">Data Hub</h4></a>
                       </div>
                       <p class="card-text"><ul class="landing-list">
                         <li class="link-list"><a href="/data-hub/share-data/">Share Data Between Apps</a></li>
@@ -125,7 +122,7 @@
                   <div class="card w-50">
                     <div class="card-body">
                       <div class="row">
-                        <img class="my-icon" src="/icons/module-three-1.png"><a href="/apidocs-mxsdk/"><h4 class="card-title">APIs & SDKs</h4></a>
+                        <img class="my-icon" src="/icons/module-three-1.png"><a href="/apidocs-mxsdk/"><h4 class="card-title-w-50">APIs & SDKs</h4></a>
                       </div>
                       <p class="card-text"><ul class="landing-list">
                         <li class="link-list"><a href="/apidocs-mxsdk/apidocs/">API Documentation</a></li>
@@ -138,7 +135,7 @@
               </div>
               <div class="col col-sm-2 my-column">
                 <div class="row">
-                  <img class="my-icon" src="/icons/space-rocket-flying.png"><a href="/releasenotes/"><h4 class="card-title">Latest Releases</h4></a>
+                  <img class="my-icon" src="/icons/space-rocket-flying.png"><a href="/releasenotes/"><h4 class="card-title-w-50">Latest Releases</h4></a>
                 </div>
                 <p class="card-text"><ul class="landing-list">
                   <li class="link-list"><a href="/releasenotes/studio-pro/9.8/">Studio Pro 9.8.1</a></li>
@@ -163,11 +160,11 @@
               </div>
             </div>
             <br>
-            <div class="row my-row">
+            <div class="row inner-row">
               <h3 class="title-row">Most Popular</h3>
             </div>
-            <div class="row">
-              <div class="col-4 image-card-col">
+            <div class="row image-card-row">
+              <div class="col-12 col-sm-6 col-xl-4 image-card-col">
                 <div class="card image-card">
                   <img src="/images/most-popular-string-function-calls.png" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -177,17 +174,17 @@
                   </div>
                 </div>
               </div>
-              <div class="col-4 image-card-col">
+              <div class="col-12 col-sm-6 col-xl-4 image-card-col">
                 <div class="card image-card">
                   <img src="/images/most-popular-development-best-practices.png" class="card-img-top" alt="...">
                   <div class="card-body">
-                    <h4 class="card-title">Best Development Practices</h4>
+                    <h4 class="card-title">Development Best Practices</h4>
                     <br>
                     <a href="/howto/general/dev-best-practices" class="btn btn-outline-secondary doc-link">Go to doc</a>
                   </div>
                 </div>
               </div>
-              <div class="col-4 image-card-col">
+              <div class="col-12 col-sm-6 col-xl-4 image-card-col">
                 <div class="card image-card">
                   <img src="/images/most-popular-system-requirements.png" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -199,10 +196,10 @@
               </div>
             </div>
             <br>
-            <div class="row my-row">
+            <div class="row inner-row">
               <h3 class="title-row">Contribute to Docs? Here Is How:</h3>
             </div>
-            <div class="row my-row">
+            <div class="row inner-row">
               <p class="card-text"><ul class="contributing-list">
                 <li class="link-list"><a href="/developerportal/community-tools/contribute-to-the-mendix-documentation">Contribute to the Documentation</a></li>
                 <li class="link-list"><a href="/developerportal/community-tools/documentation-writing-guidelines">Documentation Writing Guidelines</a></li>
@@ -210,6 +207,9 @@
               </ul></p>
             </div>
           </div>
+        </main>
+          <aside class="d-none d-xl-block col-xl-3 td-sidebar d-print-none">
+          </aside>
         </div>
       </div>
 	  {{ partial "footer.html" . }}
