@@ -17,14 +17,7 @@ You can also see these steps by watching this video:
 <!-- The script tag should live in the head of your page if at all possible -->
 <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
 
-<img
-  style="width: 100%; margin: auto; display: block;"
-  class="vidyard-player-embed"
-  src="https://play.vidyard.com/UkYqZGMiP3k1AZGk7PPrjP.jpg"
-  data-uuid="UkYqZGMiP3k1AZGk7PPrjP"
-  data-v="4"
-  data-type="inline"
-/>
+{{< vidyard "UkYqZGMiP3k1AZGk7PPrjP" >}}
 
 See [Environment Details](/developerportal/deploy/environments-details/) for more information on setting up any environment details as described in the video.
 
