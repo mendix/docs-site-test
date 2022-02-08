@@ -2,10 +2,10 @@
 title: "Beta Releases"
 url: /releasenotes/beta-features/
 tags: ["Beta", "Private Beta", "Public Beta", "GA", "General Availability", "feature", "feature flag", "product"]
+weight: 55
 #notoc: true
 #layout: wide
 #toc-level: "3"
-weight: 55
 ---
 
 ## 1 Introduction

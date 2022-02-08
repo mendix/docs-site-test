@@ -2,7 +2,7 @@
 title: "Mendix Product Naming Guide"
 url: /product-naming/
 draft: true
-weight: 95
+weight: 100
 cascade:
     - space: "Mendix Product Naming Guide"
     - mendix_version: ""
@@ -56,4 +56,4 @@ Example usage.
 
 ## Maintaining & Updating This Guide
 
-This guide can be collaboratively maintained and updated across departments. In that sense, a standard documentation workflow is applied: to update the guide, send a [pull request](https://github.com/mendix/docs/tree/development/content/product-naming/) (for more information, see [How to Contribute to the Documentation](/developerportal/community-tools/contribute-to-the-mendix-documentation/)). Pull requests will be reviewed with relevant stakeholders and necessary documentation updates will be made.
+This guide can be collaboratively maintained and updated across departments. In that sense, a standard documentation workflow is applied: to update the guide, send a [pull request](https://github.com/mendix/docs/tree/development/content/product-naming) (for more information, see [How to Contribute to the Documentation](/developerportal/community-tools/contribute-to-the-mendix-documentation/)). Pull requests will be reviewed with relevant stakeholders and necessary documentation updates will be made.

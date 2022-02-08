@@ -4,6 +4,7 @@ url: /partners/siemens/
 description: "Reference content for Siemens integrations."
 tags: ["Siemens", "MindSphere"]
 notoc: true
+weight: 10
 #layout: wide
 ---
 

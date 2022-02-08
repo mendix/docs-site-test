@@ -40,11 +40,6 @@ disableKinds = ["taxonomy","taxonomyTerm","term"]
         languageName ="English"
         # Weight used for sorting.
         weight = 1
-    [languages.es]
-        languageName ="Espanol"
-        contentDir = "content/es"
-        time_format_default = "02.01.2006"
-        time_format_blog = "02.01.2006"
 
 [markup]
     [markup.goldmark]

@@ -11,12 +11,11 @@ tags: ["studio", "page editor", "input elements", "input widgets", "widgets"]
 
 **Input Elements** are [widgets](/studio8/page-editor-widgets/) in Mendix Studio that are typically used to allow end-users enter or edit data. For example, a text box below allows users to fill in their full names:
 
-{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/text-box-example.png)
-{{/* % /image_container % */}}
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/text-box-example.png"   width="350"  >}}
 
 **Input Elements** can only function inside a data container (a data view, a list view, or a data grid). You can either place widget in an existing data container; or click **Wrap with a new data view** in **Properties** to create a data view and place an input element inside it automatically. 
 
-![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/wrap-in-data-view.png)
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/wrap-in-data-view.png" >}}
 
 ## 2 Input Elements Overview
 
@@ -58,7 +57,7 @@ This option is only available for **Text Box**, **Text Area**, **Radio Buttons**
 
 The **Type** option allows you to quickly change the type of one input element to a similar one: you can change a **Text Box** to a **Text Area** and vice versa, and change **Radio Buttons** to a **Check Box** or a **Drop-Down** and vice versa:
 
-![Type Option](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/input-widget-type.jpg)
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/input-widget-type.jpg" alt="Type Option" >}}
 
 ### 3.2 Data Source Section {#input-elements-data-source}
 
@@ -96,7 +95,7 @@ Editability indicates whether the end-user will be able to change the value disp
 
 * **Conditional** – the widget is editable only if specified conditions are met based on an attribute value (for more information, see  [Attribute-Based](#attribute-based) and [Attribute Values](#attribute-values) sections below) or based on an expression. You can create a condition based on an expression in Studio Pro only (for details, see the [Editability Section](/refguide8/common-widget-properties/#editability) in *Properties Common in the Page Editor*)
 
-	{{%alert color="info" %}}If an attribute set for the widget's data source is of the AutoNumber type, the widget is set into read-only mode by default and the **Editability** setting itself is disabled, because attributes of this type are generated automatically.
+	{{%alert type="info" %}}If an attribute set for the widget's data source is of the AutoNumber type, the widget is set into read-only mode by default and the **Editability** setting itself is disabled, because attributes of this type are generated automatically.
 	
 	{{%/alert %}}
 	
@@ -107,13 +106,13 @@ The **Attribute-Based** property is only shown when [Conditional Editability](#e
 
 **Attribute-Based** conditional editability allows you to show widgets only when they match a certain value of the selected attribute. 
 
-{{%alert color="info" %}}
+{{%alert type="info" %}}
 
 The attribute must be of the Boolean or enumeration type.
 
 {{%/alert %}} 
 
-{{%alert color="info" %}}
+{{%alert type="info" %}}
 
 You can only configure attribute-based conditional editability when a widget is placed in a data container: a data view or a list view. For more information on how to place widgets on a page, see [Adding Elements on a Page](/studio8/page-editor/#adding-elements) section in *Pages*. 
 
@@ -125,7 +124,7 @@ This property is shown only when an attribute in the [Attribute-Based](#attribut
 
 For example, you would like to make the **City** field editable only when users fill the **Country** field in, because you can deliver your products to a limited number of countries. So, you need to select *Country* in the **Attribute-Based** property and *Netherlands*, *Belgium*, *Germany*, *France* in the **Attribute Value** property:
 
-![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/attribute-based-editability.png)
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/attribute-based-editability.png" >}}
 
 #### 3.3.6 Specific Properties
 
@@ -152,9 +151,7 @@ The **Format** section is specific for the **Date Picker** widget only.
 
 In **Input Validation**, you can specify whether the widget's value should be validated. You can set a validation type for an input widget and specify an end-user message in case validation fails. For example, you can mark the **Full name** field as required for new customers and you can add a message saying: "Please specify your name to proceed".
 
-{{/* % image_container width="350" % */}}
-![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/Validation-type-required.png)
-{{/* % /image_container % */}}
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-input-elements/Validation-type-required.png"   width="350"  >}}
 
 
 The **Input Validation** section properties are described in the table below:

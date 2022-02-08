@@ -1,6 +1,7 @@
 ---
 title: "Front End"
 url: /howto/front-end/
+weight: 30
 tags: ["studio pro"]
 ---
 

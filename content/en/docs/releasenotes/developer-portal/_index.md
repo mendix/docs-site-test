@@ -15,6 +15,14 @@ For release notes on Mendix Cloud and deployment options, see [Deployment](/rele
 
 To see the current status of the Mendix Developer Portal and Control Center, see [Mendix Status](https://status.mendix.com/). Here you can also see planned maintenance and past incidents.
 
+## 2022
+
+### January 18th, 2022
+
+#### Improvements
+
+* We improved the platform navigation. The [Switch to](/developerportal/#navigation) menu on the left side of the top bar now also provides access to your recently used apps.  
+
 ## 2021
 
 ### December 23rd, 2021
@@ -659,8 +667,7 @@ To see the current status of the Mendix Developer Portal and Control Center, see
 
 * The [Mendix Shop](https://mendixshop.mendixcloud.com) is open for business! This is a web shop where you can spend the credits you have gained by completing various [challenges](/developerportal/community-tools/mendix-profile/#challenges). The shop has cool products like Mendix t-shirts, socks, and sweatbands, so be sure to check it out.
 
-	{{/* % image_container width="300" % */}}![](/attachments/releasenotes/developer-portal/shop.png)
-	{{/* % /image_container % */}}
+	{{< figure src="/attachments/releasenotes/developer-portal/shop.png"   width="300"  >}}
 
 ### November 1st, 2018
 

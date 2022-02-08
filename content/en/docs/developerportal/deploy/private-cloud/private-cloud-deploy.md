@@ -20,7 +20,7 @@ To deploy to a namespace in a **standalone** cluster, you provide the CRs throug
 
 Within your namespace you can run one, or several, Mendix apps. You can see the relationship between the Mendix environments and the Kubernetes namespaces in the image below.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/mx4pc-containerized-architecture.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/mx4pc-containerized-architecture.png" >}}
 
 Because you can run several Mendix apps in the same namespace, each environment will have an **Environment UUID** added when the app is deployed to ensure that it is unique in the project. You should not use the same name as the Mendix tools used to deploy the app. See the section [Reserved Names for Mendix Apps](#reserved-names), below.
 
@@ -40,24 +40,24 @@ When you first create your app, it will be set to deploy to the Mendix Cloud. Yo
 
 1. Open the **General Settings** page for your app in the Developer Portal.
    
-      ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image2.png)
+      {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image2.png" >}}
 
 2. Click **Cloud Settings**.
 
 3. Click **Mendix for Private Cloud**.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image3.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image3.png" >}}
 
 4. Click **Set up Mendix for Private Cloud**.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image4.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image4.png" >}}
 
 5. Your app is now configured for private cloud.
 
 ### 3.2 Creating an Environment{#create-environment}
 When deploying your app for the first time, there will be no environments and no deployment packages available. The **Environments** page for your app in the Developer Portal will show you the current status.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image5.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image5.png" >}}
 
 First you need to create an environment:
 
@@ -80,7 +80,7 @@ First you need to create an environment:
 
 6. Click **Next**.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/create-environment.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/create-environment.png" >}}
 
 7. Select **Core Resources**.
 
@@ -101,13 +101,13 @@ First you need to create an environment:
 
 9. Select a **Storage plan** from the list of plans set up in the namespace.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image7.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image7.png" >}}
 
 10. Click **Create Environment**.
 
 11. You will see your new environment listed. An *in-progress* icon will be shows next to the resource plans until they have been provisioned.
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image8.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image8.png" >}}
 
 You will not be able to deploy to this environment until it has been fully prepared. This means that all the resource plans have been confirmed and that the placeholder app has been successfully deployed. See [Deploying the Deployment Package](#deploy-package), below, for instructions on how to check that the environment has been created successfully.
 
@@ -117,15 +117,15 @@ Before you can deploy your app, you will need to create a deployment package. En
 
 1. On the **Environments** page for your app in the Developer Portal, click **Create Package**.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image9.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image9.png" >}}
 
 2. Select the branch which contains the commit for which you want to create a deployment package and click **Next**.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image10.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image10.png" >}}
 
 3. Select the revision/commit for which you want to create a deployment package and click **Next**.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image11.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image11.png" >}}
 
 4. Enter a **New version** and **Tag description** according to your own deployment procedure.
 
@@ -133,7 +133,7 @@ Before you can deploy your app, you will need to create a deployment package. En
 
 6. Click **Build this revision.**
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image12.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image12.png" >}}
 
 7. Confirm the information message and you will be returned to the **Environments** page.
 
@@ -151,11 +151,11 @@ Currently, deployment packages are only valid for two weeks. Older deployment pa
 
 After creating an environment and deployment package (see [Creating an Environment](#create-environment) and [Creating a Deployment Package](#create-deployment-package), above) you will now have a deployment package and an environment. Check that there is a green tick next to the deployment package and the resources of the environment. If any of these have failed, try to create the environment or the deployment package again, and contact your cluster manager. If neither of these solves the problem, contact Mendix Support for help.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image13.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image13.png" >}}
 
 You also need to check that the **PlaceholderMDA**, an initial app which is deployed by default to your environment, has successfully built and is running.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image14.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image14.png" >}}
 
 If everything has been created successfully, and the PlaceholderMDA has been built and is running, you can deploy the deployment package of your app by doing the following:
 
@@ -167,7 +167,7 @@ If everything has been created successfully, and the PlaceholderMDA has been bui
 
 4. Click **Transport**.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image15.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image15.png" >}}
 
 5. Change any constants in the **Constants** tab: select the constant you want to edit and then click **Edit**.
 
@@ -175,7 +175,7 @@ If everything has been created successfully, and the PlaceholderMDA has been bui
 
 7. Click **Continue** to continue to the Start Application confirmation page.
    
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image16.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image16.png" >}}
 
 8. Click Apply Changes to deploy the application to the selected environment. The app will start automatically once the deployment is successful.
 
@@ -195,7 +195,7 @@ The **Environments** page of the Developer Portal contains three sections:
 
 This lists the deployment packages which have been created for this app.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image17.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image17.png" >}}
 
 There are five buttons:
 
@@ -227,7 +227,7 @@ This allows you to upload an MDA package you have already created, using Studio 
 
 This displays details of the deployment package.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image18.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image18.png" >}}
 
 The information shows here is labeled to help you. The indicators in the environment description are described in the next section, [Environments](#environments), below.
 
@@ -245,7 +245,7 @@ This deploys the package to an existing environment as described in [Deploying t
 
 This section shows all the environments created for this app.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image19.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image19.png" >}}
 
 For each environment, you can see a summary of the status of the resources and details of the package which is running in the environment (which may be the placeholder app *PlaceholderMDA*).
 
@@ -330,7 +330,7 @@ This button contains a list of actions which you can perform quickly on the envi
 
 This section shows all the activities, such as creating environments and deploying apps, which have taken place in this environment. You can sort the activities in either descending or ascending date and time order.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image20.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image20.png" >}}
 
 ## 5 Managing Your Environments from the Environment Details Page{#environment-details}
 
@@ -338,7 +338,7 @@ Each environment you create has an **Environment Details** page which allows you
 
 If you have any outstanding changes to your environment the page will display a warning message. If you click **Apply Changes**, the environment will be stopped and restarted.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image21.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image21.png" >}}
 
 The environment details page consists of seven tabs:
 
@@ -356,7 +356,7 @@ These tabs are described below.
 
 The general tab shows information about your running app.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image22.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image22.png" >}}
 
 Most of the information is self-explanatory, but the status information gives you a quick summary of the status of the environment and the app deployed there.
 
@@ -386,7 +386,7 @@ Allows you to deploy the deployment package in the current environment to anothe
 
 This allows you to scale your app by increasing the number of replicas.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image23.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image23.png" >}}
 
 To apply the new value, click **Restart the App and Scale**. Because you restart your app, it will be unavailable for a short time.
 
@@ -410,7 +410,7 @@ If the cluster is standalone, or the Mendix Gateway Agent is not connected for s
 
 If the environment cannot be deleted, you will receive a warning, but can go ahead and remove it from the Developer Portal.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/delete-environment.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/delete-environment.png" >}}
 
 For a *connected* cluster, the top level MendixApp​ CRD will be deleted from the namespace – this will cause the following environment resources set up by the Operator to be garbage collected:
 
@@ -454,7 +454,7 @@ Subscription secrets are obtained from [Mendix support](https://support.mendix.c
 
 The **Model Options** tab allows you to change the configuration of scheduled events and constants in your app.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image24.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/image24.png" >}}
 
 To toggle any scheduled events, select the scheduled event you want to enable or disable and click **Toggle**.
 
@@ -464,13 +464,13 @@ To change any constants, select the constant you want to edit and then click **E
 
 On the Network tab, you add client certificates (in the PKCS12 format) or certificate authorities (in the PEM format) for outgoing connections. These will be used when your application initiates SSL/TLS connections. This works in the same way as the Network tab for deployments to the Mendix Cloud. For more details on these, see the [Network Tab](/developerportal/deploy/environments-details/#network-tab) section of *Environment Details*.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/network-tab.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/network-tab.png" >}}
 
 ### 5.4 Runtime Tab
 
 On the Runtime tab, you can change various runtime settings for your app environment. This works in the same way as the Runtime tab for deployments to the Mendix Cloud. For more details on these, see the [Runtime Tab](/developerportal/deploy/environments-details/#runtime-tab) section of *Environment Details*.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/runtime-tab.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/runtime-tab.png" >}}
 
 {{% alert color="info" %}}
 When you use some settings on the Runtime tab for Mendix for Private Cloud they may work differently from how they work in the Mendix Cloud.
@@ -480,11 +480,11 @@ When you use some settings on the Runtime tab for Mendix for Private Cloud they 
 
 On the **Log Levels** tab, you can change the log levels which are used for the log nodes in your app.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/log-levels-tab-1.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/log-levels-tab-1.png" >}}
 
 The **NODE** is a **Log node name** that you specified in your Mendix application. In the example below, the constant `MyFirstModile.LogNode` is used as a log node name. In this case you need put the *value* of the constant (in this case, `Test Service`) as a NODE on the Log Levels tab.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/log-levels-tab-2.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/log-levels-tab-2.png" >}}
 
 You can find your logs in your Mendix application pod inside the Mendix container using the command below:
 
@@ -494,7 +494,7 @@ kubectl logs <pod-name> -c mendix
 
 This might produce the log below for the example described above.
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/log-levels-tab-3.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/log-levels-tab-3.png" >}}
 
 For more information, see the [Log Levels Tab](/developerportal/deploy/environments-details/#log-levels) section of *Environment Details*.
 
@@ -508,23 +508,23 @@ In the TLS pane, you can choose whether to **Apply Default Configuration** or a 
 If you are using a version of Mendix Operator before 1.5.0, the settings in this tab will have no effect and the default configuration will be applied.
 {{% /alert %}}
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/tls-configuration.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/tls-configuration.png" >}}
 
 If you choose a custom TLS configuration, you will need to enter the following information:
 
 * Enable TLS – is TLS enabled for this environment?
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/enable-tls.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/enable-tls.png" >}}
 
 * Use existing TLS secret or add new tls private key and certificate?
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/choose-secret.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/choose-secret.png" >}}
 
 * Existing Secret Name – if you choose an existing TLS secret then you will be asked to enter its name
 
 * TLS Private Key File and TLS Certificate File – if you choose to add a new key you will need to upload these two files
 
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/new-tls-key.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/new-tls-key.png" >}}
 
 Click **Save** to confirm your new configuration.
 
@@ -582,7 +582,7 @@ Both commands should return an empty list.
 
 If the Operator fails to deprovision an app's database or file storage, the `*-database` or `*-file` Pod will fail with an Error state:
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/deprovision-failed.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/deprovision-failed.png" >}}
 
 To force removal of a StorageInstance `{name}`, run:
 
@@ -628,7 +628,7 @@ If you change **App URL** in the **General** tab, you should update the `Applica
 
 The Mendix Operator is another app within your private cloud namespace. It is triggered when you provide a CR file. This can either be through the Developer Portal, for a connected cluster, or through the command line, for a standalone cluster. The process looks like this:
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/mx4pc-operator-deploy.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-deploy/mx4pc-operator-deploy.png" >}}
 
 The Mendix Operator CR is processed by the Mendix Operator into four steps:
 

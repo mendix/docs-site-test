@@ -1,6 +1,7 @@
 ---
 title: "Mendix Platform SDK"
 url: /apidocs-mxsdk/mxsdk/
+weight: 20
 ---
 
 ## 1 Introduction & FAQ

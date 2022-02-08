@@ -26,7 +26,7 @@ Information that is added or changed during curation is stored in the Data Hub C
 
 Owners and curators of registered assets can click **Curate** from the **Data Hub** screen to see the **Curation List** screen which provides an overview of all the registered assets that you can curate as an owner under the **My Assets** tab. Curators will also see the **Company Assets** tab that lists all the registered assets:
 
-![curate list](/attachments/data-hub/data-hub-catalog/curate/curate-list.png)
+{{< figure src="/attachments/data-hub/data-hub-catalog/curate/curate-list.png" alt="curate list" >}}
 
 In both cases, the list includes registered data sources and also individual datasets that are exposed for the data source.
 
@@ -40,7 +40,7 @@ Click **View** to display the asset details. You can then perform curate actions
 
 Curation is performed from the [asset details screen](/data-hub/data-hub-catalog/search/#search-details). If you are an owner of an asset or are a curator, you will see the **Curation Bar** for the selected item. The following shows the curation bar for a selected service:
 
-![curate bar](/attachments/data-hub/data-hub-catalog/curate/curate-bar.png)
+{{< figure src="/attachments/data-hub/data-hub-catalog/curate/curate-bar.png" alt="curate bar" >}}
 
 {{% alert color="info" %}}
 Owners of registered assets and can only curate their services.
@@ -66,7 +66,7 @@ You can curate Application Details from the **Application Details** screen as fo
 1. In the **Curation Bar** click **Edit** > **Edit Metadata** > **Application Details**.
 2. The **Application Metadata** screen is displayed:
 
-   ![app metadata screen](/attachments/data-hub/data-hub-catalog/curate/application-metadata-screen.png)
+   {{< figure src="/attachments/data-hub/data-hub-catalog/curate/application-metadata-screen.png" alt="app metadata screen" >}}
 
 ### 4.1 Changing Owners of an App {#changing-owners}
 
@@ -100,7 +100,7 @@ To add a custom owner follow these steps:
 
 1. From the **Application Metadata screen** if you start typing the name of an owner and it is not in the drop-down list, you will be prompted if you want to **Create** it. Click on the prompt and the **Enter New Custom Owner Details** pop-up is displayed:
 
-    {{/* % image_container width="275" % */}}![custom contact create](/attachments/data-hub/data-hub-catalog/curate/custom-contact.png){{/* % /image_container % */}}
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/custom-contact.png" alt="custom contact create"   width="275"  >}}
 
 1. Enter the **Name** and **Email** of the owner and click **Save**.
 
@@ -114,7 +114,7 @@ You can change the icon that is displayed for the app and the data source by upl
 
 {{% alert color="info" %}} When you change an application icon all data sources (published OData services) that are registered in the Catalog for that application will show the new icon. For example, the following shows two data sources that are published from the **HR Sample App** which are listed in the search results pane (**SAMPLE_Employee…** and **SAP 1.0.0**). They both display the same icon that was set for the app:
 
-![custom contact create](/attachments/data-hub/data-hub-catalog/curate/app-icon-several-services.png)
+{{< figure src="/attachments/data-hub/data-hub-catalog/curate/app-icon-several-services.png" alt="custom contact create" >}}
 
  {{% /alert %}}
 
@@ -140,23 +140,23 @@ To **upload a different icon** for the app follow these steps:
 
 1. In the **Application Metadata** screen of the selected data source, click **Upload a different icon** to display the **Upload Application Icon** pop up:
 
-    {{/* % image_container width="300" % */}}![upload icon](/attachments/data-hub/data-hub-catalog/curate/icon-upload-dialog.png){{/* % /image_container % */}}
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/icon-upload-dialog.png" alt="upload icon"   width="300"  >}}
 
 2. Drag the image file into the upload area or click **Upload** to browse and select a file from your file system. Click **Step 2: Crop image** to proceed.
 
 3. Move the wire-frame to select an area of the loaded image and change the size of the wire-frame to crop the image to the area that you want to use. When you are satisfied, click **Apply Changes**:
 
-    {{/* % image_container width="300" % */}}![upload icon](/attachments/data-hub/data-hub-catalog/curate/icon-crop.png){{/* % /image_container % */}}
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/icon-crop.png" alt="upload icon"   width="300"  >}}
 
     {{% alert color="info" %}}For high-resolution images, if the selected are exceeds the size limit there will be a warning. Select a smaller area of the image to reduce the file size.{{% /alert %}}
 
 4. A preview of the application icon is shown. Click **Save** to upload the selected icon.
 
-    {{/* % image_container width="300" % */}}![upload icon](/attachments/data-hub/data-hub-catalog/curate/icon-preview.png){{/* % /image_container % */}}
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/icon-preview.png" alt="upload icon"   width="300"  >}}
 
 5. The **Application Metadata** screen will now show the selected icon for the application:
 
-    ![upload icon](/attachments/data-hub/data-hub-catalog/curate/asset-metadata-new-icon.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/asset-metadata-new-icon.png" alt="upload icon" >}}
 
 6. Click **Save Changes** to return to the data source details page. The custom icon will be stored in the **Icon Library**.
 
@@ -164,7 +164,7 @@ To **upload a different icon** for the app follow these steps:
 
 An alternative to uploading an icon is to use an existing icon by clicking **select one from your library**. The icons for your Data Hub will be shown and you can select one and click **Change Icon**.
 
-{{/* % image_container width="300" % */}}![upload icon](/attachments/data-hub/data-hub-catalog/curate/icon-library.png){{/* % /image_container % */}}
+{{< figure src="/attachments/data-hub/data-hub-catalog/curate/icon-library.png" alt="upload icon"   width="300"  >}}
 
 ## 5 Editing the Metadata of a Data Source {#service-details}
 
@@ -184,11 +184,11 @@ To edit the asset metadata, follow these steps:
 
 1. In the **Curation Bar**, click **Edit** > **Edit Metadata** > **Service Details** to display the **Service Metadata** box:
 
-    ![service metadata](/attachments/data-hub/data-hub-catalog/curate/service-metadata-box.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/service-metadata-box.png" alt="service metadata" >}}
 
 2. The description from the OData service metadata is displayed in the **Contract Description**. This cannot be changed, as it is part of the OData service definition. You can provide an alternative description by toggling **Use the catalog description** to display the **Catalog Description** box:
 
-    ![edit description](/attachments/data-hub/data-hub-catalog/curate/service-metadata-description.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/service-metadata-description.png" alt="edit description" >}}
 
 3. Add a catalog description. This will be stored with the service details in the Catalog.
 
@@ -206,7 +206,7 @@ Add tags to categorize a registered service and provide additional means for fin
 
 2. To add tags, click the empty **Tag** input area:
 
-    ![tags](/attachments/data-hub/data-hub-catalog/curate/service-metadata-tags.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/service-metadata-tags.png" alt="tags" >}}
 
 3. To add or edit the tags, enter a tag string and press **Enter** or select one from the list of existing tags that are used in the Data Hub Catalog and displayed when you start typing in the **Tag** field. To separate multiple tags, use spaces.
 
@@ -214,7 +214,7 @@ Add tags to categorize a registered service and provide additional means for fin
 
 4. You can enter multiple tags separated by spaces. You can remove tags by clicking the **x**:
 
-    ![tag list](/attachments/data-hub/data-hub-catalog/curate/service-metadata-tags-list.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/service-metadata-tags-list.png" alt="tag list" >}}
 
 5. When you are finished specifying the tags, click **Save Changes** to register the changes and the tags will be shown in the **Service Metadata** pane.
 
@@ -243,11 +243,11 @@ To change the discoverability of a service, follow these steps:
 
 2. If you have curation rights, the **Curation Bar** is displayed. Click the drop-down **Discoverabile/Validated** menu:
 
-   ![discoverable](/attachments/data-hub/data-hub-catalog/curate/curate-discoverable.png)
+   {{< figure src="/attachments/data-hub/data-hub-catalog/curate/curate-discoverable.png" alt="discoverable" >}}
 
 3. Click the **Discoverable** toggle to turn it on or off. A message is displayed to indicate the discoverability of the asset and the discoverability icon is updated in the search results and the data source details.
 
-   ![non-discoverable](/attachments/data-hub/data-hub-catalog/curate/curate-non-discoverable.png)
+   {{< figure src="/attachments/data-hub/data-hub-catalog/curate/curate-non-discoverable.png" alt="non-discoverable" >}}
 
 ### 6.2 Validated {#validated}
 
@@ -255,7 +255,7 @@ The **Validated** property can be assigned to a data source or a dataset to indi
 
 Setting an asset as **Validated** contributes to the weighting of the asset in the search results. This means that **Validated** assets will be listed before not-validated assets in the results. The weigting of the validation property is also cumulative for a data souce and the consituent datasets. For example, if there is a dataset named **Customer** that is **Validated** in a **Validated** data source, the search results will list this higher than a dataset of the same name that is not **Validated** in a **Validated** data source.
 
-![validated](/attachments/data-hub/data-hub-catalog/curate/curate-validated.png)
+{{< figure src="/attachments/data-hub/data-hub-catalog/curate/curate-validated.png" alt="validated" >}}
 
 ## 7 Curating Datasets & Attributes {#curate-datasets}
 
@@ -265,7 +265,7 @@ To change dataset and attribute descriptions, follow these steps:
 
 1. In the **Search Details** screen for the selected dataset, click **Edit Dataset Details** on the **Curate** bar to display the **Dataset Metadata** box:
 
-    ![curate entity metadata](/attachments/data-hub/data-hub-catalog/curate/curate-entity-metadata.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/curate/curate-entity-metadata.png" alt="curate entity metadata" >}}
 
 2. The service metadata contract description is displayed. To edit and use a **Catalog Description**, click the toggle and enter a description.
 3. When there are a large number of attributes for a dataset, you can use the search area to find specific attributes.

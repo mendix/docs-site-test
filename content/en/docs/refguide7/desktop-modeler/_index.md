@@ -2,6 +2,7 @@
 title: "Desktop Modeler"
 url: /refguide7/desktop-modeler/
 description: "Describes the various features of the Mendix Modeler, including document templates, the domain model, microflows, modules, pages, and security."
+weight: 20
 tags: ["Mendix", "Desktop Modeler", "Documents"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.1 Introduction
 ---
@@ -18,7 +19,7 @@ Your Mendix app is called a project in the Modeler. An app consists of different
 
 To add a document to your app, right-click the destination module or folder in the Modeler's **Project Explorer**:
 
-![Right-click menu in Project Explorer](/attachments/refguide7/desktop-modeler/add-document.png)
+{{< figure src="/attachments/refguide7/desktop-modeler/add-document.png" alt="Right-click menu in Project Explorer" >}}
 
 The following documents in the **Desktop Modeler** category of the *Mendix Reference Guide* describe the documents you can add:
 

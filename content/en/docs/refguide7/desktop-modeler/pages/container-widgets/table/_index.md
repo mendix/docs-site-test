@@ -10,7 +10,7 @@ Tables can be used to lend structure to a page. They contain a number of [rows](
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide7/desktop-modeler/pages/container-widgets/table/table.png)
+{{< figure src="/attachments/refguide7/desktop-modeler/pages/container-widgets/table/table.png" >}}
 An example of how you can create a structured page with a table.
 
 {{% /alert %}}
@@ -19,12 +19,12 @@ Cells can be merged horizontally and vertically to allow for asymmetric lay-outs
 
 {{% alert color="info" %}}
 
-![](/attachments/refguide7/desktop-modeler/pages/container-widgets/table/table-merge.png)
+{{< figure src="/attachments/refguide7/desktop-modeler/pages/container-widgets/table/table-merge.png" >}}
 The merge button
 
 {{% /alert %}}
 
-Tables can be selected by clicking the white square in the top-left corner.
+Tables can be selected by clicking the white square in the upper-left corner.
 
 Tables allow for a number of keyboard interactions. Examples include navigating between rows and columns with the cursor keys and copy(ctrl+c)/pasting(ctrl+v) rows and cells.
 

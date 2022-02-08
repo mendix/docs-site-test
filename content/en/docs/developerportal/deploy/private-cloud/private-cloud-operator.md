@@ -39,7 +39,7 @@ You can obtain the deployment package in a number of ways:
 
 * within Studio Pro, by choosing the menu option **Project > Create Deployment Package…** – see [Create Deployment Package](/refguide/create-deployment-package-dialog/) for more information
 * from the **Environments** page of your app in the Developer Portal
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-operator/environments-create-mda.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-operator/environments-create-mda.png" >}}
 * through a CI/CD process, such as Jenkins.
 
 The deployment package must be available over the internet without requiring authorization credentials, as these cannot be provided in the CR.
@@ -169,17 +169,9 @@ You need to make the following changes:
 * **debuggerPassword** – here you can provide the password for the debugger — this is optional. Setting an empty `debuggerPassword` will disable the debugging features. In order to connect to the debugger in Studio Pro, enter the debugger URL as `<AppURL>/debugger/`. You can find further information in [How to Debug Microflows Remotely](/howto/monitoring-troubleshooting/debug-microflows-remotely/)
 * **dtapmode** – for development of the app, for example acceptance testing, choose **D**, for production deployment, select **P**
 
-    If you select production, then you will need to provide a **Subscription Secret** to ensure that your app runs as a licensed app — see [Free Apps](/developerportal/deploy/mendix-cloud-deploy/#free-app) in *Mendix Cloud* for the differences between unlicensed/test apps and licensed apps
-    the subscription secret needs to be supplied via the **customConfiguration** using the following values:
-
-    * `"License.SubscriptionSecret":"{subscription secret}"`
-    * `"License.UseLicenseServer":"true"`
-    * `"License.LicenseServerURL":<https://subscription-api.test.mendix.com/activate>`
-    * `"License.EnvironmentName":"{environment name}"`
-
     {{% alert color="warning" %}}Your app can only be deployed to a production environment if [security in the app is set on](/refguide/project-security/). {{% /alert %}}
 
-    If you have an offline license, you cannot provide it through **customConfiguration**. You will need to configure it by adding a **runtimeLicense** section within the **runtime** section and setting **LicenseId** and **LicenseKey** to the values received from Mendix Support:
+    If you have an offline Runtime license, for example for a standalone cluster, you can configure it by adding a **runtimeLicense** section within the **runtime** section and setting **LicenseId** and **LicenseKey** to the values received from Mendix Support:
 
     ```yaml
     apiVersion: privatecloud.mendix.com/v1alpha1
@@ -208,7 +200,7 @@ You need to make the following changes:
 The constant name is equal to `{module-name}.{constant-name}` where {module-name} is the name of the Mendix app module containing the constant,
 and {constant-name} is the name of the constant. The constant name will also be visible in the constant properties (UnitTesting.RemoteApiEnabled in this example):
 
-![](/attachments/developerportal/deploy/private-cloud/private-cloud-operator/constant-name.png)
+{{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-operator/constant-name.png" >}}
 
 Set the constant values in the **microflowConstants** value in **runtime**. For example:
 ```yaml
@@ -293,13 +285,13 @@ To build and deploy your app using the OpenShift Console, do the following:
 
 2.  Click the **Add** button, and select **Import YAML**.
     
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-operator/image1.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-operator/image1.png" >}}
 
 3.  In the **Import YAML** page, enter/paste the YML you prepared in [Editing the CR}(#edit-cr), above.
 
 4.  Click the **Create** button.
     
-    ![](/attachments/developerportal/deploy/private-cloud/private-cloud-operator/image2.png)
+    {{< figure src="/attachments/developerportal/deploy/private-cloud/private-cloud-operator/image2.png" >}}
 
 Mendix Operator will now pick up the YAML and deploy your app.
 

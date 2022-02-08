@@ -15,13 +15,13 @@ This activity can only be used in **Microflows**.
 
 The **Counter** activity can be used to increment a metrics counter by a specific value.
 
-![Counter](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/metrics-activities/metrics-counter/counter.png)
+{{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/metrics-activities/metrics-counter/counter.png" alt="Counter" >}}
 
 ## 2 Properties
 
 An example of counter properties is represented in the image below:
 
-![Counter Properties](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/metrics-activities/metrics-counter/counter-properties.png)
+{{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/metrics-activities/metrics-counter/counter-properties.png" alt="Counter Properties" >}}
 
 There are two sets of properties for this activity, those in the dialog box on the left, and those in the properties pane on the right.
 
@@ -40,7 +40,16 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.1 Name
 
-The name of the counter whose value you want to increment.
+The name of the counter whose value you want to increment, which must adhere to the following rules:
+
+* The name can only contain alpha-numeric characters, dots or underscores.
+* The name must start with a letter.
+* The name cannot start with `mx`, because this prefix is reserved for Mendix internal metrics.
+* The name is case-insensitive.
+
+{{% alert color="info" %}}
+It is recommended to use a common prefix that uniquely defines your organisation and application.
+{{% /alert %}}
 
 ### 3.2 Value
 

@@ -9,7 +9,7 @@ weight: 65
 
 The team server API allows you to retrieve the information (branches, revisions) of application models stored in our team server. You always access an application model via the context of an application (see the Deploy API for more information about retrieving applications and application identifiers).
 The image below provides a domain model representation of the concepts discussed below and how these are related:
-![](/attachments/apidocs-mxsdk/apidocs/team-server-api/425989.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/team-server-api/425989.png" >}}
 
 {{% alert color="warning" %}}
 The team server API is only available to *licensed* apps which are running in a Mendix Cloud.
@@ -17,7 +17,7 @@ The team server API is only available to *licensed* apps which are running in a 
 
 ## 2 Authentication
 
-The Developer Portal Management API requires its users to authenticate themselves. This can be done by using API keys; for more information about this please refer to [this article](/apidocs-mxsdk/apidocs/authentication/).
+The Developer Portal Management API requires its users to authenticate themselves. This can be done by using API keys; for more information about this please see [Authentication](/apidocs-mxsdk/apidocs/authentication/).
 
 ## 3 API Calls
 

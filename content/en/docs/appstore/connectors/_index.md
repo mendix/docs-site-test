@@ -3,6 +3,7 @@ title: "Connectors"
 url: /appstore/connectors/
 description: "Presents details on the connectors available in the Mendix Marketplace."
 tags: ["marketplace",  "marketplace component", "connector"]
+weight: 40
 ---
 
 ## 1 Introduction

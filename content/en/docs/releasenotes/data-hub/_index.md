@@ -11,6 +11,32 @@ These release notes cover changes made to the [Mendix Data Hub](/data-hub/).
 
 ## 2022
 
+### February 3rd, 2022
+
+#### Fixes
+
+* We fixed a bug on the **Contract Upload** page. The page incorrectly displayed a red warning border if you uploaded a document with non-blocking errors and then immediately deleted it. We have removed the red border in this scenario.
+
+### January 27th, 2022
+
+#### Improvements
+
+* We added a notification menu to the upper-right menu header.
+* We added counts to the **Catalog** page so that you can now see the total numbers of **Associations**, **Attributes**, and **Datasets**. The counts appear in parentheses next to each heading.
+
+#### Fixes
+
+* We fixed a bug that was causing the file uploader to get stuck when uploading an empty file.
+
+### January 21st, 2022
+
+#### Improvements
+
+* The following OData contract parsing and validation improvements were added:
+	* Improved detection and feedback on the OData version
+	* Improved parsing and more detailed error messaging
+	* Improved validation (after parsing succeeded) and more detailed error messaging
+
 ### January 14th, 2022
 
 #### Fixes

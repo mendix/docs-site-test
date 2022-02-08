@@ -2,10 +2,10 @@
 title: "Feature Release Calendar"
 url: /releasenotes/mx-world-2021/
 tags: ["mendix world", "announcements", "features", "feature release", "products", "features and products", "calendar"]
+weight: 60
 #notoc: true
 #layout: wide
 #toc-level: "3"
-weight: 60
 ---
 
 ## 1 Introduction
@@ -14,7 +14,7 @@ At Mendix World on September 8th, 2021, the keynote from Mendix CTO Johan den Ha
 
 Johan divided the new features into these major announcements, which are described in the sections below:
 
-![Announcements are solutions platform, app services framework, end-user services and studio, control center, next-level front-end, page bot and machine learning toolkit, studio pro experience, data hub 2.0, intelligent automation, and hybrid cloud automation.](/attachments/releasenotes/mx-world-2021/innovations.png)
+{{< figure src="/attachments/releasenotes/mx-world-2021/innovations.png" alt="Announcements are solutions platform, app services framework, end-user services and studio, control center, next-level front-end, page bot and machine learning toolkit, studio pro experience, data hub 2.0, intelligent automation, and hybrid cloud automation." >}}
 
 {{% alert color="info" %}}
 "GA" means General Availability for all users. A GA release is different than a Beta release. For more information on Private Beta and Public Beta releases, see [Beta Releases](/releasenotes/beta-features/).
@@ -42,7 +42,7 @@ If you want to watch Johan's keynote again, you can find it at [Mendix World 202
 | Feature | Expected Release |
 | --- | --- |
 | Studio expression editor | Released for GA on [May 19th, 2021](/releasenotes/studio/9.0-9.6/#expression-editor) |
-| End-user services – app switcher | GA: Dec 2021 |
+| End-user services – App Switcher | Released for GA on [Jan 14th, 2022](/appstore/modules/app-switcher/) |
 | Studio workflow templates | GA: Feb 2022 |
 | End-user services – notifications | GA: Mar 2022 |
 | End-user services – branding | GA: Mar 2022 |
@@ -107,7 +107,7 @@ If you want to watch Johan's keynote again, you can find it at [Mendix World 202
 | --- | --- | --- |
 | Smart app services integrated in workflows | Email | Released for GA on [Sep 6th 2021](https://marketplace.mendix.com/link/component/118393) |
 | Smart app services integrated in workflows | Intelligent Document Service<br/>Receipt Processing<br/>Invoice Processing<br/>MS Team Connector | GA: Jan 2022 |
-| Workflow | | Currently in Public Beta<br/>GA: Feb 2022 |
+| Workflow | | Released for GA on [Jan 25th, 2022](/releasenotes/studio-pro/9.10/#new-features) |
 | Smart app services integrated in workflows | Speech to Text<br/>Text to Speech<br/>Text Analytics<br/>Translation | GA: Feb 2022 (except in China) |
 | Smart app services integrated in workflows | General Purpose OCR | GA: Mar 2022 |
 

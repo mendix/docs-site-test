@@ -56,7 +56,9 @@ A widget package file is just a ZIP archive containing the following things:
 * Optionally, a widget preview for Studio and Studio Pro’s Design mode located in *{widgetName}.editorPreview.js*
 * Optionally, widget icons (which must be the PNG format):
     * *{widgetName}.icon.png* sets the widget icon inside the Studio Pro toolbox in list view (the ideal image size is 64x64 pixels, but other sizes will be resized to fit)
+    * *{widgetName}.icon.dark.png* sets the dark-mode equivalent to *{widgetName}.icon.png*
     * *{widgetName}.tile.png* sets the tile image inside the Studio Pro toolbox in tile view, as well as in Studio (the ideal image size is 256x192 pixels, but other sizes will be resized to fit)
+    * *{widgetName}.tile.dark.png* sets the dark-mode equivalent to *{widgetName}.tile.png*
 * Optionally, some widget-related resources, preferably located next to the file which contains the client component
 	* Note that all CSS files you add (except the one located in the **lib** sub-directory) will automatically be loaded in an app via the widget
 
@@ -125,15 +127,15 @@ After widget attributes, you will see a description of a widget that will be pre
 ```
 In Mendix Studio Pro, the widget described above would look like this:
 
-![basic widget](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/basic-widget.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/basic-widget.png" alt="basic widget" >}}
 
-![basic progress card](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/basic-widget-progress-card.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/basic-widget-progress-card.png" alt="basic progress card" >}}
 
 #### 4.2.1 Help Page {#help}
 
 You can provide additional help information to widget users by using a help page. If you do so, a widget configuration screen will get a **Help** button, assigned to the <kbd>{F1}</kbd> shortcut key, that opens a specified page. This button is positioned in the left-bottom corner of the popup dialog:
 
-![basic widget](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/widget-dialog-help-button.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/widget-dialog-help-button.png" alt="basic widget" >}}
 
 A URL of a help page can be provided through the `helpUrl` property after the `description` tag:
 
@@ -251,11 +253,11 @@ Before examining properties themselves, it is useful to understand property grou
 
 This is how the property group structure is represented in Studio Pro:
 
-![edit progress general](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/edit-progress-card.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/edit-progress-card.png" alt="edit progress general" >}}
 
-![edit progress visual](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/edit-visual-tab.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/edit-visual-tab.png" alt="edit progress visual" >}}
 
-![properties widget](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/properties-widget.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/properties-widget.png" alt="properties widget" >}}
 
 When properties are shown in a dialog box, first-level groups (**General** and **Visual**) are represented as tabs. Second-level groups (**Main**, **Action** and **Progress bar**) are represented as boxes. When properties are shown in a pane, first-level groups are ignored and second-level groups are shown as categories.
 
@@ -281,9 +283,9 @@ Some properties can or must have more attributes or tags. This depends on the `t
 
 Here is how a caption and description look in Studio Pro:
 
-![caption](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/card-icon.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/card-icon.png" alt="caption" >}}
 
-![description](/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/card-description.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/pluggable-widgets/card-description.png" alt="description" >}}
 
 ## 7 Read More
 

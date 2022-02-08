@@ -38,23 +38,23 @@ To download a component from the Marketplace via Studio Pro, follow these steps:
 
 3.  Click the Marketplace icon in the top menu bar to open it in Studio Pro:
 
-    ![Marketplace icon](/attachments/appstore/general/app-store-content/toolbar.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/toolbar.png" alt="Marketplace icon" >}}
 
 4.  On the Marketplace overview page, find the component to use in your app. The **Categories** menu item gives you an overview of which types of content you can download. You can use the **Search** bar to find the component.
 
-    ![Search result for rating](/attachments/appstore/general/app-store-content/marketplace.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/marketplace.png" alt="Search result for rating" >}}
     
     {{% alert color="warning" %}}Results for Marketplace content searches done in Studio Pro may differ from those done in the [online Marketplace](/appstore/general/app-store-overview/) due to sync issues.{{% /alert %}}
 
 5.  Click the component or **Read more** to view the details of the component.
 
-    ![Details of Rating widget](/attachments/appstore/general/app-store-content/item-details.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/item-details.png" alt="Details of Rating widget" >}}
 
 6. Click **Download** to download the component to your app. 
 
     Make sure that you download the correct version. The version must be compatible with the Studio Pro version that you use. Do check the **Mendix Version** on the **Overview** tab. Do not download a compontent that requires a higher **Mendix version** than the Studio Pro that you use. You can download older versions of the component on the **All Versions** tab.
 
-    ![All Versions tab](/attachments/appstore/general/app-store-content/versions.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/versions.png" alt="All Versions tab" >}}
 
 After you download a component:
 
@@ -69,7 +69,7 @@ After you download a component, you can use the component in your app.
 For more information on how a component works, check the **Documentation** tab on the page of the component in the Marketplace.
 {{% /alert %}}
 
-![Documentation tab](/attachments/appstore/general/app-store-content/widget-documentation.png)
+{{< figure src="/attachments/appstore/general/app-store-content/widget-documentation.png" alt="Documentation tab" >}}
 
 ### 4.1 Using a Widget  {#widget}
 
@@ -83,17 +83,17 @@ To add the Rating widget from the Marketplace via Studio Pro, follow these steps
 
 2. Click **Add widget**. The **Select Widget** dialog box opens.
 
-    ![Add widget](/attachments/appstore/general/app-store-content/add-widget.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/add-widget.png" alt="Add widget" >}}
 
 3. In the **Filter** bar, enter *Rating*. The downloaded widget is found in the **Display** widgets category. 
 
-    ![Rating widget highlighted in Select Widget dialog box](/attachments/appstore/general/app-store-content/select-widget.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/select-widget.png" alt="Rating widget highlighted in Select Widget dialog box" >}}
 
 4. Click the **Rating** widget and then click **Select**. 
 
 5. In the page of your app, click where you want to drop the widget. After you release the mouse button, the widget is placed in the page.
 
-    ![Rating widget in the page](/attachments/appstore/general/app-store-content/widget-dropped-in-page.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/widget-dropped-in-page.png" alt="Rating widget in the page" >}}
 
 {{% alert color="info" %}}
 If you want to delete a widget from the app, go to **App** > **Show App Directory in Explorer** to open the app folder, and then remove the *.mpk* file from the **widgets** folder.
@@ -107,7 +107,7 @@ To update a widget in your app to a newer version, follow these steps:
 
 2. Click the Marketplace icon in the top menu bar to open the Marketplace in Studio Pro:
 
-   ![Marketplace icon](/attachments/appstore/general/app-store-content/toolbar.png)
+   {{< figure src="/attachments/appstore/general/app-store-content/toolbar.png" alt="Marketplace icon" >}}
 
 3. Find the widget in the Marketplace.
 
@@ -115,7 +115,7 @@ To update a widget in your app to a newer version, follow these steps:
 
 5. Go to the **All Versions** tab.
 
-   ![all-versions-tab](/attachments/appstore/general/app-store-content/all-versions-tab.png)
+   {{< figure src="/attachments/appstore/general/app-store-content/all-versions-tab.png" alt="all-versions-tab" >}}
 
 6. Click **Download** to download the latest version. The **Question** dialog box opens and asks if you want to overwrite the existing package.
 
@@ -131,16 +131,16 @@ To configure the widget, follow these steps:
 
 1. Go to the **Errors** pane and check the error message. This error shows after you drop the **Rating** widget into the page:
 
-    ![Errors pane](/attachments/appstore/general/app-store-content/widget-errors.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/widget-errors.png" alt="Errors pane" >}}
 
 2. In the page, double-click the Rating widget. The **Edit Rating** dialog box opens and the **Attribute** field shows **(none)** – this means that no attribute is assigned, which causes the error.
 
-    ![Edit Rating dialog box](/attachments/appstore/general/app-store-content/edit-rating.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/edit-rating.png" alt="Edit Rating dialog box" >}}
 
 
 3. Click **Select** to select an attribute. In this example, we select the attribute **ProductRating**. This is the attribute of an entity that we already created.
 
-    ![ProductRating selected in Select Attribute dialog box](/attachments/appstore/general/app-store-content/select-attribute.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/select-attribute.png" alt="ProductRating selected in Select Attribute dialog box" >}}
 
 4. In the **Edit Rating** dialog box, click **OK**. The error in the **Errors** pane should disappear.
 
@@ -162,7 +162,7 @@ To add the Email with Template module from the Marketplace via Studio Pro, follo
     * **Replace existing module** – if you select this option, you need to specify which **Module to replace**
       
 
-    ![Import Module dialog box](/attachments/appstore/general/app-store-content/import-module.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/import-module.png" alt="Import Module dialog box" >}}
 
     {{% alert color="warning" %}}When you select **Replace existing module**, a warning will show you which files in the app directory will be overwritten. If you click **OK**, these files will be replaced by the standard files. Be careful with this option when you have made changes to a module that you downloaded – once the files are replaced, you will have the standard Marketplace module again, with new entities and attributes. The entities and attributes that you renamed and their respective tables and columns represented in the database are all deleted. We recommend that you do not make changes to the downloaded modules, unless you will not update your component in the future and understand the implications of your changes.{{% /alert %}}
 
@@ -172,7 +172,7 @@ To add the Email with Template module from the Marketplace via Studio Pro, follo
 
 5. Open the **App Explorer** and find the **EmailTemplate** module.
 
-    ![EmailTemplate module](/attachments/appstore/general/app-store-content/email-template-app-explorer.png)
+    {{< figure src="/attachments/appstore/general/app-store-content/email-template-app-explorer.png" alt="EmailTemplate module" >}}
 
 Unlike a widget, you can see a module in your App Explorer. A module contains a domain model, pages, and microflow logic. A module downloaded from the Marketplace stores files if the module contains files (for example, files that are contained in the **userlib** or **resource** folders). In addition, a module downloaded from the Marketplace has a light blue icon to differentiate it from the development modules.
 
@@ -186,7 +186,7 @@ Sometimes additional widgets are added when you download a module. For example, 
 
 2. Click the Marketplace icon in the top menu bar to open the Marketplace in Studio Pro:
 
-   ![Marketplace icon](/attachments/appstore/general/app-store-content/toolbar.png)
+   {{< figure src="/attachments/appstore/general/app-store-content/toolbar.png" alt="Marketplace icon" >}}
 
 3. Find the module in the Marketplace.
 
@@ -196,7 +196,7 @@ Sometimes additional widgets are added when you download a module. For example, 
 
 6. Click **Download** to download the latest version. The **Import Module** dialog box opens.
 
-   ![Import Module dialog box](/attachments/appstore/general/app-store-content/import-module.png)
+   {{< figure src="/attachments/appstore/general/app-store-content/import-module.png" alt="Import Module dialog box" >}}
 
 7. Select **Replace existing module** and click **Import**.
 

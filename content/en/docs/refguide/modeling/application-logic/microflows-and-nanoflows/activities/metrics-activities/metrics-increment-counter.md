@@ -15,13 +15,13 @@ This activity can only be used in **Microflows**.
 
 The **Increment Counter** activity can be used to increment a metrics counter by one.
 
-![Increment Counter](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/metrics-activities/metrics-increment-counter/increment-counter.png)
+{{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/metrics-activities/metrics-increment-counter/increment-counter.png" alt="Increment Counter" >}}
 
 ## 2 Properties
 
 An example of increment counter properties is represented in the image below:
 
-![Increment Counter Properties](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/metrics-activities/metrics-increment-counter/increment-counter-properties.png)
+{{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/metrics-activities/metrics-increment-counter/increment-counter-properties.png" alt="Increment Counter Properties" >}}
 
 There are two sets of properties for this activity, those in the dialog box on the left, and those in the properties pane on the right.
 
@@ -40,7 +40,16 @@ You can also open the dialog box by double-clicking the activity in the microflo
 
 ### 3.1 Name
 
-The name of the counter whose value you want to increment by 1.
+The name of the counter whose value you want to increment by 1, which must adhere to the following rules:
+
+* The name can only contain alpha-numeric characters, dots or underscores.
+* The name must start with a letter.
+* The name cannot start with `mx`, because this prefix is reserved for Mendix internal metrics.
+* The name is case-insensitive.
+
+{{% alert color="info" %}}
+It is recommended to use a common prefix that uniquely defines your organisation and application.
+{{% /alert %}}
 
 ### 3.2 Tags
 

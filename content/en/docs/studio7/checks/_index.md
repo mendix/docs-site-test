@@ -2,7 +2,7 @@
 title: "Checks"
 url: /studio7/checks/
 description: "Describes checks during publishing process in Mendix Studio."
-weight: 60
+weight: 80
 tags: ["studio", "app viewing", "checks", "errors", "consistency errors"]
 ---
 
@@ -10,28 +10,28 @@ tags: ["studio", "app viewing", "checks", "errors", "consistency errors"]
 
 When [previewing or publishing your app](/studio7/publishing-app/#publishing-your-app), Mendix Studio checks your app on [consistency errors](/studio7/consistency-errors/). If there are any, the app cannot be published, and you see the **Checks** button goes red with the number of errors indicated.
 
-![](/attachments/studio7/checks/checks-button.png)
+{{< figure src="/attachments/studio7/checks/checks-button.png" >}}
 
 ## 2 Viewing Checks and Interacting with the Checks Panel {#viewing-checks}
 
 To display checks for your app and view the faulty elements in it, do the following:
 
-1. Click **Preview** or **Publish** > **Update** in the top-right of Studio. 
+1. Click **Preview** or **Publish** > **Update** in the upper right of Studio. 
 
-    ![](/attachments/studio7/checks/publish-update.png)
+    {{< figure src="/attachments/studio7/checks/publish-update.png" >}}
 
 3.  If your app has consistency errors, the **Checks** button will have red border, the number of the errors will be indicated on the button, and a warning will be displayed. 
 
-    ![](/attachments/studio7/checks/checks-button-red.png)
+    {{< figure src="/attachments/studio7/checks/checks-button-red.png" >}}
 
 4.  Click the **Checks** button, the warning or press <kbd>C</kbd> to view all checks. 
    The panel with the list of checks appears at the bottom of the screen. For more information on the **Checks** panel, see section [3.2 Checks Panel Overview](#checks-panel-overview).
 
-    ![](/attachments/studio7/checks/checks-panel.png)
+    {{< figure src="/attachments/studio7/checks/checks-panel.png" >}}
 
 5.  To view the exact place and element that the error refers to, click the corresponding row in the **Checks** panel (you can click any place of the row, the whole row is responsive),  and the element that contains faults will be displayed.
 
-7. To close the panel, either click the close button in the top-right corner of the panel, or click **Checks** in the top-right corner of Studio. 
+7. To close the panel, either click the close button in the upper-right corner of the panel, or click **Checks** in the upper-right corner of Studio. 
 
 {{% alert color="info" %}}
 

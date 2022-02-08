@@ -2,7 +2,7 @@
 title: "Receive Environment Status Alerts"
 url: /developerportal/operate/receive-alerts/
 parent: "monitoring-application-health"
-#weight: 180
+#menu_order: 180
 description: "Describes how to receive environment status alerts."
 tags: ["Technical Contact","Settings","Alerts","Developer Portal"]
 #To update these screenshots, you can log in with credentials detailed in How to Update Screenshots Using Team Apps.
@@ -39,14 +39,14 @@ The Technical Contact can grant you the **Receive Alerts** permission by followi
 1. Go to the [Developer Portal](http://sprintr.home.mendix.com).
 2. Open the **Switch to** menu and click **Cloud**.
 
-    ![](/attachments/developerportal/operate/monitoring-application-health/receive-alerts/cloud-nodes.png)
+    {{< figure src="/attachments/developerportal/operate/monitoring-application-health/receive-alerts/cloud-nodes.png" >}}
 
 3. Open the node by clicking **Details**.
 4.  Click **Security** in the left-hand menu.
 5. Switch to the **Node Permissions** tab.
 6.  Select the check box below **Receive Alerts**. It is possible to set this permission separately for each environment. The changes will be automatically saved.
 
-    ![](/attachments/developerportal/operate/monitoring-application-health/receive-alerts/receive-alerts.png)
+    {{< figure src="/attachments/developerportal/operate/monitoring-application-health/receive-alerts/receive-alerts.png" >}}
 
 ### 3.2 Alerts Page
 
@@ -58,7 +58,7 @@ You can manage the alerts by yourself, follow these steps:
 4. Click **Alerts** in the left-hand menu. 
 5. Select the check box of **Email Alerts**.  It is possible to set this option separately for each environment. The changes will be automatically saved.
 
-    ![](/attachments/developerportal/operate/monitoring-application-health/receive-alerts/email-alerts.png)
+    {{< figure src="/attachments/developerportal/operate/monitoring-application-health/receive-alerts/email-alerts.png" >}}
 
 ## 4 Read More
 

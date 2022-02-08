@@ -7,7 +7,7 @@ tags: ["native", "mobile", "deploy", "native-builder", "builder", "appcenter", "
 ---
 
 {{% alert color="warning" %}}
-The Native Builder CLI has been deprecated in favor of the Mendix Native Mobile Builder, a UI tool, that integrates with Studio Pro. Read more on how to deploy your app [here](/howto/mobile/deploying-native-app/).
+The Native Builder CLI has been deprecated in favor of the Mendix Native Mobile Builder, a UI tool, that integrates with Studio Pro. Read more on how to deploy your app [here](/howto8/mobile/deploying-native-app/).
 {{% /alert %}}
 
 {{% alert color="warning" %}}
@@ -36,7 +36,7 @@ Command-line arguments provide information to the Native Builder, such as where 
 1. Open your command line program as an administrator by right-clicking its icon or *.exe* file and selecting **Run as administrator**.
 2.  Target your Native Builder's directory by typing `cd "{your Native Builder .exe location}"` and pressing <kbd>Enter</kbd>:
 
-	![change directory](/attachments/refguide8/mobile/native-mobile/native-builder/change-directory.png)
+	{{< figure src="/attachments/refguide8/mobile/native-mobile/native-builder/change-directory.png" alt="change directory" >}}
 
 ### 2.1 Prepare {#prepare}
 

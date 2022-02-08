@@ -1,8 +1,8 @@
 ---
 title: "Mendix Runtime"
 url: /refguide/runtime/
-tags: ["runtime", "runtime server", "mendix client", "cluster leader"]
 weight: 40
+tags: ["runtime", "runtime server", "mendix client", "cluster leader"]
 ---
 
 ## 1 Introduction
@@ -35,7 +35,7 @@ Where there is more than one instance of an app, one of the instances will be th
 
 More information on multiple instances is in [Clustered Mendix Runtime](/refguide/clustered-mendix-runtime/).
 
-![An overview of the Mendix Runtime](/attachments/refguide/runtime/runtime-overview.png)
+{{< figure src="/attachments/refguide/runtime/runtime-overview.png" alt="An overview of the Mendix Runtime" >}}
 
 Each of the components of the chart is described below:
 

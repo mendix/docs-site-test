@@ -70,7 +70,7 @@ You can create a Personal Access Token in the Mendix **Warden** application. Fol
 
 1. To access the **Warden** app, go to [https://warden.mendix.com/](https://warden.mendix.com/) and log in. You land on the Warden homepage:
 
-    ![Warden Home Screen](/attachments/data-hub/data-hub-catalog/register-data/warden-home-screen.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/register-data/warden-home-screen.png" alt="Warden Home Screen" >}}
 
 2. To create a new personal access token, click **Add**. The **Create a Personal Access Token** screen is displayed.
 
@@ -78,19 +78,19 @@ You can create a Personal Access Token in the Mendix **Warden** application. Fol
 
 4. In the **Select scopes that can be used with this token**, find the **Data Hub** section and check both the **mx:datahub:services:read** and **mx:datahub:services:write** boxes.
 	
-	![create token home](/attachments/data-hub/data-hub-catalog/register-data/create-token.png)
+	{{< figure src="/attachments/data-hub/data-hub-catalog/register-data/create-token.png" alt="create token home" >}}
    
 5. Click **Create**. 
 
     The token is generated and displayed in a pop-up window:
 
-    ![generated token](/attachments/data-hub/data-hub-catalog/register-data/generated-token.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/register-data/generated-token.png" alt="generated token" >}}
 
 6. Copy the **Token secret** and keep this token in a secure place. You will not get another chance to view this token once you close this pop-up window.
 
 7. Click **Close** to return to the **Warden** homepage where all your Personal Access Tokens are listed. If needed, you can delete your token from this list using the red trash bin button.
 
-    ![generated token](/attachments/data-hub/data-hub-catalog/register-data/warden-home-with-token.png)
+    {{< figure src="/attachments/data-hub/data-hub-catalog/register-data/warden-home-with-token.png" alt="generated token" >}}
 
 #### 4.1.2 Registering an Application Through the Data Hub Catalog Registration API {#register-application}
 
@@ -327,17 +327,17 @@ Follow the steps below:
 
 1. Start at the [Data Hub Catalog homepage](https://hub.mendix.com). If the connector for your business application is not shown, use the generic **OData** v4 service:
 
-	![upload contract](/attachments/data-hub/data-hub-catalog/register-data/register-data-source-odata-connector.png)
+	{{< figure src="/attachments/data-hub/data-hub-catalog/register-data/register-data-source-odata-connector.png" alt="upload contract" >}}
 
 2. On the **Contract** screen, upload your XML or ZIP file.
 
-	{{/* % image_container width="400" % */}}![upload contract](/attachments/data-hub/data-hub-catalog/register-data/register-data-source-contract.png) {{/* % /image_container % */}}
+	{{< figure src="/attachments/data-hub/data-hub-catalog/register-data/register-data-source-contract.png" alt="upload contract"   width="400"  >}}
 
 	If you selected the wrong file, click the **x** to remove it and upload a different one. 
 
 3. On the **Data Source** screen, specify the following Data Source details: **Data Source Name**, **Data Source Version**, **Data Source Relative Path**.  The **Data Source Relative Path** is the path of the OData service contract relative to the *environment URL of the application*. For more advice on versioning, see [Semantic numbering](/refguide/consumed-odata-service/#semantic). The other fields on the form are optional.
 
-	{{/* % image_container width="400" % */}}![upload contract](/attachments/data-hub/data-hub-catalog/register-data/register-data-source-details.png) {{/* % /image_container % */}}
+	{{< figure src="/attachments/data-hub/data-hub-catalog/register-data/register-data-source-details.png" alt="upload contract"   width="400"  >}}
 
 4. Select the **Go to next step** option that appears once you have filled out all the required fields.
 

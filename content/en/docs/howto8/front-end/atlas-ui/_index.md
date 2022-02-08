@@ -17,7 +17,7 @@ Visit the [Atlas UI site](https://atlas2.mendix.com/) for detailed previews and 
 
 ### 1.1 Mendix Studio
 
-[Mendix Studio](/studio/) brings the collaborative Mendix Platform to the browser, making it easier than ever to share and collaborate on application models. Every app built in Mendix Studio is styled with the Atlas UI framework. For more information, see [Get Started with Atlas UI](/howto8/front-end/get-started-with-atlasui/). 
+[Mendix Studio](/studio8/) brings the collaborative Mendix Platform to the browser, making it easier than ever to share and collaborate on application models. Every app built in Mendix Studio is styled with the Atlas UI framework. For more information, see [Get Started with Atlas UI](/howto8/front-end/get-started-with-atlasui/). 
 
 ### 1.2 Design Principles
 
@@ -35,13 +35,13 @@ Create familiarity and consistency throughout your apps landscape, regardless of
 
 Design apps that look good and scale in all situations without losing an intuitive and consistent experience.
 
-![](/attachments/howto8/front-end/atlas-ui/atlas_ui_preview.png)
+{{< figure src="/attachments/howto8/front-end/atlas-ui/atlas_ui_preview.png" >}}
 
 ## 2 Design Elements
 
 Our UI library is fully integrated into Mendix Studio. After choosing a navigation layout in Mendix Studio, you can find page templates, building blocks, and widgets directly in your **Toolbox**. These UI elements form the foundation of your app.
 
-![](/attachments/howto8/front-end/atlas-ui/designelements.png)
+{{< figure src="/attachments/howto8/front-end/atlas-ui/designelements.png" >}}
 
 **1** **Navigation Layouts**
 

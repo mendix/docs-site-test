@@ -27,20 +27,14 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 In this section you will learn to show a page when a user taps a notification.
 
-{{% alert color="info" %}}
-Local notifications do not support **On recieve** events.
-{{% /alert %}}
-
-To get started, do the following:
-
 1.  Drag and drop a **Notifications** widget onto your native home page. 
 
-	{{/* % image_container width="400" % */}}![notifications widget](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/notif-widget.png){{/* % /image_container % */}}
+	{{< figure src="/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/notif-widget.png" alt="notifications widget"   width="400"  >}}
 
 2. Double-click the widget.
 3. Click **Actions** > **New**. 
 4. Name your action *show_page*.
-5. Select **On open to** > **Show a Page** (see the note above concerning **On receive** events).
+5. Select **On open to** > **Show a Page**.
 6. Click **New** to make a new page.
 7. Type *NotifPage* into **Page Name**.
 8. Click **Blank** pane on the left and select the **Blank** page template. 
@@ -48,11 +42,11 @@ To get started, do the following:
 10. Drag and drop an **Open page button** widget onto **NotifPage**.
 11. When prompted, click your **Home_Native** page:
 
-	{{/* % image_container width="400" % */}}![click home page](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/home-native-select.png){{/* % /image_container % */}}
+	{{< figure src="/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/home-native-select.png" alt="click home page"   width="400"  >}}
 
 12. Click **Select**. Now you have a button which will bring you back to your home screen when you are testing:
 
-	![click home page](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/nav-button.png)
+	{{< figure src="/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/nav-button.png" alt="click home page" >}}
 
 13. Navigate back to your **ACT_CreateAndSendNotification** nanoflow. 
 
@@ -60,21 +54,21 @@ In **ACT_CreateAndSendNotification** you will set up the logic for tapping a not
 
 1.  Double-click your **Display Notification** activity:
 
-	![click display notification](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/set-action-name-display.png)
+	{{< figure src="/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/set-action-name-display.png" alt="click display notification" >}}
 
 2. Click **Action Name** > **Edit** 
 
-	{{/* % image_container width="500" % */}}![edit action name](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/add-action-name.png){{/* % /image_container % */}}
+	{{< figure src="/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/add-action-name.png" alt="edit action name"   width="500"  >}}
 
 3.  Type `'show_page'` into the expression field:
 
-	{{/* % image_container width="400" % */}}![show page expression](/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/show-page-exp.png){{/* % /image_container % */}}
+	{{< figure src="/attachments/howto/mobile/native-mobile/implementation/notifications/local-notif-parent/local-notif-action/show-page-exp.png" alt="show page expression"   width="400"  >}}
 
 4. Click the **OK** buttons until you are back at your nanoflow.
 
 Great job setting up your notification. Now you can test it:
 
-1. Click the play button (**Run Locally**) to update your app.
+1. Click **Run Locally** to update your app.
 2. Start the app on your mobile device.
 3. Tap your **Send notification** button.
 4. Tap the notification to navigate to the page you selected.
