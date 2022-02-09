@@ -8,6 +8,7 @@ no_list: false
 cascade:
     - space: "Mendix 7 How-to's"
     - mendix_version: "7"
+    - old_content: true
     - sitemap:
         priority: 0.2
 ---
