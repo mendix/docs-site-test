@@ -62,7 +62,8 @@ altpath = str(dirpath.replace(os.sep, os.altsep))[1:]
 with open(filename, encoding="utf-8") as fp:
     soup = BeautifulSoup(fp, "html.parser")
 
-# Find all the tags within <main></main> with href and print them out
+# Find all the tags within <main></main> with href and add them to 
+# We haven't recorded the file where the error is going to be found. We need to sort it as well :-( need to append the information  to link_list, but ignore when comparing the lists) perhaps look at this: https://www.pythonpool.com/python-sort-list-of-lists/
 for link_tag in soup.main.find_all(has_href):
     this_href = link_tag['href']
     if this_href.startswith("https://"):
@@ -91,3 +92,5 @@ print ("All the ID tags")
 print (*id_list, sep="\n")
 
 # Now we need to go through these lists and compare
+# something like: https://stackoverflow.com/questions/50224772/python-algorithm-to-compare-two-sorted-lists-and-count-how-many-elements-are-the
+# We haven't recorded the file where the error is going to be found. A third list original_file_list[]?
