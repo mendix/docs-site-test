@@ -83,6 +83,8 @@ for dirpath, dirnames, allfiles in os.walk(topdir):
                     pass # external link
                 elif this_href.startswith("http://"):
                     pass # external link
+                elif this_href.startswith("mailto:"):
+                    pass # mailto link
                 elif this_href.startswith("#"):
                     # add current path and file to anchor
                     link_list.append ([this_file + this_href, this_file])
@@ -123,6 +125,12 @@ while link_count< link_len and id_count< id_len:
         # we've gone past without finding the match, so the match wasn't there
         error_list.append (link_list[link_count])
         link_count += 1
+
+error_list.sort(key=lambda x:x[1]) # sort list on second item
+
+with open("souptest.log", 'w') as logfile:
+    for error_item in error_list:
+        logfile.write ("In " + error_item[1] + " link to " + error_item[0] + " is incorrect\n")
 
 for error_item in error_list:
     print ("In " + error_item[1] + " link to " + error_item[0] + " is incorrect")
