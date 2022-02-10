@@ -53,7 +53,7 @@ print("Working directory is " + os.getcwd())
 #        if filename.lower().endswith(exten):
 # hardcode for now
 dirpath = ".\\"
-filename = "3sisters.html"
+filename = "souptest.html"
 
 #remove leading "." and put in correct separators, including one at the end if necessary
 altpath = str(dirpath.replace(os.sep, os.altsep))[1:]
@@ -91,10 +91,15 @@ id_list.append (this_file)
 for id_tag in soup.main.find_all(has_name_or_id):
     id_list.append (this_file + "#" + id_tag ['id'])
 
-# Now we need to sort the lists and then go through them lists and compare
-# For each non-matching item, add it to error_list
 link_list.sort()
+print ("All the HREF tags")
+print (*link_list, sep="\n")
 id_list.sort()
+print ("All the ID tags")
+print (*id_list, sep="\n")
+
+# Now we need to go through these lists and compare
+# For each non-matching item, add it to error_list
 
 link_len = len(link_list)
 id_len = len(id_list)
@@ -118,11 +123,3 @@ while link_count< link_len and id_count< id_len:
 
 for error_item in error_list:
     print ("In " + error_item[1] + " link to " + error_item[0] + " is incorrect")
-
-len_error_list = len(error_list)
-if len_error_list == 0:
-    print ("There were no bad links found")
-elif len_error_list == 1:
-    print ("There was " + str(len_error_list) + " bad link found")
-else:    
-    print ("There were " + str(len_error_list) + " bad links found")
