@@ -6,20 +6,15 @@ python souptest <directory>
 
 <directory> is the root directory for the site
 
-Input a directory to work from, specify which filetype to search through,
-type in the regex expression to match.
 The script walks through all files within the top directory. 
-Each line in each file is searched for the regex query. 
-The url parameter gets grabbed from the directory path, reformatted and 
-inserted in a new line after the matched query.
-I still have to figure out what to do with files named 'index',
-as the url is in part made up of the file name.
+
 """
 
 import os    # Using os.chdir(), os.listdir(), os.path.isfile(), os.rename()
-import sys   # sys.argv are the arguments to the python program
+import sys   # sys.argv are the arguments to the python program, sys.exit allows exiting with an error message.
 
-# Import BeautifulSoup to help with HTML parsing
+# Import SoupStrainer and BeautifulSoup to help with HTML parsing
+from bs4 import SoupStrainer
 from bs4 import BeautifulSoup
 
 # Define variables
@@ -28,6 +23,7 @@ topdir = '.' # start in current directory - once we have changed directory to fi
 exten = '.html' # Only html files
 os.altsep = '/' # to ensure links have correct separators
 
+file_count = 0
 link_list = []
 id_list = []
 
@@ -37,14 +33,19 @@ def has_href(tag):
     return tag.has_attr('href')
 
 # Return true if tag has an id or name attribute
+#######################################
+# DO WE NEED TO LOOK AT NAME AS WELL? #
+#######################################
 def has_name_or_id(tag):
-    return tag.has_attr('name') or tag.has_attr('id')
+    return tag.has_attr('id') # or tag.has_attr('name')
 
 
 # Need to loop through all files here!
 # ====================================
 
 # First change to selected directory
+if len(sys.argv) < 2:
+    sys.exit ("Program needs a directory as an argument")
 os.chdir (str(sys.argv[1]))
 print("Working directory is " + os.getcwd())
 
@@ -53,22 +54,23 @@ print("Working directory is " + os.getcwd())
 #        if filename.lower().endswith(exten):
 # hardcode for now
 dirpath = ".\\"
-filename = "souptest.html"
+filename = "3sisters.html"
 
 #remove leading "." and put in correct separators, including one at the end if necessary
 altpath = str(dirpath.replace(os.sep, os.altsep))[1:]
 altpath = altpath + ("" if altpath.endswith("/") else os.altsep)
 # and record this file name as this_file
 this_file = altpath + os.path.splitext(filename)[0]
-
+print ("Filename is " + dirpath +  os.sep + filename)
 # Open the file
-with open(filename, encoding="utf-8") as fp:
-    soup = BeautifulSoup(fp, "html.parser")
+with open(dirpath + os.sep + filename, encoding="utf-8") as fp:
+    main_tags = SoupStrainer("main")
+    soup = BeautifulSoup(fp, "html.parser", parse_only=main_tags)
+print (soup.prettify)
 
 # Find all the tags within <main></main> with href and add them to link_list
 # link_list is a list of lists: [[href, contained in file], [href, contained in file], ...]
 # If the target is wrong, we can then report which file contained the href
-
 for link_tag in soup.main.find_all(has_href):
     this_href = link_tag['href']
     if this_href.startswith("https://"):
@@ -83,7 +85,6 @@ for link_tag in soup.main.find_all(has_href):
         if this_href.endswith("/"):
             this_href = this_href + "index"
         link_list.append ([this_href.replace("/#", "/index#"), this_file])
-
 # Add this path and file (without extension) to id_list 
 id_list.append (this_file)
 # Add all id tags to id_list in the format
