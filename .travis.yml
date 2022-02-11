@@ -84,11 +84,10 @@ script:
 #  - echo $TRAVIS_PULL_REQUEST_BRANCH
 #  - pwd
 # Display the output from hugo so it is not folded and hidden, and is at the end of the log.
-  - set +x
-  - echo --help
+  - set +v
   - echo "HUGO was run for environment $TRAVIS_BRANCH"
   - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
-  - set -x
+  - set -v
 
 # before_cache
 ############## Skipped
