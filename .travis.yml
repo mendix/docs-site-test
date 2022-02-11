@@ -57,8 +57,11 @@ install:
   - mkdir public  # This because <Maybe> the process of syncing to public is probably deadlocked behind waiting for the public folder to be made, and is never signalled that the folder is created, which ends up stalling the build on Travis CI.
   # ------------------------
   - ./hugo config --environment $TRAVIS_BRANCH # report the config we are using
-  - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
-
+  # put the flags in different config files controlled by environment matching $TRAVIS_BRANCH
+  # Pipe output to hugo.log file to print at the end of the travis job
+  # (see https://stackoverflow.com/questions/418896/how-to-redirect-output-to-a-file-and-stdout)
+  - ./hugo --environment $TRAVIS_BRANCH 2>&1 | tee $TRAVIS_BUILD_DIR/hugo.log
+  
 before_script:
 ##############
   - eval "$(pyenv init --path)" # Instructions from Travis support
@@ -118,4 +121,5 @@ after_deploy:
 # Cannot get python push to Travis to work here. Added it to deploy.sh.
 
 after_script:
-############# Skipped
+# Display the output from hugo so it isn't folded and hidden, and is at the end of the log.
+  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
