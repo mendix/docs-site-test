@@ -121,5 +121,5 @@ after_deploy:
 # Cannot get python push to Travis to work here. Added it to deploy.sh.
 
 after_script:
-# Display the output from hugo so it isn't folded and hidden, and is at the end of the log.
+# Display the output from hugo so it is not folded and hidden, and is at the end of the log.
   - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
