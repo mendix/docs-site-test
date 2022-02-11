@@ -128,6 +128,14 @@ while link_count< link_len and id_count< id_len:
 
 error_list.sort(key=lambda x:x[1]) # sort list on second item
 
+with open("souptest-links.log", 'w') as logfile:
+    for link_item in link_list:
+        logfile.write (link_item[0] + " is a link in file " + link_item[1] + "\n")
+
+with open("souptest-ids.log", 'w') as logfile:
+    for id_item in id_list:
+        logfile.write (id_item + " is a valid anchor id\n")
+
 with open("souptest.log", 'w') as logfile:
     for error_item in error_list:
         logfile.write ("In " + error_item[1] + " link to " + error_item[0] + " is incorrect\n")
