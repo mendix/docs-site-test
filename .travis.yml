@@ -71,16 +71,24 @@ before_script:
 
 script:
 #######
-  - echo $TRAVIS_BRANCH
-  - echo $TRAVIS_COMMIT
-  - echo $TRAVIS_COMMIT_MESSAGE
-  - echo $TRAVIS_JOB_ID
-  - echo $TRAVIS_JOB_NAME
-  - echo $TRAVIS_JOB_NUMBER
-  - echo $TRAVIS_JOB_WEB_URL
-  - echo $TRAVIS_PULL_REQUEST
-  - echo $TRAVIS_PULL_REQUEST_BRANCH
-  - pwd
+# Uncomment these variables if you want to see what values are there
+#  - echo $TRAVIS_BUILD_DIR
+#  - echo $TRAVIS_BRANCH
+#  - echo $TRAVIS_COMMIT
+#  - echo $TRAVIS_COMMIT_MESSAGE
+#  - echo $TRAVIS_JOB_ID
+#  - echo $TRAVIS_JOB_NAME
+#  - echo $TRAVIS_JOB_NUMBER
+#  - echo $TRAVIS_JOB_WEB_URL
+#  - echo $TRAVIS_PULL_REQUEST
+#  - echo $TRAVIS_PULL_REQUEST_BRANCH
+#  - pwd
+# Display the output from hugo so it is not folded and hidden, and is at the end of the log.
+  - set +x
+  - echo --help
+  - echo "HUGO was run for environment $TRAVIS_BRANCH"
+  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
+  - set -x
 
 # before_cache
 ############## Skipped
@@ -121,5 +129,4 @@ after_deploy:
 # Cannot get python push to Travis to work here. Added it to deploy.sh.
 
 after_script:
-# Display the output from hugo so it is not folded and hidden, and is at the end of the log.
-  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
+############# Skipped
