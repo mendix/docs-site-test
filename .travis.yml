@@ -67,6 +67,7 @@ install:
   - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
   #
   # htmltest takes too much memory
+  - chmod +x ./htmltest/htmltest
   - ./htmltest/htmltest
   
 before_script:
