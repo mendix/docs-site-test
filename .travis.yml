@@ -151,3 +151,4 @@ after_deploy:
 
 after_script:
 ############# Skipped
+  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
