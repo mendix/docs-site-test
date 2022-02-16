@@ -53,8 +53,10 @@ before_install:
   - travis_retry curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz | tar xz # Install Hugo manually - Snap is too fragile
   - chmod +x ./hugo # installed into $TRAVIS_BUILD_DIR/hugo
   #
+  # Currently will use custom version of htmltest stored in /htmltest/htmltest
+  # This version makes the html.Parse much smaller
   # For htmltest installation instructions, see https://github.com/wjdp/htmltest/blob/master/README.md
-  - travis_retry curl https://htmltest.wjdp.uk | bash # install htmltest into $TRAVIS_BUILD_DIR/bin/htmltest
+  # - travis_retry curl https://htmltest.wjdp.uk | bash # install htmltest into $TRAVIS_BUILD_DIR/bin/htmltest
 
 install:
 ########
@@ -65,8 +67,7 @@ install:
   - ./hugo --environment $TRAVIS_BRANCH # put the flags in different config files controlled by environment
   #
   # htmltest takes too much memory
-  # - ./bin/htmltest --version
-  # - ./bin/htmltest
+  - ./htmltest/htmltest
   
 before_script:
 ##############
