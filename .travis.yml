@@ -106,6 +106,7 @@ script:
 #  - echo $TRAVIS_OS_NAME
 #  - echo $TRAVIS_PULL_REQUEST
 #  - echo $TRAVIS_PULL_REQUEST_BRANCH
+# Have to have something here, otherwise Travis tries to run "npm test"
   - pwd
 
 
