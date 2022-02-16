@@ -107,8 +107,6 @@ script:
 #  - echo $TRAVIS_PULL_REQUEST
 #  - echo $TRAVIS_PULL_REQUEST_BRANCH
 #  - pwd
-# Display the output from hugo so it is not folded and hidden, and is at the end of the log.
-  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
 
 
 # before_cache
@@ -150,5 +148,5 @@ after_deploy:
 # Cannot get python push to Travis to work here. Added it to deploy.sh.
 
 after_script:
-############# Skipped
+# Display the output from hugo and htmltest so it is not folded and hidden, and is at the end of the log.
   - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
