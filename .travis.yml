@@ -47,9 +47,16 @@ branches:
 
 before_install:
 ###############
+  #
   - npm install # use npm rather than yarn - HUGO doesn't have that many dependencies
+  #
   - travis_retry curl -L https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz | tar xz # Install Hugo manually - Snap is too fragile
   - chmod +x ./hugo # installed into $TRAVIS_BUILD_DIR/hugo
+  #
+  # Currently will use custom version of htmltest stored in /htmltest/htmltest
+  # This version makes the html.Parse much smaller
+  # For htmltest installation instructions, see https://github.com/wjdp/htmltest/blob/master/README.md
+  # - travis_retry curl https://htmltest.wjdp.uk | bash # install htmltest into $TRAVIS_BUILD_DIR/bin/htmltest
 
 install:
 ########
@@ -62,7 +69,11 @@ install:
   # Append output to hugo.log file to print at the end of the travis job
   # (see https://stackoverflow.com/questions/418896/how-to-redirect-output-to-a-file-and-stdout)
   - ./hugo --environment $TRAVIS_BRANCH 2>&1 | tee -a $TRAVIS_BUILD_DIR/hugo.log
-  
+  #
+  # normal htmltest takes too much memory - using a modified version which strips <aside> tag content
+  - chmod +x ./htmltest/htmltest
+  - ./htmltest/htmltest 2>&1 | tee -a $TRAVIS_BUILD_DIR/hugo.log
+ 
 before_script:
 ##############
   - eval "$(pyenv init --path)" # Instructions from Travis support
@@ -95,9 +106,9 @@ script:
 #  - echo $TRAVIS_OS_NAME
 #  - echo $TRAVIS_PULL_REQUEST
 #  - echo $TRAVIS_PULL_REQUEST_BRANCH
-#  - pwd
-# Display the output from hugo so it is not folded and hidden, and is at the end of the log.
-  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
+# Have to have something here, otherwise Travis tries to run "npm test"
+  - pwd
+
 
 # before_cache
 ############## Skipped
@@ -138,4 +149,5 @@ after_deploy:
 # Cannot get python push to Travis to work here. Added it to deploy.sh.
 
 after_script:
-############# Skipped
+# Display the output from hugo and htmltest so it is not folded and hidden, and is at the end of the log.
+  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"

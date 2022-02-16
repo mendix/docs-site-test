@@ -12,11 +12,8 @@ CheckMailto: false
 # Not checking scripts for speed - should be OK as generated through HUGO
 CheckScripts: false
 CheckTel: false
-IgnoreURLs:
-- "example.com"
-IgnoreInternalURLs:
-- "/misc/js/script.js"
-- "/js/"
+IgnoreAltMissing: true
+IgnoreDirectoryMissingTrailingSlash: true
 IgnoreDirs:
 - "_includes"
 - "_print"
@@ -27,12 +24,15 @@ IgnoreDirs:
 - "js"
 - "scss"
 - "webfonts"
-IgnoreAltMissing: true
-IgnoreDirectoryMissingTrailingSlash: true
 IgnoreEmptyHref: true
 IgnoreInternalEmptyHash: true
-CacheExpires: "20d"
-EnforceHTTPS: false
+IgnoreInternalURLs:
+- "/misc/js/script.js"
+- "/js/"
+# HUGO generates a lot of tags which don't need to be tested
+IgnoreTagAttribute: "data-proofer-ignore"
+IgnoreURLs:
+- "example.com"
 
 # ==========================================================
 # Speed up using concurrent testing by changing flag to true

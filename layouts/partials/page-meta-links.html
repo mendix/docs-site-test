@@ -11,7 +11,7 @@
           <div class="col-3">
             {{ if $gh_url }}
               <!-- NK - changed icon properties -->
-              <a href="{{ $gh_url }}" target="_blank"><img class="my-icon" src="/icons/content-paper-edit.svg" title="Edit on Github"></a>
+              <a data-proofer-ignore href="{{ $gh_url }}" target="_blank"><img class="my-icon" src="/icons/content-paper-edit.svg" title="Edit on Github"></a>
             {{ else if $gh_repo }}
               {{ $gh_repo_path := printf "%s/content/%s" $gh_branch $pathFormatted }}
               {{ if and ($gh_subdir) (.Site.Language.Lang) }}
@@ -28,7 +28,7 @@
             {{ $newPageQS := querify "value" $newPageStub.Content "filename" "change-me.md" | safeURL }}
             {{ $newPageURL := printf "%s/new/%s?%s"  $gh_repo $gh_repo_path $newPageQS }}
               <!-- NK - changed icon properties -->
-              <a href="{{ $editURL }}" target="_blank"><img class="my-icon" src="/icons/content-paper-edit.svg" title="Edit on Github"></a>
+              <a data-proofer-ignore href="{{ $editURL }}" target="_blank"><img class="my-icon" src="/icons/content-paper-edit.svg" title="Edit on Github"></a>
           </div>
           <div class="col-3">
               <!-- NK - changed icon properties -->
@@ -44,7 +44,7 @@
           </div>
           <div class="col-3">
             <!-- NK - changed icon properties -->
-            <a id="print" href="{{ .Permalink | safeURL }}"><img class="my-icon" src="/icons/print-text.svg" title="Go to print view"></a>
+            <a data-proofer-ignore id="print" href="{{ .Permalink | safeURL }}"><img class="my-icon" src="/icons/print-text.svg" title="Go to print view"></a>
         {{ end }}
           </div>
       </div>
