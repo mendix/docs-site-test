@@ -65,7 +65,7 @@ To develop modules and submit them to the Marketplace, follow these guidelines:
 * Create an empty folder with the version number as its name, which will appear in Studio Pro's App Explorer
 *  If you add any **userlib** .*jar* files, make sure they are accompanied by a blank **MyModule.RequiredLib** file so that users know where the .*jar* files come from
 
-	![](/attachments/appstore/general/share-app-store-content/userlibBlankFiles_boxed.jpg)
+	{{< figure src="/attachments/appstore/general/share-app-store-content/userlibBlankFiles_boxed.jpg" >}}
 
 * Verify that the module's Java actions compile correctly (the easiest way to check is to create a deployment package, as it will clean the deployment folder and rebuild the app; for more information, see [Environments](/developerportal/deploy/environments/))
 * Reduce the use of layouts and use snippets instead, which will result in fewer module dependencies and will reduce the number of potential errors (for example, missing layouts)
@@ -91,26 +91,26 @@ To add content to the Marketplace, follow the steps in each section below.
 
 ### 4.1 Getting Started
 
-To start, click **Add content** in the top-right corner of the Marketplace home screen:
+To start, click **Add content** in the upper-right corner of the Marketplace home screen:
 
-![](/attachments/appstore/general/share-app-store-content/add-content-button.jpg)
+{{< figure src="/attachments/appstore/general/share-app-store-content/add-content-button.jpg" >}}
 
 Follow these steps to continue adding content:
 
 1.  On the **Upload Content** page, select the type of content you would like to publish (the available types correspond to the [Marketplace home page](/appstore/general/app-store-overview/#home)):
 
-	![](/attachments/appstore/general/share-app-store-content/category.JPG)
+	{{< figure src="/attachments/appstore/general/share-app-store-content/category.JPG" >}}
 
 2.  Depending on the type you selected, you may be asked to select a sub-category for your component, for example:
 
-	![](/attachments/appstore/general/share-app-store-content/sub-categories.jpg)
+	{{< figure src="/attachments/appstore/general/share-app-store-content/sub-categories.jpg" >}}
 	
 3.  Select the location where you want to publish your component:
 
 	* <a name="public-app-store"></a>**Public Marketplace (all Mendix users)** – your component will be available to the Mendix community (this content will have to be reviewed and approved by Mendix before it is available)
 	* <a name="private-app-store"></a>**Private Marketplace (your company only)** – your content will receive the **Company only** label and be available only via your [Company Content](/appstore/general/app-store-overview/#company-content) page; selected private content of a user group can also be made available to [user group guests](/appstore/general/app-store-overview/#guests) for download; this content will not be reviewed by Mendix
 	
-	![](/attachments/appstore/general/share-app-store-content/public-private.jpg)
+	{{< figure src="/attachments/appstore/general/share-app-store-content/public-private.jpg" >}}
 	
 	{{% alert color="warning" %}}You can only set the location in the initial version of your content. You cannot change this setting by updating the Marketplace component later.
 	{{% /alert %}}
@@ -145,12 +145,12 @@ Follow these steps to describe your content:
 	* SDISW End-User License Agreement for Mendix Connectors and Widgets EXTERNAL
 	* SDISW End-User License Agreement for Mendix Sample Apps
 
-	![](/attachments/appstore/general/share-app-store-content/general.png)
+	{{< figure src="/attachments/appstore/general/share-app-store-content/general.png" >}}
 
 6. Click **Upload an Image** to upload an icon for the component.
 7. <a name="draft"></a>On each page of the upload flow, click one of the following buttons:
 
-	* **Save Draft** to save the details you have entered so far to the [Drafts](/appstore/general/app-store-overview/#my-content) page of your Marketplace (which you can access via the **My Drafts** button in the top-right of the page)
+	* **Save Draft** to save the details you have entered so far to the [Drafts](/appstore/general/app-store-overview/#my-content) page of your Marketplace (which you can access via the **My Drafts** button in the upper right of the page)
 	* **Save & Continue** to go to the next page of the upload flow
 
 ### 4.3 Package {#version}
@@ -171,7 +171,7 @@ If this is the first version of the component you are uploading, the number in t
 
 Enter **Release Notes** for the component in the box provided describing what is new in that release.
 
-![](/attachments/appstore/general/share-app-store-content/package.jpg)
+{{< figure src="/attachments/appstore/general/share-app-store-content/package.jpg" >}}
 
 ### 4.4 Enable {#doc}
 
@@ -195,7 +195,7 @@ The editor comes with a set of basic formatting tools, such as bold, bullet list
 
 <a name="screenshot"></a>Click **Add Screenshot** to select images of the component (especially for configuration) from your computer and upload them (this is required for submitting a new component):
 
-![](/attachments/appstore/general/share-app-store-content/enable.png)
+{{< figure src="/attachments/appstore/general/share-app-store-content/enable.png" >}}
 	
 You can optionally add a **Video** and **Demo**.
 	
@@ -208,13 +208,13 @@ On the **Capabilities** page, you can provide the following details about a solu
 * One or more key features to leverage in the **Solution Capabilities** section (for each capability, enter a **Name** and **Description**)
 * **External links** relevant to the content
 
-![](/attachments/appstore/general/share-app-store-content/capabilities.png)
+{{< figure src="/attachments/appstore/general/share-app-store-content/capabilities.png" >}}
 
 ### 4.6 Publish {#publish}
 
 Finally, on the **Publish** page, you can review all the details of your component you entered so far and edit as necessary (via the **Edit Section** button) before clicking **Publish Content**.
 
-![](/attachments/appstore/general/share-app-store-content/publish.png)
+{{< figure src="/attachments/appstore/general/share-app-store-content/publish.png" >}}
 
 After you click **Publish Content**, your draft will be reviewed by Mendix before it is visible in the Marketplace. See the next section on details for the approval process.
 

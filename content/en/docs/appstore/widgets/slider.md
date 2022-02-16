@@ -30,11 +30,11 @@ The following properties must be configured:
 
 The slider enables setting a value between two bounds (minimum value and maximum value). However, if there are two values that need to be set between two bounds, using the [Range Slider](/appstore/widgets/range-slider/) widget is recommended..
 
-![](/attachments/appstore/widgets/slider/slider1.png)
+{{< figure src="/attachments/appstore/widgets/slider/slider1.png" >}}
 
 In Studio Pro, place the widget in the context of an object that has attributes for a maximum value, minimum value, and value. The maximum and minimum values determine the range within which the slider value can be adjusted. The step value determines the next point to shift to when sliding (meaning, it is the interval between two points or numbers).
 
-![](/attachments/appstore/widgets/slider/slider2.png)
+{{< figure src="/attachments/appstore/widgets/slider/slider2.png" >}}
 
 When choosing the step value, the difference between the maximum value and the minimum value should be divisible by 2 (meaning, `(maximumValue - minimumValue) % 2 = 0`).
 

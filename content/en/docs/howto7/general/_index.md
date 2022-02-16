@@ -2,6 +2,7 @@
 title: "General"
 url: /howto7/general/
 description: "These introductory how-to's describe Mendix Modeler basics and best practices."
+weight: 10
 ---
 
 ## 1 Introduction

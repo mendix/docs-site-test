@@ -2,7 +2,7 @@
 title: "Complete Task"
 url: /refguide/complete-task/
 parent: "workflow-activities"
-weight: 10
+weight: 30
 tags: ["studio pro", "user task", "workflow", "task outcome", "complete task"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
@@ -15,13 +15,13 @@ This activity can only be used in **Microflows**.
 
 The **Complete task** activity can be used to define which outcome the [user task](/refguide/user-task/) should follow. 
 
-![Complete Task](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/complete-task/complete-task.jpg)
+{{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/complete-task/complete-task.jpg" alt="Complete Task" >}}
 
 ## 2 Properties
 
 An example of complete task properties is represented in the image below:
 
-![Complete Task Properties](/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/complete-task/complete-task-properties.jpg)
+{{< figure src="/attachments/refguide/modeling/application-logic/microflows-and-nanoflows/activities/workflow-activities/complete-task/complete-task-properties.jpg" alt="Complete Task Properties" >}}
 
 There are two sets of properties for this activity, those in the dialog box on the left, and those in the properties pane on the right.
 
@@ -38,11 +38,11 @@ You can open a dialog box to configure this action by clicking the ellipsis (**â
 
 You can also open the dialog box by double-clicking the activity in the microflow or right-clicking the activity and selecting **Properties**.
 
-### 3.1 User Task
+### 3.1 User Task Object
 
-The user task entity available from the microflow parameters.
+The user task object of the System.WorkflowUserTask entity available from the microflow parameters.
 
-### 3.2 Workflow Task
+### 3.2 User Task
 
 The user task for which you want to set an outcome. 
 

@@ -22,7 +22,7 @@ aliases:
 
 A control bar of a [template grid](/refguide/template-grid/), [data grid](/refguide/data-grid/), and [reference set selector](/refguide/reference-set-selector/) allows you to manipulate the objects displayed by means of buttons. By default, both grids will be created with [Search](#search-button), [New](#create-button), [Edit](#grid-action-button), and [Delete](#grid-action-button) buttons in the control bar:
 
-![Data Grid Control Bar](/attachments/refguide/modeling/pages/data-widgets/grids/control-bar/control-bar-example.png)
+{{< figure src="/attachments/refguide/modeling/pages/data-widgets/grids/control-bar/control-bar-example.png" alt="Data Grid Control Bar" >}}
 
 The control bar can also include a number of selection options and spreadsheet export buttons, as well as microflow buttons for custom actions. 
 
@@ -30,7 +30,22 @@ The control bar can also include a number of selection options and spreadsheet e
 
 Most properties of control bar buttons are the same as properties of buttons. For more information on button properties, see [Buttons](/refguide/button-properties/).
 
-Sections below describe the purpose of each control bar button and their specific properties if any. 
+To add additional buttons to the control bar, do the following:
+
+1. Right-click on the control bar while it is highlighed.
+1. Select **Add button**.
+1. Select the new type of button.
+1. Double click on the new button to customize.
+
+{{< figure src="/attachments/refguide/modeling/pages/data-widgets/grids/control-bar/control-bar-add-button.png" alt="Add Button to Control Bar" >}}
+
+{{% alert color="info" %}}
+It is not possible to add additional buttons by dragging them from the **Toolbox** into the control bar.
+
+When setting the visibility of control bar buttons, it is not possible to use currently selected objects for conditional visibility expressions, or visibility based on the selected objects' attributes.
+{{% /alert %}}
+
+Sections below describe the purpose of each control bar button and their specific properties if any.
 
 ### 2.1 Search Button {#search-button}
 

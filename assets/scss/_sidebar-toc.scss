@@ -3,6 +3,8 @@
 //
 .td-sidebar-toc {
     //border-left: 1px solid $border-color; // NK - moved to td-main main, to fully span height of screen
+    font-size: 0.9rem; // NK - decrased
+    line-height: 1.2; // NK - decrased
 
     @supports (position: sticky) {
         position: sticky;
@@ -39,7 +41,7 @@
     }
 
     li li {
-        margin-left: 0.5rem;
+        margin-left: 0.75rem;  // NK - increased
     }
 
     #TableOfContents {

@@ -1,6 +1,7 @@
 ---
 title: "AQM"
 url: /addons/aqm-addon/
+weight: 30
 ---
 
 ## 1 Introduction

@@ -5,7 +5,7 @@ frontpage_featured: true
 weight: 10
 ---
 
-The release notes for [Mendix Studio](/studio/) are correlated with the version ranges of [Mendix Studio Pro](/releasenotes/studio-pro/): 
+The release notes for [Mendix Studio](/releasenotes/studio/) are correlated with the version ranges of [Mendix Studio Pro](/releasenotes/studio-pro/): 
 
 * [9.7 & Above](/releasenotes/studio/9.7-and-above/)
 * [9.0-9.6](/releasenotes/studio/9.0-9.6/)

@@ -1,6 +1,7 @@
 ---
 title: "Front End"
 url: /howto7/front-end/
+weight: 20
 ---
 
 ## 1 Introduction 

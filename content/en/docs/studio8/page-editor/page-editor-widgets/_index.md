@@ -10,8 +10,7 @@ tags: ["studio", "page editor", "pages", "widgets"]
 
 Widgets are single user-interface elements that can be configured. Examples of widgets can be a container, a drop-down menu, or different kinds of buttons.
 
-{{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/widgets-examples.png)
-{{/* % /image_container % */}}
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/widgets-examples.png"   width="300"  >}}
 
 Widgets in Studio are grouped by category and can be classified by their origin.
 
@@ -25,7 +24,7 @@ To view widgets in Mendix Studio, do the following:
 
 3. In the **Toolbox** tab, **Widgets** are opened by default.
 
-   ![](/attachments/studio8/page-editor/page-editor-widgets/toolbox-widgets.png)
+   {{< figure src="/attachments/studio8/page-editor/page-editor-widgets/toolbox-widgets.png" >}}
 
 ## 3 Quick Configuration of Widget Properties {#quick-config}
 
@@ -35,18 +34,17 @@ Once you drag and drop a widget, a small pop-up window appears next to it. You c
 
 For example, quickly configuring the data source of a data grid helps you avoid consistency errors when previewing or publishing your app, and you can configure the rest of the properties later.
 
-![](/attachments/studio8/page-editor/page-editor-widgets/quick-config.png)
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/quick-config.png" >}}
 
-The pop-up window disappears once you start interacting with the page or the menu items, for example, if you start clicking elements on the page or if you open **Toolbox**, **Properties**, **Buzz**. To access the quick configuration pop-up window again, click the gear icon in the top-right corner of the widget:
+The pop-up window disappears once you start interacting with the page or the menu items, for example, if you start clicking elements on the page or if you open **Toolbox**, **Properties**, **Buzz**. To access the quick configuration pop-up window again, click the gear icon in the upper-right corner of the widget:
 
-![](/attachments/studio8/page-editor/page-editor-widgets/quick-widget-icon.png)
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/quick-widget-icon.png" >}}
 
 ## 4 Widgets by Category {#widget-categories}
 
 Widgets of Studio are divided into categories that you can see when you open the **Widgets** tab.
 
-{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/widgets-categories.png)
-{{/* % /image_container % */}}
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/widgets-categories.png"   width="350"  >}}
 
 Widget categories are described in the table below:
 
@@ -70,8 +68,8 @@ Widgets in Studio can be divided by origin as shown in the table below:
 
 | Type                                                | Description                                                  | Origin                                                       |
 | --------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Default widgets                                     | Widgets that are included into your app by default and do not have the information icon in the top-right corner. | Apps created in the Developer Portal (for more information on the Developer Portal, see [Developer Portal](/developerportal/)) |
-| Marketplace widgets<a name="app-store-widgets"></a> | Widgets that you can download to your app directly from Studio. Some Marketplace widgets are already part of the app. Such widgets have the information icon in the top-right corner of widgets in the **Toolbox**. <br />For more information on the Marketplace, see [Marketplace Overview](/appstore/general/app-store-overview/). | [Marketplace](/appstore/)                                    |
+| Default widgets                                     | Widgets that are included into your app by default and do not have the information icon in the upper-right corner. | Apps created in the Developer Portal (for more information on the Developer Portal, see [Developer Portal](/developerportal/)) |
+| Marketplace widgets<a name="app-store-widgets"></a> | Widgets that you can download to your app directly from Studio. Some Marketplace widgets are already part of the app. Such widgets have the information icon in the upper-right corner of widgets in the **Toolbox**. <br />For more information on the Marketplace, see [Marketplace Overview](/appstore/general/app-store-overview/). | [Marketplace](/appstore/)                                    |
 | Local widgets                                       | Either widgets that are a part of an app template, or widgets created by your or your team locally via Studio Pro. For more information on developing widgets, see the [Custom Widget Development](/howto8/extensibility/widget-development/) how-to's. As a rule local widgets will be listed in the **Add-ons** category. For more information on categories, see the [Widgets by Category](#widget-categories) section. | Apps created in the  Developer Portal/Studio Pro             |
 
 ## 6 Adding the Marketplace Widgets
@@ -86,16 +84,15 @@ To add an Marketplace widget, do the following:
 
     a. Find a category with the **View App Store widgets** option and click it.  <br />
 
-    {{/* % image_container width="300" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/view-app-store-widgets.png)
-    {{/* % /image_container % */}}<br />
+    {{< figure src="/attachments/studio8/page-editor/page-editor-widgets/view-app-store-widgets.png"   width="300"  >}}<br />
 
     b.  Start typing the name of the category or of a specific widget in the **Search** field. <br />
 
-    ![](/attachments/studio8/page-editor/page-editor-widgets/slider.png)
+    {{< figure src="/attachments/studio8/page-editor/page-editor-widgets/slider.png" >}}
 
 3.  Click the cloud icon to download the widget and add it to your app.
 
-    ![](/attachments/studio8/page-editor/page-editor-widgets/app-store-download.png)
+    {{< figure src="/attachments/studio8/page-editor/page-editor-widgets/app-store-download.png" >}}
 
 The widget is now added to your app, you can simply drag and drop it to the page to use it. You can also view settings of this widget in the **App Settings**.  For more information on managing widgets in your app, see [Settings](/studio8/settings/).
 

@@ -2,10 +2,10 @@
 title: "Security Advisories"
 url: /releasenotes/security-advisories/
 tags: ["security", "security advisories", "cve", "cvss", "ssa", "siemens security advisory"]
+weight: 50
 #notoc: true
 #layout: wide
 #toc-level: "3"
-weight: 50
 ---
 
 ## 1 Introduction

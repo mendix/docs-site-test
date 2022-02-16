@@ -165,7 +165,7 @@ Current support:
 * [Azure SQL](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-database-transact-sql-compatibility-level?view=sql-server-2017) v12 compatibility mode 140 or higher
 * [MySQL](/refguide/mysql/) 8.0
 * [Oracle Database](/refguide/oracle/) 19
-* PostgreSQL 9.6, 10, 11, 12, 13, 14
+* PostgreSQL 10, 11, 12, 13, 14
 * [SAP HANA](/refguide/saphana/) 2.00.040.00.1545918182
 
 {{% alert color="warning" %}}

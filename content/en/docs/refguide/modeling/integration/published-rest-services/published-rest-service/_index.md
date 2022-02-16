@@ -111,7 +111,7 @@ There are three possible outcomes of the authentication microflow:
 * Otherwise, when the resulting User is not empty, the operation is executed in the context of that user
 * Otherwise, when the resulting User is empty, the next authentication method is attempted. When there are no other authentication methods, the result is **404 Not Found**.
 
-### 3.4 Allowed Roles
+### 3.4 Allowed Roles{#allowed-roles}
 
 The allowed roles define which [module role](/refguide/module-security/#module-role) a user must have to be able to access the service. This option is only available when **Requires authentication** is set to **Yes**.
 
@@ -137,7 +137,7 @@ When you select a resource, you see the [operations](/refguide/published-rest-op
 
 Resources and Operations are appended to [Location](#location) to form a URL on which they can be accessed.
 
-![](/attachments/refguide/modeling/integration/published-rest-services/published-rest-service/example-location-url.png)
+{{< figure src="/attachments/refguide/modeling/integration/published-rest-services/published-rest-service/example-location-url.png" >}}
 
 ## 8 Read More
 

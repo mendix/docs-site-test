@@ -7,10 +7,6 @@ tags: ["workflow", "workflows", "Studio Pro"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
-{{% alert color="warning" %}}
-This functionality is in Beta. For more information on Beta products, see [Beta Releases](/releasenotes/beta-features/).
-{{% /alert %}}
-
 ## 1 Introduction
 
 Workflow is a visual language in Mendix Studio and Studio Pro that allows you to build extendable processes. It is fully integrated with other visual languages, such as the microflow editor and page editor. 
@@ -26,19 +22,8 @@ A workflow is composed of elements that you can drag and drop on a path. Below i
 
 ### 2.1 Workflow Parameters {#parameters}
 
-[Workflow parameters](/refguide/workflow-parameters/) are input data for your workflow.
-
-In the workflow editor, there are the following parameters:
-
-* The **WorkflowInstance** parameter stores data on the workflow process:
-
-    ![Workflow Instance Example](/attachments/refguide/modeling/application-logic/workflows/workflow-instance.png)
-    
-    The entity of this parameter is automatically generated when you create a new workflow.
-
-* The **WorkflowContext** parameter is a business-related data that travels through the workflow:
-
-    ![Workflow Context Example](/attachments/refguide/modeling/application-logic/workflows/workflow-context.png)
+A [workflow parameter](/refguide/workflow-parameters/) is input data for your workflow. The **WorkflowContext** parameter is a business-related data that travels through the workflow:
+{{< figure src="/attachments/refguide/modeling/application-logic/workflows/workflow-context.png" alt="Workflow Context Example" >}}
 
 ### 2.2 General {#general}
 
@@ -48,11 +33,11 @@ The elements of this category are described in the table below:
 
 | Graphic                                                     | Element                           | Description                                                  |
 | ----------------------------------------------------------- | --------------------------------- | ------------------------------------------------------------ |
-| ![Start Event](/attachments/refguide/modeling/application-logic/workflows/start-event.png)    | Start event                    | The starting point of a workflow. Workflows are triggered either by the [Call workflow](/refguide/on-click-event/#call-workflow) on-click event on pages or by the [Workflow call](/refguide/workflow-call/) action in microflows. <br />Click the start event to open [workflow properties](/refguide/workflow-properties/). |
-| ![Decision](/attachments/refguide/modeling/application-logic/workflows/decision.png)             | [Decision](/refguide/decision-in-workflows/) | Makes a choice based on a condition and follows one and only one of the outgoing paths. |
-| ![Parallel Split](/attachments/refguide/modeling/application-logic/workflows/parallel-split.png) | [Parallel split](/refguide/parallel-split/)  | Adds two parallel paths to your workflow.                    |
-| ![Jump Activity](/attachments/refguide/modeling/application-logic/workflows/jump.png)            | [Jump](/refguide/jump-activity/)             | Allows you to jump to other activities in the workflow.      |
-| ![End event](/attachments/refguide/modeling/application-logic/workflows/end-event.png)        | End event                      | Ends the path of the workflow                                |
+| {{< figure src="/attachments/refguide/modeling/application-logic/workflows/start-event.png" alt="Start Event" >}}    | Start event                    | The starting point of a workflow. Workflows are triggered either by the [Call workflow](/refguide/on-click-event/#call-workflow) on-click event on pages or by the [Workflow call](/refguide/workflow-call/) action in microflows. <br />Click the start event to open [workflow properties](/refguide/workflow-properties/). |
+| {{< figure src="/attachments/refguide/modeling/application-logic/workflows/decision.png" alt="Decision" >}}             | [Decision](/refguide/decision-in-workflows/) | Makes a choice based on a condition and follows one and only one of the outgoing paths. |
+| {{< figure src="/attachments/refguide/modeling/application-logic/workflows/parallel-split.png" alt="Parallel Split" >}} | [Parallel split](/refguide/parallel-split/)  | Adds two parallel paths to your workflow.                    |
+| {{< figure src="/attachments/refguide/modeling/application-logic/workflows/jump.png" alt="Jump Activity" >}}            | [Jump](/refguide/jump-activity/)             | Allows you to jump to other activities in the workflow.      |
+| {{< figure src="/attachments/refguide/modeling/application-logic/workflows/end-event.png" alt="End event" >}}        | End event                      | Ends the path of the workflow                                |
 
 {{% alert color="info" %}}
 You can add customized activities to this section if you use the **Expose as a workflow action** setting in microflows. For more information see the [Expose as Workflow Action](/refguide/microflow/#expose-as-workflow-action) section in *Microflow Properties*.
@@ -62,13 +47,13 @@ You can add customized activities to this section if you use the **Expose as a w
 
 [User task](/refguide/user-task/) – a central element in a workflow that allows you to assign a task to a certain user or a group of users using filters or microflows. 
 
-![User Task](/attachments/refguide/modeling/application-logic/workflows/user-task.png)
+{{< figure src="/attachments/refguide/modeling/application-logic/workflows/user-task.png" alt="User Task" >}}
 
 ### 2.4 System Actions {#system}
 
 [Call microflow](/refguide/call-microflow/) activity calls a selected microflow. 
 
-![Call Microflow](/attachments/refguide/modeling/application-logic/workflows/call-microflow.png)
+{{< figure src="/attachments/refguide/modeling/application-logic/workflows/call-microflow.png" alt="Call Microflow" >}}
 
 ## 3 Performing Basic Functions
 
@@ -97,7 +82,7 @@ To add a workflow to your app, do the following:
 
 2. In the **Add workflow** dialog box, fill in Name and click **OK**:
 
-    ![Adding Workflow](/attachments/refguide/modeling/application-logic/workflows/add-workflow-dialog.jpg)
+    {{< figure src="/attachments/refguide/modeling/application-logic/workflows/add-workflow-dialog.jpg" alt="Adding Workflow" >}}
 
 The workflow is created and the **WorkflowInstance** entity is added to the domain model. For more information on the **WorkflowInstance** entity, see [Workflow Parameters](/refguide/workflow-parameters/).
 
@@ -170,7 +155,7 @@ Do the following:
 
 6. Set **Context object** to the workflow context:
 
-    ![Call Workflow Example](/attachments/refguide/modeling/application-logic/workflows/call-workflow-example.png)
+    {{< figure src="/attachments/refguide/modeling/application-logic/workflows/call-workflow-example.png" alt="Call Workflow Example" >}}
 
 7. Click **OK**.
 
@@ -183,7 +168,7 @@ There are several workflow-related entities in the System module of your app, so
 You can find the following workflow-related entities in the System module: 
 
 * **WorkflowDefinition** – Represents your workflow in the database. It contains two attributes, where **Name** and **Title** are **Name** and **Title** properties of the workflow and **Obsolete** is a Boolean that is marked as true when you delete your workflow. In this case, the workflow still stays in the database (and you will still be able to create reports with it), but Mendix marks that it does not exist anymore. For more information on properties, see [Workflow Properties](/refguide/workflow-properties/). 
-* **WorkflowTaskDefinition** – Represents your [user tasks](/refguide/user-task/) and [system activities](/refguide/call-microflow/) in the database. It contains two attributes, where **Name** is a **Name** property of the user task or a system activity, and **Obsolete** is a Boolean that is marked as true when you delete a user task/system activity from your workflow. They still stay in the database (and you will still be able to create reports with them), but Mendix marks that they do not exist anymore. 
+* **WorkflowUserTaskDefinition** – Represents your [user tasks](/refguide/user-task/) and [system activities](/refguide/call-microflow/) in the database. It contains two attributes, where **Name** is a **Name** property of the user task or a system activity, and **IsObsolete** is a Boolean that is marked as true when you delete a user task/system activity from your workflow. They still stay in the database (and you will still be able to create reports with them), but Mendix marks that they do not exist anymore. 
 * **Workflow** – A representation of a running workflow, so every time when the new workflow is started, the Runtime creates a new instance.
 * **WorkflowUserTask** – This entity is created when the Runtime executes the user task and an end-user chooses an action (for example, clicks an **Approve** button to approve a request). This entity can be used for workflow overview pages and in an application logic.
 

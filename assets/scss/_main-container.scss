@@ -27,7 +27,7 @@
 
     main {
         @include media-breakpoint-up(md) {
-            padding-top: 5.5rem;
+            padding-top: 3.75rem;  // NK - made smaller
 			border-left: 1px solid $gray-border; // NK - moved from toc, to fully span height of screen
 			border-right: 1px solid $gray-border; // NK - moved from left menu, to fully span height of screen
         }
@@ -35,6 +35,12 @@
 
         padding-bottom: 2rem;
     }
+    main.lp{
+        @include media-breakpoint-up(xl){
+            min-width: 800px;
+        }
+    }
+
 	div.stretch-main{
 		height: 100%; // NK - so that all of main (side menus and content get stretched to bottom of page)
 	}

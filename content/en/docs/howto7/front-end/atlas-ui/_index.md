@@ -12,7 +12,7 @@ Mendix Atlas UI is the design framework that makes building elegant user experie
 
 ### 1.1 The Web Modeler
 
-The [Mendix Web Modeler](/studio/) brings the collaborative Mendix Platform to the browser, making it easier than ever to share and collaborate on application models. Every app built in the Web Modeler is styled with the Atlas UI framework. For more information, see [Get Started with Atlas UI](/howto7/front-end/get-started-with-atlasui/). 
+The [Mendix Web Modeler](/studio7/) brings the collaborative Mendix Platform to the browser, making it easier than ever to share and collaborate on application models. Every app built in the Web Modeler is styled with the Atlas UI framework. For more information, see [Get Started with Atlas UI](/howto7/front-end/get-started-with-atlasui/). 
 
 ### 1.2 Design Principles
 
@@ -30,13 +30,13 @@ Create familiarity and consistency throughout your apps landscape, regardless of
 
 Design apps that look good and scale in all situations without losing an intuitive and consistent experience.
 
-![](/attachments/howto7/front-end/atlas-ui/atlas_ui_preview.png)
+{{< figure src="/attachments/howto7/front-end/atlas-ui/atlas_ui_preview.png" >}}
 
 ## 2 Design Elements
 
 Our UI library is fully integrated into the Mendix Web Modeler. After choosing a navigation layout in the Web Modeler, you can find page templates, building blocks, and widgets directly in your **Toolbox**. These UI elements form the foundation of your app.
 
-![](/attachments/howto7/front-end/atlas-ui/designelements.png)
+{{< figure src="/attachments/howto7/front-end/atlas-ui/designelements.png" >}}
 
 **1** **Navigation Layouts**
 

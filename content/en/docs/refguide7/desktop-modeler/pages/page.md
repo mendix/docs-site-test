@@ -18,7 +18,7 @@ Pages define the end-user interface of a Mendix application. Every page is based
 {{% alert color="success" %}}
 From Mendix version 7.16 it is possible to see a preview of a page you are designing by clicking the **View mode** button in the page editor. You can return to editing the page by clicking **Edit mode**.
 
-![Edit mode and View mode buttons](/attachments/refguide7/desktop-modeler/pages/page/view-mode.png)
+{{< figure src="/attachments/refguide7/desktop-modeler/pages/page/view-mode.png" alt="Edit mode and View mode buttons" >}}
 
 {{% /alert %}}
 
@@ -92,7 +92,7 @@ Specifies whether the pop-up is resizable (Yes) or fixed-size (No).
 
 ### 6.4 Close Action
 
-Configures the behavior of the popup close button (the little cross in the top-right corner). The default behavior of the popup close button is to rollback any changes and close the popup. If you want to customize the behavior of the popup close button, you can point to a button on the page. When the popup close button is clicked, it will then act as if the selected button is clicked. If the selected button is not available the popup close button will revert back to the default behavior.
+Configures the behavior of the popup close button (the little cross in the upper-right corner). The default behavior of the popup close button is to rollback any changes and close the popup. If you want to customize the behavior of the popup close button, you can point to a button on the page. When the popup close button is clicked, it will then act as if the selected button is clicked. If the selected button is not available the popup close button will revert back to the default behavior.
 
  _Default value:_ Default (cancel)
 

@@ -29,8 +29,7 @@ Events specify actions which can be triggered when the end-user interacts with a
 
 An **On click** event specifies an event that is executed when a user clicks a widget. Often the **On click** property is a part of the **Events** section in properties. For example, you can specify that when a user clicks a customer's profile image, the page with this customer's details will open:
 
-{{/* % image_container width="350" % */}}![](/attachments/refguide8/modeling/pages/on-click-event/on-click-event-example.png)
-{{/* % /image_container % */}}
+{{< figure src="/attachments/refguide8/modeling/pages/on-click-event/on-click-event-example.png"   width="350"  >}}
 
 An on-click event is common for many widgets (for example, image, buttons, list view). 
 
@@ -85,7 +84,7 @@ The **Show a page** event opens the specified page. Select the page which opens 
 
     This option is activated by checking the **Override page title** check box in the **Edit** dialog box:
 
-    ![Page Title Property](/attachments/refguide8/modeling/pages/on-click-event/page-title-property.png)
+    {{< figure src="/attachments/refguide8/modeling/pages/on-click-event/page-title-property.png" alt="Page Title Property" >}}
 
 * **Page for specializations** – allows you to configure a different page for each specialization of the context object. If this action is placed inside a data view, it is possible to configure different page(s) for each specialization of the data view object. If this action is placed in a data grid, it is possible to configure different pages for each specialization of the data grid entity. This setting is not shown when there is not a context object or when the context object has no specializations.
 
@@ -93,7 +92,7 @@ The **Show a page** event opens the specified page. Select the page which opens 
 
 The **Call a microflow** event executes the specified microflow.
 
-{{%alert color="info" %}}
+{{%alert type="info" %}}
 
 When setting **Call a microflow** as an action for the **On change**, **On enter**, or **On leave** event of a widget, note that microflows require some time to complete. Any changes to the current form made in the meantime (for example, changing values in input widgets) will be overwritten by the results of the microflow.
 Therefore, it is not recommended to change entities/attributes on the current page in a microflow triggered by an **On change**, **On enter**, or **On leave** event.
@@ -110,7 +109,7 @@ The [microflow](/refguide8/microflow/) that should be executed.
 
 **Microflow settings** opens a dialog box enabling you to specify what parameters will be passed to the microflow and how the microflow will be run.
 
-![Microflow settings dialog](/attachments/refguide8/modeling/pages/on-click-event/microflow-settings.png)
+{{< figure src="/attachments/refguide8/modeling/pages/on-click-event/microflow-settings.png" alt="Microflow settings dialog" >}}
 
 ##### 3.3.2.1 Microflow
 
@@ -220,7 +219,7 @@ The table below described link types available for the **Open link** on click ev
 | Call  | Starts a phone call to this number                   | `+1-202-555-0165`                         |
 | Text  | Specifies a number to which to send a text message   | `+1-202-555-0112`                         |
 
-{{%alert color="info" %}}
+{{%alert type="info" %}}
 
 When you Specify  **Email**, **Call**, or **Text** options, the corresponding default app will be opened on the device when the action is triggered, for example, the default email client will be opened to compose a message.
 

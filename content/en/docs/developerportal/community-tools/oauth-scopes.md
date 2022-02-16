@@ -32,7 +32,7 @@ For example, if the user grants website/application A permission to send their p
 
 Here is an example page where a user is asked to accept scopes on their Mendix account so that Wikipedia can access their profile information and display their name:
 
-![Authorize Page](/attachments/developerportal/community-tools/oauth-scopes/authorize_page.png) 
+{{< figure src="/attachments/developerportal/community-tools/oauth-scopes/authorize_page.png" alt="Authorize Page" >}} 
 
 ## 4 Generated Scopes
 
@@ -42,7 +42,7 @@ This information is provided so that you can make an informed decision on whethe
 
 ### 4.1 Profile Scope {#profile}
 
-With this scope, a website or application can access the user's basic [profile](/developerportal/community-tools/) information as recorded in Mendix. This scope contains the following user data:
+With this scope, a website or application can access the user's basic [profile](/developerportal/community-tools/mendix-profile/) information as recorded in Mendix. This scope contains the following user data:
 
 * Full name
 * Username

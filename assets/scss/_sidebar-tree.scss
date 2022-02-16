@@ -5,6 +5,8 @@
     padding-right: 0.5rem;
     margin-right: -5px;
     margin-left: -15px;
+    font-size: 0.95rem; // NK - decrased
+    line-height: 1.2; // NK - decrased
 
     @include media-breakpoint-up(md) {
         @supports (position: sticky) {

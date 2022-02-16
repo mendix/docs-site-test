@@ -81,7 +81,8 @@ $font-family-sans-serif: $td-fonts-serif !default;
 
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font_family !default; // NK - changed to Mendix font
-$font-size-base: 1rem !default; // NK - if we want 14px default -> 0.875rem
+$font-size-base: 0.875rem !default; // NK - if we want 14px default -> 0.875rem
+$line-height-base: 1.4 !default; // NK - changed
 
 // Font weights
 

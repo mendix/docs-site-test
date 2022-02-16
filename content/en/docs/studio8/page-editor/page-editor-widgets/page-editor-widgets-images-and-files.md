@@ -11,8 +11,7 @@ tags: ["studio", "page editor", "image", "image widgets", "widgets", "file", "fi
 
 **Images & Files** are widgets that allow end-users to view, download, and upload images or files. For example, with an image uploader end-users will be able to upload a profile image:
 
-{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/image-uploader-example.png)
-{{/* % /image_container % */}}
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/image-uploader-example.png"   width="350"  >}}
 
 There are the following image and file widgets in Mendix Studio:
 
@@ -24,8 +23,7 @@ There are the following image and file widgets in Mendix Studio:
 
 *   **File Manager** – allows end-users to upload or/and download a file (in the **Toolbox**, you see  preconfigured file managers: **File Uploader** and **File Downloader**)
   
-	{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/images-and-files.png)
-    {{/* % /image_container % */}}
+	{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/images-and-files.png"   width="350"  >}}
 
 ## 2 Image and Dynamic Image 
 
@@ -33,7 +31,7 @@ An image and a dynamic image widgets allow you to display an image either from a
 
 You can switch from one widget to another in properties:
 
-![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/static-and-dynamic-image.png)
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/static-and-dynamic-image.png" >}}
 
 ### 2.1 Properties
 
@@ -43,8 +41,7 @@ In the **General** section, you can switch between static and dynamic image, sel
 
 Before configuring settings in the **General** section for the **Dynamic Image**, keep in mind that it can only function inside a data container (a list view or a data view). You can either place widget in an existing data container; or click **Wrap with a new data view** in **Properties** to create a data view automatically and place an input element inside it. 
 
-{{/* % image_container width="350" % */}}![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/dynamic-image-data-view.png)
-{{/* % /image_container % */}}
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/dynamic-image-data-view.png"   width="350"  >}}
 
 Settings available for **Static Image** and **Dynamic Image** are described in the table below:
 
@@ -123,7 +120,7 @@ Editability indicates whether the end-user will be able to change the value disp
 
 * **Conditional** – the widget is editable only if specified conditions are met based on an attribute value (for more information, see  [Attribute-Based](#attribute-based) and [Attribute Values](#attribute-values) sections below) or based on an expression. You can create a condition based on an expression in Studio Pro only (for details, see the [Editability Section](/refguide8/common-widget-properties/#editability) in *Properties Common in the Page Editor*)
 
-  {{%alert color="info" %}}If an attribute set for the widget's data source is of the AutoNumber type, the widget is set into read-only mode by default and the **Editability** setting itself is disabled, because attributes of this type are generated automatically.
+  {{%alert type="info" %}}If an attribute set for the widget's data source is of the AutoNumber type, the widget is set into read-only mode by default and the **Editability** setting itself is disabled, because attributes of this type are generated automatically.
 
   {{%/alert %}}
 
@@ -133,13 +130,13 @@ The **Attribute-Based** property is only shown when [Conditional Editability](#e
 
 **Attribute-Based** conditional editability allows you to show widgets only when they match a certain value of the selected attribute. 
 
-{{%alert color="info" %}}
+{{%alert type="info" %}}
 
 The attribute must be of the Boolean or enumeration type.
 
 {{%/alert %}} 
 
-{{%alert color="info" %}}
+{{%alert type="info" %}}
 
 You can only configure attribute-based conditional editability when a widget is placed in a data container: a data view or a list view. For more information on how to place widgets on a page, see [Adding Elements on a Page](/studio8/page-editor/#adding-elements) section in *Pages*. 
 
@@ -151,9 +148,7 @@ This property is shown only when an attribute in the [Attribute-Based](#attribut
 
 For example, you would like to allow users upload images only when their *email is verified*. So, you need to select *EmailVerified* in the **Attribute-Based** property and *true* in the **Attribute Value** property:
 
-{{/* % image_container width="250" % */}}
-![](/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/conditional-editability.png)
-{{/* % /image_container % */}}
+{{< figure src="/attachments/studio8/page-editor/page-editor-widgets/page-editor-widgets-images-and-files/conditional-editability.png"   width="250"  >}}
 
 #### 3.1.3 Controls Section
 

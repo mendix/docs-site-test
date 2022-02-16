@@ -18,7 +18,7 @@ The Deploy API allows you to manage application environments in the Mendix Cloud
 
 This image provides a domain model representation of the concepts discussed below and how these are related:
 
-![](/attachments/apidocs-mxsdk/apidocs/build-api/api-model.png)
+{{< figure src="/attachments/apidocs-mxsdk/apidocs/build-api/api-model.png" >}}
 
 ## 2 Authentication{#authentication}
 
@@ -102,7 +102,7 @@ URL: https://deploy.mendix.com/api/1/apps
 
 An object with the following key-value pair:
 
-*   _ProjectId_ (String) : The Developer Portal project identifier that should be linked to the new Free App. This value can be found under **Settings** > **General**, and it is represented as **App ID**.
+*   _ProjectId_ (String) : The Developer Portal project identifier that should be linked to the new Free App. This value can be found under **COLLABORATE** > **General Settings**, and it is represented as **App ID**.
 
 **Example Request**
 

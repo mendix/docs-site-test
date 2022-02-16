@@ -2,12 +2,15 @@
 title: "Mendix 7 Reference Guide"
 url: /refguide7/
 notoc: true
-no_list: false
 description: "The various sections of the reference guide provide details on the features and functionality of the Mendix Platform."
 weight: 80
+no_list: false
 cascade:
     - space: "Mendix 7 Reference Guide"
     - mendix_version: "7"
+    - old_content: true
+    - sitemap:
+        priority: 0.3
 ---
 
 The *Mendix Reference Guide* covers important topics on the  [Desktop Modeler](/refguide7/desktop-modeler/), [Mendix Runtime](/refguide7/runtime/), and other components of the Mendix Platform.
@@ -18,5 +21,5 @@ If you are looking for step-by-step guides on performing various Mendix actions,
 
 The *Mendix Reference Guide* is divided into the following categories:
 
-{{/* % category_block % */}}
+
 

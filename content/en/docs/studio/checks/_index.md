@@ -11,11 +11,11 @@ tags: ["studio", "app viewing", "checks", "errors", "consistency errors"]
 Mendix Studio checks your app for consistency in real-time, for example, it checks if any necessary properties of elements are missing. Such checks help you build an app that will function properly. 
 
 If your app passes the check, the **Checks** button will have a green check mark and the app will be ready to be [previewed or published](/studio/publishing-app/):
-![Passed Check](/attachments/studio/checks/passed-check.jpg)
+{{< figure src="/attachments/studio/checks/passed-check.jpg" alt="Passed Check" >}}
 
 If the app does not pass the check, you see the **Checks** button goes red with the number of failed checks – [consistency errors](/studio/consistency-errors/). If you click the button, a **Checks** panel with the list of errors will open and the elements that did not pass the check will be highlighted. This list can be seen as a to-do list that you need to complete before your app can be [previewed or published](/studio/publishing-app/).
 
-![](/attachments/studio/checks/checks-button.png)
+{{< figure src="/attachments/studio/checks/checks-button.png" >}}
 
 {{% alert color="info" %}}
 
@@ -30,11 +30,11 @@ If your app has consistency errors, the **Checks** button will have the red bord
 1. Click the **Checks** button or press the <kbd>C</kbd> shortcut to open the **Checks** panel.
     The panel with the list of consistency errors appears at the bottom of the screen. For more information on the **Checks** panel, see the [Checks Panel Overview](#checks-panel-overview) section below.
 
-    ![](/attachments/studio/checks/checks-panel.png)
+    {{< figure src="/attachments/studio/checks/checks-panel.png" >}}
 
 4. To view the exact place and element that the error refers to in the corresponding editor, click the row in the **Checks** panel (you can click any place of the row, the whole row is responsive), and the element that failed a check will be displayed and highlighted.
 
-5. To close the panel, either click the close button in the top-right corner of the panel, click **Checks** in the top-right corner of Studio, or press <kbd>C</kbd> . 
+5. To close the panel, either click the close button in the upper-right corner of the panel, click **Checks** in the upper-right corner of Studio, or press <kbd>C</kbd> . 
 
 To sort the errors, click the column header in the panel. Thus, you can sort errors in ascending or descending order by **Message**, **Code**, **Module**, **Document**, or **Element**. For more information on items displayed in the **Checks** panel, see the [Checks Panel Overview](#checks-panel-overview) section. 
 
