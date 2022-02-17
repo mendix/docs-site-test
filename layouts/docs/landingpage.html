@@ -59,142 +59,20 @@
             </div>
             <div class="row my-row">
               <div class="col cards-layout">
-                <div class="row justify-content-center inner-row">
-                  <div class="card w-50">
-                    <div class="card-body">
-                      <div class="row">
-                        <img class="my-icon" src="/icons/mx-pro-logo.png"><a href="/refguide/"><h4 class="card-title-w-50">Studio Pro 9</h4></a>
-                      </div>
-                      <p class="card-text"><ul class="landing-list">
-                        <li class="link-list"><a href="/refguide/general/">General Info</a></li>
-                        <li class="link-list"><a href="/refguide/modeling/">App Modeling</a></li>
-                        <li class="link-list"><a href="/refguide/mobile/">Mobile</a></li></ul></p>
-                    </div>
-                  </div>
-                  <div class="card w-50">
-                    <div class="card-body">
-                      <div class="row">
-                        <img class="my-icon" src="/icons/mx-studio.png"><a href="/studio/"><h4 class="card-title-w-50">Studio 9</h4></a>
-                      </div>
-                      <p class="card-text"><ul class="landing-list">
-                        <li class="link-list"><a href="/studio/general/">General Info</a></li>
-                        <li class="link-list"><a href="/studio/page-editor/">Pages</a></li>
-                        <li class="link-list"><a href="/studio-how-to/">Studio How-to's</a></li></ul></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-center inner-row">
-                  <div class="card w-50">
-                    <div class="card-body">
-                      <div class="row">
-                        <img class="my-icon" src="/icons/mx-dev-portal.png"><a href="/developerportal/"><h4 class="card-title-w-50">Developer Portal</h4></a>
-                      </div>
-                      <p class="card-text"><ul class="landing-list">
-                        <li class="link-list"><a href="/developerportal/deploy/">Deployment</a></li>
-                        <li class="link-list"><a href="/developerportal/control-center/">Control Center</a></li>
-                        <li class="link-list"><a href="/developerportal/support/">Support</a></li></ul></p>
-                    </div>
-                  </div>
-                  <div class="card w-50">
-                    <div class="card-body">
-                      <div class="row">
-                        <img class="my-icon" src="/icons/shopping-cart-1.png"><a href="/appstore/"><h4 class="card-title-w-50">Marketplace</h4></a>
-                      </div>
-                      <p class="card-text"><ul class="landing-list">
-                        <li class="link-list"><a href="/appstore/creating-content/">Creating Content</a></li>
-                        <li class="link-list"><a href="/appstore/modules/">Modules</a></li>
-                        <li class="link-list"><a href="/appstore/widgets/">Widgets</a></li></ul></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-center inner-row">
-                  <div class="card w-50">
-                    <div class="card-body">
-                      <div class="row">
-                        <img class="my-icon" src="/icons/mx-data-hub.png"><a href="/data-hub/"><h4 class="card-title-w-50">Data Hub</h4></a>
-                      </div>
-                      <p class="card-text"><ul class="landing-list">
-                        <li class="link-list"><a href="/data-hub/share-data/">Share Data Between Apps</a></li>
-                        <li class="link-list"><a href="/data-hub/write-data/">Write Data to Another App</a></li>
-                        <li class="link-list"><a href="/data-hub/data-hub-catalog/">Data Hub Catalog</a></li></ul></p>
-                    </div>
-                  </div>
-                  <div class="card w-50">
-                    <div class="card-body">
-                      <div class="row">
-                        <img class="my-icon" src="/icons/module-three-1.png"><a href="/apidocs-mxsdk/"><h4 class="card-title-w-50">APIs & SDKs</h4></a>
-                      </div>
-                      <p class="card-text"><ul class="landing-list">
-                        <li class="link-list"><a href="/apidocs-mxsdk/apidocs/">API Documentation</a></li>
-                        <li class="link-list"><a href="/apidocs-mxsdk/mxsdk/">Mendix Platform SDK</a></li>
-                        <br>
-                      </ul></p>
-                    </div>
-                  </div>
-                </div>
+                <!-- NK - moved Product cards section to partial -->
+                {{ partial "landingpage/product-cards.html" . }}
               </div>
               <div class="col col-sm-2 my-column">
-                <div class="row">
-                  <img class="my-icon" src="/icons/space-rocket-flying.png"><a href="/releasenotes/"><h4 class="card-title-w-50">Latest Releases</h4></a>
-                </div>
-                <p class="card-text"><ul class="landing-list">
-                  <li class="link-list"><a href="/releasenotes/studio-pro/9.8/">Studio Pro 9.8.1</a></li>
-                  <p class="rn-date">Oct 10th, 2021</p>
-                  <li class="link-list"><a href="/releasenotes/studio/9.7-and-above/">9.7 and Above</a></li>
-                  <p class="rn-date">Oct 25th, 2021</p>
-                  <li class="link-list"><a href="/releasenotes/mobile/nt-6-rn/">Native Template 6.2.9</a></li>
-                  <p class="rn-date">Sep 18th, 2021</p>
-                  <li class="link-list"><a href="/releasenotes/developer-portal/">Developer Portal</a></li>
-                  <p class="rn-date">Sep 12th, 2021</p>
-                  <li class="link-list"><a href="/releasenotes/developer-portal/deployment/">Deployment</a></li>
-                  <p class="rn-date">Sep 3rd, 2021</p>
-                  <li class="link-list"><a href="/releasenotes/data-hub/">Data Hub</a></li>
-                  <p class="rn-date">Aug 29th, 2021</p>
-                  <li class="link-list"><a href="/releasenotes/app-store/">Marketplace</a></li>
-                  <p class="rn-date">Oct 15th, 2021</p>
-                  <li class="link-list"><a href="/releasenotes/sdk/model-sdk-4/">Model SDK 4.57.0</a></li>
-                  <p class="rn-date">Oct 25th, 2021</p>
-                  <li class="link-list"><a href="/releasenotes/sdk/metamodel-9.8/">Metamodel 9.8</a></li>
-                  <p class="rn-date">Dec 24th, 2021</p>
-                </ul></p>
+                <!-- NK - moved Latest Releases section to partial -->
+                {{ partial "landingpage/latest-releases.html" . }}
               </div>
             </div>
             <br>
             <div class="row inner-row">
               <h3 class="title-row">Most Popular</h3>
             </div>
-            <div class="row image-card-row">
-              <div class="col-12 col-sm-6 col-xl-4 image-card-col">
-                <div class="card image-card">
-                  <img src="/images/most-popular-string-function-calls.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title">String Function Calls</h4>
-                    <br>
-                    <a href="/refguide/string-function-calls" class="btn btn-outline-secondary doc-link">Go to doc</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-xl-4 image-card-col">
-                <div class="card image-card">
-                  <img src="/images/most-popular-development-best-practices.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title">Development Best Practices</h4>
-                    <br>
-                    <a href="/howto/general/dev-best-practices" class="btn btn-outline-secondary doc-link">Go to doc</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-xl-4 image-card-col">
-                <div class="card image-card">
-                  <img src="/images/most-popular-system-requirements.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h4 class="card-title">System Requirements</h4>
-                    <br>
-                    <a href="/refguide/system-requirements" class="btn btn-outline-secondary doc-link">Go to doc</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- NK - moved Most Popular section to partial -->
+            {{ partial "landingpage/most-popular.html" . }}
             <br>
             <div class="row inner-row">
               <h3 class="title-row">Contribute to Docs? Here Is How:</h3>
