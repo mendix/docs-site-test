@@ -112,7 +112,7 @@ script:
 #  - pwd
 # NB: Have to have something here, otherwise Travis tries to run "npm test"
 # Display the output from hugo and htmltest so it is not folded and hidden, and is at the end of the log.
-  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
+  - echo -e "$(<$TRAVIS_BUILD_DIR/hugo.log)"
 
 # before_cache
 ############## Skipped
