@@ -76,7 +76,6 @@ install:
  
 before_script:
 ##############
-#  - eval "$(pyenv init --path)" # Instructions from Travis support
   - pyenv versions # list python versions supported by pyenv in case version in next command is removed
   - pyenv global 3.6.7 # this version needs to be already installed in the travis build
   - python -V
@@ -106,9 +105,10 @@ script:
 #  - echo $TRAVIS_OS_NAME
 #  - echo $TRAVIS_PULL_REQUEST
 #  - echo $TRAVIS_PULL_REQUEST_BRANCH
-# Have to have something here, otherwise Travis tries to run "npm test"
-  - pwd
-
+#  - pwd
+# NB: Have to have something here, otherwise Travis tries to run "npm test"
+# Display the output from hugo and htmltest so it is not folded and hidden, and is at the end of the log.
+  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
 
 # before_cache
 ############## Skipped
@@ -149,5 +149,5 @@ after_deploy:
 # Cannot get python push to Travis to work here. Added it to deploy.sh.
 
 after_script:
-# Display the output from hugo and htmltest so it is not folded and hidden, and is at the end of the log.
-  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
+############# Skipped
+# Anything placed here gets folded by Travis, so can't output useful information :-(.
