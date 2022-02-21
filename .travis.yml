@@ -64,8 +64,7 @@ install:
   - mkdir public  # This because <Maybe> the process of syncing to public is probably deadlocked behind waiting for the public folder to be made, and is never signalled that the folder is created, which ends up stalling the build on Travis CI.
   # ------------------------
   - ./hugo config --environment $TRAVIS_BRANCH # report the config we are using
-  # Try outputting in "Light Cyan" colour using https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
-  - echo -e "\033[1;36mHUGO was run for environment $TRAVIS_BRANCH" > $TRAVIS_BUILD_DIR/hugo.log
+  - echo "HUGO was run for environment $TRAVIS_BRANCH" > $TRAVIS_BUILD_DIR/hugo.log
   # put the flags in different config files controlled by environment matching $TRAVIS_BRANCH
   # Append output to hugo.log file to print at the end of the travis job
   # (see https://stackoverflow.com/questions/418896/how-to-redirect-output-to-a-file-and-stdout)
@@ -74,9 +73,6 @@ install:
   # normal htmltest takes too much memory - using a modified version which strips <aside> tag content
   - chmod +x ./htmltest/htmltest
   - ./htmltest/htmltest 2>&1 | tee -a $TRAVIS_BUILD_DIR/hugo.log
-  # and return colour to normal
-  - echo -e "\033[0m" > $TRAVIS_BUILD_DIR/hugo.log
-
 
 before_script:
 ##############
@@ -112,7 +108,7 @@ script:
 #  - pwd
 # NB: Have to have something here, otherwise Travis tries to run "npm test"
 # Display the output from hugo and htmltest so it is not folded and hidden, and is at the end of the log.
-  - echo -e "$(<$TRAVIS_BUILD_DIR/hugo.log)"
+  - echo "$(<$TRAVIS_BUILD_DIR/hugo.log)"
 
 # before_cache
 ############## Skipped
