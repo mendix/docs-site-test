@@ -58,9 +58,9 @@ If you are an existing customer, you should deploy into your licensed cloud node
 
 As noted in the table above, a Free App will go to sleep after an hour or so of inactivity. If you access it while it is inactive, you will see the image below. If, after a couple of minutes, your app does not wake up, please contact our support team at [support.mendix.com](http://support.mendix.com).
 
-{{< figure src="/attachments/developerportal/deploy/mendix-cloud-deploy/BADappresumed.png" >}}
+{{< figure src="/attachments/developerportal/deploy/mendix-cloud-deploy/appresumed.png" >}}
 
-You can upgrade a Free App to a licensed node with a *node* in the Mendix Cloud. Instructions for doing this are here: [Licensing Mendix Cloud Apps](/developerportal/deploy/BADlicensing-apps/).
+You can upgrade a Free App to a licensed node with a *node* in the Mendix Cloud. Instructions for doing this are here: [Licensing Mendix Cloud Apps](/developerportal/deploy/licensing-apps/).
 
 #### 1.1.1 Free Apps Archival{#free-apps-archival}
 
