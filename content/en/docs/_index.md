@@ -8,6 +8,7 @@ description: Browse the documentation per product, read about latest releases, a
 aliases:
     - /docs/index.html
     - /docs/Overview.html
+    - /search/
 cascade:
     - no_list: true
 #for future ease of maintenance, the tab contents might have to be split up into snippets
