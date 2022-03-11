@@ -1,4 +1,4 @@
-# Mendix Documentation ![badge](https://img.shields.io/badge/hugo-0.91.0-green.svg) ![badge](https://img.shields.io/badge/node-16.14.0-green.svg) ![badge](https://img.shields.io/badge/docsy-0.1.0-green.svg)
+# Mendix Documentation [![badge](https://img.shields.io/badge/hugo-0.91.0-green.svg)](https://gohugo.io/) [![badge](https://img.shields.io/badge/node-16.14.0-green.svg)](https://nodejs.org/en/) [![badge](https://img.shields.io/badge/docsy-0.1.0-green.svg)](https://www.docsy.dev/)
 
 This repository contains the Mendix documentation, which is served on [https://docs.mendix.com](https://docs.mendix.com).
 
@@ -29,10 +29,12 @@ Clone the repo through one of the above mentioned methods. Check that you have c
 
 #### Installing Dependencies
 
-1. Download and install [NodeJS](https://nodejs.org/en/download/) version `16.14.x`.
+1. Download and install [NodeJS](https://nodejs.org/en/download/). Use the version indicated at the top of this readme.
 1. In a terminal at the root of the repository run: `npm install`.
 1. Download the [0.91 Hugo](https://github.com/gohugoio/hugo/releases/tag/v0.91.0) *extended* version.
-1. Extract hugo.exe from the archive and place it in the root of the repo directory. None of the other files are needed. Do not commit or add any new/changed files.
+1. Extract hugo.exe from the archive and place it in the root of the repo directory. None of the other files are needed.
+
+Changes made to your local repository, such as adding the Hugo executable, should be excluded from git control. If any new/changed files are added to your uncommitted files, please do not commit the changes.
 
 ### Running the Server
 
@@ -43,6 +45,8 @@ To run a local version of the site:
     Once the site is built you will see a table indicating how many pages have been created. You will need to wait until the server is set up before you can see the site.
 
 2. Go to http://localhost:1313/  and see the site live.
+
+See the [Hugo Server](https://gohugo.io/commands/hugo_server/) documentation for more options (for example, if you want to change the port on which the site is published)
 
 #### Potential Issues
 
