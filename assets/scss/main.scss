@@ -26,8 +26,8 @@
     h5[id]:before {
         display: block;
         content: " ";
-        margin-top: 0; // NK - override for default values
-        height: 0; // NK - override for default values
+        //margin-top: 0; // NK - override for default values, not best way, deactivated to keep headers visible after clicking anchor link
+        //height: 0; // NK - override for default values, not best way, deactivated to keep headers visible after clicking anchor link
         visibility: hidden;
     }
 }
